@@ -1,0 +1,33 @@
+{
+  "name": "animadio",
+  "version": "0.1.0",
+  "description": "Animadio CSS Framework - Grid & Flexbox Layouts - Reusable & Customizable Elements - Perform Complex Animations - Controls by Radio Buttons - No JavaScript needed or used",
+  "keywords": [
+    "css",
+    "framework",
+    "grid",
+    "flexbox",
+    "reusability",
+    "customizability",
+    "animation",
+    "radio",
+    "standalone"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/animadio/animadio.git"
+  },
+  "author": {
+    "name": "Philippe Beck",
+    "email": "philippe@philippebeck.net",
+    "homepage": "https://animadio.org"
+  },
+  "devDependencies": {
+    "normalize.css": "~8.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/animadio/animadio/issues"
+  },
+  "homepage": "https://github.com/animadio/animadio#readme"
+}
