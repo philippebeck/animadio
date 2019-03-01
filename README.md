@@ -35,12 +35,12 @@
   - jsDelivr : https://cdn.jsdelivr.net/npm/animadio/dist/animadio.css
   - unpkg : https://unpkg.com/animadio/dist/animadio.css
 - **Install** :
-  - NPM : npm i animadio
-  - Yarn : yarn add animadio
+  - NPM : `npm i animadio`
+  - Yarn : `yarn add animadio`
 - **Download** :
-  - [Releases](https://github.com/animadio/animadio/releases)
+  - [Latest Releases](https://github.com/animadio/animadio/releases)
 - **Clone** :
-  - Repository : git clone https://github.com/animadio/animadio.git
+  - Repository : `git clone https://github.com/animadio/animadio.git`
   
 ### Content
 
@@ -77,8 +77,8 @@
 
 - **Philippe Beck** :
   - https://philippebeck.net
-  - https://twitter.com/philippepjbeck
-  - https://github.com/philippebeck
+  - [GitHub : philippebeck](https://github.com/philippebeck)
+  - [Twitter : @philippepjbeck](https://twitter.com/philippepjbeck)
 
 ### Copyright
 
