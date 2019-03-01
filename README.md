@@ -21,7 +21,7 @@
 - [Creator](#creator)
 - [Copyright](#copyright)
 
-### Status
+## Status
 
 > FRAMEWORK IN CONSTRUCTION !
 
@@ -29,58 +29,57 @@
 
 > ANIMADIO WILL FONCTION VERY SOON !!!
 
-### Installation
+## Installation
 
 - **CDN** : 
   - jsDelivr : https://cdn.jsdelivr.net/npm/animadio/dist/animadio.css
   - unpkg : https://unpkg.com/animadio/dist/animadio.css
-- **Install** :
+- **Install** from a package manager :
   - NPM : `npm i animadio`
   - Yarn : `yarn add animadio`
-- **Download** :
+- **Download** from GitHub :
   - [Latest Releases](https://github.com/animadio/animadio/releases)
-- **Clone** :
-  - Repository : `git clone https://github.com/animadio/animadio.git`
+  - `git clone https://github.com/animadio/animadio.git`
   
-### Content
+## Content
 
 - The animadio.css file is standalone...
 
-### Open-Source
+## Open-Source
 
 - [GitHub : animadio](https://github.com/animadio)
 - [CodePen : @animadio](https://codepen.io/animadio)
 
-### Community
+## Community
 
 - [Twitter : @animadio](https://twitter.com/animadio)
 - [Slack : animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQtNTY1NTc5NzgyNDA3LTI2YWIxM2ZkMGM5ODBkNjNjZmI5ZGVlNTM1ZWEwMWI5ZDJjNzViYjNmNWE2MjllMTc3MDhlMzYzZDYzNTkxNjU)
 
-### Documentation
+## Documentation
 
 - Documentation will arrive as soon as possible !
 
-### Issues & Pull Requests
+## Issues & Pull Requests
 
 - [Issues can be created here](https://github.com/animadio/animadio/issues)
 - [And Pull Requests can be create there](https://github.com/animadio/animadio/pulls)
 
-### Contributing
+## Contributing
 
 - Animadio needs you if you like it : sends pull requests on GitHub to improve it !!
 
-### Versioning
+## Versioning
 
 - [Animadio is maintained under the Semantic Versioning 2.0.0](https://semver.org)
 
-### Creator
+## Creator
 
 - **Philippe Beck** :
   - https://philippebeck.net
   - [GitHub : philippebeck](https://github.com/philippebeck)
   - [Twitter : @philippepjbeck](https://twitter.com/philippepjbeck)
 
-### Copyright
+## Copyright
 
 - [Code released under the MIT License](https://github.com/animadio/animadio/blob/master/LICENSE)
   
