@@ -18,7 +18,11 @@ module.exports = function(grunt) {
                     'src/global/keyframes.css',
                     'src/global/tags.css',
                     'src/global/display.css',
-                    'src/global/helpers.css',
+
+                    'src/helpers/show.css',
+                    'src/helpers/spacing.css',
+                    'src/helpers/size.css',
+                    'src/helpers/text.css',
 
                     'src/elements/navbar.css',
                     'src/elements/button.css',
