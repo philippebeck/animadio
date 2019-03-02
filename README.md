@@ -34,10 +34,10 @@
 - **CDN** : 
   - jsDelivr : https://cdn.jsdelivr.net/npm/animadio/dist/min/animadio.min.css
   - unpkg : https://unpkg.com/animadio/dist/min/animadio.min.css
-- **Install** from a package manager :
+- **Install** :
   - NPM : `npm i animadio`
   - Yarn : `yarn add animadio`
-- **Download** from GitHub :
+- **Download** :
   - [Latest Releases](https://github.com/animadio/animadio/releases)
   - `git clone https://github.com/animadio/animadio.git`
   
