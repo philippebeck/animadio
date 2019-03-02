@@ -24,7 +24,11 @@
     "homepage": "https://animadio.org"
   },
   "devDependencies": {
-    "normalize.css": "~8.0.1"
+    "grunt": "^1.0.3",
+    "grunt-concat-css": "^0.3.2",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "normalize.css": "~8.0.1",
+    "time-grunt": "^2.0.0"
   },
   "bugs": {
     "url": "https://github.com/animadio/animadio/issues"
