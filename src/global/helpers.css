@@ -13,3 +13,11 @@
 /* Text Align */
 /* Width */
 
+
+/****************************/
+/***** Container Helper *****/
+.container {
+    margin: auto;
+    max-width: 80%;
+}
+
