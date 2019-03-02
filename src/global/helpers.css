@@ -21,3 +21,31 @@
     max-width: 80%;
 }
 
+
+/**************************/
+/***** Cursor Helpers *****/
+.cursor-cross,
+.cursor-cross > * {
+    cursor: crosshair;
+}
+
+.cursor-help,
+.cursor-help > * {
+    cursor: help;
+}
+
+.cursor-none,
+.cursor-none > * {
+    cursor: not-allowed;
+}
+
+.cursor-pointer,
+.cursor-pointer > * {
+    cursor: pointer;
+}
+
+.cursor-text,
+.cursor-text > * {
+    cursor: text;
+}
+
