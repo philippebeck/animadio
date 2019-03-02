@@ -72,3 +72,19 @@
     display: none;
 }
 
+
+/************************/
+/***** Font Helpers *****/
+.font-normal {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
