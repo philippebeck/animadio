@@ -64,20 +64,20 @@
     /*********************/
     /***** Transform *****/
     --rotate:               -360deg;
-    --rotateX:              90deg;
-    --rotateY:              180deg;
+    --rotateX:              -360deg;
+    --rotateY:              -360deg;
 
-    --scale:                1.5;
+    --scale:                0;
     --scaleX:               0;
-    --scaleY:               3;
+    --scaleY:               0;
 
     --skew:                 180deg, 180deg;
     --skewX:                180deg;
     --skewY:                180deg;
 
-    --translate:            50px, 30px;
-    --translateX:           800px;
-    --translateY:           600px;
+    --translate:            -100vw, -100vh;
+    --translateX:           -100vw;
+    --translateY:           -100vh;
 
 
     /*****************/
