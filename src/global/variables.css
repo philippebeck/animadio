@@ -71,6 +71,10 @@
     --scaleX:               0;
     --scaleY:               3;
 
+    --skew:                 180deg, 180deg;
+    --skewX:                180deg;
+    --skewY:                180deg;
+
     --translate:            50px, 30px;
     --translateX:           800px;
     --translateY:           600px;
