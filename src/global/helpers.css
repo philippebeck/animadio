@@ -139,6 +139,88 @@
 }
 
 
+/******************/
+/***** Margin *****/
+.margin-sm,
+.g-margin-sm > * {
+    margin: var(--margin-sm);
+}
+
+.margin-md,
+.g-margin-md > * {
+    margin: var(--margin-md);
+}
+
+.margin-lg,
+.g-margin-lg > * {
+    margin: var(--margin-lg);
+}
+
+/***** Margin Top *****/
+.margin-top-sm,
+.g-margin-top-sm > * {
+    margin-top: var(--margin-top-sm);
+}
+
+.margin-top-md,
+.g-margin-top-md > * {
+    margin-top: var(--margin-top-md);
+}
+
+.margin-top-lg,
+.g-margin-top-lg > * {
+    margin-top: var(--margin-top-lg);
+}
+
+/***** Margin Right *****/
+.margin-right-sm,
+.g-margin-right-sm > * {
+    margin-right: var(--margin-right-sm);
+}
+
+.margin-right-md,
+.g-margin-right-md > * {
+    margin-right: var(--margin-right-md);
+}
+
+.margin-right-lg,
+.g-margin-right-lg > * {
+    margin-right: var(--margin-right-lg);
+}
+
+/***** Margin Bottom *****/
+.margin-bottom-sm,
+.g-margin-bottom-sm > * {
+    margin-bottom: var(--margin-bottom-sm);
+}
+
+.margin-bottom-md,
+.g-margin-bottom-md > * {
+    margin-bottom: var(--margin-bottom-md);
+}
+
+.margin-bottom-lg,
+.g-margin-bottom-lg > * {
+    margin-bottom: var(--margin-bottom-lg);
+}
+
+/***** Margin Left *****/
+.margin-left-sm,
+.g-margin-left-sm > * {
+    margin-left: var(--margin-left-sm);
+}
+
+.margin-left-md,
+.g-margin-left-md > * {
+    margin-left: var(--margin-left-md);
+}
+
+.margin-left-lg,
+.g-margin-left-lg > * {
+    margin-left: var(--margin-left-lg);
+}
+
+
 /****************************/
 /***** Overflow Helpers *****/
 .flow-hidden {
