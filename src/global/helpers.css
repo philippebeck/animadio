@@ -232,6 +232,88 @@
 }
 
 
+/*******************/
+/***** Padding *****/
+.padding-sm,
+.g-padding-sm > * {
+    padding: var(--padding-sm);
+}
+
+.padding-md,
+.g-padding-md > * {
+    padding: var(--padding-md);
+}
+
+.padding-lg,
+.g-padding-lg > * {
+    padding: var(--padding-lg);
+}
+
+/***** Padding Top *****/
+.padding-top-sm,
+.g-padding-top-sm > * {
+    padding-top: var(--padding-top-sm);
+}
+
+.padding-top-md,
+.g-padding-top-md > * {
+    padding-top: var(--padding-top-md);
+}
+
+.padding-top-lg,
+.g-padding-top-lg > * {
+    padding-top: var(--padding-top-lg);
+}
+
+/***** Padding Right *****/
+.padding-right-sm,
+.g-padding-right-sm > * {
+    padding-right: var(--padding-right-sm);
+}
+
+.padding-right-md,
+.g-padding-right-md > * {
+    padding-right: var(--padding-right-md);
+}
+
+.padding-right-lg,
+.g-padding-right-lg > * {
+    padding-right: var(--padding-right-lg);
+}
+
+/***** Padding Bottom *****/
+.padding-bottom-sm,
+.g-padding-bottom-sm > * {
+    padding-bottom: var(--padding-bottom-sm);
+}
+
+.padding-bottom-md,
+.g-padding-bottom-md > * {
+    padding-bottom: var(--padding-bottom-md);
+}
+
+.padding-bottom-lg,
+.g-padding-bottom-lg > * {
+    padding-bottom: var(--padding-bottom-lg);
+}
+
+/***** Padding Left *****/
+.padding-left-sm,
+.g-padding-left-sm > * {
+    padding-left: var(--padding-left-sm);
+}
+
+.padding-left-md,
+.g-padding-left-md > * {
+    padding-left: var(--padding-left-md);
+}
+
+.padding-left-lg,
+.g-padding-left-lg > * {
+    padding-left: var(--padding-left-lg);
+}
+
+
 /****************************/
 /***** Position Helpers *****/
 .pos-absolute {
