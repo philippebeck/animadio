@@ -2,3 +2,74 @@
 /********** TAGS **********/
 /**************************/
 
+/* Global */
+/* Structure */
+/* Titles */
+/* Links */
+/* Lists */
+/* Medias */
+
+
+/******************/
+/***** Global *****/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: var(--global-line-height);
+    font-size: var(--global-font-size);
+    font-family: var(--global-font-family);
+    scroll-behavior: smooth;
+}
+
+
+/*********************/
+/***** Structure *****/
+article,
+footer {
+    padding-top: var(--navbar-height);
+}
+
+
+/* ****************** */
+/* ***** Titles ***** */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--titles-font-family);
+}
+
+
+/* ***************** */
+/* ***** Links ***** */
+a {
+    text-decoration: none;
+}
+
+
+/* ***************** */
+/* ***** Lists ***** */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* ****************** */
+/* ***** Medias ***** */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
