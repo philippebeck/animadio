@@ -88,6 +88,33 @@
     --margin-left-lg:       50px;
 
 
+    /*******************/
+    /***** Padding *****/
+    --padding-sm:            10px;
+    --padding-md:            20px;
+    --padding-lg:            50px;
+
+    /***** Padding Top *****/
+    --padding-top-sm:        10px;
+    --padding-top-md:        20px;
+    --padding-top-lg:        50px;
+
+    /***** Padding Right *****/
+    --padding-right-sm:      10px;
+    --padding-right-md:      20px;
+    --padding-right-lg:      50px;
+
+    /***** Padding Bottom *****/
+    --padding-bottom-sm:     10px;
+    --padding-bottom-md:     20px;
+    --padding-bottom-lg:     50px;
+
+    /***** Padding Left *****/
+    --padding-left-sm:       10px;
+    --padding-left-md:       20px;
+    --padding-left-lg:       50px;
+
+
     /*********************/
     /***** Transform *****/
     --rotate:               -360deg;
