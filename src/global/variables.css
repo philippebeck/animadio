@@ -76,15 +76,18 @@
     --translateY:           600px;
 
 
-    /****************/
-    /***** Tags *****/
-    --global-font-family:       serif;
-    --global-font-size:         1.5rem;
-    --global-line-height:       1.5;
-    --titles-font-family:       sans-serif;
+    /*****************/
+    /***** Width *****/
+    --width-sm:             25%;
+    --width-md:             50%;
+    --width-lg:             75%;
 
-    /******************/
-    /***** Navbar *****/
-    --navbar-height:            100px;
+    --min-width-sm:         25%;
+    --min-width-md:         50%;
+    --min-width-lg:         75%;
+
+    --max-width-sm:         25%;
+    --max-width-md:         50%;
+    --max-width-lg:         75%;
 
 }
