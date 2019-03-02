@@ -62,18 +62,19 @@
 
 
     /*********************/
-    /***** Keyframes *****/
-    --rotate:           -360deg;
-    --rotateX:          90deg;
-    --rotateY:          180deg;
+    /***** Transform *****/
+    --rotate:               -360deg;
+    --rotateX:              90deg;
+    --rotateY:              180deg;
 
-    --scale:            1.5;
-    --scaleX:           0;
-    --scaleY:           3;
+    --scale:                1.5;
+    --scaleX:               0;
+    --scaleY:               3;
 
-    --translate:           50px, 30px;
-    --translateX:          800px;
-    --translateY:          600px;
+    --translate:            50px, 30px;
+    --translateX:           800px;
+    --translateY:           600px;
+
 
     /****************/
     /***** Tags *****/
