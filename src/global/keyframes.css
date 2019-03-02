@@ -10,6 +10,10 @@
 /* ScaleX */
 /* ScaleY */
 
+/* Skew */
+/* SkewX */
+/* SkewY */
+
 /* Translate */
 /* TranslateX */
 /* TranslateY */
@@ -57,6 +61,29 @@
 @keyframes scaleY {
     to {
         transform: scaleY(var(--scaleY));
+    }
+}
+
+
+/****************/
+/***** Skew *****/
+@keyframes skew {
+    to {
+        transform: skew(var(--skew));
+    }
+}
+
+/***** SkewX *****/
+@keyframes skewX {
+    to {
+        transform: skewX(var(--skewX));
+    }
+}
+
+/***** SkewY *****/
+@keyframes skewY {
+    to {
+        transform: skewY(var(--skewY));
     }
 }
 
