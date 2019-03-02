@@ -61,6 +61,33 @@
     --navbar-height:        100px;
 
 
+    /******************/
+    /***** Margin *****/
+    --margin-sm:            10px;
+    --margin-md:            20px;
+    --margin-lg:            50px;
+
+    /***** Margin Top *****/
+    --margin-top-sm:        10px;
+    --margin-top-md:        20px;
+    --margin-top-lg:        50px;
+
+    /***** Margin Right *****/
+    --margin-right-sm:      10px;
+    --margin-right-md:      20px;
+    --margin-right-lg:      50px;
+
+    /***** Margin Bottom *****/
+    --margin-bottom-sm:     10px;
+    --margin-bottom-md:     20px;
+    --margin-bottom-lg:     50px;
+
+    /***** Margin Left *****/
+    --margin-left-sm:       10px;
+    --margin-left-md:       20px;
+    --margin-left-lg:       50px;
+
+
     /*********************/
     /***** Transform *****/
     --rotate:               -360deg;
