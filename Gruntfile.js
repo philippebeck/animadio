@@ -26,6 +26,16 @@ module.exports = function(grunt) {
                 dest: 'dist/animadio.css'
             }
         },
+
+        autoprefixer: {
+            options: {
+                browsers: ['last 2 versions']
+            },
+            your_target: {
+                src: 'dist/animadio.css'
+            },
+        },
+
         cssmin: {
             target: {
                 files: [{
