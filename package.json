@@ -21,7 +21,7 @@
   "author": {
     "name": "Philippe Beck",
     "email": "philippe@philippebeck.net",
-    "homepage": "https://animadio.org"
+    "homepage": "https://philippebeck.net"
   },
   "devDependencies": {
     "grunt": "^1.0.3",
@@ -30,8 +30,7 @@
     "grunt-contrib-cssmin": "^3.0.0",
     "normalize.css": "~8.0.1"
   },
-  "bugs": {
-    "url": "https://github.com/animadio/animadio/issues"
-  },
+  "bugs": "https://github.com/animadio/animadio/issues"
+  ,
   "homepage": "https://github.com/animadio/animadio#readme"
 }
