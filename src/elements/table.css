@@ -2,3 +2,10 @@
 /********** TABLE **********/
 /***************************/
 
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+}
