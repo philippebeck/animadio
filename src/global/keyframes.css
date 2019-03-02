@@ -2,3 +2,83 @@
 /********** KEYFRAMES **********/
 /*******************************/
 
+/* Rotate */
+/* RotateX */
+/* RotateY */
+
+/* Scale */
+/* ScaleX */
+/* ScaleY */
+
+/* Translate */
+/* TranslateX */
+/* TranslateY */
+
+
+/******************/
+/***** Rotate *****/
+@keyframes rotate {
+    to {
+        transform: rotate(var(--rotate));
+    }
+}
+
+/***** RotateX *****/
+@keyframes rotateX {
+    to {
+        transform: rotateX(var(--rotateX));
+    }
+}
+
+/***** RotateY *****/
+@keyframes rotateY {
+    to {
+        transform: rotateY(var(--rotateY));
+    }
+}
+
+
+/*****************/
+/***** Scale *****/
+@keyframes scale {
+    to {
+        transform: scale(var(--scale));
+    }
+}
+
+/***** ScaleX *****/
+@keyframes scaleX {
+    to {
+        transform: scaleX(var(--scaleX));
+    }
+}
+
+/***** ScaleY *****/
+@keyframes scaleY {
+    to {
+        transform: scaleY(var(--scaleY));
+    }
+}
+
+
+/*********************/
+/***** Translate *****/
+@keyframes translate {
+    to {
+        transform: translate(var(--translate));
+    }
+}
+
+/***** TranslateX *****/
+@keyframes translateX {
+    to {
+        transform: translateX(var(--translateX));
+    }
+}
+
+/***** TranslateY *****/
+@keyframes translateY {
+    to {
+        transform: translateY(var(--translateY));
+    }
+}
