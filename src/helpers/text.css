@@ -1,0 +1,112 @@
+/***********************************/
+/********** TEXT HELPERS ***********/
+/***********************************/
+
+/* Font */
+/* Text Align */
+/* Text Decoration */
+
+
+/************************/
+/***** Font Helpers *****/
+.font-normal {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+
+/******************************/
+/***** Text Align Helpers *****/
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+/***********************************/
+/***** Text Decoration Helpers *****/
+.deco-none {
+    text-decoration: none;
+}
+
+/***** Text Decoration Underline *****/
+.deco-under {
+    text-decoration: underline;
+}
+
+.deco-under-double {
+    text-decoration: underline double;
+}
+
+.deco-under-dotted {
+    text-decoration: underline dotted;
+}
+
+.deco-under-dashed {
+    text-decoration: underline dashed;
+}
+
+.deco-under-wavy {
+    text-decoration: underline wavy;
+}
+
+/***** Text Decoration Overline *****/
+.deco-over {
+    text-decoration: overline;
+}
+
+.deco-over-double {
+    text-decoration: overline double;
+}
+
+.deco-over-dotted {
+    text-decoration: overline dotted;
+}
+
+.deco-over-dashed {
+    text-decoration: overline dashed;
+}
+
+.deco-over-wavy {
+    text-decoration: overline wavy;
+}
+
+/***** Text Decoration Line Through *****/
+.deco-through {
+    text-decoration: line-through;
+}
+
+.deco-through-double {
+    text-decoration: line-through double;
+}
+
+.deco-through-dotted {
+    text-decoration: line-through dotted;
+}
+
+.deco-through-dashed {
+    text-decoration: line-through dashed;
+}
+
+.deco-through-wavy {
+    text-decoration: line-through wavy;
+}
