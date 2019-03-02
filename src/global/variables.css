@@ -2,12 +2,27 @@
 /********** VARIABLES**********/
 /******************************/
 
+/* Keyframes */
 /* Tags */
 /* Navbar */
 
 
 :root {
-    /******************/
+    /*********************/
+    /***** Keyframes *****/
+    --rotate:           -360deg;
+    --rotateX:          90deg;
+    --rotateY:          180deg;
+
+    --scale:            1.5;
+    --scaleX:           0;
+    --scaleY:           3;
+
+    --translate:           50px, 30px;
+    --translateX:          800px;
+    --translateY:          600px;
+
+    /****************/
     /***** Tags *****/
     --global-font-family:       serif;
     --global-font-size:         1.5rem;
