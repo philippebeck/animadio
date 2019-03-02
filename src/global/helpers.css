@@ -138,3 +138,14 @@
     max-height: var(--max-height-lg);
 }
 
+
+/****************************/
+/***** Overflow Helpers *****/
+.flow-hidden {
+    overflow: hidden;
+}
+
+.flow-scroll {
+    overflow: scroll;
+}
+
