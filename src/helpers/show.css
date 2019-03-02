@@ -1,0 +1,99 @@
+/***********************************/
+/********** SHOW HELPERS ***********/
+/***********************************/
+
+
+/* Container */
+/* Cursor */
+/* Display */
+/* Overflow */
+/* Position */
+
+
+/****************************/
+/***** Container Helper *****/
+.container {
+    margin: auto;
+    max-width: 80%;
+}
+
+
+/**************************/
+/***** Cursor Helpers *****/
+.cursor-cross,
+.cursor-cross > * {
+    cursor: crosshair;
+}
+
+.cursor-help,
+.cursor-help > * {
+    cursor: help;
+}
+
+.cursor-none,
+.cursor-none > * {
+    cursor: not-allowed;
+}
+
+.cursor-pointer,
+.cursor-pointer > * {
+    cursor: pointer;
+}
+
+.cursor-text,
+.cursor-text > * {
+    cursor: text;
+}
+
+
+/***************************/
+/***** Display Helpers *****/
+.dis-block {
+    display: block;
+}
+
+.dis-flex {
+    display: flex;
+}
+
+.dis-in-block {
+    display: inline-block;
+}
+
+.dis-inline {
+    display: inline;
+}
+
+.dis-none {
+    display: none;
+}
+
+
+/****************************/
+/***** Overflow Helpers *****/
+.flow-hidden {
+    overflow: hidden;
+}
+
+.flow-scroll {
+    overflow: scroll;
+}
+
+
+/****************************/
+/***** Position Helpers *****/
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-fixed {
+    position: fixed;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-sticky {
+    position: sticky;
+}
