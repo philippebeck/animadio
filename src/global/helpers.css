@@ -88,3 +88,53 @@
     font-weight: bold;
 }
 
+
+/**************************/
+/***** Height Helpers *****/
+.height-sm,
+.g-height-sm > * {
+    height: var(--height-sm);
+}
+
+.height-md,
+.g-height-md > * {
+    height: var(--height-md);
+}
+
+.height-lg,
+.g-height-lg > * {
+    height: var(--height-lg);
+}
+
+/***** Min Height Helpers *****/
+.min-height-sm,
+.g-min-height-sm > * {
+    min-height: var(--min-height-sm);
+}
+
+.min-height-md,
+.g-min-height-md > * {
+    min-height: var(--min-height-md);
+}
+
+.min-height-lg,
+.g-min-height-lg > * {
+    min-height: var(--min-height-lg);
+}
+
+/***** Max Height Helpers *****/
+.max-height-sm,
+.g-max-height-sm > * {
+    max-height: var(--max-height-sm);
+}
+
+.max-height-md,
+.g-max-height-md > * {
+    max-height: var(--max-height-md);
+}
+
+.max-height-lg,
+.g-max-height-lg > * {
+    max-height: var(--max-height-lg);
+}
+
