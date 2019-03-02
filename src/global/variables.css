@@ -34,6 +34,15 @@
     --stackoverflow:    #f48024;
     --twitter:          #1da1f2;
 
+    /*****************/
+    /***** Fonts *****/
+    --global-font-family:   serif;
+    --global-font-size:     1.5rem;
+    --global-line-height:   1.5;
+
+    --titles-font-family:   sans-serif;
+
+
     /*********************/
     /***** Keyframes *****/
     --rotate:           -360deg;
