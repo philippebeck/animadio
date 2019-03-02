@@ -49,3 +49,26 @@
     cursor: text;
 }
 
+
+/***************************/
+/***** Display Helpers *****/
+.dis-block {
+    display: block;
+}
+
+.dis-flex {
+    display: flex;
+}
+
+.dis-in-block {
+    display: inline-block;
+}
+
+.dis-inline {
+    display: inline;
+}
+
+.dis-none {
+    display: none;
+}
+
