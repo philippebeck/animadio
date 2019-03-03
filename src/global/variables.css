@@ -46,6 +46,13 @@
 
     --font-size-global:     1.5rem;
 
+    --font-size-tn:         1.5rem;
+    --font-size-sm:         2rem;
+    --font-size-md:         2.5rem;
+    --font-size-lg:         3rem;
+    --font-size-wd:         3.5rem;
+
+
     /******************/
     /***** Height *****/
     --height-sm:            25vh;
