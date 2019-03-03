@@ -39,12 +39,12 @@
 
     /*****************/
     /***** Fonts *****/
-    --global-font-family:   serif;
-    --global-font-size:     1.5rem;
-    --global-line-height:   1.5;
+    --font-family-global:   serif;
+    --font-family-titles:   sans-serif;
 
-    --titles-font-family:   sans-serif;
+    --line-height-global:   1.5;
 
+    --font-size-global:     1.5rem;
 
     /******************/
     /***** Height *****/
