@@ -10,11 +10,22 @@
 /* Position */
 
 
-/****************************/
-/***** Container Helper *****/
-.container {
+/*****************************/
+/***** Container Helpers *****/
+[class^="container"] {
     margin: auto;
-    max-width: 80%;
+}
+
+.container-sm {
+    max-width: var(--max-width-sm);
+}
+
+.container {
+    max-width: var(--max-width-md);
+}
+
+.container-lg {
+    max-width: var(--max-width-lg);
 }
 
 
