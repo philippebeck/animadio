@@ -113,3 +113,21 @@
     border-color: var(--yellow);
 }
 
+
+/******************/
+/***** Radius *****/
+[class*="border"][class*="slight"] {
+    border-radius: var(--border-radius-slight);
+}
+
+[class*="border"][class*="round"] {
+    border-radius: var(--border-radius-round);
+}
+
+[class*="border"][class*="circle"] {
+    border-radius: var(--border-radius-circle);
+}
+
+[class*="border"][class*="ellipse"] {
+    border-radius: var(--border-radius-ellipse);
+}
