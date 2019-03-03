@@ -2,6 +2,7 @@
 /********** VARIABLES **********/
 /*******************************/
 
+/* Animations */
 /* Borders */
 /* Colors */
 /* Fonts */
@@ -28,6 +29,14 @@
     --animation-delay-small:    1s;
     --animation-delay-medium:   2s;
     --animation-delay-large:    3s;
+
+    /***** Timing Function *****/
+    --animation-timing-steps:   60, start;
+    --animation-timing-bezier:  1,5,1,-5;
+
+    /***** Iteration Count *****/
+    --animation-count-few:      2;
+    --animation-count-many:     5;
 
 
     /*******************/
