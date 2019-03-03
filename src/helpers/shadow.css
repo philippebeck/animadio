@@ -105,3 +105,18 @@
     box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg) var(--shadow-spread-lg);
 }
 
+
+/****************/
+/***** Text *****/
+[class*="text"][class*="sm"] {
+    text-shadow: var(--shadow-x-sm) var(--shadow-y-sm);
+}
+
+[class*="text"][class*="md"] {
+    text-shadow: var(--shadow-x-md) var(--shadow-y-md);
+}
+
+[class*="text"][class*="lg"] {
+    text-shadow: var(--shadow-x-lg) var(--shadow-y-lg);
+}
+
