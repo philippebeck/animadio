@@ -89,3 +89,13 @@ video {
     max-width: 100%;
     height: auto;
 }
+
+
+/*****************/
+/***** Table *****/
+table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+}
