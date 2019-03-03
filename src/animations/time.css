@@ -1,0 +1,109 @@
+/************************************/
+/********** ANIMATION TIME **********/
+/************************************/
+
+/* Duration */
+/* Delay */
+
+
+/********************/
+/***** Duration *****/
+[class*="animate-"][class*="tn"]:hover,
+[class*="animate-"][class*="tn"]:focus,
+[class*="animate-"][class*="tn"]:active,
+*:hover > [class*="animated-"][class*="tn"],
+*:focus > [class*="animated-"][class*="tn"],
+*:active > [class*="animated-"][class*="tn"],
+[class*="radio-"][class*="tn"]:checked ~ [class*="target-"][class*="tn"],
+[class*="show-"][class*="tn"],
+[class*="shown-"][class*="tn"] > * {
+    animation-duration: var(--animation-duration-tn);
+}
+
+[class*="animate-"][class*="sm"]:hover,
+[class*="animate-"][class*="sm"]:focus,
+[class*="animate-"][class*="sm"]:active,
+*:hover > [class*="animated-"][class*="sm"],
+*:focus > [class*="animated-"][class*="sm"],
+*:active > [class*="animated-"][class*="sm"],
+[class*="radio-"][class*="sm"]:checked ~ [class*="target-"][class*="sm"],
+[class*="show-"][class*="sm"],
+[class*="shown-"][class*="sm"] > * {
+    animation-duration: var(--animation-duration-sm);
+}
+
+[class*="animate-"][class*="md"]:hover,
+[class*="animate-"][class*="md"]:focus,
+[class*="animate-"][class*="md"]:active,
+*:hover > [class*="animated-"][class*="md"],
+*:focus > [class*="animated-"][class*="md"],
+*:active > [class*="animated-"][class*="md"],
+[class*="radio-"][class*="md"]:checked ~ [class*="target-"][class*="md"],
+[class*="show-"][class*="md"],
+[class*="shown-"][class*="md"] > * {
+    animation-duration: var(--animation-duration-md);
+}
+
+[class*="animate-"][class*="lg"]:hover,
+[class*="animate-"][class*="lg"]:focus,
+[class*="animate-"][class*="lg"]:active,
+*:hover > [class*="animated-"][class*="lg"],
+*:focus > [class*="animated-"][class*="lg"],
+*:active > [class*="animated-"][class*="lg"],
+[class*="radio-"][class*="lg"]:checked ~ [class*="target-"][class*="lg"],
+[class*="show-"][class*="lg"],
+[class*="shown-"][class*="lg"] > * {
+    animation-duration: var(--animation-duration-lg);
+}
+
+[class*="animate-"][class*="wd"]:hover,
+[class*="animate-"][class*="wd"]:focus,
+[class*="animate-"][class*="wd"]:active,
+*:hover > [class*="animated-"][class*="wd"],
+*:focus > [class*="animated-"][class*="wd"],
+*:active > [class*="animated-"][class*="wd"],
+[class*="radio-"][class*="wd"]:checked ~ [class*="target-"][class*="wd"],
+[class*="show-"][class*="wd"],
+[class*="shown-"][class*="wd"] > * {
+    animation-duration: var(--animation-duration-wd);
+}
+
+
+/*****************/
+/***** Delay *****/
+[class*="animate-"][class*="small"]:hover,
+[class*="animate-"][class*="small"]:focus,
+[class*="animate-"][class*="small"]:active,
+*:hover > [class*="animated-"][class*="small"],
+*:focus > [class*="animated-"][class*="small"],
+*:active > [class*="animated-"][class*="small"],
+[class*="radio-"][class*="small"]:checked ~ [class*="target-"][class*="small"],
+[class*="show-"][class*="small"],
+[class*="shown-"][class*="small"] > * {
+    animation-delay: var(--animation-delay-small);
+}
+
+[class*="animate-"][class*="medium"]:hover,
+[class*="animate-"][class*="medium"]:focus,
+[class*="animate-"][class*="medium"]:active,
+*:hover > [class*="animated-"][class*="medium"],
+*:focus > [class*="animated-"][class*="medium"],
+*:active > [class*="animated-"][class*="medium"],
+[class*="radio-"][class*="medium"]:checked ~ [class*="target-"][class*="medium"],
+[class*="show-"][class*="medium"],
+[class*="shown-"][class*="medium"] > * {
+    animation-delay: var(--animation-delay-medium);
+}
+
+[class*="animate-"][class*="large"]:hover,
+[class*="animate-"][class*="large"]:focus,
+[class*="animate-"][class*="large"]:active,
+*:hover > [class*="animated-"][class*="large"],
+*:focus > [class*="animated-"][class*="large"],
+*:active > [class*="animated-"][class*="large"],
+[class*="radio-"][class*="large"]:checked ~ [class*="target-"][class*="large"],
+[class*="show-"][class*="large"],
+[class*="shown-"][class*="large"] > * {
+    animation-delay: var(--animation-delay-large);
+}
+
