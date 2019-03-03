@@ -55,17 +55,17 @@
 
     /******************/
     /***** Height *****/
-    --height-sm:            25vh;
+    --height-sm:            10vh;
     --height-md:            50vh;
-    --height-lg:            75vh;
+    --height-lg:            100vh;
 
     --min-height-sm:        25vh;
     --min-height-md:        50vh;
     --min-height-lg:        75vh;
 
-    --max-height-sm:        25vh;
-    --max-height-md:        50vh;
-    --max-height-lg:        75vh;
+    --max-height-sm:        50vh;
+    --max-height-md:        75vh;
+    --max-height-lg:        100vh;
 
 
     /******************/
