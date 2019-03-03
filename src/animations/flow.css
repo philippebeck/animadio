@@ -1,0 +1,132 @@
+/************************************/
+/********** ANIMATION FLOW **********/
+/************************************/
+
+/* Timing Function */
+/* Iteration Count */
+
+
+/***************************/
+/***** Timing Function *****/
+[class*="animate-"][class*="in"]:hover,
+[class*="animate-"][class*="in"]:focus,
+[class*="animate-"][class*="in"]:active,
+*:hover > [class*="animated-"][class*="in"],
+*:focus > [class*="animated-"][class*="in"],
+*:active > [class*="animated-"][class*="in"],
+[class*="radio-"][class*="in"]:checked ~ [class*="target-"][class*="in"],
+[class*="show-"][class*="in"],
+[class*="shown-"][class*="in"] > * {
+    animation-timing-function: ease-in;
+}
+
+[class*="animate-"][class*="out"]:hover,
+[class*="animate-"][class*="out"]:focus,
+[class*="animate-"][class*="out"]:active,
+*:hover > [class*="animated-"][class*="out"],
+*:focus > [class*="animated-"][class*="out"],
+*:active > [class*="animated-"][class*="out"],
+[class*="radio-"][class*="out"]:checked ~ [class*="target-"][class*="out"],
+[class*="show-"][class*="out"],
+[class*="shown-"][class*="out"] > * {
+    animation-timing-function: ease-out;
+}
+
+[class*="animate-"][class*="ease"]:hover,
+[class*="animate-"][class*="ease"]:focus,
+[class*="animate-"][class*="ease"]:active,
+*:hover > [class*="animated-"][class*="ease"],
+*:focus > [class*="animated-"][class*="ease"],
+*:active > [class*="animated-"][class*="ease"],
+[class*="radio-"][class*="ease"]:checked ~ [class*="target-"][class*="ease"],
+[class*="show-"][class*="ease"],
+[class*="shown-"][class*="ease"] > * {
+    animation-timing-function: ease-in-out;
+}
+
+[class*="animate-"][class*="linear"]:hover,
+[class*="animate-"][class*="linear"]:focus,
+[class*="animate-"][class*="linear"]:active,
+*:hover > [class*="animated-"][class*="linear"],
+*:focus > [class*="animated-"][class*="linear"],
+*:active > [class*="animated-"][class*="linear"],
+[class*="radio-"][class*="linear"]:checked ~ [class*="target-"][class*="linear"],
+[class*="show-"][class*="linear"],
+[class*="shown-"][class*="linear"] > * {
+    animation-timing-function: linear;
+}
+
+[class*="animate-"][class*="start"]:hover,
+[class*="animate-"][class*="start"]:focus,
+[class*="animate-"][class*="start"]:active,
+*:hover > [class*="animated-"][class*="start"],
+*:focus > [class*="animated-"][class*="start"],
+*:active > [class*="animated-"][class*="start"],
+[class*="radio-"][class*="start"]:checked ~ [class*="target-"][class*="start"],
+[class*="show-"][class*="start"],
+[class*="shown-"][class*="start"] > * {
+    animation-timing-function: step-start;
+}
+
+[class*="animate-"][class*="end"]:hover,
+[class*="animate-"][class*="end"]:focus,
+[class*="animate-"][class*="end"]:active,
+*:hover > [class*="animated-"][class*="end"],
+*:focus > [class*="animated-"][class*="end"],
+*:active > [class*="animated-"][class*="end"],
+[class*="radio-"][class*="end"]:checked ~ [class*="target-"][class*="end"],
+[class*="show-"][class*="end"],
+[class*="shown-"][class*="end"] > * {
+    animation-timing-function: step-end;
+}
+
+[class*="animate-"][class*="steps"]:hover,
+[class*="animate-"][class*="steps"]:focus,
+[class*="animate-"][class*="steps"]:active,
+*:hover > [class*="animated-"][class*="steps"],
+*:focus > [class*="animated-"][class*="steps"],
+*:active > [class*="animated-"][class*="steps"],
+[class*="radio-"][class*="steps"]:checked ~ [class*="target-"][class*="steps"],
+[class*="show-"][class*="steps"],
+[class*="shown-"][class*="steps"] > * {
+    animation-timing-function: steps(var(--animation-timing-steps));
+}
+
+[class*="animate-"][class*="bezier"]:hover,
+[class*="animate-"][class*="bezier"]:focus,
+[class*="animate-"][class*="bezier"]:active,
+*:hover > [class*="animated-"][class*="bezier"],
+*:focus > [class*="animated-"][class*="bezier"],
+*:active > [class*="animated-"][class*="bezier"],
+[class*="radio-"][class*="bezier"]:checked ~ [class*="target-"][class*="bezier"],
+[class*="show-"][class*="bezier"],
+[class*="shown-"][class*="bezier"] > * {
+    animation-timing-function: cubic-bezier(var(--animation-timing-bezier));
+}
+
+
+/***************************/
+/***** Iteration Count *****/
+[class*="animate-"][class*="few"]:hover,
+[class*="animate-"][class*="few"]:focus,
+[class*="animate-"][class*="few"]:active,
+*:hover > [class*="animated-"][class*="few"],
+*:focus > [class*="animated-"][class*="few"],
+*:active > [class*="animated-"][class*="few"],
+[class*="radio-"][class*="few"]:checked ~ [class*="target-"][class*="few"],
+[class*="show-"][class*="few"],
+[class*="shown-"][class*="few"] > * {
+    animation-iteration-count: var(--animation-count-few);
+}
+
+[class*="animate-"][class*="many"]:hover,
+[class*="animate-"][class*="many"]:focus,
+[class*="animate-"][class*="many"]:active,
+*:hover > [class*="animated-"][class*="many"],
+*:focus > [class*="animated-"][class*="many"],
+*:active > [class*="animated-"][class*="many"],
+[class*="radio-"][class*="many"]:checked ~ [class*="target-"][class*="many"],
+[class*="show-"][class*="many"],
+[class*="shown-"][class*="many"] > * {
+    animation-iteration-count: var(--animation-count-many);
+}
