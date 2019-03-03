@@ -21,8 +21,12 @@ module.exports = function(grunt) {
 
                     'src/helpers/show.css',
                     'src/helpers/spacing.css',
+                    'src/helpers/border.css',
                     'src/helpers/size.css',
                     'src/helpers/text.css',
+                    'src/helpers/color.css',
+                    'src/helpers/shadow.css',
+                    'src/helpers/animate.css',
 
                     'src/elements/navbar.css',
                     'src/elements/button.css',
