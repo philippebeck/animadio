@@ -8,3 +8,11 @@
 /* Color */
 /* Radius */
 
+
+/******************/
+/***** Global *****/
+[class*="border"] {
+    border-style: var(--border-style-global);
+    border-width: var(--border-width-global);
+}
+
