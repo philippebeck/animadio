@@ -120,3 +120,21 @@
     text-shadow: var(--shadow-x-lg) var(--shadow-y-lg);
 }
 
+
+/*********************/
+/***** Text Blur *****/
+[class*="text"][class*="blur"] {
+    text-shadow: 0 0 var(--text-blur-all);
+}
+
+[class*="text"][class*="blur"][class*="sm"] {
+    text-shadow: var(--text-x-sm) var(--text-y-sm) var(--text-blur-sm);
+}
+
+[class*="text"][class*="blur"][class*="md"] {
+    text-shadow: var(--text-x-md) var(--text-y-md) var(--text-blur-md);
+}
+
+[class*="text"][class*="blur"][class*="lg"] {
+    text-shadow: var(--text-x-lg) var(--text-y-lg) var(--text-blur-lg);
+}
