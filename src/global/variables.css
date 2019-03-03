@@ -217,6 +217,10 @@
     --translateX:               -100vw;
     --translateY:               -100vh;
 
+    /***** Transform Origin *****/
+    --transform-origin-near:    50px 50px;
+    --transform-origin-far:     top right 50px;
+
 
     /*****************/
     /***** Width *****/
