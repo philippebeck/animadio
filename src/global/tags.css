@@ -33,12 +33,6 @@ body {
 
 /******************/
 /***** Titles *****/
-article,
-footer {
-    padding-top: var(--navbar-height);
-}
-
-
 h1,
 h2,
 h3,
