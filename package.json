@@ -9,7 +9,10 @@
     "flexbox",
     "reusability",
     "customizability",
+    "variables",
+    "keyframes",
     "animation",
+    "helpers",
     "radio",
     "standalone"
   ],
