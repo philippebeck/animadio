@@ -8,3 +8,30 @@
 /* Text */
 /* Text Blur */
 
+
+/***************/
+/***** Box *****/
+[class*="shadow"][class*="sm"] {
+    box-shadow: var(--shadow-x-sm) var(--shadow-y-sm);
+}
+
+[class*="shadow"][class*="inset"][class*="sm"] {
+    box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm);
+}
+
+[class*="shadow"][class*="md"] {
+    box-shadow: var(--shadow-x-md) var(--shadow-y-md);
+}
+
+[class*="shadow"][class*="inset"][class*="md"] {
+    box-shadow: inset var(--shadow-x-md) var(--shadow-y-md);
+}
+
+[class*="shadow"][class*="lg"] {
+    box-shadow: var(--shadow-x-lg) var(--shadow-y-lg);
+}
+
+[class*="shadow"][class*="inset"][class*="lg"] {
+    box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg);
+}
+
