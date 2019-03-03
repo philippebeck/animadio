@@ -37,9 +37,12 @@ module.exports = function(grunt) {
                     'src/elements/footer.css',
 
                     'src/animations/name.css',
-                    'src/animations/time.css',
-                    'src/animations/flow.css',
-                    'src/animations/state.css',
+                    'src/animations/duration.css',
+                    'src/animations/delay.css',
+                    'src/animations/timing.css',
+                    'src/animations/count.css',
+                    'src/animations/direction.css',
+                    'src/animations/fill.css',
                     'src/animations/origin.css'
                 ],
                 dest: 'dist/animadio.css'
