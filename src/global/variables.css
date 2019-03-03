@@ -138,6 +138,26 @@
     --padding-left-lg:          50px;
 
 
+    /*******************/
+    /***** Shadows *****/
+    --shadow-x-sm:              2px;
+    --shadow-x-md:              5px;
+    --shadow-x-lg:              10px;
+
+    --shadow-y-sm:              2px;
+    --shadow-y-md:              5px;
+    --shadow-y-lg:              10px;
+
+    --shadow-blur-all:          5px;
+    --shadow-blur-sm:           2px;
+    --shadow-blur-md:           5px;
+    --shadow-blur-lg:           10px;
+
+    --shadow-spread-all:        5px;
+    --shadow-spread-sm:         2px;
+    --shadow-spread-md:         5px;
+    --shadow-spread-lg:         10px;
+
     /*********************/
     /***** Transform *****/
     --rotate:                   -360deg;
