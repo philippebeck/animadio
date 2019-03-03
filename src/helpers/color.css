@@ -1,0 +1,164 @@
+/***************************/
+/********** COLOR **********/
+/***************************/
+
+/* Blue */
+/* Brown */
+/* Gray */
+/* Grey */
+/* Green */
+/* Orange */
+/* Red */
+/* Violet */
+/* White */
+/* Yellow */
+
+
+/****************/
+/***** Blue *****/
+.blue-text {
+    color: var(--blue);
+}
+
+.blue-box {
+    background-color: var(--blue);
+}
+
+.blue-border {
+    border-color: var(--blue);
+}
+
+
+/*****************/
+/***** Brown *****/
+.brown-text {
+    color: var(--brown);
+}
+
+.brown-box {
+    background-color: var(--brown);
+}
+
+.brown-border {
+    border-color: var(--brown);
+}
+
+
+/****************/
+/***** Gray *****/
+.gray-text {
+    color: var(--gray);
+}
+
+.gray-box {
+    background-color: var(--gray);
+}
+
+.gray-border {
+    border-color: var(--gray);
+}
+
+
+/****************/
+/***** Grey *****/
+.grey-text {
+    color: var(--grey);
+}
+
+.grey-box {
+    background-color: var(--grey);
+}
+
+.grey-border {
+    border-color: var(--grey);
+}
+
+
+/*****************/
+/***** Green *****/
+.green-text {
+    color: var(--green);
+}
+
+.green-box {
+    background-color: var(--green);
+}
+
+.green-border {
+    border-color: var(--green);
+}
+
+
+/****************/
+/***** Orange *****/
+.orange-text {
+    color: var(--orange);
+}
+
+.orange-box {
+    background-color: var(--orange);
+}
+
+.orange-border {
+    border-color: var(--orange);
+}
+
+
+/***************/
+/***** Red *****/
+.red-text {
+    color: var(--red);
+}
+
+.red-box {
+    background-color: var(--red);
+}
+
+.red-border {
+    border-color: var(--red);
+}
+
+
+/******************/
+/***** Violet *****/
+.violet-text {
+    color: var(--violet);
+}
+
+.violet-box {
+    background-color: var(--violet);
+}
+
+.violet-border {
+    border-color: var(--violet);
+}
+
+
+/*****************/
+/***** White *****/
+.white-text {
+    color: var(--white);
+}
+
+.white-box {
+    background-color: var(--white);
+}
+
+.white-border {
+    border-color: var(--white);
+}
+
+
+/****************/
+/***** Yellow *****/
+.yellow-text {
+    color: var(--yellow);
+}
+
+.yellow-box {
+    background-color: var(--yellow);
+}
+
+.yellow-border {
+    border-color: var(--yellow);
+}
