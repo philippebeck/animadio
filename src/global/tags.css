@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--titles-font-family);
+    font-family: var(--font-family-titles);
 }
 
 h1 {
