@@ -16,3 +16,38 @@
     border-width: var(--border-width-global);
 }
 
+
+/*****************/
+/***** Style *****/
+[class*="border"][class*="dashed"] {
+    border-style: dashed;
+}
+
+[class*="border"][class*="dotted"] {
+    border-style: dotted;
+}
+
+[class*="border"][class*="double"] {
+    border-style: double;
+}
+
+[class*="border"][class*="groove"] {
+    border-style: groove;
+}
+
+[class*="border"][class*="inset"] {
+    border-style: inset;
+}
+
+[class*="border"][class*="outset"] {
+    border-style: outset;
+}
+
+[class*="border"][class*="ridge"] {
+    border-style: ridge;
+}
+
+[class*="border"][class*="solid"] {
+    border-style: solid;
+}
+
