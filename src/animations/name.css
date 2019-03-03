@@ -1,0 +1,164 @@
+/************************************/
+/********** ANIMATION NAME **********/
+/************************************/
+
+/* Rotate */
+/* Scale */
+/* Skew */
+/* Translate */
+
+
+/******************/
+/***** Rotate *****/
+[class*="animate-"][class*="rotate"]:hover,
+[class*="animate-"][class*="rotate"]:focus,
+[class*="animate-"][class*="rotate"]:active,
+*:hover > [class*="animated-"][class*="rotate"],
+*:focus > [class*="animated-"][class*="rotate"],
+*:active > [class*="animated-"][class*="rotate"],
+[class*="radio-"][class*="rotate"]:checked ~ [class*="target-"][class*="rotate"],
+[class*="show-"][class*="rotate"],
+[class*="shown-"][class*="rotate"] > * {
+    animation-name: rotate;
+}
+
+[class*="animate-"][class*="rotateX"]:hover,
+[class*="animate-"][class*="rotateX"]:focus,
+[class*="animate-"][class*="rotateX"]:active,
+*:hover > [class*="animated-"][class*="rotateX"],
+*:focus > [class*="animated-"][class*="rotateX"],
+*:active > [class*="animated-"][class*="rotateX"],
+[class*="radio-"][class*="rotateX"]:checked ~ [class*="target-"][class*="rotateX"],
+[class*="show-"][class*="rotateX"],
+[class*="shown-"][class*="rotateX"] > * {
+    animation-name: rotateX;
+}
+
+[class*="animate-"][class*="rotateY"]:hover,
+[class*="animate-"][class*="rotateY"]:focus,
+[class*="animate-"][class*="rotateY"]:active,
+*:hover > [class*="animated-"][class*="rotateY"],
+*:focus > [class*="animated-"][class*="rotateY"],
+*:active > [class*="animated-"][class*="rotateY"],
+[class*="radio-"][class*="rotateY"]:checked ~ [class*="target-"][class*="rotateY"],
+[class*="show-"][class*="rotateY"],
+[class*="shown-"][class*="rotateY"] > * {
+    animation-name: rotateY;
+}
+
+
+/*****************/
+/***** Scale *****/
+[class*="animate-"][class*="scale"]:hover,
+[class*="animate-"][class*="scale"]:focus,
+[class*="animate-"][class*="scale"]:active,
+*:hover > [class*="animated-"][class*="scale"],
+*:focus > [class*="animated-"][class*="scale"],
+*:active > [class*="animated-"][class*="scale"],
+[class*="radio-"][class*="scale"]:checked ~ [class*="target-"][class*="scale"],
+[class*="show-"][class*="scale"],
+[class*="shown-"][class*="scale"] > * {
+    animation-name: scale;
+}
+
+[class*="animate-"][class*="scaleX"]:hover,
+[class*="animate-"][class*="scaleX"]:focus,
+[class*="animate-"][class*="scaleX"]:active,
+*:hover > [class*="animated-"][class*="scaleX"],
+*:focus > [class*="animated-"][class*="scaleX"],
+*:active > [class*="animated-"][class*="scaleX"],
+[class*="radio-"][class*="scaleX"]:checked ~ [class*="target-"][class*="scaleX"],
+[class*="show-"][class*="scaleX"],
+[class*="shown-"][class*="scaleX"] > * {
+    animation-name: scaleX;
+}
+
+[class*="animate-"][class*="scaleY"]:hover,
+[class*="animate-"][class*="scaleY"]:focus,
+[class*="animate-"][class*="scaleY"]:active,
+*:hover > [class*="animated-"][class*="scaleY"],
+*:focus > [class*="animated-"][class*="scaleY"],
+*:active > [class*="animated-"][class*="scaleY"],
+[class*="radio-"][class*="scaleY"]:checked ~ [class*="target-"][class*="scaleY"],
+[class*="show-"][class*="scaleY"],
+[class*="shown-"][class*="scaleY"] > * {
+    animation-name: scaleY;
+}
+
+
+/****************/
+/***** Skew *****/
+[class*="animate-"][class*="skew"]:hover,
+[class*="animate-"][class*="skew"]:focus,
+[class*="animate-"][class*="skew"]:active,
+*:hover > [class*="animated-"][class*="skew"],
+*:focus > [class*="animated-"][class*="skew"],
+*:active > [class*="animated-"][class*="skew"],
+[class*="radio-"][class*="skew"]:checked ~ [class*="target-"][class*="skew"],
+[class*="show-"][class*="skew"],
+[class*="shown-"][class*="skew"] > * {
+    animation-name: skew;
+}
+
+[class*="animate-"][class*="skewX"]:hover,
+[class*="animate-"][class*="skewX"]:focus,
+[class*="animate-"][class*="skewX"]:active,
+*:hover > [class*="animated-"][class*="skewX"],
+*:focus > [class*="animated-"][class*="skewX"],
+*:active > [class*="animated-"][class*="skewX"],
+[class*="radio-"][class*="skewX"]:checked ~ [class*="target-"][class*="skewX"],
+[class*="show-"][class*="skewX"],
+[class*="shown-"][class*="skewX"] > * {
+    animation-name: skewX;
+}
+
+[class*="animate-"][class*="skewY"]:hover,
+[class*="animate-"][class*="skewY"]:focus,
+[class*="animate-"][class*="skewY"]:active,
+*:hover > [class*="animated-"][class*="skewY"],
+*:focus > [class*="animated-"][class*="skewY"],
+*:active > [class*="animated-"][class*="skewY"],
+[class*="radio-"][class*="skewY"]:checked ~ [class*="target-"][class*="skewY"],
+[class*="show-"][class*="skewY"],
+[class*="shown-"][class*="skewY"] > * {
+    animation-name: skewY;
+}
+
+
+/*********************/
+/***** Translate *****/
+[class*="animate-"][class*="translate"]:hover,
+[class*="animate-"][class*="translate"]:focus,
+[class*="animate-"][class*="translate"]:active,
+*:hover > [class*="animated-"][class*="translate"],
+*:focus > [class*="animated-"][class*="translate"],
+*:active > [class*="animated-"][class*="translate"],
+[class*="radio-"][class*="translate"]:checked ~ [class*="target-"][class*="translate"],
+[class*="show-"][class*="translate"],
+[class*="shown-"][class*="translate"] > * {
+    animation-name: translate;
+}
+
+[class*="animate-"][class*="translateX"]:hover,
+[class*="animate-"][class*="translateX"]:focus,
+[class*="animate-"][class*="translateX"]:active,
+*:hover > [class*="animated-"][class*="translateX"],
+*:focus > [class*="animated-"][class*="translateX"],
+*:active > [class*="animated-"][class*="translateX"],
+[class*="radio-"][class*="translateX"]:checked ~ [class*="target-"][class*="translateX"],
+[class*="show-"][class*="translateX"],
+[class*="shown-"][class*="translateX"] > * {
+    animation-name: translateX;
+}
+
+[class*="animate-"][class*="translateY"]:hover,
+[class*="animate-"][class*="translateY"]:focus,
+[class*="animate-"][class*="translateY"]:active,
+*:hover > [class*="animated-"][class*="translateY"],
+*:focus > [class*="animated-"][class*="translateY"],
+*:active > [class*="animated-"][class*="translateY"],
+[class*="radio-"][class*="translateY"]:checked ~ [class*="target-"][class*="translateY"],
+[class*="show-"][class*="translateY"],
+[class*="shown-"][class*="translateY"] > * {
+    animation-name: translateY;
+}
