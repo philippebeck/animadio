@@ -145,14 +145,13 @@
     /***** Width *****/
     --width-sm:             25%;
     --width-md:             50%;
-    --width-lg:             75%;
+    --width-lg:             100%;
 
     --min-width-sm:         25%;
     --min-width-md:         50%;
     --min-width-lg:         75%;
 
-    --max-width-sm:         25%;
-    --max-width-md:         50%;
-    --max-width-lg:         75%;
-
+    --max-width-sm:         50%;
+    --max-width-md:         75%;
+    --max-width-lg:         100%;
 }
