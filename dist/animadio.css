@@ -1,4 +1,4 @@
-/* animadio v0.1.7 | https://github.com/animadio/animadio#readme | MIT License */
+/* animadio v0.1.8 | https://github.com/animadio/animadio#readme | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -360,6 +360,7 @@ template {
 /* Height */
 /* Margin */
 /* Padding */
+/* Shadows */
 /* Transform */
 /* Width */
 
@@ -488,6 +489,41 @@ template {
     --padding-left-sm:          10px;
     --padding-left-md:          20px;
     --padding-left-lg:          50px;
+
+
+    /*******************/
+    /***** Shadows *****/
+    --shadow-x-sm:              2px;
+    --shadow-x-md:              5px;
+    --shadow-x-lg:              10px;
+
+    --shadow-y-sm:              2px;
+    --shadow-y-md:              5px;
+    --shadow-y-lg:              10px;
+
+    --shadow-blur-all:          5px;
+    --shadow-blur-sm:           2px;
+    --shadow-blur-md:           5px;
+    --shadow-blur-lg:           10px;
+
+    --shadow-spread-all:        5px;
+    --shadow-spread-sm:         2px;
+    --shadow-spread-md:         5px;
+    --shadow-spread-lg:         10px;
+
+    /***** Text Shadow *****/
+    --text-x-sm:                1px;
+    --text-x-md:                2px;
+    --text-x-lg:                5px;
+
+    --text-y-sm:                1px;
+    --text-y-md:                2px;
+    --text-y-lg:                5px;
+
+    --text-blur-all:            2px;
+    --text-blur-sm:             1px;
+    --text-blur-md:             2px;
+    --text-blur-lg:             5px;
 
 
     /*********************/
@@ -1509,6 +1545,146 @@ table {
 .yellow-box {
     background-color: var(--yellow);
 }
+/****************************/
+/********** SHADOW **********/
+/****************************/
+
+/* Box */
+/* Box Blur */
+/* Box Spread */
+/* Text */
+/* Text Blur */
+
+
+/***************/
+/***** Box *****/
+[class*="shadow"][class*="sm"] {
+    box-shadow: var(--shadow-x-sm) var(--shadow-y-sm);
+}
+
+[class*="shadow"][class*="inset"][class*="sm"] {
+    box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm);
+}
+
+[class*="shadow"][class*="md"] {
+    box-shadow: var(--shadow-x-md) var(--shadow-y-md);
+}
+
+[class*="shadow"][class*="inset"][class*="md"] {
+    box-shadow: inset var(--shadow-x-md) var(--shadow-y-md);
+}
+
+[class*="shadow"][class*="lg"] {
+    box-shadow: var(--shadow-x-lg) var(--shadow-y-lg);
+}
+
+[class*="shadow"][class*="inset"][class*="lg"] {
+    box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg);
+}
+
+
+/********************/
+/***** Box Blur *****/
+[class*="shadow"][class*="blur"] {
+    box-shadow: 0 0 var(--shadow-blur-all);
+}
+
+[class*="shadow"][class*="inset"][class*="blur"] {
+    box-shadow: inset 0 0 var(--shadow-blur-all);
+}
+
+[class*="shadow"][class*="blur"][class*="sm"] {
+    box-shadow: var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm);
+}
+
+[class*="shadow"][class*="inset"][class*="blur"][class*="sm"] {
+    box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm);
+}
+
+[class*="shadow"][class*="blur"][class*="md"] {
+    box-shadow: var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md);
+}
+
+[class*="shadow"][class*="inset"][class*="blur"][class*="md"] {
+    box-shadow: inset var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md);
+}
+
+[class*="shadow"][class*="blur"][class*="lg"] {
+    box-shadow: var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg);
+}
+
+[class*="shadow"][class*="inset"][class*="blur"][class*="lg"] {
+    box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg);
+}
+
+
+/**********************/
+/***** Box Spread *****/
+[class*="shadow"][class*="spread"] {
+    box-shadow: 0 0 var(--shadow-blur-all) var(--shadow-spread-all);
+}
+
+[class*="shadow"][class*="inset"][class*="spread"] {
+    box-shadow: inset 0 0 var(--shadow-blur-all) var(--shadow-spread-all);
+}
+
+[class*="shadow"][class*="spread"][class*="sm"] {
+    box-shadow: var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm) var(--shadow-spread-sm);
+}
+
+[class*="shadow"][class*="inset"][class*="spread"][class*="sm"] {
+    box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm) var(--shadow-spread-sm);
+}
+
+[class*="shadow"][class*="spread"][class*="md"] {
+    box-shadow: var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md) var(--shadow-spread-md);
+}
+
+[class*="shadow"][class*="inset"][class*="spread"][class*="md"] {
+    box-shadow: inset var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md) var(--shadow-spread-md);
+}
+
+[class*="shadow"][class*="spread"][class*="lg"] {
+    box-shadow: var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg) var(--shadow-spread-lg);
+}
+
+[class*="shadow"][class*="inset"][class*="spread"][class*="lg"] {
+    box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg) var(--shadow-spread-lg);
+}
+
+
+/****************/
+/***** Text *****/
+[class*="text"][class*="sm"] {
+    text-shadow: var(--shadow-x-sm) var(--shadow-y-sm);
+}
+
+[class*="text"][class*="md"] {
+    text-shadow: var(--shadow-x-md) var(--shadow-y-md);
+}
+
+[class*="text"][class*="lg"] {
+    text-shadow: var(--shadow-x-lg) var(--shadow-y-lg);
+}
+
+
+/*********************/
+/***** Text Blur *****/
+[class*="text"][class*="blur"] {
+    text-shadow: 0 0 var(--text-blur-all);
+}
+
+[class*="text"][class*="blur"][class*="sm"] {
+    text-shadow: var(--text-x-sm) var(--text-y-sm) var(--text-blur-sm);
+}
+
+[class*="text"][class*="blur"][class*="md"] {
+    text-shadow: var(--text-x-md) var(--text-y-md) var(--text-blur-md);
+}
+
+[class*="text"][class*="blur"][class*="lg"] {
+    text-shadow: var(--text-x-lg) var(--text-y-lg) var(--text-blur-lg);
+}
 
 
 /****************************/
@@ -1552,4 +1728,4 @@ table {
 
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 3rd Mar 2019 @ 1:57:05 PM */
+ Updated: 3rd Mar 2019 @ 4:39:52 PM */
