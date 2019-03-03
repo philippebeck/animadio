@@ -1,0 +1,28 @@
+/*****************************************/
+/********** ANIMATION FILL MODE **********/
+/*****************************************/
+
+
+[class*="animate-"][class*="front"]:hover,
+[class*="animate-"][class*="front"]:focus,
+[class*="animate-"][class*="front"]:active,
+*:hover > [class*="animated-"][class*="front"],
+*:focus > [class*="animated-"][class*="front"],
+*:active > [class*="animated-"][class*="front"],
+[class*="radio-"][class*="front"]:checked ~ [class*="target-"][class*="front"],
+[class*="show-"][class*="front"],
+[class*="shown-"][class*="front"] > * {
+    animation-fill-mode: forwards;
+}
+
+[class*="animate-"][class*="back"]:hover,
+[class*="animate-"][class*="back"]:focus,
+[class*="animate-"][class*="back"]:active,
+*:hover > [class*="animated-"][class*="back"],
+*:focus > [class*="animated-"][class*="back"],
+*:active > [class*="animated-"][class*="back"],
+[class*="radio-"][class*="back"]:checked ~ [class*="target-"][class*="back"],
+[class*="show-"][class*="back"],
+[class*="shown-"][class*="back"] > * {
+    animation-fill-mode: backwards;
+}
