@@ -1,0 +1,40 @@
+/*************************************/
+/********** ANIMATION DELAY **********/
+/*************************************/
+
+
+[class*="animate-"][class*="small"]:hover,
+[class*="animate-"][class*="small"]:focus,
+[class*="animate-"][class*="small"]:active,
+*:hover > [class*="animated-"][class*="small"],
+*:focus > [class*="animated-"][class*="small"],
+*:active > [class*="animated-"][class*="small"],
+[class*="radio-"][class*="small"]:checked ~ [class*="target-"][class*="small"],
+[class*="show-"][class*="small"],
+[class*="shown-"][class*="small"] > * {
+    animation-delay: var(--animation-delay-small);
+}
+
+[class*="animate-"][class*="medium"]:hover,
+[class*="animate-"][class*="medium"]:focus,
+[class*="animate-"][class*="medium"]:active,
+*:hover > [class*="animated-"][class*="medium"],
+*:focus > [class*="animated-"][class*="medium"],
+*:active > [class*="animated-"][class*="medium"],
+[class*="radio-"][class*="medium"]:checked ~ [class*="target-"][class*="medium"],
+[class*="show-"][class*="medium"],
+[class*="shown-"][class*="medium"] > * {
+    animation-delay: var(--animation-delay-medium);
+}
+
+[class*="animate-"][class*="large"]:hover,
+[class*="animate-"][class*="large"]:focus,
+[class*="animate-"][class*="large"]:active,
+*:hover > [class*="animated-"][class*="large"],
+*:focus > [class*="animated-"][class*="large"],
+*:active > [class*="animated-"][class*="large"],
+[class*="radio-"][class*="large"]:checked ~ [class*="target-"][class*="large"],
+[class*="show-"][class*="large"],
+[class*="shown-"][class*="large"] > * {
+    animation-delay: var(--animation-delay-large);
+}
