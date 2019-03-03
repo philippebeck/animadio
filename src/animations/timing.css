@@ -1,13 +1,8 @@
-/************************************/
-/********** ANIMATION FLOW **********/
-/************************************/
-
-/* Timing Function */
-/* Iteration Count */
+/***********************************************/
+/********** ANIMATION TIMING FUNCTION **********/
+/***********************************************/
 
 
-/***************************/
-/***** Timing Function *****/
 [class*="animate-"][class*="in"]:hover,
 [class*="animate-"][class*="in"]:focus,
 [class*="animate-"][class*="in"]:active,
@@ -102,31 +97,4 @@
 [class*="show-"][class*="bezier"],
 [class*="shown-"][class*="bezier"] > * {
     animation-timing-function: cubic-bezier(var(--animation-timing-bezier));
-}
-
-
-/***************************/
-/***** Iteration Count *****/
-[class*="animate-"][class*="few"]:hover,
-[class*="animate-"][class*="few"]:focus,
-[class*="animate-"][class*="few"]:active,
-*:hover > [class*="animated-"][class*="few"],
-*:focus > [class*="animated-"][class*="few"],
-*:active > [class*="animated-"][class*="few"],
-[class*="radio-"][class*="few"]:checked ~ [class*="target-"][class*="few"],
-[class*="show-"][class*="few"],
-[class*="shown-"][class*="few"] > * {
-    animation-iteration-count: var(--animation-count-few);
-}
-
-[class*="animate-"][class*="many"]:hover,
-[class*="animate-"][class*="many"]:focus,
-[class*="animate-"][class*="many"]:active,
-*:hover > [class*="animated-"][class*="many"],
-*:focus > [class*="animated-"][class*="many"],
-*:active > [class*="animated-"][class*="many"],
-[class*="radio-"][class*="many"]:checked ~ [class*="target-"][class*="many"],
-[class*="show-"][class*="many"],
-[class*="shown-"][class*="many"] > * {
-    animation-iteration-count: var(--animation-count-many);
 }
