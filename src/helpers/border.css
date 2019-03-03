@@ -51,3 +51,18 @@
     border-style: solid;
 }
 
+
+/*****************/
+/***** Width *****/
+[class*="border"][class*="sm"] {
+    border-width: var(--border-width-sm);
+}
+
+[class*="border"][class*="md"] {
+    border-width: var(--border-width-md);
+}
+
+[class*="border"][class*="lg"] {
+    border-width: var(--border-width-lg);
+}
+
