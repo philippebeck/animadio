@@ -26,7 +26,6 @@ module.exports = function(grunt) {
                     'src/helpers/text.css',
                     'src/helpers/color.css',
                     'src/helpers/shadow.css',
-                    'src/helpers/animate.css',
 
                     'src/elements/navbar.css',
                     'src/elements/button.css',
@@ -35,7 +34,13 @@ module.exports = function(grunt) {
                     'src/elements/gallery.css',
                     'src/elements/table.css',
                     'src/elements/form.css',
-                    'src/elements/footer.css'
+                    'src/elements/footer.css',
+
+                    'src/animations/name.css',
+                    'src/animations/time.css',
+                    'src/animations/flow.css',
+                    'src/animations/state.css',
+                    'src/animations/origin.css'
                 ],
                 dest: 'dist/animadio.css'
             }
