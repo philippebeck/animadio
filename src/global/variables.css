@@ -158,6 +158,21 @@
     --shadow-spread-md:         5px;
     --shadow-spread-lg:         10px;
 
+    /***** Text Shadow *****/
+    --text-x-sm:                1px;
+    --text-x-md:                2px;
+    --text-x-lg:                5px;
+
+    --text-y-sm:                1px;
+    --text-y-md:                2px;
+    --text-y-lg:                5px;
+
+    --text-blur-all:            2px;
+    --text-blur-sm:             1px;
+    --text-blur-md:             2px;
+    --text-blur-lg:             5px;
+
+
     /*********************/
     /***** Transform *****/
     --rotate:                   -360deg;
