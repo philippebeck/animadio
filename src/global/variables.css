@@ -2,6 +2,7 @@
 /********** VARIABLES **********/
 /*******************************/
 
+/* Borders */
 /* Colors */
 /* Fonts */
 /* Height */
@@ -12,6 +13,21 @@
 
 
 :root {
+    /*******************/
+    /***** Borders *****/
+    --border-style-global:      solid;
+    --border-width-global:      medium;
+
+    --border-width-sm:          thin;
+    --border-width-md:          medium;
+    --border-width-lg:          thick;
+
+    --border-radius-slight:     10px;
+    --border-radius-round:      50px;
+    --border-radius-circle:     50%;
+    --border-radius-ellipse:    50% / 25%;
+
+
     /******************/
     /***** Colors *****/
     --blue:                 RoyalBlue;
