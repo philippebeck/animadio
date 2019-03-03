@@ -24,9 +24,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    line-height: var(--global-line-height);
-    font-size: var(--global-font-size);
-    font-family: var(--global-font-family);
+    line-height: var(--line-height-global);
+    font-size: var(--font-size-global);
+    font-family: var(--font-family-global);
     scroll-behavior: smooth;
 }
 
