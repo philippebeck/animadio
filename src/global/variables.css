@@ -14,6 +14,22 @@
 
 
 :root {
+    /**********************/
+    /***** Animations *****/
+
+    /***** Durations *****/
+    --animation-duration-tn:    1s;
+    --animation-duration-sm:    2s;
+    --animation-duration-md:    5s;
+    --animation-duration-lg:    10s;
+    --animation-duration-wd:    60s;
+
+    /***** Delay *****/
+    --animation-delay-small:    1s;
+    --animation-delay-medium:   2s;
+    --animation-delay-large:    3s;
+
+
     /*******************/
     /***** Borders *****/
     --border-style-global:      solid;
