@@ -1,4 +1,4 @@
-/* animadio v0.1.4 | https://github.com/animadio/animadio#readme | MIT License */
+/* animadio v0.1.5 | https://github.com/animadio/animadio#readme | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -357,6 +357,8 @@ template {
 /* Colors */
 /* Fonts */
 /* Height */
+/* Margin */
+/* Padding */
 /* Transform */
 /* Width */
 
@@ -389,28 +391,33 @@ template {
 
     /*****************/
     /***** Fonts *****/
-    --global-font-family:   serif;
-    --global-font-size:     1.5rem;
-    --global-line-height:   1.5;
+    --font-family-global:   serif;
+    --font-family-titles:   sans-serif;
 
-    --titles-font-family:   sans-serif;
+    --line-height-global:   1.5;
+
+    --font-size-global:     1.5rem;
+
+    --font-size-tn:         1.5rem;
+    --font-size-sm:         2rem;
+    --font-size-md:         2.5rem;
+    --font-size-lg:         3rem;
+    --font-size-wd:         3.5rem;
 
 
     /******************/
     /***** Height *****/
-    --height-sm:            25vh;
+    --height-sm:            10vh;
     --height-md:            50vh;
-    --height-lg:            75vh;
+    --height-lg:            100vh;
 
     --min-height-sm:        25vh;
     --min-height-md:        50vh;
     --min-height-lg:        75vh;
 
-    --max-height-sm:        25vh;
-    --max-height-md:        50vh;
-    --max-height-lg:        75vh;
-
-    --navbar-height:        100px;
+    --max-height-sm:        50vh;
+    --max-height-md:        75vh;
+    --max-height-lg:        100vh;
 
 
     /******************/
@@ -490,16 +497,15 @@ template {
     /***** Width *****/
     --width-sm:             25%;
     --width-md:             50%;
-    --width-lg:             75%;
+    --width-lg:             100%;
 
     --min-width-sm:         25%;
     --min-width-md:         50%;
     --min-width-lg:         75%;
 
-    --max-width-sm:         25%;
-    --max-width-md:         50%;
-    --max-width-lg:         75%;
-
+    --max-width-sm:         50%;
+    --max-width-md:         75%;
+    --max-width-lg:         100%;
 }
 /*******************************/
 /********** KEYFRAMES **********/
@@ -622,6 +628,7 @@ template {
 /* Links */
 /* Lists */
 /* Medias */
+/* Tables */
 
 
 /******************/
@@ -637,42 +644,57 @@ html {
 body {
     margin: 0;
     padding: 0;
-    line-height: var(--global-line-height);
-    font-size: var(--global-font-size);
-    font-family: var(--global-font-family);
+    line-height: var(--line-height-global);
+    font-size: var(--font-size-global);
+    font-family: var(--font-family-global);
     scroll-behavior: smooth;
 }
 
 
-/*********************/
-/***** Structure *****/
-article,
-footer {
-    padding-top: var(--navbar-height);
-}
-
-
-/* ****************** */
-/* ***** Titles ***** */
+/******************/
+/***** Titles *****/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: var(--titles-font-family);
+    font-family: var(--font-family-titles);
+}
+
+h1 {
+    font-size: var(--font-size-wd);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: var(--font-size-lg);
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: var(--font-size-md);
+}
+
+h4 {
+    font-size: var(--font-size-sm);
+}
+
+h5,
+h6 {
+    font-size: var(--font-size-tn);
 }
 
 
-/* ***************** */
-/* ***** Links ***** */
+/*****************/
+/***** Links *****/
 a {
     text-decoration: none;
 }
 
 
-/* ***************** */
-/* ***** Lists ***** */
+/*****************/
+/***** Lists *****/
 ul {
     margin: 0;
     padding: 0;
@@ -680,12 +702,22 @@ ul {
 }
 
 
-/* ****************** */
-/* ***** Medias ***** */
+/******************/
+/***** Medias *****/
 img,
 video {
     max-width: 100%;
     height: auto;
+}
+
+
+/*****************/
+/***** Table *****/
+table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
 }
 /*****************************/
 /********** DISPLAY **********/
@@ -704,11 +736,22 @@ video {
 /* Position */
 
 
-/****************************/
-/***** Container Helper *****/
-.container {
+/*****************************/
+/***** Container Helpers *****/
+[class^="container"] {
     margin: auto;
-    max-width: 80%;
+}
+
+.container-sm {
+    max-width: var(--max-width-sm);
+}
+
+.container {
+    max-width: var(--max-width-md);
+}
+
+.container-lg {
+    max-width: var(--max-width-lg);
 }
 
 
@@ -751,7 +794,7 @@ video {
     display: flex;
 }
 
-.dis-in-block {
+.dis-inblock {
     display: inline-block;
 }
 
@@ -963,6 +1006,7 @@ video {
 .g-padding-left-lg > * {
     padding-left: var(--padding-left-lg);
 }
+
 /***********************************/
 /********** SIZE HELPERS ***********/
 /***********************************/
@@ -1181,6 +1225,9 @@ video {
 .deco-through-wavy {
     text-decoration: line-through wavy;
 }
+
+
+
 /****************************/
 /********** NAVBAR **********/
 /****************************/
@@ -1211,13 +1258,6 @@ video {
 /***************************/
 
 
-table {
-    margin: auto;
-    border-collapse: collapse;
-    text-align: center;
-    vertical-align: middle;
-}
-
 /**************************/
 /********** FORM **********/
 /**************************/
@@ -1229,4 +1269,4 @@ table {
 
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 3rd Mar 2019 @ 12:08:44 AM */
+ Updated: 3rd Mar 2019 @ 2:20:53 AM */
