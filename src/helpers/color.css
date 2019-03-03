@@ -36,10 +36,6 @@
     background-color: var(--blue);
 }
 
-.blue-border {
-    border-color: var(--blue);
-}
-
 
 /*****************/
 /***** Brown *****/
@@ -49,10 +45,6 @@
 
 .brown-box {
     background-color: var(--brown);
-}
-
-.brown-border {
-    border-color: var(--brown);
 }
 
 
@@ -66,10 +58,6 @@
     background-color: var(--gray);
 }
 
-.gray-border {
-    border-color: var(--gray);
-}
-
 
 /****************/
 /***** Grey *****/
@@ -79,10 +67,6 @@
 
 .grey-box {
     background-color: var(--grey);
-}
-
-.grey-border {
-    border-color: var(--grey);
 }
 
 
@@ -96,10 +80,6 @@
     background-color: var(--green);
 }
 
-.green-border {
-    border-color: var(--green);
-}
-
 
 /****************/
 /***** Orange *****/
@@ -109,10 +89,6 @@
 
 .orange-box {
     background-color: var(--orange);
-}
-
-.orange-border {
-    border-color: var(--orange);
 }
 
 
@@ -126,10 +102,6 @@
     background-color: var(--red);
 }
 
-.red-border {
-    border-color: var(--red);
-}
-
 
 /******************/
 /***** Violet *****/
@@ -139,10 +111,6 @@
 
 .violet-box {
     background-color: var(--violet);
-}
-
-.violet-border {
-    border-color: var(--violet);
 }
 
 
@@ -156,10 +124,6 @@
     background-color: var(--white);
 }
 
-.white-border {
-    border-color: var(--white);
-}
-
 
 /****************/
 /***** Yellow *****/
@@ -169,8 +133,4 @@
 
 .yellow-box {
     background-color: var(--yellow);
-}
-
-.yellow-border {
-    border-color: var(--yellow);
 }
