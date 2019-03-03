@@ -66,3 +66,50 @@
     border-width: var(--border-width-lg);
 }
 
+
+/*****************/
+/***** Color *****/
+[class*="border"][class*="black"] {
+    border-color: black;
+}
+
+[class*="border"][class*="blue"] {
+    border-color: var(--blue);
+}
+
+[class*="border"][class*="brown"] {
+    border-color: var(--blue);
+}
+
+[class*="border"][class*="gray"] {
+    border-color: var(--gray);
+}
+
+[class*="border"][class*="grey"] {
+    border-color: var(--grey);
+}
+
+[class*="border"][class*="green"] {
+    border-color: var(--green);
+}
+
+[class*="border"][class*="orange"] {
+    border-color: var(--orange);
+}
+
+[class*="border"][class*="red"] {
+    border-color: var(--red);
+}
+
+[class*="border"][class*="violet"] {
+    border-color: var(--violet);
+}
+
+[class*="border"][class*="white"] {
+    border-color: var(--white);
+}
+
+[class*="border"][class*="yellow"] {
+    border-color: var(--yellow);
+}
+
