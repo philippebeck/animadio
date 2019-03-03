@@ -2,6 +2,7 @@
 /********** COLOR **********/
 /***************************/
 
+/* Black */
 /* Blue */
 /* Brown */
 /* Gray */
@@ -12,6 +13,17 @@
 /* Violet */
 /* White */
 /* Yellow */
+
+
+/****************/
+/***** Blue *****/
+.black-text {
+    color: black;
+}
+
+.black-box {
+    background-color: black;
+}
 
 
 /****************/
