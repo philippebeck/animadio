@@ -32,8 +32,8 @@
 ## Installation
 
 - **CDN** : 
-  - unpkg (Latest Release) : https://unpkg.com/animadio/dist/min/animadio.min.css
-  - jsDelivr : https://cdn.jsdelivr.net/npm/animadio/dist/min/animadio.min.css
+  - unpkg (min) : https://unpkg.com/animadio/dist/min/animadio.min.css
+  - jsDelivr (choose the file) : https://cdn.jsdelivr.net/npm/animadio@latest/dist
 - **Install** :
   - NPM : `npm i animadio`
   - Yarn : `yarn add animadio`
