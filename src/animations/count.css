@@ -26,3 +26,15 @@
 [class*="shown-"][class*="many"] > * {
     animation-iteration-count: var(--animation-count-many);
 }
+
+[class*="animate-"][class*="loop"]:hover,
+[class*="animate-"][class*="loop"]:focus,
+[class*="animate-"][class*="loop"]:active,
+*:hover > [class*="animated-"][class*="loop"],
+*:focus > [class*="animated-"][class*="loop"],
+*:active > [class*="animated-"][class*="loop"],
+[class*="radio-"][class*="loop"]:checked ~ [class*="target-"][class*="loop"],
+[class*="show-"][class*="loop"],
+[class*="shown-"][class*="loop"] > * {
+    animation-iteration-count: infinite;
+}
