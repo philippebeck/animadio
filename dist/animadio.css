@@ -1,4 +1,4 @@
-/* animadio v0.1.9 | https://animadio.org | MIT License */
+/* animadio v0.1.10 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -53,7 +53,8 @@ h1 {
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -87,7 +88,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -240,7 +242,8 @@ fieldset {
  */
 
 legend {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -271,7 +274,8 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -611,92 +615,176 @@ template {
 
 /******************/
 /***** Rotate *****/
+@-webkit-keyframes rotate {
+    to {
+        -webkit-transform: rotate(var(--rotate));
+                transform: rotate(var(--rotate));
+    }
+}
 @keyframes rotate {
     to {
-        transform: rotate(var(--rotate));
+        -webkit-transform: rotate(var(--rotate));
+                transform: rotate(var(--rotate));
     }
 }
 
 /***** RotateX *****/
+@-webkit-keyframes rotateX {
+    to {
+        -webkit-transform: rotateX(var(--rotateX));
+                transform: rotateX(var(--rotateX));
+    }
+}
 @keyframes rotateX {
     to {
-        transform: rotateX(var(--rotateX));
+        -webkit-transform: rotateX(var(--rotateX));
+                transform: rotateX(var(--rotateX));
     }
 }
 
 /***** RotateY *****/
+@-webkit-keyframes rotateY {
+    to {
+        -webkit-transform: rotateY(var(--rotateY));
+                transform: rotateY(var(--rotateY));
+    }
+}
 @keyframes rotateY {
     to {
-        transform: rotateY(var(--rotateY));
+        -webkit-transform: rotateY(var(--rotateY));
+                transform: rotateY(var(--rotateY));
     }
 }
 
 
 /*****************/
 /***** Scale *****/
+@-webkit-keyframes scale {
+    to {
+        -webkit-transform: scale(var(--scale));
+                transform: scale(var(--scale));
+    }
+}
 @keyframes scale {
     to {
-        transform: scale(var(--scale));
+        -webkit-transform: scale(var(--scale));
+                transform: scale(var(--scale));
     }
 }
 
 /***** ScaleX *****/
+@-webkit-keyframes scaleX {
+    to {
+        -webkit-transform: scaleX(var(--scaleX));
+                transform: scaleX(var(--scaleX));
+    }
+}
 @keyframes scaleX {
     to {
-        transform: scaleX(var(--scaleX));
+        -webkit-transform: scaleX(var(--scaleX));
+                transform: scaleX(var(--scaleX));
     }
 }
 
 /***** ScaleY *****/
+@-webkit-keyframes scaleY {
+    to {
+        -webkit-transform: scaleY(var(--scaleY));
+                transform: scaleY(var(--scaleY));
+    }
+}
 @keyframes scaleY {
     to {
-        transform: scaleY(var(--scaleY));
+        -webkit-transform: scaleY(var(--scaleY));
+                transform: scaleY(var(--scaleY));
     }
 }
 
 
 /****************/
 /***** Skew *****/
+@-webkit-keyframes skew {
+    to {
+        -webkit-transform: skew(var(--skew));
+                transform: skew(var(--skew));
+    }
+}
 @keyframes skew {
     to {
-        transform: skew(var(--skew));
+        -webkit-transform: skew(var(--skew));
+                transform: skew(var(--skew));
     }
 }
 
 /***** SkewX *****/
+@-webkit-keyframes skewX {
+    to {
+        -webkit-transform: skewX(var(--skewX));
+                transform: skewX(var(--skewX));
+    }
+}
 @keyframes skewX {
     to {
-        transform: skewX(var(--skewX));
+        -webkit-transform: skewX(var(--skewX));
+                transform: skewX(var(--skewX));
     }
 }
 
 /***** SkewY *****/
+@-webkit-keyframes skewY {
+    to {
+        -webkit-transform: skewY(var(--skewY));
+                transform: skewY(var(--skewY));
+    }
+}
 @keyframes skewY {
     to {
-        transform: skewY(var(--skewY));
+        -webkit-transform: skewY(var(--skewY));
+                transform: skewY(var(--skewY));
     }
 }
 
 
 /*********************/
 /***** Translate *****/
+@-webkit-keyframes translate {
+    to {
+        -webkit-transform: translate(var(--translate));
+                transform: translate(var(--translate));
+    }
+}
 @keyframes translate {
     to {
-        transform: translate(var(--translate));
+        -webkit-transform: translate(var(--translate));
+                transform: translate(var(--translate));
     }
 }
 
 /***** TranslateX *****/
+@-webkit-keyframes translateX {
+    to {
+        -webkit-transform: translateX(var(--translateX));
+                transform: translateX(var(--translateX));
+    }
+}
 @keyframes translateX {
     to {
-        transform: translateX(var(--translateX));
+        -webkit-transform: translateX(var(--translateX));
+                transform: translateX(var(--translateX));
     }
 }
 
 /***** TranslateY *****/
+@-webkit-keyframes translateY {
+    to {
+        -webkit-transform: translateY(var(--translateY));
+                transform: translateY(var(--translateY));
+    }
+}
 @keyframes translateY {
     to {
-        transform: translateY(var(--translateY));
+        -webkit-transform: translateY(var(--translateY));
+                transform: translateY(var(--translateY));
     }
 }
 /**************************/
@@ -715,7 +803,8 @@ template {
 /******************/
 /***** Global *****/
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -871,6 +960,8 @@ table {
 }
 
 .dis-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -913,6 +1004,7 @@ table {
 }
 
 .pos-sticky {
+    position: -webkit-sticky;
     position: sticky;
 }
 /**************************************/
@@ -1380,19 +1472,23 @@ table {
 }
 
 .deco-under-double {
-    text-decoration: underline double;
+    -webkit-text-decoration: underline double;
+            text-decoration: underline double;
 }
 
 .deco-under-dotted {
-    text-decoration: underline dotted;
+    -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
 }
 
 .deco-under-dashed {
-    text-decoration: underline dashed;
+    -webkit-text-decoration: underline dashed;
+            text-decoration: underline dashed;
 }
 
 .deco-under-wavy {
-    text-decoration: underline wavy;
+    -webkit-text-decoration: underline wavy;
+            text-decoration: underline wavy;
 }
 
 /***** Text Decoration Overline *****/
@@ -1401,19 +1497,23 @@ table {
 }
 
 .deco-over-double {
-    text-decoration: overline double;
+    -webkit-text-decoration: overline double;
+            text-decoration: overline double;
 }
 
 .deco-over-dotted {
-    text-decoration: overline dotted;
+    -webkit-text-decoration: overline dotted;
+            text-decoration: overline dotted;
 }
 
 .deco-over-dashed {
-    text-decoration: overline dashed;
+    -webkit-text-decoration: overline dashed;
+            text-decoration: overline dashed;
 }
 
 .deco-over-wavy {
-    text-decoration: overline wavy;
+    -webkit-text-decoration: overline wavy;
+            text-decoration: overline wavy;
 }
 
 /***** Text Decoration Line Through *****/
@@ -1422,19 +1522,23 @@ table {
 }
 
 .deco-through-double {
-    text-decoration: line-through double;
+    -webkit-text-decoration: line-through double;
+            text-decoration: line-through double;
 }
 
 .deco-through-dotted {
-    text-decoration: line-through dotted;
+    -webkit-text-decoration: line-through dotted;
+            text-decoration: line-through dotted;
 }
 
 .deco-through-dashed {
-    text-decoration: line-through dashed;
+    -webkit-text-decoration: line-through dashed;
+            text-decoration: line-through dashed;
 }
 
 .deco-through-wavy {
-    text-decoration: line-through wavy;
+    -webkit-text-decoration: line-through wavy;
+            text-decoration: line-through wavy;
 }
 /***************************/
 /********** COLOR **********/
@@ -1586,97 +1690,119 @@ table {
 /***************/
 /***** Box *****/
 [class*="shadow"][class*="sm"] {
-    box-shadow: var(--shadow-x-sm) var(--shadow-y-sm);
+    -webkit-box-shadow: var(--shadow-x-sm) var(--shadow-y-sm);
+            box-shadow: var(--shadow-x-sm) var(--shadow-y-sm);
 }
 
 [class*="shadow"][class*="inset"][class*="sm"] {
-    box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm);
+    -webkit-box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm);
+            box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm);
 }
 
 [class*="shadow"][class*="md"] {
-    box-shadow: var(--shadow-x-md) var(--shadow-y-md);
+    -webkit-box-shadow: var(--shadow-x-md) var(--shadow-y-md);
+            box-shadow: var(--shadow-x-md) var(--shadow-y-md);
 }
 
 [class*="shadow"][class*="inset"][class*="md"] {
-    box-shadow: inset var(--shadow-x-md) var(--shadow-y-md);
+    -webkit-box-shadow: inset var(--shadow-x-md) var(--shadow-y-md);
+            box-shadow: inset var(--shadow-x-md) var(--shadow-y-md);
 }
 
 [class*="shadow"][class*="lg"] {
-    box-shadow: var(--shadow-x-lg) var(--shadow-y-lg);
+    -webkit-box-shadow: var(--shadow-x-lg) var(--shadow-y-lg);
+            box-shadow: var(--shadow-x-lg) var(--shadow-y-lg);
 }
 
 [class*="shadow"][class*="inset"][class*="lg"] {
-    box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg);
+    -webkit-box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg);
+            box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg);
 }
 
 
 /********************/
 /***** Box Blur *****/
 [class*="shadow"][class*="blur"] {
-    box-shadow: 0 0 var(--shadow-blur-all);
+    -webkit-box-shadow: 0 0 var(--shadow-blur-all);
+            box-shadow: 0 0 var(--shadow-blur-all);
 }
 
 [class*="shadow"][class*="inset"][class*="blur"] {
-    box-shadow: inset 0 0 var(--shadow-blur-all);
+    -webkit-box-shadow: inset 0 0 var(--shadow-blur-all);
+            box-shadow: inset 0 0 var(--shadow-blur-all);
 }
 
 [class*="shadow"][class*="blur"][class*="sm"] {
-    box-shadow: var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm);
+    -webkit-box-shadow: var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm);
+            box-shadow: var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm);
 }
 
 [class*="shadow"][class*="inset"][class*="blur"][class*="sm"] {
-    box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm);
+    -webkit-box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm);
+            box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm);
 }
 
 [class*="shadow"][class*="blur"][class*="md"] {
-    box-shadow: var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md);
+    -webkit-box-shadow: var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md);
+            box-shadow: var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md);
 }
 
 [class*="shadow"][class*="inset"][class*="blur"][class*="md"] {
-    box-shadow: inset var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md);
+    -webkit-box-shadow: inset var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md);
+            box-shadow: inset var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md);
 }
 
 [class*="shadow"][class*="blur"][class*="lg"] {
-    box-shadow: var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg);
+    -webkit-box-shadow: var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg);
+            box-shadow: var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg);
 }
 
 [class*="shadow"][class*="inset"][class*="blur"][class*="lg"] {
-    box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg);
+    -webkit-box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg);
+            box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg);
 }
 
 
 /**********************/
 /***** Box Spread *****/
 [class*="shadow"][class*="spread"] {
-    box-shadow: 0 0 var(--shadow-blur-all) var(--shadow-spread-all);
+    -webkit-box-shadow: 0 0 var(--shadow-blur-all) var(--shadow-spread-all);
+            box-shadow: 0 0 var(--shadow-blur-all) var(--shadow-spread-all);
 }
 
 [class*="shadow"][class*="inset"][class*="spread"] {
-    box-shadow: inset 0 0 var(--shadow-blur-all) var(--shadow-spread-all);
+    -webkit-box-shadow: inset 0 0 var(--shadow-blur-all) var(--shadow-spread-all);
+            box-shadow: inset 0 0 var(--shadow-blur-all) var(--shadow-spread-all);
 }
 
 [class*="shadow"][class*="spread"][class*="sm"] {
-    box-shadow: var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm) var(--shadow-spread-sm);
+    -webkit-box-shadow: var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm) var(--shadow-spread-sm);
+            box-shadow: var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm) var(--shadow-spread-sm);
 }
 
 [class*="shadow"][class*="inset"][class*="spread"][class*="sm"] {
-    box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm) var(--shadow-spread-sm);
+    -webkit-box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm) var(--shadow-spread-sm);
+            box-shadow: inset var(--shadow-x-sm) var(--shadow-y-sm) var(--shadow-blur-sm) var(--shadow-spread-sm);
 }
 
 [class*="shadow"][class*="spread"][class*="md"] {
-    box-shadow: var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md) var(--shadow-spread-md);
+    -webkit-box-shadow: var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md) var(--shadow-spread-md);
+            box-shadow: var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md) var(--shadow-spread-md);
 }
 
 [class*="shadow"][class*="inset"][class*="spread"][class*="md"] {
-    box-shadow: inset var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md) var(--shadow-spread-md);
+    -webkit-box-shadow: inset var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md) var(--shadow-spread-md);
+            box-shadow: inset var(--shadow-x-md) var(--shadow-y-md) var(--shadow-blur-md) var(--shadow-spread-md);
 }
 
 [class*="shadow"][class*="spread"][class*="lg"] {
-    box-shadow: var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg) var(--shadow-spread-lg);
+    -webkit-box-shadow: var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg) var(--shadow-spread-lg);
+            box-shadow: var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg) var(--shadow-spread-lg);
 }
 
 [class*="shadow"][class*="inset"][class*="spread"][class*="lg"] {
-    box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg) var(--shadow-spread-lg);
+    -webkit-box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg) var(--shadow-spread-lg);
+            box-shadow: inset var(--shadow-x-lg) var(--shadow-y-lg) var(--shadow-blur-lg) var(--shadow-spread-lg);
 }
 
 
@@ -1774,7 +1900,8 @@ table {
 [class*="radio-"][class*="rotate"]:checked ~ [class*="target-"][class*="rotate"],
 [class*="show-"][class*="rotate"],
 [class*="shown-"][class*="rotate"] > * {
-    animation-name: rotate;
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
 }
 
 [class*="animate-"][class*="rotateX"]:hover,
@@ -1786,7 +1913,8 @@ table {
 [class*="radio-"][class*="rotateX"]:checked ~ [class*="target-"][class*="rotateX"],
 [class*="show-"][class*="rotateX"],
 [class*="shown-"][class*="rotateX"] > * {
-    animation-name: rotateX;
+    -webkit-animation-name: rotateX;
+            animation-name: rotateX;
 }
 
 [class*="animate-"][class*="rotateY"]:hover,
@@ -1798,7 +1926,8 @@ table {
 [class*="radio-"][class*="rotateY"]:checked ~ [class*="target-"][class*="rotateY"],
 [class*="show-"][class*="rotateY"],
 [class*="shown-"][class*="rotateY"] > * {
-    animation-name: rotateY;
+    -webkit-animation-name: rotateY;
+            animation-name: rotateY;
 }
 
 
@@ -1813,7 +1942,8 @@ table {
 [class*="radio-"][class*="scale"]:checked ~ [class*="target-"][class*="scale"],
 [class*="show-"][class*="scale"],
 [class*="shown-"][class*="scale"] > * {
-    animation-name: scale;
+    -webkit-animation-name: scale;
+            animation-name: scale;
 }
 
 [class*="animate-"][class*="scaleX"]:hover,
@@ -1825,7 +1955,8 @@ table {
 [class*="radio-"][class*="scaleX"]:checked ~ [class*="target-"][class*="scaleX"],
 [class*="show-"][class*="scaleX"],
 [class*="shown-"][class*="scaleX"] > * {
-    animation-name: scaleX;
+    -webkit-animation-name: scaleX;
+            animation-name: scaleX;
 }
 
 [class*="animate-"][class*="scaleY"]:hover,
@@ -1837,7 +1968,8 @@ table {
 [class*="radio-"][class*="scaleY"]:checked ~ [class*="target-"][class*="scaleY"],
 [class*="show-"][class*="scaleY"],
 [class*="shown-"][class*="scaleY"] > * {
-    animation-name: scaleY;
+    -webkit-animation-name: scaleY;
+            animation-name: scaleY;
 }
 
 
@@ -1852,7 +1984,8 @@ table {
 [class*="radio-"][class*="skew"]:checked ~ [class*="target-"][class*="skew"],
 [class*="show-"][class*="skew"],
 [class*="shown-"][class*="skew"] > * {
-    animation-name: skew;
+    -webkit-animation-name: skew;
+            animation-name: skew;
 }
 
 [class*="animate-"][class*="skewX"]:hover,
@@ -1864,7 +1997,8 @@ table {
 [class*="radio-"][class*="skewX"]:checked ~ [class*="target-"][class*="skewX"],
 [class*="show-"][class*="skewX"],
 [class*="shown-"][class*="skewX"] > * {
-    animation-name: skewX;
+    -webkit-animation-name: skewX;
+            animation-name: skewX;
 }
 
 [class*="animate-"][class*="skewY"]:hover,
@@ -1876,7 +2010,8 @@ table {
 [class*="radio-"][class*="skewY"]:checked ~ [class*="target-"][class*="skewY"],
 [class*="show-"][class*="skewY"],
 [class*="shown-"][class*="skewY"] > * {
-    animation-name: skewY;
+    -webkit-animation-name: skewY;
+            animation-name: skewY;
 }
 
 
@@ -1891,7 +2026,8 @@ table {
 [class*="radio-"][class*="translate"]:checked ~ [class*="target-"][class*="translate"],
 [class*="show-"][class*="translate"],
 [class*="shown-"][class*="translate"] > * {
-    animation-name: translate;
+    -webkit-animation-name: translate;
+            animation-name: translate;
 }
 
 [class*="animate-"][class*="translateX"]:hover,
@@ -1903,7 +2039,8 @@ table {
 [class*="radio-"][class*="translateX"]:checked ~ [class*="target-"][class*="translateX"],
 [class*="show-"][class*="translateX"],
 [class*="shown-"][class*="translateX"] > * {
-    animation-name: translateX;
+    -webkit-animation-name: translateX;
+            animation-name: translateX;
 }
 
 [class*="animate-"][class*="translateY"]:hover,
@@ -1915,7 +2052,8 @@ table {
 [class*="radio-"][class*="translateY"]:checked ~ [class*="target-"][class*="translateY"],
 [class*="show-"][class*="translateY"],
 [class*="shown-"][class*="translateY"] > * {
-    animation-name: translateY;
+    -webkit-animation-name: translateY;
+            animation-name: translateY;
 }
 /****************************************/
 /********** ANIMATION DURATION **********/
@@ -1931,7 +2069,8 @@ table {
 [class*="radio-"][class*="tn"]:checked ~ [class*="target-"][class*="tn"],
 [class*="show-"][class*="tn"],
 [class*="shown-"][class*="tn"] > * {
-    animation-duration: var(--animation-duration-tn);
+    -webkit-animation-duration: var(--animation-duration-tn);
+            animation-duration: var(--animation-duration-tn);
 }
 
 [class*="animate-"][class*="sm"]:hover,
@@ -1943,7 +2082,8 @@ table {
 [class*="radio-"][class*="sm"]:checked ~ [class*="target-"][class*="sm"],
 [class*="show-"][class*="sm"],
 [class*="shown-"][class*="sm"] > * {
-    animation-duration: var(--animation-duration-sm);
+    -webkit-animation-duration: var(--animation-duration-sm);
+            animation-duration: var(--animation-duration-sm);
 }
 
 [class*="animate-"][class*="md"]:hover,
@@ -1955,7 +2095,8 @@ table {
 [class*="radio-"][class*="md"]:checked ~ [class*="target-"][class*="md"],
 [class*="show-"][class*="md"],
 [class*="shown-"][class*="md"] > * {
-    animation-duration: var(--animation-duration-md);
+    -webkit-animation-duration: var(--animation-duration-md);
+            animation-duration: var(--animation-duration-md);
 }
 
 [class*="animate-"][class*="lg"]:hover,
@@ -1967,7 +2108,8 @@ table {
 [class*="radio-"][class*="lg"]:checked ~ [class*="target-"][class*="lg"],
 [class*="show-"][class*="lg"],
 [class*="shown-"][class*="lg"] > * {
-    animation-duration: var(--animation-duration-lg);
+    -webkit-animation-duration: var(--animation-duration-lg);
+            animation-duration: var(--animation-duration-lg);
 }
 
 [class*="animate-"][class*="wd"]:hover,
@@ -1979,7 +2121,8 @@ table {
 [class*="radio-"][class*="wd"]:checked ~ [class*="target-"][class*="wd"],
 [class*="show-"][class*="wd"],
 [class*="shown-"][class*="wd"] > * {
-    animation-duration: var(--animation-duration-wd);
+    -webkit-animation-duration: var(--animation-duration-wd);
+            animation-duration: var(--animation-duration-wd);
 }
 /*************************************/
 /********** ANIMATION DELAY **********/
@@ -1995,7 +2138,8 @@ table {
 [class*="radio-"][class*="small"]:checked ~ [class*="target-"][class*="small"],
 [class*="show-"][class*="small"],
 [class*="shown-"][class*="small"] > * {
-    animation-delay: var(--animation-delay-small);
+    -webkit-animation-delay: var(--animation-delay-small);
+            animation-delay: var(--animation-delay-small);
 }
 
 [class*="animate-"][class*="medium"]:hover,
@@ -2007,7 +2151,8 @@ table {
 [class*="radio-"][class*="medium"]:checked ~ [class*="target-"][class*="medium"],
 [class*="show-"][class*="medium"],
 [class*="shown-"][class*="medium"] > * {
-    animation-delay: var(--animation-delay-medium);
+    -webkit-animation-delay: var(--animation-delay-medium);
+            animation-delay: var(--animation-delay-medium);
 }
 
 [class*="animate-"][class*="large"]:hover,
@@ -2019,7 +2164,8 @@ table {
 [class*="radio-"][class*="large"]:checked ~ [class*="target-"][class*="large"],
 [class*="show-"][class*="large"],
 [class*="shown-"][class*="large"] > * {
-    animation-delay: var(--animation-delay-large);
+    -webkit-animation-delay: var(--animation-delay-large);
+            animation-delay: var(--animation-delay-large);
 }
 /***********************************************/
 /********** ANIMATION TIMING FUNCTION **********/
@@ -2035,7 +2181,8 @@ table {
 [class*="radio-"][class*="in"]:checked ~ [class*="target-"][class*="in"],
 [class*="show-"][class*="in"],
 [class*="shown-"][class*="in"] > * {
-    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
 }
 
 [class*="animate-"][class*="out"]:hover,
@@ -2047,7 +2194,8 @@ table {
 [class*="radio-"][class*="out"]:checked ~ [class*="target-"][class*="out"],
 [class*="show-"][class*="out"],
 [class*="shown-"][class*="out"] > * {
-    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
 }
 
 [class*="animate-"][class*="ease"]:hover,
@@ -2059,7 +2207,8 @@ table {
 [class*="radio-"][class*="ease"]:checked ~ [class*="target-"][class*="ease"],
 [class*="show-"][class*="ease"],
 [class*="shown-"][class*="ease"] > * {
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
 }
 
 [class*="animate-"][class*="linear"]:hover,
@@ -2071,7 +2220,8 @@ table {
 [class*="radio-"][class*="linear"]:checked ~ [class*="target-"][class*="linear"],
 [class*="show-"][class*="linear"],
 [class*="shown-"][class*="linear"] > * {
-    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
 }
 
 [class*="animate-"][class*="start"]:hover,
@@ -2083,7 +2233,8 @@ table {
 [class*="radio-"][class*="start"]:checked ~ [class*="target-"][class*="start"],
 [class*="show-"][class*="start"],
 [class*="shown-"][class*="start"] > * {
-    animation-timing-function: step-start;
+    -webkit-animation-timing-function: step-start;
+            animation-timing-function: step-start;
 }
 
 [class*="animate-"][class*="end"]:hover,
@@ -2095,7 +2246,8 @@ table {
 [class*="radio-"][class*="end"]:checked ~ [class*="target-"][class*="end"],
 [class*="show-"][class*="end"],
 [class*="shown-"][class*="end"] > * {
-    animation-timing-function: step-end;
+    -webkit-animation-timing-function: step-end;
+            animation-timing-function: step-end;
 }
 
 [class*="animate-"][class*="steps"]:hover,
@@ -2107,7 +2259,8 @@ table {
 [class*="radio-"][class*="steps"]:checked ~ [class*="target-"][class*="steps"],
 [class*="show-"][class*="steps"],
 [class*="shown-"][class*="steps"] > * {
-    animation-timing-function: steps(var(--animation-timing-steps));
+    -webkit-animation-timing-function: steps(var(--animation-timing-steps));
+            animation-timing-function: steps(var(--animation-timing-steps));
 }
 
 [class*="animate-"][class*="bezier"]:hover,
@@ -2119,7 +2272,8 @@ table {
 [class*="radio-"][class*="bezier"]:checked ~ [class*="target-"][class*="bezier"],
 [class*="show-"][class*="bezier"],
 [class*="shown-"][class*="bezier"] > * {
-    animation-timing-function: cubic-bezier(var(--animation-timing-bezier));
+    -webkit-animation-timing-function: cubic-bezier(var(--animation-timing-bezier));
+            animation-timing-function: cubic-bezier(var(--animation-timing-bezier));
 }
 /***********************************************/
 /********** ANIMATION ITERATION COUNT **********/
@@ -2135,7 +2289,8 @@ table {
 [class*="radio-"][class*="few"]:checked ~ [class*="target-"][class*="few"],
 [class*="show-"][class*="few"],
 [class*="shown-"][class*="few"] > * {
-    animation-iteration-count: var(--animation-count-few);
+    -webkit-animation-iteration-count: var(--animation-count-few);
+            animation-iteration-count: var(--animation-count-few);
 }
 
 [class*="animate-"][class*="many"]:hover,
@@ -2147,7 +2302,8 @@ table {
 [class*="radio-"][class*="many"]:checked ~ [class*="target-"][class*="many"],
 [class*="show-"][class*="many"],
 [class*="shown-"][class*="many"] > * {
-    animation-iteration-count: var(--animation-count-many);
+    -webkit-animation-iteration-count: var(--animation-count-many);
+            animation-iteration-count: var(--animation-count-many);
 }
 
 [class*="animate-"][class*="loop"]:hover,
@@ -2159,7 +2315,8 @@ table {
 [class*="radio-"][class*="loop"]:checked ~ [class*="target-"][class*="loop"],
 [class*="show-"][class*="loop"],
 [class*="shown-"][class*="loop"] > * {
-    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 /*****************************************/
 /********** ANIMATION DIRECTION **********/
@@ -2187,7 +2344,8 @@ table {
 [class*="radio-"][class*="alternate"]:checked ~ [class*="target-"][class*="alternate"],
 [class*="show-"][class*="alternate"],
 [class*="shown-"][class*="alternate"] > * {
-    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
 }
 
 [class*="animate-"][class*="alt-rev"]:hover,
@@ -2215,7 +2373,8 @@ table {
 [class*="radio-"][class*="front"]:checked ~ [class*="target-"][class*="front"],
 [class*="show-"][class*="front"],
 [class*="shown-"][class*="front"] > * {
-    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 [class*="animate-"][class*="back"]:hover,
@@ -2227,7 +2386,8 @@ table {
 [class*="radio-"][class*="back"]:checked ~ [class*="target-"][class*="back"],
 [class*="show-"][class*="back"],
 [class*="shown-"][class*="back"] > * {
-    animation-fill-mode: backwards;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
 }
 /**************************************/
 /********** TRANSFORM ORIGIN **********/
@@ -2243,7 +2403,8 @@ table {
 [class*="radio-"][class*="near"]:checked ~ [class*="target-"][class*="near"],
 [class*="show-"][class*="near"],
 [class*="shown-"][class*="near"] > * {
-    transform-origin: var(--transform-origin-near);
+    -webkit-transform-origin: var(--transform-origin-near);
+            transform-origin: var(--transform-origin-near);
 }
 
 [class*="animate-"][class*="far"]:hover,
@@ -2255,9 +2416,9 @@ table {
 [class*="radio-"][class*="far"]:checked ~ [class*="target-"][class*="far"],
 [class*="show-"][class*="far"],
 [class*="shown-"][class*="far"] > * {
-    transform-origin: var(--transform-origin-far);
+    -webkit-transform-origin: var(--transform-origin-far);
+            transform-origin: var(--transform-origin-far);
 }
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 6th Mar 2019 @ 3:43:34 AM */
-/*# sourceMappingURL=map/animadio.css.map */
+ Updated: 6th Mar 2019 @ 1:50:03 PM */
