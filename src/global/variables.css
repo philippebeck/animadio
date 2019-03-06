@@ -143,7 +143,7 @@
     --navbar-background-color:      var(--blue);
     --navbar-color:                 var(--white);
     --navbar-justify-content:       space-between;
-    --navbar-flex-direction-sm:     column;
+    --navbar-flex-direction-sm:     row;
     --navbar-justify-content-sm:    space-content;
     --navbar-padding-sm:            10px;
     --navbar-justify-content-md:    space-evenly;
