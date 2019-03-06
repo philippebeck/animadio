@@ -137,6 +137,25 @@
     --margin-left-lg:           50px;
 
 
+    /******************/
+    /***** Navbar *****/
+    --navbar-align-items:           center;
+    --navbar-background-color:      var(--blue);
+    --navbar-color:                 var(--white);
+    --navbar-justify-content:       space-between;
+    --navbar-flex-direction-sm:     column;
+    --navbar-justify-content-sm:    space-content;
+    --navbar-padding-sm:            10px;
+    --navbar-justify-content-md:    space-evenly;
+
+    --navbar-a-padding:             10px 5px;
+    --navbar-a-scale:               1.3;
+    --navbar-i-align-self:          center;
+    --navbar-li-align-items:        center;
+    --navbar-ul-align-items:        center;
+    --navbar-ul-margin:             0;
+    --navbar-ul-padding:            0;
+
     /*******************/
     /***** Padding *****/
     --padding-sm:               10px;
