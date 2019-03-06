@@ -75,7 +75,8 @@
     display: inline;
 }
 
-.dis-none {
+.dis-none,
+.radio {
     display: none;
 }
 
