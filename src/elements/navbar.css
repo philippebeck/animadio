@@ -89,7 +89,9 @@
 }
 
 
-/****************************/
+/************************/
+/***** Medias Rules *****/
+
 /***** Mobile Landscape *****/
 @media (min-width: 576px) {
     .navbar {
@@ -110,8 +112,6 @@
     }
 }
 
-
-/***************************/
 /***** Tablet Portrait *****/
 @media (min-width: 768px) {
     .navbar {
@@ -134,8 +134,6 @@
     }
 }
 
-
-/****************************/
 /***** Tablet Landscape *****/
 @media (min-width: 992px) {
     .brand-nav img,
@@ -150,8 +148,6 @@
     }
 }
 
-
-/*******************/
 /***** Desktop *****/
 @media (min-width: 1200px) {
     .brand-nav img,
