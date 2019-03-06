@@ -1,4 +1,4 @@
-/* animadio v0.1.10 | https://animadio.org | MIT License */
+/* animadio v0.1.12 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -491,6 +491,40 @@ template {
     --margin-left-sm:           10px;
     --margin-left-md:           20px;
     --margin-left-lg:           50px;
+
+
+    /******************/
+    /***** Navbar *****/
+    --navbar-align-items:           center;
+    --navbar-background-color:      var(--blue);
+    --navbar-color:                 var(--white);
+    --navbar-justify-content:       space-between;
+    --navbar-flex-direction-sm:     column;
+    --navbar-justify-content-sm:    space-content;
+    --navbar-padding-sm:            10px;
+    --navbar-justify-content-md:    space-evenly;
+
+    --navbar-a-padding:             10px 5px;
+    --navbar-a-scale:               1.3;
+    --navbar-i-align-self:          center;
+    --navbar-li-align-items:        center;
+    --navbar-ul-align-items:        center;
+    --navbar-ul-margin:             0;
+    --navbar-ul-padding:            0;
+
+    /***** Brand Nav *****/
+    --brand-nav-img-height:         20px;
+
+    /***** Main Nav *****/
+    --main-nav-span-display:        none;
+    --main-nav-span-display-md:     inline;
+
+    /***** User Nav *****/
+    --user-nav-p-display:           none;
+    --user-nav-img-margin:          1px;
+    --user-nav-height:              25px;
+    --user-nav-p-display-wd:        block;
+    --user-nav-p-margin-right-wd:   10px;
 
 
     /*******************/
@@ -1844,6 +1878,186 @@ table {
 /****************************/
 
 
+
+
+/******************/
+/***** Global *****/
+.navbar,
+.navbar ul,
+.navbar li,
+.navbar a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+/******************/
+/***** Navbar *****/
+.navbar {
+    -webkit-box-align: var(--navbar-align-items);
+        -ms-flex-align: var(--navbar-align-items);
+            align-items: var(--navbar-align-items);
+    -webkit-box-pack: var(--navbar-justify-content);
+        -ms-flex-pack: var(--navbar-justify-content);
+            justify-content: var(--navbar-justify-content);
+    background-color: var(--navbar-background-color);
+    color: var(--navbar-color);
+}
+
+/***** Navbar List *****/
+.navbar ul {
+    -webkit-box-align: var(--navbar-ul-align-items);
+        -ms-flex-align: var(--navbar-ul-align-items);
+            align-items: var(--navbar-ul-align-items);
+    margin: var(--navbar-ul-margin);
+    padding: var(--navbar-ul-padding);
+    list-style: none;
+}
+
+/***** Navbar List Element *****/
+.navbar li {
+    -webkit-box-align: var(--navbar-li-align-items);
+        -ms-flex-align: var(--navbar-li-align-items);
+            align-items: var(--navbar-li-align-items);
+}
+
+/***** Navbar Links *****/
+.navbar a {
+    padding: var(--navbar-a-padding);
+    color: var(--white);
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active {
+    color: var(--yellow);
+    -webkit-transform: scale(var(--navbar-a-scale));
+            transform: scale(var(--navbar-a-scale));
+}
+
+/***** Navbar Icons *****/
+.navbar i {
+    -ms-flex-item-align: var(--navbar-i-align-self);
+        align-self: var(--navbar-i-align-self);
+}
+
+
+/*********************/
+/***** Brand Nav *****/
+.brand-nav img,
+.brand-nav svg {
+    height: var(--brand-nav-img-height);
+}
+
+
+/********************/
+/***** Main Nav *****/
+.main-nav span {
+    display: var(--main-nav-span-display);
+}
+
+
+/********************/
+/***** User Nav *****/
+.user-nav p {
+    display: var(--user-nav-p-display);
+}
+
+.user-nav img,
+.user-nav svg {
+    margin: var(--user-nav-img-margin);
+    height: var(--user-nav-height);
+}
+
+
+/****************************/
+/***** Mobile Landscape *****/
+@media (min-width: 576px) {
+    .navbar {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: var(--navbar-flex-direction-sm);
+                flex-direction: var(--navbar-flex-direction-sm);
+        -webkit-box-pack: var(--navbar-justify-content-sm);
+            -ms-flex-pack: var(--navbar-justify-content-sm);
+                justify-content: var(--navbar-justify-content-sm);
+        padding: var(--navbar-padding-sm);
+    }
+
+    .brand-nav img,
+    .brand-nav svg {
+        height: calc(var(--brand-nav-img-height) * 1.25);
+    }
+
+    .user-nav img,
+    .user-nav svg {
+        margin: calc(var(--user-nav-img-margin) * 2);
+        height: calc(var(--user-nav-height) * 1.25);
+    }
+}
+
+
+/***************************/
+/***** Tablet Portrait *****/
+@media (min-width: 768px) {
+    .navbar {
+        -webkit-box-pack: var(--navbar-justify-content-md);
+            -ms-flex-pack: var(--navbar-justify-content-md);
+                justify-content: var(--navbar-justify-content-md);
+    }
+
+    .brand-nav img,
+    .brand-nav svg {
+        height: calc(var(--brand-nav-img-height) * 1.5);
+    }
+
+    .main-nav span {
+        display: var(--main-nav-span-display-md);
+    }
+
+    .user-nav img,
+    .user-nav svg {
+        margin: calc(var(--user-nav-img-margin) * 3);
+        height: calc(var(--user-nav-height) * 1.5);
+    }
+}
+
+
+/****************************/
+/***** Tablet Landscape *****/
+@media (min-width: 992px) {
+    .brand-nav img,
+    .brand-nav svg {
+        height: calc(var(--brand-nav-img-height) * 1.75);
+    }
+
+    .user-nav img,
+    .user-nav svg {
+        margin: calc(var(--user-nav-img-margin) * 4);
+        height: calc(var(--user-nav-height) * 1.75);
+    }
+}
+
+
+/*******************/
+/***** Desktop *****/
+@media (min-width: 1200px) {
+    .brand-nav img,
+    .brand-nav svg {
+        height: calc(var(--brand-nav-img-height) * 2);
+    }
+
+    .user-nav img,
+    .user-nav svg {
+        margin: calc(var(--user-nav-img-margin) * 5);
+        height: calc(var(--user-nav-height) * 2);
+    }
+    .user-nav p {
+        display: var(--user-nav-p-display-wd);
+        margin-right: var(--user-nav-p-margin-right-wd);
+    }
+}
 /****************************/
 /********** BUTTON **********/
 /****************************/
@@ -2421,4 +2635,4 @@ table {
 }
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 6th Mar 2019 @ 1:50:03 PM */
+ Updated: 6th Mar 2019 @ 6:27:39 PM */
