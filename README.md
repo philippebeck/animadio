@@ -53,7 +53,10 @@
   
 ## Content
 
-- The animadio.css file is standalone...
+- Main file : `dist/animadio.css`
+- Min file : `dist/min/animadio.min.css`
+- Map file : `dist/map/animadio.css.map`
+
 
 ## Open-Source
 
