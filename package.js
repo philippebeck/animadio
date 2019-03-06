@@ -1,7 +1,7 @@
 Package.describe({
   name: 'philippebeck:animadio',
   version: '0.1.9',
-  summary: 'Animadio CSS Framework - Grid & Flexbox Layouts - Reusable & Customizable Elements - Perform Complex Animations - Controls by Radio Buttons - No JavaScript needed or used',
+  summary: 'Animadio CSS Framework - Grid & Flexbox Layouts - Reusable & Customizable Elements',
   git: 'https://github.com/animadio/animadio.git',
   documentation: 'README.md'
 });
