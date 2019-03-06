@@ -44,7 +44,9 @@
 - **Install** :
   - NPM : `npm i animadio`
   - Yarn : `yarn add animadio`
-  - Meteor, Composer, Pip & Gem : Very Soon ! (for the future v1.0.0)
+  - Composer : `composer require animadio/animadio`
+  - Meteor : `meteor add philippebeck:animadio`
+  - Pip & Gem : Very Soon !
 - **Download** :
   - [Latest Release](https://github.com/animadio/animadio/releases)
   - `git clone https://github.com/animadio/animadio.git`
