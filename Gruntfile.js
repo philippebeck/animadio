@@ -49,15 +49,6 @@ module.exports = function(grunt) {
             }
         },
 
-        autoprefixer: {
-            options: {
-                browsers: ['last 2 versions']
-            },
-            your_target: {
-                src: 'dist/animadio.css'
-            },
-        },
-
         cssmin: {
             target: {
                 files: [{
@@ -68,9 +59,8 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 
-    grunt.registerTask('default', ['concat', 'autoprefixer', 'cssmin']);
+    grunt.registerTask('default', ['concat', 'cssmin']);
 };
