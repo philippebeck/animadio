@@ -29,10 +29,12 @@
 
 > ANIMADIO WILL FONCTION VERY SOON !!!
 
+[![GitHub version](https://badge.fury.io/gh/animadio%2Fanimadio.svg)](https://badge.fury.io/gh/animadio%2Fanimadio)
+[![Build Status](https://travis-ci.com/animadio/animadio.svg?branch=master)](https://travis-ci.com/animadio/animadio)
 [![npm version](https://badge.fury.io/js/animadio.svg)](https://badge.fury.io/js/animadio)
 [![PHP version](https://badge.fury.io/ph/animadio%2Fanimadio.svg)](https://badge.fury.io/ph/animadio%2Fanimadio)
 [![](https://data.jsdelivr.com/v1/package/npm/animadio/badge)](https://www.jsdelivr.com/package/npm/animadio)
-[![Build Status](https://travis-ci.com/animadio/animadio.svg?branch=master)](https://travis-ci.com/animadio/animadio)
+
 
 ## Installation
 
