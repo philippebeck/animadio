@@ -49,3 +49,36 @@
     color: var(--yellow);
     transform: scale(var(--navbar-a-scale));
 }
+
+/***** Navbar Icons *****/
+.navbar i {
+    align-self: var(--navbar-i-align-self);
+}
+
+
+/*********************/
+/***** Brand Nav *****/
+.brand-nav img,
+.brand-nav svg {
+    height: var(--brand-nav-img-height);
+}
+
+
+/********************/
+/***** Main Nav *****/
+.main-nav span {
+    display: var(--main-nav-span-display);
+}
+
+
+/********************/
+/***** User Nav *****/
+.user-nav p {
+    display: var(--user-nav-p-display);
+}
+
+.user-nav img,
+.user-nav svg {
+    margin: var(--user-nav-img-margin);
+    height: var(--user-nav-height);
+}
