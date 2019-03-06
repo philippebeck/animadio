@@ -2,3 +2,50 @@
 /********** NAVBAR **********/
 /****************************/
 
+
+
+
+/******************/
+/***** Global *****/
+.navbar,
+.navbar ul,
+.navbar li,
+.navbar a {
+    display: flex;
+}
+
+
+/******************/
+/***** Navbar *****/
+.navbar {
+    align-items: var(--navbar-align-items);
+    justify-content: var(--navbar-justify-content);
+    background-color: var(--navbar-background-color);
+    color: var(--navbar-color);
+}
+
+/***** Navbar List *****/
+.navbar ul {
+    align-items: var(--navbar-ul-align-items);
+    margin: var(--navbar-ul-margin);
+    padding: var(--navbar-ul-padding);
+    list-style: none;
+}
+
+/***** Navbar List Element *****/
+.navbar li {
+    align-items: var(--navbar-li-align-items);
+}
+
+/***** Navbar Links *****/
+.navbar a {
+    padding: var(--navbar-a-padding);
+    color: var(--white);
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active {
+    color: var(--yellow);
+    transform: scale(var(--navbar-a-scale));
+}
