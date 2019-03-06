@@ -37,8 +37,8 @@
 ## Installation
 
 - **CDN** : 
-  - unpkg (min) : https://unpkg.com/animadio/dist/min/animadio.min.css
-  - jsDelivr (choose the file) : https://cdn.jsdelivr.net/npm/animadio@latest/dist
+  - unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unpkg.com/animadio/dist/min/animadio.min.css)
+  - jsDelivr (choose the file) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist](https://cdn.jsdelivr.net/npm/animadio@latest/dist)
 - **Install** :
   - NPM : `npm i animadio`
   - Yarn : `yarn add animadio`
@@ -81,7 +81,7 @@
 ## Creator
 
 - **Philippe Beck** :
-  - https://philippebeck.net
+  - [https://philippebeck.net](https://philippebeck.net)
   - [GitHub : philippebeck](https://github.com/philippebeck)
   - [Twitter : @philippepjbeck](https://twitter.com/philippepjbeck)
 
