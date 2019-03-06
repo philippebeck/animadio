@@ -49,6 +49,17 @@ module.exports = function(grunt) {
             }
         },
 
+        postcss: {
+            options: {
+                processors: [
+                    require('autoprefixer')({browsers: 'last 2 versions'}) // add vendor prefixes
+                ]
+            },
+            dist: {
+                src: 'dist/animadio.css'
+            }
+        },
+
         cssmin: {
             target: {
                 files: [{
@@ -59,8 +70,9 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 
-    grunt.registerTask('default', ['concat', 'cssmin']);
+    grunt.registerTask('default', ['concat', 'postcss', 'cssmin']);
 };
