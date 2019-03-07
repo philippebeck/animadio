@@ -1,3 +1,4 @@
+[![Animadio Logo](img/logo.png)](https://animadio.org)
 # [Animadio CSS Framework](https://animadio.org)
 
 - Grid & Flexbox Layouts
