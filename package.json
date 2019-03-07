@@ -1,6 +1,6 @@
 {
   "name": "animadio",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Animadio CSS Framework - Grid & Flexbox Layouts - Reusable & Customizable Elements - Perform Complex Animations - Controls by Radio Buttons - No JavaScript needed or used",
   "keywords": [
     "css",
@@ -17,15 +17,10 @@
     "standalone"
   ],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/animadio/animadio.git"
-  },
-  "author": {
-    "name": "Philippe Beck",
-    "email": "philippe@philippebeck.net",
-    "homepage": "https://philippebeck.net"
-  },
+  "main": "dist/animadio.css",
+  "homepage": "https://animadio.org",
+  "repository": "github:animadio/animadio",
+  "bugs": "https://github.com/animadio/animadio/issues",
   "devDependencies": {
     "autoprefixer": "^9.4.10",
     "grunt": "^1.0.3",
@@ -34,6 +29,16 @@
     "grunt-postcss": "^0.9.0",
     "normalize.css": "~8.0.1"
   },
-  "bugs": "https://github.com/animadio/animadio/issues",
-  "homepage": "https://animadio.org"
+  "author": {
+    "name": "Philippe Beck",
+    "email": "philippe@philippebeck.net",
+    "url": "https://philippebeck.net"
+  },
+  "contributors": [
+    {
+      "name": "Lisa Lecieux",
+      "email": "lisa@sangodraws.com",
+      "url": "https://sangodraws.com"
+    }
+  ]
 }
