@@ -13,9 +13,10 @@
 /******************/
 /***** Global *****/
 .navbar,
-.navbar ul,
-.navbar li,
-.navbar a {
+.main-nav,
+.user-nav,
+.main-nav a,
+.user-nav a {
     display: flex;
 }
 
@@ -24,22 +25,20 @@
 /***** Navbar *****/
 .navbar {
     align-items: var(--navbar-align-items);
-    justify-content: var(--navbar-justify-content);
     background-color: var(--navbar-background-color);
     color: var(--navbar-color);
+
+    /***** Mobile Portrait *****/
+    justify-content: var(--navbar-justify-content-tn);
 }
 
-/***** Navbar List *****/
-.navbar ul {
-    align-items: var(--navbar-ul-align-items);
-    margin: var(--navbar-ul-margin);
-    padding: var(--navbar-ul-padding);
+/***** Nav Main & User *****/
+.nav-main,
+.nav-user {
+    align-items: var(--nav-main-align-items);
+    margin: var(--nav-main-margin);
+    padding: var(--nav-main-padding);
     list-style: none;
-}
-
-/***** Navbar List Element *****/
-.navbar li {
-    align-items: var(--navbar-li-align-items);
 }
 
 /***** Navbar Links *****/
