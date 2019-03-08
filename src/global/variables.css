@@ -142,31 +142,34 @@
     --navbar-align-items:           center;
     --navbar-background-color:      var(--blue);
     --navbar-color:                 var(--white);
-    --navbar-justify-content:       space-between;
+
     --navbar-flex-direction-sm:     row;
+    --navbar-justify-content-tn:    space-between;
     --navbar-justify-content-sm:    space-content;
-    --navbar-padding-sm:            10px;
     --navbar-justify-content-md:    space-evenly;
+    --navbar-padding-sm:            10px;
 
     --navbar-a-padding:             10px;
-    --navbar-a-scale:               1.2;
+    --navbar-a-scale:               1.1;
     --navbar-i-align-self:          center;
-    --navbar-li-align-items:        center;
-    --navbar-ul-align-items:        center;
-    --navbar-ul-margin:             0;
-    --navbar-ul-padding:            0;
 
     /***** Brand Nav *****/
     --brand-nav-img-height:         20px;
 
     /***** Main Nav *****/
+    --nav-main-align-items:        center;
+    --nav-main-margin:             0;
+    --nav-main-padding:            0;
+    
     --main-nav-span-display:        none;
+
     --main-nav-span-display-md:     inline;
 
     /***** User Nav *****/
     --user-nav-p-display:           none;
     --user-nav-img-margin:          1px;
     --user-nav-height:              25px;
+
     --user-nav-p-display-wd:        block;
     --user-nav-p-margin-right-wd:   10px;
 
