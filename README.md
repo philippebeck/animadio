@@ -1,23 +1,25 @@
 [![Animadio Logo](img/logo.png)](https://animadio.org)
 # [Animadio CSS Framework](https://animadio.org)
 
-Grid & Flexbox Layouts - CSS Variables Usage - Reusable & Customizable Elements
+Grid & Flexbox Layouts - Perform Complex Animations
+ 
+CSS Variables Usage - Reusable & Customizable Elements
 
-Perform Complex Animations - Controls by Radio Buttons - No JavaScript needed
+Controls by Radio Buttons - No JavaScript needed
 
 ## Summary
 
-- [Status](#status)
-- [Installation](#installation)
-- [Content](#content)
-- [Open-Source](#open-source)
-- [Community](#community)
-- [Documentation](#documentation)
-- [Issues & Pull Requests](#issues-&-pull-requests)
-- [Contributing](#contributing)
-- [Versioning](#versioning)
-- [Creator](#creator)
-- [Copyright](#copyright)
+- [Status](#status)  
+- [Installation](#installation)  
+- [Content](#content)  
+- [Open-Source](#open-source)  
+- [Community](#community)  
+- [Documentation](#documentation)  
+- [Issues & Pull Requests](#issues-&-pull-requests)  
+- [Contributing](#contributing)  
+- [Versioning](#versioning)  
+- [Creator](#creator)  
+- [Copyright](#copyright)  
 
 ## Status
 
@@ -41,26 +43,26 @@ Perform Complex Animations - Controls by Radio Buttons - No JavaScript needed
 ## Installation
 
 **CDN** : 
-- unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unpkg.com/animadio/dist/min/animadio.min.css)
-- jsDelivr (choose the file) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist](https://cdn.jsdelivr.net/npm/animadio@latest/dist)
+- unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unpkg.com/animadio/dist/min/animadio.min.css)  
+- jsDelivr (choose the file) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist](https://cdn.jsdelivr.net/npm/animadio@latest/dist)  
 
 **Install** :
-- NPM : `npm i animadio`
-- Yarn : `yarn add animadio`
-- Composer : `composer require animadio/animadio`
-- Meteor : `meteor add animadio:animadio`
-- Pip & Gem : Very Soon !
+- NPM : `npm i animadio`  
+- Yarn : `yarn add animadio`  
+- Composer : `composer require animadio/animadio`  
+- Meteor : `meteor add animadio:animadio`  
+- Pip & Gem : Very Soon !  
 
 **Download** :
-- [Latest Release](https://github.com/animadio/animadio/releases)
-- `git clone https://github.com/animadio/animadio.git`
+- [Latest Release](https://github.com/animadio/animadio/releases)  
+- `git clone https://github.com/animadio/animadio.git`  
   
 ## Content
 
 The dist folder contains :
-- `dist/animadio.css`
-- `dist/min/animadio.min.css`
-- `dist/map/animadio.css.map`
+- `dist/animadio.css`  
+- `dist/min/animadio.min.css`  
+- `dist/map/animadio.css.map`  
 
 
 ## Open-Source
@@ -96,9 +98,9 @@ Animadio needs you if you like it : sends pull requests on GitHub to improve it 
 ## Creator
 
 *Philippe Beck* :
-- [https://philippebeck.net](https://philippebeck.net)
-- [GitHub : philippebeck](https://github.com/philippebeck)
-- [Twitter : @philippepjbeck](https://twitter.com/philippepjbeck)
+- [https://philippebeck.net](https://philippebeck.net)  
+- [GitHub : philippebeck](https://github.com/philippebeck)  
+- [Twitter : @philippepjbeck](https://twitter.com/philippepjbeck)  
 
 ## Copyright
 
