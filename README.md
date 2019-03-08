@@ -7,7 +7,7 @@ Perform Complex Animations - Controls by Radio Buttons - No JavaScript needed
 
 ## Summary
 
-Warning : Framework in developement phase...
+Warning, Framework in developement phase :
 - [Status](#status)
 - [Installation](#installation)
 - [Content](#content)
@@ -38,7 +38,6 @@ Warning : Framework in developement phase...
 [![CSS min size](https://img.badgesize.io/animadio/animadio/master/dist/min/animadio.min.css?compression=gzip&label=CSS+min+size)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
 [![](https://data.jsdelivr.com/v1/package/npm/animadio/badge)](https://www.jsdelivr.com/package/npm/animadio)
 
-
 ## Installation
 
 **CDN** : 
@@ -59,9 +58,9 @@ Warning : Framework in developement phase...
 ## Content
 
 The dist folder contains :
-- Main file : `dist/animadio.css`
-- Min file : `dist/min/animadio.min.css`
-- Map file : `dist/map/animadio.css.map`
+- `dist/animadio.css`
+- `dist/min/animadio.min.css`
+- `dist/map/animadio.css.map`
 
 
 ## Open-Source
