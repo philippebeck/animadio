@@ -35,7 +35,7 @@
 [![devDependency Status](https://img.shields.io/david/dev/animadio/animadio.svg)](https://david-dm.org/animadio/animadio?type=dev)
 [![npm version](https://badge.fury.io/js/animadio.svg)](https://badge.fury.io/js/animadio)
 [![PHP version](https://badge.fury.io/ph/animadio%2Fanimadio.svg)](https://badge.fury.io/ph/animadio%2Fanimadio)
-[![CSS min size](https://img.badgesize.io/animadio/animadio/master/dist/min/animadio.min.css?compression=gzip&label=CSS+min+size)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.js)
+[![CSS min size](https://img.badgesize.io/animadio/animadio/master/dist/min/animadio.min.css?compression=gzip&label=CSS+min+size)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
 [![](https://data.jsdelivr.com/v1/package/npm/animadio/badge)](https://www.jsdelivr.com/package/npm/animadio)
 
 
