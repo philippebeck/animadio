@@ -1,4 +1,4 @@
-/* animadio v0.1.12 | https://animadio.org | MIT License */
+/* animadio v0.1.14 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -498,31 +498,34 @@ template {
     --navbar-align-items:           center;
     --navbar-background-color:      var(--blue);
     --navbar-color:                 var(--white);
-    --navbar-justify-content:       space-between;
+
     --navbar-flex-direction-sm:     row;
+    --navbar-justify-content-tn:    space-between;
     --navbar-justify-content-sm:    space-content;
-    --navbar-padding-sm:            10px;
     --navbar-justify-content-md:    space-evenly;
+    --navbar-padding-sm:            10px;
 
     --navbar-a-padding:             10px;
-    --navbar-a-scale:               1.2;
+    --navbar-a-scale:               1.1;
     --navbar-i-align-self:          center;
-    --navbar-li-align-items:        center;
-    --navbar-ul-align-items:        center;
-    --navbar-ul-margin:             0;
-    --navbar-ul-padding:            0;
 
     /***** Brand Nav *****/
     --brand-nav-img-height:         20px;
 
     /***** Main Nav *****/
+    --nav-main-align-items:        center;
+    --nav-main-margin:             0;
+    --nav-main-padding:            0;
+    
     --main-nav-span-display:        none;
+
     --main-nav-span-display-md:     inline;
 
     /***** User Nav *****/
     --user-nav-p-display:           none;
     --user-nav-img-margin:          1px;
     --user-nav-height:              25px;
+
     --user-nav-p-display-wd:        block;
     --user-nav-p-margin-right-wd:   10px;
 
@@ -1889,21 +1892,14 @@ table {
 /******************/
 /***** Global *****/
 .navbar,
-.navbar ul,
-.navbar li,
-.navbar a {
+.main-nav,
+.user-nav,
+.main-nav a,
+.user-nav a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-
-/*.navbar,
-.main-nav,
-.user-nav,
-.main-nav > *,
-.user-nav > * {
-    display: flex;
-}*/
 
 
 /******************/
@@ -1912,34 +1908,38 @@ table {
     -webkit-box-align: var(--navbar-align-items);
         -ms-flex-align: var(--navbar-align-items);
             align-items: var(--navbar-align-items);
-    -webkit-box-pack: var(--navbar-justify-content);
-        -ms-flex-pack: var(--navbar-justify-content);
-            justify-content: var(--navbar-justify-content);
     background-color: var(--navbar-background-color);
     color: var(--navbar-color);
+
+    /***** Mobile Portrait *****/
+    -webkit-box-pack: var(--navbar-justify-content-tn);
+        -ms-flex-pack: var(--navbar-justify-content-tn);
+            justify-content: var(--navbar-justify-content-tn);
 }
 
-/***** Navbar List *****/
-.navbar ul {
-    -webkit-box-align: var(--navbar-ul-align-items);
-        -ms-flex-align: var(--navbar-ul-align-items);
-            align-items: var(--navbar-ul-align-items);
-    margin: var(--navbar-ul-margin);
-    padding: var(--navbar-ul-padding);
+/***** Nav Main & User *****/
+.nav-main,
+.nav-user {
+    -webkit-box-align: var(--nav-main-align-items);
+        -ms-flex-align: var(--nav-main-align-items);
+            align-items: var(--nav-main-align-items);
+    margin: var(--nav-main-margin);
+    padding: var(--nav-main-padding);
     list-style: none;
-}
-
-/***** Navbar List Element *****/
-.navbar li {
-    -webkit-box-align: var(--navbar-li-align-items);
-        -ms-flex-align: var(--navbar-li-align-items);
-            align-items: var(--navbar-li-align-items);
 }
 
 /***** Navbar Links *****/
 .navbar a {
     padding: var(--navbar-a-padding);
     color: var(--white);
+}
+
+.nav-main a,
+.nav-user a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .navbar a:hover,
@@ -2645,4 +2645,4 @@ table {
 }
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 7th Mar 2019 @ 10:02:09 PM */
+ Updated: 8th Mar 2019 @ 6:38:12 PM */
