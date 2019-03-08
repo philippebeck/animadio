@@ -31,6 +31,7 @@ Warning, Framework in developement phase :
 [![GitHub version](https://badge.fury.io/gh/animadio%2Fanimadio.svg)](https://badge.fury.io/gh/animadio%2Fanimadio)
 [![Build Status](https://travis-ci.com/animadio/animadio.svg?branch=master)](https://travis-ci.com/animadio/animadio)
 [![devDependency Status](https://img.shields.io/david/dev/animadio/animadio.svg)](https://david-dm.org/animadio/animadio?type=dev)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
 [![npm version](https://badge.fury.io/js/animadio.svg)](https://badge.fury.io/js/animadio)
 [![PHP version](https://badge.fury.io/ph/animadio%2Fanimadio.svg)](https://badge.fury.io/ph/animadio%2Fanimadio)
 [![languages](https://img.shields.io/github/languages/count/animadio/animadio.svg)]()
