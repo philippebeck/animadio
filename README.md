@@ -7,7 +7,6 @@ Perform Complex Animations - Controls by Radio Buttons - No JavaScript needed
 
 ## Summary
 
-Warning, Framework in developement phase :
 - [Status](#status)
 - [Installation](#installation)
 - [Content](#content)
