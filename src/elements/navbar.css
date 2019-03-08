@@ -47,6 +47,11 @@
     color: var(--white);
 }
 
+.nav-main a,
+.nav-user a {
+    flex-direction: column;
+}
+
 .navbar a:hover,
 .navbar a:focus,
 .navbar a:active {
