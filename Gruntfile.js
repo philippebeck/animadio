@@ -51,17 +51,16 @@ module.exports = function(grunt) {
                     "src/shadows/shatex-blur.css",
 
                     /***** ANIMATIONS *****/
-                    "src/sizes/animation-var.css",
-                    "src/sizes/transform-var.css",
-                    "src/animations/keyframes.css",
-                    "src/animations/name.css",
-                    "src/animations/duration.css",
-                    "src/animations/delay.css",
-                    "src/animations/timing.css",
-                    "src/animations/count.css",
-                    "src/animations/direction.css",
-                    "src/animations/fill.css",
-                    "src/animations/origin.css",
+                    "src/animations/anima-var.css",
+                    "src/animations/anima-keyframes.css",
+                    "src/animations/anima-name.css",
+                    "src/animations/anima-duration.css",
+                    "src/animations/anima-delay.css",
+                    "src/animations/anima-timing.css",
+                    "src/animations/anima-count.css",
+                    "src/animations/anima-direction.css",
+                    "src/animations/anima-fill.css",
+                    "src/animations/anima-origin.css",
 
                     /***** TAGS *****/
                     "src/tags/tag-var.css",
