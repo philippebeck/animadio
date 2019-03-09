@@ -28,6 +28,7 @@
     --anima-count-many: 5;
 
     /***** Timing Function *****/
+    --anima-timing-ease: ease-in-out;
     --anima-timing-steps: 60, start;
     --anima-timing-bezier: 1,5,1,-5;
 }
