@@ -2,53 +2,57 @@
 /********** ANIMATION DIRECTION **********/
 /*****************************************/
 
-/*
-1. Alternate
-2. Reverse
-3. Alternate Reverse
-*/
 
-
-/*********************/
-/***** Alternate *****/
-[class*="animate-"][class*="alternate"]:hover,
-[class*="animate-"][class*="alternate"]:focus,
-[class*="animate-"][class*="alternate"]:active,
-*:hover > [class*="animated-"][class*="alternate"],
-*:focus > [class*="animated-"][class*="alternate"],
-*:active > [class*="animated-"][class*="alternate"],
-[class*="radio-"][class*="alternate"]:checked ~ [class*="target-"][class*="alternate"],
-[class*="show-"][class*="alternate"],
-[class*="shown-"][class*="alternate"] > * {
+[class*="anima"][class*="tio"][class*="alter"],
+[class*="anima"][class*="dio"][class*="alter"]:checked ~ [class*="anima"][class*="target"][class*="alter"],
+*:hover > [class*="anima"][class*="into"][class*="alter"],
+*:focus > [class*="anima"][class*="into"][class*="alter"],
+*:active > [class*="anima"][class*="into"][class*="alter"],
+[class*="anima"][class*="onto"][class*="alter"]:hover,
+[class*="anima"][class*="onto"][class*="alter"]:focus,
+[class*="anima"][class*="onto"][class*="alter"]:active,
+[class*="anima"][class*="toall"][class*="alter"] > *,
+[class*="anima"][class*="forall"][class*="alter"]:hover > *,
+[class*="anima"][class*="forall"][class*="alter"]:focus > *,
+[class*="anima"][class*="forall"][class*="alter"]:active > *,
+[class*="anima"][class*="fromall"][class*="alter"] > *:hover,
+[class*="anima"][class*="fromall"][class*="alter"] > *:focus,
+[class*="anima"][class*="fromall"][class*="alter"] > *:active {
     animation-direction: alternate;
 }
 
-
-/*******************/
-/***** Reverse *****/
-[class*="animate-"][class*="reverse"]:hover,
-[class*="animate-"][class*="reverse"]:focus,
-[class*="animate-"][class*="reverse"]:active,
-*:hover > [class*="animated-"][class*="reverse"],
-*:focus > [class*="animated-"][class*="reverse"],
-*:active > [class*="animated-"][class*="reverse"],
-[class*="radio-"][class*="reverse"]:checked ~ [class*="target-"][class*="reverse"],
-[class*="show-"][class*="reverse"],
-[class*="shown-"][class*="reverse"] > * {
+[class*="anima"][class*="tio"][class*="rever"],
+[class*="anima"][class*="dio"][class*="rever"]:checked ~ [class*="anima"][class*="target"][class*="rever"],
+*:hover > [class*="anima"][class*="into"][class*="rever"],
+*:focus > [class*="anima"][class*="into"][class*="rever"],
+*:active > [class*="anima"][class*="into"][class*="rever"],
+[class*="anima"][class*="onto"][class*="rever"]:hover,
+[class*="anima"][class*="onto"][class*="rever"]:focus,
+[class*="anima"][class*="onto"][class*="rever"]:active,
+[class*="anima"][class*="toall"][class*="rever"] > *,
+[class*="anima"][class*="forall"][class*="rever"]:hover > *,
+[class*="anima"][class*="forall"][class*="rever"]:focus > *,
+[class*="anima"][class*="forall"][class*="rever"]:active > *,
+[class*="anima"][class*="fromall"][class*="rever"] > *:hover,
+[class*="anima"][class*="fromall"][class*="rever"] > *:focus,
+[class*="anima"][class*="fromall"][class*="rever"] > *:active {
     animation-direction: reverse;
 }
 
-
-/*****************************/
-/***** Alternate Reverse *****/
-[class*="animate-"][class*="alt-rev"]:hover,
-[class*="animate-"][class*="alt-rev"]:focus,
-[class*="animate-"][class*="alt-rev"]:active,
-*:hover > [class*="animated-"][class*="alt-rev"],
-*:focus > [class*="animated-"][class*="alt-rev"],
-*:active > [class*="animated-"][class*="alt-rev"],
-[class*="radio-"][class*="alt-rev"]:checked ~ [class*="target-"][class*="alt-rev"],
-[class*="show-"][class*="alt-rev"],
-[class*="shown-"][class*="alt-rev"] > * {
+[class*="anima"][class*="tio"][class*="altrev"],
+[class*="anima"][class*="dio"][class*="altrev"]:checked ~ [class*="anima"][class*="target"][class*="altrev"],
+*:hover > [class*="anima"][class*="into"][class*="altrev"],
+*:focus > [class*="anima"][class*="into"][class*="altrev"],
+*:active > [class*="anima"][class*="into"][class*="altrev"],
+[class*="anima"][class*="onto"][class*="altrev"]:hover,
+[class*="anima"][class*="onto"][class*="altrev"]:focus,
+[class*="anima"][class*="onto"][class*="altrev"]:active,
+[class*="anima"][class*="toall"][class*="altrev"] > *,
+[class*="anima"][class*="forall"][class*="altrev"]:hover > *,
+[class*="anima"][class*="forall"][class*="altrev"]:focus > *,
+[class*="anima"][class*="forall"][class*="altrev"]:active > *,
+[class*="anima"][class*="fromall"][class*="altrev"] > *:hover,
+[class*="anima"][class*="fromall"][class*="altrev"] > *:focus,
+[class*="anima"][class*="fromall"][class*="altrev"] > *:active {
     animation-direction: alternate-reverse;
 }
