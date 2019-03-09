@@ -31,17 +31,17 @@
 
 
 /***** Text Shadow *****/
-[class*="shatext"] {
-    --shatext-x-sm: 1px;
-    --shatext-x-md: 2px;
-    --shatext-x-lg: 5px;
+[class*="shatex"] {
+    --shatex-x-sm: 1px;
+    --shatex-x-md: 2px;
+    --shatex-x-lg: 5px;
 
-    --shatext-y-sm: 1px;
-    --shatext-y-md: 2px;
-    --shatext-y-lg: 5px;
+    --shatex-y-sm: 1px;
+    --shatex-y-md: 2px;
+    --shatex-y-lg: 5px;
 
-    --shatext-blur-all: 2px;
-    --shatext-blur-sm: 1px;
-    --shatext-blur-md: 2px;
-    --shatext-blur-lg: 5px;
+    --shatex-blur-all: 2px;
+    --shatex-blur-sm: 1px;
+    --shatex-blur-md: 2px;
+    --shatex-blur-lg: 5px;
 }
