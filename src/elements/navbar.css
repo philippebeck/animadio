@@ -14,9 +14,9 @@
 /***** Global *****/
 .navbar,
 .main-nav,
-.user-nav,
+.nav-user,
 .main-nav a,
-.user-nav a {
+.nav-user a {
     display: flex;
 }
 
@@ -67,9 +67,9 @@
 
 /*********************/
 /***** Brand Nav *****/
-.brand-nav img,
-.brand-nav svg {
-    height: var(--brand-nav-img-height);
+.nav-brand img,
+.nav-brand svg {
+    height: var(--nav-brand-img-height);
 }
 
 
@@ -82,14 +82,14 @@
 
 /********************/
 /***** User Nav *****/
-.user-nav p {
-    display: var(--user-nav-p-display);
+.nav-user p {
+    display: var(--nav-user-p-display);
 }
 
-.user-nav img,
-.user-nav svg {
-    margin: var(--user-nav-img-margin);
-    height: var(--user-nav-height);
+.nav-user img,
+.nav-user svg {
+    margin: var(--nav-user-img-margin);
+    height: var(--nav-user-height);
 }
 
 
@@ -104,15 +104,15 @@
         padding: var(--navbar-padding-sm);
     }
 
-    .brand-nav img,
-    .brand-nav svg {
-        height: calc(var(--brand-nav-img-height) * 1.25);
+    .nav-brand img,
+    .nav-brand svg {
+        height: calc(var(--nav-brand-img-height) * 1.25);
     }
 
-    .user-nav img,
-    .user-nav svg {
-        margin: calc(var(--user-nav-img-margin) * 2);
-        height: calc(var(--user-nav-height) * 1.25);
+    .nav-user img,
+    .nav-user svg {
+        margin: calc(var(--nav-user-img-margin) * 2);
+        height: calc(var(--nav-user-height) * 1.25);
     }
 }
 
@@ -122,50 +122,50 @@
         justify-content: var(--navbar-justify-content-md);
     }
 
-    .brand-nav img,
-    .brand-nav svg {
-        height: calc(var(--brand-nav-img-height) * 1.5);
+    .nav-brand img,
+    .nav-brand svg {
+        height: calc(var(--nav-brand-img-height) * 1.5);
     }
 
     .main-nav span {
         display: var(--main-nav-span-display-md);
     }
 
-    .user-nav img,
-    .user-nav svg {
-        margin: calc(var(--user-nav-img-margin) * 3);
-        height: calc(var(--user-nav-height) * 1.5);
+    .nav-user img,
+    .nav-user svg {
+        margin: calc(var(--nav-user-img-margin) * 3);
+        height: calc(var(--nav-user-height) * 1.5);
     }
 }
 
 /***** Tablet Landscape *****/
 @media (min-width: 992px) {
-    .brand-nav img,
-    .brand-nav svg {
-        height: calc(var(--brand-nav-img-height) * 1.75);
+    .nav-brand img,
+    .nav-brand svg {
+        height: calc(var(--nav-brand-img-height) * 1.75);
     }
 
-    .user-nav img,
-    .user-nav svg {
-        margin: calc(var(--user-nav-img-margin) * 4);
-        height: calc(var(--user-nav-height) * 1.75);
+    .nav-user img,
+    .nav-user svg {
+        margin: calc(var(--nav-user-img-margin) * 4);
+        height: calc(var(--nav-user-height) * 1.75);
     }
 }
 
 /***** Desktop *****/
 @media (min-width: 1200px) {
-    .brand-nav img,
-    .brand-nav svg {
-        height: calc(var(--brand-nav-img-height) * 2);
+    .nav-brand img,
+    .nav-brand svg {
+        height: calc(var(--nav-brand-img-height) * 2);
     }
 
-    .user-nav img,
-    .user-nav svg {
-        margin: calc(var(--user-nav-img-margin) * 5);
-        height: calc(var(--user-nav-height) * 2);
+    .nav-user img,
+    .nav-user svg {
+        margin: calc(var(--nav-user-img-margin) * 5);
+        height: calc(var(--nav-user-height) * 2);
     }
-    .user-nav p {
-        display: var(--user-nav-p-display-wd);
-        margin-right: var(--user-nav-p-margin-right-wd);
+    .nav-user p {
+        display: var(--nav-user-p-display-wd);
+        margin-right: var(--nav-user-p-margin-right-wd);
     }
 }
