@@ -8,8 +8,8 @@
 */
 
 
-:root {
-    /***** Box Shadow *****/
+/***** Box Shadow *****/
+[class*="shadow"] {
     --shadow-x-sm: 2px;
     --shadow-x-md: 5px;
     --shadow-x-lg: 10px;
