@@ -1,0 +1,50 @@
+/**************************************/
+/********** NAVBAR VARIABLES **********/
+/**************************************/
+
+
+/*
+1. Navbar
+2. Nav Brand
+3. Nav Main
+4. Nav User
+*/
+
+
+/***** Navbar *****/
+.navbar {
+    --navbar-align-items: center;
+    --navbar-background-color: var(--blue);
+    --navbar-color: var(--white);
+    --navbar-flex-direction-sm: row;
+    --navbar-justify-content-tn: space-between;
+    --navbar-justify-content-sm: space-content;
+    --navbar-justify-content-md: space-evenly;
+    --navbar-padding-sm: 10px;
+    --navbar-a-padding: 10px;
+    --navbar-a-scale: 1.1;
+    --navbar-i-align-self: center;
+}
+
+/***** Nav Brand *****/
+.nav-brand {
+    --nav-brand-img-height: 20px;
+}
+
+/***** Nav Main *****/
+.nav-main {
+    --nav-main-align-items: center;
+    --nav-main-margin: 0;
+    --nav-main-padding: 0;
+    --nav-main-span-display: none;
+    --nav-main-span-display-md: inline;
+}
+
+/***** Nav User *****/
+.nav-user {
+    --nav-user-p-display: none;
+    --nav-user-img-margin: 1px;
+    --nav-user-height: 25px;
+    --nav-user-p-display-wd: block;
+    --nav-user-p-margin-right-wd: 10px;
+}
