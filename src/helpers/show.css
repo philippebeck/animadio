@@ -10,8 +10,8 @@
 /* Position */
 
 
-/*****************************/
-/***** Container Helpers *****/
+/*********************/
+/***** Container *****/
 [class^="container"] {
     margin: auto;
 }
@@ -29,8 +29,8 @@
 }
 
 
-/**************************/
-/***** Cursor Helpers *****/
+/******************/
+/***** Cursor *****/
 .cursor-cross,
 .cursor-cross > * {
     cursor: crosshair;
@@ -57,8 +57,8 @@
 }
 
 
-/***************************/
-/***** Display Helpers *****/
+/*******************/
+/***** Display *****/
 .dis-block {
     display: block;
 }
@@ -81,8 +81,8 @@
 }
 
 
-/****************************/
-/***** Overflow Helpers *****/
+/********************/
+/***** Overflow *****/
 .flow-hidden {
     overflow: hidden;
 }
@@ -92,8 +92,8 @@
 }
 
 
-/****************************/
-/***** Position Helpers *****/
+/********************/
+/***** Position *****/
 .pos-absolute {
     position: absolute;
 }

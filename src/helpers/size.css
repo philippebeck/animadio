@@ -6,8 +6,8 @@
 /* Width */
 
 
-/**************************/
-/***** Height Helpers *****/
+/******************/
+/***** Height *****/
 .height-sm,
 .g-height-sm > * {
     height: var(--height-sm);
@@ -23,7 +23,7 @@
     height: var(--height-lg);
 }
 
-/***** Min Height Helpers *****/
+/***** Min Height *****/
 .min-height-sm,
 .g-min-height-sm > * {
     min-height: var(--min-height-sm);
@@ -39,7 +39,7 @@
     min-height: var(--min-height-lg);
 }
 
-/***** Max Height Helpers *****/
+/***** Max Height *****/
 .max-height-sm,
 .g-max-height-sm > * {
     max-height: var(--max-height-sm);
@@ -56,8 +56,8 @@
 }
 
 
-/*************************/
-/***** Width Helpers *****/
+/*****************/
+/***** Width *****/
 .width-sm,
 .g-width-sm > * {
     width: var(--width-sm);
@@ -73,7 +73,7 @@
     width: var(--width-lg);
 }
 
-/***** Min Width Helpers *****/
+/***** Min Width *****/
 .min-width-sm,
 .g-min-width-sm > * {
     min-width: var(--min-width-sm);
@@ -89,7 +89,7 @@
     min-width: var(--min-width-lg);
 }
 
-/***** Max Width Helpers *****/
+/***** Max Width *****/
 .max-width-sm,
 .g-max-width-sm > * {
     max-width: var(--max-width-sm);
