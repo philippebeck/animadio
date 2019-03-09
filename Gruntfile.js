@@ -14,18 +14,37 @@ module.exports = function(grunt) {
                 src: [
                     "node_modules/normalize.css/normalize.css",
 
-                    "src/global/variables.css",
-                    "src/global/keyframes.css",
+                    "src/variables/color-var.css",
+                    "src/variables/spacing-var.css",
+                    "src/variables/border-var.css",
+                    "src/variables/size-var.css",
+                    "src/variables/shadow-var.css",
+                    "src/variables/animation-var.css",
+                    "src/variables/tansform-var.css",
+                    "src/variables/tags-var.css",
+                    "src/variables/navbar-var.css",
+
+                    "src/global/grid.css",
+                    "src/global/flexbox.css",
                     "src/global/tags.css",
-                    "src/global/display.css",
 
                     "src/helpers/show.css",
+                    "src/helpers/color.css",
                     "src/helpers/spacing.css",
                     "src/helpers/border.css",
                     "src/helpers/size.css",
-                    "src/helpers/text.css",
-                    "src/helpers/color.css",
                     "src/helpers/shadow.css",
+                    "src/helpers/text.css",
+
+                    "src/animations/keyframes.css",
+                    "src/animations/name.css",
+                    "src/animations/duration.css",
+                    "src/animations/delay.css",
+                    "src/animations/timing.css",
+                    "src/animations/count.css",
+                    "src/animations/direction.css",
+                    "src/animations/fill.css",
+                    "src/animations/origin.css",
 
                     "src/elements/navbar.css",
                     "src/elements/button.css",
@@ -34,16 +53,7 @@ module.exports = function(grunt) {
                     "src/elements/gallery.css",
                     "src/elements/table.css",
                     "src/elements/form.css",
-                    "src/elements/footer.css",
-
-                    "src/animations/name.css",
-                    "src/animations/duration.css",
-                    "src/animations/delay.css",
-                    "src/animations/timing.css",
-                    "src/animations/count.css",
-                    "src/animations/direction.css",
-                    "src/animations/fill.css",
-                    "src/animations/origin.css"
+                    "src/elements/footer.css"
                 ],
                 dest: "dist/animadio.css"
             }
