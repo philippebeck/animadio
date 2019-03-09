@@ -1,0 +1,33 @@
+/*****************************************/
+/********** ANIMATION VARIABLES **********/
+/*****************************************/
+
+/*
+1. Delay
+2. Duration
+3. Iteration Count
+4. Timing Function
+*/
+
+
+:root {
+    /***** Delay *****/
+    --animation-delay-small: 1s;
+    --animation-delay-medium: 2s;
+    --animation-delay-large: 3s;
+
+    /***** Duration *****/
+    --animation-duration-tn: 1s;
+    --animation-duration-sm: 2s;
+    --animation-duration-md: 5s;
+    --animation-duration-lg: 10s;
+    --animation-duration-wd: 60s;
+
+    /***** Iteration Count *****/
+    --animation-count-few: 2;
+    --animation-count-many: 5;
+
+    /***** Timing Function *****/
+    --animation-timing-steps: 60, start;
+    --animation-timing-bezier: 1,5,1,-5;
+}
