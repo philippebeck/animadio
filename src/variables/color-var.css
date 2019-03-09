@@ -1,0 +1,34 @@
+/*************************************/
+/********** COLOR VARIABLES **********/
+/*************************************/
+
+/*
+1. Main Colors
+2. Brand Colors
+*/
+
+
+:root {
+    /***** Main Colors *****/
+    --blue: RoyalBlue;
+    --brown: Sienna;
+    --gray: DarkGray;
+    --grey: LightGrey;
+    --green: SeaGreen;
+    --orange: DarkOrange;
+    --red: IndianRed;
+    --violet: BlueViolet;
+    --white: Ivory;
+    --yellow: Khaki;
+
+    /***** Brand Colors *****/
+    --facebook: #4267b2;
+    --freecodecamp: #006400;
+    --github: #24292e;
+    --linkedin: #0077b5;
+    --medium: #029e74;
+    --npm: #c12127;
+    --packagist: #f28d1a;
+    --stackoverflow: #f48024;
+    --twitter: #1da1f2;
+}
