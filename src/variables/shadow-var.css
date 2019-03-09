@@ -9,39 +9,39 @@
 
 
 /***** Box Shadow *****/
-[class*="shadow"] {
-    --shadow-x-sm: 2px;
-    --shadow-x-md: 5px;
-    --shadow-x-lg: 10px;
+[class*="shabox"] {
+    --shabox-x-sm: 2px;
+    --shabox-x-md: 5px;
+    --shabox-x-lg: 10px;
 
-    --shadow-y-sm: 2px;
-    --shadow-y-md: 5px;
-    --shadow-y-lg: 10px;
+    --shabox-y-sm: 2px;
+    --shabox-y-md: 5px;
+    --shabox-y-lg: 10px;
 
-    --shadow-blur-all: 5px;
-    --shadow-blur-sm: 2px;
-    --shadow-blur-md: 5px;
-    --shadow-blur-lg: 10px;
+    --shabox-blur-all: 5px;
+    --shabox-blur-sm: 2px;
+    --shabox-blur-md: 5px;
+    --shabox-blur-lg: 10px;
 
-    --shadow-spread-all: 5px;
-    --shadow-spread-sm: 2px;
-    --shadow-spread-md: 5px;
-    --shadow-spread-lg: 10px;
+    --shabox-spread-all: 5px;
+    --shabox-spread-sm: 2px;
+    --shabox-spread-md: 5px;
+    --shabox-spread-lg: 10px;
 }
 
 
 /***** Text Shadow *****/
-[class*="text"] {
-    --text-x-sm: 1px;
-    --text-x-md: 2px;
-    --text-x-lg: 5px;
+[class*="shatext"] {
+    --shatext-x-sm: 1px;
+    --shatext-x-md: 2px;
+    --shatext-x-lg: 5px;
 
-    --text-y-sm: 1px;
-    --text-y-md: 2px;
-    --text-y-lg: 5px;
+    --shatext-y-sm: 1px;
+    --shatext-y-md: 2px;
+    --shatext-y-lg: 5px;
 
-    --text-blur-all: 2px;
-    --text-blur-sm: 1px;
-    --text-blur-md: 2px;
-    --text-blur-lg: 5px;
+    --shatext-blur-all: 2px;
+    --shatext-blur-sm: 1px;
+    --shatext-blur-md: 2px;
+    --shatext-blur-lg: 5px;
 }
