@@ -2,37 +2,40 @@
 /********** TRANSFORM ORIGIN **********/
 /**************************************/
 
-/*
-1. Far
-2. Near
-*/
 
-
-/***************/
-/***** Far *****/
-[class*="animate-"][class*="far"]:hover,
-[class*="animate-"][class*="far"]:focus,
-[class*="animate-"][class*="far"]:active,
-*:hover > [class*="animated-"][class*="far"],
-*:focus > [class*="animated-"][class*="far"],
-*:active > [class*="animated-"][class*="far"],
-[class*="radio-"][class*="far"]:checked ~ [class*="target-"][class*="far"],
-[class*="show-"][class*="far"],
-[class*="shown-"][class*="far"] > * {
+[class*="anima"][class*="tio"][class*="far"],
+[class*="anima"][class*="dio"][class*="far"]:checked ~ [class*="anima"][class*="target"][class*="far"],
+*:hover > [class*="anima"][class*="into"][class*="far"],
+*:focus > [class*="anima"][class*="into"][class*="far"],
+*:active > [class*="anima"][class*="into"][class*="far"],
+[class*="anima"][class*="onto"][class*="far"]:hover,
+[class*="anima"][class*="onto"][class*="far"]:focus,
+[class*="anima"][class*="onto"][class*="far"]:active,
+[class*="anima"][class*="toall"][class*="far"] > *,
+[class*="anima"][class*="forall"][class*="far"]:hover > *,
+[class*="anima"][class*="forall"][class*="far"]:focus > *,
+[class*="anima"][class*="forall"][class*="far"]:active > *,
+[class*="anima"][class*="fromall"][class*="far"] > *:hover,
+[class*="anima"][class*="fromall"][class*="far"] > *:focus,
+[class*="anima"][class*="fromall"][class*="far"] > *:active {
     transform-origin: var(--transform-origin-far);
 }
 
-/****************/
-/***** Near *****/
-[class*="animate-"][class*="near"]:hover,
-[class*="animate-"][class*="near"]:focus,
-[class*="animate-"][class*="near"]:active,
-*:hover > [class*="animated-"][class*="near"],
-*:focus > [class*="animated-"][class*="near"],
-*:active > [class*="animated-"][class*="near"],
-[class*="radio-"][class*="near"]:checked ~ [class*="target-"][class*="near"],
-[class*="show-"][class*="near"],
-[class*="shown-"][class*="near"] > * {
+[class*="anima"][class*="tio"][class*="near"],
+[class*="anima"][class*="dio"][class*="near"]:checked ~ [class*="anima"][class*="target"][class*="near"],
+*:hover > [class*="anima"][class*="into"][class*="near"],
+*:focus > [class*="anima"][class*="into"][class*="near"],
+*:active > [class*="anima"][class*="into"][class*="near"],
+[class*="anima"][class*="onto"][class*="near"]:hover,
+[class*="anima"][class*="onto"][class*="near"]:focus,
+[class*="anima"][class*="onto"][class*="near"]:active,
+[class*="anima"][class*="toall"][class*="near"] > *,
+[class*="anima"][class*="forall"][class*="near"]:hover > *,
+[class*="anima"][class*="forall"][class*="near"]:focus > *,
+[class*="anima"][class*="forall"][class*="near"]:active > *,
+[class*="anima"][class*="fromall"][class*="near"] > *:hover,
+[class*="anima"][class*="fromall"][class*="near"] > *:focus,
+[class*="anima"][class*="fromall"][class*="near"] > *:active {
 transform-origin: var(--transform-origin-near);
 }
 
