@@ -17,7 +17,6 @@ module.exports = function(grunt) {
                     "src/variables/color-var.css",
                     "src/variables/spacing-var.css",
                     "src/variables/size-var.css",
-                    "src/variables/shadow-var.css",
                     "src/variables/animation-var.css",
                     "src/variables/transform-var.css",
                     "src/variables/tags-var.css",
@@ -30,6 +29,13 @@ module.exports = function(grunt) {
                     "src/border/bord-color.css",
                     "src/border/bord-radius.css",
 
+                    "src/shadow/shadow-var.css",
+                    "src/shadow/shabox.css",
+                    "src/shadow/shabox-blur.css",
+                    "src/shadow/shabox-spread.css",
+                    "src/shadow/shatex.css",
+                    "src/shadow/shatex-blur.css",
+
                     "src/global/grid.css",
                     "src/global/flexbox.css",
                     "src/global/tags.css",
@@ -38,7 +44,6 @@ module.exports = function(grunt) {
                     "src/helpers/color.css",
                     "src/helpers/spacing.css",
                     "src/helpers/size.css",
-                    "src/helpers/shadow.css",
                     "src/helpers/text.css",
 
                     "src/animations/keyframes.css",
