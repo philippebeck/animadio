@@ -8,7 +8,7 @@
 */
 
 
-:root {
+[class*="border"] {
     /***** Border *****/
     --border-style-global: solid;
     --border-width-global: medium;
