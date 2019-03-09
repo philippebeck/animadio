@@ -10,7 +10,7 @@
 */
 
 
-:root {
+[class="anima"] {
     /***** Delay *****/
     --anima-delay-small: 1s;
     --anima-delay-medium: 2s;
