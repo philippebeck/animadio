@@ -7,17 +7,6 @@
 2. Front
 */
 
-[class*="animate-"][class*="front"]:hover,
-[class*="animate-"][class*="front"]:focus,
-[class*="animate-"][class*="front"]:active,
-*:hover > [class*="animated-"][class*="front"],
-*:focus > [class*="animated-"][class*="front"],
-*:active > [class*="animated-"][class*="front"],
-[class*="radio-"][class*="front"]:checked ~ [class*="target-"][class*="front"],
-[class*="show-"][class*="front"],
-[class*="shown-"][class*="front"] > * {
-    animation-fill-mode: forwards;
-}
 
 /****************/
 /***** Back *****/
@@ -36,3 +25,14 @@
 
 /*****************/
 /***** Front *****/
+[class*="animate-"][class*="front"]:hover,
+[class*="animate-"][class*="front"]:focus,
+[class*="animate-"][class*="front"]:active,
+*:hover > [class*="animated-"][class*="front"],
+*:focus > [class*="animated-"][class*="front"],
+*:active > [class*="animated-"][class*="front"],
+[class*="radio-"][class*="front"]:checked ~ [class*="target-"][class*="front"],
+[class*="show-"][class*="front"],
+[class*="shown-"][class*="front"] > * {
+    animation-fill-mode: forwards;
+}

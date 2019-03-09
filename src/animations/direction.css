@@ -11,6 +11,17 @@
 
 /*********************/
 /***** Alternate *****/
+[class*="animate-"][class*="alternate"]:hover,
+[class*="animate-"][class*="alternate"]:focus,
+[class*="animate-"][class*="alternate"]:active,
+*:hover > [class*="animated-"][class*="alternate"],
+*:focus > [class*="animated-"][class*="alternate"],
+*:active > [class*="animated-"][class*="alternate"],
+[class*="radio-"][class*="alternate"]:checked ~ [class*="target-"][class*="alternate"],
+[class*="show-"][class*="alternate"],
+[class*="shown-"][class*="alternate"] > * {
+    animation-direction: alternate;
+}
 
 
 /*******************/
@@ -27,17 +38,6 @@
     animation-direction: reverse;
 }
 
-[class*="animate-"][class*="alternate"]:hover,
-[class*="animate-"][class*="alternate"]:focus,
-[class*="animate-"][class*="alternate"]:active,
-*:hover > [class*="animated-"][class*="alternate"],
-*:focus > [class*="animated-"][class*="alternate"],
-*:active > [class*="animated-"][class*="alternate"],
-[class*="radio-"][class*="alternate"]:checked ~ [class*="target-"][class*="alternate"],
-[class*="show-"][class*="alternate"],
-[class*="shown-"][class*="alternate"] > * {
-    animation-direction: alternate;
-}
 
 /*****************************/
 /***** Alternate Reverse *****/

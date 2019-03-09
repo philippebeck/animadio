@@ -2,19 +2,14 @@
 /********** TRANSFORM ORIGIN **********/
 /**************************************/
 
+/*
+1. Far
+2. Near
+*/
 
-[class*="animate-"][class*="near"]:hover,
-[class*="animate-"][class*="near"]:focus,
-[class*="animate-"][class*="near"]:active,
-*:hover > [class*="animated-"][class*="near"],
-*:focus > [class*="animated-"][class*="near"],
-*:active > [class*="animated-"][class*="near"],
-[class*="radio-"][class*="near"]:checked ~ [class*="target-"][class*="near"],
-[class*="show-"][class*="near"],
-[class*="shown-"][class*="near"] > * {
-    transform-origin: var(--transform-origin-near);
-}
 
+/***************/
+/***** Far *****/
 [class*="animate-"][class*="far"]:hover,
 [class*="animate-"][class*="far"]:focus,
 [class*="animate-"][class*="far"]:active,
@@ -26,3 +21,18 @@
 [class*="shown-"][class*="far"] > * {
     transform-origin: var(--transform-origin-far);
 }
+
+/****************/
+/***** Near *****/
+[class*="animate-"][class*="near"]:hover,
+[class*="animate-"][class*="near"]:focus,
+[class*="animate-"][class*="near"]:active,
+*:hover > [class*="animated-"][class*="near"],
+*:focus > [class*="animated-"][class*="near"],
+*:active > [class*="animated-"][class*="near"],
+[class*="radio-"][class*="near"]:checked ~ [class*="target-"][class*="near"],
+[class*="show-"][class*="near"],
+[class*="shown-"][class*="near"] > * {
+transform-origin: var(--transform-origin-near);
+}
+
