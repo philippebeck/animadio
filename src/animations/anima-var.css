@@ -1,10 +1,14 @@
 /*****************************************/
-/********** TRANSFORM VARIABLES **********/
+/********** ANIMA VARIABLES **************/
 /*****************************************/
 
 /*
 1. Transform
 2. Transform Origin
+3. Delay
+4. Duration
+5. Iteration Count
+6. Timing Function
 */
 
 
@@ -29,4 +33,28 @@
     /***** Transform Origin *****/
     --transform-origin-near: 50px 50px;
     --transform-origin-far: top right 50px;
+}
+
+
+[class="anima"] {
+    /***** Delay *****/
+    --anima-delay-small: 1s;
+    --anima-delay-medium: 2s;
+    --anima-delay-large: 3s;
+
+    /***** Duration *****/
+    --anima-duration-tn: 1s;
+    --anima-duration-sm: 2s;
+    --anima-duration-md: 5s;
+    --anima-duration-lg: 10s;
+    --anima-duration-wd: 60s;
+
+    /***** Iteration Count *****/
+    --anima-count-few: 2;
+    --anima-count-many: 5;
+
+    /***** Timing Function *****/
+    --anima-timing-ease: ease-in-out;
+    --anima-timing-steps: 60, start;
+    --anima-timing-bezier: 1,5,1,-5;
 }
