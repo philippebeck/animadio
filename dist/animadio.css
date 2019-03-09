@@ -1,4 +1,4 @@
-/* animadio v0.1.19 | https://animadio.org | MIT License */
+/* animadio v0.1.20 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -354,241 +354,257 @@ template {
   display: none;
 }
 
-/***************************************/
-/********** SPACING VARIABLES **********/
-/***************************************/
-
-/*
-1. Margin
-2. Padding
-*/
+/**************************/
+/********** GRID **********/
+/**************************/
 
 
-:root {
-    /***** Margin *****/
-    --mar-sm: 10px;
-    --mar-md: 20px;
-    --mar-lg: 50px;
-
-    --mar-bottom-sm: 10px;
-    --mar-bottom-md: 20px;
-    --mar-bottom-lg: 50px;
-
-    --mar-left-sm: 10px;
-    --mar-left-md: 20px;
-    --mar-left-lg: 50px;
-
-    --mar-right-sm: 10px;
-    --mar-right-md: 20px;
-    --mar-right-lg: 50px;
-
-    --mar-top-sm: 10px;
-    --mar-top-md: 20px;
-    --mar-top-lg: 50px;
-
-    /***** Padding *****/
-    --pad-sm: 10px;
-    --pad-md: 20px;
-    --pad-lg: 50px;
-
-    --pad-bottom-sm: 10px;
-    --pad-bottom-md: 20px;
-    --pad-bottom-lg: 50px;
-
-    --pad-left-sm: 10px;
-    --pad-left-md: 20px;
-    --pad-left-lg: 50px;
-
-    --pad-right-sm: 10px;
-    --pad-right-md: 20px;
-    --pad-right-lg: 50px;
-
-    --pad-top-sm: 10px;
-    --pad-top-md: 20px;
-    --pad-top-lg: 50px;
-}
-
-/************************************/
-/********** SIZE VARIABLES **********/
-/************************************/
-
-/*
-1. Height
-2. Width
-*/
+/*****************************/
+/********** FLEXBOX **********/
+/*****************************/
 
 
-:root {
-    /***** Height *****/
-    --height-sm: 10vh;
-    --height-md: 50vh;
-    --height-lg: 100vh;
-
-    --max-height-sm: 50vh;
-    --max-height-md: 75vh;
-    --max-height-lg: 100vh;
-
-    --min-height-sm: 25vh;
-    --min-height-md: 50vh;
-    --min-height-lg: 75vh;
-
-    /***** Width *****/
-    --width-sm: 25%;
-    --width-md: 50%;
-    --width-lg: 100%;
-
-    --max-width-sm: 50%;
-    --max-width-md: 75%;
-    --max-width-lg: 100%;
-
-    --min-width-sm: 25%;
-    --min-width-md: 50%;
-    --min-width-lg: 75%;
-}
-
-/*****************************************/
-/********** ANIMA VARIABLES **************/
-/*****************************************/
-
-/*
-1. Delay
-2. Duration
-3. Iteration Count
-4. Timing Function
-*/
-
-
-[class="anima"] {
-    /***** Delay *****/
-    --anima-delay-small: 1s;
-    --anima-delay-medium: 2s;
-    --anima-delay-large: 3s;
-
-    /***** Duration *****/
-    --anima-duration-tn: 1s;
-    --anima-duration-sm: 2s;
-    --anima-duration-md: 5s;
-    --anima-duration-lg: 10s;
-    --anima-duration-wd: 60s;
-
-    /***** Iteration Count *****/
-    --anima-count-few: 2;
-    --anima-count-many: 5;
-
-    /***** Timing Function *****/
-    --anima-timing-ease: ease-in-out;
-    --anima-timing-steps: 60, start;
-    --anima-timing-bezier: 1,5,1,-5;
-}
-
-/*****************************************/
-/********** TRANSFORM VARIABLES **********/
-/*****************************************/
-
-/*
-1. Transform
-2. Transform Origin
-*/
-
-
-:root {
-    /***** Transform *****/
-    --rotate: rotate(-360deg);
-    --rotateX: rotateX(-360deg);
-    --rotateY: rotateY(-360deg);
-
-    --scale: 0;
-    --scaleX: 0;
-    --scaleY: 0;
-
-    --skew: 180deg, 180deg;
-    --skewX: 180deg;
-    --skewY: 180deg;
-
-    --translate: -100vw, -100vh;
-    --translateX: -100vw;
-    --translateY: -100vh;
-
-    /***** Transform Origin *****/
-    --transform-origin-near: 50px 50px;
-    --transform-origin-far: top right 50px;
-}
-/************************************/
-/********** TAGS VARIABLES **********/
-/************************************/
-
-/*
-1. Body
-2. Titles
-*/
-
-
-/***** Body *****/
-body {
-    --global-font-family: serif;
-    --global-line-height: 1.5;
-    --global-font-size: 1.5rem;
-}
-
-/***** Titles *****/
-h1, h2, h3, h4, h5, h6 {
-    --title-font-family: sans-serif;
-    --title-font-size-tn: 1.5rem;
-    --title-font-size-sm: 2rem;
-    --title-font-size-md: 2.5rem;
-    --title-font-size-lg: 3rem;
-    --title-font-size-wd: 3.5rem;
-}
-
-/**************************************/
-/********** NAVBAR VARIABLES **********/
-/**************************************/
+/***********************************/
+/********** SHOW HELPERS ***********/
+/***********************************/
 
 
 /*
-1. Navbar
-2. Nav Brand
-3. Nav Main
-4. Nav User
+1. Container
+2. Cursor
+3. Display
+4. Overflow
+5. Position
 */
 
 
-/***** Navbar *****/
-.navbar {
-    --navbar-align-items: center;
-    --navbar-background-color: var(--blue);
-    --navbar-color: var(--white);
-    --navbar-flex-direction-sm: row;
-    --navbar-justify-content-tn: space-between;
-    --navbar-justify-content-sm: space-content;
-    --navbar-justify-content-md: space-evenly;
-    --navbar-padding-sm: 10px;
-    --navbar-a-padding: 10px;
-    --navbar-a-scale: 1.1;
-    --navbar-i-align-self: center;
+/*********************/
+/***** Container *****/
+[class^="container"] {
+    margin: auto;
 }
 
-/***** Nav Brand *****/
-.nav-brand {
-    --nav-brand-img-height: 20px;
+.container-sm {
+    max-width: var(--max-width-sm);
 }
 
-/***** Nav Main *****/
-.nav-main {
-    --nav-main-align-items: center;
-    --nav-main-margin: 0;
-    --nav-main-padding: 0;
-    --nav-main-span-display: none;
-    --nav-main-span-display-md: inline;
+.container {
+    max-width: var(--max-width-md);
 }
 
-/***** Nav User *****/
-.nav-user {
-    --nav-user-p-display: none;
-    --nav-user-img-margin: 1px;
-    --nav-user-height: 25px;
-    --nav-user-p-display-wd: block;
-    --nav-user-p-margin-right-wd: 10px;
+.container-lg {
+    max-width: var(--max-width-lg);
+}
+
+
+/******************/
+/***** Cursor *****/
+.cursor-cross,
+.cursor-cross > * {
+    cursor: crosshair;
+}
+
+.cursor-help,
+.cursor-help > * {
+    cursor: help;
+}
+
+.cursor-none,
+.cursor-none > * {
+    cursor: not-allowed;
+}
+
+.cursor-pointer,
+.cursor-pointer > * {
+    cursor: pointer;
+}
+
+.cursor-text,
+.cursor-text > * {
+    cursor: text;
+}
+
+
+/*******************/
+/***** Display *****/
+.dis-block {
+    display: block;
+}
+
+.dis-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.dis-inblock {
+    display: inline-block;
+}
+
+.dis-inline {
+    display: inline;
+}
+
+.dis-none,
+.radio {
+    display: none;
+}
+
+
+/********************/
+/***** Overflow *****/
+.flow-hidden {
+    overflow: hidden;
+}
+
+.flow-scroll {
+    overflow: scroll;
+}
+
+
+/********************/
+/***** Position *****/
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-fixed {
+    position: fixed;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+}
+/***********************************/
+/********** TEXT HELPERS ***********/
+/***********************************/
+
+/*
+1. Font
+2. Text Align
+3. Text Decoration
+*/
+
+
+/****************/
+/***** Font *****/
+.font-normal {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+
+/**********************/
+/***** Text Align *****/
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+/***************************/
+/***** Text Decoration *****/
+.deco-none {
+    text-decoration: none;
+}
+
+/***** Text Decoration Underline *****/
+.deco-under {
+    text-decoration: underline;
+}
+
+.deco-under-double {
+    -webkit-text-decoration: underline double;
+            text-decoration: underline double;
+}
+
+.deco-under-dotted {
+    -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+}
+
+.deco-under-dashed {
+    -webkit-text-decoration: underline dashed;
+            text-decoration: underline dashed;
+}
+
+.deco-under-wavy {
+    -webkit-text-decoration: underline wavy;
+            text-decoration: underline wavy;
+}
+
+/***** Text Decoration Overline *****/
+.deco-over {
+    text-decoration: overline;
+}
+
+.deco-over-double {
+    -webkit-text-decoration: overline double;
+            text-decoration: overline double;
+}
+
+.deco-over-dotted {
+    -webkit-text-decoration: overline dotted;
+            text-decoration: overline dotted;
+}
+
+.deco-over-dashed {
+    -webkit-text-decoration: overline dashed;
+            text-decoration: overline dashed;
+}
+
+.deco-over-wavy {
+    -webkit-text-decoration: overline wavy;
+            text-decoration: overline wavy;
+}
+
+/***** Text Decoration Line Through *****/
+.deco-through {
+    text-decoration: line-through;
+}
+
+.deco-through-double {
+    -webkit-text-decoration: line-through double;
+            text-decoration: line-through double;
+}
+
+.deco-through-dotted {
+    -webkit-text-decoration: line-through dotted;
+            text-decoration: line-through dotted;
+}
+
+.deco-through-dashed {
+    -webkit-text-decoration: line-through dashed;
+            text-decoration: line-through dashed;
+}
+
+.deco-through-wavy {
+    -webkit-text-decoration: line-through wavy;
+            text-decoration: line-through wavy;
 }
 /*************************************/
 /********** COLOR VARIABLES **********/
@@ -1122,6 +1138,232 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--yellow);
 }
 /**************************************/
+/********** SPACING HELPERS ***********/
+/**************************************/
+
+/*
+1. Margin
+2. Padding
+*/
+
+
+/******************/
+/***** Margin *****/
+.mar-sm,
+.g-mar-sm > * {
+    margin: var(--mar-sm);
+}
+
+.mar-md,
+.g-mar-md > * {
+    margin: var(--mar-md);
+}
+
+.mar-lg,
+.g-mar-lg > * {
+    margin: var(--mar-lg);
+}
+
+/***** Margin Top *****/
+.mar-top-sm,
+.g-mar-top-sm > * {
+    margin-top: var(--mar-top-sm);
+}
+
+.mar-top-md,
+.g-mar-top-md > * {
+    margin-top: var(--mar-top-md);
+}
+
+.mar-top-lg,
+.g-mar-top-lg > * {
+    margin-top: var(--mar-top-lg);
+}
+
+/***** Margin Right *****/
+.mar-right-sm,
+.g-mar-right-sm > * {
+    margin-right: var(--mar-right-sm);
+}
+
+.mar-right-md,
+.g-mar-right-md > * {
+    margin-right: var(--mar-right-md);
+}
+
+.mar-right-lg,
+.g-mar-right-lg > * {
+    margin-right: var(--mar-right-lg);
+}
+
+/***** Margin Bottom *****/
+.mar-bottom-sm,
+.g-mar-bottom-sm > * {
+    margin-bottom: var(--mar-bottom-sm);
+}
+
+.mar-bottom-md,
+.g-mar-bottom-md > * {
+    margin-bottom: var(--mar-bottom-md);
+}
+
+.mar-bottom-lg,
+.g-mar-bottom-lg > * {
+    margin-bottom: var(--mar-bottom-lg);
+}
+
+/***** Margin Left *****/
+.mar-left-sm,
+.g-mar-left-sm > * {
+    margin-left: var(--mar-left-sm);
+}
+
+.mar-left-md,
+.g-mar-left-md > * {
+    margin-left: var(--mar-left-md);
+}
+
+.mar-left-lg,
+.g-mar-left-lg > * {
+    margin-left: var(--mar-left-lg);
+}
+
+
+/*******************/
+/***** Padding *****/
+.pad-sm,
+.g-pad-sm > * {
+    padding: var(--pad-sm);
+}
+
+.pad-md,
+.g-pad-md > * {
+    padding: var(--pad-md);
+}
+
+.pad-lg,
+.g-pad-lg > * {
+    padding: var(--pad-lg);
+}
+
+/***** Padding Top *****/
+.pad-top-sm,
+.g-pad-top-sm > * {
+    padding-top: var(--pad-top-sm);
+}
+
+.pad-top-md,
+.g-pad-top-md > * {
+    padding-top: var(--pad-top-md);
+}
+
+.pad-top-lg,
+.g-pad-top-lg > * {
+    padding-top: var(--pad-top-lg);
+}
+
+/***** Padding Right *****/
+.pad-right-sm,
+.g-pad-right-sm > * {
+    padding-right: var(--pad-right-sm);
+}
+
+.pad-right-md,
+.g-pad-right-md > * {
+    padding-right: var(--pad-right-md);
+}
+
+.pad-right-lg,
+.g-pad-right-lg > * {
+    padding-right: var(--pad-right-lg);
+}
+
+/***** Padding Bottom *****/
+.pad-bottom-sm,
+.g-pad-bottom-sm > * {
+    padding-bottom: var(--pad-bottom-sm);
+}
+
+.pad-bottom-md,
+.g-pad-bottom-md > * {
+    padding-bottom: var(--pad-bottom-md);
+}
+
+.pad-bottom-lg,
+.g-pad-bottom-lg > * {
+    padding-bottom: var(--pad-bottom-lg);
+}
+
+/***** Padding Left *****/
+.pad-left-sm,
+.g-pad-left-sm > * {
+    padding-left: var(--pad-left-sm);
+}
+
+.pad-left-md,
+.g-pad-left-md > * {
+    padding-left: var(--pad-left-md);
+}
+
+.pad-left-lg,
+.g-pad-left-lg > * {
+    padding-left: var(--pad-left-lg);
+}
+/***************************************/
+/********** SPACING VARIABLES **********/
+/***************************************/
+
+/*
+1. Margin
+2. Padding
+*/
+
+
+:root {
+    /***** Margin *****/
+    --mar-sm: 10px;
+    --mar-md: 20px;
+    --mar-lg: 50px;
+
+    --mar-bottom-sm: 10px;
+    --mar-bottom-md: 20px;
+    --mar-bottom-lg: 50px;
+
+    --mar-left-sm: 10px;
+    --mar-left-md: 20px;
+    --mar-left-lg: 50px;
+
+    --mar-right-sm: 10px;
+    --mar-right-md: 20px;
+    --mar-right-lg: 50px;
+
+    --mar-top-sm: 10px;
+    --mar-top-md: 20px;
+    --mar-top-lg: 50px;
+
+    /***** Padding *****/
+    --pad-sm: 10px;
+    --pad-md: 20px;
+    --pad-lg: 50px;
+
+    --pad-bottom-sm: 10px;
+    --pad-bottom-md: 20px;
+    --pad-bottom-lg: 50px;
+
+    --pad-left-sm: 10px;
+    --pad-left-md: 20px;
+    --pad-left-lg: 50px;
+
+    --pad-right-sm: 10px;
+    --pad-right-md: 20px;
+    --pad-right-lg: 50px;
+
+    --pad-top-sm: 10px;
+    --pad-top-md: 20px;
+    --pad-top-lg: 50px;
+}
+
+/**************************************/
 /********** BORDER VARIABLES **********/
 /**************************************/
 
@@ -1382,6 +1624,208 @@ h1, h2, h3, h4, h5, h6 {
 [class*="bord"][class*="fromall"][class*="lg"] > *:active {
     border-width: var(--bord-width-lg);
 }
+/**********************************/
+/********** BORDER COLOR **********/
+/**********************************/
+
+
+[class*="bord"][class*="tio"][class*="black"],
+[class*="bord"][class*="dio"][class*="black"]:checked ~ [class*="bord"][class*="target"][class*="black"],
+*:hover > [class*="bord"][class*="into"][class*="black"],
+*:focus > [class*="bord"][class*="into"][class*="black"],
+*:active > [class*="bord"][class*="into"][class*="black"],
+[class*="bord"][class*="onto"][class*="black"]:hover,
+[class*="bord"][class*="onto"][class*="black"]:focus,
+[class*="bord"][class*="onto"][class*="black"]:active,
+[class*="bord"][class*="toall"][class*="black"] > *,
+[class*="bord"][class*="forall"][class*="black"]:hover > *,
+[class*="bord"][class*="forall"][class*="black"]:focus > *,
+[class*="bord"][class*="forall"][class*="black"]:active > *,
+[class*="bord"][class*="fromall"][class*="black"] > *:hover,
+[class*="bord"][class*="fromall"][class*="black"] > *:focus,
+[class*="bord"][class*="fromall"][class*="black"] > *:active {
+    border-color: black;
+}
+
+[class*="bord"][class*="tio"][class*="blue"],
+[class*="bord"][class*="dio"][class*="blue"]:checked ~ [class*="bord"][class*="target"][class*="blue"],
+*:hover > [class*="bord"][class*="into"][class*="blue"],
+*:focus > [class*="bord"][class*="into"][class*="blue"],
+*:active > [class*="bord"][class*="into"][class*="blue"],
+[class*="bord"][class*="onto"][class*="blue"]:hover,
+[class*="bord"][class*="onto"][class*="blue"]:focus,
+[class*="bord"][class*="onto"][class*="blue"]:active,
+[class*="bord"][class*="toall"][class*="blue"] > *,
+[class*="bord"][class*="forall"][class*="blue"]:hover > *,
+[class*="bord"][class*="forall"][class*="blue"]:focus > *,
+[class*="bord"][class*="forall"][class*="blue"]:active > *,
+[class*="bord"][class*="fromall"][class*="blue"] > *:hover,
+[class*="bord"][class*="fromall"][class*="blue"] > *:focus,
+[class*="bord"][class*="fromall"][class*="blue"] > *:active {
+    border-color: var(--blue);
+}
+
+[class*="bord"][class*="tio"][class*="brown"],
+[class*="bord"][class*="dio"][class*="brown"]:checked ~ [class*="bord"][class*="target"][class*="brown"],
+*:hover > [class*="bord"][class*="into"][class*="brown"],
+*:focus > [class*="bord"][class*="into"][class*="brown"],
+*:active > [class*="bord"][class*="into"][class*="brown"],
+[class*="bord"][class*="onto"][class*="brown"]:hover,
+[class*="bord"][class*="onto"][class*="brown"]:focus,
+[class*="bord"][class*="onto"][class*="brown"]:active,
+[class*="bord"][class*="toall"][class*="brown"] > *,
+[class*="bord"][class*="forall"][class*="brown"]:hover > *,
+[class*="bord"][class*="forall"][class*="brown"]:focus > *,
+[class*="bord"][class*="forall"][class*="brown"]:active > *,
+[class*="bord"][class*="fromall"][class*="brown"] > *:hover,
+[class*="bord"][class*="fromall"][class*="brown"] > *:focus,
+[class*="bord"][class*="fromall"][class*="brown"] > *:active {
+    border-color: var(--brown);
+}
+
+[class*="bord"][class*="tio"][class*="gray"],
+[class*="bord"][class*="dio"][class*="gray"]:checked ~ [class*="bord"][class*="target"][class*="gray"],
+*:hover > [class*="bord"][class*="into"][class*="gray"],
+*:focus > [class*="bord"][class*="into"][class*="gray"],
+*:active > [class*="bord"][class*="into"][class*="gray"],
+[class*="bord"][class*="onto"][class*="gray"]:hover,
+[class*="bord"][class*="onto"][class*="gray"]:focus,
+[class*="bord"][class*="onto"][class*="gray"]:active,
+[class*="bord"][class*="toall"][class*="gray"] > *,
+[class*="bord"][class*="forall"][class*="gray"]:hover > *,
+[class*="bord"][class*="forall"][class*="gray"]:focus > *,
+[class*="bord"][class*="forall"][class*="gray"]:active > *,
+[class*="bord"][class*="fromall"][class*="gray"] > *:hover,
+[class*="bord"][class*="fromall"][class*="gray"] > *:focus,
+[class*="bord"][class*="fromall"][class*="gray"] > *:active {
+    border-color: var(--gray);
+}
+
+[class*="bord"][class*="tio"][class*="grey"],
+[class*="bord"][class*="dio"][class*="grey"]:checked ~ [class*="bord"][class*="target"][class*="grey"],
+*:hover > [class*="bord"][class*="into"][class*="grey"],
+*:focus > [class*="bord"][class*="into"][class*="grey"],
+*:active > [class*="bord"][class*="into"][class*="grey"],
+[class*="bord"][class*="onto"][class*="grey"]:hover,
+[class*="bord"][class*="onto"][class*="grey"]:focus,
+[class*="bord"][class*="onto"][class*="grey"]:active,
+[class*="bord"][class*="toall"][class*="grey"] > *,
+[class*="bord"][class*="forall"][class*="grey"]:hover > *,
+[class*="bord"][class*="forall"][class*="grey"]:focus > *,
+[class*="bord"][class*="forall"][class*="grey"]:active > *,
+[class*="bord"][class*="fromall"][class*="grey"] > *:hover,
+[class*="bord"][class*="fromall"][class*="grey"] > *:focus,
+[class*="bord"][class*="fromall"][class*="grey"] > *:active {
+    border-color: var(--grey);
+}
+
+[class*="bord"][class*="tio"][class*="green"],
+[class*="bord"][class*="dio"][class*="green"]:checked ~ [class*="bord"][class*="target"][class*="green"],
+*:hover > [class*="bord"][class*="into"][class*="green"],
+*:focus > [class*="bord"][class*="into"][class*="green"],
+*:active > [class*="bord"][class*="into"][class*="green"],
+[class*="bord"][class*="onto"][class*="green"]:hover,
+[class*="bord"][class*="onto"][class*="green"]:focus,
+[class*="bord"][class*="onto"][class*="green"]:active,
+[class*="bord"][class*="toall"][class*="green"] > *,
+[class*="bord"][class*="forall"][class*="green"]:hover > *,
+[class*="bord"][class*="forall"][class*="green"]:focus > *,
+[class*="bord"][class*="forall"][class*="green"]:active > *,
+[class*="bord"][class*="fromall"][class*="green"] > *:hover,
+[class*="bord"][class*="fromall"][class*="green"] > *:focus,
+[class*="bord"][class*="fromall"][class*="green"] > *:active {
+    border-color: var(--green);
+}
+
+[class*="bord"][class*="tio"][class*="orange"],
+[class*="bord"][class*="dio"][class*="orange"]:checked ~ [class*="bord"][class*="target"][class*="orange"],
+*:hover > [class*="bord"][class*="into"][class*="orange"],
+*:focus > [class*="bord"][class*="into"][class*="orange"],
+*:active > [class*="bord"][class*="into"][class*="orange"],
+[class*="bord"][class*="onto"][class*="orange"]:hover,
+[class*="bord"][class*="onto"][class*="orange"]:focus,
+[class*="bord"][class*="onto"][class*="orange"]:active,
+[class*="bord"][class*="toall"][class*="orange"] > *,
+[class*="bord"][class*="forall"][class*="orange"]:hover > *,
+[class*="bord"][class*="forall"][class*="orange"]:focus > *,
+[class*="bord"][class*="forall"][class*="orange"]:active > *,
+[class*="bord"][class*="fromall"][class*="orange"] > *:hover,
+[class*="bord"][class*="fromall"][class*="orange"] > *:focus,
+[class*="bord"][class*="fromall"][class*="orange"] > *:active {
+    border-color: var(--orange);
+}
+
+[class*="bord"][class*="tio"][class*="red"],
+[class*="bord"][class*="dio"][class*="red"]:checked ~ [class*="bord"][class*="target"][class*="red"],
+*:hover > [class*="bord"][class*="into"][class*="red"],
+*:focus > [class*="bord"][class*="into"][class*="red"],
+*:active > [class*="bord"][class*="into"][class*="red"],
+[class*="bord"][class*="onto"][class*="red"]:hover,
+[class*="bord"][class*="onto"][class*="red"]:focus,
+[class*="bord"][class*="onto"][class*="red"]:active,
+[class*="bord"][class*="toall"][class*="red"] > *,
+[class*="bord"][class*="forall"][class*="red"]:hover > *,
+[class*="bord"][class*="forall"][class*="red"]:focus > *,
+[class*="bord"][class*="forall"][class*="red"]:active > *,
+[class*="bord"][class*="fromall"][class*="red"] > *:hover,
+[class*="bord"][class*="fromall"][class*="red"] > *:focus,
+[class*="bord"][class*="fromall"][class*="red"] > *:active {
+    border-color: var(--red);
+}
+
+[class*="bord"][class*="tio"][class*="violet"],
+[class*="bord"][class*="dio"][class*="violet"]:checked ~ [class*="bord"][class*="target"][class*="violet"],
+*:hover > [class*="bord"][class*="into"][class*="violet"],
+*:focus > [class*="bord"][class*="into"][class*="violet"],
+*:active > [class*="bord"][class*="into"][class*="violet"],
+[class*="bord"][class*="onto"][class*="violet"]:hover,
+[class*="bord"][class*="onto"][class*="violet"]:focus,
+[class*="bord"][class*="onto"][class*="violet"]:active,
+[class*="bord"][class*="toall"][class*="violet"] > *,
+[class*="bord"][class*="forall"][class*="violet"]:hover > *,
+[class*="bord"][class*="forall"][class*="violet"]:focus > *,
+[class*="bord"][class*="forall"][class*="violet"]:active > *,
+[class*="bord"][class*="fromall"][class*="violet"] > *:hover,
+[class*="bord"][class*="fromall"][class*="violet"] > *:focus,
+[class*="bord"][class*="fromall"][class*="violet"] > *:active {
+    border-color: var(--violet);
+}
+
+[class*="bord"][class*="tio"][class*="white"],
+[class*="bord"][class*="dio"][class*="white"]:checked ~ [class*="bord"][class*="target"][class*="white"],
+*:hover > [class*="bord"][class*="into"][class*="white"],
+*:focus > [class*="bord"][class*="into"][class*="white"],
+*:active > [class*="bord"][class*="into"][class*="white"],
+[class*="bord"][class*="onto"][class*="white"]:hover,
+[class*="bord"][class*="onto"][class*="white"]:focus,
+[class*="bord"][class*="onto"][class*="white"]:active,
+[class*="bord"][class*="toall"][class*="white"] > *,
+[class*="bord"][class*="forall"][class*="white"]:hover > *,
+[class*="bord"][class*="forall"][class*="white"]:focus > *,
+[class*="bord"][class*="forall"][class*="white"]:active > *,
+[class*="bord"][class*="fromall"][class*="white"] > *:hover,
+[class*="bord"][class*="fromall"][class*="white"] > *:focus,
+[class*="bord"][class*="fromall"][class*="white"] > *:active {
+    border-color: var(--white);
+}
+
+[class*="bord"][class*="tio"][class*="yellow"],
+[class*="bord"][class*="dio"][class*="yellow"]:checked ~ [class*="bord"][class*="target"][class*="yellow"],
+*:hover > [class*="bord"][class*="into"][class*="yellow"],
+*:focus > [class*="bord"][class*="into"][class*="yellow"],
+*:active > [class*="bord"][class*="into"][class*="yellow"],
+[class*="bord"][class*="onto"][class*="yellow"]:hover,
+[class*="bord"][class*="onto"][class*="yellow"]:focus,
+[class*="bord"][class*="onto"][class*="yellow"]:active,
+[class*="bord"][class*="toall"][class*="yellow"] > *,
+[class*="bord"][class*="forall"][class*="yellow"]:hover > *,
+[class*="bord"][class*="forall"][class*="yellow"]:focus > *,
+[class*="bord"][class*="forall"][class*="yellow"]:active > *,
+[class*="bord"][class*="fromall"][class*="yellow"] > *:hover,
+[class*="bord"][class*="fromall"][class*="yellow"] > *:focus,
+[class*="bord"][class*="fromall"][class*="yellow"] > *:active {
+    border-color: var(--yellow);
+}
 /****************************/
 /********** BORDER **********/
 /****************************/
@@ -1458,6 +1902,44 @@ h1, h2, h3, h4, h5, h6 {
 [class*="bord"][class*="fromall"][class*="ellipse"] > *:active {
     border-radius: var(--bord-radius-ellipse);
 }
+/************************************/
+/********** SIZE VARIABLES **********/
+/************************************/
+
+/*
+1. Height
+2. Width
+*/
+
+
+:root {
+    /***** Height *****/
+    --height-sm: 10vh;
+    --height-md: 50vh;
+    --height-lg: 100vh;
+
+    --max-height-sm: 50vh;
+    --max-height-md: 75vh;
+    --max-height-lg: 100vh;
+
+    --min-height-sm: 25vh;
+    --min-height-md: 50vh;
+    --min-height-lg: 75vh;
+
+    /***** Width *****/
+    --width-sm: 25%;
+    --width-md: 50%;
+    --width-lg: 100%;
+
+    --max-width-sm: 50%;
+    --max-width-md: 75%;
+    --max-width-lg: 100%;
+
+    --min-width-sm: 25%;
+    --min-width-md: 50%;
+    --min-width-lg: 75%;
+}
+
 /********************************/
 /********** SHADOW BOX **********/
 /********************************/
@@ -2023,15 +2505,990 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: var(--shatex-x-lg) var(--shatex-y-lg) var(--shatex-blur-lg);
 }
 
-/**************************/
-/********** GRID **********/
-/**************************/
+/*****************************************/
+/********** ANIMA VARIABLES **************/
+/*****************************************/
+
+/*
+1. Transform
+2. Transform Origin
+3. Delay
+4. Duration
+5. Iteration Count
+6. Timing Function
+*/
 
 
-/*****************************/
-/********** FLEXBOX **********/
-/*****************************/
+:root {
+    /***** Transform *****/
+    --rotate: rotate(-360deg);
+    --rotateX: rotateX(-360deg);
+    --rotateY: rotateY(-360deg);
 
+    --scale: scale(0);
+    --scaleX: scaleX(0);
+    --scaleY: scaleY(0);
+
+    --skew: skew(180deg, 180deg);
+    --skewX: skewX(180deg);
+    --skewY: skewY(180deg);
+
+    --translate: translate(-100vw, -100vh);
+    --translateX: translateX(-100vw);
+    --translateY: translateY(-100vh);
+
+    /***** Transform Origin *****/
+    --transform-origin-near: 50px 50px;
+    --transform-origin-far: top right 50px;
+}
+
+
+[class="anima"] {
+    /***** Delay *****/
+    --anima-delay-small: 1s;
+    --anima-delay-medium: 2s;
+    --anima-delay-large: 3s;
+
+    /***** Duration *****/
+    --anima-duration-tn: 1s;
+    --anima-duration-sm: 2s;
+    --anima-duration-md: 5s;
+    --anima-duration-lg: 10s;
+    --anima-duration-wd: 60s;
+
+    /***** Iteration Count *****/
+    --anima-count-few: 2;
+    --anima-count-many: 5;
+
+    /***** Timing Function *****/
+    --anima-timing-ease: ease-in-out;
+    --anima-timing-steps: 60, start;
+    --anima-timing-bezier: 1,5,1,-5;
+}
+
+/*******************************/
+/********** KEYFRAMES **********/
+/*******************************/
+
+/*
+1. Rotate
+2. Scale
+3. Skew
+4. Translate
+*/
+
+
+/******************/
+/***** Rotate *****/
+@-webkit-keyframes rotate {
+    to {
+        -webkit-transform: var(--rotate);
+                transform: var(--rotate);
+    }
+}
+@keyframes rotate {
+    to {
+        -webkit-transform: var(--rotate);
+                transform: var(--rotate);
+    }
+}
+
+/***** RotateX *****/
+@-webkit-keyframes rotateX {
+    to {
+        -webkit-transform: var(--rotateX);
+                transform: var(--rotateX);
+    }
+}
+@keyframes rotateX {
+    to {
+        -webkit-transform: var(--rotateX);
+                transform: var(--rotateX);
+    }
+}
+
+/***** RotateY *****/
+@-webkit-keyframes rotateY {
+    to {
+        -webkit-transform: var(--rotateY);
+                transform: var(--rotateY);
+    }
+}
+@keyframes rotateY {
+    to {
+        -webkit-transform: var(--rotateY);
+                transform: var(--rotateY);
+    }
+}
+
+
+/*****************/
+/***** Scale *****/
+@-webkit-keyframes scale {
+    to {
+        -webkit-transform: var(--scale);
+                transform: var(--scale);
+    }
+}
+@keyframes scale {
+    to {
+        -webkit-transform: var(--scale);
+                transform: var(--scale);
+    }
+}
+
+/***** ScaleX *****/
+@-webkit-keyframes scaleX {
+    to {
+        -webkit-transform: var(--scaleX);
+                transform: var(--scaleX);
+    }
+}
+@keyframes scaleX {
+    to {
+        -webkit-transform: var(--scaleX);
+                transform: var(--scaleX);
+    }
+}
+
+/***** ScaleY *****/
+@-webkit-keyframes scaleY {
+    to {
+        -webkit-transform: var(--scaleY);
+                transform: var(--scaleY);
+    }
+}
+@keyframes scaleY {
+    to {
+        -webkit-transform: var(--scaleY);
+                transform: var(--scaleY);
+    }
+}
+
+
+/****************/
+/***** Skew *****/
+@-webkit-keyframes skew {
+    to {
+        -webkit-transform: var(--skew);
+                transform: var(--skew);
+    }
+}
+@keyframes skew {
+    to {
+        -webkit-transform: var(--skew);
+                transform: var(--skew);
+    }
+}
+
+/***** SkewX *****/
+@-webkit-keyframes skewX {
+    to {
+        -webkit-transform: var(--skewX);
+                transform: var(--skewX);
+    }
+}
+@keyframes skewX {
+    to {
+        -webkit-transform: var(--skewX);
+                transform: var(--skewX);
+    }
+}
+
+/***** SkewY *****/
+@-webkit-keyframes skewY {
+    to {
+        -webkit-transform: var(--skewY);
+                transform: var(--skewY);
+    }
+}
+@keyframes skewY {
+    to {
+        -webkit-transform: var(--skewY);
+                transform: var(--skewY);
+    }
+}
+
+
+/*********************/
+/***** Translate *****/
+@-webkit-keyframes translate {
+    to {
+        -webkit-transform: var(--translate);
+                transform: var(--translate);
+    }
+}
+@keyframes translate {
+    to {
+        -webkit-transform: var(--translate);
+                transform: var(--translate);
+    }
+}
+
+/***** TranslateX *****/
+@-webkit-keyframes translateX {
+    to {
+        -webkit-transform: var(--translateX);
+                transform: var(--translateX);
+    }
+}
+@keyframes translateX {
+    to {
+        -webkit-transform: var(--translateX);
+                transform: var(--translateX);
+    }
+}
+
+/***** TranslateY *****/
+@-webkit-keyframes translateY {
+    to {
+        -webkit-transform: var(--translateY);
+                transform: var(--translateY);
+    }
+}
+@keyframes translateY {
+    to {
+        -webkit-transform: var(--translateY);
+                transform: var(--translateY);
+    }
+}
+/************************************/
+/********** ANIMATION NAME **********/
+/************************************/
+
+/*
+1. Rotate
+2. Scale
+3. Skew
+4. Translate
+*/
+
+
+/*******************/
+/***** Rotate *****/
+[class*="anima"][class*="tio"][class*="rotA"],
+[class*="anima"][class*="dio"][class*="rotA"]:checked ~ [class*="anima"][class*="target"][class*="rotA"],
+*:hover > [class*="anima"][class*="into"][class*="rotA"],
+*:focus > [class*="anima"][class*="into"][class*="rotA"],
+*:active > [class*="anima"][class*="into"][class*="rotA"],
+[class*="anima"][class*="onto"][class*="rotA"]:hover,
+[class*="anima"][class*="onto"][class*="rotA"]:focus,
+[class*="anima"][class*="onto"][class*="rotA"]:active,
+[class*="anima"][class*="toall"][class*="rotA"] > *,
+[class*="anima"][class*="forall"][class*="rotA"]:hover > *,
+[class*="anima"][class*="forall"][class*="rotA"]:focus > *,
+[class*="anima"][class*="forall"][class*="rotA"]:active > *,
+[class*="anima"][class*="fromall"][class*="rotA"] > *:hover,
+[class*="anima"][class*="fromall"][class*="rotA"] > *:focus,
+[class*="anima"][class*="fromall"][class*="rotA"] > *:active {
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
+}
+
+[class*="anima"][class*="tio"][class*="rotX"],
+[class*="anima"][class*="dio"][class*="rotX"]:checked ~ [class*="anima"][class*="target"][class*="rotX"],
+*:hover > [class*="anima"][class*="into"][class*="rotX"],
+*:focus > [class*="anima"][class*="into"][class*="rotX"],
+*:active > [class*="anima"][class*="into"][class*="rotX"],
+[class*="anima"][class*="onto"][class*="rotX"]:hover,
+[class*="anima"][class*="onto"][class*="rotX"]:focus,
+[class*="anima"][class*="onto"][class*="rotX"]:active,
+[class*="anima"][class*="toall"][class*="rotX"] > *,
+[class*="anima"][class*="forall"][class*="rotX"]:hover > *,
+[class*="anima"][class*="forall"][class*="rotX"]:focus > *,
+[class*="anima"][class*="forall"][class*="rotX"]:active > *,
+[class*="anima"][class*="fromall"][class*="rotX"] > *:hover,
+[class*="anima"][class*="fromall"][class*="rotX"] > *:focus,
+[class*="anima"][class*="fromall"][class*="rotX"] > *:active {
+    -webkit-animation-name: rotateX;
+            animation-name: rotateX;
+}
+
+[class*="anima"][class*="tio"][class*="rotY"],
+[class*="anima"][class*="dio"][class*="rotY"]:checked ~ [class*="anima"][class*="target"][class*="rotY"],
+*:hover > [class*="anima"][class*="into"][class*="rotY"],
+*:focus > [class*="anima"][class*="into"][class*="rotY"],
+*:active > [class*="anima"][class*="into"][class*="rotY"],
+[class*="anima"][class*="onto"][class*="rotY"]:hover,
+[class*="anima"][class*="onto"][class*="rotY"]:focus,
+[class*="anima"][class*="onto"][class*="rotY"]:active,
+[class*="anima"][class*="toall"][class*="rotY"] > *,
+[class*="anima"][class*="forall"][class*="rotY"]:hover > *,
+[class*="anima"][class*="forall"][class*="rotY"]:focus > *,
+[class*="anima"][class*="forall"][class*="rotY"]:active > *,
+[class*="anima"][class*="fromall"][class*="rotY"] > *:hover,
+[class*="anima"][class*="fromall"][class*="rotY"] > *:focus,
+[class*="anima"][class*="fromall"][class*="rotY"] > *:active {
+    -webkit-animation-name: rotateY;
+            animation-name: rotateY;
+}
+
+/*****************/
+/***** Scale *****/
+[class*="anima"][class*="tio"][class*="scaL"],
+[class*="anima"][class*="dio"][class*="scaL"]:checked ~ [class*="anima"][class*="target"][class*="scaL"],
+*:hover > [class*="anima"][class*="into"][class*="scaL"],
+*:focus > [class*="anima"][class*="into"][class*="scaL"],
+*:active > [class*="anima"][class*="into"][class*="scaL"],
+[class*="anima"][class*="onto"][class*="scaL"]:hover,
+[class*="anima"][class*="onto"][class*="scaL"]:focus,
+[class*="anima"][class*="onto"][class*="scaL"]:active,
+[class*="anima"][class*="toall"][class*="scaL"] > *,
+[class*="anima"][class*="forall"][class*="scaL"]:hover > *,
+[class*="anima"][class*="forall"][class*="scaL"]:focus > *,
+[class*="anima"][class*="forall"][class*="scaL"]:active > *,
+[class*="anima"][class*="fromall"][class*="scaL"] > *:hover,
+[class*="anima"][class*="fromall"][class*="scaL"] > *:focus,
+[class*="anima"][class*="fromall"][class*="scaL"] > *:active {
+    -webkit-animation-name: scale;
+            animation-name: scale;
+}
+
+[class*="anima"][class*="tio"][class*="scaX"],
+[class*="anima"][class*="dio"][class*="scaX"]:checked ~ [class*="anima"][class*="target"][class*="scaX"],
+*:hover > [class*="anima"][class*="into"][class*="scaX"],
+*:focus > [class*="anima"][class*="into"][class*="scaX"],
+*:active > [class*="anima"][class*="into"][class*="scaX"],
+[class*="anima"][class*="onto"][class*="scaX"]:hover,
+[class*="anima"][class*="onto"][class*="scaX"]:focus,
+[class*="anima"][class*="onto"][class*="scaX"]:active,
+[class*="anima"][class*="toall"][class*="scaX"] > *,
+[class*="anima"][class*="forall"][class*="scaX"]:hover > *,
+[class*="anima"][class*="forall"][class*="scaX"]:focus > *,
+[class*="anima"][class*="forall"][class*="scaX"]:active > *,
+[class*="anima"][class*="fromall"][class*="scaX"] > *:hover,
+[class*="anima"][class*="fromall"][class*="scaX"] > *:focus,
+[class*="anima"][class*="fromall"][class*="scaX"] > *:active {
+    -webkit-animation-name: scaleX;
+            animation-name: scaleX;
+}
+
+[class*="anima"][class*="tio"][class*="scaY"],
+[class*="anima"][class*="dio"][class*="scaY"]:checked ~ [class*="anima"][class*="target"][class*="scaY"],
+*:hover > [class*="anima"][class*="into"][class*="scaY"],
+*:focus > [class*="anima"][class*="into"][class*="scaY"],
+*:active > [class*="anima"][class*="into"][class*="scaY"],
+[class*="anima"][class*="onto"][class*="scaY"]:hover,
+[class*="anima"][class*="onto"][class*="scaY"]:focus,
+[class*="anima"][class*="onto"][class*="scaY"]:active,
+[class*="anima"][class*="toall"][class*="scaY"] > *,
+[class*="anima"][class*="forall"][class*="scaY"]:hover > *,
+[class*="anima"][class*="forall"][class*="scaY"]:focus > *,
+[class*="anima"][class*="forall"][class*="scaY"]:active > *,
+[class*="anima"][class*="fromall"][class*="scaY"] > *:hover,
+[class*="anima"][class*="fromall"][class*="scaY"] > *:focus,
+[class*="anima"][class*="fromall"][class*="scaY"] > *:active {
+    -webkit-animation-name: scaleY;
+            animation-name: scaleY;
+}
+
+
+/****************/
+/***** Skew *****/
+[class*="anima"][class*="tio"][class*="skeW"],
+[class*="anima"][class*="dio"][class*="skeW"]:checked ~ [class*="anima"][class*="target"][class*="skeW"],
+*:hover > [class*="anima"][class*="into"][class*="skeW"],
+*:focus > [class*="anima"][class*="into"][class*="skeW"],
+*:active > [class*="anima"][class*="into"][class*="skeW"],
+[class*="anima"][class*="onto"][class*="skeW"]:hover,
+[class*="anima"][class*="onto"][class*="skeW"]:focus,
+[class*="anima"][class*="onto"][class*="skeW"]:active,
+[class*="anima"][class*="toall"][class*="skeW"] > *,
+[class*="anima"][class*="forall"][class*="skeW"]:hover > *,
+[class*="anima"][class*="forall"][class*="skeW"]:focus > *,
+[class*="anima"][class*="forall"][class*="skeW"]:active > *,
+[class*="anima"][class*="fromall"][class*="skeW"] > *:hover,
+[class*="anima"][class*="fromall"][class*="skeW"] > *:focus,
+[class*="anima"][class*="fromall"][class*="skeW"] > *:active {
+    -webkit-animation-name: skew;
+            animation-name: skew;
+}
+
+[class*="anima"][class*="tio"][class*="skeX"],
+[class*="anima"][class*="dio"][class*="skeX"]:checked ~ [class*="anima"][class*="target"][class*="skeX"],
+*:hover > [class*="anima"][class*="into"][class*="skeX"],
+*:focus > [class*="anima"][class*="into"][class*="skeX"],
+*:active > [class*="anima"][class*="into"][class*="skeX"],
+[class*="anima"][class*="onto"][class*="skeX"]:hover,
+[class*="anima"][class*="onto"][class*="skeX"]:focus,
+[class*="anima"][class*="onto"][class*="skeX"]:active,
+[class*="anima"][class*="toall"][class*="skeX"] > *,
+[class*="anima"][class*="forall"][class*="skeX"]:hover > *,
+[class*="anima"][class*="forall"][class*="skeX"]:focus > *,
+[class*="anima"][class*="forall"][class*="skeX"]:active > *,
+[class*="anima"][class*="fromall"][class*="skeX"] > *:hover,
+[class*="anima"][class*="fromall"][class*="skeX"] > *:focus,
+[class*="anima"][class*="fromall"][class*="skeX"] > *:active {
+-webkit-animation-name: skewX;
+        animation-name: skewX;
+}
+
+[class*="anima"][class*="tio"][class*="skeY"],
+[class*="anima"][class*="dio"][class*="skeY"]:checked ~ [class*="anima"][class*="target"][class*="skeY"],
+*:hover > [class*="anima"][class*="into"][class*="skeY"],
+*:focus > [class*="anima"][class*="into"][class*="skeY"],
+*:active > [class*="anima"][class*="into"][class*="skeY"],
+[class*="anima"][class*="onto"][class*="skeY"]:hover,
+[class*="anima"][class*="onto"][class*="skeY"]:focus,
+[class*="anima"][class*="onto"][class*="skeY"]:active,
+[class*="anima"][class*="toall"][class*="skeY"] > *,
+[class*="anima"][class*="forall"][class*="skeY"]:hover > *,
+[class*="anima"][class*="forall"][class*="skeY"]:focus > *,
+[class*="anima"][class*="forall"][class*="skeY"]:active > *,
+[class*="anima"][class*="fromall"][class*="skeY"] > *:hover,
+[class*="anima"][class*="fromall"][class*="skeY"] > *:focus,
+[class*="anima"][class*="fromall"][class*="skeY"] > *:active {
+-webkit-animation-name: skewY;
+        animation-name: skewY;
+}
+
+
+
+/*********************/
+/***** Translate *****/
+[class*="anima"][class*="tio"][class*="traN"],
+[class*="anima"][class*="dio"][class*="traN"]:checked ~ [class*="anima"][class*="target"][class*="traN"],
+*:hover > [class*="anima"][class*="into"][class*="traN"],
+*:focus > [class*="anima"][class*="into"][class*="traN"],
+*:active > [class*="anima"][class*="into"][class*="traN"],
+[class*="anima"][class*="onto"][class*="traN"]:hover,
+[class*="anima"][class*="onto"][class*="traN"]:focus,
+[class*="anima"][class*="onto"][class*="traN"]:active,
+[class*="anima"][class*="toall"][class*="traN"] > *,
+[class*="anima"][class*="forall"][class*="traN"]:hover > *,
+[class*="anima"][class*="forall"][class*="traN"]:focus > *,
+[class*="anima"][class*="forall"][class*="traN"]:active > *,
+[class*="anima"][class*="fromall"][class*="traN"] > *:hover,
+[class*="anima"][class*="fromall"][class*="traN"] > *:focus,
+[class*="anima"][class*="fromall"][class*="traN"] > *:active {
+    -webkit-animation-name: translate;
+            animation-name: translate;
+}
+
+[class*="anima"][class*="tio"][class*="traX"],
+[class*="anima"][class*="dio"][class*="traX"]:checked ~ [class*="anima"][class*="target"][class*="traX"],
+*:hover > [class*="anima"][class*="into"][class*="traX"],
+*:focus > [class*="anima"][class*="into"][class*="traX"],
+*:active > [class*="anima"][class*="into"][class*="traX"],
+[class*="anima"][class*="onto"][class*="traX"]:hover,
+[class*="anima"][class*="onto"][class*="traX"]:focus,
+[class*="anima"][class*="onto"][class*="traX"]:active,
+[class*="anima"][class*="toall"][class*="traX"] > *,
+[class*="anima"][class*="forall"][class*="traX"]:hover > *,
+[class*="anima"][class*="forall"][class*="traX"]:focus > *,
+[class*="anima"][class*="forall"][class*="traX"]:active > *,
+[class*="anima"][class*="fromall"][class*="traX"] > *:hover,
+[class*="anima"][class*="fromall"][class*="traX"] > *:focus,
+[class*="anima"][class*="fromall"][class*="traX"] > *:active {
+    -webkit-animation-name: translateX;
+            animation-name: translateX;
+}
+
+[class*="anima"][class*="tio"][class*="traY"],
+[class*="anima"][class*="dio"][class*="traY"]:checked ~ [class*="anima"][class*="target"][class*="traY"],
+*:hover > [class*="anima"][class*="into"][class*="traY"],
+*:focus > [class*="anima"][class*="into"][class*="traY"],
+*:active > [class*="anima"][class*="into"][class*="traY"],
+[class*="anima"][class*="onto"][class*="traY"]:hover,
+[class*="anima"][class*="onto"][class*="traY"]:focus,
+[class*="anima"][class*="onto"][class*="traY"]:active,
+[class*="anima"][class*="toall"][class*="traY"] > *,
+[class*="anima"][class*="forall"][class*="traY"]:hover > *,
+[class*="anima"][class*="forall"][class*="traY"]:focus > *,
+[class*="anima"][class*="forall"][class*="traY"]:active > *,
+[class*="anima"][class*="fromall"][class*="traY"] > *:hover,
+[class*="anima"][class*="fromall"][class*="traY"] > *:focus,
+[class*="anima"][class*="fromall"][class*="traY"] > *:active {
+    -webkit-animation-name: translateY;
+            animation-name: translateY;
+}
+/****************************************/
+/********** ANIMATION DURATION **********/
+/****************************************/
+
+
+[class*="anima"][class*="tio"][class*="tn"],
+[class*="anima"][class*="dio"][class*="tn"]:checked ~ [class*="anima"][class*="target"][class*="tn"],
+*:hover > [class*="anima"][class*="into"][class*="tn"],
+*:focus > [class*="anima"][class*="into"][class*="tn"],
+*:active > [class*="anima"][class*="into"][class*="tn"],
+[class*="anima"][class*="onto"][class*="tn"]:hover,
+[class*="anima"][class*="onto"][class*="tn"]:focus,
+[class*="anima"][class*="onto"][class*="tn"]:active,
+[class*="anima"][class*="toall"][class*="tn"] > *,
+[class*="anima"][class*="forall"][class*="tn"]:hover > *,
+[class*="anima"][class*="forall"][class*="tn"]:focus > *,
+[class*="anima"][class*="forall"][class*="tn"]:active > *,
+[class*="anima"][class*="fromall"][class*="tn"] > *:hover,
+[class*="anima"][class*="fromall"][class*="tn"] > *:focus,
+[class*="anima"][class*="fromall"][class*="tn"] > *:active {
+    -webkit-animation-duration: var(--anima-duration-tn);
+            animation-duration: var(--anima-duration-tn);
+}
+
+[class*="anima"][class*="tio"][class*="sm"],
+[class*="anima"][class*="dio"][class*="sm"]:checked ~ [class*="anima"][class*="target"][class*="sm"],
+*:hover > [class*="anima"][class*="into"][class*="sm"],
+*:focus > [class*="anima"][class*="into"][class*="sm"],
+*:active > [class*="anima"][class*="into"][class*="sm"],
+[class*="anima"][class*="onto"][class*="sm"]:hover,
+[class*="anima"][class*="onto"][class*="sm"]:focus,
+[class*="anima"][class*="onto"][class*="sm"]:active,
+[class*="anima"][class*="toall"][class*="sm"] > *,
+[class*="anima"][class*="forall"][class*="sm"]:hover > *,
+[class*="anima"][class*="forall"][class*="sm"]:focus > *,
+[class*="anima"][class*="forall"][class*="sm"]:active > *,
+[class*="anima"][class*="fromall"][class*="sm"] > *:hover,
+[class*="anima"][class*="fromall"][class*="sm"] > *:focus,
+[class*="anima"][class*="fromall"][class*="sm"] > *:active {
+    -webkit-animation-duration: var(--anima-duration-sm);
+            animation-duration: var(--anima-duration-sm);
+}
+
+[class*="anima"][class*="tio"][class*="md"],
+[class*="anima"][class*="dio"][class*="md"]:checked ~ [class*="anima"][class*="target"][class*="md"],
+*:hover > [class*="anima"][class*="into"][class*="md"],
+*:focus > [class*="anima"][class*="into"][class*="md"],
+*:active > [class*="anima"][class*="into"][class*="md"],
+[class*="anima"][class*="onto"][class*="md"]:hover,
+[class*="anima"][class*="onto"][class*="md"]:focus,
+[class*="anima"][class*="onto"][class*="md"]:active,
+[class*="anima"][class*="toall"][class*="md"] > *,
+[class*="anima"][class*="forall"][class*="md"]:hover > *,
+[class*="anima"][class*="forall"][class*="md"]:focus > *,
+[class*="anima"][class*="forall"][class*="md"]:active > *,
+[class*="anima"][class*="fromall"][class*="md"] > *:hover,
+[class*="anima"][class*="fromall"][class*="md"] > *:focus,
+[class*="anima"][class*="fromall"][class*="md"] > *:active {
+    -webkit-animation-duration: var(--anima-duration-md);
+            animation-duration: var(--anima-duration-md);
+}
+
+[class*="anima"][class*="tio"][class*="lg"],
+[class*="anima"][class*="dio"][class*="lg"]:checked ~ [class*="anima"][class*="target"][class*="lg"],
+*:hover > [class*="anima"][class*="into"][class*="lg"],
+*:focus > [class*="anima"][class*="into"][class*="lg"],
+*:active > [class*="anima"][class*="into"][class*="lg"],
+[class*="anima"][class*="onto"][class*="lg"]:hover,
+[class*="anima"][class*="onto"][class*="lg"]:focus,
+[class*="anima"][class*="onto"][class*="lg"]:active,
+[class*="anima"][class*="toall"][class*="lg"] > *,
+[class*="anima"][class*="forall"][class*="lg"]:hover > *,
+[class*="anima"][class*="forall"][class*="lg"]:focus > *,
+[class*="anima"][class*="forall"][class*="lg"]:active > *,
+[class*="anima"][class*="fromall"][class*="lg"] > *:hover,
+[class*="anima"][class*="fromall"][class*="lg"] > *:focus,
+[class*="anima"][class*="fromall"][class*="lg"] > *:active {
+    -webkit-animation-duration: var(--anima-duration-lg);
+            animation-duration: var(--anima-duration-lg);
+}
+
+[class*="anima"][class*="tio"][class*="wd"],
+[class*="anima"][class*="dio"][class*="wd"]:checked ~ [class*="anima"][class*="target"][class*="wd"],
+*:hover > [class*="anima"][class*="into"][class*="wd"],
+*:focus > [class*="anima"][class*="into"][class*="wd"],
+*:active > [class*="anima"][class*="into"][class*="wd"],
+[class*="anima"][class*="onto"][class*="wd"]:hover,
+[class*="anima"][class*="onto"][class*="wd"]:focus,
+[class*="anima"][class*="onto"][class*="wd"]:active,
+[class*="anima"][class*="toall"][class*="wd"] > *,
+[class*="anima"][class*="forall"][class*="wd"]:hover > *,
+[class*="anima"][class*="forall"][class*="wd"]:focus > *,
+[class*="anima"][class*="forall"][class*="wd"]:active > *,
+[class*="anima"][class*="fromall"][class*="wd"] > *:hover,
+[class*="anima"][class*="fromall"][class*="wd"] > *:focus,
+[class*="anima"][class*="fromall"][class*="wd"] > *:active {
+    -webkit-animation-duration: var(--anima-duration-wd);
+            animation-duration: var(--anima-duration-wd);
+}
+/*************************************/
+/********** ANIMATION DELAY **********/
+/*************************************/
+
+
+[class*="anima"][class*="tio"][class*="small"],
+[class*="anima"][class*="dio"][class*="small"]:checked ~ [class*="anima"][class*="target"][class*="small"],
+*:hover > [class*="anima"][class*="into"][class*="small"],
+*:focus > [class*="anima"][class*="into"][class*="small"],
+*:active > [class*="anima"][class*="into"][class*="small"],
+[class*="anima"][class*="onto"][class*="small"]:hover,
+[class*="anima"][class*="onto"][class*="small"]:focus,
+[class*="anima"][class*="onto"][class*="small"]:active,
+[class*="anima"][class*="toall"][class*="small"] > *,
+[class*="anima"][class*="forall"][class*="small"]:hover > *,
+[class*="anima"][class*="forall"][class*="small"]:focus > *,
+[class*="anima"][class*="forall"][class*="small"]:active > *,
+[class*="anima"][class*="fromall"][class*="small"] > *:hover,
+[class*="anima"][class*="fromall"][class*="small"] > *:focus,
+[class*="anima"][class*="fromall"][class*="small"] > *:active {
+    -webkit-animation-delay: var(--anima-delay-small);
+            animation-delay: var(--anima-delay-small);
+}
+
+[class*="anima"][class*="tio"][class*="medium"],
+[class*="anima"][class*="dio"][class*="medium"]:checked ~ [class*="anima"][class*="target"][class*="medium"],
+*:hover > [class*="anima"][class*="into"][class*="medium"],
+*:focus > [class*="anima"][class*="into"][class*="medium"],
+*:active > [class*="anima"][class*="into"][class*="medium"],
+[class*="anima"][class*="onto"][class*="medium"]:hover,
+[class*="anima"][class*="onto"][class*="medium"]:focus,
+[class*="anima"][class*="onto"][class*="medium"]:active,
+[class*="anima"][class*="toall"][class*="medium"] > *,
+[class*="anima"][class*="forall"][class*="medium"]:hover > *,
+[class*="anima"][class*="forall"][class*="medium"]:focus > *,
+[class*="anima"][class*="forall"][class*="medium"]:active > *,
+[class*="anima"][class*="fromall"][class*="medium"] > *:hover,
+[class*="anima"][class*="fromall"][class*="medium"] > *:focus,
+[class*="anima"][class*="fromall"][class*="medium"] > *:active {
+    -webkit-animation-delay: var(--anima-delay-medium);
+            animation-delay: var(--anima-delay-medium);
+}
+
+[class*="anima"][class*="tio"][class*="large"],
+[class*="anima"][class*="dio"][class*="large"]:checked ~ [class*="anima"][class*="target"][class*="large"],
+*:hover > [class*="anima"][class*="into"][class*="large"],
+*:focus > [class*="anima"][class*="into"][class*="large"],
+*:active > [class*="anima"][class*="into"][class*="large"],
+[class*="anima"][class*="onto"][class*="large"]:hover,
+[class*="anima"][class*="onto"][class*="large"]:focus,
+[class*="anima"][class*="onto"][class*="large"]:active,
+[class*="anima"][class*="toall"][class*="large"] > *,
+[class*="anima"][class*="forall"][class*="large"]:hover > *,
+[class*="anima"][class*="forall"][class*="large"]:focus > *,
+[class*="anima"][class*="forall"][class*="large"]:active > *,
+[class*="anima"][class*="fromall"][class*="large"] > *:hover,
+[class*="anima"][class*="fromall"][class*="large"] > *:focus,
+[class*="anima"][class*="fromall"][class*="large"] > *:active {
+    -webkit-animation-delay: var(--anima-delay-large);
+            animation-delay: var(--anima-delay-large);
+}
+/***********************************************/
+/********** ANIMATION TIMING FUNCTION **********/
+/***********************************************/
+
+/*
+1. Linear
+2. Ease
+3. Steps
+4. Bezier
+*/
+
+
+/******************/
+/***** Linear *****/
+[class*="anima"][class*="tio"][class*="linear"],
+[class*="anima"][class*="dio"][class*="linear"]:checked ~ [class*="anima"][class*="target"][class*="linear"],
+*:hover > [class*="anima"][class*="into"][class*="linear"],
+*:focus > [class*="anima"][class*="into"][class*="linear"],
+*:active > [class*="anima"][class*="into"][class*="linear"],
+[class*="anima"][class*="onto"][class*="linear"]:hover,
+[class*="anima"][class*="onto"][class*="linear"]:focus,
+[class*="anima"][class*="onto"][class*="linear"]:active,
+[class*="anima"][class*="toall"][class*="linear"] > *,
+[class*="anima"][class*="forall"][class*="linear"]:hover > *,
+[class*="anima"][class*="forall"][class*="linear"]:focus > *,
+[class*="anima"][class*="forall"][class*="linear"]:active > *,
+[class*="anima"][class*="fromall"][class*="linear"] > *:hover,
+[class*="anima"][class*="fromall"][class*="linear"] > *:focus,
+[class*="anima"][class*="fromall"][class*="linear"] > *:active {
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+
+/****************/
+/***** Ease *****/
+[class*="anima"][class*="tio"][class*="ease"],
+[class*="anima"][class*="dio"][class*="ease"]:checked ~ [class*="anima"][class*="target"][class*="ease"],
+*:hover > [class*="anima"][class*="into"][class*="ease"],
+*:focus > [class*="anima"][class*="into"][class*="ease"],
+*:active > [class*="anima"][class*="into"][class*="ease"],
+[class*="anima"][class*="onto"][class*="ease"]:hover,
+[class*="anima"][class*="onto"][class*="ease"]:focus,
+[class*="anima"][class*="onto"][class*="ease"]:active,
+[class*="anima"][class*="toall"][class*="ease"] > *,
+[class*="anima"][class*="forall"][class*="ease"]:hover > *,
+[class*="anima"][class*="forall"][class*="ease"]:focus > *,
+[class*="anima"][class*="forall"][class*="ease"]:active > *,
+[class*="anima"][class*="fromall"][class*="ease"] > *:hover,
+[class*="anima"][class*="fromall"][class*="ease"] > *:focus,
+[class*="anima"][class*="fromall"][class*="ease"] > *:active {
+    -webkit-animation-timing-function: var(--anima-timing-ease);
+            animation-timing-function: var(--anima-timing-ease);
+}
+
+
+/*****************/
+/***** Steps *****/
+[class*="anima"][class*="tio"][class*="steps"],
+[class*="anima"][class*="dio"][class*="steps"]:checked ~ [class*="anima"][class*="target"][class*="steps"],
+*:hover > [class*="anima"][class*="into"][class*="steps"],
+*:focus > [class*="anima"][class*="into"][class*="steps"],
+*:active > [class*="anima"][class*="into"][class*="steps"],
+[class*="anima"][class*="onto"][class*="steps"]:hover,
+[class*="anima"][class*="onto"][class*="steps"]:focus,
+[class*="anima"][class*="onto"][class*="steps"]:active,
+[class*="anima"][class*="toall"][class*="steps"] > *,
+[class*="anima"][class*="forall"][class*="steps"]:hover > *,
+[class*="anima"][class*="forall"][class*="steps"]:focus > *,
+[class*="anima"][class*="forall"][class*="steps"]:active > *,
+[class*="anima"][class*="fromall"][class*="steps"] > *:hover,
+[class*="anima"][class*="fromall"][class*="steps"] > *:focus,
+[class*="anima"][class*="fromall"][class*="steps"] > *:active {
+    -webkit-animation-timing-function: steps(var(--anima-timing-steps));
+            animation-timing-function: steps(var(--anima-timing-steps));
+}
+
+
+/******************/
+/***** Bezier *****/
+[class*="anima"][class*="tio"][class*="bezier"],
+[class*="anima"][class*="dio"][class*="bezier"]:checked ~ [class*="anima"][class*="target"][class*="bezier"],
+*:hover > [class*="anima"][class*="into"][class*="bezier"],
+*:focus > [class*="anima"][class*="into"][class*="bezier"],
+*:active > [class*="anima"][class*="into"][class*="bezier"],
+[class*="anima"][class*="onto"][class*="bezier"]:hover,
+[class*="anima"][class*="onto"][class*="bezier"]:focus,
+[class*="anima"][class*="onto"][class*="bezier"]:active,
+[class*="anima"][class*="toall"][class*="bezier"] > *,
+[class*="anima"][class*="forall"][class*="bezier"]:hover > *,
+[class*="anima"][class*="forall"][class*="bezier"]:focus > *,
+[class*="anima"][class*="forall"][class*="bezier"]:active > *,
+[class*="anima"][class*="fromall"][class*="bezier"] > *:hover,
+[class*="anima"][class*="fromall"][class*="bezier"] > *:focus,
+[class*="anima"][class*="fromall"][class*="bezier"] > *:active {
+    -webkit-animation-timing-function: cubic-bezier(var(--anima-timing-bezier));
+            animation-timing-function: cubic-bezier(var(--anima-timing-bezier));
+}
+/***********************************************/
+/********** ANIMATION ITERATION COUNT **********/
+/***********************************************/
+
+/*
+1. Few
+2. Many
+3. Loop
+*/
+
+
+/***************/
+/***** Few *****/
+[class*="animate-"][class*="few"]:hover,
+[class*="animate-"][class*="few"]:focus,
+[class*="animate-"][class*="few"]:active,
+*:hover > [class*="animated-"][class*="few"],
+*:focus > [class*="animated-"][class*="few"],
+*:active > [class*="animated-"][class*="few"],
+[class*="radio-"][class*="few"]:checked ~ [class*="target-"][class*="few"],
+[class*="show-"][class*="few"],
+[class*="shown-"][class*="few"] > * {
+    -webkit-animation-iteration-count: var(--anima-count-few);
+            animation-iteration-count: var(--anima-count-few);
+}
+
+
+/****************/
+/***** Many *****/
+[class*="animate-"][class*="many"]:hover,
+[class*="animate-"][class*="many"]:focus,
+[class*="animate-"][class*="many"]:active,
+*:hover > [class*="animated-"][class*="many"],
+*:focus > [class*="animated-"][class*="many"],
+*:active > [class*="animated-"][class*="many"],
+[class*="radio-"][class*="many"]:checked ~ [class*="target-"][class*="many"],
+[class*="show-"][class*="many"],
+[class*="shown-"][class*="many"] > * {
+    -webkit-animation-iteration-count: var(--anima-count-many);
+            animation-iteration-count: var(--anima-count-many);
+}
+
+
+/****************/
+/***** Loop *****/
+[class*="animate-"][class*="loop"]:hover,
+[class*="animate-"][class*="loop"]:focus,
+[class*="animate-"][class*="loop"]:active,
+*:hover > [class*="animated-"][class*="loop"],
+*:focus > [class*="animated-"][class*="loop"],
+*:active > [class*="animated-"][class*="loop"],
+[class*="radio-"][class*="loop"]:checked ~ [class*="target-"][class*="loop"],
+[class*="show-"][class*="loop"],
+[class*="shown-"][class*="loop"] > * {
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+/*****************************************/
+/********** ANIMATION DIRECTION **********/
+/*****************************************/
+
+
+[class*="anima"][class*="tio"][class*="alter"],
+[class*="anima"][class*="dio"][class*="alter"]:checked ~ [class*="anima"][class*="target"][class*="alter"],
+*:hover > [class*="anima"][class*="into"][class*="alter"],
+*:focus > [class*="anima"][class*="into"][class*="alter"],
+*:active > [class*="anima"][class*="into"][class*="alter"],
+[class*="anima"][class*="onto"][class*="alter"]:hover,
+[class*="anima"][class*="onto"][class*="alter"]:focus,
+[class*="anima"][class*="onto"][class*="alter"]:active,
+[class*="anima"][class*="toall"][class*="alter"] > *,
+[class*="anima"][class*="forall"][class*="alter"]:hover > *,
+[class*="anima"][class*="forall"][class*="alter"]:focus > *,
+[class*="anima"][class*="forall"][class*="alter"]:active > *,
+[class*="anima"][class*="fromall"][class*="alter"] > *:hover,
+[class*="anima"][class*="fromall"][class*="alter"] > *:focus,
+[class*="anima"][class*="fromall"][class*="alter"] > *:active {
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+
+[class*="anima"][class*="tio"][class*="rever"],
+[class*="anima"][class*="dio"][class*="rever"]:checked ~ [class*="anima"][class*="target"][class*="rever"],
+*:hover > [class*="anima"][class*="into"][class*="rever"],
+*:focus > [class*="anima"][class*="into"][class*="rever"],
+*:active > [class*="anima"][class*="into"][class*="rever"],
+[class*="anima"][class*="onto"][class*="rever"]:hover,
+[class*="anima"][class*="onto"][class*="rever"]:focus,
+[class*="anima"][class*="onto"][class*="rever"]:active,
+[class*="anima"][class*="toall"][class*="rever"] > *,
+[class*="anima"][class*="forall"][class*="rever"]:hover > *,
+[class*="anima"][class*="forall"][class*="rever"]:focus > *,
+[class*="anima"][class*="forall"][class*="rever"]:active > *,
+[class*="anima"][class*="fromall"][class*="rever"] > *:hover,
+[class*="anima"][class*="fromall"][class*="rever"] > *:focus,
+[class*="anima"][class*="fromall"][class*="rever"] > *:active {
+    animation-direction: reverse;
+}
+
+[class*="anima"][class*="tio"][class*="altrev"],
+[class*="anima"][class*="dio"][class*="altrev"]:checked ~ [class*="anima"][class*="target"][class*="altrev"],
+*:hover > [class*="anima"][class*="into"][class*="altrev"],
+*:focus > [class*="anima"][class*="into"][class*="altrev"],
+*:active > [class*="anima"][class*="into"][class*="altrev"],
+[class*="anima"][class*="onto"][class*="altrev"]:hover,
+[class*="anima"][class*="onto"][class*="altrev"]:focus,
+[class*="anima"][class*="onto"][class*="altrev"]:active,
+[class*="anima"][class*="toall"][class*="altrev"] > *,
+[class*="anima"][class*="forall"][class*="altrev"]:hover > *,
+[class*="anima"][class*="forall"][class*="altrev"]:focus > *,
+[class*="anima"][class*="forall"][class*="altrev"]:active > *,
+[class*="anima"][class*="fromall"][class*="altrev"] > *:hover,
+[class*="anima"][class*="fromall"][class*="altrev"] > *:focus,
+[class*="anima"][class*="fromall"][class*="altrev"] > *:active {
+    animation-direction: alternate-reverse;
+}
+/*****************************************/
+/********** ANIMATION FILL MODE **********/
+/*****************************************/
+
+
+[class*="anima"][class*="tio"][class*="back"],
+[class*="anima"][class*="dio"][class*="back"]:checked ~ [class*="anima"][class*="target"][class*="back"],
+*:hover > [class*="anima"][class*="into"][class*="back"],
+*:focus > [class*="anima"][class*="into"][class*="back"],
+*:active > [class*="anima"][class*="into"][class*="back"],
+[class*="anima"][class*="onto"][class*="back"]:hover,
+[class*="anima"][class*="onto"][class*="back"]:focus,
+[class*="anima"][class*="onto"][class*="back"]:active,
+[class*="anima"][class*="toall"][class*="back"] > *,
+[class*="anima"][class*="forall"][class*="back"]:hover > *,
+[class*="anima"][class*="forall"][class*="back"]:focus > *,
+[class*="anima"][class*="forall"][class*="back"]:active > *,
+[class*="anima"][class*="fromall"][class*="back"] > *:hover,
+[class*="anima"][class*="fromall"][class*="back"] > *:focus,
+[class*="anima"][class*="fromall"][class*="back"] > *:active {
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+}
+
+
+[class*="anima"][class*="tio"][class*="front"],
+[class*="anima"][class*="dio"][class*="front"]:checked ~ [class*="anima"][class*="target"][class*="front"],
+*:hover > [class*="anima"][class*="into"][class*="front"],
+*:focus > [class*="anima"][class*="into"][class*="front"],
+*:active > [class*="anima"][class*="into"][class*="front"],
+[class*="anima"][class*="onto"][class*="front"]:hover,
+[class*="anima"][class*="onto"][class*="front"]:focus,
+[class*="anima"][class*="onto"][class*="front"]:active,
+[class*="anima"][class*="toall"][class*="front"] > *,
+[class*="anima"][class*="forall"][class*="front"]:hover > *,
+[class*="anima"][class*="forall"][class*="front"]:focus > *,
+[class*="anima"][class*="forall"][class*="front"]:active > *,
+[class*="anima"][class*="fromall"][class*="front"] > *:hover,
+[class*="anima"][class*="fromall"][class*="front"] > *:focus,
+[class*="anima"][class*="fromall"][class*="front"] > *:active {
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+/**************************************/
+/********** TRANSFORM ORIGIN **********/
+/**************************************/
+
+
+[class*="anima"][class*="tio"][class*="far"],
+[class*="anima"][class*="dio"][class*="far"]:checked ~ [class*="anima"][class*="target"][class*="far"],
+*:hover > [class*="anima"][class*="into"][class*="far"],
+*:focus > [class*="anima"][class*="into"][class*="far"],
+*:active > [class*="anima"][class*="into"][class*="far"],
+[class*="anima"][class*="onto"][class*="far"]:hover,
+[class*="anima"][class*="onto"][class*="far"]:focus,
+[class*="anima"][class*="onto"][class*="far"]:active,
+[class*="anima"][class*="toall"][class*="far"] > *,
+[class*="anima"][class*="forall"][class*="far"]:hover > *,
+[class*="anima"][class*="forall"][class*="far"]:focus > *,
+[class*="anima"][class*="forall"][class*="far"]:active > *,
+[class*="anima"][class*="fromall"][class*="far"] > *:hover,
+[class*="anima"][class*="fromall"][class*="far"] > *:focus,
+[class*="anima"][class*="fromall"][class*="far"] > *:active {
+    -webkit-transform-origin: var(--transform-origin-far);
+            transform-origin: var(--transform-origin-far);
+}
+
+[class*="anima"][class*="tio"][class*="near"],
+[class*="anima"][class*="dio"][class*="near"]:checked ~ [class*="anima"][class*="target"][class*="near"],
+*:hover > [class*="anima"][class*="into"][class*="near"],
+*:focus > [class*="anima"][class*="into"][class*="near"],
+*:active > [class*="anima"][class*="into"][class*="near"],
+[class*="anima"][class*="onto"][class*="near"]:hover,
+[class*="anima"][class*="onto"][class*="near"]:focus,
+[class*="anima"][class*="onto"][class*="near"]:active,
+[class*="anima"][class*="toall"][class*="near"] > *,
+[class*="anima"][class*="forall"][class*="near"]:hover > *,
+[class*="anima"][class*="forall"][class*="near"]:focus > *,
+[class*="anima"][class*="forall"][class*="near"]:active > *,
+[class*="anima"][class*="fromall"][class*="near"] > *:hover,
+[class*="anima"][class*="fromall"][class*="near"] > *:focus,
+[class*="anima"][class*="fromall"][class*="near"] > *:active {
+-webkit-transform-origin: var(--transform-origin-near);
+        transform-origin: var(--transform-origin-near);
+}
+
+
+/************************************/
+/********** TAGS VARIABLES **********/
+/************************************/
+
+/*
+1. Body
+2. Titles
+*/
+
+
+/***** Body *****/
+body {
+    --global-font-family: serif;
+    --global-line-height: 1.5;
+    --global-font-size: 1.5rem;
+}
+
+/***** Titles *****/
+h1, h2, h3, h4, h5, h6 {
+    --title-font-family: sans-serif;
+    --title-font-size-tn: 1.5rem;
+    --title-font-size-sm: 2rem;
+    --title-font-size-md: 2.5rem;
+    --title-font-size-lg: 3rem;
+    --title-font-size-wd: 3.5rem;
+}
 
 /**************************/
 /********** TAGS **********/
@@ -2136,1600 +3593,6 @@ table {
     text-align: center;
     vertical-align: middle;
 }
-/***********************************/
-/********** SHOW HELPERS ***********/
-/***********************************/
-
-
-/*
-1. Container
-2. Cursor
-3. Display
-4. Overflow
-5. Position
-*/
-
-
-/*********************/
-/***** Container *****/
-[class^="container"] {
-    margin: auto;
-}
-
-.container-sm {
-    max-width: var(--max-width-sm);
-}
-
-.container {
-    max-width: var(--max-width-md);
-}
-
-.container-lg {
-    max-width: var(--max-width-lg);
-}
-
-
-/******************/
-/***** Cursor *****/
-.cursor-cross,
-.cursor-cross > * {
-    cursor: crosshair;
-}
-
-.cursor-help,
-.cursor-help > * {
-    cursor: help;
-}
-
-.cursor-none,
-.cursor-none > * {
-    cursor: not-allowed;
-}
-
-.cursor-pointer,
-.cursor-pointer > * {
-    cursor: pointer;
-}
-
-.cursor-text,
-.cursor-text > * {
-    cursor: text;
-}
-
-
-/*******************/
-/***** Display *****/
-.dis-block {
-    display: block;
-}
-
-.dis-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.dis-inblock {
-    display: inline-block;
-}
-
-.dis-inline {
-    display: inline;
-}
-
-.dis-none,
-.radio {
-    display: none;
-}
-
-
-/********************/
-/***** Overflow *****/
-.flow-hidden {
-    overflow: hidden;
-}
-
-.flow-scroll {
-    overflow: scroll;
-}
-
-
-/********************/
-/***** Position *****/
-.pos-absolute {
-    position: absolute;
-}
-
-.pos-fixed {
-    position: fixed;
-}
-
-.pos-relative {
-    position: relative;
-}
-
-.pos-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-}
-/**************************************/
-/********** SPACING HELPERS ***********/
-/**************************************/
-
-/*
-1. Margin
-2. Padding
-*/
-
-
-/******************/
-/***** Margin *****/
-.mar-sm,
-.g-mar-sm > * {
-    margin: var(--mar-sm);
-}
-
-.mar-md,
-.g-mar-md > * {
-    margin: var(--mar-md);
-}
-
-.mar-lg,
-.g-mar-lg > * {
-    margin: var(--mar-lg);
-}
-
-/***** Margin Top *****/
-.mar-top-sm,
-.g-mar-top-sm > * {
-    margin-top: var(--mar-top-sm);
-}
-
-.mar-top-md,
-.g-mar-top-md > * {
-    margin-top: var(--mar-top-md);
-}
-
-.mar-top-lg,
-.g-mar-top-lg > * {
-    margin-top: var(--mar-top-lg);
-}
-
-/***** Margin Right *****/
-.mar-right-sm,
-.g-mar-right-sm > * {
-    margin-right: var(--mar-right-sm);
-}
-
-.mar-right-md,
-.g-mar-right-md > * {
-    margin-right: var(--mar-right-md);
-}
-
-.mar-right-lg,
-.g-mar-right-lg > * {
-    margin-right: var(--mar-right-lg);
-}
-
-/***** Margin Bottom *****/
-.mar-bottom-sm,
-.g-mar-bottom-sm > * {
-    margin-bottom: var(--mar-bottom-sm);
-}
-
-.mar-bottom-md,
-.g-mar-bottom-md > * {
-    margin-bottom: var(--mar-bottom-md);
-}
-
-.mar-bottom-lg,
-.g-mar-bottom-lg > * {
-    margin-bottom: var(--mar-bottom-lg);
-}
-
-/***** Margin Left *****/
-.mar-left-sm,
-.g-mar-left-sm > * {
-    margin-left: var(--mar-left-sm);
-}
-
-.mar-left-md,
-.g-mar-left-md > * {
-    margin-left: var(--mar-left-md);
-}
-
-.mar-left-lg,
-.g-mar-left-lg > * {
-    margin-left: var(--mar-left-lg);
-}
-
-
-/*******************/
-/***** Padding *****/
-.pad-sm,
-.g-pad-sm > * {
-    padding: var(--pad-sm);
-}
-
-.pad-md,
-.g-pad-md > * {
-    padding: var(--pad-md);
-}
-
-.pad-lg,
-.g-pad-lg > * {
-    padding: var(--pad-lg);
-}
-
-/***** Padding Top *****/
-.pad-top-sm,
-.g-pad-top-sm > * {
-    padding-top: var(--pad-top-sm);
-}
-
-.pad-top-md,
-.g-pad-top-md > * {
-    padding-top: var(--pad-top-md);
-}
-
-.pad-top-lg,
-.g-pad-top-lg > * {
-    padding-top: var(--pad-top-lg);
-}
-
-/***** Padding Right *****/
-.pad-right-sm,
-.g-pad-right-sm > * {
-    padding-right: var(--pad-right-sm);
-}
-
-.pad-right-md,
-.g-pad-right-md > * {
-    padding-right: var(--pad-right-md);
-}
-
-.pad-right-lg,
-.g-pad-right-lg > * {
-    padding-right: var(--pad-right-lg);
-}
-
-/***** Padding Bottom *****/
-.pad-bottom-sm,
-.g-pad-bottom-sm > * {
-    padding-bottom: var(--pad-bottom-sm);
-}
-
-.pad-bottom-md,
-.g-pad-bottom-md > * {
-    padding-bottom: var(--pad-bottom-md);
-}
-
-.pad-bottom-lg,
-.g-pad-bottom-lg > * {
-    padding-bottom: var(--pad-bottom-lg);
-}
-
-/***** Padding Left *****/
-.pad-left-sm,
-.g-pad-left-sm > * {
-    padding-left: var(--pad-left-sm);
-}
-
-.pad-left-md,
-.g-pad-left-md > * {
-    padding-left: var(--pad-left-md);
-}
-
-.pad-left-lg,
-.g-pad-left-lg > * {
-    padding-left: var(--pad-left-lg);
-}
-/***********************************/
-/********** SIZE HELPERS ***********/
-/***********************************/
-
-/*
-1. Height
-2. Width
-*/
-
-
-/******************/
-/***** Height *****/
-.height-sm,
-.g-height-sm > * {
-    height: var(--height-sm);
-}
-
-.height-md,
-.g-height-md > * {
-    height: var(--height-md);
-}
-
-.height-lg,
-.g-height-lg > * {
-    height: var(--height-lg);
-}
-
-/***** Min Height *****/
-.min-height-sm,
-.g-min-height-sm > * {
-    min-height: var(--min-height-sm);
-}
-
-.min-height-md,
-.g-min-height-md > * {
-    min-height: var(--min-height-md);
-}
-
-.min-height-lg,
-.g-min-height-lg > * {
-    min-height: var(--min-height-lg);
-}
-
-/***** Max Height *****/
-.max-height-sm,
-.g-max-height-sm > * {
-    max-height: var(--max-height-sm);
-}
-
-.max-height-md,
-.g-max-height-md > * {
-    max-height: var(--max-height-md);
-}
-
-.max-height-lg,
-.g-max-height-lg > * {
-    max-height: var(--max-height-lg);
-}
-
-
-/*****************/
-/***** Width *****/
-.width-sm,
-.g-width-sm > * {
-    width: var(--width-sm);
-}
-
-.width-md,
-.g-width-md > * {
-    width: var(--width-md);
-}
-
-.width-lg,
-.g-width-lg > * {
-    width: var(--width-lg);
-}
-
-/***** Min Width *****/
-.min-width-sm,
-.g-min-width-sm > * {
-    min-width: var(--min-width-sm);
-}
-
-.min-width-md,
-.g-min-width-md > * {
-    min-width: var(--min-width-md);
-}
-
-.min-width-lg,
-.g-min-width-lg > * {
-    min-width: var(--min-width-lg);
-}
-
-/***** Max Width *****/
-.max-width-sm,
-.g-max-width-sm > * {
-    max-width: var(--max-width-sm);
-}
-
-.max-width-md,
-.g-max-width-md > * {
-    max-width: var(--max-width-md);
-}
-
-.max-width-lg,
-.g-max-width-lg > * {
-    max-width: var(--max-width-lg);
-}
-/***********************************/
-/********** TEXT HELPERS ***********/
-/***********************************/
-
-/*
-1. Font
-2. Text Align
-3. Text Decoration
-*/
-
-
-/****************/
-/***** Font *****/
-.font-normal {
-    font-style: normal;
-    font-weight: normal;
-}
-
-.font-italic {
-    font-style: italic;
-}
-
-.font-bold {
-    font-weight: bold;
-}
-
-
-/**********************/
-/***** Text Align *****/
-.text-center {
-    text-align: center;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-left {
-    text-align: left;
-}
-
-
-/***************************/
-/***** Text Decoration *****/
-.deco-none {
-    text-decoration: none;
-}
-
-/***** Text Decoration Underline *****/
-.deco-under {
-    text-decoration: underline;
-}
-
-.deco-under-double {
-    -webkit-text-decoration: underline double;
-            text-decoration: underline double;
-}
-
-.deco-under-dotted {
-    -webkit-text-decoration: underline dotted;
-            text-decoration: underline dotted;
-}
-
-.deco-under-dashed {
-    -webkit-text-decoration: underline dashed;
-            text-decoration: underline dashed;
-}
-
-.deco-under-wavy {
-    -webkit-text-decoration: underline wavy;
-            text-decoration: underline wavy;
-}
-
-/***** Text Decoration Overline *****/
-.deco-over {
-    text-decoration: overline;
-}
-
-.deco-over-double {
-    -webkit-text-decoration: overline double;
-            text-decoration: overline double;
-}
-
-.deco-over-dotted {
-    -webkit-text-decoration: overline dotted;
-            text-decoration: overline dotted;
-}
-
-.deco-over-dashed {
-    -webkit-text-decoration: overline dashed;
-            text-decoration: overline dashed;
-}
-
-.deco-over-wavy {
-    -webkit-text-decoration: overline wavy;
-            text-decoration: overline wavy;
-}
-
-/***** Text Decoration Line Through *****/
-.deco-through {
-    text-decoration: line-through;
-}
-
-.deco-through-double {
-    -webkit-text-decoration: line-through double;
-            text-decoration: line-through double;
-}
-
-.deco-through-dotted {
-    -webkit-text-decoration: line-through dotted;
-            text-decoration: line-through dotted;
-}
-
-.deco-through-dashed {
-    -webkit-text-decoration: line-through dashed;
-            text-decoration: line-through dashed;
-}
-
-.deco-through-wavy {
-    -webkit-text-decoration: line-through wavy;
-            text-decoration: line-through wavy;
-}
-/*******************************/
-/********** KEYFRAMES **********/
-/*******************************/
-
-/*
-1. Rotate
-2. Scale
-3. Skew
-4. Translate
-*/
-
-
-/******************/
-/***** Rotate *****/
-@-webkit-keyframes rotate {
-    to {
-        -webkit-transform: var(--rotate);
-                transform: var(--rotate);
-    }
-}
-@keyframes rotate {
-    to {
-        -webkit-transform: var(--rotate);
-                transform: var(--rotate);
-    }
-}
-
-/***** RotateX *****/
-@-webkit-keyframes rotateX {
-    to {
-        -webkit-transform: var(--rotateX);
-                transform: var(--rotateX);
-    }
-}
-@keyframes rotateX {
-    to {
-        -webkit-transform: var(--rotateX);
-                transform: var(--rotateX);
-    }
-}
-
-/***** RotateY *****/
-@-webkit-keyframes rotateY {
-    to {
-        -webkit-transform: var(--rotateY);
-                transform: var(--rotateY);
-    }
-}
-@keyframes rotateY {
-    to {
-        -webkit-transform: var(--rotateY);
-                transform: var(--rotateY);
-    }
-}
-
-
-/*****************/
-/***** Scale *****/
-@-webkit-keyframes scale {
-    to {
-        -webkit-transform: scale(var(--scale));
-                transform: scale(var(--scale));
-    }
-}
-@keyframes scale {
-    to {
-        -webkit-transform: scale(var(--scale));
-                transform: scale(var(--scale));
-    }
-}
-
-/***** ScaleX *****/
-@-webkit-keyframes scaleX {
-    to {
-        -webkit-transform: scaleX(var(--scaleX));
-                transform: scaleX(var(--scaleX));
-    }
-}
-@keyframes scaleX {
-    to {
-        -webkit-transform: scaleX(var(--scaleX));
-                transform: scaleX(var(--scaleX));
-    }
-}
-
-/***** ScaleY *****/
-@-webkit-keyframes scaleY {
-    to {
-        -webkit-transform: scaleY(var(--scaleY));
-                transform: scaleY(var(--scaleY));
-    }
-}
-@keyframes scaleY {
-    to {
-        -webkit-transform: scaleY(var(--scaleY));
-                transform: scaleY(var(--scaleY));
-    }
-}
-
-
-/****************/
-/***** Skew *****/
-@-webkit-keyframes skew {
-    to {
-        -webkit-transform: skew(var(--skew));
-                transform: skew(var(--skew));
-    }
-}
-@keyframes skew {
-    to {
-        -webkit-transform: skew(var(--skew));
-                transform: skew(var(--skew));
-    }
-}
-
-/***** SkewX *****/
-@-webkit-keyframes skewX {
-    to {
-        -webkit-transform: skewX(var(--skewX));
-                transform: skewX(var(--skewX));
-    }
-}
-@keyframes skewX {
-    to {
-        -webkit-transform: skewX(var(--skewX));
-                transform: skewX(var(--skewX));
-    }
-}
-
-/***** SkewY *****/
-@-webkit-keyframes skewY {
-    to {
-        -webkit-transform: skewY(var(--skewY));
-                transform: skewY(var(--skewY));
-    }
-}
-@keyframes skewY {
-    to {
-        -webkit-transform: skewY(var(--skewY));
-                transform: skewY(var(--skewY));
-    }
-}
-
-
-/*********************/
-/***** Translate *****/
-@-webkit-keyframes translate {
-    to {
-        -webkit-transform: translate(var(--translate));
-                transform: translate(var(--translate));
-    }
-}
-@keyframes translate {
-    to {
-        -webkit-transform: translate(var(--translate));
-                transform: translate(var(--translate));
-    }
-}
-
-/***** TranslateX *****/
-@-webkit-keyframes translateX {
-    to {
-        -webkit-transform: translateX(var(--translateX));
-                transform: translateX(var(--translateX));
-    }
-}
-@keyframes translateX {
-    to {
-        -webkit-transform: translateX(var(--translateX));
-                transform: translateX(var(--translateX));
-    }
-}
-
-/***** TranslateY *****/
-@-webkit-keyframes translateY {
-    to {
-        -webkit-transform: translateY(var(--translateY));
-                transform: translateY(var(--translateY));
-    }
-}
-@keyframes translateY {
-    to {
-        -webkit-transform: translateY(var(--translateY));
-                transform: translateY(var(--translateY));
-    }
-}
-/************************************/
-/********** ANIMATION NAME **********/
-/************************************/
-
-/*
-1. Rotate
-2. Scale
-3. Skew
-4. Translate
-*/
-
-
-/*******************/
-/***** Rotate *****/
-*:hover > [class*="anima"][class*="into"][class*="rotA"],
-*:focus > [class*="anima"][class*="into"][class*="rotA"],
-*:active > [class*="anima"][class*="into"][class*="rotA"],
-[class*="anima"][class*="local"][class*="rotA"],
-[class*="anima"][class*="onto"][class*="rotA"]:hover,
-[class*="anima"][class*="onto"][class*="rotA"]:focus,
-[class*="anima"][class*="onto"][class*="rotA"]:active,
-[class*="anima"][class*="global"][class*="rotA"] > *,
-[class*="anima"][class*="toall"][class*="rotA"]:hover > *,
-[class*="anima"][class*="toall"][class*="rotA"]:focus > *,
-[class*="anima"][class*="toall"][class*="rotA"]:active > *,
-[class*="anima"][class*="fromall"][class*="rotA"] > *:hover,
-[class*="anima"][class*="fromall"][class*="rotA"] > *:focus,
-[class*="anima"][class*="fromall"][class*="rotA"] > *:active,
-[class*="anima"][class*="dio"][class*="rotA"]:checked ~ [class*="anima"][class*="target"][class*="rotA"] {
-    -webkit-animation-name: rotate;
-            animation-name: rotate;
-}
-
-*:hover > [class*="anima"][class*="into"][class*="rotX"],
-*:focus > [class*="anima"][class*="into"][class*="rotX"],
-*:active > [class*="anima"][class*="into"][class*="rotX"],
-[class*="anima"][class*="local"][class*="rotX"],
-[class*="anima"][class*="onto"][class*="rotX"]:hover,
-[class*="anima"][class*="onto"][class*="rotX"]:focus,
-[class*="anima"][class*="onto"][class*="rotX"]:active,
-[class*="anima"][class*="global"][class*="rotX"] > *,
-[class*="anima"][class*="toall"][class*="rotX"]:hover > *,
-[class*="anima"][class*="toall"][class*="rotX"]:focus > *,
-[class*="anima"][class*="toall"][class*="rotX"]:active > *,
-[class*="anima"][class*="fromall"][class*="rotX"] > *:hover,
-[class*="anima"][class*="fromall"][class*="rotX"] > *:focus,
-[class*="anima"][class*="fromall"][class*="rotX"] > *:active,
-[class*="anima"][class*="dio"][class*="rotX"]:checked ~ [class*="anima"][class*="target"][class*="rotX"] {
-    -webkit-animation-name: rotateX;
-            animation-name: rotateX;
-}
-
-*:hover > [class*="anima"][class*="into"][class*="rotY"],
-*:focus > [class*="anima"][class*="into"][class*="rotY"],
-*:active > [class*="anima"][class*="into"][class*="rotY"],
-[class*="anima"][class*="local"][class*="rotY"],
-[class*="anima"][class*="onto"][class*="rotY"]:hover,
-[class*="anima"][class*="onto"][class*="rotY"]:focus,
-[class*="anima"][class*="onto"][class*="rotY"]:active,
-[class*="anima"][class*="global"][class*="rotY"] > *,
-[class*="anima"][class*="toall"][class*="rotY"]:hover > *,
-[class*="anima"][class*="toall"][class*="rotY"]:focus > *,
-[class*="anima"][class*="toall"][class*="rotY"]:active > *,
-[class*="anima"][class*="fromall"][class*="rotY"] > *:hover,
-[class*="anima"][class*="fromall"][class*="rotY"] > *:focus,
-[class*="anima"][class*="fromall"][class*="rotY"] > *:active,
-[class*="anima"][class*="dio"][class*="rotY"]:checked ~ [class*="anima"][class*="target"][class*="rotY"] {
-    -webkit-animation-name: rotateY;
-            animation-name: rotateY;
-}
-
-/*****************/
-/***** Scale *****/
-*:hover > [class*="anima"][class*="into"][class*="scaL"],
-*:focus > [class*="anima"][class*="into"][class*="scaL"],
-*:active > [class*="anima"][class*="into"][class*="scaL"],
-[class*="anima"][class*="local"][class*="scaL"],
-[class*="anima"][class*="onto"][class*="scaL"]:hover,
-[class*="anima"][class*="onto"][class*="scaL"]:focus,
-[class*="anima"][class*="onto"][class*="scaL"]:active,
-[class*="anima"][class*="global"][class*="scaL"] > *,
-[class*="anima"][class*="toall"][class*="scaL"]:hover > *,
-[class*="anima"][class*="toall"][class*="scaL"]:focus > *,
-[class*="anima"][class*="toall"][class*="scaL"]:active > *,
-[class*="anima"][class*="fromall"][class*="scaL"] > *:hover,
-[class*="anima"][class*="fromall"][class*="scaL"] > *:focus,
-[class*="anima"][class*="fromall"][class*="scaL"] > *:active,
-[class*="anima"][class*="dio"][class*="scaL"]:checked ~ [class*="anima"][class*="target"][class*="scaL"] {
-    -webkit-animation-name: scale;
-            animation-name: scale;
-}
-
-*:hover > [class*="anima"][class*="into"][class*="scaX"],
-*:focus > [class*="anima"][class*="into"][class*="scaX"],
-*:active > [class*="anima"][class*="into"][class*="scaX"],
-[class*="anima"][class*="local"][class*="scaX"],
-[class*="anima"][class*="onto"][class*="scaX"]:hover,
-[class*="anima"][class*="onto"][class*="scaX"]:focus,
-[class*="anima"][class*="onto"][class*="scaX"]:active,
-[class*="anima"][class*="global"][class*="scaX"] > *,
-[class*="anima"][class*="toall"][class*="scaX"]:hover > *,
-[class*="anima"][class*="toall"][class*="scaX"]:focus > *,
-[class*="anima"][class*="toall"][class*="scaX"]:active > *,
-[class*="anima"][class*="fromall"][class*="scaX"] > *:hover,
-[class*="anima"][class*="fromall"][class*="scaX"] > *:focus,
-[class*="anima"][class*="fromall"][class*="scaX"] > *:active,
-[class*="anima"][class*="dio"][class*="scaX"]:checked ~ [class*="anima"][class*="target"][class*="scaX"] {
-    -webkit-animation-name: scaleX;
-            animation-name: scaleX;
-}
-
-*:hover > [class*="anima"][class*="into"][class*="scaY"],
-*:focus > [class*="anima"][class*="into"][class*="scaY"],
-*:active > [class*="anima"][class*="into"][class*="scaY"],
-[class*="anima"][class*="local"][class*="scaY"],
-[class*="anima"][class*="onto"][class*="scaY"]:hover,
-[class*="anima"][class*="onto"][class*="scaY"]:focus,
-[class*="anima"][class*="onto"][class*="scaY"]:active,
-[class*="anima"][class*="global"][class*="scaY"] > *,
-[class*="anima"][class*="toall"][class*="scaY"]:hover > *,
-[class*="anima"][class*="toall"][class*="scaY"]:focus > *,
-[class*="anima"][class*="toall"][class*="scaY"]:active > *,
-[class*="anima"][class*="fromall"][class*="scaY"] > *:hover,
-[class*="anima"][class*="fromall"][class*="scaY"] > *:focus,
-[class*="anima"][class*="fromall"][class*="scaY"] > *:active,
-[class*="anima"][class*="dio"][class*="scaY"]:checked ~ [class*="anima"][class*="target"][class*="scaY"] {
-    -webkit-animation-name: scaleY;
-            animation-name: scaleY;
-}
-
-
-/****************/
-/***** Skew *****/
-*:hover > [class*="anima"][class*="into"][class*="skeW"],
-*:focus > [class*="anima"][class*="into"][class*="skeW"],
-*:active > [class*="anima"][class*="into"][class*="skeW"],
-[class*="anima"][class*="local"][class*="skeW"],
-[class*="anima"][class*="onto"][class*="skeW"]:hover,
-[class*="anima"][class*="onto"][class*="skeW"]:focus,
-[class*="anima"][class*="onto"][class*="skeW"]:active,
-[class*="anima"][class*="global"][class*="skeW"] > *,
-[class*="anima"][class*="toall"][class*="skeW"]:hover > *,
-[class*="anima"][class*="toall"][class*="skeW"]:focus > *,
-[class*="anima"][class*="toall"][class*="skeW"]:active > *,
-[class*="anima"][class*="fromall"][class*="skeW"] > *:hover,
-[class*="anima"][class*="fromall"][class*="skeW"] > *:focus,
-[class*="anima"][class*="fromall"][class*="skeW"] > *:active,
-[class*="anima"][class*="dio"][class*="skeW"]:checked ~ [class*="anima"][class*="target"][class*="skeW"] {
-    -webkit-animation-name: skew;
-            animation-name: skew;
-}
-
-*:hover > [class*="anima"][class*="into"][class*="skeX"],
-*:focus > [class*="anima"][class*="into"][class*="skeX"],
-*:active > [class*="anima"][class*="into"][class*="skeX"],
-[class*="anima"][class*="local"][class*="skeX"],
-[class*="anima"][class*="onto"][class*="skeX"]:hover,
-[class*="anima"][class*="onto"][class*="skeX"]:focus,
-[class*="anima"][class*="onto"][class*="skeX"]:active,
-[class*="anima"][class*="global"][class*="skeX"] > *,
-[class*="anima"][class*="toall"][class*="skeX"]:hover > *,
-[class*="anima"][class*="toall"][class*="skeX"]:focus > *,
-[class*="anima"][class*="toall"][class*="skeX"]:active > *,
-[class*="anima"][class*="fromall"][class*="skeX"] > *:hover,
-[class*="anima"][class*="fromall"][class*="skeX"] > *:focus,
-[class*="anima"][class*="fromall"][class*="skeX"] > *:active,
-[class*="anima"][class*="dio"][class*="skeX"]:checked ~ [class*="anima"][class*="target"][class*="skeX"] {
--webkit-animation-name: skewX;
-        animation-name: skewX;
-}
-
-*:hover > [class*="anima"][class*="into"][class*="skeY"],
-*:focus > [class*="anima"][class*="into"][class*="skeY"],
-*:active > [class*="anima"][class*="into"][class*="skeY"],
-[class*="anima"][class*="local"][class*="skeY"],
-[class*="anima"][class*="onto"][class*="skeY"]:hover,
-[class*="anima"][class*="onto"][class*="skeY"]:focus,
-[class*="anima"][class*="onto"][class*="skeY"]:active,
-[class*="anima"][class*="global"][class*="skeY"] > *,
-[class*="anima"][class*="toall"][class*="skeY"]:hover > *,
-[class*="anima"][class*="toall"][class*="skeY"]:focus > *,
-[class*="anima"][class*="toall"][class*="skeY"]:active > *,
-[class*="anima"][class*="fromall"][class*="skeY"] > *:hover,
-[class*="anima"][class*="fromall"][class*="skeY"] > *:focus,
-[class*="anima"][class*="fromall"][class*="skeY"] > *:active,
-[class*="anima"][class*="dio"][class*="skeY"]:checked ~ [class*="anima"][class*="target"][class*="skeY"] {
--webkit-animation-name: skewY;
-        animation-name: skewY;
-}
-
-
-
-/*********************/
-/***** Translate *****/
-*:hover > [class*="anima"][class*="into"][class*="traX"],
-*:focus > [class*="anima"][class*="into"][class*="traX"],
-*:active > [class*="anima"][class*="into"][class*="traX"],
-[class*="anima"][class*="local"][class*="traX"],
-[class*="anima"][class*="onto"][class*="traX"]:hover,
-[class*="anima"][class*="onto"][class*="traX"]:focus,
-[class*="anima"][class*="onto"][class*="traX"]:active,
-[class*="anima"][class*="global"][class*="traX"] > *,
-[class*="anima"][class*="toall"][class*="traX"]:hover > *,
-[class*="anima"][class*="toall"][class*="traX"]:focus > *,
-[class*="anima"][class*="toall"][class*="traX"]:active > *,
-[class*="anima"][class*="fromall"][class*="traX"] > *:hover,
-[class*="anima"][class*="fromall"][class*="traX"] > *:focus,
-[class*="anima"][class*="fromall"][class*="traX"] > *:active,
-[class*="anima"][class*="dio"][class*="traX"]:checked ~ [class*="anima"][class*="target"][class*="traX"] {
-    -webkit-animation-name: translateX;
-            animation-name: translateX;
-}
-
-*:hover > [class*="anima"][class*="into"][class*="traY"],
-*:focus > [class*="anima"][class*="into"][class*="traY"],
-*:active > [class*="anima"][class*="into"][class*="traY"],
-[class*="anima"][class*="local"][class*="traY"],
-[class*="anima"][class*="onto"][class*="traY"]:hover,
-[class*="anima"][class*="onto"][class*="traY"]:focus,
-[class*="anima"][class*="onto"][class*="traY"]:active,
-[class*="anima"][class*="global"][class*="traY"] > *,
-[class*="anima"][class*="toall"][class*="traY"]:hover > *,
-[class*="anima"][class*="toall"][class*="traY"]:focus > *,
-[class*="anima"][class*="toall"][class*="traY"]:active > *,
-[class*="anima"][class*="fromall"][class*="traY"] > *:hover,
-[class*="anima"][class*="fromall"][class*="traY"] > *:focus,
-[class*="anima"][class*="fromall"][class*="traY"] > *:active,
-[class*="anima"][class*="dio"][class*="traY"]:checked ~ [class*="anima"][class*="target"][class*="traY"] {
-    -webkit-animation-name: translateY;
-            animation-name: translateY;
-}
-
-*:hover > [class*="anima"][class*="into"][class*="traN"],
-*:focus > [class*="anima"][class*="into"][class*="traN"],
-*:active > [class*="anima"][class*="into"][class*="traN"],
-[class*="anima"][class*="local"][class*="traN"],
-[class*="anima"][class*="onto"][class*="traN"]:hover,
-[class*="anima"][class*="onto"][class*="traN"]:focus,
-[class*="anima"][class*="onto"][class*="traN"]:active,
-[class*="anima"][class*="global"][class*="traN"] > *,
-[class*="anima"][class*="toall"][class*="traN"]:hover > *,
-[class*="anima"][class*="toall"][class*="traN"]:focus > *,
-[class*="anima"][class*="toall"][class*="traN"]:active > *,
-[class*="anima"][class*="fromall"][class*="traN"] > *:hover,
-[class*="anima"][class*="fromall"][class*="traN"] > *:focus,
-[class*="anima"][class*="fromall"][class*="traN"] > *:active,
-[class*="anima"][class*="dio"][class*="traN"]:checked ~ [class*="anima"][class*="target"][class*="traN"] {
-    -webkit-animation-name: translate;
-            animation-name: translate;
-}
-/****************************************/
-/********** ANIMATION DURATION **********/
-/****************************************/
-
-/*
-1. TN
-2. SM
-3. MD
-4. LG
-5. WD
-*/
-
-
-/**************/
-/***** TN *****/
-*:hover > [class*="anima"][class*="into"][class*="tn"],
-*:focus > [class*="anima"][class*="into"][class*="tn"],
-*:active > [class*="anima"][class*="into"][class*="tn"],
-[class*="anima"][class*="local"][class*="tn"],
-[class*="anima"][class*="onto"][class*="tn"]:hover,
-[class*="anima"][class*="onto"][class*="tn"]:focus,
-[class*="anima"][class*="onto"][class*="tn"]:active,
-[class*="anima"][class*="global"][class*="tn"] > *,
-[class*="anima"][class*="toall"][class*="tn"]:hover > *,
-[class*="anima"][class*="toall"][class*="tn"]:focus > *,
-[class*="anima"][class*="toall"][class*="tn"]:active > *,
-[class*="anima"][class*="fromall"][class*="tn"] > *:hover,
-[class*="anima"][class*="fromall"][class*="tn"] > *:focus,
-[class*="anima"][class*="fromall"][class*="tn"] > *:active,
-[class*="anima"][class*="dio"][class*="tn"]:checked ~ [class*="anima"][class*="target"][class*="tn"] {
-    -webkit-animation-duration: var(--anima-duration-tn);
-            animation-duration: var(--anima-duration-tn);
-}
-
-
-/**************/
-/***** SM *****/
-*:hover > [class*="anima"][class*="into"][class*="sm"],
-*:focus > [class*="anima"][class*="into"][class*="sm"],
-*:active > [class*="anima"][class*="into"][class*="sm"],
-[class*="anima"][class*="local"][class*="sm"],
-[class*="anima"][class*="onto"][class*="sm"]:hover,
-[class*="anima"][class*="onto"][class*="sm"]:focus,
-[class*="anima"][class*="onto"][class*="sm"]:active,
-[class*="anima"][class*="global"][class*="sm"] > *,
-[class*="anima"][class*="toall"][class*="sm"]:hover > *,
-[class*="anima"][class*="toall"][class*="sm"]:focus > *,
-[class*="anima"][class*="toall"][class*="sm"]:active > *,
-[class*="anima"][class*="fromall"][class*="sm"] > *:hover,
-[class*="anima"][class*="fromall"][class*="sm"] > *:focus,
-[class*="anima"][class*="fromall"][class*="sm"] > *:active,
-[class*="anima"][class*="dio"][class*="sm"]:checked ~ [class*="anima"][class*="target"][class*="sm"] {
-    -webkit-animation-duration: var(--anima-duration-sm);
-            animation-duration: var(--anima-duration-sm);
-}
-
-
-/**************/
-/***** MD *****/
-*:hover > [class*="anima"][class*="into"][class*="md"],
-*:focus > [class*="anima"][class*="into"][class*="md"],
-*:active > [class*="anima"][class*="into"][class*="md"],
-[class*="anima"][class*="local"][class*="md"],
-[class*="anima"][class*="onto"][class*="md"]:hover,
-[class*="anima"][class*="onto"][class*="md"]:focus,
-[class*="anima"][class*="onto"][class*="md"]:active,
-[class*="anima"][class*="global"][class*="md"] > *,
-[class*="anima"][class*="toall"][class*="md"]:hover > *,
-[class*="anima"][class*="toall"][class*="md"]:focus > *,
-[class*="anima"][class*="toall"][class*="md"]:active > *,
-[class*="anima"][class*="fromall"][class*="md"] > *:hover,
-[class*="anima"][class*="fromall"][class*="md"] > *:focus,
-[class*="anima"][class*="fromall"][class*="md"] > *:active,
-[class*="anima"][class*="dio"][class*="md"]:checked ~ [class*="anima"][class*="target"][class*="md"] {
-    -webkit-animation-duration: var(--anima-duration-md);
-            animation-duration: var(--anima-duration-md);
-}
-
-
-/**************/
-/***** LG *****/
-*:hover > [class*="anima"][class*="into"][class*="lg"],
-*:focus > [class*="anima"][class*="into"][class*="lg"],
-*:active > [class*="anima"][class*="into"][class*="lg"],
-[class*="anima"][class*="local"][class*="lg"],
-[class*="anima"][class*="onto"][class*="lg"]:hover,
-[class*="anima"][class*="onto"][class*="lg"]:focus,
-[class*="anima"][class*="onto"][class*="lg"]:active,
-[class*="anima"][class*="global"][class*="lg"] > *,
-[class*="anima"][class*="toall"][class*="lg"]:hover > *,
-[class*="anima"][class*="toall"][class*="lg"]:focus > *,
-[class*="anima"][class*="toall"][class*="lg"]:active > *,
-[class*="anima"][class*="fromall"][class*="lg"] > *:hover,
-[class*="anima"][class*="fromall"][class*="lg"] > *:focus,
-[class*="anima"][class*="fromall"][class*="lg"] > *:active,
-[class*="anima"][class*="dio"][class*="lg"]:checked ~ [class*="anima"][class*="target"][class*="lg"] {
-    -webkit-animation-duration: var(--anima-duration-lg);
-            animation-duration: var(--anima-duration-lg);
-}
-
-
-/**************/
-/***** WD *****/
-*:hover > [class*="anima"][class*="into"][class*="wd"],
-*:focus > [class*="anima"][class*="into"][class*="wd"],
-*:active > [class*="anima"][class*="into"][class*="wd"],
-[class*="anima"][class*="local"][class*="wd"],
-[class*="anima"][class*="onto"][class*="wd"]:hover,
-[class*="anima"][class*="onto"][class*="wd"]:focus,
-[class*="anima"][class*="onto"][class*="wd"]:active,
-[class*="anima"][class*="global"][class*="wd"] > *,
-[class*="anima"][class*="toall"][class*="wd"]:hover > *,
-[class*="anima"][class*="toall"][class*="wd"]:focus > *,
-[class*="anima"][class*="toall"][class*="wd"]:active > *,
-[class*="anima"][class*="fromall"][class*="wd"] > *:hover,
-[class*="anima"][class*="fromall"][class*="wd"] > *:focus,
-[class*="anima"][class*="fromall"][class*="wd"] > *:active,
-[class*="anima"][class*="dio"][class*="wd"]:checked ~ [class*="anima"][class*="target"][class*="wd"] {
-    -webkit-animation-duration: var(--anima-duration-wd);
-            animation-duration: var(--anima-duration-wd);
-}
-/*************************************/
-/********** ANIMATION DELAY **********/
-/*************************************/
-
-/*
-1. Small
-2. Medium
-3. Large
-*/
-
-
-/*****************/
-/***** Small *****/
-[class*="animate-"][class*="small"]:hover,
-[class*="animate-"][class*="small"]:focus,
-[class*="animate-"][class*="small"]:active,
-*:hover > [class*="animated-"][class*="small"],
-*:focus > [class*="animated-"][class*="small"],
-*:active > [class*="animated-"][class*="small"],
-[class*="radio-"][class*="small"]:checked ~ [class*="target-"][class*="small"],
-[class*="show-"][class*="small"],
-[class*="shown-"][class*="small"] > * {
-    -webkit-animation-delay: var(--anima-delay-small);
-            animation-delay: var(--anima-delay-small);
-}
-
-
-/******************/
-/***** Medium *****/
-[class*="animate-"][class*="medium"]:hover,
-[class*="animate-"][class*="medium"]:focus,
-[class*="animate-"][class*="medium"]:active,
-*:hover > [class*="animated-"][class*="medium"],
-*:focus > [class*="animated-"][class*="medium"],
-*:active > [class*="animated-"][class*="medium"],
-[class*="radio-"][class*="medium"]:checked ~ [class*="target-"][class*="medium"],
-[class*="show-"][class*="medium"],
-[class*="shown-"][class*="medium"] > * {
-    -webkit-animation-delay: var(--anima-delay-medium);
-            animation-delay: var(--anima-delay-medium);
-}
-
-
-/*****************/
-/***** Large *****/
-[class*="animate-"][class*="large"]:hover,
-[class*="animate-"][class*="large"]:focus,
-[class*="animate-"][class*="large"]:active,
-*:hover > [class*="animated-"][class*="large"],
-*:focus > [class*="animated-"][class*="large"],
-*:active > [class*="animated-"][class*="large"],
-[class*="radio-"][class*="large"]:checked ~ [class*="target-"][class*="large"],
-[class*="show-"][class*="large"],
-[class*="shown-"][class*="large"] > * {
-    -webkit-animation-delay: var(--anima-delay-large);
-            animation-delay: var(--anima-delay-large);
-}
-/***********************************************/
-/********** ANIMATION TIMING FUNCTION **********/
-/***********************************************/
-
-/*
-1. Linear
-2. Ease
-3. Steps
-4. Bezier
-*/
-
-
-/******************/
-/***** Linear *****/
-[class*="animate-"][class*="linear"]:hover,
-[class*="animate-"][class*="linear"]:focus,
-[class*="animate-"][class*="linear"]:active,
-*:hover > [class*="animated-"][class*="linear"],
-*:focus > [class*="animated-"][class*="linear"],
-*:active > [class*="animated-"][class*="linear"],
-[class*="radio-"][class*="linear"]:checked ~ [class*="target-"][class*="linear"],
-[class*="show-"][class*="linear"],
-[class*="shown-"][class*="linear"] > * {
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-}
-
-
-/****************/
-/***** Ease *****/
-[class*="animate-"][class*="ease"]:hover,
-[class*="animate-"][class*="ease"]:focus,
-[class*="animate-"][class*="ease"]:active,
-*:hover > [class*="animated-"][class*="ease"],
-*:focus > [class*="animated-"][class*="ease"],
-*:active > [class*="animated-"][class*="ease"],
-[class*="radio-"][class*="ease"]:checked ~ [class*="target-"][class*="ease"],
-[class*="show-"][class*="ease"],
-[class*="shown-"][class*="ease"] > * {
-    -webkit-animation-timing-function: var(--anima-timing-ease);
-            animation-timing-function: var(--anima-timing-ease);
-}
-
-
-/*****************/
-/***** Steps *****/
-[class*="animate-"][class*="steps"]:hover,
-[class*="animate-"][class*="steps"]:focus,
-[class*="animate-"][class*="steps"]:active,
-*:hover > [class*="animated-"][class*="steps"],
-*:focus > [class*="animated-"][class*="steps"],
-*:active > [class*="animated-"][class*="steps"],
-[class*="radio-"][class*="steps"]:checked ~ [class*="target-"][class*="steps"],
-[class*="show-"][class*="steps"],
-[class*="shown-"][class*="steps"] > * {
-    -webkit-animation-timing-function: steps(var(--anima-timing-steps));
-            animation-timing-function: steps(var(--anima-timing-steps));
-}
-
-
-/******************/
-/***** Bezier *****/
-[class*="animate-"][class*="bezier"]:hover,
-[class*="animate-"][class*="bezier"]:focus,
-[class*="animate-"][class*="bezier"]:active,
-*:hover > [class*="animated-"][class*="bezier"],
-*:focus > [class*="animated-"][class*="bezier"],
-*:active > [class*="animated-"][class*="bezier"],
-[class*="radio-"][class*="bezier"]:checked ~ [class*="target-"][class*="bezier"],
-[class*="show-"][class*="bezier"],
-[class*="shown-"][class*="bezier"] > * {
-    -webkit-animation-timing-function: cubic-bezier(var(--anima-timing-bezier));
-            animation-timing-function: cubic-bezier(var(--anima-timing-bezier));
-}
-/***********************************************/
-/********** ANIMATION ITERATION COUNT **********/
-/***********************************************/
-
-/*
-1. Few
-2. Many
-3. Loop
-*/
-
-
-/***************/
-/***** Few *****/
-[class*="animate-"][class*="few"]:hover,
-[class*="animate-"][class*="few"]:focus,
-[class*="animate-"][class*="few"]:active,
-*:hover > [class*="animated-"][class*="few"],
-*:focus > [class*="animated-"][class*="few"],
-*:active > [class*="animated-"][class*="few"],
-[class*="radio-"][class*="few"]:checked ~ [class*="target-"][class*="few"],
-[class*="show-"][class*="few"],
-[class*="shown-"][class*="few"] > * {
-    -webkit-animation-iteration-count: var(--anima-count-few);
-            animation-iteration-count: var(--anima-count-few);
-}
-
-
-/****************/
-/***** Many *****/
-[class*="animate-"][class*="many"]:hover,
-[class*="animate-"][class*="many"]:focus,
-[class*="animate-"][class*="many"]:active,
-*:hover > [class*="animated-"][class*="many"],
-*:focus > [class*="animated-"][class*="many"],
-*:active > [class*="animated-"][class*="many"],
-[class*="radio-"][class*="many"]:checked ~ [class*="target-"][class*="many"],
-[class*="show-"][class*="many"],
-[class*="shown-"][class*="many"] > * {
-    -webkit-animation-iteration-count: var(--anima-count-many);
-            animation-iteration-count: var(--anima-count-many);
-}
-
-
-/****************/
-/***** Loop *****/
-[class*="animate-"][class*="loop"]:hover,
-[class*="animate-"][class*="loop"]:focus,
-[class*="animate-"][class*="loop"]:active,
-*:hover > [class*="animated-"][class*="loop"],
-*:focus > [class*="animated-"][class*="loop"],
-*:active > [class*="animated-"][class*="loop"],
-[class*="radio-"][class*="loop"]:checked ~ [class*="target-"][class*="loop"],
-[class*="show-"][class*="loop"],
-[class*="shown-"][class*="loop"] > * {
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-}
-/*****************************************/
-/********** ANIMATION DIRECTION **********/
-/*****************************************/
-
-/*
-1. Alternate
-2. Reverse
-3. Alternate Reverse
-*/
-
-
-/*********************/
-/***** Alternate *****/
-[class*="animate-"][class*="alternate"]:hover,
-[class*="animate-"][class*="alternate"]:focus,
-[class*="animate-"][class*="alternate"]:active,
-*:hover > [class*="animated-"][class*="alternate"],
-*:focus > [class*="animated-"][class*="alternate"],
-*:active > [class*="animated-"][class*="alternate"],
-[class*="radio-"][class*="alternate"]:checked ~ [class*="target-"][class*="alternate"],
-[class*="show-"][class*="alternate"],
-[class*="shown-"][class*="alternate"] > * {
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-}
-
-
-/*******************/
-/***** Reverse *****/
-[class*="animate-"][class*="reverse"]:hover,
-[class*="animate-"][class*="reverse"]:focus,
-[class*="animate-"][class*="reverse"]:active,
-*:hover > [class*="animated-"][class*="reverse"],
-*:focus > [class*="animated-"][class*="reverse"],
-*:active > [class*="animated-"][class*="reverse"],
-[class*="radio-"][class*="reverse"]:checked ~ [class*="target-"][class*="reverse"],
-[class*="show-"][class*="reverse"],
-[class*="shown-"][class*="reverse"] > * {
-    animation-direction: reverse;
-}
-
-
-/*****************************/
-/***** Alternate Reverse *****/
-[class*="animate-"][class*="alt-rev"]:hover,
-[class*="animate-"][class*="alt-rev"]:focus,
-[class*="animate-"][class*="alt-rev"]:active,
-*:hover > [class*="animated-"][class*="alt-rev"],
-*:focus > [class*="animated-"][class*="alt-rev"],
-*:active > [class*="animated-"][class*="alt-rev"],
-[class*="radio-"][class*="alt-rev"]:checked ~ [class*="target-"][class*="alt-rev"],
-[class*="show-"][class*="alt-rev"],
-[class*="shown-"][class*="alt-rev"] > * {
-    animation-direction: alternate-reverse;
-}
-/*****************************************/
-/********** ANIMATION FILL MODE **********/
-/*****************************************/
-
-/*
-1. Back
-2. Front
-*/
-
-
-/****************/
-/***** Back *****/
-[class*="animate-"][class*="back"]:hover,
-[class*="animate-"][class*="back"]:focus,
-[class*="animate-"][class*="back"]:active,
-*:hover > [class*="animated-"][class*="back"],
-*:focus > [class*="animated-"][class*="back"],
-*:active > [class*="animated-"][class*="back"],
-[class*="radio-"][class*="back"]:checked ~ [class*="target-"][class*="back"],
-[class*="show-"][class*="back"],
-[class*="shown-"][class*="back"] > * {
-    -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
-}
-
-
-/*****************/
-/***** Front *****/
-[class*="animate-"][class*="front"]:hover,
-[class*="animate-"][class*="front"]:focus,
-[class*="animate-"][class*="front"]:active,
-*:hover > [class*="animated-"][class*="front"],
-*:focus > [class*="animated-"][class*="front"],
-*:active > [class*="animated-"][class*="front"],
-[class*="radio-"][class*="front"]:checked ~ [class*="target-"][class*="front"],
-[class*="show-"][class*="front"],
-[class*="shown-"][class*="front"] > * {
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-}
-/**************************************/
-/********** TRANSFORM ORIGIN **********/
-/**************************************/
-
-/*
-1. Far
-2. Near
-*/
-
-
-/***************/
-/***** Far *****/
-[class*="animate-"][class*="far"]:hover,
-[class*="animate-"][class*="far"]:focus,
-[class*="animate-"][class*="far"]:active,
-*:hover > [class*="animated-"][class*="far"],
-*:focus > [class*="animated-"][class*="far"],
-*:active > [class*="animated-"][class*="far"],
-[class*="radio-"][class*="far"]:checked ~ [class*="target-"][class*="far"],
-[class*="show-"][class*="far"],
-[class*="shown-"][class*="far"] > * {
-    -webkit-transform-origin: var(--transform-origin-far);
-            transform-origin: var(--transform-origin-far);
-}
-
-/****************/
-/***** Near *****/
-[class*="animate-"][class*="near"]:hover,
-[class*="animate-"][class*="near"]:focus,
-[class*="animate-"][class*="near"]:active,
-*:hover > [class*="animated-"][class*="near"],
-*:focus > [class*="animated-"][class*="near"],
-*:active > [class*="animated-"][class*="near"],
-[class*="radio-"][class*="near"]:checked ~ [class*="target-"][class*="near"],
-[class*="show-"][class*="near"],
-[class*="shown-"][class*="near"] > * {
--webkit-transform-origin: var(--transform-origin-near);
-        transform-origin: var(--transform-origin-near);
-}
-
-
-/****************************/
-/********** NAVBAR **********/
-/****************************/
-
-/* Global */
-/* Navbar */
-/* Brand Nav */
-/* Main Nav */
-/* User Nav */
-/* Medias Rules */
-
-
-/******************/
-/***** Global *****/
-.navbar,
-.main-nav,
-.nav-user,
-.main-nav a,
-.nav-user a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-
-/******************/
-/***** Navbar *****/
-.navbar {
-    -webkit-box-align: var(--navbar-align-items);
-        -ms-flex-align: var(--navbar-align-items);
-            align-items: var(--navbar-align-items);
-    background-color: var(--navbar-background-color);
-    color: var(--navbar-color);
-
-    /***** Mobile Portrait *****/
-    -webkit-box-pack: var(--navbar-justify-content-tn);
-        -ms-flex-pack: var(--navbar-justify-content-tn);
-            justify-content: var(--navbar-justify-content-tn);
-}
-
-/***** Nav Main & User *****/
-.nav-main,
-.nav-user {
-    -webkit-box-align: var(--nav-main-align-items);
-        -ms-flex-align: var(--nav-main-align-items);
-            align-items: var(--nav-main-align-items);
-    margin: var(--nav-main-margin);
-    padding: var(--nav-main-padding);
-    list-style: none;
-}
-
-/***** Navbar Links *****/
-.navbar a {
-    padding: var(--navbar-a-padding);
-    color: var(--white);
-}
-
-.nav-main a,
-.nav-user a {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-}
-
-.navbar a:hover,
-.navbar a:focus,
-.navbar a:active {
-    color: var(--yellow);
-    -webkit-transform: scale(var(--navbar-a-scale));
-            transform: scale(var(--navbar-a-scale));
-}
-
-/***** Navbar Icons *****/
-.navbar i {
-    -ms-flex-item-align: var(--navbar-i-align-self);
-        align-self: var(--navbar-i-align-self);
-}
-
-
-/*********************/
-/***** Brand Nav *****/
-.nav-brand img,
-.nav-brand svg {
-    height: var(--nav-brand-img-height);
-}
-
-
-/********************/
-/***** Main Nav *****/
-.main-nav span {
-    display: var(--main-nav-span-display);
-}
-
-
-/********************/
-/***** User Nav *****/
-.nav-user p {
-    display: var(--nav-user-p-display);
-}
-
-.nav-user img,
-.nav-user svg {
-    margin: var(--nav-user-img-margin);
-    height: var(--nav-user-height);
-}
-
-
-/************************/
-/***** Medias Rules *****/
-
-/***** Mobile Landscape *****/
-@media (min-width: 576px) {
-    .navbar {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: var(--navbar-flex-direction-sm);
-                flex-direction: var(--navbar-flex-direction-sm);
-        -webkit-box-pack: var(--navbar-justify-content-sm);
-            -ms-flex-pack: var(--navbar-justify-content-sm);
-                justify-content: var(--navbar-justify-content-sm);
-        padding: var(--navbar-padding-sm);
-    }
-
-    .nav-brand img,
-    .nav-brand svg {
-        height: calc(var(--nav-brand-img-height) * 1.25);
-    }
-
-    .nav-user img,
-    .nav-user svg {
-        margin: calc(var(--nav-user-img-margin) * 2);
-        height: calc(var(--nav-user-height) * 1.25);
-    }
-}
-
-/***** Tablet Portrait *****/
-@media (min-width: 768px) {
-    .navbar {
-        -webkit-box-pack: var(--navbar-justify-content-md);
-            -ms-flex-pack: var(--navbar-justify-content-md);
-                justify-content: var(--navbar-justify-content-md);
-    }
-
-    .nav-brand img,
-    .nav-brand svg {
-        height: calc(var(--nav-brand-img-height) * 1.5);
-    }
-
-    .main-nav span {
-        display: var(--main-nav-span-display-md);
-    }
-
-    .nav-user img,
-    .nav-user svg {
-        margin: calc(var(--nav-user-img-margin) * 3);
-        height: calc(var(--nav-user-height) * 1.5);
-    }
-}
-
-/***** Tablet Landscape *****/
-@media (min-width: 992px) {
-    .nav-brand img,
-    .nav-brand svg {
-        height: calc(var(--nav-brand-img-height) * 1.75);
-    }
-
-    .nav-user img,
-    .nav-user svg {
-        margin: calc(var(--nav-user-img-margin) * 4);
-        height: calc(var(--nav-user-height) * 1.75);
-    }
-}
-
-/***** Desktop *****/
-@media (min-width: 1200px) {
-    .nav-brand img,
-    .nav-brand svg {
-        height: calc(var(--nav-brand-img-height) * 2);
-    }
-
-    .nav-user img,
-    .nav-user svg {
-        margin: calc(var(--nav-user-img-margin) * 5);
-        height: calc(var(--nav-user-height) * 2);
-    }
-    .nav-user p {
-        display: var(--nav-user-p-display-wd);
-        margin-right: var(--nav-user-p-margin-right-wd);
-    }
-}
 /****************************/
 /********** BUTTON **********/
 /****************************/
@@ -3766,4 +3629,4 @@ table {
 
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 9th Mar 2019 @ 11:05:32 PM */
+ Updated: 10th Mar 2019 @ 12:08:32 AM */
