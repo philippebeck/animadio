@@ -2,37 +2,40 @@
 /********** ANIMATION FILL MODE **********/
 /*****************************************/
 
-/*
-1. Back
-2. Front
-*/
 
-
-/****************/
-/***** Back *****/
-[class*="animate-"][class*="back"]:hover,
-[class*="animate-"][class*="back"]:focus,
-[class*="animate-"][class*="back"]:active,
-*:hover > [class*="animated-"][class*="back"],
-*:focus > [class*="animated-"][class*="back"],
-*:active > [class*="animated-"][class*="back"],
-[class*="radio-"][class*="back"]:checked ~ [class*="target-"][class*="back"],
-[class*="show-"][class*="back"],
-[class*="shown-"][class*="back"] > * {
+[class*="anima"][class*="tio"][class*="back"],
+[class*="anima"][class*="dio"][class*="back"]:checked ~ [class*="anima"][class*="target"][class*="back"],
+*:hover > [class*="anima"][class*="into"][class*="back"],
+*:focus > [class*="anima"][class*="into"][class*="back"],
+*:active > [class*="anima"][class*="into"][class*="back"],
+[class*="anima"][class*="onto"][class*="back"]:hover,
+[class*="anima"][class*="onto"][class*="back"]:focus,
+[class*="anima"][class*="onto"][class*="back"]:active,
+[class*="anima"][class*="toall"][class*="back"] > *,
+[class*="anima"][class*="forall"][class*="back"]:hover > *,
+[class*="anima"][class*="forall"][class*="back"]:focus > *,
+[class*="anima"][class*="forall"][class*="back"]:active > *,
+[class*="anima"][class*="fromall"][class*="back"] > *:hover,
+[class*="anima"][class*="fromall"][class*="back"] > *:focus,
+[class*="anima"][class*="fromall"][class*="back"] > *:active {
     animation-fill-mode: backwards;
 }
 
 
-/*****************/
-/***** Front *****/
-[class*="animate-"][class*="front"]:hover,
-[class*="animate-"][class*="front"]:focus,
-[class*="animate-"][class*="front"]:active,
-*:hover > [class*="animated-"][class*="front"],
-*:focus > [class*="animated-"][class*="front"],
-*:active > [class*="animated-"][class*="front"],
-[class*="radio-"][class*="front"]:checked ~ [class*="target-"][class*="front"],
-[class*="show-"][class*="front"],
-[class*="shown-"][class*="front"] > * {
+[class*="anima"][class*="tio"][class*="front"],
+[class*="anima"][class*="dio"][class*="front"]:checked ~ [class*="anima"][class*="target"][class*="front"],
+*:hover > [class*="anima"][class*="into"][class*="front"],
+*:focus > [class*="anima"][class*="into"][class*="front"],
+*:active > [class*="anima"][class*="into"][class*="front"],
+[class*="anima"][class*="onto"][class*="front"]:hover,
+[class*="anima"][class*="onto"][class*="front"]:focus,
+[class*="anima"][class*="onto"][class*="front"]:active,
+[class*="anima"][class*="toall"][class*="front"] > *,
+[class*="anima"][class*="forall"][class*="front"]:hover > *,
+[class*="anima"][class*="forall"][class*="front"]:focus > *,
+[class*="anima"][class*="forall"][class*="front"]:active > *,
+[class*="anima"][class*="fromall"][class*="front"] > *:hover,
+[class*="anima"][class*="fromall"][class*="front"] > *:focus,
+[class*="anima"][class*="fromall"][class*="front"] > *:active {
     animation-fill-mode: forwards;
 }
