@@ -12,27 +12,37 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: [
+                    /***** NORMALIZE *****/
                     "node_modules/normalize.css/normalize.css",
 
-                    "src/variables/color-var.css",
-                    "src/variables/spacing-var.css",
-                    "src/variables/size-var.css",
-                    "src/variables/animation-var.css",
-                    "src/variables/transform-var.css",
-                    "src/variables/tags-var.css",
-                    "src/variables/navbar-var.css",
+                    /***** DISPLAY *****/
+                    "src/display/grid.css",
+                    "src/display/flexbox.css",
+                    "src/display/show.css",
+                    "src/display/text.css",
 
+                    /***** COLORS *****/
                     "src/colors/color-var.css",
                     "src/colors/color.css",
                     "src/colors/color-bg.css",
 
+                    /***** SPACES *****/
+                    "src/spaces/space.css",
+                    "src/spaces/space-var.css",
+
+                    /***** BORDERS *****/
                     "src/borders/bord-var.css",
                     "src/borders/bord-global.css",
                     "src/borders/bord-style.css",
                     "src/borders/bord-width.css",
-                    "src/borders/bord-color-bg.css",
+                    "src/borders/bord-color.css",
                     "src/borders/bord-radius.css",
 
+                    /***** SIZES *****/
+                    "src/sizes/space-var.css",
+                    "src/sizes/size-var.css",
+
+                    /***** SHADOWS *****/
                     "src/shadows/shadows-var.css",
                     "src/shadows/shabox.css",
                     "src/shadows/shabox-blur.css",
@@ -40,16 +50,9 @@ module.exports = function(grunt) {
                     "src/shadows/shatex.css",
                     "src/shadows/shatex-blur.css",
 
-                    "src/global/grid.css",
-                    "src/global/flexbox.css",
-                    "src/global/tags.css",
-
-                    "src/helpers/show.css",
-                    "src/helpers/color-bg.css",
-                    "src/helpers/spacing.css",
-                    "src/helpers/size.css",
-                    "src/helpers/text.css",
-
+                    /***** ANIMATIONS *****/
+                    "src/sizes/animation-var.css",
+                    "src/sizes/transform-var.css",
                     "src/animations/keyframes.css",
                     "src/animations/name.css",
                     "src/animations/duration.css",
@@ -60,7 +63,15 @@ module.exports = function(grunt) {
                     "src/animations/fill.css",
                     "src/animations/origin.css",
 
+                    /***** TAGS *****/
+                    "src/tags/tag-var.css",
+                    "src/tags/tag.css",
+
+                    /***** NAVBAR *****/
+                    "src/elements/navbar-var.css",
                     "src/elements/navbar.css",
+
+                    /***** ELEMENTS *****/
                     "src/elements/button.css",
                     "src/elements/slider.css",
                     "src/elements/menu.css",
