@@ -2,7 +2,15 @@
 /********** ANIMATION ITERATION COUNT **********/
 /***********************************************/
 
+/*
+1. Few
+2. Many
+3. Loop
+*/
 
+
+/***************/
+/***** Few *****/
 [class*="animate-"][class*="few"]:hover,
 [class*="animate-"][class*="few"]:focus,
 [class*="animate-"][class*="few"]:active,
@@ -15,6 +23,9 @@
     animation-iteration-count: var(--animation-count-few);
 }
 
+
+/****************/
+/***** Many *****/
 [class*="animate-"][class*="many"]:hover,
 [class*="animate-"][class*="many"]:focus,
 [class*="animate-"][class*="many"]:active,
@@ -27,6 +38,9 @@
     animation-iteration-count: var(--animation-count-many);
 }
 
+
+/****************/
+/***** Loop *****/
 [class*="animate-"][class*="loop"]:hover,
 [class*="animate-"][class*="loop"]:focus,
 [class*="animate-"][class*="loop"]:active,

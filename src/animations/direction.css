@@ -2,7 +2,19 @@
 /********** ANIMATION DIRECTION **********/
 /*****************************************/
 
+/*
+1. Alternate
+2. Reverse
+3. Alternate Reverse
+*/
 
+
+/*********************/
+/***** Alternate *****/
+
+
+/*******************/
+/***** Reverse *****/
 [class*="animate-"][class*="reverse"]:hover,
 [class*="animate-"][class*="reverse"]:focus,
 [class*="animate-"][class*="reverse"]:active,
@@ -27,6 +39,8 @@
     animation-direction: alternate;
 }
 
+/*****************************/
+/***** Alternate Reverse *****/
 [class*="animate-"][class*="alt-rev"]:hover,
 [class*="animate-"][class*="alt-rev"]:focus,
 [class*="animate-"][class*="alt-rev"]:active,

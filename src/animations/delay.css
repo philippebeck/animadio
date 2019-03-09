@@ -2,7 +2,15 @@
 /********** ANIMATION DELAY **********/
 /*************************************/
 
+/*
+1. Small
+2. Medium
+3. Large
+*/
 
+
+/*****************/
+/***** Small *****/
 [class*="animate-"][class*="small"]:hover,
 [class*="animate-"][class*="small"]:focus,
 [class*="animate-"][class*="small"]:active,
@@ -15,6 +23,9 @@
     animation-delay: var(--animation-delay-small);
 }
 
+
+/******************/
+/***** Medium *****/
 [class*="animate-"][class*="medium"]:hover,
 [class*="animate-"][class*="medium"]:focus,
 [class*="animate-"][class*="medium"]:active,
@@ -27,6 +38,9 @@
     animation-delay: var(--animation-delay-medium);
 }
 
+
+/*****************/
+/***** Large *****/
 [class*="animate-"][class*="large"]:hover,
 [class*="animate-"][class*="large"]:focus,
 [class*="animate-"][class*="large"]:active,

@@ -2,7 +2,17 @@
 /********** ANIMATION DURATION **********/
 /****************************************/
 
+/*
+1. TN
+2. SM
+3. MD
+4. LG
+5. WD
+*/
 
+
+/**************/
+/***** TN *****/
 [class*="animate-"][class*="tn"]:hover,
 [class*="animate-"][class*="tn"]:focus,
 [class*="animate-"][class*="tn"]:active,
@@ -15,6 +25,9 @@
     animation-duration: var(--animation-duration-tn);
 }
 
+
+/**************/
+/***** SM *****/
 [class*="animate-"][class*="sm"]:hover,
 [class*="animate-"][class*="sm"]:focus,
 [class*="animate-"][class*="sm"]:active,
@@ -27,6 +40,9 @@
     animation-duration: var(--animation-duration-sm);
 }
 
+
+/**************/
+/***** MD *****/
 [class*="animate-"][class*="md"]:hover,
 [class*="animate-"][class*="md"]:focus,
 [class*="animate-"][class*="md"]:active,
@@ -39,6 +55,9 @@
     animation-duration: var(--animation-duration-md);
 }
 
+
+/**************/
+/***** LG *****/
 [class*="animate-"][class*="lg"]:hover,
 [class*="animate-"][class*="lg"]:focus,
 [class*="animate-"][class*="lg"]:active,
@@ -51,6 +70,9 @@
     animation-duration: var(--animation-duration-lg);
 }
 
+
+/**************/
+/***** WD *****/
 [class*="animate-"][class*="wd"]:hover,
 [class*="animate-"][class*="wd"]:focus,
 [class*="animate-"][class*="wd"]:active,

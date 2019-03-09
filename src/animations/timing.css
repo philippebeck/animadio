@@ -2,7 +2,20 @@
 /********** ANIMATION TIMING FUNCTION **********/
 /***********************************************/
 
+/*
+1. In
+2. Out
+3. Ease
+4. Linear
+5. Start
+6. End
+7. Steps
+8. Bezier
+*/
 
+
+/**************/
+/***** In *****/
 [class*="animate-"][class*="in"]:hover,
 [class*="animate-"][class*="in"]:focus,
 [class*="animate-"][class*="in"]:active,
@@ -15,6 +28,9 @@
     animation-timing-function: ease-in;
 }
 
+
+/***************/
+/***** Out *****/
 [class*="animate-"][class*="out"]:hover,
 [class*="animate-"][class*="out"]:focus,
 [class*="animate-"][class*="out"]:active,
@@ -27,6 +43,9 @@
     animation-timing-function: ease-out;
 }
 
+
+/****************/
+/***** Ease *****/
 [class*="animate-"][class*="ease"]:hover,
 [class*="animate-"][class*="ease"]:focus,
 [class*="animate-"][class*="ease"]:active,
@@ -39,6 +58,9 @@
     animation-timing-function: ease-in-out;
 }
 
+
+/******************/
+/***** Linear *****/
 [class*="animate-"][class*="linear"]:hover,
 [class*="animate-"][class*="linear"]:focus,
 [class*="animate-"][class*="linear"]:active,
@@ -51,6 +73,9 @@
     animation-timing-function: linear;
 }
 
+
+/*****************/
+/***** Start *****/
 [class*="animate-"][class*="start"]:hover,
 [class*="animate-"][class*="start"]:focus,
 [class*="animate-"][class*="start"]:active,
@@ -63,6 +88,9 @@
     animation-timing-function: step-start;
 }
 
+
+/***************/
+/***** End *****/
 [class*="animate-"][class*="end"]:hover,
 [class*="animate-"][class*="end"]:focus,
 [class*="animate-"][class*="end"]:active,
@@ -75,6 +103,9 @@
     animation-timing-function: step-end;
 }
 
+
+/*****************/
+/***** Steps *****/
 [class*="animate-"][class*="steps"]:hover,
 [class*="animate-"][class*="steps"]:focus,
 [class*="animate-"][class*="steps"]:active,
@@ -87,6 +118,9 @@
     animation-timing-function: steps(var(--animation-timing-steps));
 }
 
+
+/******************/
+/***** Bezier *****/
 [class*="animate-"][class*="bezier"]:hover,
 [class*="animate-"][class*="bezier"]:focus,
 [class*="animate-"][class*="bezier"]:active,

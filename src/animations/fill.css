@@ -2,6 +2,10 @@
 /********** ANIMATION FILL MODE **********/
 /*****************************************/
 
+/*
+1. Back
+2. Front
+*/
 
 [class*="animate-"][class*="front"]:hover,
 [class*="animate-"][class*="front"]:focus,
@@ -15,6 +19,8 @@
     animation-fill-mode: forwards;
 }
 
+/****************/
+/***** Back *****/
 [class*="animate-"][class*="back"]:hover,
 [class*="animate-"][class*="back"]:focus,
 [class*="animate-"][class*="back"]:active,
@@ -26,3 +32,7 @@
 [class*="shown-"][class*="back"] > * {
     animation-fill-mode: backwards;
 }
+
+
+/*****************/
+/***** Front *****/
