@@ -10,157 +10,229 @@
 */
 
 
-/******************/
+/*******************/
 /***** Rotate *****/
-[class*="animate-"][class*="rotate"]:hover,
-[class*="animate-"][class*="rotate"]:focus,
-[class*="animate-"][class*="rotate"]:active,
-*:hover > [class*="animated-"][class*="rotate"],
-*:focus > [class*="animated-"][class*="rotate"],
-*:active > [class*="animated-"][class*="rotate"],
-[class*="radio-"][class*="rotate"]:checked ~ [class*="target-"][class*="rotate"],
-[class*="show-"][class*="rotate"],
-[class*="shown-"][class*="rotate"] > * {
+[class*="anima"][class*="tio"][class*="rotA"],
+[class*="anima"][class*="dio"][class*="rotA"]:checked ~ [class*="anima"][class*="target"][class*="rotA"],
+*:hover > [class*="anima"][class*="into"][class*="rotA"],
+*:focus > [class*="anima"][class*="into"][class*="rotA"],
+*:active > [class*="anima"][class*="into"][class*="rotA"],
+[class*="anima"][class*="onto"][class*="rotA"]:hover,
+[class*="anima"][class*="onto"][class*="rotA"]:focus,
+[class*="anima"][class*="onto"][class*="rotA"]:active,
+[class*="anima"][class*="toall"][class*="rotA"] > *,
+[class*="anima"][class*="forall"][class*="rotA"]:hover > *,
+[class*="anima"][class*="forall"][class*="rotA"]:focus > *,
+[class*="anima"][class*="forall"][class*="rotA"]:active > *,
+[class*="anima"][class*="fromall"][class*="rotA"] > *:hover,
+[class*="anima"][class*="fromall"][class*="rotA"] > *:focus,
+[class*="anima"][class*="fromall"][class*="rotA"] > *:active {
     animation-name: rotate;
 }
 
-[class*="animate-"][class*="rotateX"]:hover,
-[class*="animate-"][class*="rotateX"]:focus,
-[class*="animate-"][class*="rotateX"]:active,
-*:hover > [class*="animated-"][class*="rotateX"],
-*:focus > [class*="animated-"][class*="rotateX"],
-*:active > [class*="animated-"][class*="rotateX"],
-[class*="radio-"][class*="rotateX"]:checked ~ [class*="target-"][class*="rotateX"],
-[class*="show-"][class*="rotateX"],
-[class*="shown-"][class*="rotateX"] > * {
+[class*="anima"][class*="tio"][class*="rotX"],
+[class*="anima"][class*="dio"][class*="rotX"]:checked ~ [class*="anima"][class*="target"][class*="rotX"],
+*:hover > [class*="anima"][class*="into"][class*="rotX"],
+*:focus > [class*="anima"][class*="into"][class*="rotX"],
+*:active > [class*="anima"][class*="into"][class*="rotX"],
+[class*="anima"][class*="onto"][class*="rotX"]:hover,
+[class*="anima"][class*="onto"][class*="rotX"]:focus,
+[class*="anima"][class*="onto"][class*="rotX"]:active,
+[class*="anima"][class*="toall"][class*="rotX"] > *,
+[class*="anima"][class*="forall"][class*="rotX"]:hover > *,
+[class*="anima"][class*="forall"][class*="rotX"]:focus > *,
+[class*="anima"][class*="forall"][class*="rotX"]:active > *,
+[class*="anima"][class*="fromall"][class*="rotX"] > *:hover,
+[class*="anima"][class*="fromall"][class*="rotX"] > *:focus,
+[class*="anima"][class*="fromall"][class*="rotX"] > *:active {
     animation-name: rotateX;
 }
 
-[class*="animate-"][class*="rotateY"]:hover,
-[class*="animate-"][class*="rotateY"]:focus,
-[class*="animate-"][class*="rotateY"]:active,
-*:hover > [class*="animated-"][class*="rotateY"],
-*:focus > [class*="animated-"][class*="rotateY"],
-*:active > [class*="animated-"][class*="rotateY"],
-[class*="radio-"][class*="rotateY"]:checked ~ [class*="target-"][class*="rotateY"],
-[class*="show-"][class*="rotateY"],
-[class*="shown-"][class*="rotateY"] > * {
+[class*="anima"][class*="tio"][class*="rotY"],
+[class*="anima"][class*="dio"][class*="rotY"]:checked ~ [class*="anima"][class*="target"][class*="rotY"],
+*:hover > [class*="anima"][class*="into"][class*="rotY"],
+*:focus > [class*="anima"][class*="into"][class*="rotY"],
+*:active > [class*="anima"][class*="into"][class*="rotY"],
+[class*="anima"][class*="onto"][class*="rotY"]:hover,
+[class*="anima"][class*="onto"][class*="rotY"]:focus,
+[class*="anima"][class*="onto"][class*="rotY"]:active,
+[class*="anima"][class*="toall"][class*="rotY"] > *,
+[class*="anima"][class*="forall"][class*="rotY"]:hover > *,
+[class*="anima"][class*="forall"][class*="rotY"]:focus > *,
+[class*="anima"][class*="forall"][class*="rotY"]:active > *,
+[class*="anima"][class*="fromall"][class*="rotY"] > *:hover,
+[class*="anima"][class*="fromall"][class*="rotY"] > *:focus,
+[class*="anima"][class*="fromall"][class*="rotY"] > *:active {
     animation-name: rotateY;
 }
 
-
 /*****************/
 /***** Scale *****/
-[class*="animate-"][class*="scale"]:hover,
-[class*="animate-"][class*="scale"]:focus,
-[class*="animate-"][class*="scale"]:active,
-*:hover > [class*="animated-"][class*="scale"],
-*:focus > [class*="animated-"][class*="scale"],
-*:active > [class*="animated-"][class*="scale"],
-[class*="radio-"][class*="scale"]:checked ~ [class*="target-"][class*="scale"],
-[class*="show-"][class*="scale"],
-[class*="shown-"][class*="scale"] > * {
+[class*="anima"][class*="tio"][class*="scaL"],
+[class*="anima"][class*="dio"][class*="scaL"]:checked ~ [class*="anima"][class*="target"][class*="scaL"],
+*:hover > [class*="anima"][class*="into"][class*="scaL"],
+*:focus > [class*="anima"][class*="into"][class*="scaL"],
+*:active > [class*="anima"][class*="into"][class*="scaL"],
+[class*="anima"][class*="onto"][class*="scaL"]:hover,
+[class*="anima"][class*="onto"][class*="scaL"]:focus,
+[class*="anima"][class*="onto"][class*="scaL"]:active,
+[class*="anima"][class*="toall"][class*="scaL"] > *,
+[class*="anima"][class*="forall"][class*="scaL"]:hover > *,
+[class*="anima"][class*="forall"][class*="scaL"]:focus > *,
+[class*="anima"][class*="forall"][class*="scaL"]:active > *,
+[class*="anima"][class*="fromall"][class*="scaL"] > *:hover,
+[class*="anima"][class*="fromall"][class*="scaL"] > *:focus,
+[class*="anima"][class*="fromall"][class*="scaL"] > *:active {
     animation-name: scale;
 }
 
-[class*="animate-"][class*="scaleX"]:hover,
-[class*="animate-"][class*="scaleX"]:focus,
-[class*="animate-"][class*="scaleX"]:active,
-*:hover > [class*="animated-"][class*="scaleX"],
-*:focus > [class*="animated-"][class*="scaleX"],
-*:active > [class*="animated-"][class*="scaleX"],
-[class*="radio-"][class*="scaleX"]:checked ~ [class*="target-"][class*="scaleX"],
-[class*="show-"][class*="scaleX"],
-[class*="shown-"][class*="scaleX"] > * {
+[class*="anima"][class*="tio"][class*="scaX"],
+[class*="anima"][class*="dio"][class*="scaX"]:checked ~ [class*="anima"][class*="target"][class*="scaX"],
+*:hover > [class*="anima"][class*="into"][class*="scaX"],
+*:focus > [class*="anima"][class*="into"][class*="scaX"],
+*:active > [class*="anima"][class*="into"][class*="scaX"],
+[class*="anima"][class*="onto"][class*="scaX"]:hover,
+[class*="anima"][class*="onto"][class*="scaX"]:focus,
+[class*="anima"][class*="onto"][class*="scaX"]:active,
+[class*="anima"][class*="toall"][class*="scaX"] > *,
+[class*="anima"][class*="forall"][class*="scaX"]:hover > *,
+[class*="anima"][class*="forall"][class*="scaX"]:focus > *,
+[class*="anima"][class*="forall"][class*="scaX"]:active > *,
+[class*="anima"][class*="fromall"][class*="scaX"] > *:hover,
+[class*="anima"][class*="fromall"][class*="scaX"] > *:focus,
+[class*="anima"][class*="fromall"][class*="scaX"] > *:active {
     animation-name: scaleX;
 }
 
-[class*="animate-"][class*="scaleY"]:hover,
-[class*="animate-"][class*="scaleY"]:focus,
-[class*="animate-"][class*="scaleY"]:active,
-*:hover > [class*="animated-"][class*="scaleY"],
-*:focus > [class*="animated-"][class*="scaleY"],
-*:active > [class*="animated-"][class*="scaleY"],
-[class*="radio-"][class*="scaleY"]:checked ~ [class*="target-"][class*="scaleY"],
-[class*="show-"][class*="scaleY"],
-[class*="shown-"][class*="scaleY"] > * {
+[class*="anima"][class*="tio"][class*="scaY"],
+[class*="anima"][class*="dio"][class*="scaY"]:checked ~ [class*="anima"][class*="target"][class*="scaY"],
+*:hover > [class*="anima"][class*="into"][class*="scaY"],
+*:focus > [class*="anima"][class*="into"][class*="scaY"],
+*:active > [class*="anima"][class*="into"][class*="scaY"],
+[class*="anima"][class*="onto"][class*="scaY"]:hover,
+[class*="anima"][class*="onto"][class*="scaY"]:focus,
+[class*="anima"][class*="onto"][class*="scaY"]:active,
+[class*="anima"][class*="toall"][class*="scaY"] > *,
+[class*="anima"][class*="forall"][class*="scaY"]:hover > *,
+[class*="anima"][class*="forall"][class*="scaY"]:focus > *,
+[class*="anima"][class*="forall"][class*="scaY"]:active > *,
+[class*="anima"][class*="fromall"][class*="scaY"] > *:hover,
+[class*="anima"][class*="fromall"][class*="scaY"] > *:focus,
+[class*="anima"][class*="fromall"][class*="scaY"] > *:active {
     animation-name: scaleY;
 }
 
 
 /****************/
 /***** Skew *****/
-[class*="animate-"][class*="skew"]:hover,
-[class*="animate-"][class*="skew"]:focus,
-[class*="animate-"][class*="skew"]:active,
-*:hover > [class*="animated-"][class*="skew"],
-*:focus > [class*="animated-"][class*="skew"],
-*:active > [class*="animated-"][class*="skew"],
-[class*="radio-"][class*="skew"]:checked ~ [class*="target-"][class*="skew"],
-[class*="show-"][class*="skew"],
-[class*="shown-"][class*="skew"] > * {
+[class*="anima"][class*="tio"][class*="skeW"],
+[class*="anima"][class*="dio"][class*="skeW"]:checked ~ [class*="anima"][class*="target"][class*="skeW"],
+*:hover > [class*="anima"][class*="into"][class*="skeW"],
+*:focus > [class*="anima"][class*="into"][class*="skeW"],
+*:active > [class*="anima"][class*="into"][class*="skeW"],
+[class*="anima"][class*="onto"][class*="skeW"]:hover,
+[class*="anima"][class*="onto"][class*="skeW"]:focus,
+[class*="anima"][class*="onto"][class*="skeW"]:active,
+[class*="anima"][class*="toall"][class*="skeW"] > *,
+[class*="anima"][class*="forall"][class*="skeW"]:hover > *,
+[class*="anima"][class*="forall"][class*="skeW"]:focus > *,
+[class*="anima"][class*="forall"][class*="skeW"]:active > *,
+[class*="anima"][class*="fromall"][class*="skeW"] > *:hover,
+[class*="anima"][class*="fromall"][class*="skeW"] > *:focus,
+[class*="anima"][class*="fromall"][class*="skeW"] > *:active {
     animation-name: skew;
 }
 
-[class*="animate-"][class*="skewX"]:hover,
-[class*="animate-"][class*="skewX"]:focus,
-[class*="animate-"][class*="skewX"]:active,
-*:hover > [class*="animated-"][class*="skewX"],
-*:focus > [class*="animated-"][class*="skewX"],
-*:active > [class*="animated-"][class*="skewX"],
-[class*="radio-"][class*="skewX"]:checked ~ [class*="target-"][class*="skewX"],
-[class*="show-"][class*="skewX"],
-[class*="shown-"][class*="skewX"] > * {
-    animation-name: skewX;
+[class*="anima"][class*="tio"][class*="skeX"],
+[class*="anima"][class*="dio"][class*="skeX"]:checked ~ [class*="anima"][class*="target"][class*="skeX"],
+*:hover > [class*="anima"][class*="into"][class*="skeX"],
+*:focus > [class*="anima"][class*="into"][class*="skeX"],
+*:active > [class*="anima"][class*="into"][class*="skeX"],
+[class*="anima"][class*="onto"][class*="skeX"]:hover,
+[class*="anima"][class*="onto"][class*="skeX"]:focus,
+[class*="anima"][class*="onto"][class*="skeX"]:active,
+[class*="anima"][class*="toall"][class*="skeX"] > *,
+[class*="anima"][class*="forall"][class*="skeX"]:hover > *,
+[class*="anima"][class*="forall"][class*="skeX"]:focus > *,
+[class*="anima"][class*="forall"][class*="skeX"]:active > *,
+[class*="anima"][class*="fromall"][class*="skeX"] > *:hover,
+[class*="anima"][class*="fromall"][class*="skeX"] > *:focus,
+[class*="anima"][class*="fromall"][class*="skeX"] > *:active {
+animation-name: skewX;
 }
 
-[class*="animate-"][class*="skewY"]:hover,
-[class*="animate-"][class*="skewY"]:focus,
-[class*="animate-"][class*="skewY"]:active,
-*:hover > [class*="animated-"][class*="skewY"],
-*:focus > [class*="animated-"][class*="skewY"],
-*:active > [class*="animated-"][class*="skewY"],
-[class*="radio-"][class*="skewY"]:checked ~ [class*="target-"][class*="skewY"],
-[class*="show-"][class*="skewY"],
-[class*="shown-"][class*="skewY"] > * {
-    animation-name: skewY;
+[class*="anima"][class*="tio"][class*="skeY"],
+[class*="anima"][class*="dio"][class*="skeY"]:checked ~ [class*="anima"][class*="target"][class*="skeY"],
+*:hover > [class*="anima"][class*="into"][class*="skeY"],
+*:focus > [class*="anima"][class*="into"][class*="skeY"],
+*:active > [class*="anima"][class*="into"][class*="skeY"],
+[class*="anima"][class*="onto"][class*="skeY"]:hover,
+[class*="anima"][class*="onto"][class*="skeY"]:focus,
+[class*="anima"][class*="onto"][class*="skeY"]:active,
+[class*="anima"][class*="toall"][class*="skeY"] > *,
+[class*="anima"][class*="forall"][class*="skeY"]:hover > *,
+[class*="anima"][class*="forall"][class*="skeY"]:focus > *,
+[class*="anima"][class*="forall"][class*="skeY"]:active > *,
+[class*="anima"][class*="fromall"][class*="skeY"] > *:hover,
+[class*="anima"][class*="fromall"][class*="skeY"] > *:focus,
+[class*="anima"][class*="fromall"][class*="skeY"] > *:active {
+animation-name: skewY;
 }
+
 
 
 /*********************/
 /***** Translate *****/
-[class*="animate-"][class*="translate"]:hover,
-[class*="animate-"][class*="translate"]:focus,
-[class*="animate-"][class*="translate"]:active,
-*:hover > [class*="animated-"][class*="translate"],
-*:focus > [class*="animated-"][class*="translate"],
-*:active > [class*="animated-"][class*="translate"],
-[class*="radio-"][class*="translate"]:checked ~ [class*="target-"][class*="translate"],
-[class*="show-"][class*="translate"],
-[class*="shown-"][class*="translate"] > * {
+[class*="anima"][class*="tio"][class*="traN"],
+[class*="anima"][class*="dio"][class*="traN"]:checked ~ [class*="anima"][class*="target"][class*="traN"],
+*:hover > [class*="anima"][class*="into"][class*="traN"],
+*:focus > [class*="anima"][class*="into"][class*="traN"],
+*:active > [class*="anima"][class*="into"][class*="traN"],
+[class*="anima"][class*="onto"][class*="traN"]:hover,
+[class*="anima"][class*="onto"][class*="traN"]:focus,
+[class*="anima"][class*="onto"][class*="traN"]:active,
+[class*="anima"][class*="toall"][class*="traN"] > *,
+[class*="anima"][class*="forall"][class*="traN"]:hover > *,
+[class*="anima"][class*="forall"][class*="traN"]:focus > *,
+[class*="anima"][class*="forall"][class*="traN"]:active > *,
+[class*="anima"][class*="fromall"][class*="traN"] > *:hover,
+[class*="anima"][class*="fromall"][class*="traN"] > *:focus,
+[class*="anima"][class*="fromall"][class*="traN"] > *:active {
     animation-name: translate;
 }
 
-[class*="animate-"][class*="translateX"]:hover,
-[class*="animate-"][class*="translateX"]:focus,
-[class*="animate-"][class*="translateX"]:active,
-*:hover > [class*="animated-"][class*="translateX"],
-*:focus > [class*="animated-"][class*="translateX"],
-*:active > [class*="animated-"][class*="translateX"],
-[class*="radio-"][class*="translateX"]:checked ~ [class*="target-"][class*="translateX"],
-[class*="show-"][class*="translateX"],
-[class*="shown-"][class*="translateX"] > * {
+[class*="anima"][class*="tio"][class*="traX"],
+[class*="anima"][class*="dio"][class*="traX"]:checked ~ [class*="anima"][class*="target"][class*="traX"],
+*:hover > [class*="anima"][class*="into"][class*="traX"],
+*:focus > [class*="anima"][class*="into"][class*="traX"],
+*:active > [class*="anima"][class*="into"][class*="traX"],
+[class*="anima"][class*="onto"][class*="traX"]:hover,
+[class*="anima"][class*="onto"][class*="traX"]:focus,
+[class*="anima"][class*="onto"][class*="traX"]:active,
+[class*="anima"][class*="toall"][class*="traX"] > *,
+[class*="anima"][class*="forall"][class*="traX"]:hover > *,
+[class*="anima"][class*="forall"][class*="traX"]:focus > *,
+[class*="anima"][class*="forall"][class*="traX"]:active > *,
+[class*="anima"][class*="fromall"][class*="traX"] > *:hover,
+[class*="anima"][class*="fromall"][class*="traX"] > *:focus,
+[class*="anima"][class*="fromall"][class*="traX"] > *:active {
     animation-name: translateX;
 }
 
-[class*="animate-"][class*="translateY"]:hover,
-[class*="animate-"][class*="translateY"]:focus,
-[class*="animate-"][class*="translateY"]:active,
-*:hover > [class*="animated-"][class*="translateY"],
-*:focus > [class*="animated-"][class*="translateY"],
-*:active > [class*="animated-"][class*="translateY"],
-[class*="radio-"][class*="translateY"]:checked ~ [class*="target-"][class*="translateY"],
-[class*="show-"][class*="translateY"],
-[class*="shown-"][class*="translateY"] > * {
+[class*="anima"][class*="tio"][class*="traY"],
+[class*="anima"][class*="dio"][class*="traY"]:checked ~ [class*="anima"][class*="target"][class*="traY"],
+*:hover > [class*="anima"][class*="into"][class*="traY"],
+*:focus > [class*="anima"][class*="into"][class*="traY"],
+*:active > [class*="anima"][class*="into"][class*="traY"],
+[class*="anima"][class*="onto"][class*="traY"]:hover,
+[class*="anima"][class*="onto"][class*="traY"]:focus,
+[class*="anima"][class*="onto"][class*="traY"]:active,
+[class*="anima"][class*="toall"][class*="traY"] > *,
+[class*="anima"][class*="forall"][class*="traY"]:hover > *,
+[class*="anima"][class*="forall"][class*="traY"]:focus > *,
+[class*="anima"][class*="forall"][class*="traY"]:active > *,
+[class*="anima"][class*="fromall"][class*="traY"] > *:hover,
+[class*="anima"][class*="fromall"][class*="traY"] > *:focus,
+[class*="anima"][class*="fromall"][class*="traY"] > *:active {
     animation-name: translateY;
 }
