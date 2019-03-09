@@ -1,0 +1,26 @@
+/************************************/
+/********** TAGS VARIABLES **********/
+/************************************/
+
+/*
+1. Body
+2. Titles
+*/
+
+
+/***** Body *****/
+body {
+    --global-font-family: serif;
+    --global-line-height: 1.5;
+    --global-font-size: 1.5rem;
+}
+
+/***** Titles *****/
+h1, h2, h3, h4, h5, h6 {
+    --title-font-family: sans-serif;
+    --title-font-size-tn: 1.5rem;
+    --title-font-size-sm: 2rem;
+    --title-font-size-md: 2.5rem;
+    --title-font-size-lg: 3rem;
+    --title-font-size-wd: 3.5rem;
+}
