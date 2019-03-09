@@ -14,21 +14,21 @@
 /***** Rotate *****/
 @keyframes rotate {
     to {
-        transform: rotate(var(--rotate));
+        transform: var(--rotate);
     }
 }
 
 /***** RotateX *****/
 @keyframes rotateX {
     to {
-        transform: rotateX(var(--rotateX));
+        transform: var(--rotateX);
     }
 }
 
 /***** RotateY *****/
 @keyframes rotateY {
     to {
-        transform: rotateY(var(--rotateY));
+        transform: var(--rotateY);
     }
 }
 
@@ -37,21 +37,21 @@
 /***** Scale *****/
 @keyframes scale {
     to {
-        transform: scale(var(--scale));
+        transform: var(--scale);
     }
 }
 
 /***** ScaleX *****/
 @keyframes scaleX {
     to {
-        transform: scaleX(var(--scaleX));
+        transform: var(--scaleX);
     }
 }
 
 /***** ScaleY *****/
 @keyframes scaleY {
     to {
-        transform: scaleY(var(--scaleY));
+        transform: var(--scaleY);
     }
 }
 
@@ -60,21 +60,21 @@
 /***** Skew *****/
 @keyframes skew {
     to {
-        transform: skew(var(--skew));
+        transform: var(--skew);
     }
 }
 
 /***** SkewX *****/
 @keyframes skewX {
     to {
-        transform: skewX(var(--skewX));
+        transform: var(--skewX);
     }
 }
 
 /***** SkewY *****/
 @keyframes skewY {
     to {
-        transform: skewY(var(--skewY));
+        transform: var(--skewY);
     }
 }
 
@@ -83,20 +83,20 @@
 /***** Translate *****/
 @keyframes translate {
     to {
-        transform: translate(var(--translate));
+        transform: var(--translate);
     }
 }
 
 /***** TranslateX *****/
 @keyframes translateX {
     to {
-        transform: translateX(var(--translateX));
+        transform: var(--translateX);
     }
 }
 
 /***** TranslateY *****/
 @keyframes translateY {
     to {
-        transform: translateY(var(--translateY));
+        transform: var(--translateY);
     }
 }
