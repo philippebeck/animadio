@@ -3,60 +3,11 @@
 /***********************************************/
 
 /*
-1. In
-2. Out
-3. Ease
-4. Linear
-5. Start
-6. End
-7. Steps
-8. Bezier
+1. Linear
+2. Ease
+3. Steps
+4. Bezier
 */
-
-
-/**************/
-/***** In *****/
-[class*="animate-"][class*="in"]:hover,
-[class*="animate-"][class*="in"]:focus,
-[class*="animate-"][class*="in"]:active,
-*:hover > [class*="animated-"][class*="in"],
-*:focus > [class*="animated-"][class*="in"],
-*:active > [class*="animated-"][class*="in"],
-[class*="radio-"][class*="in"]:checked ~ [class*="target-"][class*="in"],
-[class*="show-"][class*="in"],
-[class*="shown-"][class*="in"] > * {
-    animation-timing-function: ease-in;
-}
-
-
-/***************/
-/***** Out *****/
-[class*="animate-"][class*="out"]:hover,
-[class*="animate-"][class*="out"]:focus,
-[class*="animate-"][class*="out"]:active,
-*:hover > [class*="animated-"][class*="out"],
-*:focus > [class*="animated-"][class*="out"],
-*:active > [class*="animated-"][class*="out"],
-[class*="radio-"][class*="out"]:checked ~ [class*="target-"][class*="out"],
-[class*="show-"][class*="out"],
-[class*="shown-"][class*="out"] > * {
-    animation-timing-function: ease-out;
-}
-
-
-/****************/
-/***** Ease *****/
-[class*="animate-"][class*="ease"]:hover,
-[class*="animate-"][class*="ease"]:focus,
-[class*="animate-"][class*="ease"]:active,
-*:hover > [class*="animated-"][class*="ease"],
-*:focus > [class*="animated-"][class*="ease"],
-*:active > [class*="animated-"][class*="ease"],
-[class*="radio-"][class*="ease"]:checked ~ [class*="target-"][class*="ease"],
-[class*="show-"][class*="ease"],
-[class*="shown-"][class*="ease"] > * {
-    animation-timing-function: ease-in-out;
-}
 
 
 /******************/
@@ -74,33 +25,18 @@
 }
 
 
-/*****************/
-/***** Start *****/
-[class*="animate-"][class*="start"]:hover,
-[class*="animate-"][class*="start"]:focus,
-[class*="animate-"][class*="start"]:active,
-*:hover > [class*="animated-"][class*="start"],
-*:focus > [class*="animated-"][class*="start"],
-*:active > [class*="animated-"][class*="start"],
-[class*="radio-"][class*="start"]:checked ~ [class*="target-"][class*="start"],
-[class*="show-"][class*="start"],
-[class*="shown-"][class*="start"] > * {
-    animation-timing-function: step-start;
-}
-
-
-/***************/
-/***** End *****/
-[class*="animate-"][class*="end"]:hover,
-[class*="animate-"][class*="end"]:focus,
-[class*="animate-"][class*="end"]:active,
-*:hover > [class*="animated-"][class*="end"],
-*:focus > [class*="animated-"][class*="end"],
-*:active > [class*="animated-"][class*="end"],
-[class*="radio-"][class*="end"]:checked ~ [class*="target-"][class*="end"],
-[class*="show-"][class*="end"],
-[class*="shown-"][class*="end"] > * {
-    animation-timing-function: step-end;
+/****************/
+/***** Ease *****/
+[class*="animate-"][class*="ease"]:hover,
+[class*="animate-"][class*="ease"]:focus,
+[class*="animate-"][class*="ease"]:active,
+*:hover > [class*="animated-"][class*="ease"],
+*:focus > [class*="animated-"][class*="ease"],
+*:active > [class*="animated-"][class*="ease"],
+[class*="radio-"][class*="ease"]:checked ~ [class*="target-"][class*="ease"],
+[class*="show-"][class*="ease"],
+[class*="shown-"][class*="ease"] > * {
+    animation-timing-function: var(--anima-timing-ease);
 }
 
 
