@@ -1,0 +1,29 @@
+/**************************************/
+/********** BORDER VARIABLES **********/
+/**************************************/
+
+/*
+1. Global
+2. Width
+2. Radius
+*/
+
+
+[class*="bord"] {
+    /***** Global *****/
+    --bord-global-style: solid;
+    --bord-global-width: medium;
+    --bord-global-color: black;
+    --bord-global-radius: 20px;
+
+    /***** Width *****/
+    --bord-width-sm: thin;
+    --bord-width-md: medium;
+    --bord-width-lg: thick;
+
+    /***** Radius *****/
+    --bord-radius-slight: 10px;
+    --bord-radius-round: 50px;
+    --bord-radius-circle: 50%;
+    --bord-radius-ellipse: 50% / 25%;
+}
