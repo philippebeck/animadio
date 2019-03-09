@@ -29,16 +29,26 @@ Controls by Radio Buttons - No JavaScript needed
 >
 > ANIMADIO WILL FONCTION VERY SOON !!!
 
-[![GitHub version](https://badge.fury.io/gh/animadio%2Fanimadio.svg)](https://badge.fury.io/gh/animadio%2Fanimadio)
-[![Build Status](https://travis-ci.com/animadio/animadio.svg?branch=master)](https://travis-ci.com/animadio/animadio)
-[![devDependency Status](https://img.shields.io/david/dev/animadio/animadio.svg)](https://david-dm.org/animadio/animadio?type=dev)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
-[![npm version](https://badge.fury.io/js/animadio.svg)](https://badge.fury.io/js/animadio)
-[![PHP version](https://badge.fury.io/ph/animadio%2Fanimadio.svg)](https://badge.fury.io/ph/animadio%2Fanimadio)
-[![languages](https://img.shields.io/github/languages/count/animadio/animadio.svg)]()
-[![](https://img.shields.io/github/languages/top/animadio/animadio.svg)](https://github.com/animadio/animadio)
-[![CSS min size](https://img.badgesize.io/animadio/animadio/master/dist/min/animadio.min.css?compression=gzip&label=CSS+min+size)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
+[![](https://img.shields.io/github/package-json/v/animadio/animadio.svg)](https://github.com/animadio/animadio/blob/master/package.json)
+[![](https://img.shields.io/npm/v/animadio.svg)](https://www.npmjs.com/package/animadio)
+[![](https://img.shields.io/packagist/v/animadio/animadio.svg)](https://packagist.org/packages/animadio/animadio)
+
+[![](https://travis-ci.com/animadio/animadio.svg?branch=master)](https://travis-ci.com/animadio/animadio)
+[![](https://img.shields.io/david/dev/animadio/animadio.svg)](https://david-dm.org/animadio/animadio?type=dev)
+[![](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
+
+[![](https://img.shields.io/github/last-commit/animadio/animadio.svg)](https://github.com/animadio/animadio/commits/master)
+[![](https://img.shields.io/github/commit-activity/m/animadio/animadio.svg)](https://github.com/animadio/animadio/graphs/commit-activity)
+[![](https://img.shields.io/npm/l/animadio.svg)](https://github.com/animadio/animadio/blob/master/LICENSE)
+
+[![](https://img.badgesize.io/animadio/animadio/master/dist/min/animadio.min.css?compression=gzip&label=CSS+gzip+size)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
+[![](https://img.shields.io/bundlephobia/min/animadio/0.1.15.svg)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
 [![](https://data.jsdelivr.com/v1/package/npm/animadio/badge)](https://www.jsdelivr.com/package/npm/animadio)
+
+[![](https://img.shields.io/github/languages/top/animadio/animadio.svg)](https://github.com/animadio/animadio)
+[![](https://img.shields.io/librariesio/sourcerank/npm/animadio.svg)](https://libraries.io/npm/animadio)
+[![](https://img.shields.io/github/issues/animadio/animadio.svg)](https://github.com/animadio/animadio/issues)
+[![](https://img.shields.io/github/issues-pr/animadio/animadio.svg)](https://github.com/animadio/animadio/issues)
 
 ## Installation
 
