@@ -25,9 +25,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    line-height: var(--line-height-global);
-    font-size: var(--font-size-global);
-    font-family: var(--font-family-global);
+    line-height: var(--global-line-height);
+    font-size: var(--global-font-size);
+    font-family: var(--global-font-family);
     scroll-behavior: smooth;
 }
 
@@ -40,30 +40,30 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-family-titles);
+    font-family: var(--title-font-family);
 }
 
 h1 {
-    font-size: var(--font-size-wd);
+    font-size: var(--title-font-size-wd);
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: var(--font-size-lg);
+    font-size: var(--title-font-size-lg);
     text-transform: capitalize;
 }
 
 h3 {
-    font-size: var(--font-size-md);
+    font-size: var(--title-font-size-md);
 }
 
 h4 {
-    font-size: var(--font-size-sm);
+    font-size: var(--title-font-size-sm);
 }
 
 h5,
 h6 {
-    font-size: var(--font-size-tn);
+    font-size: var(--title-font-size-tn);
 }
 
 
