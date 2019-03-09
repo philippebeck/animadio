@@ -1,0 +1,112 @@
+/********************************/
+/********** SHADOW BOX **********/
+/********************************/
+
+
+[class*="shabox"][class*="tio"][class*="sm"],
+[class*="shabox"][class*="dio"][class*="sm"]:checked ~ [class*="shabox"][class*="target"][class*="sm"],
+*:hover > [class*="shabox"][class*="into"][class*="sm"],
+*:focus > [class*="shabox"][class*="into"][class*="sm"],
+*:active > [class*="shabox"][class*="into"][class*="sm"],
+[class*="shabox"][class*="onto"][class*="sm"]:hover,
+[class*="shabox"][class*="onto"][class*="sm"]:focus,
+[class*="shabox"][class*="onto"][class*="sm"]:active,
+[class*="shabox"][class*="toall"][class*="sm"] > *,
+[class*="shabox"][class*="forall"][class*="sm"]:hover > *,
+[class*="shabox"][class*="forall"][class*="sm"]:focus > *,
+[class*="shabox"][class*="forall"][class*="sm"]:active > *,
+[class*="shabox"][class*="fromall"][class*="sm"] > *:hover,
+[class*="shabox"][class*="fromall"][class*="sm"] > *:focus,
+[class*="shabox"][class*="fromall"][class*="sm"] > *:active {
+    box-shadow: var(--shabox-x-sm) var(--shabox-y-sm);
+}
+
+[class*="shabox"][class*="tio"][class*="inset"][class*="sm"],
+[class*="shabox"][class*="dio"][class*="inset"][class*="sm"]:checked ~ [class*="shabox"][class*="target"][class*="inset"][class*="sm"],
+*:hover > [class*="shabox"][class*="into"][class*="inset"][class*="sm"],
+*:focus > [class*="shabox"][class*="into"][class*="inset"][class*="sm"],
+*:active > [class*="shabox"][class*="into"][class*="inset"][class*="sm"],
+[class*="shabox"][class*="onto"][class*="inset"][class*="sm"]:hover,
+[class*="shabox"][class*="onto"][class*="inset"][class*="sm"]:focus,
+[class*="shabox"][class*="onto"][class*="inset"][class*="sm"]:active,
+[class*="shabox"][class*="toall"][class*="inset"][class*="sm"] > *,
+[class*="shabox"][class*="forall"][class*="inset"][class*="sm"]:hover > *,
+[class*="shabox"][class*="forall"][class*="inset"][class*="sm"]:focus > *,
+[class*="shabox"][class*="forall"][class*="inset"][class*="sm"]:active > *,
+[class*="shabox"][class*="fromall"][class*="inset"][class*="sm"] > *:hover,
+[class*="shabox"][class*="fromall"][class*="inset"][class*="sm"] > *:focus,
+[class*="shabox"][class*="fromall"][class*="inset"][class*="sm"] > *:active {
+    box-shadow: inset var(--shabox-x-sm) var(--shabox-y-sm);
+}
+
+[class*="shabox"][class*="tio"][class*="md"],
+[class*="shabox"][class*="dio"][class*="md"]:checked ~ [class*="shabox"][class*="target"][class*="md"],
+*:hover > [class*="shabox"][class*="into"][class*="md"],
+*:focus > [class*="shabox"][class*="into"][class*="md"],
+*:active > [class*="shabox"][class*="into"][class*="md"],
+[class*="shabox"][class*="onto"][class*="md"]:hover,
+[class*="shabox"][class*="onto"][class*="md"]:focus,
+[class*="shabox"][class*="onto"][class*="md"]:active,
+[class*="shabox"][class*="toall"][class*="md"] > *,
+[class*="shabox"][class*="forall"][class*="md"]:hover > *,
+[class*="shabox"][class*="forall"][class*="md"]:focus > *,
+[class*="shabox"][class*="forall"][class*="md"]:active > *,
+[class*="shabox"][class*="fromall"][class*="md"] > *:hover,
+[class*="shabox"][class*="fromall"][class*="md"] > *:focus,
+[class*="shabox"][class*="fromall"][class*="md"] > *:active {
+    box-shadow: var(--shabox-x-md) var(--shabox-y-md);
+}
+
+[class*="shabox"][class*="tio"][class*="inset"][class*="md"],
+[class*="shabox"][class*="dio"][class*="inset"][class*="md"]:checked ~ [class*="shabox"][class*="target"][class*="inset"][class*="md"],
+*:hover > [class*="shabox"][class*="into"][class*="inset"][class*="md"],
+*:focus > [class*="shabox"][class*="into"][class*="inset"][class*="md"],
+*:active > [class*="shabox"][class*="into"][class*="inset"][class*="md"],
+[class*="shabox"][class*="onto"][class*="inset"][class*="md"]:hover,
+[class*="shabox"][class*="onto"][class*="inset"][class*="md"]:focus,
+[class*="shabox"][class*="onto"][class*="inset"][class*="md"]:active,
+[class*="shabox"][class*="toall"][class*="inset"][class*="md"] > *,
+[class*="shabox"][class*="forall"][class*="inset"][class*="md"]:hover > *,
+[class*="shabox"][class*="forall"][class*="inset"][class*="md"]:focus > *,
+[class*="shabox"][class*="forall"][class*="inset"][class*="md"]:active > *,
+[class*="shabox"][class*="fromall"][class*="inset"][class*="md"] > *:hover,
+[class*="shabox"][class*="fromall"][class*="inset"][class*="md"] > *:focus,
+[class*="shabox"][class*="fromall"][class*="inset"][class*="md"] > *:active {
+    box-shadow: inset var(--shabox-x-md) var(--shabox-y-md);
+}
+
+[class*="shabox"][class*="tio"][class*="lg"],
+[class*="shabox"][class*="dio"][class*="lg"]:checked ~ [class*="shabox"][class*="target"][class*="lg"],
+*:hover > [class*="shabox"][class*="into"][class*="lg"],
+*:focus > [class*="shabox"][class*="into"][class*="lg"],
+*:active > [class*="shabox"][class*="into"][class*="lg"],
+[class*="shabox"][class*="onto"][class*="lg"]:hover,
+[class*="shabox"][class*="onto"][class*="lg"]:focus,
+[class*="shabox"][class*="onto"][class*="lg"]:active,
+[class*="shabox"][class*="toall"][class*="lg"] > *,
+[class*="shabox"][class*="forall"][class*="lg"]:hover > *,
+[class*="shabox"][class*="forall"][class*="lg"]:focus > *,
+[class*="shabox"][class*="forall"][class*="lg"]:active > *,
+[class*="shabox"][class*="fromall"][class*="lg"] > *:hover,
+[class*="shabox"][class*="fromall"][class*="lg"] > *:focus,
+[class*="shabox"][class*="fromall"][class*="lg"] > *:active {
+    box-shadow: var(--shabox-x-lg) var(--shabox-y-lg);
+}
+
+[class*="shabox"][class*="tio"][class*="inset"][class*="lg"],
+[class*="shabox"][class*="dio"][class*="inset"][class*="lg"]:checked ~ [class*="shabox"][class*="target"][class*="inset"][class*="lg"],
+*:hover > [class*="shabox"][class*="into"][class*="inset"][class*="lg"],
+*:focus > [class*="shabox"][class*="into"][class*="inset"][class*="lg"],
+*:active > [class*="shabox"][class*="into"][class*="inset"][class*="lg"],
+[class*="shabox"][class*="onto"][class*="inset"][class*="lg"]:hover,
+[class*="shabox"][class*="onto"][class*="inset"][class*="lg"]:focus,
+[class*="shabox"][class*="onto"][class*="inset"][class*="lg"]:active,
+[class*="shabox"][class*="toall"][class*="inset"][class*="lg"] > *,
+[class*="shabox"][class*="forall"][class*="inset"][class*="lg"]:hover > *,
+[class*="shabox"][class*="forall"][class*="inset"][class*="lg"]:focus > *,
+[class*="shabox"][class*="forall"][class*="inset"][class*="lg"]:active > *,
+[class*="shabox"][class*="fromall"][class*="inset"][class*="lg"] > *:hover,
+[class*="shabox"][class*="fromall"][class*="inset"][class*="lg"] > *:focus,
+[class*="shabox"][class*="fromall"][class*="inset"][class*="lg"] > *:active {
+    box-shadow: inset var(--shabox-x-lg) var(--shabox-y-lg);
+}
