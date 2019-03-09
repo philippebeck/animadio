@@ -67,8 +67,8 @@ module.exports = function(grunt) {
                     "src/tags/tag.css",
 
                     /***** NAVBAR *****/
-                    "src/elements/navbar-var.css",
-                    "src/elements/navbar.css",
+                    "src/navbar/navbar-var.css",
+                    "src/navbar/navbar.css",
 
                     /***** ELEMENTS *****/
                     "src/elements/button.css",
