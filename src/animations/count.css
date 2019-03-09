@@ -20,7 +20,7 @@
 [class*="radio-"][class*="few"]:checked ~ [class*="target-"][class*="few"],
 [class*="show-"][class*="few"],
 [class*="shown-"][class*="few"] > * {
-    animation-iteration-count: var(--animation-count-few);
+    animation-iteration-count: var(--anima-count-few);
 }
 
 
@@ -35,7 +35,7 @@
 [class*="radio-"][class*="many"]:checked ~ [class*="target-"][class*="many"],
 [class*="show-"][class*="many"],
 [class*="shown-"][class*="many"] > * {
-    animation-iteration-count: var(--animation-count-many);
+    animation-iteration-count: var(--anima-count-many);
 }
 
 

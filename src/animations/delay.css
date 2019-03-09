@@ -20,7 +20,7 @@
 [class*="radio-"][class*="small"]:checked ~ [class*="target-"][class*="small"],
 [class*="show-"][class*="small"],
 [class*="shown-"][class*="small"] > * {
-    animation-delay: var(--animation-delay-small);
+    animation-delay: var(--anima-delay-small);
 }
 
 
@@ -35,7 +35,7 @@
 [class*="radio-"][class*="medium"]:checked ~ [class*="target-"][class*="medium"],
 [class*="show-"][class*="medium"],
 [class*="shown-"][class*="medium"] > * {
-    animation-delay: var(--animation-delay-medium);
+    animation-delay: var(--anima-delay-medium);
 }
 
 
@@ -50,5 +50,5 @@
 [class*="radio-"][class*="large"]:checked ~ [class*="target-"][class*="large"],
 [class*="show-"][class*="large"],
 [class*="shown-"][class*="large"] > * {
-    animation-delay: var(--animation-delay-large);
+    animation-delay: var(--anima-delay-large);
 }

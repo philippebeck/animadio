@@ -115,7 +115,7 @@
 [class*="radio-"][class*="steps"]:checked ~ [class*="target-"][class*="steps"],
 [class*="show-"][class*="steps"],
 [class*="shown-"][class*="steps"] > * {
-    animation-timing-function: steps(var(--animation-timing-steps));
+    animation-timing-function: steps(var(--anima-timing-steps));
 }
 
 
@@ -130,5 +130,5 @@
 [class*="radio-"][class*="bezier"]:checked ~ [class*="target-"][class*="bezier"],
 [class*="show-"][class*="bezier"],
 [class*="shown-"][class*="bezier"] > * {
-    animation-timing-function: cubic-bezier(var(--animation-timing-bezier));
+    animation-timing-function: cubic-bezier(var(--anima-timing-bezier));
 }
