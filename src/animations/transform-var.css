@@ -1,0 +1,32 @@
+/*****************************************/
+/********** TRANSFORM VARIABLES **********/
+/*****************************************/
+
+/*
+1. Transform
+2. Transform Origin
+*/
+
+
+:root {
+    /***** Transform *****/
+    --rotate: rotate(-360deg);
+    --rotateX: rotateX(-360deg);
+    --rotateY: rotateY(-360deg);
+
+    --scale: scale(0);
+    --scaleX: scaleX(0);
+    --scaleY: scaleY(0);
+
+    --skew: skew(180deg, 180deg);
+    --skewX: skewX(180deg);
+    --skewY: skewY(180deg);
+
+    --translate: translate(-100vw, -100vh);
+    --translateX: translateX(-100vw);
+    --translateY: translateY(-100vh);
+
+    /***** Transform Origin *****/
+    --transform-origin-near: 50px 50px;
+    --transform-origin-far: top right 50px;
+}
