@@ -18,7 +18,7 @@
 [class*="shatex"][class*="fromall"][class*="sm"] > *:hover,
 [class*="shatex"][class*="fromall"][class*="sm"] > *:focus,
 [class*="shatex"][class*="fromall"][class*="sm"] > *:active {
-    text-shadow: var(--shatext-x-sm) var(--shatext-y-sm);
+    text-shadow: var(--shatex-x-sm) var(--shatex-y-sm);
 }
 
 [class*="shatex"][class*="tio"][class*="md"],
@@ -36,7 +36,7 @@
 [class*="shatex"][class*="fromall"][class*="md"] > *:hover,
 [class*="shatex"][class*="fromall"][class*="md"] > *:focus,
 [class*="shatex"][class*="fromall"][class*="md"] > *:active {
-    text-shadow: var(--shatext-x-md) var(--shatext-y-md);
+    text-shadow: var(--shatex-x-md) var(--shatex-y-md);
 }
 
 [class*="shatex"][class*="tio"][class*="lg"],
@@ -54,5 +54,5 @@
 [class*="shatex"][class*="fromall"][class*="lg"] > *:hover,
 [class*="shatex"][class*="fromall"][class*="lg"] > *:focus,
 [class*="shatex"][class*="fromall"][class*="lg"] > *:active {
-    text-shadow: var(--shatext-x-lg) var(--shatext-y-lg);
+    text-shadow: var(--shatex-x-lg) var(--shatex-y-lg);
 }

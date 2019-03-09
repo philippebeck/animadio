@@ -18,7 +18,7 @@
 [class*="shatex"][class*="fromall"][class*="blur"][class*="all"] > *:hover,
 [class*="shatex"][class*="fromall"][class*="blur"][class*="all"] > *:focus,
 [class*="shatex"][class*="fromall"][class*="blur"][class*="all"] > *:active {
-    text-shadow: 0 0 var(--shatext-blur-all);
+    text-shadow: 0 0 var(--shatex-blur-all);
 }
 
 [class*="shatex"][class*="tio"][class*="blur"][class*="sm"],
@@ -36,7 +36,7 @@
 [class*="shatex"][class*="fromall"][class*="blur"][class*="sm"] > *:hover,
 [class*="shatex"][class*="fromall"][class*="blur"][class*="sm"] > *:focus,
 [class*="shatex"][class*="fromall"][class*="blur"][class*="sm"] > *:active {
-    text-shadow: var(--shatext-x-sm) var(--shatext-y-sm) var(--shatext-blur-sm);
+    text-shadow: var(--shatex-x-sm) var(--shatex-y-sm) var(--shatex-blur-sm);
 }
 
 [class*="shatex"][class*="tio"][class*="blur"][class*="md"],
@@ -54,7 +54,7 @@
 [class*="shatex"][class*="fromall"][class*="blur"][class*="md"] > *:hover,
 [class*="shatex"][class*="fromall"][class*="blur"][class*="md"] > *:focus,
 [class*="shatex"][class*="fromall"][class*="blur"][class*="md"] > *:active {
-    text-shadow: var(--shatext-x-md) var(--shatext-y-md) var(--shatext-blur-md);
+    text-shadow: var(--shatex-x-md) var(--shatex-y-md) var(--shatex-blur-md);
 }
 
 [class*="shatex"][class*="tio"][class*="blur"][class*="lg"],
@@ -72,5 +72,5 @@
 [class*="shatex"][class*="fromall"][class*="blur"][class*="lg"] > *:hover,
 [class*="shatex"][class*="fromall"][class*="blur"][class*="lg"] > *:focus,
 [class*="shatex"][class*="fromall"][class*="blur"][class*="lg"] > *:active {
-    text-shadow: var(--shatext-x-lg) var(--shatext-y-lg) var(--shatext-blur-lg);
+    text-shadow: var(--shatex-x-lg) var(--shatex-y-lg) var(--shatex-blur-lg);
 }
