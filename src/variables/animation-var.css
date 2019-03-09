@@ -1,5 +1,5 @@
 /*****************************************/
-/********** ANIMATION VARIABLES **********/
+/********** anima VARIABLES **********/
 /*****************************************/
 
 /*
@@ -12,22 +12,22 @@
 
 :root {
     /***** Delay *****/
-    --animation-delay-small: 1s;
-    --animation-delay-medium: 2s;
-    --animation-delay-large: 3s;
+    --anima-delay-small: 1s;
+    --anima-delay-medium: 2s;
+    --anima-delay-large: 3s;
 
     /***** Duration *****/
-    --animation-duration-tn: 1s;
-    --animation-duration-sm: 2s;
-    --animation-duration-md: 5s;
-    --animation-duration-lg: 10s;
-    --animation-duration-wd: 60s;
+    --anima-duration-tn: 1s;
+    --anima-duration-sm: 2s;
+    --anima-duration-md: 5s;
+    --anima-duration-lg: 10s;
+    --anima-duration-wd: 60s;
 
     /***** Iteration Count *****/
-    --animation-count-few: 2;
-    --animation-count-many: 5;
+    --anima-count-few: 2;
+    --anima-count-many: 5;
 
     /***** Timing Function *****/
-    --animation-timing-steps: 60, start;
-    --animation-timing-bezier: 1,5,1,-5;
+    --anima-timing-steps: 60, start;
+    --anima-timing-bezier: 1,5,1,-5;
 }
