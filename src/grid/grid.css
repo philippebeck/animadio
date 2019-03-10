@@ -1,0 +1,19 @@
+/**************************/
+/********** GRID **********/
+/**************************/
+
+
+[class*="grid"],
+[class*="fluid"] {
+    display: grid;
+}
+
+[class*="grid"] {
+    margin: auto;
+    max-width: 80%;
+}
+
+[class*="fluid"] {
+    max-width: 100%;
+}
+
