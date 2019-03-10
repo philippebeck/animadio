@@ -4,17 +4,67 @@
 
 
 /*
-1. Container
-2. Cursor
-3. Display
-4. Overflow
-5. Position
+1. Display
+2. Position
+3. Overflow
+4. Container
+5. Cursor
 */
+
+
+/*******************/
+/***** Display *****/
+.block {
+    display: block;
+}
+
+.inblock {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.none,
+.dio {
+    display: none;
+}
+
+
+/********************/
+/***** Position *****/
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
+}
+
+.sticky {
+    position: sticky;
+}
+
+
+/********************/
+/***** Overflow *****/
+.hidden {
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}
 
 
 /*********************/
 /***** Container *****/
-[class^="container"] {
+[class*="container"] {
     margin: auto;
 }
 
@@ -33,81 +83,22 @@
 
 /******************/
 /***** Cursor *****/
-.cursor-cross,
-.cursor-cross > * {
+.crosshair,
+.crosshair > * {
     cursor: crosshair;
 }
 
-.cursor-help,
-.cursor-help > * {
+.help,
+.help > * {
     cursor: help;
 }
 
-.cursor-none,
-.cursor-none > * {
+.forbidden,
+.forbidden > * {
     cursor: not-allowed;
 }
 
-.cursor-pointer,
-.cursor-pointer > * {
+.pointer,
+.pointer > * {
     cursor: pointer;
-}
-
-.cursor-text,
-.cursor-text > * {
-    cursor: text;
-}
-
-
-/*******************/
-/***** Display *****/
-.dis-block {
-    display: block;
-}
-
-.dis-flex {
-    display: flex;
-}
-
-.dis-inblock {
-    display: inline-block;
-}
-
-.dis-inline {
-    display: inline;
-}
-
-.dis-none,
-.radio {
-    display: none;
-}
-
-
-/********************/
-/***** Overflow *****/
-.flow-hidden {
-    overflow: hidden;
-}
-
-.flow-scroll {
-    overflow: scroll;
-}
-
-
-/********************/
-/***** Position *****/
-.pos-absolute {
-    position: absolute;
-}
-
-.pos-fixed {
-    position: fixed;
-}
-
-.pos-relative {
-    position: relative;
-}
-
-.pos-sticky {
-    position: sticky;
 }
