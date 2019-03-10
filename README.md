@@ -42,7 +42,13 @@ Controls by Radio Buttons - No JavaScript needed
 [![](https://img.shields.io/npm/l/animadio.svg)](https://github.com/animadio/animadio/blob/master/LICENSE)
 
 [![](https://img.badgesize.io/animadio/animadio/master/dist/min/animadio.min.css?compression=gzip&label=CSS+gzip+size)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
-[![](https://img.shields.io/bundlephobia/min/animadio/0.1.15.svg)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
+[![](https://img.shields.io/bundlephobia/min/animadio.svg)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
+[![](https://img.shields.io/github/languages/code-size/animadio/animadio.svg)]()
+[![](https://img.shields.io/github/repo-size/animadio/animadio.svg)](https://github.com/animadio/animadio)
+
+[![](https://img.shields.io/npm/dw/animadio.svg)](https://www.npmjs.com/package/animadio)
+[![](https://img.shields.io/npm/dm/animadio.svg)](https://www.npmjs.com/package/animadio)
+[![](https://img.shields.io/npm/dy/animadio.svg)](https://www.npmjs.com/package/animadio)
 [![](https://data.jsdelivr.com/v1/package/npm/animadio/badge)](https://www.jsdelivr.com/package/npm/animadio)
 
 [![](https://img.shields.io/github/languages/top/animadio/animadio.svg)](https://github.com/animadio/animadio)
