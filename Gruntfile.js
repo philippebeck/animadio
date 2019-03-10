@@ -25,8 +25,16 @@ module.exports = function(grunt) {
                     "src/grid/grid-wd.css",
                     "src/grid/grid-gap.css",
 
+                    /***** FLEX *****/
+                    "src/flexbox/flex-var.css",
+                    "src/flexbox/flex.css",
+                    "src/flexbox/flex-tn.css",
+                    "src/flexbox/flex-sm.css",
+                    "src/flexbox/flex-md.css",
+                    "src/flexbox/flex-lg.css",
+                    "src/flexbox/flex-wd.css",
+
                     /***** DISPLAY *****/
-                    "src/display/flexbox.css",
                     "src/display/show.css",
                     "src/display/text.css",
 
