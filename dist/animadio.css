@@ -1,4 +1,4 @@
-/* animadio v0.1.20 | https://animadio.org | MIT License */
+/* animadio v0.1.21 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -3593,6 +3593,249 @@ table {
     text-align: center;
     vertical-align: middle;
 }
+/**************************************/
+/********** NAVBAR VARIABLES **********/
+/**************************************/
+
+
+/*
+1. Navbar
+2. Nav Brand
+3. Nav Main
+4. Nav User
+*/
+
+
+/***** Navbar *****/
+.navbar {
+    --navbar-alignitems: center;
+    --navbar-height: 10vh;
+    --navbar-bgcolor: var(--blue);
+    --navbar-color: var(--white);
+    --navbar-flexdirection-sm: row;
+    --navbar-justifycontent-tn: space-between;
+    --navbar-justifycontent-sm: space-content;
+    --navbar-justifycontent-md: space-evenly;
+    --navbar-pad-sm: 10px;
+    --navbar-a-pad: 10px;
+    --navbar-a-scale: 1.1;
+    --navbar-i-alignself: center;
+}
+
+/***** Nav Brand *****/
+.nav-brand {
+    --nav-brand-img-height: 20px;
+}
+
+/***** Nav Main *****/
+.nav-main {
+    --nav-main-alignitems: center;
+    --nav-main-mar: 0;
+    --nav-main-pad: 0;
+    --nav-main-span-display: none;
+    --nav-main-span-display-md: inline;
+}
+
+/***** Nav User *****/
+.nav-user {
+    --nav-user-p-display: none;
+    --nav-user-img-mar: 1px;
+    --nav-user-height: 25px;
+    --nav-user-p-display-wd: block;
+    --nav-user-p-maright-wd: 10px;
+}
+/****************************/
+/********** NAVBAR **********/
+/****************************/
+
+/* Global */
+/* Navbar */
+/* Brand Nav */
+/* Main Nav */
+/* User Nav */
+/* Medias Rules */
+
+
+/******************/
+/***** Global *****/
+.navbar,
+.main-nav,
+.nav-user,
+.main-nav a,
+.nav-user a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+/******************/
+/***** Navbar *****/
+.navbar {
+    -webkit-box-align: var(--navbar-alignitems);
+        -ms-flex-align: var(--navbar-alignitems);
+            align-items: var(--navbar-alignitems);
+    height: var(--navbar-height);
+    background-color: var(--navbar-bgcolor);
+    color: var(--navbar-color);
+
+    /***** Mobile Portrait *****/
+    -webkit-box-pack: var(--navbar-justifycontent-tn);
+        -ms-flex-pack: var(--navbar-justifycontent-tn);
+            justify-content: var(--navbar-justifycontent-tn);
+}
+
+/***** Nav Main & User *****/
+.nav-main,
+.nav-user {
+    -webkit-box-align: var(--nav-main-alignitems);
+        -ms-flex-align: var(--nav-main-alignitems);
+            align-items: var(--nav-main-alignitems);
+    margin: var(--nav-main-mar);
+    padding: var(--nav-main-pad);
+    list-style: none;
+}
+
+/***** Navbar Links *****/
+.navbar a {
+    padding: var(--navbar-a-pad);
+    color: var(--white);
+}
+
+.nav-main a,
+.nav-user a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active {
+    color: var(--yellow);
+    -webkit-transform: scale(var(--navbar-a-scale));
+            transform: scale(var(--navbar-a-scale));
+}
+
+/***** Navbar Icons *****/
+.navbar i {
+    -ms-flex-item-align: var(--navbar-i-alignself);
+        align-self: var(--navbar-i-alignself);
+}
+
+
+/*********************/
+/***** Brand Nav *****/
+.nav-brand img,
+.nav-brand svg {
+    height: var(--nav-brand-img-height);
+}
+
+
+/********************/
+/***** Main Nav *****/
+.main-nav span {
+    display: var(--nav-main-span-display);
+}
+
+
+/********************/
+/***** User Nav *****/
+.nav-user p {
+    display: var(--nav-user-p-display);
+}
+
+.nav-user img,
+.nav-user svg {
+    margin: var(--nav-user-img-mar);
+    height: var(--nav-user-height);
+}
+
+
+/************************/
+/***** Medias Rules *****/
+
+/***** Mobile Landscape *****/
+@media (min-width: 576px) {
+    .navbar {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: var(--navbar-flexdirection-sm);
+                flex-direction: var(--navbar-flexdirection-sm);
+        -webkit-box-pack: var(--navbar-justifycontent-sm);
+            -ms-flex-pack: var(--navbar-justifycontent-sm);
+                justify-content: var(--navbar-justifycontent-sm);
+        padding: var(--navbar-pad-sm);
+    }
+
+    .nav-brand img,
+    .nav-brand svg {
+        height: calc(var(--nav-brand-img-height) * 1.25);
+    }
+
+    .nav-user img,
+    .nav-user svg {
+        margin: calc(var(--nav-user-img-mar) * 2);
+        height: calc(var(--nav-user-height) * 1.25);
+    }
+}
+
+/***** Tablet Portrait *****/
+@media (min-width: 768px) {
+    .navbar {
+        -webkit-box-pack: var(--navbar-justifycontent-md);
+            -ms-flex-pack: var(--navbar-justifycontent-md);
+                justify-content: var(--navbar-justifycontent-md);
+    }
+
+    .nav-brand img,
+    .nav-brand svg {
+        height: calc(var(--nav-brand-img-height) * 1.5);
+    }
+
+    .main-nav span {
+        display: var(--nav-main-span-display-md);
+    }
+
+    .nav-user img,
+    .nav-user svg {
+        margin: calc(var(--nav-user-img-mar) * 3);
+        height: calc(var(--nav-user-height) * 1.5);
+    }
+}
+
+/***** Tablet Landscape *****/
+@media (min-width: 992px) {
+    .nav-brand img,
+    .nav-brand svg {
+        height: calc(var(--nav-brand-img-height) * 1.75);
+    }
+
+    .nav-user img,
+    .nav-user svg {
+        margin: calc(var(--nav-user-img-mar) * 4);
+        height: calc(var(--nav-user-height) * 1.75);
+    }
+}
+
+/***** Desktop *****/
+@media (min-width: 1200px) {
+    .nav-brand img,
+    .nav-brand svg {
+        height: calc(var(--nav-brand-img-height) * 2);
+    }
+
+    .nav-user img,
+    .nav-user svg {
+        margin: calc(var(--nav-user-img-mar) * 5);
+        height: calc(var(--nav-user-height) * 2);
+    }
+    .nav-user p {
+        display: var(--nav-user-p-display-wd);
+        margin-right: var(--nav-user-p-maright-wd);
+    }
+}
 /****************************/
 /********** BUTTON **********/
 /****************************/
@@ -3629,4 +3872,4 @@ table {
 
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 10th Mar 2019 @ 12:08:32 AM */
+ Updated: 10th Mar 2019 @ 6:15:56 AM */
