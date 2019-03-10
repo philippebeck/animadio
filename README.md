@@ -122,3 +122,7 @@ Animadio needs you if you like it : sends pull requests on GitHub to improve it 
 
 [Code released under the MIT License](https://github.com/animadio/animadio/blob/master/LICENSE)
   
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/animadio/animadio/badge.svg?style=beer-square)](https://beerpay.io/animadio/animadio)  [![Beerpay](https://beerpay.io/animadio/animadio/make-wish.svg?style=flat-square)](https://beerpay.io/animadio/animadio?focus=wish)
