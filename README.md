@@ -39,11 +39,12 @@ Controls by Radio Buttons - No JavaScript needed
 
 [![](https://img.shields.io/github/last-commit/animadio/animadio.svg)](https://github.com/animadio/animadio/commits/master)
 [![](https://img.shields.io/github/commit-activity/m/animadio/animadio.svg)](https://github.com/animadio/animadio/graphs/commit-activity)
-[![](https://img.shields.io/npm/l/animadio.svg)](https://github.com/animadio/animadio/blob/master/LICENSE)
+[![](https://img.shields.io/github/issues/animadio/animadio.svg)](https://github.com/animadio/animadio/issues)
+[![](https://img.shields.io/github/issues-pr/animadio/animadio.svg)](https://github.com/animadio/animadio/pulls)
 
 [![](https://img.badgesize.io/animadio/animadio/master/dist/min/animadio.min.css?compression=gzip&label=CSS+gzip+size)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
 [![](https://img.shields.io/bundlephobia/min/animadio.svg)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
-[![](https://img.shields.io/github/languages/code-size/animadio/animadio.svg)]()
+[![](https://img.shields.io/github/languages/code-size/animadio/animadio.svg)](https://github.com/animadio/animadio/tree/master/src)
 [![](https://img.shields.io/github/repo-size/animadio/animadio.svg)](https://github.com/animadio/animadio)
 
 [![](https://img.shields.io/npm/dw/animadio.svg)](https://www.npmjs.com/package/animadio)
@@ -52,9 +53,10 @@ Controls by Radio Buttons - No JavaScript needed
 [![](https://data.jsdelivr.com/v1/package/npm/animadio/badge)](https://www.jsdelivr.com/package/npm/animadio)
 
 [![](https://img.shields.io/github/languages/top/animadio/animadio.svg)](https://github.com/animadio/animadio)
+[![](https://img.shields.io/npm/l/animadio.svg)](https://github.com/animadio/animadio/blob/master/LICENSE)
+[![](https://img.shields.io/maintenance/yes/2019.svg)](https://github.com/animadio/animadio)
+[![](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg)](https://animadio.org)
 [![](https://img.shields.io/librariesio/sourcerank/npm/animadio.svg)](https://libraries.io/npm/animadio)
-[![](https://img.shields.io/github/issues/animadio/animadio.svg)](https://github.com/animadio/animadio/issues)
-[![](https://img.shields.io/github/issues-pr/animadio/animadio.svg)](https://github.com/animadio/animadio/issues)
 
 ## Installation
 
