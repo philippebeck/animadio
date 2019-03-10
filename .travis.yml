@@ -4,8 +4,3 @@ node_js:
   - "0.10"
 before_install:
   - "curl -L http://git.io/ejPSng | /bin/sh"
-install:
-  - npm install -g codecov
-script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecov
