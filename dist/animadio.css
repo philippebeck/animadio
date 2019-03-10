@@ -1,4 +1,4 @@
-/* animadio v0.1.23 | https://animadio.org | MIT License */
+/* animadio v0.1.24 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -835,7 +835,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: var(--col-padding);
+    padding: var(--col-pad);
 }
 
 [class*="row"] {
@@ -843,7 +843,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: var(--row-padding);
+    padding: var(--row-pad);
 }
 
 [class*="col"][class*="reverse"] {
@@ -1338,248 +1338,6 @@ template {
         width: calc(100% / 12 - var(--flex-width-wd));
         margin: var(--flex-pos-mar-wd);
     }
-}
-/***********************************/
-/********** SHOW HELPERS ***********/
-/***********************************/
-
-
-/*
-1. Container
-2. Cursor
-3. Display
-4. Overflow
-5. Position
-*/
-
-
-/*********************/
-/***** Container *****/
-[class^="container"] {
-    margin: auto;
-}
-
-.container-sm {
-    max-width: var(--max-width-sm);
-}
-
-.container {
-    max-width: var(--max-width-md);
-}
-
-.container-lg {
-    max-width: var(--max-width-lg);
-}
-
-
-/******************/
-/***** Cursor *****/
-.cursor-cross,
-.cursor-cross > * {
-    cursor: crosshair;
-}
-
-.cursor-help,
-.cursor-help > * {
-    cursor: help;
-}
-
-.cursor-none,
-.cursor-none > * {
-    cursor: not-allowed;
-}
-
-.cursor-pointer,
-.cursor-pointer > * {
-    cursor: pointer;
-}
-
-.cursor-text,
-.cursor-text > * {
-    cursor: text;
-}
-
-
-/*******************/
-/***** Display *****/
-.dis-block {
-    display: block;
-}
-
-.dis-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.dis-inblock {
-    display: inline-block;
-}
-
-.dis-inline {
-    display: inline;
-}
-
-.dis-none,
-.radio {
-    display: none;
-}
-
-
-/********************/
-/***** Overflow *****/
-.flow-hidden {
-    overflow: hidden;
-}
-
-.flow-scroll {
-    overflow: scroll;
-}
-
-
-/********************/
-/***** Position *****/
-.pos-absolute {
-    position: absolute;
-}
-
-.pos-fixed {
-    position: fixed;
-}
-
-.pos-relative {
-    position: relative;
-}
-
-.pos-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-}
-/***********************************/
-/********** TEXT HELPERS ***********/
-/***********************************/
-
-/*
-1. Font
-2. Text Align
-3. Text Decoration
-*/
-
-
-/****************/
-/***** Font *****/
-.font-normal {
-    font-style: normal;
-    font-weight: normal;
-}
-
-.font-italic {
-    font-style: italic;
-}
-
-.font-bold {
-    font-weight: bold;
-}
-
-
-/**********************/
-/***** Text Align *****/
-.text-center {
-    text-align: center;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-left {
-    text-align: left;
-}
-
-
-/***************************/
-/***** Text Decoration *****/
-.deco-none {
-    text-decoration: none;
-}
-
-/***** Text Decoration Underline *****/
-.deco-under {
-    text-decoration: underline;
-}
-
-.deco-under-double {
-    -webkit-text-decoration: underline double;
-            text-decoration: underline double;
-}
-
-.deco-under-dotted {
-    -webkit-text-decoration: underline dotted;
-            text-decoration: underline dotted;
-}
-
-.deco-under-dashed {
-    -webkit-text-decoration: underline dashed;
-            text-decoration: underline dashed;
-}
-
-.deco-under-wavy {
-    -webkit-text-decoration: underline wavy;
-            text-decoration: underline wavy;
-}
-
-/***** Text Decoration Overline *****/
-.deco-over {
-    text-decoration: overline;
-}
-
-.deco-over-double {
-    -webkit-text-decoration: overline double;
-            text-decoration: overline double;
-}
-
-.deco-over-dotted {
-    -webkit-text-decoration: overline dotted;
-            text-decoration: overline dotted;
-}
-
-.deco-over-dashed {
-    -webkit-text-decoration: overline dashed;
-            text-decoration: overline dashed;
-}
-
-.deco-over-wavy {
-    -webkit-text-decoration: overline wavy;
-            text-decoration: overline wavy;
-}
-
-/***** Text Decoration Line Through *****/
-.deco-through {
-    text-decoration: line-through;
-}
-
-.deco-through-double {
-    -webkit-text-decoration: line-through double;
-            text-decoration: line-through double;
-}
-
-.deco-through-dotted {
-    -webkit-text-decoration: line-through dotted;
-            text-decoration: line-through dotted;
-}
-
-.deco-through-dashed {
-    -webkit-text-decoration: line-through dashed;
-            text-decoration: line-through dashed;
-}
-
-.deco-through-wavy {
-    -webkit-text-decoration: line-through wavy;
-            text-decoration: line-through wavy;
 }
 /*************************************/
 /********** COLOR VARIABLES **********/
@@ -2111,6 +1869,262 @@ template {
 [class*="bg"][class*="fromall"][class*="yellow"] > *:focus,
 [class*="bg"][class*="fromall"][class*="yellow"] > *:active {
     background-color: var(--yellow);
+}
+/***********************************/
+/********** SHOW HELPERS ***********/
+/***********************************/
+
+
+/*
+1. Display
+2. Position
+3. Overflow
+4. Container
+5. Cursor
+*/
+
+
+/*******************/
+/***** Display *****/
+.block {
+    display: block;
+}
+
+.inblock {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.hidden,
+.dio {
+    display: none;
+}
+
+
+/********************/
+/***** Position *****/
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+
+/********************/
+/***** Overflow *****/
+.flow-hidden {
+    overflow: hidden;
+}
+
+.flow-scroll {
+    overflow: scroll;
+}
+
+
+/*********************/
+/***** Container *****/
+[class*="container"] {
+    margin: auto;
+}
+
+.container-sm {
+    max-width: var(--max-width-sm);
+}
+
+.container {
+    max-width: var(--max-width-md);
+}
+
+.container-lg {
+    max-width: var(--max-width-lg);
+}
+
+
+/******************/
+/***** Cursor *****/
+.crosshair,
+.crosshair > * {
+    cursor: crosshair;
+}
+
+.help,
+.help > * {
+    cursor: help;
+}
+
+.forbidden,
+.forbidden > * {
+    cursor: not-allowed;
+}
+
+.pointer,
+.pointer > * {
+    cursor: pointer;
+}
+/***********************************/
+/********** TEXT HELPERS ***********/
+/***********************************/
+
+/*
+1. Font
+2. Text Align
+3. Text Decoration
+*/
+
+
+/****************/
+/***** Font *****/
+.font-normal {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+
+/**********************/
+/***** Text Align *****/
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+/***************************/
+/***** Text Decoration *****/
+
+/***** Deco Line *****/
+[class*="deco"][class*="under"] {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+}
+
+[class*="deco"][class*="none"] {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+}
+
+[class*="deco"][class*="over"] {
+    -webkit-text-decoration-line: overline;
+            text-decoration-line: overline;
+}
+
+[class*="deco"][class*="through"] {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+}
+
+/***** Deco Style *****/
+[class*="deco"][class*="solid"] {
+    -webkit-text-decoration-style: solid;
+            text-decoration-style: solid;
+}
+
+[class*="deco"][class*="double"] {
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+}
+
+[class*="deco"][class*="dotted"] {
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+}
+
+[class*="deco"][class*="dashed"] {
+    -webkit-text-decoration-style: dashed;
+            text-decoration-style: dashed;
+}
+
+[class*="deco"][class*="wavy"] {
+    -webkit-text-decoration-style: wavy;
+            text-decoration-style: wavy;
+}
+
+/***** Deco Color *****/
+[class*="deco"][class*="black"] {
+    -webkit-text-decoration-color: black;
+            text-decoration-color: black;
+}
+
+[class*="deco"][class*="blue"] {
+    -webkit-text-decoration-color: var(--blue);
+            text-decoration-color: var(--blue);
+}
+
+[class*="deco"][class*="brown"] {
+    -webkit-text-decoration-color: var(--brown);
+            text-decoration-color: var(--brown);
+}
+
+[class*="deco"][class*="gray"] {
+    -webkit-text-decoration-color: var(--gray);
+            text-decoration-color: var(--gray);
+}
+
+[class*="deco"][class*="grey"] {
+    -webkit-text-decoration-color: var(--grey);
+            text-decoration-color: var(--grey);
+}
+
+[class*="deco"][class*="green"] {
+    -webkit-text-decoration-color: var(--green);
+            text-decoration-color: var(--green);
+}
+
+[class*="deco"][class*="orange"] {
+    -webkit-text-decoration-color: var(--orange);
+            text-decoration-color: var(--orange);
+}
+
+[class*="deco"][class*="red"] {
+    -webkit-text-decoration-color: var(--red);
+            text-decoration-color: var(--red);
+}
+
+[class*="deco"][class*="violet"] {
+    -webkit-text-decoration-color: var(--violet);
+            text-decoration-color: var(--violet);
+}
+
+[class*="deco"][class*="white"] {
+    -webkit-text-decoration-color: var(--white);
+            text-decoration-color: var(--white);
+}
+
+[class*="deco"][class*="yellow"] {
+    -webkit-text-decoration-color: var(--yellow);
+            text-decoration-color: var(--yellow);
 }
 /**************************************/
 /********** SPACING HELPERS ***********/
@@ -4847,4 +4861,4 @@ table {
 
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 10th Mar 2019 @ 8:07:58 PM */
+ Updated: 10th Mar 2019 @ 9:38:31 PM */
