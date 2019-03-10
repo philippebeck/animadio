@@ -9,5 +9,3 @@ install:
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
   - codecov
-codecov:
-  token: befa3893-5fc5-44f2-ae96-4583d5fd310e
