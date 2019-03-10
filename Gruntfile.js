@@ -34,14 +34,14 @@ module.exports = function(grunt) {
                     "src/flexbox/flex-lg.css",
                     "src/flexbox/flex-wd.css",
 
-                    /***** DISPLAY *****/
-                    "src/display/show.css",
-                    "src/display/text.css",
-
                     /***** COLORS *****/
                     "src/colors/color-var.css",
                     "src/colors/color.css",
                     "src/colors/color-bg.css",
+
+                    /***** DISPLAY *****/
+                    "src/display/show.css",
+                    "src/display/text.css",
 
                     /***** SPACES *****/
                     "src/spaces/space.css",
