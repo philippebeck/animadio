@@ -1,0 +1,36 @@
+/************************************/
+/********** FLEX VARIABLES **********/
+/************************************/
+
+
+[class*="col"] {
+    --col-pad:              0 10px;
+}
+
+
+[class*="row"] {
+    --row-pad:              10px 0;
+}
+
+
+[class*="flex"] {
+    --flex-neg-mar-tn:      -2px;
+    --flex-pos-mar-tn:      2px;
+    --flex-width-tn:        4px;
+
+    --flex-neg-mar-sm:      -5px;
+    --flex-pos-mar-sm:      5px;
+    --flex-width-sm:        10px;
+
+    --flex-neg-mar-md:      -10px;
+    --flex-pos-mar-md:      10px;
+    --flex-width-md:        20px;
+
+    --flex-neg-mar-lg:      -20px;
+    --flex-pos-mar-lg:      20px;
+    --flex-width-lg:        40px;
+
+    --flex-neg-mar-wd:      -50px;
+    --flex-pos-mar-wd:      50px;
+    --flex-width-wd:        100px;
+}
