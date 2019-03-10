@@ -1,0 +1,61 @@
+/*****************************/
+/********** GRID SM **********/
+/*****************************/
+
+
+@media (min-width: 576px) {
+    [class*="grid"][class*="2sm"],
+    [class*="fluid"][class*="2sm"] {
+        grid-template: auto/repeat(2, auto);
+    }
+
+    [class*="grid"][class*="3sm"],
+    [class*="fluid"][class*="3sm"] {
+        grid-template: auto/repeat(3, auto);
+    }
+
+    [class*="grid"][class*="4sm"],
+    [class*="fluid"][class*="4sm"] {
+        grid-template: auto/repeat(4, auto);
+    }
+
+    [class*="grid"][class*="5sm"],
+    [class*="fluid"][class*="5sm"] {
+        grid-template: auto/repeat(5, auto);
+    }
+
+    [class*="grid"][class*="6sm"],
+    [class*="fluid"][class*="6sm"] {
+        grid-template: auto/repeat(6, auto);
+    }
+
+    [class*="grid"][class*="7sm"],
+    [class*="fluid"][class*="7sm"] {
+        grid-template: auto/repeat(7, auto);
+    }
+
+    [class*="grid"][class*="8sm"],
+    [class*="fluid"][class*="8sm"] {
+        grid-template: auto/repeat(8, auto);
+    }
+
+    [class*="grid"][class*="9sm"],
+    [class*="fluid"][class*="9sm"] {
+        grid-template: auto/repeat(9, auto);
+    }
+
+    [class*="grid"][class*="10sm"],
+    [class*="fluid"][class*="10sm"] {
+        grid-template: auto/repeat(10, auto);
+    }
+
+    [class*="grid"][class*="11sm"],
+    [class*="fluid"][class*="11sm"] {
+        grid-template: auto/repeat(11, auto);
+    }
+
+    [class*="grid"][class*="12sm"],
+    [class*="fluid"][class*="12sm"] {
+        grid-template: auto/repeat(12, auto);
+    }
+}
