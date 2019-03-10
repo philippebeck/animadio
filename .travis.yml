@@ -1,5 +1,12 @@
-language: node_js
+language:
+  node_js
 node_js:
   - "0.10"
 before_install:
   - "curl -L http://git.io/ejPSng | /bin/sh"
+install:
+  - npm install -g codecov
+script:
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - codecov
+CODECOV_TOKEN="befa3893-5fc5-44f2-ae96-4583d5fd310e"
