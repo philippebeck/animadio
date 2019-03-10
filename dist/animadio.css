@@ -1,4 +1,4 @@
-/* animadio v0.1.21 | https://animadio.org | MIT License */
+/* animadio v0.1.22 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -359,6 +359,400 @@ template {
 /**************************/
 
 
+[class*="grid"],
+[class*="fluid"] {
+    display: grid;
+}
+
+[class*="grid"] {
+    margin: auto;
+    max-width: 80%;
+}
+
+[class*="fluid"] {
+    max-width: 100%;
+}
+
+
+/*****************************/
+/********** GRID TN **********/
+/*****************************/
+
+
+[class*="grid"][class*="2tn"],
+[class*="fluid"][class*="2tn"] {
+    grid-template: auto/repeat(2, auto);
+}
+
+[class*="grid"][class*="3tn"],
+[class*="fluid"][class*="3tn"] {
+    grid-template: auto/repeat(3, auto);
+}
+
+[class*="grid"][class*="4tn"],
+[class*="fluid"][class*="4tn"] {
+    grid-template: auto/repeat(4, auto);
+}
+
+[class*="grid"][class*="5tn"],
+[class*="fluid"][class*="5tn"] {
+    grid-template: auto/repeat(5, auto);
+}
+
+[class*="grid"][class*="6tn"],
+[class*="fluid"][class*="6tn"] {
+    grid-template: auto/repeat(6, auto);
+}
+
+[class*="grid"][class*="7tn"],
+[class*="fluid"][class*="7tn"] {
+    grid-template: auto/repeat(7, auto);
+}
+
+[class*="grid"][class*="8tn"],
+[class*="fluid"][class*="8tn"] {
+    grid-template: auto/repeat(8, auto);
+}
+
+[class*="grid"][class*="9tn"],
+[class*="fluid"][class*="9tn"] {
+    grid-template: auto/repeat(9, auto);
+}
+
+[class*="grid"][class*="10tn"],
+[class*="fluid"][class*="10tn"] {
+    grid-template: auto/repeat(10, auto);
+}
+
+[class*="grid"][class*="11tn"],
+[class*="fluid"][class*="11tn"] {
+    grid-template: auto/repeat(11, auto);
+}
+
+[class*="grid"][class*="12tn"],
+[class*="fluid"][class*="12tn"] {
+    grid-template: auto/repeat(12, auto);
+}
+/*****************************/
+/********** GRID SM **********/
+/*****************************/
+
+
+@media (min-width: 576px) {
+    [class*="grid"][class*="2sm"],
+    [class*="fluid"][class*="2sm"] {
+        grid-template: auto/repeat(2, auto);
+    }
+
+    [class*="grid"][class*="3sm"],
+    [class*="fluid"][class*="3sm"] {
+        grid-template: auto/repeat(3, auto);
+    }
+
+    [class*="grid"][class*="4sm"],
+    [class*="fluid"][class*="4sm"] {
+        grid-template: auto/repeat(4, auto);
+    }
+
+    [class*="grid"][class*="5sm"],
+    [class*="fluid"][class*="5sm"] {
+        grid-template: auto/repeat(5, auto);
+    }
+
+    [class*="grid"][class*="6sm"],
+    [class*="fluid"][class*="6sm"] {
+        grid-template: auto/repeat(6, auto);
+    }
+
+    [class*="grid"][class*="7sm"],
+    [class*="fluid"][class*="7sm"] {
+        grid-template: auto/repeat(7, auto);
+    }
+
+    [class*="grid"][class*="8sm"],
+    [class*="fluid"][class*="8sm"] {
+        grid-template: auto/repeat(8, auto);
+    }
+
+    [class*="grid"][class*="9sm"],
+    [class*="fluid"][class*="9sm"] {
+        grid-template: auto/repeat(9, auto);
+    }
+
+    [class*="grid"][class*="10sm"],
+    [class*="fluid"][class*="10sm"] {
+        grid-template: auto/repeat(10, auto);
+    }
+
+    [class*="grid"][class*="11sm"],
+    [class*="fluid"][class*="11sm"] {
+        grid-template: auto/repeat(11, auto);
+    }
+
+    [class*="grid"][class*="12sm"],
+    [class*="fluid"][class*="12sm"] {
+        grid-template: auto/repeat(12, auto);
+    }
+}
+/*****************************/
+/********** GRID MD **********/
+/*****************************/
+
+
+@media (min-width: 768px) {
+    [class*="grid"][class*="2md"],
+    [class*="fluid"][class*="2md"] {
+        grid-template: auto/repeat(2, auto);
+    }
+
+    [class*="grid"][class*="3md"],
+    [class*="fluid"][class*="3md"] {
+        grid-template: auto/repeat(3, auto);
+    }
+
+    [class*="grid"][class*="4md"],
+    [class*="fluid"][class*="4md"] {
+        grid-template: auto/repeat(4, auto);
+    }
+
+    [class*="grid"][class*="5md"],
+    [class*="fluid"][class*="5md"] {
+        grid-template: auto/repeat(5, auto);
+    }
+
+    [class*="grid"][class*="6md"],
+    [class*="fluid"][class*="6md"] {
+        grid-template: auto/repeat(6, auto);
+    }
+
+    [class*="grid"][class*="7md"],
+    [class*="fluid"][class*="7md"] {
+        grid-template: auto/repeat(7, auto);
+    }
+
+    [class*="grid"][class*="8md"],
+    [class*="fluid"][class*="8md"] {
+        grid-template: auto/repeat(8, auto);
+    }
+
+    [class*="grid"][class*="9md"],
+    [class*="fluid"][class*="9md"] {
+        grid-template: auto/repeat(9, auto);
+    }
+
+    [class*="grid"][class*="10md"],
+    [class*="fluid"][class*="10md"] {
+        grid-template: auto/repeat(10, auto);
+    }
+
+    [class*="grid"][class*="11md"],
+    [class*="fluid"][class*="11md"] {
+        grid-template: auto/repeat(11, auto);
+    }
+
+    [class*="grid"][class*="12md"],
+    [class*="fluid"][class*="12md"] {
+        grid-template: auto/repeat(12, auto);
+    }
+}
+/*****************************/
+/********** GRID LG **********/
+/*****************************/
+
+
+@media (min-width: 992px) {
+    [class*="grid"][class*="2lg"],
+    [class*="fluid"][class*="2lg"] {
+        grid-template: auto/repeat(2, auto);
+    }
+
+    [class*="grid"][class*="3lg"],
+    [class*="fluid"][class*="3lg"] {
+        grid-template: auto/repeat(3, auto);
+    }
+
+    [class*="grid"][class*="4lg"],
+    [class*="fluid"][class*="4lg"] {
+        grid-template: auto/repeat(4, auto);
+    }
+
+    [class*="grid"][class*="5lg"],
+    [class*="fluid"][class*="5lg"] {
+        grid-template: auto/repeat(5, auto);
+    }
+
+    [class*="grid"][class*="6lg"],
+    [class*="fluid"][class*="6lg"] {
+        grid-template: auto/repeat(6, auto);
+    }
+
+    [class*="grid"][class*="7lg"],
+    [class*="fluid"][class*="7lg"] {
+        grid-template: auto/repeat(7, auto);
+    }
+
+    [class*="grid"][class*="8lg"],
+    [class*="fluid"][class*="8lg"] {
+        grid-template: auto/repeat(8, auto);
+    }
+
+    [class*="grid"][class*="9lg"],
+    [class*="fluid"][class*="9lg"] {
+        grid-template: auto/repeat(9, auto);
+    }
+
+    [class*="grid"][class*="10lg"],
+    [class*="fluid"][class*="10lg"] {
+        grid-template: auto/repeat(10, auto);
+    }
+
+    [class*="grid"][class*="11lg"],
+    [class*="fluid"][class*="11lg"] {
+        grid-template: auto/repeat(11, auto);
+    }
+
+    [class*="grid"][class*="12lg"],
+    [class*="fluid"][class*="12lg"] {
+        grid-template: auto/repeat(12, auto);
+    }
+}
+/*****************************/
+/********** GRID WD **********/
+/*****************************/
+
+
+@media (min-width: 1200px) {
+    [class*="grid"][class*="2wd"],
+    [class*="fluid"][class*="2wd"] {
+        grid-template: auto/repeat(2, auto);
+    }
+
+    [class*="grid"][class*="3wd"],
+    [class*="fluid"][class*="3wd"] {
+        grid-template: auto/repeat(3, auto);
+    }
+
+    [class*="grid"][class*="4wd"],
+    [class*="fluid"][class*="4wd"] {
+        grid-template: auto/repeat(4, auto);
+    }
+
+    [class*="grid"][class*="5wd"],
+    [class*="fluid"][class*="5wd"] {
+        grid-template: auto/repeat(5, auto);
+    }
+
+    [class*="grid"][class*="6wd"],
+    [class*="fluid"][class*="6wd"] {
+        grid-template: auto/repeat(6, auto);
+    }
+
+    [class*="grid"][class*="7wd"],
+    [class*="fluid"][class*="7wd"] {
+        grid-template: auto/repeat(7, auto);
+    }
+
+    [class*="grid"][class*="8wd"],
+    [class*="fluid"][class*="8wd"] {
+        grid-template: auto/repeat(8, auto);
+    }
+
+    [class*="grid"][class*="9wd"],
+    [class*="fluid"][class*="9wd"] {
+        grid-template: auto/repeat(9, auto);
+    }
+
+    [class*="grid"][class*="10wd"],
+    [class*="fluid"][class*="10wd"] {
+        grid-template: auto/repeat(10, auto);
+    }
+
+    [class*="grid"][class*="11wd"],
+    [class*="fluid"][class*="11wd"] {
+        grid-template: auto/repeat(11, auto);
+    }
+
+    [class*="grid"][class*="12wd"],
+    [class*="fluid"][class*="12wd"] {
+        grid-template: auto/repeat(12, auto);
+    }
+}
+/******************************/
+/********** GRID GAP **********/
+/******************************/
+
+
+[class*="gap"][class*="1tn"] {
+    grid-gap: var(--gap-1tn);
+}
+
+[class*="gap"][class*="2tn"] {
+    grid-gap: var(--gap-2tn);
+}
+
+[class*="gap"][class*="3tn"] {
+     grid-gap: var(--gap-3tn);
+ }
+
+/***** Mobile Landscape *****/
+@media (min-width: 576px) {
+    [class*="gap"][class*="1sm"] {
+        grid-gap: var(--gap-1sm);
+    }
+
+    [class*="gap"][class*="2sm"] {
+        grid-gap: var(--gap-2sm);
+    }
+
+    [class*="gap"][class*="3sm"] {
+        grid-gap: var(--gap-3sm);
+    }
+}
+
+/***** Tablet Portrait *****/
+@media (min-width: 768px) {
+    [class*="gap"][class*="1md"] {
+        grid-gap: var(--gap-1md);
+    }
+
+    [class*="gap"][class*="2md"] {
+        grid-gap: var(--gap-2md);
+    }
+
+    [class*="gap"][class*="3md"] {
+        grid-gap: var(--gap-3md);
+    }
+}
+
+/***** Tablet Landscape *****/
+@media (min-width: 992px) {
+    [class*="gap"][class*="1lg"] {
+        grid-gap: var(--gap-1lg);
+    }
+
+    [class*="gap"][class*="2lg"] {
+        grid-gap: var(--gap-2lg);
+    }
+
+    [class*="gap"][class*="3lg"] {
+        grid-gap: var(--gap-3lg);
+    }
+}
+
+/***** Desktop *****/
+@media (min-width: 1200px) {
+    [class*="gap"][class*="1wd"] {
+        grid-gap: var(--gap-1wd);
+    }
+
+    [class*="gap"][class*="2wd"] {
+        grid-gap: var(--gap-2wd);
+    }
+
+    [class*="gap"][class*="3wd"] {
+        grid-gap: var(--gap-3wd);
+    }
+}
 /*****************************/
 /********** FLEXBOX **********/
 /*****************************/
@@ -3872,4 +4266,4 @@ table {
 
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 10th Mar 2019 @ 6:15:56 AM */
+ Updated: 10th Mar 2019 @ 5:36:14 PM */
