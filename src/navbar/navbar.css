@@ -24,26 +24,27 @@
 /******************/
 /***** Navbar *****/
 .navbar {
-    align-items: var(--navbar-align-items);
-    background-color: var(--navbar-background-color);
+    align-items: var(--navbar-alignitems);
+    height: var(--navbar-height);
+    background-color: var(--navbar-bgcolor);
     color: var(--navbar-color);
 
     /***** Mobile Portrait *****/
-    justify-content: var(--navbar-justify-content-tn);
+    justify-content: var(--navbar-justifycontent-tn);
 }
 
 /***** Nav Main & User *****/
 .nav-main,
 .nav-user {
-    align-items: var(--nav-main-align-items);
-    margin: var(--nav-main-margin);
-    padding: var(--nav-main-padding);
+    align-items: var(--nav-main-alignitems);
+    margin: var(--nav-main-mar);
+    padding: var(--nav-main-pad);
     list-style: none;
 }
 
 /***** Navbar Links *****/
 .navbar a {
-    padding: var(--navbar-a-padding);
+    padding: var(--navbar-a-pad);
     color: var(--white);
 }
 
@@ -61,7 +62,7 @@
 
 /***** Navbar Icons *****/
 .navbar i {
-    align-self: var(--navbar-i-align-self);
+    align-self: var(--navbar-i-alignself);
 }
 
 
@@ -88,7 +89,7 @@
 
 .nav-user img,
 .nav-user svg {
-    margin: var(--nav-user-img-margin);
+    margin: var(--nav-user-img-mar);
     height: var(--nav-user-height);
 }
 
@@ -99,9 +100,9 @@
 /***** Mobile Landscape *****/
 @media (min-width: 576px) {
     .navbar {
-        flex-direction: var(--navbar-flex-direction-sm);
-        justify-content: var(--navbar-justify-content-sm);
-        padding: var(--navbar-padding-sm);
+        flex-direction: var(--navbar-flexdirection-sm);
+        justify-content: var(--navbar-justifycontent-sm);
+        padding: var(--navbar-pad-sm);
     }
 
     .nav-brand img,
@@ -111,7 +112,7 @@
 
     .nav-user img,
     .nav-user svg {
-        margin: calc(var(--nav-user-img-margin) * 2);
+        margin: calc(var(--nav-user-img-mar) * 2);
         height: calc(var(--nav-user-height) * 1.25);
     }
 }
@@ -119,7 +120,7 @@
 /***** Tablet Portrait *****/
 @media (min-width: 768px) {
     .navbar {
-        justify-content: var(--navbar-justify-content-md);
+        justify-content: var(--navbar-justifycontent-md);
     }
 
     .nav-brand img,
@@ -133,7 +134,7 @@
 
     .nav-user img,
     .nav-user svg {
-        margin: calc(var(--nav-user-img-margin) * 3);
+        margin: calc(var(--nav-user-img-mar) * 3);
         height: calc(var(--nav-user-height) * 1.5);
     }
 }
@@ -147,7 +148,7 @@
 
     .nav-user img,
     .nav-user svg {
-        margin: calc(var(--nav-user-img-margin) * 4);
+        margin: calc(var(--nav-user-img-mar) * 4);
         height: calc(var(--nav-user-height) * 1.75);
     }
 }
@@ -161,11 +162,11 @@
 
     .nav-user img,
     .nav-user svg {
-        margin: calc(var(--nav-user-img-margin) * 5);
+        margin: calc(var(--nav-user-img-mar) * 5);
         height: calc(var(--nav-user-height) * 2);
     }
     .nav-user p {
         display: var(--nav-user-p-display-wd);
-        margin-right: var(--nav-user-p-margin-right-wd);
+        margin-right: var(--nav-user-p-maright-wd);
     }
 }
