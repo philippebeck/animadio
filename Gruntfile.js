@@ -15,8 +15,16 @@ module.exports = function(grunt) {
                     /***** NORMALIZE *****/
                     "node_modules/normalize.css/normalize.css",
 
+                    /***** GRID *****/
+                    "src/grid/grid.css",
+                    "src/grid/grid-tn.css",
+                    "src/grid/grid-sm.css",
+                    "src/grid/grid-md.css",
+                    "src/grid/grid-lg.css",
+                    "src/grid/grid-wd.css",
+                    "src/grid/grid-gap.css",
+
                     /***** DISPLAY *****/
-                    "src/display/grid.css",
                     "src/display/flexbox.css",
                     "src/display/show.css",
                     "src/display/text.css",
