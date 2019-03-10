@@ -76,7 +76,7 @@
 /********************/
 /***** Main Nav *****/
 .main-nav span {
-    display: var(--main-nav-span-display);
+    display: var(--nav-main-span-display);
 }
 
 
@@ -128,7 +128,7 @@
     }
 
     .main-nav span {
-        display: var(--main-nav-span-display-md);
+        display: var(--nav-main-span-display-md);
     }
 
     .nav-user img,
