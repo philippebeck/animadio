@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                     "node_modules/normalize.css/normalize.css",
 
                     /***** GRID *****/
+                    "src/grid/grid-var.css",
                     "src/grid/grid.css",
                     "src/grid/grid-tn.css",
                     "src/grid/grid-sm.css",
