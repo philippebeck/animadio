@@ -7,28 +7,6 @@ CSS Variables Usage - Reusable & Customizable Elements
 
 Controls by Radio Buttons - No JavaScript needed
 
-## Summary
-
-- [Status](#status)  
-- [Installation](#installation)  
-- [Content](#content)  
-- [Open-Source](#open-source)  
-- [Community](#community)  
-- [Documentation](#documentation)  
-- [Issues & Pull Requests](#issues-&-pull-requests)  
-- [Contributing](#contributing)  
-- [Versioning](#versioning)  
-- [Creator](#creator)  
-- [Copyright](#copyright)  
-
-## Status
-
-> FRAMEWORK IN CONSTRUCTION !
->
-> NOT AVAILABLE FOR THE MOMENT !!
->
-> ANIMADIO WILL FONCTION VERY SOON !!!
-
 [![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg)](https://github.com/animadio/animadio/blob/master/package.json)
 [![NPM Version](https://img.shields.io/npm/v/animadio.svg)](https://www.npmjs.com/package/animadio)
 [![Meteor Project](https://img.shields.io/badge/meteor-animadio%3Aanimadio-blue.svg)](https://atmospherejs.com/animadio/animadio)
@@ -65,6 +43,23 @@ Controls by Radio Buttons - No JavaScript needed
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg)](https://animadio.org)
 [![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/animadio.svg)](https://libraries.io/npm/animadio)
 [![GitHub Contributors](https://img.shields.io/github/contributors/animadio/animadio.svg)](https://github.com/animadio/animadio/graphs/contributors)
+
+> FRAMEWORK IN CONSTRUCTION !
+>
+> NO STABLE & COMPLETE FOR THE MOMENT !!
+
+## Summary
+
+- [Installation](#installation)  
+- [Content](#content)  
+- [Open-Source](#open-source)  
+- [Community](#community)  
+- [Documentation](#documentation)  
+- [Issues & Pull Requests](#issues-&-pull-requests)  
+- [Contributing](#contributing)  
+- [Versioning](#versioning)  
+- [Creator](#creator)  
+- [Copyright](#copyright)  
 
 ## Installation
 
