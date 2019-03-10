@@ -49,7 +49,6 @@ Controls by Radio Buttons - No JavaScript needed
 > NO STABLE & COMPLETE FOR THE MOMENT !!
 
 ## Summary
-
 - [Installation](#installation)  
 - [Content](#content)  
 - [Open-Source](#open-source)  
@@ -62,7 +61,6 @@ Controls by Radio Buttons - No JavaScript needed
 - [Copyright](#copyright)  
 
 ## Installation
-
 **CDN** : 
 - unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unpkg.com/animadio/dist/min/animadio.min.css)  
 - jsDelivr (choose the file) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist](https://cdn.jsdelivr.net/npm/animadio@latest/dist)  
@@ -79,52 +77,41 @@ Controls by Radio Buttons - No JavaScript needed
 - `git clone https://github.com/animadio/animadio.git`  
   
 ## Content
-
-The dist folder contains :
+The distribution is available here :
 - `dist/animadio.css`  
 - `dist/min/animadio.min.css`  
 - `dist/map/animadio.css.map`  
 
 
 ## Open-Source
-
-[GitHub : animadio](https://github.com/animadio)
-
-[CodePen : @animadio](https://codepen.io/animadio)
+- [GitHub : animadio](https://github.com/animadio)
+- [CodePen : @animadio](https://codepen.io/animadio)
 
 ## Community
-
-[Twitter : @animadio](https://twitter.com/animadio)
-
-[Slack : animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQtNTY1NTc5NzgyNDA3LTI2YWIxM2ZkMGM5ODBkNjNjZmI5ZGVlNTM1ZWEwMWI5ZDJjNzViYjNmNWE2MjllMTc3MDhlMzYzZDYzNTkxNjU)
+- [Twitter : @animadio](https://twitter.com/animadio)
+- [Slack : animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQtNTY1NTc5NzgyNDA3LTI2YWIxM2ZkMGM5ODBkNjNjZmI5ZGVlNTM1ZWEwMWI5ZDJjNzViYjNmNWE2MjllMTc3MDhlMzYzZDYzNTkxNjU)
 
 ## Documentation
-
 Documentation will arrive as soon as possible !
 
 ## Issues & Pull Requests
-
 [Issues can be created here](https://github.com/animadio/animadio/issues)
 
 [And Pull Requests can be create there](https://github.com/animadio/animadio/pulls)
 
 ## Contributing
-
 Animadio needs you if you like it : sends pull requests on GitHub to improve it !!
 
 ## Versioning
-
 [Animadio is maintained under the Semantic Versioning 2.0.0](https://semver.org)
 
 ## Creator
-
 *Philippe Beck* :
 - [https://philippebeck.net](https://philippebeck.net)  
 - [GitHub : philippebeck](https://github.com/philippebeck)  
 - [Twitter : @philippepjbeck](https://twitter.com/philippepjbeck)  
 
 ## Copyright
-
 [Code released under the MIT License](https://github.com/animadio/animadio/blob/master/LICENSE)
   
 ## Support on Beerpay
