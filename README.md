@@ -63,7 +63,7 @@ Controls by Radio Buttons - No JavaScript needed
 ## Installation
 **CDN** : 
 - unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unpkg.com/animadio/dist/min/animadio.min.css)  
-- jsDelivr (choose the file) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist](https://cdn.jsdelivr.net/npm/animadio@latest/dist)  
+- jsDelivr (choose file & version) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist](https://cdn.jsdelivr.net/npm/animadio@latest/dist)  
 
 **Install** :
 - NPM : `npm i animadio`  
@@ -77,7 +77,7 @@ Controls by Radio Buttons - No JavaScript needed
 - `git clone https://github.com/animadio/animadio.git`  
   
 ## Content
-The distribution is available here :
+The library distribution is available here :
 - `dist/animadio.css`  
 - `dist/min/animadio.min.css`  
 - `dist/map/animadio.css.map`  
