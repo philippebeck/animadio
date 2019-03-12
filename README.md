@@ -23,8 +23,6 @@ Controls by Radio Buttons - No JavaScript needed
 
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg)](https://github.com/animadio/animadio/commits/master)
 [![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/animadio/animadio.svg)](https://github.com/animadio/animadio/graphs/commit-activity)
-[![GitHub Open Issues](https://img.shields.io/github/issues/animadio/animadio.svg)](https://github.com/animadio/animadio/issues)
-[![GitHub Open Pull Requests](https://img.shields.io/github/issues-pr/animadio/animadio.svg)](https://github.com/animadio/animadio/pulls)
 
 [![Project Maintained](https://img.shields.io/maintenance/yes/2019.svg)](https://github.com/animadio/animadio)
 [![CodeClimate Maintainability](https://img.shields.io/codeclimate/maintainability/animadio/animadio.svg)](https://codeclimate.com/github/animadio/animadio)
@@ -102,8 +100,15 @@ You can simply use the library & if you want or if you need : you can overload t
 ## Documentation
 Documentation will arrive as soon as possible !
 
-## Issues & Pull Requests
+## Issues
+
+[![GitHub Open Issues](https://img.shields.io/github/issues/animadio/animadio.svg)](https://github.com/animadio/animadio/issues)
+
 [Issues can be created here](https://github.com/animadio/animadio/issues)
+
+## Pull Requests
+
+[![GitHub Open Pull Requests](https://img.shields.io/github/issues-pr/animadio/animadio.svg)](https://github.com/animadio/animadio/pulls)
 
 [And Pull Requests can be create there](https://github.com/animadio/animadio/pulls)
 
