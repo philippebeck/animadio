@@ -37,8 +37,6 @@ Controls by Radio Buttons - No JavaScript needed
 [![CSS Code Size](https://img.shields.io/github/languages/code-size/animadio/animadio.svg)](https://github.com/animadio/animadio/tree/master/dist/animadio.css)
 [![Repo Size](https://img.shields.io/github/repo-size/animadio/animadio.svg)](https://github.com/animadio/animadio/tree/master)
 
-[![GitHub Top Language](https://img.shields.io/github/languages/top/animadio/animadio.svg)](https://github.com/animadio/animadio)
-[![GitHub Language Count](https://img.shields.io/github/languages/count/animadio/animadio.svg)](https://github.com/animadio/animadio)
 [![GitHub License](https://img.shields.io/npm/l/animadio.svg)](https://github.com/animadio/animadio/blob/master/LICENSE)
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg)](https://animadio.org)
 [![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/animadio.svg)](https://libraries.io/npm/animadio)
@@ -82,6 +80,16 @@ The library distribution is available here :
 - `dist/min/animadio.min.css`  
 - `dist/map/animadio.css.map`  
 
+## CSS Only
+
+[![GitHub Top Language](https://img.shields.io/github/languages/top/animadio/animadio.svg)](https://github.com/animadio/animadio)
+[![GitHub Language Count](https://img.shields.io/github/languages/count/animadio/animadio.svg)](https://github.com/animadio/animadio)
+
+Animadio is a CSS Framework, made to be be used only with the CSS language : jQuery, or even Javascript are not included or needed in production...
+
+Grunt is the only JavaScript app used in developement side for recursive tasks (concat, source map, webkit & min) to build the library file.
+
+You can simply use the library & if you want or if you need : you can overload the CSS variables.
 
 ## Open-Source
 - [GitHub : animadio](https://github.com/animadio)
