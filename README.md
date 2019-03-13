@@ -173,7 +173,7 @@ Animadio needs you if you like it : sends pull requests on GitHub to improve it 
 
 Animadio is maintained under the [Semantic Versioning 2.0.0](https://semver.org)
 
-[![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=GitHub%20Version)](https://github.com/animadio/animadio/blob/master/package.json)
+[![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=GitHub+Version)](https://github.com/animadio/animadio/blob/master/package.json)
 
 ---
 
