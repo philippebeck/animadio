@@ -49,11 +49,11 @@ Controls by Radio Buttons - No JavaScript needed
 
 unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unpkg.com/animadio/dist/min/animadio.min.css)  
 
-[![jsDelivr Montly Downloads](https://data.jsdelivr.com/v1/package/npm/animadio/badge)](https://www.jsdelivr.com/package/npm/animadio)
+---
 
 jsDelivr (choose file & version) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist](https://cdn.jsdelivr.net/npm/animadio@latest/dist)  
 
-**Install** :
+[![Packagist Version](https://img.shields.io/packagist/v/animadio/animadio.svg?label=Packagist)](https://packagist.org/packages/animadio/animadio)
 
 [![NPM Version](https://img.shields.io/npm/v/animadio.svg)](https://www.npmjs.com/package/animadio)
 
@@ -64,7 +64,10 @@ Yarn : `yarn add animadio`
 
 Meteor : `meteor add animadio:animadio` 
 
-[![Packagist Version](https://img.shields.io/packagist/v/animadio/animadio.svg)](https://packagist.org/packages/animadio/animadio)
+[![jsDelivr Daily Downloads](https://img.shields.io/jsdelivr/npm/hd/animadio.svg?label=Daily+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
+[![jsDelivr Weekly Downloads](https://img.shields.io/jsdelivr/npm/hw/animadio.svg?label=Weekly+Dwonloads)](https://www.jsdelivr.com/package/npm/animadio)
+[![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
+[![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=Yearly+Dwonloads)](https://www.jsdelivr.com/package/npm/animadio)
 
 Composer : `composer require animadio/animadio`  
  
