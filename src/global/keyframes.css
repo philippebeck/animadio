@@ -18,100 +18,100 @@
 
 /***** Keyframes Variables *****/
 :root {
-    --rotate: rotate(-360deg);
-    --rotateX: rotateX(-360deg);
-    --rotateY: rotateY(-360deg);
-    --scale: scale(0);
-    --scaleX: scaleX(0);
-    --scaleY: scaleY(0);
-    --skew: skew(180deg, 180deg);
-    --skewX: skewX(180deg);
-    --skewY: skewY(180deg);
-    --translate: translate(-100vw, -100vh);
-    --translateX: translateX(-100vw);
-    --translateY: translateY(-100vh);
+  --rotate: rotate(-360deg);
+  --rotateX: rotateX(-360deg);
+  --rotateY: rotateY(-360deg);
+  --scale: scale(0);
+  --scaleX: scaleX(0);
+  --scaleY: scaleY(0);
+  --skew: skew(180deg, 180deg);
+  --skewX: skewX(180deg);
+  --skewY: skewY(180deg);
+  --translate: translate(-100vw, -100vh);
+  --translateX: translateX(-100vw);
+  --translateY: translateY(-100vh);
 }
 
 /***** Rotate *****/
 @keyframes rotate {
-    to {
-        transform: var(--rotate);
-    }
+  to {
+    transform: var(--rotate);
+  }
 }
 
 /***** RotateX *****/
 @keyframes rotateX {
-    to {
-        transform: var(--rotateX);
-    }
+  to {
+    transform: var(--rotateX);
+  }
 }
 
 /***** RotateY *****/
 @keyframes rotateY {
-    to {
-        transform: var(--rotateY);
-    }
+  to {
+    transform: var(--rotateY);
+  }
 }
 
 /***** Scale *****/
 @keyframes scale {
-    to {
-        transform: var(--scale);
-    }
+  to {
+    transform: var(--scale);
+  }
 }
 
 /***** ScaleX *****/
 @keyframes scaleX {
-    to {
-        transform: var(--scaleX);
-    }
+  to {
+    transform: var(--scaleX);
+  }
 }
 
 /***** ScaleY *****/
 @keyframes scaleY {
-    to {
-        transform: var(--scaleY);
-    }
+  to {
+    transform: var(--scaleY);
+  }
 }
 
 /***** Skew *****/
 @keyframes skew {
-    to {
-        transform: var(--skew);
-    }
+  to {
+    transform: var(--skew);
+  }
 }
 
 /***** SkewX *****/
 @keyframes skewX {
-    to {
-        transform: var(--skewX);
-    }
+  to {
+    transform: var(--skewX);
+  }
 }
 
 /***** SkewY *****/
 @keyframes skewY {
-    to {
-        transform: var(--skewY);
-    }
+  to {
+    transform: var(--skewY);
+  }
 }
 
 /***** Translate *****/
 @keyframes translate {
-    to {
-        transform: var(--translate);
-    }
+  to {
+    transform: var(--translate);
+  }
 }
 
 /***** TranslateX *****/
 @keyframes translateX {
-    to {
-        transform: var(--translateX);
-    }
+  to {
+    transform: var(--translateX);
+  }
 }
 
 /***** TranslateY *****/
 @keyframes translateY {
-    to {
-        transform: var(--translateY);
-    }
+  to {
+    transform: var(--translateY);
+  }
 }

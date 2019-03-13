@@ -11,17 +11,17 @@
 
 /***** Bord Variables *****/
 [class*="bord"] {
-    --bord-global-style: solid;
-    --bord-global-width: medium;
-    --bord-global-color: black;
-    --bord-global-radius: 20px;
-    --bord-width-sm: thin;
-    --bord-width-md: medium;
-    --bord-width-lg: thick;
-    --bord-radius-slight: 10px;
-    --bord-radius-round: 50px;
-    --bord-radius-circle: 50%;
-    --bord-radius-ellipse: 50% / 25%;
+  --bord-global-style: solid;
+  --bord-global-width: medium;
+  --bord-global-color: black;
+  --bord-global-radius: 20px;
+  --bord-width-sm: thin;
+  --bord-width-md: medium;
+  --bord-width-lg: thick;
+  --bord-radius-slight: 10px;
+  --bord-radius-round: 50px;
+  --bord-radius-circle: 50%;
+  --bord-radius-ellipse: 50% / 25%;
 }
 
 /***** Bord *****/
@@ -40,10 +40,10 @@
 [class*="bord"][class*="fromall"] > *:hover,
 [class*="bord"][class*="fromall"] > *:focus,
 [class*="bord"][class*="fromall"] > *:active {
-    border-style: var(--bord-global-style);
-    border-width: var(--bord-global-width);
-    border-color: var(--bord-global-color);
-    border-radius: var(--bord-global-radius);
+  border-style: var(--bord-global-style);
+  border-width: var(--bord-global-width);
+  border-color: var(--bord-global-color);
+  border-radius: var(--bord-global-radius);
 }
 
 /***** Bord Styles *****/
@@ -62,7 +62,7 @@
 [class*="bord"][class*="fromall"][class*="dashed"] > *:hover,
 [class*="bord"][class*="fromall"][class*="dashed"] > *:focus,
 [class*="bord"][class*="fromall"][class*="dashed"] > *:active {
-    border-style: dashed;
+  border-style: dashed;
 }
 
 [class*="bord"][class*="tio"][class*="dotted"],
@@ -80,7 +80,7 @@
 [class*="bord"][class*="fromall"][class*="dotted"] > *:hover,
 [class*="bord"][class*="fromall"][class*="dotted"] > *:focus,
 [class*="bord"][class*="fromall"][class*="dotted"] > *:active {
-    border-style: dotted;
+  border-style: dotted;
 }
 
 [class*="bord"][class*="tio"][class*="double"],
@@ -98,7 +98,7 @@
 [class*="bord"][class*="fromall"][class*="double"] > *:hover,
 [class*="bord"][class*="fromall"][class*="double"] > *:focus,
 [class*="bord"][class*="fromall"][class*="double"] > *:active {
-    border-style: double;
+  border-style: double;
 }
 
 [class*="bord"][class*="tio"][class*="groove"],
@@ -116,7 +116,7 @@
 [class*="bord"][class*="fromall"][class*="groove"] > *:hover,
 [class*="bord"][class*="fromall"][class*="groove"] > *:focus,
 [class*="bord"][class*="fromall"][class*="groove"] > *:active {
-    border-style: groove;
+  border-style: groove;
 }
 
 [class*="bord"][class*="tio"][class*="inset"],
@@ -134,7 +134,7 @@
 [class*="bord"][class*="fromall"][class*="inset"] > *:hover,
 [class*="bord"][class*="fromall"][class*="inset"] > *:focus,
 [class*="bord"][class*="fromall"][class*="inset"] > *:active {
-    border-style: inset;
+  border-style: inset;
 }
 
 [class*="bord"][class*="tio"][class*="outset"],
@@ -152,7 +152,7 @@
 [class*="bord"][class*="fromall"][class*="outset"] > *:hover,
 [class*="bord"][class*="fromall"][class*="outset"] > *:focus,
 [class*="bord"][class*="fromall"][class*="outset"] > *:active {
-    border-style: outset;
+  border-style: outset;
 }
 
 [class*="bord"][class*="tio"][class*="ridge"],
@@ -170,7 +170,7 @@
 [class*="bord"][class*="fromall"][class*="ridge"] > *:hover,
 [class*="bord"][class*="fromall"][class*="ridge"] > *:focus,
 [class*="bord"][class*="fromall"][class*="ridge"] > *:active {
-    border-style: ridge;
+  border-style: ridge;
 }
 
 [class*="bord"][class*="tio"][class*="solid"],
@@ -188,7 +188,7 @@
 [class*="bord"][class*="fromall"][class*="solid"] > *:hover,
 [class*="bord"][class*="fromall"][class*="solid"] > *:focus,
 [class*="bord"][class*="fromall"][class*="solid"] > *:active {
-    border-style: solid;
+  border-style: solid;
 }
 
 /***** Bord Widths *****/
@@ -207,7 +207,7 @@
 [class*="bord"][class*="fromall"][class*="sm"] > *:hover,
 [class*="bord"][class*="fromall"][class*="sm"] > *:focus,
 [class*="bord"][class*="fromall"][class*="sm"] > *:active {
-    border-width: var(--bord-width-sm);
+  border-width: var(--bord-width-sm);
 }
 
 [class*="bord"][class*="tio"][class*="md"],
@@ -225,7 +225,7 @@
 [class*="bord"][class*="fromall"][class*="md"] > *:hover,
 [class*="bord"][class*="fromall"][class*="md"] > *:focus,
 [class*="bord"][class*="fromall"][class*="md"] > *:active {
-    border-width: var(--bord-width-md);
+  border-width: var(--bord-width-md);
 }
 
 [class*="bord"][class*="tio"][class*="lg"],
@@ -243,7 +243,7 @@
 [class*="bord"][class*="fromall"][class*="lg"] > *:hover,
 [class*="bord"][class*="fromall"][class*="lg"] > *:focus,
 [class*="bord"][class*="fromall"][class*="lg"] > *:active {
-    border-width: var(--bord-width-lg);
+  border-width: var(--bord-width-lg);
 }
 
 /***** Bord Colors *****/
@@ -262,7 +262,7 @@
 [class*="bord"][class*="fromall"][class*="black"] > *:hover,
 [class*="bord"][class*="fromall"][class*="black"] > *:focus,
 [class*="bord"][class*="fromall"][class*="black"] > *:active {
-    border-color: black;
+  border-color: black;
 }
 
 [class*="bord"][class*="tio"][class*="blue"],
@@ -280,7 +280,7 @@
 [class*="bord"][class*="fromall"][class*="blue"] > *:hover,
 [class*="bord"][class*="fromall"][class*="blue"] > *:focus,
 [class*="bord"][class*="fromall"][class*="blue"] > *:active {
-    border-color: var(--blue);
+  border-color: var(--blue);
 }
 
 [class*="bord"][class*="tio"][class*="brown"],
@@ -298,7 +298,7 @@
 [class*="bord"][class*="fromall"][class*="brown"] > *:hover,
 [class*="bord"][class*="fromall"][class*="brown"] > *:focus,
 [class*="bord"][class*="fromall"][class*="brown"] > *:active {
-    border-color: var(--brown);
+  border-color: var(--brown);
 }
 
 [class*="bord"][class*="tio"][class*="gray"],
@@ -316,7 +316,7 @@
 [class*="bord"][class*="fromall"][class*="gray"] > *:hover,
 [class*="bord"][class*="fromall"][class*="gray"] > *:focus,
 [class*="bord"][class*="fromall"][class*="gray"] > *:active {
-    border-color: var(--gray);
+  border-color: var(--gray);
 }
 
 [class*="bord"][class*="tio"][class*="grey"],
@@ -334,7 +334,7 @@
 [class*="bord"][class*="fromall"][class*="grey"] > *:hover,
 [class*="bord"][class*="fromall"][class*="grey"] > *:focus,
 [class*="bord"][class*="fromall"][class*="grey"] > *:active {
-    border-color: var(--grey);
+  border-color: var(--grey);
 }
 
 [class*="bord"][class*="tio"][class*="green"],
@@ -352,7 +352,7 @@
 [class*="bord"][class*="fromall"][class*="green"] > *:hover,
 [class*="bord"][class*="fromall"][class*="green"] > *:focus,
 [class*="bord"][class*="fromall"][class*="green"] > *:active {
-    border-color: var(--green);
+  border-color: var(--green);
 }
 
 [class*="bord"][class*="tio"][class*="orange"],
@@ -370,7 +370,7 @@
 [class*="bord"][class*="fromall"][class*="orange"] > *:hover,
 [class*="bord"][class*="fromall"][class*="orange"] > *:focus,
 [class*="bord"][class*="fromall"][class*="orange"] > *:active {
-    border-color: var(--orange);
+  border-color: var(--orange);
 }
 
 [class*="bord"][class*="tio"][class*="red"],
@@ -388,7 +388,7 @@
 [class*="bord"][class*="fromall"][class*="red"] > *:hover,
 [class*="bord"][class*="fromall"][class*="red"] > *:focus,
 [class*="bord"][class*="fromall"][class*="red"] > *:active {
-    border-color: var(--red);
+  border-color: var(--red);
 }
 
 [class*="bord"][class*="tio"][class*="violet"],
@@ -406,7 +406,7 @@
 [class*="bord"][class*="fromall"][class*="violet"] > *:hover,
 [class*="bord"][class*="fromall"][class*="violet"] > *:focus,
 [class*="bord"][class*="fromall"][class*="violet"] > *:active {
-    border-color: var(--violet);
+  border-color: var(--violet);
 }
 
 [class*="bord"][class*="tio"][class*="white"],
@@ -424,7 +424,7 @@
 [class*="bord"][class*="fromall"][class*="white"] > *:hover,
 [class*="bord"][class*="fromall"][class*="white"] > *:focus,
 [class*="bord"][class*="fromall"][class*="white"] > *:active {
-    border-color: var(--white);
+  border-color: var(--white);
 }
 
 [class*="bord"][class*="tio"][class*="yellow"],
@@ -442,7 +442,7 @@
 [class*="bord"][class*="fromall"][class*="yellow"] > *:hover,
 [class*="bord"][class*="fromall"][class*="yellow"] > *:focus,
 [class*="bord"][class*="fromall"][class*="yellow"] > *:active {
-    border-color: var(--yellow);
+  border-color: var(--yellow);
 }
 
 /***** Bord Radius *****/
@@ -461,7 +461,7 @@
 [class*="bord"][class*="fromall"][class*="slight"] > *:hover,
 [class*="bord"][class*="fromall"][class*="slight"] > *:focus,
 [class*="bord"][class*="fromall"][class*="slight"] > *:active {
-    border-radius: var(--bord-radius-slight);
+  border-radius: var(--bord-radius-slight);
 }
 
 [class*="bord"][class*="tio"][class*="round"],
@@ -479,7 +479,7 @@
 [class*="bord"][class*="fromall"][class*="round"] > *:hover,
 [class*="bord"][class*="fromall"][class*="round"] > *:focus,
 [class*="bord"][class*="fromall"][class*="round"] > *:active {
-    border-radius: var(--bord-radius-round);
+  border-radius: var(--bord-radius-round);
 }
 
 [class*="bord"][class*="tio"][class*="circle"],
@@ -497,7 +497,7 @@
 [class*="bord"][class*="fromall"][class*="circle"] > *:hover,
 [class*="bord"][class*="fromall"][class*="circle"] > *:focus,
 [class*="bord"][class*="fromall"][class*="circle"] > *:active {
-    border-radius: var(--bord-radius-circle);
+  border-radius: var(--bord-radius-circle);
 }
 
 [class*="bord"][class*="tio"][class*="ellipse"],
@@ -515,5 +515,5 @@
 [class*="bord"][class*="fromall"][class*="ellipse"] > *:hover,
 [class*="bord"][class*="fromall"][class*="ellipse"] > *:focus,
 [class*="bord"][class*="fromall"][class*="ellipse"] > *:active {
-    border-radius: var(--bord-radius-ellipse);
+  border-radius: var(--bord-radius-ellipse);
 }

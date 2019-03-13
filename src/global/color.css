@@ -8,25 +8,25 @@
 
 /***** Color Variables *****/
 :root {
-    --blue: RoyalBlue;
-    --brown: Sienna;
-    --gray: DarkGray;
-    --grey: LightGrey;
-    --green: SeaGreen;
-    --orange: DarkOrange;
-    --red: IndianRed;
-    --violet: BlueViolet;
-    --white: Ivory;
-    --yellow: Khaki;
-    --facebook: #4267b2;
-    --freecodecamp: #006400;
-    --github: #24292e;
-    --linkedin: #0077b5;
-    --medium: #029e74;
-    --npm: #c12127;
-    --packagist: #f28d1a;
-    --stackoverflow: #f48024;
-    --twitter: #1da1f2;
+  --blue: RoyalBlue;
+  --brown: Sienna;
+  --gray: DarkGray;
+  --grey: LightGrey;
+  --green: SeaGreen;
+  --orange: DarkOrange;
+  --red: IndianRed;
+  --violet: BlueViolet;
+  --white: Ivory;
+  --yellow: Khaki;
+  --facebook: #4267b2;
+  --freecodecamp: #006400;
+  --github: #24292e;
+  --linkedin: #0077b5;
+  --medium: #029e74;
+  --npm: #c12127;
+  --packagist: #f28d1a;
+  --stackoverflow: #f48024;
+  --twitter: #1da1f2;
 }
 
 /***** Colors *****/
@@ -45,7 +45,7 @@
 [class*="text"][class*="fromall"][class*="black"] > *:hover,
 [class*="text"][class*="fromall"][class*="black"] > *:focus,
 [class*="text"][class*="fromall"][class*="black"] > *:active {
-    color: black;
+  color: black;
 }
 
 [class*="text"][class*="tio"][class*="blue"],
@@ -63,7 +63,7 @@
 [class*="text"][class*="fromall"][class*="blue"] > *:hover,
 [class*="text"][class*="fromall"][class*="blue"] > *:focus,
 [class*="text"][class*="fromall"][class*="blue"] > *:active {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 [class*="text"][class*="tio"][class*="brown"],
@@ -81,7 +81,7 @@
 [class*="text"][class*="fromall"][class*="brown"] > *:hover,
 [class*="text"][class*="fromall"][class*="brown"] > *:focus,
 [class*="text"][class*="fromall"][class*="brown"] > *:active {
-    color: var(--brown);
+  color: var(--brown);
 }
 
 [class*="text"][class*="tio"][class*="gray"],
@@ -99,7 +99,7 @@
 [class*="text"][class*="fromall"][class*="gray"] > *:hover,
 [class*="text"][class*="fromall"][class*="gray"] > *:focus,
 [class*="text"][class*="fromall"][class*="gray"] > *:active {
-    color: var(--gray);
+  color: var(--gray);
 }
 
 [class*="text"][class*="tio"][class*="grey"],
@@ -117,7 +117,7 @@
 [class*="text"][class*="fromall"][class*="grey"] > *:hover,
 [class*="text"][class*="fromall"][class*="grey"] > *:focus,
 [class*="text"][class*="fromall"][class*="grey"] > *:active {
-    color: var(--grey);
+  color: var(--grey);
 }
 
 [class*="text"][class*="tio"][class*="green"],
@@ -135,7 +135,7 @@
 [class*="text"][class*="fromall"][class*="green"] > *:hover,
 [class*="text"][class*="fromall"][class*="green"] > *:focus,
 [class*="text"][class*="fromall"][class*="green"] > *:active {
-    color: var(--green);
+  color: var(--green);
 }
 
 [class*="text"][class*="tio"][class*="orange"],
@@ -153,7 +153,7 @@
 [class*="text"][class*="fromall"][class*="orange"] > *:hover,
 [class*="text"][class*="fromall"][class*="orange"] > *:focus,
 [class*="text"][class*="fromall"][class*="orange"] > *:active {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 [class*="text"][class*="tio"][class*="red"],
@@ -171,7 +171,7 @@
 [class*="text"][class*="fromall"][class*="red"] > *:hover,
 [class*="text"][class*="fromall"][class*="red"] > *:focus,
 [class*="text"][class*="fromall"][class*="red"] > *:active {
-    color: var(--red);
+  color: var(--red);
 }
 
 [class*="text"][class*="tio"][class*="violet"],
@@ -189,7 +189,7 @@
 [class*="text"][class*="fromall"][class*="violet"] > *:hover,
 [class*="text"][class*="fromall"][class*="violet"] > *:focus,
 [class*="text"][class*="fromall"][class*="violet"] > *:active {
-    color: var(--violet);
+  color: var(--violet);
 }
 
 [class*="text"][class*="tio"][class*="white"],
@@ -207,7 +207,7 @@
 [class*="text"][class*="fromall"][class*="white"] > *:hover,
 [class*="text"][class*="fromall"][class*="white"] > *:focus,
 [class*="text"][class*="fromall"][class*="white"] > *:active {
-    color: var(--white);
+  color: var(--white);
 }
 
 [class*="text"][class*="tio"][class*="yellow"],
@@ -225,7 +225,7 @@
 [class*="text"][class*="fromall"][class*="yellow"] > *:hover,
 [class*="text"][class*="fromall"][class*="yellow"] > *:focus,
 [class*="text"][class*="fromall"][class*="yellow"] > *:active {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 /***** Background Colors *****/
@@ -244,7 +244,7 @@
 [class*="bg"][class*="fromall"][class*="black"] > *:hover,
 [class*="bg"][class*="fromall"][class*="black"] > *:focus,
 [class*="bg"][class*="fromall"][class*="black"] > *:active {
-    background-color: black;
+  background-color: black;
 }
 
 [class*="bg"][class*="tio"][class*="blue"],
@@ -262,7 +262,7 @@
 [class*="bg"][class*="fromall"][class*="blue"] > *:hover,
 [class*="bg"][class*="fromall"][class*="blue"] > *:focus,
 [class*="bg"][class*="fromall"][class*="blue"] > *:active {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 [class*="bg"][class*="tio"][class*="brown"],
@@ -280,7 +280,7 @@
 [class*="bg"][class*="fromall"][class*="brown"] > *:hover,
 [class*="bg"][class*="fromall"][class*="brown"] > *:focus,
 [class*="bg"][class*="fromall"][class*="brown"] > *:active {
-    background-color: var(--brown);
+  background-color: var(--brown);
 }
 
 [class*="bg"][class*="tio"][class*="gray"],
@@ -298,7 +298,7 @@
 [class*="bg"][class*="fromall"][class*="gray"] > *:hover,
 [class*="bg"][class*="fromall"][class*="gray"] > *:focus,
 [class*="bg"][class*="fromall"][class*="gray"] > *:active {
-    background-color: var(--gray);
+  background-color: var(--gray);
 }
 
 [class*="bg"][class*="tio"][class*="grey"],
@@ -316,7 +316,7 @@
 [class*="bg"][class*="fromall"][class*="grey"] > *:hover,
 [class*="bg"][class*="fromall"][class*="grey"] > *:focus,
 [class*="bg"][class*="fromall"][class*="grey"] > *:active {
-    background-color: var(--grey);
+  background-color: var(--grey);
 }
 
 [class*="bg"][class*="tio"][class*="green"],
@@ -334,7 +334,7 @@
 [class*="bg"][class*="fromall"][class*="green"] > *:hover,
 [class*="bg"][class*="fromall"][class*="green"] > *:focus,
 [class*="bg"][class*="fromall"][class*="green"] > *:active {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 [class*="bg"][class*="tio"][class*="orange"],
@@ -352,7 +352,7 @@
 [class*="bg"][class*="fromall"][class*="orange"] > *:hover,
 [class*="bg"][class*="fromall"][class*="orange"] > *:focus,
 [class*="bg"][class*="fromall"][class*="orange"] > *:active {
-    background-color: var(--orange);
+  background-color: var(--orange);
 }
 
 [class*="bg"][class*="tio"][class*="red"],
@@ -370,7 +370,7 @@
 [class*="bg"][class*="fromall"][class*="red"] > *:hover,
 [class*="bg"][class*="fromall"][class*="red"] > *:focus,
 [class*="bg"][class*="fromall"][class*="red"] > *:active {
-    background-color: var(--red);
+  background-color: var(--red);
 }
 
 [class*="bg"][class*="tio"][class*="violet"],
@@ -388,7 +388,7 @@
 [class*="bg"][class*="fromall"][class*="violet"] > *:hover,
 [class*="bg"][class*="fromall"][class*="violet"] > *:focus,
 [class*="bg"][class*="fromall"][class*="violet"] > *:active {
-    background-color: var(--violet);
+  background-color: var(--violet);
 }
 
 [class*="bg"][class*="tio"][class*="white"],
@@ -406,7 +406,7 @@
 [class*="bg"][class*="fromall"][class*="white"] > *:hover,
 [class*="bg"][class*="fromall"][class*="white"] > *:focus,
 [class*="bg"][class*="fromall"][class*="white"] > *:active {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 
 [class*="bg"][class*="tio"][class*="yellow"],
@@ -424,5 +424,5 @@
 [class*="bg"][class*="fromall"][class*="yellow"] > *:hover,
 [class*="bg"][class*="fromall"][class*="yellow"] > *:focus,
 [class*="bg"][class*="fromall"][class*="yellow"] > *:active {
-    background-color: var(--yellow);
+  background-color: var(--yellow);
 }

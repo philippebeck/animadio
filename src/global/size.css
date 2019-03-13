@@ -13,122 +13,122 @@
 
 /***** Height Variables *****/
 [class*="height"] {
-    --height-sm: 10vh;
-    --height-md: 50vh;
-    --height-lg: 100vh;
-    --max-height-sm: 50vh;
-    --max-height-md: 75vh;
-    --max-height-lg: 100vh;
-    --min-height-sm: 25vh;
-    --min-height-md: 50vh;
-    --min-height-lg: 75vh;
+  --height-sm: 10vh;
+  --height-md: 50vh;
+  --height-lg: 100vh;
+  --max-height-sm: 50vh;
+  --max-height-md: 75vh;
+  --max-height-lg: 100vh;
+  --min-height-sm: 25vh;
+  --min-height-md: 50vh;
+  --min-height-lg: 75vh;
 }
 
 /***** Height *****/
 [class*="height"][class*="tio"][class*="sm"],
 [class*="height"][class*="toall"][class*="sm"] > * {
-    height: var(--height-sm);
+  height: var(--height-sm);
 }
 
 [class*="height"][class*="tio"][class*="md"],
 [class*="height"][class*="toall"][class*="md"] > * {
-    height: var(--height-md);
+  height: var(--height-md);
 }
 
 [class*="height"][class*="tio"][class*="lg"],
 [class*="height"][class*="toall"][class*="lg"] > * {
-    height: var(--height-lg);
+  height: var(--height-lg);
 }
 
 /***** Min Height *****/
 [class*="height"][class*="min"][class*="tio"][class*="sm"],
 [class*="height"][class*="min"][class*="toall"][class*="sm"] > * {
-    min-height: var(--min-height-sm);
+  min-height: var(--min-height-sm);
 }
 
 [class*="height"][class*="min"][class*="tio"][class*="md"],
 [class*="height"][class*="min"][class*="toall"][class*="md"] > * {
-    min-height: var(--min-height-md);
+  min-height: var(--min-height-md);
 }
 
 [class*="height"][class*="min"][class*="tio"][class*="lg"],
 [class*="height"][class*="min"][class*="toall"][class*="lg"] > * {
-    min-height: var(--min-height-lg);
+  min-height: var(--min-height-lg);
 }
 
 /***** Max Height *****/
 [class*="height"][class*="max"][class*="tio"][class*="sm"],
 [class*="height"][class*="max"][class*="toall"][class*="sm"] > * {
-    max-height: var(--max-height-sm);
+  max-height: var(--max-height-sm);
 }
 
 [class*="height"][class*="max"][class*="tio"][class*="md"],
 [class*="height"][class*="max"][class*="toall"][class*="md"] > * {
-    max-height: var(--max-height-md);
+  max-height: var(--max-height-md);
 }
 
 [class*="height"][class*="max"][class*="tio"][class*="lg"],
 [class*="height"][class*="max"][class*="toall"][class*="lg"] > * {
-    max-height: var(--max-height-lg);
+  max-height: var(--max-height-lg);
 }
 
 /***** Width Variables *****/
 [class*="width"] {
-    --width-sm: 25%;
-    --width-md: 50%;
-    --width-lg: 100%;
-    --max-width-sm: 50%;
-    --max-width-md: 75%;
-    --max-width-lg: 100%;
-    --min-width-sm: 25%;
-    --min-width-md: 50%;
-    --min-width-lg: 75%;
+  --width-sm: 25%;
+  --width-md: 50%;
+  --width-lg: 100%;
+  --max-width-sm: 50%;
+  --max-width-md: 75%;
+  --max-width-lg: 100%;
+  --min-width-sm: 25%;
+  --min-width-md: 50%;
+  --min-width-lg: 75%;
 }
 
 /***** Width *****/
 [class*="width"][class*="tio"][class*="sm"],
 [class*="width"][class*="toall"][class*="sm"] > * {
-    width: var(--width-sm);
+  width: var(--width-sm);
 }
 
 [class*="width"][class*="tio"][class*="md"],
 [class*="width"][class*="toall"][class*="md"] > * {
-    width: var(--width-md);
+  width: var(--width-md);
 }
 
 [class*="width"][class*="tio"][class*="lg"],
 [class*="width"][class*="toall"][class*="lg"] > * {
-    width: var(--width-lg);
+  width: var(--width-lg);
 }
 
 /***** Min Width *****/
 [class*="width"][class*="min"][class*="tio"][class*="sm"],
 [class*="width"][class*="min"][class*="toall"][class*="sm"] > * {
-    min-width: var(--min-width-sm);
+  min-width: var(--min-width-sm);
 }
 
 [class*="width"][class*="min"][class*="tio"][class*="md"],
 [class*="width"][class*="min"][class*="toall"][class*="md"] > * {
-    min-width: var(--min-width-md);
+  min-width: var(--min-width-md);
 }
 
 [class*="width"][class*="min"][class*="tio"][class*="lg"],
 [class*="width"][class*="min"][class*="toall"][class*="lg"] > * {
-    min-width: var(--min-width-lg);
+  min-width: var(--min-width-lg);
 }
 
 /***** Max Width *****/
 [class*="width"][class*="max"][class*="tio"][class*="sm"],
 [class*="width"][class*="max"][class*="toall"][class*="sm"] > * {
-    max-width: var(--max-width-sm);
+  max-width: var(--max-width-sm);
 }
 
 [class*="width"][class*="max"][class*="tio"][class*="md"],
 [class*="width"][class*="max"][class*="toall"][class*="md"] > * {
-    max-width: var(--max-width-md);
+  max-width: var(--max-width-md);
 }
 
 [class*="width"][class*="max"][class*="tio"][class*="lg"],
 [class*="width"][class*="max"][class*="toall"][class*="lg"] > * {
-    max-width: var(--max-width-lg);
+  max-width: var(--max-width-lg);
 }

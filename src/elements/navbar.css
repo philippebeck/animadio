@@ -13,23 +13,23 @@
 
 /***** Navbar Variables *****/
 .nav-brand {
-    --nav-brand-img-height: 20px;
+  --nav-brand-img-height: 20px;
 }
 
 .nav-main {
-    --nav-main-alignitems: center;
-    --nav-main-mar: 0;
-    --nav-main-pad: 0;
-    --nav-main-span-display: none;
-    --nav-main-span-display-md: inline;
+  --nav-main-alignitems: center;
+  --nav-main-mar: 0;
+  --nav-main-pad: 0;
+  --nav-main-span-display: none;
+  --nav-main-span-display-md: inline;
 }
 
 .nav-user {
-    --nav-user-p-display: none;
-    --nav-user-img-mar: 1px;
-    --nav-user-height: 25px;
-    --nav-user-p-display-wd: block;
-    --nav-user-p-maright-wd: 10px;
+  --nav-user-p-display: none;
+  --nav-user-img-mar: 1px;
+  --nav-user-height: 25px;
+  --nav-user-p-display-wd: block;
+  --nav-user-p-maright-wd: 10px;
 }
 
 /***** Navbar Global *****/
@@ -38,150 +38,150 @@
 .nav-user,
 .main-nav a,
 .nav-user a {
-    display: flex;
+  display: flex;
 }
 
 .nav-main,
 .nav-user {
-    align-items: var(--nav-main-alignitems);
-    margin: var(--nav-main-mar);
-    padding: var(--nav-main-pad);
-    list-style: none;
+  align-items: var(--nav-main-alignitems);
+  margin: var(--nav-main-mar);
+  padding: var(--nav-main-pad);
+  list-style: none;
 }
 
 /***** Navbar *****/
 .navbar {
-    --navbar-alignitems: center;
-    --navbar-height: 10vh;
-    --navbar-bgcolor: var(--blue);
-    --navbar-color: var(--white);
-    --navbar-flexdirection-sm: row;
-    --navbar-justifycontent-tn: space-between;
-    --navbar-justifycontent-sm: space-content;
-    --navbar-justifycontent-md: space-evenly;
-    --navbar-pad-sm: 10px;
-    --navbar-a-pad: 10px;
-    --navbar-a-scale: 1.1;
-    --navbar-i-alignself: center;
+  --navbar-alignitems: center;
+  --navbar-height: 10vh;
+  --navbar-bgcolor: var(--blue);
+  --navbar-color: var(--white);
+  --navbar-flexdirection-sm: row;
+  --navbar-justifycontent-tn: space-between;
+  --navbar-justifycontent-sm: space-content;
+  --navbar-justifycontent-md: space-evenly;
+  --navbar-pad-sm: 10px;
+  --navbar-a-pad: 10px;
+  --navbar-a-scale: 1.1;
+  --navbar-i-alignself: center;
 
-    align-items: var(--navbar-alignitems);
-    height: var(--navbar-height);
-    background-color: var(--navbar-bgcolor);
-    color: var(--navbar-color);
-    justify-content: var(--navbar-justifycontent-tn);
+  align-items: var(--navbar-alignitems);
+  height: var(--navbar-height);
+  background-color: var(--navbar-bgcolor);
+  color: var(--navbar-color);
+  justify-content: var(--navbar-justifycontent-tn);
 }
 
 .navbar a {
-    padding: var(--navbar-a-pad);
-    color: var(--white);
+  padding: var(--navbar-a-pad);
+  color: var(--white);
 }
 
 .nav-main a,
 .nav-user a {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .navbar a:hover,
 .navbar a:focus,
 .navbar a:active {
-    color: var(--yellow);
-    transform: scale(var(--navbar-a-scale));
+  color: var(--yellow);
+  transform: scale(var(--navbar-a-scale));
 }
 
 .navbar i {
-    align-self: var(--navbar-i-alignself);
+  align-self: var(--navbar-i-alignself);
 }
 
 /***** Nav Brand, Main & User *****/
 .nav-brand img,
 .nav-brand svg {
-    height: var(--nav-brand-img-height);
+  height: var(--nav-brand-img-height);
 }
 
 .main-nav span {
-    display: var(--nav-main-span-display);
+  display: var(--nav-main-span-display);
 }
 
 .nav-user p {
-    display: var(--nav-user-p-display);
+  display: var(--nav-user-p-display);
 }
 
 .nav-user img,
 .nav-user svg {
-    margin: var(--nav-user-img-mar);
-    height: var(--nav-user-height);
+  margin: var(--nav-user-img-mar);
+  height: var(--nav-user-height);
 }
 
 /***** Navbar Small *****/
 @media (min-width: 576px) {
-    .navbar {
-        flex-direction: var(--navbar-flexdirection-sm);
-        justify-content: var(--navbar-justifycontent-sm);
-        padding: var(--navbar-pad-sm);
-    }
+  .navbar {
+    flex-direction: var(--navbar-flexdirection-sm);
+    justify-content: var(--navbar-justifycontent-sm);
+    padding: var(--navbar-pad-sm);
+  }
 
-    .nav-brand img,
-    .nav-brand svg {
-        height: calc(var(--nav-brand-img-height) * 1.25);
-    }
+  .nav-brand img,
+  .nav-brand svg {
+    height: calc(var(--nav-brand-img-height) * 1.25);
+  }
 
-    .nav-user img,
-    .nav-user svg {
-        margin: calc(var(--nav-user-img-mar) * 2);
-        height: calc(var(--nav-user-height) * 1.25);
-    }
+  .nav-user img,
+  .nav-user svg {
+    margin: calc(var(--nav-user-img-mar) * 2);
+    height: calc(var(--nav-user-height) * 1.25);
+  }
 }
 
 /***** Navbar Medium *****/
 @media (min-width: 768px) {
-    .navbar {
-        justify-content: var(--navbar-justifycontent-md);
-    }
+  .navbar {
+    justify-content: var(--navbar-justifycontent-md);
+  }
 
-    .nav-brand img,
-    .nav-brand svg {
-        height: calc(var(--nav-brand-img-height) * 1.5);
-    }
+  .nav-brand img,
+  .nav-brand svg {
+    height: calc(var(--nav-brand-img-height) * 1.5);
+  }
 
-    .main-nav span {
-        display: var(--nav-main-span-display-md);
-    }
+  .main-nav span {
+    display: var(--nav-main-span-display-md);
+  }
 
-    .nav-user img,
-    .nav-user svg {
-        margin: calc(var(--nav-user-img-mar) * 3);
-        height: calc(var(--nav-user-height) * 1.5);
-    }
+  .nav-user img,
+  .nav-user svg {
+    margin: calc(var(--nav-user-img-mar) * 3);
+    height: calc(var(--nav-user-height) * 1.5);
+  }
 }
 
 /***** Navbar Large *****/
 @media (min-width: 992px) {
-    .nav-brand img,
-    .nav-brand svg {
-        height: calc(var(--nav-brand-img-height) * 1.75);
-    }
+  .nav-brand img,
+  .nav-brand svg {
+    height: calc(var(--nav-brand-img-height) * 1.75);
+  }
 
-    .nav-user img,
-    .nav-user svg {
-        margin: calc(var(--nav-user-img-mar) * 4);
-        height: calc(var(--nav-user-height) * 1.75);
-    }
+  .nav-user img,
+  .nav-user svg {
+    margin: calc(var(--nav-user-img-mar) * 4);
+    height: calc(var(--nav-user-height) * 1.75);
+  }
 }
 
 /***** Navbar Wide *****/
 @media (min-width: 1200px) {
-    .nav-brand img,
-    .nav-brand svg {
-        height: calc(var(--nav-brand-img-height) * 2);
-    }
+  .nav-brand img,
+  .nav-brand svg {
+    height: calc(var(--nav-brand-img-height) * 2);
+  }
 
-    .nav-user img,
-    .nav-user svg {
-        margin: calc(var(--nav-user-img-mar) * 5);
-        height: calc(var(--nav-user-height) * 2);
-    }
-    .nav-user p {
-        display: var(--nav-user-p-display-wd);
-        margin-right: var(--nav-user-p-maright-wd);
-    }
+  .nav-user img,
+  .nav-user svg {
+    margin: calc(var(--nav-user-img-mar) * 5);
+    height: calc(var(--nav-user-height) * 2);
+  }
+  .nav-user p {
+    display: var(--nav-user-p-display-wd);
+    margin-right: var(--nav-user-p-maright-wd);
+  }
 }

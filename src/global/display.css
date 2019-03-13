@@ -10,82 +10,82 @@
 
 /***** Dis *****/
 [class*="dis"][class*="block"] {
-    display: block;
+  display: block;
 }
 
 [class*="dis"][class*="inbloc"] {
-    display: inline-block;
+  display: inline-block;
 }
 
 [class*="dis"][class*="inline"] {
-    display: inline;
+  display: inline;
 }
 
 [class*="dis"][class*="hidden"],
 [class*="dio"] {
-    display: none;
+  display: none;
 }
 
 /***** Pos *****/
 [class*="pos"][class*="absolute"] {
-    position: absolute;
+  position: absolute;
 }
 
 [class*="pos"][class*="fixed"] {
-    position: fixed;
+  position: fixed;
 }
 
 [class*="pos"][class*="relative"] {
-    position: relative;
+  position: relative;
 }
 
 [class*="pos"][class*="sticky"] {
-    position: sticky;
+  position: sticky;
 }
 
 /***** Flow *****/
 [class*="flow"][class*="hidden"] {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 [class*="flow"][class*="scroll"] {
-    overflow: scroll;
+  overflow: scroll;
 }
 
 /***** Container *****/
 [class*="container"] {
-    margin: auto;
+  margin: auto;
 }
 
 [class*="container"][class*="sm"] {
-    max-width: var(--max-width-sm);
+  max-width: var(--max-width-sm);
 }
 
 .container {
-    max-width: var(--max-width-md);
+  max-width: var(--max-width-md);
 }
 
 [class*="container"][class*="lg"] {
-    max-width: var(--max-width-lg);
+  max-width: var(--max-width-lg);
 }
 
 /***** Cursor *****/
 .crosshair,
 .crosshair > * {
-    cursor: crosshair;
+  cursor: crosshair;
 }
 
 .help,
 .help > * {
-    cursor: help;
+  cursor: help;
 }
 
 .forbidden,
 .forbidden > * {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 .pointer,
 .pointer > * {
-    cursor: pointer;
+  cursor: pointer;
 }
