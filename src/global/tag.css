@@ -20,7 +20,12 @@ body {
     --global-font-size: 1.5rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     --title-font-family: sans-serif;
     --title-font-size-tn: 1.5rem;
     --title-font-size-sm: 2rem;
