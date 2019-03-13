@@ -1,7 +1,7 @@
 /********** FLEX **********/
 
 /*
-1. Flex, Col & Row Variables
+1. Flex Variables
 2. Flex, Col & Row
 3. Flex Tiny
 4. Flex Small
@@ -10,14 +10,7 @@
 7. Flex Wide
 */
 
-/***** Flex, Col & Row Variables *****/
-[class*="col"] {
-    --col-pad: 0 10px;
-}
-
-[class*="row"] {
-    --row-pad: 10px 0;
-}
+/***** Flex Variables *****/
 
 [class*="flex"] {
     --flex-neg-mar-tn: -2px;
@@ -46,11 +39,13 @@
 }
 
 [class*="col"] {
+    --col-pad: 0 10px;
     flex-direction: column;
     padding: var(--col-pad);
 }
 
 [class*="row"] {
+    --row-pad: 10px 0;
     flex-direction: row;
     padding: var(--row-pad);
 }

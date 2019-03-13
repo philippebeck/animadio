@@ -12,21 +12,6 @@
 */
 
 /***** Navbar Variables *****/
-.navbar {
-    --navbar-alignitems: center;
-    --navbar-height: 10vh;
-    --navbar-bgcolor: var(--blue);
-    --navbar-color: var(--white);
-    --navbar-flexdirection-sm: row;
-    --navbar-justifycontent-tn: space-between;
-    --navbar-justifycontent-sm: space-content;
-    --navbar-justifycontent-md: space-evenly;
-    --navbar-pad-sm: 10px;
-    --navbar-a-pad: 10px;
-    --navbar-a-scale: 1.1;
-    --navbar-i-alignself: center;
-}
-
 .nav-brand {
     --nav-brand-img-height: 20px;
 }
@@ -66,6 +51,18 @@
 
 /***** Navbar *****/
 .navbar {
+    --navbar-alignitems: center;
+    --navbar-height: 10vh;
+    --navbar-bgcolor: var(--blue);
+    --navbar-color: var(--white);
+    --navbar-flexdirection-sm: row;
+    --navbar-justifycontent-tn: space-between;
+    --navbar-justifycontent-sm: space-content;
+    --navbar-justifycontent-md: space-evenly;
+    --navbar-pad-sm: 10px;
+    --navbar-a-pad: 10px;
+    --navbar-a-scale: 1.1;
+    --navbar-i-alignself: center;
     align-items: var(--navbar-alignitems);
     height: var(--navbar-height);
     background-color: var(--navbar-bgcolor);

@@ -1,36 +1,13 @@
-/**************************/
 /********** TAGS **********/
 
 /*
-1. Variables
-2. Global
-3. Titles
-4. Links
-5. Lists
-6. Medias
-7. Tables
+1. Global
+2. Titles
+3. Links
+4. Lists
+5. Medias
+6. Tables
 */
-
-/***** Variables *****/
-body {
-    --global-font-family: serif;
-    --global-line-height: 1.5;
-    --global-font-size: 1.5rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    --title-font-family: sans-serif;
-    --title-font-size-tn: 1.5rem;
-    --title-font-size-sm: 2rem;
-    --title-font-size-md: 2.5rem;
-    --title-font-size-lg: 3rem;
-    --title-font-size-wd: 3.5rem;
-}
 
 /***** Global *****/
 * {
@@ -42,6 +19,9 @@ html {
 }
 
 body {
+    --global-font-family: serif;
+    --global-line-height: 1.5;
+    --global-font-size: 1.5rem;
     margin: 0;
     padding: 0;
     line-height: var(--global-line-height);
@@ -57,29 +37,35 @@ h3,
 h4,
 h5,
 h6 {
+    --title-font-family: sans-serif;
     font-family: var(--title-font-family);
 }
 
 h1 {
+    --title-font-size-wd: 3.5rem;
     font-size: var(--title-font-size-wd);
     text-transform: uppercase;
 }
 
 h2 {
+    --title-font-size-lg: 3rem;
     font-size: var(--title-font-size-lg);
     text-transform: capitalize;
 }
 
 h3 {
+    --title-font-size-md: 2.5rem;
     font-size: var(--title-font-size-md);
 }
 
 h4 {
+    --title-font-size-sm: 2rem;
     font-size: var(--title-font-size-sm);
 }
 
 h5,
 h6 {
+    --title-font-size-tn: 1.5rem;
     font-size: var(--title-font-size-tn);
 }
 
