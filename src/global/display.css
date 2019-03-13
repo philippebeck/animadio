@@ -72,7 +72,7 @@
     max-width: var(--max-width-md);
 }
 
-[class*="container"][class*="lg"]{
+[class*="container"][class*="lg"] {
     max-width: var(--max-width-lg);
 }
 
