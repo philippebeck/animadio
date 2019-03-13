@@ -180,6 +180,7 @@
     margin: calc(var(--nav-user-img-mar) * 5);
     height: calc(var(--nav-user-height) * 2);
   }
+
   .nav-user p {
     display: var(--nav-user-p-display-wd);
     margin-right: var(--nav-user-p-maright-wd);
