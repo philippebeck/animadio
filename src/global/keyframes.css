@@ -16,7 +16,6 @@
 13. TranslateY
 */
 
-
 /***** Keyframes Variables *****/
 :root {
     --rotate: rotate(-360deg);
@@ -33,14 +32,12 @@
     --translateY: translateY(-100vh);
 }
 
-
 /***** Rotate *****/
 @keyframes rotate {
     to {
         transform: var(--rotate);
     }
 }
-
 
 /***** RotateX *****/
 @keyframes rotateX {
@@ -49,14 +46,12 @@
     }
 }
 
-
 /***** RotateY *****/
 @keyframes rotateY {
     to {
         transform: var(--rotateY);
     }
 }
-
 
 /***** Scale *****/
 @keyframes scale {
@@ -65,14 +60,12 @@
     }
 }
 
-
 /***** ScaleX *****/
 @keyframes scaleX {
     to {
         transform: var(--scaleX);
     }
 }
-
 
 /***** ScaleY *****/
 @keyframes scaleY {
@@ -81,14 +74,12 @@
     }
 }
 
-
 /***** Skew *****/
 @keyframes skew {
     to {
         transform: var(--skew);
     }
 }
-
 
 /***** SkewX *****/
 @keyframes skewX {
@@ -97,14 +88,12 @@
     }
 }
 
-
 /***** SkewY *****/
 @keyframes skewY {
     to {
         transform: var(--skewY);
     }
 }
-
 
 /***** Translate *****/
 @keyframes translate {
@@ -113,7 +102,6 @@
     }
 }
 
-
 /***** TranslateX *****/
 @keyframes translateX {
     to {
@@ -121,11 +109,9 @@
     }
 }
 
-
 /***** TranslateY *****/
 @keyframes translateY {
     to {
         transform: var(--translateY);
     }
 }
-

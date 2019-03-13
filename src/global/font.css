@@ -6,7 +6,6 @@
 3. Deco
 */
 
-
 /***** Font *****/
 [class*="font"][class*="normal"] {
     font-style: normal;
@@ -20,7 +19,6 @@
 [class*="font"][class*="bold"] {
     font-weight: bold;
 }
-
 
 /***** Text *****/
 [class*="text"][class*="center"] {
@@ -38,7 +36,6 @@
 [class*="text"][class*="left"] {
     text-align: left;
 }
-
 
 /***** Deco *****/
 /* Deco Line */
@@ -123,4 +120,3 @@
 [class*="deco"][class*="yellow"] {
     text-decoration-color: var(--yellow);
 }
-

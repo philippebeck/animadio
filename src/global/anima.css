@@ -12,7 +12,6 @@
 9. Origin
 */
 
-
 /***** Variables *****/
 [class="anima"] {
     --anima-duration-tn: 1s;
@@ -31,7 +30,6 @@
     --transform-origin-near: 50px 50px;
     --transform-origin-far: top right 50px;
 }
-
 
 /***** Name *****/
 [class*="anima"][class*="tio"][class*="rotA"],
@@ -250,7 +248,6 @@ animation-name: skewY;
     animation-name: translateY;
 }
 
-
 /***** Duration *****/
 [class*="anima"][class*="tio"][class*="tn"],
 [class*="anima"][class*="dio"][class*="tn"]:checked ~ [class*="anima"][class*="target"][class*="tn"],
@@ -342,7 +339,6 @@ animation-name: skewY;
     animation-duration: var(--anima-duration-wd);
 }
 
-
 /***** Timing Function *****/
 [class*="anima"][class*="tio"][class*="linear"],
 [class*="anima"][class*="dio"][class*="linear"]:checked ~ [class*="anima"][class*="target"][class*="linear"],
@@ -416,7 +412,6 @@ animation-name: skewY;
     animation-timing-function: cubic-bezier(var(--anima-timing-bezier));
 }
 
-
 /***** Iteration Count *****/
 [class*="animate-"][class*="few"]:hover,
 [class*="animate-"][class*="few"]:focus,
@@ -453,7 +448,6 @@ animation-name: skewY;
 [class*="shown-"][class*="loop"] > * {
     animation-iteration-count: infinite;
 }
-
 
 /***** Direction *****/
 [class*="anima"][class*="tio"][class*="alter"],
@@ -510,7 +504,6 @@ animation-name: skewY;
     animation-direction: alternate-reverse;
 }
 
-
 /***** Delay *****/
 [class*="anima"][class*="tio"][class*="small"],
 [class*="anima"][class*="dio"][class*="small"]:checked ~ [class*="anima"][class*="target"][class*="small"],
@@ -566,7 +559,6 @@ animation-name: skewY;
     animation-delay: var(--anima-delay-large);
 }
 
-
 /***** Fill Mode *****/
 [class*="anima"][class*="tio"][class*="back"],
 [class*="anima"][class*="dio"][class*="back"]:checked ~ [class*="anima"][class*="target"][class*="back"],
@@ -604,7 +596,6 @@ animation-name: skewY;
     animation-fill-mode: forwards;
 }
 
-
 /***** Origin *****/
 [class*="anima"][class*="tio"][class*="far"],
 [class*="anima"][class*="dio"][class*="far"]:checked ~ [class*="anima"][class*="target"][class*="far"],
@@ -641,4 +632,3 @@ animation-name: skewY;
 [class*="anima"][class*="fromall"][class*="near"] > *:active {
     transform-origin: var(--transform-origin-near);
 }
-

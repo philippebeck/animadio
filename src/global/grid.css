@@ -15,7 +15,6 @@
 12. Grid Gap Wide
 */
 
-
 /***** Grid Variables *****/
 [class*="gap"] {
     --gap-1tn: 1px;
@@ -35,7 +34,6 @@
     --gap-3wd: 100px;
 }
 
-
 /***** Grid & Fluid *****/
 [class*="grid"],
 [class*="fluid"] {
@@ -50,7 +48,6 @@
 [class*="fluid"] {
     max-width: 100%;
 }
-
 
 /***** Grid & Fluid Tiny *****/
 [class*="grid"][class*="2tn"],
@@ -120,7 +117,6 @@
 [class*="gap"][class*="3tn"] {
     grid-gap: var(--gap-3tn);
 }
-
 
 /***** Grid & Fluid Small *****/
 @media (min-width: 576px) {
@@ -195,7 +191,6 @@
     }
 }
 
-
 /***** Grid & Fluid Medium *****/
 @media (min-width: 768px) {
     [class*="grid"][class*="2md"],
@@ -268,7 +263,6 @@
         grid-gap: var(--gap-3md);
     }
 }
-
 
 /***** Grid & Fluid Large *****/
 @media (min-width: 992px) {
@@ -343,7 +337,6 @@
     }
 }
 
-
 /***** Grid & Fluid Wide *****/
 @media (min-width: 1200px) {
     [class*="grid"][class*="2wd"],
@@ -416,4 +409,3 @@
         grid-gap: var(--gap-3wd);
     }
 }
-

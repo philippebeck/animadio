@@ -15,7 +15,6 @@
 12. Pad Left
 */
 
-
 /***** Mar Variables *****/
 [class*="mar"] {
     --mar-sm: 10px;
@@ -35,7 +34,6 @@
     --mar-top-lg: 50px;
 }
 
-
 /***** Mar *****/
 [class*="mar"][class*="tio"][class*="sm"],
 [class*="mar"][class*="toall"][class*="sm"] > * {
@@ -51,7 +49,6 @@
 [class*="mar"][class*="toall"][class*="lg"] > * {
     margin: var(--mar-lg);
 }
-
 
 /***** Mar Top *****/
 [class*="mar"][class*="top"][class*="tio"][class*="sm"],
@@ -69,7 +66,6 @@
     margin-top: var(--mar-top-lg);
 }
 
-
 /***** Mar Right *****/
 [class*="mar"][class*="right"][class*="tio"][class*="sm"],
 [class*="mar"][class*="right"][class*="toall"][class*="sm"] > * {
@@ -85,7 +81,6 @@
 [class*="mar"][class*="right"][class*="toall"][class*="lg"] > * {
     margin-right: var(--mar-right-lg);
 }
-
 
 /***** Mar Bot *****/
 [class*="mar"][class*="bot"][class*="tio"][class*="sm"],
@@ -103,7 +98,6 @@
     margin-bottom: var(--mar-bottom-lg);
 }
 
-
 /***** Mar Left *****/
 [class*="mar"][class*="left"][class*="tio"][class*="sm"],
 [class*="mar"][class*="left"][class*="toall"][class*="sm"] > * {
@@ -120,30 +114,24 @@
     margin-left: var(--mar-left-lg);
 }
 
-
 /***** Pad Variables *****/
 [class*="pad"] {
     --pad-sm: 10px;
     --pad-md: 20px;
     --pad-lg: 50px;
-
     --pad-bottom-sm: 10px;
     --pad-bottom-md: 20px;
     --pad-bottom-lg: 50px;
-
     --pad-left-sm: 10px;
     --pad-left-md: 20px;
     --pad-left-lg: 50px;
-
     --pad-right-sm: 10px;
     --pad-right-md: 20px;
     --pad-right-lg: 50px;
-
     --pad-top-sm: 10px;
     --pad-top-md: 20px;
     --pad-top-lg: 50px;
 }
-
 
 /***** Pad *****/
 [class*="pad"][class*="tio"][class*="sm"],
@@ -161,7 +149,6 @@
     padding: var(--pad-lg);
 }
 
-
 /***** Pad Top *****/
 [class*="pad"][class*="top"][class*="tio"][class*="sm"],
 [class*="pad"][class*="top"][class*="toall"][class*="sm"] > * {
@@ -177,7 +164,6 @@
 [class*="pad"][class*="top"][class*="toall"][class*="lg"] > * {
     padding-top: var(--pad-top-lg);
 }
-
 
 /***** Pad Right *****/
 [class*="pad"][class*="right"][class*="tio"][class*="sm"],
@@ -195,7 +181,6 @@
     padding-right: var(--pad-right-lg);
 }
 
-
 /***** Pad Bottom *****/
 [class*="pad"][class*="bot"][class*="tio"][class*="sm"],
 [class*="pad"][class*="bot"][class*="toall"][class*="sm"] > * {
@@ -212,7 +197,6 @@
     padding-bottom: var(--pad-bottom-lg);
 }
 
-
 /***** Pad Left *****/
 [class*="pad"][class*="left"][class*="tio"][class*="sm"],
 [class*="pad"][class*="left"][class*="toall"][class*="sm"] > * {
@@ -228,4 +212,3 @@
 [class*="pad"][class*="left"][class*="toall"][class*="lg"] > * {
     padding-left: var(--pad-left-lg);
 }
-

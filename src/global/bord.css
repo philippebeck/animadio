@@ -9,7 +9,6 @@
 6. Bord Radius
 */
 
-
 /***** Bord Variables *****/
 [class*="bord"] {
     --bord-global-style: solid;
@@ -24,7 +23,6 @@
     --bord-radius-circle: 50%;
     --bord-radius-ellipse: 50% / 25%;
 }
-
 
 /***** Bord *****/
 [class*="bord"][class*="tio"],
@@ -47,7 +45,6 @@
     border-color: var(--bord-global-color);
     border-radius: var(--bord-global-radius);
 }
-
 
 /***** Bord Styles *****/
 [class*="bord"][class*="tio"][class*="dashed"],
@@ -194,7 +191,6 @@
     border-style: solid;
 }
 
-
 /***** Bord Widths *****/
 [class*="bord"][class*="tio"][class*="sm"],
 [class*="bord"][class*="dio"][class*="sm"]:checked ~ [class*="bord"][class*="target"][class*="sm"],
@@ -249,7 +245,6 @@
 [class*="bord"][class*="fromall"][class*="lg"] > *:active {
     border-width: var(--bord-width-lg);
 }
-
 
 /***** Bord Colors *****/
 [class*="bord"][class*="tio"][class*="black"],
@@ -450,7 +445,6 @@
     border-color: var(--yellow);
 }
 
-
 /***** Bord Radius *****/
 [class*="bord"][class*="tio"][class*="slight"],
 [class*="bord"][class*="dio"][class*="slight"]:checked ~ [class*="bord"][class*="target"][class*="slight"],
@@ -523,4 +517,3 @@
 [class*="bord"][class*="fromall"][class*="ellipse"] > *:active {
     border-radius: var(--bord-radius-ellipse);
 }
-

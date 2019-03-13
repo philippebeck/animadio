@@ -7,7 +7,6 @@
 4. Shabox Spread
 */
 
-
 /***** Shabox Variables *****/
 [class*="shabox"] {
     --shabox-x-sm: 2px;
@@ -25,7 +24,6 @@
     --shabox-spread-md: 5px;
     --shabox-spread-lg: 10px;
 }
-
 
 /***** Shabox *****/
 [class*="shabox"][class*="tio"][class*="sm"],
@@ -135,7 +133,6 @@
 [class*="shabox"][class*="fromall"][class*="inset"][class*="lg"] > *:active {
     box-shadow: inset var(--shabox-x-lg) var(--shabox-y-lg);
 }
-
 
 /***** Shabox Blur *****/
 [class*="shabox"][class*="tio"][class*="blur"][class*="all"],
@@ -282,7 +279,6 @@
     box-shadow: inset var(--shabox-x-lg) var(--shabox-y-lg) var(--shabox-blur-lg);
 }
 
-
 /***** Shabox Spread *****/
 [class*="shabox"][class*="tio"][class*="spread"][class*="all"],
 [class*="shabox"][class*="dio"][class*="spread"][class*="all"]:checked ~ [class*="shabox"][class*="target"][class*="spread"][class*="all"],
@@ -427,4 +423,3 @@
 [class*="shabox"][class*="fromall"][class*="inset"][class*="spread"][class*="lg"] > *:active {
     box-shadow: inset var(--shabox-x-lg) var(--shabox-y-lg) var(--shabox-blur-lg) var(--shabox-spread-lg);
 }
-

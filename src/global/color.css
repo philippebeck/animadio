@@ -6,7 +6,6 @@
 3. Background Colors
 */
 
-
 /***** Color Variables *****/
 :root {
     --blue: RoyalBlue;
@@ -29,7 +28,6 @@
     --stackoverflow: #f48024;
     --twitter: #1da1f2;
 }
-
 
 /***** Colors *****/
 [class*="text"][class*="tio"][class*="black"],
@@ -230,7 +228,6 @@
     color: var(--yellow);
 }
 
-
 /***** Background Colors *****/
 [class*="bg"][class*="tio"][class*="black"],
 [class*="bg"][class*="dio"][class*="black"]:checked ~ [class*="bg"][class*="target"][class*="black"],
@@ -429,4 +426,3 @@
 [class*="bg"][class*="fromall"][class*="yellow"] > *:active {
     background-color: var(--yellow);
 }
-

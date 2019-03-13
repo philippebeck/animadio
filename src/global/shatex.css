@@ -6,7 +6,6 @@
 3. Shatex Blur
 */
 
-
 /***** Shatex Variables *****/
 [class*="shatex"] {
     --shatex-x-sm: 1px;
@@ -20,7 +19,6 @@
     --shatex-blur-md: 2px;
     --shatex-blur-lg: 5px;
 }
-
 
 /***** Shatex *****/
 [class*="shatex"][class*="tio"][class*="sm"],
@@ -76,7 +74,6 @@
 [class*="shatex"][class*="fromall"][class*="lg"] > *:active {
     text-shadow: var(--shatex-x-lg) var(--shatex-y-lg);
 }
-
 
 /***** Shatex Blur *****/
 [class*="shatex"][class*="tio"][class*="blur"][class*="all"],
@@ -150,4 +147,3 @@
 [class*="shatex"][class*="fromall"][class*="blur"][class*="lg"] > *:active {
     text-shadow: var(--shatex-x-lg) var(--shatex-y-lg) var(--shatex-blur-lg);
 }
-

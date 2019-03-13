@@ -8,7 +8,6 @@
 5. Cursor
 */
 
-
 /***** Dis *****/
 [class*="dis"][class*="block"] {
     display: block;
@@ -27,7 +26,6 @@
     display: none;
 }
 
-
 /***** Pos *****/
 [class*="pos"][class*="absolute"] {
     position: absolute;
@@ -45,7 +43,6 @@
     position: sticky;
 }
 
-
 /***** Flow *****/
 [class*="flow"][class*="hidden"] {
     overflow: hidden;
@@ -54,7 +51,6 @@
 [class*="flow"][class*="scroll"] {
     overflow: scroll;
 }
-
 
 /***** Container *****/
 [class*="container"] {
@@ -72,7 +68,6 @@
 [class*="container"][class*="lg"] {
     max-width: var(--max-width-lg);
 }
-
 
 /***** Cursor *****/
 .crosshair,
@@ -94,4 +89,3 @@
 .pointer > * {
     cursor: pointer;
 }
-

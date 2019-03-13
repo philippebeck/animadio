@@ -11,7 +11,6 @@
 8. Navbar Wide
 */
 
-
 /***** Navbar Variables *****/
 .navbar {
     --navbar-alignitems: center;
@@ -48,7 +47,6 @@
     --nav-user-p-maright-wd: 10px;
 }
 
-
 /***** Navbar Global *****/
 .navbar,
 .main-nav,
@@ -65,7 +63,6 @@
     padding: var(--nav-main-pad);
     list-style: none;
 }
-
 
 /***** Navbar *****/
 .navbar {
@@ -97,7 +94,6 @@
     align-self: var(--navbar-i-alignself);
 }
 
-
 /***** Nav Brand, Main & User *****/
 .nav-brand img,
 .nav-brand svg {
@@ -118,7 +114,6 @@
     height: var(--nav-user-height);
 }
 
-
 /***** Navbar Small *****/
 @media (min-width: 576px) {
     .navbar {
@@ -138,7 +133,6 @@
         height: calc(var(--nav-user-height) * 1.25);
     }
 }
-
 
 /***** Navbar Medium *****/
 @media (min-width: 768px) {
@@ -162,7 +156,6 @@
     }
 }
 
-
 /***** Navbar Large *****/
 @media (min-width: 992px) {
     .nav-brand img,
@@ -176,7 +169,6 @@
         height: calc(var(--nav-user-height) * 1.75);
     }
 }
-
 
 /***** Navbar Wide *****/
 @media (min-width: 1200px) {
@@ -195,4 +187,3 @@
         margin-right: var(--nav-user-p-maright-wd);
     }
 }
-
