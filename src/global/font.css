@@ -1,53 +1,49 @@
-/***********************************/
-/********** TEXT HELPERS ***********/
-/***********************************/
+/***************************/
+/********** FONT ***********/
+/***************************/
 
 /*
 1. Font
-2. Text Align
-3. Text Decoration
+2. Text
+3. Deco
 */
 
 
-/****************/
 /***** Font *****/
-.font-normal {
+[class*="font"][class*="normal"] {
     font-style: normal;
     font-weight: normal;
 }
 
-.font-italic {
+[class*="font"][class*="italic"] {
     font-style: italic;
 }
 
-.font-bold {
+[class*="font"][class*="bold"] {
     font-weight: bold;
 }
 
 
-/**********************/
-/***** Text Align *****/
-.text-center {
+/***** Text *****/
+[class*="text"][class*="center"] {
     text-align: center;
 }
 
-.text-justify {
+[class*="text"][class*="justify"] {
     text-align: justify;
 }
 
-.text-right {
+[class*="text"][class*="right"] {
     text-align: right;
 }
 
-.text-left {
+[class*="text"][class*="left"] {
     text-align: left;
 }
 
 
-/***************************/
-/***** Text Decoration *****/
-
-/***** Deco Line *****/
+/***** Deco *****/
+/* Deco Line */
 [class*="deco"][class*="under"] {
     text-decoration-line: underline;
 }
@@ -64,7 +60,7 @@
     text-decoration-line: line-through;
 }
 
-/***** Deco Style *****/
+/* Deco Style */
 [class*="deco"][class*="solid"] {
     text-decoration-style: solid;
 }
@@ -85,7 +81,7 @@
     text-decoration-style: wavy;
 }
 
-/***** Deco Color *****/
+/* Deco Color */
 [class*="deco"][class*="black"] {
     text-decoration-color: black;
 }
