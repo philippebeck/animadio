@@ -1,6 +1,5 @@
 /****************************/
 /********** SHABOX **********/
-/****************************/
 
 /*
 1. Shabox Variables
@@ -432,3 +431,4 @@
 [class*="shabox"][class*="fromall"][class*="inset"][class*="spread"][class*="lg"] > *:active {
     box-shadow: inset var(--shabox-x-lg) var(--shabox-y-lg) var(--shabox-blur-lg) var(--shabox-spread-lg);
 }
+

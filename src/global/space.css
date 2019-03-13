@@ -1,6 +1,5 @@
 /****************************/
 /********** SPACE ***********/
-/****************************/
 
 /*
 1. Mar Variables
@@ -234,3 +233,4 @@
 [class*="pad"][class*="left"][class*="toall"][class*="lg"] > * {
     padding-left: var(--pad-left-lg);
 }
+

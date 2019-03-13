@@ -1,6 +1,5 @@
 /****************************/
 /********** SHATEX **********/
-/****************************/
 
 /*
 1. Shatex Variables
@@ -154,3 +153,4 @@
 [class*="shatex"][class*="fromall"][class*="blur"][class*="lg"] > *:active {
     text-shadow: var(--shatex-x-lg) var(--shatex-y-lg) var(--shatex-blur-lg);
 }
+

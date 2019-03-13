@@ -1,6 +1,5 @@
 /***************************/
 /********** ANIMA **********/
-/***************************/
 
 /*
 1. Variables
@@ -647,3 +646,4 @@ animation-name: skewY;
 [class*="anima"][class*="fromall"][class*="near"] > *:active {
     transform-origin: var(--transform-origin-near);
 }
+

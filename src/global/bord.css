@@ -1,6 +1,5 @@
 /*************************/
 /********** BORD *********/
-/*************************/
 
 /*
 1. Bord Variables
@@ -527,3 +526,4 @@
 [class*="bord"][class*="fromall"][class*="ellipse"] > *:active {
     border-radius: var(--bord-radius-ellipse);
 }
+

@@ -1,6 +1,5 @@
 /***************************/
 /********** COLOR **********/
-/***************************/
 
 /*
 1. Color Variables
@@ -432,3 +431,4 @@
 [class*="bg"][class*="fromall"][class*="yellow"] > *:active {
     background-color: var(--yellow);
 }
+
