@@ -50,20 +50,14 @@ Yarn : `yarn add animadio`
 [![NPM Weekly Downloads](https://img.shields.io/npm/dw/animadio.svg?label=Weekly+Downloads)](https://www.npmjs.com/package/animadio)
 [![NPM Montly Downloads](https://img.shields.io/npm/dm/animadio.svg?label=Montly+Downloads)](https://www.npmjs.com/package/animadio)
 [![NPM Yearly Downloads](https://img.shields.io/npm/dy/animadio.svg?label=Yearly+Downloads)](https://www.npmjs.com/package/animadio)
- 
----
 
 Meteor : `meteor add animadio:animadio`
 
 [![Meteor Project](https://img.shields.io/badge/meteor-animadio%3Aanimadio-blue.svg?label=Atmosphere)](https://atmospherejs.com/animadio/animadio)
- 
----
 
 Composer : `composer require animadio/animadio`
 
 [![Packagist Version](https://img.shields.io/packagist/v/animadio/animadio.svg?label=Packagist)](https://packagist.org/packages/animadio/animadio)
- 
----
 
 Pip & Gem : Very Soon !  
 
@@ -133,8 +127,6 @@ CodePen : [@animadio](https://codepen.io/animadio)
 Twitter : [@animadio](https://twitter.com/animadio)
 
 [![Twitter Follow](	https://img.shields.io/twitter/follow/@animadio.svg?label=Twitter%20Followers)](https://twitter.com/animadio)
- 
----
 
 Slack : [animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQtNTY1NTc5NzgyNDA3LTI2YWIxM2ZkMGM5ODBkNjNjZmI5ZGVlNTM1ZWEwMWI5ZDJjNzViYjNmNWE2MjllMTc3MDhlMzYzZDYzNTkxNjU)
 
