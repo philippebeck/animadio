@@ -1,4 +1,4 @@
-/* animadio v0.1.25 | https://animadio.org | MIT License */
+/* animadio v0.1.26 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -354,6 +354,225 @@ template {
   display: none;
 }
 
+/*******************************/
+/********** KEYFRAMES **********/
+/*******************************/
+
+/*
+1. Keyframes Variables
+2. Rotate
+3. RotateX
+4. RotateY
+5. Scale
+6. ScaleX
+7. ScaleY
+8. Skew
+9. SkewX
+10. SkewY
+11. Translate
+12. TranslateX
+13. TranslateY
+*/
+
+
+/***** Keyframes Variables *****/
+:root {
+    --rotate: rotate(-360deg);
+    --rotateX: rotateX(-360deg);
+    --rotateY: rotateY(-360deg);
+
+    --scale: scale(0);
+    --scaleX: scaleX(0);
+    --scaleY: scaleY(0);
+
+    --skew: skew(180deg, 180deg);
+    --skewX: skewX(180deg);
+    --skewY: skewY(180deg);
+
+    --translate: translate(-100vw, -100vh);
+    --translateX: translateX(-100vw);
+    --translateY: translateY(-100vh);
+}
+
+
+/***** Rotate *****/
+@-webkit-keyframes rotate {
+    to {
+        -webkit-transform: var(--rotate);
+                transform: var(--rotate);
+    }
+}
+@keyframes rotate {
+    to {
+        -webkit-transform: var(--rotate);
+                transform: var(--rotate);
+    }
+}
+
+
+/***** RotateX *****/
+@-webkit-keyframes rotateX {
+    to {
+        -webkit-transform: var(--rotateX);
+                transform: var(--rotateX);
+    }
+}
+@keyframes rotateX {
+    to {
+        -webkit-transform: var(--rotateX);
+                transform: var(--rotateX);
+    }
+}
+
+
+/***** RotateY *****/
+@-webkit-keyframes rotateY {
+    to {
+        -webkit-transform: var(--rotateY);
+                transform: var(--rotateY);
+    }
+}
+@keyframes rotateY {
+    to {
+        -webkit-transform: var(--rotateY);
+                transform: var(--rotateY);
+    }
+}
+
+
+/***** Scale *****/
+@-webkit-keyframes scale {
+    to {
+        -webkit-transform: var(--scale);
+                transform: var(--scale);
+    }
+}
+@keyframes scale {
+    to {
+        -webkit-transform: var(--scale);
+                transform: var(--scale);
+    }
+}
+
+
+/***** ScaleX *****/
+@-webkit-keyframes scaleX {
+    to {
+        -webkit-transform: var(--scaleX);
+                transform: var(--scaleX);
+    }
+}
+@keyframes scaleX {
+    to {
+        -webkit-transform: var(--scaleX);
+                transform: var(--scaleX);
+    }
+}
+
+
+/***** ScaleY *****/
+@-webkit-keyframes scaleY {
+    to {
+        -webkit-transform: var(--scaleY);
+                transform: var(--scaleY);
+    }
+}
+@keyframes scaleY {
+    to {
+        -webkit-transform: var(--scaleY);
+                transform: var(--scaleY);
+    }
+}
+
+
+/***** Skew *****/
+@-webkit-keyframes skew {
+    to {
+        -webkit-transform: var(--skew);
+                transform: var(--skew);
+    }
+}
+@keyframes skew {
+    to {
+        -webkit-transform: var(--skew);
+                transform: var(--skew);
+    }
+}
+
+
+/***** SkewX *****/
+@-webkit-keyframes skewX {
+    to {
+        -webkit-transform: var(--skewX);
+                transform: var(--skewX);
+    }
+}
+@keyframes skewX {
+    to {
+        -webkit-transform: var(--skewX);
+                transform: var(--skewX);
+    }
+}
+
+
+/***** SkewY *****/
+@-webkit-keyframes skewY {
+    to {
+        -webkit-transform: var(--skewY);
+                transform: var(--skewY);
+    }
+}
+@keyframes skewY {
+    to {
+        -webkit-transform: var(--skewY);
+                transform: var(--skewY);
+    }
+}
+
+
+/***** Translate *****/
+@-webkit-keyframes translate {
+    to {
+        -webkit-transform: var(--translate);
+                transform: var(--translate);
+    }
+}
+@keyframes translate {
+    to {
+        -webkit-transform: var(--translate);
+                transform: var(--translate);
+    }
+}
+
+
+/***** TranslateX *****/
+@-webkit-keyframes translateX {
+    to {
+        -webkit-transform: var(--translateX);
+                transform: var(--translateX);
+    }
+}
+@keyframes translateX {
+    to {
+        -webkit-transform: var(--translateX);
+                transform: var(--translateX);
+    }
+}
+
+
+/***** TranslateY *****/
+@-webkit-keyframes translateY {
+    to {
+        -webkit-transform: var(--translateY);
+                transform: var(--translateY);
+    }
+}
+@keyframes translateY {
+    to {
+        -webkit-transform: var(--translateY);
+                transform: var(--translateY);
+    }
+}
 /**************************/
 /********** GRID **********/
 /**************************/
@@ -3394,372 +3613,6 @@ template {
     text-shadow: var(--shatex-x-lg) var(--shatex-y-lg) var(--shatex-blur-lg);
 }
 /***************************/
-/********** FONT ***********/
-/***************************/
-
-/*
-1. Font
-2. Text
-3. Deco
-*/
-
-
-/***** Font *****/
-[class*="font"][class*="normal"] {
-    font-style: normal;
-    font-weight: normal;
-}
-
-[class*="font"][class*="italic"] {
-    font-style: italic;
-}
-
-[class*="font"][class*="bold"] {
-    font-weight: bold;
-}
-
-
-/***** Text *****/
-[class*="text"][class*="center"] {
-    text-align: center;
-}
-
-[class*="text"][class*="justify"] {
-    text-align: justify;
-}
-
-[class*="text"][class*="right"] {
-    text-align: right;
-}
-
-[class*="text"][class*="left"] {
-    text-align: left;
-}
-
-
-/***** Deco *****/
-/* Deco Line */
-[class*="deco"][class*="under"] {
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
-}
-
-[class*="deco"][class*="none"] {
-    -webkit-text-decoration-line: none;
-            text-decoration-line: none;
-}
-
-[class*="deco"][class*="over"] {
-    -webkit-text-decoration-line: overline;
-            text-decoration-line: overline;
-}
-
-[class*="deco"][class*="through"] {
-    -webkit-text-decoration-line: line-through;
-            text-decoration-line: line-through;
-}
-
-/* Deco Style */
-[class*="deco"][class*="solid"] {
-    -webkit-text-decoration-style: solid;
-            text-decoration-style: solid;
-}
-
-[class*="deco"][class*="double"] {
-    -webkit-text-decoration-style: double;
-            text-decoration-style: double;
-}
-
-[class*="deco"][class*="dotted"] {
-    -webkit-text-decoration-style: dotted;
-            text-decoration-style: dotted;
-}
-
-[class*="deco"][class*="dashed"] {
-    -webkit-text-decoration-style: dashed;
-            text-decoration-style: dashed;
-}
-
-[class*="deco"][class*="wavy"] {
-    -webkit-text-decoration-style: wavy;
-            text-decoration-style: wavy;
-}
-
-/* Deco Color */
-[class*="deco"][class*="black"] {
-    -webkit-text-decoration-color: black;
-            text-decoration-color: black;
-}
-
-[class*="deco"][class*="blue"] {
-    -webkit-text-decoration-color: var(--blue);
-            text-decoration-color: var(--blue);
-}
-
-[class*="deco"][class*="brown"] {
-    -webkit-text-decoration-color: var(--brown);
-            text-decoration-color: var(--brown);
-}
-
-[class*="deco"][class*="gray"] {
-    -webkit-text-decoration-color: var(--gray);
-            text-decoration-color: var(--gray);
-}
-
-[class*="deco"][class*="grey"] {
-    -webkit-text-decoration-color: var(--grey);
-            text-decoration-color: var(--grey);
-}
-
-[class*="deco"][class*="green"] {
-    -webkit-text-decoration-color: var(--green);
-            text-decoration-color: var(--green);
-}
-
-[class*="deco"][class*="orange"] {
-    -webkit-text-decoration-color: var(--orange);
-            text-decoration-color: var(--orange);
-}
-
-[class*="deco"][class*="red"] {
-    -webkit-text-decoration-color: var(--red);
-            text-decoration-color: var(--red);
-}
-
-[class*="deco"][class*="violet"] {
-    -webkit-text-decoration-color: var(--violet);
-            text-decoration-color: var(--violet);
-}
-
-[class*="deco"][class*="white"] {
-    -webkit-text-decoration-color: var(--white);
-            text-decoration-color: var(--white);
-}
-
-[class*="deco"][class*="yellow"] {
-    -webkit-text-decoration-color: var(--yellow);
-            text-decoration-color: var(--yellow);
-}
-/*******************************/
-/********** KEYFRAMES **********/
-/*******************************/
-
-/*
-1. Keyframes Variables
-2. Rotate
-3. RotateX
-4. RotateY
-5. Scale
-6. ScaleX
-7. ScaleY
-8. Skew
-9. SkewX
-10. SkewY
-11. Translate
-12. TranslateX
-13. TranslateY
-*/
-
-
-/***** Keyframes Variables *****/
-:root {
-    --rotate: rotate(-360deg);
-    --rotateX: rotateX(-360deg);
-    --rotateY: rotateY(-360deg);
-
-    --scale: scale(0);
-    --scaleX: scaleX(0);
-    --scaleY: scaleY(0);
-
-    --skew: skew(180deg, 180deg);
-    --skewX: skewX(180deg);
-    --skewY: skewY(180deg);
-
-    --translate: translate(-100vw, -100vh);
-    --translateX: translateX(-100vw);
-    --translateY: translateY(-100vh);
-}
-
-
-/***** Rotate *****/
-@-webkit-keyframes rotate {
-    to {
-        -webkit-transform: var(--rotate);
-                transform: var(--rotate);
-    }
-}
-@keyframes rotate {
-    to {
-        -webkit-transform: var(--rotate);
-                transform: var(--rotate);
-    }
-}
-
-
-/***** RotateX *****/
-@-webkit-keyframes rotateX {
-    to {
-        -webkit-transform: var(--rotateX);
-                transform: var(--rotateX);
-    }
-}
-@keyframes rotateX {
-    to {
-        -webkit-transform: var(--rotateX);
-                transform: var(--rotateX);
-    }
-}
-
-
-/***** RotateY *****/
-@-webkit-keyframes rotateY {
-    to {
-        -webkit-transform: var(--rotateY);
-                transform: var(--rotateY);
-    }
-}
-@keyframes rotateY {
-    to {
-        -webkit-transform: var(--rotateY);
-                transform: var(--rotateY);
-    }
-}
-
-
-/***** Scale *****/
-@-webkit-keyframes scale {
-    to {
-        -webkit-transform: var(--scale);
-                transform: var(--scale);
-    }
-}
-@keyframes scale {
-    to {
-        -webkit-transform: var(--scale);
-                transform: var(--scale);
-    }
-}
-
-
-/***** ScaleX *****/
-@-webkit-keyframes scaleX {
-    to {
-        -webkit-transform: var(--scaleX);
-                transform: var(--scaleX);
-    }
-}
-@keyframes scaleX {
-    to {
-        -webkit-transform: var(--scaleX);
-                transform: var(--scaleX);
-    }
-}
-
-
-/***** ScaleY *****/
-@-webkit-keyframes scaleY {
-    to {
-        -webkit-transform: var(--scaleY);
-                transform: var(--scaleY);
-    }
-}
-@keyframes scaleY {
-    to {
-        -webkit-transform: var(--scaleY);
-                transform: var(--scaleY);
-    }
-}
-
-
-/***** Skew *****/
-@-webkit-keyframes skew {
-    to {
-        -webkit-transform: var(--skew);
-                transform: var(--skew);
-    }
-}
-@keyframes skew {
-    to {
-        -webkit-transform: var(--skew);
-                transform: var(--skew);
-    }
-}
-
-
-/***** SkewX *****/
-@-webkit-keyframes skewX {
-    to {
-        -webkit-transform: var(--skewX);
-                transform: var(--skewX);
-    }
-}
-@keyframes skewX {
-    to {
-        -webkit-transform: var(--skewX);
-                transform: var(--skewX);
-    }
-}
-
-
-/***** SkewY *****/
-@-webkit-keyframes skewY {
-    to {
-        -webkit-transform: var(--skewY);
-                transform: var(--skewY);
-    }
-}
-@keyframes skewY {
-    to {
-        -webkit-transform: var(--skewY);
-                transform: var(--skewY);
-    }
-}
-
-
-/***** Translate *****/
-@-webkit-keyframes translate {
-    to {
-        -webkit-transform: var(--translate);
-                transform: var(--translate);
-    }
-}
-@keyframes translate {
-    to {
-        -webkit-transform: var(--translate);
-                transform: var(--translate);
-    }
-}
-
-
-/***** TranslateX *****/
-@-webkit-keyframes translateX {
-    to {
-        -webkit-transform: var(--translateX);
-                transform: var(--translateX);
-    }
-}
-@keyframes translateX {
-    to {
-        -webkit-transform: var(--translateX);
-                transform: var(--translateX);
-    }
-}
-
-
-/***** TranslateY *****/
-@-webkit-keyframes translateY {
-    to {
-        -webkit-transform: var(--translateY);
-                transform: var(--translateY);
-    }
-}
-@keyframes translateY {
-    to {
-        -webkit-transform: var(--translateY);
-                transform: var(--translateY);
-    }
-}
-/***************************/
 /********** ANIMA **********/
 /***************************/
 
@@ -3767,6 +3620,12 @@ template {
 1. Variables
 2. Name
 3. Duration
+4. Timing Function
+5. Iteration Count
+6. Direction
+7. Delay
+8. Fill Mode
+9. Origin
 */
 
 
@@ -3777,6 +3636,20 @@ template {
     --anima-duration-md: 5s;
     --anima-duration-lg: 10s;
     --anima-duration-wd: 60s;
+
+    --anima-timing-ease: ease-in-out;
+    --anima-timing-steps: 60, start;
+    --anima-timing-bezier: 1,5,1,-5;
+
+    --anima-count-few: 2;
+    --anima-count-many: 5;
+
+    --anima-delay-small: 1s;
+    --anima-delay-medium: 2s;
+    --anima-delay-large: 3s;
+
+    --transform-origin-near: 50px 50px;
+    --transform-origin-far: top right 50px;
 }
 
 
@@ -4105,33 +3978,6 @@ template {
     -webkit-animation-duration: var(--anima-duration-wd);
             animation-duration: var(--anima-duration-wd);
 }
-/*****************************/
-/********** OPTIONS **********/
-/*****************************/
-
-/*
-1. Options Variables
-2. Timing Function
-3. Iteration Count
-4. Direction
-5. Delay
-6. Fill Mode
-*/
-
-
-/***** Options Variables *****/
-[class="anima"] {
-    --anima-timing-ease: ease-in-out;
-    --anima-timing-steps: 60, start;
-    --anima-timing-bezier: 1,5,1,-5;
-
-    --anima-count-few: 2;
-    --anima-count-many: 5;
-
-    --anima-delay-small: 1s;
-    --anima-delay-medium: 2s;
-    --anima-delay-large: 3s;
-}
 
 
 /***** Timing Function *****/
@@ -4407,21 +4253,6 @@ template {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
 }
-/****************************/
-/********** ORIGIN **********/
-/****************************/
-
-/*
-1. Origin Variables
-2. Origin
-*/
-
-
-/***** Origin Variables *****/
-:root {
-    --transform-origin-near: 50px 50px;
-    --transform-origin-far: top right 50px;
-}
 
 
 /***** Origin *****/
@@ -4459,11 +4290,156 @@ template {
 [class*="anima"][class*="fromall"][class*="near"] > *:hover,
 [class*="anima"][class*="fromall"][class*="near"] > *:focus,
 [class*="anima"][class*="fromall"][class*="near"] > *:active {
--webkit-transform-origin: var(--transform-origin-near);
-        transform-origin: var(--transform-origin-near);
+    -webkit-transform-origin: var(--transform-origin-near);
+            transform-origin: var(--transform-origin-near);
+}
+/***************************/
+/********** FONT ***********/
+/***************************/
+
+/*
+1. Font
+2. Text
+3. Deco
+*/
+
+
+/***** Font *****/
+[class*="font"][class*="normal"] {
+    font-style: normal;
+    font-weight: normal;
+}
+
+[class*="font"][class*="italic"] {
+    font-style: italic;
+}
+
+[class*="font"][class*="bold"] {
+    font-weight: bold;
 }
 
 
+/***** Text *****/
+[class*="text"][class*="center"] {
+    text-align: center;
+}
+
+[class*="text"][class*="justify"] {
+    text-align: justify;
+}
+
+[class*="text"][class*="right"] {
+    text-align: right;
+}
+
+[class*="text"][class*="left"] {
+    text-align: left;
+}
+
+
+/***** Deco *****/
+/* Deco Line */
+[class*="deco"][class*="under"] {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+}
+
+[class*="deco"][class*="none"] {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+}
+
+[class*="deco"][class*="over"] {
+    -webkit-text-decoration-line: overline;
+            text-decoration-line: overline;
+}
+
+[class*="deco"][class*="through"] {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+}
+
+/* Deco Style */
+[class*="deco"][class*="solid"] {
+    -webkit-text-decoration-style: solid;
+            text-decoration-style: solid;
+}
+
+[class*="deco"][class*="double"] {
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+}
+
+[class*="deco"][class*="dotted"] {
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+}
+
+[class*="deco"][class*="dashed"] {
+    -webkit-text-decoration-style: dashed;
+            text-decoration-style: dashed;
+}
+
+[class*="deco"][class*="wavy"] {
+    -webkit-text-decoration-style: wavy;
+            text-decoration-style: wavy;
+}
+
+/* Deco Color */
+[class*="deco"][class*="black"] {
+    -webkit-text-decoration-color: black;
+            text-decoration-color: black;
+}
+
+[class*="deco"][class*="blue"] {
+    -webkit-text-decoration-color: var(--blue);
+            text-decoration-color: var(--blue);
+}
+
+[class*="deco"][class*="brown"] {
+    -webkit-text-decoration-color: var(--brown);
+            text-decoration-color: var(--brown);
+}
+
+[class*="deco"][class*="gray"] {
+    -webkit-text-decoration-color: var(--gray);
+            text-decoration-color: var(--gray);
+}
+
+[class*="deco"][class*="grey"] {
+    -webkit-text-decoration-color: var(--grey);
+            text-decoration-color: var(--grey);
+}
+
+[class*="deco"][class*="green"] {
+    -webkit-text-decoration-color: var(--green);
+            text-decoration-color: var(--green);
+}
+
+[class*="deco"][class*="orange"] {
+    -webkit-text-decoration-color: var(--orange);
+            text-decoration-color: var(--orange);
+}
+
+[class*="deco"][class*="red"] {
+    -webkit-text-decoration-color: var(--red);
+            text-decoration-color: var(--red);
+}
+
+[class*="deco"][class*="violet"] {
+    -webkit-text-decoration-color: var(--violet);
+            text-decoration-color: var(--violet);
+}
+
+[class*="deco"][class*="white"] {
+    -webkit-text-decoration-color: var(--white);
+            text-decoration-color: var(--white);
+}
+
+[class*="deco"][class*="yellow"] {
+    -webkit-text-decoration-color: var(--yellow);
+            text-decoration-color: var(--yellow);
+}
 /****************************/
 /********** NAVBAR **********/
 /****************************/
@@ -4720,4 +4696,4 @@ template {
 
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 13th Mar 2019 @ 12:28:30 PM */
+ Updated: 13th Mar 2019 @ 1:04:56 PM */
