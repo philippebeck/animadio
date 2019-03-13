@@ -1,8 +1,6 @@
 module.exports = function(grunt) {
-
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
-
         concat: {
             options: {
                 sourceMap: true,
@@ -12,82 +10,26 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: [
-                    /***** NORMALIZE *****/
                     "node_modules/normalize.css/normalize.css",
-
-                    /***** GRID *****/
-                    "src/grid/grid-var.css",
-                    "src/grid/grid.css",
-                    "src/grid/grid-tn.css",
-                    "src/grid/grid-sm.css",
-                    "src/grid/grid-md.css",
-                    "src/grid/grid-lg.css",
-                    "src/grid/grid-wd.css",
-                    "src/grid/grid-gap.css",
-
-                    /***** FLEX *****/
-                    "src/flexbox/flex-var.css",
-                    "src/flexbox/flex.css",
-                    "src/flexbox/flex-tn.css",
-                    "src/flexbox/flex-sm.css",
-                    "src/flexbox/flex-md.css",
-                    "src/flexbox/flex-lg.css",
-                    "src/flexbox/flex-wd.css",
-
-                    /***** COLORS *****/
-                    "src/colors/color-var.css",
-                    "src/colors/color.css",
-                    "src/colors/color-bg.css",
-
-                    /***** DISPLAY *****/
-                    "src/display/show.css",
-                    "src/display/text.css",
-
-                    /***** SPACES *****/
-                    "src/spaces/space.css",
-                    "src/spaces/space-var.css",
-
-                    /***** BORDERS *****/
-                    "src/borders/bord-var.css",
-                    "src/borders/bord-global.css",
-                    "src/borders/bord-style.css",
-                    "src/borders/bord-width.css",
-                    "src/borders/bord-color.css",
-                    "src/borders/bord-radius.css",
-
-                    /***** SIZES *****/
-                    "src/sizes/space-var.css",
-                    "src/sizes/size-var.css",
-
-                    /***** SHADOWS *****/
-                    "src/shadows/shadows-var.css",
-                    "src/shadows/shabox.css",
-                    "src/shadows/shabox-blur.css",
-                    "src/shadows/shabox-spread.css",
-                    "src/shadows/shatex.css",
-                    "src/shadows/shatex-blur.css",
-
-                    /***** ANIMATIONS *****/
-                    "src/animations/anima-var.css",
-                    "src/animations/anima-keyframes.css",
-                    "src/animations/anima-name.css",
-                    "src/animations/anima-duration.css",
-                    "src/animations/anima-delay.css",
-                    "src/animations/anima-timing.css",
-                    "src/animations/anima-count.css",
-                    "src/animations/anima-direction.css",
-                    "src/animations/anima-fill.css",
-                    "src/animations/anima-origin.css",
-
-                    /***** TAGS *****/
-                    "src/tags/tag-var.css",
-                    "src/tags/tag.css",
-
-                    /***** NAVBAR *****/
-                    "src/navbar/navbar-var.css",
-                    "src/navbar/navbar.css",
-
-                    /***** ELEMENTS *****/
+                    /***** Global *****/
+                    "src/global/tags.css",
+                    "src/global/grid.css",
+                    "src/global/flex.css",
+                    "src/global/display.css",
+                    "src/global/color.css",
+                    "src/global/space.css",
+                    "src/global/bord.css",
+                    "src/global/size.css",
+                    "src/global/shabox.css",
+                    "src/global/shatex.css",
+                    "src/global/font.css",
+                    /***** Animations *****/
+                    "src/animations/keyframes.css",
+                    "src/animations/anima.css",
+                    "src/animations/options.css",
+                    "src/animations/origin.css",
+                    /***** Elements *****/
+                    "src/elements/navbar.css",
                     "src/elements/button.css",
                     "src/elements/slider.css",
                     "src/elements/menu.css",
@@ -99,7 +41,6 @@ module.exports = function(grunt) {
                 dest: "dist/animadio.css"
             }
         },
-
         postcss: {
             options: {
                 processors: [
@@ -110,7 +51,6 @@ module.exports = function(grunt) {
                 src: "dist/animadio.css"
             }
         },
-
         cssmin: {
             target: {
                 files: [{
@@ -119,11 +59,8 @@ module.exports = function(grunt) {
             }
         }
     });
-
     grunt.loadNpmTasks("grunt-contrib-concat");
     grunt.loadNpmTasks("grunt-postcss");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
-
-
     grunt.registerTask("default", ["concat", "postcss", "cssmin"]);
 };
