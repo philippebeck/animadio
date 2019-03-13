@@ -1,0 +1,529 @@
+/*************************/
+/********** BORD *********/
+/*************************/
+
+/*
+1. Bord Variables
+2. Bord
+3. Bord Styles
+4. Bord Widths
+5. Bord Colors
+6. Bord Radius
+*/
+
+
+/***** Bord Variables *****/
+[class*="bord"] {
+    --bord-global-style: solid;
+    --bord-global-width: medium;
+    --bord-global-color: black;
+    --bord-global-radius: 20px;
+
+    --bord-width-sm: thin;
+    --bord-width-md: medium;
+    --bord-width-lg: thick;
+
+    --bord-radius-slight: 10px;
+    --bord-radius-round: 50px;
+    --bord-radius-circle: 50%;
+    --bord-radius-ellipse: 50% / 25%;
+}
+
+
+/***** Bord *****/
+[class*="bord"][class*="tio"],
+[class*="bord"][class*="dio"]:checked ~ [class*="bord"][class*="target"],
+*:hover > [class*="bord"][class*="into"],
+*:focus > [class*="bord"][class*="into"],
+*:active > [class*="bord"][class*="into"],
+[class*="bord"][class*="onto"]:hover,
+[class*="bord"][class*="onto"]:focus,
+[class*="bord"][class*="onto"]:active,
+[class*="bord"][class*="toall"] > *,
+[class*="bord"][class*="forall"]:hover > *,
+[class*="bord"][class*="forall"]:focus > *,
+[class*="bord"][class*="forall"]:active > *,
+[class*="bord"][class*="fromall"] > *:hover,
+[class*="bord"][class*="fromall"] > *:focus,
+[class*="bord"][class*="fromall"] > *:active {
+    border-style: var(--bord-global-style);
+    border-width: var(--bord-global-width);
+    border-color: var(--bord-global-color);
+    border-radius: var(--bord-global-radius);
+}
+
+
+/***** Bord Styles *****/
+[class*="bord"][class*="tio"][class*="dashed"],
+[class*="bord"][class*="dio"][class*="dashed"]:checked ~ [class*="bord"][class*="target"][class*="dashed"],
+*:hover > [class*="bord"][class*="into"][class*="dashed"],
+*:focus > [class*="bord"][class*="into"][class*="dashed"],
+*:active > [class*="bord"][class*="into"][class*="dashed"],
+[class*="bord"][class*="onto"][class*="dashed"]:hover,
+[class*="bord"][class*="onto"][class*="dashed"]:focus,
+[class*="bord"][class*="onto"][class*="dashed"]:active,
+[class*="bord"][class*="toall"][class*="dashed"] > *,
+[class*="bord"][class*="forall"][class*="dashed"]:hover > *,
+[class*="bord"][class*="forall"][class*="dashed"]:focus > *,
+[class*="bord"][class*="forall"][class*="dashed"]:active > *,
+[class*="bord"][class*="fromall"][class*="dashed"] > *:hover,
+[class*="bord"][class*="fromall"][class*="dashed"] > *:focus,
+[class*="bord"][class*="fromall"][class*="dashed"] > *:active {
+    border-style: dashed;
+}
+
+[class*="bord"][class*="tio"][class*="dotted"],
+[class*="bord"][class*="dio"][class*="dotted"]:checked ~ [class*="bord"][class*="target"][class*="dotted"],
+*:hover > [class*="bord"][class*="into"][class*="dotted"],
+*:focus > [class*="bord"][class*="into"][class*="dotted"],
+*:active > [class*="bord"][class*="into"][class*="dotted"],
+[class*="bord"][class*="onto"][class*="dotted"]:hover,
+[class*="bord"][class*="onto"][class*="dotted"]:focus,
+[class*="bord"][class*="onto"][class*="dotted"]:active,
+[class*="bord"][class*="toall"][class*="dotted"] > *,
+[class*="bord"][class*="forall"][class*="dotted"]:hover > *,
+[class*="bord"][class*="forall"][class*="dotted"]:focus > *,
+[class*="bord"][class*="forall"][class*="dotted"]:active > *,
+[class*="bord"][class*="fromall"][class*="dotted"] > *:hover,
+[class*="bord"][class*="fromall"][class*="dotted"] > *:focus,
+[class*="bord"][class*="fromall"][class*="dotted"] > *:active {
+    border-style: dotted;
+}
+
+[class*="bord"][class*="tio"][class*="double"],
+[class*="bord"][class*="dio"][class*="double"]:checked ~ [class*="bord"][class*="target"][class*="double"],
+*:hover > [class*="bord"][class*="into"][class*="double"],
+*:focus > [class*="bord"][class*="into"][class*="double"],
+*:active > [class*="bord"][class*="into"][class*="double"],
+[class*="bord"][class*="onto"][class*="double"]:hover,
+[class*="bord"][class*="onto"][class*="double"]:focus,
+[class*="bord"][class*="onto"][class*="double"]:active,
+[class*="bord"][class*="toall"][class*="double"] > *,
+[class*="bord"][class*="forall"][class*="double"]:hover > *,
+[class*="bord"][class*="forall"][class*="double"]:focus > *,
+[class*="bord"][class*="forall"][class*="double"]:active > *,
+[class*="bord"][class*="fromall"][class*="double"] > *:hover,
+[class*="bord"][class*="fromall"][class*="double"] > *:focus,
+[class*="bord"][class*="fromall"][class*="double"] > *:active {
+    border-style: double;
+}
+
+[class*="bord"][class*="tio"][class*="groove"],
+[class*="bord"][class*="dio"][class*="groove"]:checked ~ [class*="bord"][class*="target"][class*="groove"],
+*:hover > [class*="bord"][class*="into"][class*="groove"],
+*:focus > [class*="bord"][class*="into"][class*="groove"],
+*:active > [class*="bord"][class*="into"][class*="groove"],
+[class*="bord"][class*="onto"][class*="groove"]:hover,
+[class*="bord"][class*="onto"][class*="groove"]:focus,
+[class*="bord"][class*="onto"][class*="groove"]:active,
+[class*="bord"][class*="toall"][class*="groove"] > *,
+[class*="bord"][class*="forall"][class*="groove"]:hover > *,
+[class*="bord"][class*="forall"][class*="groove"]:focus > *,
+[class*="bord"][class*="forall"][class*="groove"]:active > *,
+[class*="bord"][class*="fromall"][class*="groove"] > *:hover,
+[class*="bord"][class*="fromall"][class*="groove"] > *:focus,
+[class*="bord"][class*="fromall"][class*="groove"] > *:active {
+    border-style: groove;
+}
+
+[class*="bord"][class*="tio"][class*="inset"],
+[class*="bord"][class*="dio"][class*="inset"]:checked ~ [class*="bord"][class*="target"][class*="inset"],
+*:hover > [class*="bord"][class*="into"][class*="inset"],
+*:focus > [class*="bord"][class*="into"][class*="inset"],
+*:active > [class*="bord"][class*="into"][class*="inset"],
+[class*="bord"][class*="onto"][class*="inset"]:hover,
+[class*="bord"][class*="onto"][class*="inset"]:focus,
+[class*="bord"][class*="onto"][class*="inset"]:active,
+[class*="bord"][class*="toall"][class*="inset"] > *,
+[class*="bord"][class*="forall"][class*="inset"]:hover > *,
+[class*="bord"][class*="forall"][class*="inset"]:focus > *,
+[class*="bord"][class*="forall"][class*="inset"]:active > *,
+[class*="bord"][class*="fromall"][class*="inset"] > *:hover,
+[class*="bord"][class*="fromall"][class*="inset"] > *:focus,
+[class*="bord"][class*="fromall"][class*="inset"] > *:active {
+    border-style: inset;
+}
+
+[class*="bord"][class*="tio"][class*="outset"],
+[class*="bord"][class*="dio"][class*="outset"]:checked ~ [class*="bord"][class*="target"][class*="outset"],
+*:hover > [class*="bord"][class*="into"][class*="outset"],
+*:focus > [class*="bord"][class*="into"][class*="outset"],
+*:active > [class*="bord"][class*="into"][class*="outset"],
+[class*="bord"][class*="onto"][class*="outset"]:hover,
+[class*="bord"][class*="onto"][class*="outset"]:focus,
+[class*="bord"][class*="onto"][class*="outset"]:active,
+[class*="bord"][class*="toall"][class*="outset"] > *,
+[class*="bord"][class*="forall"][class*="outset"]:hover > *,
+[class*="bord"][class*="forall"][class*="outset"]:focus > *,
+[class*="bord"][class*="forall"][class*="outset"]:active > *,
+[class*="bord"][class*="fromall"][class*="outset"] > *:hover,
+[class*="bord"][class*="fromall"][class*="outset"] > *:focus,
+[class*="bord"][class*="fromall"][class*="outset"] > *:active {
+    border-style: outset;
+}
+
+[class*="bord"][class*="tio"][class*="ridge"],
+[class*="bord"][class*="dio"][class*="ridge"]:checked ~ [class*="bord"][class*="target"][class*="ridge"],
+*:hover > [class*="bord"][class*="into"][class*="ridge"],
+*:focus > [class*="bord"][class*="into"][class*="ridge"],
+*:active > [class*="bord"][class*="into"][class*="ridge"],
+[class*="bord"][class*="onto"][class*="ridge"]:hover,
+[class*="bord"][class*="onto"][class*="ridge"]:focus,
+[class*="bord"][class*="onto"][class*="ridge"]:active,
+[class*="bord"][class*="toall"][class*="ridge"] > *,
+[class*="bord"][class*="forall"][class*="ridge"]:hover > *,
+[class*="bord"][class*="forall"][class*="ridge"]:focus > *,
+[class*="bord"][class*="forall"][class*="ridge"]:active > *,
+[class*="bord"][class*="fromall"][class*="ridge"] > *:hover,
+[class*="bord"][class*="fromall"][class*="ridge"] > *:focus,
+[class*="bord"][class*="fromall"][class*="ridge"] > *:active {
+    border-style: ridge;
+}
+
+[class*="bord"][class*="tio"][class*="solid"],
+[class*="bord"][class*="dio"][class*="solid"]:checked ~ [class*="bord"][class*="target"][class*="solid"],
+*:hover > [class*="bord"][class*="into"][class*="solid"],
+*:focus > [class*="bord"][class*="into"][class*="solid"],
+*:active > [class*="bord"][class*="into"][class*="solid"],
+[class*="bord"][class*="onto"][class*="solid"]:hover,
+[class*="bord"][class*="onto"][class*="solid"]:focus,
+[class*="bord"][class*="onto"][class*="solid"]:active,
+[class*="bord"][class*="toall"][class*="solid"] > *,
+[class*="bord"][class*="forall"][class*="solid"]:hover > *,
+[class*="bord"][class*="forall"][class*="solid"]:focus > *,
+[class*="bord"][class*="forall"][class*="solid"]:active > *,
+[class*="bord"][class*="fromall"][class*="solid"] > *:hover,
+[class*="bord"][class*="fromall"][class*="solid"] > *:focus,
+[class*="bord"][class*="fromall"][class*="solid"] > *:active {
+    border-style: solid;
+}
+
+
+/***** Bord Widths *****/
+[class*="bord"][class*="tio"][class*="sm"],
+[class*="bord"][class*="dio"][class*="sm"]:checked ~ [class*="bord"][class*="target"][class*="sm"],
+*:hover > [class*="bord"][class*="into"][class*="sm"],
+*:focus > [class*="bord"][class*="into"][class*="sm"],
+*:active > [class*="bord"][class*="into"][class*="sm"],
+[class*="bord"][class*="onto"][class*="sm"]:hover,
+[class*="bord"][class*="onto"][class*="sm"]:focus,
+[class*="bord"][class*="onto"][class*="sm"]:active,
+[class*="bord"][class*="toall"][class*="sm"] > *,
+[class*="bord"][class*="forall"][class*="sm"]:hover > *,
+[class*="bord"][class*="forall"][class*="sm"]:focus > *,
+[class*="bord"][class*="forall"][class*="sm"]:active > *,
+[class*="bord"][class*="fromall"][class*="sm"] > *:hover,
+[class*="bord"][class*="fromall"][class*="sm"] > *:focus,
+[class*="bord"][class*="fromall"][class*="sm"] > *:active {
+    border-width: var(--bord-width-sm);
+}
+
+[class*="bord"][class*="tio"][class*="md"],
+[class*="bord"][class*="dio"][class*="md"]:checked ~ [class*="bord"][class*="target"][class*="md"],
+*:hover > [class*="bord"][class*="into"][class*="md"],
+*:focus > [class*="bord"][class*="into"][class*="md"],
+*:active > [class*="bord"][class*="into"][class*="md"],
+[class*="bord"][class*="onto"][class*="md"]:hover,
+[class*="bord"][class*="onto"][class*="md"]:focus,
+[class*="bord"][class*="onto"][class*="md"]:active,
+[class*="bord"][class*="toall"][class*="md"] > *,
+[class*="bord"][class*="forall"][class*="md"]:hover > *,
+[class*="bord"][class*="forall"][class*="md"]:focus > *,
+[class*="bord"][class*="forall"][class*="md"]:active > *,
+[class*="bord"][class*="fromall"][class*="md"] > *:hover,
+[class*="bord"][class*="fromall"][class*="md"] > *:focus,
+[class*="bord"][class*="fromall"][class*="md"] > *:active {
+    border-width: var(--bord-width-md);
+}
+
+[class*="bord"][class*="tio"][class*="lg"],
+[class*="bord"][class*="dio"][class*="lg"]:checked ~ [class*="bord"][class*="target"][class*="lg"],
+*:hover > [class*="bord"][class*="into"][class*="lg"],
+*:focus > [class*="bord"][class*="into"][class*="lg"],
+*:active > [class*="bord"][class*="into"][class*="lg"],
+[class*="bord"][class*="onto"][class*="lg"]:hover,
+[class*="bord"][class*="onto"][class*="lg"]:focus,
+[class*="bord"][class*="onto"][class*="lg"]:active,
+[class*="bord"][class*="toall"][class*="lg"] > *,
+[class*="bord"][class*="forall"][class*="lg"]:hover > *,
+[class*="bord"][class*="forall"][class*="lg"]:focus > *,
+[class*="bord"][class*="forall"][class*="lg"]:active > *,
+[class*="bord"][class*="fromall"][class*="lg"] > *:hover,
+[class*="bord"][class*="fromall"][class*="lg"] > *:focus,
+[class*="bord"][class*="fromall"][class*="lg"] > *:active {
+    border-width: var(--bord-width-lg);
+}
+
+
+/***** Bord Colors *****/
+[class*="bord"][class*="tio"][class*="black"],
+[class*="bord"][class*="dio"][class*="black"]:checked ~ [class*="bord"][class*="target"][class*="black"],
+*:hover > [class*="bord"][class*="into"][class*="black"],
+*:focus > [class*="bord"][class*="into"][class*="black"],
+*:active > [class*="bord"][class*="into"][class*="black"],
+[class*="bord"][class*="onto"][class*="black"]:hover,
+[class*="bord"][class*="onto"][class*="black"]:focus,
+[class*="bord"][class*="onto"][class*="black"]:active,
+[class*="bord"][class*="toall"][class*="black"] > *,
+[class*="bord"][class*="forall"][class*="black"]:hover > *,
+[class*="bord"][class*="forall"][class*="black"]:focus > *,
+[class*="bord"][class*="forall"][class*="black"]:active > *,
+[class*="bord"][class*="fromall"][class*="black"] > *:hover,
+[class*="bord"][class*="fromall"][class*="black"] > *:focus,
+[class*="bord"][class*="fromall"][class*="black"] > *:active {
+    border-color: black;
+}
+
+[class*="bord"][class*="tio"][class*="blue"],
+[class*="bord"][class*="dio"][class*="blue"]:checked ~ [class*="bord"][class*="target"][class*="blue"],
+*:hover > [class*="bord"][class*="into"][class*="blue"],
+*:focus > [class*="bord"][class*="into"][class*="blue"],
+*:active > [class*="bord"][class*="into"][class*="blue"],
+[class*="bord"][class*="onto"][class*="blue"]:hover,
+[class*="bord"][class*="onto"][class*="blue"]:focus,
+[class*="bord"][class*="onto"][class*="blue"]:active,
+[class*="bord"][class*="toall"][class*="blue"] > *,
+[class*="bord"][class*="forall"][class*="blue"]:hover > *,
+[class*="bord"][class*="forall"][class*="blue"]:focus > *,
+[class*="bord"][class*="forall"][class*="blue"]:active > *,
+[class*="bord"][class*="fromall"][class*="blue"] > *:hover,
+[class*="bord"][class*="fromall"][class*="blue"] > *:focus,
+[class*="bord"][class*="fromall"][class*="blue"] > *:active {
+    border-color: var(--blue);
+}
+
+[class*="bord"][class*="tio"][class*="brown"],
+[class*="bord"][class*="dio"][class*="brown"]:checked ~ [class*="bord"][class*="target"][class*="brown"],
+*:hover > [class*="bord"][class*="into"][class*="brown"],
+*:focus > [class*="bord"][class*="into"][class*="brown"],
+*:active > [class*="bord"][class*="into"][class*="brown"],
+[class*="bord"][class*="onto"][class*="brown"]:hover,
+[class*="bord"][class*="onto"][class*="brown"]:focus,
+[class*="bord"][class*="onto"][class*="brown"]:active,
+[class*="bord"][class*="toall"][class*="brown"] > *,
+[class*="bord"][class*="forall"][class*="brown"]:hover > *,
+[class*="bord"][class*="forall"][class*="brown"]:focus > *,
+[class*="bord"][class*="forall"][class*="brown"]:active > *,
+[class*="bord"][class*="fromall"][class*="brown"] > *:hover,
+[class*="bord"][class*="fromall"][class*="brown"] > *:focus,
+[class*="bord"][class*="fromall"][class*="brown"] > *:active {
+    border-color: var(--brown);
+}
+
+[class*="bord"][class*="tio"][class*="gray"],
+[class*="bord"][class*="dio"][class*="gray"]:checked ~ [class*="bord"][class*="target"][class*="gray"],
+*:hover > [class*="bord"][class*="into"][class*="gray"],
+*:focus > [class*="bord"][class*="into"][class*="gray"],
+*:active > [class*="bord"][class*="into"][class*="gray"],
+[class*="bord"][class*="onto"][class*="gray"]:hover,
+[class*="bord"][class*="onto"][class*="gray"]:focus,
+[class*="bord"][class*="onto"][class*="gray"]:active,
+[class*="bord"][class*="toall"][class*="gray"] > *,
+[class*="bord"][class*="forall"][class*="gray"]:hover > *,
+[class*="bord"][class*="forall"][class*="gray"]:focus > *,
+[class*="bord"][class*="forall"][class*="gray"]:active > *,
+[class*="bord"][class*="fromall"][class*="gray"] > *:hover,
+[class*="bord"][class*="fromall"][class*="gray"] > *:focus,
+[class*="bord"][class*="fromall"][class*="gray"] > *:active {
+    border-color: var(--gray);
+}
+
+[class*="bord"][class*="tio"][class*="grey"],
+[class*="bord"][class*="dio"][class*="grey"]:checked ~ [class*="bord"][class*="target"][class*="grey"],
+*:hover > [class*="bord"][class*="into"][class*="grey"],
+*:focus > [class*="bord"][class*="into"][class*="grey"],
+*:active > [class*="bord"][class*="into"][class*="grey"],
+[class*="bord"][class*="onto"][class*="grey"]:hover,
+[class*="bord"][class*="onto"][class*="grey"]:focus,
+[class*="bord"][class*="onto"][class*="grey"]:active,
+[class*="bord"][class*="toall"][class*="grey"] > *,
+[class*="bord"][class*="forall"][class*="grey"]:hover > *,
+[class*="bord"][class*="forall"][class*="grey"]:focus > *,
+[class*="bord"][class*="forall"][class*="grey"]:active > *,
+[class*="bord"][class*="fromall"][class*="grey"] > *:hover,
+[class*="bord"][class*="fromall"][class*="grey"] > *:focus,
+[class*="bord"][class*="fromall"][class*="grey"] > *:active {
+    border-color: var(--grey);
+}
+
+[class*="bord"][class*="tio"][class*="green"],
+[class*="bord"][class*="dio"][class*="green"]:checked ~ [class*="bord"][class*="target"][class*="green"],
+*:hover > [class*="bord"][class*="into"][class*="green"],
+*:focus > [class*="bord"][class*="into"][class*="green"],
+*:active > [class*="bord"][class*="into"][class*="green"],
+[class*="bord"][class*="onto"][class*="green"]:hover,
+[class*="bord"][class*="onto"][class*="green"]:focus,
+[class*="bord"][class*="onto"][class*="green"]:active,
+[class*="bord"][class*="toall"][class*="green"] > *,
+[class*="bord"][class*="forall"][class*="green"]:hover > *,
+[class*="bord"][class*="forall"][class*="green"]:focus > *,
+[class*="bord"][class*="forall"][class*="green"]:active > *,
+[class*="bord"][class*="fromall"][class*="green"] > *:hover,
+[class*="bord"][class*="fromall"][class*="green"] > *:focus,
+[class*="bord"][class*="fromall"][class*="green"] > *:active {
+    border-color: var(--green);
+}
+
+[class*="bord"][class*="tio"][class*="orange"],
+[class*="bord"][class*="dio"][class*="orange"]:checked ~ [class*="bord"][class*="target"][class*="orange"],
+*:hover > [class*="bord"][class*="into"][class*="orange"],
+*:focus > [class*="bord"][class*="into"][class*="orange"],
+*:active > [class*="bord"][class*="into"][class*="orange"],
+[class*="bord"][class*="onto"][class*="orange"]:hover,
+[class*="bord"][class*="onto"][class*="orange"]:focus,
+[class*="bord"][class*="onto"][class*="orange"]:active,
+[class*="bord"][class*="toall"][class*="orange"] > *,
+[class*="bord"][class*="forall"][class*="orange"]:hover > *,
+[class*="bord"][class*="forall"][class*="orange"]:focus > *,
+[class*="bord"][class*="forall"][class*="orange"]:active > *,
+[class*="bord"][class*="fromall"][class*="orange"] > *:hover,
+[class*="bord"][class*="fromall"][class*="orange"] > *:focus,
+[class*="bord"][class*="fromall"][class*="orange"] > *:active {
+    border-color: var(--orange);
+}
+
+[class*="bord"][class*="tio"][class*="red"],
+[class*="bord"][class*="dio"][class*="red"]:checked ~ [class*="bord"][class*="target"][class*="red"],
+*:hover > [class*="bord"][class*="into"][class*="red"],
+*:focus > [class*="bord"][class*="into"][class*="red"],
+*:active > [class*="bord"][class*="into"][class*="red"],
+[class*="bord"][class*="onto"][class*="red"]:hover,
+[class*="bord"][class*="onto"][class*="red"]:focus,
+[class*="bord"][class*="onto"][class*="red"]:active,
+[class*="bord"][class*="toall"][class*="red"] > *,
+[class*="bord"][class*="forall"][class*="red"]:hover > *,
+[class*="bord"][class*="forall"][class*="red"]:focus > *,
+[class*="bord"][class*="forall"][class*="red"]:active > *,
+[class*="bord"][class*="fromall"][class*="red"] > *:hover,
+[class*="bord"][class*="fromall"][class*="red"] > *:focus,
+[class*="bord"][class*="fromall"][class*="red"] > *:active {
+    border-color: var(--red);
+}
+
+[class*="bord"][class*="tio"][class*="violet"],
+[class*="bord"][class*="dio"][class*="violet"]:checked ~ [class*="bord"][class*="target"][class*="violet"],
+*:hover > [class*="bord"][class*="into"][class*="violet"],
+*:focus > [class*="bord"][class*="into"][class*="violet"],
+*:active > [class*="bord"][class*="into"][class*="violet"],
+[class*="bord"][class*="onto"][class*="violet"]:hover,
+[class*="bord"][class*="onto"][class*="violet"]:focus,
+[class*="bord"][class*="onto"][class*="violet"]:active,
+[class*="bord"][class*="toall"][class*="violet"] > *,
+[class*="bord"][class*="forall"][class*="violet"]:hover > *,
+[class*="bord"][class*="forall"][class*="violet"]:focus > *,
+[class*="bord"][class*="forall"][class*="violet"]:active > *,
+[class*="bord"][class*="fromall"][class*="violet"] > *:hover,
+[class*="bord"][class*="fromall"][class*="violet"] > *:focus,
+[class*="bord"][class*="fromall"][class*="violet"] > *:active {
+    border-color: var(--violet);
+}
+
+[class*="bord"][class*="tio"][class*="white"],
+[class*="bord"][class*="dio"][class*="white"]:checked ~ [class*="bord"][class*="target"][class*="white"],
+*:hover > [class*="bord"][class*="into"][class*="white"],
+*:focus > [class*="bord"][class*="into"][class*="white"],
+*:active > [class*="bord"][class*="into"][class*="white"],
+[class*="bord"][class*="onto"][class*="white"]:hover,
+[class*="bord"][class*="onto"][class*="white"]:focus,
+[class*="bord"][class*="onto"][class*="white"]:active,
+[class*="bord"][class*="toall"][class*="white"] > *,
+[class*="bord"][class*="forall"][class*="white"]:hover > *,
+[class*="bord"][class*="forall"][class*="white"]:focus > *,
+[class*="bord"][class*="forall"][class*="white"]:active > *,
+[class*="bord"][class*="fromall"][class*="white"] > *:hover,
+[class*="bord"][class*="fromall"][class*="white"] > *:focus,
+[class*="bord"][class*="fromall"][class*="white"] > *:active {
+    border-color: var(--white);
+}
+
+[class*="bord"][class*="tio"][class*="yellow"],
+[class*="bord"][class*="dio"][class*="yellow"]:checked ~ [class*="bord"][class*="target"][class*="yellow"],
+*:hover > [class*="bord"][class*="into"][class*="yellow"],
+*:focus > [class*="bord"][class*="into"][class*="yellow"],
+*:active > [class*="bord"][class*="into"][class*="yellow"],
+[class*="bord"][class*="onto"][class*="yellow"]:hover,
+[class*="bord"][class*="onto"][class*="yellow"]:focus,
+[class*="bord"][class*="onto"][class*="yellow"]:active,
+[class*="bord"][class*="toall"][class*="yellow"] > *,
+[class*="bord"][class*="forall"][class*="yellow"]:hover > *,
+[class*="bord"][class*="forall"][class*="yellow"]:focus > *,
+[class*="bord"][class*="forall"][class*="yellow"]:active > *,
+[class*="bord"][class*="fromall"][class*="yellow"] > *:hover,
+[class*="bord"][class*="fromall"][class*="yellow"] > *:focus,
+[class*="bord"][class*="fromall"][class*="yellow"] > *:active {
+    border-color: var(--yellow);
+}
+
+
+/***** Bord Radius *****/
+[class*="bord"][class*="tio"][class*="slight"],
+[class*="bord"][class*="dio"][class*="slight"]:checked ~ [class*="bord"][class*="target"][class*="slight"],
+*:hover > [class*="bord"][class*="into"][class*="slight"],
+*:focus > [class*="bord"][class*="into"][class*="slight"],
+*:active > [class*="bord"][class*="into"][class*="slight"],
+[class*="bord"][class*="onto"][class*="slight"]:hover,
+[class*="bord"][class*="onto"][class*="slight"]:focus,
+[class*="bord"][class*="onto"][class*="slight"]:active,
+[class*="bord"][class*="toall"][class*="slight"] > *,
+[class*="bord"][class*="forall"][class*="slight"]:hover > *,
+[class*="bord"][class*="forall"][class*="slight"]:focus > *,
+[class*="bord"][class*="forall"][class*="slight"]:active > *,
+[class*="bord"][class*="fromall"][class*="slight"] > *:hover,
+[class*="bord"][class*="fromall"][class*="slight"] > *:focus,
+[class*="bord"][class*="fromall"][class*="slight"] > *:active {
+    border-radius: var(--bord-radius-slight);
+}
+
+[class*="bord"][class*="tio"][class*="round"],
+[class*="bord"][class*="dio"][class*="round"]:checked ~ [class*="bord"][class*="target"][class*="round"],
+*:hover > [class*="bord"][class*="into"][class*="round"],
+*:focus > [class*="bord"][class*="into"][class*="round"],
+*:active > [class*="bord"][class*="into"][class*="round"],
+[class*="bord"][class*="onto"][class*="round"]:hover,
+[class*="bord"][class*="onto"][class*="round"]:focus,
+[class*="bord"][class*="onto"][class*="round"]:active,
+[class*="bord"][class*="toall"][class*="round"] > *,
+[class*="bord"][class*="forall"][class*="round"]:hover > *,
+[class*="bord"][class*="forall"][class*="round"]:focus > *,
+[class*="bord"][class*="forall"][class*="round"]:active > *,
+[class*="bord"][class*="fromall"][class*="round"] > *:hover,
+[class*="bord"][class*="fromall"][class*="round"] > *:focus,
+[class*="bord"][class*="fromall"][class*="round"] > *:active {
+    border-radius: var(--bord-radius-round);
+}
+
+[class*="bord"][class*="tio"][class*="circle"],
+[class*="bord"][class*="dio"][class*="circle"]:checked ~ [class*="bord"][class*="target"][class*="circle"],
+*:hover > [class*="bord"][class*="into"][class*="circle"],
+*:focus > [class*="bord"][class*="into"][class*="circle"],
+*:active > [class*="bord"][class*="into"][class*="circle"],
+[class*="bord"][class*="onto"][class*="circle"]:hover,
+[class*="bord"][class*="onto"][class*="circle"]:focus,
+[class*="bord"][class*="onto"][class*="circle"]:active,
+[class*="bord"][class*="toall"][class*="circle"] > *,
+[class*="bord"][class*="forall"][class*="circle"]:hover > *,
+[class*="bord"][class*="forall"][class*="circle"]:focus > *,
+[class*="bord"][class*="forall"][class*="circle"]:active > *,
+[class*="bord"][class*="fromall"][class*="circle"] > *:hover,
+[class*="bord"][class*="fromall"][class*="circle"] > *:focus,
+[class*="bord"][class*="fromall"][class*="circle"] > *:active {
+    border-radius: var(--bord-radius-circle);
+}
+
+[class*="bord"][class*="tio"][class*="ellipse"],
+[class*="bord"][class*="dio"][class*="ellipse"]:checked ~ [class*="bord"][class*="target"][class*="ellipse"],
+*:hover > [class*="bord"][class*="into"][class*="ellipse"],
+*:focus > [class*="bord"][class*="into"][class*="ellipse"],
+*:active > [class*="bord"][class*="into"][class*="ellipse"],
+[class*="bord"][class*="onto"][class*="ellipse"]:hover,
+[class*="bord"][class*="onto"][class*="ellipse"]:focus,
+[class*="bord"][class*="onto"][class*="ellipse"]:active,
+[class*="bord"][class*="toall"][class*="ellipse"] > *,
+[class*="bord"][class*="forall"][class*="ellipse"]:hover > *,
+[class*="bord"][class*="forall"][class*="ellipse"]:focus > *,
+[class*="bord"][class*="forall"][class*="ellipse"]:active > *,
+[class*="bord"][class*="fromall"][class*="ellipse"] > *:hover,
+[class*="bord"][class*="fromall"][class*="ellipse"] > *:focus,
+[class*="bord"][class*="fromall"][class*="ellipse"] > *:active {
+    border-radius: var(--bord-radius-ellipse);
+}
