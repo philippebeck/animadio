@@ -1,6 +1,8 @@
 [![Animadio Logo](img/logo.png)](https://animadio.org)
 # [Animadio CSS Framework](https://animadio.org)
 
+PNC Framework (Polymorphic Naming by Concatenation)
+
 Grid & Flexbox Layouts - Perform Complex Animations
  
 CSS Variables Usage - Reusable & Customizable Elements
@@ -101,9 +103,9 @@ The library distribution is available here :
 
 ## CSS Only
 
-Animadio is a CSS Framework, made to be used only with the CSS language : jQuery, or even Javascript are not included or needed in production...
+Animadio is a CSS framework whose library is composed only of CSS source code: jQuery, or even Javascript, are not included or needed in production ...
 
-Grunt is the only JavaScript app used in developement side for recursive tasks (concat, source map, webkit & min) to build the library file.
+Grunt is the only JavaScript app used in the framework developement side for recursive tasks (concat, source map, webkit & min) to build the library file (but it can be used to concat CSS elements of your choice)
 
 You can simply use the library & if you want or if you need : you can overload the CSS variables.
 
