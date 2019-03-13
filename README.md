@@ -101,13 +101,16 @@ You can simply use the library & if you want or if you need : you can overload t
 
 ## Open-Source
 
-[GitHub : animadio](https://github.com/animadio)
+GitHub : [animadio](https://github.com/animadio)
 
-[CodePen : @animadio](https://codepen.io/animadio)
+[![GitHub Stars](https://img.shields.io/github/stars/animadio/animadio.svg?label=GitHub%20Stars)](https://github.com/animadio/animadio)
+
+CodePen : [@animadio](https://codepen.io/animadio)
 
 ## Community
 
 [Twitter : @animadio](https://twitter.com/animadio)
+[![Twitter Follow](	https://img.shields.io/twitter/follow/@animadio.svg?label=Twitter%20Followers)](https://twitter.com/animadio)
 
 [Slack : animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQtNTY1NTc5NzgyNDA3LTI2YWIxM2ZkMGM5ODBkNjNjZmI5ZGVlNTM1ZWEwMWI5ZDJjNzViYjNmNWE2MjllMTc3MDhlMzYzZDYzNTkxNjU)
 
@@ -143,12 +146,19 @@ Animadio needs you if you like it : sends pull requests on GitHub to improve it 
 
 ## Creator
 
-[![Project Maintained](https://img.shields.io/maintenance/yes/2019.svg)](https://github.com/animadio/animadio)
+Philippe Beck :
 
-*Philippe Beck* :
-- [https://philippebeck.net](https://philippebeck.net)  
-- [GitHub : philippebeck](https://github.com/philippebeck)  
-- [Twitter : @philippepjbeck](https://twitter.com/philippepjbeck)  
+[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/philippebeck.net.svg?label=https://philippebeck.net)](https://philippebeck.net)
+
+GitHub : [philippebeck](https://github.com/philippebeck)
+
+[![GitHub Followers](https://img.shields.io/github/followers/philippebeck.svg?label=GitHub%20Followers)](https://github.com/philippebeck)
+
+Twitter : [@philippepjbeck](https://twitter.com/philippepjbeck)
+
+[![Twitter Followers](https://img.shields.io/twitter/follow/@philippepjbeck.svg?label=Twitter%20Followers)](https://twitter.com/philippepjbeck)
+
+---
 
 ## Copyright
 [![GitHub License](https://img.shields.io/npm/l/animadio.svg)](https://github.com/animadio/animadio/blob/master/LICENSE)
