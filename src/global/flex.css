@@ -40,12 +40,14 @@
 
 [class*="col"] {
     --col-pad: 0 10px;
+
     flex-direction: column;
     padding: var(--col-pad);
 }
 
 [class*="row"] {
     --row-pad: 10px 0;
+
     flex-direction: row;
     padding: var(--row-pad);
 }

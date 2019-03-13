@@ -63,6 +63,7 @@
     --navbar-a-pad: 10px;
     --navbar-a-scale: 1.1;
     --navbar-i-alignself: center;
+
     align-items: var(--navbar-alignitems);
     height: var(--navbar-height);
     background-color: var(--navbar-bgcolor);
