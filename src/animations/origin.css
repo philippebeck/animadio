@@ -1,8 +1,21 @@
-/**************************************/
-/********** TRANSFORM ORIGIN **********/
-/**************************************/
+/****************************/
+/********** ORIGIN **********/
+/****************************/
+
+/*
+1. Origin Variables
+2. Origin
+*/
 
 
+/***** Origin Variables *****/
+:root {
+    --transform-origin-near: 50px 50px;
+    --transform-origin-far: top right 50px;
+}
+
+
+/***** Origin *****/
 [class*="anima"][class*="tio"][class*="far"],
 [class*="anima"][class*="dio"][class*="far"]:checked ~ [class*="anima"][class*="target"][class*="far"],
 *:hover > [class*="anima"][class*="into"][class*="far"],
