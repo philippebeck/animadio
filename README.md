@@ -21,9 +21,6 @@ Controls by Radio Buttons - No JavaScript needed
 [![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/animadio.svg)](https://libraries.io/npm/animadio)
 
 [![CodeClimate Maintainability](https://img.shields.io/codeclimate/maintainability/animadio/animadio.svg)](https://codeclimate.com/github/animadio/animadio)
-[![CodeClimate Maintainability Percentage](https://img.shields.io/codeclimate/maintainability-percentage/animadio/animadio.svg)](https://codeclimate.com/github/animadio/animadio)
-[![CodeClimate Issues](https://img.shields.io/codeclimate/issues/animadio/animadio.svg)](https://codeclimate.com/github/animadio/animadio)
-[![CodeClimate Technical Debt](https://img.shields.io/codeclimate/tech-debt/animadio/animadio.svg)](https://codeclimate.com/github/animadio/animadio)
 
 > FRAMEWORK IN CONSTRUCTION !
 >
