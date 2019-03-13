@@ -18,26 +18,26 @@ Controls by Radio Buttons - No JavaScript needed
 [![CodeClimate Maintainability](https://img.shields.io/codeclimate/maintainability/animadio/animadio.svg?label=Maintainability)](https://codeclimate.com/github/animadio/animadio)
 [![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/animadio.svg?label=SourceRank)](https://libraries.io/npm/animadio)
 
-
 > FRAMEWORK IN CONSTRUCTION !
 >
 > NO STABLE & COMPLETE FOR THE MOMENT !!
 
 ## Summary
-- [Installation](#installation)  
-- [CDN](#cdn)  
-- [Download](#download)
-- [Content](#content)  
-- [CSS Only](#css-only)  
-- [Open-Source](#open-source)  
-- [Community](#community)  
-- [Documentation](#documentation)  
-- [Issues](#issues)
-- [Pull Requests](#pull-requests)  
-- [Contributing](#contributing)  
-- [Versioning](#versioning)  
-- [Creator](#creator)  
-- [Copyright](#copyright)  
+
+[Installation](#installation)  
+[CDN](#cdn)  
+[Download](#download)  
+[Content](#content)  
+[CSS Only](#css-only)  
+[Open-Source](#open-source)  
+[Community](#community)  
+[Documentation](#documentation)  
+[Issues](#issues)  
+[Pull Requests](#pull-requests)  
+[Contributing](#contributing)  
+[Versioning](#versioning)  
+[Creator](#creator)  
+[Copyright](#copyright)  
 
 ---
 
@@ -88,10 +88,10 @@ unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unp
 
 ## Content
 
-[The library distribution is available here :](https://github.com/animadio/animadio/tree/master/dist)
-- `dist/animadio.css`  
-- `dist/min/animadio.min.css`  
-- `dist/map/animadio.css.map`  
+The library distribution is available here :  
+`dist/animadio.css`  
+`dist/min/animadio.min.css`  
+`dist/map/animadio.css.map`  
 
 [![CSS Code Size](https://img.shields.io/github/languages/code-size/animadio/animadio.svg?label=Code+Size)](https://github.com/animadio/animadio/tree/master/dist/animadio.css)
 [![CSS Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg?label=Minified+Size)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
