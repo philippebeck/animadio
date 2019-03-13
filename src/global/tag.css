@@ -3,16 +3,33 @@
 /**************************/
 
 /*
-1. Global
-2. Titles
-3. Links
-4. Lists
-5. Medias
-6. Tables
+1. Variables
+2. Global
+3. Titles
+4. Links
+5. Lists
+6. Medias
+7. Tables
 */
 
 
-/******************/
+/***** Variables *****/
+body {
+    --global-font-family: serif;
+    --global-line-height: 1.5;
+    --global-font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    --title-font-family: sans-serif;
+    --title-font-size-tn: 1.5rem;
+    --title-font-size-sm: 2rem;
+    --title-font-size-md: 2.5rem;
+    --title-font-size-lg: 3rem;
+    --title-font-size-wd: 3.5rem;
+}
+
+
 /***** Global *****/
 * {
     box-sizing: border-box;
@@ -32,7 +49,6 @@ body {
 }
 
 
-/******************/
 /***** Titles *****/
 h1,
 h2,
@@ -67,14 +83,12 @@ h6 {
 }
 
 
-/*****************/
 /***** Links *****/
 a {
     text-decoration: none;
 }
 
 
-/*****************/
 /***** Lists *****/
 ul {
     margin: 0;
@@ -83,7 +97,6 @@ ul {
 }
 
 
-/******************/
 /***** Medias *****/
 img,
 video {
@@ -92,7 +105,6 @@ video {
 }
 
 
-/*****************/
 /***** Table *****/
 table {
     margin: auto;
