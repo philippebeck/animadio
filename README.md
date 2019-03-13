@@ -31,6 +31,7 @@ Controls by Radio Buttons - No JavaScript needed
 [Download](#download)  
 [Content](#content)  
 [CSS Only](#css-only)  
+[Browser Support](#browser-support)
 [Open-Source](#open-source)  
 [Community](#community)  
 [Documentation](#documentation)  
@@ -111,6 +112,12 @@ You can simply use the library & if you want or if you need : you can overload t
 
 [![GitHub Top Language](https://img.shields.io/github/languages/top/animadio/animadio.svg?label=CSS)](https://github.com/animadio/animadio)
 [![GitHub Language Count](https://img.shields.io/github/languages/count/animadio/animadio.svg?label=Languages)](https://github.com/animadio/animadio)
+
+---
+
+## Browser Support
+
+Animadio uses PostCSS with autoprefixer to provide a maximum of compatibility for all main browsers, including mainly Firefox, Chrome & Opera, secondarily Edge, Safari & Explorer (for some effects, especially all Skew animations)
 
 ---
 
