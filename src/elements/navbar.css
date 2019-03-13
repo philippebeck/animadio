@@ -2,16 +2,57 @@
 /********** NAVBAR **********/
 /****************************/
 
-/* Global */
-/* Navbar */
-/* Brand Nav */
-/* Main Nav */
-/* User Nav */
-/* Medias Rules */
+
+/*
+1. Navbar Variables
+2. Navbar Global
+3. Navbar
+4. Nav Brand, Main & User
+5. Navbar Small
+6. Navbar Medium
+7. Navbar Large
+8. Navbar Wide
+*/
 
 
-/******************/
-/***** Global *****/
+/***** Navbar Variables *****/
+.navbar {
+    --navbar-alignitems: center;
+    --navbar-height: 10vh;
+    --navbar-bgcolor: var(--blue);
+    --navbar-color: var(--white);
+    --navbar-flexdirection-sm: row;
+    --navbar-justifycontent-tn: space-between;
+    --navbar-justifycontent-sm: space-content;
+    --navbar-justifycontent-md: space-evenly;
+    --navbar-pad-sm: 10px;
+    --navbar-a-pad: 10px;
+    --navbar-a-scale: 1.1;
+    --navbar-i-alignself: center;
+}
+
+.nav-brand {
+    --nav-brand-img-height: 20px;
+}
+
+.nav-main {
+    --nav-main-alignitems: center;
+    --nav-main-mar: 0;
+    --nav-main-pad: 0;
+    --nav-main-span-display: none;
+    --nav-main-span-display-md: inline;
+}
+
+.nav-user {
+    --nav-user-p-display: none;
+    --nav-user-img-mar: 1px;
+    --nav-user-height: 25px;
+    --nav-user-p-display-wd: block;
+    --nav-user-p-maright-wd: 10px;
+}
+
+
+/***** Navbar Global *****/
 .navbar,
 .main-nav,
 .nav-user,
@@ -20,20 +61,6 @@
     display: flex;
 }
 
-
-/******************/
-/***** Navbar *****/
-.navbar {
-    align-items: var(--navbar-alignitems);
-    height: var(--navbar-height);
-    background-color: var(--navbar-bgcolor);
-    color: var(--navbar-color);
-
-    /***** Mobile Portrait *****/
-    justify-content: var(--navbar-justifycontent-tn);
-}
-
-/***** Nav Main & User *****/
 .nav-main,
 .nav-user {
     align-items: var(--nav-main-alignitems);
@@ -42,7 +69,16 @@
     list-style: none;
 }
 
-/***** Navbar Links *****/
+
+/***** Navbar *****/
+.navbar {
+    align-items: var(--navbar-alignitems);
+    height: var(--navbar-height);
+    background-color: var(--navbar-bgcolor);
+    color: var(--navbar-color);
+    justify-content: var(--navbar-justifycontent-tn);
+}
+
 .navbar a {
     padding: var(--navbar-a-pad);
     color: var(--white);
@@ -60,29 +96,21 @@
     transform: scale(var(--navbar-a-scale));
 }
 
-/***** Navbar Icons *****/
 .navbar i {
     align-self: var(--navbar-i-alignself);
 }
 
 
-/*********************/
-/***** Brand Nav *****/
+/***** Nav Brand, Main & User *****/
 .nav-brand img,
 .nav-brand svg {
     height: var(--nav-brand-img-height);
 }
 
-
-/********************/
-/***** Main Nav *****/
 .main-nav span {
     display: var(--nav-main-span-display);
 }
 
-
-/********************/
-/***** User Nav *****/
 .nav-user p {
     display: var(--nav-user-p-display);
 }
@@ -94,10 +122,7 @@
 }
 
 
-/************************/
-/***** Medias Rules *****/
-
-/***** Mobile Landscape *****/
+/***** Navbar Small *****/
 @media (min-width: 576px) {
     .navbar {
         flex-direction: var(--navbar-flexdirection-sm);
@@ -117,7 +142,8 @@
     }
 }
 
-/***** Tablet Portrait *****/
+
+/***** Navbar Medium *****/
 @media (min-width: 768px) {
     .navbar {
         justify-content: var(--navbar-justifycontent-md);
@@ -139,7 +165,8 @@
     }
 }
 
-/***** Tablet Landscape *****/
+
+/***** Navbar Large *****/
 @media (min-width: 992px) {
     .nav-brand img,
     .nav-brand svg {
@@ -153,7 +180,8 @@
     }
 }
 
-/***** Desktop *****/
+
+/***** Navbar Wide *****/
 @media (min-width: 1200px) {
     .nav-brand img,
     .nav-brand svg {
