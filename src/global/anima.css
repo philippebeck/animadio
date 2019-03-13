@@ -413,39 +413,57 @@
 }
 
 /***** Iteration Count *****/
-[class*="animate-"][class*="few"]:hover,
-[class*="animate-"][class*="few"]:focus,
-[class*="animate-"][class*="few"]:active,
-*:hover > [class*="animated-"][class*="few"],
-*:focus > [class*="animated-"][class*="few"],
-*:active > [class*="animated-"][class*="few"],
-[class*="radio-"][class*="few"]:checked ~ [class*="target-"][class*="few"],
-[class*="show-"][class*="few"],
-[class*="shown-"][class*="few"] > * {
+[class*="anima"][class*="tio"][class*="few"],
+[class*="anima"][class*="dio"][class*="few"]:checked ~ [class*="anima"][class*="target"][class*="few"],
+*:hover > [class*="anima"][class*="into"][class*="few"],
+*:focus > [class*="anima"][class*="into"][class*="few"],
+*:active > [class*="anima"][class*="into"][class*="few"],
+[class*="anima"][class*="onto"][class*="few"]:hover,
+[class*="anima"][class*="onto"][class*="few"]:focus,
+[class*="anima"][class*="onto"][class*="few"]:active,
+[class*="anima"][class*="toall"][class*="few"] > *,
+[class*="anima"][class*="forall"][class*="few"]:hover > *,
+[class*="anima"][class*="forall"][class*="few"]:focus > *,
+[class*="anima"][class*="forall"][class*="few"]:active > *,
+[class*="anima"][class*="fromall"][class*="few"] > *:hover,
+[class*="anima"][class*="fromall"][class*="few"] > *:focus,
+[class*="anima"][class*="fromall"][class*="few"] > *:active {
   animation-iteration-count: var(--anima-count-few);
 }
 
-[class*="animate-"][class*="many"]:hover,
-[class*="animate-"][class*="many"]:focus,
-[class*="animate-"][class*="many"]:active,
-*:hover > [class*="animated-"][class*="many"],
-*:focus > [class*="animated-"][class*="many"],
-*:active > [class*="animated-"][class*="many"],
-[class*="radio-"][class*="many"]:checked ~ [class*="target-"][class*="many"],
-[class*="show-"][class*="many"],
-[class*="shown-"][class*="many"] > * {
+[class*="anima"][class*="tio"][class*="many"],
+[class*="anima"][class*="dio"][class*="many"]:checked ~ [class*="anima"][class*="target"][class*="many"],
+*:hover > [class*="anima"][class*="into"][class*="many"],
+*:focus > [class*="anima"][class*="into"][class*="many"],
+*:active > [class*="anima"][class*="into"][class*="many"],
+[class*="anima"][class*="onto"][class*="many"]:hover,
+[class*="anima"][class*="onto"][class*="many"]:focus,
+[class*="anima"][class*="onto"][class*="many"]:active,
+[class*="anima"][class*="toall"][class*="many"] > *,
+[class*="anima"][class*="forall"][class*="many"]:hover > *,
+[class*="anima"][class*="forall"][class*="many"]:focus > *,
+[class*="anima"][class*="forall"][class*="many"]:active > *,
+[class*="anima"][class*="fromall"][class*="many"] > *:hover,
+[class*="anima"][class*="fromall"][class*="many"] > *:focus,
+[class*="anima"][class*="fromall"][class*="many"] > *:active {
   animation-iteration-count: var(--anima-count-many);
 }
 
-[class*="animate-"][class*="loop"]:hover,
-[class*="animate-"][class*="loop"]:focus,
-[class*="animate-"][class*="loop"]:active,
-*:hover > [class*="animated-"][class*="loop"],
-*:focus > [class*="animated-"][class*="loop"],
-*:active > [class*="animated-"][class*="loop"],
-[class*="radio-"][class*="loop"]:checked ~ [class*="target-"][class*="loop"],
-[class*="show-"][class*="loop"],
-[class*="shown-"][class*="loop"] > * {
+[class*="anima"][class*="tio"][class*="loop"],
+[class*="anima"][class*="dio"][class*="loop"]:checked ~ [class*="anima"][class*="target"][class*="loop"],
+*:hover > [class*="anima"][class*="into"][class*="loop"],
+*:focus > [class*="anima"][class*="into"][class*="loop"],
+*:active > [class*="anima"][class*="into"][class*="loop"],
+[class*="anima"][class*="onto"][class*="loop"]:hover,
+[class*="anima"][class*="onto"][class*="loop"]:focus,
+[class*="anima"][class*="onto"][class*="loop"]:active,
+[class*="anima"][class*="toall"][class*="loop"] > *,
+[class*="anima"][class*="forall"][class*="loop"]:hover > *,
+[class*="anima"][class*="forall"][class*="loop"]:focus > *,
+[class*="anima"][class*="forall"][class*="loop"]:active > *,
+[class*="anima"][class*="fromall"][class*="loop"] > *:hover,
+[class*="anima"][class*="fromall"][class*="loop"] > *:focus,
+[class*="anima"][class*="fromall"][class*="loop"] > *:active {
   animation-iteration-count: infinite;
 }
 
