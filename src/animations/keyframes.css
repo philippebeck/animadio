@@ -3,14 +3,42 @@
 /*******************************/
 
 /*
-1. Rotate
-2. Scale
-3. Skew
-4. Translate
+1. Keyframes Variables
+2. Rotate
+3. RotateX
+4. RotateY
+5. Scale
+6. ScaleX
+7. ScaleY
+8. Skew
+9. SkewX
+10. SkewY
+11. Translate
+12. TranslateX
+13. TranslateY
 */
 
 
-/******************/
+/***** Keyframes Variables *****/
+:root {
+    --rotate: rotate(-360deg);
+    --rotateX: rotateX(-360deg);
+    --rotateY: rotateY(-360deg);
+
+    --scale: scale(0);
+    --scaleX: scaleX(0);
+    --scaleY: scaleY(0);
+
+    --skew: skew(180deg, 180deg);
+    --skewX: skewX(180deg);
+    --skewY: skewY(180deg);
+
+    --translate: translate(-100vw, -100vh);
+    --translateX: translateX(-100vw);
+    --translateY: translateY(-100vh);
+}
+
+
 /***** Rotate *****/
 @keyframes rotate {
     to {
@@ -18,12 +46,14 @@
     }
 }
 
+
 /***** RotateX *****/
 @keyframes rotateX {
     to {
         transform: var(--rotateX);
     }
 }
+
 
 /***** RotateY *****/
 @keyframes rotateY {
@@ -33,7 +63,6 @@
 }
 
 
-/*****************/
 /***** Scale *****/
 @keyframes scale {
     to {
@@ -41,12 +70,14 @@
     }
 }
 
+
 /***** ScaleX *****/
 @keyframes scaleX {
     to {
         transform: var(--scaleX);
     }
 }
+
 
 /***** ScaleY *****/
 @keyframes scaleY {
@@ -56,7 +87,6 @@
 }
 
 
-/****************/
 /***** Skew *****/
 @keyframes skew {
     to {
@@ -64,12 +94,14 @@
     }
 }
 
+
 /***** SkewX *****/
 @keyframes skewX {
     to {
         transform: var(--skewX);
     }
 }
+
 
 /***** SkewY *****/
 @keyframes skewY {
@@ -79,7 +111,6 @@
 }
 
 
-/*********************/
 /***** Translate *****/
 @keyframes translate {
     to {
@@ -87,12 +118,14 @@
     }
 }
 
+
 /***** TranslateX *****/
 @keyframes translateX {
     to {
         transform: var(--translateX);
     }
 }
+
 
 /***** TranslateY *****/
 @keyframes translateY {
