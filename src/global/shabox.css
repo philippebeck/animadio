@@ -1,4 +1,3 @@
-/****************************/
 /********** SHABOX **********/
 
 /*
@@ -14,16 +13,13 @@
     --shabox-x-sm: 2px;
     --shabox-x-md: 5px;
     --shabox-x-lg: 10px;
-
     --shabox-y-sm: 2px;
     --shabox-y-md: 5px;
     --shabox-y-lg: 10px;
-
     --shabox-blur-all: 5px;
     --shabox-blur-sm: 2px;
     --shabox-blur-md: 5px;
     --shabox-blur-lg: 10px;
-
     --shabox-spread-all: 5px;
     --shabox-spread-sm: 2px;
     --shabox-spread-md: 5px;

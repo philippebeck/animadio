@@ -1,4 +1,3 @@
-/*************************/
 /********** BORD *********/
 
 /*
@@ -17,11 +16,9 @@
     --bord-global-width: medium;
     --bord-global-color: black;
     --bord-global-radius: 20px;
-
     --bord-width-sm: thin;
     --bord-width-md: medium;
     --bord-width-lg: thick;
-
     --bord-radius-slight: 10px;
     --bord-radius-round: 50px;
     --bord-radius-circle: 50%;

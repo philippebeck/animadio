@@ -1,4 +1,3 @@
-/***************************/
 /********** SIZE ***********/
 
 /*
@@ -18,11 +17,9 @@
     --height-sm: 10vh;
     --height-md: 50vh;
     --height-lg: 100vh;
-
     --max-height-sm: 50vh;
     --max-height-md: 75vh;
     --max-height-lg: 100vh;
-
     --min-height-sm: 25vh;
     --min-height-md: 50vh;
     --min-height-lg: 75vh;
@@ -85,11 +82,9 @@
     --width-sm: 25%;
     --width-md: 50%;
     --width-lg: 100%;
-
     --max-width-sm: 50%;
     --max-width-md: 75%;
     --max-width-lg: 100%;
-
     --min-width-sm: 25%;
     --min-width-md: 50%;
     --min-width-lg: 75%;

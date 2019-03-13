@@ -1,4 +1,3 @@
-/***************************/
 /********** ANIMA **********/
 
 /*
@@ -21,18 +20,14 @@
     --anima-duration-md: 5s;
     --anima-duration-lg: 10s;
     --anima-duration-wd: 60s;
-
     --anima-timing-ease: ease-in-out;
     --anima-timing-steps: 60, start;
     --anima-timing-bezier: 1, 5, 1, -5;
-
     --anima-count-few: 2;
     --anima-count-many: 5;
-
     --anima-delay-small: 1s;
     --anima-delay-medium: 2s;
     --anima-delay-large: 3s;
-
     --transform-origin-near: 50px 50px;
     --transform-origin-far: top right 50px;
 }
