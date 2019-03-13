@@ -123,21 +123,17 @@ Animadio uses PostCSS with autoprefixer to provide a maximum of compatibility fo
 
 ## Open-Source
 
-GitHub : [animadio](https://github.com/animadio)
-
-[![GitHub Stars](https://img.shields.io/github/stars/animadio/animadio.svg?label=GitHub%20Stars)](https://github.com/animadio/animadio)
-
 CodePen : [@animadio](https://codepen.io/animadio)
+
+[![GitHub Stars](https://img.shields.io/github/stars/animadio/animadio.svg?label=GitHub+:+animadio+|+Stars)](https://github.com/animadio/animadio)
 
 ---
 
 ## Community
 
-Twitter : [@animadio](https://twitter.com/animadio)
-
-[![Twitter Follow](	https://img.shields.io/twitter/follow/@animadio.svg?label=Twitter%20Followers)](https://twitter.com/animadio)
-
 Slack : [animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQtNTY1NTc5NzgyNDA3LTI2YWIxM2ZkMGM5ODBkNjNjZmI5ZGVlNTM1ZWEwMWI5ZDJjNzViYjNmNWE2MjllMTc3MDhlMzYzZDYzNTkxNjU)
+
+[![Twitter Follow](	https://img.shields.io/twitter/follow/@animadio.svg?label=Twitter+:+@animadio+|+Followers)](https://twitter.com/animadio)
 
 ---
 
@@ -183,17 +179,11 @@ Animadio is maintained under the [Semantic Versioning 2.0.0](https://semver.org)
 
 ## Creator
 
-Philippe Beck :
+Philippe Beck
 
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/philippebeck.net.svg?label=https://philippebeck.net)](https://philippebeck.net)
-
-GitHub : [philippebeck](https://github.com/philippebeck)
-
-[![GitHub Followers](https://img.shields.io/github/followers/philippebeck.svg?label=GitHub%20Followers)](https://github.com/philippebeck)
-
-Twitter : [@philippepjbeck](https://twitter.com/philippepjbeck)
-
-[![Twitter Followers](https://img.shields.io/twitter/follow/@philippepjbeck.svg?label=Twitter%20Followers)](https://twitter.com/philippepjbeck)
+[![GitHub Followers](https://img.shields.io/github/followers/philippebeck.svg?label=GitHub+:+philippebeck+|+Followers)](https://github.com/philippebeck)
+[![Twitter Followers](https://img.shields.io/twitter/follow/@philippepjbeck.svg?label=Twitter+:+@philippepjbeck+|+Followers)](https://twitter.com/philippepjbeck)
 
 ---
 
