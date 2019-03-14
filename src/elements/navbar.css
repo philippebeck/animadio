@@ -34,9 +34,9 @@
 
 /***** Navbar Global *****/
 .navbar,
-.main-nav,
+.nav-main,
 .nav-user,
-.main-nav a,
+.nav-main a,
 .nav-user a {
   display: flex;
 }
@@ -98,7 +98,7 @@
   height: var(--nav-brand-img-height);
 }
 
-.main-nav span {
+.nav-main span {
   display: var(--nav-main-span-display);
 }
 
@@ -143,7 +143,7 @@
     height: calc(var(--nav-brand-img-height) * 1.5);
   }
 
-  .main-nav span {
+  .nav-main span {
     display: var(--nav-main-span-display-md);
   }
 
