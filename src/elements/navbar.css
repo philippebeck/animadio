@@ -57,7 +57,7 @@
   --navbar-color: var(--white);
   --navbar-flexdirection-sm: row;
   --navbar-justifycontent-tn: space-between;
-  --navbar-justifycontent-sm: space-content;
+  --navbar-justifycontent-sm: space-around;
   --navbar-justifycontent-md: space-evenly;
   --navbar-pad-sm: 10px;
   --navbar-a-pad: 10px;
