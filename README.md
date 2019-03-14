@@ -18,7 +18,6 @@ Controls by Radio Buttons - No JavaScript needed
 [![David Dev Dependencies](https://img.shields.io/david/dev/animadio/animadio.svg?label=Dev+Dependencies)](https://david-dm.org/animadio/animadio?type=dev)
 [![Codacy Code Quality](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
 [![CodeClimate Maintainability](https://img.shields.io/codeclimate/maintainability/animadio/animadio.svg?label=Maintainability)](https://codeclimate.com/github/animadio/animadio)
-[![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/animadio.svg?label=SourceRank)](https://libraries.io/npm/animadio)
 
 > FRAMEWORK IN CONSTRUCTION !
 >
@@ -31,7 +30,7 @@ Controls by Radio Buttons - No JavaScript needed
 [Download](#download)  
 [Content](#content)  
 [CSS Only](#css-only)  
-[Browser Support](#browser-support)
+[Browser Support](#browser-support)  
 [Open-Source](#open-source)  
 [Community](#community)  
 [Documentation](#documentation)  
@@ -54,11 +53,11 @@ Yarn : `yarn add animadio`
 [![NPM Montly Downloads](https://img.shields.io/npm/dm/animadio.svg?label=Montly+Downloads)](https://www.npmjs.com/package/animadio)
 [![NPM Yearly Downloads](https://img.shields.io/npm/dy/animadio.svg?label=Yearly+Downloads)](https://www.npmjs.com/package/animadio)
 
-Meteor : `meteor add animadio:animadio`
+Meteor : `meteor add animadio:animadio`  
 
 [![Meteor Project](https://img.shields.io/badge/meteor-animadio%3Aanimadio-blue.svg?label=Atmosphere)](https://atmospherejs.com/animadio/animadio)
 
-Composer : `composer require animadio/animadio`
+Composer : `composer require animadio/animadio`  
 
 [![Packagist Version](https://img.shields.io/packagist/v/animadio/animadio.svg?label=Packagist)](https://packagist.org/packages/animadio/animadio)
 
@@ -70,7 +69,6 @@ Pip & Gem : Very Soon !
 
 jsDelivr (choose file & version) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist](https://cdn.jsdelivr.net/npm/animadio@latest/dist)  
 
-[![jsDelivr Daily Downloads](https://img.shields.io/jsdelivr/npm/hd/animadio.svg?label=Daily+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Weekly Downloads](https://img.shields.io/jsdelivr/npm/hw/animadio.svg?label=Weekly+Dwonloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=Yearly+Dwonloads)](https://www.jsdelivr.com/package/npm/animadio)
