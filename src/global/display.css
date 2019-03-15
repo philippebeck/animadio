@@ -67,22 +67,22 @@
 }
 
 /***** Cursor *****/
-.crosshair,
-.crosshair > * {
+[class|="cursor"][class$="-cross"],
+[class|="cursor"][class$="-cross"] > * {
   cursor: crosshair;
 }
 
-.help,
-.help > * {
+[class|="cursor"][class$="-help"],
+[class|="cursor"][class$="-help"] > * {
   cursor: help;
 }
 
-.forbidden,
-.forbidden > * {
+[class|="cursor"][class$="-none"],
+[class|="cursor"][class$="-none"] > * {
   cursor: not-allowed;
 }
 
-.pointer,
-.pointer > * {
+[class|="cursor"][class$="-hand"],
+[class|="cursor"][class$="-hand"] > * {
   cursor: pointer;
 }
