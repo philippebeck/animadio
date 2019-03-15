@@ -35,82 +35,82 @@
 }
 
 /***** Mar *****/
-[class|="mar"][class*="-sm-"][class$="-D"],
-[class|="mar"][class*="-sm-"][class$="-G"] > * {
+[class|="mar"][class*="-sm-"][class$="-d"],
+[class|="mar"][class*="-sm-"][class$="-g"] > * {
   margin: var(--mar-sm);
 }
 
-[class|="mar"][class*="-md-"][class$="-D"],
-[class|="mar"][class*="-md-"][class$="-G"] > * {
+[class|="mar"][class*="-md-"][class$="-d"],
+[class|="mar"][class*="-md-"][class$="-g"] > * {
   margin: var(--mar-md);
 }
 
-[class|="mar"][class*="-lg-"][class$="-D"],
-[class|="mar"][class*="-lg-"][class$="-G"] > * {
+[class|="mar"][class*="-lg-"][class$="-d"],
+[class|="mar"][class*="-lg-"][class$="-g"] > * {
   margin: var(--mar-lg);
 }
 
 /***** Mar Top *****/
-[class|="mar"][class*="-top-"][class*="-sm-"][class$="-D"],
-[class|="mar"][class*="-top-"][class*="-sm-"][class$="-G"] > * {
+[class|="top-mar"][class*="-sm-"][class$="-d"],
+[class|="top-mar"][class*="-sm-"][class$="-g"] > * {
   margin-top: var(--mar-top-sm);
 }
 
-[class|="mar"][class*="-top-"][class*="-md-"][class$="-D"],
-[class|="mar"][class*="-top-"][class*="-md-"][class$="-G"] > * {
+[class|="top-mar"][class*="-md-"][class$="-d"],
+[class|="top-mar"][class*="-md-"][class$="-g"] > * {
   margin-top: var(--mar-top-md);
 }
 
-[class|="mar"][class*="-top-"][class*="-lg-"][class$="-D"],
-[class|="mar"][class*="-top-"][class*="-lg-"][class$="-G"] > * {
+[class|="top-mar"][class*="-lg-"][class$="-d"],
+[class|="top-mar"][class*="-lg-"][class$="-g"] > * {
   margin-top: var(--mar-top-lg);
 }
 
 /***** Mar Right *****/
-[class|="mar"][class*="-right-"][class*="-sm-"][class$="-D"],
-[class|="mar"][class*="-right-"][class*="-sm-"][class$="-G"] > * {
+[class|="right-mar"][class*="-sm-"][class$="-d"],
+[class|="right-mar"][class*="-sm-"][class$="-g"] > * {
   margin-right: var(--mar-right-sm);
 }
 
-[class|="mar"][class*="-right-"][class*="-md-"][class$="-D"],
-[class|="mar"][class*="-right-"][class*="-md-"][class$="-G"] > * {
+[class|="right-mar"][class*="-md-"][class$="-d"],
+[class|="right-mar"][class*="-md-"][class$="-g"] > * {
   margin-right: var(--mar-right-md);
 }
 
-[class|="mar"][class*="-right-"][class*="-lg-"][class$="-D"],
-[class|="mar"][class*="-right-"][class*="-lg-"][class$="-G"] > * {
+[class|="right-mar"][class*="-lg-"][class$="-d"],
+[class|="right-mar"][class*="-lg-"][class$="-g"] > * {
   margin-right: var(--mar-right-lg);
 }
 
 /***** Mar Bot *****/
-[class|="mar"][class*="-bot-"][class*="-sm-"][class$="-D"],
-[class|="mar"][class*="-bot-"][class*="-sm-"][class$="-G"] > * {
+[class|="bot-mar"][class*="-sm-"][class$="-d"],
+[class|="bot-mar"][class*="-sm-"][class$="-g"] > * {
   margin-bottom: var(--mar-bottom-sm);
 }
 
-[class|="mar"][class*="-bot-"][class*="-md-"][class$="-D"],
-[class|="mar"][class*="-bot-"][class*="-md-"][class$="-G"] > * {
+[class|="bot-mar"][class*="-md-"][class$="-d"],
+[class|="bot-mar"][class*="-md-"][class$="-g"] > * {
   margin-bottom: var(--mar-bottom-md);
 }
 
-[class|="mar"][class*="-bot-"][class*="-lg-"][class$="-D"],
-[class|="mar"][class*="-bot-"][class*="-lg-"][class$="-G"] > * {
+[class|="bot-mar"][class*="-lg-"][class$="-d"],
+[class|="bot-mar"][class*="-lg-"][class$="-g"] > * {
   margin-bottom: var(--mar-bottom-lg);
 }
 
 /***** Mar Left *****/
-[class|="mar"][class*="-left-"][class*="-sm-"][class$="-D"],
-[class|="mar"][class*="-left-"][class*="-sm-"][class$="-G"] > * {
+[class|="left-mar"][class*="-sm-"][class$="-d"],
+[class|="left-mar"][class*="-sm-"][class$="-g"] > * {
   margin-left: var(--mar-left-sm);
 }
 
-[class|="mar"][class*="-left-"][class*="-md-"][class$="-D"],
-[class|="mar"][class*="-left-"][class*="-md-"][class$="-G"] > * {
+[class|="left-mar"][class*="-md-"][class$="-d"],
+[class|="left-mar"][class*="-md-"][class$="-g"] > * {
   margin-left: var(--mar-left-md);
 }
 
-[class|="mar"][class*="-left-"][class*="-lg-"][class$="-D"],
-[class|="mar"][class*="-left-"][class*="-lg-"][class$="-G"] > * {
+[class|="left-mar"][class*="-lg-"][class$="-d"],
+[class|="left-mar"][class*="-lg-"][class$="-g"] > * {
   margin-left: var(--mar-left-lg);
 }
 
@@ -134,81 +134,81 @@
 }
 
 /***** Pad *****/
-[class|="pad"][class*="-sm-"][class$="-D"],
-[class|="pad"][class*="-sm-"][class$="-G"] > * {
+[class|="pad"][class*="-sm-"][class$="-d"],
+[class|="pad"][class*="-sm-"][class$="-g"] > * {
   padding: var(--pad-sm);
 }
 
-[class|="pad"][class*="-md-"][class$="-D"],
-[class|="pad"][class*="-md-"][class$="-G"] > * {
+[class|="pad"][class*="-md-"][class$="-d"],
+[class|="pad"][class*="-md-"][class$="-g"] > * {
   padding: var(--pad-md);
 }
 
-[class|="pad"][class*="-lg-"][class$="-D"],
-[class|="pad"][class*="-lg-"][class$="-G"] > * {
+[class|="pad"][class*="-lg-"][class$="-d"],
+[class|="pad"][class*="-lg-"][class$="-g"] > * {
   padding: var(--pad-lg);
 }
 
 /***** Pad Top *****/
-[class|="pad"][class*="-top-"][class*="-sm-"][class$="-D"],
-[class|="pad"][class*="-top-"][class*="-sm-"][class$="-G"] > * {
+[class|="top-pad"][class*="-sm-"][class$="-d"],
+[class|="top-pad"][class*="-sm-"][class$="-g"] > * {
   padding-top: var(--pad-top-sm);
 }
 
-[class|="pad"][class*="-top-"][class*="-md-"][class$="-D"],
-[class|="pad"][class*="-top-"][class*="-md-"][class$="-G"] > * {
+[class|="top-pad"][class*="-md-"][class$="-d"],
+[class|="top-pad"][class*="-md-"][class$="-g"] > * {
   padding-top: var(--pad-top-md);
 }
 
-[class|="pad"][class*="-top-"][class*="-lg-"][class$="-D"],
-[class|="pad"][class*="-top-"][class*="-lg-"][class$="-G"] > * {
+[class|="top-pad"][class*="-lg-"][class$="-d"],
+[class|="top-pad"][class*="-lg-"][class$="-g"] > * {
   padding-top: var(--pad-top-lg);
 }
 
 /***** Pad Right *****/
-[class|="pad"][class*="-right-"][class*="-sm-"][class$="-D"],
-[class|="pad"][class*="-right-"][class*="-sm-"][class$="-G"] > * {
+[class|="right-pad"][class*="-sm-"][class$="-d"],
+[class|="right-pad"][class*="-sm-"][class$="-g"] > * {
   padding-right: var(--pad-right-sm);
 }
 
-[class|="pad"][class*="-right-"][class*="-md-"][class$="-D"],
-[class|="pad"][class*="-right-"][class*="-md-"][class$="-G"] > * {
+[class|="right-pad"][class*="-md-"][class$="-d"],
+[class|="right-pad"][class*="-md-"][class$="-g"] > * {
   padding-right: var(--pad-right-md);
 }
 
-[class|="pad"][class*="-right-"][class*="-lg-"][class$="-D"],
-[class|="pad"][class*="-right-"][class*="-lg-"][class$="-G"] > * {
+[class|="right-pad"][class*="-lg-"][class$="-d"],
+[class|="right-pad"][class*="-lg-"][class$="-g"] > * {
   padding-right: var(--pad-right-lg);
 }
 
 /***** Pad Bottom *****/
-[class|="pad"][class*="-bot-"][class*="-sm-"][class$="-D"],
-[class|="pad"][class*="-bot-"][class*="-sm-"][class$="-G"] > * {
+[class|="bot-pad"][class*="-sm-"][class$="-d"],
+[class|="bot-pad"][class*="-sm-"][class$="-g"] > * {
   padding-bottom: var(--pad-bottom-sm);
 }
 
-[class|="pad"][class*="-bot-"][class*="-md-"][class$="-D"],
-[class|="pad"][class*="-bot-"][class*="-md-"][class$="-G"] > * {
+[class|="bot-pad"][class*="-md-"][class$="-d"],
+[class|="bot-pad"][class*="-md-"][class$="-g"] > * {
   padding-bottom: var(--pad-bottom-md);
 }
 
-[class|="pad"][class*="-bot-"][class*="-lg-"][class$="-D"],
-[class|="pad"][class*="-bot-"][class*="-lg-"][class$="-G"] > * {
+[class|="bot-pad"][class*="-lg-"][class$="-d"],
+[class|="bot-pad"][class*="-lg-"][class$="-g"] > * {
   padding-bottom: var(--pad-bottom-lg);
 }
 
 /***** Pad Left *****/
-[class|="pad"][class*="-left-"][class*="-sm-"][class$="-D"],
-[class|="pad"][class*="-left-"][class*="-sm-"][class$="-G"] > * {
+[class|="left-pad"][class*="-sm-"][class$="-d"],
+[class|="left-pad"][class*="-sm-"][class$="-g"] > * {
   padding-left: var(--pad-left-sm);
 }
 
-[class|="pad"][class*="-left-"][class*="-md-"][class$="-D"],
-[class|="pad"][class*="-left-"][class*="-md-"][class$="-G"] > * {
+[class|="left-pad"][class*="-md-"][class$="-d"],
+[class|="left-pad"][class*="-md-"][class$="-g"] > * {
   padding-left: var(--pad-left-md);
 }
 
-[class|="pad"][class*="-left-"][class*="-lg-"][class$="-D"],
-[class|="pad"][class*="-left-"][class*="-lg-"][class$="-G"] > * {
+[class|="left-pad"][class*="-lg-"][class$="-d"],
+[class|="left-pad"][class*="-lg-"][class$="-g"] > * {
   padding-left: var(--pad-left-lg);
 }
