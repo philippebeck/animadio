@@ -7,7 +7,7 @@ CSS Variables Usage - Reusable & Customizable Elements
 
 Controls by Radio Buttons - No JavaScript needed
 
-[![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=GitHub+Version)](https://github.com/animadio/animadio/blob/master/package.json)
+[![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg?label=Last+Commit)](https://github.com/animadio/animadio/commits/master)
 [![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/animadio/animadio.svg?label=Commit+Activity)](https://github.com/animadio/animadio/graphs/commit-activity)
 [![Project Maintained](https://img.shields.io/maintenance/yes/2019.svg?label=Maintained)](https://github.com/animadio/animadio)
@@ -169,7 +169,7 @@ Animadio needs you if you like it : sends pull requests on GitHub to improve it 
 
 Animadio is maintained under the [Semantic Versioning 2.0.0](https://semver.org)
 
-[![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=GitHub+Version)](https://github.com/animadio/animadio/blob/master/package.json)
+[![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
 
 ---
 
