@@ -13,7 +13,7 @@
 */
 
 /***** Variables *****/
-[class="anima"] {
+[class*="anima"] {
   --anima-duration-tn: 1s;
   --anima-duration-sm: 2s;
   --anima-duration-md: 5s;
