@@ -15,7 +15,7 @@ Controls by Radio Buttons - No JavaScript needed
 [![Travis Build](https://travis-ci.com/animadio/animadio.svg?branch=master)](https://travis-ci.com/animadio/animadio)
 [![David Dev Dependencies](https://img.shields.io/david/dev/animadio/animadio.svg?label=Dev+Dependencies)](https://david-dm.org/animadio/animadio?type=dev)
 [![Codacy Code Quality](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
-[![CodeClimate Maintainability](https://img.shields.io/codeclimate/maintainability/animadio/animadio.svg?label=Maintainability)](https://codeclimate.com/github/animadio/animadio)
+[![CodeClimate Maintainability](https://img.shields.io/codeclimate/maintainability-percentage/animadio/animadio.svg?label=Maintainability)](https://codeclimate.com/github/animadio/animadio)
 
 > FRAMEWORK IN CONSTRUCTION !
 >
