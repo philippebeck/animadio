@@ -8,10 +8,10 @@ CSS Variables Usage - Reusable & Customizable Elements
 Controls by Radio Buttons - No JavaScript needed
 
 [![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg?label=Last+Commit)](https://github.com/animadio/animadio/commits/master)
 [![David Dev Dependencies](https://img.shields.io/david/dev/animadio/animadio.svg?label=Dev+Dependencies)](https://david-dm.org/animadio/animadio?type=dev)
-
 [![Travis Build](https://travis-ci.com/animadio/animadio.svg?branch=master)](https://travis-ci.com/animadio/animadio)
+
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg?label=Last+Commit)](https://github.com/animadio/animadio/commits/master)
 [![Codacy Code Quality](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
 [![CodeClimate Maintainability](https://img.shields.io/codeclimate/maintainability-percentage/animadio/animadio.svg?label=Maintainability)](https://codeclimate.com/github/animadio/animadio)
 
