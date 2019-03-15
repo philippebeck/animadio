@@ -9,21 +9,96 @@
 */
 
 /***** Dis *****/
-[class|="dis"][class$="-block"] {
+[class|="dis"][class$="-block"],
+[class|="dis"][class*="-block-tn"] {
   display: block;
 }
 
-[class|="dis"][class$="-inbloc"] {
+[class|="dis"][class$="-inblock"],
+[class|="dis"][class*="-inblock-tn"] {
   display: inline-block;
 }
 
-[class|="dis"][class$="-inline"] {
+[class|="dis"][class$="-inline"],
+[class|="dis"][class*="-inline-tn"] {
   display: inline;
 }
 
-[class|="dis"][class$="-hidden"],
-[class$="-r"] {
+[class|="dis"][class$="-hide"],
+[class|="dis"][class*="-hide-tn"] {
   display: none;
+}
+
+@media (min-width: 576px) {
+  [class|="dis"][class*="-block-sm"] {
+    display: block;
+  }
+
+  [class|="dis"][class*="-inblock-sm"] {
+    display: inline-block;
+  }
+
+  [class|="dis"][class*="-inline-sm"] {
+    display: inline;
+  }
+
+  [class|="dis"][class*="-hide-sm"] {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  [class|="dis"][class*="-block-md"] {
+    display: block;
+  }
+
+  [class|="dis"][class*="-inblock-md"] {
+    display: inline-block;
+  }
+
+  [class|="dis"][class*="-inline-md"] {
+    display: inline;
+  }
+
+  [class|="dis"][class*="-hide-md"] {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  [class|="dis"][class*="-block-lg"] {
+    display: block;
+  }
+
+  [class|="dis"][class*="-inblock-lg"] {
+    display: inline-block;
+  }
+
+  [class|="dis"][class*="-inline-lg"] {
+    display: inline;
+  }
+
+  [class|="dis"][class*="-hide-lg"] {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  [class|="dis"][class*="-block-wd"] {
+    display: block;
+  }
+
+  [class|="dis"][class*="-inblock-wd"] {
+    display: inline-block;
+  }
+
+  [class|="dis"][class*="-inline-wd"] {
+    display: inline;
+  }
+
+  [class|="dis"][class*="-hide-wd"] {
+    display: none;
+  }
 }
 
 /***** Pos *****/
