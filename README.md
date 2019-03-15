@@ -9,11 +9,9 @@ Controls by Radio Buttons - No JavaScript needed
 
 [![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg?label=Last+Commit)](https://github.com/animadio/animadio/commits/master)
-[![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/animadio/animadio.svg?label=Commit+Activity)](https://github.com/animadio/animadio/graphs/commit-activity)
-[![Project Maintained](https://img.shields.io/maintenance/yes/2019.svg?label=Maintained)](https://github.com/animadio/animadio)
+[![David Dev Dependencies](https://img.shields.io/david/dev/animadio/animadio.svg?label=Dev+Dependencies)](https://david-dm.org/animadio/animadio?type=dev)
 
 [![Travis Build](https://travis-ci.com/animadio/animadio.svg?branch=master)](https://travis-ci.com/animadio/animadio)
-[![David Dev Dependencies](https://img.shields.io/david/dev/animadio/animadio.svg?label=Dev+Dependencies)](https://david-dm.org/animadio/animadio?type=dev)
 [![Codacy Code Quality](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
 [![CodeClimate Maintainability](https://img.shields.io/codeclimate/maintainability-percentage/animadio/animadio.svg?label=Maintainability)](https://codeclimate.com/github/animadio/animadio)
 
@@ -28,7 +26,8 @@ Controls by Radio Buttons - No JavaScript needed
 [Download](#download)  
 [Content](#content)  
 [CSS Only](#css-only)  
-[Browser Support](#browser-support)  
+[Support](#support)  
+[Browsers](#browsers)  
 [Open-Source](#open-source)  
 [Community](#community)  
 [Documentation](#documentation)  
@@ -94,7 +93,6 @@ The library distribution is available here :
 
 [![CSS Code Size](https://img.shields.io/github/languages/code-size/animadio/animadio.svg?label=Code+Size)](https://github.com/animadio/animadio/tree/master/dist/animadio.css)
 [![CSS Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg?label=Minified+Size)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
-[![CSS GZip Size](https://img.badgesize.io/animadio/animadio/master/dist/min/animadio.min.css?compression=gzip&label=GZip+Size)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
 
 ---
 
@@ -107,11 +105,19 @@ Grunt is the only JavaScript app used in the framework developement side for rec
 You can simply use the library & if you want or if you need : you can overload the CSS variables.
 
 [![GitHub Top Language](https://img.shields.io/github/languages/top/animadio/animadio.svg?label=CSS)](https://github.com/animadio/animadio)
-[![GitHub Language Count](https://img.shields.io/github/languages/count/animadio/animadio.svg?label=Languages)](https://github.com/animadio/animadio)
 
 ---
 
-## Browser Support
+## Support
+
+Animadio has continuous support & community networks will give all news !
+
+[![Project Maintained](https://img.shields.io/maintenance/yes/2019.svg?label=Maintained)](https://github.com/animadio/animadio)
+[![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/animadio/animadio.svg?label=Commit+Activity)](https://github.com/animadio/animadio/graphs/commit-activity)
+
+---
+
+## Browsers
 
 Animadio uses PostCSS with autoprefixer to provide a maximum of compatibility for all main browsers, including mainly Firefox, Chrome & Opera, secondarily Edge, Safari & Explorer (for some effects, especially all Skew animations)
 
