@@ -52,7 +52,7 @@
 /***** Navbar *****/
 .navbar {
   --navbar-alignitems: center;
-  --navbar-height: 10vh;
+  --navbar-height: 100px;
   --navbar-bgcolor: var(--blue);
   --navbar-color: var(--white);
   --navbar-flexdirection-sm: row;
@@ -61,7 +61,7 @@
   --navbar-justifycontent-md: space-evenly;
   --navbar-pad-sm: 10px;
   --navbar-a-pad: 10px;
-  --navbar-a-scale: 1.1;
+  --navbar-a-scale: .9;
   --navbar-i-alignself: center;
 
   align-items: var(--navbar-alignitems);
