@@ -10,7 +10,7 @@
 */
 
 /***** Bord Variables *****/
-[class*="bord"] {
+[class|="bord"] {
   --bord-global-style: solid;
   --bord-global-width: medium;
   --bord-global-color: black;

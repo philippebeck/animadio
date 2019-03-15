@@ -16,7 +16,7 @@
 */
 
 /***** Grid Variables *****/
-[class*="gap"] {
+[class|="gap"] {
   --gap-1tn: 1px;
   --gap-2tn: 2px;
   --gap-3tn: 5px;
