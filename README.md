@@ -66,9 +66,9 @@ Pip & Gem : Very Soon !
 
 jsDelivr (choose file & version) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist](https://cdn.jsdelivr.net/npm/animadio@latest/dist)  
 
-[![jsDelivr Weekly Downloads](https://img.shields.io/jsdelivr/npm/hw/animadio.svg?label=Weekly+Dwonloads)](https://www.jsdelivr.com/package/npm/animadio)
-[![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
-[![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=Yearly+Dwonloads)](https://www.jsdelivr.com/package/npm/animadio)
+[![jsDelivr Weekly Downloads](https://img.shields.io/jsdelivr/npm/hw/animadio.svg?label=jsDelivr+Weekly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
+[![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
+[![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 
 unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unpkg.com/animadio/dist/min/animadio.min.css)  
 
