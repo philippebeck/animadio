@@ -89,10 +89,9 @@ unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unp
 The library distribution is available here :  
 `dist/animadio.css`  
 `dist/min/animadio.min.css`  
-`dist/map/animadio.css.map`  
 
-[![CSS Code Size](https://img.shields.io/github/languages/code-size/animadio/animadio.svg?label=Code+Size)](https://github.com/animadio/animadio/tree/master/dist/animadio.css)
-[![CSS Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg?label=Minified+Size)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
+[![CSS Code Size](https://img.shields.io/github/languages/code-size/animadio/animadio.svg?label=animadio.css)](https://github.com/animadio/animadio/tree/master/dist/animadio.css)
+[![CSS Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg?label=animadio.min.css)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
 
 ---
 
