@@ -1,8 +1,6 @@
 [![Animadio Logo](img/logo.png)](https://animadio.org)
 # [Animadio CSS Framework](https://animadio.org)
 
-PNC Framework (Polymorphic Naming by Concatenation)
-
 Grid & Flexbox Layouts - Perform Complex Animations
  
 CSS Variables Usage - Reusable & Customizable Elements
@@ -153,7 +151,7 @@ Issues can be created here
 
 ## Pull Requests
 
-And Pull Requests can be create there
+And Pull Requests can be created there
 
 [![GitHub Open Pull Requests](https://img.shields.io/github/issues-pr/animadio/animadio.svg?label=Pull+Requests)](https://github.com/animadio/animadio/pulls)
 
