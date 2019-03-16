@@ -38,16 +38,16 @@
   --packagist: #f28d1a;
   --stackoverflow: #f48024;
   --twitter: #1da1f2;
-  --filter-black: rgba(0, 0, 0, .5);
-  --filter-blue: rgba(0, 0, 255, .5);
-  --filter-brown: rgba(139, 69, 19, .5);
-  --filter-gray: rgba(128, 128, 128, .5);
-  --filter-green: rgba(0, 128, 0, .5);
-  --filter-orange: rgba(255, 69, 0, .5);
-  --filter-red: rgba(255, 0, 0, .5);
-  --filter-violet: rgba(75, 0, 130, .5);
-  --filter-white: rgba(255, 255, 255, .5);
-  --filter-yellow: rgba(255, 255, 0, .5);
+  --filter-black: rgba(0, 0, 0, 0.5);
+  --filter-blue: rgba(0, 0, 255, 0.5);
+  --filter-brown: rgba(139, 69, 19, 0.5);
+  --filter-gray: rgba(128, 128, 128, 0.5);
+  --filter-green: rgba(0, 128, 0, 0.5);
+  --filter-orange: rgba(255, 69, 0, 0.5);
+  --filter-red: rgba(255, 0, 0, 0.5);
+  --filter-violet: rgba(75, 0, 130, 0.5);
+  --filter-white: rgba(255, 255, 255, 0.5);
+  --filter-yellow: rgba(255, 255, 0, 0.5);
 }
 
 /***** Light Font Colors *****/

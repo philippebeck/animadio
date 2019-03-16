@@ -61,7 +61,7 @@
   --navbar-justifycontent-md: space-evenly;
   --navbar-pad-sm: 10px;
   --navbar-a-pad: 10px;
-  --navbar-a-scale: .9;
+  --navbar-a-scale: 0.9;
   --navbar-i-alignself: center;
 
   align-items: var(--navbar-alignitems);
