@@ -8,16 +8,23 @@
 
 /***** Color Variables *****/
 :root {
-  --blue: RoyalBlue;
-  --brown: Sienna;
-  --gray: DarkGray;
-  --grey: LightGrey;
-  --green: SeaGreen;
-  --orange: DarkOrange;
-  --red: IndianRed;
-  --violet: BlueViolet;
   --white: Ivory;
+  --blue: CornflowerBlue;
+  --wood: Peru;
+  --silver: LightGrey;
+  --lime: LightGreen;
+  --salmon: Coral;
+  --red: IndianRed;
+  --violet: MediumPurple;
   --yellow: Khaki;
+  --navy: MidnightBlue;
+  --brown: SaddleBrown;
+  --gray: DimGray;
+  --green: DarkGreen;
+  --orange: OrangeRed;
+  --blood: Crimson;
+  --indigo: Indigo;
+  --gold: Gold;
   --facebook: #4267b2;
   --freecodecamp: #006400;
   --github: #24292e;
@@ -30,399 +37,651 @@
 }
 
 /***** Colors *****/
-[class|="color"][class*="-black"][class$="-d"],
-[class|="color"][class*="-black"][class$="-r"]:checked ~ [class|="color"][class*="-black"][class$="-t"],
-*:hover > [class|="color"][class*="-black"][class$="-i"],
-*:focus > [class|="color"][class*="-black"][class$="-i"],
-*:active > [class|="color"][class*="-black"][class$="-i"],
-[class|="color"][class*="-black"][class$="-o"]:hover,
-[class|="color"][class*="-black"][class$="-o"]:focus,
-[class|="color"][class*="-black"][class$="-o"]:active,
-[class|="color"][class*="-black"][class$="-g"] > *,
-[class|="color"][class*="-black"][class$="-t"]:hover > *,
-[class|="color"][class*="-black"][class$="-t"]:focus > *,
-[class|="color"][class*="-black"][class$="-t"]:active > *,
-[class|="color"][class*="-black"][class$="-f"] > *:hover,
-[class|="color"][class*="-black"][class$="-f"] > *:focus,
-[class|="color"][class*="-black"][class$="-f"] > *:active {
-  color: black;
-}
-
-[class|="color"][class*="-blue"][class$="-d"],
-[class|="color"][class*="-blue"][class$="-r"]:checked ~ [class|="color"][class*="-blue"][class$="-t"],
-*:hover > [class|="color"][class*="-blue"][class$="-i"],
-*:focus > [class|="color"][class*="-blue"][class$="-i"],
-*:active > [class|="color"][class*="-blue"][class$="-i"],
-[class|="color"][class*="-blue"][class$="-o"]:hover,
-[class|="color"][class*="-blue"][class$="-o"]:focus,
-[class|="color"][class*="-blue"][class$="-o"]:active,
-[class|="color"][class*="-blue"][class$="-g"] > *,
-[class|="color"][class*="-blue"][class$="-t"]:hover > *,
-[class|="color"][class*="-blue"][class$="-t"]:focus > *,
-[class|="color"][class*="-blue"][class$="-t"]:active > *,
-[class|="color"][class*="-blue"][class$="-f"] > *:hover,
-[class|="color"][class*="-blue"][class$="-f"] > *:focus,
-[class|="color"][class*="-blue"][class$="-f"] > *:active {
-  color: var(--blue);
-}
-
-[class|="color"][class*="-brown"][class$="-d"],
-[class|="color"][class*="-brown"][class$="-r"]:checked ~ [class|="color"][class*="-brown"][class$="-t"],
-*:hover > [class|="color"][class*="-brown"][class$="-i"],
-*:focus > [class|="color"][class*="-brown"][class$="-i"],
-*:active > [class|="color"][class*="-brown"][class$="-i"],
-[class|="color"][class*="-brown"][class$="-o"]:hover,
-[class|="color"][class*="-brown"][class$="-o"]:focus,
-[class|="color"][class*="-brown"][class$="-o"]:active,
-[class|="color"][class*="-brown"][class$="-g"] > *,
-[class|="color"][class*="-brown"][class$="-t"]:hover > *,
-[class|="color"][class*="-brown"][class$="-t"]:focus > *,
-[class|="color"][class*="-brown"][class$="-t"]:active > *,
-[class|="color"][class*="-brown"][class$="-f"] > *:hover,
-[class|="color"][class*="-brown"][class$="-f"] > *:focus,
-[class|="color"][class*="-brown"][class$="-f"] > *:active {
-  color: var(--brown);
-}
-
-[class|="color"][class*="-gray"][class$="-d"],
-[class|="color"][class*="-gray"][class$="-r"]:checked ~ [class|="color"][class*="-gray"][class$="-t"],
-*:hover > [class|="color"][class*="-gray"][class$="-i"],
-*:focus > [class|="color"][class*="-gray"][class$="-i"],
-*:active > [class|="color"][class*="-gray"][class$="-i"],
-[class|="color"][class*="-gray"][class$="-o"]:hover,
-[class|="color"][class*="-gray"][class$="-o"]:focus,
-[class|="color"][class*="-gray"][class$="-o"]:active,
-[class|="color"][class*="-gray"][class$="-g"] > *,
-[class|="color"][class*="-gray"][class$="-t"]:hover > *,
-[class|="color"][class*="-gray"][class$="-t"]:focus > *,
-[class|="color"][class*="-gray"][class$="-t"]:active > *,
-[class|="color"][class*="-gray"][class$="-f"] > *:hover,
-[class|="color"][class*="-gray"][class$="-f"] > *:focus,
-[class|="color"][class*="-gray"][class$="-f"] > *:active {
-  color: var(--gray);
-}
-
-[class|="color"][class*="-grey"][class$="-d"],
-[class|="color"][class*="-grey"][class$="-r"]:checked ~ [class|="color"][class*="-grey"][class$="-t"],
-*:hover > [class|="color"][class*="-grey"][class$="-i"],
-*:focus > [class|="color"][class*="-grey"][class$="-i"],
-*:active > [class|="color"][class*="-grey"][class$="-i"],
-[class|="color"][class*="-grey"][class$="-o"]:hover,
-[class|="color"][class*="-grey"][class$="-o"]:focus,
-[class|="color"][class*="-grey"][class$="-o"]:active,
-[class|="color"][class*="-grey"][class$="-g"] > *,
-[class|="color"][class*="-grey"][class$="-t"]:hover > *,
-[class|="color"][class*="-grey"][class$="-t"]:focus > *,
-[class|="color"][class*="-grey"][class$="-t"]:active > *,
-[class|="color"][class*="-grey"][class$="-f"] > *:hover,
-[class|="color"][class*="-grey"][class$="-f"] > *:focus,
-[class|="color"][class*="-grey"][class$="-f"] > *:active {
-  color: var(--grey);
-}
-
-[class|="color"][class*="-green"][class$="-d"],
-[class|="color"][class*="-green"][class$="-r"]:checked ~ [class|="color"][class*="-green"][class$="-t"],
-*:hover > [class|="color"][class*="-green"][class$="-i"],
-*:focus > [class|="color"][class*="-green"][class$="-i"],
-*:active > [class|="color"][class*="-green"][class$="-i"],
-[class|="color"][class*="-green"][class$="-o"]:hover,
-[class|="color"][class*="-green"][class$="-o"]:focus,
-[class|="color"][class*="-green"][class$="-o"]:active,
-[class|="color"][class*="-green"][class$="-g"] > *,
-[class|="color"][class*="-green"][class$="-t"]:hover > *,
-[class|="color"][class*="-green"][class$="-t"]:focus > *,
-[class|="color"][class*="-green"][class$="-t"]:active > *,
-[class|="color"][class*="-green"][class$="-f"] > *:hover,
-[class|="color"][class*="-green"][class$="-f"] > *:focus,
-[class|="color"][class*="-green"][class$="-f"] > *:active {
-  color: var(--green);
-}
-
-[class|="color"][class*="-orange"][class$="-d"],
-[class|="color"][class*="-orange"][class$="-r"]:checked ~ [class|="color"][class*="-orange"][class$="-t"],
-*:hover > [class|="color"][class*="-orange"][class$="-i"],
-*:focus > [class|="color"][class*="-orange"][class$="-i"],
-*:active > [class|="color"][class*="-orange"][class$="-i"],
-[class|="color"][class*="-orange"][class$="-o"]:hover,
-[class|="color"][class*="-orange"][class$="-o"]:focus,
-[class|="color"][class*="-orange"][class$="-o"]:active,
-[class|="color"][class*="-orange"][class$="-g"] > *,
-[class|="color"][class*="-orange"][class$="-t"]:hover > *,
-[class|="color"][class*="-orange"][class$="-t"]:focus > *,
-[class|="color"][class*="-orange"][class$="-t"]:active > *,
-[class|="color"][class*="-orange"][class$="-f"] > *:hover,
-[class|="color"][class*="-orange"][class$="-f"] > *:focus,
-[class|="color"][class*="-orange"][class$="-f"] > *:active {
-  color: var(--orange);
-}
-
-[class|="color"][class*="-red"][class$="-d"],
-[class|="color"][class*="-red"][class$="-r"]:checked ~ [class|="color"][class*="-red"][class$="-t"],
-*:hover > [class|="color"][class*="-red"][class$="-i"],
-*:focus > [class|="color"][class*="-red"][class$="-i"],
-*:active > [class|="color"][class*="-red"][class$="-i"],
-[class|="color"][class*="-red"][class$="-o"]:hover,
-[class|="color"][class*="-red"][class$="-o"]:focus,
-[class|="color"][class*="-red"][class$="-o"]:active,
-[class|="color"][class*="-red"][class$="-g"] > *,
-[class|="color"][class*="-red"][class$="-t"]:hover > *,
-[class|="color"][class*="-red"][class$="-t"]:focus > *,
-[class|="color"][class*="-red"][class$="-t"]:active > *,
-[class|="color"][class*="-red"][class$="-f"] > *:hover,
-[class|="color"][class*="-red"][class$="-f"] > *:focus,
-[class|="color"][class*="-red"][class$="-f"] > *:active {
-  color: var(--red);
-}
-
-[class|="color"][class*="-violet"][class$="-d"],
-[class|="color"][class*="-violet"][class$="-r"]:checked ~ [class|="color"][class*="-violet"][class$="-t"],
-*:hover > [class|="color"][class*="-violet"][class$="-i"],
-*:focus > [class|="color"][class*="-violet"][class$="-i"],
-*:active > [class|="color"][class*="-violet"][class$="-i"],
-[class|="color"][class*="-violet"][class$="-o"]:hover,
-[class|="color"][class*="-violet"][class$="-o"]:focus,
-[class|="color"][class*="-violet"][class$="-o"]:active,
-[class|="color"][class*="-violet"][class$="-g"] > *,
-[class|="color"][class*="-violet"][class$="-t"]:hover > *,
-[class|="color"][class*="-violet"][class$="-t"]:focus > *,
-[class|="color"][class*="-violet"][class$="-t"]:active > *,
-[class|="color"][class*="-violet"][class$="-f"] > *:hover,
-[class|="color"][class*="-violet"][class$="-f"] > *:focus,
-[class|="color"][class*="-violet"][class$="-f"] > *:active {
-  color: var(--violet);
-}
-
-[class|="color"][class*="-white"][class$="-d"],
-[class|="color"][class*="-white"][class$="-r"]:checked ~ [class|="color"][class*="-white"][class$="-t"],
-*:hover > [class|="color"][class*="-white"][class$="-i"],
-*:focus > [class|="color"][class*="-white"][class$="-i"],
-*:active > [class|="color"][class*="-white"][class$="-i"],
-[class|="color"][class*="-white"][class$="-o"]:hover,
-[class|="color"][class*="-white"][class$="-o"]:focus,
-[class|="color"][class*="-white"][class$="-o"]:active,
-[class|="color"][class*="-white"][class$="-g"] > *,
-[class|="color"][class*="-white"][class$="-t"]:hover > *,
-[class|="color"][class*="-white"][class$="-t"]:focus > *,
-[class|="color"][class*="-white"][class$="-t"]:active > *,
-[class|="color"][class*="-white"][class$="-f"] > *:hover,
-[class|="color"][class*="-white"][class$="-f"] > *:focus,
-[class|="color"][class*="-white"][class$="-f"] > *:active {
+[class|="color"][class*="-white-"][class$="-d"],
+[class|="color"][class*="-white-"][class$="-r"]:checked ~ [class|="color"][class*="-white-"][class$="-t"],
+*:hover > [class|="color"][class*="-white-"][class$="-i"],
+*:focus > [class|="color"][class*="-white-"][class$="-i"],
+*:active > [class|="color"][class*="-white-"][class$="-i"],
+[class|="color"][class*="-white-"][class$="-o"]:hover,
+[class|="color"][class*="-white-"][class$="-o"]:focus,
+[class|="color"][class*="-white-"][class$="-o"]:active,
+[class|="color"][class*="-white-"][class$="-g"] > *,
+[class|="color"][class*="-white-"][class$="-t"]:hover > *,
+[class|="color"][class*="-white-"][class$="-t"]:focus > *,
+[class|="color"][class*="-white-"][class$="-t"]:active > *,
+[class|="color"][class*="-white-"][class$="-f"] > *:hover,
+[class|="color"][class*="-white-"][class$="-f"] > *:focus,
+[class|="color"][class*="-white-"][class$="-f"] > *:active {
   color: var(--white);
 }
 
-[class|="color"][class*="-yellow"][class$="-d"],
-[class|="color"][class*="-yellow"][class$="-r"]:checked ~ [class|="color"][class*="-yellow"][class$="-t"],
-*:hover > [class|="color"][class*="-yellow"][class$="-i"],
-*:focus > [class|="color"][class*="-yellow"][class$="-i"],
-*:active > [class|="color"][class*="-yellow"][class$="-i"],
-[class|="color"][class*="-yellow"][class$="-o"]:hover,
-[class|="color"][class*="-yellow"][class$="-o"]:focus,
-[class|="color"][class*="-yellow"][class$="-o"]:active,
-[class|="color"][class*="-yellow"][class$="-g"] > *,
-[class|="color"][class*="-yellow"][class$="-t"]:hover > *,
-[class|="color"][class*="-yellow"][class$="-t"]:focus > *,
-[class|="color"][class*="-yellow"][class$="-t"]:active > *,
-[class|="color"][class*="-yellow"][class$="-f"] > *:hover,
-[class|="color"][class*="-yellow"][class$="-f"] > *:focus,
-[class|="color"][class*="-yellow"][class$="-f"] > *:active {
+[class|="color"][class*="-blue-"][class$="-d"],
+[class|="color"][class*="-blue-"][class$="-r"]:checked ~ [class|="color"][class*="-blue-"][class$="-t"],
+*:hover > [class|="color"][class*="-blue-"][class$="-i"],
+*:focus > [class|="color"][class*="-blue-"][class$="-i"],
+*:active > [class|="color"][class*="-blue-"][class$="-i"],
+[class|="color"][class*="-blue-"][class$="-o"]:hover,
+[class|="color"][class*="-blue-"][class$="-o"]:focus,
+[class|="color"][class*="-blue-"][class$="-o"]:active,
+[class|="color"][class*="-blue-"][class$="-g"] > *,
+[class|="color"][class*="-blue-"][class$="-t"]:hover > *,
+[class|="color"][class*="-blue-"][class$="-t"]:focus > *,
+[class|="color"][class*="-blue-"][class$="-t"]:active > *,
+[class|="color"][class*="-blue-"][class$="-f"] > *:hover,
+[class|="color"][class*="-blue-"][class$="-f"] > *:focus,
+[class|="color"][class*="-blue-"][class$="-f"] > *:active {
+  color: var(--blue);
+}
+
+[class|="color"][class*="-wood-"][class$="-d"],
+[class|="color"][class*="-wood-"][class$="-r"]:checked ~ [class|="color"][class*="-wood-"][class$="-t"],
+*:hover > [class|="color"][class*="-wood-"][class$="-i"],
+*:focus > [class|="color"][class*="-wood-"][class$="-i"],
+*:active > [class|="color"][class*="-wood-"][class$="-i"],
+[class|="color"][class*="-wood-"][class$="-o"]:hover,
+[class|="color"][class*="-wood-"][class$="-o"]:focus,
+[class|="color"][class*="-wood-"][class$="-o"]:active,
+[class|="color"][class*="-wood-"][class$="-g"] > *,
+[class|="color"][class*="-wood-"][class$="-t"]:hover > *,
+[class|="color"][class*="-wood-"][class$="-t"]:focus > *,
+[class|="color"][class*="-wood-"][class$="-t"]:active > *,
+[class|="color"][class*="-wood-"][class$="-f"] > *:hover,
+[class|="color"][class*="-wood-"][class$="-f"] > *:focus,
+[class|="color"][class*="-wood-"][class$="-f"] > *:active {
+  color: var(--wood);
+}
+
+[class|="color"][class*="-silver-"][class$="-d"],
+[class|="color"][class*="-silver-"][class$="-r"]:checked ~ [class|="color"][class*="-silver-"][class$="-t"],
+*:hover > [class|="color"][class*="-silver-"][class$="-i"],
+*:focus > [class|="color"][class*="-silver-"][class$="-i"],
+*:active > [class|="color"][class*="-silver-"][class$="-i"],
+[class|="color"][class*="-silver-"][class$="-o"]:hover,
+[class|="color"][class*="-silver-"][class$="-o"]:focus,
+[class|="color"][class*="-silver-"][class$="-o"]:active,
+[class|="color"][class*="-silver-"][class$="-g"] > *,
+[class|="color"][class*="-silver-"][class$="-t"]:hover > *,
+[class|="color"][class*="-silver-"][class$="-t"]:focus > *,
+[class|="color"][class*="-silver-"][class$="-t"]:active > *,
+[class|="color"][class*="-silver-"][class$="-f"] > *:hover,
+[class|="color"][class*="-silver-"][class$="-f"] > *:focus,
+[class|="color"][class*="-silver-"][class$="-f"] > *:active {
+  color: var(--silver);
+}
+
+[class|="color"][class*="-lime-"][class$="-d"],
+[class|="color"][class*="-lime-"][class$="-r"]:checked ~ [class|="color"][class*="-lime-"][class$="-t"],
+*:hover > [class|="color"][class*="-lime-"][class$="-i"],
+*:focus > [class|="color"][class*="-lime-"][class$="-i"],
+*:active > [class|="color"][class*="-lime-"][class$="-i"],
+[class|="color"][class*="-lime-"][class$="-o"]:hover,
+[class|="color"][class*="-lime-"][class$="-o"]:focus,
+[class|="color"][class*="-lime-"][class$="-o"]:active,
+[class|="color"][class*="-lime-"][class$="-g"] > *,
+[class|="color"][class*="-lime-"][class$="-t"]:hover > *,
+[class|="color"][class*="-lime-"][class$="-t"]:focus > *,
+[class|="color"][class*="-lime-"][class$="-t"]:active > *,
+[class|="color"][class*="-lime-"][class$="-f"] > *:hover,
+[class|="color"][class*="-lime-"][class$="-f"] > *:focus,
+[class|="color"][class*="-lime-"][class$="-f"] > *:active {
+  color: var(--lime);
+}
+
+[class|="color"][class*="-salmon-"][class$="-d"],
+[class|="color"][class*="-salmon-"][class$="-r"]:checked ~ [class|="color"][class*="-salmon-"][class$="-t"],
+*:hover > [class|="color"][class*="-salmon-"][class$="-i"],
+*:focus > [class|="color"][class*="-salmon-"][class$="-i"],
+*:active > [class|="color"][class*="-salmon-"][class$="-i"],
+[class|="color"][class*="-salmon-"][class$="-o"]:hover,
+[class|="color"][class*="-salmon-"][class$="-o"]:focus,
+[class|="color"][class*="-salmon-"][class$="-o"]:active,
+[class|="color"][class*="-salmon-"][class$="-g"] > *,
+[class|="color"][class*="-salmon-"][class$="-t"]:hover > *,
+[class|="color"][class*="-salmon-"][class$="-t"]:focus > *,
+[class|="color"][class*="-salmon-"][class$="-t"]:active > *,
+[class|="color"][class*="-salmon-"][class$="-f"] > *:hover,
+[class|="color"][class*="-salmon-"][class$="-f"] > *:focus,
+[class|="color"][class*="-salmon-"][class$="-f"] > *:active {
+  color: var(--salmon);
+}
+
+[class|="color"][class*="-red-"][class$="-d"],
+[class|="color"][class*="-red-"][class$="-r"]:checked ~ [class|="color"][class*="-red-"][class$="-t"],
+*:hover > [class|="color"][class*="-red-"][class$="-i"],
+*:focus > [class|="color"][class*="-red-"][class$="-i"],
+*:active > [class|="color"][class*="-red-"][class$="-i"],
+[class|="color"][class*="-red-"][class$="-o"]:hover,
+[class|="color"][class*="-red-"][class$="-o"]:focus,
+[class|="color"][class*="-red-"][class$="-o"]:active,
+[class|="color"][class*="-red-"][class$="-g"] > *,
+[class|="color"][class*="-red-"][class$="-t"]:hover > *,
+[class|="color"][class*="-red-"][class$="-t"]:focus > *,
+[class|="color"][class*="-red-"][class$="-t"]:active > *,
+[class|="color"][class*="-red-"][class$="-f"] > *:hover,
+[class|="color"][class*="-red-"][class$="-f"] > *:focus,
+[class|="color"][class*="-red-"][class$="-f"] > *:active {
+  color: var(--red);
+}
+
+[class|="color"][class*="-violet-"][class$="-d"],
+[class|="color"][class*="-violet-"][class$="-r"]:checked ~ [class|="color"][class*="-violet-"][class$="-t"],
+*:hover > [class|="color"][class*="-violet-"][class$="-i"],
+*:focus > [class|="color"][class*="-violet-"][class$="-i"],
+*:active > [class|="color"][class*="-violet-"][class$="-i"],
+[class|="color"][class*="-violet-"][class$="-o"]:hover,
+[class|="color"][class*="-violet-"][class$="-o"]:focus,
+[class|="color"][class*="-violet-"][class$="-o"]:active,
+[class|="color"][class*="-violet-"][class$="-g"] > *,
+[class|="color"][class*="-violet-"][class$="-t"]:hover > *,
+[class|="color"][class*="-violet-"][class$="-t"]:focus > *,
+[class|="color"][class*="-violet-"][class$="-t"]:active > *,
+[class|="color"][class*="-violet-"][class$="-f"] > *:hover,
+[class|="color"][class*="-violet-"][class$="-f"] > *:focus,
+[class|="color"][class*="-violet-"][class$="-f"] > *:active {
+  color: var(--violet);
+}
+
+[class|="color"][class*="-yellow-"][class$="-d"],
+[class|="color"][class*="-yellow-"][class$="-r"]:checked ~ [class|="color"][class*="-yellow-"][class$="-t"],
+*:hover > [class|="color"][class*="-yellow-"][class$="-i"],
+*:focus > [class|="color"][class*="-yellow-"][class$="-i"],
+*:active > [class|="color"][class*="-yellow-"][class$="-i"],
+[class|="color"][class*="-yellow-"][class$="-o"]:hover,
+[class|="color"][class*="-yellow-"][class$="-o"]:focus,
+[class|="color"][class*="-yellow-"][class$="-o"]:active,
+[class|="color"][class*="-yellow-"][class$="-g"] > *,
+[class|="color"][class*="-yellow-"][class$="-t"]:hover > *,
+[class|="color"][class*="-yellow-"][class$="-t"]:focus > *,
+[class|="color"][class*="-yellow-"][class$="-t"]:active > *,
+[class|="color"][class*="-yellow-"][class$="-f"] > *:hover,
+[class|="color"][class*="-yellow-"][class$="-f"] > *:focus,
+[class|="color"][class*="-yellow-"][class$="-f"] > *:active {
   color: var(--yellow);
 }
 
+[class|="color"][class*="-navy-"][class$="-d"],
+[class|="color"][class*="-navy-"][class$="-r"]:checked ~ [class|="color"][class*="-navy-"][class$="-t"],
+*:hover > [class|="color"][class*="-navy-"][class$="-i"],
+*:focus > [class|="color"][class*="-navy-"][class$="-i"],
+*:active > [class|="color"][class*="-navy-"][class$="-i"],
+[class|="color"][class*="-navy-"][class$="-o"]:hover,
+[class|="color"][class*="-navy-"][class$="-o"]:focus,
+[class|="color"][class*="-navy-"][class$="-o"]:active,
+[class|="color"][class*="-navy-"][class$="-g"] > *,
+[class|="color"][class*="-navy-"][class$="-t"]:hover > *,
+[class|="color"][class*="-navy-"][class$="-t"]:focus > *,
+[class|="color"][class*="-navy-"][class$="-t"]:active > *,
+[class|="color"][class*="-navy-"][class$="-f"] > *:hover,
+[class|="color"][class*="-navy-"][class$="-f"] > *:focus,
+[class|="color"][class*="-navy-"][class$="-f"] > *:active {
+  color: var(--navy);
+}
+
+[class|="color"][class*="-brown-"][class$="-d"],
+[class|="color"][class*="-brown-"][class$="-r"]:checked ~ [class|="color"][class*="-brown-"][class$="-t"],
+*:hover > [class|="color"][class*="-brown-"][class$="-i"],
+*:focus > [class|="color"][class*="-brown-"][class$="-i"],
+*:active > [class|="color"][class*="-brown-"][class$="-i"],
+[class|="color"][class*="-brown-"][class$="-o"]:hover,
+[class|="color"][class*="-brown-"][class$="-o"]:focus,
+[class|="color"][class*="-brown-"][class$="-o"]:active,
+[class|="color"][class*="-brown-"][class$="-g"] > *,
+[class|="color"][class*="-brown-"][class$="-t"]:hover > *,
+[class|="color"][class*="-brown-"][class$="-t"]:focus > *,
+[class|="color"][class*="-brown-"][class$="-t"]:active > *,
+[class|="color"][class*="-brown-"][class$="-f"] > *:hover,
+[class|="color"][class*="-brown-"][class$="-f"] > *:focus,
+[class|="color"][class*="-brown-"][class$="-f"] > *:active {
+  color: var(--brown);
+}
+
+[class|="color"][class*="-gray-"][class$="-d"],
+[class|="color"][class*="-gray-"][class$="-r"]:checked ~ [class|="color"][class*="-gray-"][class$="-t"],
+*:hover > [class|="color"][class*="-gray-"][class$="-i"],
+*:focus > [class|="color"][class*="-gray-"][class$="-i"],
+*:active > [class|="color"][class*="-gray-"][class$="-i"],
+[class|="color"][class*="-gray-"][class$="-o"]:hover,
+[class|="color"][class*="-gray-"][class$="-o"]:focus,
+[class|="color"][class*="-gray-"][class$="-o"]:active,
+[class|="color"][class*="-gray-"][class$="-g"] > *,
+[class|="color"][class*="-gray-"][class$="-t"]:hover > *,
+[class|="color"][class*="-gray-"][class$="-t"]:focus > *,
+[class|="color"][class*="-gray-"][class$="-t"]:active > *,
+[class|="color"][class*="-gray-"][class$="-f"] > *:hover,
+[class|="color"][class*="-gray-"][class$="-f"] > *:focus,
+[class|="color"][class*="-gray-"][class$="-f"] > *:active {
+  color: var(--gray);
+}
+
+[class|="color"][class*="-green-"][class$="-d"],
+[class|="color"][class*="-green-"][class$="-r"]:checked ~ [class|="color"][class*="-green-"][class$="-t"],
+*:hover > [class|="color"][class*="-green-"][class$="-i"],
+*:focus > [class|="color"][class*="-green-"][class$="-i"],
+*:active > [class|="color"][class*="-green-"][class$="-i"],
+[class|="color"][class*="-green-"][class$="-o"]:hover,
+[class|="color"][class*="-green-"][class$="-o"]:focus,
+[class|="color"][class*="-green-"][class$="-o"]:active,
+[class|="color"][class*="-green-"][class$="-g"] > *,
+[class|="color"][class*="-green-"][class$="-t"]:hover > *,
+[class|="color"][class*="-green-"][class$="-t"]:focus > *,
+[class|="color"][class*="-green-"][class$="-t"]:active > *,
+[class|="color"][class*="-green-"][class$="-f"] > *:hover,
+[class|="color"][class*="-green-"][class$="-f"] > *:focus,
+[class|="color"][class*="-green-"][class$="-f"] > *:active {
+  color: var(--green);
+}
+
+[class|="color"][class*="-orange-"][class$="-d"],
+[class|="color"][class*="-orange-"][class$="-r"]:checked ~ [class|="color"][class*="-orange-"][class$="-t"],
+*:hover > [class|="color"][class*="-orange-"][class$="-i"],
+*:focus > [class|="color"][class*="-orange-"][class$="-i"],
+*:active > [class|="color"][class*="-orange-"][class$="-i"],
+[class|="color"][class*="-orange-"][class$="-o"]:hover,
+[class|="color"][class*="-orange-"][class$="-o"]:focus,
+[class|="color"][class*="-orange-"][class$="-o"]:active,
+[class|="color"][class*="-orange-"][class$="-g"] > *,
+[class|="color"][class*="-orange-"][class$="-t"]:hover > *,
+[class|="color"][class*="-orange-"][class$="-t"]:focus > *,
+[class|="color"][class*="-orange-"][class$="-t"]:active > *,
+[class|="color"][class*="-orange-"][class$="-f"] > *:hover,
+[class|="color"][class*="-orange-"][class$="-f"] > *:focus,
+[class|="color"][class*="-orange-"][class$="-f"] > *:active {
+  color: var(--orange);
+}
+
+[class|="color"][class*="-blood-"][class$="-d"],
+[class|="color"][class*="-blood-"][class$="-r"]:checked ~ [class|="color"][class*="-blood-"][class$="-t"],
+*:hover > [class|="color"][class*="-blood-"][class$="-i"],
+*:focus > [class|="color"][class*="-blood-"][class$="-i"],
+*:active > [class|="color"][class*="-blood-"][class$="-i"],
+[class|="color"][class*="-blood-"][class$="-o"]:hover,
+[class|="color"][class*="-blood-"][class$="-o"]:focus,
+[class|="color"][class*="-blood-"][class$="-o"]:active,
+[class|="color"][class*="-blood-"][class$="-g"] > *,
+[class|="color"][class*="-blood-"][class$="-t"]:hover > *,
+[class|="color"][class*="-blood-"][class$="-t"]:focus > *,
+[class|="color"][class*="-blood-"][class$="-t"]:active > *,
+[class|="color"][class*="-blood-"][class$="-f"] > *:hover,
+[class|="color"][class*="-blood-"][class$="-f"] > *:focus,
+[class|="color"][class*="-blood-"][class$="-f"] > *:active {
+  color: var(--blood);
+}
+
+[class|="color"][class*="-indigo-"][class$="-d"],
+[class|="color"][class*="-indigo-"][class$="-r"]:checked ~ [class|="color"][class*="-indigo-"][class$="-t"],
+*:hover > [class|="color"][class*="-indigo-"][class$="-i"],
+*:focus > [class|="color"][class*="-indigo-"][class$="-i"],
+*:active > [class|="color"][class*="-indigo-"][class$="-i"],
+[class|="color"][class*="-indigo-"][class$="-o"]:hover,
+[class|="color"][class*="-indigo-"][class$="-o"]:focus,
+[class|="color"][class*="-indigo-"][class$="-o"]:active,
+[class|="color"][class*="-indigo-"][class$="-g"] > *,
+[class|="color"][class*="-indigo-"][class$="-t"]:hover > *,
+[class|="color"][class*="-indigo-"][class$="-t"]:focus > *,
+[class|="color"][class*="-indigo-"][class$="-t"]:active > *,
+[class|="color"][class*="-indigo-"][class$="-f"] > *:hover,
+[class|="color"][class*="-indigo-"][class$="-f"] > *:focus,
+[class|="color"][class*="-indigo-"][class$="-f"] > *:active {
+  color: var(--indigo);
+}
+
+[class|="color"][class*="-gold-"][class$="-d"],
+[class|="color"][class*="-gold-"][class$="-r"]:checked ~ [class|="color"][class*="-gold-"][class$="-t"],
+*:hover > [class|="color"][class*="-gold-"][class$="-i"],
+*:focus > [class|="color"][class*="-gold-"][class$="-i"],
+*:active > [class|="color"][class*="-gold-"][class$="-i"],
+[class|="color"][class*="-gold-"][class$="-o"]:hover,
+[class|="color"][class*="-gold-"][class$="-o"]:focus,
+[class|="color"][class*="-gold-"][class$="-o"]:active,
+[class|="color"][class*="-gold-"][class$="-g"] > *,
+[class|="color"][class*="-gold-"][class$="-t"]:hover > *,
+[class|="color"][class*="-gold-"][class$="-t"]:focus > *,
+[class|="color"][class*="-gold-"][class$="-t"]:active > *,
+[class|="color"][class*="-gold-"][class$="-f"] > *:hover,
+[class|="color"][class*="-gold-"][class$="-f"] > *:focus,
+[class|="color"][class*="-gold-"][class$="-f"] > *:active {
+  color: var(--gold);
+}
+
+[class|="color"][class*="-black-"][class$="-d"],
+[class|="color"][class*="-black-"][class$="-r"]:checked ~ [class|="color"][class*="-black-"][class$="-t"],
+*:hover > [class|="color"][class*="-black-"][class$="-i"],
+*:focus > [class|="color"][class*="-black-"][class$="-i"],
+*:active > [class|="color"][class*="-black-"][class$="-i"],
+[class|="color"][class*="-black-"][class$="-o"]:hover,
+[class|="color"][class*="-black-"][class$="-o"]:focus,
+[class|="color"][class*="-black-"][class$="-o"]:active,
+[class|="color"][class*="-black-"][class$="-g"] > *,
+[class|="color"][class*="-black-"][class$="-t"]:hover > *,
+[class|="color"][class*="-black-"][class$="-t"]:focus > *,
+[class|="color"][class*="-black-"][class$="-t"]:active > *,
+[class|="color"][class*="-black-"][class$="-f"] > *:hover,
+[class|="color"][class*="-black-"][class$="-f"] > *:focus,
+[class|="color"][class*="-black-"][class$="-f"] > *:active {
+  color: black;
+}
+
 /***** Background Colors *****/
-[class|="bg"][class*="-black"][class$="-d"],
-[class|="bg"][class*="-black"][class$="-r"]:checked ~ [class|="bg"][class*="-black"][class$="-t"],
-*:hover > [class|="bg"][class*="-black"][class$="-i"],
-*:focus > [class|="bg"][class*="-black"][class$="-i"],
-*:active > [class|="bg"][class*="-black"][class$="-i"],
-[class|="bg"][class*="-black"][class$="-o"]:hover,
-[class|="bg"][class*="-black"][class$="-o"]:focus,
-[class|="bg"][class*="-black"][class$="-o"]:active,
-[class|="bg"][class*="-black"][class$="-g"] > *,
-[class|="bg"][class*="-black"][class$="-t"]:hover > *,
-[class|="bg"][class*="-black"][class$="-t"]:focus > *,
-[class|="bg"][class*="-black"][class$="-t"]:active > *,
-[class|="bg"][class*="-black"][class$="-f"] > *:hover,
-[class|="bg"][class*="-black"][class$="-f"] > *:focus,
-[class|="bg"][class*="-black"][class$="-f"] > *:active {
-  background-color: black;
-}
-
-[class|="bg"][class*="-blue"][class$="-d"],
-[class|="bg"][class*="-blue"][class$="-r"]:checked ~ [class|="bg"][class*="-blue"][class$="-t"],
-*:hover > [class|="bg"][class*="-blue"][class$="-i"],
-*:focus > [class|="bg"][class*="-blue"][class$="-i"],
-*:active > [class|="bg"][class*="-blue"][class$="-i"],
-[class|="bg"][class*="-blue"][class$="-o"]:hover,
-[class|="bg"][class*="-blue"][class$="-o"]:focus,
-[class|="bg"][class*="-blue"][class$="-o"]:active,
-[class|="bg"][class*="-blue"][class$="-g"] > *,
-[class|="bg"][class*="-blue"][class$="-t"]:hover > *,
-[class|="bg"][class*="-blue"][class$="-t"]:focus > *,
-[class|="bg"][class*="-blue"][class$="-t"]:active > *,
-[class|="bg"][class*="-blue"][class$="-f"] > *:hover,
-[class|="bg"][class*="-blue"][class$="-f"] > *:focus,
-[class|="bg"][class*="-blue"][class$="-f"] > *:active {
-  background-color: var(--blue);
-}
-
-[class|="bg"][class*="-brown"][class$="-d"],
-[class|="bg"][class*="-brown"][class$="-r"]:checked ~ [class|="bg"][class*="-brown"][class$="-t"],
-*:hover > [class|="bg"][class*="-brown"][class$="-i"],
-*:focus > [class|="bg"][class*="-brown"][class$="-i"],
-*:active > [class|="bg"][class*="-brown"][class$="-i"],
-[class|="bg"][class*="-brown"][class$="-o"]:hover,
-[class|="bg"][class*="-brown"][class$="-o"]:focus,
-[class|="bg"][class*="-brown"][class$="-o"]:active,
-[class|="bg"][class*="-brown"][class$="-g"] > *,
-[class|="bg"][class*="-brown"][class$="-t"]:hover > *,
-[class|="bg"][class*="-brown"][class$="-t"]:focus > *,
-[class|="bg"][class*="-brown"][class$="-t"]:active > *,
-[class|="bg"][class*="-brown"][class$="-f"] > *:hover,
-[class|="bg"][class*="-brown"][class$="-f"] > *:focus,
-[class|="bg"][class*="-brown"][class$="-f"] > *:active {
-  background-color: var(--brown);
-}
-
-[class|="bg"][class*="-gray"][class$="-d"],
-[class|="bg"][class*="-gray"][class$="-r"]:checked ~ [class|="bg"][class*="-gray"][class$="-t"],
-*:hover > [class|="bg"][class*="-gray"][class$="-i"],
-*:focus > [class|="bg"][class*="-gray"][class$="-i"],
-*:active > [class|="bg"][class*="-gray"][class$="-i"],
-[class|="bg"][class*="-gray"][class$="-o"]:hover,
-[class|="bg"][class*="-gray"][class$="-o"]:focus,
-[class|="bg"][class*="-gray"][class$="-o"]:active,
-[class|="bg"][class*="-gray"][class$="-g"] > *,
-[class|="bg"][class*="-gray"][class$="-t"]:hover > *,
-[class|="bg"][class*="-gray"][class$="-t"]:focus > *,
-[class|="bg"][class*="-gray"][class$="-t"]:active > *,
-[class|="bg"][class*="-gray"][class$="-f"] > *:hover,
-[class|="bg"][class*="-gray"][class$="-f"] > *:focus,
-[class|="bg"][class*="-gray"][class$="-f"] > *:active {
-  background-color: var(--gray);
-}
-
-[class|="bg"][class*="-grey"][class$="-d"],
-[class|="bg"][class*="-grey"][class$="-r"]:checked ~ [class|="bg"][class*="-grey"][class$="-t"],
-*:hover > [class|="bg"][class*="-grey"][class$="-i"],
-*:focus > [class|="bg"][class*="-grey"][class$="-i"],
-*:active > [class|="bg"][class*="-grey"][class$="-i"],
-[class|="bg"][class*="-grey"][class$="-o"]:hover,
-[class|="bg"][class*="-grey"][class$="-o"]:focus,
-[class|="bg"][class*="-grey"][class$="-o"]:active,
-[class|="bg"][class*="-grey"][class$="-g"] > *,
-[class|="bg"][class*="-grey"][class$="-t"]:hover > *,
-[class|="bg"][class*="-grey"][class$="-t"]:focus > *,
-[class|="bg"][class*="-grey"][class$="-t"]:active > *,
-[class|="bg"][class*="-grey"][class$="-f"] > *:hover,
-[class|="bg"][class*="-grey"][class$="-f"] > *:focus,
-[class|="bg"][class*="-grey"][class$="-f"] > *:active {
-  background-color: var(--grey);
-}
-
-[class|="bg"][class*="-green"][class$="-d"],
-[class|="bg"][class*="-green"][class$="-r"]:checked ~ [class|="bg"][class*="-green"][class$="-t"],
-*:hover > [class|="bg"][class*="-green"][class$="-i"],
-*:focus > [class|="bg"][class*="-green"][class$="-i"],
-*:active > [class|="bg"][class*="-green"][class$="-i"],
-[class|="bg"][class*="-green"][class$="-o"]:hover,
-[class|="bg"][class*="-green"][class$="-o"]:focus,
-[class|="bg"][class*="-green"][class$="-o"]:active,
-[class|="bg"][class*="-green"][class$="-g"] > *,
-[class|="bg"][class*="-green"][class$="-t"]:hover > *,
-[class|="bg"][class*="-green"][class$="-t"]:focus > *,
-[class|="bg"][class*="-green"][class$="-t"]:active > *,
-[class|="bg"][class*="-green"][class$="-f"] > *:hover,
-[class|="bg"][class*="-green"][class$="-f"] > *:focus,
-[class|="bg"][class*="-green"][class$="-f"] > *:active {
-  background-color: var(--green);
-}
-
-[class|="bg"][class*="-orange"][class$="-d"],
-[class|="bg"][class*="-orange"][class$="-r"]:checked ~ [class|="bg"][class*="-orange"][class$="-t"],
-*:hover > [class|="bg"][class*="-orange"][class$="-i"],
-*:focus > [class|="bg"][class*="-orange"][class$="-i"],
-*:active > [class|="bg"][class*="-orange"][class$="-i"],
-[class|="bg"][class*="-orange"][class$="-o"]:hover,
-[class|="bg"][class*="-orange"][class$="-o"]:focus,
-[class|="bg"][class*="-orange"][class$="-o"]:active,
-[class|="bg"][class*="-orange"][class$="-g"] > *,
-[class|="bg"][class*="-orange"][class$="-t"]:hover > *,
-[class|="bg"][class*="-orange"][class$="-t"]:focus > *,
-[class|="bg"][class*="-orange"][class$="-t"]:active > *,
-[class|="bg"][class*="-orange"][class$="-f"] > *:hover,
-[class|="bg"][class*="-orange"][class$="-f"] > *:focus,
-[class|="bg"][class*="-orange"][class$="-f"] > *:active {
-  background-color: var(--orange);
-}
-
-[class|="bg"][class*="-red"][class$="-d"],
-[class|="bg"][class*="-red"][class$="-r"]:checked ~ [class|="bg"][class*="-red"][class$="-t"],
-*:hover > [class|="bg"][class*="-red"][class$="-i"],
-*:focus > [class|="bg"][class*="-red"][class$="-i"],
-*:active > [class|="bg"][class*="-red"][class$="-i"],
-[class|="bg"][class*="-red"][class$="-o"]:hover,
-[class|="bg"][class*="-red"][class$="-o"]:focus,
-[class|="bg"][class*="-red"][class$="-o"]:active,
-[class|="bg"][class*="-red"][class$="-g"] > *,
-[class|="bg"][class*="-red"][class$="-t"]:hover > *,
-[class|="bg"][class*="-red"][class$="-t"]:focus > *,
-[class|="bg"][class*="-red"][class$="-t"]:active > *,
-[class|="bg"][class*="-red"][class$="-f"] > *:hover,
-[class|="bg"][class*="-red"][class$="-f"] > *:focus,
-[class|="bg"][class*="-red"][class$="-f"] > *:active {
-  background-color: var(--red);
-}
-
-[class|="bg"][class*="-violet"][class$="-d"],
-[class|="bg"][class*="-violet"][class$="-r"]:checked ~ [class|="bg"][class*="-violet"][class$="-t"],
-*:hover > [class|="bg"][class*="-violet"][class$="-i"],
-*:focus > [class|="bg"][class*="-violet"][class$="-i"],
-*:active > [class|="bg"][class*="-violet"][class$="-i"],
-[class|="bg"][class*="-violet"][class$="-o"]:hover,
-[class|="bg"][class*="-violet"][class$="-o"]:focus,
-[class|="bg"][class*="-violet"][class$="-o"]:active,
-[class|="bg"][class*="-violet"][class$="-g"] > *,
-[class|="bg"][class*="-violet"][class$="-t"]:hover > *,
-[class|="bg"][class*="-violet"][class$="-t"]:focus > *,
-[class|="bg"][class*="-violet"][class$="-t"]:active > *,
-[class|="bg"][class*="-violet"][class$="-f"] > *:hover,
-[class|="bg"][class*="-violet"][class$="-f"] > *:focus,
-[class|="bg"][class*="-violet"][class$="-f"] > *:active {
-  background-color: var(--violet);
-}
-
-[class|="bg"][class*="-white"][class$="-d"],
-[class|="bg"][class*="-white"][class$="-r"]:checked ~ [class|="bg"][class*="-white"][class$="-t"],
-*:hover > [class|="bg"][class*="-white"][class$="-i"],
-*:focus > [class|="bg"][class*="-white"][class$="-i"],
-*:active > [class|="bg"][class*="-white"][class$="-i"],
-[class|="bg"][class*="-white"][class$="-o"]:hover,
-[class|="bg"][class*="-white"][class$="-o"]:focus,
-[class|="bg"][class*="-white"][class$="-o"]:active,
-[class|="bg"][class*="-white"][class$="-g"] > *,
-[class|="bg"][class*="-white"][class$="-t"]:hover > *,
-[class|="bg"][class*="-white"][class$="-t"]:focus > *,
-[class|="bg"][class*="-white"][class$="-t"]:active > *,
-[class|="bg"][class*="-white"][class$="-f"] > *:hover,
-[class|="bg"][class*="-white"][class$="-f"] > *:focus,
-[class|="bg"][class*="-white"][class$="-f"] > *:active {
+[class|="bg"][class*="-white-"][class$="-d"],
+[class|="bg"][class*="-white-"][class$="-r"]:checked ~ [class|="bg"][class*="-white-"][class$="-t"],
+*:hover > [class|="bg"][class*="-white-"][class$="-i"],
+*:focus > [class|="bg"][class*="-white-"][class$="-i"],
+*:active > [class|="bg"][class*="-white-"][class$="-i"],
+[class|="bg"][class*="-white-"][class$="-o"]:hover,
+[class|="bg"][class*="-white-"][class$="-o"]:focus,
+[class|="bg"][class*="-white-"][class$="-o"]:active,
+[class|="bg"][class*="-white-"][class$="-g"] > *,
+[class|="bg"][class*="-white-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-white-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-white-"][class$="-t"]:active > *,
+[class|="bg"][class*="-white-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-white-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-white-"][class$="-f"] > *:active {
   background-color: var(--white);
 }
 
-[class|="bg"][class*="-yellow"][class$="-d"],
-[class|="bg"][class*="-yellow"][class$="-r"]:checked ~ [class|="bg"][class*="-yellow"][class$="-t"],
-*:hover > [class|="bg"][class*="-yellow"][class$="-i"],
-*:focus > [class|="bg"][class*="-yellow"][class$="-i"],
-*:active > [class|="bg"][class*="-yellow"][class$="-i"],
-[class|="bg"][class*="-yellow"][class$="-o"]:hover,
-[class|="bg"][class*="-yellow"][class$="-o"]:focus,
-[class|="bg"][class*="-yellow"][class$="-o"]:active,
-[class|="bg"][class*="-yellow"][class$="-g"] > *,
-[class|="bg"][class*="-yellow"][class$="-t"]:hover > *,
-[class|="bg"][class*="-yellow"][class$="-t"]:focus > *,
-[class|="bg"][class*="-yellow"][class$="-t"]:active > *,
-[class|="bg"][class*="-yellow"][class$="-f"] > *:hover,
-[class|="bg"][class*="-yellow"][class$="-f"] > *:focus,
-[class|="bg"][class*="-yellow"][class$="-f"] > *:active {
+[class|="bg"][class*="-blue-"][class$="-d"],
+[class|="bg"][class*="-blue-"][class$="-r"]:checked ~ [class|="bg"][class*="-blue-"][class$="-t"],
+*:hover > [class|="bg"][class*="-blue-"][class$="-i"],
+*:focus > [class|="bg"][class*="-blue-"][class$="-i"],
+*:active > [class|="bg"][class*="-blue-"][class$="-i"],
+[class|="bg"][class*="-blue-"][class$="-o"]:hover,
+[class|="bg"][class*="-blue-"][class$="-o"]:focus,
+[class|="bg"][class*="-blue-"][class$="-o"]:active,
+[class|="bg"][class*="-blue-"][class$="-g"] > *,
+[class|="bg"][class*="-blue-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-blue-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-blue-"][class$="-t"]:active > *,
+[class|="bg"][class*="-blue-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-blue-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-blue-"][class$="-f"] > *:active {
+  background-color: var(--blue);
+}
+
+[class|="bg"][class*="-wood-"][class$="-d"],
+[class|="bg"][class*="-wood-"][class$="-r"]:checked ~ [class|="bg"][class*="-wood-"][class$="-t"],
+*:hover > [class|="bg"][class*="-wood-"][class$="-i"],
+*:focus > [class|="bg"][class*="-wood-"][class$="-i"],
+*:active > [class|="bg"][class*="-wood-"][class$="-i"],
+[class|="bg"][class*="-wood-"][class$="-o"]:hover,
+[class|="bg"][class*="-wood-"][class$="-o"]:focus,
+[class|="bg"][class*="-wood-"][class$="-o"]:active,
+[class|="bg"][class*="-wood-"][class$="-g"] > *,
+[class|="bg"][class*="-wood-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-wood-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-wood-"][class$="-t"]:active > *,
+[class|="bg"][class*="-wood-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-wood-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-wood-"][class$="-f"] > *:active {
+  background-color: var(--wood);
+}
+
+[class|="bg"][class*="-silver-"][class$="-d"],
+[class|="bg"][class*="-silver-"][class$="-r"]:checked ~ [class|="bg"][class*="-silver-"][class$="-t"],
+*:hover > [class|="bg"][class*="-silver-"][class$="-i"],
+*:focus > [class|="bg"][class*="-silver-"][class$="-i"],
+*:active > [class|="bg"][class*="-silver-"][class$="-i"],
+[class|="bg"][class*="-silver-"][class$="-o"]:hover,
+[class|="bg"][class*="-silver-"][class$="-o"]:focus,
+[class|="bg"][class*="-silver-"][class$="-o"]:active,
+[class|="bg"][class*="-silver-"][class$="-g"] > *,
+[class|="bg"][class*="-silver-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-silver-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-silver-"][class$="-t"]:active > *,
+[class|="bg"][class*="-silver-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-silver-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-silver-"][class$="-f"] > *:active {
+  background-color: var(--silver);
+}
+
+[class|="bg"][class*="-lime-"][class$="-d"],
+[class|="bg"][class*="-lime-"][class$="-r"]:checked ~ [class|="bg"][class*="-lime-"][class$="-t"],
+*:hover > [class|="bg"][class*="-lime-"][class$="-i"],
+*:focus > [class|="bg"][class*="-lime-"][class$="-i"],
+*:active > [class|="bg"][class*="-lime-"][class$="-i"],
+[class|="bg"][class*="-lime-"][class$="-o"]:hover,
+[class|="bg"][class*="-lime-"][class$="-o"]:focus,
+[class|="bg"][class*="-lime-"][class$="-o"]:active,
+[class|="bg"][class*="-lime-"][class$="-g"] > *,
+[class|="bg"][class*="-lime-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-lime-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-lime-"][class$="-t"]:active > *,
+[class|="bg"][class*="-lime-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-lime-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-lime-"][class$="-f"] > *:active {
+  background-color: var(--lime);
+}
+
+[class|="bg"][class*="-salmon-"][class$="-d"],
+[class|="bg"][class*="-salmon-"][class$="-r"]:checked ~ [class|="bg"][class*="-salmon-"][class$="-t"],
+*:hover > [class|="bg"][class*="-salmon-"][class$="-i"],
+*:focus > [class|="bg"][class*="-salmon-"][class$="-i"],
+*:active > [class|="bg"][class*="-salmon-"][class$="-i"],
+[class|="bg"][class*="-salmon-"][class$="-o"]:hover,
+[class|="bg"][class*="-salmon-"][class$="-o"]:focus,
+[class|="bg"][class*="-salmon-"][class$="-o"]:active,
+[class|="bg"][class*="-salmon-"][class$="-g"] > *,
+[class|="bg"][class*="-salmon-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-salmon-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-salmon-"][class$="-t"]:active > *,
+[class|="bg"][class*="-salmon-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-salmon-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-salmon-"][class$="-f"] > *:active {
+  background-color: var(--salmon);
+}
+
+[class|="bg"][class*="-red-"][class$="-d"],
+[class|="bg"][class*="-red-"][class$="-r"]:checked ~ [class|="bg"][class*="-red-"][class$="-t"],
+*:hover > [class|="bg"][class*="-red-"][class$="-i"],
+*:focus > [class|="bg"][class*="-red-"][class$="-i"],
+*:active > [class|="bg"][class*="-red-"][class$="-i"],
+[class|="bg"][class*="-red-"][class$="-o"]:hover,
+[class|="bg"][class*="-red-"][class$="-o"]:focus,
+[class|="bg"][class*="-red-"][class$="-o"]:active,
+[class|="bg"][class*="-red-"][class$="-g"] > *,
+[class|="bg"][class*="-red-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-red-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-red-"][class$="-t"]:active > *,
+[class|="bg"][class*="-red-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-red-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-red-"][class$="-f"] > *:active {
+  background-color: var(--red);
+}
+
+[class|="bg"][class*="-violet-"][class$="-d"],
+[class|="bg"][class*="-violet-"][class$="-r"]:checked ~ [class|="bg"][class*="-violet-"][class$="-t"],
+*:hover > [class|="bg"][class*="-violet-"][class$="-i"],
+*:focus > [class|="bg"][class*="-violet-"][class$="-i"],
+*:active > [class|="bg"][class*="-violet-"][class$="-i"],
+[class|="bg"][class*="-violet-"][class$="-o"]:hover,
+[class|="bg"][class*="-violet-"][class$="-o"]:focus,
+[class|="bg"][class*="-violet-"][class$="-o"]:active,
+[class|="bg"][class*="-violet-"][class$="-g"] > *,
+[class|="bg"][class*="-violet-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-violet-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-violet-"][class$="-t"]:active > *,
+[class|="bg"][class*="-violet-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-violet-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-violet-"][class$="-f"] > *:active {
+  background-color: var(--violet);
+}
+
+[class|="bg"][class*="-yellow-"][class$="-d"],
+[class|="bg"][class*="-yellow-"][class$="-r"]:checked ~ [class|="bg"][class*="-yellow-"][class$="-t"],
+*:hover > [class|="bg"][class*="-yellow-"][class$="-i"],
+*:focus > [class|="bg"][class*="-yellow-"][class$="-i"],
+*:active > [class|="bg"][class*="-yellow-"][class$="-i"],
+[class|="bg"][class*="-yellow-"][class$="-o"]:hover,
+[class|="bg"][class*="-yellow-"][class$="-o"]:focus,
+[class|="bg"][class*="-yellow-"][class$="-o"]:active,
+[class|="bg"][class*="-yellow-"][class$="-g"] > *,
+[class|="bg"][class*="-yellow-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-yellow-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-yellow-"][class$="-t"]:active > *,
+[class|="bg"][class*="-yellow-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-yellow-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-yellow-"][class$="-f"] > *:active {
   background-color: var(--yellow);
+}
+
+[class|="bg"][class*="-navy-"][class$="-d"],
+[class|="bg"][class*="-navy-"][class$="-r"]:checked ~ [class|="bg"][class*="-navy-"][class$="-t"],
+*:hover > [class|="bg"][class*="-navy-"][class$="-i"],
+*:focus > [class|="bg"][class*="-navy-"][class$="-i"],
+*:active > [class|="bg"][class*="-navy-"][class$="-i"],
+[class|="bg"][class*="-navy-"][class$="-o"]:hover,
+[class|="bg"][class*="-navy-"][class$="-o"]:focus,
+[class|="bg"][class*="-navy-"][class$="-o"]:active,
+[class|="bg"][class*="-navy-"][class$="-g"] > *,
+[class|="bg"][class*="-navy-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-navy-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-navy-"][class$="-t"]:active > *,
+[class|="bg"][class*="-navy-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-navy-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-navy-"][class$="-f"] > *:active {
+  background-color: var(--navy);
+}
+
+[class|="bg"][class*="-brown-"][class$="-d"],
+[class|="bg"][class*="-brown-"][class$="-r"]:checked ~ [class|="bg"][class*="-brown-"][class$="-t"],
+*:hover > [class|="bg"][class*="-brown-"][class$="-i"],
+*:focus > [class|="bg"][class*="-brown-"][class$="-i"],
+*:active > [class|="bg"][class*="-brown-"][class$="-i"],
+[class|="bg"][class*="-brown-"][class$="-o"]:hover,
+[class|="bg"][class*="-brown-"][class$="-o"]:focus,
+[class|="bg"][class*="-brown-"][class$="-o"]:active,
+[class|="bg"][class*="-brown-"][class$="-g"] > *,
+[class|="bg"][class*="-brown-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-brown-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-brown-"][class$="-t"]:active > *,
+[class|="bg"][class*="-brown-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-brown-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-brown-"][class$="-f"] > *:active {
+  background-color: var(--brown);
+}
+
+[class|="bg"][class*="-gray-"][class$="-d"],
+[class|="bg"][class*="-gray-"][class$="-r"]:checked ~ [class|="bg"][class*="-gray-"][class$="-t"],
+*:hover > [class|="bg"][class*="-gray-"][class$="-i"],
+*:focus > [class|="bg"][class*="-gray-"][class$="-i"],
+*:active > [class|="bg"][class*="-gray-"][class$="-i"],
+[class|="bg"][class*="-gray-"][class$="-o"]:hover,
+[class|="bg"][class*="-gray-"][class$="-o"]:focus,
+[class|="bg"][class*="-gray-"][class$="-o"]:active,
+[class|="bg"][class*="-gray-"][class$="-g"] > *,
+[class|="bg"][class*="-gray-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-gray-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-gray-"][class$="-t"]:active > *,
+[class|="bg"][class*="-gray-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-gray-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-gray-"][class$="-f"] > *:active {
+  background-color: var(--gray);
+}
+
+[class|="bg"][class*="-green-"][class$="-d"],
+[class|="bg"][class*="-green-"][class$="-r"]:checked ~ [class|="bg"][class*="-green-"][class$="-t"],
+*:hover > [class|="bg"][class*="-green-"][class$="-i"],
+*:focus > [class|="bg"][class*="-green-"][class$="-i"],
+*:active > [class|="bg"][class*="-green-"][class$="-i"],
+[class|="bg"][class*="-green-"][class$="-o"]:hover,
+[class|="bg"][class*="-green-"][class$="-o"]:focus,
+[class|="bg"][class*="-green-"][class$="-o"]:active,
+[class|="bg"][class*="-green-"][class$="-g"] > *,
+[class|="bg"][class*="-green-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-green-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-green-"][class$="-t"]:active > *,
+[class|="bg"][class*="-green-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-green-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-green-"][class$="-f"] > *:active {
+  background-color: var(--green);
+}
+
+[class|="bg"][class*="-orange-"][class$="-d"],
+[class|="bg"][class*="-orange-"][class$="-r"]:checked ~ [class|="bg"][class*="-orange-"][class$="-t"],
+*:hover > [class|="bg"][class*="-orange-"][class$="-i"],
+*:focus > [class|="bg"][class*="-orange-"][class$="-i"],
+*:active > [class|="bg"][class*="-orange-"][class$="-i"],
+[class|="bg"][class*="-orange-"][class$="-o"]:hover,
+[class|="bg"][class*="-orange-"][class$="-o"]:focus,
+[class|="bg"][class*="-orange-"][class$="-o"]:active,
+[class|="bg"][class*="-orange-"][class$="-g"] > *,
+[class|="bg"][class*="-orange-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-orange-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-orange-"][class$="-t"]:active > *,
+[class|="bg"][class*="-orange-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-orange-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-orange-"][class$="-f"] > *:active {
+  background-color: var(--orange);
+}
+
+[class|="bg"][class*="-blood-"][class$="-d"],
+[class|="bg"][class*="-blood-"][class$="-r"]:checked ~ [class|="bg"][class*="-blood-"][class$="-t"],
+*:hover > [class|="bg"][class*="-blood-"][class$="-i"],
+*:focus > [class|="bg"][class*="-blood-"][class$="-i"],
+*:active > [class|="bg"][class*="-blood-"][class$="-i"],
+[class|="bg"][class*="-blood-"][class$="-o"]:hover,
+[class|="bg"][class*="-blood-"][class$="-o"]:focus,
+[class|="bg"][class*="-blood-"][class$="-o"]:active,
+[class|="bg"][class*="-blood-"][class$="-g"] > *,
+[class|="bg"][class*="-blood-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-blood-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-blood-"][class$="-t"]:active > *,
+[class|="bg"][class*="-blood-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-blood-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-blood-"][class$="-f"] > *:active {
+  background-color: var(--blood);
+}
+
+[class|="bg"][class*="-indigo-"][class$="-d"],
+[class|="bg"][class*="-indigo-"][class$="-r"]:checked ~ [class|="bg"][class*="-indigo-"][class$="-t"],
+*:hover > [class|="bg"][class*="-indigo-"][class$="-i"],
+*:focus > [class|="bg"][class*="-indigo-"][class$="-i"],
+*:active > [class|="bg"][class*="-indigo-"][class$="-i"],
+[class|="bg"][class*="-indigo-"][class$="-o"]:hover,
+[class|="bg"][class*="-indigo-"][class$="-o"]:focus,
+[class|="bg"][class*="-indigo-"][class$="-o"]:active,
+[class|="bg"][class*="-indigo-"][class$="-g"] > *,
+[class|="bg"][class*="-indigo-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-indigo-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-indigo-"][class$="-t"]:active > *,
+[class|="bg"][class*="-indigo-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-indigo-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-indigo-"][class$="-f"] > *:active {
+  background-color: var(--indigo);
+}
+
+[class|="bg"][class*="-gold-"][class$="-d"],
+[class|="bg"][class*="-gold-"][class$="-r"]:checked ~ [class|="bg"][class*="-gold-"][class$="-t"],
+*:hover > [class|="bg"][class*="-gold-"][class$="-i"],
+*:focus > [class|="bg"][class*="-gold-"][class$="-i"],
+*:active > [class|="bg"][class*="-gold-"][class$="-i"],
+[class|="bg"][class*="-gold-"][class$="-o"]:hover,
+[class|="bg"][class*="-gold-"][class$="-o"]:focus,
+[class|="bg"][class*="-gold-"][class$="-o"]:active,
+[class|="bg"][class*="-gold-"][class$="-g"] > *,
+[class|="bg"][class*="-gold-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-gold-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-gold-"][class$="-t"]:active > *,
+[class|="bg"][class*="-gold-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-gold-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-gold-"][class$="-f"] > *:active {
+  background-color: var(--gold);
+}
+
+[class|="bg"][class*="-black-"][class$="-d"],
+[class|="bg"][class*="-black-"][class$="-r"]:checked ~ [class|="bg"][class*="-black-"][class$="-t"],
+*:hover > [class|="bg"][class*="-black-"][class$="-i"],
+*:focus > [class|="bg"][class*="-black-"][class$="-i"],
+*:active > [class|="bg"][class*="-black-"][class$="-i"],
+[class|="bg"][class*="-black-"][class$="-o"]:hover,
+[class|="bg"][class*="-black-"][class$="-o"]:focus,
+[class|="bg"][class*="-black-"][class$="-o"]:active,
+[class|="bg"][class*="-black-"][class$="-g"] > *,
+[class|="bg"][class*="-black-"][class$="-t"]:hover > *,
+[class|="bg"][class*="-black-"][class$="-t"]:focus > *,
+[class|="bg"][class*="-black-"][class$="-t"]:active > *,
+[class|="bg"][class*="-black-"][class$="-f"] > *:hover,
+[class|="bg"][class*="-black-"][class$="-f"] > *:focus,
+[class|="bg"][class*="-black-"][class$="-f"] > *:active {
+  background-color: black;
 }
