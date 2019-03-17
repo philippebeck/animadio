@@ -12,6 +12,10 @@
 */
 
 /***** Navbar Variables *****/
+:root {
+  --navbar-height: 100px;
+}
+
 .nav-brand {
   --nav-brand-img-height: 20px;
 }
@@ -29,7 +33,7 @@
   --nav-info-p-display: none;
   --nav-info-img-mar: 1px;
   --nav-info-height: 25px;
-  --nav-info-link-hover-scale: 1.2;
+  --nav-info-link-hover-scale: 1.5;
   --nav-info-p-display-wd: block;
   --nav-info-p-mar-right-wd: 10px;
 }
@@ -39,7 +43,9 @@
 .nav-main,
 .nav-info,
 .nav-main a,
-.nav-info a {
+.nav-main label,
+.nav-info a,
+.nav-info label {
   display: flex;
 }
 
@@ -54,7 +60,6 @@
 /***** Navbar *****/
 .navbar {
   --navbar-align-items: center;
-  --navbar-height: 100px;
   --navbar-bg-color: var(--blue);
   --navbar-color: var(--white);
   --navbar-flex-direction-sm: row;
@@ -62,35 +67,47 @@
   --navbar-justify-content-sm: space-around;
   --navbar-justify-content-md: space-evenly;
   --navbar-pad-sm: 10px;
+  --navbar-label-cursor: pointer;
   --navbar-link-pad: 10px;
   --navbar-link-hover-color: var(--gold);
   --navbar-icon-align-self: center;
 
+  justify-content: var(--navbar-justify-content-tn);
   align-items: var(--navbar-align-items);
   height: var(--navbar-height);
   background-color: var(--navbar-bg-color);
   color: var(--navbar-color);
-  justify-content: var(--navbar-justify-content-tn);
 }
 
-.navbar a {
+.navbar a,
+.navbar label {
   padding: var(--navbar-link-pad);
   color: var(--white);
+  cursor: var(--navbar-label-cursor);
 }
 
 .nav-main a,
-.nav-info a {
+.nav-main label,
+.nav-info a,
+.nav-info label {
   flex-direction: column;
 }
 
 .navbar a:hover,
 .navbar a:focus,
-.navbar a:active {
+.navbar a:active,
+.navbar label:hover,
+.navbar label:focus,
+.navbar label:active {
   color: var(--navbar-link-hover-color);
 }
 
 .navbar i {
   align-self: var(--navbar-icon-align-self);
+}
+
+.navbar + * {
+  margin-top: var(--navbar-height);
 }
 
 /***** Nav Brand, Main & User *****/
@@ -101,7 +118,10 @@
 
 .nav-main a:hover,
 .nav-main a:focus,
-.nav-main a:active {
+.nav-main a:active,
+.nav-main label:hover,
+.nav-main label:focus,
+.nav-main label:active {
   transform: scale(var(--nav-main-link-hover-scale));
 }
 
@@ -111,7 +131,10 @@
 
 .nav-info a:hover,
 .nav-info a:focus,
-.nav-info a:active {
+.nav-info a:active,
+.nav-info label:hover,
+.nav-info label:focus,
+.nav-info label:active {
   transform: scale(var(--nav-info-link-hover-scale));
 }
 
