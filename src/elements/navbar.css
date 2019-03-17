@@ -72,6 +72,7 @@
   --navbar-link-hover-color: var(--gold);
   --navbar-icon-align-self: center;
 
+  z-index: 1000;
   justify-content: var(--navbar-justify-content-tn);
   align-items: var(--navbar-align-items);
   height: var(--navbar-height);
