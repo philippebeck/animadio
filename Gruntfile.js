@@ -11,7 +11,7 @@ module.exports = function(grunt) {
             dist: {
                 src: [
                     "node_modules/normalize.css/normalize.css",
-                    "src/global/keyframes.css", "src/global/tags.css", "src/global/grid.css", "src/global/flex.css", "src/global/display.css", "src/global/color.css", "src/global/space.css", "src/global/bord.css", "src/global/size.css", "src/global/shabox.css", "src/global/shatex.css", "src/global/anima.css", "src/global/font.css", "src/global/helpers.css",
+                    "src/global/keyframes.css", "src/global/tags.css", "src/global/grid.css", "src/global/flex.css", "src/global/display.css", "src/global/color.css", "src/global/space.css", "src/global/bord.css", "src/global/size.css", "src/global/shabox.css", "src/global/shatex.css", "src/global/anima.css", "src/global/deco.css", "src/global/helpers.css",
                     "src/elements/navbar.css", "src/elements/button.css", "src/elements/slider.css", "src/elements/menu.css", "src/elements/gallery.css", "src/elements/table.css", "src/elements/form.css", "src/elements/foot.css" ],
                 dest: "dist/animadio.css"}},
         postcss: {options: {processors: [require("autoprefixer")({browsers: "last 2 versions"})]}, dist: {src: "dist/animadio.css"}},
