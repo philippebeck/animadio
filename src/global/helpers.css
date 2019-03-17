@@ -1,0 +1,47 @@
+/********** HELPERS **********/
+
+/*
+1. Global
+2. Container
+3. Cursor
+*/
+
+/***** Global *****/
+[class*="radio"] {
+  display: none;
+}
+
+/***** Container *****/
+[class*="container"] {
+  margin: auto;
+  max-width: var(--max-width-md);
+}
+
+[class*="container"][class*="-sm"] {
+  max-width: var(--max-width-sm);
+}
+
+[class*="container"][class*="-lg"] {
+  max-width: var(--max-width-lg);
+}
+
+/***** Cursor *****/
+[class*="cursor"][class*="-cross"],
+[class*="cursor"][class*="-cross"] > * {
+  cursor: crosshair;
+}
+
+[class*="cursor"][class*="-help"],
+[class*="cursor"][class*="-help"] > * {
+  cursor: help;
+}
+
+[class*="cursor"][class*="-none"],
+[class*="cursor"][class*="-none"] > * {
+  cursor: not-allowed;
+}
+
+[class*="cursor"][class*="-hand"],
+[class*="cursor"][class*="-hand"] > * {
+  cursor: pointer;
+}
