@@ -3,7 +3,9 @@
 /*
 1. Global
 2. Container
-3. Cursor
+3. Font
+4. Text
+5. Cursor
 */
 
 /***** Global *****/
@@ -25,23 +27,54 @@
   max-width: var(--max-width-lg);
 }
 
+/***** Font *****/
+[class*="font-"][class*="-normal"] {
+  font-style: normal;
+  font-weight: normal;
+}
+
+[class*="font-"][class*="-italic"] {
+  font-style: italic;
+}
+
+[class*="font-"][class*="-bold"] {
+  font-weight: bold;
+}
+
+/***** Text *****/
+[class*="text-"][class*="-center"] {
+  text-align: center;
+}
+
+[class*="text-"][class*="-justify"] {
+  text-align: justify;
+}
+
+[class*="text-"][class*="-right"] {
+  text-align: right;
+}
+
+[class*="text-"][class*="-left"] {
+  text-align: left;
+}
+
 /***** Cursor *****/
-[class*="cursor"][class*="-cross"],
-[class*="cursor"][class*="-cross"] > * {
+[class*="cursor-"][class*="-cross"],
+[class*="cursor-"][class*="-cross"] > * {
   cursor: crosshair;
 }
 
-[class*="cursor"][class*="-help"],
-[class*="cursor"][class*="-help"] > * {
+[class*="cursor-"][class*="-help"],
+[class*="cursor-"][class*="-help"] > * {
   cursor: help;
 }
 
-[class*="cursor"][class*="-none"],
-[class*="cursor"][class*="-none"] > * {
+[class*="cursor-"][class*="-none"],
+[class*="cursor-"][class*="-none"] > * {
   cursor: not-allowed;
 }
 
-[class*="cursor"][class*="-hand"],
-[class*="cursor"][class*="-hand"] > * {
+[class*="cursor-"][class*="-hand"],
+[class*="cursor-"][class*="-hand"] > * {
   cursor: pointer;
 }
