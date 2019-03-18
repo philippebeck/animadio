@@ -50,7 +50,8 @@
 [class*="anima-"][class*="-rota-"][class*="-radio2"]:checked ~ [class*="anima-"][class*="-rota-"][class*="-relay"] [class*="anima-"][class*="-rota-"][class*="-target2"],
 [class*="anima-"][class*="-rota-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-rota-"][class*="-relay"] [class*="anima-"][class*="-rota-"][class*="-target3"],
 [class*="anima-"][class*="-rota-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-rota-"][class*="-relay"] [class*="anima-"][class*="-rota-"][class*="-target4"],
-[class*="anima-"][class*="-rota-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-rota-"][class*="-relay"] [class*="anima-"][class*="-rota-"][class*="-target5"] {
+[class*="anima-"][class*="-rota-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-rota-"][class*="-relay"] [class*="anima-"][class*="-rota-"][class*="-target5"],
+[class*="anima-"][class*="-rota-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-rota-"][class*="-relay"] [class*="anima-"][class*="-rota-"][class*="-target6"] {
   animation-name: rotate;
 }
 
