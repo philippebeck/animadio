@@ -31,6 +31,10 @@ body {
   scroll-behavior: smooth;
 }
 
+[class*="radio"] {
+  display: none;
+}
+
 /***** Titles *****/
 h1,
 h2,

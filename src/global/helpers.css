@@ -1,17 +1,11 @@
 /********** HELPERS **********/
 
 /*
-1. Global
-2. Container
-3. Font
-4. Text
-5. Cursor
+1. Container
+2. Font
+3. Text
+4. Cursor
 */
-
-/***** Global *****/
-[class*="radio"] {
-  display: none;
-}
 
 /***** Container *****/
 [class*="container"] {
