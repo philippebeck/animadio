@@ -31,50 +31,50 @@
 }
 
 /***** Height *****/
-[class*="height-"][class*="-sm-"][class*="-base"],
-[class*="height-"][class*="-sm-"][class*="-global"] > * {
+[class*="height-sm-"][class*="-base"],
+[class*="height-sm-"][class*="-global"] > * {
   height: var(--height-sm);
 }
 
-[class*="height-"][class*="-md-"][class*="-base"],
-[class*="height-"][class*="-md-"][class*="-global"] > * {
+[class*="height-md-"][class*="-base"],
+[class*="height-md-"][class*="-global"] > * {
   height: var(--height-md);
 }
 
-[class*="height-"][class*="-lg-"][class*="-base"],
-[class*="height-"][class*="-lg-"][class*="-global"] > * {
+[class*="height-lg-"][class*="-base"],
+[class*="height-lg-"][class*="-global"] > * {
   height: var(--height-lg);
 }
 
 /***** Min Height *****/
-[class*="min-h-"][class*="-sm-"][class*="-base"],
-[class*="min-h-"][class*="-sm-"][class*="-global"] > * {
+[class*="min-h-sm-"][class*="-base"],
+[class*="min-h-sm-"][class*="-global"] > * {
   min-height: var(--min-height-sm);
 }
 
-[class*="min-h-"][class*="-md-"][class*="-base"],
-[class*="min-h-"][class*="-md-"][class*="-global"] > * {
+[class*="min-h-md-"][class*="-base"],
+[class*="min-h-md-"][class*="-global"] > * {
   min-height: var(--min-height-md);
 }
 
-[class*="min-h-"][class*="-lg-"][class*="-base"],
-[class*="min-h-"][class*="-lg-"][class*="-global"] > * {
+[class*="min-h-lg-"][class*="-base"],
+[class*="min-h-lg-"][class*="-global"] > * {
   min-height: var(--min-height-lg);
 }
 
 /***** Max Height *****/
-[class*="max-h-"][class*="-sm-"][class*="-base"],
-[class*="max-h-"][class*="-sm-"][class*="-global"] > * {
+[class*="max-h-sm-"][class*="-base"],
+[class*="max-h-sm-"][class*="-global"] > * {
   max-height: var(--max-height-sm);
 }
 
-[class*="max-h-"][class*="-md-"][class*="-base"],
-[class*="max-h-"][class*="-md-"][class*="-global"] > * {
+[class*="max-h-md-"][class*="-base"],
+[class*="max-h-md-"][class*="-global"] > * {
   max-height: var(--max-height-md);
 }
 
-[class*="max-h-"][class*="-lg-"][class*="-base"],
-[class*="max-h-"][class*="-lg-"][class*="-global"] > * {
+[class*="max-h-lg-"][class*="-base"],
+[class*="max-h-lg-"][class*="-global"] > * {
   max-height: var(--max-height-lg);
 }
 
@@ -98,49 +98,49 @@
 }
 
 /***** Width *****/
-[class*="width-"][class*="-sm-"][class*="-base"],
-[class*="width-"][class*="-sm-"][class*="-global"] > * {
+[class*="width-sm-"][class*="-base"],
+[class*="width-sm-"][class*="-global"] > * {
   width: var(--width-sm);
 }
 
-[class*="width-"][class*="-md-"][class*="-base"],
-[class*="width-"][class*="-md-"][class*="-global"] > * {
+[class*="width-md-"][class*="-base"],
+[class*="width-md-"][class*="-global"] > * {
   width: var(--width-md);
 }
 
-[class*="width-"][class*="-lg-"][class*="-base"],
-[class*="width-"][class*="-lg-"][class*="-global"] > * {
+[class*="width-lg-"][class*="-base"],
+[class*="width-lg-"][class*="-global"] > * {
   width: var(--width-lg);
 }
 
 /***** Min Width *****/
-[class*="min-w-"][class*="-sm-"][class*="-base"],
-[class*="min-w-"][class*="-sm-"][class*="-global"] > * {
+[class*="min-w-sm-"][class*="-base"],
+[class*="min-w-sm-"][class*="-global"] > * {
   min-width: var(--min-width-sm);
 }
 
-[class*="min-w-"][class*="-md-"][class*="-base"],
-[class*="min-w-"][class*="-md-"][class*="-global"] > * {
+[class*="min-w-md-"][class*="-base"],
+[class*="min-w-md-"][class*="-global"] > * {
   min-width: var(--min-width-md);
 }
 
-[class*="min-w-"][class*="-lg-"][class*="-base"],
-[class*="min-w-"][class*="-lg-"][class*="-global"] > * {
+[class*="min-w-lg-"][class*="-base"],
+[class*="min-w-lg-"][class*="-global"] > * {
   min-width: var(--min-width-lg);
 }
 
 /***** Max Width *****/
-[class*="max-w-"][class*="-sm-"][class*="-base"],
-[class*="max-w-"][class*="-sm-"][class*="-global"] > * {
+[class*="max-w-sm-"][class*="-base"],
+[class*="max-w-sm-"][class*="-global"] > * {
   max-width: var(--max-width-sm);
 }
 
-[class*="max-w-"][class*="-md-"][class*="-base"],
-[class*="max-w-"][class*="-md-"][class*="-global"] > * {
+[class*="max-w-md-"][class*="-base"],
+[class*="max-w-md-"][class*="-global"] > * {
   max-width: var(--max-width-md);
 }
 
-[class*="max-w-"][class*="-lg-"][class*="-base"],
-[class*="max-w-"][class*="-lg-"][class*="-global"] > * {
+[class*="max-w-lg-"][class*="-base"],
+[class*="max-w-lg-"][class*="-global"] > * {
   max-width: var(--max-width-lg);
 }
