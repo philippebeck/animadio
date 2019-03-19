@@ -152,6 +152,13 @@ Issues can be created here
 
 [![GitHub Open Issues](https://img.shields.io/github/issues/animadio/animadio.svg?label=Issues)](https://github.com/animadio/animadio/issues)
 
+But for issues about Parse Error, see this before doing anything :
+> For the W3C CSS Validator : [https://github.com/w3c/css-validator/issues/225](https://github.com/w3c/css-validator/issues/225)
+>
+> For the W3C Nu HTML Validator : [https://github.com/validator/validator/issues/644](https://github.com/validator/validator/issues/644)
+>
+> For CSS Lint : [https://github.com/CSSLint/csslint/issues/720](https://github.com/CSSLint/csslint/issues/720)
+
 ---
 
 ## Pull Requests
