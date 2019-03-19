@@ -26,7 +26,7 @@
 [class*="block-tn-"][class*="-radio3"]:checked ~ [class*="block-tn-"][class*="-relay"] [class*="block-tn-"][class*="-target3"],
 [class*="block-tn-"][class*="-radio4"]:checked ~ [class*="block-tn-"][class*="-relay"] [class*="block-tn-"][class*="-target4"],
 [class*="block-tn-"][class*="-radio5"]:checked ~ [class*="block-tn-"][class*="-relay"] [class*="block-tn-"][class*="-target5"],
-[class*="block-tn-"][class*="-radio6"]:checked ~ [class*="block-tn-"][class*="-relay"] [class*="block-tn-"][class*="-target6"] {
+[class*="block-tn-"][class*="-check"]:checked ~ [class*="block-tn-"][class*="-relay"] [class*="block-tn-"][class*="-goal"] {
   display: block;
 }
 
@@ -50,7 +50,7 @@
   [class*="block-sm-"][class*="-radio3"]:checked ~ [class*="block-sm-"][class*="-relay"] [class*="block-sm-"][class*="-target3"],
   [class*="block-sm-"][class*="-radio4"]:checked ~ [class*="block-sm-"][class*="-relay"] [class*="block-sm-"][class*="-target4"],
   [class*="block-sm-"][class*="-radio5"]:checked ~ [class*="block-sm-"][class*="-relay"] [class*="block-sm-"][class*="-target5"],
-  [class*="block-sm-"][class*="-radio6"]:checked ~ [class*="block-sm-"][class*="-relay"] [class*="block-sm-"][class*="-target6"] {
+  [class*="block-sm-"][class*="-check"]:checked ~ [class*="block-sm-"][class*="-relay"] [class*="block-sm-"][class*="-goal"] {
     display: block;
   }
 }
@@ -75,7 +75,7 @@
   [class*="block-md-"][class*="-radio3"]:checked ~ [class*="block-md-"][class*="-relay"] [class*="block-md-"][class*="-target3"],
   [class*="block-md-"][class*="-radio4"]:checked ~ [class*="block-md-"][class*="-relay"] [class*="block-md-"][class*="-target4"],
   [class*="block-md-"][class*="-radio5"]:checked ~ [class*="block-md-"][class*="-relay"] [class*="block-md-"][class*="-target5"],
-  [class*="block-md-"][class*="-radio6"]:checked ~ [class*="block-md-"][class*="-relay"] [class*="block-md-"][class*="-target6"] {
+  [class*="block-md-"][class*="-check"]:checked ~ [class*="block-md-"][class*="-relay"] [class*="block-md-"][class*="-goal"] {
     display: block;
   }
 }
@@ -100,7 +100,7 @@
   [class*="block-lg-"][class*="-radio3"]:checked ~ [class*="block-lg-"][class*="-relay"] [class*="block-lg-"][class*="-target3"],
   [class*="block-lg-"][class*="-radio4"]:checked ~ [class*="block-lg-"][class*="-relay"] [class*="block-lg-"][class*="-target4"],
   [class*="block-lg-"][class*="-radio5"]:checked ~ [class*="block-lg-"][class*="-relay"] [class*="block-lg-"][class*="-target5"],
-  [class*="block-lg-"][class*="-radio6"]:checked ~ [class*="block-lg-"][class*="-relay"] [class*="block-lg-"][class*="-target6"] {
+  [class*="block-lg-"][class*="-check"]:checked ~ [class*="block-lg-"][class*="-relay"] [class*="block-lg-"][class*="-goal"] {
     display: block;
   }
 }
@@ -125,7 +125,7 @@
   [class*="block-wd-"][class*="-radio3"]:checked ~ [class*="block-wd-"][class*="-relay"] [class*="block-wd-"][class*="-target3"],
   [class*="block-wd-"][class*="-radio4"]:checked ~ [class*="block-wd-"][class*="-relay"] [class*="block-wd-"][class*="-target4"],
   [class*="block-wd-"][class*="-radio5"]:checked ~ [class*="block-wd-"][class*="-relay"] [class*="block-wd-"][class*="-target5"],
-  [class*="block-wd-"][class*="-radio6"]:checked ~ [class*="block-wd-"][class*="-relay"] [class*="block-wd-"][class*="-target6"] {
+  [class*="block-wd-"][class*="-check"]:checked ~ [class*="block-wd-"][class*="-relay"] [class*="block-wd-"][class*="-goal"] {
     display: block;
   }
 }
@@ -150,7 +150,7 @@
 [class*="hide-tn-"][class*="-radio3"]:checked ~ [class*="hide-tn-"][class*="-relay"] [class*="hide-tn-"][class*="-target3"],
 [class*="hide-tn-"][class*="-radio4"]:checked ~ [class*="hide-tn-"][class*="-relay"] [class*="hide-tn-"][class*="-target4"],
 [class*="hide-tn-"][class*="-radio5"]:checked ~ [class*="hide-tn-"][class*="-relay"] [class*="hide-tn-"][class*="-target5"],
-[class*="hide-tn-"][class*="-radio6"]:checked ~ [class*="hide-tn-"][class*="-relay"] [class*="hide-tn-"][class*="-target6"] {
+[class*="hide-tn-"][class*="-check"]:checked ~ [class*="hide-tn-"][class*="-relay"] [class*="hide-tn-"][class*="-goal"] {
   display: none;
 }
 
@@ -174,7 +174,7 @@
   [class*="hide-sm-"][class*="-radio3"]:checked ~ [class*="hide-sm-"][class*="-relay"] [class*="hide-sm-"][class*="-target3"],
   [class*="hide-sm-"][class*="-radio4"]:checked ~ [class*="hide-sm-"][class*="-relay"] [class*="hide-sm-"][class*="-target4"],
   [class*="hide-sm-"][class*="-radio5"]:checked ~ [class*="hide-sm-"][class*="-relay"] [class*="hide-sm-"][class*="-target5"],
-  [class*="hide-sm-"][class*="-radio6"]:checked ~ [class*="hide-sm-"][class*="-relay"] [class*="hide-sm-"][class*="-target6"] {
+  [class*="hide-sm-"][class*="-check"]:checked ~ [class*="hide-sm-"][class*="-relay"] [class*="hide-sm-"][class*="-goal"] {
     display: none;
   }
 }
@@ -199,7 +199,7 @@
   [class*="hide-md-"][class*="-radio3"]:checked ~ [class*="hide-md-"][class*="-relay"] [class*="hide-md-"][class*="-target3"],
   [class*="hide-md-"][class*="-radio4"]:checked ~ [class*="hide-md-"][class*="-relay"] [class*="hide-md-"][class*="-target4"],
   [class*="hide-md-"][class*="-radio5"]:checked ~ [class*="hide-md-"][class*="-relay"] [class*="hide-md-"][class*="-target5"],
-  [class*="hide-md-"][class*="-radio6"]:checked ~ [class*="hide-md-"][class*="-relay"] [class*="hide-md-"][class*="-target6"] {
+  [class*="hide-md-"][class*="-check"]:checked ~ [class*="hide-md-"][class*="-relay"] [class*="hide-md-"][class*="-goal"] {
     display: none;
   }
 }
@@ -224,7 +224,7 @@
   [class*="hide-lg-"][class*="-radio3"]:checked ~ [class*="hide-lg-"][class*="-relay"] [class*="hide-lg-"][class*="-target3"],
   [class*="hide-lg-"][class*="-radio4"]:checked ~ [class*="hide-lg-"][class*="-relay"] [class*="hide-lg-"][class*="-target4"],
   [class*="hide-lg-"][class*="-radio5"]:checked ~ [class*="hide-lg-"][class*="-relay"] [class*="hide-lg-"][class*="-target5"],
-  [class*="hide-lg-"][class*="-radio6"]:checked ~ [class*="hide-lg-"][class*="-relay"] [class*="hide-lg-"][class*="-target6"] {
+  [class*="hide-lg-"][class*="-check"]:checked ~ [class*="hide-lg-"][class*="-relay"] [class*="hide-lg-"][class*="-goal"] {
     display: none;
   }
 }
@@ -249,7 +249,7 @@
   [class*="hide-wd-"][class*="-radio3"]:checked ~ [class*="hide-wd-"][class*="-relay"] [class*="hide-wd-"][class*="-target3"],
   [class*="hide-wd-"][class*="-radio4"]:checked ~ [class*="hide-wd-"][class*="-relay"] [class*="hide-wd-"][class*="-target4"],
   [class*="hide-wd-"][class*="-radio5"]:checked ~ [class*="hide-wd-"][class*="-relay"] [class*="hide-wd-"][class*="-target5"],
-  [class*="hide-wd-"][class*="-radio6"]:checked ~ [class*="hide-wd-"][class*="-relay"] [class*="hide-wd-"][class*="-target6"] {
+  [class*="hide-wd-"][class*="-check"]:checked ~ [class*="hide-wd-"][class*="-relay"] [class*="hide-wd-"][class*="-goal"] {
     display: none;
   }
 }
@@ -274,7 +274,7 @@
 [class*="inline-tn-"][class*="-radio3"]:checked ~ [class*="inline-tn-"][class*="-relay"] [class*="inline-tn-"][class*="-target3"],
 [class*="inline-tn-"][class*="-radio4"]:checked ~ [class*="inline-tn-"][class*="-relay"] [class*="inline-tn-"][class*="-target4"],
 [class*="inline-tn-"][class*="-radio5"]:checked ~ [class*="inline-tn-"][class*="-relay"] [class*="inline-tn-"][class*="-target5"],
-[class*="inline-tn-"][class*="-radio6"]:checked ~ [class*="inline-tn-"][class*="-relay"] [class*="inline-tn-"][class*="-target6"] {
+[class*="inline-tn-"][class*="-check"]:checked ~ [class*="inline-tn-"][class*="-relay"] [class*="inline-tn-"][class*="-goal"] {
   display: inline;
 }
 
@@ -298,7 +298,7 @@
   [class*="inline-sm-"][class*="-radio3"]:checked ~ [class*="inline-sm-"][class*="-relay"] [class*="inline-sm-"][class*="-target3"],
   [class*="inline-sm-"][class*="-radio4"]:checked ~ [class*="inline-sm-"][class*="-relay"] [class*="inline-sm-"][class*="-target4"],
   [class*="inline-sm-"][class*="-radio5"]:checked ~ [class*="inline-sm-"][class*="-relay"] [class*="inline-sm-"][class*="-target5"],
-  [class*="inline-sm-"][class*="-radio6"]:checked ~ [class*="inline-sm-"][class*="-relay"] [class*="inline-sm-"][class*="-target6"] {
+  [class*="inline-sm-"][class*="-check"]:checked ~ [class*="inline-sm-"][class*="-relay"] [class*="inline-sm-"][class*="-goal"] {
     display: inline;
   }
 }
@@ -323,7 +323,7 @@
   [class*="inline-md-"][class*="-radio3"]:checked ~ [class*="inline-md-"][class*="-relay"] [class*="inline-md-"][class*="-target3"],
   [class*="inline-md-"][class*="-radio4"]:checked ~ [class*="inline-md-"][class*="-relay"] [class*="inline-md-"][class*="-target4"],
   [class*="inline-md-"][class*="-radio5"]:checked ~ [class*="inline-md-"][class*="-relay"] [class*="inline-md-"][class*="-target5"],
-  [class*="inline-md-"][class*="-radio6"]:checked ~ [class*="inline-md-"][class*="-relay"] [class*="inline-md-"][class*="-target6"] {
+  [class*="inline-md-"][class*="-check"]:checked ~ [class*="inline-md-"][class*="-relay"] [class*="inline-md-"][class*="-goal"] {
     display: inline;
   }
 }
@@ -348,7 +348,7 @@
   [class*="inline-lg-"][class*="-radio3"]:checked ~ [class*="inline-lg-"][class*="-relay"] [class*="inline-lg-"][class*="-target3"],
   [class*="inline-lg-"][class*="-radio4"]:checked ~ [class*="inline-lg-"][class*="-relay"] [class*="inline-lg-"][class*="-target4"],
   [class*="inline-lg-"][class*="-radio5"]:checked ~ [class*="inline-lg-"][class*="-relay"] [class*="inline-lg-"][class*="-target5"],
-  [class*="inline-lg-"][class*="-radio6"]:checked ~ [class*="inline-lg-"][class*="-relay"] [class*="inline-lg-"][class*="-target6"] {
+  [class*="inline-lg-"][class*="-check"]:checked ~ [class*="inline-lg-"][class*="-relay"] [class*="inline-lg-"][class*="-goal"] {
     display: inline;
   }
 }
@@ -373,7 +373,7 @@
   [class*="inline-wd-"][class*="-radio3"]:checked ~ [class*="inline-wd-"][class*="-relay"] [class*="inline-wd-"][class*="-target3"],
   [class*="inline-wd-"][class*="-radio4"]:checked ~ [class*="inline-wd-"][class*="-relay"] [class*="inline-wd-"][class*="-target4"],
   [class*="inline-wd-"][class*="-radio5"]:checked ~ [class*="inline-wd-"][class*="-relay"] [class*="inline-wd-"][class*="-target5"],
-  [class*="inline-wd-"][class*="-radio6"]:checked ~ [class*="inline-wd-"][class*="-relay"] [class*="inline-wd-"][class*="-target6"] {
+  [class*="inline-wd-"][class*="-check"]:checked ~ [class*="inline-wd-"][class*="-relay"] [class*="inline-wd-"][class*="-goal"] {
     display: inline;
   }
 }

@@ -51,7 +51,7 @@
 [class*="anima-"][class*="-rota-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-rota-"][class*="-relay"] [class*="anima-"][class*="-rota-"][class*="-target3"],
 [class*="anima-"][class*="-rota-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-rota-"][class*="-relay"] [class*="anima-"][class*="-rota-"][class*="-target4"],
 [class*="anima-"][class*="-rota-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-rota-"][class*="-relay"] [class*="anima-"][class*="-rota-"][class*="-target5"],
-[class*="anima-"][class*="-rota-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-rota-"][class*="-relay"] [class*="anima-"][class*="-rota-"][class*="-target6"] {
+[class*="anima-"][class*="-rota-"][class*="-check"]:checked ~ [class*="anima-"][class*="-rota-"][class*="-relay"] [class*="anima-"][class*="-rota-"][class*="-goal"] {
   animation-name: rotate;
 }
 
@@ -74,7 +74,7 @@
 [class*="anima-"][class*="-rotax-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-rotax-"][class*="-relay"] [class*="anima-"][class*="-rotax-"][class*="-target3"],
 [class*="anima-"][class*="-rotax-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-rotax-"][class*="-relay"] [class*="anima-"][class*="-rotax-"][class*="-target4"],
 [class*="anima-"][class*="-rotax-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-rotax-"][class*="-relay"] [class*="anima-"][class*="-rotax-"][class*="-target5"],
-[class*="anima-"][class*="-rotax-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-rotax-"][class*="-relay"] [class*="anima-"][class*="-rotax-"][class*="-target6"] {
+[class*="anima-"][class*="-rotax-"][class*="-check"]:checked ~ [class*="anima-"][class*="-rotax-"][class*="-relay"] [class*="anima-"][class*="-rotax-"][class*="-goal"] {
   animation-name: rotateX;
 }
 
@@ -97,7 +97,7 @@
 [class*="anima-"][class*="-rotay-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-rotay-"][class*="-relay"] [class*="anima-"][class*="-rotay-"][class*="-target3"],
 [class*="anima-"][class*="-rotay-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-rotay-"][class*="-relay"] [class*="anima-"][class*="-rotay-"][class*="-target4"],
 [class*="anima-"][class*="-rotay-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-rotay-"][class*="-relay"] [class*="anima-"][class*="-rotay-"][class*="-target5"],
-[class*="anima-"][class*="-rotay-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-rotay-"][class*="-relay"] [class*="anima-"][class*="-rotay-"][class*="-target6"] {
+[class*="anima-"][class*="-rotay-"][class*="-check"]:checked ~ [class*="anima-"][class*="-rotay-"][class*="-relay"] [class*="anima-"][class*="-rotay-"][class*="-goal"] {
   animation-name: rotateY;
 }
 
@@ -120,7 +120,7 @@
 [class*="anima-"][class*="-scal-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-scal-"][class*="-relay"] [class*="anima-"][class*="-scal-"][class*="-target3"],
 [class*="anima-"][class*="-scal-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-scal-"][class*="-relay"] [class*="anima-"][class*="-scal-"][class*="-target4"],
 [class*="anima-"][class*="-scal-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-scal-"][class*="-relay"] [class*="anima-"][class*="-scal-"][class*="-target5"],
-[class*="anima-"][class*="-scal-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-scal-"][class*="-relay"] [class*="anima-"][class*="-scal-"][class*="-target6"] {
+[class*="anima-"][class*="-scal-"][class*="-check"]:checked ~ [class*="anima-"][class*="-scal-"][class*="-relay"] [class*="anima-"][class*="-scal-"][class*="-goal"] {
   animation-name: scale;
 }
 
@@ -143,7 +143,7 @@
 [class*="anima-"][class*="-scalx-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-scalx-"][class*="-relay"] [class*="anima-"][class*="-scalx-"][class*="-target3"],
 [class*="anima-"][class*="-scalx-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-scalx-"][class*="-relay"] [class*="anima-"][class*="-scalx-"][class*="-target4"],
 [class*="anima-"][class*="-scalx-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-scalx-"][class*="-relay"] [class*="anima-"][class*="-scalx-"][class*="-target5"],
-[class*="anima-"][class*="-scalx-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-scalx-"][class*="-relay"] [class*="anima-"][class*="-scalx-"][class*="-target6"] {
+[class*="anima-"][class*="-scalx-"][class*="-check"]:checked ~ [class*="anima-"][class*="-scalx-"][class*="-relay"] [class*="anima-"][class*="-scalx-"][class*="-goal"] {
   animation-name: scaleX;
 }
 
@@ -166,7 +166,7 @@
 [class*="anima-"][class*="-scaly-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-scaly-"][class*="-relay"] [class*="anima-"][class*="-scaly-"][class*="-target3"],
 [class*="anima-"][class*="-scaly-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-scaly-"][class*="-relay"] [class*="anima-"][class*="-scaly-"][class*="-target4"],
 [class*="anima-"][class*="-scaly-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-scaly-"][class*="-relay"] [class*="anima-"][class*="-scaly-"][class*="-target5"],
-[class*="anima-"][class*="-scaly-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-scaly-"][class*="-relay"] [class*="anima-"][class*="-scaly-"][class*="-target6"] {
+[class*="anima-"][class*="-scaly-"][class*="-check"]:checked ~ [class*="anima-"][class*="-scaly-"][class*="-relay"] [class*="anima-"][class*="-scaly-"][class*="-goal"] {
   animation-name: scaleY;
 }
 
@@ -189,7 +189,7 @@
 [class*="anima-"][class*="-skew-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-skew-"][class*="-relay"] [class*="anima-"][class*="-skew-"][class*="-target3"],
 [class*="anima-"][class*="-skew-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-skew-"][class*="-relay"] [class*="anima-"][class*="-skew-"][class*="-target4"],
 [class*="anima-"][class*="-skew-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-skew-"][class*="-relay"] [class*="anima-"][class*="-skew-"][class*="-target5"],
-[class*="anima-"][class*="-skew-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-skew-"][class*="-relay"] [class*="anima-"][class*="-skew-"][class*="-target6"] {
+[class*="anima-"][class*="-skew-"][class*="-check"]:checked ~ [class*="anima-"][class*="-skew-"][class*="-relay"] [class*="anima-"][class*="-skew-"][class*="-goal"] {
   animation-name: skew;
 }
 
@@ -212,7 +212,7 @@
 [class*="anima-"][class*="-skewx-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-skewx-"][class*="-relay"] [class*="anima-"][class*="-skewx-"][class*="-target3"],
 [class*="anima-"][class*="-skewx-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-skewx-"][class*="-relay"] [class*="anima-"][class*="-skewx-"][class*="-target4"],
 [class*="anima-"][class*="-skewx-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-skewx-"][class*="-relay"] [class*="anima-"][class*="-skewx-"][class*="-target5"],
-[class*="anima-"][class*="-skewx-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-skewx-"][class*="-relay"] [class*="anima-"][class*="-skewx-"][class*="-target6"] {
+[class*="anima-"][class*="-skewx-"][class*="-check"]:checked ~ [class*="anima-"][class*="-skewx-"][class*="-relay"] [class*="anima-"][class*="-skewx-"][class*="-goal"] {
   animation-name: skewX;
 }
 
@@ -235,7 +235,7 @@
 [class*="anima-"][class*="-skewy-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-skewy-"][class*="-relay"] [class*="anima-"][class*="-skewy-"][class*="-target3"],
 [class*="anima-"][class*="-skewy-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-skewy-"][class*="-relay"] [class*="anima-"][class*="-skewy-"][class*="-target4"],
 [class*="anima-"][class*="-skewy-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-skewy-"][class*="-relay"] [class*="anima-"][class*="-skewy-"][class*="-target5"],
-[class*="anima-"][class*="-skewy-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-skewy-"][class*="-relay"] [class*="anima-"][class*="-skewy-"][class*="-target6"] {
+[class*="anima-"][class*="-skewy-"][class*="-check"]:checked ~ [class*="anima-"][class*="-skewy-"][class*="-relay"] [class*="anima-"][class*="-skewy-"][class*="-goal"] {
   animation-name: skewY;
 }
 
@@ -258,7 +258,7 @@
 [class*="anima-"][class*="-tran-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-tran-"][class*="-relay"] [class*="anima-"][class*="-tran-"][class*="-target3"],
 [class*="anima-"][class*="-tran-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-tran-"][class*="-relay"] [class*="anima-"][class*="-tran-"][class*="-target4"],
 [class*="anima-"][class*="-tran-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-tran-"][class*="-relay"] [class*="anima-"][class*="-tran-"][class*="-target5"],
-[class*="anima-"][class*="-tran-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-tran-"][class*="-relay"] [class*="anima-"][class*="-tran-"][class*="-target6"] {
+[class*="anima-"][class*="-tran-"][class*="-check"]:checked ~ [class*="anima-"][class*="-tran-"][class*="-relay"] [class*="anima-"][class*="-tran-"][class*="-goal"] {
   animation-name: translate;
 }
 
@@ -281,7 +281,7 @@
 [class*="anima-"][class*="-tranx-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-tranx-"][class*="-relay"] [class*="anima-"][class*="-tranx-"][class*="-target3"],
 [class*="anima-"][class*="-tranx-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-tranx-"][class*="-relay"] [class*="anima-"][class*="-tranx-"][class*="-target4"],
 [class*="anima-"][class*="-tranx-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-tranx-"][class*="-relay"] [class*="anima-"][class*="-tranx-"][class*="-target5"],
-[class*="anima-"][class*="-tranx-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-tranx-"][class*="-relay"] [class*="anima-"][class*="-tranx-"][class*="-target6"] {
+[class*="anima-"][class*="-tranx-"][class*="-check"]:checked ~ [class*="anima-"][class*="-tranx-"][class*="-relay"] [class*="anima-"][class*="-tranx-"][class*="-goal"] {
   animation-name: translateX;
 }
 
@@ -304,7 +304,7 @@
 [class*="anima-"][class*="-trany-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-trany-"][class*="-relay"] [class*="anima-"][class*="-trany-"][class*="-target3"],
 [class*="anima-"][class*="-trany-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-trany-"][class*="-relay"] [class*="anima-"][class*="-trany-"][class*="-target4"],
 [class*="anima-"][class*="-trany-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-trany-"][class*="-relay"] [class*="anima-"][class*="-trany-"][class*="-target5"],
-[class*="anima-"][class*="-trany-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-trany-"][class*="-relay"] [class*="anima-"][class*="-trany-"][class*="-target6"] {
+[class*="anima-"][class*="-trany-"][class*="-check"]:checked ~ [class*="anima-"][class*="-trany-"][class*="-relay"] [class*="anima-"][class*="-trany-"][class*="-goal"] {
   animation-name: translateY;
 }
 
@@ -328,7 +328,7 @@
 [class*="anima-"][class*="-tn-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-tn-"][class*="-relay"] [class*="anima-"][class*="-tn-"][class*="-target3"],
 [class*="anima-"][class*="-tn-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-tn-"][class*="-relay"] [class*="anima-"][class*="-tn-"][class*="-target4"],
 [class*="anima-"][class*="-tn-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-tn-"][class*="-relay"] [class*="anima-"][class*="-tn-"][class*="-target5"],
-[class*="anima-"][class*="-tn-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-tn-"][class*="-relay"] [class*="anima-"][class*="-tn-"][class*="-target6"] {
+[class*="anima-"][class*="-tn-"][class*="-check"]:checked ~ [class*="anima-"][class*="-tn-"][class*="-relay"] [class*="anima-"][class*="-tn-"][class*="-goal"] {
   animation-duration: var(--anima-duration-tn);
 }
 
@@ -351,7 +351,7 @@
 [class*="anima-"][class*="-sm-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-sm-"][class*="-relay"] [class*="anima-"][class*="-sm-"][class*="-target3"],
 [class*="anima-"][class*="-sm-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-sm-"][class*="-relay"] [class*="anima-"][class*="-sm-"][class*="-target4"],
 [class*="anima-"][class*="-sm-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-sm-"][class*="-relay"] [class*="anima-"][class*="-sm-"][class*="-target5"],
-[class*="anima-"][class*="-sm-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-sm-"][class*="-relay"] [class*="anima-"][class*="-sm-"][class*="-target6"] {
+[class*="anima-"][class*="-sm-"][class*="-check"]:checked ~ [class*="anima-"][class*="-sm-"][class*="-relay"] [class*="anima-"][class*="-sm-"][class*="-goal"] {
   animation-duration: var(--anima-duration-sm);
 }
 
@@ -374,7 +374,7 @@
 [class*="anima-"][class*="-md-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-md-"][class*="-relay"] [class*="anima-"][class*="-md-"][class*="-target3"],
 [class*="anima-"][class*="-md-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-md-"][class*="-relay"] [class*="anima-"][class*="-md-"][class*="-target4"],
 [class*="anima-"][class*="-md-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-md-"][class*="-relay"] [class*="anima-"][class*="-md-"][class*="-target5"],
-[class*="anima-"][class*="-md-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-md-"][class*="-relay"] [class*="anima-"][class*="-md-"][class*="-target6"] {
+[class*="anima-"][class*="-md-"][class*="-check"]:checked ~ [class*="anima-"][class*="-md-"][class*="-relay"] [class*="anima-"][class*="-md-"][class*="-goal"] {
   animation-duration: var(--anima-duration-md);
 }
 
@@ -397,7 +397,7 @@
 [class*="anima-"][class*="-lg-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-lg-"][class*="-relay"] [class*="anima-"][class*="-lg-"][class*="-target3"],
 [class*="anima-"][class*="-lg-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-lg-"][class*="-relay"] [class*="anima-"][class*="-lg-"][class*="-target4"],
 [class*="anima-"][class*="-lg-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-lg-"][class*="-relay"] [class*="anima-"][class*="-lg-"][class*="-target5"],
-[class*="anima-"][class*="-lg-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-lg-"][class*="-relay"] [class*="anima-"][class*="-lg-"][class*="-target6"] {
+[class*="anima-"][class*="-lg-"][class*="-check"]:checked ~ [class*="anima-"][class*="-lg-"][class*="-relay"] [class*="anima-"][class*="-lg-"][class*="-goal"] {
   animation-duration: var(--anima-duration-lg);
 }
 
@@ -420,7 +420,7 @@
 [class*="anima-"][class*="-wd-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-wd-"][class*="-relay"] [class*="anima-"][class*="-wd-"][class*="-target3"],
 [class*="anima-"][class*="-wd-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-wd-"][class*="-relay"] [class*="anima-"][class*="-wd-"][class*="-target4"],
 [class*="anima-"][class*="-wd-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-wd-"][class*="-relay"] [class*="anima-"][class*="-wd-"][class*="-target5"],
-[class*="anima-"][class*="-wd-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-wd-"][class*="-relay"] [class*="anima-"][class*="-wd-"][class*="-target6"] {
+[class*="anima-"][class*="-wd-"][class*="-check"]:checked ~ [class*="anima-"][class*="-wd-"][class*="-relay"] [class*="anima-"][class*="-wd-"][class*="-goal"] {
   animation-duration: var(--anima-duration-wd);
 }
 
@@ -444,7 +444,7 @@
 [class*="anima-"][class*="-linear-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-linear-"][class*="-relay"] [class*="anima-"][class*="-linear-"][class*="-target3"],
 [class*="anima-"][class*="-linear-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-linear-"][class*="-relay"] [class*="anima-"][class*="-linear-"][class*="-target4"],
 [class*="anima-"][class*="-linear-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-linear-"][class*="-relay"] [class*="anima-"][class*="-linear-"][class*="-target5"],
-[class*="anima-"][class*="-linear-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-linear-"][class*="-relay"] [class*="anima-"][class*="-linear-"][class*="-target6"] {
+[class*="anima-"][class*="-linear-"][class*="-check"]:checked ~ [class*="anima-"][class*="-linear-"][class*="-relay"] [class*="anima-"][class*="-linear-"][class*="-goal"] {
   animation-timing-function: linear;
 }
 
@@ -467,7 +467,7 @@
 [class*="anima-"][class*="-ease-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-ease-"][class*="-relay"] [class*="anima-"][class*="-ease-"][class*="-target3"],
 [class*="anima-"][class*="-ease-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-ease-"][class*="-relay"] [class*="anima-"][class*="-ease-"][class*="-target4"],
 [class*="anima-"][class*="-ease-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-ease-"][class*="-relay"] [class*="anima-"][class*="-ease-"][class*="-target5"],
-[class*="anima-"][class*="-ease-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-ease-"][class*="-relay"] [class*="anima-"][class*="-ease-"][class*="-target6"] {
+[class*="anima-"][class*="-ease-"][class*="-check"]:checked ~ [class*="anima-"][class*="-ease-"][class*="-relay"] [class*="anima-"][class*="-ease-"][class*="-goal"] {
   animation-timing-function: var(--anima-timing-ease);
 }
 
@@ -490,7 +490,7 @@
 [class*="anima-"][class*="-steps-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-steps-"][class*="-relay"] [class*="anima-"][class*="-steps-"][class*="-target3"],
 [class*="anima-"][class*="-steps-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-steps-"][class*="-relay"] [class*="anima-"][class*="-steps-"][class*="-target4"],
 [class*="anima-"][class*="-steps-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-steps-"][class*="-relay"] [class*="anima-"][class*="-steps-"][class*="-target5"],
-[class*="anima-"][class*="-steps-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-steps-"][class*="-relay"] [class*="anima-"][class*="-steps-"][class*="-target6"] {
+[class*="anima-"][class*="-steps-"][class*="-check"]:checked ~ [class*="anima-"][class*="-steps-"][class*="-relay"] [class*="anima-"][class*="-steps-"][class*="-goal"] {
   animation-timing-function: steps(var(--anima-timing-steps));
 }
 
@@ -513,7 +513,7 @@
 [class*="anima-"][class*="-bezier-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-bezier-"][class*="-relay"] [class*="anima-"][class*="-bezier-"][class*="-target3"],
 [class*="anima-"][class*="-bezier-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-bezier-"][class*="-relay"] [class*="anima-"][class*="-bezier-"][class*="-target4"],
 [class*="anima-"][class*="-bezier-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-bezier-"][class*="-relay"] [class*="anima-"][class*="-bezier-"][class*="-target5"],
-[class*="anima-"][class*="-bezier-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-bezier-"][class*="-relay"] [class*="anima-"][class*="-bezier-"][class*="-target6"] {
+[class*="anima-"][class*="-bezier-"][class*="-check"]:checked ~ [class*="anima-"][class*="-bezier-"][class*="-relay"] [class*="anima-"][class*="-bezier-"][class*="-goal"] {
   animation-timing-function: cubic-bezier(var(--anima-timing-bezier));
 }
 
@@ -537,7 +537,7 @@
 [class*="anima-"][class*="-few-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-few-"][class*="-relay"] [class*="anima-"][class*="-few-"][class*="-target3"],
 [class*="anima-"][class*="-few-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-few-"][class*="-relay"] [class*="anima-"][class*="-few-"][class*="-target4"],
 [class*="anima-"][class*="-few-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-few-"][class*="-relay"] [class*="anima-"][class*="-few-"][class*="-target5"],
-[class*="anima-"][class*="-few-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-few-"][class*="-relay"] [class*="anima-"][class*="-few-"][class*="-target6"] {
+[class*="anima-"][class*="-few-"][class*="-check"]:checked ~ [class*="anima-"][class*="-few-"][class*="-relay"] [class*="anima-"][class*="-few-"][class*="-goal"] {
   animation-iteration-count: var(--anima-count-few);
 }
 
@@ -560,7 +560,7 @@
 [class*="anima-"][class*="-many-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-many-"][class*="-relay"] [class*="anima-"][class*="-many-"][class*="-target3"],
 [class*="anima-"][class*="-many-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-many-"][class*="-relay"] [class*="anima-"][class*="-many-"][class*="-target4"],
 [class*="anima-"][class*="-many-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-many-"][class*="-relay"] [class*="anima-"][class*="-many-"][class*="-target5"],
-[class*="anima-"][class*="-many-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-many-"][class*="-relay"] [class*="anima-"][class*="-many-"][class*="-target6"] {
+[class*="anima-"][class*="-many-"][class*="-check"]:checked ~ [class*="anima-"][class*="-many-"][class*="-relay"] [class*="anima-"][class*="-many-"][class*="-goal"] {
   animation-iteration-count: var(--anima-count-many);
 }
 
@@ -583,7 +583,7 @@
 [class*="anima-"][class*="-loop-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-loop-"][class*="-relay"] [class*="anima-"][class*="-loop-"][class*="-target3"],
 [class*="anima-"][class*="-loop-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-loop-"][class*="-relay"] [class*="anima-"][class*="-loop-"][class*="-target4"],
 [class*="anima-"][class*="-loop-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-loop-"][class*="-relay"] [class*="anima-"][class*="-loop-"][class*="-target5"],
-[class*="anima-"][class*="-loop-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-loop-"][class*="-relay"] [class*="anima-"][class*="-loop-"][class*="-target6"] {
+[class*="anima-"][class*="-loop-"][class*="-check"]:checked ~ [class*="anima-"][class*="-loop-"][class*="-relay"] [class*="anima-"][class*="-loop-"][class*="-goal"] {
   animation-iteration-count: infinite;
 }
 
@@ -607,7 +607,7 @@
 [class*="anima-"][class*="-alter-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-alter-"][class*="-relay"] [class*="anima-"][class*="-alter-"][class*="-target3"],
 [class*="anima-"][class*="-alter-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-alter-"][class*="-relay"] [class*="anima-"][class*="-alter-"][class*="-target4"],
 [class*="anima-"][class*="-alter-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-alter-"][class*="-relay"] [class*="anima-"][class*="-alter-"][class*="-target5"],
-[class*="anima-"][class*="-alter-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-alter-"][class*="-relay"] [class*="anima-"][class*="-alter-"][class*="-target6"] {
+[class*="anima-"][class*="-alter-"][class*="-check"]:checked ~ [class*="anima-"][class*="-alter-"][class*="-relay"] [class*="anima-"][class*="-alter-"][class*="-goal"] {
   animation-direction: alternate;
 }
 
@@ -630,7 +630,7 @@
 [class*="anima-"][class*="-rever-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-rever-"][class*="-relay"] [class*="anima-"][class*="-rever-"][class*="-target3"],
 [class*="anima-"][class*="-rever-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-rever-"][class*="-relay"] [class*="anima-"][class*="-rever-"][class*="-target4"],
 [class*="anima-"][class*="-rever-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-rever-"][class*="-relay"] [class*="anima-"][class*="-rever-"][class*="-target5"],
-[class*="anima-"][class*="-rever-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-rever-"][class*="-relay"] [class*="anima-"][class*="-rever-"][class*="-target6"] {
+[class*="anima-"][class*="-rever-"][class*="-check"]:checked ~ [class*="anima-"][class*="-rever-"][class*="-relay"] [class*="anima-"][class*="-rever-"][class*="-goal"] {
   animation-direction: reverse;
 }
 
@@ -653,7 +653,7 @@
 [class*="anima-"][class*="-altrev-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-altrev-"][class*="-relay"] [class*="anima-"][class*="-altrev-"][class*="-target3"],
 [class*="anima-"][class*="-altrev-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-altrev-"][class*="-relay"] [class*="anima-"][class*="-altrev-"][class*="-target4"],
 [class*="anima-"][class*="-altrev-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-altrev-"][class*="-relay"] [class*="anima-"][class*="-altrev-"][class*="-target5"],
-[class*="anima-"][class*="-altrev-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-altrev-"][class*="-relay"] [class*="anima-"][class*="-altrev-"][class*="-target6"] {
+[class*="anima-"][class*="-altrev-"][class*="-check"]:checked ~ [class*="anima-"][class*="-altrev-"][class*="-relay"] [class*="anima-"][class*="-altrev-"][class*="-goal"] {
   animation-direction: alternate-reverse;
 }
 
@@ -677,7 +677,7 @@
 [class*="anima-"][class*="-small-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-small-"][class*="-relay"] [class*="anima-"][class*="-small-"][class*="-target3"],
 [class*="anima-"][class*="-small-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-small-"][class*="-relay"] [class*="anima-"][class*="-small-"][class*="-target4"],
 [class*="anima-"][class*="-small-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-small-"][class*="-relay"] [class*="anima-"][class*="-small-"][class*="-target5"],
-[class*="anima-"][class*="-small-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-small-"][class*="-relay"] [class*="anima-"][class*="-small-"][class*="-target6"] {
+[class*="anima-"][class*="-small-"][class*="-check"]:checked ~ [class*="anima-"][class*="-small-"][class*="-relay"] [class*="anima-"][class*="-small-"][class*="-goal"] {
   animation-delay: var(--anima-delay-small);
 }
 
@@ -700,7 +700,7 @@
 [class*="anima-"][class*="-medium-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-medium-"][class*="-relay"] [class*="anima-"][class*="-medium-"][class*="-target3"],
 [class*="anima-"][class*="-medium-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-medium-"][class*="-relay"] [class*="anima-"][class*="-medium-"][class*="-target4"],
 [class*="anima-"][class*="-medium-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-medium-"][class*="-relay"] [class*="anima-"][class*="-medium-"][class*="-target5"],
-[class*="anima-"][class*="-medium-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-medium-"][class*="-relay"] [class*="anima-"][class*="-medium-"][class*="-target6"] {
+[class*="anima-"][class*="-medium-"][class*="-check"]:checked ~ [class*="anima-"][class*="-medium-"][class*="-relay"] [class*="anima-"][class*="-medium-"][class*="-goal"] {
   animation-delay: var(--anima-delay-medium);
 }
 
@@ -723,7 +723,7 @@
 [class*="anima-"][class*="-large-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-large-"][class*="-relay"] [class*="anima-"][class*="-large-"][class*="-target3"],
 [class*="anima-"][class*="-large-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-large-"][class*="-relay"] [class*="anima-"][class*="-large-"][class*="-target4"],
 [class*="anima-"][class*="-large-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-large-"][class*="-relay"] [class*="anima-"][class*="-large-"][class*="-target5"],
-[class*="anima-"][class*="-large-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-large-"][class*="-relay"] [class*="anima-"][class*="-large-"][class*="-target6"] {
+[class*="anima-"][class*="-large-"][class*="-check"]:checked ~ [class*="anima-"][class*="-large-"][class*="-relay"] [class*="anima-"][class*="-large-"][class*="-goal"] {
   animation-delay: var(--anima-delay-large);
 }
 
@@ -747,7 +747,7 @@
 [class*="anima-"][class*="-back-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-back-"][class*="-relay"] [class*="anima-"][class*="-back-"][class*="-target3"],
 [class*="anima-"][class*="-back-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-back-"][class*="-relay"] [class*="anima-"][class*="-back-"][class*="-target4"],
 [class*="anima-"][class*="-back-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-back-"][class*="-relay"] [class*="anima-"][class*="-back-"][class*="-target5"],
-[class*="anima-"][class*="-back-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-back-"][class*="-relay"] [class*="anima-"][class*="-back-"][class*="-target6"] {
+[class*="anima-"][class*="-back-"][class*="-check"]:checked ~ [class*="anima-"][class*="-back-"][class*="-relay"] [class*="anima-"][class*="-back-"][class*="-goal"] {
   animation-fill-mode: backwards;
 }
 
@@ -770,7 +770,7 @@
 [class*="anima-"][class*="-front-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-front-"][class*="-relay"] [class*="anima-"][class*="-front-"][class*="-target3"],
 [class*="anima-"][class*="-front-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-front-"][class*="-relay"] [class*="anima-"][class*="-front-"][class*="-target4"],
 [class*="anima-"][class*="-front-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-front-"][class*="-relay"] [class*="anima-"][class*="-front-"][class*="-target5"],
-[class*="anima-"][class*="-front-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-front-"][class*="-relay"] [class*="anima-"][class*="-front-"][class*="-target6"] {
+[class*="anima-"][class*="-front-"][class*="-check"]:checked ~ [class*="anima-"][class*="-front-"][class*="-relay"] [class*="anima-"][class*="-front-"][class*="-goal"] {
   animation-fill-mode: forwards;
 }
 
@@ -794,7 +794,7 @@
 [class*="anima-"][class*="-far-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-far-"][class*="-relay"] [class*="anima-"][class*="-far-"][class*="-target3"],
 [class*="anima-"][class*="-far-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-far-"][class*="-relay"] [class*="anima-"][class*="-far-"][class*="-target4"],
 [class*="anima-"][class*="-far-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-far-"][class*="-relay"] [class*="anima-"][class*="-far-"][class*="-target5"],
-[class*="anima-"][class*="-far-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-far-"][class*="-relay"] [class*="anima-"][class*="-far-"][class*="-target6"] {
+[class*="anima-"][class*="-far-"][class*="-check"]:checked ~ [class*="anima-"][class*="-far-"][class*="-relay"] [class*="anima-"][class*="-far-"][class*="-goal"] {
   transform-origin: var(--transform-origin-far);
 }
 
@@ -817,6 +817,6 @@
 [class*="anima-"][class*="-near-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-near-"][class*="-relay"] [class*="anima-"][class*="-near-"][class*="-target3"],
 [class*="anima-"][class*="-near-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-near-"][class*="-relay"] [class*="anima-"][class*="-near-"][class*="-target4"],
 [class*="anima-"][class*="-near-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-near-"][class*="-relay"] [class*="anima-"][class*="-near-"][class*="-target5"],
-[class*="anima-"][class*="-near-"][class*="-radio6"]:checked ~ [class*="anima-"][class*="-near-"][class*="-relay"] [class*="anima-"][class*="-near-"][class*="-target6"] {
+[class*="anima-"][class*="-near-"][class*="-check"]:checked ~ [class*="anima-"][class*="-near-"][class*="-relay"] [class*="anima-"][class*="-near-"][class*="-goal"] {
   transform-origin: var(--transform-origin-near);
 }
