@@ -139,7 +139,6 @@
   transform: scale(var(--nav-info-link-hover-scale));
 }
 
-
 .nav-info p {
   display: var(--nav-info-p-display);
 }

@@ -8,7 +8,7 @@
   --gallery-figcaption-bot: -60%;
   --gallery-figcaption-width: 100%;
   --gallery-figcaption-line-height: 1;
-  --gallery-figcaption-bg: rgba(0,0,0,.5);
+  --gallery-figcaption-bg: rgba(0, 0, 0, 0.5);
   --gallery-figure-figcaption-anima: translateY 2s;
   --gallery-figure-figcaption-bot: 0;
   --gallery-figure-flow: hidden;
@@ -49,10 +49,10 @@
 .gallery figure:hover figcaption,
 .gallery figure:focus figcaption,
 .gallery figure:active figcaption {
-   display: block;
-   animation: var(--gallery-figure-figcaption-anima);
-   bottom: var(--gallery-figure-figcaption-bot);
- }
+  display: block;
+  animation: var(--gallery-figure-figcaption-anima);
+  bottom: var(--gallery-figure-figcaption-bot);
+}
 
 .gallery figcaption {
   display: none;
