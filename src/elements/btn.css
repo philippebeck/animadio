@@ -6,7 +6,6 @@
   --btn-color: var(--white);
   --btn-font-size: 1.2rem;
   --btn-pad: 5px 15px;
-  --btn-transition: 300ms;
   --btn-hover-bord-color: var(--silver);
   --btn-hover-bord-radius: 0;
   --btn-hover-bord-width: thin;
@@ -21,7 +20,6 @@
   text-align: center;
   background-color: var(--btn-bg);
   color: var(--btn-color);
-  transition: transform var(--btn-transition);
 }
 
 [class*="btn"]:hover,
