@@ -1,6 +1,6 @@
 Package.describe({
   name: "animadio:animadio",
-  version: "0.1.37",
+  version: "0.1.38",
   summary: "Animadio CSS Framework - Grid & Flexbox Layouts - Reusable & Customizable Elements",
   git: "https://github.com/animadio/animadio.git",
   documentation: "README.md"
