@@ -1,1 +1,123 @@
 /********** FORM **********/
+
+/*
+1. Form
+2. Form Inputs
+3. Media Queries
+*/
+
+
+.form {
+  --form-flex-direction: column;
+  --form-mar: auto;
+  --form-pad: 20px 0 40px;
+  --form-width: 300px;
+  --form-lg-width: 500px;
+  --form-fieldset-bord: medium double;
+  --form-fieldset-mar-left: -13px;
+  --form-fieldset-pad: 20px;
+  --form-input-action-line-height: 2.5;
+  --form-input-action-cursor: pointer;
+  --form-input-field-bg: var(--filter-blue);
+  --form-input-field-bord: thin solid var(--navy);
+  --form-input-field-line-height: 2;
+  --form-input-field-mar: 10px 0 20px;
+  --form-input-field-pad: 10px;
+  --form-input-field-radius: 10px;
+  --form-input-placeholder-color: var(--navy);
+  --form-input-placeholder-font-style: italic;
+  --form-input-placeholder-text-align: center;
+  --form-fieldset-lg-mar-left: 0;
+  --form-input-lg-width: 75%;
+  --form-label-lg-flex: 2 0 auto;
+  --form-label-text-decoration: underline dashed;
+  --form-li-lg-flex-direction: row;
+  --form-li-lg-justify-content: space-between;
+  --form-li-lg-justify-items: start;
+  --form-li-lg-align-items: center;
+  --form-legend-font-weight: bold;
+
+  margin: var(--form-mar);
+  padding: var(--form-pad);
+}
+
+.form,
+.form fieldset {
+  width: var(--form-width);
+}
+
+.form,
+.form fieldset,
+.form ul,
+.form li {
+  display: flex;
+  flex-direction: var(--form-flex-direction);
+}
+
+.form fieldset {
+  margin-left: var(--form-fieldset-mar-left);
+  border: var(--form-fieldset-bord);
+  padding: var(--form-fieldset-pad);
+}
+
+.form legend {
+  font-weight: var(--form-legend-font-weight);
+}
+
+/***** Form Inputs *****/
+.form  input::placeholder,
+.form  textarea::placeholder {
+  text-align: var(--form-input-placeholder-text-align);
+  font-style: var(--form-input-placeholder-font-style);
+  color: var(--form-input-placeholder-color);
+}
+
+.form [type="text"],
+.form [type="file"],
+.form [type="number"],
+.form [type="email"],
+.form [type="password"],
+.form textarea {
+  line-height: var(--form-input-field-line-height);
+  margin: var(--form-input-field-mar);
+  border: var(--form-input-field-bord);
+  border-radius: var(--form-input-field-radius);
+  padding: var(--form-input-field-pad);
+  background-color: var(--form-input-field-bg);
+}
+
+.form [type="reset"],
+.form [type="submit"] {
+  line-height: var(--form-input-action-line-height);
+  cursor: var(--form-input-action-cursor);
+}
+
+/***** Media Queries *****/
+@media (min-width: 992px) {
+  .form,
+  .form fieldset {
+    width: var(--form-lg-width);
+  }
+
+  .form li {
+    flex-direction: var(--form-li-lg-flex-direction);
+    justify-content: var(--form-li-lg-justify-content);
+    justify-items: var(--form-li-lg-justify-items);
+    align-items: var(--form-li-lg-align-items);
+  }
+
+  .form label {
+    flex: var(--form-label-lg-flex);
+    text-decoration: var(--form-label-text-decoration);
+  }
+
+  .form input,
+  .form textarea {
+    width: var(--form-input-lg-width);
+  }
+
+  .form fieldset {
+    margin-left: var(--form-fieldset-lg-mar-left);
+  }
+}
+
