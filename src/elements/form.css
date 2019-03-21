@@ -6,7 +6,6 @@
 3. Media Queries
 */
 
-
 .form {
   --form-flex-direction: column;
   --form-mar: auto;
@@ -65,8 +64,8 @@
 }
 
 /***** Form Inputs *****/
-.form  input::placeholder,
-.form  textarea::placeholder {
+.form input::placeholder,
+.form textarea::placeholder {
   text-align: var(--form-input-placeholder-text-align);
   font-style: var(--form-input-placeholder-font-style);
   color: var(--form-input-placeholder-color);
