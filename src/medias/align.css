@@ -32,11 +32,11 @@
 }
 
 [class*="alco-"][class*="-base-tn"] {
-align-content: var(--align-content-base);
+  align-content: var(--align-content-base);
 }
 
 [class*="alco-"][class*="-between-tn"] {
-align-content: space-between;
+  align-content: space-between;
 }
 
 [class*="alco-"][class*="-center-tn"] {
@@ -44,11 +44,11 @@ align-content: space-between;
 }
 
 [class*="alco-"][class*="-end-tn"] {
-align-content: var(--align-content-end);
+  align-content: var(--align-content-end);
 }
 
 [class*="alco-"][class*="-evenly-tn"] {
-align-content: space-evenly;
+  align-content: space-evenly;
 }
 
 [class*="alco-"][class*="-start-tn"] {
@@ -370,7 +370,6 @@ align-content: space-evenly;
 }
 
 @media (min-width: 992px) {
-
   [class*="alse-"][class*="-base-lg"] {
     align-self: var(--align-self-base);
   }

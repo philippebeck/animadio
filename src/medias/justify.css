@@ -474,7 +474,6 @@
 }
 
 @media (min-width: 992px) {
-
   [class*="juse-"][class*="-base-lg"] {
     justify-self: var(--justify-self-base);
   }

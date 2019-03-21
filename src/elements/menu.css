@@ -83,10 +83,10 @@
 .radio3:checked ~ .menu [for="radio3"],
 .radio4:checked ~ .menu [for="radio4"],
 .radio5:checked ~ .menu [for="radio5"] {
-border: var(--menu-for-radio-bord);
-font-weight: var(--menu-for-radio-font-weight);
-background-color: var(--menu-for-radio-bg);
-color: var(--menu-for-radio-color);
+  border: var(--menu-for-radio-bord);
+  font-weight: var(--menu-for-radio-font-weight);
+  background-color: var(--menu-for-radio-bg);
+  color: var(--menu-for-radio-color);
 }
 
 .relay [class*="target"] {
@@ -103,7 +103,7 @@ color: var(--menu-for-radio-color);
 }
 
 /***** Media Queries *****/
-@media  (min-width: 576px) {
+@media (min-width: 576px) {
   .menu {
     flex-direction: var(--menu-sm-flex-direction);
     align-items: var(--menu-sm-align-items);
@@ -115,19 +115,19 @@ color: var(--menu-for-radio-color);
   }
 }
 
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
   .menu {
     width: var(--menu-md-width);
   }
 }
 
-@media  (min-width: 992px) {
+@media (min-width: 992px) {
   .menu {
     width: var(--menu-lg-width);
   }
 }
 
-@media  (min-width: 1200px) {
+@media (min-width: 1200px) {
   .menu {
     width: var(--menu-wd-width);
   }
