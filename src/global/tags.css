@@ -107,4 +107,10 @@ table {
   border-collapse: collapse;
   text-align: center;
   vertical-align: middle;
+/***** Form *****/
+label {
+  --label-cursor: pointer;
+
+  cursor: var(--label-cursor);
 }
+
