@@ -3,8 +3,7 @@
 /*
 1. Menu
 2. Menu Children
-3. Menu Controls
-4. Media Queries
+3. Media Queries
 */
 
 /***** Menu *****/
@@ -27,13 +26,6 @@
   --menu-label-hover-bord: solid var(--navy);
   --menu-label-hover-color: var(--white);
   --menu-label-hover-font-weight: bold;
-  --menu-for-radio-bg: var(--blue);
-  --menu-for-radio-bord: solid var(--navy);
-  --menu-for-radio-color: var(--white);
-  --menu-for-radio-font-weight: bold;
-  --relay-target-display: none;
-  --radio-target-display: block;
-  --radio-target-anima: rotate 2s;
   --menu-sm-flex-direction: row;
   --menu-sm-align-items: flex-start;
   --menu-sm-width: 100%;
@@ -75,31 +67,6 @@
   font-weight: var(--menu-label-hover-font-weight);
   background-color: var(--menu-label-hover-bg);
   color: var(--menu-label-hover-color);
-}
-
-/***** Menu Controls *****/
-.radio1:checked ~ .menu [for="radio1"],
-.radio2:checked ~ .menu [for="radio2"],
-.radio3:checked ~ .menu [for="radio3"],
-.radio4:checked ~ .menu [for="radio4"],
-.radio5:checked ~ .menu [for="radio5"] {
-  border: var(--menu-for-radio-bord);
-  font-weight: var(--menu-for-radio-font-weight);
-  background-color: var(--menu-for-radio-bg);
-  color: var(--menu-for-radio-color);
-}
-
-.relay [class*="target"] {
-  display: var(--relay-target-display);
-}
-
-.radio1:checked ~ .relay .target1,
-.radio2:checked ~ .relay .target2,
-.radio3:checked ~ .relay .target3,
-.radio4:checked ~ .relay .target4,
-.radio5:checked ~ .relay .target5 {
-  display: var(--radio-target-display);
-  animation: var(--radio-target-anima);
 }
 
 /***** Media Queries *****/
