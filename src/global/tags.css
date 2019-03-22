@@ -83,30 +83,47 @@ h6 {
 
 /***** Links *****/
 a {
-  text-decoration: none;
-  outline: 0;
+  --link-deco: none;
+  --link-outline: 0;
+
+  text-decoration: var(--link-deco);
+  outline: var(--link-outline);
 }
 
 /***** Lists *****/
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  --list-mar: 0;
+  --list-pad: 0;
+  --list-style: none;
+
+  margin: var(--list-mar);
+  padding: var(--list-pad);
+  list-style: var(--list-style);
 }
 
 /***** Medias *****/
 img,
 video {
-  max-width: 100%;
-  height: auto;
+  --img-max-width: 100%;
+  --img-height: auto;
+
+  max-width: var(--img-max-width);
+  height: var(--img-height);
 }
 
 /***** Table *****/
 table {
-  margin: auto;
-  border-collapse: collapse;
-  text-align: center;
-  vertical-align: middle;
+  --table-mar: auto;
+  --table-bord-collapse: collapse;
+  --table-text-align: center;
+  --table-vertical-align: middle;
+
+  margin: var(--table-mar);
+  border-collapse: var(--table-bord-collapse);
+  text-align: var(--table-text-align);
+  vertical-align: var(--table-vertical-align);
+}
+
 /***** Form *****/
 label {
   --label-cursor: pointer;
