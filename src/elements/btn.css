@@ -1,11 +1,5 @@
 /********** BTN **********/
 
-/*
-1. Btn
-2. Btn Control
-*/
-
-/***** Btn *****/
 [class*="btn"] {
   --btn-bg: var(--violet);
   --btn-bord-radius: 10px;
@@ -19,13 +13,6 @@
   --btn-hover-bord-style: solid;
   --btn-hover-scale: 1.2;
   --btn-hover-shabox: 0 0 5px var(--gray);
-  --for-check-bg: var(--filter-violet);
-  --for-check-bord: solid var(--indigo);
-  --for-check-color: var(--white);
-  --for-check-font-weight: bold;
-  --relay-goal-display: none;
-  --check-goal-display: block;
-  --check-goal-anima: scale 1s;
 
   display: inline-block;
   border-radius: var(--btn-bord-radius);
@@ -43,34 +30,5 @@
   border-radius: var(--btn-hover-bord-radius);
   transform: scale(var(--btn-hover-scale));
   box-shadow: var(--btn-hover-shabox);
-}
-
-/***** Btn Controls *****/
-.check1:checked ~ [for="check1"],
-.check2:checked ~ [for="check2"],
-.check3:checked ~ [for="check3"],
-.check4:checked ~ [for="check4"],
-.check5:checked ~ [for="check5"] {
-  border: var(--for-check-bord);
-  font-weight: var(--for-check-font-weight);
-  background-color: var(--for-check-bg);
-  color: var(--for-check-color);
-}
-
-.goal1,
-.goal2,
-.goal3,
-.goal4,
-.goal5 {
-  display: var(--relay-goal-display);
-}
-
-.check1:checked ~ .relay1 .goal1,
-.check2:checked ~ .relay2 .goal2,
-.check3:checked ~ .relay3 .goal3,
-.check4:checked ~ .relay4 .goal4,
-.check5:checked ~ .relay5 .goal5 {
-  display: var(--check-goal-display);
-  animation: var(--check-goal-anima);
 }
 
