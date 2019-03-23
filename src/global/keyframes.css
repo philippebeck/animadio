@@ -23,6 +23,7 @@
   --rotateX: rotateX(-360deg);
   --rotateY: rotateY(-360deg);
   --scale: scale(0);
+  --scale-pull: scale(1.1);
   --scaleX: scaleX(0);
   --scaleY: scaleY(0);
   --skew: skew(180deg, 180deg);
@@ -59,6 +60,12 @@
 @keyframes scale {
   to {
     transform: var(--scale);
+  }
+}
+
+@keyframes scale-pull {
+  to {
+    transform: var(--scale-pull);
   }
 }
 
