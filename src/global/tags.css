@@ -131,3 +131,8 @@ label {
   cursor: var(--label-cursor);
 }
 
+/***** Code *****/
+pre {
+  overflow: scroll;
+}
+
