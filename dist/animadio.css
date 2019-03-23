@@ -1,4 +1,4 @@
-/* animadio v0.1.43 | https://animadio.org | MIT License */
+/*! animadio v0.1.44 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -784,6 +784,11 @@ label {
   --label-cursor: pointer;
 
   cursor: var(--label-cursor);
+}
+
+/***** Code *****/
+pre {
+  overflow: scroll;
 }
 
 
@@ -10018,15 +10023,18 @@ label {
 2. Foot
 3. Foot Main
 4. Foot Info
+5. Media Queries
 */
 
 /***** Foot Variables *****/
 [class*="foot"] {
+  --foot-text-align: center;
   --foot-title-color: var(--yellow);
   --foot-title-font-size: 1.8rem;
   --foot-global-pad-bot: 20px;
   --foot-main-bg-color: var(--violet);
   --foot-main-cursor: help;
+  --foot-main-flex-direction: column;
   --foot-main-font-color: var(--white);
   --foot-main-justify-content: space-evenly;
   --foot-list-cursor: pointer;
@@ -10040,9 +10048,14 @@ label {
   --foot-info-pad-top: 20px;
   --foot-info-link-mar-left: 10px;
   --foot-info-link-mar-right: 10px;
+  --foot-main-sm-flex-direction: row;
 }
 
 /***** Foot *****/
+.foot {
+  text-align: var(--foot-text-align);
+}
+
 .foot h3,
 .foot h4,
 .foot h5,
@@ -10062,6 +10075,10 @@ label {
 
 /***** Foot Main *****/
 .foot-main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: var(--foot-main-flex-direction);
+          flex-direction: var(--foot-main-flex-direction);
   -webkit-box-pack: var(--foot-main-justify-content);
       -ms-flex-pack: var(--foot-main-justify-content);
           justify-content: var(--foot-main-justify-content);
@@ -10103,5 +10120,16 @@ label {
   cursor: var(--foot-info-cursor);
 }
 
-/* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 23rd Mar 2019 @ 5:13:56 PM */
+/***** Media Queries *****/
+@media (min-width: 576px) {
+  .foot-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: var(--foot-main-sm-flex-direction);
+            flex-direction: var(--foot-main-sm-flex-direction);
+  }
+}
+
+
+/*! Author: Philippe Beck <philippe@philippebeck.net>
+ Updated: 23rd Mar 2019 @ 6:59:10 PM */
