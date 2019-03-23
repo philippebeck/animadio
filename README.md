@@ -195,6 +195,16 @@ Philippe Beck
 
 ---
 
+## Contributors
+
+Lisa Lecieux
+
+[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/philippebeck.net.svg?label=https://sangodraws.com)](https://sangodraws.com)
+[![GitHub Followers](https://img.shields.io/github/followers/sangodraws.svg?label=GitHub+:+sangodraws+|+Followers)](https://github.com/sangodraws)
+[![Twitter Followers](https://img.shields.io/twitter/follow/@sangodraws.svg?label=Twitter+:+@sangodraws+|+Followers)](https://twitter.com/sangodraws)
+
+---
+
 ## Copyright
 
 Code released under the MIT License
