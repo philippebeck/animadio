@@ -36,6 +36,12 @@ body {
   display: none;
 }
 
+article {
+  --article-mar-bot: 20px;
+
+  margin-bottom: var(--article-mar-bot);
+}
+
 /***** Titles *****/
 h1,
 h2,
