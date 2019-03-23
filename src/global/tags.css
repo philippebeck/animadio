@@ -139,6 +139,16 @@ label {
 
 /***** Code *****/
 pre {
+  --pre-pad: 10px;
+  --pre-selection-bg: var(--lime);
+  --pre-selection-color: black;
+
   overflow: scroll;
+  padding: var(--pre-pad);
+}
+
+pre > *::selection {
+  background-color: var(--pre-selection-bg);
+  color: var(--pre-selection-color);
 }
 
