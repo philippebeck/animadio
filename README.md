@@ -1,11 +1,13 @@
 [![Animadio Logo](img/logo.png)](https://animadio.org)
 # [Animadio CSS Framework](https://animadio.org)
 
-Grid & Flexbox Layouts - Perform Complex Animations
- 
-CSS Variables Usage - Reusable & Customizable Elements
-
-Controls by Radio Buttons - No JavaScript needed
+-   Eight types of selectors working with hundreds of class combinations
+-   Possible concatenation of 99% of classes
+-   Flexbox & Grid systems included with common options
+-   Click anywhere on the page to enable & disable any design effect anywhere else
+-   Management of keyframes rules, animations & their options
+-   Complete & simple customization with directly modifiable CSS variables
+-   More than 99% of pure CSS ; so all of this without JavaScript, it's a joke ?... No ?!
 
 [![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
 [![David Dev Dependencies](https://img.shields.io/david/dev/animadio/animadio.svg?label=Dev+Dependencies)](https://david-dm.org/animadio/animadio?type=dev)
