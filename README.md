@@ -7,7 +7,7 @@
 -   Click anywhere on the page to enable & disable any design effect anywhere else
 -   Management of keyframes rules, animations & their options
 -   Complete & simple customization with directly modifiable CSS variables
--   More than 99% of pure CSS ; so all of this without JavaScript, it's a joke ?... No ?!
+-   More than 99% of pure CSS ; so all of that without JavaScript, it's a joke ?... No ?!
 
 [![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
 [![David Dev Dependencies](https://img.shields.io/david/dev/animadio/animadio.svg?label=Dev+Dependencies)](https://david-dm.org/animadio/animadio?type=dev)
@@ -23,22 +23,22 @@
 
 ## Summary
 
-[Installation](#installation)  
-[CDN](#cdn)  
-[Download](#download)  
-[Content](#content)  
-[CSS Only](#css-only)  
-[Support](#support)  
-[Browsers](#browsers)  
-[Open-Source](#open-source)  
-[Community](#community)  
-[Documentation](#documentation)  
-[Issues](#issues)  
-[Pull Requests](#pull-requests)  
-[Contributing](#contributing)  
-[Versioning](#versioning)  
-[Creator](#creator)  
-[Copyright](#copyright)  
+-   [Installation](#installation)  
+-   [CDN](#cdn)  
+-   [Download](#download)  
+-   [Content](#content)  
+-   [CSS Only](#css-only)  
+-   [Support](#support)  
+-   [Browsers](#browsers)  
+-   [Open-Source](#open-source)  
+-   [Community](#community)  
+-   [Documentation](#documentation)  
+-   [Issues](#issues)  
+-   [Pull Requests](#pull-requests)  
+-   [Contributing](#contributing)  
+-   [Versioning](#versioning)  
+-   [Creator](#creator)  
+-   [Copyright](#copyright)  
 
 ---
 
@@ -66,7 +66,8 @@ Pip & Gem : Very Soon !
 
 ## CDN 
 
-jsDelivr (choose file & version) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist](https://cdn.jsdelivr.net/npm/animadio@latest/dist)  
+jsDelivr (min) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio.min.css)  
+jsDelivr (main) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio.css) 
 
 [![jsDelivr Weekly Downloads](https://img.shields.io/jsdelivr/npm/hw/animadio.svg?label=jsDelivr+Weekly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
@@ -99,7 +100,7 @@ The library distribution is available here :
 
 ## CSS Only
 
-Animadio is a CSS framework whose library is composed only of CSS source code: jQuery, or even Javascript, are not included or needed in production ...
+Animadio is a CSS framework whose library is composed only of CSS source code: jQuery, or even Javascript, are not included or needed in production...
 
 Grunt is the only JavaScript app used in the framework developement side for recursive tasks (concat, source map, webkit & min) to build the library file (but it can be used to concat CSS elements of your choice)
 
