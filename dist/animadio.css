@@ -1,4 +1,4 @@
-/* animadio v0.1.42 | https://animadio.org | MIT License */
+/* animadio v0.1.43 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -1160,16 +1160,33 @@ label {
 
 /***** Container *****/
 [class*="container"] {
+  --max-width-tn: 50%;
+  --max-width-sm: 60%;
+  --max-width-md: 70%;
+  --max-width-lg: 80%;
+  --max-width-wd: 90%;
+
   margin: auto;
-  max-width: var(--max-width-md);
+}
+
+[class*="container"][class*="-tn"] {
+  max-width: var(--max-width-tn);
 }
 
 [class*="container"][class*="-sm"] {
   max-width: var(--max-width-sm);
 }
 
+[class*="container"][class*="-md"] {
+  max-width: var(--max-width-md);
+}
+
 [class*="container"][class*="-lg"] {
   max-width: var(--max-width-lg);
+}
+
+[class*="container"][class*="-wd"] {
+  max-width: var(--max-width-wd);
 }
 
 /***** Font *****/
@@ -10087,4 +10104,4 @@ label {
 }
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 23rd Mar 2019 @ 12:14:53 PM */
+ Updated: 23rd Mar 2019 @ 5:13:56 PM */
