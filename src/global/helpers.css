@@ -9,16 +9,33 @@
 
 /***** Container *****/
 [class*="container"] {
+  --max-width-tn: 50%;
+  --max-width-sm: 60%;
+  --max-width-md: 70%;
+  --max-width-lg: 80%;
+  --max-width-wd: 90%;
+
   margin: auto;
-  max-width: var(--max-width-md);
+}
+
+[class*="container"][class*="-tn"] {
+  max-width: var(--max-width-tn);
 }
 
 [class*="container"][class*="-sm"] {
   max-width: var(--max-width-sm);
 }
 
+[class*="container"][class*="-md"] {
+  max-width: var(--max-width-md);
+}
+
 [class*="container"][class*="-lg"] {
   max-width: var(--max-width-lg);
+}
+
+[class*="container"][class*="-wd"] {
+  max-width: var(--max-width-wd);
 }
 
 /***** Font *****/
