@@ -28,7 +28,7 @@
 [class*="btn"]:active {
   border: var(--btn-hover-bord-style) var(--btn-hover-bord-width) var(--btn-hover-bord-color);
   border-radius: var(--btn-hover-bord-radius);
-  transform: scale(var(--btn-hover-scale));
   box-shadow: var(--btn-hover-shabox);
+  animation: scale-pull 1s alternate infinite;
 }
 
