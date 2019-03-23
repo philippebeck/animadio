@@ -31,6 +31,7 @@
   --translate: translate(-100vw, -100vh);
   --translateX: translateX(-100vw);
   --translateY: translateY(-100vh);
+  --trany-tn: translateY(2vh);
 }
 
 /***** Rotate *****/
@@ -130,6 +131,12 @@
 @keyframes translateY {
   to {
     transform: var(--translateY);
+  }
+}
+
+@keyframes trany-tn {
+  to {
+    transform: var(--trany-tn);
   }
 }
 
