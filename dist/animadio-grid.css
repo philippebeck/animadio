@@ -1,4 +1,4 @@
-/*! animadio v0.2.1 | https://animadio.org | MIT License */
+/*! animadio v0.2.2 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -457,7 +457,7 @@ a {
 
 /***** Lists *****/
 ul {
-  --list-mar: 0;
+  --list-mar: 0 0 10px;
   --list-pad: 0;
   --list-style: none;
 
@@ -877,42 +877,11 @@ pre > *::selection {
 /********** HELPERS **********/
 
 /*
-1. Container
-2. Font
-3. Text
-4. Cursor
+1. Font
+2. Cursor
+3. Container
+4. Text
 */
-
-/***** Container *****/
-[class*="container"] {
-  --max-width-tn: 50%;
-  --max-width-sm: 60%;
-  --max-width-md: 70%;
-  --max-width-lg: 80%;
-  --max-width-wd: 90%;
-
-  margin: auto;
-}
-
-[class*="container"][class*="-tn"] {
-  max-width: var(--max-width-tn);
-}
-
-[class*="container"][class*="-sm"] {
-  max-width: var(--max-width-sm);
-}
-
-[class*="container"][class*="-md"] {
-  max-width: var(--max-width-md);
-}
-
-[class*="container"][class*="-lg"] {
-  max-width: var(--max-width-lg);
-}
-
-[class*="container"][class*="-wd"] {
-  max-width: var(--max-width-wd);
-}
 
 /***** Font *****/
 [class*="font-"][class*="-normal"] {
@@ -926,23 +895,6 @@ pre > *::selection {
 
 [class*="font-"][class*="-bold"] {
   font-weight: bold;
-}
-
-/***** Text *****/
-[class*="text-"][class*="-center"] {
-  text-align: center;
-}
-
-[class*="text-"][class*="-justify"] {
-  text-align: justify;
-}
-
-[class*="text-"][class*="-right"] {
-  text-align: right;
-}
-
-[class*="text-"][class*="-left"] {
-  text-align: left;
 }
 
 /***** Cursor *****/
@@ -965,6 +917,169 @@ pre > *::selection {
 [class*="cursor-"][class*="-hand"] > * {
   cursor: pointer;
 }
+
+/***** Container *****/
+[class*="container-"] {
+  margin: auto;
+}
+
+[class*="container-"][class*="-70tn"] {
+  max-width: 70%;
+}
+
+[class*="container-"][class*="-80tn"] {
+  max-width: 80%;
+}
+
+[class*="container-"][class*="-90tn"] {
+  max-width: 90%;
+}
+
+@media (min-width: 576px) {
+  [class*="container-"][class*="-70sm"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80sm"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90sm"] {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  [class*="container-"][class*="-70sm"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80sm"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90sm"] {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  [class*="container-"][class*="-70lg"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80lg"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90lg"] {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  [class*="container-"][class*="-70wd"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80wd"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90wd"] {
+    max-width: 90%;
+  }
+}
+
+/***** Text *****/
+[class*="text-"][class*="-center-tn"] {
+  text-align: center;
+}
+
+[class*="text-"][class*="-justify-tn"] {
+  text-align: justify;
+}
+
+[class*="text-"][class*="-right-tn"] {
+  text-align: right;
+}
+
+[class*="text-"][class*="-left-tn"] {
+  text-align: left;
+}
+
+@media (min-width: 576px) {
+  [class*="text-"][class*="-center-sm"] {
+    text-align: center;
+  }
+
+  [class*="text-"][class*="-justify-sm"] {
+    text-align: justify;
+  }
+
+  [class*="text-"][class*="-right-sm"] {
+    text-align: right;
+  }
+
+  [class*="text-"][class*="-left-sm"] {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  [class*="text-"][class*="-center-md"] {
+    text-align: center;
+  }
+
+  [class*="text-"][class*="-justify-md"] {
+    text-align: justify;
+  }
+
+  [class*="text-"][class*="-right-md"] {
+    text-align: right;
+  }
+
+  [class*="text-"][class*="-left-md"] {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  [class*="text-"][class*="-center-lg"] {
+    text-align: center;
+  }
+
+  [class*="text-"][class*="-justify-lg"] {
+    text-align: justify;
+  }
+
+  [class*="text-"][class*="-right-lg"] {
+    text-align: right;
+  }
+
+  [class*="text-"][class*="-left-lg"] {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  [class*="text-"][class*="-center-wd"] {
+    text-align: center;
+  }
+
+  [class*="text-"][class*="-justify-wd"] {
+    text-align: justify;
+  }
+
+  [class*="text-"][class*="-right-wd"] {
+    text-align: right;
+  }
+
+  [class*="text-"][class*="-left-wd"] {
+    text-align: left;
+  }
+}
+
 
 /********** GRID **********/
 
@@ -3144,4 +3259,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 23rd Mar 2019 @ 11:17:24 PM */
+ Updated: 24th Mar 2019 @ 4:56:41 PM */
