@@ -14,6 +14,7 @@
 
 /***** Variables *****/
 [class*="anima-"] {
+  --anima-duration: 2s;
   --anima-duration-tn: 1s;
   --anima-duration-sm: 2s;
   --anima-duration-md: 5s;
@@ -29,6 +30,30 @@
   --anima-delay-large: 3s;
   --transform-origin-near: 50px 50px;
   --transform-origin-far: top right 50px;
+}
+
+/***** Anima *****/
+[class*="anima-"][class*="-base"],
+[class*="anima-"][class*="-global"] > *,
+*:hover > [class*="anima-"][class*="-into"],
+*:focus > [class*="anima-"][class*="-into"],
+*:active > [class*="anima-"][class*="-into"],
+[class*="anima-"][class*="-onto"]:hover,
+[class*="anima-"][class*="-onto"]:focus,
+[class*="anima-"][class*="-onto"]:active,
+[class*="anima-"][class*="-toall"]:hover > *,
+[class*="anima-"][class*="-toall"]:focus > *,
+[class*="anima-"][class*="-toall"]:active > *,
+[class*="anima-"][class*="-toone"] > *:hover,
+[class*="anima-"][class*="-toone"] > *:focus,
+[class*="anima-"][class*="-toone"] > *:active,
+[class*="anima-"][class*="-radio1"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target1"],
+[class*="anima-"][class*="-radio2"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target2"],
+[class*="anima-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target3"],
+[class*="anima-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target4"],
+[class*="anima-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target5"],
+[class*="anima-"][class*="-check"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-goal"] {
+  animation-duration: var(--anima-duration);
 }
 
 /***** Name *****/
