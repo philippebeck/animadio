@@ -66,14 +66,37 @@ Pip & Gem : Very Soon !
 
 ## CDN 
 
-jsDelivr (min) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio.min.css)  
-jsDelivr (main) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio.css) 
+> **Full Version**
+
+-   jsDelivr (main) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio.css)  
+-   jsDelivr (min) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio.min.css)  
+-   unpkg (main) : [https://unpkg.com/animadio/dist/animadio.css](https://unpkg.com/animadio/dist/animadio.css)  
+-   unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unpkg.com/animadio/dist/min/animadio.min.css)  
+
+> **Grid Version**
+
+-   jsDelivr (main) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio-grid.css)  
+-   jsDelivr (min) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio-grid.min.css)  
+-   unpkg (main) : [https://unpkg.com/animadio/dist/animadio-grid.css](https://unpkg.com/animadio/dist/animadio-grid.css)  
+-   unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio-grid.min.css](https://unpkg.com/animadio/dist/min/animadio-grid.min.css)  
+
+> **Elements Version**
+
+-   jsDelivr (main) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio-elements.css)  
+-   jsDelivr (min) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio-elements.min.css)  
+-   unpkg (main) : [https://unpkg.com/animadio/dist/animadio-elements.css](https://unpkg.com/animadio/dist/animadio-elements.css)  
+-   unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio-elements.min.css](https://unpkg.com/animadio/dist/min/animadio-elements.min.css)  
+
+> **States Version**
+
+-   jsDelivr (main) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/animadio-states.css)  
+-   jsDelivr (min) : [https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@latest/dist/min/animadio-states.min.css)  
+-   unpkg (main) : [https://unpkg.com/animadio/dist/animadio-states.css](https://unpkg.com/animadio/dist/animadio-states.css)  
+-   unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio-states.min.css](https://unpkg.com/animadio/dist/min/animadio-states.min.css) 
 
 [![jsDelivr Weekly Downloads](https://img.shields.io/jsdelivr/npm/hw/animadio.svg?label=jsDelivr+Weekly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
-
-unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unpkg.com/animadio/dist/min/animadio.min.css)  
 
 ---
 
