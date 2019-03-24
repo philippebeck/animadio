@@ -89,12 +89,17 @@ unpkg (min) : [https://unpkg.com/animadio/dist/min/animadio.min.css](https://unp
 
 ## Content
 
-The library distribution is available here :  
-`dist/animadio.css`  
-`dist/min/animadio.min.css`  
+The library distribution is :  
+-   For development : `dist/animadio.css`  
+-   For production : `dist/min/animadio.min.css`  
 
 [![CSS Code Size](https://img.shields.io/github/languages/code-size/animadio/animadio.svg?label=animadio.css)](https://github.com/animadio/animadio/tree/master/dist/animadio.css)
 [![CSS Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg?label=animadio.min.css)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
+
+But if you only need a part of Animadio, you can use one of those part files :
+-   To get Global + Grid : `dist/animadio-grid.css` or `dist/min/animadio-grid.min.css`  
+-   To get Global + Elements : `dist/animadio-elements.css` or `dist/min/animadio-elements.min.css`  
+-   To get Global + States : `dist/animadio-states.css` or `dist/min/animadio-states.min.css`  
 
 ---
 
