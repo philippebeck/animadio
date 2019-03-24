@@ -8,7 +8,13 @@
 5. Deco Color
 */
 
-/* Deco Line */
+/***** Deco Variables *****/
+[class*="deco-"] {
+  --deco-line: underline;
+  --deco-style: solid;
+  --deco-color: black;
+}
+
 [class*="deco-"][class*="-under-"][class*="-base"],
 [class*="deco-"][class*="-under-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-under-"][class*="-into"],
