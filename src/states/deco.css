@@ -1,9 +1,11 @@
 /********** DECO ***********/
 
 /*
-1. Line
-2. Style
-3. Color
+1. Deco Variables
+2. Deco
+3. Deco Line
+4. Deco Style
+5. Deco Color
 */
 
 /* Deco Line */
@@ -99,7 +101,7 @@
   text-decoration-line: line-through;
 }
 
-/* Deco Style */
+/***** Deco Style *****/
 [class*="deco-"][class*="-solid-"][class*="-base"],
 [class*="deco-"][class*="-solid-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-solid-"][class*="-into"],
@@ -215,7 +217,7 @@
   text-decoration-style: wavy;
 }
 
-/* Deco Color */
+/***** Deco Color *****/
 [class*="deco-"][class*="-black-"][class*="-base"],
 [class*="deco-"][class*="-black-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-black-"][class*="-into"],
