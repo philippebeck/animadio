@@ -1,1 +1,113 @@
 /********** TABLE **********/
+
+/*
+1. Table
+2. Table Display
+3. Table Collapse
+4. Table Caption
+5. Table Titles
+6. Table Global
+7. Table Rows
+8. Table Cells
+*/
+
+/***** Table *****/
+[class*="table"] {
+  --table-bord-collapse: collapse;
+  --table-bord-space: 10px;
+  --table-width: 50%;
+  --table-caption-font-weight: bold;
+  --table-caption-color: var(--red);
+  --table-caption-side: top;
+  --table-title-bg: var(--blue);
+  --table-title-color: var(--white);
+  --table-title-font-style: italic;
+  --table-row-even-bg: var(--yellow);
+  --table-row-odd-bg: var(--white);
+  --table-cell-bord-color: black;
+  --table-cell-bord-radius: 0;
+  --table-cell-bord-style: solid;
+  --table-cell-bord-width: thin;
+  --table-cell-color: var(--navy);
+  --table-cell-pad: 10px;
+  --table-cell-text-align: center;
+  --table-cell-vertical-align: middle;
+
+  display: table;
+  border-collapse: var(--table-bord-collapse);
+  border-spacing: var(--table-bord-space);
+  width: var(--table-width);
+}
+
+/***** Table Display *****/
+[class*="table-"][class*="-inline"] {
+  display: inline-table;
+}
+
+[class*="table-"][class*="-caption"] {
+  display: table-caption;
+}
+
+[class*="table-"][class*="-row"] {
+  display: table-row;
+}
+
+[class*="table-"][class*="-column"] {
+  display: table-column;
+}
+
+[class*="table-"][class*="-cell"] {
+  display: table-cell;
+}
+
+/***** Table Collapse *****/
+[class*="table-"][class*="-collapse"] {
+  border-collapse: collapse;
+}
+
+[class*="table-"][class*="-separate"] {
+  border-collapse: separate;
+}
+
+/***** Table Caption *****/
+[class*="table"] > caption {
+  caption-side: var(--table-caption-side);
+  color: var(--table-caption-color);
+  font-weight: var(--table-caption-font-weight);
+}
+
+/***** Table Titles *****/
+[class*="table"] thead,
+[class*="table"] tbody th,
+[class*="table"] tfoot th {
+  background-color: var(--table-title-bg);
+  color: var(--table-title-color);
+  font-style: var(--table-title-font-style);
+}
+
+/***** Table Global *****/
+[class*="table"] th,
+[class*="table"] td {
+  border-style: var(--table-cell-bord-style);
+  border-width: var(--table-cell-bord-width);
+  border-color: var(--table-cell-bord-color);
+  border-radius: var(--table-cell-bord-radius);
+  padding: var(--table-cell-pad);
+  text-align: var(--table-cell-text-align);
+  vertical-align: var(--table-cell-vertical-align);
+}
+
+/***** Table Rows *****/
+[class*="table"] tbody tr:nth-child(even) {
+  background-color: var(--table-row-even-bg);
+}
+
+[class*="table"] tbody tr:nth-child(odd) {
+  background-color: var(--table-row-odd-bg);
+}
+
+/***** Table Cells *****/
+[class*="table"] td {
+  color: var(--table-cell-color);
+}
+
