@@ -98,7 +98,7 @@ a {
 
 /***** Lists *****/
 ul {
-  --list-mar: 0;
+  --list-mar: 0 0 10px;
   --list-pad: 0;
   --list-style: none;
 
