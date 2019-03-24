@@ -11,10 +11,10 @@
 
 /***** Bord Variables *****/
 [class*="bord-"] {
-  --bord-global-style: solid;
-  --bord-global-width: medium;
-  --bord-global-color: black;
-  --bord-global-radius: 5px;
+  --bord-style: solid;
+  --bord-width: medium;
+  --bord-color: black;
+  --bord-radius: 5px;
   --bord-width-sm: thin;
   --bord-width-md: medium;
   --bord-width-lg: thick;
@@ -45,10 +45,10 @@
 [class*="bord-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-relay"] [class*="bord-"][class*="-target4"],
 [class*="bord-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-relay"] [class*="bord-"][class*="-target5"],
 [class*="bord-"][class*="-check"]:checked ~ [class*="bord-"][class*="-relay"] [class*="bord-"][class*="-goal"] {
-  border-style: var(--bord-global-style);
-  border-width: var(--bord-global-width);
-  border-color: var(--bord-global-color);
-  border-radius: var(--bord-global-radius);
+  border-style: var(--bord-style);
+  border-width: var(--bord-width);
+  border-color: var(--bord-color);
+  border-radius: var(--bord-radius);
 }
 
 /***** Bord Styles *****/
