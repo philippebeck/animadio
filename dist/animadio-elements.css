@@ -1,4 +1,4 @@
-/*! animadio v0.2.3 | https://animadio.org | MIT License */
+/*! animadio v0.2.4 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -1408,7 +1408,7 @@ pre > *::selection {
 
 /***** Navbar Variables *****/
 :root {
-  --navbar-height: 100px;
+  --navbar-height: 80px;
 }
 
 .navbar,
@@ -1420,7 +1420,7 @@ pre > *::selection {
   --navbar-justify-content: center;
   --navbar-link-color: var(--white);
   --navbar-link-cursor: pointer;
-  --navbar-link-pad: 10px;
+  --navbar-link-pad: 20px 10px;
   --navbar-link-hover-color: var(--gold);
   --navbar-icon-align-self: center;
   --navs-align-items: center;
@@ -2502,4 +2502,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 24th Mar 2019 @ 9:40:59 PM */
+ Updated: 26th Mar 2019 @ 10:21:15 PM */
