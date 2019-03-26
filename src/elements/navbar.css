@@ -14,7 +14,7 @@
 
 /***** Navbar Variables *****/
 :root {
-  --navbar-height: 100px;
+  --navbar-height: 80px;
 }
 
 .navbar,
@@ -26,7 +26,7 @@
   --navbar-justify-content: center;
   --navbar-link-color: var(--white);
   --navbar-link-cursor: pointer;
-  --navbar-link-pad: 10px;
+  --navbar-link-pad: 20px 10px;
   --navbar-link-hover-color: var(--gold);
   --navbar-icon-align-self: center;
   --navs-align-items: center;
