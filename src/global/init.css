@@ -1,0 +1,53 @@
+/********** INIT **********/
+
+/*
+1. Root Variables
+2. Hidden Main Classes
+*/
+
+/***** Root Variables *****/
+:root {
+  /* Navbar Height */
+  --navbar-height: 80px;
+  /* Main Colors */
+  --black: rgb(15, 15, 15);
+  --blue: RoyalBlue;
+  --brown: SaddleBrown;
+  --gray: DimGray;
+  --green: ForestGreen;
+  --orange: DarkOrange;
+  --purple: MediumPurple;
+  --red: Crimson;
+  --yellow: Gold;
+  /* Pale Colors */
+  --chocolate: Chocolate;
+  --jade: PaleGreen;
+  --khaki: Khaki;
+  --salmon: Salmon;
+  --silver: Silver;
+  --sky: SkyBlue;
+  --tomato: Tomato;
+  --violet: Violet;
+  --white: Ivory;
+  /* Brand Colors */
+  --facebook: #4267b2;
+  --github: #24292e;
+  --linkedin: #0077b5;
+  --npm: #c12127;
+  --stackoverflow: #f48024;
+  --twitter: #1da1f2;
+  /* Transparent Colors */
+  --amethyst: rgba(153, 102, 204, 0.5);
+  --citrine: rgba(228, 208, 10, 0.5);
+  --quartz: rgba(217, 217, 243, 0.5);
+  --emerald: rgba(80, 200, 120, 0.5);
+  --ruby: rgba(224, 17, 95, 0.5);
+  --sapphire: rgba(15, 82, 186, 0.5);
+}
+
+/***** Hidden Main Classes *****/
+[class*="check"],
+[class*="radio"] {
+  display: none;
+}
+
