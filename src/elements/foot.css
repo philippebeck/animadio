@@ -11,10 +11,10 @@
 /***** Foot Variables *****/
 [class*="foot"] {
   --foot-text-align: center;
-  --foot-title-color: var(--yellow);
+  --foot-title-color: var(--khaki);
   --foot-title-font-size: 1.8rem;
   --foot-global-pad-bot: 20px;
-  --foot-main-bg-color: var(--violet);
+  --foot-main-bg-color: var(--purple);
   --foot-main-cursor: help;
   --foot-main-flex-direction: column;
   --foot-main-font-color: var(--white);
@@ -23,7 +23,7 @@
   --foot-list-text-align: center;
   --foot-list-link-font-color: var(--white);
   --foot-list-link-mar-bot: 5px;
-  --foot-list-link-hover-font-color: var(--lime);
+  --foot-list-link-hover-font-color: var(--jade);
   --foot-info-bg-color: var(--white);
   --foot-info-cursor: crosshair;
   --foot-info-justify-content: center;

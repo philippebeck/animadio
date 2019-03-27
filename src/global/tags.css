@@ -31,11 +31,6 @@ body {
   scroll-behavior: smooth;
 }
 
-[class*="check"],
-[class*="radio"] {
-  display: none;
-}
-
 article {
   --article-mar-bot: 20px;
 
@@ -140,8 +135,8 @@ label {
 /***** Code *****/
 pre {
   --pre-pad: 10px;
-  --pre-selection-bg: var(--lime);
-  --pre-selection-color: black;
+  --pre-selection-bg: var(--jade);
+  --pre-selection-color: var(--black);
 
   overflow: scroll;
   padding: var(--pre-pad);

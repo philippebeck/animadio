@@ -24,11 +24,11 @@
   --table-title-font-style: italic;
   --table-row-even-bg: var(--yellow);
   --table-row-odd-bg: var(--white);
-  --table-cell-bord-color: black;
+  --table-cell-bord-color: var(--black);
   --table-cell-bord-radius: 0;
   --table-cell-bord-style: solid;
   --table-cell-bord-width: thin;
-  --table-cell-color: var(--navy);
+  --table-cell-color: var(--blue);
   --table-cell-pad: 10px;
   --table-cell-text-align: center;
   --table-cell-vertical-align: middle;

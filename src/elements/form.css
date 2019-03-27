@@ -17,13 +17,13 @@
   --form-fieldset-pad: 20px;
   --form-input-action-line-height: 2.5;
   --form-input-action-cursor: pointer;
-  --form-input-field-bg: var(--filter-blue);
-  --form-input-field-bord: thin solid var(--navy);
+  --form-input-field-bg: var(--sapphire);
+  --form-input-field-bord: thin solid var(--blue);
   --form-input-field-line-height: 2;
   --form-input-field-mar: 10px 0 20px;
   --form-input-field-pad: 10px;
   --form-input-field-radius: 10px;
-  --form-input-placeholder-color: var(--navy);
+  --form-input-placeholder-color: var(--blue);
   --form-input-placeholder-font-style: italic;
   --form-input-placeholder-text-align: center;
   --form-fieldset-lg-mar-left: 0;

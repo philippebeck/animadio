@@ -23,7 +23,7 @@
   --menu-label-pad: 6px 12px;
   --menu-label-radius: 5px;
   --menu-label-hover-bg: var(--blue);
-  --menu-label-hover-bord: solid var(--navy);
+  --menu-label-hover-bord: solid var(--blue);
   --menu-label-hover-color: var(--white);
   --menu-label-hover-font-weight: bold;
   --menu-sm-flex-direction: row;
