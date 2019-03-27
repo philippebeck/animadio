@@ -1063,26 +1063,26 @@
   background-color: var(--github);
 }
 
-[class*="bg-linked-"][class*="-base"],
-[class*="bg-linked-"][class*="-global"] > *,
-*:hover > [class*="bg-linked-"][class*="-into"],
-*:focus > [class*="bg-linked-"][class*="-into"],
-*:active > [class*="bg-linked-"][class*="-into"],
-[class*="bg-linked-"][class*="-onto"]:hover,
-[class*="bg-linked-"][class*="-onto"]:focus,
-[class*="bg-linked-"][class*="-onto"]:active,
-[class*="bg-linked-"][class*="-toall"]:hover > *,
-[class*="bg-linked-"][class*="-toall"]:focus > *,
-[class*="bg-linked-"][class*="-toall"]:active > *,
-[class*="bg-linked-"][class*="-toone"] > *:hover,
-[class*="bg-linked-"][class*="-toone"] > *:focus,
-[class*="bg-linked-"][class*="-toone"] > *:active,
-[class*="bg-linked-"][class*="-radio1"]:checked ~ [class*="bg-linked-"][class*="-relay"] [class*="bg-linked-"][class*="-target1"],
-[class*="bg-linked-"][class*="-radio2"]:checked ~ [class*="bg-linked-"][class*="-relay"] [class*="bg-linked-"][class*="-target2"],
-[class*="bg-linked-"][class*="-radio3"]:checked ~ [class*="bg-linked-"][class*="-relay"] [class*="bg-linked-"][class*="-target3"],
-[class*="bg-linked-"][class*="-radio4"]:checked ~ [class*="bg-linked-"][class*="-relay"] [class*="bg-linked-"][class*="-target4"],
-[class*="bg-linked-"][class*="-radio5"]:checked ~ [class*="bg-linked-"][class*="-relay"] [class*="bg-linked-"][class*="-target5"],
-[class*="bg-linked-"][class*="-check"]:checked ~ [class*="bg-linked-"][class*="-hub"] [class*="bg-linked-"][class*="-goal"] {
+[class*="bg-linkedin-"][class*="-base"],
+[class*="bg-linkedin-"][class*="-global"] > *,
+*:hover > [class*="bg-linkedin-"][class*="-into"],
+*:focus > [class*="bg-linkedin-"][class*="-into"],
+*:active > [class*="bg-linkedin-"][class*="-into"],
+[class*="bg-linkedin-"][class*="-onto"]:hover,
+[class*="bg-linkedin-"][class*="-onto"]:focus,
+[class*="bg-linkedin-"][class*="-onto"]:active,
+[class*="bg-linkedin-"][class*="-toall"]:hover > *,
+[class*="bg-linkedin-"][class*="-toall"]:focus > *,
+[class*="bg-linkedin-"][class*="-toall"]:active > *,
+[class*="bg-linkedin-"][class*="-toone"] > *:hover,
+[class*="bg-linkedin-"][class*="-toone"] > *:focus,
+[class*="bg-linkedin-"][class*="-toone"] > *:active,
+[class*="bg-linkedin-"][class*="-radio1"]:checked ~ [class*="bg-linkedin-"][class*="-relay"] [class*="bg-linkedin-"][class*="-target1"],
+[class*="bg-linkedin-"][class*="-radio2"]:checked ~ [class*="bg-linkedin-"][class*="-relay"] [class*="bg-linkedin-"][class*="-target2"],
+[class*="bg-linkedin-"][class*="-radio3"]:checked ~ [class*="bg-linkedin-"][class*="-relay"] [class*="bg-linkedin-"][class*="-target3"],
+[class*="bg-linkedin-"][class*="-radio4"]:checked ~ [class*="bg-linkedin-"][class*="-relay"] [class*="bg-linkedin-"][class*="-target4"],
+[class*="bg-linkedin-"][class*="-radio5"]:checked ~ [class*="bg-linkedin-"][class*="-relay"] [class*="bg-linkedin-"][class*="-target5"],
+[class*="bg-linkedin-"][class*="-check"]:checked ~ [class*="bg-linkedin-"][class*="-hub"] [class*="bg-linkedin-"][class*="-goal"] {
   background-color: var(--linkedin);
 }
 
