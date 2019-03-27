@@ -1,4 +1,4 @@
-/*! animadio v0.2.4 | https://animadio.org | MIT License */
+/*! animadio v0.2.5 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -354,6 +354,60 @@ template {
   display: none;
 }
 
+/********** INIT **********/
+
+/*
+1. Root Variables
+2. Hidden Main Classes
+*/
+
+/***** Root Variables *****/
+:root {
+  /* Navbar Height */
+  --navbar-height: 80px;
+  /* Main Colors */
+  --black: rgb(15, 15, 15);
+  --blue: RoyalBlue;
+  --brown: SaddleBrown;
+  --gray: DimGray;
+  --green: ForestGreen;
+  --orange: DarkOrange;
+  --purple: MediumPurple;
+  --red: Crimson;
+  --yellow: Gold;
+  /* Pale Colors */
+  --chocolate: Chocolate;
+  --jade: PaleGreen;
+  --khaki: Khaki;
+  --salmon: Salmon;
+  --silver: Silver;
+  --sky: SkyBlue;
+  --tomato: Tomato;
+  --violet: Violet;
+  --white: Ivory;
+  /* Brand Colors */
+  --facebook: #4267b2;
+  --github: #24292e;
+  --linkedin: #0077b5;
+  --npm: #c12127;
+  --stackoverflow: #f48024;
+  --twitter: #1da1f2;
+  /* Transparent Colors */
+  --amethyst: rgba(153, 102, 204, 0.5);
+  --citrine: rgba(228, 208, 10, 0.5);
+  --quartz: rgba(217, 217, 243, 0.5);
+  --emerald: rgba(80, 200, 120, 0.5);
+  --ruby: rgba(224, 17, 95, 0.5);
+  --sapphire: rgba(15, 82, 186, 0.5);
+}
+
+/***** Hidden Main Classes *****/
+[class*="check"],
+[class*="radio"] {
+  display: none;
+}
+
+
 /********** KEYFRAMES **********/
 
 /*
@@ -699,11 +753,6 @@ body {
   scroll-behavior: smooth;
 }
 
-[class*="check"],
-[class*="radio"] {
-  display: none;
-}
-
 article {
   --article-mar-bot: 20px;
 
@@ -810,8 +859,8 @@ label {
 /***** Code *****/
 pre {
   --pre-pad: 10px;
-  --pre-selection-bg: var(--lime);
-  --pre-selection-color: black;
+  --pre-selection-bg: var(--jade);
+  --pre-selection-color: var(--black);
 
   overflow: scroll;
   padding: var(--pre-pad);
@@ -1407,10 +1456,6 @@ pre > *::selection {
 */
 
 /***** Navbar Variables *****/
-:root {
-  --navbar-height: 80px;
-}
-
 .navbar,
 [class*="nav-"] {
   --navbar-align-items: center;
@@ -1421,7 +1466,7 @@ pre > *::selection {
   --navbar-link-color: var(--white);
   --navbar-link-cursor: pointer;
   --navbar-link-pad: 20px 10px;
-  --navbar-link-hover-color: var(--gold);
+  --navbar-link-hover-color: var(--yellow);
   --navbar-icon-align-self: center;
   --navs-align-items: center;
   --navs-list-style: none;
@@ -1625,7 +1670,7 @@ pre > *::selection {
 /********** BTN **********/
 
 [class*="btn"] {
-  --btn-bg: var(--violet);
+  --btn-bg: var(--purple);
   --btn-bord-radius: 10px;
   --btn-color: var(--white);
   --btn-font-size: 1.2rem;
@@ -1902,7 +1947,7 @@ pre > *::selection {
   --menu-label-pad: 6px 12px;
   --menu-label-radius: 5px;
   --menu-label-hover-bg: var(--blue);
-  --menu-label-hover-bord: solid var(--navy);
+  --menu-label-hover-bord: solid var(--blue);
   --menu-label-hover-color: var(--white);
   --menu-label-hover-font-weight: bold;
   --menu-sm-flex-direction: row;
@@ -2142,11 +2187,11 @@ pre > *::selection {
   --table-title-font-style: italic;
   --table-row-even-bg: var(--yellow);
   --table-row-odd-bg: var(--white);
-  --table-cell-bord-color: black;
+  --table-cell-bord-color: var(--black);
   --table-cell-bord-radius: 0;
   --table-cell-bord-style: solid;
   --table-cell-bord-width: thin;
-  --table-cell-color: var(--navy);
+  --table-cell-color: var(--blue);
   --table-cell-pad: 10px;
   --table-cell-text-align: center;
   --table-cell-vertical-align: middle;
@@ -2249,13 +2294,13 @@ pre > *::selection {
   --form-fieldset-pad: 20px;
   --form-input-action-line-height: 2.5;
   --form-input-action-cursor: pointer;
-  --form-input-field-bg: var(--filter-blue);
-  --form-input-field-bord: thin solid var(--navy);
+  --form-input-field-bg: var(--sapphire);
+  --form-input-field-bord: thin solid var(--blue);
   --form-input-field-line-height: 2;
   --form-input-field-mar: 10px 0 20px;
   --form-input-field-pad: 10px;
   --form-input-field-radius: 10px;
-  --form-input-placeholder-color: var(--navy);
+  --form-input-placeholder-color: var(--blue);
   --form-input-placeholder-font-style: italic;
   --form-input-placeholder-text-align: center;
   --form-fieldset-lg-mar-left: 0;
@@ -2399,10 +2444,10 @@ pre > *::selection {
 /***** Foot Variables *****/
 [class*="foot"] {
   --foot-text-align: center;
-  --foot-title-color: var(--yellow);
+  --foot-title-color: var(--khaki);
   --foot-title-font-size: 1.8rem;
   --foot-global-pad-bot: 20px;
-  --foot-main-bg-color: var(--violet);
+  --foot-main-bg-color: var(--purple);
   --foot-main-cursor: help;
   --foot-main-flex-direction: column;
   --foot-main-font-color: var(--white);
@@ -2411,7 +2456,7 @@ pre > *::selection {
   --foot-list-text-align: center;
   --foot-list-link-font-color: var(--white);
   --foot-list-link-mar-bot: 5px;
-  --foot-list-link-hover-font-color: var(--lime);
+  --foot-list-link-hover-font-color: var(--jade);
   --foot-info-bg-color: var(--white);
   --foot-info-cursor: crosshair;
   --foot-info-justify-content: center;
@@ -2502,4 +2547,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 26th Mar 2019 @ 10:21:15 PM */
+ Updated: 27th Mar 2019 @ 3:59:41 PM */
