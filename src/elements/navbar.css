@@ -36,7 +36,7 @@
   --nav-info-height: 50px;
   --nav-info-img-mar: 5px;
   --nav-info-link-hover-scale: 1.5;
-  --nav-toggle-top: 25px;
+  --nav-toggle-top: 0;
   --nav-toggle-right: 10px;
   --nav-toggle-anima: trany-tn 1s linear infinite alternate;
   --navbar-sm-flex-direction: row;
