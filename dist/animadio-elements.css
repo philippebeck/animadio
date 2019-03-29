@@ -1,4 +1,4 @@
-/*! animadio v0.2.6 | https://animadio.org | MIT License */
+/*! animadio v0.2.7 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -373,7 +373,7 @@ template {
   --gray: DimGray;
   --green: ForestGreen;
   --orange: DarkOrange;
-  --purple: MediumPurple;
+  --purple: SlateBlue;
   --red: Crimson;
   --yellow: Gold;
 
@@ -1464,9 +1464,14 @@ pre > *::selection {
 [class*="nav-"] {
   --navbar-align-items: center;
   --navbar-bg-color: var(--blue);
+  --navbar-bot: unset;
   --navbar-color: var(--white);
   --navbar-index: 1000;
   --navbar-justify-content: center;
+  --navbar-left: 0;
+  --navbar-position: fixed;
+  --navbar-right: 0;
+  --navbar-top: 0;
   --navbar-link-color: var(--white);
   --navbar-link-cursor: pointer;
   --navbar-link-pad: 20px 10px;
@@ -1483,7 +1488,7 @@ pre > *::selection {
   --nav-info-height: 50px;
   --nav-info-img-mar: 5px;
   --nav-info-link-hover-scale: 1.5;
-  --nav-toggle-top: 25px;
+  --nav-toggle-top: 0;
   --nav-toggle-right: 10px;
   --nav-toggle-anima: trany-tn 1s linear infinite alternate;
   --navbar-sm-flex-direction: row;
@@ -1518,14 +1523,18 @@ pre > *::selection {
 
 /***** Navbar *****/
 .navbar {
-  position: relative;
-  z-index: var(--navbar-index);
   -webkit-box-pack: var(--navbar-justify-content);
       -ms-flex-pack: var(--navbar-justify-content);
           justify-content: var(--navbar-justify-content);
   -webkit-box-align: var(--navbar-align-items);
       -ms-flex-align: var(--navbar-align-items);
           align-items: var(--navbar-align-items);
+  position: var(--navbar-position);
+  top: var(--navbar-top);
+  right: var(--navbar-right);
+  bottom: var(--navbar-bot);
+  left: var(--navbar-left);
+  z-index: var(--navbar-index);
   height: var(--navbar-height);
   background-color: var(--navbar-bg-color);
   color: var(--navbar-color);
@@ -2551,4 +2560,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 28th Mar 2019 @ 1:55:54 PM */
+ Updated: 29th Mar 2019 @ 1:50:29 PM */

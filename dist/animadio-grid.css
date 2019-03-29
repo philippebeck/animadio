@@ -1,4 +1,4 @@
-/*! animadio v0.2.6 | https://animadio.org | MIT License */
+/*! animadio v0.2.7 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -373,7 +373,7 @@ template {
   --gray: DimGray;
   --green: ForestGreen;
   --orange: DarkOrange;
-  --purple: MediumPurple;
+  --purple: SlateBlue;
   --red: Crimson;
   --yellow: Gold;
 
@@ -3312,4 +3312,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 28th Mar 2019 @ 1:55:54 PM */
+ Updated: 29th Mar 2019 @ 1:50:29 PM */
