@@ -17,9 +17,14 @@
 [class*="nav-"] {
   --navbar-align-items: center;
   --navbar-bg-color: var(--blue);
+  --navbar-bot: unset;
   --navbar-color: var(--white);
   --navbar-index: 1000;
   --navbar-justify-content: center;
+  --navbar-left: 0;
+  --navbar-position: fixed;
+  --navbar-right: 0;
+  --navbar-top: 0;
   --navbar-link-color: var(--white);
   --navbar-link-cursor: pointer;
   --navbar-link-pad: 20px 10px;
@@ -69,10 +74,14 @@
 
 /***** Navbar *****/
 .navbar {
-  position: relative;
-  z-index: var(--navbar-index);
   justify-content: var(--navbar-justify-content);
   align-items: var(--navbar-align-items);
+  position: var(--navbar-position);
+  top: var(--navbar-top);
+  right: var(--navbar-right);
+  bottom: var(--navbar-bot);
+  left: var(--navbar-left);
+  z-index: var(--navbar-index);
   height: var(--navbar-height);
   background-color: var(--navbar-bg-color);
   color: var(--navbar-color);
