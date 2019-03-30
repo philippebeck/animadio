@@ -1,4 +1,4 @@
-/*! animadio v0.2.7 | https://animadio.org | MIT License */
+/*! animadio v0.2.8 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -9401,10 +9401,17 @@ pre > *::selection {
   --menu-radius: 5px;
   --menu-width: 40%;
   --menu-all-cursor: pointer;
+  --menu-fa-bot: -18px;
+  --menu-fa-color: var(--blue);
+  --menu-fa-position: absolute;
   --menu-label-justify-content: center;
   --menu-label-pad: 6px 12px;
+  --menu-label-position: relative;
   --menu-label-radius: 5px;
-  --menu-label-hover-bg: var(--blue);
+  --menu-label-check-bg: var(--blue);
+  --menu-label-check-color: var(--white);
+  --menu-label-check-font-weight: bold;
+  --menu-label-hover-bg: var(--sapphire);
   --menu-label-hover-bord: solid var(--blue);
   --menu-label-hover-color: var(--white);
   --menu-label-hover-font-weight: bold;
@@ -9450,7 +9457,7 @@ pre > *::selection {
   -webkit-box-pack: var(--menu-label-justify-content);
       -ms-flex-pack: var(--menu-label-justify-content);
           justify-content: var(--menu-label-justify-content);
-  position: relative;
+  position: var(--menu-label-position);
   border-radius: var(--menu-label-radius);
   padding: var(--menu-label-pad);
 }
@@ -9462,6 +9469,23 @@ pre > *::selection {
   font-weight: var(--menu-label-hover-font-weight);
   background-color: var(--menu-label-hover-bg);
   color: var(--menu-label-hover-color);
+}
+
+[class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"],
+[class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"],
+[class*="menu-radio3"]:checked ~ .menu > [for="menu-radio3"],
+[class*="menu-radio4"]:checked ~ .menu > [for="menu-radio4"],
+[class*="menu-radio5"]:checked ~ .menu > [for="menu-radio5"] {
+  background-color: var(--menu-label-check-bg);
+  color: var(--menu-label-check-color);
+  font-weight: var(--menu-label-check-font-weight);
+}
+
+.menu [class*="fa-"][class*="-down"] {
+  display: none;
+  position: var(--menu-fa-position);
+  bottom: var(--menu-fa-bot);
+  color: var(--menu-fa-color);
 }
 
 /***** Media Queries *****/
@@ -9479,6 +9503,14 @@ pre > *::selection {
 
   .menu label {
     width: var(--menu-label-sm-width);
+  }
+
+  [class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"] > [class*="fa-"][class*="-down"],
+  [class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"] > [class*="fa-"][class*="-down"],
+  [class*="menu-radio3"]:checked ~ .menu > [for="menu-radio3"] > [class*="fa-"][class*="-down"],
+  [class*="menu-radio4"]:checked ~ .menu > [for="menu-radio4"] > [class*="fa-"][class*="-down"],
+  [class*="menu-radio5"]:checked ~ .menu > [for="menu-radio5"] > [class*="fa-"][class*="-down"] {
+    display: block;
   }
 }
 
@@ -10005,4 +10037,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 29th Mar 2019 @ 1:50:29 PM */
+ Updated: 30th Mar 2019 @ 12:24:27 PM */
