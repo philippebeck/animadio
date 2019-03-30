@@ -1,4 +1,4 @@
-/*! animadio v0.2.8 | https://animadio.org | MIT License */
+/*! animadio v0.2.9 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -1967,9 +1967,9 @@ pre > *::selection {
   --menu-label-check-color: var(--white);
   --menu-label-check-font-weight: bold;
   --menu-label-hover-bg: var(--sapphire);
-  --menu-label-hover-bord: solid var(--blue);
+  --menu-label-hover-bord: none;
   --menu-label-hover-color: var(--white);
-  --menu-label-hover-font-weight: bold;
+  --menu-label-hover-font-style: italic;
   --menu-sm-flex-direction: row;
   --menu-sm-align-items: flex-start;
   --menu-sm-width: 100%;
@@ -2021,7 +2021,7 @@ pre > *::selection {
 .menu label:active,
 .menu label:focus {
   border: var(--menu-label-hover-bord);
-  font-weight: var(--menu-label-hover-font-weight);
+  font-style: var(--menu-label-hover-font-style);
   background-color: var(--menu-label-hover-bg);
   color: var(--menu-label-hover-color);
 }
@@ -2592,4 +2592,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 30th Mar 2019 @ 12:24:27 PM */
+ Updated: 30th Mar 2019 @ 12:47:45 PM */
