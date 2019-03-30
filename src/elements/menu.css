@@ -19,10 +19,17 @@
   --menu-radius: 5px;
   --menu-width: 40%;
   --menu-all-cursor: pointer;
+  --menu-fa-bot: -18px;
+  --menu-fa-color: var(--blue);
+  --menu-fa-position: absolute;
   --menu-label-justify-content: center;
   --menu-label-pad: 6px 12px;
+  --menu-label-position: relative;
   --menu-label-radius: 5px;
-  --menu-label-hover-bg: var(--blue);
+  --menu-label-check-bg: var(--blue);
+  --menu-label-check-color: var(--white);
+  --menu-label-check-font-weight: bold;
+  --menu-label-hover-bg: var(--sapphire);
   --menu-label-hover-bord: solid var(--blue);
   --menu-label-hover-color: var(--white);
   --menu-label-hover-font-weight: bold;
@@ -55,7 +62,7 @@
 .menu label {
   display: flex;
   justify-content: var(--menu-label-justify-content);
-  position: relative;
+  position: var(--menu-label-position);
   border-radius: var(--menu-label-radius);
   padding: var(--menu-label-pad);
 }
@@ -69,6 +76,23 @@
   color: var(--menu-label-hover-color);
 }
 
+[class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"],
+[class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"],
+[class*="menu-radio3"]:checked ~ .menu > [for="menu-radio3"],
+[class*="menu-radio4"]:checked ~ .menu > [for="menu-radio4"],
+[class*="menu-radio5"]:checked ~ .menu > [for="menu-radio5"] {
+  background-color: var(--menu-label-check-bg);
+  color: var(--menu-label-check-color);
+  font-weight: var(--menu-label-check-font-weight);
+}
+
+.menu [class*="fa-"][class*="-down"] {
+  display: none;
+  position: var(--menu-fa-position);
+  bottom: var(--menu-fa-bot);
+  color: var(--menu-fa-color);
+}
+
 /***** Media Queries *****/
 @media (min-width: 576px) {
   .menu {
@@ -79,6 +103,14 @@
 
   .menu label {
     width: var(--menu-label-sm-width);
+  }
+
+  [class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"] > [class*="fa-"][class*="-down"],
+  [class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"] > [class*="fa-"][class*="-down"],
+  [class*="menu-radio3"]:checked ~ .menu > [for="menu-radio3"] > [class*="fa-"][class*="-down"],
+  [class*="menu-radio4"]:checked ~ .menu > [for="menu-radio4"] > [class*="fa-"][class*="-down"],
+  [class*="menu-radio5"]:checked ~ .menu > [for="menu-radio5"] > [class*="fa-"][class*="-down"] {
+    display: block;
   }
 }
 
