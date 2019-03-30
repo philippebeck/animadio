@@ -30,9 +30,9 @@
   --menu-label-check-color: var(--white);
   --menu-label-check-font-weight: bold;
   --menu-label-hover-bg: var(--sapphire);
-  --menu-label-hover-bord: solid var(--blue);
+  --menu-label-hover-bord: none;
   --menu-label-hover-color: var(--white);
-  --menu-label-hover-font-weight: bold;
+  --menu-label-hover-font-style: italic;
   --menu-sm-flex-direction: row;
   --menu-sm-align-items: flex-start;
   --menu-sm-width: 100%;
@@ -71,7 +71,7 @@
 .menu label:active,
 .menu label:focus {
   border: var(--menu-label-hover-bord);
-  font-weight: var(--menu-label-hover-font-weight);
+  font-style: var(--menu-label-hover-font-style);
   background-color: var(--menu-label-hover-bg);
   color: var(--menu-label-hover-color);
 }
