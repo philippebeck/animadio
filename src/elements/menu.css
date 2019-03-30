@@ -26,6 +26,7 @@
   --menu-label-pad: 6px 12px;
   --menu-label-position: relative;
   --menu-label-radius: 5px;
+  --menu-label-width: 100%;
   --menu-label-check-bg: var(--blue);
   --menu-label-check-color: var(--white);
   --menu-label-check-font-weight: bold;
@@ -36,10 +37,9 @@
   --menu-sm-flex-direction: row;
   --menu-sm-align-items: flex-start;
   --menu-sm-width: 100%;
-  --menu-label-sm-width: 25%;
-  --menu-md-width: 80%;
-  --menu-lg-width: 60%;
-  --menu-wd-width: 40%;
+  --menu-md-width: 90%;
+  --menu-lg-width: 80%;
+  --menu-wd-width: 70%;
 
   display: flex;
   flex-direction: var(--menu-flex-direction);
@@ -65,6 +65,7 @@
   position: var(--menu-label-position);
   border-radius: var(--menu-label-radius);
   padding: var(--menu-label-pad);
+  width: var(--menu-label-width);
 }
 
 .menu label:hover,
@@ -99,10 +100,6 @@
     flex-direction: var(--menu-sm-flex-direction);
     align-items: var(--menu-sm-align-items);
     width: var(--menu-sm-width);
-  }
-
-  .menu label {
-    width: var(--menu-label-sm-width);
   }
 
   [class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"] > [class*="fa-"][class*="-down"],
