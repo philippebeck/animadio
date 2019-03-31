@@ -53,10 +53,12 @@
 }
 
 .gallery figure {
-  position: relative;
+  position: var(--gallery-figure-position);
   overflow: var(--gallery-figure-flow);
   margin: var(--gallery-figure-mar);
+  border: var(--gallery-figure-bord);
   width: var(--gallery-figure-width);
+  box-shadow: var(--gallery-figure-shabox);
   line-height: var(--gallery-figure-line-height);
 }
 
