@@ -72,11 +72,21 @@
 
 .gallery figcaption {
   display: none;
-  position: absolute;
+  position: var(--gallery-figcaption-position);
   bottom: var(--gallery-figcaption-bot);
   width: var(--gallery-figcaption-width);
   line-height: var(--gallery-figcaption-line-height);
   background-color: var(--gallery-figcaption-bg);
+}
+
+.gallery figcaption [class*="fa-"] {
+  position: var(--gallery-figcaption-fa-position);
+  top: var(--gallery-figcaption-fa-top);
+  right: var(--gallery-figcaption-fa-right);
+  border: var(--gallery-figcaption-fa-bord);
+  border-radius: var(--gallery-figcaption-fa-radius);
+  padding: var(--gallery-figcaption-fa-pad);
+  background-color: var(--gallery-figcaption-fa-bg);
 }
 
 .gallery a {
