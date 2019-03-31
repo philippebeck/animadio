@@ -110,11 +110,6 @@
 
 /***** Medias Queries *****/
 @media (min-width: 576px) {
-  .gallery {
-    margin-right: var(--gallery-sm-mar);
-    margin-left: var(--gallery-sm-mar);
-  }
-
   .gallery figure {
     margin: var(--gallery-figure-sm-mar);
     width: var(--gallery-figure-sm-width);
@@ -122,11 +117,6 @@
 }
 
 @media (min-width: 992px) {
-  .gallery {
-    margin-right: var(--gallery-lg-mar);
-    margin-left: var(--gallery-lg-mar);
-  }
-
   .gallery figure {
     margin: var(--gallery-figure-lg-mar);
     width: var(--gallery-figure-lg-width);
@@ -134,11 +124,6 @@
 }
 
 @media (min-width: 1200px) {
-  .gallery {
-    margin-right: var(--gallery-wd-mar);
-    margin-left: var(--gallery-wd-mar);
-  }
-
   .gallery figure {
     margin: var(--gallery-figure-wd-mar);
     width: var(--gallery-figure-wd-width);
