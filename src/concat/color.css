@@ -1213,6 +1213,29 @@
   background-color: var(--emerald);
 }
 
+[class*="obsidian-"][class*="-base"],
+[class*="obsidian-"][class*="-global"] > *,
+*:hover > [class*="obsidian-"][class*="-into"],
+*:focus > [class*="obsidian-"][class*="-into"],
+*:active > [class*="obsidian-"][class*="-into"],
+[class*="obsidian-"][class*="-onto"]:hover,
+[class*="obsidian-"][class*="-onto"]:focus,
+[class*="obsidian-"][class*="-onto"]:active,
+[class*="obsidian-"][class*="-toall"]:hover > *,
+[class*="obsidian-"][class*="-toall"]:focus > *,
+[class*="obsidian-"][class*="-toall"]:active > *,
+[class*="obsidian-"][class*="-toone"] > *:hover,
+[class*="obsidian-"][class*="-toone"] > *:focus,
+[class*="obsidian-"][class*="-toone"] > *:active,
+[class*="obsidian-"][class*="-radio1"]:checked ~ [class*="obsidian-"][class*="-relay"] [class*="obsidian-"][class*="-target1"],
+[class*="obsidian-"][class*="-radio2"]:checked ~ [class*="obsidian-"][class*="-relay"] [class*="obsidian-"][class*="-target2"],
+[class*="obsidian-"][class*="-radio3"]:checked ~ [class*="obsidian-"][class*="-relay"] [class*="obsidian-"][class*="-target3"],
+[class*="obsidian-"][class*="-radio4"]:checked ~ [class*="obsidian-"][class*="-relay"] [class*="obsidian-"][class*="-target4"],
+[class*="obsidian-"][class*="-radio5"]:checked ~ [class*="obsidian-"][class*="-relay"] [class*="obsidian-"][class*="-target5"],
+[class*="obsidian-"][class*="-check"]:checked ~ [class*="obsidian-"][class*="-hub"] [class*="obsidian-"][class*="-goal"] {
+  background-color: var(--obsidian);
+}
+
 [class*="ruby-"][class*="-base"],
 [class*="ruby-"][class*="-global"] > *,
 *:hover > [class*="ruby-"][class*="-into"],
