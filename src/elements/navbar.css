@@ -13,8 +13,7 @@
 */
 
 /***** Navbar Variables *****/
-.navbar,
-[class*="nav-"] {
+[class*="nav"] {
   --navbar-align-items: center;
   --navbar-bg-color: var(--blue);
   --navbar-bot: unset;
