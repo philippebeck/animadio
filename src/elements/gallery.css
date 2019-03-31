@@ -98,6 +98,16 @@
   cursor: var(--gallery-link-all-cursor);
 }
 
+.gallery a *:nth-child(odd) {
+  padding: var(--gallery-link-all-odd-pad);
+  font-size: var(--gallery-link-all-odd-font-size);
+}
+
+.gallery a *:nth-child(even) {
+  padding: var(--gallery-link-all-even-pad);
+  font-size: var(--gallery-link-all-even-font-size);
+}
+
 /***** Medias Queries *****/
 @media (min-width: 576px) {
   .gallery {
