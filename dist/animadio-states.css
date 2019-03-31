@@ -1,4 +1,4 @@
-/*! animadio v0.2.10 | https://animadio.org | MIT License */
+/*! animadio v0.2.11 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -401,6 +401,7 @@ template {
   --citrine: rgba(228, 208, 10, 0.5);
   --quartz: rgba(217, 217, 243, 0.5);
   --emerald: rgba(80, 200, 120, 0.5);
+  --obsidian: rgba(15, 15, 15, 0.5);
   --ruby: rgba(224, 17, 95, 0.5);
   --sapphire: rgba(15, 82, 186, 0.5);
 }
@@ -670,6 +671,22 @@ template {
   to {
     -webkit-transform: var(--translateY);
             transform: var(--translateY);
+  }
+}
+
+@-webkit-keyframes trany-opac {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(68px);
+            transform: translateY(68px);
+  }
+}
+
+@keyframes trany-opac {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(68px);
+            transform: translateY(68px);
   }
 }
 
@@ -3907,6 +3924,29 @@ pre > *::selection {
   background-color: var(--emerald);
 }
 
+[class*="obsidian-"][class*="-base"],
+[class*="obsidian-"][class*="-global"] > *,
+*:hover > [class*="obsidian-"][class*="-into"],
+*:focus > [class*="obsidian-"][class*="-into"],
+*:active > [class*="obsidian-"][class*="-into"],
+[class*="obsidian-"][class*="-onto"]:hover,
+[class*="obsidian-"][class*="-onto"]:focus,
+[class*="obsidian-"][class*="-onto"]:active,
+[class*="obsidian-"][class*="-toall"]:hover > *,
+[class*="obsidian-"][class*="-toall"]:focus > *,
+[class*="obsidian-"][class*="-toall"]:active > *,
+[class*="obsidian-"][class*="-toone"] > *:hover,
+[class*="obsidian-"][class*="-toone"] > *:focus,
+[class*="obsidian-"][class*="-toone"] > *:active,
+[class*="obsidian-"][class*="-radio1"]:checked ~ [class*="obsidian-"][class*="-relay"] [class*="obsidian-"][class*="-target1"],
+[class*="obsidian-"][class*="-radio2"]:checked ~ [class*="obsidian-"][class*="-relay"] [class*="obsidian-"][class*="-target2"],
+[class*="obsidian-"][class*="-radio3"]:checked ~ [class*="obsidian-"][class*="-relay"] [class*="obsidian-"][class*="-target3"],
+[class*="obsidian-"][class*="-radio4"]:checked ~ [class*="obsidian-"][class*="-relay"] [class*="obsidian-"][class*="-target4"],
+[class*="obsidian-"][class*="-radio5"]:checked ~ [class*="obsidian-"][class*="-relay"] [class*="obsidian-"][class*="-target5"],
+[class*="obsidian-"][class*="-check"]:checked ~ [class*="obsidian-"][class*="-hub"] [class*="obsidian-"][class*="-goal"] {
+  background-color: var(--obsidian);
+}
+
 [class*="ruby-"][class*="-base"],
 [class*="ruby-"][class*="-global"] > *,
 *:hover > [class*="ruby-"][class*="-into"],
@@ -6714,4 +6754,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 30th Mar 2019 @ 2:42:53 PM */
+ Updated: 31st Mar 2019 @ 12:01:42 PM */

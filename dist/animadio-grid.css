@@ -1,4 +1,4 @@
-/*! animadio v0.2.10 | https://animadio.org | MIT License */
+/*! animadio v0.2.11 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -401,6 +401,7 @@ template {
   --citrine: rgba(228, 208, 10, 0.5);
   --quartz: rgba(217, 217, 243, 0.5);
   --emerald: rgba(80, 200, 120, 0.5);
+  --obsidian: rgba(15, 15, 15, 0.5);
   --ruby: rgba(224, 17, 95, 0.5);
   --sapphire: rgba(15, 82, 186, 0.5);
 }
@@ -3312,4 +3313,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 30th Mar 2019 @ 2:42:53 PM */
+ Updated: 31st Mar 2019 @ 12:01:42 PM */

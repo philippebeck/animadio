@@ -1,4 +1,4 @@
-/*! animadio v0.2.10 | https://animadio.org | MIT License */
+/*! animadio v0.2.11 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -401,6 +401,7 @@ template {
   --citrine: rgba(228, 208, 10, 0.5);
   --quartz: rgba(217, 217, 243, 0.5);
   --emerald: rgba(80, 200, 120, 0.5);
+  --obsidian: rgba(15, 15, 15, 0.5);
   --ruby: rgba(224, 17, 95, 0.5);
   --sapphire: rgba(15, 82, 186, 0.5);
 }
@@ -670,6 +671,22 @@ template {
   to {
     -webkit-transform: var(--translateY);
             transform: var(--translateY);
+  }
+}
+
+@-webkit-keyframes trany-opac {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(68px);
+            transform: translateY(68px);
+  }
+}
+
+@keyframes trany-opac {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(68px);
+            transform: translateY(68px);
   }
 }
 
@@ -2090,30 +2107,43 @@ pre > *::selection {
 .gallery {
   --gallery-flex-wrap: wrap;
   --gallery-flow: hidden;
-  --gallery-mar: 40px -6px;
+  --gallery-mar: auto;
+  --gallery-max-w: 90%;
   --gallery-all-cursor: crosshair;
-  --gallery-figcaption-bot: -60%;
-  --gallery-figcaption-width: 100%;
-  --gallery-figcaption-line-height: 1;
   --gallery-figcaption-bg: rgba(0, 0, 0, 0.5);
-  --gallery-figure-figcaption-anima: translateY 2s;
+  --gallery-figcaption-bot: -60%;
+  --gallery-figcaption-line-height: 1;
+  --gallery-figcaption-position: absolute;
+  --gallery-figcaption-width: 100%;
+  --gallery-figcaption-fa-bg: var(--blue);
+  --gallery-figcaption-fa-bord: 2px solid var(--white);
+  --gallery-figcaption-fa-position: absolute;
+  --gallery-figcaption-fa-right: 5px;
+  --gallery-figcaption-fa-top: -15px;
+  --gallery-figcaption-fa-pad: 10px;
+  --gallery-figcaption-fa-radius: 50%;
+  --gallery-figure-figcaption-anima: trany-opac 2s;
   --gallery-figure-figcaption-bot: 0;
+  --gallery-figure-bord: thin dotted var(--silver);
   --gallery-figure-flow: hidden;
   --gallery-figure-line-height: 0;
-  --gallery-figure-mar: 6px;
-  --gallery-figure-width: calc(100% - 12px);
+  --gallery-figure-mar: 5px;
+  --gallery-figure-position: relative;
+  --gallery-figure-shabox: 0 0 5px;
+  --gallery-figure-width: calc(100% - 10px);
   --gallery-link-all-mar: 0;
   --gallery-link-all-cursor: pointer;
+  --gallery-link-all-even-pad: 0 10px 20px;
+  --gallery-link-all-even-font-size: 1.2rem;
+  --gallery-link-all-odd-pad: 10px;
+  --gallery-link-all-odd-font-size: 1.5rem;
   --gallery-link-color: var(--white);
-  --gallery-sm-mar: -8px;
-  --gallery-figure-sm-mar: 8px;
-  --gallery-figure-sm-width: calc(100% / 2 - 16px);
-  --gallery-lg-mar: -10px;
-  --gallery-figure-lg-mar: 10px;
-  --gallery-figure-lg-width: calc(100% / 3 - 20px);
-  --gallery-wd-mar: -12px;
-  --gallery-figure-wd-mar: 12px;
-  --gallery-figure-wd-width: calc(100% / 4 - 24px);
+  --gallery-figure-sm-mar: 6px;
+  --gallery-figure-sm-width: calc(100% / 2 - 12px);
+  --gallery-figure-lg-mar: 7px;
+  --gallery-figure-lg-width: calc(100% / 3 - 14px);
+  --gallery-figure-wd-mar: 8px;
+  --gallery-figure-wd-width: calc(100% / 4 - 16px);
 
   display: -webkit-box;
 
@@ -2124,6 +2154,7 @@ pre > *::selection {
       flex-wrap: var(--gallery-flex-wrap);
   overflow: var(--gallery-flow);
   margin: var(--gallery-mar);
+  max-width: var(--gallery-max-w);
 }
 
 .gallery * {
@@ -2131,10 +2162,13 @@ pre > *::selection {
 }
 
 .gallery figure {
-  position: relative;
+  position: var(--gallery-figure-position);
   overflow: var(--gallery-figure-flow);
   margin: var(--gallery-figure-mar);
+  border: var(--gallery-figure-bord);
   width: var(--gallery-figure-width);
+  -webkit-box-shadow: var(--gallery-figure-shabox);
+          box-shadow: var(--gallery-figure-shabox);
   line-height: var(--gallery-figure-line-height);
 }
 
@@ -2149,11 +2183,21 @@ pre > *::selection {
 
 .gallery figcaption {
   display: none;
-  position: absolute;
+  position: var(--gallery-figcaption-position);
   bottom: var(--gallery-figcaption-bot);
   width: var(--gallery-figcaption-width);
   line-height: var(--gallery-figcaption-line-height);
   background-color: var(--gallery-figcaption-bg);
+}
+
+.gallery figcaption [class*="fa-"] {
+  position: var(--gallery-figcaption-fa-position);
+  top: var(--gallery-figcaption-fa-top);
+  right: var(--gallery-figcaption-fa-right);
+  border: var(--gallery-figcaption-fa-bord);
+  border-radius: var(--gallery-figcaption-fa-radius);
+  padding: var(--gallery-figcaption-fa-pad);
+  background-color: var(--gallery-figcaption-fa-bg);
 }
 
 .gallery a {
@@ -2165,13 +2209,18 @@ pre > *::selection {
   cursor: var(--gallery-link-all-cursor);
 }
 
+.gallery a *:nth-child(odd) {
+  padding: var(--gallery-link-all-odd-pad);
+  font-size: var(--gallery-link-all-odd-font-size);
+}
+
+.gallery a *:nth-child(even) {
+  padding: var(--gallery-link-all-even-pad);
+  font-size: var(--gallery-link-all-even-font-size);
+}
+
 /***** Medias Queries *****/
 @media (min-width: 576px) {
-  .gallery {
-    margin-right: var(--gallery-sm-mar);
-    margin-left: var(--gallery-sm-mar);
-  }
-
   .gallery figure {
     margin: var(--gallery-figure-sm-mar);
     width: var(--gallery-figure-sm-width);
@@ -2179,11 +2228,6 @@ pre > *::selection {
 }
 
 @media (min-width: 992px) {
-  .gallery {
-    margin-right: var(--gallery-lg-mar);
-    margin-left: var(--gallery-lg-mar);
-  }
-
   .gallery figure {
     margin: var(--gallery-figure-lg-mar);
     width: var(--gallery-figure-lg-width);
@@ -2191,11 +2235,6 @@ pre > *::selection {
 }
 
 @media (min-width: 1200px) {
-  .gallery {
-    margin-right: var(--gallery-wd-mar);
-    margin-left: var(--gallery-wd-mar);
-  }
-
   .gallery figure {
     margin: var(--gallery-figure-wd-mar);
     width: var(--gallery-figure-wd-width);
@@ -2589,4 +2628,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 30th Mar 2019 @ 2:42:53 PM */
+ Updated: 31st Mar 2019 @ 12:01:42 PM */
