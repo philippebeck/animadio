@@ -3,35 +3,49 @@
 .gallery {
   --gallery-flex-wrap: wrap;
   --gallery-flow: hidden;
-  --gallery-mar: 40px -6px;
+  --gallery-mar: auto;
+  --gallery-max-w: 90%;
   --gallery-all-cursor: crosshair;
-  --gallery-figcaption-bot: -60%;
-  --gallery-figcaption-width: 100%;
-  --gallery-figcaption-line-height: 1;
   --gallery-figcaption-bg: rgba(0, 0, 0, 0.5);
-  --gallery-figure-figcaption-anima: translateY 2s;
+  --gallery-figcaption-bot: -60%;
+  --gallery-figcaption-line-height: 1;
+  --gallery-figcaption-position: absolute;
+  --gallery-figcaption-width: 100%;
+  --gallery-figcaption-fa-bg: var(--blue);
+  --gallery-figcaption-fa-bord: 2px solid var(--white);
+  --gallery-figcaption-fa-position: absolute;
+  --gallery-figcaption-fa-right: 5px;
+  --gallery-figcaption-fa-top: -15px;
+  --gallery-figcaption-fa-pad: 10px;
+  --gallery-figcaption-fa-radius: 50%;
+  --gallery-figure-figcaption-anima: trany-opac 2s;
   --gallery-figure-figcaption-bot: 0;
+  --gallery-figure-bord: thin dotted var(--silver);
   --gallery-figure-flow: hidden;
   --gallery-figure-line-height: 0;
-  --gallery-figure-mar: 6px;
-  --gallery-figure-width: calc(100% - 12px);
+  --gallery-figure-mar: 5px;
+  --gallery-figure-position: relative;
+  --gallery-figure-shabox: 0 0 5px;
+  --gallery-figure-width: calc(100% - 10px);
   --gallery-link-all-mar: 0;
   --gallery-link-all-cursor: pointer;
+  --gallery-link-all-even-pad: 0 10px 20px;
+  --gallery-link-all-even-font-size: 1.2rem;
+  --gallery-link-all-odd-pad: 10px;
+  --gallery-link-all-odd-font-size: 1.5rem;
   --gallery-link-color: var(--white);
-  --gallery-sm-mar: -8px;
-  --gallery-figure-sm-mar: 8px;
-  --gallery-figure-sm-width: calc(100% / 2 - 16px);
-  --gallery-lg-mar: -10px;
-  --gallery-figure-lg-mar: 10px;
-  --gallery-figure-lg-width: calc(100% / 3 - 20px);
-  --gallery-wd-mar: -12px;
-  --gallery-figure-wd-mar: 12px;
-  --gallery-figure-wd-width: calc(100% / 4 - 24px);
+  --gallery-figure-sm-mar: 6px;
+  --gallery-figure-sm-width: calc(100% / 2 - 12px);
+  --gallery-figure-lg-mar: 7px;
+  --gallery-figure-lg-width: calc(100% / 3 - 14px);
+  --gallery-figure-wd-mar: 8px;
+  --gallery-figure-wd-width: calc(100% / 4 - 16px);
 
   display: flex;
   flex-wrap: var(--gallery-flex-wrap);
   overflow: var(--gallery-flow);
   margin: var(--gallery-mar);
+  max-width: var(--gallery-max-w);
 }
 
 .gallery * {
