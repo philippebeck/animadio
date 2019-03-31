@@ -141,6 +141,13 @@
   }
 }
 
+@keyframes trany-opac {
+  from {
+    opacity: 0;
+    transform: translateY(68px);
+  }
+}
+
 @keyframes trany-tn {
   to {
     transform: var(--trany-tn);
