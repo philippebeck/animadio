@@ -30,19 +30,19 @@
   --flex-width-wd: 100px;
 }
 
-/***** Flex, Colu & Row *****/
+/***** Flex, Column & Row *****/
 [class*="flex"],
-[class*="colu"],
+[class*="column"],
 [class*="row"] {
   display: flex;
   flex-wrap: wrap;
 }
 
-[class*="colu"] {
-  --colu-pad: 0 10px;
+[class*="column"] {
+  --column-pad: 0 10px;
 
   flex-direction: column;
-  padding: var(--colu-pad);
+  padding: var(--column-pad);
 }
 
 [class*="row"] {
@@ -52,7 +52,7 @@
   padding: var(--row-pad);
 }
 
-[class*="colu-"][class*="-reverse"] {
+[class*="column-"][class*="-reverse"] {
   flex-direction: column-reverse;
 }
 
@@ -60,12 +60,12 @@
   flex-direction: row-reverse;
 }
 
-[class*="colu-"][class*="-nowrap"],
+[class*="column-"][class*="-nowrap"],
 [class*="row-"][class*="-nowrap"] {
   flex-wrap: nowrap;
 }
 
-[class*="colu-"][class*="-inverse"],
+[class*="column-"][class*="-inverse"],
 [class*="row-"][class*="-inverse"] {
   flex-wrap: wrap-reverse;
 }
