@@ -36,11 +36,11 @@
 }
 
 .slider {
-  --slide-1: url(https://animadio.org/img/svg/1.svg);
-  --slide-2: url(https://animadio.org/img/svg/2.svg);
-  --slide-3: url(https://animadio.org/img/svg/3.svg);
-  --slide-4: url(https://animadio.org/img/svg/4.svg);
-  --slide-5: url(https://animadio.org/img/svg/5.svg);
+  --slide1: url(https://animadio.org/img/svg/1.svg);
+  --slide2: url(https://animadio.org/img/svg/2.svg);
+  --slide3: url(https://animadio.org/img/svg/3.svg);
+  --slide4: url(https://animadio.org/img/svg/4.svg);
+  --slide5: url(https://animadio.org/img/svg/5.svg);
 }
 
 /***** Rotate *****/
@@ -115,24 +115,24 @@
 /***** Slider *****/
 @keyframes slider {
   0% {
-    content: var(--slide-1);
+    content: var(--slide1);
     animation-play-state: paused;
   }
   20% {
-    content: var(--slide-1);
+    content: var(--slide1);
     animation-play-state: running;
   }
   40% {
-    content: var(--slide-2);
+    content: var(--slide2);
   }
   60% {
-    content: var(--slide-3);
+    content: var(--slide3);
   }
   80% {
-    content: var(--slide-4);
+    content: var(--slide4);
   }
   100% {
-    content: var(--slide-5);
+    content: var(--slide5);
   }
 }
 
