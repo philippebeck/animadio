@@ -1,4 +1,4 @@
-/*! animadio v0.2.11 | https://animadio.org | MIT License */
+/*! animadio v0.2.12 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -450,6 +450,14 @@ template {
   --trany-tn: translateY(2vh);
 }
 
+.slider {
+  --slide1: url(https://animadio.org/img/svg/1.svg);
+  --slide2: url(https://animadio.org/img/svg/2.svg);
+  --slide3: url(https://animadio.org/img/svg/3.svg);
+  --slide4: url(https://animadio.org/img/svg/4.svg);
+  --slide5: url(https://animadio.org/img/svg/5.svg);
+}
+
 /***** Rotate *****/
 @-webkit-keyframes rotate {
   to {
@@ -587,6 +595,56 @@ template {
   to {
     -webkit-transform: var(--skewY);
             transform: var(--skewY);
+  }
+}
+
+/***** Slider *****/
+@-webkit-keyframes slider {
+  0% {
+    content: var(--slide1);
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+  20% {
+    content: var(--slide1);
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+  40% {
+    content: var(--slide2);
+  }
+  60% {
+    content: var(--slide3);
+  }
+  80% {
+    content: var(--slide4);
+  }
+  100% {
+    content: var(--slide5);
+  }
+}
+@keyframes slider {
+  0% {
+    content: var(--slide1);
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+  20% {
+    content: var(--slide1);
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+  40% {
+    content: var(--slide2);
+  }
+  60% {
+    content: var(--slide3);
+  }
+  80% {
+    content: var(--slide4);
+  }
+  100% {
+    content: var(--slide5);
   }
 }
 
@@ -6754,4 +6812,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 31st Mar 2019 @ 12:01:42 PM */
+ Updated: 2nd Apr 2019 @ 7:26:25 AM */
