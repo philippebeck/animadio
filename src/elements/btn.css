@@ -10,7 +10,7 @@
   --btn-pad: 5px 15px;
   --btn-radius: 10px;
   --btn-text-align: center;
-  --btn-hover-anima: tran-btn 100ms;
+  --btn-hover-anima: none;
   --btn-hover-bg: var(--blue);
   --btn-hover-bord: outset medium var(--sapphire);
   --btn-hover-color: var(--yellow);
