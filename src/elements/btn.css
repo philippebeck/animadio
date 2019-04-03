@@ -49,3 +49,8 @@
   transform: var(--check-button-transform);
 }
 
+[class*="btn"] > i,
+[class*="button"] > i {
+  display: block;
+}
+
