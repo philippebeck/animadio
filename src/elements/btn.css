@@ -1,18 +1,23 @@
 /********** BTN **********/
 
-[class*="btn"] {
-  --btn-bg: var(--purple);
-  --btn-bord-radius: 10px;
+[class*="btn"],
+[class*="button"] {
+  --btn-bg: var(--blue);
+  --btn-bord: solid medium var(--quartz);
   --btn-color: var(--white);
-  --btn-font-size: 1.2rem;
+  --btn-font-size: 1.5rem;
+  --btn-mar: 10px;
   --btn-pad: 5px 15px;
+  --btn-radius: 10px;
   --btn-text-align: center;
-  --btn-hover-bord-color: var(--silver);
-  --btn-hover-bord-radius: 0;
-  --btn-hover-bord-width: thin;
-  --btn-hover-bord-style: solid;
-  --btn-hover-scale: 1.2;
-  --btn-hover-shabox: 0 0 5px var(--gray);
+  --btn-hover-anima: tran-btn 100ms;
+  --btn-hover-bg: var(--blue);
+  --btn-hover-bord: outset medium var(--sapphire);
+  --btn-hover-color: var(--yellow);
+  --btn-hover-radius: 0;
+  --btn-hover-shabox: 5px 5px 5px var(--gray);
+  --btn-hover-transition: border 1s;
+  --check-button-transform: scale(0.9);
 
   display: inline-block;
   border-radius: var(--btn-bord-radius);
