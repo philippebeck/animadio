@@ -12,8 +12,8 @@
   --btn-text-align: center;
   --btn-hover-anima: none;
   --btn-hover-bg: var(--blue);
-  --btn-hover-bord: outset medium var(--sapphire);
-  --btn-hover-color: var(--yellow);
+  --btn-hover-bord: outset medium var(--obsidian);
+  --btn-hover-color: var(--silver);
   --btn-hover-radius: 0;
   --btn-hover-shabox: 5px 5px 5px var(--gray);
   --btn-hover-transition: border 1s;
