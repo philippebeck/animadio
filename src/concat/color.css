@@ -219,27 +219,27 @@
 }
 
 /***** Pale Colors *****/
-[class*="color-chocolate-"][class*="-base"],
-[class*="color-chocolate-"][class*="-global"] > *,
-*:hover > [class*="color-chocolate-"][class*="-into"],
-*:focus > [class*="color-chocolate-"][class*="-into"],
-*:active > [class*="color-chocolate-"][class*="-into"],
-[class*="color-chocolate-"][class*="-onto"]:hover,
-[class*="color-chocolate-"][class*="-onto"]:focus,
-[class*="color-chocolate-"][class*="-onto"]:active,
-[class*="color-chocolate-"][class*="-toall"]:hover > *,
-[class*="color-chocolate-"][class*="-toall"]:focus > *,
-[class*="color-chocolate-"][class*="-toall"]:active > *,
-[class*="color-chocolate-"][class*="-toone"] > *:hover,
-[class*="color-chocolate-"][class*="-toone"] > *:focus,
-[class*="color-chocolate-"][class*="-toone"] > *:active,
-[class*="color-chocolate-"][class*="-radio1"]:checked ~ [class*="color-chocolate-"][class*="-relay"] [class*="color-chocolate-"][class*="-target1"],
-[class*="color-chocolate-"][class*="-radio2"]:checked ~ [class*="color-chocolate-"][class*="-relay"] [class*="color-chocolate-"][class*="-target2"],
-[class*="color-chocolate-"][class*="-radio3"]:checked ~ [class*="color-chocolate-"][class*="-relay"] [class*="color-chocolate-"][class*="-target3"],
-[class*="color-chocolate-"][class*="-radio4"]:checked ~ [class*="color-chocolate-"][class*="-relay"] [class*="color-chocolate-"][class*="-target4"],
-[class*="color-chocolate-"][class*="-radio5"]:checked ~ [class*="color-chocolate-"][class*="-relay"] [class*="color-chocolate-"][class*="-target5"],
-[class*="color-chocolate-"][class*="-check"]:checked ~ [class*="color-chocolate-"][class*="-hub"] [class*="color-chocolate-"][class*="-goal"] {
-  color: var(--chocolate);
+[class*="color-choco-"][class*="-base"],
+[class*="color-choco-"][class*="-global"] > *,
+*:hover > [class*="color-choco-"][class*="-into"],
+*:focus > [class*="color-choco-"][class*="-into"],
+*:active > [class*="color-choco-"][class*="-into"],
+[class*="color-choco-"][class*="-onto"]:hover,
+[class*="color-choco-"][class*="-onto"]:focus,
+[class*="color-choco-"][class*="-onto"]:active,
+[class*="color-choco-"][class*="-toall"]:hover > *,
+[class*="color-choco-"][class*="-toall"]:focus > *,
+[class*="color-choco-"][class*="-toall"]:active > *,
+[class*="color-choco-"][class*="-toone"] > *:hover,
+[class*="color-choco-"][class*="-toone"] > *:focus,
+[class*="color-choco-"][class*="-toone"] > *:active,
+[class*="color-choco-"][class*="-radio1"]:checked ~ [class*="color-choco-"][class*="-relay"] [class*="color-choco-"][class*="-target1"],
+[class*="color-choco-"][class*="-radio2"]:checked ~ [class*="color-choco-"][class*="-relay"] [class*="color-choco-"][class*="-target2"],
+[class*="color-choco-"][class*="-radio3"]:checked ~ [class*="color-choco-"][class*="-relay"] [class*="color-choco-"][class*="-target3"],
+[class*="color-choco-"][class*="-radio4"]:checked ~ [class*="color-choco-"][class*="-relay"] [class*="color-choco-"][class*="-target4"],
+[class*="color-choco-"][class*="-radio5"]:checked ~ [class*="color-choco-"][class*="-relay"] [class*="color-choco-"][class*="-target5"],
+[class*="color-choco-"][class*="-check"]:checked ~ [class*="color-choco-"][class*="-hub"] [class*="color-choco-"][class*="-goal"] {
+  color: var(--choco);
 }
 
 [class*="color-jade-"][class*="-base"],
@@ -774,27 +774,27 @@
 }
 
 /***** Pale Background Colors *****/
-[class*="bg-chocolate-"][class*="-base"],
-[class*="bg-chocolate-"][class*="-global"] > *,
-*:hover > [class*="bg-chocolate-"][class*="-into"],
-*:focus > [class*="bg-chocolate-"][class*="-into"],
-*:active > [class*="bg-chocolate-"][class*="-into"],
-[class*="bg-chocolate-"][class*="-onto"]:hover,
-[class*="bg-chocolate-"][class*="-onto"]:focus,
-[class*="bg-chocolate-"][class*="-onto"]:active,
-[class*="bg-chocolate-"][class*="-toall"]:hover > *,
-[class*="bg-chocolate-"][class*="-toall"]:focus > *,
-[class*="bg-chocolate-"][class*="-toall"]:active > *,
-[class*="bg-chocolate-"][class*="-toone"] > *:hover,
-[class*="bg-chocolate-"][class*="-toone"] > *:focus,
-[class*="bg-chocolate-"][class*="-toone"] > *:active,
-[class*="bg-chocolate-"][class*="-radio1"]:checked ~ [class*="bg-chocolate-"][class*="-relay"] [class*="bg-chocolate-"][class*="-target1"],
-[class*="bg-chocolate-"][class*="-radio2"]:checked ~ [class*="bg-chocolate-"][class*="-relay"] [class*="bg-chocolate-"][class*="-target2"],
-[class*="bg-chocolate-"][class*="-radio3"]:checked ~ [class*="bg-chocolate-"][class*="-relay"] [class*="bg-chocolate-"][class*="-target3"],
-[class*="bg-chocolate-"][class*="-radio4"]:checked ~ [class*="bg-chocolate-"][class*="-relay"] [class*="bg-chocolate-"][class*="-target4"],
-[class*="bg-chocolate-"][class*="-radio5"]:checked ~ [class*="bg-chocolate-"][class*="-relay"] [class*="bg-chocolate-"][class*="-target5"],
-[class*="bg-chocolate-"][class*="-check"]:checked ~ [class*="bg-chocolate-"][class*="-hub"] [class*="bg-chocolate-"][class*="-goal"] {
-  background-color: var(--chocolate);
+[class*="bg-choco-"][class*="-base"],
+[class*="bg-choco-"][class*="-global"] > *,
+*:hover > [class*="bg-choco-"][class*="-into"],
+*:focus > [class*="bg-choco-"][class*="-into"],
+*:active > [class*="bg-choco-"][class*="-into"],
+[class*="bg-choco-"][class*="-onto"]:hover,
+[class*="bg-choco-"][class*="-onto"]:focus,
+[class*="bg-choco-"][class*="-onto"]:active,
+[class*="bg-choco-"][class*="-toall"]:hover > *,
+[class*="bg-choco-"][class*="-toall"]:focus > *,
+[class*="bg-choco-"][class*="-toall"]:active > *,
+[class*="bg-choco-"][class*="-toone"] > *:hover,
+[class*="bg-choco-"][class*="-toone"] > *:focus,
+[class*="bg-choco-"][class*="-toone"] > *:active,
+[class*="bg-choco-"][class*="-radio1"]:checked ~ [class*="bg-choco-"][class*="-relay"] [class*="bg-choco-"][class*="-target1"],
+[class*="bg-choco-"][class*="-radio2"]:checked ~ [class*="bg-choco-"][class*="-relay"] [class*="bg-choco-"][class*="-target2"],
+[class*="bg-choco-"][class*="-radio3"]:checked ~ [class*="bg-choco-"][class*="-relay"] [class*="bg-choco-"][class*="-target3"],
+[class*="bg-choco-"][class*="-radio4"]:checked ~ [class*="bg-choco-"][class*="-relay"] [class*="bg-choco-"][class*="-target4"],
+[class*="bg-choco-"][class*="-radio5"]:checked ~ [class*="bg-choco-"][class*="-relay"] [class*="bg-choco-"][class*="-target5"],
+[class*="bg-choco-"][class*="-check"]:checked ~ [class*="bg-choco-"][class*="-hub"] [class*="bg-choco-"][class*="-goal"] {
+  background-color: var(--choco);
 }
 
 [class*="bg-jade-"][class*="-base"],
