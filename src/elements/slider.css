@@ -11,10 +11,8 @@
 /***** Slider *****/
 .slider {
   --slider-text-align: center;
-  --slide-bord: thin dotted var(--silver);
   --slide-height: 50vh;
   --slide-mar: auto;
-  --slide-shabox: 0 0 5px;
   --slider-check-slide-anima: 10s linear infinite;
   --slider-controls-juco: center;
   --slider-controls-mar: 10px;
@@ -47,9 +45,7 @@
 /***** Slide *****/
 .slide {
   margin: var(--slide-mar);
-  border: var(--slide-bord);
   height: var(--slide-height);
-  box-shadow: var(--slide-shabox);
 }
 
 [class*="slider-check"]:checked ~ .slide {
