@@ -1,4 +1,4 @@
-/*! animadio v0.2.12 | https://animadio.org | MIT License */
+/*! animadio v0.2.13 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -369,7 +369,7 @@ template {
   /* Main Colors */
   --black: rgb(15, 15, 15);
   --blue: RoyalBlue;
-  --brown: SaddleBrown;
+  --maroon: SaddleBrown;
   --gray: DimGray;
   --green: ForestGreen;
   --orange: DarkOrange;
@@ -1804,8 +1804,10 @@ pre > *::selection {
 /***** Slider *****/
 .slider {
   --slider-text-align: center;
-  --slide-mar: auto;
+  --slide-bord: thin dotted var(--silver);
   --slide-height: 50vh;
+  --slide-mar: auto;
+  --slide-shabox: 0 0 5px;
   --slider-check-slide-anima: 10s linear infinite;
   --slider-controls-juco: center;
   --slider-controls-mar: 10px;
@@ -1816,9 +1818,10 @@ pre > *::selection {
   --slider-label-color: var(--white);
   --slider-label-pad: 10px 5px;
   --slider-check-slide-auto-icon-color: var(--blue);
-  --slider-check-slide-auto-icon-anima: 2s linear reverse infinite;
-  --slider-radio-slider-controls-icons-before-color: var(--blue);
-  --slider-radio-slider-controls-icons-before-content: "\f058";
+  --slider-check-slide-auto-icon-before: "\f28d";
+  --slider-check-slide-icon-before-color: var(--white);
+  --slider-radio-slide-icon-before-color: var(--blue);
+  --slider-radio-slide-icon-before-content: "\f058";
   --slider-timeline-height: 6px;
   --slider-timeline-bg: var(--blue);
   --slider-radio1-slider-timeline-width: 0;
@@ -1837,7 +1840,10 @@ pre > *::selection {
 /***** Slide *****/
 .slide {
   margin: var(--slide-mar);
+  border: var(--slide-bord);
   height: var(--slide-height);
+  -webkit-box-shadow: var(--slide-shabox);
+          box-shadow: var(--slide-shabox);
 }
 
 [class*="slider-check"]:checked ~ .slide {
@@ -1880,8 +1886,18 @@ pre > *::selection {
 
 [class*="slider-check"]:checked ~ .slider-controls [for="slide-auto"] > i {
   color: var(--slider-check-slide-auto-icon-color);
-  -webkit-animation: rotate var(--slider-check-slide-auto-icon-anima);
-          animation: rotate var(--slider-check-slide-auto-icon-anima);
+}
+
+[class*="slider-check"]:checked ~ .slider-controls [for="slide-auto"] > i::before {
+  content: var(--slider-check-slide-auto-icon-before);
+}
+
+[class*="slider-check"]:checked ~ .slider-controls [for="slide1"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide2"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide3"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide4"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide5"] > .fas::before {
+  color: var(--slider-check-slide-icon-before-color);
 }
 
 [class*="slider-radio1"]:checked ~ .slider-controls [for="slide1"] > i::before,
@@ -1889,8 +1905,8 @@ pre > *::selection {
 [class*="slider-radio3"]:checked ~ .slider-controls [for="slide3"] > i::before,
 [class*="slider-radio4"]:checked ~ .slider-controls [for="slide4"] > i::before,
 [class*="slider-radio5"]:checked ~ .slider-controls [for="slide5"] > i::before {
-  color: var(--slider-radio-slider-controls-icons-before-color);
-  content: var(--slider-radio-slider-controls-icons-before-content);
+  color: var(--slider-radio-slide-icon-before-color);
+  content: var(--slider-radio-slide-icon-before-content);
 }
 
 /***** Slider Timeline *****/
@@ -2626,4 +2642,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 2nd Apr 2019 @ 7:26:25 AM */
+ Updated: 3rd Apr 2019 @ 10:00:07 AM */

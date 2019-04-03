@@ -1,4 +1,4 @@
-/*! animadio v0.2.12 | https://animadio.org | MIT License */
+/*! animadio v0.2.13 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -369,7 +369,7 @@ template {
   /* Main Colors */
   --black: rgb(15, 15, 15);
   --blue: RoyalBlue;
-  --brown: SaddleBrown;
+  --maroon: SaddleBrown;
   --gray: DimGray;
   --green: ForestGreen;
   --orange: DarkOrange;
@@ -1964,9 +1964,9 @@ pre > *::selection {
   --flex-width-wd: 100px;
 }
 
-/***** Flex, Colu & Row *****/
+/***** Flex, Column & Row *****/
 [class*="flex"],
-[class*="colu"],
+[class*="column"],
 [class*="row"] {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1975,8 +1975,8 @@ pre > *::selection {
       flex-wrap: wrap;
 }
 
-[class*="colu"] {
-  --colu-pad: 0 10px;
+[class*="column"] {
+  --column-pad: 0 10px;
 
   -webkit-box-orient: vertical;
 
@@ -1985,7 +1985,7 @@ pre > *::selection {
       -ms-flex-direction: column;
 
           flex-direction: column;
-  padding: var(--colu-pad);
+  padding: var(--column-pad);
 }
 
 [class*="row"] {
@@ -2001,7 +2001,7 @@ pre > *::selection {
   padding: var(--row-pad);
 }
 
-[class*="colu-"][class*="-reverse"] {
+[class*="column-"][class*="-reverse"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
@@ -2015,13 +2015,13 @@ pre > *::selection {
           flex-direction: row-reverse;
 }
 
-[class*="colu-"][class*="-nowrap"],
+[class*="column-"][class*="-nowrap"],
 [class*="row-"][class*="-nowrap"] {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
 
-[class*="colu-"][class*="-inverse"],
+[class*="column-"][class*="-inverse"],
 [class*="row-"][class*="-inverse"] {
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
@@ -5003,27 +5003,27 @@ pre > *::selection {
   color: var(--blue);
 }
 
-[class*="color-brown-"][class*="-base"],
-[class*="color-brown-"][class*="-global"] > *,
-*:hover > [class*="color-brown-"][class*="-into"],
-*:focus > [class*="color-brown-"][class*="-into"],
-*:active > [class*="color-brown-"][class*="-into"],
-[class*="color-brown-"][class*="-onto"]:hover,
-[class*="color-brown-"][class*="-onto"]:focus,
-[class*="color-brown-"][class*="-onto"]:active,
-[class*="color-brown-"][class*="-toall"]:hover > *,
-[class*="color-brown-"][class*="-toall"]:focus > *,
-[class*="color-brown-"][class*="-toall"]:active > *,
-[class*="color-brown-"][class*="-toone"] > *:hover,
-[class*="color-brown-"][class*="-toone"] > *:focus,
-[class*="color-brown-"][class*="-toone"] > *:active,
-[class*="color-brown-"][class*="-radio1"]:checked ~ [class*="color-brown-"][class*="-relay"] [class*="color-brown-"][class*="-target1"],
-[class*="color-brown-"][class*="-radio2"]:checked ~ [class*="color-brown-"][class*="-relay"] [class*="color-brown-"][class*="-target2"],
-[class*="color-brown-"][class*="-radio3"]:checked ~ [class*="color-brown-"][class*="-relay"] [class*="color-brown-"][class*="-target3"],
-[class*="color-brown-"][class*="-radio4"]:checked ~ [class*="color-brown-"][class*="-relay"] [class*="color-brown-"][class*="-target4"],
-[class*="color-brown-"][class*="-radio5"]:checked ~ [class*="color-brown-"][class*="-relay"] [class*="color-brown-"][class*="-target5"],
-[class*="color-brown-"][class*="-check"]:checked ~ [class*="color-brown-"][class*="-hub"] [class*="color-brown-"][class*="-goal"] {
-  color: var(--brown);
+[class*="color-maroon-"][class*="-base"],
+[class*="color-maroon-"][class*="-global"] > *,
+*:hover > [class*="color-maroon-"][class*="-into"],
+*:focus > [class*="color-maroon-"][class*="-into"],
+*:active > [class*="color-maroon-"][class*="-into"],
+[class*="color-maroon-"][class*="-onto"]:hover,
+[class*="color-maroon-"][class*="-onto"]:focus,
+[class*="color-maroon-"][class*="-onto"]:active,
+[class*="color-maroon-"][class*="-toall"]:hover > *,
+[class*="color-maroon-"][class*="-toall"]:focus > *,
+[class*="color-maroon-"][class*="-toall"]:active > *,
+[class*="color-maroon-"][class*="-toone"] > *:hover,
+[class*="color-maroon-"][class*="-toone"] > *:focus,
+[class*="color-maroon-"][class*="-toone"] > *:active,
+[class*="color-maroon-"][class*="-radio1"]:checked ~ [class*="color-maroon-"][class*="-relay"] [class*="color-maroon-"][class*="-target1"],
+[class*="color-maroon-"][class*="-radio2"]:checked ~ [class*="color-maroon-"][class*="-relay"] [class*="color-maroon-"][class*="-target2"],
+[class*="color-maroon-"][class*="-radio3"]:checked ~ [class*="color-maroon-"][class*="-relay"] [class*="color-maroon-"][class*="-target3"],
+[class*="color-maroon-"][class*="-radio4"]:checked ~ [class*="color-maroon-"][class*="-relay"] [class*="color-maroon-"][class*="-target4"],
+[class*="color-maroon-"][class*="-radio5"]:checked ~ [class*="color-maroon-"][class*="-relay"] [class*="color-maroon-"][class*="-target5"],
+[class*="color-maroon-"][class*="-check"]:checked ~ [class*="color-maroon-"][class*="-hub"] [class*="color-maroon-"][class*="-goal"] {
+  color: var(--maroon);
 }
 
 [class*="color-gray-"][class*="-base"],
@@ -5558,27 +5558,27 @@ pre > *::selection {
   background-color: var(--blue);
 }
 
-[class*="bg-brown-"][class*="-base"],
-[class*="bg-brown-"][class*="-global"] > *,
-*:hover > [class*="bg-brown-"][class*="-into"],
-*:focus > [class*="bg-brown-"][class*="-into"],
-*:active > [class*="bg-brown-"][class*="-into"],
-[class*="bg-brown-"][class*="-onto"]:hover,
-[class*="bg-brown-"][class*="-onto"]:focus,
-[class*="bg-brown-"][class*="-onto"]:active,
-[class*="bg-brown-"][class*="-toall"]:hover > *,
-[class*="bg-brown-"][class*="-toall"]:focus > *,
-[class*="bg-brown-"][class*="-toall"]:active > *,
-[class*="bg-brown-"][class*="-toone"] > *:hover,
-[class*="bg-brown-"][class*="-toone"] > *:focus,
-[class*="bg-brown-"][class*="-toone"] > *:active,
-[class*="bg-brown-"][class*="-radio1"]:checked ~ [class*="bg-brown-"][class*="-relay"] [class*="bg-brown-"][class*="-target1"],
-[class*="bg-brown-"][class*="-radio2"]:checked ~ [class*="bg-brown-"][class*="-relay"] [class*="bg-brown-"][class*="-target2"],
-[class*="bg-brown-"][class*="-radio3"]:checked ~ [class*="bg-brown-"][class*="-relay"] [class*="bg-brown-"][class*="-target3"],
-[class*="bg-brown-"][class*="-radio4"]:checked ~ [class*="bg-brown-"][class*="-relay"] [class*="bg-brown-"][class*="-target4"],
-[class*="bg-brown-"][class*="-radio5"]:checked ~ [class*="bg-brown-"][class*="-relay"] [class*="bg-brown-"][class*="-target5"],
-[class*="bg-brown-"][class*="-check"]:checked ~ [class*="bg-brown-"][class*="-hub"] [class*="bg-brown-"][class*="-goal"] {
-  background-color: var(--brown);
+[class*="bg-maroon-"][class*="-base"],
+[class*="bg-maroon-"][class*="-global"] > *,
+*:hover > [class*="bg-maroon-"][class*="-into"],
+*:focus > [class*="bg-maroon-"][class*="-into"],
+*:active > [class*="bg-maroon-"][class*="-into"],
+[class*="bg-maroon-"][class*="-onto"]:hover,
+[class*="bg-maroon-"][class*="-onto"]:focus,
+[class*="bg-maroon-"][class*="-onto"]:active,
+[class*="bg-maroon-"][class*="-toall"]:hover > *,
+[class*="bg-maroon-"][class*="-toall"]:focus > *,
+[class*="bg-maroon-"][class*="-toall"]:active > *,
+[class*="bg-maroon-"][class*="-toone"] > *:hover,
+[class*="bg-maroon-"][class*="-toone"] > *:focus,
+[class*="bg-maroon-"][class*="-toone"] > *:active,
+[class*="bg-maroon-"][class*="-radio1"]:checked ~ [class*="bg-maroon-"][class*="-relay"] [class*="bg-maroon-"][class*="-target1"],
+[class*="bg-maroon-"][class*="-radio2"]:checked ~ [class*="bg-maroon-"][class*="-relay"] [class*="bg-maroon-"][class*="-target2"],
+[class*="bg-maroon-"][class*="-radio3"]:checked ~ [class*="bg-maroon-"][class*="-relay"] [class*="bg-maroon-"][class*="-target3"],
+[class*="bg-maroon-"][class*="-radio4"]:checked ~ [class*="bg-maroon-"][class*="-relay"] [class*="bg-maroon-"][class*="-target4"],
+[class*="bg-maroon-"][class*="-radio5"]:checked ~ [class*="bg-maroon-"][class*="-relay"] [class*="bg-maroon-"][class*="-target5"],
+[class*="bg-maroon-"][class*="-check"]:checked ~ [class*="bg-maroon-"][class*="-hub"] [class*="bg-maroon-"][class*="-goal"] {
+  background-color: var(--maroon);
 }
 
 [class*="bg-gray-"][class*="-base"],
@@ -9272,8 +9272,10 @@ pre > *::selection {
 /***** Slider *****/
 .slider {
   --slider-text-align: center;
-  --slide-mar: auto;
+  --slide-bord: thin dotted var(--silver);
   --slide-height: 50vh;
+  --slide-mar: auto;
+  --slide-shabox: 0 0 5px;
   --slider-check-slide-anima: 10s linear infinite;
   --slider-controls-juco: center;
   --slider-controls-mar: 10px;
@@ -9284,9 +9286,10 @@ pre > *::selection {
   --slider-label-color: var(--white);
   --slider-label-pad: 10px 5px;
   --slider-check-slide-auto-icon-color: var(--blue);
-  --slider-check-slide-auto-icon-anima: 2s linear reverse infinite;
-  --slider-radio-slider-controls-icons-before-color: var(--blue);
-  --slider-radio-slider-controls-icons-before-content: "\f058";
+  --slider-check-slide-auto-icon-before: "\f28d";
+  --slider-check-slide-icon-before-color: var(--white);
+  --slider-radio-slide-icon-before-color: var(--blue);
+  --slider-radio-slide-icon-before-content: "\f058";
   --slider-timeline-height: 6px;
   --slider-timeline-bg: var(--blue);
   --slider-radio1-slider-timeline-width: 0;
@@ -9305,7 +9308,10 @@ pre > *::selection {
 /***** Slide *****/
 .slide {
   margin: var(--slide-mar);
+  border: var(--slide-bord);
   height: var(--slide-height);
+  -webkit-box-shadow: var(--slide-shabox);
+          box-shadow: var(--slide-shabox);
 }
 
 [class*="slider-check"]:checked ~ .slide {
@@ -9348,8 +9354,18 @@ pre > *::selection {
 
 [class*="slider-check"]:checked ~ .slider-controls [for="slide-auto"] > i {
   color: var(--slider-check-slide-auto-icon-color);
-  -webkit-animation: rotate var(--slider-check-slide-auto-icon-anima);
-          animation: rotate var(--slider-check-slide-auto-icon-anima);
+}
+
+[class*="slider-check"]:checked ~ .slider-controls [for="slide-auto"] > i::before {
+  content: var(--slider-check-slide-auto-icon-before);
+}
+
+[class*="slider-check"]:checked ~ .slider-controls [for="slide1"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide2"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide3"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide4"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide5"] > .fas::before {
+  color: var(--slider-check-slide-icon-before-color);
 }
 
 [class*="slider-radio1"]:checked ~ .slider-controls [for="slide1"] > i::before,
@@ -9357,8 +9373,8 @@ pre > *::selection {
 [class*="slider-radio3"]:checked ~ .slider-controls [for="slide3"] > i::before,
 [class*="slider-radio4"]:checked ~ .slider-controls [for="slide4"] > i::before,
 [class*="slider-radio5"]:checked ~ .slider-controls [for="slide5"] > i::before {
-  color: var(--slider-radio-slider-controls-icons-before-color);
-  content: var(--slider-radio-slider-controls-icons-before-content);
+  color: var(--slider-radio-slide-icon-before-color);
+  content: var(--slider-radio-slide-icon-before-content);
 }
 
 /***** Slider Timeline *****/
@@ -10094,4 +10110,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 2nd Apr 2019 @ 7:26:25 AM */
+ Updated: 3rd Apr 2019 @ 10:00:07 AM */

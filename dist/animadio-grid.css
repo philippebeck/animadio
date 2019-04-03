@@ -1,4 +1,4 @@
-/*! animadio v0.2.12 | https://animadio.org | MIT License */
+/*! animadio v0.2.13 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -369,7 +369,7 @@ template {
   /* Main Colors */
   --black: rgb(15, 15, 15);
   --blue: RoyalBlue;
-  --brown: SaddleBrown;
+  --maroon: SaddleBrown;
   --gray: DimGray;
   --green: ForestGreen;
   --orange: DarkOrange;
@@ -1579,9 +1579,9 @@ pre > *::selection {
   --flex-width-wd: 100px;
 }
 
-/***** Flex, Colu & Row *****/
+/***** Flex, Column & Row *****/
 [class*="flex"],
-[class*="colu"],
+[class*="column"],
 [class*="row"] {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1590,8 +1590,8 @@ pre > *::selection {
       flex-wrap: wrap;
 }
 
-[class*="colu"] {
-  --colu-pad: 0 10px;
+[class*="column"] {
+  --column-pad: 0 10px;
 
   -webkit-box-orient: vertical;
 
@@ -1600,7 +1600,7 @@ pre > *::selection {
       -ms-flex-direction: column;
 
           flex-direction: column;
-  padding: var(--colu-pad);
+  padding: var(--column-pad);
 }
 
 [class*="row"] {
@@ -1616,7 +1616,7 @@ pre > *::selection {
   padding: var(--row-pad);
 }
 
-[class*="colu-"][class*="-reverse"] {
+[class*="column-"][class*="-reverse"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
@@ -1630,13 +1630,13 @@ pre > *::selection {
           flex-direction: row-reverse;
 }
 
-[class*="colu-"][class*="-nowrap"],
+[class*="column-"][class*="-nowrap"],
 [class*="row-"][class*="-nowrap"] {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
 
-[class*="colu-"][class*="-inverse"],
+[class*="column-"][class*="-inverse"],
 [class*="row-"][class*="-inverse"] {
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
@@ -3313,4 +3313,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 2nd Apr 2019 @ 7:26:25 AM */
+ Updated: 3rd Apr 2019 @ 10:00:07 AM */
