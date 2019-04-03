@@ -1,4 +1,4 @@
-/*! animadio v0.2.14 | https://animadio.org | MIT License */
+/*! animadio v0.2.15 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -438,7 +438,6 @@ template {
   --rotateX: rotateX(-360deg);
   --rotateY: rotateY(-360deg);
   --scale: scale(0);
-  --scale-pull: scale(1.1);
   --scaleX: scaleX(0);
   --scaleY: scaleY(0);
   --skew: skew(180deg, 180deg);
@@ -511,20 +510,6 @@ template {
   to {
     -webkit-transform: var(--scale);
             transform: var(--scale);
-  }
-}
-
-@-webkit-keyframes scale-pull {
-  to {
-    -webkit-transform: var(--scale-pull);
-            transform: var(--scale-pull);
-  }
-}
-
-@keyframes scale-pull {
-  to {
-    -webkit-transform: var(--scale-pull);
-            transform: var(--scale-pull);
   }
 }
 
@@ -1756,22 +1741,29 @@ pre > *::selection {
 
 /********** BTN **********/
 
-[class*="btn"] {
-  --btn-bg: var(--purple);
-  --btn-bord-radius: 10px;
+[class*="btn"],
+[class*="button"] {
+  --btn-bg: var(--blue);
+  --btn-bord: solid medium var(--quartz);
   --btn-color: var(--white);
-  --btn-font-size: 1.2rem;
+  --btn-font-size: 1.5rem;
+  --btn-mar: 10px;
   --btn-pad: 5px 15px;
+  --btn-radius: 10px;
   --btn-text-align: center;
-  --btn-hover-bord-color: var(--silver);
-  --btn-hover-bord-radius: 0;
-  --btn-hover-bord-width: thin;
-  --btn-hover-bord-style: solid;
-  --btn-hover-scale: 1.2;
-  --btn-hover-shabox: 0 0 5px var(--gray);
+  --btn-hover-anima: tran-btn 100ms;
+  --btn-hover-bg: var(--blue);
+  --btn-hover-bord: outset medium var(--sapphire);
+  --btn-hover-color: var(--yellow);
+  --btn-hover-radius: 0;
+  --btn-hover-shabox: 5px 5px 5px var(--gray);
+  --btn-hover-transition: border 1s;
+  --check-button-transform: scale(0.9);
 
   display: inline-block;
-  border-radius: var(--btn-bord-radius);
+  margin: var(--btn-mar);
+  border: var(--btn-bord);
+  border-radius: var(--btn-radius);
   padding: var(--btn-pad);
   font-size: var(--btn-font-size);
   text-align: var(--btn-text-align);
@@ -1780,14 +1772,31 @@ pre > *::selection {
 }
 
 [class*="btn"]:hover,
+[class*="button"]:hover,
 [class*="btn"]:focus,
-[class*="btn"]:active {
-  border: var(--btn-hover-bord-style) var(--btn-hover-bord-width) var(--btn-hover-bord-color);
-  border-radius: var(--btn-hover-bord-radius);
+[class*="button"]:focus,
+[class*="btn"]:active,
+[class*="button"]:active {
+  border: var(--btn-hover-bord);
+  border-radius: var(--btn-hover-radius);
   -webkit-box-shadow: var(--btn-hover-shabox);
           box-shadow: var(--btn-hover-shabox);
-  -webkit-animation: scale-pull 1s alternate infinite;
-          animation: scale-pull 1s alternate infinite;
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-color);
+  -webkit-transition: var(--btn-hover-transition);
+  transition: var(--btn-hover-transition);
+  -webkit-animation: var(--btn-hover-anima);
+          animation: var(--btn-hover-anima);
+}
+
+[class*="check"]:checked ~ [class*="button"] {
+  -webkit-transform: var(--check-button-transform);
+          transform: var(--check-button-transform);
+}
+
+[class*="btn"] > i,
+[class*="button"] > i {
+  display: block;
 }
 
 
@@ -2637,4 +2646,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 3rd Apr 2019 @ 12:06:32 PM */
+ Updated: 3rd Apr 2019 @ 3:51:36 PM */

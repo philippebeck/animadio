@@ -1,4 +1,4 @@
-/*! animadio v0.2.14 | https://animadio.org | MIT License */
+/*! animadio v0.2.15 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -438,7 +438,6 @@ template {
   --rotateX: rotateX(-360deg);
   --rotateY: rotateY(-360deg);
   --scale: scale(0);
-  --scale-pull: scale(1.1);
   --scaleX: scaleX(0);
   --scaleY: scaleY(0);
   --skew: skew(180deg, 180deg);
@@ -511,20 +510,6 @@ template {
   to {
     -webkit-transform: var(--scale);
             transform: var(--scale);
-  }
-}
-
-@-webkit-keyframes scale-pull {
-  to {
-    -webkit-transform: var(--scale-pull);
-            transform: var(--scale-pull);
-  }
-}
-
-@keyframes scale-pull {
-  to {
-    -webkit-transform: var(--scale-pull);
-            transform: var(--scale-pull);
   }
 }
 
@@ -6812,4 +6797,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 3rd Apr 2019 @ 12:06:32 PM */
+ Updated: 3rd Apr 2019 @ 3:51:36 PM */
