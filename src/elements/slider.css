@@ -25,9 +25,10 @@
   --slider-label-color: var(--white);
   --slider-label-pad: 10px 5px;
   --slider-check-slide-auto-icon-color: var(--blue);
-  --slider-check-slide-auto-icon-anima: 2s linear reverse infinite;
-  --slider-radio-slider-controls-icons-before-color: var(--blue);
-  --slider-radio-slider-controls-icons-before-content: "\f058";
+  --slider-check-slide-auto-icon-before: "\f28d";
+  --slider-check-slide-icon-before-color: var(--white);
+  --slider-radio-slide-icon-before-color: var(--blue);
+  --slider-radio-slide-icon-before-content: "\f058";
   --slider-timeline-height: 6px;
   --slider-timeline-bg: var(--blue);
   --slider-radio1-slider-timeline-width: 0;
@@ -86,7 +87,18 @@
 
 [class*="slider-check"]:checked ~ .slider-controls [for="slide-auto"] > i {
   color: var(--slider-check-slide-auto-icon-color);
-  animation: rotate var(--slider-check-slide-auto-icon-anima);
+}
+
+[class*="slider-check"]:checked ~ .slider-controls [for="slide-auto"] > i::before {
+  content: var(--slider-check-slide-auto-icon-before);
+}
+
+[class*="slider-check"]:checked ~ .slider-controls [for="slide1"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide2"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide3"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide4"] > .fas::before,
+[class*="slider-check"]:checked ~ .slider-controls [for="slide5"] > .fas::before {
+  color: var(--slider-check-slide-icon-before-color);
 }
 
 [class*="slider-radio1"]:checked ~ .slider-controls [for="slide1"] > i::before,
@@ -94,8 +106,8 @@
 [class*="slider-radio3"]:checked ~ .slider-controls [for="slide3"] > i::before,
 [class*="slider-radio4"]:checked ~ .slider-controls [for="slide4"] > i::before,
 [class*="slider-radio5"]:checked ~ .slider-controls [for="slide5"] > i::before {
-  color: var(--slider-radio-slider-controls-icons-before-color);
-  content: var(--slider-radio-slider-controls-icons-before-content);
+  color: var(--slider-radio-slide-icon-before-color);
+  content: var(--slider-radio-slide-icon-before-content);
 }
 
 /***** Slider Timeline *****/
