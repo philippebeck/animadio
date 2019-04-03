@@ -1,4 +1,4 @@
-/*! animadio v0.2.15 | https://animadio.org | MIT License */
+/*! animadio v0.2.16 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -1751,10 +1751,10 @@ pre > *::selection {
   --btn-pad: 5px 15px;
   --btn-radius: 10px;
   --btn-text-align: center;
-  --btn-hover-anima: tran-btn 100ms;
+  --btn-hover-anima: none;
   --btn-hover-bg: var(--blue);
-  --btn-hover-bord: outset medium var(--sapphire);
-  --btn-hover-color: var(--yellow);
+  --btn-hover-bord: outset medium var(--obsidian);
+  --btn-hover-color: var(--silver);
   --btn-hover-radius: 0;
   --btn-hover-shabox: 5px 5px 5px var(--gray);
   --btn-hover-transition: border 1s;
@@ -1789,7 +1789,7 @@ pre > *::selection {
           animation: var(--btn-hover-anima);
 }
 
-[class*="check"]:checked ~ [class*="button"] {
+[class*="check"]:checked + [class*="button"] {
   -webkit-transform: var(--check-button-transform);
           transform: var(--check-button-transform);
 }
@@ -2646,4 +2646,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 3rd Apr 2019 @ 3:51:36 PM */
+ Updated: 3rd Apr 2019 @ 5:24:20 PM */
