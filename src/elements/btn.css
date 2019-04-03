@@ -31,11 +31,17 @@
 }
 
 [class*="btn"]:hover,
+[class*="button"]:hover,
 [class*="btn"]:focus,
-[class*="btn"]:active {
-  border: var(--btn-hover-bord-style) var(--btn-hover-bord-width) var(--btn-hover-bord-color);
-  border-radius: var(--btn-hover-bord-radius);
+[class*="button"]:focus,
+[class*="btn"]:active,
+[class*="button"]:active {
+  border: var(--btn-hover-bord);
+  border-radius: var(--btn-hover-radius);
   box-shadow: var(--btn-hover-shabox);
-  animation: scale-pull 1s alternate infinite;
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-color);
+  transition: var(--btn-hover-transition);
+  animation: var(--btn-hover-anima);
 }
 
