@@ -1,4 +1,4 @@
-/*! animadio v0.2.13 | https://animadio.org | MIT License */
+/*! animadio v0.2.14 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -1804,10 +1804,8 @@ pre > *::selection {
 /***** Slider *****/
 .slider {
   --slider-text-align: center;
-  --slide-bord: thin dotted var(--silver);
   --slide-height: 50vh;
   --slide-mar: auto;
-  --slide-shabox: 0 0 5px;
   --slider-check-slide-anima: 10s linear infinite;
   --slider-controls-juco: center;
   --slider-controls-mar: 10px;
@@ -1840,10 +1838,7 @@ pre > *::selection {
 /***** Slide *****/
 .slide {
   margin: var(--slide-mar);
-  border: var(--slide-bord);
   height: var(--slide-height);
-  -webkit-box-shadow: var(--slide-shabox);
-          box-shadow: var(--slide-shabox);
 }
 
 [class*="slider-check"]:checked ~ .slide {
@@ -2642,4 +2637,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 3rd Apr 2019 @ 10:00:07 AM */
+ Updated: 3rd Apr 2019 @ 12:06:32 PM */
