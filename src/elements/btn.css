@@ -45,7 +45,7 @@
   animation: var(--btn-hover-anima);
 }
 
-[class*="check"]:checked ~ [class*="button"] {
+[class*="check"]:checked + [class*="button"] {
   transform: var(--check-button-transform);
 }
 
