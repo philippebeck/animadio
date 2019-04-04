@@ -6978,10 +6978,9 @@ pre > *::selection {
   --bord-width-sm: thin;
   --bord-width-md: medium;
   --bord-width-lg: thick;
-  --bord-radius-slight: 10px;
-  --bord-radius-round: 50px;
+  --bord-radius-square: unset;
+  --bord-radius-round: 10px;
   --bord-radius-circle: 50%;
-  --bord-radius-ellipse: 50% / 25%;
 }
 
 /***** Bord *****/
@@ -7498,27 +7497,27 @@ pre > *::selection {
 }
 
 /***** Bord Radius *****/
-[class*="bord-"][class*="-slight-"][class*="-base"],
-[class*="bord-"][class*="-slight-"][class*="-global"] > *,
-*:hover > [class*="bord-"][class*="-slight-"][class*="-into"],
-*:focus > [class*="bord-"][class*="-slight-"][class*="-into"],
-*:active > [class*="bord-"][class*="-slight-"][class*="-into"],
-[class*="bord-"][class*="-slight-"][class*="-onto"]:hover,
-[class*="bord-"][class*="-slight-"][class*="-onto"]:focus,
-[class*="bord-"][class*="-slight-"][class*="-onto"]:active,
-[class*="bord-"][class*="-slight-"][class*="-toall"]:hover > *,
-[class*="bord-"][class*="-slight-"][class*="-toall"]:focus > *,
-[class*="bord-"][class*="-slight-"][class*="-toall"]:active > *,
-[class*="bord-"][class*="-slight-"][class*="-toone"] > *:hover,
-[class*="bord-"][class*="-slight-"][class*="-toone"] > *:focus,
-[class*="bord-"][class*="-slight-"][class*="-toone"] > *:active,
-[class*="bord-"][class*="-slight-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-slight-"][class*="-relay"] [class*="bord-"][class*="-slight-"][class*="-target1"],
-[class*="bord-"][class*="-slight-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-slight-"][class*="-relay"] [class*="bord-"][class*="-slight-"][class*="-target2"],
-[class*="bord-"][class*="-slight-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-slight-"][class*="-relay"] [class*="bord-"][class*="-slight-"][class*="-target3"],
-[class*="bord-"][class*="-slight-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-slight-"][class*="-relay"] [class*="bord-"][class*="-slight-"][class*="-target4"],
-[class*="bord-"][class*="-slight-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-slight-"][class*="-relay"] [class*="bord-"][class*="-slight-"][class*="-target5"],
-[class*="bord-"][class*="-slight-"][class*="-check"]:checked ~ [class*="bord-"][class*="-slight-"][class*="-hub"] [class*="bord-"][class*="-slight-"][class*="-goal"] {
-  border-radius: var(--bord-radius-slight);
+[class*="bord-"][class*="-square-"][class*="-base"],
+[class*="bord-"][class*="-square-"][class*="-global"] > *,
+*:hover > [class*="bord-"][class*="-square-"][class*="-into"],
+*:focus > [class*="bord-"][class*="-square-"][class*="-into"],
+*:active > [class*="bord-"][class*="-square-"][class*="-into"],
+[class*="bord-"][class*="-square-"][class*="-onto"]:hover,
+[class*="bord-"][class*="-square-"][class*="-onto"]:focus,
+[class*="bord-"][class*="-square-"][class*="-onto"]:active,
+[class*="bord-"][class*="-square-"][class*="-toall"]:hover > *,
+[class*="bord-"][class*="-square-"][class*="-toall"]:focus > *,
+[class*="bord-"][class*="-square-"][class*="-toall"]:active > *,
+[class*="bord-"][class*="-square-"][class*="-toone"] > *:hover,
+[class*="bord-"][class*="-square-"][class*="-toone"] > *:focus,
+[class*="bord-"][class*="-square-"][class*="-toone"] > *:active,
+[class*="bord-"][class*="-square-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-square-"][class*="-relay"] [class*="bord-"][class*="-square-"][class*="-target1"],
+[class*="bord-"][class*="-square-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-square-"][class*="-relay"] [class*="bord-"][class*="-square-"][class*="-target2"],
+[class*="bord-"][class*="-square-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-square-"][class*="-relay"] [class*="bord-"][class*="-square-"][class*="-target3"],
+[class*="bord-"][class*="-square-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-square-"][class*="-relay"] [class*="bord-"][class*="-square-"][class*="-target4"],
+[class*="bord-"][class*="-square-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-square-"][class*="-relay"] [class*="bord-"][class*="-square-"][class*="-target5"],
+[class*="bord-"][class*="-square-"][class*="-check"]:checked ~ [class*="bord-"][class*="-square-"][class*="-hub"] [class*="bord-"][class*="-square-"][class*="-goal"] {
+  border-radius: var(--bord-radius-square);
 }
 
 [class*="bord-"][class*="-round-"][class*="-base"],
@@ -7565,29 +7564,6 @@ pre > *::selection {
 [class*="bord-"][class*="-circle-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-circle-"][class*="-relay"] [class*="bord-"][class*="-circle-"][class*="-target5"],
 [class*="bord-"][class*="-circle-"][class*="-check"]:checked ~ [class*="bord-"][class*="-circle-"][class*="-hub"] [class*="bord-"][class*="-circle-"][class*="-goal"] {
   border-radius: var(--bord-radius-circle);
-}
-
-[class*="bord-"][class*="-ellipse-"][class*="-base"],
-[class*="bord-"][class*="-ellipse-"][class*="-global"] > *,
-*:hover > [class*="bord-"][class*="-ellipse-"][class*="-into"],
-*:focus > [class*="bord-"][class*="-ellipse-"][class*="-into"],
-*:active > [class*="bord-"][class*="-ellipse-"][class*="-into"],
-[class*="bord-"][class*="-ellipse-"][class*="-onto"]:hover,
-[class*="bord-"][class*="-ellipse-"][class*="-onto"]:focus,
-[class*="bord-"][class*="-ellipse-"][class*="-onto"]:active,
-[class*="bord-"][class*="-ellipse-"][class*="-toall"]:hover > *,
-[class*="bord-"][class*="-ellipse-"][class*="-toall"]:focus > *,
-[class*="bord-"][class*="-ellipse-"][class*="-toall"]:active > *,
-[class*="bord-"][class*="-ellipse-"][class*="-toone"] > *:hover,
-[class*="bord-"][class*="-ellipse-"][class*="-toone"] > *:focus,
-[class*="bord-"][class*="-ellipse-"][class*="-toone"] > *:active,
-[class*="bord-"][class*="-ellipse-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-ellipse-"][class*="-relay"] [class*="bord-"][class*="-ellipse-"][class*="-target1"],
-[class*="bord-"][class*="-ellipse-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-ellipse-"][class*="-relay"] [class*="bord-"][class*="-ellipse-"][class*="-target2"],
-[class*="bord-"][class*="-ellipse-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-ellipse-"][class*="-relay"] [class*="bord-"][class*="-ellipse-"][class*="-target3"],
-[class*="bord-"][class*="-ellipse-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-ellipse-"][class*="-relay"] [class*="bord-"][class*="-ellipse-"][class*="-target4"],
-[class*="bord-"][class*="-ellipse-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-ellipse-"][class*="-relay"] [class*="bord-"][class*="-ellipse-"][class*="-target5"],
-[class*="bord-"][class*="-ellipse-"][class*="-check"]:checked ~ [class*="bord-"][class*="-ellipse-"][class*="-hub"] [class*="bord-"][class*="-ellipse-"][class*="-goal"] {
-  border-radius: var(--bord-radius-ellipse);
 }
 
 
@@ -9282,10 +9258,9 @@ pre > *::selection {
   --btn-pad-md: 5px 10px;
   --btn-pad-lg: 10px 20px;
   --btn-pad-wd: 20px 50px;
-  --btn-radius-slight: 10px;
+  --btn-radius-square: unset;
   --btn-radius-round: 50px;
   --btn-radius-circle: 50%;
-  --btn-radius-ellipse: 50% / 25%;
 
   display: inline-block;
   margin: var(--btn-mar);
@@ -9547,9 +9522,9 @@ pre > *::selection {
 }
 
 /***** Buttons with Differents Shapes *****/
-[class*="btn"][class*="slight"],
-[class*="button"][class*="slight"] {
-  border-radius: var(--btn-radius-slight);
+[class*="btn"][class*="square"],
+[class*="button"][class*="square"] {
+  border-radius: var(--btn-radius-square);
 }
 
 [class*="btn"][class*="round"],
@@ -9562,10 +9537,7 @@ pre > *::selection {
   border-radius: var(--btn-radius-circle);
 }
 
-[class*="btn"][class*="ellipse"],
-[class*="button"][class*="ellipse"] {
-  border-radius: var(--btn-radius-ellipse);
-}
+
 /********** SLIDER **********/
 
 /*
@@ -10412,4 +10384,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 4th Apr 2019 @ 9:03:58 PM */
+ Updated: 4th Apr 2019 @ 10:29:50 PM */
