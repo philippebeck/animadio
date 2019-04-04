@@ -1,4 +1,4 @@
-/*! animadio v0.2.17 | https://animadio.org | MIT License */
+/*! animadio v0.2.18 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -369,9 +369,9 @@ template {
   /* Main Colors */
   --black: rgb(15, 15, 15);
   --blue: RoyalBlue;
-  --maroon: SaddleBrown;
   --gray: DimGray;
   --green: ForestGreen;
+  --maroon: SaddleBrown;
   --orange: DarkOrange;
   --purple: SlateBlue;
   --red: Crimson;
@@ -7310,27 +7310,27 @@ pre > *::selection {
   border-color: var(--blue);
 }
 
-[class*="bord-"][class*="-brown-"][class*="-base"],
-[class*="bord-"][class*="-brown-"][class*="-global"] > *,
-*:hover > [class*="bord-"][class*="-brown-"][class*="-into"],
-*:focus > [class*="bord-"][class*="-brown-"][class*="-into"],
-*:active > [class*="bord-"][class*="-brown-"][class*="-into"],
-[class*="bord-"][class*="-brown-"][class*="-onto"]:hover,
-[class*="bord-"][class*="-brown-"][class*="-onto"]:focus,
-[class*="bord-"][class*="-brown-"][class*="-onto"]:active,
-[class*="bord-"][class*="-brown-"][class*="-toall"]:hover > *,
-[class*="bord-"][class*="-brown-"][class*="-toall"]:focus > *,
-[class*="bord-"][class*="-brown-"][class*="-toall"]:active > *,
-[class*="bord-"][class*="-brown-"][class*="-toone"] > *:hover,
-[class*="bord-"][class*="-brown-"][class*="-toone"] > *:focus,
-[class*="bord-"][class*="-brown-"][class*="-toone"] > *:active,
-[class*="bord-"][class*="-brown-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-relay"] [class*="bord-"][class*="-brown-"][class*="-target1"],
-[class*="bord-"][class*="-brown-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-relay"] [class*="bord-"][class*="-brown-"][class*="-target2"],
-[class*="bord-"][class*="-brown-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-relay"] [class*="bord-"][class*="-brown-"][class*="-target3"],
-[class*="bord-"][class*="-brown-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-relay"] [class*="bord-"][class*="-brown-"][class*="-target4"],
-[class*="bord-"][class*="-brown-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-relay"] [class*="bord-"][class*="-brown-"][class*="-target5"],
-[class*="bord-"][class*="-brown-"][class*="-check"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-hub"] [class*="bord-"][class*="-brown-"][class*="-goal"] {
-  border-color: var(--brown);
+[class*="bord-"][class*="-maroon-"][class*="-base"],
+[class*="bord-"][class*="-maroon-"][class*="-global"] > *,
+*:hover > [class*="bord-"][class*="-maroon-"][class*="-into"],
+*:focus > [class*="bord-"][class*="-maroon-"][class*="-into"],
+*:active > [class*="bord-"][class*="-maroon-"][class*="-into"],
+[class*="bord-"][class*="-maroon-"][class*="-onto"]:hover,
+[class*="bord-"][class*="-maroon-"][class*="-onto"]:focus,
+[class*="bord-"][class*="-maroon-"][class*="-onto"]:active,
+[class*="bord-"][class*="-maroon-"][class*="-toall"]:hover > *,
+[class*="bord-"][class*="-maroon-"][class*="-toall"]:focus > *,
+[class*="bord-"][class*="-maroon-"][class*="-toall"]:active > *,
+[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:hover,
+[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:focus,
+[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:active,
+[class*="bord-"][class*="-maroon-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target1"],
+[class*="bord-"][class*="-maroon-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target2"],
+[class*="bord-"][class*="-maroon-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target3"],
+[class*="bord-"][class*="-maroon-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target4"],
+[class*="bord-"][class*="-maroon-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target5"],
+[class*="bord-"][class*="-maroon-"][class*="-check"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-hub"] [class*="bord-"][class*="-maroon-"][class*="-goal"] {
+  border-color: var(--maroon);
 }
 
 [class*="bord-"][class*="-gray-"][class*="-base"],
@@ -8782,28 +8782,28 @@ pre > *::selection {
           text-decoration-color: var(--blue);
 }
 
-[class*="deco-"][class*="-brown-"][class*="-base"],
-[class*="deco-"][class*="-brown-"][class*="-global"] > *,
-*:hover > [class*="deco-"][class*="-brown-"][class*="-into"],
-*:focus > [class*="deco-"][class*="-brown-"][class*="-into"],
-*:active > [class*="deco-"][class*="-brown-"][class*="-into"],
-[class*="deco-"][class*="-brown-"][class*="-onto"]:hover,
-[class*="deco-"][class*="-brown-"][class*="-onto"]:focus,
-[class*="deco-"][class*="-brown-"][class*="-onto"]:active,
-[class*="deco-"][class*="-brown-"][class*="-toall"]:hover > *,
-[class*="deco-"][class*="-brown-"][class*="-toall"]:focus > *,
-[class*="deco-"][class*="-brown-"][class*="-toall"]:active > *,
-[class*="deco-"][class*="-brown-"][class*="-toone"] > *:hover,
-[class*="deco-"][class*="-brown-"][class*="-toone"] > *:focus,
-[class*="deco-"][class*="-brown-"][class*="-toone"] > *:active,
-[class*="deco-"][class*="-brown-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-relay"] [class*="deco-"][class*="-brown-"][class*="-target1"],
-[class*="deco-"][class*="-brown-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-relay"] [class*="deco-"][class*="-brown-"][class*="-target2"],
-[class*="deco-"][class*="-brown-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-relay"] [class*="deco-"][class*="-brown-"][class*="-target3"],
-[class*="deco-"][class*="-brown-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-relay"] [class*="deco-"][class*="-brown-"][class*="-target4"],
-[class*="deco-"][class*="-brown-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-relay"] [class*="deco-"][class*="-brown-"][class*="-target5"],
-[class*="deco-"][class*="-brown-"][class*="-check"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-hub"] [class*="deco-"][class*="-brown-"][class*="-goal"] {
-  -webkit-text-decoration-color: var(--brown);
-          text-decoration-color: var(--brown);
+[class*="deco-"][class*="-maroon-"][class*="-base"],
+[class*="deco-"][class*="-maroon-"][class*="-global"] > *,
+*:hover > [class*="deco-"][class*="-maroon-"][class*="-into"],
+*:focus > [class*="deco-"][class*="-maroon-"][class*="-into"],
+*:active > [class*="deco-"][class*="-maroon-"][class*="-into"],
+[class*="deco-"][class*="-maroon-"][class*="-onto"]:hover,
+[class*="deco-"][class*="-maroon-"][class*="-onto"]:focus,
+[class*="deco-"][class*="-maroon-"][class*="-onto"]:active,
+[class*="deco-"][class*="-maroon-"][class*="-toall"]:hover > *,
+[class*="deco-"][class*="-maroon-"][class*="-toall"]:focus > *,
+[class*="deco-"][class*="-maroon-"][class*="-toall"]:active > *,
+[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:hover,
+[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:focus,
+[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:active,
+[class*="deco-"][class*="-maroon-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target1"],
+[class*="deco-"][class*="-maroon-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target2"],
+[class*="deco-"][class*="-maroon-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target3"],
+[class*="deco-"][class*="-maroon-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target4"],
+[class*="deco-"][class*="-maroon-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target5"],
+[class*="deco-"][class*="-maroon-"][class*="-check"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-hub"] [class*="deco-"][class*="-maroon-"][class*="-goal"] {
+  -webkit-text-decoration-color: var(--maroon);
+          text-decoration-color: var(--maroon);
 }
 
 [class*="deco-"][class*="-gray-"][class*="-base"],
@@ -9211,6 +9211,20 @@ pre > *::selection {
 
 /********** BTN **********/
 
+/*
+1. Buttons
+2. Buttons Hover, Focus & Active
+3. Buttons Active & Checked
+4. Buttons Icons
+5. Buttons with Main Colors
+6. Buttons with Pale Colors
+7. Buttons with Brand Colors
+8. Buttons with Transparent Colors
+9. Buttons with Differents Sizes
+10. Buttons with Differents Shapes
+*/
+
+/***** Buttons *****/
 [class*="btn"],
 [class*="button"] {
   --btn-bg: var(--blue);
@@ -9218,7 +9232,7 @@ pre > *::selection {
   --btn-color: var(--white);
   --btn-font-size: 1.5rem;
   --btn-mar: 10px;
-  --btn-pad: 5px 15px;
+  --btn-pad: 5px 10px;
   --btn-radius: 10px;
   --btn-text-align: center;
   --btn-hover-anima: none;
@@ -9229,6 +9243,46 @@ pre > *::selection {
   --btn-hover-shabox: 5px 5px 5px var(--gray);
   --btn-hover-transition: border 1s;
   --check-button-transform: scale(0.9);
+  --btn-color-black: var(--white);
+  --btn-color-blue: var(--white);
+  --btn-color-gray: var(--white);
+  --btn-color-green: var(--white);
+  --btn-color-maroon: var(--white);
+  --btn-color-orange: var(--white);
+  --btn-color-purple: var(--white);
+  --btn-color-red: var(--white);
+  --btn-color-yellow: var(--blue);
+  --btn-color-choco: var(--white);
+  --btn-color-jade: var(--violet);
+  --btn-color-khaki: var(--sky);
+  --btn-color-salmon: var(--white);
+  --btn-color-silver: var(--black);
+  --btn-color-sky: var(--white);
+  --btn-color-tomato: var(--white);
+  --btn-color-violet: var(--white);
+  --btn-color-white: var(--black);
+  --btn-color-fb: var(--white);
+  --btn-color-github: var(--white);
+  --btn-color-linkedin: var(--white);
+  --btn-color-npm: var(--white);
+  --btn-color-stack: var(--white);
+  --btn-color-tw: var(--white);
+  --btn-color-amthyst: var(--white);
+  --btn-color-citrine: var(--sky);
+  --btn-color-quartz: var(--black);
+  --btn-color-emerald: var(--violet);
+  --btn-color-obsidian: var(--white);
+  --btn-color-ruby: var(--white);
+  --btn-color-sapphire: var(--khaki);
+  --btn-pad-tn: 1px 2px;
+  --btn-pad-sm: 2px 5px;
+  --btn-pad-md: 5px 10px;
+  --btn-pad-lg: 10px 20px;
+  --btn-pad-wd: 20px 50px;
+  --btn-radius-slight: 10px;
+  --btn-radius-round: 50px;
+  --btn-radius-circle: 50%;
+  --btn-radius-ellipse: 50% / 25%;
 
   display: inline-block;
   margin: var(--btn-mar);
@@ -9241,6 +9295,7 @@ pre > *::selection {
   color: var(--btn-color);
 }
 
+/***** Buttons Hover, Focus & Active *****/
 [class*="btn"]:hover,
 [class*="button"]:hover,
 [class*="btn"]:focus,
@@ -9259,19 +9314,255 @@ pre > *::selection {
           animation: var(--btn-hover-anima);
 }
 
+/***** Buttons Active & Checked *****/
 [class*="btn"]:active,
-[class*="button"]:active,
 [class*="check"]:checked + [class*="button"] {
   -webkit-transform: var(--check-button-transform);
           transform: var(--check-button-transform);
 }
 
+/***** Buttons Icons *****/
 [class*="btn"] > i,
 [class*="button"] > i {
   display: block;
 }
 
+/***** Buttons with Main Colors *****/
+[class*="btn"][class*="black"],
+[class*="button"][class*="black"] {
+  background-color: var(--black);
+  color: var(--btn-color-black);
+}
 
+[class*="btn"][class*="blue"],
+[class*="button"][class*="blue"] {
+  background-color: var(--blue);
+  color: var(--btn-color-blue);
+}
+
+[class*="btn"][class*="gray"],
+[class*="button"][class*="gray"] {
+  background-color: var(--gray);
+  color: var(--btn-color-gray);
+}
+
+[class*="btn"][class*="green"],
+[class*="button"][class*="green"] {
+  background-color: var(--green);
+  color: var(--btn-color-green);
+}
+
+[class*="btn"][class*="maroon"],
+[class*="button"][class*="maroon"] {
+  background-color: var(--maroon);
+  color: var(--btn-color-maroon);
+}
+
+[class*="btn"][class*="orange"],
+[class*="button"][class*="orange"] {
+  background-color: var(--orange);
+  color: var(--btn-color-orange);
+}
+
+[class*="btn"][class*="purple"],
+[class*="button"][class*="purple"] {
+  background-color: var(--purple);
+  color: var(--btn-color-purple);
+}
+
+[class*="btn"][class*="red"],
+[class*="button"][class*="red"] {
+  background-color: var(--red);
+  color: var(--btn-color-red);
+}
+
+[class*="btn"][class*="yellow"],
+[class*="button"][class*="yellow"] {
+  background-color: var(--yellow);
+  color: var(--btn-color-yellow);
+}
+
+/***** Buttons with Pale Colors *****/
+[class*="btn"][class*="choco"],
+[class*="button"][class*="choco"] {
+  background-color: var(--choco);
+  color: var(--btn-color-choco);
+}
+
+[class*="btn"][class*="jade"],
+[class*="button"][class*="jade"] {
+  background-color: var(--jade);
+  color: var(--btn-color-jade);
+}
+
+[class*="btn"][class*="khaki"],
+[class*="button"][class*="khaki"] {
+  background-color: var(--khaki);
+  color: var(--btn-color-khaki);
+}
+
+[class*="btn"][class*="salmon"],
+[class*="button"][class*="salmon"] {
+  background-color: var(--salmon);
+  color: var(--btn-color-salmon);
+}
+
+[class*="btn"][class*="silver"],
+[class*="button"][class*="silver"] {
+  background-color: var(--silver);
+  color: var(--btn-color-silver);
+}
+
+[class*="btn"][class*="sky"],
+[class*="button"][class*="sky"] {
+  background-color: var(--sky);
+  color: var(--btn-color-sky);
+}
+
+[class*="btn"][class*="tomato"],
+[class*="button"][class*="tomato"] {
+  background-color: var(--tomato);
+  color: var(--btn-color-tomato);
+}
+
+[class*="btn"][class*="violet"],
+[class*="button"][class*="violet"] {
+  background-color: var(--violet);
+  color: var(--btn-color-violet);
+}
+
+[class*="btn"][class*="white"],
+[class*="button"][class*="white"] {
+  background-color: var(--white);
+  color: var(--btn-color-white);
+}
+
+/***** Buttons with Brand Colors *****/
+[class*="btn"][class*="fb"],
+[class*="button"][class*="fb"] {
+  background-color: var(--facebook);
+  color: var(--btn-color-fb);
+}
+
+[class*="btn"][class*="github"],
+[class*="button"][class*="github"] {
+  background-color: var(--github);
+  color: var(--btn-color-github);
+}
+
+[class*="btn"][class*="Linkedin"],
+[class*="button"][class*="linkedin"] {
+  background-color: var(--linkedin);
+  color: var(--btn-color-linkedin);
+}
+
+[class*="btn"][class*="npm"],
+[class*="button"][class*="npm"] {
+  background-color: var(--npm);
+  color: var(--btn-color-npm);
+}
+
+[class*="btn"][class*="stack"],
+[class*="button"][class*="stack"] {
+  background-color: var(--stackoverflow);
+  color: var(--btn-color-stack);
+}
+
+[class*="btn"][class*="tw"],
+[class*="button"][class*="tw"] {
+  background-color: var(--twitter);
+  color: var(--btn-color-tw);
+}
+
+/***** Buttons with Transparent Colors *****/
+[class*="btn"][class*="amethyst"],
+[class*="button"][class*="amethyst"] {
+  background-color: var(--amethyst);
+  color: var(--btn-color-amthyst);
+}
+
+[class*="btn"][class*="citrine"],
+[class*="button"][class*="citrine"] {
+  background-color: var(--citrine);
+  color: var(--btn-color-citrine);
+}
+
+[class*="btn"][class*="quartz"],
+[class*="button"][class*="quartz"] {
+  background-color: var(--quartz);
+  color: var(--btn-color-quartz);
+}
+
+[class*="btn"][class*="emerald"],
+[class*="button"][class*="emerald"] {
+  background-color: var(--emerald);
+  color: var(--btn-color-emerald);
+}
+
+[class*="btn"][class*="obsidian"],
+[class*="button"][class*="obsidian"] {
+  background-color: var(--obsidian);
+  color: var(--btn-color-obsidian);
+}
+
+[class*="btn"][class*="ruby"],
+[class*="button"][class*="ruby"] {
+  background-color: var(--ruby);
+  color: var(--btn-color-ruby);
+}
+
+[class*="btn"][class*="sapphire"],
+[class*="button"][class*="sapphire"] {
+  background-color: var(--sapphire);
+  color: var(--btn-color-sapphire);
+}
+
+/***** Buttons with Differents Sizes *****/
+[class*="btn"][class*="tn"],
+[class*="button"][class*="tn"] {
+  padding: var(--btn-pad-tn);
+}
+
+[class*="btn"][class*="sm"],
+[class*="button"][class*="sm"] {
+  padding: var(--btn-pad-sm);
+}
+
+[class*="btn"][class*="md"],
+[class*="button"][class*="md"] {
+  padding: var(--btn-pad-md);
+}
+
+[class*="btn"][class*="lg"],
+[class*="button"][class*="lg"] {
+  padding: var(--btn-pad-lg);
+}
+
+[class*="btn"][class*="wd"],
+[class*="button"][class*="wd"] {
+  padding: var(--btn-pad-wd);
+}
+
+/***** Buttons with Differents Shapes *****/
+[class*="btn"][class*="slight"],
+[class*="button"][class*="slight"] {
+  border-radius: var(--btn-radius-slight);
+}
+
+[class*="btn"][class*="round"],
+[class*="button"][class*="round"] {
+  border-radius: var(--btn-radius-round);
+}
+
+[class*="btn"][class*="circle"],
+[class*="button"][class*="circle"] {
+  border-radius: var(--btn-radius-circle);
+}
+
+[class*="btn"][class*="ellipse"],
+[class*="button"][class*="ellipse"] {
+  border-radius: var(--btn-radius-ellipse);
+}
 /********** SLIDER **********/
 
 /*
@@ -10118,4 +10409,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 3rd Apr 2019 @ 6:04:17 PM */
+ Updated: 4th Apr 2019 @ 8:08:10 AM */

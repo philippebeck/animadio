@@ -1,4 +1,4 @@
-/*! animadio v0.2.17 | https://animadio.org | MIT License */
+/*! animadio v0.2.18 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -369,9 +369,9 @@ template {
   /* Main Colors */
   --black: rgb(15, 15, 15);
   --blue: RoyalBlue;
-  --maroon: SaddleBrown;
   --gray: DimGray;
   --green: ForestGreen;
+  --maroon: SaddleBrown;
   --orange: DarkOrange;
   --purple: SlateBlue;
   --red: Crimson;
@@ -5133,27 +5133,27 @@ pre > *::selection {
   border-color: var(--blue);
 }
 
-[class*="bord-"][class*="-brown-"][class*="-base"],
-[class*="bord-"][class*="-brown-"][class*="-global"] > *,
-*:hover > [class*="bord-"][class*="-brown-"][class*="-into"],
-*:focus > [class*="bord-"][class*="-brown-"][class*="-into"],
-*:active > [class*="bord-"][class*="-brown-"][class*="-into"],
-[class*="bord-"][class*="-brown-"][class*="-onto"]:hover,
-[class*="bord-"][class*="-brown-"][class*="-onto"]:focus,
-[class*="bord-"][class*="-brown-"][class*="-onto"]:active,
-[class*="bord-"][class*="-brown-"][class*="-toall"]:hover > *,
-[class*="bord-"][class*="-brown-"][class*="-toall"]:focus > *,
-[class*="bord-"][class*="-brown-"][class*="-toall"]:active > *,
-[class*="bord-"][class*="-brown-"][class*="-toone"] > *:hover,
-[class*="bord-"][class*="-brown-"][class*="-toone"] > *:focus,
-[class*="bord-"][class*="-brown-"][class*="-toone"] > *:active,
-[class*="bord-"][class*="-brown-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-relay"] [class*="bord-"][class*="-brown-"][class*="-target1"],
-[class*="bord-"][class*="-brown-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-relay"] [class*="bord-"][class*="-brown-"][class*="-target2"],
-[class*="bord-"][class*="-brown-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-relay"] [class*="bord-"][class*="-brown-"][class*="-target3"],
-[class*="bord-"][class*="-brown-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-relay"] [class*="bord-"][class*="-brown-"][class*="-target4"],
-[class*="bord-"][class*="-brown-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-relay"] [class*="bord-"][class*="-brown-"][class*="-target5"],
-[class*="bord-"][class*="-brown-"][class*="-check"]:checked ~ [class*="bord-"][class*="-brown-"][class*="-hub"] [class*="bord-"][class*="-brown-"][class*="-goal"] {
-  border-color: var(--brown);
+[class*="bord-"][class*="-maroon-"][class*="-base"],
+[class*="bord-"][class*="-maroon-"][class*="-global"] > *,
+*:hover > [class*="bord-"][class*="-maroon-"][class*="-into"],
+*:focus > [class*="bord-"][class*="-maroon-"][class*="-into"],
+*:active > [class*="bord-"][class*="-maroon-"][class*="-into"],
+[class*="bord-"][class*="-maroon-"][class*="-onto"]:hover,
+[class*="bord-"][class*="-maroon-"][class*="-onto"]:focus,
+[class*="bord-"][class*="-maroon-"][class*="-onto"]:active,
+[class*="bord-"][class*="-maroon-"][class*="-toall"]:hover > *,
+[class*="bord-"][class*="-maroon-"][class*="-toall"]:focus > *,
+[class*="bord-"][class*="-maroon-"][class*="-toall"]:active > *,
+[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:hover,
+[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:focus,
+[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:active,
+[class*="bord-"][class*="-maroon-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target1"],
+[class*="bord-"][class*="-maroon-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target2"],
+[class*="bord-"][class*="-maroon-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target3"],
+[class*="bord-"][class*="-maroon-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target4"],
+[class*="bord-"][class*="-maroon-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target5"],
+[class*="bord-"][class*="-maroon-"][class*="-check"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-hub"] [class*="bord-"][class*="-maroon-"][class*="-goal"] {
+  border-color: var(--maroon);
 }
 
 [class*="bord-"][class*="-gray-"][class*="-base"],
@@ -6605,28 +6605,28 @@ pre > *::selection {
           text-decoration-color: var(--blue);
 }
 
-[class*="deco-"][class*="-brown-"][class*="-base"],
-[class*="deco-"][class*="-brown-"][class*="-global"] > *,
-*:hover > [class*="deco-"][class*="-brown-"][class*="-into"],
-*:focus > [class*="deco-"][class*="-brown-"][class*="-into"],
-*:active > [class*="deco-"][class*="-brown-"][class*="-into"],
-[class*="deco-"][class*="-brown-"][class*="-onto"]:hover,
-[class*="deco-"][class*="-brown-"][class*="-onto"]:focus,
-[class*="deco-"][class*="-brown-"][class*="-onto"]:active,
-[class*="deco-"][class*="-brown-"][class*="-toall"]:hover > *,
-[class*="deco-"][class*="-brown-"][class*="-toall"]:focus > *,
-[class*="deco-"][class*="-brown-"][class*="-toall"]:active > *,
-[class*="deco-"][class*="-brown-"][class*="-toone"] > *:hover,
-[class*="deco-"][class*="-brown-"][class*="-toone"] > *:focus,
-[class*="deco-"][class*="-brown-"][class*="-toone"] > *:active,
-[class*="deco-"][class*="-brown-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-relay"] [class*="deco-"][class*="-brown-"][class*="-target1"],
-[class*="deco-"][class*="-brown-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-relay"] [class*="deco-"][class*="-brown-"][class*="-target2"],
-[class*="deco-"][class*="-brown-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-relay"] [class*="deco-"][class*="-brown-"][class*="-target3"],
-[class*="deco-"][class*="-brown-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-relay"] [class*="deco-"][class*="-brown-"][class*="-target4"],
-[class*="deco-"][class*="-brown-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-relay"] [class*="deco-"][class*="-brown-"][class*="-target5"],
-[class*="deco-"][class*="-brown-"][class*="-check"]:checked ~ [class*="deco-"][class*="-brown-"][class*="-hub"] [class*="deco-"][class*="-brown-"][class*="-goal"] {
-  -webkit-text-decoration-color: var(--brown);
-          text-decoration-color: var(--brown);
+[class*="deco-"][class*="-maroon-"][class*="-base"],
+[class*="deco-"][class*="-maroon-"][class*="-global"] > *,
+*:hover > [class*="deco-"][class*="-maroon-"][class*="-into"],
+*:focus > [class*="deco-"][class*="-maroon-"][class*="-into"],
+*:active > [class*="deco-"][class*="-maroon-"][class*="-into"],
+[class*="deco-"][class*="-maroon-"][class*="-onto"]:hover,
+[class*="deco-"][class*="-maroon-"][class*="-onto"]:focus,
+[class*="deco-"][class*="-maroon-"][class*="-onto"]:active,
+[class*="deco-"][class*="-maroon-"][class*="-toall"]:hover > *,
+[class*="deco-"][class*="-maroon-"][class*="-toall"]:focus > *,
+[class*="deco-"][class*="-maroon-"][class*="-toall"]:active > *,
+[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:hover,
+[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:focus,
+[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:active,
+[class*="deco-"][class*="-maroon-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target1"],
+[class*="deco-"][class*="-maroon-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target2"],
+[class*="deco-"][class*="-maroon-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target3"],
+[class*="deco-"][class*="-maroon-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target4"],
+[class*="deco-"][class*="-maroon-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target5"],
+[class*="deco-"][class*="-maroon-"][class*="-check"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-hub"] [class*="deco-"][class*="-maroon-"][class*="-goal"] {
+  -webkit-text-decoration-color: var(--maroon);
+          text-decoration-color: var(--maroon);
 }
 
 [class*="deco-"][class*="-gray-"][class*="-base"],
@@ -6799,4 +6799,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 3rd Apr 2019 @ 6:04:17 PM */
+ Updated: 4th Apr 2019 @ 8:08:10 AM */
