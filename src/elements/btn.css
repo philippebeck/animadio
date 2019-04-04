@@ -68,10 +68,9 @@
   --btn-pad-md: 5px 10px;
   --btn-pad-lg: 10px 20px;
   --btn-pad-wd: 20px 50px;
-  --btn-radius-slight: 10px;
+  --btn-radius-square: unset;
   --btn-radius-round: 50px;
   --btn-radius-circle: 50%;
-  --btn-radius-ellipse: 50% / 25%;
 
   display: inline-block;
   margin: var(--btn-mar);
@@ -329,9 +328,9 @@
 }
 
 /***** Buttons with Differents Shapes *****/
-[class*="btn"][class*="slight"],
-[class*="button"][class*="slight"] {
-  border-radius: var(--btn-radius-slight);
+[class*="btn"][class*="square"],
+[class*="button"][class*="square"] {
+  border-radius: var(--btn-radius-square);
 }
 
 [class*="btn"][class*="round"],
@@ -344,7 +343,3 @@
   border-radius: var(--btn-radius-circle);
 }
 
-[class*="btn"][class*="ellipse"],
-[class*="button"][class*="ellipse"] {
-  border-radius: var(--btn-radius-ellipse);
-}
