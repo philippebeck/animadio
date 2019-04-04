@@ -112,3 +112,192 @@
   display: block;
 }
 
+/***** Buttons with Main Colors *****/
+[class*="btn"][class*="black"],
+[class*="button"][class*="black"] {
+  background-color: var(--black);
+  color: var(--btn-color-black);
+}
+
+[class*="btn"][class*="blue"],
+[class*="button"][class*="blue"] {
+  background-color: var(--blue);
+  color: var(--btn-color-blue);
+}
+
+[class*="btn"][class*="gray"],
+[class*="button"][class*="gray"] {
+  background-color: var(--gray);
+  color: var(--btn-color-gray);
+}
+
+[class*="btn"][class*="green"],
+[class*="button"][class*="green"] {
+  background-color: var(--green);
+  color: var(--btn-color-green);
+}
+
+[class*="btn"][class*="maroon"],
+[class*="button"][class*="maroon"] {
+  background-color: var(--maroon);
+  color: var(--btn-color-maroon);
+}
+
+[class*="btn"][class*="orange"],
+[class*="button"][class*="orange"] {
+  background-color: var(--orange);
+  color: var(--btn-color-orange);
+}
+
+[class*="btn"][class*="purple"],
+[class*="button"][class*="purple"] {
+  background-color: var(--purple);
+  color: var(--btn-color-purple);
+}
+
+[class*="btn"][class*="red"],
+[class*="button"][class*="red"] {
+  background-color: var(--red);
+  color: var(--btn-color-red);
+}
+
+[class*="btn"][class*="yellow"],
+[class*="button"][class*="yellow"] {
+  background-color: var(--yellow);
+  color: var(--btn-color-yellow);
+}
+
+/***** Buttons with Pale Colors *****/
+[class*="btn"][class*="choco"],
+[class*="button"][class*="choco"] {
+  background-color: var(--choco);
+  color: var(--btn-color-choco);
+}
+
+[class*="btn"][class*="jade"],
+[class*="button"][class*="jade"] {
+  background-color: var(--jade);
+  color: var(--btn-color-jade);
+}
+
+[class*="btn"][class*="khaki"],
+[class*="button"][class*="khaki"] {
+  background-color: var(--khaki);
+  color: var(--btn-color-khaki);
+}
+
+[class*="btn"][class*="salmon"],
+[class*="button"][class*="salmon"] {
+  background-color: var(--salmon);
+  color: var(--btn-color-salmon);
+}
+
+[class*="btn"][class*="silver"],
+[class*="button"][class*="silver"] {
+  background-color: var(--silver);
+  color: var(--btn-color-silver);
+}
+
+[class*="btn"][class*="sky"],
+[class*="button"][class*="sky"] {
+  background-color: var(--sky);
+  color: var(--btn-color-sky);
+}
+
+[class*="btn"][class*="tomato"],
+[class*="button"][class*="tomato"] {
+  background-color: var(--tomato);
+  color: var(--btn-color-tomato);
+}
+
+[class*="btn"][class*="violet"],
+[class*="button"][class*="violet"] {
+  background-color: var(--violet);
+  color: var(--btn-color-violet);
+}
+
+[class*="btn"][class*="white"],
+[class*="button"][class*="white"] {
+  background-color: var(--white);
+  color: var(--btn-color-white);
+}
+
+/***** Buttons with Brand Colors *****/
+[class*="btn"][class*="fb"],
+[class*="button"][class*="fb"] {
+  background-color: var(--facebook);
+  color: var(--btn-color-fb);
+}
+
+[class*="btn"][class*="github"],
+[class*="button"][class*="github"] {
+  background-color: var(--github);
+  color: var(--btn-color-github);
+}
+
+[class*="btn"][class*="Linkedin"],
+[class*="button"][class*="linkedin"] {
+  background-color: var(--linkedin);
+  color: var(--btn-color-linkedin);
+}
+
+[class*="btn"][class*="npm"],
+[class*="button"][class*="npm"] {
+  background-color: var(--npm);
+  color: var(--btn-color-npm);
+}
+
+[class*="btn"][class*="stack"],
+[class*="button"][class*="stack"] {
+  background-color: var(--stackoverflow);
+  color: var(--btn-color-stack);
+}
+
+[class*="btn"][class*="tw"],
+[class*="button"][class*="tw"] {
+  background-color: var(--twitter);
+  color: var(--btn-color-tw);
+}
+
+/***** Buttons with Transparent Colors *****/
+[class*="btn"][class*="amethyst"],
+[class*="button"][class*="amethyst"] {
+  background-color: var(--amethyst);
+  color: var(--btn-color-amthyst);
+}
+
+[class*="btn"][class*="citrine"],
+[class*="button"][class*="citrine"] {
+  background-color: var(--citrine);
+  color: var(--btn-color-citrine);
+}
+
+[class*="btn"][class*="quartz"],
+[class*="button"][class*="quartz"] {
+  background-color: var(--quartz);
+  color: var(--btn-color-quartz);
+}
+
+[class*="btn"][class*="emerald"],
+[class*="button"][class*="emerald"] {
+  background-color: var(--emerald);
+  color: var(--btn-color-emerald);
+}
+
+[class*="btn"][class*="obsidian"],
+[class*="button"][class*="obsidian"] {
+  background-color: var(--obsidian);
+  color: var(--btn-color-obsidian);
+}
+
+[class*="btn"][class*="ruby"],
+[class*="button"][class*="ruby"] {
+  background-color: var(--ruby);
+  color: var(--btn-color-ruby);
+}
+
+[class*="btn"][class*="sapphire"],
+[class*="button"][class*="sapphire"] {
+  background-color: var(--sapphire);
+  color: var(--btn-color-sapphire);
+}
