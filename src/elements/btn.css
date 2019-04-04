@@ -84,6 +84,7 @@
   color: var(--btn-color);
 }
 
+/***** Buttons Hover, Focus & Active *****/
 [class*="btn"]:hover,
 [class*="button"]:hover,
 [class*="btn"]:focus,
@@ -99,12 +100,13 @@
   animation: var(--btn-hover-anima);
 }
 
+/***** Buttons Active & Checked *****/
 [class*="btn"]:active,
-[class*="button"]:active,
 [class*="check"]:checked + [class*="button"] {
   transform: var(--check-button-transform);
 }
 
+/***** Buttons Icons *****/
 [class*="btn"] > i,
 [class*="button"] > i {
   display: block;
