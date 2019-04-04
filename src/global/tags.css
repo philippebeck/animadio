@@ -20,8 +20,8 @@ html {
 
 body {
   --global-font-family: serif;
-  --global-line-height: 1.5;
-  --global-font-size: 1.5rem;
+  --global-line-height: 1.6;
+  --global-font-size: 1.8rem;
 
   margin: 0;
   padding: 0;
@@ -50,36 +50,36 @@ h6 {
 }
 
 h1 {
-  --title-wd-font-size: 3.5rem;
-  --title-wd-text-transform: uppercase;
+  --title-wd-font-size: 5rem;
+  --title-wd-text-transform: capitalize;
 
   font-size: var(--title-wd-font-size);
   text-transform: var(--title-wd-text-transform);
 }
 
 h2 {
-  --title-lg-font-size: 3rem;
-  --title-lg-text-transform: capitalize;
+  --title-lg-font-size: 3.5rem;
+  --title-lg-text-transform: none;
 
   font-size: var(--title-lg-font-size);
   text-transform: var(--title-lg-text-transform);
 }
 
 h3 {
-  --title-md-font-size: 2.5rem;
+  --title-md-font-size: 3rem;
 
   font-size: var(--title-md-font-size);
 }
 
 h4 {
-  --title-sm-font-size: 2rem;
+  --title-sm-font-size: 2.5rem;
 
   font-size: var(--title-sm-font-size);
 }
 
 h5,
 h6 {
-  --title-tn-font-size: 1.5rem;
+  --title-tn-font-size: 2rem;
 
   font-size: var(--title-tn-font-size);
 }
@@ -136,12 +136,15 @@ label {
 
 /***** Code *****/
 pre {
+  --pre-font-family: monospace;
+  --pre-overflow: scroll;
   --pre-pad: 10px;
   --pre-selection-bg: var(--jade);
   --pre-selection-color: var(--black);
 
-  overflow: scroll;
+  overflow: var(--pre-overflow);
   padding: var(--pre-pad);
+  font-family: var(--pre-font-family);
 }
 
 pre > *::selection {
