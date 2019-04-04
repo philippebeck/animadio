@@ -301,3 +301,50 @@
   background-color: var(--sapphire);
   color: var(--btn-color-sapphire);
 }
+
+/***** Buttons with Differents Sizes *****/
+[class*="btn"][class*="tn"],
+[class*="button"][class*="tn"] {
+  padding: var(--btn-pad-tn);
+}
+
+[class*="btn"][class*="sm"],
+[class*="button"][class*="sm"] {
+  padding: var(--btn-pad-sm);
+}
+
+[class*="btn"][class*="md"],
+[class*="button"][class*="md"] {
+  padding: var(--btn-pad-md);
+}
+
+[class*="btn"][class*="lg"],
+[class*="button"][class*="lg"] {
+  padding: var(--btn-pad-lg);
+}
+
+[class*="btn"][class*="wd"],
+[class*="button"][class*="wd"] {
+  padding: var(--btn-pad-wd);
+}
+
+/***** Buttons with Differents Shapes *****/
+[class*="btn"][class*="slight"],
+[class*="button"][class*="slight"] {
+  border-radius: var(--btn-radius-slight);
+}
+
+[class*="btn"][class*="round"],
+[class*="button"][class*="round"] {
+  border-radius: var(--btn-radius-round);
+}
+
+[class*="btn"][class*="circle"],
+[class*="button"][class*="circle"] {
+  border-radius: var(--btn-radius-circle);
+}
+
+[class*="btn"][class*="ellipse"],
+[class*="button"][class*="ellipse"] {
+  border-radius: var(--btn-radius-ellipse);
+}
