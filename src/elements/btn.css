@@ -1,5 +1,19 @@
 /********** BTN **********/
 
+/*
+1. Buttons
+2. Buttons Hover, Focus & Active
+3. Buttons Active & Checked
+4. Buttons Icons
+5. Buttons with Main Colors
+6. Buttons with Pale Colors
+7. Buttons with Brand Colors
+8. Buttons with Transparent Colors
+9. Buttons with Differents Sizes
+10. Buttons with Differents Shapes
+*/
+
+/***** Buttons *****/
 [class*="btn"],
 [class*="button"] {
   --btn-bg: var(--blue);
