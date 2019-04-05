@@ -42,6 +42,14 @@
   animation: slider var(--play-check-slide-anima);
 }
 
+[class*="repeat-check"]:checked ~ .slide {
+  animation-iteration-count: var(--slider-anima-iteration);
+}
+
+[class*="direction-check"]:checked ~ .slide {
+  animation-direction: var(--slider-anima-direction);
+}
+
 .slide > * {
   display: none;
   height: var(--slide-height);
@@ -98,12 +106,14 @@
   content: var(--play-check-slide-play-icon-before);
 }
 
-[class*="slider-check"]:checked ~ .slider-controls [for="slide1"] > .fas::before,
-[class*="slider-check"]:checked ~ .slider-controls [for="slide2"] > .fas::before,
-[class*="slider-check"]:checked ~ .slider-controls [for="slide3"] > .fas::before,
-[class*="slider-check"]:checked ~ .slider-controls [for="slide4"] > .fas::before,
-[class*="slider-check"]:checked ~ .slider-controls [for="slide5"] > .fas::before {
-  color: var(--slider-check-slide-icon-before-color);
+[class*="repeat-check"]:checked ~ .slider-controls [for="slide-repeat"] > i::before {
+  content: var(--repeat-check-slide-repeat-icon-before);
+}
+
+[class*="direction-check"]:checked ~ .slider-controls [for="slide-direction"] > i::before {
+  content: var(--direction-check-slide-direction-icon-before);
+}
+
 [class*="play-check"]:checked ~ .slider-controls [for="slide1"] > .fas::before,
 [class*="play-check"]:checked ~ .slider-controls [for="slide2"] > .fas::before,
 [class*="play-check"]:checked ~ .slider-controls [for="slide3"] > .fas::before,
@@ -132,6 +142,14 @@
 
 [class*="play-check"]:checked ~ .slider-timeline {
   animation: width var(--play-check-slide-anima);
+}
+
+[class*="repeat-check"]:checked ~ .slider-timeline {
+  animation-iteration-count: var(--slider-anima-iteration);
+}
+
+[class*="direction-check"]:checked ~ .slider-timeline {
+  animation-direction: var(--slider-anima-direction);
 }
 
 [class*="slider-radio1"]:checked ~ .slider-timeline {
