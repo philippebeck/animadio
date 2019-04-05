@@ -127,7 +127,7 @@
 [class*="slider-radio3"]:checked ~ .slider-controls [for="slide3"] > i::before,
 [class*="slider-radio4"]:checked ~ .slider-controls [for="slide4"] > i::before,
 [class*="slider-radio5"]:checked ~ .slider-controls [for="slide5"] > i::before {
-  color: var(--slider-radio-slide-icon-before-color);
+  color: var(--slider-icon-color);
   content: var(--slider-radio-slide-icon-before-content);
 }
 
