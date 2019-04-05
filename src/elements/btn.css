@@ -24,53 +24,6 @@
   --btn-pad: 5px 10px;
   --btn-radius: 10px;
   --btn-text-align: center;
-  --btn-hover-anima: none;
-  --btn-hover-bg: var(--blue);
-  --btn-hover-bord: outset medium var(--obsidian);
-  --btn-hover-color: var(--silver);
-  --btn-hover-radius: 0;
-  --btn-hover-shabox: 5px 5px 5px var(--gray);
-  --btn-hover-transition: border 1s;
-  --check-button-transform: scale(0.9);
-  --btn-color-black: var(--white);
-  --btn-color-blue: var(--white);
-  --btn-color-gray: var(--white);
-  --btn-color-green: var(--white);
-  --btn-color-maroon: var(--white);
-  --btn-color-orange: var(--white);
-  --btn-color-purple: var(--white);
-  --btn-color-red: var(--white);
-  --btn-color-yellow: var(--blue);
-  --btn-color-choco: var(--white);
-  --btn-color-jade: var(--violet);
-  --btn-color-khaki: var(--sky);
-  --btn-color-salmon: var(--white);
-  --btn-color-silver: var(--black);
-  --btn-color-sky: var(--white);
-  --btn-color-tomato: var(--white);
-  --btn-color-violet: var(--white);
-  --btn-color-white: var(--black);
-  --btn-color-fb: var(--white);
-  --btn-color-github: var(--white);
-  --btn-color-linkedin: var(--white);
-  --btn-color-npm: var(--white);
-  --btn-color-stack: var(--white);
-  --btn-color-tw: var(--white);
-  --btn-color-amthyst: var(--white);
-  --btn-color-citrine: var(--sky);
-  --btn-color-quartz: var(--black);
-  --btn-color-emerald: var(--violet);
-  --btn-color-obsidian: var(--white);
-  --btn-color-ruby: var(--white);
-  --btn-color-sapphire: var(--khaki);
-  --btn-pad-tn: 1px 2px;
-  --btn-pad-sm: 2px 5px;
-  --btn-pad-md: 5px 10px;
-  --btn-pad-lg: 10px 20px;
-  --btn-pad-wd: 20px 50px;
-  --btn-radius-square: unset;
-  --btn-radius-round: 50px;
-  --btn-radius-circle: 50%;
 
   display: inline-block;
   margin: var(--btn-mar);
@@ -90,6 +43,14 @@
 [class*="button"]:focus,
 [class*="btn"]:active,
 [class*="button"]:active {
+  --btn-hover-anima: none;
+  --btn-hover-bg: var(--blue);
+  --btn-hover-bord: outset medium var(--obsidian);
+  --btn-hover-color: var(--silver);
+  --btn-hover-radius: 0;
+  --btn-hover-shabox: 5px 5px 5px var(--gray);
+  --btn-hover-transition: border 1s;
+
   border: var(--btn-hover-bord);
   border-radius: var(--btn-hover-radius);
   box-shadow: var(--btn-hover-shabox);
@@ -102,6 +63,8 @@
 /***** Buttons Active & Checked *****/
 [class*="btn"]:active,
 [class*="check"]:checked + [class*="button"] {
+  --check-button-transform: scale(0.9);
+
   transform: var(--check-button-transform);
 }
 
@@ -114,54 +77,72 @@
 /***** Buttons with Main Colors *****/
 [class*="btn"][class*="black"],
 [class*="button"][class*="black"] {
+  --btn-color-black: var(--white);
+
   background-color: var(--black);
   color: var(--btn-color-black);
 }
 
 [class*="btn"][class*="blue"],
 [class*="button"][class*="blue"] {
+  --btn-color-blue: var(--white);
+
   background-color: var(--blue);
   color: var(--btn-color-blue);
 }
 
 [class*="btn"][class*="gray"],
 [class*="button"][class*="gray"] {
+  --btn-color-gray: var(--white);
+
   background-color: var(--gray);
   color: var(--btn-color-gray);
 }
 
 [class*="btn"][class*="green"],
 [class*="button"][class*="green"] {
+  --btn-color-green: var(--white);
+
   background-color: var(--green);
   color: var(--btn-color-green);
 }
 
 [class*="btn"][class*="maroon"],
 [class*="button"][class*="maroon"] {
+  --btn-color-maroon: var(--white);
+
   background-color: var(--maroon);
   color: var(--btn-color-maroon);
 }
 
 [class*="btn"][class*="orange"],
 [class*="button"][class*="orange"] {
+  --btn-color-orange: var(--white);
+
   background-color: var(--orange);
   color: var(--btn-color-orange);
 }
 
 [class*="btn"][class*="purple"],
 [class*="button"][class*="purple"] {
+  --btn-color-purple: var(--white);
+
   background-color: var(--purple);
   color: var(--btn-color-purple);
 }
 
 [class*="btn"][class*="red"],
 [class*="button"][class*="red"] {
+  --btn-color-red: var(--white);
+
   background-color: var(--red);
   color: var(--btn-color-red);
 }
 
 [class*="btn"][class*="yellow"],
 [class*="button"][class*="yellow"] {
+  --btn-color-yellow: var(--blue);
+
   background-color: var(--yellow);
   color: var(--btn-color-yellow);
 }
@@ -169,54 +150,72 @@
 /***** Buttons with Pale Colors *****/
 [class*="btn"][class*="choco"],
 [class*="button"][class*="choco"] {
+  --btn-color-choco: var(--white);
+
   background-color: var(--choco);
   color: var(--btn-color-choco);
 }
 
 [class*="btn"][class*="jade"],
 [class*="button"][class*="jade"] {
+  --btn-color-jade: var(--violet);
+
   background-color: var(--jade);
   color: var(--btn-color-jade);
 }
 
 [class*="btn"][class*="khaki"],
 [class*="button"][class*="khaki"] {
+  --btn-color-khaki: var(--sky);
+
   background-color: var(--khaki);
   color: var(--btn-color-khaki);
 }
 
 [class*="btn"][class*="salmon"],
 [class*="button"][class*="salmon"] {
+  --btn-color-salmon: var(--white);
+
   background-color: var(--salmon);
   color: var(--btn-color-salmon);
 }
 
 [class*="btn"][class*="silver"],
 [class*="button"][class*="silver"] {
+  --btn-color-silver: var(--black);
+
   background-color: var(--silver);
   color: var(--btn-color-silver);
 }
 
 [class*="btn"][class*="sky"],
 [class*="button"][class*="sky"] {
+  --btn-color-sky: var(--white);
+
   background-color: var(--sky);
   color: var(--btn-color-sky);
 }
 
 [class*="btn"][class*="tomato"],
 [class*="button"][class*="tomato"] {
+  --btn-color-tomato: var(--white);
+
   background-color: var(--tomato);
   color: var(--btn-color-tomato);
 }
 
 [class*="btn"][class*="violet"],
 [class*="button"][class*="violet"] {
+  --btn-color-violet: var(--white);
+
   background-color: var(--violet);
   color: var(--btn-color-violet);
 }
 
 [class*="btn"][class*="white"],
 [class*="button"][class*="white"] {
+  --btn-color-white: var(--black);
+
   background-color: var(--white);
   color: var(--btn-color-white);
 }
@@ -224,36 +223,48 @@
 /***** Buttons with Brand Colors *****/
 [class*="btn"][class*="fb"],
 [class*="button"][class*="fb"] {
+  --btn-color-fb: var(--white);
+
   background-color: var(--facebook);
   color: var(--btn-color-fb);
 }
 
 [class*="btn"][class*="github"],
 [class*="button"][class*="github"] {
+  --btn-color-github: var(--white);
+
   background-color: var(--github);
   color: var(--btn-color-github);
 }
 
 [class*="btn"][class*="Linkedin"],
 [class*="button"][class*="linkedin"] {
+  --btn-color-linkedin: var(--white);
+
   background-color: var(--linkedin);
   color: var(--btn-color-linkedin);
 }
 
 [class*="btn"][class*="npm"],
 [class*="button"][class*="npm"] {
+  --btn-color-npm: var(--white);
+
   background-color: var(--npm);
   color: var(--btn-color-npm);
 }
 
 [class*="btn"][class*="stack"],
 [class*="button"][class*="stack"] {
+  --btn-color-stack: var(--white);
+
   background-color: var(--stackoverflow);
   color: var(--btn-color-stack);
 }
 
 [class*="btn"][class*="tw"],
 [class*="button"][class*="tw"] {
+  --btn-color-tw: var(--white);
+
   background-color: var(--twitter);
   color: var(--btn-color-tw);
 }
@@ -261,42 +272,56 @@
 /***** Buttons with Transparent Colors *****/
 [class*="btn"][class*="amethyst"],
 [class*="button"][class*="amethyst"] {
+  --btn-color-amthyst: var(--white);
+
   background-color: var(--amethyst);
   color: var(--btn-color-amthyst);
 }
 
 [class*="btn"][class*="citrine"],
 [class*="button"][class*="citrine"] {
+  --btn-color-citrine: var(--sky);
+
   background-color: var(--citrine);
   color: var(--btn-color-citrine);
 }
 
 [class*="btn"][class*="quartz"],
 [class*="button"][class*="quartz"] {
+  --btn-color-quartz: var(--black);
+
   background-color: var(--quartz);
   color: var(--btn-color-quartz);
 }
 
 [class*="btn"][class*="emerald"],
 [class*="button"][class*="emerald"] {
+  --btn-color-emerald: var(--violet);
+
   background-color: var(--emerald);
   color: var(--btn-color-emerald);
 }
 
 [class*="btn"][class*="obsidian"],
 [class*="button"][class*="obsidian"] {
+  --btn-color-obsidian: var(--white);
+
   background-color: var(--obsidian);
   color: var(--btn-color-obsidian);
 }
 
 [class*="btn"][class*="ruby"],
 [class*="button"][class*="ruby"] {
+  --btn-color-ruby: var(--white);
+
   background-color: var(--ruby);
   color: var(--btn-color-ruby);
 }
 
 [class*="btn"][class*="sapphire"],
 [class*="button"][class*="sapphire"] {
+  --btn-color-sapphire: var(--khaki);
+
   background-color: var(--sapphire);
   color: var(--btn-color-sapphire);
 }
@@ -304,42 +329,58 @@
 /***** Buttons with Differents Sizes *****/
 [class*="btn"][class*="tn"],
 [class*="button"][class*="tn"] {
+  --btn-pad-tn: 1px 2px;
+
   padding: var(--btn-pad-tn);
 }
 
 [class*="btn"][class*="sm"],
 [class*="button"][class*="sm"] {
+  --btn-pad-sm: 2px 5px;
+
   padding: var(--btn-pad-sm);
 }
 
 [class*="btn"][class*="md"],
 [class*="button"][class*="md"] {
+  --btn-pad-md: 5px 10px;
+
   padding: var(--btn-pad-md);
 }
 
 [class*="btn"][class*="lg"],
 [class*="button"][class*="lg"] {
+  --btn-pad-lg: 10px 20px;
+
   padding: var(--btn-pad-lg);
 }
 
 [class*="btn"][class*="wd"],
 [class*="button"][class*="wd"] {
+  --btn-pad-wd: 20px 50px;
+
   padding: var(--btn-pad-wd);
 }
 
 /***** Buttons with Differents Shapes *****/
 [class*="btn"][class*="square"],
 [class*="button"][class*="square"] {
+  --btn-radius-square: unset;
+
   border-radius: var(--btn-radius-square);
 }
 
 [class*="btn"][class*="round"],
 [class*="button"][class*="round"] {
+  --btn-radius-round: 50px;
+
   border-radius: var(--btn-radius-round);
 }
 
 [class*="btn"][class*="circle"],
 [class*="button"][class*="circle"] {
+  --btn-radius-circle: 50%;
+
   border-radius: var(--btn-radius-circle);
 }
 
