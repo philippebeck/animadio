@@ -13,6 +13,8 @@
   --slider-text-align: center;
   --slider-anima-direction: reverse;
   --slider-anima-iteration: infinite;
+  --slider-transition-opacity: 2s;
+  --slider-transition-color: 1s;
   --play-check-slide-anima: 10s linear;
   --slider-icon-color: var(--blue);
   --play-check-slide-play-icon-before: "\f28d";
@@ -82,12 +84,14 @@
   padding: var(--slider-controls-pad);
   background-color: var(--slider-controls-bg);
   opacity: var(--slider-controls-opacity);
+  transition: opacity var(--slider-transition-opacity);
 }
 
 .slider:hover .slider-controls,
 .slider:focus .slider-controls,
 .slider:active .slider-controls {
   opacity: var(--slider-controls-hover-opacity);
+  transition: opacity var(--slider-transition-opacity);
 }
 
 .slider label {
@@ -100,6 +104,7 @@
 
 [class*="play-check"]:checked ~ .slider-controls [for="slide-play"] > i {
   color: var(--slider-icon-color);
+  transition: color var(--slider-transition-color);
 }
 
 [class*="play-check"]:checked ~ .slider-controls [for="slide-play"] > i::before {
@@ -128,13 +133,14 @@
 [class*="slider-radio4"]:checked ~ .slider-controls [for="slide4"] > i::before,
 [class*="slider-radio5"]:checked ~ .slider-controls [for="slide5"] > i::before {
   color: var(--slider-icon-color);
+  transition: color var(--slider-transition-color);
   content: var(--slider-radio-slide-icon-before-content);
 }
 
 /***** Slider Timeline *****/
 .slider-timeline {
-  --slider-timeline-height: 6px;
   --slider-timeline-bg: var(--blue);
+  --slider-timeline-height: 6px;
 
   height: var(--slider-timeline-height);
   background-color: var(--slider-timeline-bg);
