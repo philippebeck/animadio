@@ -1,53 +1,14 @@
 /********** NAVBAR **********/
 
 /*
-1. Navbar Variables
-2. Navbar Display
-3. Navbar
-4. Navs
-5. Nav Brand
-6. Nav Main
-7. Nav Info
-8. Nav Toggle
-9. Media Queries
+1. Navbar Display
+2. Navbar
+3. Navs
+4. Nav Brand
+5. Nav Main
+6. Nav Info
+7. Nav Toggle
 */
-
-/***** Navbar Variables *****/
-[class*="nav"] {
-  --navbar-align-items: center;
-  --navbar-bg-color: var(--blue);
-  --navbar-bot: unset;
-  --navbar-color: var(--white);
-  --navbar-index: 1000;
-  --navbar-justify-content: center;
-  --navbar-left: 0;
-  --navbar-position: fixed;
-  --navbar-right: 0;
-  --navbar-top: 0;
-  --navbar-link-color: var(--white);
-  --navbar-link-cursor: pointer;
-  --navbar-link-pad: 20px 10px;
-  --navbar-link-hover-color: var(--yellow);
-  --navbar-icon-align-self: center;
-  --navs-align-items: center;
-  --navs-list-style: none;
-  --navs-mar: 0;
-  --navs-pad: 0;
-  --navs-link-flex-direction: column;
-  --nav-brand-left: 10px;
-  --nav-brand-img-height: 40px;
-  --nav-main-link-hover-scale: 0.9;
-  --nav-info-height: 50px;
-  --nav-info-img-mar: 5px;
-  --nav-info-link-hover-scale: 1.5;
-  --nav-toggle-top: 0;
-  --nav-toggle-right: 10px;
-  --nav-toggle-anima: trany-tn 1s linear infinite alternate;
-  --navbar-sm-flex-direction: row;
-  --navbar-sm-justify-content: space-around;
-  --navbar-sm-pad: 10px;
-  --navbar-md-justify-content: space-evenly;
-}
 
 /***** Navbar Display *****/
 .navbar,
@@ -73,6 +34,17 @@
 
 /***** Navbar *****/
 .navbar {
+  --navbar-align-items: center;
+  --navbar-bg: var(--blue);
+  --navbar-bot: unset;
+  --navbar-color: var(--white);
+  --navbar-index: 1000;
+  --navbar-justify-content: center;
+  --navbar-left: 0;
+  --navbar-position: fixed;
+  --navbar-right: 0;
+  --navbar-top: 0;
+
   justify-content: var(--navbar-justify-content);
   align-items: var(--navbar-align-items);
   position: var(--navbar-position);
@@ -82,12 +54,31 @@
   left: var(--navbar-left);
   z-index: var(--navbar-index);
   height: var(--navbar-height);
-  background-color: var(--navbar-bg-color);
+  background-color: var(--navbar-bg);
   color: var(--navbar-color);
+}
+
+@media (min-width: 576px) {
+  .navbar {
+    --navbar-flex-direction: row;
+    --navbar-justify-content: space-around;
+    --navbar-pad: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+   --navbar-justify-content: space-evenly;
+  }
 }
 
 .navbar a,
 .navbar label {
+  --navbar-link-color: var(--white);
+  --navbar-link-cursor: pointer;
+  --navbar-link-pad: 20px 10px;
+  --navbar-link-hover-color: var(--yellow);
+
   padding: var(--navbar-link-pad);
   color: var(--navbar-link-color);
   cursor: var(--navbar-link-cursor);
@@ -103,6 +94,8 @@
 }
 
 .navbar i {
+  --navbar-icon-align-self: center;
+
   align-self: var(--navbar-icon-align-self);
 }
 
@@ -113,6 +106,11 @@
 /***** Navs *****/
 .nav-main,
 .nav-info {
+  --navs-align-items: center;
+  --navs-list-style: none;
+  --navs-mar: 0;
+  --navs-pad: 0;
+
   align-items: var(--navs-align-items);
   margin: var(--navs-mar);
   padding: var(--navs-pad);
@@ -123,11 +121,23 @@
 .nav-main label,
 .nav-info a,
 .nav-info label {
+  --navs-link-flex-direction: column;
+
   flex-direction: var(--navs-link-flex-direction);
+}
+
+@media (min-width: 576px) {
+  .nav-main,
+  .nav-info {
+    display: flex !important;
+  }
 }
 
 /***** Nav Brand *****/
 .nav-brand {
+  --nav-brand-left: 10px;
+  --nav-brand-img-height: 40px;
+
   position: absolute;
   left: var(--nav-brand-left);
 }
@@ -137,6 +147,12 @@
   height: var(--nav-brand-img-height);
 }
 
+@media (min-width: 576px) {
+  .nav-brand {
+    position: static;
+  }
+}
+
 /***** Nav Main *****/
 .nav-main a:hover,
 .nav-main a:focus,
@@ -144,12 +160,23 @@
 .nav-main label:hover,
 .nav-main label:focus,
 .nav-main label:active {
+  --nav-main-link-hover-scale: 0.9;
+
   transform: scale(var(--nav-main-link-hover-scale));
+}
+
+@media (min-width: 768px) {
+  .nav-main span {
+    display: block;
+  }
 }
 
 /***** Nav Info *****/
 .nav-info img,
 .nav-info svg {
+  --nav-info-height: 50px;
+  --nav-info-img-mar: 5px;
+
   margin: var(--nav-info-img-mar);
   height: var(--nav-info-height);
 }
@@ -160,50 +187,32 @@
 .nav-info label:hover,
 .nav-info label:focus,
 .nav-info label:active {
+  --nav-info-link-hover-scale: 1.5;
+
   transform: scale(var(--nav-info-link-hover-scale));
+}
+
+@media (min-width: 768px) {
+  .nav-info span {
+    display: block;
+  }
 }
 
 /***** Nav Toggle *****/
 .nav-toggle {
+  --nav-toggle-anima: trany-tn 1s linear infinite alternate;
+  --nav-toggle-right: 10px;
+  --nav-toggle-top: 0;
+
   position: absolute;
   top: var(--nav-toggle-top);
   right: var(--nav-toggle-right);
   animation: var(--nav-toggle-anima);
 }
 
-/***** Media Queries *****/
 @media (min-width: 576px) {
-  .navbar {
-    flex-direction: var(--navbar-sm-flex-direction);
-    justify-content: var(--navbar-sm-justify-content);
-    padding: var(--navbar-sm-pad);
-  }
-
-  .nav-brand {
-    position: static;
-  }
-
-  .nav-main,
-  .nav-info {
-    display: flex !important;
-  }
-
   .nav-toggle {
     display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    justify-content: var(--navbar-md-justify-content);
-  }
-
-  .nav-main span {
-    display: block;
-  }
-
-  .nav-info span {
-    display: block;
   }
 }
 
