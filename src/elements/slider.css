@@ -44,8 +44,8 @@
   height: var(--slide-height);
 }
 
-[class*="slider-check"]:checked ~ .slide {
-  animation: slider var(--slider-check-slide-anima);
+[class*="play-check"]:checked ~ .slide {
+  animation: slider var(--play-check-slide-anima);
 }
 
 .slide > * {
@@ -77,12 +77,12 @@
   padding: var(--slider-label-pad);
 }
 
-[class*="slider-check"]:checked ~ .slider-controls [for="slide-auto"] > i {
-  color: var(--slider-check-slide-auto-icon-color);
+[class*="play-check"]:checked ~ .slider-controls [for="slide-play"] > i {
+  color: var(--slider-icon-color);
 }
 
-[class*="slider-check"]:checked ~ .slider-controls [for="slide-auto"] > i::before {
-  content: var(--slider-check-slide-auto-icon-before);
+[class*="play-check"]:checked ~ .slider-controls [for="slide-play"] > i::before {
+  content: var(--play-check-slide-play-icon-before);
 }
 
 [class*="slider-check"]:checked ~ .slider-controls [for="slide1"] > .fas::before,
@@ -91,6 +91,12 @@
 [class*="slider-check"]:checked ~ .slider-controls [for="slide4"] > .fas::before,
 [class*="slider-check"]:checked ~ .slider-controls [for="slide5"] > .fas::before {
   color: var(--slider-check-slide-icon-before-color);
+[class*="play-check"]:checked ~ .slider-controls [for="slide1"] > .fas::before,
+[class*="play-check"]:checked ~ .slider-controls [for="slide2"] > .fas::before,
+[class*="play-check"]:checked ~ .slider-controls [for="slide3"] > .fas::before,
+[class*="play-check"]:checked ~ .slider-controls [for="slide4"] > .fas::before,
+[class*="play-check"]:checked ~ .slider-controls [for="slide5"] > .fas::before {
+  color: var(--play-check-slide-icon-before-color);
 }
 
 [class*="slider-radio1"]:checked ~ .slider-controls [for="slide1"] > i::before,
@@ -108,8 +114,8 @@
   background-color: var(--slider-timeline-bg);
 }
 
-[class*="slider-check"]:checked ~ .slider-timeline {
-  animation: width var(--slider-check-slide-anima);
+[class*="play-check"]:checked ~ .slider-timeline {
+  animation: width var(--play-check-slide-anima);
 }
 
 [class*="slider-radio1"]:checked ~ .slider-timeline {
