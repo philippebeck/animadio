@@ -2,8 +2,8 @@
 
 /*
 1. Menu
-2. Menu Children
-3. Media Queries
+2. Menu Label
+3. Menu FA
 */
 
 /***** Menu *****/
@@ -18,28 +18,6 @@
   --menu-pad: 0;
   --menu-radius: 5px;
   --menu-width: 40%;
-  --menu-all-cursor: pointer;
-  --menu-fa-bot: -18px;
-  --menu-fa-color: var(--blue);
-  --menu-fa-position: absolute;
-  --menu-label-justify-content: center;
-  --menu-label-pad: 6px 12px;
-  --menu-label-position: relative;
-  --menu-label-radius: 5px;
-  --menu-label-width: 100%;
-  --menu-label-check-bg: var(--blue);
-  --menu-label-check-color: var(--white);
-  --menu-label-check-font-weight: bold;
-  --menu-label-hover-bg: var(--sapphire);
-  --menu-label-hover-bord: none;
-  --menu-label-hover-color: var(--white);
-  --menu-label-hover-font-style: italic;
-  --menu-sm-flex-direction: row;
-  --menu-sm-align-items: flex-start;
-  --menu-sm-width: 100%;
-  --menu-md-width: 90%;
-  --menu-lg-width: 80%;
-  --menu-wd-width: 70%;
 
   display: flex;
   flex-direction: var(--menu-flex-direction);
@@ -54,12 +32,53 @@
   color: var(--menu-color);
 }
 
-/***** Menu Children *****/
+@media (min-width: 576px) {
+  .menu {
+    --menu-flex-direction: row;
+    --menu-align-items: flex-start;
+    --menu-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    --menu-width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu {
+    --menu-width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    --menu-width: 70%;
+  }
+}
+
 .menu * {
+  --menu-all-cursor: pointer;
+
   cursor: var(--menu-all-cursor);
 }
 
+/***** Menu Label *****/
 .menu label {
+  --menu-label-justify-content: center;
+  --menu-label-pad: 6px 12px;
+  --menu-label-position: relative;
+  --menu-label-radius: 5px;
+  --menu-label-width: 100%;
+  --menu-label-hover-bg: var(--sapphire);
+  --menu-label-hover-bord: none;
+  --menu-label-hover-color: var(--white);
+  --menu-label-hover-font-style: italic;
+  --menu-label-check-bg: var(--blue);
+  --menu-label-check-color: var(--white);
+  --menu-label-check-font-weight: bold;
+
   display: flex;
   justify-content: var(--menu-label-justify-content);
   position: var(--menu-label-position);
@@ -87,45 +106,25 @@
   font-weight: var(--menu-label-check-font-weight);
 }
 
+/***** Menu FA *****/
 .menu [class*="fa-"][class*="-down"] {
+  --menu-fa-bot: -18px;
+  --menu-fa-color: var(--blue);
+  --menu-fa-position: absolute;
+
   display: none;
   position: var(--menu-fa-position);
   bottom: var(--menu-fa-bot);
   color: var(--menu-fa-color);
 }
 
-/***** Media Queries *****/
 @media (min-width: 576px) {
-  .menu {
-    flex-direction: var(--menu-sm-flex-direction);
-    align-items: var(--menu-sm-align-items);
-    width: var(--menu-sm-width);
-  }
-
   [class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"] > [class*="fa-"][class*="-down"],
   [class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"] > [class*="fa-"][class*="-down"],
   [class*="menu-radio3"]:checked ~ .menu > [for="menu-radio3"] > [class*="fa-"][class*="-down"],
   [class*="menu-radio4"]:checked ~ .menu > [for="menu-radio4"] > [class*="fa-"][class*="-down"],
   [class*="menu-radio5"]:checked ~ .menu > [for="menu-radio5"] > [class*="fa-"][class*="-down"] {
     display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  .menu {
-    width: var(--menu-md-width);
-  }
-}
-
-@media (min-width: 992px) {
-  .menu {
-    width: var(--menu-lg-width);
-  }
-}
-
-@media (min-width: 1200px) {
-  .menu {
-    width: var(--menu-wd-width);
   }
 }
 
