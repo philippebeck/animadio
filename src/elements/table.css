@@ -16,22 +16,8 @@
   --table-bord-collapse: collapse;
   --table-bord-space: 10px;
   --table-width: 50%;
-  --table-caption-font-weight: bold;
-  --table-caption-color: var(--red);
-  --table-caption-side: top;
-  --table-title-bg: var(--blue);
-  --table-title-color: var(--white);
-  --table-title-font-style: italic;
   --table-row-even-bg: var(--yellow);
   --table-row-odd-bg: var(--white);
-  --table-cell-bord-color: var(--black);
-  --table-cell-bord-radius: 0;
-  --table-cell-bord-style: solid;
-  --table-cell-bord-width: thin;
-  --table-cell-color: var(--blue);
-  --table-cell-pad: 10px;
-  --table-cell-text-align: center;
-  --table-cell-vertical-align: middle;
 
   display: table;
   border-collapse: var(--table-bord-collapse);
@@ -71,6 +57,10 @@
 
 /***** Table Caption *****/
 [class*="table"] > caption {
+  --table-caption-font-weight: bold;
+  --table-caption-color: var(--red);
+  --table-caption-side: top;
+
   caption-side: var(--table-caption-side);
   color: var(--table-caption-color);
   font-weight: var(--table-caption-font-weight);
@@ -80,6 +70,10 @@
 [class*="table"] thead,
 [class*="table"] tbody th,
 [class*="table"] tfoot th {
+  --table-title-bg: var(--blue);
+  --table-title-color: var(--white);
+  --table-title-font-style: italic;
+
   background-color: var(--table-title-bg);
   color: var(--table-title-color);
   font-style: var(--table-title-font-style);
@@ -88,6 +82,14 @@
 /***** Table Global *****/
 [class*="table"] th,
 [class*="table"] td {
+  --table-cell-bord-color: var(--black);
+  --table-cell-bord-radius: 0;
+  --table-cell-bord-style: solid;
+  --table-cell-bord-width: thin;
+  --table-cell-pad: 10px;
+  --table-cell-text-align: center;
+  --table-cell-vertical-align: middle;
+
   border-style: var(--table-cell-bord-style);
   border-width: var(--table-cell-bord-width);
   border-color: var(--table-cell-bord-color);
@@ -108,6 +110,8 @@
 
 /***** Table Cells *****/
 [class*="table"] td {
+  --table-cell-color: var(--blue);
+
   color: var(--table-cell-color);
 }
 
