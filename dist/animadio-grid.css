@@ -1,4 +1,4 @@
-/*! animadio v0.2.22 | https://animadio.org | MIT License */
+/*! animadio v0.2.23 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -525,9 +525,13 @@ ul {
 /***** Medias *****/
 img,
 video {
-  --img-max-width: 100%;
   --img-height: auto;
+  --img-max-width: 100%;
+  --img-object-fit: contain;
 
+  -o-object-fit: var(--img-object-fit);
+
+     object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
   height: var(--img-height);
 }
@@ -3318,4 +3322,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 6th Apr 2019 @ 1:20:44 AM */
+ Updated: 6th Apr 2019 @ 3:08:05 PM */

@@ -1,4 +1,4 @@
-/*! animadio v0.2.22 | https://animadio.org | MIT License */
+/*! animadio v0.2.23 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -590,20 +590,25 @@ template {
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
   }
+
   20% {
     content: var(--slide1);
     -webkit-animation-play-state: running;
             animation-play-state: running;
   }
+
   40% {
     content: var(--slide2);
   }
+
   60% {
     content: var(--slide3);
   }
+
   80% {
     content: var(--slide4);
   }
+
   100% {
     content: var(--slide5);
   }
@@ -614,20 +619,25 @@ template {
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
   }
+
   20% {
     content: var(--slide1);
     -webkit-animation-play-state: running;
             animation-play-state: running;
   }
+
   40% {
     content: var(--slide2);
   }
+
   60% {
     content: var(--slide3);
   }
+
   80% {
     content: var(--slide4);
   }
+
   100% {
     content: var(--slide5);
   }
@@ -895,9 +905,13 @@ ul {
 /***** Medias *****/
 img,
 video {
-  --img-max-width: 100%;
   --img-height: auto;
+  --img-max-width: 100%;
+  --img-object-fit: contain;
 
+  -o-object-fit: var(--img-object-fit);
+
+     object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
   height: var(--img-height);
 }
@@ -9032,7 +9046,7 @@ pre > *::selection {
 
 @media (min-width: 768px) {
   .navbar {
-   --navbar-justify-content: space-evenly;
+    --navbar-justify-content: space-evenly;
   }
 }
 
@@ -10536,4 +10550,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 6th Apr 2019 @ 1:20:44 AM */
+ Updated: 6th Apr 2019 @ 3:08:05 PM */
