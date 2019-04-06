@@ -7,43 +7,25 @@
 */
 
 .form {
-  --form-mar: auto;
-  --form-pad: 20px 0 40px;
-
   margin: var(--form-mar);
   padding: var(--form-pad);
 }
 
 .form,
 .form fieldset {
-  --form-width: 300px;
-
   width: var(--form-width);
-}
-
-@media (min-width: 992px) {
-  .form,
-  .form fieldset {
-    --form-width: 500px;
-  }
 }
 
 .form,
 .form fieldset,
 .form ul,
 .form li {
-  --form-flex-direction: column;
-
   display: flex;
   flex-direction: var(--form-flex-direction);
 }
 
 @media (min-width: 992px) {
   .form li {
-    --form-li-flex-direction: row;
-    --form-li-justify-content: space-between;
-    --form-li-align-items: center;
-
     flex-direction: var(--form-li-flex-direction);
     justify-content: var(--form-li-justify-content);
     align-items: var(--form-li-align-items);
@@ -52,43 +34,24 @@
 
 @media (min-width: 992px) {
   .form label {
-    --form-label-lg-flex: 2 0 auto;
-    --form-label-text-decoration: underline dashed;
-
     flex: var(--form-label-lg-flex);
     text-decoration: var(--form-label-text-decoration);
   }
 }
 
 .form fieldset {
-  --form-fieldset-bord: medium double;
-  --form-fieldset-mar-left: -13px;
-  --form-fieldset-pad: 20px;
-
   margin-left: var(--form-fieldset-mar-left);
   border: var(--form-fieldset-bord);
   padding: var(--form-fieldset-pad);
 }
 
-@media (min-width: 992px) {
-  .form fieldset {
-    --form-fieldset-mar-left: 0;
-  }
-}
-
 .form legend {
-  --form-legend-font-weight: bold;
-
   font-weight: var(--form-legend-font-weight);
 }
 
 /***** Form Inputs *****/
 .form input::placeholder,
 .form textarea::placeholder {
-  --form-input-placeholder-color: var(--blue);
-  --form-input-placeholder-font-style: italic;
-  --form-input-placeholder-text-align: center;
-
   text-align: var(--form-input-placeholder-text-align);
   font-style: var(--form-input-placeholder-font-style);
   color: var(--form-input-placeholder-color);
@@ -100,13 +63,6 @@
 .form [type="email"],
 .form [type="password"],
 .form textarea {
-  --form-input-field-bg: var(--sapphire);
-  --form-input-field-bord: thin solid var(--blue);
-  --form-input-field-line-height: 2;
-  --form-input-field-mar: 10px 0 20px;
-  --form-input-field-pad: 10px;
-  --form-input-field-radius: 10px;
-
   line-height: var(--form-input-field-line-height);
   margin: var(--form-input-field-mar);
   border: var(--form-input-field-bord);
@@ -117,9 +73,6 @@
 
 .form [type="reset"],
 .form [type="submit"] {
-  --form-input-action-line-height: 2.5;
-  --form-input-action-cursor: pointer;
-
   line-height: var(--form-input-action-line-height);
   cursor: var(--form-input-action-cursor);
 }
@@ -127,8 +80,6 @@
 @media (min-width: 992px) {
   .form input,
   .form textarea {
-    --form-input-width: 75%;
-
     width: var(--form-input-width);
   }
 }

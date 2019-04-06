@@ -8,17 +8,6 @@
 
 /***** Menu *****/
 .menu {
-  --menu-bg: var(--silver);
-  --menu-border: none;
-  --menu-color: var(--gray);
-  --menu-flex-direction: column;
-  --menu-justify-content: center;
-  --menu-list-style: none;
-  --menu-mar: auto;
-  --menu-pad: 0;
-  --menu-radius: 5px;
-  --menu-width: 40%;
-
   display: flex;
   flex-direction: var(--menu-flex-direction);
   justify-content: var(--menu-justify-content);
@@ -32,53 +21,12 @@
   color: var(--menu-color);
 }
 
-@media (min-width: 576px) {
-  .menu {
-    --menu-flex-direction: row;
-    --menu-align-items: flex-start;
-    --menu-width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .menu {
-    --menu-width: 90%;
-  }
-}
-
-@media (min-width: 992px) {
-  .menu {
-    --menu-width: 80%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .menu {
-    --menu-width: 70%;
-  }
-}
-
 .menu * {
-  --menu-all-cursor: pointer;
-
   cursor: var(--menu-all-cursor);
 }
 
 /***** Menu Label *****/
 .menu label {
-  --menu-label-justify-content: center;
-  --menu-label-pad: 6px 12px;
-  --menu-label-position: relative;
-  --menu-label-radius: 5px;
-  --menu-label-width: 100%;
-  --menu-label-hover-bg: var(--sapphire);
-  --menu-label-hover-bord: none;
-  --menu-label-hover-color: var(--white);
-  --menu-label-hover-font-style: italic;
-  --menu-label-check-bg: var(--blue);
-  --menu-label-check-color: var(--white);
-  --menu-label-check-font-weight: bold;
-
   display: flex;
   justify-content: var(--menu-label-justify-content);
   position: var(--menu-label-position);
@@ -108,10 +56,6 @@
 
 /***** Menu FA *****/
 .menu [class*="fa-"][class*="-down"] {
-  --menu-fa-bot: -18px;
-  --menu-fa-color: var(--blue);
-  --menu-fa-position: absolute;
-
   display: none;
   position: var(--menu-fa-position);
   bottom: var(--menu-fa-bot);
