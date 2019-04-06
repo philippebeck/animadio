@@ -17,6 +17,7 @@
 
 /***** Mar Variables *****/
 [class*="mar-"] {
+  --mar-none: 0;
   --mar-sm: 10px;
   --mar-md: 20px;
   --mar-lg: 50px;
@@ -35,6 +36,11 @@
 }
 
 /***** Mar *****/
+[class*="mar-all-none-"][class*="-base"],
+[class*="mar-all-none-"][class*="-global"] > * {
+  margin: var(--mar-none);
+}
+
 [class*="mar-all-sm-"][class*="-base"],
 [class*="mar-all-sm-"][class*="-global"] > * {
   margin: var(--mar-sm);
@@ -51,6 +57,11 @@
 }
 
 /***** Mar Top *****/
+[class*="mar-top-none-"][class*="-base"],
+[class*="mar-top-none-"][class*="-global"] > * {
+  margin-top: var(--mar-none);
+}
+
 [class*="mar-top-sm-"][class*="-base"],
 [class*="mar-top-sm-"][class*="-global"] > * {
   margin-top: var(--mar-top-sm);
@@ -67,6 +78,11 @@
 }
 
 /***** Mar Right *****/
+[class*="mar-right-none-"][class*="-base"],
+[class*="mar-right-none-"][class*="-global"] > * {
+  margin-right: var(--mar-none);
+}
+
 [class*="mar-right-sm-"][class*="-base"],
 [class*="mar-right-sm-"][class*="-global"] > * {
   margin-right: var(--mar-right-sm);
@@ -83,6 +99,11 @@
 }
 
 /***** Mar Bot *****/
+[class*="mar-bot-none-"][class*="-base"],
+[class*="mar-bot-none-"][class*="-global"] > * {
+  margin-bottom: var(--mar-none);
+}
+
 [class*="mar-bot-sm-"][class*="-base"],
 [class*="mar-bot-sm-"][class*="-global"] > * {
   margin-bottom: var(--mar-bot-sm);
@@ -99,6 +120,11 @@
 }
 
 /***** Mar Left *****/
+[class*="mar-left-none-"][class*="-base"],
+[class*="mar-left-none-"][class*="-global"] > * {
+  margin-left: var(--mar-none);
+}
+
 [class*="mar-left-sm-"][class*="-base"],
 [class*="mar-left-sm-"][class*="-global"] > * {
   margin-left: var(--mar-left-sm);
