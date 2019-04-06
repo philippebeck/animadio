@@ -1,4 +1,4 @@
-/*! animadio v0.2.23 | https://animadio.org | MIT License */
+/*! animadio v0.2.24 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -594,6 +594,7 @@ pre > *::selection {
 
 /***** Mar Variables *****/
 [class*="mar-"] {
+  --mar-none: 0;
   --mar-sm: 10px;
   --mar-md: 20px;
   --mar-lg: 50px;
@@ -612,6 +613,11 @@ pre > *::selection {
 }
 
 /***** Mar *****/
+[class*="mar-all-none-"][class*="-base"],
+[class*="mar-all-none-"][class*="-global"] > * {
+  margin: var(--mar-none);
+}
+
 [class*="mar-all-sm-"][class*="-base"],
 [class*="mar-all-sm-"][class*="-global"] > * {
   margin: var(--mar-sm);
@@ -628,6 +634,11 @@ pre > *::selection {
 }
 
 /***** Mar Top *****/
+[class*="mar-top-none-"][class*="-base"],
+[class*="mar-top-none-"][class*="-global"] > * {
+  margin-top: var(--mar-none);
+}
+
 [class*="mar-top-sm-"][class*="-base"],
 [class*="mar-top-sm-"][class*="-global"] > * {
   margin-top: var(--mar-top-sm);
@@ -644,6 +655,11 @@ pre > *::selection {
 }
 
 /***** Mar Right *****/
+[class*="mar-right-none-"][class*="-base"],
+[class*="mar-right-none-"][class*="-global"] > * {
+  margin-right: var(--mar-none);
+}
+
 [class*="mar-right-sm-"][class*="-base"],
 [class*="mar-right-sm-"][class*="-global"] > * {
   margin-right: var(--mar-right-sm);
@@ -660,6 +676,11 @@ pre > *::selection {
 }
 
 /***** Mar Bot *****/
+[class*="mar-bot-none-"][class*="-base"],
+[class*="mar-bot-none-"][class*="-global"] > * {
+  margin-bottom: var(--mar-none);
+}
+
 [class*="mar-bot-sm-"][class*="-base"],
 [class*="mar-bot-sm-"][class*="-global"] > * {
   margin-bottom: var(--mar-bot-sm);
@@ -676,6 +697,11 @@ pre > *::selection {
 }
 
 /***** Mar Left *****/
+[class*="mar-left-none-"][class*="-base"],
+[class*="mar-left-none-"][class*="-global"] > * {
+  margin-left: var(--mar-none);
+}
+
 [class*="mar-left-sm-"][class*="-base"],
 [class*="mar-left-sm-"][class*="-global"] > * {
   margin-left: var(--mar-left-sm);
@@ -693,6 +719,7 @@ pre > *::selection {
 
 /***** Pad Variables *****/
 [class*="pad-"] {
+  --pad-none: 0;
   --pad-sm: 10px;
   --pad-md: 20px;
   --pad-lg: 50px;
@@ -711,6 +738,11 @@ pre > *::selection {
 }
 
 /***** Pad *****/
+[class*="pad-all-none-"][class*="-base"],
+[class*="pad-all-none-"][class*="-global"] > * {
+  padding: var(--pad-none);
+}
+
 [class*="pad-all-sm-"][class*="-base"],
 [class*="pad-all-sm-"][class*="-global"] > * {
   padding: var(--pad-sm);
@@ -727,6 +759,11 @@ pre > *::selection {
 }
 
 /***** Pad Top *****/
+[class*="pad-top-none-"][class*="-base"],
+[class*="pad-top-none-"][class*="-global"] > * {
+  padding-top: var(--pad-none);
+}
+
 [class*="pad-top-sm-"][class*="-base"],
 [class*="pad-top-sm-"][class*="-global"] > * {
   padding-top: var(--pad-top-sm);
@@ -743,6 +780,11 @@ pre > *::selection {
 }
 
 /***** Pad Right *****/
+[class*="pad-right-none-"][class*="-base"],
+[class*="pad-right-none-"][class*="-global"] > * {
+  padding-right: var(--pad-none);
+}
+
 [class*="pad-right-sm-"][class*="-base"],
 [class*="pad-right-sm-"][class*="-global"] > * {
   padding-right: var(--pad-right-sm);
@@ -759,6 +801,11 @@ pre > *::selection {
 }
 
 /***** Pad Bottom *****/
+[class*="pad-bot-none-"][class*="-base"],
+[class*="pad-bot-none-"][class*="-global"] > * {
+  padding-bottom: var(--pad-none);
+}
+
 [class*="pad-bot-sm-"][class*="-base"],
 [class*="pad-bot-sm-"][class*="-global"] > * {
   padding-bottom: var(--pad-bot-sm);
@@ -775,6 +822,11 @@ pre > *::selection {
 }
 
 /***** Pad Left *****/
+[class*="pad-left-none-"][class*="-base"],
+[class*="pad-left-none-"][class*="-global"] > * {
+  padding-left: var(--pad-none);
+}
+
 [class*="pad-left-sm-"][class*="-base"],
 [class*="pad-left-sm-"][class*="-global"] > * {
   padding-left: var(--pad-left-sm);
@@ -3322,4 +3374,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 6th Apr 2019 @ 3:08:05 PM */
+ Updated: 6th Apr 2019 @ 5:08:42 PM */
