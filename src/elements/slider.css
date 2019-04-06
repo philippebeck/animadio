@@ -10,6 +10,7 @@
 
 /***** Slider *****/
 .slider {
+  --slider-height: 40vh;
   --slider-text-align: center;
   --slider-anima-direction: reverse;
   --slider-anima-iteration: infinite;
@@ -28,6 +29,7 @@
   --slider-radio4-slider-timeline-width: 75%;
   --slider-radio5-slider-timeline-width: 100%;
 
+  height: var(--slider-height);
   text-align: var(--slider-text-align);
 }
 
@@ -180,24 +182,40 @@
 
 /***** Media Queries *****/
 @media (min-width: 576px) {
+  .slider {
+    --slider-height: 50vh;
+  }
+
   .slider-timeline {
     --slider-timeline-height: 7px;
   }
 }
 
 @media (min-width: 768px) {
+  .slider {
+    --slider-height: 60vh;
+  }
+
   .slider-timeline {
     --slider-timeline-height: 8px;
   }
 }
 
 @media (min-width: 992px) {
+  .slider {
+    --slider-height: 70vh;
+  }
+
   .slider-timeline {
     --slider-timeline-height: 9px;
   }
 }
 
 @media (min-width: 1200px) {
+  .slider {
+    --slider-height: 80vh;
+  }
+
   .slider-timeline {
     --slider-timeline-height: 10px;
   }
