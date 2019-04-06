@@ -1,21 +1,9 @@
 /********** SHATEX **********/
 
 /*
-1. Shatex Variables
-2. Shatex
-3. Shatex Blur
+1. Shatex
+2. Shatex Blur
 */
-
-/***** Shatex Variables *****/
-[class*="shatex-"] {
-  --shatex-sm: 1px 1px;
-  --shatex-md: 2px 2px;
-  --shatex-lg: 5px 5px;
-  --shatex-blur-all: 0 0 2px;
-  --shatex-blur-sm: 1px 1px 1px;
-  --shatex-blur-md: 2px 2px 2px;
-  --shatex-blur-lg: 5px 5px 5px;
-}
 
 /***** Shatex *****/
 [class*="shatex-sm-"][class*="-base"],

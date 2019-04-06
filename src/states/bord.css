@@ -1,27 +1,12 @@
 /********** BORD *********/
 
 /*
-1. Bord Variables
-2. Bord
-3. Bord Styles
-4. Bord Widths
-5. Bord Colors
-6. Bord Radius
+1. Bord
+2. Bord Styles
+3. Bord Widths
+4. Bord Colors
+5. Bord Radius
 */
-
-/***** Bord Variables *****/
-[class*="bord-"] {
-  --bord-style: solid;
-  --bord-width: medium;
-  --bord-color: var(--black);
-  --bord-radius: 5px;
-  --bord-width-sm: thin;
-  --bord-width-md: medium;
-  --bord-width-lg: thick;
-  --bord-radius-square: unset;
-  --bord-radius-round: 10px;
-  --bord-radius-circle: 50%;
-}
 
 /***** Bord *****/
 [class*="bord-"][class*="-base"],

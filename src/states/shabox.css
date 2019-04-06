@@ -1,26 +1,10 @@
 /********** SHABOX **********/
 
 /*
-1. Shabox Variables
-2. Shabox
-3. Shabox Blur
-4. Shabox Spread
+1. Shabox
+2. Shabox Blur
+3. Shabox Spread
 */
-
-/***** Shabox Variables *****/
-[class*="shabox-"] {
-  --shabox-sm: 1px 1px;
-  --shabox-md: 2px 2px;
-  --shabox-lg: 5px 5px;
-  --shabox-blur-all: 0 0 2px;
-  --shabox-blur-sm: 1px 1px 1px;
-  --shabox-blur-md: 2px 2px 2px;
-  --shabox-blur-lg: 5px 5px 5px;
-  --shabox-spread-all: 0 0 2px 2px;
-  --shabox-spread-sm: 1px 1px 1px 1px;
-  --shabox-spread-md: 2px 2px 2px 2px;
-  --shabox-spread-lg: 5px 5px 5px 5px;
-}
 
 /***** Shabox *****/
 [class*="shabox-sm-"][class*="-base"],

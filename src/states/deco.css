@@ -1,19 +1,11 @@
 /********** DECO ***********/
 
 /*
-1. Deco Variables
-2. Deco
-3. Deco Line
-4. Deco Style
-5. Deco Color
+1. Deco
+2. Deco Line
+3. Deco Style
+4. Deco Color
 */
-
-/***** Deco Variables *****/
-[class*="deco-"] {
-  --deco-line: underline;
-  --deco-style: solid;
-  --deco-color: var(--black);
-}
 
 /***** Deco *****/
 [class*="deco-"][class*="-base"],
