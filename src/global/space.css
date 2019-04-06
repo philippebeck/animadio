@@ -1,39 +1,17 @@
 /********** SPACE ***********/
 
 /*
-1. Mar Variables
-2. Mar All
-3. Mar Top
-4. Mar Right
-5. Mar Bottom
-6. Mar Left
-7. Pad Variables
-8. Pad All
-9. Pad Top
-10. Pad Right
-11. Pad Bottom
-12. Pad Left
+1. Mar All
+2. Mar Top
+3. Mar Right
+4. Mar Bottom
+5. Mar Left
+6. Pad All
+7. Pad Top
+8. Pad Right
+9. Pad Bottom
+10. Pad Left
 */
-
-/***** Mar Variables *****/
-[class*="mar-"] {
-  --mar-none: 0;
-  --mar-sm: 10px;
-  --mar-md: 20px;
-  --mar-lg: 50px;
-  --mar-bot-sm: 10px;
-  --mar-bot-md: 20px;
-  --mar-bot-lg: 50px;
-  --mar-left-sm: 10px;
-  --mar-left-md: 20px;
-  --mar-left-lg: 50px;
-  --mar-right-sm: 10px;
-  --mar-right-md: 20px;
-  --mar-right-lg: 50px;
-  --mar-top-sm: 10px;
-  --mar-top-md: 20px;
-  --mar-top-lg: 50px;
-}
 
 /***** Mar *****/
 [class*="mar-all-none-"][class*="-base"],
@@ -138,26 +116,6 @@
 [class*="mar-left-lg-"][class*="-base"],
 [class*="mar-left-lg-"][class*="-global"] > * {
   margin-left: var(--mar-left-lg);
-}
-
-/***** Pad Variables *****/
-[class*="pad-"] {
-  --pad-none: 0;
-  --pad-sm: 10px;
-  --pad-md: 20px;
-  --pad-lg: 50px;
-  --pad-bot-sm: 10px;
-  --pad-bot-md: 20px;
-  --pad-bot-lg: 50px;
-  --pad-left-sm: 10px;
-  --pad-left-md: 20px;
-  --pad-left-lg: 50px;
-  --pad-right-sm: 10px;
-  --pad-right-md: 20px;
-  --pad-right-lg: 50px;
-  --pad-top-sm: 10px;
-  --pad-top-md: 20px;
-  --pad-top-lg: 50px;
 }
 
 /***** Pad *****/

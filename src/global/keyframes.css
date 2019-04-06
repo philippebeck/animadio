@@ -1,46 +1,20 @@
 /********** KEYFRAMES **********/
 
 /*
-1. Keyframes Variables
-2. Rotate
-3. RotateX
-4. RotateY
-5. Scale
-6. ScaleX
-7. ScaleY
-8. Skew
-9. SkewX
-10. SkewY
-11. Translate
-12. TranslateX
-13. TranslateY
-14. Width
+1. Rotate
+2. RotateX
+3. RotateY
+4. Scale
+5. ScaleX
+6. ScaleY
+7. Skew
+8. SkewX
+9. SkewY
+10. Translate
+11. TranslateX
+12. TranslateY
+13. Width
 */
-
-/***** Keyframes Variables *****/
-:root {
-  --rotate: rotate(-360deg);
-  --rotateX: rotateX(-360deg);
-  --rotateY: rotateY(-360deg);
-  --scale: scale(0);
-  --scaleX: scaleX(0);
-  --scaleY: scaleY(0);
-  --skew: skew(180deg, 180deg);
-  --skewX: skewX(180deg);
-  --skewY: skewY(180deg);
-  --translate: translate(-100vw, -100vh);
-  --translateX: translateX(-100vw);
-  --translateY: translateY(-100vh);
-  --trany-tn: translateY(2vh);
-}
-
-.slider {
-  --slide1: url(https://animadio.org/img/svg/1.svg);
-  --slide2: url(https://animadio.org/img/svg/2.svg);
-  --slide3: url(https://animadio.org/img/svg/3.svg);
-  --slide4: url(https://animadio.org/img/svg/4.svg);
-  --slide5: url(https://animadio.org/img/svg/5.svg);
-}
 
 /***** Rotate *****/
 @keyframes rotate {
@@ -194,3 +168,4 @@
     width: 100%;
   }
 }
+

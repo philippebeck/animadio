@@ -1,34 +1,13 @@
 /********** SIZE ***********/
 
 /*
-1. Height Variables
-2. Height
-3. Min Height
-4. Max Height
-5. Width Variables
-6. Width
-7. Min Width
-8. Max Width
+1. Height
+2. Min Height
+3. Max Height
+4. Width
+5. Min Width
+6. Max Width
 */
-
-/***** Height Variables *****/
-[class*="height-"] {
-  --height-sm: 10vh;
-  --height-md: 50vh;
-  --height-lg: 100vh;
-}
-
-[class*="max-h-"] {
-  --max-height-sm: 50vh;
-  --max-height-md: 75vh;
-  --max-height-lg: 100vh;
-}
-
-[class*="min-h-"] {
-  --min-height-sm: 25vh;
-  --min-height-md: 50vh;
-  --min-height-lg: 75vh;
-}
 
 /***** Height *****/
 [class*="height-sm-"][class*="-base"],
@@ -78,25 +57,6 @@
   max-height: var(--max-height-lg);
 }
 
-/***** Width Variables *****/
-[class*="width-"] {
-  --width-sm: 25%;
-  --width-md: 50%;
-  --width-lg: 100%;
-}
-
-[class*="max-w-"] {
-  --max-width-sm: 50%;
-  --max-width-md: 75%;
-  --max-width-lg: 100%;
-}
-
-[class*="min-w-"] {
-  --min-width-sm: 25%;
-  --min-width-md: 50%;
-  --min-width-lg: 75%;
-}
-
 /***** Width *****/
 [class*="width-sm-"][class*="-base"],
 [class*="width-sm-"][class*="-global"] > * {
@@ -144,3 +104,4 @@
 [class*="max-w-lg-"][class*="-global"] > * {
   max-width: var(--max-width-lg);
 }
+
