@@ -107,9 +107,11 @@ ul {
 /***** Medias *****/
 img,
 video {
-  --img-max-width: 100%;
   --img-height: auto;
+  --img-max-width: 100%;
+  --img-object-fit: contain;
 
+  object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
   height: var(--img-height);
 }
