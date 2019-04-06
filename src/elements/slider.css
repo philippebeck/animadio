@@ -35,10 +35,14 @@
 
 /***** Slide *****/
 .slide {
-  --slide-height: 50vh;
+  --slide-height: auto;
   --slide-mar: auto;
+  --slide-width: 100%;
+  --slide-max-width: 1000px;
 
   margin: var(--slide-mar);
+  width: var(--slide-width);
+  max-width: var(--slide-max-width);
   height: var(--slide-height);
 }
 
