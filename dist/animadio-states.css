@@ -1,4 +1,4 @@
-/*! animadio v0.2.24 | https://animadio.org | MIT License */
+/*! animadio v0.2.25 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -354,19 +354,25 @@ template {
   display: none;
 }
 
-/********** INIT **********/
+/********** GLOBAL VAR **********/
 
 /*
-1. Root Variables
-2. Hidden Main Classes
+1. Navbar
+2. Colors
+3. Keyframes
+4. Init
+5. Mar
+6. Pad
+7. Height
+8. Width
 */
 
 /***** Root Variables *****/
 :root {
-  /* Navbar Height */
+  /* Navbar */
   --navbar-height: 80px;
 
-  /* Main Colors */
+  /***** Colors *****/
   --black: rgb(15, 15, 15);
   --blue: RoyalBlue;
   --gray: DimGray;
@@ -376,8 +382,6 @@ template {
   --purple: SlateBlue;
   --red: Crimson;
   --yellow: Gold;
-
-  /* Pale Colors */
   --choco: Chocolate;
   --jade: PaleGreen;
   --khaki: Khaki;
@@ -387,16 +391,12 @@ template {
   --tomato: Tomato;
   --violet: Violet;
   --white: Ivory;
-
-  /* Brand Colors */
   --facebook: #4267b2;
   --github: #24292e;
   --linkedin: #0077b5;
   --npm: #c12127;
   --stackoverflow: #f48024;
   --twitter: #1da1f2;
-
-  /* Transparent Colors */
   --amethyst: rgba(153, 102, 204, 0.5);
   --citrine: rgba(228, 208, 10, 0.5);
   --quartz: rgba(217, 217, 243, 0.5);
@@ -404,36 +404,8 @@ template {
   --obsidian: rgba(15, 15, 15, 0.5);
   --ruby: rgba(224, 17, 95, 0.5);
   --sapphire: rgba(15, 82, 186, 0.5);
-}
 
-/***** Hidden Main Classes *****/
-[class*="check"],
-[class*="radio"] {
-  display: none;
-}
-
-
-/********** KEYFRAMES **********/
-
-/*
-1. Keyframes Variables
-2. Rotate
-3. RotateX
-4. RotateY
-5. Scale
-6. ScaleX
-7. ScaleY
-8. Skew
-9. SkewX
-10. SkewY
-11. Translate
-12. TranslateX
-13. TranslateY
-14. Width
-*/
-
-/***** Keyframes Variables *****/
-:root {
+  /***** Keyframes *****/
   --rotate: rotate(-360deg);
   --rotateX: rotateX(-360deg);
   --rotateY: rotateY(-360deg);
@@ -449,13 +421,166 @@ template {
   --trany-tn: translateY(2vh);
 }
 
-.slider {
-  --slide1: url(https://animadio.org/img/svg/1.svg);
-  --slide2: url(https://animadio.org/img/svg/2.svg);
-  --slide3: url(https://animadio.org/img/svg/3.svg);
-  --slide4: url(https://animadio.org/img/svg/4.svg);
-  --slide5: url(https://animadio.org/img/svg/5.svg);
+/***** Init *****/
+body {
+  --global-font-family: serif;
+  --global-line-height: 1.6;
+  --global-font-size: 1.8rem;
 }
+
+article {
+  --article-mar-bot: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --title-font-family: sans-serif;
+  --title-wd-font-size: 5rem;
+  --title-wd-text-transform: capitalize;
+  --title-lg-font-size: 3.5rem;
+  --title-lg-text-transform: none;
+  --title-md-font-size: 3rem;
+  --title-sm-font-size: 2.5rem;
+  --title-tn-font-size: 2rem;
+}
+
+a {
+  --link-deco: none;
+  --link-outline: 0;
+}
+
+ul {
+  --list-mar: 0 0 10px;
+  --list-pad: 0;
+  --list-style: none;
+}
+
+img,
+video {
+  --img-height: auto;
+  --img-max-width: 100%;
+  --img-object-fit: contain;
+}
+
+table {
+  --table-mar: auto;
+  --table-bord-collapse: collapse;
+  --table-text-align: center;
+  --table-vertical-align: middle;
+}
+
+label {
+  --label-cursor: pointer;
+}
+
+pre {
+  --pre-font-family: monospace;
+  --pre-overflow: scroll;
+  --pre-pad: 10px;
+  --pre-selection-bg: var(--jade);
+  --pre-selection-color: var(--black);
+}
+
+/***** Mar *****/
+[class*="mar-"] {
+  --mar-none: 0;
+  --mar-sm: 10px;
+  --mar-md: 20px;
+  --mar-lg: 50px;
+  --mar-bot-sm: 10px;
+  --mar-bot-md: 20px;
+  --mar-bot-lg: 50px;
+  --mar-left-sm: 10px;
+  --mar-left-md: 20px;
+  --mar-left-lg: 50px;
+  --mar-right-sm: 10px;
+  --mar-right-md: 20px;
+  --mar-right-lg: 50px;
+  --mar-top-sm: 10px;
+  --mar-top-md: 20px;
+  --mar-top-lg: 50px;
+}
+
+/***** Pad *****/
+[class*="pad-"] {
+  --pad-none: 0;
+  --pad-sm: 10px;
+  --pad-md: 20px;
+  --pad-lg: 50px;
+  --pad-bot-sm: 10px;
+  --pad-bot-md: 20px;
+  --pad-bot-lg: 50px;
+  --pad-left-sm: 10px;
+  --pad-left-md: 20px;
+  --pad-left-lg: 50px;
+  --pad-right-sm: 10px;
+  --pad-right-md: 20px;
+  --pad-right-lg: 50px;
+  --pad-top-sm: 10px;
+  --pad-top-md: 20px;
+  --pad-top-lg: 50px;
+}
+
+/***** Height *****/
+[class*="height-"] {
+  --height-sm: 10vh;
+  --height-md: 50vh;
+  --height-lg: 100vh;
+}
+
+[class*="max-h-"] {
+  --max-height-sm: 50vh;
+  --max-height-md: 75vh;
+  --max-height-lg: 100vh;
+}
+
+[class*="min-h-"] {
+  --min-height-sm: 25vh;
+  --min-height-md: 50vh;
+  --min-height-lg: 75vh;
+}
+
+/***** Width *****/
+[class*="width-"] {
+  --width-sm: 25%;
+  --width-md: 50%;
+  --width-lg: 100%;
+}
+
+[class*="max-w-"] {
+  --max-width-sm: 50%;
+  --max-width-md: 75%;
+  --max-width-lg: 100%;
+}
+
+[class*="min-w-"] {
+  --min-width-sm: 25%;
+  --min-width-md: 50%;
+  --min-width-lg: 75%;
+}
+
+
+/********** KEYFRAMES **********/
+
+/*
+1. Rotate
+2. RotateX
+3. RotateY
+4. Scale
+5. ScaleX
+6. ScaleY
+7. Skew
+8. SkewX
+9. SkewY
+10. Translate
+11. TranslateX
+12. TranslateY
+13. Width
+*/
 
 /***** Rotate *****/
 @-webkit-keyframes rotate {
@@ -777,16 +902,24 @@ template {
   }
 }
 
-/********** TAGS **********/
+
+/********** INIT **********/
 
 /*
-1. Global
-2. Titles
-3. Links
+1. Hidden Main Classes
+2. Global
+3. Titles
+4. Links
 4. Lists
-5. Medias
-6. Tables
+6. Medias
+7. Tables
 */
+
+/***** Hidden Main Classes *****/
+[class*="check"],
+[class*="radio"] {
+  display: none;
+}
 
 /***** Global *****/
 * {
@@ -799,10 +932,6 @@ html {
 }
 
 body {
-  --global-font-family: serif;
-  --global-line-height: 1.6;
-  --global-font-size: 1.8rem;
-
   margin: 0;
   padding: 0;
   line-height: var(--global-line-height);
@@ -812,8 +941,6 @@ body {
 }
 
 article {
-  --article-mar-bot: 20px;
-
   margin-bottom: var(--article-mar-bot);
 }
 
@@ -824,63 +951,41 @@ h3,
 h4,
 h5,
 h6 {
-  --title-font-family: sans-serif;
-
   font-family: var(--title-font-family);
 }
 
 h1 {
-  --title-wd-font-size: 5rem;
-  --title-wd-text-transform: capitalize;
-
   font-size: var(--title-wd-font-size);
   text-transform: var(--title-wd-text-transform);
 }
 
 h2 {
-  --title-lg-font-size: 3.5rem;
-  --title-lg-text-transform: none;
-
   font-size: var(--title-lg-font-size);
   text-transform: var(--title-lg-text-transform);
 }
 
 h3 {
-  --title-md-font-size: 3rem;
-
   font-size: var(--title-md-font-size);
 }
 
 h4 {
-  --title-sm-font-size: 2.5rem;
-
   font-size: var(--title-sm-font-size);
 }
 
 h5,
 h6 {
-  --title-tn-font-size: 2rem;
-
   font-size: var(--title-tn-font-size);
 }
 
 /***** Links *****/
 a {
-  --link-deco: none;
-  --link-outline: 0;
-
   -webkit-text-decoration: var(--link-deco);
-
           text-decoration: var(--link-deco);
   outline: var(--link-outline);
 }
 
 /***** Lists *****/
 ul {
-  --list-mar: 0 0 10px;
-  --list-pad: 0;
-  --list-style: none;
-
   margin: var(--list-mar);
   padding: var(--list-pad);
   list-style: var(--list-style);
@@ -889,12 +994,7 @@ ul {
 /***** Medias *****/
 img,
 video {
-  --img-height: auto;
-  --img-max-width: 100%;
-  --img-object-fit: contain;
-
   -o-object-fit: var(--img-object-fit);
-
      object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
   height: var(--img-height);
@@ -902,11 +1002,6 @@ video {
 
 /***** Table *****/
 table {
-  --table-mar: auto;
-  --table-bord-collapse: collapse;
-  --table-text-align: center;
-  --table-vertical-align: middle;
-
   margin: var(--table-mar);
   border-collapse: var(--table-bord-collapse);
   text-align: var(--table-text-align);
@@ -915,19 +1010,11 @@ table {
 
 /***** Form *****/
 label {
-  --label-cursor: pointer;
-
   cursor: var(--label-cursor);
 }
 
 /***** Code *****/
 pre {
-  --pre-font-family: monospace;
-  --pre-overflow: scroll;
-  --pre-pad: 10px;
-  --pre-selection-bg: var(--jade);
-  --pre-selection-color: var(--black);
-
   overflow: var(--pre-overflow);
   padding: var(--pre-pad);
   font-family: var(--pre-font-family);
@@ -942,39 +1029,17 @@ pre > *::selection {
 /********** SPACE ***********/
 
 /*
-1. Mar Variables
-2. Mar All
-3. Mar Top
-4. Mar Right
-5. Mar Bottom
-6. Mar Left
-7. Pad Variables
-8. Pad All
-9. Pad Top
-10. Pad Right
-11. Pad Bottom
-12. Pad Left
+1. Mar All
+2. Mar Top
+3. Mar Right
+4. Mar Bottom
+5. Mar Left
+6. Pad All
+7. Pad Top
+8. Pad Right
+9. Pad Bottom
+10. Pad Left
 */
-
-/***** Mar Variables *****/
-[class*="mar-"] {
-  --mar-none: 0;
-  --mar-sm: 10px;
-  --mar-md: 20px;
-  --mar-lg: 50px;
-  --mar-bot-sm: 10px;
-  --mar-bot-md: 20px;
-  --mar-bot-lg: 50px;
-  --mar-left-sm: 10px;
-  --mar-left-md: 20px;
-  --mar-left-lg: 50px;
-  --mar-right-sm: 10px;
-  --mar-right-md: 20px;
-  --mar-right-lg: 50px;
-  --mar-top-sm: 10px;
-  --mar-top-md: 20px;
-  --mar-top-lg: 50px;
-}
 
 /***** Mar *****/
 [class*="mar-all-none-"][class*="-base"],
@@ -1079,26 +1144,6 @@ pre > *::selection {
 [class*="mar-left-lg-"][class*="-base"],
 [class*="mar-left-lg-"][class*="-global"] > * {
   margin-left: var(--mar-left-lg);
-}
-
-/***** Pad Variables *****/
-[class*="pad-"] {
-  --pad-none: 0;
-  --pad-sm: 10px;
-  --pad-md: 20px;
-  --pad-lg: 50px;
-  --pad-bot-sm: 10px;
-  --pad-bot-md: 20px;
-  --pad-bot-lg: 50px;
-  --pad-left-sm: 10px;
-  --pad-left-md: 20px;
-  --pad-left-lg: 50px;
-  --pad-right-sm: 10px;
-  --pad-right-md: 20px;
-  --pad-right-lg: 50px;
-  --pad-top-sm: 10px;
-  --pad-top-md: 20px;
-  --pad-top-lg: 50px;
 }
 
 /***** Pad *****/
@@ -1209,34 +1254,13 @@ pre > *::selection {
 /********** SIZE ***********/
 
 /*
-1. Height Variables
-2. Height
-3. Min Height
-4. Max Height
-5. Width Variables
-6. Width
-7. Min Width
-8. Max Width
+1. Height
+2. Min Height
+3. Max Height
+4. Width
+5. Min Width
+6. Max Width
 */
-
-/***** Height Variables *****/
-[class*="height-"] {
-  --height-sm: 10vh;
-  --height-md: 50vh;
-  --height-lg: 100vh;
-}
-
-[class*="max-h-"] {
-  --max-height-sm: 50vh;
-  --max-height-md: 75vh;
-  --max-height-lg: 100vh;
-}
-
-[class*="min-h-"] {
-  --min-height-sm: 25vh;
-  --min-height-md: 50vh;
-  --min-height-lg: 75vh;
-}
 
 /***** Height *****/
 [class*="height-sm-"][class*="-base"],
@@ -1286,25 +1310,6 @@ pre > *::selection {
   max-height: var(--max-height-lg);
 }
 
-/***** Width Variables *****/
-[class*="width-"] {
-  --width-sm: 25%;
-  --width-md: 50%;
-  --width-lg: 100%;
-}
-
-[class*="max-w-"] {
-  --max-width-sm: 50%;
-  --max-width-md: 75%;
-  --max-width-lg: 100%;
-}
-
-[class*="min-w-"] {
-  --min-width-sm: 25%;
-  --min-width-md: 50%;
-  --min-width-lg: 75%;
-}
-
 /***** Width *****/
 [class*="width-sm-"][class*="-base"],
 [class*="width-sm-"][class*="-global"] > * {
@@ -1352,6 +1357,7 @@ pre > *::selection {
 [class*="max-w-lg-"][class*="-global"] > * {
   max-width: var(--max-width-lg);
 }
+
 
 /********** HELPERS **********/
 
@@ -1557,6 +1563,84 @@ pre > *::selection {
   [class*="text-"][class*="-left-wd"] {
     text-align: left;
   }
+}
+
+
+/********** STATES VAR **********/
+
+/*
+1. Anima
+2. Bord
+3. Deco
+4. Shabox
+5. Shatex
+*/
+
+/***** Anima *****/
+[class*="anima-"] {
+  --anima-duration: 2s;
+  --anima-duration-tn: 1s;
+  --anima-duration-sm: 2s;
+  --anima-duration-md: 5s;
+  --anima-duration-lg: 10s;
+  --anima-duration-wd: 60s;
+  --anima-timing-ease: ease-in-out;
+  --anima-timing-steps: 60, start;
+  --anima-timing-bezier: 1, 5, 1, -5;
+  --anima-count-few: 2;
+  --anima-count-many: 5;
+  --anima-delay-small: 1s;
+  --anima-delay-medium: 2s;
+  --anima-delay-large: 3s;
+  --transform-origin-near: 50px 50px;
+  --transform-origin-far: top right 50px;
+}
+
+/***** Bord *****/
+[class*="bord-"] {
+  --bord-style: solid;
+  --bord-width: medium;
+  --bord-color: var(--black);
+  --bord-radius: 5px;
+  --bord-width-sm: thin;
+  --bord-width-md: medium;
+  --bord-width-lg: thick;
+  --bord-radius-square: unset;
+  --bord-radius-round: 10px;
+  --bord-radius-circle: 50%;
+}
+
+/***** Deco *****/
+[class*="deco-"] {
+  --deco-line: underline;
+  --deco-style: solid;
+  --deco-color: var(--black);
+}
+
+/***** Shabox *****/
+[class*="shabox-"] {
+  --shabox-sm: 1px 1px;
+  --shabox-md: 2px 2px;
+  --shabox-lg: 5px 5px;
+  --shabox-blur-all: 0 0 2px;
+  --shabox-blur-sm: 1px 1px 1px;
+  --shabox-blur-md: 2px 2px 2px;
+  --shabox-blur-lg: 5px 5px 5px;
+  --shabox-spread-all: 0 0 2px 2px;
+  --shabox-spread-sm: 1px 1px 1px 1px;
+  --shabox-spread-md: 2px 2px 2px 2px;
+  --shabox-spread-lg: 5px 5px 5px 5px;
+}
+
+/***** Shatex *****/
+[class*="shatex-"] {
+  --shatex-sm: 1px 1px;
+  --shatex-md: 2px 2px;
+  --shatex-lg: 5px 5px;
+  --shatex-blur-all: 0 0 2px;
+  --shatex-blur-sm: 1px 1px 1px;
+  --shatex-blur-md: 2px 2px 2px;
+  --shatex-blur-lg: 5px 5px 5px;
 }
 
 
@@ -1939,6 +2023,7 @@ pre > *::selection {
     display: inline;
   }
 }
+
 
 /********** POSITION **********/
 
@@ -2806,6 +2891,7 @@ pre > *::selection {
     overflow: scroll;
   }
 }
+
 
 /********** COLOR **********/
 
@@ -4095,26 +4181,10 @@ pre > *::selection {
 /********** SHABOX **********/
 
 /*
-1. Shabox Variables
-2. Shabox
-3. Shabox Blur
-4. Shabox Spread
+1. Shabox
+2. Shabox Blur
+3. Shabox Spread
 */
-
-/***** Shabox Variables *****/
-[class*="shabox-"] {
-  --shabox-sm: 1px 1px;
-  --shabox-md: 2px 2px;
-  --shabox-lg: 5px 5px;
-  --shabox-blur-all: 0 0 2px;
-  --shabox-blur-sm: 1px 1px 1px;
-  --shabox-blur-md: 2px 2px 2px;
-  --shabox-blur-lg: 5px 5px 5px;
-  --shabox-spread-all: 0 0 2px 2px;
-  --shabox-spread-sm: 1px 1px 1px 1px;
-  --shabox-spread-md: 2px 2px 2px 2px;
-  --shabox-spread-lg: 5px 5px 5px 5px;
-}
 
 /***** Shabox *****/
 [class*="shabox-sm-"][class*="-base"],
@@ -4651,21 +4721,9 @@ pre > *::selection {
 /********** SHATEX **********/
 
 /*
-1. Shatex Variables
-2. Shatex
-3. Shatex Blur
+1. Shatex
+2. Shatex Blur
 */
-
-/***** Shatex Variables *****/
-[class*="shatex-"] {
-  --shatex-sm: 1px 1px;
-  --shatex-md: 2px 2px;
-  --shatex-lg: 5px 5px;
-  --shatex-blur-all: 0 0 2px;
-  --shatex-blur-sm: 1px 1px 1px;
-  --shatex-blur-md: 2px 2px 2px;
-  --shatex-blur-lg: 5px 5px 5px;
-}
 
 /***** Shatex *****/
 [class*="shatex-sm-"][class*="-base"],
@@ -4834,27 +4892,12 @@ pre > *::selection {
 /********** BORD *********/
 
 /*
-1. Bord Variables
-2. Bord
-3. Bord Styles
-4. Bord Widths
-5. Bord Colors
-6. Bord Radius
+1. Bord
+2. Bord Styles
+3. Bord Widths
+4. Bord Colors
+5. Bord Radius
 */
-
-/***** Bord Variables *****/
-[class*="bord-"] {
-  --bord-style: solid;
-  --bord-width: medium;
-  --bord-color: var(--black);
-  --bord-radius: 5px;
-  --bord-width-sm: thin;
-  --bord-width-md: medium;
-  --bord-width-lg: thick;
-  --bord-radius-square: unset;
-  --bord-radius-round: 10px;
-  --bord-radius-circle: 50%;
-}
 
 /***** Bord *****/
 [class*="bord-"][class*="-base"],
@@ -5443,7 +5486,7 @@ pre > *::selection {
 /********** ANIMA **********/
 
 /*
-1. Variables
+1. Anima
 2. Name
 3. Duration
 4. Timing Function
@@ -5453,26 +5496,6 @@ pre > *::selection {
 8. Fill Mode
 9. Origin
 */
-
-/***** Variables *****/
-[class*="anima-"] {
-  --anima-duration: 2s;
-  --anima-duration-tn: 1s;
-  --anima-duration-sm: 2s;
-  --anima-duration-md: 5s;
-  --anima-duration-lg: 10s;
-  --anima-duration-wd: 60s;
-  --anima-timing-ease: ease-in-out;
-  --anima-timing-steps: 60, start;
-  --anima-timing-bezier: 1, 5, 1, -5;
-  --anima-count-few: 2;
-  --anima-count-many: 5;
-  --anima-delay-small: 1s;
-  --anima-delay-medium: 2s;
-  --anima-delay-large: 3s;
-  --transform-origin-near: 50px 50px;
-  --transform-origin-far: top right 50px;
-}
 
 /***** Anima *****/
 [class*="anima-"][class*="-base"],
@@ -6324,19 +6347,11 @@ pre > *::selection {
 /********** DECO ***********/
 
 /*
-1. Deco Variables
-2. Deco
-3. Deco Line
-4. Deco Style
-5. Deco Color
+1. Deco
+2. Deco Line
+3. Deco Style
+4. Deco Color
 */
-
-/***** Deco Variables *****/
-[class*="deco-"] {
-  --deco-line: underline;
-  --deco-style: solid;
-  --deco-color: var(--black);
-}
 
 /***** Deco *****/
 [class*="deco-"][class*="-base"],
@@ -6828,4 +6843,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 6th Apr 2019 @ 5:08:42 PM */
+ Updated: 7th Apr 2019 @ 12:18:38 AM */

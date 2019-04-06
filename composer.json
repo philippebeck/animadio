@@ -1,11 +1,11 @@
 {
   "name": "animadio/animadio",
   "description": "Animadio CSS Framework - Grid & Flexbox Layouts - Reusable & Customizable Elements - Perform Complex Animations - Controls by Radio Buttons - No JavaScript needed or used",
-  "version": "0.2.24",
+  "version": "0.2.25",
   "type": "framework",
   "keywords": [
-    "css",
-    "framework",
+    "css framework",
+    "css variables",
     "concatenation",
     "combinable classes",
     "flexbox",
@@ -13,7 +13,6 @@
     "click control",
     "keyframes",
     "animation",
-    "variables",
     "customizability",
     "reusability",
     "pure css"
