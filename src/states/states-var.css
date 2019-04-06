@@ -1,0 +1,77 @@
+/********** STATES VAR **********/
+
+/*
+1. Anima
+2. Bord
+3. Deco
+4. Shabox
+5. Shatex
+*/
+
+/***** Anima *****/
+[class*="anima-"] {
+  --anima-duration: 2s;
+  --anima-duration-tn: 1s;
+  --anima-duration-sm: 2s;
+  --anima-duration-md: 5s;
+  --anima-duration-lg: 10s;
+  --anima-duration-wd: 60s;
+  --anima-timing-ease: ease-in-out;
+  --anima-timing-steps: 60, start;
+  --anima-timing-bezier: 1, 5, 1, -5;
+  --anima-count-few: 2;
+  --anima-count-many: 5;
+  --anima-delay-small: 1s;
+  --anima-delay-medium: 2s;
+  --anima-delay-large: 3s;
+  --transform-origin-near: 50px 50px;
+  --transform-origin-far: top right 50px;
+}
+
+/***** Bord *****/
+[class*="bord-"] {
+  --bord-style: solid;
+  --bord-width: medium;
+  --bord-color: var(--black);
+  --bord-radius: 5px;
+  --bord-width-sm: thin;
+  --bord-width-md: medium;
+  --bord-width-lg: thick;
+  --bord-radius-square: unset;
+  --bord-radius-round: 10px;
+  --bord-radius-circle: 50%;
+}
+
+/***** Deco *****/
+[class*="deco-"] {
+  --deco-line: underline;
+  --deco-style: solid;
+  --deco-color: var(--black);
+}
+
+/***** Shabox *****/
+[class*="shabox-"] {
+  --shabox-sm: 1px 1px;
+  --shabox-md: 2px 2px;
+  --shabox-lg: 5px 5px;
+  --shabox-blur-all: 0 0 2px;
+  --shabox-blur-sm: 1px 1px 1px;
+  --shabox-blur-md: 2px 2px 2px;
+  --shabox-blur-lg: 5px 5px 5px;
+  --shabox-spread-all: 0 0 2px 2px;
+  --shabox-spread-sm: 1px 1px 1px 1px;
+  --shabox-spread-md: 2px 2px 2px 2px;
+  --shabox-spread-lg: 5px 5px 5px 5px;
+}
+
+/***** Shatex *****/
+[class*="shatex-"] {
+  --shatex-sm: 1px 1px;
+  --shatex-md: 2px 2px;
+  --shatex-lg: 5px 5px;
+  --shatex-blur-all: 0 0 2px;
+  --shatex-blur-sm: 1px 1px 1px;
+  --shatex-blur-md: 2px 2px 2px;
+  --shatex-blur-lg: 5px 5px 5px;
+}
+
