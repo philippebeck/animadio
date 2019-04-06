@@ -109,27 +109,21 @@
 @keyframes slider {
   0% {
     content: var(--slide1);
-    animation-play-state: paused;
   }
 
   20% {
-    content: var(--slide1);
-    animation-play-state: running;
-  }
-
-  40% {
     content: var(--slide2);
   }
 
-  60% {
+  40% {
     content: var(--slide3);
   }
 
-  80% {
+  60% {
     content: var(--slide4);
   }
 
-  100% {
+  80% {
     content: var(--slide5);
   }
 }
