@@ -68,7 +68,7 @@
 
 @media (min-width: 768px) {
   .navbar {
-   --navbar-justify-content: space-evenly;
+    --navbar-justify-content: space-evenly;
   }
 }
 
