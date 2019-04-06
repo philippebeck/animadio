@@ -142,6 +142,7 @@
 
 /***** Pad Variables *****/
 [class*="pad-"] {
+  --pad-none: 0;
   --pad-sm: 10px;
   --pad-md: 20px;
   --pad-lg: 50px;
@@ -160,6 +161,11 @@
 }
 
 /***** Pad *****/
+[class*="pad-all-none-"][class*="-base"],
+[class*="pad-all-none-"][class*="-global"] > * {
+  padding: var(--pad-none);
+}
+
 [class*="pad-all-sm-"][class*="-base"],
 [class*="pad-all-sm-"][class*="-global"] > * {
   padding: var(--pad-sm);
@@ -176,6 +182,11 @@
 }
 
 /***** Pad Top *****/
+[class*="pad-top-none-"][class*="-base"],
+[class*="pad-top-none-"][class*="-global"] > * {
+  padding-top: var(--pad-none);
+}
+
 [class*="pad-top-sm-"][class*="-base"],
 [class*="pad-top-sm-"][class*="-global"] > * {
   padding-top: var(--pad-top-sm);
@@ -192,6 +203,11 @@
 }
 
 /***** Pad Right *****/
+[class*="pad-right-none-"][class*="-base"],
+[class*="pad-right-none-"][class*="-global"] > * {
+  padding-right: var(--pad-none);
+}
+
 [class*="pad-right-sm-"][class*="-base"],
 [class*="pad-right-sm-"][class*="-global"] > * {
   padding-right: var(--pad-right-sm);
@@ -208,6 +224,11 @@
 }
 
 /***** Pad Bottom *****/
+[class*="pad-bot-none-"][class*="-base"],
+[class*="pad-bot-none-"][class*="-global"] > * {
+  padding-bottom: var(--pad-none);
+}
+
 [class*="pad-bot-sm-"][class*="-base"],
 [class*="pad-bot-sm-"][class*="-global"] > * {
   padding-bottom: var(--pad-bot-sm);
@@ -224,6 +245,11 @@
 }
 
 /***** Pad Left *****/
+[class*="pad-left-none-"][class*="-base"],
+[class*="pad-left-none-"][class*="-global"] > * {
+  padding-left: var(--pad-none);
+}
+
 [class*="pad-left-sm-"][class*="-base"],
 [class*="pad-left-sm-"][class*="-global"] > * {
   padding-left: var(--pad-left-sm);
