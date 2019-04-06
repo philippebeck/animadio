@@ -1,34 +1,13 @@
 /********** FLEX **********/
 
 /*
-1. Flex Variables
-2. Flex, Col & Row
-3. Flex Tiny
-4. Flex Small
-5. Flex Medium
-6. Flex Large
-7. Flex Wide
+1. Flex, Col & Row
+2. Flex Tiny
+3. Flex Small
+4. Flex Medium
+5. Flex Large
+6. Flex Wide
 */
-
-/***** Flex Variables *****/
-
-[class*="flex-"] {
-  --flex-neg-mar-tn: -2px;
-  --flex-pos-mar-tn: 2px;
-  --flex-width-tn: 4px;
-  --flex-neg-mar-sm: -5px;
-  --flex-pos-mar-sm: 5px;
-  --flex-width-sm: 10px;
-  --flex-neg-mar-md: -10px;
-  --flex-pos-mar-md: 10px;
-  --flex-width-md: 20px;
-  --flex-neg-mar-lg: -20px;
-  --flex-pos-mar-lg: 20px;
-  --flex-width-lg: 40px;
-  --flex-neg-mar-wd: -50px;
-  --flex-pos-mar-wd: 50px;
-  --flex-width-wd: 100px;
-}
 
 /***** Flex, Column & Row *****/
 [class*="flex"],
@@ -39,15 +18,11 @@
 }
 
 [class*="column"] {
-  --column-pad: 0 10px;
-
   flex-direction: column;
   padding: var(--column-pad);
 }
 
 [class*="row"] {
-  --row-pad: 10px 0;
-
   flex-direction: row;
   padding: var(--row-pad);
 }
@@ -577,3 +552,4 @@
     margin: var(--flex-pos-mar-wd);
   }
 }
+

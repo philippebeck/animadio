@@ -1,30 +1,10 @@
 /********** JUSTIFY **********/
 
 /*
-1. Justify Variables
-2. Justify Content
-3. Justify Items
-4. Justify Self
+1. Justify Content
+2. Justify Items
+3. Justify Self
 */
-
-/***** Justify Variables *****/
-[class*="juco-"][class*="-"] {
-  --justify-content-base: baseline;
-  --justify-content-end: flex-end;
-  --justify-content-start: flex-start;
-}
-
-[class*="juit-"] {
-  --justify-items-base: baseline;
-  --justify-items-end: flex-end;
-  --justify-items-start: flex-start;
-}
-
-[class*="juse-"] {
-  --justify-self-base: baseline;
-  --justify-self-end: flex-end;
-  --justify-self-start: flex-start;
-}
 
 /***** Justify Content *****/
 [class*="juco-"][class*="-around-tn"] {

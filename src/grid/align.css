@@ -1,30 +1,10 @@
 /********** ALIGN **********/
 
 /*
-1. Align Variables
-2. Align Content
-3. Align Items
-4. Align Self
+1. Align Content
+2. Align Items
+3. Align Self
 */
-
-/***** Align Variables *****/
-[class*="alco-"][class*="-"] {
-  --align-content-base: baseline;
-  --align-content-end: flex-end;
-  --align-content-start: flex-start;
-}
-
-[class*="alit-"] {
-  --align-items-base: baseline;
-  --align-items-end: flex-end;
-  --align-items-start: flex-start;
-}
-
-[class*="alse-"] {
-  --align-self-base: baseline;
-  --align-self-end: flex-end;
-  --align-self-start: flex-start;
-}
 
 /***** Align Content *****/
 [class*="alco-"][class*="-around-tn"] {
