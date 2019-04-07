@@ -1,5 +1,1137 @@
-/*! animadio v0.2.26 | https://animadio.org | MIT License */
+/*! animadio v0.2.27 | https://animadio.org | MIT License */
 
+/******************** VARIABLES ********************/
+
+/*
+You can override any variable of Animadio you want in your custom stylesheet file to cutomize the tag & class properties !
+
+1. GLOBAL VARIABLES
+  1.1 Colors
+  1.2 Keyframes
+  1.3 Init
+  1.4 Margin
+  1.5 Padding
+  1.6 Height
+  1.7 Width
+2. GRID VARIABLES
+  2.1 Grid
+  2.2 Flex
+  2.3 Align
+  2.4 Justify
+3. ELEMENTS VARIABLES
+  3.1 Btn
+  3.2 Foot
+  3.3 Form
+  3.4 Gallery
+  3.5 Menu
+  3.6 Navbar
+  3.7 Slider
+  3.8 Table
+4. STATES VARIABLES
+  4.1 Anima
+  4.2 Bord
+  4.3 Deco
+  4.4 Shabox
+  4.5 Shatex
+*/
+
+/********** 1. GLOBAL VARIABLES **********/
+
+/*
+1.1 Colors
+1.2 Keyframes
+1.3 Init
+1.4 Margin
+1.5 Padding
+1.6 Height
+1.7 Width
+*/
+
+:root {
+  /***** 1.1 Colors *****/
+  --black: rgb(15, 15, 15);
+  --blue: RoyalBlue;
+  --gray: DimGray;
+  --green: ForestGreen;
+  --maroon: SaddleBrown;
+  --orange: DarkOrange;
+  --purple: SlateBlue;
+  --red: Crimson;
+  --yellow: Gold;
+  --choco: Chocolate;
+  --jade: PaleGreen;
+  --khaki: Khaki;
+  --salmon: Salmon;
+  --silver: Silver;
+  --sky: SkyBlue;
+  --tomato: Tomato;
+  --violet: Violet;
+  --white: Ivory;
+  --facebook: #4267b2;
+  --github: #24292e;
+  --linkedin: #0077b5;
+  --npm: #c12127;
+  --stackoverflow: #f48024;
+  --twitter: #1da1f2;
+  --amethyst: rgba(153, 102, 204, 0.5);
+  --citrine: rgba(228, 208, 10, 0.5);
+  --quartz: rgba(217, 217, 243, 0.5);
+  --emerald: rgba(80, 200, 120, 0.5);
+  --obsidian: rgba(15, 15, 15, 0.5);
+  --ruby: rgba(224, 17, 95, 0.5);
+  --sapphire: rgba(15, 82, 186, 0.5);
+
+  /***** 1.3 Keyframes *****/
+  --keyframes-content1: url(https://animadio.org/img/svg/1.svg);
+  --keyframes-content2: url(https://animadio.org/img/svg/2.svg);
+  --keyframes-content3: url(https://animadio.org/img/svg/3.svg);
+  --keyframes-content4: url(https://animadio.org/img/svg/4.svg);
+  --keyframes-content5: url(https://animadio.org/img/svg/5.svg);
+  --keyframes-rotate: -360deg;
+  --keyframes-rotateX: -360deg;
+  --keyframes-rotateY: -360deg;
+  --keyframes-scale: 0;
+  --keyframes-scaleX: 0;
+  --keyframes-scaleY: 0;
+  --keyframes-skew: 180deg, 180deg;
+  --keyframes-skewX: 180deg;
+  --keyframes-skewY: 180deg;
+  --keyframes-translate: -100vw, -100vh;
+  --keyframes-translateX: -100vw;
+  --keyframes-translateY: -100vh;
+  --keyframes-translateY-opac: 68px;
+  --keyframes-translateY-xs: 2vh;
+  --keyframes-width: 100%;
+}
+
+/***** 1.4 Init *****/
+body {
+  --global-font-family: serif;
+  --global-line-height: 1.6;
+  --global-font-size: 1.8rem;
+}
+
+article {
+  --article-mar-bot: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --title-font-family: sans-serif;
+  --title-xl-font-size: 5rem;
+  --title-xl-text-transform: capitalize;
+  --title-lg-font-size: 3.5rem;
+  --title-lg-text-transform: none;
+  --title-md-font-size: 3rem;
+  --title-sm-font-size: 2.5rem;
+  --title-xs-font-size: 2rem;
+}
+
+a {
+  --link-deco: none;
+  --link-outline: 0;
+}
+
+ul {
+  --list-mar: 0 0 10px;
+  --list-pad: 0;
+  --list-style: none;
+}
+
+img,
+video {
+  --img-height: auto;
+  --img-max-width: 100%;
+  --img-object-fit: contain;
+}
+
+table {
+  --table-mar: auto;
+  --table-bord-collapse: collapse;
+  --table-text-align: center;
+  --table-vertical-align: middle;
+}
+
+label {
+  --label-cursor: pointer;
+}
+
+pre {
+  --pre-font-family: monospace;
+  --pre-overflow: scroll;
+  --pre-pad: 10px;
+  --pre-selection-bg: var(--jade);
+  --pre-selection-color: var(--black);
+}
+
+/***** 1.5 Margin *****/
+[class*="mar-"] {
+  --mar-none: 0;
+  --mar-sm: 10px;
+  --mar-md: 20px;
+  --mar-lg: 50px;
+  --mar-bot-sm: 10px;
+  --mar-bot-md: 20px;
+  --mar-bot-lg: 50px;
+  --mar-left-sm: 10px;
+  --mar-left-md: 20px;
+  --mar-left-lg: 50px;
+  --mar-right-sm: 10px;
+  --mar-right-md: 20px;
+  --mar-right-lg: 50px;
+  --mar-top-sm: 10px;
+  --mar-top-md: 20px;
+  --mar-top-lg: 50px;
+}
+
+/***** 1.6 Padding *****/
+[class*="pad-"] {
+  --pad-none: 0;
+  --pad-sm: 10px;
+  --pad-md: 20px;
+  --pad-lg: 50px;
+  --pad-bot-sm: 10px;
+  --pad-bot-md: 20px;
+  --pad-bot-lg: 50px;
+  --pad-left-sm: 10px;
+  --pad-left-md: 20px;
+  --pad-left-lg: 50px;
+  --pad-right-sm: 10px;
+  --pad-right-md: 20px;
+  --pad-right-lg: 50px;
+  --pad-top-sm: 10px;
+  --pad-top-md: 20px;
+  --pad-top-lg: 50px;
+}
+
+/***** 1.7 Height *****/
+[class*="height-"] {
+  --height-sm: 10vh;
+  --height-md: 50vh;
+  --height-lg: 100vh;
+}
+
+[class*="max-h-"] {
+  --max-height-sm: 50vh;
+  --max-height-md: 75vh;
+  --max-height-lg: 100vh;
+}
+
+[class*="min-h-"] {
+  --min-height-sm: 25vh;
+  --min-height-md: 50vh;
+  --min-height-lg: 75vh;
+}
+
+/***** 1.8 Width *****/
+[class*="width-"] {
+  --width-sm: 25%;
+  --width-md: 50%;
+  --width-lg: 100%;
+}
+
+[class*="max-w-"] {
+  --max-width-sm: 50%;
+  --max-width-md: 75%;
+  --max-width-lg: 100%;
+}
+
+[class*="min-w-"] {
+  --min-width-sm: 25%;
+  --min-width-md: 50%;
+  --min-width-lg: 75%;
+}
+
+/********** 2. GRID VARIABLES **********/
+
+/*
+2.1 Grid
+2.2 Flex
+2.3 Align
+2.4 Justify
+*/
+
+/***** 2.1 Grid *****/
+[class*="gap-"] {
+  --gap-1xs: 1px;
+  --gap-2xs: 2px;
+  --gap-3xs: 5px;
+  --gap-1sm: 2px;
+  --gap-2sm: 5px;
+  --gap-3sm: 10px;
+  --gap-1md: 5px;
+  --gap-2md: 10px;
+  --gap-3md: 20px;
+  --gap-1lg: 10px;
+  --gap-2lg: 20px;
+  --gap-3lg: 50px;
+  --gap-1xl: 20px;
+  --gap-2xl: 50px;
+  --gap-3xl: 100px;
+}
+
+/***** 2.2 Flex *****/
+[class*="flex-"] {
+  --flex-neg-mar-xs: -2px;
+  --flex-pos-mar-xs: 2px;
+  --flex-width-xs: 4px;
+  --flex-neg-mar-sm: -5px;
+  --flex-pos-mar-sm: 5px;
+  --flex-width-sm: 10px;
+  --flex-neg-mar-md: -10px;
+  --flex-pos-mar-md: 10px;
+  --flex-width-md: 20px;
+  --flex-neg-mar-lg: -20px;
+  --flex-pos-mar-lg: 20px;
+  --flex-width-lg: 40px;
+  --flex-neg-mar-xl: -50px;
+  --flex-pos-mar-xl: 50px;
+  --flex-width-xl: 100px;
+}
+
+[class*="column"] {
+  --column-pad: 0 10px;
+}
+
+[class*="row"] {
+  --row-pad: 10px 0;
+}
+
+/***** 2.3 Align *****/
+[class*="alco-"][class*="-"] {
+  --align-content-base: baseline;
+  --align-content-end: flex-end;
+  --align-content-start: flex-start;
+}
+
+[class*="alit-"] {
+  --align-items-base: baseline;
+  --align-items-end: flex-end;
+  --align-items-start: flex-start;
+}
+
+[class*="alse-"] {
+  --align-self-base: baseline;
+  --align-self-end: flex-end;
+  --align-self-start: flex-start;
+}
+
+/***** 2.4 Justify *****/
+[class*="juco-"][class*="-"] {
+  --justify-content-base: baseline;
+  --justify-content-end: flex-end;
+  --justify-content-start: flex-start;
+}
+
+[class*="juit-"] {
+  --justify-items-base: baseline;
+  --justify-items-end: flex-end;
+  --justify-items-start: flex-start;
+}
+
+[class*="juse-"] {
+  --justify-self-base: baseline;
+  --justify-self-end: flex-end;
+  --justify-self-start: flex-start;
+}
+
+/********** 3. ELEMENTS VARIABLES **********/
+
+/*
+3.1 Btn
+3.2 Foot
+3.3 Form
+3.4 Gallery
+3.5 Menu
+3.6 Navbar
+3.7 Slider
+3.8 Table
+*/
+
+/***** 3.1 Btn *****/
+[class*="btn"],
+[class*="button"] {
+  --btn-bg: var(--blue);
+  --btn-bord: solid medium var(--quartz);
+  --btn-color: var(--white);
+  --btn-font-size: 1.5rem;
+  --btn-mar: 10px;
+  --btn-pad: 5px 10px;
+  --btn-radius: 10px;
+  --btn-text-align: center;
+  --btn-hover-anima: none;
+  --btn-hover-bg: var(--blue);
+  --btn-hover-bord: outset medium var(--obsidian);
+  --btn-hover-color: var(--silver);
+  --btn-hover-radius: 0;
+  --btn-hover-shabox: 5px 5px 5px var(--gray);
+  --btn-hover-transition: border 1s;
+  --check-button-transform: scale(0.9);
+  --btn-color-black: var(--white);
+  --btn-color-blue: var(--white);
+  --btn-color-gray: var(--white);
+  --btn-color-green: var(--white);
+  --btn-color-maroon: var(--white);
+  --btn-color-orange: var(--white);
+  --btn-color-purple: var(--white);
+  --btn-color-red: var(--white);
+  --btn-color-yellow: var(--blue);
+  --btn-color-choco: var(--white);
+  --btn-color-jade: var(--violet);
+  --btn-color-khaki: var(--sky);
+  --btn-color-salmon: var(--white);
+  --btn-color-silver: var(--black);
+  --btn-color-sky: var(--white);
+  --btn-color-tomato: var(--white);
+  --btn-color-violet: var(--white);
+  --btn-color-white: var(--black);
+  --btn-color-fb: var(--white);
+  --btn-color-github: var(--white);
+  --btn-color-linkedin: var(--white);
+  --btn-color-npm: var(--white);
+  --btn-color-stack: var(--white);
+  --btn-color-tw: var(--white);
+  --btn-color-amthyst: var(--white);
+  --btn-color-citrine: var(--sky);
+  --btn-color-quartz: var(--black);
+  --btn-color-emerald: var(--violet);
+  --btn-color-obsidian: var(--white);
+  --btn-color-ruby: var(--white);
+  --btn-color-sapphire: var(--khaki);
+  --btn-pad-xs: 1px 2px;
+  --btn-pad-sm: 2px 5px;
+  --btn-pad-md: 5px 10px;
+  --btn-pad-lg: 10px 20px;
+  --btn-pad-xl: 20px 50px;
+  --btn-radius-square: unset;
+  --btn-radius-round: 50px;
+  --btn-radius-circle: 50%;
+}
+
+/***** 3.2 Foot *****/
+[class*="foot"] {
+  --foot-text-align: center;
+  --foot-title-color: var(--khaki);
+  --foot-title-font-size: 1.8rem;
+  --foot-global-pad-bot: 20px;
+  --foot-main-bg: var(--purple);
+  --foot-main-cursor: help;
+  --foot-main-flex-direction: column;
+  --foot-main-font-color: var(--white);
+  --foot-main-justify-content: space-evenly;
+  --foot-list-cursor: pointer;
+  --foot-list-text-align: center;
+  --foot-list-link-font-color: var(--white);
+  --foot-list-link-mar-bot: 5px;
+  --foot-list-link-hover-font-color: var(--jade);
+  --foot-info-bg: var(--white);
+  --foot-info-cursor: crosshair;
+  --foot-info-justify-content: center;
+  --foot-info-pad-top: 20px;
+  --foot-info-link-mar-left: 10px;
+  --foot-info-link-mar-right: 10px;
+}
+
+@media (min-width: 576px) {
+  [class*="foot"] {
+    --foot-main-flex-direction: row;
+  }
+}
+
+/***** 3.3 Form *****/
+.form {
+  --form-mar: auto;
+  --form-pad: 20px 0 40px;
+  --form-width: 300px;
+  --form-flex-direction: column;
+  --form-fieldset-bord: medium double;
+  --form-fieldset-mar-left: -13px;
+  --form-fieldset-pad: 20px;
+  --form-legend-font-weight: bold;
+  --form-input-placeholder-color: var(--blue);
+  --form-input-placeholder-font-style: italic;
+  --form-input-placeholder-text-align: center;
+  --form-input-field-bg: var(--sapphire);
+  --form-input-field-bord: thin solid var(--blue);
+  --form-input-field-line-height: 2;
+  --form-input-field-mar: 10px 0 20px;
+  --form-input-field-pad: 10px;
+  --form-input-field-radius: 10px;
+  --form-input-action-line-height: 2.5;
+  --form-input-action-cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .form {
+    --form-width: 500px;
+    --form-li-flex-direction: row;
+    --form-li-justify-content: space-between;
+    --form-li-align-items: center;
+    --form-label-lg-flex: 2 0 auto;
+    --form-label-text-decoration: underline dashed;
+    --form-fieldset-mar-left: 0;
+    --form-input-width: 75%;
+  }
+}
+
+/***** 3.4 Gallery *****/
+.gallery {
+  --gallery-flex-wrap: wrap;
+  --gallery-flow: hidden;
+  --gallery-mar: auto;
+  --gallery-max-w: 90%;
+  --gallery-all-cursor: crosshair;
+  --gallery-figure-bord: thin dotted var(--silver);
+  --gallery-figure-flow: hidden;
+  --gallery-figure-line-height: 0;
+  --gallery-figure-mar: 5px;
+  --gallery-figure-position: relative;
+  --gallery-figure-shabox: 0 0 5px;
+  --gallery-figure-width: calc(100% - 10px);
+  --gallery-figcaption-bg: rgba(0, 0, 0, 0.5);
+  --gallery-figcaption-bot: -60%;
+  --gallery-figcaption-line-height: 1;
+  --gallery-figcaption-position: absolute;
+  --gallery-figcaption-width: 100%;
+  --gallery-figure-figcaption-anima: tranY-opac 2s;
+  --gallery-figure-figcaption-bot: 0;
+  --gallery-figcaption-fa-bg: var(--blue);
+  --gallery-figcaption-fa-bord: 2px solid var(--white);
+  --gallery-figcaption-fa-position: absolute;
+  --gallery-figcaption-fa-right: 5px;
+  --gallery-figcaption-fa-top: -15px;
+  --gallery-figcaption-fa-pad: 10px;
+  --gallery-figcaption-fa-radius: 50%;
+  --gallery-link-all-mar: 0;
+  --gallery-link-all-cursor: pointer;
+  --gallery-link-all-even-pad: 0 10px 20px;
+  --gallery-link-all-even-font-size: 1.2rem;
+  --gallery-link-all-odd-pad: 10px;
+  --gallery-link-all-odd-font-size: 1.5rem;
+  --gallery-link-color: var(--white);
+}
+
+@media (min-width: 576px) {
+  .gallery {
+    --gallery-figure-mar: 6px;
+    --gallery-figure-width: calc(100% / 2 - 12px);
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery {
+    --gallery-figure-mar: 7px;
+    --gallery-figure-width: calc(100% / 3 - 14px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    --gallery-figure-mar: 8px;
+    --gallery-figure-width: calc(100% / 4 - 16px);
+  }
+}
+
+/***** 3.5 Menu *****/
+.menu {
+  --menu-bg: var(--silver);
+  --menu-border: none;
+  --menu-color: var(--gray);
+  --menu-flex-direction: column;
+  --menu-justify-content: center;
+  --menu-list-style: none;
+  --menu-mar: auto;
+  --menu-pad: 0;
+  --menu-radius: 5px;
+  --menu-width: 40%;
+  --menu-all-cursor: pointer;
+  --menu-label-justify-content: center;
+  --menu-label-pad: 6px 12px;
+  --menu-label-position: relative;
+  --menu-label-radius: 5px;
+  --menu-label-width: 100%;
+  --menu-label-hover-bg: var(--sapphire);
+  --menu-label-hover-bord: none;
+  --menu-label-hover-color: var(--white);
+  --menu-label-hover-font-style: italic;
+  --menu-label-check-bg: var(--blue);
+  --menu-label-check-color: var(--white);
+  --menu-label-check-font-weight: bold;
+  --menu-fa-bot: -18px;
+  --menu-fa-color: var(--blue);
+  --menu-fa-position: absolute;
+}
+
+@media (min-width: 576px) {
+  .menu {
+    --menu-flex-direction: row;
+    --menu-align-items: flex-start;
+    --menu-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    --menu-width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu {
+    --menu-width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    --menu-width: 70%;
+  }
+}
+
+/***** 3.6 Navbar *****/
+:root {
+  --navbar-height: 80px;
+}
+
+[class*="nav"] {
+  --navbar-align-items: center;
+  --navbar-bg: var(--blue);
+  --navbar-bot: unset;
+  --navbar-color: var(--white);
+  --navbar-index: 1000;
+  --navbar-justify-content: center;
+  --navbar-left: 0;
+  --navbar-position: fixed;
+  --navbar-right: 0;
+  --navbar-top: 0;
+  --navbar-link-color: var(--white);
+  --navbar-link-cursor: pointer;
+  --navbar-link-pad: 20px 10px;
+  --navbar-link-hover-color: var(--yellow);
+  --navbar-icon-align-self: center;
+  --navs-align-items: center;
+  --navs-list-style: none;
+  --navs-mar: 0;
+  --navs-pad: 0;
+  --navs-link-flex-direction: column;
+  --nav-brand-left: 10px;
+  --nav-brand-img-height: 40px;
+  --nav-main-link-hover-scale: 0.9;
+  --nav-info-height: 50px;
+  --nav-info-img-mar: 5px;
+  --nav-info-link-hover-scale: 1.5;
+  --nav-toggle-anima: tranY-xs 1s linear infinite alternate;
+  --nav-toggle-right: 10px;
+  --nav-toggle-top: 0;
+}
+
+@media (min-width: 576px) {
+  [class*="nav"] {
+    --navbar-flex-direction: row;
+    --navbar-justify-content: space-around;
+    --navbar-pad: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  [class*="nav"] {
+    --navbar-justify-content: space-evenly;
+  }
+}
+
+/***** 3.7 Slider *****/
+.slider {
+  --slider-height: 40vh;
+  --slider-text-align: center;
+  --slider-anima-direction: reverse;
+  --slider-anima-iteration: infinite;
+  --slider-transition-opacity: 2s;
+  --slider-transition-color: 1s;
+  --play-check-slide-anima: 10s linear;
+  --slider-icon-color: var(--blue);
+  --play-check-slide-play-icon-before: "\f28d";
+  --repeat-check-slide-repeat-icon-before: "\f056";
+  --direction-check-slide-direction-icon-before: "\f137";
+  --play-check-slide-icon-before-color: var(--white);
+  --slider-radio-slide-icon-before-content: "\f058";
+  --slider-radio1-slider-timeline-width: 0;
+  --slider-radio2-slider-timeline-width: 25%;
+  --slider-radio3-slider-timeline-width: 50%;
+  --slider-radio4-slider-timeline-width: 75%;
+  --slider-radio5-slider-timeline-width: 100%;
+  --slide-height: auto;
+  --slide-mar: auto;
+  --slide-width: 100%;
+  --slide-max-width: 1000px;
+  --slider-controls-bg: var(--obsidian);
+  --slider-controls-bord: thin solid var(--black);
+  --slider-controls-juco: center;
+  --slider-controls-mar: 10px;
+  --slider-controls-opacity: 0;
+  --slider-controls-pad: 10px;
+  --slider-controls-radius: 5px;
+  --slider-controls-hover-opacity: 1;
+  --slider-label-color: var(--white);
+  --slider-label-pad: 10px 5px;
+  --slider-timeline-bg: var(--blue);
+  --slider-timeline-height: 6px;
+}
+
+@media (min-width: 576px) {
+  .slider {
+    --slider-height: 50vh;
+    --slider-timeline-height: 7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider {
+    --slider-height: 60vh;
+    --slider-timeline-height: 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .slider {
+    --slider-height: 70vh;
+    --slider-timeline-height: 9px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider {
+    --slider-height: 80vh;
+    --slider-timeline-height: 10px;
+  }
+}
+
+/***** 3.8 Table *****/
+[class*="table"] {
+  --table-bord-collapse: collapse;
+  --table-bord-space: 10px;
+  --table-width: 50%;
+  --table-row-even-bg: var(--yellow);
+  --table-row-odd-bg: var(--white);
+  --table-caption-font-weight: bold;
+  --table-caption-color: var(--red);
+  --table-caption-side: top;
+  --table-title-bg: var(--blue);
+  --table-title-color: var(--white);
+  --table-title-font-style: italic;
+  --table-cell-bord-color: var(--black);
+  --table-cell-bord-radius: 0;
+  --table-cell-bord-style: solid;
+  --table-cell-bord-width: thin;
+  --table-cell-pad: 10px;
+  --table-cell-text-align: center;
+  --table-cell-vertical-align: middle;
+  --table-cell-color: var(--blue);
+}
+
+/********** 4. STATES VARIABLES **********/
+
+/*
+4.1 Anima
+4.2 Bord
+4.3 Deco
+4.4 Shabox
+4.5 Shatex
+*/
+
+/***** 4.1 Anima *****/
+[class*="anima-"] {
+  --anima-duration: 2s;
+  --anima-duration-xs: 1s;
+  --anima-duration-sm: 2s;
+  --anima-duration-md: 5s;
+  --anima-duration-lg: 10s;
+  --anima-duration-xl: 60s;
+  --anima-timing-ease: ease-in-out;
+  --anima-timing-steps: 60, start;
+  --anima-timing-bezier: 1, 5, 1, -5;
+  --anima-count-few: 2;
+  --anima-count-many: 5;
+  --anima-delay-small: 1s;
+  --anima-delay-medium: 2s;
+  --anima-delay-large: 3s;
+  --transform-origin-near: 50px 50px;
+  --transform-origin-far: top right 50px;
+}
+
+/***** 4.2 Bord *****/
+[class*="bord-"] {
+  --bord-style: solid;
+  --bord-width: medium;
+  --bord-color: var(--black);
+  --bord-radius: 5px;
+  --bord-width-sm: thin;
+  --bord-width-md: medium;
+  --bord-width-lg: thick;
+  --bord-radius-square: unset;
+  --bord-radius-round: 10px;
+  --bord-radius-circle: 50%;
+}
+
+/***** 4.3 Deco *****/
+[class*="deco-"] {
+  --deco-line: underline;
+  --deco-style: solid;
+  --deco-color: var(--black);
+}
+
+/***** 4.4 Shabox *****/
+[class*="shabox-"] {
+  --shabox-sm: 1px 1px;
+  --shabox-md: 2px 2px;
+  --shabox-lg: 5px 5px;
+  --shabox-blur-all: 0 0 2px;
+  --shabox-blur-sm: 1px 1px 1px;
+  --shabox-blur-md: 2px 2px 2px;
+  --shabox-blur-lg: 5px 5px 5px;
+  --shabox-spread-all: 0 0 2px 2px;
+  --shabox-spread-sm: 1px 1px 1px 1px;
+  --shabox-spread-md: 2px 2px 2px 2px;
+  --shabox-spread-lg: 5px 5px 5px 5px;
+}
+
+/***** 4.5 Shatex *****/
+[class*="shatex-"] {
+  --shatex-sm: 1px 1px;
+  --shatex-md: 2px 2px;
+  --shatex-lg: 5px 5px;
+  --shatex-blur-all: 0 0 2px;
+  --shatex-blur-sm: 1px 1px 1px;
+  --shatex-blur-md: 2px 2px 2px;
+  --shatex-blur-lg: 5px 5px 5px;
+}
+
+
+/******************** KEYFRAMES ********************/
+
+/*
+1. CONTENT KEYFRAMES
+  1.1 Content
+2. ROTATE KEYFRAMES
+  2.1 Rotate
+  2.2 RotateX
+  2.3 RotateY
+3. SCALE KEYFRAMES
+  3.1 Scale
+  3.2 ScaleX
+  3.3 ScaleY
+4. SKEW KEYFRAMES
+  4.1 Skew
+  4.2 SkewX
+  4.3 SkewY
+5. TRANSLATE KEYFRAMES
+  5.1 Translate
+  5.2 TranslateX
+  5.3 TranslateY
+6. WIDTH KEYFRAMES
+  6.1 Width
+*/
+
+/********** 1. CONTENT KEYFRAMES **********/
+
+/*
+1.1 Content
+*/
+
+/***** 1.1 Content *****/
+@-webkit-keyframes content {
+  0% {
+    content: var(--keyframes-content1);
+  }
+
+  20% {
+    content: var(--keyframes-content2);
+  }
+
+  40% {
+    content: var(--keyframes-content3);
+  }
+
+  60% {
+    content: var(--keyframes-content4);
+  }
+
+  80% {
+    content: var(--keyframes-content5);
+  }
+}
+@keyframes content {
+  0% {
+    content: var(--keyframes-content1);
+  }
+
+  20% {
+    content: var(--keyframes-content2);
+  }
+
+  40% {
+    content: var(--keyframes-content3);
+  }
+
+  60% {
+    content: var(--keyframes-content4);
+  }
+
+  80% {
+    content: var(--keyframes-content5);
+  }
+}
+
+/********** 2. ROTATE KEYFRAMES **********/
+
+/*
+2.1 Rotate
+2.2 RotateX
+2.3 RotateY
+*/
+
+/***** 2.1 Rotate *****/
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(var(--keyframes-rotate));
+            transform: rotate(var(--keyframes-rotate));
+  }
+}
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(var(--keyframes-rotate));
+            transform: rotate(var(--keyframes-rotate));
+  }
+}
+
+/***** 2.2 RotateX *****/
+@-webkit-keyframes rotateX {
+  to {
+    -webkit-transform: rotateX(var(--keyframes-rotateX));
+            transform: rotateX(var(--keyframes-rotateX));
+  }
+}
+@keyframes rotateX {
+  to {
+    -webkit-transform: rotateX(var(--keyframes-rotateX));
+            transform: rotateX(var(--keyframes-rotateX));
+  }
+}
+
+/***** 2.3 RotateY *****/
+@-webkit-keyframes rotateY {
+  to {
+    -webkit-transform: rotateY(var(--keyframes-rotateY));
+            transform: rotateY(var(--keyframes-rotateY));
+  }
+}
+@keyframes rotateY {
+  to {
+    -webkit-transform: rotateY(var(--keyframes-rotateY));
+            transform: rotateY(var(--keyframes-rotateY));
+  }
+}
+
+/********** 3. SCALE KEYFRAMES **********/
+
+/*
+3.1 Scale
+3.2 ScaleX
+3.3 ScaleY
+*/
+
+/***** 3.1 Scale *****/
+@-webkit-keyframes scale {
+  to {
+    -webkit-transform: scale(var(--keyframes-scale));
+            transform: scale(var(--keyframes-scale));
+  }
+}
+@keyframes scale {
+  to {
+    -webkit-transform: scale(var(--keyframes-scale));
+            transform: scale(var(--keyframes-scale));
+  }
+}
+
+/***** 3.2 ScaleX *****/
+@-webkit-keyframes scaleX {
+  to {
+    -webkit-transform: scaleX(var(--keyframes-scaleX));
+            transform: scaleX(var(--keyframes-scaleX));
+  }
+}
+@keyframes scaleX {
+  to {
+    -webkit-transform: scaleX(var(--keyframes-scaleX));
+            transform: scaleX(var(--keyframes-scaleX));
+  }
+}
+
+/***** 3.3 ScaleY *****/
+@-webkit-keyframes scaleY {
+  to {
+    -webkit-transform: scaleY(var(--keyframes-scaleY));
+            transform: scaleY(var(--keyframes-scaleY));
+  }
+}
+@keyframes scaleY {
+  to {
+    -webkit-transform: scaleY(var(--keyframes-scaleY));
+            transform: scaleY(var(--keyframes-scaleY));
+  }
+}
+
+/********** 4. SKEW KEYFRAMES **********/
+
+/*
+4.1 Skew
+4.2 SkewX
+4.3 SkewY
+*/
+
+/***** 4.1 Skew *****/
+@-webkit-keyframes skew {
+  to {
+    -webkit-transform: skew(var(--keyframes-skew));
+            transform: skew(var(--keyframes-skew));
+  }
+}
+@keyframes skew {
+  to {
+    -webkit-transform: skew(var(--keyframes-skew));
+            transform: skew(var(--keyframes-skew));
+  }
+}
+
+/***** 4.2 SkewX *****/
+@-webkit-keyframes skewX {
+  to {
+    -webkit-transform: skewX(var(--keyframes-skewX));
+            transform: skewX(var(--keyframes-skewX));
+  }
+}
+@keyframes skewX {
+  to {
+    -webkit-transform: skewX(var(--keyframes-skewX));
+            transform: skewX(var(--keyframes-skewX));
+  }
+}
+
+/***** 4.3 SkewY *****/
+@-webkit-keyframes skewY {
+  to {
+    -webkit-transform: skewY(var(--keyframes-skewY));
+            transform: skewY(var(--keyframes-skewY));
+  }
+}
+@keyframes skewY {
+  to {
+    -webkit-transform: skewY(var(--keyframes-skewY));
+            transform: skewY(var(--keyframes-skewY));
+  }
+}
+
+/********** 5. TRANSLATE KEYFRAMES **********/
+
+/*
+5.1 Translate
+5.2 TranslateX
+5.3 TranslateY
+*/
+
+/***** 5.1 Translate *****/
+@-webkit-keyframes translate {
+  to {
+    -webkit-transform: translate(var(--keyframes-translate));
+            transform: translate(var(--keyframes-translate));
+  }
+}
+@keyframes translate {
+  to {
+    -webkit-transform: translate(var(--keyframes-translate));
+            transform: translate(var(--keyframes-translate));
+  }
+}
+
+/***** 5.2 TranslateX *****/
+@-webkit-keyframes translateX {
+  to {
+    -webkit-transform: translateX(var(--keyframes-translateX));
+            transform: translateX(var(--keyframes-translateX));
+  }
+}
+@keyframes translateX {
+  to {
+    -webkit-transform: translateX(var(--keyframes-translateX));
+            transform: translateX(var(--keyframes-translateX));
+  }
+}
+
+/***** 5.3 TranslateY *****/
+@-webkit-keyframes translateY {
+  to {
+    -webkit-transform: translateY(var(--keyframes-translateY));
+            transform: translateY(var(--keyframes-translateY));
+  }
+}
+@keyframes translateY {
+  to {
+    -webkit-transform: translateY(var(--keyframes-translateY));
+            transform: translateY(var(--keyframes-translateY));
+  }
+}
+
+@-webkit-keyframes translateY-opac {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(var(--keyframes-translateY-opac));
+            transform: translateY(var(--keyframes-translateY-opac));
+  }
+}
+
+@keyframes translateY-opac {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(var(--keyframes-translateY-opac));
+            transform: translateY(var(--keyframes-translateY-opac));
+  }
+}
+
+@-webkit-keyframes translateY-xs {
+  to {
+    -webkit-transform: translateY(var(--keyframes-translateY-xs));
+            transform: translateY(var(--keyframes-translateY-xs));
+  }
+}
+
+@keyframes translateY-xs {
+  to {
+    -webkit-transform: translateY(var(--keyframes-translateY-xs));
+            transform: translateY(var(--keyframes-translateY-xs));
+  }
+}
+
+/********** 6. WIDTH KEYFRAMES **********/
+
+/*
+6.1 Width
+*/
+
+/***** 6.1 Width *****/
+@-webkit-keyframes width {
+  to {
+    width: var(--keyframes-width);
+  }
+}
+@keyframes width {
+  to {
+    width: var(--keyframes-width);
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -354,574 +1486,48 @@ template {
   display: none;
 }
 
-/********** GLOBAL VAR **********/
+/******************** INIT ********************/
 
 /*
-1. Navbar
-2. Colors
-3. Keyframes
-4. Init
-5. Mar
-6. Pad
-7. Height
-8. Width
+1. CLASSES
+  1.1 Hidden
+2. TAGS
+  2.1 Global
+  2.2 Title
+  2.3 Link
+  2.4 List
+  2.5 Media
+  2.6 Table
+  2.7 Form
+  2.8 Code
 */
 
-/***** Root Variables *****/
-:root {
-  /* Navbar */
-  --navbar-height: 80px;
-
-  /***** Colors *****/
-  --black: rgb(15, 15, 15);
-  --blue: RoyalBlue;
-  --gray: DimGray;
-  --green: ForestGreen;
-  --maroon: SaddleBrown;
-  --orange: DarkOrange;
-  --purple: SlateBlue;
-  --red: Crimson;
-  --yellow: Gold;
-  --choco: Chocolate;
-  --jade: PaleGreen;
-  --khaki: Khaki;
-  --salmon: Salmon;
-  --silver: Silver;
-  --sky: SkyBlue;
-  --tomato: Tomato;
-  --violet: Violet;
-  --white: Ivory;
-  --facebook: #4267b2;
-  --github: #24292e;
-  --linkedin: #0077b5;
-  --npm: #c12127;
-  --stackoverflow: #f48024;
-  --twitter: #1da1f2;
-  --amethyst: rgba(153, 102, 204, 0.5);
-  --citrine: rgba(228, 208, 10, 0.5);
-  --quartz: rgba(217, 217, 243, 0.5);
-  --emerald: rgba(80, 200, 120, 0.5);
-  --obsidian: rgba(15, 15, 15, 0.5);
-  --ruby: rgba(224, 17, 95, 0.5);
-  --sapphire: rgba(15, 82, 186, 0.5);
-
-  /***** Keyframes *****/
-  --rotate: rotate(-360deg);
-  --rotateX: rotateX(-360deg);
-  --rotateY: rotateY(-360deg);
-  --scale: scale(0);
-  --scaleX: scaleX(0);
-  --scaleY: scaleY(0);
-  --skew: skew(180deg, 180deg);
-  --skewX: skewX(180deg);
-  --skewY: skewY(180deg);
-  --translate: translate(-100vw, -100vh);
-  --translateX: translateX(-100vw);
-  --translateY: translateY(-100vh);
-  --trany-xs: translateY(2vh);
-}
-
-/***** Init *****/
-body {
-  --global-font-family: serif;
-  --global-line-height: 1.6;
-  --global-font-size: 1.8rem;
-}
-
-article {
-  --article-mar-bot: 20px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  --title-font-family: sans-serif;
-  --title-xl-font-size: 5rem;
-  --title-xl-text-transform: capitalize;
-  --title-lg-font-size: 3.5rem;
-  --title-lg-text-transform: none;
-  --title-md-font-size: 3rem;
-  --title-sm-font-size: 2.5rem;
-  --title-xs-font-size: 2rem;
-}
-
-a {
-  --link-deco: none;
-  --link-outline: 0;
-}
-
-ul {
-  --list-mar: 0 0 10px;
-  --list-pad: 0;
-  --list-style: none;
-}
-
-img,
-video {
-  --img-height: auto;
-  --img-max-width: 100%;
-  --img-object-fit: contain;
-}
-
-table {
-  --table-mar: auto;
-  --table-bord-collapse: collapse;
-  --table-text-align: center;
-  --table-vertical-align: middle;
-}
-
-label {
-  --label-cursor: pointer;
-}
-
-pre {
-  --pre-font-family: monospace;
-  --pre-overflow: scroll;
-  --pre-pad: 10px;
-  --pre-selection-bg: var(--jade);
-  --pre-selection-color: var(--black);
-}
-
-/***** Mar *****/
-[class*="mar-"] {
-  --mar-none: 0;
-  --mar-sm: 10px;
-  --mar-md: 20px;
-  --mar-lg: 50px;
-  --mar-bot-sm: 10px;
-  --mar-bot-md: 20px;
-  --mar-bot-lg: 50px;
-  --mar-left-sm: 10px;
-  --mar-left-md: 20px;
-  --mar-left-lg: 50px;
-  --mar-right-sm: 10px;
-  --mar-right-md: 20px;
-  --mar-right-lg: 50px;
-  --mar-top-sm: 10px;
-  --mar-top-md: 20px;
-  --mar-top-lg: 50px;
-}
-
-/***** Pad *****/
-[class*="pad-"] {
-  --pad-none: 0;
-  --pad-sm: 10px;
-  --pad-md: 20px;
-  --pad-lg: 50px;
-  --pad-bot-sm: 10px;
-  --pad-bot-md: 20px;
-  --pad-bot-lg: 50px;
-  --pad-left-sm: 10px;
-  --pad-left-md: 20px;
-  --pad-left-lg: 50px;
-  --pad-right-sm: 10px;
-  --pad-right-md: 20px;
-  --pad-right-lg: 50px;
-  --pad-top-sm: 10px;
-  --pad-top-md: 20px;
-  --pad-top-lg: 50px;
-}
-
-/***** Height *****/
-[class*="height-"] {
-  --height-sm: 10vh;
-  --height-md: 50vh;
-  --height-lg: 100vh;
-}
-
-[class*="max-h-"] {
-  --max-height-sm: 50vh;
-  --max-height-md: 75vh;
-  --max-height-lg: 100vh;
-}
-
-[class*="min-h-"] {
-  --min-height-sm: 25vh;
-  --min-height-md: 50vh;
-  --min-height-lg: 75vh;
-}
-
-/***** Width *****/
-[class*="width-"] {
-  --width-sm: 25%;
-  --width-md: 50%;
-  --width-lg: 100%;
-}
-
-[class*="max-w-"] {
-  --max-width-sm: 50%;
-  --max-width-md: 75%;
-  --max-width-lg: 100%;
-}
-
-[class*="min-w-"] {
-  --min-width-sm: 25%;
-  --min-width-md: 50%;
-  --min-width-lg: 75%;
-}
-
-
-/********** KEYFRAMES **********/
+/********** 1. CLASSES **********/
 
 /*
-1. Rotate
-2. RotateX
-3. RotateY
-4. Scale
-5. ScaleX
-6. ScaleY
-7. Skew
-8. SkewX
-9. SkewY
-10. Translate
-11. TranslateX
-12. TranslateY
-13. Width
+1.1 Hidden
 */
 
-/***** Rotate *****/
-@-webkit-keyframes rotate {
-  to {
-    -webkit-transform: var(--rotate);
-            transform: var(--rotate);
-  }
-}
-@keyframes rotate {
-  to {
-    -webkit-transform: var(--rotate);
-            transform: var(--rotate);
-  }
-}
-
-/***** RotateX *****/
-@-webkit-keyframes rotateX {
-  to {
-    -webkit-transform: var(--rotateX);
-            transform: var(--rotateX);
-  }
-}
-@keyframes rotateX {
-  to {
-    -webkit-transform: var(--rotateX);
-            transform: var(--rotateX);
-  }
-}
-
-/***** RotateY *****/
-@-webkit-keyframes rotateY {
-  to {
-    -webkit-transform: var(--rotateY);
-            transform: var(--rotateY);
-  }
-}
-@keyframes rotateY {
-  to {
-    -webkit-transform: var(--rotateY);
-            transform: var(--rotateY);
-  }
-}
-
-/***** Scale *****/
-@-webkit-keyframes scale {
-  to {
-    -webkit-transform: var(--scale);
-            transform: var(--scale);
-  }
-}
-@keyframes scale {
-  to {
-    -webkit-transform: var(--scale);
-            transform: var(--scale);
-  }
-}
-
-/***** ScaleX *****/
-@-webkit-keyframes scaleX {
-  to {
-    -webkit-transform: var(--scaleX);
-            transform: var(--scaleX);
-  }
-}
-@keyframes scaleX {
-  to {
-    -webkit-transform: var(--scaleX);
-            transform: var(--scaleX);
-  }
-}
-
-/***** ScaleY *****/
-@-webkit-keyframes scaleY {
-  to {
-    -webkit-transform: var(--scaleY);
-            transform: var(--scaleY);
-  }
-}
-@keyframes scaleY {
-  to {
-    -webkit-transform: var(--scaleY);
-            transform: var(--scaleY);
-  }
-}
-
-/***** Skew *****/
-@-webkit-keyframes skew {
-  to {
-    -webkit-transform: var(--skew);
-            transform: var(--skew);
-  }
-}
-@keyframes skew {
-  to {
-    -webkit-transform: var(--skew);
-            transform: var(--skew);
-  }
-}
-
-/***** SkewX *****/
-@-webkit-keyframes skewX {
-  to {
-    -webkit-transform: var(--skewX);
-            transform: var(--skewX);
-  }
-}
-@keyframes skewX {
-  to {
-    -webkit-transform: var(--skewX);
-            transform: var(--skewX);
-  }
-}
-
-/***** SkewY *****/
-@-webkit-keyframes skewY {
-  to {
-    -webkit-transform: var(--skewY);
-            transform: var(--skewY);
-  }
-}
-@keyframes skewY {
-  to {
-    -webkit-transform: var(--skewY);
-            transform: var(--skewY);
-  }
-}
-
-/***** Slider *****/
-@-webkit-keyframes slider {
-  0% {
-    content: var(--slide1);
-  }
-
-  20% {
-    content: var(--slide2);
-  }
-
-  40% {
-    content: var(--slide3);
-  }
-
-  60% {
-    content: var(--slide4);
-  }
-
-  80% {
-    content: var(--slide5);
-  }
-}
-@keyframes slider {
-  0% {
-    content: var(--slide1);
-  }
-
-  20% {
-    content: var(--slide2);
-  }
-
-  40% {
-    content: var(--slide3);
-  }
-
-  60% {
-    content: var(--slide4);
-  }
-
-  80% {
-    content: var(--slide5);
-  }
-}
-
-/***** Translate *****/
-@-webkit-keyframes translate {
-  to {
-    -webkit-transform: var(--translate);
-            transform: var(--translate);
-  }
-}
-@keyframes translate {
-  to {
-    -webkit-transform: var(--translate);
-            transform: var(--translate);
-  }
-}
-
-/***** TranslateX *****/
-@-webkit-keyframes translateX {
-  to {
-    -webkit-transform: var(--translateX);
-            transform: var(--translateX);
-  }
-}
-@keyframes translateX {
-  to {
-    -webkit-transform: var(--translateX);
-            transform: var(--translateX);
-  }
-}
-
-@-webkit-keyframes translateX-paused {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-  }
-
-  10% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
-  }
-
-  to {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-
-@keyframes translateX-paused {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-  }
-
-  10% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
-  }
-
-  to {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-
-/***** TranslateY *****/
-@-webkit-keyframes translateY {
-  to {
-    -webkit-transform: var(--translateY);
-            transform: var(--translateY);
-  }
-}
-@keyframes translateY {
-  to {
-    -webkit-transform: var(--translateY);
-            transform: var(--translateY);
-  }
-}
-
-@-webkit-keyframes trany-opac {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(68px);
-            transform: translateY(68px);
-  }
-}
-
-@keyframes trany-opac {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(68px);
-            transform: translateY(68px);
-  }
-}
-
-@-webkit-keyframes trany-xs {
-  to {
-    -webkit-transform: var(--trany-xs);
-            transform: var(--trany-xs);
-  }
-}
-
-@keyframes trany-xs {
-  to {
-    -webkit-transform: var(--trany-xs);
-            transform: var(--trany-xs);
-  }
-}
-
-/***** Width *****/
-@-webkit-keyframes width {
-  from {
-    width: 0;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-  }
-
-  10% {
-    width: 0;
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-@keyframes width {
-  from {
-    width: 0;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-  }
-
-  10% {
-    width: 0;
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-
-/********** INIT **********/
-
-/*
-1. Hidden Main Classes
-2. Global
-3. Titles
-4. Links
-4. Lists
-6. Medias
-7. Tables
-*/
-
-/***** Hidden Main Classes *****/
+/***** 1.1 Hidden *****/
 [class*="check"],
 [class*="radio"] {
   display: none;
 }
 
-/***** Global *****/
+/********** 2. TAGS **********/
+
+/*
+2.1 Global
+2.2 Title
+2.3 Link
+2.4 List
+2.5 Media
+2.6 Table
+2.7 Form
+2.8 Code
+*/
+
+/***** 2.1 Global *****/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -944,7 +1550,7 @@ article {
   margin-bottom: var(--article-mar-bot);
 }
 
-/***** Titles *****/
+/***** 2.2 Title *****/
 h1,
 h2,
 h3,
@@ -977,21 +1583,21 @@ h6 {
   font-size: var(--title-xs-font-size);
 }
 
-/***** Links *****/
+/***** 2.3 Link *****/
 a {
   -webkit-text-decoration: var(--link-deco);
           text-decoration: var(--link-deco);
   outline: var(--link-outline);
 }
 
-/***** Lists *****/
+/***** 2.4 List *****/
 ul {
   margin: var(--list-mar);
   padding: var(--list-pad);
   list-style: var(--list-style);
 }
 
-/***** Medias *****/
+/***** 2.5 Media *****/
 img,
 video {
   -o-object-fit: var(--img-object-fit);
@@ -1000,7 +1606,7 @@ video {
   height: var(--img-height);
 }
 
-/***** Table *****/
+/***** 2.6 Table *****/
 table {
   margin: var(--table-mar);
   border-collapse: var(--table-bord-collapse);
@@ -1008,12 +1614,12 @@ table {
   vertical-align: var(--table-vertical-align);
 }
 
-/***** Form *****/
+/***** 2.7 Form *****/
 label {
   cursor: var(--label-cursor);
 }
 
-/***** Code *****/
+/***** 2.8 Code *****/
 pre {
   overflow: var(--pre-overflow);
   padding: var(--pre-pad);
@@ -1026,22 +1632,138 @@ pre > *::selection {
 }
 
 
-/********** SPACE ***********/
+/******************** BOX *********************/
 
 /*
-1. Mar All
-2. Mar Top
-3. Mar Right
-4. Mar Bottom
-5. Mar Left
-6. Pad All
-7. Pad Top
-8. Pad Right
-9. Pad Bottom
-10. Pad Left
+1. CONTAINER CLASSES
+  1.1 Container
+  1.2 Container XS
+  1.3 Container SM
+  1.4 Container MD
+  1.5 Container LG
+  1.6 Container XL
+2. MARGIN CLASSES
+  2.1 Margin All
+  2.2 Margin Top
+  2.3 Margin Right
+  2.4 Margin Bottom
+  2.5 Margin Left
+3. PADDING CLASSES
+  3.1 Padding All
+  3.2 Padding Top
+  3.3 Padding Right
+  3.4 Padding Bottom
+  3.5 Padding Left
+4. HEIGHT CLASSES
+  4.1 Height
+  4.2 Max Height
+  4.3 Min Height
+5. WIDTH CLASSES
+  5.1 Width
+  5.2 Max Width
+  5.3 Min Width
 */
 
-/***** Mar *****/
+/********** 1. CONTAINER CLASSES **********/
+
+/*
+1.1 Container
+1.2 Container XS
+1.3 Container SM
+1.4 Container MD
+1.5 Container LG
+1.6 Container XL
+*/
+
+/***** Container *****/
+[class*="container-"] {
+  margin: auto;
+}
+
+/***** Container XS *****/
+[class*="container-"][class*="-70xs"] {
+  max-width: 70%;
+}
+
+[class*="container-"][class*="-80xs"] {
+  max-width: 80%;
+}
+
+[class*="container-"][class*="-90xs"] {
+  max-width: 90%;
+}
+
+/***** Container SM *****/
+@media (min-width: 576px) {
+  [class*="container-"][class*="-70sm"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80sm"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90sm"] {
+    max-width: 90%;
+  }
+}
+
+/***** Container MD *****/
+@media (min-width: 768px) {
+  [class*="container-"][class*="-70md"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80md"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90md"] {
+    max-width: 90%;
+  }
+}
+
+/***** Container LG *****/
+@media (min-width: 992px) {
+  [class*="container-"][class*="-70lg"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80lg"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90lg"] {
+    max-width: 90%;
+  }
+}
+
+/***** Container XL *****/
+@media (min-width: 1200px) {
+  [class*="container-"][class*="-70xl"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80xl"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90xl"] {
+    max-width: 90%;
+  }
+}
+
+/********** 2. MARGIN **********/
+
+/*
+2.1 Margin All
+2.2 Margin Top
+2.3 Margin Right
+2.4 Margin Bottom
+2.5 Margin Left
+*/
+
+/***** 2.1 Margin All *****/
 [class*="mar-all-none-"][class*="-base"],
 [class*="mar-all-none-"][class*="-global"] > * {
   margin: var(--mar-none);
@@ -1062,7 +1784,7 @@ pre > *::selection {
   margin: var(--mar-lg);
 }
 
-/***** Mar Top *****/
+/***** 2.2 Margin Top *****/
 [class*="mar-top-none-"][class*="-base"],
 [class*="mar-top-none-"][class*="-global"] > * {
   margin-top: var(--mar-none);
@@ -1083,7 +1805,7 @@ pre > *::selection {
   margin-top: var(--mar-top-lg);
 }
 
-/***** Mar Right *****/
+/***** 2.3 Margin Right *****/
 [class*="mar-right-none-"][class*="-base"],
 [class*="mar-right-none-"][class*="-global"] > * {
   margin-right: var(--mar-none);
@@ -1104,7 +1826,7 @@ pre > *::selection {
   margin-right: var(--mar-right-lg);
 }
 
-/***** Mar Bot *****/
+/***** 2.4 Margin Bottom *****/
 [class*="mar-bot-none-"][class*="-base"],
 [class*="mar-bot-none-"][class*="-global"] > * {
   margin-bottom: var(--mar-none);
@@ -1125,7 +1847,7 @@ pre > *::selection {
   margin-bottom: var(--mar-bot-lg);
 }
 
-/***** Mar Left *****/
+/***** 2.5 Margin Left *****/
 [class*="mar-left-none-"][class*="-base"],
 [class*="mar-left-none-"][class*="-global"] > * {
   margin-left: var(--mar-none);
@@ -1146,7 +1868,17 @@ pre > *::selection {
   margin-left: var(--mar-left-lg);
 }
 
-/***** Pad *****/
+/********** 3. PADDING **********/
+
+/*
+3.1 Padding All
+3.2 Padding Top
+3.3 Padding Right
+3.4 Padding Bottom
+3.5 Padding Left
+*/
+
+/***** 3.1 Padding All *****/
 [class*="pad-all-none-"][class*="-base"],
 [class*="pad-all-none-"][class*="-global"] > * {
   padding: var(--pad-none);
@@ -1167,7 +1899,7 @@ pre > *::selection {
   padding: var(--pad-lg);
 }
 
-/***** Pad Top *****/
+/***** 3.2 Padding Top *****/
 [class*="pad-top-none-"][class*="-base"],
 [class*="pad-top-none-"][class*="-global"] > * {
   padding-top: var(--pad-none);
@@ -1188,7 +1920,7 @@ pre > *::selection {
   padding-top: var(--pad-top-lg);
 }
 
-/***** Pad Right *****/
+/***** 3.3 Padding Right *****/
 [class*="pad-right-none-"][class*="-base"],
 [class*="pad-right-none-"][class*="-global"] > * {
   padding-right: var(--pad-none);
@@ -1209,7 +1941,7 @@ pre > *::selection {
   padding-right: var(--pad-right-lg);
 }
 
-/***** Pad Bottom *****/
+/***** 3.4 Padding Bottom *****/
 [class*="pad-bot-none-"][class*="-base"],
 [class*="pad-bot-none-"][class*="-global"] > * {
   padding-bottom: var(--pad-none);
@@ -1230,7 +1962,7 @@ pre > *::selection {
   padding-bottom: var(--pad-bot-lg);
 }
 
-/***** Pad Left *****/
+/***** 3.5 Padding Left *****/
 [class*="pad-left-none-"][class*="-base"],
 [class*="pad-left-none-"][class*="-global"] > * {
   padding-left: var(--pad-none);
@@ -1251,18 +1983,15 @@ pre > *::selection {
   padding-left: var(--pad-left-lg);
 }
 
-/********** SIZE ***********/
+/********** 4. HEIGHT CLASSES ***********/
 
 /*
-1. Height
-2. Min Height
-3. Max Height
-4. Width
-5. Min Width
-6. Max Width
+4.1 Height
+4.2 Max Height
+4.3 Min Height
 */
 
-/***** Height *****/
+/***** 4.1 Height *****/
 [class*="height-sm-"][class*="-base"],
 [class*="height-sm-"][class*="-global"] > * {
   height: var(--height-sm);
@@ -1278,23 +2007,7 @@ pre > *::selection {
   height: var(--height-lg);
 }
 
-/***** Min Height *****/
-[class*="min-h-sm-"][class*="-base"],
-[class*="min-h-sm-"][class*="-global"] > * {
-  min-height: var(--min-height-sm);
-}
-
-[class*="min-h-md-"][class*="-base"],
-[class*="min-h-md-"][class*="-global"] > * {
-  min-height: var(--min-height-md);
-}
-
-[class*="min-h-lg-"][class*="-base"],
-[class*="min-h-lg-"][class*="-global"] > * {
-  min-height: var(--min-height-lg);
-}
-
-/***** Max Height *****/
+/***** 4.2 Max Height *****/
 [class*="max-h-sm-"][class*="-base"],
 [class*="max-h-sm-"][class*="-global"] > * {
   max-height: var(--max-height-sm);
@@ -1310,7 +2023,31 @@ pre > *::selection {
   max-height: var(--max-height-lg);
 }
 
-/***** Width *****/
+/***** 4.3 Min Height *****/
+[class*="min-h-sm-"][class*="-base"],
+[class*="min-h-sm-"][class*="-global"] > * {
+min-height: var(--min-height-sm);
+}
+
+[class*="min-h-md-"][class*="-base"],
+[class*="min-h-md-"][class*="-global"] > * {
+min-height: var(--min-height-md);
+}
+
+[class*="min-h-lg-"][class*="-base"],
+[class*="min-h-lg-"][class*="-global"] > * {
+min-height: var(--min-height-lg);
+}
+
+/********** 5. WIDTH CLASSES ***********/
+
+/*
+5.1 Width
+5.2 Max Width
+5.3 Min Width
+*/
+
+/***** 5.1 Width *****/
 [class*="width-sm-"][class*="-base"],
 [class*="width-sm-"][class*="-global"] > * {
   width: var(--width-sm);
@@ -1326,23 +2063,7 @@ pre > *::selection {
   width: var(--width-lg);
 }
 
-/***** Min Width *****/
-[class*="min-w-sm-"][class*="-base"],
-[class*="min-w-sm-"][class*="-global"] > * {
-  min-width: var(--min-width-sm);
-}
-
-[class*="min-w-md-"][class*="-base"],
-[class*="min-w-md-"][class*="-global"] > * {
-  min-width: var(--min-width-md);
-}
-
-[class*="min-w-lg-"][class*="-base"],
-[class*="min-w-lg-"][class*="-global"] > * {
-  min-width: var(--min-width-lg);
-}
-
-/***** Max Width *****/
+/***** 5.2 Max Width *****/
 [class*="max-w-sm-"][class*="-base"],
 [class*="max-w-sm-"][class*="-global"] > * {
   max-width: var(--max-width-sm);
@@ -1358,17 +2079,45 @@ pre > *::selection {
   max-width: var(--max-width-lg);
 }
 
+/***** 5.3 Min Width *****/
+[class*="min-w-sm-"][class*="-base"],
+[class*="min-w-sm-"][class*="-global"] > * {
+  min-width: var(--min-width-sm);
+}
 
-/********** HELPERS **********/
+[class*="min-w-md-"][class*="-base"],
+[class*="min-w-md-"][class*="-global"] > * {
+  min-width: var(--min-width-md);
+}
+
+[class*="min-w-lg-"][class*="-base"],
+[class*="min-w-lg-"][class*="-global"] > * {
+  min-width: var(--min-width-lg);
+}
+
+
+/******************** HELPERS ********************/
 
 /*
-1. Font
-2. Cursor
-3. Container
-4. Text
+1. FONT CLASSES
+  1.1 Font
+2. TEXT CLASSES
+  2.1 Text XS
+  2.2 Text SM
+  2.3 Text MD
+  2.4 Text LG
+  2.5 Text XL
+3. CURSOR CLASSES
+  3.1 Cursor
 */
 
-/***** Font *****/
+/********** 1. FONT CLASSES **********/
+
+/*
+1.1 Font
+*/
+
+/***** 1.1 Font *****/
 [class*="font-"][class*="-normal"] {
   font-style: normal;
   font-weight: normal;
@@ -1382,7 +2131,117 @@ pre > *::selection {
   font-weight: bold;
 }
 
-/***** Cursor *****/
+/********** 2. TEXT CLASSES **********/
+
+/*
+2.1 Text XS
+2.2 Text SM
+2.3 Text MD
+2.4 Text LG
+2.5 Text XL
+*/
+
+
+/***** 2.1 Text XS *****/
+[class*="text-"][class*="-center-xs"] {
+  text-align: center;
+}
+
+[class*="text-"][class*="-justify-xs"] {
+  text-align: justify;
+}
+
+[class*="text-"][class*="-right-xs"] {
+  text-align: right;
+}
+
+[class*="text-"][class*="-left-xs"] {
+  text-align: left;
+}
+
+/***** 2.2 Text SM *****/
+@media (min-width: 576px) {
+  [class*="text-"][class*="-center-sm"] {
+    text-align: center;
+  }
+
+  [class*="text-"][class*="-justify-sm"] {
+    text-align: justify;
+  }
+
+  [class*="text-"][class*="-right-sm"] {
+    text-align: right;
+  }
+
+  [class*="text-"][class*="-left-sm"] {
+    text-align: left;
+  }
+}
+
+/***** 2.3 Text MD *****/
+@media (min-width: 768px) {
+  [class*="text-"][class*="-center-md"] {
+    text-align: center;
+  }
+
+  [class*="text-"][class*="-justify-md"] {
+    text-align: justify;
+  }
+
+  [class*="text-"][class*="-right-md"] {
+    text-align: right;
+  }
+
+  [class*="text-"][class*="-left-md"] {
+    text-align: left;
+  }
+}
+
+/***** 2.4 Text LG *****/
+@media (min-width: 992px) {
+  [class*="text-"][class*="-center-lg"] {
+    text-align: center;
+  }
+
+  [class*="text-"][class*="-justify-lg"] {
+    text-align: justify;
+  }
+
+  [class*="text-"][class*="-right-lg"] {
+    text-align: right;
+  }
+
+  [class*="text-"][class*="-left-lg"] {
+    text-align: left;
+  }
+}
+
+/***** 2.5 Text XL *****/
+@media (min-width: 1200px) {
+  [class*="text-"][class*="-center-xl"] {
+    text-align: center;
+  }
+
+  [class*="text-"][class*="-justify-xl"] {
+    text-align: justify;
+  }
+
+  [class*="text-"][class*="-right-xl"] {
+    text-align: right;
+  }
+
+  [class*="text-"][class*="-left-xl"] {
+    text-align: left;
+  }
+}
+
+/********** 3. CURSOR CLASSES **********/
+
+/*
+3.1 Cursor
+*/
+
+/***** 3.1 Cursor *****/
 [class*="cursor-"][class*="-cross"],
 [class*="cursor-"][class*="-cross"] > * {
   cursor: crosshair;
@@ -1403,589 +2262,42 @@ pre > *::selection {
   cursor: pointer;
 }
 
-/***** Container *****/
-[class*="container-"] {
-  margin: auto;
-}
 
-[class*="container-"][class*="-70xs"] {
-  max-width: 70%;
-}
-
-[class*="container-"][class*="-80xs"] {
-  max-width: 80%;
-}
-
-[class*="container-"][class*="-90xs"] {
-  max-width: 90%;
-}
-
-@media (min-width: 576px) {
-  [class*="container-"][class*="-70sm"] {
-    max-width: 70%;
-  }
-
-  [class*="container-"][class*="-80sm"] {
-    max-width: 80%;
-  }
-
-  [class*="container-"][class*="-90sm"] {
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 768px) {
-  [class*="container-"][class*="-70sm"] {
-    max-width: 70%;
-  }
-
-  [class*="container-"][class*="-80sm"] {
-    max-width: 80%;
-  }
-
-  [class*="container-"][class*="-90sm"] {
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 992px) {
-  [class*="container-"][class*="-70lg"] {
-    max-width: 70%;
-  }
-
-  [class*="container-"][class*="-80lg"] {
-    max-width: 80%;
-  }
-
-  [class*="container-"][class*="-90lg"] {
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 1200px) {
-  [class*="container-"][class*="-70xl"] {
-    max-width: 70%;
-  }
-
-  [class*="container-"][class*="-80xl"] {
-    max-width: 80%;
-  }
-
-  [class*="container-"][class*="-90xl"] {
-    max-width: 90%;
-  }
-}
-
-/***** Text *****/
-[class*="text-"][class*="-center-xs"] {
-  text-align: center;
-}
-
-[class*="text-"][class*="-justify-xs"] {
-  text-align: justify;
-}
-
-[class*="text-"][class*="-right-xs"] {
-  text-align: right;
-}
-
-[class*="text-"][class*="-left-xs"] {
-  text-align: left;
-}
-
-@media (min-width: 576px) {
-  [class*="text-"][class*="-center-sm"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-sm"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-sm"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-sm"] {
-    text-align: left;
-  }
-}
-
-@media (min-width: 768px) {
-  [class*="text-"][class*="-center-md"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-md"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-md"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-md"] {
-    text-align: left;
-  }
-}
-
-@media (min-width: 992px) {
-  [class*="text-"][class*="-center-lg"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-lg"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-lg"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-lg"] {
-    text-align: left;
-  }
-}
-
-@media (min-width: 1200px) {
-  [class*="text-"][class*="-center-xl"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-xl"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-xl"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-xl"] {
-    text-align: left;
-  }
-}
-
-
-/********** ELEMENTS VAR **********/
+/******************** NAVBAR ********************/
 
 /*
-1. Btn
-2. Foot
-3. Form
-4. Gallery
-5. Menu
-6. Navbar
-7. Slider
-8. Table
+1. NAVBAR DISPLAY
+  1.1 Navbar Visible
+  1.2 Navbar Hidden
+2. NAVBAR
+  2.1 Navbar
+  2.2 Navbar Link & Label
+  2.3 Navbar Icon
+  2.4 Navbar Fixed Next Element
+3. NAVS
+  3.1 Navs
+  3.2 Navs Link & Label
+4. NAV BRAND
+  4.1 Nav Brand
+  4.2 Nav Brand Images
+5. NAV MAIN
+  5.1 Nav Main
+  5.1 Nav Main Hover
+6. NAV INFO
+  6.1 Nav Info
+  6.2 Nav Info Hover
+7. NAV TOGGLE
+  7.1 Nav Toggle
 */
 
-/***** Btn *****/
-[class*="btn"],
-[class*="button"] {
-  --btn-bg: var(--blue);
-  --btn-bord: solid medium var(--quartz);
-  --btn-color: var(--white);
-  --btn-font-size: 1.5rem;
-  --btn-mar: 10px;
-  --btn-pad: 5px 10px;
-  --btn-radius: 10px;
-  --btn-text-align: center;
-  --btn-hover-anima: none;
-  --btn-hover-bg: var(--blue);
-  --btn-hover-bord: outset medium var(--obsidian);
-  --btn-hover-color: var(--silver);
-  --btn-hover-radius: 0;
-  --btn-hover-shabox: 5px 5px 5px var(--gray);
-  --btn-hover-transition: border 1s;
-  --check-button-transform: scale(0.9);
-  --btn-color-black: var(--white);
-  --btn-color-blue: var(--white);
-  --btn-color-gray: var(--white);
-  --btn-color-green: var(--white);
-  --btn-color-maroon: var(--white);
-  --btn-color-orange: var(--white);
-  --btn-color-purple: var(--white);
-  --btn-color-red: var(--white);
-  --btn-color-yellow: var(--blue);
-  --btn-color-choco: var(--white);
-  --btn-color-jade: var(--violet);
-  --btn-color-khaki: var(--sky);
-  --btn-color-salmon: var(--white);
-  --btn-color-silver: var(--black);
-  --btn-color-sky: var(--white);
-  --btn-color-tomato: var(--white);
-  --btn-color-violet: var(--white);
-  --btn-color-white: var(--black);
-  --btn-color-fb: var(--white);
-  --btn-color-github: var(--white);
-  --btn-color-linkedin: var(--white);
-  --btn-color-npm: var(--white);
-  --btn-color-stack: var(--white);
-  --btn-color-tw: var(--white);
-  --btn-color-amthyst: var(--white);
-  --btn-color-citrine: var(--sky);
-  --btn-color-quartz: var(--black);
-  --btn-color-emerald: var(--violet);
-  --btn-color-obsidian: var(--white);
-  --btn-color-ruby: var(--white);
-  --btn-color-sapphire: var(--khaki);
-  --btn-pad-xs: 1px 2px;
-  --btn-pad-sm: 2px 5px;
-  --btn-pad-md: 5px 10px;
-  --btn-pad-lg: 10px 20px;
-  --btn-pad-xl: 20px 50px;
-  --btn-radius-square: unset;
-  --btn-radius-round: 50px;
-  --btn-radius-circle: 50%;
-}
-
-/***** Foot *****/
-[class*="foot"] {
-  --foot-text-align: center;
-  --foot-title-color: var(--khaki);
-  --foot-title-font-size: 1.8rem;
-  --foot-global-pad-bot: 20px;
-  --foot-main-bg: var(--purple);
-  --foot-main-cursor: help;
-  --foot-main-flex-direction: column;
-  --foot-main-font-color: var(--white);
-  --foot-main-justify-content: space-evenly;
-  --foot-list-cursor: pointer;
-  --foot-list-text-align: center;
-  --foot-list-link-font-color: var(--white);
-  --foot-list-link-mar-bot: 5px;
-  --foot-list-link-hover-font-color: var(--jade);
-  --foot-info-bg: var(--white);
-  --foot-info-cursor: crosshair;
-  --foot-info-justify-content: center;
-  --foot-info-pad-top: 20px;
-  --foot-info-link-mar-left: 10px;
-  --foot-info-link-mar-right: 10px;
-}
-
-@media (min-width: 576px) {
-  [class*="foot"] {
-    --foot-main-flex-direction: row;
-  }
-}
-
-/***** Form *****/
-.form {
-  --form-mar: auto;
-  --form-pad: 20px 0 40px;
-  --form-width: 300px;
-  --form-flex-direction: column;
-  --form-fieldset-bord: medium double;
-  --form-fieldset-mar-left: -13px;
-  --form-fieldset-pad: 20px;
-  --form-legend-font-weight: bold;
-  --form-input-placeholder-color: var(--blue);
-  --form-input-placeholder-font-style: italic;
-  --form-input-placeholder-text-align: center;
-  --form-input-field-bg: var(--sapphire);
-  --form-input-field-bord: thin solid var(--blue);
-  --form-input-field-line-height: 2;
-  --form-input-field-mar: 10px 0 20px;
-  --form-input-field-pad: 10px;
-  --form-input-field-radius: 10px;
-  --form-input-action-line-height: 2.5;
-  --form-input-action-cursor: pointer;
-}
-
-@media (min-width: 992px) {
-  .form {
-    --form-width: 500px;
-    --form-li-flex-direction: row;
-    --form-li-justify-content: space-between;
-    --form-li-align-items: center;
-    --form-label-lg-flex: 2 0 auto;
-    --form-label-text-decoration: underline dashed;
-    --form-fieldset-mar-left: 0;
-    --form-input-width: 75%;
-  }
-}
-
-/***** Gallery *****/
-.gallery {
-  --gallery-flex-wrap: wrap;
-  --gallery-flow: hidden;
-  --gallery-mar: auto;
-  --gallery-max-w: 90%;
-  --gallery-all-cursor: crosshair;
-  --gallery-figure-bord: thin dotted var(--silver);
-  --gallery-figure-flow: hidden;
-  --gallery-figure-line-height: 0;
-  --gallery-figure-mar: 5px;
-  --gallery-figure-position: relative;
-  --gallery-figure-shabox: 0 0 5px;
-  --gallery-figure-width: calc(100% - 10px);
-  --gallery-figcaption-bg: rgba(0, 0, 0, 0.5);
-  --gallery-figcaption-bot: -60%;
-  --gallery-figcaption-line-height: 1;
-  --gallery-figcaption-position: absolute;
-  --gallery-figcaption-width: 100%;
-  --gallery-figure-figcaption-anima: trany-opac 2s;
-  --gallery-figure-figcaption-bot: 0;
-  --gallery-figcaption-fa-bg: var(--blue);
-  --gallery-figcaption-fa-bord: 2px solid var(--white);
-  --gallery-figcaption-fa-position: absolute;
-  --gallery-figcaption-fa-right: 5px;
-  --gallery-figcaption-fa-top: -15px;
-  --gallery-figcaption-fa-pad: 10px;
-  --gallery-figcaption-fa-radius: 50%;
-  --gallery-link-all-mar: 0;
-  --gallery-link-all-cursor: pointer;
-  --gallery-link-all-even-pad: 0 10px 20px;
-  --gallery-link-all-even-font-size: 1.2rem;
-  --gallery-link-all-odd-pad: 10px;
-  --gallery-link-all-odd-font-size: 1.5rem;
-  --gallery-link-color: var(--white);
-}
-
-@media (min-width: 576px) {
-  .gallery figure {
-    --gallery-figure-mar: 6px;
-    --gallery-figure-width: calc(100% / 2 - 12px);
-  }
-}
-
-@media (min-width: 992px) {
-  .gallery figure {
-    --gallery-figure-mar: 7px;
-    --gallery-figure-width: calc(100% / 3 - 14px);
-  }
-}
-
-@media (min-width: 1200px) {
-  .gallery figure {
-    --gallery-figure-mar: 8px;
-    --gallery-figure-width: calc(100% / 4 - 16px);
-  }
-}
-
-/***** Menu *****/
-.menu {
-  --menu-bg: var(--silver);
-  --menu-border: none;
-  --menu-color: var(--gray);
-  --menu-flex-direction: column;
-  --menu-justify-content: center;
-  --menu-list-style: none;
-  --menu-mar: auto;
-  --menu-pad: 0;
-  --menu-radius: 5px;
-  --menu-width: 40%;
-  --menu-all-cursor: pointer;
-  --menu-label-justify-content: center;
-  --menu-label-pad: 6px 12px;
-  --menu-label-position: relative;
-  --menu-label-radius: 5px;
-  --menu-label-width: 100%;
-  --menu-label-hover-bg: var(--sapphire);
-  --menu-label-hover-bord: none;
-  --menu-label-hover-color: var(--white);
-  --menu-label-hover-font-style: italic;
-  --menu-label-check-bg: var(--blue);
-  --menu-label-check-color: var(--white);
-  --menu-label-check-font-weight: bold;
-  --menu-fa-bot: -18px;
-  --menu-fa-color: var(--blue);
-  --menu-fa-position: absolute;
-}
-
-@media (min-width: 576px) {
-  .menu {
-    --menu-flex-direction: row;
-    --menu-align-items: flex-start;
-    --menu-width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .menu {
-    --menu-width: 90%;
-  }
-}
-
-@media (min-width: 992px) {
-  .menu {
-    --menu-width: 80%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .menu {
-    --menu-width: 70%;
-  }
-}
-
-/***** Navbar *****/
-[class*="nav"] {
-  --navbar-align-items: center;
-  --navbar-bg: var(--blue);
-  --navbar-bot: unset;
-  --navbar-color: var(--white);
-  --navbar-index: 1000;
-  --navbar-justify-content: center;
-  --navbar-left: 0;
-  --navbar-position: fixed;
-  --navbar-right: 0;
-  --navbar-top: 0;
-  --navbar-link-color: var(--white);
-  --navbar-link-cursor: pointer;
-  --navbar-link-pad: 20px 10px;
-  --navbar-link-hover-color: var(--yellow);
-  --navbar-icon-align-self: center;
-  --navs-align-items: center;
-  --navs-list-style: none;
-  --navs-mar: 0;
-  --navs-pad: 0;
-  --navs-link-flex-direction: column;
-  --nav-brand-left: 10px;
-  --nav-brand-img-height: 40px;
-  --nav-main-link-hover-scale: 0.9;
-  --nav-info-height: 50px;
-  --nav-info-img-mar: 5px;
-  --nav-info-link-hover-scale: 1.5;
-  --nav-toggle-anima: trany-xs 1s linear infinite alternate;
-  --nav-toggle-right: 10px;
-  --nav-toggle-top: 0;
-}
-
-@media (min-width: 576px) {
-  [class*="nav"] {
-    --navbar-flex-direction: row;
-    --navbar-justify-content: space-around;
-    --navbar-pad: 10px;
-  }
-}
-
-@media (min-width: 768px) {
-  [class*="nav"] {
-    --navbar-justify-content: space-evenly;
-  }
-}
-
-/***** Slider *****/
-.slider {
-  --slide1: url(https://animadio.org/img/svg/1.svg);
-  --slide2: url(https://animadio.org/img/svg/2.svg);
-  --slide3: url(https://animadio.org/img/svg/3.svg);
-  --slide4: url(https://animadio.org/img/svg/4.svg);
-  --slide5: url(https://animadio.org/img/svg/5.svg);
-  --slider-height: 40vh;
-  --slider-text-align: center;
-  --slider-anima-direction: reverse;
-  --slider-anima-iteration: infinite;
-  --slider-transition-opacity: 2s;
-  --slider-transition-color: 1s;
-  --play-check-slide-anima: 10s linear;
-  --slider-icon-color: var(--blue);
-  --play-check-slide-play-icon-before: "\f28d";
-  --repeat-check-slide-repeat-icon-before: "\f056";
-  --direction-check-slide-direction-icon-before: "\f137";
-  --play-check-slide-icon-before-color: var(--white);
-  --slider-radio-slide-icon-before-content: "\f058";
-  --slider-radio1-slider-timeline-width: 0;
-  --slider-radio2-slider-timeline-width: 25%;
-  --slider-radio3-slider-timeline-width: 50%;
-  --slider-radio4-slider-timeline-width: 75%;
-  --slider-radio5-slider-timeline-width: 100%;
-  --slide-height: auto;
-  --slide-mar: auto;
-  --slide-width: 100%;
-  --slide-max-width: 1000px;
-  --slider-controls-bg: var(--obsidian);
-  --slider-controls-bord: thin solid var(--black);
-  --slider-controls-juco: center;
-  --slider-controls-mar: 10px;
-  --slider-controls-opacity: 0;
-  --slider-controls-pad: 10px;
-  --slider-controls-radius: 5px;
-  --slider-controls-hover-opacity: 1;
-  --slider-label-color: var(--white);
-  --slider-label-pad: 10px 5px;
-  --slider-timeline-bg: var(--blue);
-  --slider-timeline-height: 6px;
-}
-
-@media (min-width: 576px) {
-  .slider {
-    --slider-height: 50vh;
-  }
-
-  .slider-timeline {
-    --slider-timeline-height: 7px;
-  }
-}
-
-@media (min-width: 768px) {
-  .slider {
-    --slider-height: 60vh;
-  }
-
-  .slider-timeline {
-    --slider-timeline-height: 8px;
-  }
-}
-
-@media (min-width: 992px) {
-  .slider {
-    --slider-height: 70vh;
-  }
-
-  .slider-timeline {
-    --slider-timeline-height: 9px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .slider {
-    --slider-height: 80vh;
-  }
-
-  .slider-timeline {
-    --slider-timeline-height: 10px;
-  }
-}
-
-/***** Table *****/
-[class*="table"] {
-  --table-bord-collapse: collapse;
-  --table-bord-space: 10px;
-  --table-width: 50%;
-  --table-row-even-bg: var(--yellow);
-  --table-row-odd-bg: var(--white);
-  --table-caption-font-weight: bold;
-  --table-caption-color: var(--red);
-  --table-caption-side: top;
-  --table-title-bg: var(--blue);
-  --table-title-color: var(--white);
-  --table-title-font-style: italic;
-  --table-cell-bord-color: var(--black);
-  --table-cell-bord-radius: 0;
-  --table-cell-bord-style: solid;
-  --table-cell-bord-width: thin;
-  --table-cell-pad: 10px;
-  --table-cell-text-align: center;
-  --table-cell-vertical-align: middle;
-  --table-cell-color: var(--blue);
-}
-
-
-/********** NAVBAR **********/
+/********** 1. NAVBAR DISPLAY **********/
 
 /*
-1. Navbar Display
-2. Navbar
-3. Navs
-4. Nav Brand
-5. Nav Main
-6. Nav Info
-7. Nav Toggle
+1.1 Navbar Visible
+1.2 Navbar Hidden
 */
 
-/***** Navbar Display *****/
+/***** 1.1 Navbar Visible *****/
 .navbar,
 .nav-close:checked ~ .nav-main,
 .nav-open:checked ~ .nav-info,
@@ -1998,6 +2310,7 @@ pre > *::selection {
   display: flex;
 }
 
+/***** 1.2 Navbar Hidden *****/
 .nav-main span,
 .nav-info span,
 .nav-close,
@@ -2009,7 +2322,16 @@ pre > *::selection {
   display: none;
 }
 
-/***** Navbar *****/
+/********** 2. NAVBAR **********/
+
+/*
+2.1 Navbar
+2.2 Navbar Link & Label
+2.3 Navbar Icon
+2.4 Navbar Fixed Next Element
+*/
+
+/***** 2.1 Navbar *****/
 .navbar {
   -webkit-box-pack: var(--navbar-justify-content);
       -ms-flex-pack: var(--navbar-justify-content);
@@ -2028,6 +2350,7 @@ pre > *::selection {
   color: var(--navbar-color);
 }
 
+/***** 2.2 Navbar Link & Label *****/
 .navbar a,
 .navbar label {
   padding: var(--navbar-link-pad);
@@ -2044,16 +2367,25 @@ pre > *::selection {
   color: var(--navbar-link-hover-color);
 }
 
+/***** 2.3 Navbar Icon *****/
 .navbar i {
   -ms-flex-item-align: var(--navbar-icon-align-self);
       align-self: var(--navbar-icon-align-self);
 }
 
+/***** 2.4 Navbar Fixed Next Element *****/
 .navbar + * {
   margin-top: var(--navbar-height);
 }
 
-/***** Navs *****/
+/********** 3. NAVS **********/
+
+/*
+3.1 Navs
+3.2 Navs Link & Label
+*/
+
+/***** 3.1 Navs *****/
 .nav-main,
 .nav-info {
   -webkit-box-align: var(--navs-align-items);
@@ -2062,16 +2394,6 @@ pre > *::selection {
   margin: var(--navs-mar);
   padding: var(--navs-pad);
   list-style: var(--navs-list-style);
-}
-
-.nav-main a,
-.nav-main label,
-.nav-info a,
-.nav-info label {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: var(--navs-link-flex-direction);
-          flex-direction: var(--navs-link-flex-direction);
 }
 
 @media (min-width: 576px) {
@@ -2083,15 +2405,28 @@ pre > *::selection {
   }
 }
 
-/***** Nav Brand *****/
+/***** 3.2 Navs Link & Label *****/
+.nav-main a,
+.nav-main label,
+.nav-info a,
+.nav-info label {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: var(--navs-link-flex-direction);
+          flex-direction: var(--navs-link-flex-direction);
+}
+
+/********** 4. NAV BRAND **********/
+
+/*
+4.1 Nav Brand
+4.2 Nav Brand Images
+*/
+
+/***** 4.1 Nav Brand *****/
 .nav-brand {
   position: absolute;
   left: var(--nav-brand-left);
-}
-
-.nav-brand img,
-.nav-brand svg {
-  height: var(--nav-brand-img-height);
 }
 
 @media (min-width: 576px) {
@@ -2100,7 +2435,27 @@ pre > *::selection {
   }
 }
 
-/***** Nav Main *****/
+/***** 4.2 Nav Brand Images *****/
+.nav-brand img,
+.nav-brand svg {
+  height: var(--nav-brand-img-height);
+}
+
+/********** 5. NAV MAIN **********/
+
+/*
+5.1 Nav Main
+5.1 Nav Main Hover
+*/
+
+/***** 5.1 Nav Main *****/
+@media (min-width: 768px) {
+  .nav-main span {
+    display: block;
+  }
+}
+
+/***** 5.1 Nav Main Hover *****/
 .nav-main a:hover,
 .nav-main a:focus,
 .nav-main a:active,
@@ -2111,19 +2466,27 @@ pre > *::selection {
           transform: scale(var(--nav-main-link-hover-scale));
 }
 
-@media (min-width: 768px) {
-  .nav-main span {
-    display: block;
-  }
-}
+/********** 6. NAV INFO **********/
 
-/***** Nav Info *****/
+/*
+6.1 Nav Info
+6.2 Nav Info Hover
+*/
+
+/***** 6.1 Nav Info *****/
 .nav-info img,
 .nav-info svg {
   margin: var(--nav-info-img-mar);
   height: var(--nav-info-height);
 }
 
+@media (min-width: 768px) {
+  .nav-info span {
+    display: block;
+  }
+}
+
+/***** 6.2 Nav Info Hover *****/
 .nav-info a:hover,
 .nav-info a:focus,
 .nav-info a:active,
@@ -2134,13 +2497,13 @@ pre > *::selection {
           transform: scale(var(--nav-info-link-hover-scale));
 }
 
-@media (min-width: 768px) {
-  .nav-info span {
-    display: block;
-  }
-}
+/********** 7. NAV TOGGLE **********/
 
-/***** Nav Toggle *****/
+/*
+7.1 Nav Toggle
+*/
+
+/***** 7.1 Nav Toggle *****/
 .nav-toggle {
   position: absolute;
   top: var(--nav-toggle-top);
@@ -2156,22 +2519,253 @@ pre > *::selection {
 }
 
 
-/********** BTN **********/
+/******************** SLIDER ********************/
 
 /*
-1. Buttons
-2. Buttons Hover, Focus & Active
-3. Buttons Active & Checked
-4. Buttons Icons
-5. Buttons with Main Colors
-6. Buttons with Pale Colors
-7. Buttons with Brand Colors
-8. Buttons with Transparent Colors
-9. Buttons with Differents Sizes
-10. Buttons with Differents Shapes
+1. SLIDER
+  1.1 Slider
+2. SLIDE
+  2.1 Slide
+  2.2 Check Slide
+  2.3 Slide Items
+  2.4 Radio Slide Items
+3. SLIDER CONTROLS
+  3.1 Slider Controls
+  3.2 Hover Slider Controls
+  3.3 Slider Controls Label
+  3.4 Check Slider Controls Icon
+  3.5 Check Slider Controls FA
+  3.6 Radio Slider Controls Icon
+4. SLIDER TIMELINE
+  4.1 Slider Timeline
+  4.2 Check Timeline
+  4.3 Radio Timeline
 */
 
-/***** Buttons *****/
+/********** 1. SLIDER **********/
+
+/*
+1.1 Slider
+*/
+
+/***** 1.1 Slider *****/
+.slider {
+  height: var(--slider-height);
+  text-align: var(--slider-text-align);
+}
+
+/********** 2. SLIDE **********/
+
+/*
+2.1 Slide
+2.2 Check Slide
+2.3 Slide Items
+2.4 Radio Slide Items
+*/
+
+/***** 2.1 Slide *****/
+.slide {
+  margin: var(--slide-mar);
+  width: var(--slide-width);
+  max-width: var(--slide-max-width);
+  height: var(--slide-height);
+}
+
+/***** 2.2 Check Slide *****/
+[class*="play-check"]:checked ~ .slide {
+  -webkit-animation: content var(--play-check-slide-anima);
+          animation: content var(--play-check-slide-anima);
+}
+
+[class*="repeat-check"]:checked ~ .slide {
+  -webkit-animation-iteration-count: var(--slider-anima-iteration);
+          animation-iteration-count: var(--slider-anima-iteration);
+}
+
+[class*="direction-check"]:checked ~ .slide {
+  -webkit-animation-direction: var(--slider-anima-direction);
+          animation-direction: var(--slider-anima-direction);
+}
+
+/***** 2.3 Slide Items *****/
+.slide > * {
+  display: none;
+  height: var(--slide-height);
+}
+
+/***** 2.4 Radio Slide Items *****/
+[class*="slider-radio1"]:checked ~ .slide .slide1,
+[class*="slider-radio2"]:checked ~ .slide .slide2,
+[class*="slider-radio3"]:checked ~ .slide .slide3,
+[class*="slider-radio4"]:checked ~ .slide .slide4,
+[class*="slider-radio5"]:checked ~ .slide .slide5 {
+  display: inline-block;
+}
+
+/********** 3. SLIDER CONTROLS **********/
+
+/*
+3.1 Slider Controls
+3.2 Hover Slider Controls
+3.3 Slider Controls Label
+3.4 Check Slider Controls Icon
+3.5 Check Slider Controls FA
+3.6 Radio Slider Controls Icon
+*/
+
+/***** 3.1 Slider Controls *****/
+.slider-controls {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: var(--slider-controls-juco);
+      -ms-flex-pack: var(--slider-controls-juco);
+          justify-content: var(--slider-controls-juco);
+  margin: var(--slider-controls-mar);
+  border: var(--slider-controls-bord);
+  border-radius: var(--slider-controls-radius);
+  padding: var(--slider-controls-pad);
+  background-color: var(--slider-controls-bg);
+  opacity: var(--slider-controls-opacity);
+  -webkit-transition: opacity var(--slider-transition-opacity);
+  transition: opacity var(--slider-transition-opacity);
+}
+
+/***** 3.2 Hover Slider Controls *****/
+.slider:hover .slider-controls,
+.slider:focus .slider-controls,
+.slider:active .slider-controls {
+  opacity: var(--slider-controls-hover-opacity);
+  -webkit-transition: opacity var(--slider-transition-opacity);
+  transition: opacity var(--slider-transition-opacity);
+}
+
+/***** 3.3 Slider Controls Label *****/
+.slider-controls label {
+  color: var(--slider-label-color);
+  padding: var(--slider-label-pad);
+}
+
+/***** 3.4 Check Slider Controls Icon *****/
+[class*="play-check"]:checked ~ .slider-controls [for="slide-play"] > i {
+  color: var(--slider-icon-color);
+  -webkit-transition: color var(--slider-transition-color);
+  transition: color var(--slider-transition-color);
+}
+
+[class*="play-check"]:checked ~ .slider-controls [for="slide-play"] > i::before {
+  content: var(--play-check-slide-play-icon-before);
+}
+
+[class*="repeat-check"]:checked ~ .slider-controls [for="slide-repeat"] > i::before {
+  content: var(--repeat-check-slide-repeat-icon-before);
+}
+
+[class*="direction-check"]:checked ~ .slider-controls [for="slide-direction"] > i::before {
+  content: var(--direction-check-slide-direction-icon-before);
+}
+
+/***** 3.5 Check Slider Controls FA *****/
+[class*="play-check"]:checked ~ .slider-controls [for="slide1"] > .fas::before,
+[class*="play-check"]:checked ~ .slider-controls [for="slide2"] > .fas::before,
+[class*="play-check"]:checked ~ .slider-controls [for="slide3"] > .fas::before,
+[class*="play-check"]:checked ~ .slider-controls [for="slide4"] > .fas::before,
+[class*="play-check"]:checked ~ .slider-controls [for="slide5"] > .fas::before {
+  color: var(--play-check-slide-icon-before-color);
+}
+
+/***** 3.6 Radio Slider Controls Icon *****/
+[class*="slider-radio1"]:checked ~ .slider-controls [for="slide1"] > i::before,
+[class*="slider-radio2"]:checked ~ .slider-controls [for="slide2"] > i::before,
+[class*="slider-radio3"]:checked ~ .slider-controls [for="slide3"] > i::before,
+[class*="slider-radio4"]:checked ~ .slider-controls [for="slide4"] > i::before,
+[class*="slider-radio5"]:checked ~ .slider-controls [for="slide5"] > i::before {
+  color: var(--slider-icon-color);
+  -webkit-transition: color var(--slider-transition-color);
+  transition: color var(--slider-transition-color);
+  content: var(--slider-radio-slide-icon-before-content);
+}
+
+/********** 4. SLIDER TIMELINE **********/
+
+/*
+4.1 Slider Timeline
+4.2 Check Timeline
+4.3 Radio Timeline
+*/
+
+/***** 4.1 Slider Timeline *****/
+.slider-timeline {
+  height: var(--slider-timeline-height);
+  background-color: var(--slider-timeline-bg);
+}
+
+/***** 4.2 Check Timeline *****/
+[class*="play-check"]:checked ~ .slider-timeline {
+  -webkit-animation: width var(--play-check-slide-anima);
+          animation: width var(--play-check-slide-anima);
+}
+
+[class*="repeat-check"]:checked ~ .slider-timeline {
+  -webkit-animation-iteration-count: var(--slider-anima-iteration);
+          animation-iteration-count: var(--slider-anima-iteration);
+}
+
+[class*="direction-check"]:checked ~ .slider-timeline {
+  -webkit-animation-direction: var(--slider-anima-direction);
+          animation-direction: var(--slider-anima-direction);
+}
+
+/***** 4.3 Radio Timeline *****/
+[class*="slider-radio1"]:checked ~ .slider-timeline {
+  width: var(--slider-radio1-slider-timeline-width);
+}
+
+[class*="slider-radio2"]:checked ~ .slider-timeline {
+  width: var(--slider-radio2-slider-timeline-width);
+}
+
+[class*="slider-radio3"]:checked ~ .slider-timeline {
+  width: var(--slider-radio3-slider-timeline-width);
+}
+
+[class*="slider-radio4"]:checked ~ .slider-timeline {
+  width: var(--slider-radio4-slider-timeline-width);
+}
+
+[class*="slider-radio5"]:checked ~ .slider-timeline {
+  width: var(--slider-radio5-slider-timeline-width);
+}
+
+
+/******************** BTN ********************/
+
+/*
+1. BTN
+  1.1 Btn & Button
+2. BTN STATES
+  2.1 Buttons Hover, Focus & Active
+  2.2 Buttons Active & Checked
+3. BTN ICON
+  3.1 Buttons Icon
+4. BTN COLORS
+  4.1 Buttons Main Colors
+  4.2 Buttons Pale Colors
+  4.3 Buttons Brand Colors
+  4.4 Buttons Transparent Colors
+5. BTN SIZES
+  5.1 Buttons Sizes
+6. BTN SHAPES
+  6.1 Buttons Shapes
+*/
+
+/********** 1. BTN **********/
+
+/*
+1.1 Btn & Button
+*/
+
+/***** Btn & Button *****/
 [class*="btn"],
 [class*="button"] {
   display: inline-block;
@@ -2185,7 +2779,14 @@ pre > *::selection {
   color: var(--btn-color);
 }
 
-/***** Buttons Hover, Focus & Active *****/
+/********** 2. BTN STATES **********/
+
+/*
+2.1 Buttons Hover, Focus & Active
+2.2 Buttons Active & Checked
+*/
+
+/***** 2.1 Buttons Hover, Focus & Active *****/
 [class*="btn"]:hover,
 [class*="button"]:hover,
 [class*="btn"]:focus,
@@ -2204,20 +2805,36 @@ pre > *::selection {
           animation: var(--btn-hover-anima);
 }
 
-/***** Buttons Active & Checked *****/
+
+/***** 2.2 Buttons Active & Checked *****/
 [class*="btn"]:active,
 [class*="check"]:checked + [class*="button"] {
   -webkit-transform: var(--check-button-transform);
           transform: var(--check-button-transform);
 }
 
-/***** Buttons Icons *****/
+/********** 3. BTN ICON **********/
+
+/*
+3.1 Buttons Icons
+*/
+
+/***** 3.1 Buttons Icons *****/
 [class*="btn"] > i,
 [class*="button"] > i {
   display: block;
 }
 
-/***** Buttons with Main Colors *****/
+/********** 4. BTN COLORS **********/
+
+/*
+4.1 Buttons Main Colors
+4.2 Buttons Pale Colors
+4.3 Buttons Brand Colors
+4.4 Buttons Transparent Colors
+*/
+
+/***** 4.1 Buttons Main Colors *****/
 [class*="btn"][class*="black"],
 [class*="button"][class*="black"] {
   background-color: var(--black);
@@ -2272,7 +2889,7 @@ pre > *::selection {
   color: var(--btn-color-yellow);
 }
 
-/***** Buttons with Pale Colors *****/
+/***** 4.2 Buttons Pale Colors *****/
 [class*="btn"][class*="choco"],
 [class*="button"][class*="choco"] {
   background-color: var(--choco);
@@ -2327,7 +2944,7 @@ pre > *::selection {
   color: var(--btn-color-white);
 }
 
-/***** Buttons with Brand Colors *****/
+/***** 4.3 Buttons Brand Colors *****/
 [class*="btn"][class*="fb"],
 [class*="button"][class*="fb"] {
   background-color: var(--facebook);
@@ -2364,7 +2981,7 @@ pre > *::selection {
   color: var(--btn-color-tw);
 }
 
-/***** Buttons with Transparent Colors *****/
+/***** 4.4 Buttons Transparent Colors *****/
 [class*="btn"][class*="amethyst"],
 [class*="button"][class*="amethyst"] {
   background-color: var(--amethyst);
@@ -2407,7 +3024,13 @@ pre > *::selection {
   color: var(--btn-color-sapphire);
 }
 
-/***** Buttons with Differents Sizes *****/
+/********** 5. BTN SIZES **********/
+
+/*
+5.1 Buttons Sizes
+*/
+
+/***** 5.1 Buttons Sizes *****/
 [class*="btn"][class*="xs"],
 [class*="button"][class*="xs"] {
   padding: var(--btn-pad-xs);
@@ -2433,7 +3056,13 @@ pre > *::selection {
   padding: var(--btn-pad-xl);
 }
 
-/***** Buttons with Differents Shapes *****/
+/********** 6. BTN SHAPES **********/
+
+/*
+6.1 Buttons Shapes
+*/
+
+/***** Buttons Shapes *****/
 [class*="btn"][class*="square"],
 [class*="button"][class*="square"] {
   border-radius: var(--btn-radius-square);
@@ -2450,177 +3079,29 @@ pre > *::selection {
 }
 
 
-/********** SLIDER **********/
+/******************** MENU ********************/
 
 /*
-1. Slider
-2. Slide
-3. Slider Controls
-4. Slider Timeline
-5. Media Queries
+1. MENU
+  1.1 Menu
+  1.2 Menu Items
+2. MENU LABEL
+  2.1 Menu Label
+  2.2 Menu Label Hover
+  2.3 Menu Check Label
+3. MENU FA
+  3.1 Menu FA
+  3.2 Menu Check FA
 */
 
-/***** Slider *****/
-.slider {
-  height: var(--slider-height);
-  text-align: var(--slider-text-align);
-}
-
-/***** Slide *****/
-.slide {
-  margin: var(--slide-mar);
-  width: var(--slide-width);
-  max-width: var(--slide-max-width);
-  height: var(--slide-height);
-}
-
-[class*="play-check"]:checked ~ .slide {
-  -webkit-animation: slider var(--play-check-slide-anima);
-          animation: slider var(--play-check-slide-anima);
-}
-
-[class*="repeat-check"]:checked ~ .slide {
-  -webkit-animation-iteration-count: var(--slider-anima-iteration);
-          animation-iteration-count: var(--slider-anima-iteration);
-}
-
-[class*="direction-check"]:checked ~ .slide {
-  -webkit-animation-direction: var(--slider-anima-direction);
-          animation-direction: var(--slider-anima-direction);
-}
-
-.slide > * {
-  display: none;
-  height: var(--slide-height);
-}
-
-[class*="slider-radio1"]:checked ~ .slide .slide1,
-[class*="slider-radio2"]:checked ~ .slide .slide2,
-[class*="slider-radio3"]:checked ~ .slide .slide3,
-[class*="slider-radio4"]:checked ~ .slide .slide4,
-[class*="slider-radio5"]:checked ~ .slide .slide5 {
-  display: inline-block;
-}
-
-/***** Slider Controls *****/
-.slider-controls {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: var(--slider-controls-juco);
-      -ms-flex-pack: var(--slider-controls-juco);
-          justify-content: var(--slider-controls-juco);
-  margin: var(--slider-controls-mar);
-  border: var(--slider-controls-bord);
-  border-radius: var(--slider-controls-radius);
-  padding: var(--slider-controls-pad);
-  background-color: var(--slider-controls-bg);
-  opacity: var(--slider-controls-opacity);
-  -webkit-transition: opacity var(--slider-transition-opacity);
-  transition: opacity var(--slider-transition-opacity);
-}
-
-.slider:hover .slider-controls,
-.slider:focus .slider-controls,
-.slider:active .slider-controls {
-  opacity: var(--slider-controls-hover-opacity);
-  -webkit-transition: opacity var(--slider-transition-opacity);
-  transition: opacity var(--slider-transition-opacity);
-}
-
-.slider label {
-  color: var(--slider-label-color);
-  padding: var(--slider-label-pad);
-}
-
-[class*="play-check"]:checked ~ .slider-controls [for="slide-play"] > i {
-  color: var(--slider-icon-color);
-  -webkit-transition: color var(--slider-transition-color);
-  transition: color var(--slider-transition-color);
-}
-
-[class*="play-check"]:checked ~ .slider-controls [for="slide-play"] > i::before {
-  content: var(--play-check-slide-play-icon-before);
-}
-
-[class*="repeat-check"]:checked ~ .slider-controls [for="slide-repeat"] > i::before {
-  content: var(--repeat-check-slide-repeat-icon-before);
-}
-
-[class*="direction-check"]:checked ~ .slider-controls [for="slide-direction"] > i::before {
-  content: var(--direction-check-slide-direction-icon-before);
-}
-
-[class*="play-check"]:checked ~ .slider-controls [for="slide1"] > .fas::before,
-[class*="play-check"]:checked ~ .slider-controls [for="slide2"] > .fas::before,
-[class*="play-check"]:checked ~ .slider-controls [for="slide3"] > .fas::before,
-[class*="play-check"]:checked ~ .slider-controls [for="slide4"] > .fas::before,
-[class*="play-check"]:checked ~ .slider-controls [for="slide5"] > .fas::before {
-  color: var(--play-check-slide-icon-before-color);
-}
-
-[class*="slider-radio1"]:checked ~ .slider-controls [for="slide1"] > i::before,
-[class*="slider-radio2"]:checked ~ .slider-controls [for="slide2"] > i::before,
-[class*="slider-radio3"]:checked ~ .slider-controls [for="slide3"] > i::before,
-[class*="slider-radio4"]:checked ~ .slider-controls [for="slide4"] > i::before,
-[class*="slider-radio5"]:checked ~ .slider-controls [for="slide5"] > i::before {
-  color: var(--slider-icon-color);
-  -webkit-transition: color var(--slider-transition-color);
-  transition: color var(--slider-transition-color);
-  content: var(--slider-radio-slide-icon-before-content);
-}
-
-/***** Slider Timeline *****/
-.slider-timeline {
-  height: var(--slider-timeline-height);
-  background-color: var(--slider-timeline-bg);
-}
-
-[class*="play-check"]:checked ~ .slider-timeline {
-  -webkit-animation: width var(--play-check-slide-anima);
-          animation: width var(--play-check-slide-anima);
-}
-
-[class*="repeat-check"]:checked ~ .slider-timeline {
-  -webkit-animation-iteration-count: var(--slider-anima-iteration);
-          animation-iteration-count: var(--slider-anima-iteration);
-}
-
-[class*="direction-check"]:checked ~ .slider-timeline {
-  -webkit-animation-direction: var(--slider-anima-direction);
-          animation-direction: var(--slider-anima-direction);
-}
-
-[class*="slider-radio1"]:checked ~ .slider-timeline {
-  width: var(--slider-radio1-slider-timeline-width);
-}
-
-[class*="slider-radio2"]:checked ~ .slider-timeline {
-  width: var(--slider-radio2-slider-timeline-width);
-}
-
-[class*="slider-radio3"]:checked ~ .slider-timeline {
-  width: var(--slider-radio3-slider-timeline-width);
-}
-
-[class*="slider-radio4"]:checked ~ .slider-timeline {
-  width: var(--slider-radio4-slider-timeline-width);
-}
-
-[class*="slider-radio5"]:checked ~ .slider-timeline {
-  width: var(--slider-radio5-slider-timeline-width);
-}
-
-
-/********** MENU **********/
+/********** 1. MENU **********/
 
 /*
-1. Menu
-2. Menu Label
-3. Menu FA
+1.1 Menu
+1.2 Menu Items
 */
 
-/***** Menu *****/
+/***** 1.1 Menu *****/
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2642,11 +3123,20 @@ pre > *::selection {
   color: var(--menu-color);
 }
 
+/***** 1.2 Menu Items *****/
 .menu * {
   cursor: var(--menu-all-cursor);
 }
 
-/***** Menu Label *****/
+/********** 2. MENU LABEL **********/
+
+/*
+2.1 Menu Label
+2.2 Menu Label Hover
+2.3 Menu Check Label
+*/
+
+/***** 2.1 Menu Label *****/
 .menu label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2660,6 +3150,7 @@ pre > *::selection {
   width: var(--menu-label-width);
 }
 
+/***** 2.2 Menu Label Hover *****/
 .menu label:hover,
 .menu label:active,
 .menu label:focus {
@@ -2669,6 +3160,7 @@ pre > *::selection {
   color: var(--menu-label-hover-color);
 }
 
+/***** 2.3 Menu Check Label *****/
 [class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"],
 [class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"],
 [class*="menu-radio3"]:checked ~ .menu > [for="menu-radio3"],
@@ -2679,7 +3171,14 @@ pre > *::selection {
   font-weight: var(--menu-label-check-font-weight);
 }
 
-/***** Menu FA *****/
+/********** 3. MENU FA **********/
+
+/*
+3.1 Menu FA
+3.2 Menu Check FA
+*/
+
+/***** 3.1 Menu FA *****/
 .menu [class*="fa-"][class*="-down"] {
   display: none;
   position: var(--menu-fa-position);
@@ -2687,6 +3186,7 @@ pre > *::selection {
   color: var(--menu-fa-color);
 }
 
+/***** 3.2 Menu Check FA *****/
 @media (min-width: 576px) {
   [class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"] > [class*="fa-"][class*="-down"],
   [class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"] > [class*="fa-"][class*="-down"],
@@ -2698,17 +3198,32 @@ pre > *::selection {
 }
 
 
-/********** GALLERY **********/
+/******************** GALLERY ********************/
 
 /*
-1. Gallery
-2. Gallery Figure
-3. Gallery Figcaption
-4. Gallery FA
-5. Gallery Link
+1. GALLERY
+  1.1 Gallery
+  1.2 Gallery Items
+2. GALLERY FIGURE
+  2.1 Gallery Figure
+3. GALLERY FIGCAPTION
+  3.1 Gallery Figcaption
+  3.2 Gallery Hover Figcaption
+4. GALLERY FA
+  4.1 Gallery FA
+5. GALLERY LINK
+  5.1 Gallery Link
+  5.2 Gallery Link Items
 */
 
-/***** Gallery *****/
+/********** 1. GALLERY **********/
+
+/*
+1.1 Gallery
+1.2 Gallery Items
+*/
+
+/***** 1.1 Gallery *****/
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2720,11 +3235,18 @@ pre > *::selection {
   max-width: var(--gallery-max-w);
 }
 
+/***** 1.2 Gallery Items *****/
 .gallery * {
   cursor: var(--gallery-all-cursor);
 }
 
-/***** Gallery Figure *****/
+/********** 2. GALLERY FIGURE **********/
+
+/*
+2.1 Gallery Figure
+*/
+
+/***** 2.1 Gallery Figure *****/
 .gallery figure {
   position: var(--gallery-figure-position);
   overflow: var(--gallery-figure-flow);
@@ -2736,7 +3258,14 @@ pre > *::selection {
   line-height: var(--gallery-figure-line-height);
 }
 
-/***** Gallery Figcaption *****/
+/********** 3. GALLERY FIGCAPTION **********/
+
+/*
+3.1 Gallery Figcaption
+3.2 Gallery Hover Figcaption
+*/
+
+/***** 3.1 Gallery Figcaption *****/
 .gallery figcaption {
   display: none;
   position: var(--gallery-figcaption-position);
@@ -2746,6 +3275,7 @@ pre > *::selection {
   background-color: var(--gallery-figcaption-bg);
 }
 
+/***** 3.2 Gallery Hover Figcaption *****/
 .gallery figure:hover figcaption,
 .gallery figure:focus figcaption,
 .gallery figure:active figcaption {
@@ -2755,7 +3285,13 @@ pre > *::selection {
   bottom: var(--gallery-figure-figcaption-bot);
 }
 
-/***** Gallery FA *****/
+/********** 4. GALLERY FA **********/
+
+/*
+4.1 Gallery FA
+*/
+
+/***** 4.1 Gallery FA *****/
 .gallery figcaption [class*="fa-"] {
   position: var(--gallery-figcaption-fa-position);
   top: var(--gallery-figcaption-fa-top);
@@ -2766,11 +3302,19 @@ pre > *::selection {
   background-color: var(--gallery-figcaption-fa-bg);
 }
 
-/***** Gallery Link *****/
+/********** 5. GALLERY LINK **********/
+
+/*
+5.1 Gallery Link
+5.2 Gallery Link Items
+*/
+
+/***** 5.1 Gallery Link *****/
 .gallery a {
   color: var(--gallery-link-color);
 }
 
+/***** 5.2 Gallery Link Items *****/
 .gallery a * {
   margin: var(--gallery-link-all-mar);
   cursor: var(--gallery-link-all-cursor);
@@ -2787,20 +3331,34 @@ pre > *::selection {
 }
 
 
-/********** TABLE **********/
+/******************** TABLE ********************/
 
 /*
-1. Table
-2. Table Display
-3. Table Collapse
-4. Table Caption
-5. Table Titles
-6. Table Global
-7. Table Rows
-8. Table Cells
+1. TABLE
+  1.1 Table
+  1.2 Table Display
+  1.3 Table Collapse
+2. TABLE CAPTION
+  2.1 Table Caption
+3. TABLE TITLES
+  3.1 Table Titles
+4. TABLE GLOBAL
+  4.1 Table Global
+5. TABLE ROWS
+  5.1 Table Rows
+6. TABLE CELLS
+  6.1 Table Cells
 */
 
-/***** Table *****/
+/********** 1. TABLE **********/
+
+/*
+1.1 Table
+1.2 Table Display
+1.3 Table Collapse
+*/
+
+/***** 1.1 Table *****/
 [class*="table"] {
   display: table;
   border-collapse: var(--table-bord-collapse);
@@ -2808,7 +3366,7 @@ pre > *::selection {
   width: var(--table-width);
 }
 
-/***** Table Display *****/
+/***** 1.2 Table Display *****/
 [class*="table-"][class*="-inline"] {
   display: inline-table;
 }
@@ -2829,7 +3387,7 @@ pre > *::selection {
   display: table-cell;
 }
 
-/***** Table Collapse *****/
+/***** 1.3 Table Collapse *****/
 [class*="table-"][class*="-collapse"] {
   border-collapse: collapse;
 }
@@ -2838,14 +3396,26 @@ pre > *::selection {
   border-collapse: separate;
 }
 
-/***** Table Caption *****/
+/********** 2. TABLE CAPTION **********/
+
+/*
+2.1 Table Caption
+*/
+
+/***** 2.1 Table Caption *****/
 [class*="table"] > caption {
   caption-side: var(--table-caption-side);
   color: var(--table-caption-color);
   font-weight: var(--table-caption-font-weight);
 }
 
-/***** Table Titles *****/
+/********** 3. TABLE TITLES **********/
+
+/*
+3.1 Table Titles
+*/
+
+/***** 3.1 Table Titles *****/
 [class*="table"] thead,
 [class*="table"] tbody th,
 [class*="table"] tfoot th {
@@ -2854,7 +3424,13 @@ pre > *::selection {
   font-style: var(--table-title-font-style);
 }
 
-/***** Table Global *****/
+/********** 4. TABLE GLOBAL **********/
+
+/*
+4.1 Table Global
+*/
+
+/***** 4.1 Table Global *****/
 [class*="table"] th,
 [class*="table"] td {
   border-style: var(--table-cell-bord-style);
@@ -2866,7 +3442,13 @@ pre > *::selection {
   vertical-align: var(--table-cell-vertical-align);
 }
 
-/***** Table Rows *****/
+/********** 5. TABLE ROWS **********/
+
+/*
+5.1 Table Rows
+*/
+
+/***** 5.1 Table Rows *****/
 [class*="table"] tbody tr:nth-child(even) {
   background-color: var(--table-row-even-bg);
 }
@@ -2875,25 +3457,51 @@ pre > *::selection {
   background-color: var(--table-row-odd-bg);
 }
 
-/***** Table Cells *****/
+/********** 6. TABLE CELLS **********/
+
+/*
+6.1 Table Cells
+*/
+
+/***** 6.1 Table Cells *****/
 [class*="table"] td {
   color: var(--table-cell-color);
 }
 
 
-/********** FORM **********/
+/******************** FORM ********************/
 
 /*
-1. Form
-2. Form Inputs
-3. Media Queries
+1. FORM
+  1.1 Form
+2. FORM GLOBAL
+  2.1 Form Global
+3. FORM ITEMS
+  3.1 Form Fieldset
+  3.2 Form Legend
+  3.3 Form Inputs & Textarea
+  3.4 Form LG
 */
 
+/********** 1. FORM **********/
+
+/*
+1.1 Form
+*/
+
+/***** 1.1 Form *****/
 .form {
   margin: var(--form-mar);
   padding: var(--form-pad);
 }
 
+/********** 2. FORM GLOBAL **********/
+
+/*
+2.1 Form Global
+*/
+
+/***** 2.1 Form Global *****/
 .form,
 .form fieldset {
   width: var(--form-width);
@@ -2912,42 +3520,28 @@ pre > *::selection {
           flex-direction: var(--form-flex-direction);
 }
 
-@media (min-width: 992px) {
-  .form li {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: var(--form-li-flex-direction);
-            flex-direction: var(--form-li-flex-direction);
-    -webkit-box-pack: var(--form-li-justify-content);
-        -ms-flex-pack: var(--form-li-justify-content);
-            justify-content: var(--form-li-justify-content);
-    -webkit-box-align: var(--form-li-align-items);
-        -ms-flex-align: var(--form-li-align-items);
-            align-items: var(--form-li-align-items);
-  }
-}
+/********** 3. FORM ITEMS **********/
 
-@media (min-width: 992px) {
-  .form label {
-    -webkit-box-flex: var(--form-label-lg-flex);
-        -ms-flex: var(--form-label-lg-flex);
-            flex: var(--form-label-lg-flex);
-    -webkit-text-decoration: var(--form-label-text-decoration);
-            text-decoration: var(--form-label-text-decoration);
-  }
-}
+/*
+3.1 Form Fieldset
+3.2 Form Legend
+3.3 Form Inputs & Textarea
+3.4 Form LG
+*/
 
+/***** 3.1 Form Fieldset *****/
 .form fieldset {
   margin-left: var(--form-fieldset-mar-left);
   border: var(--form-fieldset-bord);
   padding: var(--form-fieldset-pad);
 }
 
+/***** 3.2 Form Legend *****/
 .form legend {
   font-weight: var(--form-legend-font-weight);
 }
 
-/***** Form Inputs *****/
+/***** 3.3 Form Inputs & Textarea *****/
 .form input::-webkit-input-placeholder,
 .form textarea::-webkit-input-placeholder {
   text-align: var(--form-input-placeholder-text-align);
@@ -2993,7 +3587,29 @@ pre > *::selection {
   cursor: var(--form-input-action-cursor);
 }
 
+/***** 3.4 Form LG *****/
 @media (min-width: 992px) {
+  .form li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: var(--form-li-flex-direction);
+            flex-direction: var(--form-li-flex-direction);
+    -webkit-box-pack: var(--form-li-justify-content);
+        -ms-flex-pack: var(--form-li-justify-content);
+            justify-content: var(--form-li-justify-content);
+    -webkit-box-align: var(--form-li-align-items);
+        -ms-flex-align: var(--form-li-align-items);
+            align-items: var(--form-li-align-items);
+  }
+
+  .form label {
+    -webkit-box-flex: var(--form-label-lg-flex);
+        -ms-flex: var(--form-label-lg-flex);
+            flex: var(--form-label-lg-flex);
+    -webkit-text-decoration: var(--form-label-text-decoration);
+            text-decoration: var(--form-label-text-decoration);
+  }
+
   .form input,
   .form textarea {
     width: var(--form-input-width);
@@ -3001,21 +3617,38 @@ pre > *::selection {
 }
 
 
-/********** FOOT **********/
+/******************** FOOT ********************/
 
 /*
-1. Foot
-2. Foot Global
-3. Foot Main
-4. Foot List
-5. Foot Info
+1. FOOT
+  1.1 Foot
+  1.2 Foot Titles
+2. FOOT GLOBAL
+  2.1 Foot Global
+3. FOOT MAIN
+  3.1 Foot Main
+4. FOOT LIST
+  4.1 Foot List
+  4.2 Foot List Link
+  4.3 Foot List Link Hover
+5. FOOT INFO
+  5.1 Foot Info
+  5.2 Foot Info Link
 */
 
-/***** Foot *****/
+/********** 1. FOOT **********/
+
+/*
+1.1 Foot
+1.2 Foot Titles
+*/
+
+/***** 1.1 Foot *****/
 .foot {
   text-align: var(--foot-text-align);
 }
 
+/***** 1.2 Foot Titles *****/
 .foot h3,
 .foot h4,
 .foot h5,
@@ -3024,7 +3657,13 @@ pre > *::selection {
   color: var(--foot-title-color);
 }
 
-/***** Foot Global *****/
+/********** 2. FOOT GLOBAL **********/
+
+/*
+2.1 Foot Global
+*/
+
+/***** 2.1 Foot Global *****/
 .foot-main,
 .foot-info {
   display: -webkit-box;
@@ -3033,7 +3672,13 @@ pre > *::selection {
   padding-bottom: var(--foot-global-pad-bot);
 }
 
-/***** Foot Main *****/
+/********** 3. FOOT MAIN **********/
+
+/*
+3.1 Foot Main
+*/
+
+/***** 3.1 Foot Main *****/
 .foot-main {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -3047,24 +3692,41 @@ pre > *::selection {
   cursor: var(--foot-main-cursor);
 }
 
-/***** Foot List *****/
+/********** 4. FOOT LIST **********/
+
+/*
+4.1 Foot List
+4.2 Foot List Link
+4.3 Foot List Link Hover
+*/
+
+/***** 4.1 Foot List *****/
 .foot-list {
   text-align: var(--foot-list-text-align);
   cursor: var(--foot-list-cursor);
 }
 
+/***** 4.2 Foot List Link *****/
 .foot-list a {
   margin-bottom: var(--foot-list-link-mar-bot);
   color: var(--foot-list-link-font-color);
 }
 
+/***** 4.3 Foot List Link Hover *****/
 .foot-list a:hover,
 .foot-list a:focus,
 .foot-list a:active {
   color: var(--foot-list-link-hover-font-color);
 }
 
-/***** Foot Info *****/
+/********** 5. FOOT INFO **********/
+
+/*
+5.1 Foot Info
+5.2 Foot Info Link
+*/
+
+/***** 5.1 Foot Info *****/
 .foot-info {
   -webkit-box-pack: var(--foot-info-justify-content);
       -ms-flex-pack: var(--foot-info-justify-content);
@@ -3074,6 +3736,7 @@ pre > *::selection {
   cursor: var(--foot-info-cursor);
 }
 
+/***** 5.2 Foot Info Link *****/
 .foot-info a {
   margin-right: var(--foot-info-link-mar-right);
   margin-left: var(--foot-info-link-mar-left);
@@ -3082,4 +3745,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 7th Apr 2019 @ 2:11:57 AM */
+ Updated: 7th Apr 2019 @ 8:00:12 PM */
