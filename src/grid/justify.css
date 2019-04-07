@@ -1,12 +1,37 @@
-/********** JUSTIFY **********/
+/******************** JUSTIFY ********************/
 
 /*
-1. Justify Content
-2. Justify Items
-3. Justify Self
+1. JUSTIFY CONTENT
+  1.1 Justify Content XS
+  1.2 Justify Content SM
+  1.3 Justify Content MD
+  1.4 Justify Content LG
+  1.5 Justify Content XL
+2. JUSTIFY ITEMS
+  2.1 Justify Items XS
+  2.2 Justify Items SM
+  2.3 Justify Items MD
+  2.4 Justify Items LG
+  2.5 Justify Items XL
+3. JUSTIFY SELF
+  3.1 Justify Self XS
+  3.2 Justify Self SM
+  3.3 Justify Self MD
+  3.4 Justify Self LG
+  3.5 Justify Self XL
 */
 
-/***** Justify Content *****/
+/********** 1. JUSTIFY CONTENT **********/
+
+/*
+1.1 Justify Content XS
+1.2 Justify Content SM
+1.3 Justify Content MD
+1.4 Justify Content LG
+1.5 Justify Content XL
+*/
+
+/***** 1.1 Justify Content XS *****/
 [class*="juco-"][class*="-around-xs"] {
   justify-content: space-around;
 }
@@ -47,6 +72,7 @@
   justify-content: stretch;
 }
 
+/***** 1.2 Justify Content SM *****/
 @media (min-width: 576px) {
   [class*="juco-"][class*="-around-sm"] {
     justify-content: space-around;
@@ -89,6 +115,7 @@
   }
 }
 
+/***** 1.3 Justify Content MD *****/
 @media (min-width: 768px) {
   [class*="juco-"][class*="-around-md"] {
     justify-content: space-around;
@@ -131,6 +158,7 @@
   }
 }
 
+/***** 1.4 Justify Content LG *****/
 @media (min-width: 992px) {
   [class*="juco-"][class*="-around-lg"] {
     justify-content: space-around;
@@ -173,6 +201,7 @@
   }
 }
 
+/***** 1.5 Justify Content XL *****/
 @media (min-width: 1200px) {
   [class*="juco-"][class*="-around-xl"] {
     justify-content: space-around;
@@ -215,7 +244,17 @@
   }
 }
 
-/***** Justify Items *****/
+/********** 2. JUSTIFY ITEMS **********/
+
+/*
+2.1 Justify Items XS
+2.2 Justify Items SM
+2.3 Justify Items MD
+2.4 Justify Items LG
+2.5 Justify Items XL
+*/
+
+/***** 2.1 Justify Items XS *****/
 [class*="juit-"][class*="-base-xs"] {
   justify-items: var(--justify-items-base);
 }
@@ -244,6 +283,7 @@
   justify-items: stretch;
 }
 
+/***** 2.2 Justify Items SM *****/
 @media (min-width: 576px) {
   [class*="juit-"][class*="-base-sm"] {
     justify-items: var(--justify-items-base);
@@ -274,6 +314,7 @@
   }
 }
 
+/***** 2.3 Justify Items MD *****/
 @media (min-width: 768px) {
   [class*="juit-"][class*="-base-md"] {
     justify-items: var(--justify-items-base);
@@ -304,6 +345,7 @@
   }
 }
 
+/***** 2.4 Justify Items LG *****/
 @media (min-width: 992px) {
   [class*="juit-"][class*="-base-lg"] {
     justify-items: var(--justify-items-base);
@@ -334,6 +376,7 @@
   }
 }
 
+/***** 2.5 Justify Items XL *****/
 @media (min-width: 1200px) {
   [class*="juit-"][class*="-base-xl"] {
     justify-items: var(--justify-items-base);
@@ -364,7 +407,17 @@
   }
 }
 
-/***** Justify Self *****/
+/********** 3. JUSTIFY SELF **********/
+
+/*
+3.1 Justify Self XS
+3.2 Justify Self SM
+3.3 Justify Self MD
+3.4 Justify Self LG
+3.5 Justify Self XL
+*/
+
+/***** 3.1 Justify Self XS *****/
 [class*="juse-"][class*="-base-xs"] {
   justify-self: var(--justify-self-base);
 }
@@ -393,6 +446,7 @@
   justify-self: stretch;
 }
 
+/***** 3.2 Justify Self SM *****/
 @media (min-width: 576px) {
   [class*="juse-"][class*="-base-sm"] {
     justify-self: var(--justify-self-base);
@@ -423,6 +477,7 @@
   }
 }
 
+/***** 3.3 Justify Self MD *****/
 @media (min-width: 768px) {
   [class*="juse-"][class*="-base-md"] {
     justify-self: var(--justify-self-base);
@@ -453,6 +508,7 @@
   }
 }
 
+/***** 3.4 Justify Self LG *****/
 @media (min-width: 992px) {
   [class*="juse-"][class*="-base-lg"] {
     justify-self: var(--justify-self-base);
@@ -483,6 +539,7 @@
   }
 }
 
+/***** 3.5 Justify Self XL *****/
 @media (min-width: 1200px) {
   [class*="juse-"][class*="-base-xl"] {
     justify-self: var(--justify-self-base);
