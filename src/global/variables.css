@@ -1,17 +1,356 @@
-/********** ELEMENTS VAR **********/
+/******************** VARIABLES ********************/
 
 /*
-1. Btn
-2. Foot
-3. Form
-4. Gallery
-5. Menu
-6. Navbar
-7. Slider
-8. Table
+You can override any variable of Animadio you want in your custom stylesheet file to cutomize the tag & class properties !
+
+1. GLOBAL VARIABLES
+  1.1 Colors
+  1.2 Keyframes
+  1.3 Init
+  1.4 Margin
+  1.5 Padding
+  1.6 Height
+  1.7 Width
+2. GRID VARIABLES
+  2.1 Grid
+  2.2 Flex
+  2.3 Align
+  2.4 Justify
+3. ELEMENTS VARIABLES
+  3.1 Btn
+  3.2 Foot
+  3.3 Form
+  3.4 Gallery
+  3.5 Menu
+  3.6 Navbar
+  3.7 Slider
+  3.8 Table
+4. STATES VARIABLES
+  4.1 Anima
+  4.2 Bord
+  4.3 Deco
+  4.4 Shabox
+  4.5 Shatex
 */
 
-/***** Btn *****/
+/********** 1. GLOBAL VARIABLES **********/
+
+/*
+1.1 Colors
+1.2 Keyframes
+1.3 Init
+1.4 Margin
+1.5 Padding
+1.6 Height
+1.7 Width
+*/
+
+:root {
+  /***** 1.1 Colors *****/
+  --black: rgb(15, 15, 15);
+  --blue: RoyalBlue;
+  --gray: DimGray;
+  --green: ForestGreen;
+  --maroon: SaddleBrown;
+  --orange: DarkOrange;
+  --purple: SlateBlue;
+  --red: Crimson;
+  --yellow: Gold;
+  --choco: Chocolate;
+  --jade: PaleGreen;
+  --khaki: Khaki;
+  --salmon: Salmon;
+  --silver: Silver;
+  --sky: SkyBlue;
+  --tomato: Tomato;
+  --violet: Violet;
+  --white: Ivory;
+  --facebook: #4267b2;
+  --github: #24292e;
+  --linkedin: #0077b5;
+  --npm: #c12127;
+  --stackoverflow: #f48024;
+  --twitter: #1da1f2;
+  --amethyst: rgba(153, 102, 204, 0.5);
+  --citrine: rgba(228, 208, 10, 0.5);
+  --quartz: rgba(217, 217, 243, 0.5);
+  --emerald: rgba(80, 200, 120, 0.5);
+  --obsidian: rgba(15, 15, 15, 0.5);
+  --ruby: rgba(224, 17, 95, 0.5);
+  --sapphire: rgba(15, 82, 186, 0.5);
+
+  /***** 1.3 Keyframes *****/
+  --keyframes-content1: url(https://animadio.org/img/svg/1.svg);
+  --keyframes-content2: url(https://animadio.org/img/svg/2.svg);
+  --keyframes-content3: url(https://animadio.org/img/svg/3.svg);
+  --keyframes-content4: url(https://animadio.org/img/svg/4.svg);
+  --keyframes-content5: url(https://animadio.org/img/svg/5.svg);
+  --keyframes-rotate: -360deg;
+  --keyframes-rotateX: -360deg;
+  --keyframes-rotateY: -360deg;
+  --keyframes-scale: 0;
+  --keyframes-scaleX: 0;
+  --keyframes-scaleY: 0;
+  --keyframes-skew: 180deg, 180deg;
+  --keyframes-skewX: 180deg;
+  --keyframes-skewY: 180deg;
+  --keyframes-translate: -100vw, -100vh;
+  --keyframes-translateX: -100vw;
+  --keyframes-translateY: -100vh;
+  --keyframes-translateY-opac: 68px;
+  --keyframes-translateY-xs: 2vh;
+  --keyframes-width: 100%;
+}
+
+/***** 1.4 Init *****/
+body {
+  --global-font-family: serif;
+  --global-line-height: 1.6;
+  --global-font-size: 1.8rem;
+}
+
+article {
+  --article-mar-bot: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --title-font-family: sans-serif;
+  --title-xl-font-size: 5rem;
+  --title-xl-text-transform: capitalize;
+  --title-lg-font-size: 3.5rem;
+  --title-lg-text-transform: none;
+  --title-md-font-size: 3rem;
+  --title-sm-font-size: 2.5rem;
+  --title-xs-font-size: 2rem;
+}
+
+a {
+  --link-deco: none;
+  --link-outline: 0;
+}
+
+ul {
+  --list-mar: 0 0 10px;
+  --list-pad: 0;
+  --list-style: none;
+}
+
+img,
+video {
+  --img-height: auto;
+  --img-max-width: 100%;
+  --img-object-fit: contain;
+}
+
+table {
+  --table-mar: auto;
+  --table-bord-collapse: collapse;
+  --table-text-align: center;
+  --table-vertical-align: middle;
+}
+
+label {
+  --label-cursor: pointer;
+}
+
+pre {
+  --pre-font-family: monospace;
+  --pre-overflow: scroll;
+  --pre-pad: 10px;
+  --pre-selection-bg: var(--jade);
+  --pre-selection-color: var(--black);
+}
+
+/***** 1.5 Margin *****/
+[class*="mar-"] {
+  --mar-none: 0;
+  --mar-sm: 10px;
+  --mar-md: 20px;
+  --mar-lg: 50px;
+  --mar-bot-sm: 10px;
+  --mar-bot-md: 20px;
+  --mar-bot-lg: 50px;
+  --mar-left-sm: 10px;
+  --mar-left-md: 20px;
+  --mar-left-lg: 50px;
+  --mar-right-sm: 10px;
+  --mar-right-md: 20px;
+  --mar-right-lg: 50px;
+  --mar-top-sm: 10px;
+  --mar-top-md: 20px;
+  --mar-top-lg: 50px;
+}
+
+/***** 1.6 Padding *****/
+[class*="pad-"] {
+  --pad-none: 0;
+  --pad-sm: 10px;
+  --pad-md: 20px;
+  --pad-lg: 50px;
+  --pad-bot-sm: 10px;
+  --pad-bot-md: 20px;
+  --pad-bot-lg: 50px;
+  --pad-left-sm: 10px;
+  --pad-left-md: 20px;
+  --pad-left-lg: 50px;
+  --pad-right-sm: 10px;
+  --pad-right-md: 20px;
+  --pad-right-lg: 50px;
+  --pad-top-sm: 10px;
+  --pad-top-md: 20px;
+  --pad-top-lg: 50px;
+}
+
+/***** 1.7 Height *****/
+[class*="height-"] {
+  --height-sm: 10vh;
+  --height-md: 50vh;
+  --height-lg: 100vh;
+}
+
+[class*="max-h-"] {
+  --max-height-sm: 50vh;
+  --max-height-md: 75vh;
+  --max-height-lg: 100vh;
+}
+
+[class*="min-h-"] {
+  --min-height-sm: 25vh;
+  --min-height-md: 50vh;
+  --min-height-lg: 75vh;
+}
+
+/***** 1.8 Width *****/
+[class*="width-"] {
+  --width-sm: 25%;
+  --width-md: 50%;
+  --width-lg: 100%;
+}
+
+[class*="max-w-"] {
+  --max-width-sm: 50%;
+  --max-width-md: 75%;
+  --max-width-lg: 100%;
+}
+
+[class*="min-w-"] {
+  --min-width-sm: 25%;
+  --min-width-md: 50%;
+  --min-width-lg: 75%;
+}
+
+/********** 2. GRID VARIABLES **********/
+
+/*
+2.1 Grid
+2.2 Flex
+2.3 Align
+2.4 Justify
+*/
+
+/***** 2.1 Grid *****/
+[class*="gap-"] {
+  --gap-1xs: 1px;
+  --gap-2xs: 2px;
+  --gap-3xs: 5px;
+  --gap-1sm: 2px;
+  --gap-2sm: 5px;
+  --gap-3sm: 10px;
+  --gap-1md: 5px;
+  --gap-2md: 10px;
+  --gap-3md: 20px;
+  --gap-1lg: 10px;
+  --gap-2lg: 20px;
+  --gap-3lg: 50px;
+  --gap-1xl: 20px;
+  --gap-2xl: 50px;
+  --gap-3xl: 100px;
+}
+
+/***** 2.2 Flex *****/
+[class*="flex-"] {
+  --flex-neg-mar-xs: -2px;
+  --flex-pos-mar-xs: 2px;
+  --flex-width-xs: 4px;
+  --flex-neg-mar-sm: -5px;
+  --flex-pos-mar-sm: 5px;
+  --flex-width-sm: 10px;
+  --flex-neg-mar-md: -10px;
+  --flex-pos-mar-md: 10px;
+  --flex-width-md: 20px;
+  --flex-neg-mar-lg: -20px;
+  --flex-pos-mar-lg: 20px;
+  --flex-width-lg: 40px;
+  --flex-neg-mar-xl: -50px;
+  --flex-pos-mar-xl: 50px;
+  --flex-width-xl: 100px;
+}
+
+[class*="column"] {
+  --column-pad: 0 10px;
+}
+
+[class*="row"] {
+  --row-pad: 10px 0;
+}
+
+/***** 2.3 Align *****/
+[class*="alco-"][class*="-"] {
+  --align-content-base: baseline;
+  --align-content-end: flex-end;
+  --align-content-start: flex-start;
+}
+
+[class*="alit-"] {
+  --align-items-base: baseline;
+  --align-items-end: flex-end;
+  --align-items-start: flex-start;
+}
+
+[class*="alse-"] {
+  --align-self-base: baseline;
+  --align-self-end: flex-end;
+  --align-self-start: flex-start;
+}
+
+/***** 2.4 Justify *****/
+[class*="juco-"][class*="-"] {
+  --justify-content-base: baseline;
+  --justify-content-end: flex-end;
+  --justify-content-start: flex-start;
+}
+
+[class*="juit-"] {
+  --justify-items-base: baseline;
+  --justify-items-end: flex-end;
+  --justify-items-start: flex-start;
+}
+
+[class*="juse-"] {
+  --justify-self-base: baseline;
+  --justify-self-end: flex-end;
+  --justify-self-start: flex-start;
+}
+
+/********** 3. ELEMENTS VARIABLES **********/
+
+/*
+3.1 Btn
+3.2 Foot
+3.3 Form
+3.4 Gallery
+3.5 Menu
+3.6 Navbar
+3.7 Slider
+3.8 Table
+*/
+
+/***** 3.1 Btn *****/
 [class*="btn"],
 [class*="button"] {
   --btn-bg: var(--blue);
@@ -71,7 +410,7 @@
   --btn-radius-circle: 50%;
 }
 
-/***** Foot *****/
+/***** 3.2 Foot *****/
 [class*="foot"] {
   --foot-text-align: center;
   --foot-title-color: var(--khaki);
@@ -101,7 +440,7 @@
   }
 }
 
-/***** Form *****/
+/***** 3.3 Form *****/
 .form {
   --form-mar: auto;
   --form-pad: 20px 0 40px;
@@ -137,7 +476,7 @@
   }
 }
 
-/***** Gallery *****/
+/***** 3.4 Gallery *****/
 .gallery {
   --gallery-flex-wrap: wrap;
   --gallery-flow: hidden;
@@ -156,7 +495,7 @@
   --gallery-figcaption-line-height: 1;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-width: 100%;
-  --gallery-figure-figcaption-anima: trany-opac 2s;
+  --gallery-figure-figcaption-anima: tranY-opac 2s;
   --gallery-figure-figcaption-bot: 0;
   --gallery-figcaption-fa-bg: var(--blue);
   --gallery-figcaption-fa-bord: 2px solid var(--white);
@@ -175,27 +514,27 @@
 }
 
 @media (min-width: 576px) {
-  .gallery figure {
+  .gallery {
     --gallery-figure-mar: 6px;
     --gallery-figure-width: calc(100% / 2 - 12px);
   }
 }
 
 @media (min-width: 992px) {
-  .gallery figure {
+  .gallery {
     --gallery-figure-mar: 7px;
     --gallery-figure-width: calc(100% / 3 - 14px);
   }
 }
 
 @media (min-width: 1200px) {
-  .gallery figure {
+  .gallery {
     --gallery-figure-mar: 8px;
     --gallery-figure-width: calc(100% / 4 - 16px);
   }
 }
 
-/***** Menu *****/
+/***** 3.5 Menu *****/
 .menu {
   --menu-bg: var(--silver);
   --menu-border: none;
@@ -251,7 +590,11 @@
   }
 }
 
-/***** Navbar *****/
+/***** 3.6 Navbar *****/
+:root {
+  --navbar-height: 80px;
+}
+
 [class*="nav"] {
   --navbar-align-items: center;
   --navbar-bg: var(--blue);
@@ -279,7 +622,7 @@
   --nav-info-height: 50px;
   --nav-info-img-mar: 5px;
   --nav-info-link-hover-scale: 1.5;
-  --nav-toggle-anima: trany-xs 1s linear infinite alternate;
+  --nav-toggle-anima: tranY-xs 1s linear infinite alternate;
   --nav-toggle-right: 10px;
   --nav-toggle-top: 0;
 }
@@ -298,13 +641,8 @@
   }
 }
 
-/***** Slider *****/
+/***** 3.7 Slider *****/
 .slider {
-  --slide1: url(https://animadio.org/img/svg/1.svg);
-  --slide2: url(https://animadio.org/img/svg/2.svg);
-  --slide3: url(https://animadio.org/img/svg/3.svg);
-  --slide4: url(https://animadio.org/img/svg/4.svg);
-  --slide5: url(https://animadio.org/img/svg/5.svg);
   --slider-height: 40vh;
   --slider-text-align: center;
   --slider-anima-direction: reverse;
@@ -344,9 +682,6 @@
 @media (min-width: 576px) {
   .slider {
     --slider-height: 50vh;
-  }
-
-  .slider-timeline {
     --slider-timeline-height: 7px;
   }
 }
@@ -354,9 +689,6 @@
 @media (min-width: 768px) {
   .slider {
     --slider-height: 60vh;
-  }
-
-  .slider-timeline {
     --slider-timeline-height: 8px;
   }
 }
@@ -364,9 +696,6 @@
 @media (min-width: 992px) {
   .slider {
     --slider-height: 70vh;
-  }
-
-  .slider-timeline {
     --slider-timeline-height: 9px;
   }
 }
@@ -374,14 +703,11 @@
 @media (min-width: 1200px) {
   .slider {
     --slider-height: 80vh;
-  }
-
-  .slider-timeline {
     --slider-timeline-height: 10px;
   }
 }
 
-/***** Table *****/
+/***** 3.8 Table *****/
 [class*="table"] {
   --table-bord-collapse: collapse;
   --table-bord-space: 10px;
@@ -402,5 +728,82 @@
   --table-cell-text-align: center;
   --table-cell-vertical-align: middle;
   --table-cell-color: var(--blue);
+}
+
+/********** 4. STATES VARIABLES **********/
+
+/*
+4.1 Anima
+4.2 Bord
+4.3 Deco
+4.4 Shabox
+4.5 Shatex
+*/
+
+/***** 4.1 Anima *****/
+[class*="anima-"] {
+  --anima-duration: 2s;
+  --anima-duration-xs: 1s;
+  --anima-duration-sm: 2s;
+  --anima-duration-md: 5s;
+  --anima-duration-lg: 10s;
+  --anima-duration-xl: 60s;
+  --anima-timing-ease: ease-in-out;
+  --anima-timing-steps: 60, start;
+  --anima-timing-bezier: 1, 5, 1, -5;
+  --anima-count-few: 2;
+  --anima-count-many: 5;
+  --anima-delay-small: 1s;
+  --anima-delay-medium: 2s;
+  --anima-delay-large: 3s;
+  --transform-origin-near: 50px 50px;
+  --transform-origin-far: top right 50px;
+}
+
+/***** 4.2 Bord *****/
+[class*="bord-"] {
+  --bord-style: solid;
+  --bord-width: medium;
+  --bord-color: var(--black);
+  --bord-radius: 5px;
+  --bord-width-sm: thin;
+  --bord-width-md: medium;
+  --bord-width-lg: thick;
+  --bord-radius-square: unset;
+  --bord-radius-round: 10px;
+  --bord-radius-circle: 50%;
+}
+
+/***** 4.3 Deco *****/
+[class*="deco-"] {
+  --deco-line: underline;
+  --deco-style: solid;
+  --deco-color: var(--black);
+}
+
+/***** 4.4 Shabox *****/
+[class*="shabox-"] {
+  --shabox-sm: 1px 1px;
+  --shabox-md: 2px 2px;
+  --shabox-lg: 5px 5px;
+  --shabox-blur-all: 0 0 2px;
+  --shabox-blur-sm: 1px 1px 1px;
+  --shabox-blur-md: 2px 2px 2px;
+  --shabox-blur-lg: 5px 5px 5px;
+  --shabox-spread-all: 0 0 2px 2px;
+  --shabox-spread-sm: 1px 1px 1px 1px;
+  --shabox-spread-md: 2px 2px 2px 2px;
+  --shabox-spread-lg: 5px 5px 5px 5px;
+}
+
+/***** 4.5 Shatex *****/
+[class*="shatex-"] {
+  --shatex-sm: 1px 1px;
+  --shatex-md: 2px 2px;
+  --shatex-lg: 5px 5px;
+  --shatex-blur-all: 0 0 2px;
+  --shatex-blur-sm: 1px 1px 1px;
+  --shatex-blur-md: 2px 2px 2px;
+  --shatex-blur-lg: 5px 5px 5px;
 }
 
