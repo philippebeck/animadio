@@ -1,22 +1,45 @@
-/********** INIT **********/
+/******************** INIT ********************/
 
 /*
-1. Hidden Main Classes
-2. Global
-3. Titles
-4. Links
-4. Lists
-6. Medias
-7. Tables
+1. CLASSES
+  1.1 Hidden
+2. TAGS
+  2.1 Global
+  2.2 Title
+  2.3 Link
+  2.4 List
+  2.5 Media
+  2.6 Table
+  2.7 Form
+  2.8 Code
 */
 
-/***** Hidden Main Classes *****/
+/********** 1. CLASSES **********/
+
+/*
+1.1 Hidden
+*/
+
+/***** 1.1 Hidden *****/
 [class*="check"],
 [class*="radio"] {
   display: none;
 }
 
-/***** Global *****/
+/********** 2. TAGS **********/
+
+/*
+2.1 Global
+2.2 Title
+2.3 Link
+2.4 List
+2.5 Media
+2.6 Table
+2.7 Form
+2.8 Code
+*/
+
+/***** 2.1 Global *****/
 * {
   box-sizing: border-box;
 }
@@ -38,7 +61,7 @@ article {
   margin-bottom: var(--article-mar-bot);
 }
 
-/***** Titles *****/
+/***** 2.2 Title *****/
 h1,
 h2,
 h3,
@@ -71,20 +94,20 @@ h6 {
   font-size: var(--title-xs-font-size);
 }
 
-/***** Links *****/
+/***** 2.3 Link *****/
 a {
   text-decoration: var(--link-deco);
   outline: var(--link-outline);
 }
 
-/***** Lists *****/
+/***** 2.4 List *****/
 ul {
   margin: var(--list-mar);
   padding: var(--list-pad);
   list-style: var(--list-style);
 }
 
-/***** Medias *****/
+/***** 2.5 Media *****/
 img,
 video {
   object-fit: var(--img-object-fit);
@@ -92,7 +115,7 @@ video {
   height: var(--img-height);
 }
 
-/***** Table *****/
+/***** 2.6 Table *****/
 table {
   margin: var(--table-mar);
   border-collapse: var(--table-bord-collapse);
@@ -100,12 +123,12 @@ table {
   vertical-align: var(--table-vertical-align);
 }
 
-/***** Form *****/
+/***** 2.7 Form *****/
 label {
   cursor: var(--label-cursor);
 }
 
-/***** Code *****/
+/***** 2.8 Code *****/
 pre {
   overflow: var(--pre-overflow);
   padding: var(--pre-pad);
