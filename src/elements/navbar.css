@@ -1,16 +1,38 @@
-/********** NAVBAR **********/
+/******************** NAVBAR ********************/
 
 /*
-1. Navbar Display
-2. Navbar
-3. Navs
-4. Nav Brand
-5. Nav Main
-6. Nav Info
-7. Nav Toggle
+1. NAVBAR DISPLAY
+  1.1 Navbar Visible
+  1.2 Navbar Hidden
+2. NAVBAR
+  2.1 Navbar
+  2.2 Navbar Link & Label
+  2.3 Navbar Icon
+  2.4 Navbar Fixed Next Element
+3. NAVS
+  3.1 Navs
+  3.2 Navs Link & Label
+4. NAV BRAND
+  4.1 Nav Brand
+  4.2 Nav Brand Images
+5. NAV MAIN
+  5.1 Nav Main
+  5.1 Nav Main Hover
+6. NAV INFO
+  6.1 Nav Info
+  6.2 Nav Info Hover
+7. NAV TOGGLE
+  7.1 Nav Toggle
 */
 
-/***** Navbar Display *****/
+/********** 1. NAVBAR DISPLAY **********/
+
+/*
+1.1 Navbar Visible
+1.2 Navbar Hidden
+*/
+
+/***** 1.1 Navbar Visible *****/
 .navbar,
 .nav-close:checked ~ .nav-main,
 .nav-open:checked ~ .nav-info,
@@ -21,6 +43,7 @@
   display: flex;
 }
 
+/***** 1.2 Navbar Hidden *****/
 .nav-main span,
 .nav-info span,
 .nav-close,
@@ -32,7 +55,16 @@
   display: none;
 }
 
-/***** Navbar *****/
+/********** 2. NAVBAR **********/
+
+/*
+2.1 Navbar
+2.2 Navbar Link & Label
+2.3 Navbar Icon
+2.4 Navbar Fixed Next Element
+*/
+
+/***** 2.1 Navbar *****/
 .navbar {
   justify-content: var(--navbar-justify-content);
   align-items: var(--navbar-align-items);
@@ -47,6 +79,7 @@
   color: var(--navbar-color);
 }
 
+/***** 2.2 Navbar Link & Label *****/
 .navbar a,
 .navbar label {
   padding: var(--navbar-link-pad);
@@ -63,28 +96,30 @@
   color: var(--navbar-link-hover-color);
 }
 
+/***** 2.3 Navbar Icon *****/
 .navbar i {
   align-self: var(--navbar-icon-align-self);
 }
 
+/***** 2.4 Navbar Fixed Next Element *****/
 .navbar + * {
   margin-top: var(--navbar-height);
 }
 
-/***** Navs *****/
+/********** 3. NAVS **********/
+
+/*
+3.1 Navs
+3.2 Navs Link & Label
+*/
+
+/***** 3.1 Navs *****/
 .nav-main,
 .nav-info {
   align-items: var(--navs-align-items);
   margin: var(--navs-mar);
   padding: var(--navs-pad);
   list-style: var(--navs-list-style);
-}
-
-.nav-main a,
-.nav-main label,
-.nav-info a,
-.nav-info label {
-  flex-direction: var(--navs-link-flex-direction);
 }
 
 @media (min-width: 576px) {
@@ -94,15 +129,25 @@
   }
 }
 
-/***** Nav Brand *****/
+/***** 3.2 Navs Link & Label *****/
+.nav-main a,
+.nav-main label,
+.nav-info a,
+.nav-info label {
+  flex-direction: var(--navs-link-flex-direction);
+}
+
+/********** 4. NAV BRAND **********/
+
+/*
+4.1 Nav Brand
+4.2 Nav Brand Images
+*/
+
+/***** 4.1 Nav Brand *****/
 .nav-brand {
   position: absolute;
   left: var(--nav-brand-left);
-}
-
-.nav-brand img,
-.nav-brand svg {
-  height: var(--nav-brand-img-height);
 }
 
 @media (min-width: 576px) {
@@ -111,7 +156,27 @@
   }
 }
 
-/***** Nav Main *****/
+/***** 4.2 Nav Brand Images *****/
+.nav-brand img,
+.nav-brand svg {
+  height: var(--nav-brand-img-height);
+}
+
+/********** 5. NAV MAIN **********/
+
+/*
+5.1 Nav Main
+5.1 Nav Main Hover
+*/
+
+/***** 5.1 Nav Main *****/
+@media (min-width: 768px) {
+  .nav-main span {
+    display: block;
+  }
+}
+
+/***** 5.1 Nav Main Hover *****/
 .nav-main a:hover,
 .nav-main a:focus,
 .nav-main a:active,
@@ -121,19 +186,27 @@
   transform: scale(var(--nav-main-link-hover-scale));
 }
 
-@media (min-width: 768px) {
-  .nav-main span {
-    display: block;
-  }
-}
+/********** 6. NAV INFO **********/
 
-/***** Nav Info *****/
+/*
+6.1 Nav Info
+6.2 Nav Info Hover
+*/
+
+/***** 6.1 Nav Info *****/
 .nav-info img,
 .nav-info svg {
   margin: var(--nav-info-img-mar);
   height: var(--nav-info-height);
 }
 
+@media (min-width: 768px) {
+  .nav-info span {
+    display: block;
+  }
+}
+
+/***** 6.2 Nav Info Hover *****/
 .nav-info a:hover,
 .nav-info a:focus,
 .nav-info a:active,
@@ -143,13 +216,13 @@
   transform: scale(var(--nav-info-link-hover-scale));
 }
 
-@media (min-width: 768px) {
-  .nav-info span {
-    display: block;
-  }
-}
+/********** 7. NAV TOGGLE **********/
 
-/***** Nav Toggle *****/
+/*
+7.1 Nav Toggle
+*/
+
+/***** 7.1 Nav Toggle *****/
 .nav-toggle {
   position: absolute;
   top: var(--nav-toggle-top);
