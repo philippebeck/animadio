@@ -1,19 +1,31 @@
-/********** BTN **********/
+/******************** BTN ********************/
 
 /*
-1. Buttons
-2. Buttons Hover, Focus & Active
-3. Buttons Active & Checked
-4. Buttons Icons
-5. Buttons with Main Colors
-6. Buttons with Pale Colors
-7. Buttons with Brand Colors
-8. Buttons with Transparent Colors
-9. Buttons with Differents Sizes
-10. Buttons with Differents Shapes
+1. BTN
+  1.1 Btn & Button
+2. BTN STATES
+  2.1 Buttons Hover, Focus & Active
+  2.2 Buttons Active & Checked
+3. BTN ICON
+  3.1 Buttons Icon
+4. BTN COLORS
+  4.1 Buttons Main Colors
+  4.2 Buttons Pale Colors
+  4.3 Buttons Brand Colors
+  4.4 Buttons Transparent Colors
+5. BTN SIZES
+  5.1 Buttons Sizes
+6. BTN SHAPES
+  6.1 Buttons Shapes
 */
 
-/***** Buttons *****/
+/********** 1. BTN **********/
+
+/*
+1.1 Btn & Button
+*/
+
+/***** Btn & Button *****/
 [class*="btn"],
 [class*="button"] {
   display: inline-block;
@@ -27,7 +39,14 @@
   color: var(--btn-color);
 }
 
-/***** Buttons Hover, Focus & Active *****/
+/********** 2. BTN STATES **********/
+
+/*
+2.1 Buttons Hover, Focus & Active
+2.2 Buttons Active & Checked
+*/
+
+/***** 2.1 Buttons Hover, Focus & Active *****/
 [class*="btn"]:hover,
 [class*="button"]:hover,
 [class*="btn"]:focus,
@@ -43,19 +62,35 @@
   animation: var(--btn-hover-anima);
 }
 
-/***** Buttons Active & Checked *****/
+
+/***** 2.2 Buttons Active & Checked *****/
 [class*="btn"]:active,
 [class*="check"]:checked + [class*="button"] {
   transform: var(--check-button-transform);
 }
 
-/***** Buttons Icons *****/
+/********** 3. BTN ICON **********/
+
+/*
+3.1 Buttons Icons
+*/
+
+/***** 3.1 Buttons Icons *****/
 [class*="btn"] > i,
 [class*="button"] > i {
   display: block;
 }
 
-/***** Buttons with Main Colors *****/
+/********** 4. BTN COLORS **********/
+
+/*
+4.1 Buttons Main Colors
+4.2 Buttons Pale Colors
+4.3 Buttons Brand Colors
+4.4 Buttons Transparent Colors
+*/
+
+/***** 4.1 Buttons Main Colors *****/
 [class*="btn"][class*="black"],
 [class*="button"][class*="black"] {
   background-color: var(--black);
@@ -110,7 +145,7 @@
   color: var(--btn-color-yellow);
 }
 
-/***** Buttons with Pale Colors *****/
+/***** 4.2 Buttons Pale Colors *****/
 [class*="btn"][class*="choco"],
 [class*="button"][class*="choco"] {
   background-color: var(--choco);
@@ -165,7 +200,7 @@
   color: var(--btn-color-white);
 }
 
-/***** Buttons with Brand Colors *****/
+/***** 4.3 Buttons Brand Colors *****/
 [class*="btn"][class*="fb"],
 [class*="button"][class*="fb"] {
   background-color: var(--facebook);
@@ -202,7 +237,7 @@
   color: var(--btn-color-tw);
 }
 
-/***** Buttons with Transparent Colors *****/
+/***** 4.4 Buttons Transparent Colors *****/
 [class*="btn"][class*="amethyst"],
 [class*="button"][class*="amethyst"] {
   background-color: var(--amethyst);
@@ -245,7 +280,13 @@
   color: var(--btn-color-sapphire);
 }
 
-/***** Buttons with Differents Sizes *****/
+/********** 5. BTN SIZES **********/
+
+/*
+5.1 Buttons Sizes
+*/
+
+/***** 5.1 Buttons Sizes *****/
 [class*="btn"][class*="xs"],
 [class*="button"][class*="xs"] {
   padding: var(--btn-pad-xs);
@@ -271,7 +312,13 @@
   padding: var(--btn-pad-xl);
 }
 
-/***** Buttons with Differents Shapes *****/
+/********** 6. BTN SHAPES **********/
+
+/*
+6.1 Buttons Shapes
+*/
+
+/***** Buttons Shapes *****/
 [class*="btn"][class*="square"],
 [class*="button"][class*="square"] {
   border-radius: var(--btn-radius-square);
