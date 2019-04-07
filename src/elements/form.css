@@ -1,16 +1,36 @@
-/********** FORM **********/
+/******************** FORM ********************/
 
 /*
-1. Form
-2. Form Inputs
-3. Media Queries
+1. FORM
+  1.1 Form
+2. FORM GLOBAL
+  2.1 Form Global
+3. FORM ITEMS
+  3.1 Form Fieldset
+  3.2 Form Legend
+  3.3 Form Inputs & Textarea
+  3.4 Form LG
 */
 
+/********** 1. FORM **********/
+
+/*
+1.1 Form
+*/
+
+/***** 1.1 Form *****/
 .form {
   margin: var(--form-mar);
   padding: var(--form-pad);
 }
 
+/********** 2. FORM GLOBAL **********/
+
+/*
+2.1 Form Global
+*/
+
+/***** 2.1 Form Global *****/
 .form,
 .form fieldset {
   width: var(--form-width);
@@ -24,32 +44,28 @@
   flex-direction: var(--form-flex-direction);
 }
 
-@media (min-width: 992px) {
-  .form li {
-    flex-direction: var(--form-li-flex-direction);
-    justify-content: var(--form-li-justify-content);
-    align-items: var(--form-li-align-items);
-  }
-}
+/********** 3. FORM ITEMS **********/
 
-@media (min-width: 992px) {
-  .form label {
-    flex: var(--form-label-lg-flex);
-    text-decoration: var(--form-label-text-decoration);
-  }
-}
+/*
+3.1 Form Fieldset
+3.2 Form Legend
+3.3 Form Inputs & Textarea
+3.4 Form LG
+*/
 
+/***** 3.1 Form Fieldset *****/
 .form fieldset {
   margin-left: var(--form-fieldset-mar-left);
   border: var(--form-fieldset-bord);
   padding: var(--form-fieldset-pad);
 }
 
+/***** 3.2 Form Legend *****/
 .form legend {
   font-weight: var(--form-legend-font-weight);
 }
 
-/***** Form Inputs *****/
+/***** 3.3 Form Inputs & Textarea *****/
 .form input::placeholder,
 .form textarea::placeholder {
   text-align: var(--form-input-placeholder-text-align);
@@ -77,7 +93,19 @@
   cursor: var(--form-input-action-cursor);
 }
 
+/***** 3.4 Form LG *****/
 @media (min-width: 992px) {
+  .form li {
+    flex-direction: var(--form-li-flex-direction);
+    justify-content: var(--form-li-justify-content);
+    align-items: var(--form-li-align-items);
+  }
+
+  .form label {
+    flex: var(--form-label-lg-flex);
+    text-decoration: var(--form-label-text-decoration);
+  }
+
   .form input,
   .form textarea {
     width: var(--form-input-width);
