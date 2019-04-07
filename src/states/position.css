@@ -1,14 +1,48 @@
-/********** POSITION **********/
+/******************** POSITION ********************/
 
 /*
-1. Absolute
-2. Fixed
-3. Relative
-4. Sticky
-5. Pos
+1. POSITION ABSOLUTE
+  1.1 Absolute XS
+  1.2 Absolute SM
+  1.3 Absolute MD
+  1.4 Absolute LG
+  1.5 Absolute XL
+2. POSITION FIXED
+  2.1 Fixed XS
+  2.2 Fixed SM
+  2.3 Fixed MD
+  2.4 Fixed LG
+  2.5 Fixed XL
+3. POSITION RELATIVE
+  3.1 Relative XS
+  3.2 Relative SM
+  3.3 Relative MD
+  3.4 Relative LG
+  3.5 Relative XL
+4. POSITION STICKY
+  4.1 Sticky XS
+  4.2 Sticky SM
+  4.3 Sticky MD
+  4.4 Sticky LG
+  4.5 Sticky XL
+5. TOP, BOTTOM, RIGHT & LEFT
+  5.1 Pos Top
+  5.2 Pos Bot
+  5.3 Pos Right
+  5.4 Pos Left
 */
 
-/***** Absolute *****/
+/********** 1. POSITION ABSOLUTE **********/
+
+/*
+1.1 Absolute XS
+1.2 Absolute SM
+1.3 Absolute MD
+1.4 Absolute LG
+1.5 Absolute XL
+*/
+
+/***** 1.1 Absolute XS *****/
 [class*="absolute-xs-"][class*="-base"],
 [class*="absolute-xs-"][class*="-global"] > *,
 *:hover > [class*="absolute-xs-"][class*="-into"],
@@ -32,6 +66,7 @@
   position: absolute;
 }
 
+/***** 1.2 Absolute SM *****/
 @media (min-width: 576px) {
   [class*="absolute-sm-"][class*="-base"],
   [class*="absolute-sm-"][class*="-global"] > *,
@@ -57,6 +92,7 @@
   }
 }
 
+/***** 1.3 Absolute MD *****/
 @media (min-width: 768px) {
   [class*="absolute-md-"][class*="-base"],
   [class*="absolute-md-"][class*="-global"] > *,
@@ -82,6 +118,7 @@
   }
 }
 
+/***** 1.4 Absolute LG *****/
 @media (min-width: 992px) {
   [class*="absolute-lg-"][class*="-base"],
   [class*="absolute-lg-"][class*="-global"] > *,
@@ -107,6 +144,7 @@
   }
 }
 
+/***** 1.5 Absolute XL *****/
 @media (min-width: 1200px) {
   [class*="absolute-xl-"][class*="-base"],
   [class*="absolute-xl-"][class*="-global"] > *,
@@ -132,7 +170,17 @@
   }
 }
 
-/***** Position Fixed *****/
+/********** 2. POSITION FIXED **********/
+
+/*
+2.1 Fixed XS
+2.2 Fixed SM
+2.3 Fixed MD
+2.4 Fixed LG
+2.5 Fixed XL
+*/
+
+/***** 2.1 Fixed XS *****/
 [class*="fixed-xs-"][class*="-base"],
 [class*="fixed-xs-"][class*="-global"] > *,
 *:hover > [class*="fixed-xs-"][class*="-into"],
@@ -156,6 +204,7 @@
   position: fixed;
 }
 
+/***** 2.2 Fixed SM *****/
 @media (min-width: 576px) {
   [class*="fixed-sm-"][class*="-base"],
   [class*="fixed-sm-"][class*="-global"] > *,
@@ -181,6 +230,7 @@
   }
 }
 
+/***** 2.3 Fixed MD *****/
 @media (min-width: 768px) {
   [class*="fixed-md-"][class*="-base"],
   [class*="fixed-md-"][class*="-global"] > *,
@@ -206,6 +256,7 @@
   }
 }
 
+/***** 2.4 Fixed LG *****/
 @media (min-width: 992px) {
   [class*="fixed-lg-"][class*="-base"],
   [class*="fixed-lg-"][class*="-global"] > *,
@@ -231,6 +282,7 @@
   }
 }
 
+/***** 2.5 Fixed XL *****/
 @media (min-width: 1200px) {
   [class*="fixed-xl-"][class*="-base"],
   [class*="fixed-xl-"][class*="-global"] > *,
@@ -256,7 +308,17 @@
   }
 }
 
-/***** Position Relative *****/
+/********** 3. POSITION RELATIVE **********/
+
+/*
+3.1 Relative XS
+3.2 Relative SM
+3.3 Relative MD
+3.4 Relative LG
+3.5 Relative XL
+*/
+
+/***** 3.1 Relative XS *****/
 [class*="relative-xs-"][class*="-base"],
 [class*="relative-xs-"][class*="-global"] > *,
 *:hover > [class*="relative-xs-"][class*="-into"],
@@ -280,6 +342,7 @@
   position: relative;
 }
 
+/***** 3.2 Relative SM *****/
 @media (min-width: 576px) {
   [class*="relative-sm-"][class*="-base"],
   [class*="relative-sm-"][class*="-global"] > *,
@@ -305,6 +368,7 @@
   }
 }
 
+/***** 3.3 Relative MD *****/
 @media (min-width: 768px) {
   [class*="relative-md-"][class*="-base"],
   [class*="relative-md-"][class*="-global"] > *,
@@ -330,6 +394,7 @@
   }
 }
 
+/***** 3.4 Relative LG *****/
 @media (min-width: 992px) {
   [class*="relative-lg-"][class*="-base"],
   [class*="relative-lg-"][class*="-global"] > *,
@@ -355,6 +420,7 @@
   }
 }
 
+/***** 3.5 Relative XL *****/
 @media (min-width: 1200px) {
   [class*="relative-xl-"][class*="-base"],
   [class*="relative-xl-"][class*="-global"] > *,
@@ -380,7 +446,17 @@
   }
 }
 
-/***** Position Sticky *****/
+/********** 4. POSITION STICKY **********/
+
+/*
+4.1 Sticky XS
+4.2 Sticky SM
+4.3 Sticky MD
+4.4 Sticky LG
+4.5 Sticky XL
+*/
+
+/***** 4.1 Sticky XS *****/
 [class*="sticky-xs-"][class*="-base"],
 [class*="sticky-xs-"][class*="-global"] > *,
 *:hover > [class*="sticky-xs-"][class*="-into"],
@@ -404,6 +480,7 @@
   position: sticky;
 }
 
+/***** 4.2 Sticky SM *****/
 @media (min-width: 576px) {
   [class*="sticky-sm-"][class*="-base"],
   [class*="sticky-sm-"][class*="-global"] > *,
@@ -429,6 +506,7 @@
   }
 }
 
+/***** 4.3 Sticky MD *****/
 @media (min-width: 768px) {
   [class*="sticky-md-"][class*="-base"],
   [class*="sticky-md-"][class*="-global"] > *,
@@ -454,6 +532,7 @@
   }
 }
 
+/***** 4.4 Sticky LG *****/
 @media (min-width: 992px) {
   [class*="sticky-lg-"][class*="-base"],
   [class*="sticky-lg-"][class*="-global"] > *,
@@ -479,6 +558,7 @@
   }
 }
 
+/***** 4.5 Sticky XL *****/
 @media (min-width: 1200px) {
   [class*="sticky-xl-"][class*="-base"],
   [class*="sticky-xl-"][class*="-global"] > *,
@@ -504,7 +584,16 @@
   }
 }
 
-/***** Position Pos *****/
+/********** 5. TOP, BOTTOM, RIGHT & LEFT **********/
+
+/*
+5.1 Pos Top
+5.2 Pos Bot
+5.3 Pos Right
+5.4 Pos Left
+*/
+
+/***** 5.1 Pos Top *****/
 [class*="pos-top-"][class*="-base"],
 [class*="pos-top-"][class*="-global"] > *,
 *:hover > [class*="pos-top-"][class*="-into"],
@@ -530,6 +619,7 @@
   left: 0;
 }
 
+/***** 5.2 Pos Bot *****/
 [class*="pos-bot-"][class*="-base"],
 [class*="pos-bot-"][class*="-global"] > *,
 *:hover > [class*="pos-bot-"][class*="-into"],
@@ -555,6 +645,7 @@
   left: 0;
 }
 
+/***** 5.3 Pos Right *****/
 [class*="pos-right-"][class*="-base"],
 [class*="pos-right-"][class*="-global"] > *,
 *:hover > [class*="pos-right-"][class*="-into"],
@@ -580,6 +671,7 @@
   bottom: 0;
 }
 
+/***** 5.4 Pos Left *****/
 [class*="pos-left-"][class*="-base"],
 [class*="pos-left-"][class*="-global"] > *,
 *:hover > [class*="pos-left-"][class*="-into"],
@@ -604,3 +696,4 @@
   top: 0;
   bottom: 0;
 }
+
