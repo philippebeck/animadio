@@ -1,0 +1,463 @@
+/******************** BOX *********************/
+
+/*
+1. CONTAINER CLASSES
+  1.1 Container
+  1.2 Container XS
+  1.3 Container SM
+  1.4 Container MD
+  1.5 Container LG
+  1.6 Container XL
+2. MARGIN CLASSES
+  2.1 Margin All
+  2.2 Margin Top
+  2.3 Margin Right
+  2.4 Margin Bottom
+  2.5 Margin Left
+3. PADDING CLASSES
+  3.1 Padding All
+  3.2 Padding Top
+  3.3 Padding Right
+  3.4 Padding Bottom
+  3.5 Padding Left
+4. HEIGHT CLASSES
+  4.1 Height
+  4.2 Max Height
+  4.3 Min Height
+5. WIDTH CLASSES
+  5.1 Width
+  5.2 Max Width
+  5.3 Min Width
+*/
+
+/********** 1. CONTAINER CLASSES **********/
+
+/*
+1.1 Container
+1.2 Container XS
+1.3 Container SM
+1.4 Container MD
+1.5 Container LG
+1.6 Container XL
+*/
+
+/***** Container *****/
+[class*="container-"] {
+  margin: auto;
+}
+
+/***** Container XS *****/
+[class*="container-"][class*="-70xs"] {
+  max-width: 70%;
+}
+
+[class*="container-"][class*="-80xs"] {
+  max-width: 80%;
+}
+
+[class*="container-"][class*="-90xs"] {
+  max-width: 90%;
+}
+
+/***** Container SM *****/
+@media (min-width: 576px) {
+  [class*="container-"][class*="-70sm"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80sm"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90sm"] {
+    max-width: 90%;
+  }
+}
+
+/***** Container MD *****/
+@media (min-width: 768px) {
+  [class*="container-"][class*="-70md"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80md"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90md"] {
+    max-width: 90%;
+  }
+}
+
+/***** Container LG *****/
+@media (min-width: 992px) {
+  [class*="container-"][class*="-70lg"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80lg"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90lg"] {
+    max-width: 90%;
+  }
+}
+
+/***** Container XL *****/
+@media (min-width: 1200px) {
+  [class*="container-"][class*="-70xl"] {
+    max-width: 70%;
+  }
+
+  [class*="container-"][class*="-80xl"] {
+    max-width: 80%;
+  }
+
+  [class*="container-"][class*="-90xl"] {
+    max-width: 90%;
+  }
+}
+
+/********** 2. MARGIN **********/
+
+/*
+2.1 Margin All
+2.2 Margin Top
+2.3 Margin Right
+2.4 Margin Bottom
+2.5 Margin Left
+*/
+
+/***** 2.1 Margin All *****/
+[class*="mar-all-none-"][class*="-base"],
+[class*="mar-all-none-"][class*="-global"] > * {
+  margin: var(--mar-none);
+}
+
+[class*="mar-all-sm-"][class*="-base"],
+[class*="mar-all-sm-"][class*="-global"] > * {
+  margin: var(--mar-sm);
+}
+
+[class*="mar-all-md-"][class*="-base"],
+[class*="mar-all-md-"][class*="-global"] > * {
+  margin: var(--mar-md);
+}
+
+[class*="mar-all-lg-"][class*="-base"],
+[class*="mar-all-lg-"][class*="-global"] > * {
+  margin: var(--mar-lg);
+}
+
+/***** 2.2 Margin Top *****/
+[class*="mar-top-none-"][class*="-base"],
+[class*="mar-top-none-"][class*="-global"] > * {
+  margin-top: var(--mar-none);
+}
+
+[class*="mar-top-sm-"][class*="-base"],
+[class*="mar-top-sm-"][class*="-global"] > * {
+  margin-top: var(--mar-top-sm);
+}
+
+[class*="mar-top-md-"][class*="-base"],
+[class*="mar-top-md-"][class*="-global"] > * {
+  margin-top: var(--mar-top-md);
+}
+
+[class*="mar-top-lg-"][class*="-base"],
+[class*="mar-top-lg-"][class*="-global"] > * {
+  margin-top: var(--mar-top-lg);
+}
+
+/***** 2.3 Margin Right *****/
+[class*="mar-right-none-"][class*="-base"],
+[class*="mar-right-none-"][class*="-global"] > * {
+  margin-right: var(--mar-none);
+}
+
+[class*="mar-right-sm-"][class*="-base"],
+[class*="mar-right-sm-"][class*="-global"] > * {
+  margin-right: var(--mar-right-sm);
+}
+
+[class*="mar-right-md-"][class*="-base"],
+[class*="mar-right-md-"][class*="-global"] > * {
+  margin-right: var(--mar-right-md);
+}
+
+[class*="mar-right-lg-"][class*="-base"],
+[class*="mar-right-lg-"][class*="-global"] > * {
+  margin-right: var(--mar-right-lg);
+}
+
+/***** 2.4 Margin Bottom *****/
+[class*="mar-bot-none-"][class*="-base"],
+[class*="mar-bot-none-"][class*="-global"] > * {
+  margin-bottom: var(--mar-none);
+}
+
+[class*="mar-bot-sm-"][class*="-base"],
+[class*="mar-bot-sm-"][class*="-global"] > * {
+  margin-bottom: var(--mar-bot-sm);
+}
+
+[class*="mar-bot-md-"][class*="-base"],
+[class*="mar-bot-md-"][class*="-global"] > * {
+  margin-bottom: var(--mar-bot-md);
+}
+
+[class*="mar-bot-lg-"][class*="-base"],
+[class*="mar-bot-lg-"][class*="-global"] > * {
+  margin-bottom: var(--mar-bot-lg);
+}
+
+/***** 2.5 Margin Left *****/
+[class*="mar-left-none-"][class*="-base"],
+[class*="mar-left-none-"][class*="-global"] > * {
+  margin-left: var(--mar-none);
+}
+
+[class*="mar-left-sm-"][class*="-base"],
+[class*="mar-left-sm-"][class*="-global"] > * {
+  margin-left: var(--mar-left-sm);
+}
+
+[class*="mar-left-md-"][class*="-base"],
+[class*="mar-left-md-"][class*="-global"] > * {
+  margin-left: var(--mar-left-md);
+}
+
+[class*="mar-left-lg-"][class*="-base"],
+[class*="mar-left-lg-"][class*="-global"] > * {
+  margin-left: var(--mar-left-lg);
+}
+
+/********** 3. PADDING **********/
+
+/*
+3.1 Padding All
+3.2 Padding Top
+3.3 Padding Right
+3.4 Padding Bottom
+3.5 Padding Left
+*/
+
+/***** 3.1 Padding All *****/
+[class*="pad-all-none-"][class*="-base"],
+[class*="pad-all-none-"][class*="-global"] > * {
+  padding: var(--pad-none);
+}
+
+[class*="pad-all-sm-"][class*="-base"],
+[class*="pad-all-sm-"][class*="-global"] > * {
+  padding: var(--pad-sm);
+}
+
+[class*="pad-all-md-"][class*="-base"],
+[class*="pad-all-md-"][class*="-global"] > * {
+  padding: var(--pad-md);
+}
+
+[class*="pad-all-lg-"][class*="-base"],
+[class*="pad-all-lg-"][class*="-global"] > * {
+  padding: var(--pad-lg);
+}
+
+/***** 3.2 Padding Top *****/
+[class*="pad-top-none-"][class*="-base"],
+[class*="pad-top-none-"][class*="-global"] > * {
+  padding-top: var(--pad-none);
+}
+
+[class*="pad-top-sm-"][class*="-base"],
+[class*="pad-top-sm-"][class*="-global"] > * {
+  padding-top: var(--pad-top-sm);
+}
+
+[class*="pad-top-md-"][class*="-base"],
+[class*="pad-top-md-"][class*="-global"] > * {
+  padding-top: var(--pad-top-md);
+}
+
+[class*="pad-top-lg-"][class*="-base"],
+[class*="pad-top-lg-"][class*="-global"] > * {
+  padding-top: var(--pad-top-lg);
+}
+
+/***** 3.3 Padding Right *****/
+[class*="pad-right-none-"][class*="-base"],
+[class*="pad-right-none-"][class*="-global"] > * {
+  padding-right: var(--pad-none);
+}
+
+[class*="pad-right-sm-"][class*="-base"],
+[class*="pad-right-sm-"][class*="-global"] > * {
+  padding-right: var(--pad-right-sm);
+}
+
+[class*="pad-right-md-"][class*="-base"],
+[class*="pad-right-md-"][class*="-global"] > * {
+  padding-right: var(--pad-right-md);
+}
+
+[class*="pad-right-lg-"][class*="-base"],
+[class*="pad-right-lg-"][class*="-global"] > * {
+  padding-right: var(--pad-right-lg);
+}
+
+/***** 3.4 Padding Bottom *****/
+[class*="pad-bot-none-"][class*="-base"],
+[class*="pad-bot-none-"][class*="-global"] > * {
+  padding-bottom: var(--pad-none);
+}
+
+[class*="pad-bot-sm-"][class*="-base"],
+[class*="pad-bot-sm-"][class*="-global"] > * {
+  padding-bottom: var(--pad-bot-sm);
+}
+
+[class*="pad-bot-md-"][class*="-base"],
+[class*="pad-bot-md-"][class*="-global"] > * {
+  padding-bottom: var(--pad-bot-md);
+}
+
+[class*="pad-bot-lg-"][class*="-base"],
+[class*="pad-bot-lg-"][class*="-global"] > * {
+  padding-bottom: var(--pad-bot-lg);
+}
+
+/***** 3.5 Padding Left *****/
+[class*="pad-left-none-"][class*="-base"],
+[class*="pad-left-none-"][class*="-global"] > * {
+  padding-left: var(--pad-none);
+}
+
+[class*="pad-left-sm-"][class*="-base"],
+[class*="pad-left-sm-"][class*="-global"] > * {
+  padding-left: var(--pad-left-sm);
+}
+
+[class*="pad-left-md-"][class*="-base"],
+[class*="pad-left-md-"][class*="-global"] > * {
+  padding-left: var(--pad-left-md);
+}
+
+[class*="pad-left-lg-"][class*="-base"],
+[class*="pad-left-lg-"][class*="-global"] > * {
+  padding-left: var(--pad-left-lg);
+}
+
+/********** 4. HEIGHT CLASSES ***********/
+
+/*
+4.1 Height
+4.2 Max Height
+4.3 Min Height
+*/
+
+/***** 4.1 Height *****/
+[class*="height-sm-"][class*="-base"],
+[class*="height-sm-"][class*="-global"] > * {
+  height: var(--height-sm);
+}
+
+[class*="height-md-"][class*="-base"],
+[class*="height-md-"][class*="-global"] > * {
+  height: var(--height-md);
+}
+
+[class*="height-lg-"][class*="-base"],
+[class*="height-lg-"][class*="-global"] > * {
+  height: var(--height-lg);
+}
+
+/***** 4.2 Max Height *****/
+[class*="max-h-sm-"][class*="-base"],
+[class*="max-h-sm-"][class*="-global"] > * {
+  max-height: var(--max-height-sm);
+}
+
+[class*="max-h-md-"][class*="-base"],
+[class*="max-h-md-"][class*="-global"] > * {
+  max-height: var(--max-height-md);
+}
+
+[class*="max-h-lg-"][class*="-base"],
+[class*="max-h-lg-"][class*="-global"] > * {
+  max-height: var(--max-height-lg);
+}
+
+/***** 4.3 Min Height *****/
+[class*="min-h-sm-"][class*="-base"],
+[class*="min-h-sm-"][class*="-global"] > * {
+min-height: var(--min-height-sm);
+}
+
+[class*="min-h-md-"][class*="-base"],
+[class*="min-h-md-"][class*="-global"] > * {
+min-height: var(--min-height-md);
+}
+
+[class*="min-h-lg-"][class*="-base"],
+[class*="min-h-lg-"][class*="-global"] > * {
+min-height: var(--min-height-lg);
+}
+
+/********** 5. WIDTH CLASSES ***********/
+
+/*
+5.1 Width
+5.2 Max Width
+5.3 Min Width
+*/
+
+/***** 5.1 Width *****/
+[class*="width-sm-"][class*="-base"],
+[class*="width-sm-"][class*="-global"] > * {
+  width: var(--width-sm);
+}
+
+[class*="width-md-"][class*="-base"],
+[class*="width-md-"][class*="-global"] > * {
+  width: var(--width-md);
+}
+
+[class*="width-lg-"][class*="-base"],
+[class*="width-lg-"][class*="-global"] > * {
+  width: var(--width-lg);
+}
+
+/***** 5.2 Max Width *****/
+[class*="max-w-sm-"][class*="-base"],
+[class*="max-w-sm-"][class*="-global"] > * {
+  max-width: var(--max-width-sm);
+}
+
+[class*="max-w-md-"][class*="-base"],
+[class*="max-w-md-"][class*="-global"] > * {
+  max-width: var(--max-width-md);
+}
+
+[class*="max-w-lg-"][class*="-base"],
+[class*="max-w-lg-"][class*="-global"] > * {
+  max-width: var(--max-width-lg);
+}
+
+/***** 5.3 Min Width *****/
+[class*="min-w-sm-"][class*="-base"],
+[class*="min-w-sm-"][class*="-global"] > * {
+  min-width: var(--min-width-sm);
+}
+
+[class*="min-w-md-"][class*="-base"],
+[class*="min-w-md-"][class*="-global"] > * {
+  min-width: var(--min-width-md);
+}
+
+[class*="min-w-lg-"][class*="-base"],
+[class*="min-w-lg-"][class*="-global"] > * {
+  min-width: var(--min-width-lg);
+}
+
