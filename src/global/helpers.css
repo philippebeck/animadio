@@ -1,13 +1,25 @@
-/********** HELPERS **********/
+/******************** HELPERS ********************/
 
 /*
-1. Font
-2. Cursor
-3. Container
-4. Text
+1. FONT CLASSES
+  1.1 Font
+2. TEXT CLASSES
+  2.1 Text XS
+  2.2 Text SM
+  2.3 Text MD
+  2.4 Text LG
+  2.5 Text XL
+3. CURSOR CLASSES
+  3.1 Cursor
 */
 
-/***** Font *****/
+/********** 1. FONT CLASSES **********/
+
+/*
+1.1 Font
+*/
+
+/***** 1.1 Font *****/
 [class*="font-"][class*="-normal"] {
   font-style: normal;
   font-weight: normal;
@@ -21,101 +33,18 @@
   font-weight: bold;
 }
 
-/***** Cursor *****/
-[class*="cursor-"][class*="-cross"],
-[class*="cursor-"][class*="-cross"] > * {
-  cursor: crosshair;
-}
+/********** 2. TEXT CLASSES **********/
 
-[class*="cursor-"][class*="-help"],
-[class*="cursor-"][class*="-help"] > * {
-  cursor: help;
-}
+/*
+2.1 Text XS
+2.2 Text SM
+2.3 Text MD
+2.4 Text LG
+2.5 Text XL
+*/
 
-[class*="cursor-"][class*="-none"],
-[class*="cursor-"][class*="-none"] > * {
-  cursor: not-allowed;
-}
 
-[class*="cursor-"][class*="-hand"],
-[class*="cursor-"][class*="-hand"] > * {
-  cursor: pointer;
-}
-
-/***** Container *****/
-[class*="container-"] {
-  margin: auto;
-}
-
-[class*="container-"][class*="-70xs"] {
-  max-width: 70%;
-}
-
-[class*="container-"][class*="-80xs"] {
-  max-width: 80%;
-}
-
-[class*="container-"][class*="-90xs"] {
-  max-width: 90%;
-}
-
-@media (min-width: 576px) {
-  [class*="container-"][class*="-70sm"] {
-    max-width: 70%;
-  }
-
-  [class*="container-"][class*="-80sm"] {
-    max-width: 80%;
-  }
-
-  [class*="container-"][class*="-90sm"] {
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 768px) {
-  [class*="container-"][class*="-70sm"] {
-    max-width: 70%;
-  }
-
-  [class*="container-"][class*="-80sm"] {
-    max-width: 80%;
-  }
-
-  [class*="container-"][class*="-90sm"] {
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 992px) {
-  [class*="container-"][class*="-70lg"] {
-    max-width: 70%;
-  }
-
-  [class*="container-"][class*="-80lg"] {
-    max-width: 80%;
-  }
-
-  [class*="container-"][class*="-90lg"] {
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 1200px) {
-  [class*="container-"][class*="-70xl"] {
-    max-width: 70%;
-  }
-
-  [class*="container-"][class*="-80xl"] {
-    max-width: 80%;
-  }
-
-  [class*="container-"][class*="-90xl"] {
-    max-width: 90%;
-  }
-}
-
-/***** Text *****/
+/***** 2.1 Text XS *****/
 [class*="text-"][class*="-center-xs"] {
   text-align: center;
 }
@@ -132,6 +61,7 @@
   text-align: left;
 }
 
+/***** 2.2 Text SM *****/
 @media (min-width: 576px) {
   [class*="text-"][class*="-center-sm"] {
     text-align: center;
@@ -150,6 +80,7 @@
   }
 }
 
+/***** 2.3 Text MD *****/
 @media (min-width: 768px) {
   [class*="text-"][class*="-center-md"] {
     text-align: center;
@@ -168,6 +99,7 @@
   }
 }
 
+/***** 2.4 Text LG *****/
 @media (min-width: 992px) {
   [class*="text-"][class*="-center-lg"] {
     text-align: center;
@@ -186,6 +118,7 @@
   }
 }
 
+/***** 2.5 Text XL *****/
 @media (min-width: 1200px) {
   [class*="text-"][class*="-center-xl"] {
     text-align: center;
@@ -202,5 +135,32 @@
   [class*="text-"][class*="-left-xl"] {
     text-align: left;
   }
+}
+
+/********** 3. CURSOR CLASSES **********/
+
+/*
+3.1 Cursor
+*/
+
+/***** 3.1 Cursor *****/
+[class*="cursor-"][class*="-cross"],
+[class*="cursor-"][class*="-cross"] > * {
+  cursor: crosshair;
+}
+
+[class*="cursor-"][class*="-help"],
+[class*="cursor-"][class*="-help"] > * {
+  cursor: help;
+}
+
+[class*="cursor-"][class*="-none"],
+[class*="cursor-"][class*="-none"] > * {
+  cursor: not-allowed;
+}
+
+[class*="cursor-"][class*="-hand"],
+[class*="cursor-"][class*="-hand"] > * {
+  cursor: pointer;
 }
 
