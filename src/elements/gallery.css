@@ -1,14 +1,29 @@
-/********** GALLERY **********/
+/******************** GALLERY ********************/
 
 /*
-1. Gallery
-2. Gallery Figure
-3. Gallery Figcaption
-4. Gallery FA
-5. Gallery Link
+1. GALLERY
+  1.1 Gallery
+  1.2 Gallery Items
+2. GALLERY FIGURE
+  2.1 Gallery Figure
+3. GALLERY FIGCAPTION
+  3.1 Gallery Figcaption
+  3.2 Gallery Hover Figcaption
+4. GALLERY FA
+  4.1 Gallery FA
+5. GALLERY LINK
+  5.1 Gallery Link
+  5.2 Gallery Link Items
 */
 
-/***** Gallery *****/
+/********** 1. GALLERY **********/
+
+/*
+1.1 Gallery
+1.2 Gallery Items
+*/
+
+/***** 1.1 Gallery *****/
 .gallery {
   display: flex;
   flex-wrap: var(--gallery-flex-wrap);
@@ -17,11 +32,18 @@
   max-width: var(--gallery-max-w);
 }
 
+/***** 1.2 Gallery Items *****/
 .gallery * {
   cursor: var(--gallery-all-cursor);
 }
 
-/***** Gallery Figure *****/
+/********** 2. GALLERY FIGURE **********/
+
+/*
+2.1 Gallery Figure
+*/
+
+/***** 2.1 Gallery Figure *****/
 .gallery figure {
   position: var(--gallery-figure-position);
   overflow: var(--gallery-figure-flow);
@@ -32,7 +54,14 @@
   line-height: var(--gallery-figure-line-height);
 }
 
-/***** Gallery Figcaption *****/
+/********** 3. GALLERY FIGCAPTION **********/
+
+/*
+3.1 Gallery Figcaption
+3.2 Gallery Hover Figcaption
+*/
+
+/***** 3.1 Gallery Figcaption *****/
 .gallery figcaption {
   display: none;
   position: var(--gallery-figcaption-position);
@@ -42,6 +71,7 @@
   background-color: var(--gallery-figcaption-bg);
 }
 
+/***** 3.2 Gallery Hover Figcaption *****/
 .gallery figure:hover figcaption,
 .gallery figure:focus figcaption,
 .gallery figure:active figcaption {
@@ -50,7 +80,13 @@
   bottom: var(--gallery-figure-figcaption-bot);
 }
 
-/***** Gallery FA *****/
+/********** 4. GALLERY FA **********/
+
+/*
+4.1 Gallery FA
+*/
+
+/***** 4.1 Gallery FA *****/
 .gallery figcaption [class*="fa-"] {
   position: var(--gallery-figcaption-fa-position);
   top: var(--gallery-figcaption-fa-top);
@@ -61,11 +97,19 @@
   background-color: var(--gallery-figcaption-fa-bg);
 }
 
-/***** Gallery Link *****/
+/********** 5. GALLERY LINK **********/
+
+/*
+5.1 Gallery Link
+5.2 Gallery Link Items
+*/
+
+/***** 5.1 Gallery Link *****/
 .gallery a {
   color: var(--gallery-link-color);
 }
 
+/***** 5.2 Gallery Link Items *****/
 .gallery a * {
   margin: var(--gallery-link-all-mar);
   cursor: var(--gallery-link-all-cursor);
