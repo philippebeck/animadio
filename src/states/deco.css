@@ -1,13 +1,39 @@
-/********** DECO ***********/
+/******************** DECO *********************/
 
 /*
-1. Deco
-2. Deco Line
-3. Deco Style
-4. Deco Color
+1. TEXT DECORATION
+  1.1 Deco
+2. TEXT DECORATION LINE
+  2.1 None
+  2.2 Under
+  2.3 Through
+  2.4 Over
+3. TEXT DECORATION STYLE
+  3.1 Solid
+  3.2 Double
+  3.3 Dash
+  3.4 Dot
+  3.5 Wavy
+4. TEXT DECORATION COLOR
+  4.1 Black
+  4.2 Blue
+  4.3 Gray
+  4.4 Green
+  4.5 Maroon
+  4.6 Orange
+  4.7 Purple
+  4.8 Red
+  4.9 White
+  4.10 Yellow
 */
 
-/***** Deco *****/
+/********** 1. TEXT DECORATION **********/
+
+/*
+1.1 Deco
+*/
+
+/***** 1.1 Deco *****/
 [class*="deco-"][class*="-base"],
 [class*="deco-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-into"],
@@ -33,30 +59,16 @@
   text-decoration-color: var(--deco-color);
 }
 
-/***** Deco Line *****/
-[class*="deco-"][class*="-under-"][class*="-base"],
-[class*="deco-"][class*="-under-"][class*="-global"] > *,
-*:hover > [class*="deco-"][class*="-under-"][class*="-into"],
-*:focus > [class*="deco-"][class*="-under-"][class*="-into"],
-*:active > [class*="deco-"][class*="-under-"][class*="-into"],
-[class*="deco-"][class*="-under-"][class*="-onto"]:hover,
-[class*="deco-"][class*="-under-"][class*="-onto"]:focus,
-[class*="deco-"][class*="-under-"][class*="-onto"]:active,
-[class*="deco-"][class*="-under-"][class*="-toall"]:hover > *,
-[class*="deco-"][class*="-under-"][class*="-toall"]:focus > *,
-[class*="deco-"][class*="-under-"][class*="-toall"]:active > *,
-[class*="deco-"][class*="-under-"][class*="-toone"] > *:hover,
-[class*="deco-"][class*="-under-"][class*="-toone"] > *:focus,
-[class*="deco-"][class*="-under-"][class*="-toone"] > *:active,
-[class*="deco-"][class*="-under-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-under-"][class*="-relay"] [class*="deco-"][class*="-under-"][class*="-target1"],
-[class*="deco-"][class*="-under-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-under-"][class*="-relay"] [class*="deco-"][class*="-under-"][class*="-target2"],
-[class*="deco-"][class*="-under-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-under-"][class*="-relay"] [class*="deco-"][class*="-under-"][class*="-target3"],
-[class*="deco-"][class*="-under-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-under-"][class*="-relay"] [class*="deco-"][class*="-under-"][class*="-target4"],
-[class*="deco-"][class*="-under-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-under-"][class*="-relay"] [class*="deco-"][class*="-under-"][class*="-target5"],
-[class*="deco-"][class*="-under-"][class*="-check"]:checked ~ [class*="deco-"][class*="-under-"][class*="-hub"] [class*="deco-"][class*="-under-"][class*="-goal"] {
-  text-decoration-line: underline;
-}
+/********** 1. TEXT DECORATION LINE **********/
 
+/*
+2.1 None
+2.2 Under
+2.3 Through
+2.4 Over
+*/
+
+/***** 2.1 Deco None *****/
 [class*="deco-"][class*="-none-"][class*="-base"],
 [class*="deco-"][class*="-none-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-none-"][class*="-into"],
@@ -80,29 +92,31 @@
   text-decoration-line: none;
 }
 
-[class*="deco-"][class*="-over-"][class*="-base"],
-[class*="deco-"][class*="-over-"][class*="-global"] > *,
-*:hover > [class*="deco-"][class*="-over-"][class*="-into"],
-*:focus > [class*="deco-"][class*="-over-"][class*="-into"],
-*:active > [class*="deco-"][class*="-over-"][class*="-into"],
-[class*="deco-"][class*="-over-"][class*="-onto"]:hover,
-[class*="deco-"][class*="-over-"][class*="-onto"]:focus,
-[class*="deco-"][class*="-over-"][class*="-onto"]:active,
-[class*="deco-"][class*="-over-"][class*="-toall"]:hover > *,
-[class*="deco-"][class*="-over-"][class*="-toall"]:focus > *,
-[class*="deco-"][class*="-over-"][class*="-toall"]:active > *,
-[class*="deco-"][class*="-over-"][class*="-toone"] > *:hover,
-[class*="deco-"][class*="-over-"][class*="-toone"] > *:focus,
-[class*="deco-"][class*="-over-"][class*="-toone"] > *:active,
-[class*="deco-"][class*="-over-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-over-"][class*="-relay"] [class*="deco-"][class*="-over-"][class*="-target1"],
-[class*="deco-"][class*="-over-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-over-"][class*="-relay"] [class*="deco-"][class*="-over-"][class*="-target2"],
-[class*="deco-"][class*="-over-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-over-"][class*="-relay"] [class*="deco-"][class*="-over-"][class*="-target3"],
-[class*="deco-"][class*="-over-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-over-"][class*="-relay"] [class*="deco-"][class*="-over-"][class*="-target4"],
-[class*="deco-"][class*="-over-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-over-"][class*="-relay"] [class*="deco-"][class*="-over-"][class*="-target5"],
-[class*="deco-"][class*="-over-"][class*="-check"]:checked ~ [class*="deco-"][class*="-over-"][class*="-hub"] [class*="deco-"][class*="-over-"][class*="-goal"] {
-  text-decoration-line: overline;
+/***** 2.2 Deco Under *****/
+[class*="deco-"][class*="-under-"][class*="-base"],
+[class*="deco-"][class*="-under-"][class*="-global"] > *,
+*:hover > [class*="deco-"][class*="-under-"][class*="-into"],
+*:focus > [class*="deco-"][class*="-under-"][class*="-into"],
+*:active > [class*="deco-"][class*="-under-"][class*="-into"],
+[class*="deco-"][class*="-under-"][class*="-onto"]:hover,
+[class*="deco-"][class*="-under-"][class*="-onto"]:focus,
+[class*="deco-"][class*="-under-"][class*="-onto"]:active,
+[class*="deco-"][class*="-under-"][class*="-toall"]:hover > *,
+[class*="deco-"][class*="-under-"][class*="-toall"]:focus > *,
+[class*="deco-"][class*="-under-"][class*="-toall"]:active > *,
+[class*="deco-"][class*="-under-"][class*="-toone"] > *:hover,
+[class*="deco-"][class*="-under-"][class*="-toone"] > *:focus,
+[class*="deco-"][class*="-under-"][class*="-toone"] > *:active,
+[class*="deco-"][class*="-under-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-under-"][class*="-relay"] [class*="deco-"][class*="-under-"][class*="-target1"],
+[class*="deco-"][class*="-under-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-under-"][class*="-relay"] [class*="deco-"][class*="-under-"][class*="-target2"],
+[class*="deco-"][class*="-under-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-under-"][class*="-relay"] [class*="deco-"][class*="-under-"][class*="-target3"],
+[class*="deco-"][class*="-under-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-under-"][class*="-relay"] [class*="deco-"][class*="-under-"][class*="-target4"],
+[class*="deco-"][class*="-under-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-under-"][class*="-relay"] [class*="deco-"][class*="-under-"][class*="-target5"],
+[class*="deco-"][class*="-under-"][class*="-check"]:checked ~ [class*="deco-"][class*="-under-"][class*="-hub"] [class*="deco-"][class*="-under-"][class*="-goal"] {
+  text-decoration-line: underline;
 }
 
+/***** 2.3 Deco Through *****/
 [class*="deco-"][class*="-through-"][class*="-base"],
 [class*="deco-"][class*="-through-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-through-"][class*="-into"],
@@ -126,7 +140,41 @@
   text-decoration-line: line-through;
 }
 
-/***** Deco Style *****/
+/***** 2.4 Deco Over *****/
+[class*="deco-"][class*="-over-"][class*="-base"],
+[class*="deco-"][class*="-over-"][class*="-global"] > *,
+*:hover > [class*="deco-"][class*="-over-"][class*="-into"],
+*:focus > [class*="deco-"][class*="-over-"][class*="-into"],
+*:active > [class*="deco-"][class*="-over-"][class*="-into"],
+[class*="deco-"][class*="-over-"][class*="-onto"]:hover,
+[class*="deco-"][class*="-over-"][class*="-onto"]:focus,
+[class*="deco-"][class*="-over-"][class*="-onto"]:active,
+[class*="deco-"][class*="-over-"][class*="-toall"]:hover > *,
+[class*="deco-"][class*="-over-"][class*="-toall"]:focus > *,
+[class*="deco-"][class*="-over-"][class*="-toall"]:active > *,
+[class*="deco-"][class*="-over-"][class*="-toone"] > *:hover,
+[class*="deco-"][class*="-over-"][class*="-toone"] > *:focus,
+[class*="deco-"][class*="-over-"][class*="-toone"] > *:active,
+[class*="deco-"][class*="-over-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-over-"][class*="-relay"] [class*="deco-"][class*="-over-"][class*="-target1"],
+[class*="deco-"][class*="-over-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-over-"][class*="-relay"] [class*="deco-"][class*="-over-"][class*="-target2"],
+[class*="deco-"][class*="-over-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-over-"][class*="-relay"] [class*="deco-"][class*="-over-"][class*="-target3"],
+[class*="deco-"][class*="-over-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-over-"][class*="-relay"] [class*="deco-"][class*="-over-"][class*="-target4"],
+[class*="deco-"][class*="-over-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-over-"][class*="-relay"] [class*="deco-"][class*="-over-"][class*="-target5"],
+[class*="deco-"][class*="-over-"][class*="-check"]:checked ~ [class*="deco-"][class*="-over-"][class*="-hub"] [class*="deco-"][class*="-over-"][class*="-goal"] {
+  text-decoration-line: overline;
+}
+
+/********** 3. TEXT DECORATION STYLE **********/
+
+/*
+3.1 Solid
+3.2 Double
+3.3 Dash
+3.4 Dot
+3.5 Wavy
+*/
+
+/***** 3.1 Deco Solid *****/
 [class*="deco-"][class*="-solid-"][class*="-base"],
 [class*="deco-"][class*="-solid-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-solid-"][class*="-into"],
@@ -150,6 +198,7 @@
   text-decoration-style: solid;
 }
 
+/***** 3.2 Deco Double *****/
 [class*="deco-"][class*="-double-"][class*="-base"],
 [class*="deco-"][class*="-double-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-double-"][class*="-into"],
@@ -173,29 +222,7 @@
   text-decoration-style: double;
 }
 
-[class*="deco-"][class*="-dot-"][class*="-base"],
-[class*="deco-"][class*="-dot-"][class*="-global"] > *,
-*:hover > [class*="deco-"][class*="-dot-"][class*="-into"],
-*:focus > [class*="deco-"][class*="-dot-"][class*="-into"],
-*:active > [class*="deco-"][class*="-dot-"][class*="-into"],
-[class*="deco-"][class*="-dot-"][class*="-onto"]:hover,
-[class*="deco-"][class*="-dot-"][class*="-onto"]:focus,
-[class*="deco-"][class*="-dot-"][class*="-onto"]:active,
-[class*="deco-"][class*="-dot-"][class*="-toall"]:hover > *,
-[class*="deco-"][class*="-dot-"][class*="-toall"]:focus > *,
-[class*="deco-"][class*="-dot-"][class*="-toall"]:active > *,
-[class*="deco-"][class*="-dot-"][class*="-toone"] > *:hover,
-[class*="deco-"][class*="-dot-"][class*="-toone"] > *:focus,
-[class*="deco-"][class*="-dot-"][class*="-toone"] > *:active,
-[class*="deco-"][class*="-dot-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-relay"] [class*="deco-"][class*="-dot-"][class*="-target1"],
-[class*="deco-"][class*="-dot-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-relay"] [class*="deco-"][class*="-dot-"][class*="-target2"],
-[class*="deco-"][class*="-dot-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-relay"] [class*="deco-"][class*="-dot-"][class*="-target3"],
-[class*="deco-"][class*="-dot-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-relay"] [class*="deco-"][class*="-dot-"][class*="-target4"],
-[class*="deco-"][class*="-dot-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-relay"] [class*="deco-"][class*="-dot-"][class*="-target5"],
-[class*="deco-"][class*="-dot-"][class*="-check"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-hub"] [class*="deco-"][class*="-dot-"][class*="-goal"] {
-  text-decoration-style: dotted;
-}
-
+/***** 3.3 Deco Dash *****/
 [class*="deco-"][class*="-dash-"][class*="-base"],
 [class*="deco-"][class*="-dash-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-dash-"][class*="-into"],
@@ -219,6 +246,31 @@
   text-decoration-style: dashed;
 }
 
+/***** 3.4 Deco Dot *****/
+[class*="deco-"][class*="-dot-"][class*="-base"],
+[class*="deco-"][class*="-dot-"][class*="-global"] > *,
+*:hover > [class*="deco-"][class*="-dot-"][class*="-into"],
+*:focus > [class*="deco-"][class*="-dot-"][class*="-into"],
+*:active > [class*="deco-"][class*="-dot-"][class*="-into"],
+[class*="deco-"][class*="-dot-"][class*="-onto"]:hover,
+[class*="deco-"][class*="-dot-"][class*="-onto"]:focus,
+[class*="deco-"][class*="-dot-"][class*="-onto"]:active,
+[class*="deco-"][class*="-dot-"][class*="-toall"]:hover > *,
+[class*="deco-"][class*="-dot-"][class*="-toall"]:focus > *,
+[class*="deco-"][class*="-dot-"][class*="-toall"]:active > *,
+[class*="deco-"][class*="-dot-"][class*="-toone"] > *:hover,
+[class*="deco-"][class*="-dot-"][class*="-toone"] > *:focus,
+[class*="deco-"][class*="-dot-"][class*="-toone"] > *:active,
+[class*="deco-"][class*="-dot-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-relay"] [class*="deco-"][class*="-dot-"][class*="-target1"],
+[class*="deco-"][class*="-dot-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-relay"] [class*="deco-"][class*="-dot-"][class*="-target2"],
+[class*="deco-"][class*="-dot-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-relay"] [class*="deco-"][class*="-dot-"][class*="-target3"],
+[class*="deco-"][class*="-dot-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-relay"] [class*="deco-"][class*="-dot-"][class*="-target4"],
+[class*="deco-"][class*="-dot-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-relay"] [class*="deco-"][class*="-dot-"][class*="-target5"],
+[class*="deco-"][class*="-dot-"][class*="-check"]:checked ~ [class*="deco-"][class*="-dot-"][class*="-hub"] [class*="deco-"][class*="-dot-"][class*="-goal"] {
+  text-decoration-style: dotted;
+}
+
+/***** 3.5 Deco Wavy *****/
 [class*="deco-"][class*="-wavy-"][class*="-base"],
 [class*="deco-"][class*="-wavy-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-wavy-"][class*="-into"],
@@ -242,7 +294,22 @@
   text-decoration-style: wavy;
 }
 
-/***** Deco Color *****/
+/********** 4. TEXT DECORATION COLOR **********/
+
+/*
+4.1 Black
+4.2 Blue
+4.3 Gray
+4.4 Green
+4.5 Maroon
+4.6 Orange
+4.7 Purple
+4.8 Red
+4.9 White
+4.10 Yellow
+*/
+
+/***** 4.1 Deco Black *****/
 [class*="deco-"][class*="-black-"][class*="-base"],
 [class*="deco-"][class*="-black-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-black-"][class*="-into"],
@@ -266,6 +333,7 @@
   text-decoration-color: var(--black);
 }
 
+/***** 4.2 Deco Blue *****/
 [class*="deco-"][class*="-blue-"][class*="-base"],
 [class*="deco-"][class*="-blue-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-blue-"][class*="-into"],
@@ -289,29 +357,7 @@
   text-decoration-color: var(--blue);
 }
 
-[class*="deco-"][class*="-maroon-"][class*="-base"],
-[class*="deco-"][class*="-maroon-"][class*="-global"] > *,
-*:hover > [class*="deco-"][class*="-maroon-"][class*="-into"],
-*:focus > [class*="deco-"][class*="-maroon-"][class*="-into"],
-*:active > [class*="deco-"][class*="-maroon-"][class*="-into"],
-[class*="deco-"][class*="-maroon-"][class*="-onto"]:hover,
-[class*="deco-"][class*="-maroon-"][class*="-onto"]:focus,
-[class*="deco-"][class*="-maroon-"][class*="-onto"]:active,
-[class*="deco-"][class*="-maroon-"][class*="-toall"]:hover > *,
-[class*="deco-"][class*="-maroon-"][class*="-toall"]:focus > *,
-[class*="deco-"][class*="-maroon-"][class*="-toall"]:active > *,
-[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:hover,
-[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:focus,
-[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:active,
-[class*="deco-"][class*="-maroon-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target1"],
-[class*="deco-"][class*="-maroon-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target2"],
-[class*="deco-"][class*="-maroon-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target3"],
-[class*="deco-"][class*="-maroon-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target4"],
-[class*="deco-"][class*="-maroon-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target5"],
-[class*="deco-"][class*="-maroon-"][class*="-check"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-hub"] [class*="deco-"][class*="-maroon-"][class*="-goal"] {
-  text-decoration-color: var(--maroon);
-}
-
+/***** 4.3 Deco Gray *****/
 [class*="deco-"][class*="-gray-"][class*="-base"],
 [class*="deco-"][class*="-gray-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-gray-"][class*="-into"],
@@ -335,6 +381,7 @@
   text-decoration-color: var(--gray);
 }
 
+/***** 4.4 Deco Green *****/
 [class*="deco-"][class*="-green-"][class*="-base"],
 [class*="deco-"][class*="-green-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-green-"][class*="-into"],
@@ -358,6 +405,31 @@
   text-decoration-color: var(--green);
 }
 
+/***** 4.5 Deco Maroon *****/
+[class*="deco-"][class*="-maroon-"][class*="-base"],
+[class*="deco-"][class*="-maroon-"][class*="-global"] > *,
+*:hover > [class*="deco-"][class*="-maroon-"][class*="-into"],
+*:focus > [class*="deco-"][class*="-maroon-"][class*="-into"],
+*:active > [class*="deco-"][class*="-maroon-"][class*="-into"],
+[class*="deco-"][class*="-maroon-"][class*="-onto"]:hover,
+[class*="deco-"][class*="-maroon-"][class*="-onto"]:focus,
+[class*="deco-"][class*="-maroon-"][class*="-onto"]:active,
+[class*="deco-"][class*="-maroon-"][class*="-toall"]:hover > *,
+[class*="deco-"][class*="-maroon-"][class*="-toall"]:focus > *,
+[class*="deco-"][class*="-maroon-"][class*="-toall"]:active > *,
+[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:hover,
+[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:focus,
+[class*="deco-"][class*="-maroon-"][class*="-toone"] > *:active,
+[class*="deco-"][class*="-maroon-"][class*="-radio1"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target1"],
+[class*="deco-"][class*="-maroon-"][class*="-radio2"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target2"],
+[class*="deco-"][class*="-maroon-"][class*="-radio3"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target3"],
+[class*="deco-"][class*="-maroon-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target4"],
+[class*="deco-"][class*="-maroon-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-relay"] [class*="deco-"][class*="-maroon-"][class*="-target5"],
+[class*="deco-"][class*="-maroon-"][class*="-check"]:checked ~ [class*="deco-"][class*="-maroon-"][class*="-hub"] [class*="deco-"][class*="-maroon-"][class*="-goal"] {
+  text-decoration-color: var(--maroon);
+}
+
+/***** 4.6 Deco Orange *****/
 [class*="deco-"][class*="-orange-"][class*="-base"],
 [class*="deco-"][class*="-orange-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-orange-"][class*="-into"],
@@ -381,6 +453,7 @@
   text-decoration-color: var(--orange);
 }
 
+/***** 4.7 Deco Purple *****/
 [class*="deco-"][class*="-purple-"][class*="-base"],
 [class*="deco-"][class*="-purple-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-purple-"][class*="-into"],
@@ -404,6 +477,7 @@
   text-decoration-color: var(--purple);
 }
 
+/***** 4.8 Deco Red *****/
 [class*="deco-"][class*="-red-"][class*="-base"],
 [class*="deco-"][class*="-red-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-red-"][class*="-into"],
@@ -427,6 +501,7 @@
   text-decoration-color: var(--red);
 }
 
+/***** 4.9 Deco White *****/
 [class*="deco-"][class*="-white-"][class*="-base"],
 [class*="deco-"][class*="-white-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-white-"][class*="-into"],
@@ -450,6 +525,7 @@
   text-decoration-color: var(--white);
 }
 
+/***** 4.10 Deco Yellow *****/
 [class*="deco-"][class*="-yellow-"][class*="-base"],
 [class*="deco-"][class*="-yellow-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-yellow-"][class*="-into"],
