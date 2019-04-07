@@ -9,9 +9,9 @@
 
 /***** Grid *****/
 [class*="gap-"] {
-  --gap-1tn: 1px;
-  --gap-2tn: 2px;
-  --gap-3tn: 5px;
+  --gap-1xs: 1px;
+  --gap-2xs: 2px;
+  --gap-3xs: 5px;
   --gap-1sm: 2px;
   --gap-2sm: 5px;
   --gap-3sm: 10px;
@@ -21,16 +21,16 @@
   --gap-1lg: 10px;
   --gap-2lg: 20px;
   --gap-3lg: 50px;
-  --gap-1wd: 20px;
-  --gap-2wd: 50px;
-  --gap-3wd: 100px;
+  --gap-1xl: 20px;
+  --gap-2xl: 50px;
+  --gap-3xl: 100px;
 }
 
 /***** Flex *****/
 [class*="flex-"] {
-  --flex-neg-mar-tn: -2px;
-  --flex-pos-mar-tn: 2px;
-  --flex-width-tn: 4px;
+  --flex-neg-mar-xs: -2px;
+  --flex-pos-mar-xs: 2px;
+  --flex-width-xs: 4px;
   --flex-neg-mar-sm: -5px;
   --flex-pos-mar-sm: 5px;
   --flex-width-sm: 10px;
@@ -40,9 +40,9 @@
   --flex-neg-mar-lg: -20px;
   --flex-pos-mar-lg: 20px;
   --flex-width-lg: 40px;
-  --flex-neg-mar-wd: -50px;
-  --flex-pos-mar-wd: 50px;
-  --flex-width-wd: 100px;
+  --flex-neg-mar-xl: -50px;
+  --flex-pos-mar-xl: 50px;
+  --flex-width-xl: 100px;
 }
 
 [class*="column"] {

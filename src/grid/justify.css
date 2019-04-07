@@ -7,43 +7,43 @@
 */
 
 /***** Justify Content *****/
-[class*="juco-"][class*="-around-tn"] {
+[class*="juco-"][class*="-around-xs"] {
   justify-content: space-around;
 }
 
-[class*="juco-"][class*="-base-tn"] {
+[class*="juco-"][class*="-base-xs"] {
   justify-content: var(--justify-content-base);
 }
 
-[class*="juco-"][class*="-between-tn"] {
+[class*="juco-"][class*="-between-xs"] {
   justify-content: space-between;
 }
 
-[class*="juco-"][class*="-center-tn"] {
+[class*="juco-"][class*="-center-xs"] {
   justify-content: center;
 }
 
-[class*="juco-"][class*="-end-tn"] {
+[class*="juco-"][class*="-end-xs"] {
   justify-content: var(--justify-content-end);
 }
 
-[class*="juco-"][class*="-evenly-tn"] {
+[class*="juco-"][class*="-evenly-xs"] {
   justify-content: space-evenly;
 }
 
-[class*="juco-"][class*="-left-tn"] {
+[class*="juco-"][class*="-left-xs"] {
   justify-content: left;
 }
 
-[class*="juco-"][class*="-right-tn"] {
+[class*="juco-"][class*="-right-xs"] {
   justify-content: right;
 }
 
-[class*="juco-"][class*="-start-tn"] {
+[class*="juco-"][class*="-start-xs"] {
   justify-content: var(--justify-content-start);
 }
 
-[class*="juco-"][class*="-stretch-tn"] {
+[class*="juco-"][class*="-stretch-xs"] {
   justify-content: stretch;
 }
 
@@ -174,73 +174,73 @@
 }
 
 @media (min-width: 1200px) {
-  [class*="juco-"][class*="-around-wd"] {
+  [class*="juco-"][class*="-around-xl"] {
     justify-content: space-around;
   }
 
-  [class*="juco-"][class*="-base-wd"] {
+  [class*="juco-"][class*="-base-xl"] {
     justify-content: var(--justify-content-base);
   }
 
-  [class*="juco-"][class*="-between-wd"] {
+  [class*="juco-"][class*="-between-xl"] {
     justify-content: space-between;
   }
 
-  [class*="juco-"][class*="-center-wd"] {
+  [class*="juco-"][class*="-center-xl"] {
     justify-content: center;
   }
 
-  [class*="juco-"][class*="-end-wd"] {
+  [class*="juco-"][class*="-end-xl"] {
     justify-content: var(--justify-content-end);
   }
 
-  [class*="juco-"][class*="-evenly-wd"] {
+  [class*="juco-"][class*="-evenly-xl"] {
     justify-content: space-evenly;
   }
 
-  [class*="juco-"][class*="-left-wd"] {
+  [class*="juco-"][class*="-left-xl"] {
     justify-content: left;
   }
 
-  [class*="juco-"][class*="-right-wd"] {
+  [class*="juco-"][class*="-right-xl"] {
     justify-content: right;
   }
 
-  [class*="juco-"][class*="-start-wd"] {
+  [class*="juco-"][class*="-start-xl"] {
     justify-content: var(--justify-content-start);
   }
 
-  [class*="juco-"][class*="-stretch-wd"] {
+  [class*="juco-"][class*="-stretch-xl"] {
     justify-content: stretch;
   }
 }
 
 /***** Justify Items *****/
-[class*="juit-"][class*="-base-tn"] {
+[class*="juit-"][class*="-base-xs"] {
   justify-items: var(--justify-items-base);
 }
 
-[class*="juit-"][class*="-center-tn"] {
+[class*="juit-"][class*="-center-xs"] {
   justify-items: center;
 }
 
-[class*="juit-"][class*="-end-tn"] {
+[class*="juit-"][class*="-end-xs"] {
   justify-items: var(--justify-items-end);
 }
 
-[class*="juit-"][class*="-left-tn"] {
+[class*="juit-"][class*="-left-xs"] {
   justify-items: left;
 }
 
-[class*="juit-"][class*="-right-tn"] {
+[class*="juit-"][class*="-right-xs"] {
   justify-items: right;
 }
 
-[class*="juit-"][class*="-start-tn"] {
+[class*="juit-"][class*="-start-xs"] {
   justify-items: var(--justify-items-start);
 }
 
-[class*="juit-"][class*="-stretch-tn"] {
+[class*="juit-"][class*="-stretch-xs"] {
   justify-items: stretch;
 }
 
@@ -335,61 +335,61 @@
 }
 
 @media (min-width: 1200px) {
-  [class*="juit-"][class*="-base-wd"] {
+  [class*="juit-"][class*="-base-xl"] {
     justify-items: var(--justify-items-base);
   }
 
-  [class*="juit-"][class*="-center-wd"] {
+  [class*="juit-"][class*="-center-xl"] {
     justify-items: center;
   }
 
-  [class*="juit-"][class*="-end-wd"] {
+  [class*="juit-"][class*="-end-xl"] {
     justify-items: var(--justify-items-end);
   }
 
-  [class*="juit-"][class*="-left-wd"] {
+  [class*="juit-"][class*="-left-xl"] {
     justify-items: left;
   }
 
-  [class*="juit-"][class*="-right-twd"] {
+  [class*="juit-"][class*="-right-txl"] {
     justify-items: right;
   }
 
-  [class*="juit-"][class*="-start-wd"] {
+  [class*="juit-"][class*="-start-xl"] {
     justify-items: var(--justify-items-start);
   }
 
-  [class*="juit-"][class*="-stretch-wd"] {
+  [class*="juit-"][class*="-stretch-xl"] {
     justify-items: stretch;
   }
 }
 
 /***** Justify Self *****/
-[class*="juse-"][class*="-base-tn"] {
+[class*="juse-"][class*="-base-xs"] {
   justify-self: var(--justify-self-base);
 }
 
-[class*="juse-"][class*="-center-tn"] {
+[class*="juse-"][class*="-center-xs"] {
   justify-self: center;
 }
 
-[class*="juse-"][class*="-end-tn"] {
+[class*="juse-"][class*="-end-xs"] {
   justify-self: var(--justify-self-end);
 }
 
-[class*="juse-"][class*="-left-tn"] {
+[class*="juse-"][class*="-left-xs"] {
   justify-self: left;
 }
 
-[class*="juse-"][class*="-right-tn"] {
+[class*="juse-"][class*="-right-xs"] {
   justify-self: right;
 }
 
-[class*="juse-"][class*="-start-tn"] {
+[class*="juse-"][class*="-start-xs"] {
   justify-self: var(--justify-self-start);
 }
 
-[class*="juse-"][class*="-stretch-tn"] {
+[class*="juse-"][class*="-stretch-xs"] {
   justify-self: stretch;
 }
 
@@ -484,31 +484,31 @@
 }
 
 @media (min-width: 1200px) {
-  [class*="juse-"][class*="-base-wd"] {
+  [class*="juse-"][class*="-base-xl"] {
     justify-self: var(--justify-self-base);
   }
 
-  [class*="juse-"][class*="-center-wd"] {
+  [class*="juse-"][class*="-center-xl"] {
     justify-self: center;
   }
 
-  [class*="juse-"][class*="-end-wd"] {
+  [class*="juse-"][class*="-end-xl"] {
     justify-self: var(--justify-self-end);
   }
 
-  [class*="juse-"][class*="-left-wd"] {
+  [class*="juse-"][class*="-left-xl"] {
     justify-self: left;
   }
 
-  [class*="juse-"][class*="-right-wd"] {
+  [class*="juse-"][class*="-right-xl"] {
     justify-self: right;
   }
 
-  [class*="juse-"][class*="-start-wd"] {
+  [class*="juse-"][class*="-start-xl"] {
     justify-self: var(--justify-self-start);
   }
 
-  [class*="juse-"][class*="-stretch-wd"] {
+  [class*="juse-"][class*="-stretch-xl"] {
     justify-self: stretch;
   }
 }

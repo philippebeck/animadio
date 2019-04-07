@@ -7,35 +7,35 @@
 */
 
 /***** Align Content *****/
-[class*="alco-"][class*="-around-tn"] {
+[class*="alco-"][class*="-around-xs"] {
   align-content: space-around;
 }
 
-[class*="alco-"][class*="-base-tn"] {
+[class*="alco-"][class*="-base-xs"] {
   align-content: var(--align-content-base);
 }
 
-[class*="alco-"][class*="-between-tn"] {
+[class*="alco-"][class*="-between-xs"] {
   align-content: space-between;
 }
 
-[class*="alco-"][class*="-center-tn"] {
+[class*="alco-"][class*="-center-xs"] {
   align-content: center;
 }
 
-[class*="alco-"][class*="-end-tn"] {
+[class*="alco-"][class*="-end-xs"] {
   align-content: var(--align-content-end);
 }
 
-[class*="alco-"][class*="-evenly-tn"] {
+[class*="alco-"][class*="-evenly-xs"] {
   align-content: space-evenly;
 }
 
-[class*="alco-"][class*="-start-tn"] {
+[class*="alco-"][class*="-start-xs"] {
   align-content: var(--align-content-start);
 }
 
-[class*="alco-"][class*="-stretch-tn"] {
+[class*="alco-"][class*="-stretch-xs"] {
   align-content: stretch;
 }
 
@@ -142,57 +142,57 @@
 }
 
 @media (min-width: 1200px) {
-  [class*="alco-"][class*="-around-wd"] {
+  [class*="alco-"][class*="-around-xl"] {
     align-content: space-around;
   }
 
-  [class*="alco-"][class*="-base-wd"] {
+  [class*="alco-"][class*="-base-xl"] {
     align-content: var(--align-content-base);
   }
 
-  [class*="alco-"][class*="-between-wd"] {
+  [class*="alco-"][class*="-between-xl"] {
     align-content: space-between;
   }
 
-  [class*="alco-"][class*="-center-wd"] {
+  [class*="alco-"][class*="-center-xl"] {
     align-content: center;
   }
 
-  [class*="alco-"][class*="-end-wd"] {
+  [class*="alco-"][class*="-end-xl"] {
     align-content: var(--align-content-end);
   }
 
-  [class*="alco-"][class*="-evenly-wd"] {
+  [class*="alco-"][class*="-evenly-xl"] {
     align-content: space-evenly;
   }
 
-  [class*="alco-"][class*="-start-wd"] {
+  [class*="alco-"][class*="-start-xl"] {
     align-content: var(--align-content-start);
   }
 
-  [class*="alco-"][class*="-stretch-wd"] {
+  [class*="alco-"][class*="-stretch-xl"] {
     align-content: stretch;
   }
 }
 
 /***** Align Items *****/
-[class*="alit-"][class*="-base-tn"] {
+[class*="alit-"][class*="-base-xs"] {
   align-items: var(--align-items-base);
 }
 
-[class*="alit-"][class*="-center-tn"] {
+[class*="alit-"][class*="-center-xs"] {
   align-items: center;
 }
 
-[class*="alit-"][class*="-end-tn"] {
+[class*="alit-"][class*="-end-xs"] {
   align-items: var(--align-items-end);
 }
 
-[class*="alit-"][class*="-start-tn"] {
+[class*="alit-"][class*="-start-xs"] {
   align-items: var(--align-items-start);
 }
 
-[class*="alit-"][class*="-stretch-tn"] {
+[class*="alit-"][class*="-stretch-xs"] {
   align-items: stretch;
 }
 
@@ -263,45 +263,45 @@
 }
 
 @media (min-width: 1200px) {
-  [class*="alit-"][class*="-base-wd"] {
+  [class*="alit-"][class*="-base-xl"] {
     align-items: var(--align-items-base);
   }
 
-  [class*="alit-"][class*="-center-wd"] {
+  [class*="alit-"][class*="-center-xl"] {
     align-items: center;
   }
 
-  [class*="alit-"][class*="-end-wd"] {
+  [class*="alit-"][class*="-end-xl"] {
     align-items: var(--align-items-end);
   }
 
-  [class*="alit-"][class*="-start-wd"] {
+  [class*="alit-"][class*="-start-xl"] {
     align-items: var(--align-items-start);
   }
 
-  [class*="alit-"][class*="-stretch-wd"] {
+  [class*="alit-"][class*="-stretch-xl"] {
     align-items: stretch;
   }
 }
 
 /***** Align Self *****/
-[class*="alse-"][class*="-base-tn"] {
+[class*="alse-"][class*="-base-xs"] {
   align-self: var(--align-self-base);
 }
 
-[class*="alse-"][class*="-center-tn"] {
+[class*="alse-"][class*="-center-xs"] {
   align-self: center;
 }
 
-[class*="alse-"][class*="-end-tn"] {
+[class*="alse-"][class*="-end-xs"] {
   align-self: var(--align-self-end);
 }
 
-[class*="alse-"][class*="-start-tn"] {
+[class*="alse-"][class*="-start-xs"] {
   align-self: var(--align-self-start);
 }
 
-[class*="alse-"][class*="-stretch-tn"] {
+[class*="alse-"][class*="-stretch-xs"] {
   align-self: stretch;
 }
 
@@ -372,23 +372,23 @@
 }
 
 @media (min-width: 1200px) {
-  [class*="alse-"][class*="-base-wd"] {
+  [class*="alse-"][class*="-base-xl"] {
     align-self: var(--align-self-base);
   }
 
-  [class*="alse-"][class*="-center-wd"] {
+  [class*="alse-"][class*="-center-xl"] {
     align-self: center;
   }
 
-  [class*="alse-"][class*="-end-wd"] {
+  [class*="alse-"][class*="-end-xl"] {
     align-self: var(--align-self-end);
   }
 
-  [class*="alse-"][class*="-start-wd"] {
+  [class*="alse-"][class*="-start-xl"] {
     align-self: var(--align-self-start);
   }
 
-  [class*="alse-"][class*="-stretch-wd"] {
+  [class*="alse-"][class*="-stretch-xl"] {
     align-self: stretch;
   }
 }
