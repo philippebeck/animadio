@@ -43,7 +43,6 @@
 2.5 Text XL
 */
 
-
 /***** 2.1 Text XS *****/
 [class*="text-"][class*="-center-xs"] {
   text-align: center;

@@ -62,7 +62,6 @@
   animation: var(--btn-hover-anima);
 }
 
-
 /***** 2.2 Buttons Active & Checked *****/
 [class*="btn"]:active,
 [class*="check"]:checked + [class*="button"] {

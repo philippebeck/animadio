@@ -178,7 +178,6 @@
 */
 
 @media (min-width: 576px) {
-
   /***** 3.1 Flex SM Container *****/
   [class*="flex-"][class*="-2sm"] {
     margin: var(--flex-neg-mar-sm);
@@ -289,7 +288,6 @@
 */
 
 @media (min-width: 768px) {
-
   /***** 4.1 Flex MD Container *****/
   [class*="flex-"][class*="-2md"] {
     margin: var(--flex-neg-mar-md);
@@ -400,7 +398,6 @@
 */
 
 @media (min-width: 992px) {
-
   /***** 5.1 Flex LG Container *****/
   [class*="flex-"][class*="-2lg"] {
     margin: var(--flex-neg-mar-lg);
@@ -511,7 +508,6 @@
 */
 
 @media (min-width: 1200px) {
-
   /***** 6.1 Flex XL Container *****/
   [class*="flex-"][class*="-2xl"] {
     margin: var(--flex-neg-mar-xl);

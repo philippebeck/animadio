@@ -46,6 +46,8 @@ You can override any variable of Animadio you want in your custom stylesheet fil
 */
 
 :root {
+  --navbar-height: 80px;
+
   /***** 1.1 Colors *****/
   --black: rgb(15, 15, 15);
   --blue: RoyalBlue;
@@ -591,10 +593,6 @@ pre {
 }
 
 /***** 3.6 Navbar *****/
-:root {
-  --navbar-height: 80px;
-}
-
 [class*="nav"] {
   --navbar-align-items: center;
   --navbar-bg: var(--blue);

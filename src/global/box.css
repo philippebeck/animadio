@@ -392,17 +392,17 @@
 /***** 4.3 Min Height *****/
 [class*="min-h-sm-"][class*="-base"],
 [class*="min-h-sm-"][class*="-global"] > * {
-min-height: var(--min-height-sm);
+  min-height: var(--min-height-sm);
 }
 
 [class*="min-h-md-"][class*="-base"],
 [class*="min-h-md-"][class*="-global"] > * {
-min-height: var(--min-height-md);
+  min-height: var(--min-height-md);
 }
 
 [class*="min-h-lg-"][class*="-base"],
 [class*="min-h-lg-"][class*="-global"] > * {
-min-height: var(--min-height-lg);
+  min-height: var(--min-height-lg);
 }
 
 /********** 5. WIDTH CLASSES ***********/
