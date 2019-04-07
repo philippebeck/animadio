@@ -1,11 +1,26 @@
-/********** SHATEX **********/
+/******************** SHATEX ********************/
 
 /*
-1. Shatex
-2. Shatex Blur
+1. SHADOW TEXT
+  1.1 Shatex SM
+  1.2 Shatex MD
+  1.3 Shatex LG
+2. SHADOW TEXT BLUR
+  2.1 Shatex Blur All
+  2.2 Shatex Blur SM
+  2.3 Shatex Blur MD
+  2.4 Shatex Blur LG
 */
 
-/***** Shatex *****/
+/********** 1. SHADOW TEXT **********/
+
+/*
+1.1 Shatex SM
+1.2 Shatex MD
+1.3 Shatex LG
+*/
+
+/***** 1.1 Shatex SM *****/
 [class*="shatex-sm-"][class*="-base"],
 [class*="shatex-sm-"][class*="-global"] > *,
 *:hover > [class*="shatex-sm-"][class*="-into"],
@@ -29,6 +44,7 @@
   text-shadow: var(--shatex-sm);
 }
 
+/***** 1.2 Shatex MD *****/
 [class*="shatex-md-"][class*="-base"],
 [class*="shatex-md-"][class*="-global"] > *,
 *:hover > [class*="shatex-md-"][class*="-into"],
@@ -52,6 +68,7 @@
   text-shadow: var(--shatex-md);
 }
 
+/***** 1.3 Shatex LG *****/
 [class*="shatex-lg-"][class*="-base"],
 [class*="shatex-lg-"][class*="-global"] > *,
 *:hover > [class*="shatex-lg-"][class*="-into"],
@@ -75,7 +92,16 @@
   text-shadow: var(--shatex-lg);
 }
 
-/***** Shatex Blur *****/
+/********** 2. SHADOW TEXT BLUR **********/
+
+/*
+2.1 Shatex Blur All
+2.2 Shatex Blur SM
+2.3 Shatex Blur MD
+2.4 Shatex Blur LG
+*/
+
+/***** 2.1 Shatex Blur All *****/
 [class*="shatex-blur-all-"][class*="-base"],
 [class*="shatex-blur-all-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-all-"][class*="-into"],
@@ -99,6 +125,7 @@
   text-shadow: var(--shatex-blur-all);
 }
 
+/***** 2.2 Shatex Blur SM *****/
 [class*="shatex-blur-sm-"][class*="-base"],
 [class*="shatex-blur-sm-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-sm-"][class*="-into"],
@@ -122,6 +149,7 @@
   text-shadow: var(--shatex-blur-sm);
 }
 
+/***** 2.3 Shatex Blur MD *****/
 [class*="shatex-blur-md-"][class*="-base"],
 [class*="shatex-blur-md-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-md-"][class*="-into"],
@@ -145,6 +173,7 @@
   text-shadow: var(--shatex-blur-md);
 }
 
+/***** 2.4 Shatex Blur LG *****/
 [class*="shatex-blur-lg-"][class*="-base"],
 [class*="shatex-blur-lg-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-lg-"][class*="-into"],
