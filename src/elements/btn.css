@@ -246,9 +246,9 @@
 }
 
 /***** Buttons with Differents Sizes *****/
-[class*="btn"][class*="tn"],
-[class*="button"][class*="tn"] {
-  padding: var(--btn-pad-tn);
+[class*="btn"][class*="xs"],
+[class*="button"][class*="xs"] {
+  padding: var(--btn-pad-xs);
 }
 
 [class*="btn"][class*="sm"],
@@ -266,9 +266,9 @@
   padding: var(--btn-pad-lg);
 }
 
-[class*="btn"][class*="wd"],
-[class*="button"][class*="wd"] {
-  padding: var(--btn-pad-wd);
+[class*="btn"][class*="xl"],
+[class*="button"][class*="xl"] {
+  padding: var(--btn-pad-xl);
 }
 
 /***** Buttons with Differents Shapes *****/

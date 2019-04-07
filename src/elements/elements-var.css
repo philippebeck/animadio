@@ -61,11 +61,11 @@
   --btn-color-obsidian: var(--white);
   --btn-color-ruby: var(--white);
   --btn-color-sapphire: var(--khaki);
-  --btn-pad-tn: 1px 2px;
+  --btn-pad-xs: 1px 2px;
   --btn-pad-sm: 2px 5px;
   --btn-pad-md: 5px 10px;
   --btn-pad-lg: 10px 20px;
-  --btn-pad-wd: 20px 50px;
+  --btn-pad-xl: 20px 50px;
   --btn-radius-square: unset;
   --btn-radius-round: 50px;
   --btn-radius-circle: 50%;
@@ -279,7 +279,7 @@
   --nav-info-height: 50px;
   --nav-info-img-mar: 5px;
   --nav-info-link-hover-scale: 1.5;
-  --nav-toggle-anima: trany-tn 1s linear infinite alternate;
+  --nav-toggle-anima: trany-xs 1s linear infinite alternate;
   --nav-toggle-right: 10px;
   --nav-toggle-top: 0;
 }
