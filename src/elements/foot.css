@@ -1,18 +1,35 @@
-/********** FOOT **********/
+/******************** FOOT ********************/
 
 /*
-1. Foot
-2. Foot Global
-3. Foot Main
-4. Foot List
-5. Foot Info
+1. FOOT
+  1.1 Foot
+  1.2 Foot Titles
+2. FOOT GLOBAL
+  2.1 Foot Global
+3. FOOT MAIN
+  3.1 Foot Main
+4. FOOT LIST
+  4.1 Foot List
+  4.2 Foot List Link
+  4.3 Foot List Link Hover
+5. FOOT INFO
+  5.1 Foot Info
+  5.2 Foot Info Link
 */
 
-/***** Foot *****/
+/********** 1. FOOT **********/
+
+/*
+1.1 Foot
+1.2 Foot Titles
+*/
+
+/***** 1.1 Foot *****/
 .foot {
   text-align: var(--foot-text-align);
 }
 
+/***** 1.2 Foot Titles *****/
 .foot h3,
 .foot h4,
 .foot h5,
@@ -21,14 +38,26 @@
   color: var(--foot-title-color);
 }
 
-/***** Foot Global *****/
+/********** 2. FOOT GLOBAL **********/
+
+/*
+2.1 Foot Global
+*/
+
+/***** 2.1 Foot Global *****/
 .foot-main,
 .foot-info {
   display: flex;
   padding-bottom: var(--foot-global-pad-bot);
 }
 
-/***** Foot Main *****/
+/********** 3. FOOT MAIN **********/
+
+/*
+3.1 Foot Main
+*/
+
+/***** 3.1 Foot Main *****/
 .foot-main {
   flex-direction: var(--foot-main-flex-direction);
   justify-content: var(--foot-main-justify-content);
@@ -37,24 +66,41 @@
   cursor: var(--foot-main-cursor);
 }
 
-/***** Foot List *****/
+/********** 4. FOOT LIST **********/
+
+/*
+4.1 Foot List
+4.2 Foot List Link
+4.3 Foot List Link Hover
+*/
+
+/***** 4.1 Foot List *****/
 .foot-list {
   text-align: var(--foot-list-text-align);
   cursor: var(--foot-list-cursor);
 }
 
+/***** 4.2 Foot List Link *****/
 .foot-list a {
   margin-bottom: var(--foot-list-link-mar-bot);
   color: var(--foot-list-link-font-color);
 }
 
+/***** 4.3 Foot List Link Hover *****/
 .foot-list a:hover,
 .foot-list a:focus,
 .foot-list a:active {
   color: var(--foot-list-link-hover-font-color);
 }
 
-/***** Foot Info *****/
+/********** 5. FOOT INFO **********/
+
+/*
+5.1 Foot Info
+5.2 Foot Info Link
+*/
+
+/***** 5.1 Foot Info *****/
 .foot-info {
   justify-content: var(--foot-info-justify-content);
   padding-top: var(--foot-info-pad-top);
@@ -62,6 +108,7 @@
   cursor: var(--foot-info-cursor);
 }
 
+/***** 5.2 Foot Info Link *****/
 .foot-info a {
   margin-right: var(--foot-info-link-mar-right);
   margin-left: var(--foot-info-link-mar-left);
