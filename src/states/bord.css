@@ -1,14 +1,45 @@
 /********** BORD *********/
 
 /*
-1. Bord
-2. Bord Styles
-3. Bord Widths
-4. Bord Colors
-5. Bord Radius
+1. BORD
+  1.1 Bord
+2. BORD STYLE
+  2.1 Dashed
+  2.2 Dotted
+  2.3 Double
+  2.4 Groove
+  2.5 Inset
+  2.6 Outset
+  2.7 Ridge
+  2.8 Solid
+3. BORD WIDTH
+  3.1 Width SM
+  3.2 Width MD
+  3.3 Width LG
+4. BORD COLOR
+  4.1 Black
+  4.2 Blue
+  4.3 Gray
+  4.4 Green
+  4.5 Maroon
+  4.6 Orange
+  4.7 Purple
+  4.8 Red
+  4.9 White
+  4.10 Yellow
+5. BORD RADIUS
+  5.1 Square
+  5.2 Round
+  5.3 Circle
 */
 
-/***** Bord *****/
+/********** 1. BORD **********/
+
+/*
+1.1 Bord
+*/
+
+/***** 1.1 Bord *****/
 [class*="bord-"][class*="-base"],
 [class*="bord-"][class*="-global"] > *,
 [class*="bord-"][class*="-onto"]:hover,
@@ -35,7 +66,20 @@
   border-radius: var(--bord-radius);
 }
 
-/***** Bord Styles *****/
+/********** 2. BORD STYLE **********/
+
+/*
+2.1 Dashed
+2.2 Dotted
+2.3 Double
+2.4 Groove
+2.5 Inset
+2.6 Outset
+2.7 Ridge
+2.8 Solid
+*/
+
+/***** 2.1 Bord Dashed *****/
 [class*="bord-"][class*="-dash-"][class*="-base"],
 [class*="bord-"][class*="-dash-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-dash-"][class*="-into"],
@@ -59,6 +103,7 @@
   border-style: dashed;
 }
 
+/***** 2.2 Bord Dotted *****/
 [class*="bord-"][class*="-dot-"][class*="-base"],
 [class*="bord-"][class*="-dot-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-dot-"][class*="-into"],
@@ -82,6 +127,7 @@
   border-style: dotted;
 }
 
+/***** 2.3 Bord Double *****/
 [class*="bord-"][class*="-double-"][class*="-base"],
 [class*="bord-"][class*="-double-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-double-"][class*="-into"],
@@ -105,6 +151,7 @@
   border-style: double;
 }
 
+/***** 2.4 Bord Groove *****/
 [class*="bord-"][class*="-groove-"][class*="-base"],
 [class*="bord-"][class*="-groove-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-groove-"][class*="-into"],
@@ -128,6 +175,7 @@
   border-style: groove;
 }
 
+/***** 2.5 Bord Inset *****/
 [class*="bord-"][class*="-inset-"][class*="-base"],
 [class*="bord-"][class*="-inset-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-inset-"][class*="-into"],
@@ -151,6 +199,7 @@
   border-style: inset;
 }
 
+/***** 2.6 Bord Outset *****/
 [class*="bord-"][class*="-outset-"][class*="-base"],
 [class*="bord-"][class*="-outset-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-outset-"][class*="-into"],
@@ -174,6 +223,7 @@
   border-style: outset;
 }
 
+/***** 2.7 Bord Ridge *****/
 [class*="bord-"][class*="-ridge-"][class*="-base"],
 [class*="bord-"][class*="-ridge-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-ridge-"][class*="-into"],
@@ -197,6 +247,7 @@
   border-style: ridge;
 }
 
+/***** 2.8 Bord Solid *****/
 [class*="bord-"][class*="-solid-"][class*="-base"],
 [class*="bord-"][class*="-solid-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-solid-"][class*="-into"],
@@ -220,7 +271,15 @@
   border-style: solid;
 }
 
-/***** Bord Widths *****/
+/********** 3. BORD WIDTH **********/
+
+/*
+3.1 Width SM
+3.2 Width MD
+3.3 Width LG
+*/
+
+/***** 3.1 Bord SM *****/
 [class*="bord-"][class*="-sm-"][class*="-base"],
 [class*="bord-"][class*="-sm-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-sm-"][class*="-into"],
@@ -244,6 +303,7 @@
   border-width: var(--bord-width-sm);
 }
 
+/***** 3.2 Bord MD *****/
 [class*="bord-"][class*="-md-"][class*="-base"],
 [class*="bord-"][class*="-md-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-md-"][class*="-into"],
@@ -267,6 +327,7 @@
   border-width: var(--bord-width-md);
 }
 
+/***** 3.3 Bord LG *****/
 [class*="bord-"][class*="-lg-"][class*="-base"],
 [class*="bord-"][class*="-lg-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-lg-"][class*="-into"],
@@ -290,7 +351,22 @@
   border-width: var(--bord-width-lg);
 }
 
-/***** Bord Colors *****/
+/********** 4. BORD COLOR **********/
+
+/*
+4.1 Black
+4.2 Blue
+4.3 Gray
+4.4 Green
+4.5 Maroon
+4.6 Orange
+4.7 Purple
+4.8 Red
+4.9 White
+4.10 Yellow
+*/
+
+/***** 4.1 Bord Black *****/
 [class*="bord-"][class*="-black-"][class*="-base"],
 [class*="bord-"][class*="-black-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-black-"][class*="-into"],
@@ -314,6 +390,7 @@
   border-color: var(--black);
 }
 
+/***** 4.2 Bord Blue *****/
 [class*="bord-"][class*="-blue-"][class*="-base"],
 [class*="bord-"][class*="-blue-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-blue-"][class*="-into"],
@@ -337,29 +414,7 @@
   border-color: var(--blue);
 }
 
-[class*="bord-"][class*="-maroon-"][class*="-base"],
-[class*="bord-"][class*="-maroon-"][class*="-global"] > *,
-*:hover > [class*="bord-"][class*="-maroon-"][class*="-into"],
-*:focus > [class*="bord-"][class*="-maroon-"][class*="-into"],
-*:active > [class*="bord-"][class*="-maroon-"][class*="-into"],
-[class*="bord-"][class*="-maroon-"][class*="-onto"]:hover,
-[class*="bord-"][class*="-maroon-"][class*="-onto"]:focus,
-[class*="bord-"][class*="-maroon-"][class*="-onto"]:active,
-[class*="bord-"][class*="-maroon-"][class*="-toall"]:hover > *,
-[class*="bord-"][class*="-maroon-"][class*="-toall"]:focus > *,
-[class*="bord-"][class*="-maroon-"][class*="-toall"]:active > *,
-[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:hover,
-[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:focus,
-[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:active,
-[class*="bord-"][class*="-maroon-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target1"],
-[class*="bord-"][class*="-maroon-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target2"],
-[class*="bord-"][class*="-maroon-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target3"],
-[class*="bord-"][class*="-maroon-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target4"],
-[class*="bord-"][class*="-maroon-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target5"],
-[class*="bord-"][class*="-maroon-"][class*="-check"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-hub"] [class*="bord-"][class*="-maroon-"][class*="-goal"] {
-  border-color: var(--maroon);
-}
-
+/***** 4.3 Bord Gray *****/
 [class*="bord-"][class*="-gray-"][class*="-base"],
 [class*="bord-"][class*="-gray-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-gray-"][class*="-into"],
@@ -383,6 +438,7 @@
   border-color: var(--gray);
 }
 
+/***** 4.4 Bord Green *****/
 [class*="bord-"][class*="-green-"][class*="-base"],
 [class*="bord-"][class*="-green-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-green-"][class*="-into"],
@@ -406,6 +462,31 @@
   border-color: var(--green);
 }
 
+/***** 4.5 Bord Maroon *****/
+[class*="bord-"][class*="-maroon-"][class*="-base"],
+[class*="bord-"][class*="-maroon-"][class*="-global"] > *,
+*:hover > [class*="bord-"][class*="-maroon-"][class*="-into"],
+*:focus > [class*="bord-"][class*="-maroon-"][class*="-into"],
+*:active > [class*="bord-"][class*="-maroon-"][class*="-into"],
+[class*="bord-"][class*="-maroon-"][class*="-onto"]:hover,
+[class*="bord-"][class*="-maroon-"][class*="-onto"]:focus,
+[class*="bord-"][class*="-maroon-"][class*="-onto"]:active,
+[class*="bord-"][class*="-maroon-"][class*="-toall"]:hover > *,
+[class*="bord-"][class*="-maroon-"][class*="-toall"]:focus > *,
+[class*="bord-"][class*="-maroon-"][class*="-toall"]:active > *,
+[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:hover,
+[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:focus,
+[class*="bord-"][class*="-maroon-"][class*="-toone"] > *:active,
+[class*="bord-"][class*="-maroon-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target1"],
+[class*="bord-"][class*="-maroon-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target2"],
+[class*="bord-"][class*="-maroon-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target3"],
+[class*="bord-"][class*="-maroon-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target4"],
+[class*="bord-"][class*="-maroon-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-relay"] [class*="bord-"][class*="-maroon-"][class*="-target5"],
+[class*="bord-"][class*="-maroon-"][class*="-check"]:checked ~ [class*="bord-"][class*="-maroon-"][class*="-hub"] [class*="bord-"][class*="-maroon-"][class*="-goal"] {
+  border-color: var(--maroon);
+}
+
+/***** 4.6 Bord Orange *****/
 [class*="bord-"][class*="-orange-"][class*="-base"],
 [class*="bord-"][class*="-orange-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-orange-"][class*="-into"],
@@ -429,29 +510,7 @@
   border-color: var(--orange);
 }
 
-[class*="bord-"][class*="-red-"][class*="-base"],
-[class*="bord-"][class*="-red-"][class*="-global"] > *,
-*:hover > [class*="bord-"][class*="-red-"][class*="-into"],
-*:focus > [class*="bord-"][class*="-red-"][class*="-into"],
-*:active > [class*="bord-"][class*="-red-"][class*="-into"],
-[class*="bord-"][class*="-red-"][class*="-onto"]:hover,
-[class*="bord-"][class*="-red-"][class*="-onto"]:focus,
-[class*="bord-"][class*="-red-"][class*="-onto"]:active,
-[class*="bord-"][class*="-red-"][class*="-toall"]:hover > *,
-[class*="bord-"][class*="-red-"][class*="-toall"]:focus > *,
-[class*="bord-"][class*="-red-"][class*="-toall"]:active > *,
-[class*="bord-"][class*="-red-"][class*="-toone"] > *:hover,
-[class*="bord-"][class*="-red-"][class*="-toone"] > *:focus,
-[class*="bord-"][class*="-red-"][class*="-toone"] > *:active,
-[class*="bord-"][class*="-red-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-red-"][class*="-relay"] [class*="bord-"][class*="-red-"][class*="-target1"],
-[class*="bord-"][class*="-red-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-red-"][class*="-relay"] [class*="bord-"][class*="-red-"][class*="-target2"],
-[class*="bord-"][class*="-red-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-red-"][class*="-relay"] [class*="bord-"][class*="-red-"][class*="-target3"],
-[class*="bord-"][class*="-red-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-red-"][class*="-relay"] [class*="bord-"][class*="-red-"][class*="-target4"],
-[class*="bord-"][class*="-red-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-red-"][class*="-relay"] [class*="bord-"][class*="-red-"][class*="-target5"],
-[class*="bord-"][class*="-red-"][class*="-check"]:checked ~ [class*="bord-"][class*="-red-"][class*="-hub"] [class*="bord-"][class*="-red-"][class*="-goal"] {
-  border-color: var(--red);
-}
-
+/***** 4.7 Bord Purple *****/
 [class*="bord-"][class*="-purple-"][class*="-base"],
 [class*="bord-"][class*="-purple-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-purple-"][class*="-into"],
@@ -475,6 +534,31 @@
   border-color: var(--purple);
 }
 
+/***** 4.8 Bord Red *****/
+[class*="bord-"][class*="-red-"][class*="-base"],
+[class*="bord-"][class*="-red-"][class*="-global"] > *,
+*:hover > [class*="bord-"][class*="-red-"][class*="-into"],
+*:focus > [class*="bord-"][class*="-red-"][class*="-into"],
+*:active > [class*="bord-"][class*="-red-"][class*="-into"],
+[class*="bord-"][class*="-red-"][class*="-onto"]:hover,
+[class*="bord-"][class*="-red-"][class*="-onto"]:focus,
+[class*="bord-"][class*="-red-"][class*="-onto"]:active,
+[class*="bord-"][class*="-red-"][class*="-toall"]:hover > *,
+[class*="bord-"][class*="-red-"][class*="-toall"]:focus > *,
+[class*="bord-"][class*="-red-"][class*="-toall"]:active > *,
+[class*="bord-"][class*="-red-"][class*="-toone"] > *:hover,
+[class*="bord-"][class*="-red-"][class*="-toone"] > *:focus,
+[class*="bord-"][class*="-red-"][class*="-toone"] > *:active,
+[class*="bord-"][class*="-red-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-red-"][class*="-relay"] [class*="bord-"][class*="-red-"][class*="-target1"],
+[class*="bord-"][class*="-red-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-red-"][class*="-relay"] [class*="bord-"][class*="-red-"][class*="-target2"],
+[class*="bord-"][class*="-red-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-red-"][class*="-relay"] [class*="bord-"][class*="-red-"][class*="-target3"],
+[class*="bord-"][class*="-red-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-red-"][class*="-relay"] [class*="bord-"][class*="-red-"][class*="-target4"],
+[class*="bord-"][class*="-red-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-red-"][class*="-relay"] [class*="bord-"][class*="-red-"][class*="-target5"],
+[class*="bord-"][class*="-red-"][class*="-check"]:checked ~ [class*="bord-"][class*="-red-"][class*="-hub"] [class*="bord-"][class*="-red-"][class*="-goal"] {
+  border-color: var(--red);
+}
+
+/***** 4.9 Bord White *****/
 [class*="bord-"][class*="-white-"][class*="-base"],
 [class*="bord-"][class*="-white-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-white-"][class*="-into"],
@@ -498,6 +582,7 @@
   border-color: var(--white);
 }
 
+/***** 4.10 Bord Yellow *****/
 [class*="bord-"][class*="-yellow-"][class*="-base"],
 [class*="bord-"][class*="-yellow-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-yellow-"][class*="-into"],
@@ -521,7 +606,15 @@
   border-color: var(--yellow);
 }
 
-/***** Bord Radius *****/
+/********** 5. BORD RADIUS **********/
+
+/*
+5.1 Square
+5.2 Round
+5.3 Circle
+*/
+
+/***** 5.1 Bord Square *****/
 [class*="bord-"][class*="-square-"][class*="-base"],
 [class*="bord-"][class*="-square-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-square-"][class*="-into"],
@@ -545,6 +638,7 @@
   border-radius: var(--bord-radius-square);
 }
 
+/***** 5.2 Bord Round *****/
 [class*="bord-"][class*="-round-"][class*="-base"],
 [class*="bord-"][class*="-round-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-round-"][class*="-into"],
@@ -568,6 +662,7 @@
   border-radius: var(--bord-radius-round);
 }
 
+/***** 5.3 Bord Circle *****/
 [class*="bord-"][class*="-circle-"][class*="-base"],
 [class*="bord-"][class*="-circle-"][class*="-global"] > *,
 *:hover > [class*="bord-"][class*="-circle-"][class*="-into"],
