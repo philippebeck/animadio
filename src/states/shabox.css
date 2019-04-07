@@ -1,12 +1,31 @@
-/********** SHABOX **********/
+/******************** SHABOX ********************/
 
 /*
-1. Shabox
-2. Shabox Blur
-3. Shabox Spread
+1. SHADOW BOX
+  1.1 Shabox SM
+  1.2 Shabox MD
+  1.3 Shabox LG
+2. SHADOW BOX BLUR
+  2.1 Shabox Blur All
+  2.2 Shabox Blur SM
+  2.3 Shabox Blur MD
+  2.4 Shabox Blur LG
+3. SHADOW BOX SPREAD
+  3.1 Shabox Spread All
+  3.2 Shabox Spread SM
+  3.3 Shabox Spread MD
+  3.4 Shabox Spread LG
 */
 
-/***** Shabox *****/
+/********** 1. SHADOW BOX **********/
+
+/*
+1.1 Shabox SM
+1.2 Shabox MD
+1.3 Shabox LG
+*/
+
+/***** 1.1 Shabox SM *****/
 [class*="shabox-sm-"][class*="-base"],
 [class*="shabox-sm-"][class*="-global"] > *,
 *:hover > [class*="shabox-sm-"][class*="-into"],
@@ -53,6 +72,7 @@
   box-shadow: inset var(--shabox-sm);
 }
 
+/***** 1.2 Shabox MD *****/
 [class*="shabox-md-"][class*="-base"],
 [class*="shabox-md-"][class*="-global"] > *,
 *:hover > [class*="shabox-md-"][class*="-into"],
@@ -99,6 +119,7 @@
   box-shadow: inset var(--shabox-md);
 }
 
+/***** 1.3 Shabox LG *****/
 [class*="shabox-lg-"][class*="-base"],
 [class*="shabox-lg-"][class*="-global"] > *,
 *:hover > [class*="shabox-lg-"][class*="-into"],
@@ -145,7 +166,16 @@
   box-shadow: inset var(--shabox-lg);
 }
 
-/***** Shabox Blur *****/
+/********** 2. SHADOW BOX BLUR **********/
+
+/*
+2.1 Shabox Blur All
+2.2 Shabox Blur SM
+2.3 Shabox Blur MD
+2.4 Shabox Blur LG
+*/
+
+/***** 2.1 Shabox Blur All *****/
 [class*="shabox-blur-all-"][class*="-base"],
 [class*="shabox-blur-all-"][class*="-global"] > *,
 *:hover > [class*="shabox-blur-all-"][class*="-into"],
@@ -192,6 +222,7 @@
   box-shadow: inset var(--shabox-blur-all);
 }
 
+/***** 2.2 Shabox Blur SM *****/
 [class*="shabox-blur-sm-"][class*="-base"],
 [class*="shabox-blur-sm-"][class*="-global"] > *,
 *:hover > [class*="shabox-blur-sm-"][class*="-into"],
@@ -238,6 +269,7 @@
   box-shadow: inset var(--shabox-blur-sm);
 }
 
+/***** 2.3 Shabox Blur MD *****/
 [class*="shabox-blur-md-"][class*="-base"],
 [class*="shabox-blur-md-"][class*="-global"] > *,
 *:hover > [class*="shabox-blur-md-"][class*="-into"],
@@ -284,6 +316,7 @@
   box-shadow: inset var(--shabox-blur-md);
 }
 
+/***** 2.4 Shabox Blur LG *****/
 [class*="shabox-blur-lg-"][class*="-base"],
 [class*="shabox-blur-lg-"][class*="-global"] > *,
 *:hover > [class*="shabox-blur-lg-"][class*="-into"],
@@ -330,7 +363,16 @@
   box-shadow: inset var(--shabox-blur-lg);
 }
 
-/***** Shabox Spread *****/
+/********** 3. SHADOW BOX SPREAD **********/
+
+/*
+3.1 Shabox Spread All
+3.2 Shabox Spread SM
+3.3 Shabox Spread MD
+3.4 Shabox Spread LG
+*/
+
+/***** 3.1 Shabox Spread All *****/
 [class*="shabox-spread-all-"][class*="-base"],
 [class*="shabox-spread-all-"][class*="-global"] > *,
 *:hover > [class*="shabox-spread-all-"][class*="-into"],
@@ -377,6 +419,7 @@
   box-shadow: inset var(--shabox-spread-all);
 }
 
+/***** 3.2 Shabox Spread SM *****/
 [class*="shabox-spread-sm-"][class*="-base"],
 [class*="shabox-spread-sm-"][class*="-global"] > *,
 *:hover > [class*="shabox-spread-sm-"][class*="-into"],
@@ -423,6 +466,7 @@
   box-shadow: inset var(--shabox-spread-sm);
 }
 
+/***** 3.3 Shabox Spread MD *****/
 [class*="shabox-spread-md-"][class*="-base"],
 [class*="shabox-spread-md-"][class*="-global"] > *,
 *:hover > [class*="shabox-spread-md-"][class*="-into"],
@@ -469,6 +513,7 @@
   box-shadow: inset var(--shabox-spread-md);
 }
 
+/***** 3.4 Shabox Spread LG *****/
 [class*="shabox-spread-lg-"][class*="-base"],
 [class*="shabox-spread-lg-"][class*="-global"] > *,
 *:hover > [class*="shabox-spread-lg-"][class*="-into"],
