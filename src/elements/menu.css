@@ -1,12 +1,26 @@
-/********** MENU **********/
+/******************** MENU ********************/
 
 /*
-1. Menu
-2. Menu Label
-3. Menu FA
+1. MENU
+  1.1 Menu
+  1.2 Menu Items
+2. MENU LABEL
+  2.1 Menu Label
+  2.2 Menu Label Hover
+  2.3 Menu Check Label
+3. MENU FA
+  3.1 Menu FA
+  3.2 Menu Check FA
 */
 
-/***** Menu *****/
+/********** 1. MENU **********/
+
+/*
+1.1 Menu
+1.2 Menu Items
+*/
+
+/***** 1.1 Menu *****/
 .menu {
   display: flex;
   flex-direction: var(--menu-flex-direction);
@@ -21,11 +35,20 @@
   color: var(--menu-color);
 }
 
+/***** 1.2 Menu Items *****/
 .menu * {
   cursor: var(--menu-all-cursor);
 }
 
-/***** Menu Label *****/
+/********** 2. MENU LABEL **********/
+
+/*
+2.1 Menu Label
+2.2 Menu Label Hover
+2.3 Menu Check Label
+*/
+
+/***** 2.1 Menu Label *****/
 .menu label {
   display: flex;
   justify-content: var(--menu-label-justify-content);
@@ -35,6 +58,7 @@
   width: var(--menu-label-width);
 }
 
+/***** 2.2 Menu Label Hover *****/
 .menu label:hover,
 .menu label:active,
 .menu label:focus {
@@ -44,6 +68,7 @@
   color: var(--menu-label-hover-color);
 }
 
+/***** 2.3 Menu Check Label *****/
 [class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"],
 [class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"],
 [class*="menu-radio3"]:checked ~ .menu > [for="menu-radio3"],
@@ -54,7 +79,14 @@
   font-weight: var(--menu-label-check-font-weight);
 }
 
-/***** Menu FA *****/
+/********** 3. MENU FA **********/
+
+/*
+3.1 Menu FA
+3.2 Menu Check FA
+*/
+
+/***** 3.1 Menu FA *****/
 .menu [class*="fa-"][class*="-down"] {
   display: none;
   position: var(--menu-fa-position);
@@ -62,6 +94,7 @@
   color: var(--menu-fa-color);
 }
 
+/***** 3.2 Menu Check FA *****/
 @media (min-width: 576px) {
   [class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"] > [class*="fa-"][class*="-down"],
   [class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"] > [class*="fa-"][class*="-down"],
