@@ -146,9 +146,9 @@
   }
 }
 
-@keyframes trany-tn {
+@keyframes trany-xs {
   to {
-    transform: var(--trany-tn);
+    transform: var(--trany-xs);
   }
 }
 

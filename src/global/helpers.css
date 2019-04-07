@@ -47,15 +47,15 @@
   margin: auto;
 }
 
-[class*="container-"][class*="-70tn"] {
+[class*="container-"][class*="-70xs"] {
   max-width: 70%;
 }
 
-[class*="container-"][class*="-80tn"] {
+[class*="container-"][class*="-80xs"] {
   max-width: 80%;
 }
 
-[class*="container-"][class*="-90tn"] {
+[class*="container-"][class*="-90xs"] {
   max-width: 90%;
 }
 
@@ -102,33 +102,33 @@
 }
 
 @media (min-width: 1200px) {
-  [class*="container-"][class*="-70wd"] {
+  [class*="container-"][class*="-70xl"] {
     max-width: 70%;
   }
 
-  [class*="container-"][class*="-80wd"] {
+  [class*="container-"][class*="-80xl"] {
     max-width: 80%;
   }
 
-  [class*="container-"][class*="-90wd"] {
+  [class*="container-"][class*="-90xl"] {
     max-width: 90%;
   }
 }
 
 /***** Text *****/
-[class*="text-"][class*="-center-tn"] {
+[class*="text-"][class*="-center-xs"] {
   text-align: center;
 }
 
-[class*="text-"][class*="-justify-tn"] {
+[class*="text-"][class*="-justify-xs"] {
   text-align: justify;
 }
 
-[class*="text-"][class*="-right-tn"] {
+[class*="text-"][class*="-right-xs"] {
   text-align: right;
 }
 
-[class*="text-"][class*="-left-tn"] {
+[class*="text-"][class*="-left-xs"] {
   text-align: left;
 }
 
@@ -187,19 +187,19 @@
 }
 
 @media (min-width: 1200px) {
-  [class*="text-"][class*="-center-wd"] {
+  [class*="text-"][class*="-center-xl"] {
     text-align: center;
   }
 
-  [class*="text-"][class*="-justify-wd"] {
+  [class*="text-"][class*="-justify-xl"] {
     text-align: justify;
   }
 
-  [class*="text-"][class*="-right-wd"] {
+  [class*="text-"][class*="-right-xl"] {
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-wd"] {
+  [class*="text-"][class*="-left-xl"] {
     text-align: left;
   }
 }

@@ -62,7 +62,7 @@
   --translate: translate(-100vw, -100vh);
   --translateX: translateX(-100vw);
   --translateY: translateY(-100vh);
-  --trany-tn: translateY(2vh);
+  --trany-xs: translateY(2vh);
 }
 
 /***** Init *****/
@@ -83,13 +83,13 @@ h4,
 h5,
 h6 {
   --title-font-family: sans-serif;
-  --title-wd-font-size: 5rem;
-  --title-wd-text-transform: capitalize;
+  --title-xl-font-size: 5rem;
+  --title-xl-text-transform: capitalize;
   --title-lg-font-size: 3.5rem;
   --title-lg-text-transform: none;
   --title-md-font-size: 3rem;
   --title-sm-font-size: 2.5rem;
-  --title-tn-font-size: 2rem;
+  --title-xs-font-size: 2rem;
 }
 
 a {
