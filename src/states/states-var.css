@@ -11,11 +11,11 @@
 /***** Anima *****/
 [class*="anima-"] {
   --anima-duration: 2s;
-  --anima-duration-tn: 1s;
+  --anima-duration-xs: 1s;
   --anima-duration-sm: 2s;
   --anima-duration-md: 5s;
   --anima-duration-lg: 10s;
-  --anima-duration-wd: 60s;
+  --anima-duration-xl: 60s;
   --anima-timing-ease: ease-in-out;
   --anima-timing-steps: 60, start;
   --anima-timing-bezier: 1, 5, 1, -5;

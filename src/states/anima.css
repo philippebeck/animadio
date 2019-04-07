@@ -314,27 +314,27 @@
 }
 
 /***** Duration *****/
-[class*="anima-"][class*="-tn-"][class*="-base"],
-[class*="anima-"][class*="-tn-"][class*="-global"] > *,
-*:hover > [class*="anima-"][class*="-tn-"][class*="-into"],
-*:focus > [class*="anima-"][class*="-tn-"][class*="-into"],
-*:active > [class*="anima-"][class*="-tn-"][class*="-into"],
-[class*="anima-"][class*="-tn-"][class*="-onto"]:hover,
-[class*="anima-"][class*="-tn-"][class*="-onto"]:focus,
-[class*="anima-"][class*="-tn-"][class*="-onto"]:active,
-[class*="anima-"][class*="-tn-"][class*="-toall"]:hover > *,
-[class*="anima-"][class*="-tn-"][class*="-toall"]:focus > *,
-[class*="anima-"][class*="-tn-"][class*="-toall"]:active > *,
-[class*="anima-"][class*="-tn-"][class*="-toone"] > *:hover,
-[class*="anima-"][class*="-tn-"][class*="-toone"] > *:focus,
-[class*="anima-"][class*="-tn-"][class*="-toone"] > *:active,
-[class*="anima-"][class*="-tn-"][class*="-radio1"]:checked ~ [class*="anima-"][class*="-tn-"][class*="-relay"] [class*="anima-"][class*="-tn-"][class*="-target1"],
-[class*="anima-"][class*="-tn-"][class*="-radio2"]:checked ~ [class*="anima-"][class*="-tn-"][class*="-relay"] [class*="anima-"][class*="-tn-"][class*="-target2"],
-[class*="anima-"][class*="-tn-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-tn-"][class*="-relay"] [class*="anima-"][class*="-tn-"][class*="-target3"],
-[class*="anima-"][class*="-tn-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-tn-"][class*="-relay"] [class*="anima-"][class*="-tn-"][class*="-target4"],
-[class*="anima-"][class*="-tn-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-tn-"][class*="-relay"] [class*="anima-"][class*="-tn-"][class*="-target5"],
-[class*="anima-"][class*="-tn-"][class*="-check"]:checked ~ [class*="anima-"][class*="-tn-"][class*="-hub"] [class*="anima-"][class*="-tn-"][class*="-goal"] {
-  animation-duration: var(--anima-duration-tn);
+[class*="anima-"][class*="-xs-"][class*="-base"],
+[class*="anima-"][class*="-xs-"][class*="-global"] > *,
+*:hover > [class*="anima-"][class*="-xs-"][class*="-into"],
+*:focus > [class*="anima-"][class*="-xs-"][class*="-into"],
+*:active > [class*="anima-"][class*="-xs-"][class*="-into"],
+[class*="anima-"][class*="-xs-"][class*="-onto"]:hover,
+[class*="anima-"][class*="-xs-"][class*="-onto"]:focus,
+[class*="anima-"][class*="-xs-"][class*="-onto"]:active,
+[class*="anima-"][class*="-xs-"][class*="-toall"]:hover > *,
+[class*="anima-"][class*="-xs-"][class*="-toall"]:focus > *,
+[class*="anima-"][class*="-xs-"][class*="-toall"]:active > *,
+[class*="anima-"][class*="-xs-"][class*="-toone"] > *:hover,
+[class*="anima-"][class*="-xs-"][class*="-toone"] > *:focus,
+[class*="anima-"][class*="-xs-"][class*="-toone"] > *:active,
+[class*="anima-"][class*="-xs-"][class*="-radio1"]:checked ~ [class*="anima-"][class*="-xs-"][class*="-relay"] [class*="anima-"][class*="-xs-"][class*="-target1"],
+[class*="anima-"][class*="-xs-"][class*="-radio2"]:checked ~ [class*="anima-"][class*="-xs-"][class*="-relay"] [class*="anima-"][class*="-xs-"][class*="-target2"],
+[class*="anima-"][class*="-xs-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-xs-"][class*="-relay"] [class*="anima-"][class*="-xs-"][class*="-target3"],
+[class*="anima-"][class*="-xs-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-xs-"][class*="-relay"] [class*="anima-"][class*="-xs-"][class*="-target4"],
+[class*="anima-"][class*="-xs-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-xs-"][class*="-relay"] [class*="anima-"][class*="-xs-"][class*="-target5"],
+[class*="anima-"][class*="-xs-"][class*="-check"]:checked ~ [class*="anima-"][class*="-xs-"][class*="-hub"] [class*="anima-"][class*="-xs-"][class*="-goal"] {
+  animation-duration: var(--anima-duration-xs);
 }
 
 [class*="anima-"][class*="-sm-"][class*="-base"],
@@ -406,27 +406,27 @@
   animation-duration: var(--anima-duration-lg);
 }
 
-[class*="anima-"][class*="-wd-"][class*="-base"],
-[class*="anima-"][class*="-wd-"][class*="-global"] > *,
-*:hover > [class*="anima-"][class*="-wd-"][class*="-into"],
-*:focus > [class*="anima-"][class*="-wd-"][class*="-into"],
-*:active > [class*="anima-"][class*="-wd-"][class*="-into"],
-[class*="anima-"][class*="-wd-"][class*="-onto"]:hover,
-[class*="anima-"][class*="-wd-"][class*="-onto"]:focus,
-[class*="anima-"][class*="-wd-"][class*="-onto"]:active,
-[class*="anima-"][class*="-wd-"][class*="-toall"]:hover > *,
-[class*="anima-"][class*="-wd-"][class*="-toall"]:focus > *,
-[class*="anima-"][class*="-wd-"][class*="-toall"]:active > *,
-[class*="anima-"][class*="-wd-"][class*="-toone"] > *:hover,
-[class*="anima-"][class*="-wd-"][class*="-toone"] > *:focus,
-[class*="anima-"][class*="-wd-"][class*="-toone"] > *:active,
-[class*="anima-"][class*="-wd-"][class*="-radio1"]:checked ~ [class*="anima-"][class*="-wd-"][class*="-relay"] [class*="anima-"][class*="-wd-"][class*="-target1"],
-[class*="anima-"][class*="-wd-"][class*="-radio2"]:checked ~ [class*="anima-"][class*="-wd-"][class*="-relay"] [class*="anima-"][class*="-wd-"][class*="-target2"],
-[class*="anima-"][class*="-wd-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-wd-"][class*="-relay"] [class*="anima-"][class*="-wd-"][class*="-target3"],
-[class*="anima-"][class*="-wd-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-wd-"][class*="-relay"] [class*="anima-"][class*="-wd-"][class*="-target4"],
-[class*="anima-"][class*="-wd-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-wd-"][class*="-relay"] [class*="anima-"][class*="-wd-"][class*="-target5"],
-[class*="anima-"][class*="-wd-"][class*="-check"]:checked ~ [class*="anima-"][class*="-wd-"][class*="-hub"] [class*="anima-"][class*="-wd-"][class*="-goal"] {
-  animation-duration: var(--anima-duration-wd);
+[class*="anima-"][class*="-xl-"][class*="-base"],
+[class*="anima-"][class*="-xl-"][class*="-global"] > *,
+*:hover > [class*="anima-"][class*="-xl-"][class*="-into"],
+*:focus > [class*="anima-"][class*="-xl-"][class*="-into"],
+*:active > [class*="anima-"][class*="-xl-"][class*="-into"],
+[class*="anima-"][class*="-xl-"][class*="-onto"]:hover,
+[class*="anima-"][class*="-xl-"][class*="-onto"]:focus,
+[class*="anima-"][class*="-xl-"][class*="-onto"]:active,
+[class*="anima-"][class*="-xl-"][class*="-toall"]:hover > *,
+[class*="anima-"][class*="-xl-"][class*="-toall"]:focus > *,
+[class*="anima-"][class*="-xl-"][class*="-toall"]:active > *,
+[class*="anima-"][class*="-xl-"][class*="-toone"] > *:hover,
+[class*="anima-"][class*="-xl-"][class*="-toone"] > *:focus,
+[class*="anima-"][class*="-xl-"][class*="-toone"] > *:active,
+[class*="anima-"][class*="-xl-"][class*="-radio1"]:checked ~ [class*="anima-"][class*="-xl-"][class*="-relay"] [class*="anima-"][class*="-xl-"][class*="-target1"],
+[class*="anima-"][class*="-xl-"][class*="-radio2"]:checked ~ [class*="anima-"][class*="-xl-"][class*="-relay"] [class*="anima-"][class*="-xl-"][class*="-target2"],
+[class*="anima-"][class*="-xl-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-xl-"][class*="-relay"] [class*="anima-"][class*="-xl-"][class*="-target3"],
+[class*="anima-"][class*="-xl-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-xl-"][class*="-relay"] [class*="anima-"][class*="-xl-"][class*="-target4"],
+[class*="anima-"][class*="-xl-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-xl-"][class*="-relay"] [class*="anima-"][class*="-xl-"][class*="-target5"],
+[class*="anima-"][class*="-xl-"][class*="-check"]:checked ~ [class*="anima-"][class*="-xl-"][class*="-hub"] [class*="anima-"][class*="-xl-"][class*="-goal"] {
+  animation-duration: var(--anima-duration-xl);
 }
 
 /***** Timing Function *****/
