@@ -1,15 +1,32 @@
-/********** FLEX **********/
+/******************** FLEX ********************/
 
 /*
-1. Flex, Col & Row
-2. Flex Tiny
-3. Flex Small
-4. Flex Medium
-5. Flex Large
-6. Flex Wide
+1. FLEX
+  1.1 Flex, Col & Row
+2. FLEX XS
+  2.1 Flex XS Container
+  2.2 Flex XS Items
+3. FLEX SM
+  3.1 Flex SM Container
+  3.2 Flex SM Items
+4. FLEX MD
+  4.1 Flex MD Container
+  4.2 Flex MD Items
+5. FLEX LG
+  5.1 Flex LG Container
+  5.2 Flex LG Items
+6. FLEX XL
+  6.1 Flex XL Container
+  6.2 Flex XL Items
 */
 
-/***** Flex, Column & Row *****/
+/********** 1. FLEX **********/
+
+/*
+1.1 Flex, Column & Row
+*/
+
+/***** 1.1 Flex, Column & Row *****/
 [class*="flex"],
 [class*="column"],
 [class*="row"] {
@@ -45,18 +62,62 @@
   flex-wrap: wrap-reverse;
 }
 
-/***** Flex Tiny *****/
+/********** 2. FLEX XS **********/
+
+/*
+2.1 Flex XS Container
+2.2 Flex XS Items
+*/
+
+/***** 2.1 Flex XS Container *****/
 [class*="flex-"][class*="-2xs"] {
   margin: var(--flex-neg-mar-xs);
 }
 
+[class*="flex-"][class*="-3xs"] {
+  margin: var(--flex-neg-mar-xs);
+}
+
+[class*="flex-"][class*="-4xs"] {
+  margin: var(--flex-neg-mar-xs);
+}
+
+[class*="flex-"][class*="-5xs"] {
+  margin: var(--flex-neg-mar-xs);
+}
+
+[class*="flex-"][class*="-6xs"] {
+  margin: var(--flex-neg-mar-xs);
+}
+
+[class*="flex-"][class*="-7xs"] {
+  margin: var(--flex-neg-mar-xs);
+}
+
+[class*="flex-"][class*="-8xs"] {
+  margin: var(--flex-neg-mar-xs);
+}
+
+[class*="flex-"][class*="-9xs"] {
+  margin: var(--flex-neg-mar-xs);
+}
+
+[class*="flex-"][class*="-10xs"] {
+  margin: var(--flex-neg-mar-xs);
+}
+
+[class*="flex-"][class*="-11xs"] {
+  margin: var(--flex-neg-mar-xs);
+}
+
+[class*="flex-"][class*="-12xs"] {
+  margin: var(--flex-neg-mar-xs);
+}
+
+/***** 2.2 Flex XS Items *****/
 [class*="flex-"][class*="-2xs"] > * {
   width: calc(100% / 2 - var(--flex-width-xs));
   margin: var(--flex-pos-mar-xs);
-}
-
-[class*="flex-"][class*="-3xs"] {
-  margin: var(--flex-neg-mar-xs);
 }
 
 [class*="flex-"][class*="-3xs"] > * {
@@ -64,17 +125,9 @@
   margin: var(--flex-pos-mar-xs);
 }
 
-[class*="flex-"][class*="-4xs"] {
-  margin: var(--flex-neg-mar-xs);
-}
-
 [class*="flex-"][class*="-4xs"] > * {
   width: calc(100% / 4 - var(--flex-width-xs));
   margin: var(--flex-pos-mar-xs);
-}
-
-[class*="flex-"][class*="-5xs"] {
-  margin: var(--flex-neg-mar-xs);
 }
 
 [class*="flex-"][class*="-5xs"] > * {
@@ -82,17 +135,9 @@
   margin: var(--flex-pos-mar-xs);
 }
 
-[class*="flex-"][class*="-6xs"] {
-  margin: var(--flex-neg-mar-xs);
-}
-
 [class*="flex-"][class*="-6xs"] > * {
   width: calc(100% / 6 - var(--flex-width-xs));
   margin: var(--flex-pos-mar-xs);
-}
-
-[class*="flex-"][class*="-7xs"] {
-  margin: var(--flex-neg-mar-xs);
 }
 
 [class*="flex-"][class*="-7xs"] > * {
@@ -100,17 +145,9 @@
   margin: var(--flex-pos-mar-xs);
 }
 
-[class*="flex-"][class*="-8xs"] {
-  margin: var(--flex-neg-mar-xs);
-}
-
 [class*="flex-"][class*="-8xs"] > * {
   width: calc(100% / 8 - var(--flex-width-xs));
   margin: var(--flex-pos-mar-xs);
-}
-
-[class*="flex-"][class*="-9xs"] {
-  margin: var(--flex-neg-mar-xs);
 }
 
 [class*="flex-"][class*="-9xs"] > * {
@@ -118,17 +155,9 @@
   margin: var(--flex-pos-mar-xs);
 }
 
-[class*="flex-"][class*="-10xs"] {
-  margin: var(--flex-neg-mar-xs);
-}
-
 [class*="flex-"][class*="-10xs"] > * {
   width: calc(100% / 10 - var(--flex-width-xs));
   margin: var(--flex-pos-mar-xs);
-}
-
-[class*="flex-"][class*="-11xs"] {
-  margin: var(--flex-neg-mar-xs);
 }
 
 [class*="flex-"][class*="-11xs"] > * {
@@ -136,28 +165,69 @@
   margin: var(--flex-pos-mar-xs);
 }
 
-[class*="flex-"][class*="-12xs"] {
-  margin: var(--flex-neg-mar-xs);
-}
-
 [class*="flex-"][class*="-12xs"] > * {
   width: calc(100% / 12 - var(--flex-width-xs));
   margin: var(--flex-pos-mar-xs);
 }
 
-/***** Flex Small *****/
+/********** 3. FLEX SM **********/
+
+/*
+3.1 Flex SM Container
+3.2 Flex SM Items
+*/
+
 @media (min-width: 576px) {
+
+  /***** 3.1 Flex SM Container *****/
   [class*="flex-"][class*="-2sm"] {
     margin: var(--flex-neg-mar-sm);
   }
 
+  [class*="flex-"][class*="-3sm"] {
+    margin: var(--flex-neg-mar-sm);
+  }
+
+  [class*="flex-"][class*="-4sm"] {
+    margin: var(--flex-neg-mar-sm);
+  }
+
+  [class*="flex-"][class*="-5sm"] {
+    margin: var(--flex-neg-mar-sm);
+  }
+
+  [class*="flex-"][class*="-6sm"] {
+    margin: var(--flex-neg-mar-sm);
+  }
+
+  [class*="flex-"][class*="-7sm"] {
+    margin: var(--flex-neg-mar-sm);
+  }
+
+  [class*="flex-"][class*="-8sm"] {
+    margin: var(--flex-neg-mar-sm);
+  }
+
+  [class*="flex-"][class*="-9sm"] {
+    margin: var(--flex-neg-mar-sm);
+  }
+
+  [class*="flex-"][class*="-10sm"] {
+    margin: var(--flex-neg-mar-sm);
+  }
+
+  [class*="flex-"][class*="-11sm"] {
+    margin: var(--flex-neg-mar-sm);
+  }
+
+  [class*="flex-"][class*="-12sm"] {
+    margin: var(--flex-neg-mar-sm);
+  }
+
+  /***** 3.2 Flex SM Items *****/
   [class*="flex-"][class*="-2sm"] > * {
     width: calc(100% / 2 - var(--flex-width-sm));
     margin: var(--flex-pos-mar-sm);
-  }
-
-  [class*="flex-"][class*="-3sm"] {
-    margin: var(--flex-neg-mar-sm);
   }
 
   [class*="flex-"][class*="-3sm"] > * {
@@ -165,17 +235,9 @@
     margin: var(--flex-pos-mar-sm);
   }
 
-  [class*="flex-"][class*="-4sm"] {
-    margin: var(--flex-neg-mar-sm);
-  }
-
   [class*="flex-"][class*="-4sm"] > * {
     width: calc(100% / 4 - var(--flex-width-sm));
     margin: var(--flex-pos-mar-sm);
-  }
-
-  [class*="flex-"][class*="-5sm"] {
-    margin: var(--flex-neg-mar-sm);
   }
 
   [class*="flex-"][class*="-5sm"] > * {
@@ -183,17 +245,9 @@
     margin: var(--flex-pos-mar-sm);
   }
 
-  [class*="flex-"][class*="-6sm"] {
-    margin: var(--flex-neg-mar-sm);
-  }
-
   [class*="flex-"][class*="-6sm"] > * {
     width: calc(100% / 6 - var(--flex-width-sm));
     margin: var(--flex-pos-mar-sm);
-  }
-
-  [class*="flex-"][class*="-7sm"] {
-    margin: var(--flex-neg-mar-sm);
   }
 
   [class*="flex-"][class*="-7sm"] > * {
@@ -201,17 +255,9 @@
     margin: var(--flex-pos-mar-sm);
   }
 
-  [class*="flex-"][class*="-8sm"] {
-    margin: var(--flex-neg-mar-sm);
-  }
-
   [class*="flex-"][class*="-8sm"] > * {
     width: calc(100% / 8 - var(--flex-width-sm));
     margin: var(--flex-pos-mar-sm);
-  }
-
-  [class*="flex-"][class*="-9sm"] {
-    margin: var(--flex-neg-mar-sm);
   }
 
   [class*="flex-"][class*="-9sm"] > * {
@@ -219,26 +265,14 @@
     margin: var(--flex-pos-mar-sm);
   }
 
-  [class*="flex-"][class*="-10sm"] {
-    margin: var(--flex-neg-mar-sm);
-  }
-
   [class*="flex-"][class*="-10sm"] > * {
     width: calc(100% / 10 - var(--flex-width-sm));
     margin: var(--flex-pos-mar-sm);
   }
 
-  [class*="flex-"][class*="-11sm"] {
-    margin: var(--flex-neg-mar-sm);
-  }
-
   [class*="flex-"][class*="-11sm"] > * {
     width: calc(100% / 11 - var(--flex-width-sm));
     margin: var(--flex-pos-mar-sm);
-  }
-
-  [class*="flex-"][class*="-12sm"] {
-    margin: var(--flex-neg-mar-sm);
   }
 
   [class*="flex-"][class*="-12sm"] > * {
@@ -247,19 +281,64 @@
   }
 }
 
-/***** Flex Medium *****/
+/********** 4. FLEX MD **********/
+
+/*
+4.1 Flex MD Container
+4.2 Flex MD Items
+*/
+
 @media (min-width: 768px) {
+
+  /***** 4.1 Flex MD Container *****/
   [class*="flex-"][class*="-2md"] {
     margin: var(--flex-neg-mar-md);
   }
 
+  [class*="flex-"][class*="-3md"] {
+    margin: var(--flex-neg-mar-md);
+  }
+
+  [class*="flex-"][class*="-4md"] {
+    margin: var(--flex-neg-mar-md);
+  }
+
+  [class*="flex-"][class*="-5md"] {
+    margin: var(--flex-neg-mar-md);
+  }
+
+  [class*="flex-"][class*="-6md"] {
+    margin: var(--flex-neg-mar-md);
+  }
+
+  [class*="flex-"][class*="-7md"] {
+    margin: var(--flex-neg-mar-md);
+  }
+
+  [class*="flex-"][class*="-8md"] {
+    margin: var(--flex-neg-mar-md);
+  }
+
+  [class*="flex-"][class*="-9md"] {
+    margin: var(--flex-neg-mar-md);
+  }
+
+  [class*="flex-"][class*="-10md"] {
+    margin: var(--flex-neg-mar-md);
+  }
+
+  [class*="flex-"][class*="-11md"] {
+    margin: var(--flex-neg-mar-md);
+  }
+
+  [class*="flex-"][class*="-12md"] {
+    margin: var(--flex-neg-mar-md);
+  }
+
+  /***** 4.2 Flex MD Items *****/
   [class*="flex-"][class*="-2md"] > * {
     width: calc(100% / 2 - var(--flex-width-md));
     margin: var(--flex-pos-mar-md);
-  }
-
-  [class*="flex-"][class*="-3md"] {
-    margin: var(--flex-neg-mar-md);
   }
 
   [class*="flex-"][class*="-3md"] > * {
@@ -267,17 +346,9 @@
     margin: var(--flex-pos-mar-md);
   }
 
-  [class*="flex-"][class*="-4md"] {
-    margin: var(--flex-neg-mar-md);
-  }
-
   [class*="flex-"][class*="-4md"] > * {
     width: calc(100% / 4 - var(--flex-width-md));
     margin: var(--flex-pos-mar-md);
-  }
-
-  [class*="flex-"][class*="-5md"] {
-    margin: var(--flex-neg-mar-md);
   }
 
   [class*="flex-"][class*="-5md"] > * {
@@ -285,17 +356,9 @@
     margin: var(--flex-pos-mar-md);
   }
 
-  [class*="flex-"][class*="-6md"] {
-    margin: var(--flex-neg-mar-md);
-  }
-
   [class*="flex-"][class*="-6md"] > * {
     width: calc(100% / 6 - var(--flex-width-md));
     margin: var(--flex-pos-mar-md);
-  }
-
-  [class*="flex-"][class*="-7md"] {
-    margin: var(--flex-neg-mar-md);
   }
 
   [class*="flex-"][class*="-7md"] > * {
@@ -303,17 +366,9 @@
     margin: var(--flex-pos-mar-md);
   }
 
-  [class*="flex-"][class*="-8md"] {
-    margin: var(--flex-neg-mar-md);
-  }
-
   [class*="flex-"][class*="-8md"] > * {
     width: calc(100% / 8 - var(--flex-width-md));
     margin: var(--flex-pos-mar-md);
-  }
-
-  [class*="flex-"][class*="-9md"] {
-    margin: var(--flex-neg-mar-md);
   }
 
   [class*="flex-"][class*="-9md"] > * {
@@ -321,26 +376,14 @@
     margin: var(--flex-pos-mar-md);
   }
 
-  [class*="flex-"][class*="-10md"] {
-    margin: var(--flex-neg-mar-md);
-  }
-
   [class*="flex-"][class*="-10md"] > * {
     width: calc(100% / 10 - var(--flex-width-md));
     margin: var(--flex-pos-mar-md);
   }
 
-  [class*="flex-"][class*="-11md"] {
-    margin: var(--flex-neg-mar-md);
-  }
-
   [class*="flex-"][class*="-11md"] > * {
     width: calc(100% / 11 - var(--flex-width-md));
     margin: var(--flex-pos-mar-md);
-  }
-
-  [class*="flex-"][class*="-12md"] {
-    margin: var(--flex-neg-mar-md);
   }
 
   [class*="flex-"][class*="-12md"] > * {
@@ -349,19 +392,64 @@
   }
 }
 
-/***** Flex Large *****/
+/********** 5. FLEX LG **********/
+
+/*
+5.1 Flex LG Container
+5.2 Flex LG Items
+*/
+
 @media (min-width: 992px) {
+
+  /***** 5.1 Flex LG Container *****/
   [class*="flex-"][class*="-2lg"] {
     margin: var(--flex-neg-mar-lg);
   }
 
+  [class*="flex-"][class*="-3lg"] {
+    margin: var(--flex-neg-mar-lg);
+  }
+
+  [class*="flex-"][class*="-4lg"] {
+    margin: var(--flex-neg-mar-lg);
+  }
+
+  [class*="flex-"][class*="-5lg"] {
+    margin: var(--flex-neg-mar-lg);
+  }
+
+  [class*="flex-"][class*="-6lg"] {
+    margin: var(--flex-neg-mar-lg);
+  }
+
+  [class*="flex-"][class*="-7lg"] {
+    margin: var(--flex-neg-mar-lg);
+  }
+
+  [class*="flex-"][class*="-8lg"] {
+    margin: var(--flex-neg-mar-lg);
+  }
+
+  [class*="flex-"][class*="-9lg"] {
+    margin: var(--flex-neg-mar-lg);
+  }
+
+  [class*="flex-"][class*="-10lg"] {
+    margin: var(--flex-neg-mar-lg);
+  }
+
+  [class*="flex-"][class*="-11lg"] {
+    margin: var(--flex-neg-mar-lg);
+  }
+
+  [class*="flex-"][class*="-12lg"] {
+    margin: var(--flex-neg-mar-lg);
+  }
+
+  /***** 5.2 Flex LG Items *****/
   [class*="flex-"][class*="-2lg"] > * {
     width: calc(100% / 2 - var(--flex-width-lg));
     margin: var(--flex-pos-mar-lg);
-  }
-
-  [class*="flex-"][class*="-3lg"] {
-    margin: var(--flex-neg-mar-lg);
   }
 
   [class*="flex-"][class*="-3lg"] > * {
@@ -369,17 +457,9 @@
     margin: var(--flex-pos-mar-lg);
   }
 
-  [class*="flex-"][class*="-4lg"] {
-    margin: var(--flex-neg-mar-lg);
-  }
-
   [class*="flex-"][class*="-4lg"] > * {
     width: calc(100% / 4 - var(--flex-width-lg));
     margin: var(--flex-pos-mar-lg);
-  }
-
-  [class*="flex-"][class*="-5lg"] {
-    margin: var(--flex-neg-mar-lg);
   }
 
   [class*="flex-"][class*="-5lg"] > * {
@@ -387,17 +467,9 @@
     margin: var(--flex-pos-mar-lg);
   }
 
-  [class*="flex-"][class*="-6lg"] {
-    margin: var(--flex-neg-mar-lg);
-  }
-
   [class*="flex-"][class*="-6lg"] > * {
     width: calc(100% / 6 - var(--flex-width-lg));
     margin: var(--flex-pos-mar-lg);
-  }
-
-  [class*="flex-"][class*="-7lg"] {
-    margin: var(--flex-neg-mar-lg);
   }
 
   [class*="flex-"][class*="-7lg"] > * {
@@ -405,17 +477,9 @@
     margin: var(--flex-pos-mar-lg);
   }
 
-  [class*="flex-"][class*="-8lg"] {
-    margin: var(--flex-neg-mar-lg);
-  }
-
   [class*="flex-"][class*="-8lg"] > * {
     width: calc(100% / 8 - var(--flex-width-lg));
     margin: var(--flex-pos-mar-lg);
-  }
-
-  [class*="flex-"][class*="-9lg"] {
-    margin: var(--flex-neg-mar-lg);
   }
 
   [class*="flex-"][class*="-9lg"] > * {
@@ -423,26 +487,14 @@
     margin: var(--flex-pos-mar-lg);
   }
 
-  [class*="flex-"][class*="-10lg"] {
-    margin: var(--flex-neg-mar-lg);
-  }
-
   [class*="flex-"][class*="-10lg"] > * {
     width: calc(100% / 10 - var(--flex-width-lg));
     margin: var(--flex-pos-mar-lg);
   }
 
-  [class*="flex-"][class*="-11lg"] {
-    margin: var(--flex-neg-mar-lg);
-  }
-
   [class*="flex-"][class*="-11lg"] > * {
     width: calc(100% / 11 - var(--flex-width-lg));
     margin: var(--flex-pos-mar-lg);
-  }
-
-  [class*="flex-"][class*="-12lg"] {
-    margin: var(--flex-neg-mar-lg);
   }
 
   [class*="flex-"][class*="-12lg"] > * {
@@ -451,19 +503,64 @@
   }
 }
 
-/***** Flex Wide *****/
+/********** 6. FLEX XL **********/
+
+/*
+6.1 Flex XL Container
+6.2 Flex XL Items
+*/
+
 @media (min-width: 1200px) {
+
+  /***** 6.1 Flex XL Container *****/
   [class*="flex-"][class*="-2xl"] {
     margin: var(--flex-neg-mar-xl);
   }
 
+  [class*="flex-"][class*="-3xl"] {
+    margin: var(--flex-neg-mar-xl);
+  }
+
+  [class*="flex-"][class*="-4xl"] {
+    margin: var(--flex-neg-mar-xl);
+  }
+
+  [class*="flex-"][class*="-5xl"] {
+    margin: var(--flex-neg-mar-xl);
+  }
+
+  [class*="flex-"][class*="-6xl"] {
+    margin: var(--flex-neg-mar-xl);
+  }
+
+  [class*="flex-"][class*="-7xl"] {
+    margin: var(--flex-neg-mar-xl);
+  }
+
+  [class*="flex-"][class*="-8xl"] {
+    margin: var(--flex-neg-mar-xl);
+  }
+
+  [class*="flex-"][class*="-9xl"] {
+    margin: var(--flex-neg-mar-xl);
+  }
+
+  [class*="flex-"][class*="-10xl"] {
+    margin: var(--flex-neg-mar-xl);
+  }
+
+  [class*="flex-"][class*="-11xl"] {
+    margin: var(--flex-neg-mar-xl);
+  }
+
+  [class*="flex-"][class*="-12xl"] {
+    margin: var(--flex-neg-mar-xl);
+  }
+
+  /***** 6.2 Flex XL Items *****/
   [class*="flex-"][class*="-2xl"] > * {
     width: calc(100% / 2 - var(--flex-width-xl));
     margin: var(--flex-pos-mar-xl);
-  }
-
-  [class*="flex-"][class*="-3xl"] {
-    margin: var(--flex-neg-mar-xl);
   }
 
   [class*="flex-"][class*="-3xl"] > * {
@@ -471,17 +568,9 @@
     margin: var(--flex-pos-mar-xl);
   }
 
-  [class*="flex-"][class*="-4xl"] {
-    margin: var(--flex-neg-mar-xl);
-  }
-
   [class*="flex-"][class*="-4xl"] > * {
     width: calc(100% / 4 - var(--flex-width-xl));
     margin: var(--flex-pos-mar-xl);
-  }
-
-  [class*="flex-"][class*="-5xl"] {
-    margin: var(--flex-neg-mar-xl);
   }
 
   [class*="flex-"][class*="-5xl"] > * {
@@ -489,17 +578,9 @@
     margin: var(--flex-pos-mar-xl);
   }
 
-  [class*="flex-"][class*="-6xl"] {
-    margin: var(--flex-neg-mar-xl);
-  }
-
   [class*="flex-"][class*="-6xl"] > * {
     width: calc(100% / 6 - var(--flex-width-xl));
     margin: var(--flex-pos-mar-xl);
-  }
-
-  [class*="flex-"][class*="-7xl"] {
-    margin: var(--flex-neg-mar-xl);
   }
 
   [class*="flex-"][class*="-7xl"] > * {
@@ -507,17 +588,9 @@
     margin: var(--flex-pos-mar-xl);
   }
 
-  [class*="flex-"][class*="-8xl"] {
-    margin: var(--flex-neg-mar-xl);
-  }
-
   [class*="flex-"][class*="-8xl"] > * {
     width: calc(100% / 8 - var(--flex-width-xl));
     margin: var(--flex-pos-mar-xl);
-  }
-
-  [class*="flex-"][class*="-9xl"] {
-    margin: var(--flex-neg-mar-xl);
   }
 
   [class*="flex-"][class*="-9xl"] > * {
@@ -525,26 +598,14 @@
     margin: var(--flex-pos-mar-xl);
   }
 
-  [class*="flex-"][class*="-10xl"] {
-    margin: var(--flex-neg-mar-xl);
-  }
-
   [class*="flex-"][class*="-10xl"] > * {
     width: calc(100% / 10 - var(--flex-width-xl));
     margin: var(--flex-pos-mar-xl);
   }
 
-  [class*="flex-"][class*="-11xl"] {
-    margin: var(--flex-neg-mar-xl);
-  }
-
   [class*="flex-"][class*="-11xl"] > * {
     width: calc(100% / 11 - var(--flex-width-xl));
     margin: var(--flex-pos-mar-xl);
-  }
-
-  [class*="flex-"][class*="-12xl"] {
-    margin: var(--flex-neg-mar-xl);
   }
 
   [class*="flex-"][class*="-12xl"] > * {
