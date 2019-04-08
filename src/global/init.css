@@ -129,12 +129,14 @@ label {
 }
 
 /***** 2.8 Code *****/
+code,
 pre {
   overflow: var(--pre-overflow);
   padding: var(--pre-pad);
   font-family: var(--pre-font-family);
 }
 
+code > *::selection,
 pre > *::selection {
   background-color: var(--pre-selection-bg);
   color: var(--pre-selection-color);
