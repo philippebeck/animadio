@@ -122,13 +122,18 @@ h4,
 h5,
 h6 {
   --title-font-family: sans-serif;
-  --title-xl-font-size: 5rem;
+  --title-xl-font-size: 6rem;
   --title-xl-text-transform: capitalize;
-  --title-lg-font-size: 3.5rem;
+  --title-xl-color: var(--purple);
+  --title-lg-font-size: 5rem;
   --title-lg-text-transform: none;
-  --title-md-font-size: 3rem;
-  --title-sm-font-size: 2.5rem;
+  --title-lg-color: var(--green);
+  --title-md-font-size: 4rem;
+  --title-md-color: var(--gray);
+  --title-sm-font-size: 3rem;
+  --title-sm-color: var(--black);
   --title-xs-font-size: 2rem;
+  --title-xs-color: var(--gray);
 }
 
 a {
