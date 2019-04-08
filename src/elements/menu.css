@@ -8,9 +8,12 @@
   2.1 Menu Label
   2.2 Menu Label Hover
   2.3 Menu Check Label
-3. MENU FA
-  3.1 Menu FA
-  3.2 Menu Check FA
+3. MENU TARGET
+  3.1 Menu Target
+  3.2 Menu Check Target
+4. MENU FA
+  4.1 Menu FA
+  4.2 Menu Check FA
 */
 
 /********** 1. MENU **********/
@@ -69,24 +72,45 @@
 }
 
 /***** 2.3 Menu Check Label *****/
-[class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"],
-[class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"],
-[class*="menu-radio3"]:checked ~ .menu > [for="menu-radio3"],
-[class*="menu-radio4"]:checked ~ .menu > [for="menu-radio4"],
-[class*="menu-radio5"]:checked ~ .menu > [for="menu-radio5"] {
+[class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"],
+[class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"],
+[class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"],
+[class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"],
+[class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] {
   background-color: var(--menu-label-check-bg);
   color: var(--menu-label-check-color);
   font-weight: var(--menu-label-check-font-weight);
 }
 
-/********** 3. MENU FA **********/
+/********** 3. MENU TARGET **********/
 
 /*
-3.1 Menu FA
-3.2 Menu Check FA
+3.1 Menu Target
+3.2 Menu Check Target
 */
 
-/***** 3.1 Menu FA *****/
+/***** 3.1 Menu Target *****/
+[class*="menu-relay"] > * {
+  display: none;
+}
+
+/***** 3.2 Menu Check Target *****/
+[class*="menu-radio1"]:checked ~ [class*="menu-relay"] > [class*="menu-target1"],
+[class*="menu-radio2"]:checked ~ [class*="menu-relay"] > [class*="menu-target2"],
+[class*="menu-radio3"]:checked ~ [class*="menu-relay"] > [class*="menu-target3"],
+[class*="menu-radio4"]:checked ~ [class*="menu-relay"] > [class*="menu-target4"],
+[class*="menu-radio5"]:checked ~ [class*="menu-relay"] > [class*="menu-target5"] {
+  display: block;
+}
+
+/********** 4. MENU FA **********/
+
+/*
+4.1 Menu FA
+4.2 Menu Check FA
+*/
+
+/***** 4.1 Menu FA *****/
 .menu [class*="fa-"][class*="-down"] {
   display: none;
   position: var(--menu-fa-position);
@@ -94,13 +118,13 @@
   color: var(--menu-fa-color);
 }
 
-/***** 3.2 Menu Check FA *****/
+/***** 4.2 Menu Check FA *****/
 @media (min-width: 576px) {
-  [class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"] > [class*="fa-"][class*="-down"],
-  [class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"] > [class*="fa-"][class*="-down"],
-  [class*="menu-radio3"]:checked ~ .menu > [for="menu-radio3"] > [class*="fa-"][class*="-down"],
-  [class*="menu-radio4"]:checked ~ .menu > [for="menu-radio4"] > [class*="fa-"][class*="-down"],
-  [class*="menu-radio5"]:checked ~ .menu > [for="menu-radio5"] > [class*="fa-"][class*="-down"] {
+  [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"] > [class*="fa-"][class*="-down"],
+  [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"][class*="-down"],
+  [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"][class*="-down"],
+  [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"][class*="-down"],
+  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"][class*="-down"] {
     display: block;
   }
 }
