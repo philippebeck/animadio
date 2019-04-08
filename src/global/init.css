@@ -74,24 +74,29 @@ h6 {
 h1 {
   font-size: var(--title-xl-font-size);
   text-transform: var(--title-xl-text-transform);
+  color: var(--title-xl-color);
 }
 
 h2 {
   font-size: var(--title-lg-font-size);
   text-transform: var(--title-lg-text-transform);
+  color: var(--title-lg-color);
 }
 
 h3 {
   font-size: var(--title-md-font-size);
+  color: var(--title-md-color);
 }
 
 h4 {
   font-size: var(--title-sm-font-size);
+  color: var(--title-sm-color);
 }
 
 h5,
 h6 {
   font-size: var(--title-xs-font-size);
+  color: var(--title-xs-color);
 }
 
 /***** 2.3 Link *****/
