@@ -497,7 +497,7 @@ pre {
   --gallery-figcaption-line-height: 1;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-width: 100%;
-  --gallery-figure-figcaption-anima: tranY-opac 2s;
+  --gallery-figure-figcaption-anima: translateY-opac 2s;
   --gallery-figure-figcaption-bot: 0;
   --gallery-figcaption-fa-bg: var(--blue);
   --gallery-figcaption-fa-bord: 2px solid var(--white);
@@ -620,7 +620,7 @@ pre {
   --nav-info-height: 50px;
   --nav-info-img-mar: 5px;
   --nav-info-link-hover-scale: 1.5;
-  --nav-toggle-anima: tranY-xs 1s linear infinite alternate;
+  --nav-toggle-anima: translateY-xs 1s linear infinite alternate;
   --nav-toggle-right: 10px;
   --nav-toggle-top: 0;
 }
