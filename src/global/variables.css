@@ -322,7 +322,6 @@ pre {
 
 /***** 2.4 Justify *****/
 [class*="juco-"][class*="-"] {
-  --justify-content-base: baseline;
   --justify-content-end: flex-end;
   --justify-content-start: flex-start;
 }
