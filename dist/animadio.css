@@ -1,4 +1,4 @@
-/*! animadio v0.2.29 | https://animadio.org | MIT License */
+/*! animadio v0.2.30 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -124,13 +124,18 @@ h4,
 h5,
 h6 {
   --title-font-family: sans-serif;
-  --title-xl-font-size: 5rem;
+  --title-xl-font-size: 6rem;
   --title-xl-text-transform: capitalize;
-  --title-lg-font-size: 3.5rem;
+  --title-xl-color: var(--purple);
+  --title-lg-font-size: 5rem;
   --title-lg-text-transform: none;
-  --title-md-font-size: 3rem;
-  --title-sm-font-size: 2.5rem;
+  --title-lg-color: var(--green);
+  --title-md-font-size: 4rem;
+  --title-md-color: var(--gray);
+  --title-sm-font-size: 3rem;
+  --title-sm-color: var(--black);
   --title-xs-font-size: 2rem;
+  --title-xs-color: var(--gray);
 }
 
 a {
@@ -1562,24 +1567,29 @@ h6 {
 h1 {
   font-size: var(--title-xl-font-size);
   text-transform: var(--title-xl-text-transform);
+  color: var(--title-xl-color);
 }
 
 h2 {
   font-size: var(--title-lg-font-size);
   text-transform: var(--title-lg-text-transform);
+  color: var(--title-lg-color);
 }
 
 h3 {
   font-size: var(--title-md-font-size);
+  color: var(--title-md-color);
 }
 
 h4 {
   font-size: var(--title-sm-font-size);
+  color: var(--title-sm-color);
 }
 
 h5,
 h6 {
   font-size: var(--title-xs-font-size);
+  color: var(--title-xs-color);
 }
 
 /***** 2.3 Link *****/
@@ -5367,9 +5377,12 @@ pre > *::selection {
   2.1 Menu Label
   2.2 Menu Label Hover
   2.3 Menu Check Label
-3. MENU FA
-  3.1 Menu FA
-  3.2 Menu Check FA
+3. MENU TARGET
+  3.1 Menu Target
+  3.2 Menu Check Target
+4. MENU FA
+  4.1 Menu FA
+  4.2 Menu Check FA
 */
 
 /********** 1. MENU **********/
@@ -5439,24 +5452,45 @@ pre > *::selection {
 }
 
 /***** 2.3 Menu Check Label *****/
-[class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"],
-[class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"],
-[class*="menu-radio3"]:checked ~ .menu > [for="menu-radio3"],
-[class*="menu-radio4"]:checked ~ .menu > [for="menu-radio4"],
-[class*="menu-radio5"]:checked ~ .menu > [for="menu-radio5"] {
+[class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"],
+[class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"],
+[class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"],
+[class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"],
+[class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] {
   background-color: var(--menu-label-check-bg);
   color: var(--menu-label-check-color);
   font-weight: var(--menu-label-check-font-weight);
 }
 
-/********** 3. MENU FA **********/
+/********** 3. MENU TARGET **********/
 
 /*
-3.1 Menu FA
-3.2 Menu Check FA
+3.1 Menu Target
+3.2 Menu Check Target
 */
 
-/***** 3.1 Menu FA *****/
+/***** 3.1 Menu Target *****/
+[class*="menu-relay"] > * {
+  display: none;
+}
+
+/***** 3.2 Menu Check Target *****/
+[class*="menu-radio1"]:checked ~ [class*="menu-relay"] > [class*="menu-target1"],
+[class*="menu-radio2"]:checked ~ [class*="menu-relay"] > [class*="menu-target2"],
+[class*="menu-radio3"]:checked ~ [class*="menu-relay"] > [class*="menu-target3"],
+[class*="menu-radio4"]:checked ~ [class*="menu-relay"] > [class*="menu-target4"],
+[class*="menu-radio5"]:checked ~ [class*="menu-relay"] > [class*="menu-target5"] {
+  display: block;
+}
+
+/********** 4. MENU FA **********/
+
+/*
+4.1 Menu FA
+4.2 Menu Check FA
+*/
+
+/***** 4.1 Menu FA *****/
 .menu [class*="fa-"][class*="-down"] {
   display: none;
   position: var(--menu-fa-position);
@@ -5464,13 +5498,13 @@ pre > *::selection {
   color: var(--menu-fa-color);
 }
 
-/***** 3.2 Menu Check FA *****/
+/***** 4.2 Menu Check FA *****/
 @media (min-width: 576px) {
-  [class*="menu-radio1"]:checked ~ .menu > [for="menu-radio1"] > [class*="fa-"][class*="-down"],
-  [class*="menu-radio2"]:checked ~ .menu > [for="menu-radio2"] > [class*="fa-"][class*="-down"],
-  [class*="menu-radio3"]:checked ~ .menu > [for="menu-radio3"] > [class*="fa-"][class*="-down"],
-  [class*="menu-radio4"]:checked ~ .menu > [for="menu-radio4"] > [class*="fa-"][class*="-down"],
-  [class*="menu-radio5"]:checked ~ .menu > [for="menu-radio5"] > [class*="fa-"][class*="-down"] {
+  [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"] > [class*="fa-"][class*="-down"],
+  [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"][class*="-down"],
+  [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"][class*="-down"],
+  [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"][class*="-down"],
+  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"][class*="-down"] {
     display: block;
   }
 }
@@ -12013,4 +12047,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 8th Apr 2019 @ 1:29:25 PM */
+ Updated: 9th Apr 2019 @ 12:11:24 AM */
