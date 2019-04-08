@@ -36,10 +36,6 @@
   justify-content: space-around;
 }
 
-[class*="juco-"][class*="-base-xs"] {
-  justify-content: var(--justify-content-base);
-}
-
 [class*="juco-"][class*="-between-xs"] {
   justify-content: space-between;
 }
@@ -76,10 +72,6 @@
 @media (min-width: 576px) {
   [class*="juco-"][class*="-around-sm"] {
     justify-content: space-around;
-  }
-
-  [class*="juco-"][class*="-base-sm"] {
-    justify-content: var(--justify-content-base);
   }
 
   [class*="juco-"][class*="-between-sm"] {
@@ -121,10 +113,6 @@
     justify-content: space-around;
   }
 
-  [class*="juco-"][class*="-base-md"] {
-    justify-content: var(--justify-content-base);
-  }
-
   [class*="juco-"][class*="-between-md"] {
     justify-content: space-between;
   }
@@ -164,10 +152,6 @@
     justify-content: space-around;
   }
 
-  [class*="juco-"][class*="-base-lg"] {
-    justify-content: var(--justify-content-base);
-  }
-
   [class*="juco-"][class*="-between-lg"] {
     justify-content: space-between;
   }
@@ -205,10 +189,6 @@
 @media (min-width: 1200px) {
   [class*="juco-"][class*="-around-xl"] {
     justify-content: space-around;
-  }
-
-  [class*="juco-"][class*="-base-xl"] {
-    justify-content: var(--justify-content-base);
   }
 
   [class*="juco-"][class*="-between-xl"] {
