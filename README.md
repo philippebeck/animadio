@@ -1,4 +1,4 @@
-[![Animadio Logo](img/logo.png)](https://animadio.org)
+[![Animadio Logo](https://animadio.org/img/logo.png)](https://animadio.org)
 # [Animadio CSS Framework](https://animadio.org)
 
 -   Eight types of selectors working with hundreds of class combinations
@@ -17,13 +17,12 @@
 [![Codacy Code Quality](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
 [![CodeClimate Maintainability](https://img.shields.io/codeclimate/maintainability-percentage/animadio/animadio.svg?label=Maintainability)](https://codeclimate.com/github/animadio/animadio)
 
-> FRAMEWORK IN CONSTRUCTION !
->
-> NO STABLE & COMPLETE FOR THE MOMENT !!
+> FRAMEWORK IN CONSTRUCTION : NO STABLE & COMPLETE FOR THE MOMENT !
+> BETA VERSION WILL BE AVAILABLE VERY SOON !!
 
 ## Summary
 
--   [Installation](#installation)  
+-   [Package Managers](#package-managers)  
 -   [CDN](#cdn)  
 -   [Download](#download)  
 -   [Content](#content)  
@@ -42,61 +41,52 @@
 
 ---
 
-## Installation
-
-NPM : `npm i animadio`  
-Yarn : `yarn add animadio`  
+## Package Managers
 
 [![NPM Version](https://img.shields.io/npm/v/animadio.svg?label=NPM)](https://www.npmjs.com/package/animadio)
+
 [![NPM Weekly Downloads](https://img.shields.io/npm/dw/animadio.svg?label=Weekly+Downloads)](https://www.npmjs.com/package/animadio)
 [![NPM Montly Downloads](https://img.shields.io/npm/dm/animadio.svg?label=Montly+Downloads)](https://www.npmjs.com/package/animadio)
 [![NPM Yearly Downloads](https://img.shields.io/npm/dy/animadio.svg?label=Yearly+Downloads)](https://www.npmjs.com/package/animadio)
 
-Meteor : `meteor add animadio:animadio`  
+NPM : `npm i animadio`  
+Yarn : `yarn add animadio`  
 
 [![Meteor Project](https://img.shields.io/badge/meteor-animadio%3Aanimadio-blue.svg?label=Atmosphere)](https://atmospherejs.com/animadio/animadio)
 
-Composer : `composer require animadio/animadio`  
+Meteor : `meteor add animadio:animadio`  
 
 [![Packagist Version](https://img.shields.io/packagist/v/animadio/animadio.svg?label=Packagist)](https://packagist.org/packages/animadio/animadio)
 
-Pip & Gem : Very Soon !  
+Composer : `composer require animadio/animadio`  
 
 ---
 
 ## CDN 
 
-> **Full Version**
-
--   jsDelivr (main) : [https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/animadio.css)  
--   jsDelivr (min) : [https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/min/animadio.min.css)  
--   unpkg (main) : [https://unpkg.com/animadio@0.2.20/dist/animadio.css](https://unpkg.com/animadio@0.2.20/dist/animadio.css)  
--   unpkg (min) : [https://unpkg.com/animadio@0.2.20/dist/min/animadio.min.css](https://unpkg.com/animadio@0.2.20/dist/min/animadio.min.css)  
-
-> **Grid Version**
-
--   jsDelivr (main) : [https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/animadio-grid.css)  
--   jsDelivr (min) : [https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/min/animadio-grid.min.css)  
--   unpkg (main) : [https://unpkg.com/animadio@0.2.20/dist/animadio-grid.css](https://unpkg.com/animadio@0.2.20/dist/animadio-grid.css)  
--   unpkg (min) : [https://unpkg.com/animadio@0.2.20/dist/min/animadio-grid.min.css](https://unpkg.com/animadio@0.2.20/dist/min/animadio-grid.min.css)  
-
-> **Elements Version**
-
--   jsDelivr (main) : [https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/animadio-elements.css)  
--   jsDelivr (min) : [https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/min/animadio-elements.min.css)  
--   unpkg (main) : [https://unpkg.com/animadio@0.2.20/dist/animadio-elements.css](https://unpkg.com/animadio@0.2.20/dist/animadio-elements.css)  
--   unpkg (min) : [https://unpkg.com/animadio@0.2.20/dist/min/animadio-elements.min.css](https://unpkg.com/animadio@0.2.20/dist/min/animadio-elements.min.css)  
-
-> **States Version**
-
--   jsDelivr (main) : [https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/animadio-states.css)  
--   jsDelivr (min) : [https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.20/dist/min/animadio-states.min.css)  
--   unpkg (main) : [https://unpkg.com/animadio@0.2.20/dist/animadio-states.css](https://unpkg.com/animadio@0.2.20/dist/animadio-states.css)  
--   unpkg (min) : [https://unpkg.com/animadio@0.2.20/dist/min/animadio-states.min.css](https://unpkg.com/animadio@0.2.20/dist/min/animadio-states.min.css) 
-
 [![jsDelivr Weekly Downloads](https://img.shields.io/jsdelivr/npm/hw/animadio.svg?label=jsDelivr+Weekly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
+
+> **Full Version**
+
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio.min.css)  
+
+> **Grid Version**
+
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-grid.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-grid.min.css)  
+
+> **Elements Version**
+
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-elements.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-elements.min.css)  
+
+> **States Version**
+
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-states.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-states.min.css)  
 
 ---
 
@@ -165,7 +155,7 @@ CodePen : [@animadio](https://codepen.io/animadio)
 
 Slack : [animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQtNTY1NTc5NzgyNDA3LTI2YWIxM2ZkMGM5ODBkNjNjZmI5ZGVlNTM1ZWEwMWI5ZDJjNzViYjNmNWE2MjllMTc3MDhlMzYzZDYzNTkxNjU)
 
-[![Twitter Follow](	https://img.shields.io/twitter/follow/@animadio.svg?label=Twitter+:+@animadio+|+Followers)](https://twitter.com/animadio)
+[![Twitter Follow](https://badgen.net/twitter/follow/animadio)](https://twitter.com/animadio)
 
 ---
 
@@ -222,7 +212,7 @@ Philippe Beck
 
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/philippebeck.net.svg?label=https://philippebeck.net)](https://philippebeck.net)
 [![GitHub Followers](https://img.shields.io/github/followers/philippebeck.svg?label=GitHub+:+philippebeck+|+Followers)](https://github.com/philippebeck)
-[![Twitter Followers](https://img.shields.io/twitter/follow/@philippepjbeck.svg?label=Twitter+:+@philippepjbeck+|+Followers)](https://twitter.com/philippepjbeck)
+[![Twitter Follow](https://badgen.net/twitter/follow/philippepjbeck)](https://twitter.com/philippepjbeck)
 
 ---
 
@@ -232,7 +222,7 @@ Lisa Lecieux
 
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/philippebeck.net.svg?label=https://sangodraws.com)](https://sangodraws.com)
 [![GitHub Followers](https://img.shields.io/github/followers/sangodraws.svg?label=GitHub+:+sangodraws+|+Followers)](https://github.com/sangodraws)
-[![Twitter Followers](https://img.shields.io/twitter/follow/@sangodraws.svg?label=Twitter+:+@sangodraws+|+Followers)](https://twitter.com/sangodraws)
+[![Twitter Follow](https://badgen.net/twitter/follow/sangodraws)](https://twitter.com/sangodraws)
 
 ---
 
