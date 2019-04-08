@@ -100,7 +100,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --keyframes-translateX: -100vw;
   --keyframes-translateY: -100vh;
   --keyframes-translateY-opac: 68px;
-  --keyframes-translateY-xs: 2vh;
+  --keyframes-translateY-xs: 1vh;
   --keyframes-width: 100%;
 }
 
