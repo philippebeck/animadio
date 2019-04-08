@@ -1,4 +1,4 @@
-/*! animadio v0.2.27 | https://animadio.org | MIT License */
+/*! animadio v0.2.28 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -48,6 +48,8 @@ You can override any variable of Animadio you want in your custom stylesheet fil
 */
 
 :root {
+  --navbar-height: 80px;
+
   /***** 1.1 Colors *****/
   --black: rgb(15, 15, 15);
   --blue: RoyalBlue;
@@ -100,7 +102,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --keyframes-translateX: -100vw;
   --keyframes-translateY: -100vh;
   --keyframes-translateY-opac: 68px;
-  --keyframes-translateY-xs: 2vh;
+  --keyframes-translateY-xs: 1vh;
   --keyframes-width: 100%;
 }
 
@@ -497,7 +499,7 @@ pre {
   --gallery-figcaption-line-height: 1;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-width: 100%;
-  --gallery-figure-figcaption-anima: tranY-opac 2s;
+  --gallery-figure-figcaption-anima: translateY-opac 2s;
   --gallery-figure-figcaption-bot: 0;
   --gallery-figcaption-fa-bg: var(--blue);
   --gallery-figcaption-fa-bord: 2px solid var(--white);
@@ -593,10 +595,6 @@ pre {
 }
 
 /***** 3.6 Navbar *****/
-:root {
-  --navbar-height: 80px;
-}
-
 [class*="nav"] {
   --navbar-align-items: center;
   --navbar-bg: var(--blue);
@@ -624,7 +622,7 @@ pre {
   --nav-info-height: 50px;
   --nav-info-img-mar: 5px;
   --nav-info-link-hover-scale: 1.5;
-  --nav-toggle-anima: tranY-xs 1s linear infinite alternate;
+  --nav-toggle-anima: translateY-xs 1s linear infinite alternate;
   --nav-toggle-right: 10px;
   --nav-toggle-top: 0;
 }
@@ -1132,6 +1130,8 @@ pre {
     width: var(--keyframes-width);
   }
 }
+
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -2026,17 +2026,17 @@ pre > *::selection {
 /***** 4.3 Min Height *****/
 [class*="min-h-sm-"][class*="-base"],
 [class*="min-h-sm-"][class*="-global"] > * {
-min-height: var(--min-height-sm);
+  min-height: var(--min-height-sm);
 }
 
 [class*="min-h-md-"][class*="-base"],
 [class*="min-h-md-"][class*="-global"] > * {
-min-height: var(--min-height-md);
+  min-height: var(--min-height-md);
 }
 
 [class*="min-h-lg-"][class*="-base"],
 [class*="min-h-lg-"][class*="-global"] > * {
-min-height: var(--min-height-lg);
+  min-height: var(--min-height-lg);
 }
 
 /********** 5. WIDTH CLASSES ***********/
@@ -2140,7 +2140,6 @@ min-height: var(--min-height-lg);
 2.4 Text LG
 2.5 Text XL
 */
-
 
 /***** 2.1 Text XS *****/
 [class*="text-"][class*="-center-xs"] {
@@ -2900,7 +2899,6 @@ min-height: var(--min-height-lg);
 */
 
 @media (min-width: 576px) {
-
   /***** 3.1 Flex SM Container *****/
   [class*="flex-"][class*="-2sm"] {
     margin: var(--flex-neg-mar-sm);
@@ -3011,7 +3009,6 @@ min-height: var(--min-height-lg);
 */
 
 @media (min-width: 768px) {
-
   /***** 4.1 Flex MD Container *****/
   [class*="flex-"][class*="-2md"] {
     margin: var(--flex-neg-mar-md);
@@ -3122,7 +3119,6 @@ min-height: var(--min-height-lg);
 */
 
 @media (min-width: 992px) {
-
   /***** 5.1 Flex LG Container *****/
   [class*="flex-"][class*="-2lg"] {
     margin: var(--flex-neg-mar-lg);
@@ -3233,7 +3229,6 @@ min-height: var(--min-height-lg);
 */
 
 @media (min-width: 1200px) {
-
   /***** 6.1 Flex XL Container *****/
   [class*="flex-"][class*="-2xl"] {
     margin: var(--flex-neg-mar-xl);
@@ -4574,4 +4569,4 @@ min-height: var(--min-height-lg);
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 7th Apr 2019 @ 8:00:12 PM */
+ Updated: 8th Apr 2019 @ 1:00:14 PM */
