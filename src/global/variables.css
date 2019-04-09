@@ -665,7 +665,7 @@ pre {
   --slider-radio5-slider-timeline-width: 100%;
   --slide-height: auto;
   --slide-mar: auto;
-  --slide-width: 100%;
+  --slide-width: 80%;
   --slide-max-width: 1000px;
   --slider-controls-bg: var(--obsidian);
   --slider-controls-bord: thin solid var(--black);
