@@ -1,4 +1,4 @@
-/*! animadio v0.2.30 | https://animadio.org | MIT License */
+/*! animadio v0.2.31 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -151,7 +151,7 @@ ul {
 
 img,
 video {
-  --img-height: auto;
+  --img-max-height: auto;
   --img-max-width: 100%;
   --img-object-fit: contain;
 }
@@ -667,7 +667,7 @@ pre {
   --slider-radio5-slider-timeline-width: 100%;
   --slide-height: auto;
   --slide-mar: auto;
-  --slide-width: 100%;
+  --slide-width: 80%;
   --slide-max-width: 1000px;
   --slider-controls-bg: var(--obsidian);
   --slider-controls-bord: thin solid var(--black);
@@ -1612,7 +1612,7 @@ video {
   -o-object-fit: var(--img-object-fit);
      object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
-  height: var(--img-height);
+  max-height: var(--img-max-height);
 }
 
 /***** 2.6 Table *****/
@@ -1686,12 +1686,12 @@ pre > *::selection {
 1.6 Container XL
 */
 
-/***** Container *****/
+/***** 1.1 Container *****/
 [class*="container-"] {
   margin: auto;
 }
 
-/***** Container XS *****/
+/***** 1.2 Container XS *****/
 [class*="container-"][class*="-70xs"] {
   max-width: 70%;
 }
@@ -1704,7 +1704,7 @@ pre > *::selection {
   max-width: 90%;
 }
 
-/***** Container SM *****/
+/***** 1.3 Container SM *****/
 @media (min-width: 576px) {
   [class*="container-"][class*="-70sm"] {
     max-width: 70%;
@@ -1719,7 +1719,7 @@ pre > *::selection {
   }
 }
 
-/***** Container MD *****/
+/***** 1.4 Container MD *****/
 @media (min-width: 768px) {
   [class*="container-"][class*="-70md"] {
     max-width: 70%;
@@ -1734,7 +1734,7 @@ pre > *::selection {
   }
 }
 
-/***** Container LG *****/
+/***** 1.5 Container LG *****/
 @media (min-width: 992px) {
   [class*="container-"][class*="-70lg"] {
     max-width: 70%;
@@ -1749,7 +1749,7 @@ pre > *::selection {
   }
 }
 
-/***** Container XL *****/
+/***** 1.6 Container XL *****/
 @media (min-width: 1200px) {
   [class*="container-"][class*="-70xl"] {
     max-width: 70%;
@@ -4553,4 +4553,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 9th Apr 2019 @ 12:11:24 AM */
+ Updated: 9th Apr 2019 @ 2:25:19 AM */
