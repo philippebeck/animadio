@@ -117,7 +117,7 @@ img,
 video {
   object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
-  height: var(--img-height);
+  max-height: var(--img-max-height);
 }
 
 /***** 2.6 Table *****/

@@ -149,7 +149,7 @@ ul {
 
 img,
 video {
-  --img-height: auto;
+  --img-max-height: auto;
   --img-max-width: 100%;
   --img-object-fit: contain;
 }
