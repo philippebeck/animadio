@@ -1,13 +1,13 @@
 [![Animadio Logo](https://animadio.org/img/logo.png)](https://animadio.org)
 # [Animadio CSS Framework](https://animadio.org)
 
--   Eight types of selectors working with hundreds of class combinations
--   Possible concatenation of 99% of classes
--   Flexbox & Grid systems included with common options
--   Click anywhere on the page to enable & disable any design effect anywhere else
--   Management of keyframes rules, animations & their options
--   Complete & simple customization with directly modifiable CSS variables
--   More than 99% of pure CSS ; so all of that without JavaScript, it's a joke ?... No ?!
+-   Eight types of selectors working with hover, focus, active & **checked states**
+-   Hundreds of **class combinations by concatenation**
+-   **Flexbox & Grid** systems included with common options
+-   Click anywhere on the page to **enable & disable any design effect** anywhere else
+-   Management of **keyframes animations** & their options
+-   Complete & simple customization with directly modifiable **CSS variables**
+-   More than 99% of **pure CSS** ; so all of that without JavaScript, it's a joke ?... No ?!
 
 [![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
 [![David Dev Dependencies](https://img.shields.io/david/dev/animadio/animadio.svg?label=Dev+Dependencies)](https://david-dm.org/animadio/animadio?type=dev)
@@ -70,23 +70,23 @@ Composer : `composer require animadio/animadio`
 
 > **Full Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/min/animadio.min.css)  
 
 > **Grid Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-grid.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-grid.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/animadio-grid.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/min/animadio-grid.min.css)  
 
 > **Elements Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-elements.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-elements.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/animadio-elements.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/min/animadio-elements.min.css)  
 
 > **States Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/animadio-states.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.31/dist/min/animadio-states.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/animadio-states.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@0.2.32/dist/min/animadio-states.min.css)  
 
 ---
 
