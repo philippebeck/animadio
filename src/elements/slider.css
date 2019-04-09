@@ -29,6 +29,7 @@
 
 /***** 1.1 Slider *****/
 .slider {
+  position: relative;
   height: var(--slider-height);
   text-align: var(--slider-text-align);
 }
