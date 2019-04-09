@@ -30,7 +30,7 @@
 /***** 1.1 Slider *****/
 .slider {
   position: relative;
-  height: var(--slider-height);
+  min-height: var(--slider-min-height);
   text-align: var(--slider-text-align);
 }
 
