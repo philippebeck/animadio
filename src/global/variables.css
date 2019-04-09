@@ -645,7 +645,7 @@ pre {
 
 /***** 3.7 Slider *****/
 .slider {
-  --slider-height: 40vh;
+  --slider-min-height: 40vh;
   --slider-text-align: center;
   --slider-anima-direction: reverse;
   --slider-anima-iteration: infinite;
@@ -683,28 +683,28 @@ pre {
 
 @media (min-width: 576px) {
   .slider {
-    --slider-height: 50vh;
+    --slider-min-height: 45vh;
     --slider-timeline-height: 7px;
   }
 }
 
 @media (min-width: 768px) {
   .slider {
-    --slider-height: 60vh;
+    --slider-min-height: 50vh;
     --slider-timeline-height: 8px;
   }
 }
 
 @media (min-width: 992px) {
   .slider {
-    --slider-height: 70vh;
+    --slider-min-height: 55vh;
     --slider-timeline-height: 9px;
   }
 }
 
 @media (min-width: 1200px) {
   .slider {
-    --slider-height: 80vh;
+    --slider-min-height: 60vh;
     --slider-timeline-height: 10px;
   }
 }
