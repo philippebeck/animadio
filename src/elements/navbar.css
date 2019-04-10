@@ -75,14 +75,14 @@
   left: var(--navbar-left);
   z-index: var(--navbar-index);
   height: var(--navbar-height);
-  background-color: var(--navbar-bg);
+  background-color: var(--navbar-background-color);
   color: var(--navbar-color);
 }
 
 /***** 2.2 Navbar Link & Label *****/
 .navbar a,
 .navbar label {
-  padding: var(--navbar-link-pad);
+  padding: var(--navbar-link-padding);
   color: var(--navbar-link-color);
   cursor: var(--navbar-link-cursor);
 }
@@ -117,8 +117,8 @@
 .nav-main,
 .nav-info {
   align-items: var(--navs-align-items);
-  margin: var(--navs-mar);
-  padding: var(--navs-pad);
+  margin: var(--navs-margin);
+  padding: var(--navs-padding);
   list-style: var(--navs-list-style);
 }
 
@@ -196,7 +196,7 @@
 /***** 6.1 Nav Info *****/
 .nav-info img,
 .nav-info svg {
-  margin: var(--nav-info-img-mar);
+  margin: var(--nav-info-img-margin);
   height: var(--nav-info-height);
 }
 

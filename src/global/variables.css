@@ -612,19 +612,19 @@ pre {
   --navbar-top: 0;
   --navbar-link-color: var(--white);
   --navbar-link-cursor: pointer;
-  --navbar-link-pad: 20px 10px;
+  --navbar-link-padding: 20px 10px;
   --navbar-link-hover-color: var(--yellow);
   --navbar-icon-align-self: center;
   --navs-align-items: center;
   --navs-list-style: none;
-  --navs-mar: 0;
-  --navs-pad: 0;
+  --navs-margin: 0;
+  --navs-padding: 0;
   --navs-link-flex-direction: column;
   --nav-brand-left: 10px;
   --nav-brand-img-height: 40px;
   --nav-main-link-hover-scale: 0.9;
   --nav-info-height: 50px;
-  --nav-info-img-mar: 5px;
+  --nav-info-img-margin: 5px;
   --nav-info-link-hover-scale: 1.5;
   --nav-toggle-anima: translateY-xs 1s linear infinite alternate;
   --nav-toggle-right: 10px;
@@ -635,7 +635,7 @@ pre {
   [class*="nav"] {
     --navbar-flex-direction: row;
     --navbar-justify-content: space-around;
-    --navbar-pad: 10px;
+    --navbar-padding: 10px;
   }
 }
 
