@@ -359,17 +359,17 @@ pre {
 /***** 3.1 Btn *****/
 [class*="btn"],
 [class*="button"] {
-  --btn-bg: var(--blue);
-  --btn-bord: solid medium var(--quartz);
+  --btn-background-color: var(--blue);
+  --btn-border: solid medium var(--quartz);
   --btn-color: var(--white);
   --btn-font-size: 1.5rem;
-  --btn-mar: 10px;
-  --btn-pad: 5px 10px;
+  --btn-margin: 10px;
+  --btn-padding: 5px 10px;
   --btn-radius: 10px;
   --btn-text-align: center;
   --btn-hover-anima: none;
-  --btn-hover-bg: var(--blue);
-  --btn-hover-bord: outset medium var(--obsidian);
+  --btn-hover-background-color: var(--blue);
+  --btn-hover-border: outset medium var(--obsidian);
   --btn-hover-color: var(--silver);
   --btn-hover-radius: 0;
   --btn-hover-shabox: 5px 5px 5px var(--gray);
@@ -406,11 +406,11 @@ pre {
   --btn-color-obsidian: var(--white);
   --btn-color-ruby: var(--white);
   --btn-color-sapphire: var(--khaki);
-  --btn-pad-xs: 1px 2px;
-  --btn-pad-sm: 2px 5px;
-  --btn-pad-md: 5px 10px;
-  --btn-pad-lg: 10px 20px;
-  --btn-pad-xl: 20px 50px;
+  --btn-padding-xs: 1px 2px;
+  --btn-padding-sm: 2px 5px;
+  --btn-padding-md: 5px 10px;
+  --btn-padding-lg: 10px 20px;
+  --btn-padding-xl: 20px 50px;
   --btn-radius-square: unset;
   --btn-radius-round: 50px;
   --btn-radius-circle: 50%;

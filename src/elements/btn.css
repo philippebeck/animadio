@@ -29,13 +29,13 @@
 [class*="btn"],
 [class*="button"] {
   display: inline-block;
-  margin: var(--btn-mar);
-  border: var(--btn-bord);
+  margin: var(--btn-margin);
+  border: var(--btn-border);
   border-radius: var(--btn-radius);
-  padding: var(--btn-pad);
+  padding: var(--btn-padding);
   font-size: var(--btn-font-size);
   text-align: var(--btn-text-align);
-  background-color: var(--btn-bg);
+  background-color: var(--btn-background-color);
   color: var(--btn-color);
 }
 
@@ -53,10 +53,10 @@
 [class*="button"]:focus,
 [class*="btn"]:active,
 [class*="button"]:active {
-  border: var(--btn-hover-bord);
+  border: var(--btn-hover-border);
   border-radius: var(--btn-hover-radius);
   box-shadow: var(--btn-hover-shabox);
-  background-color: var(--btn-hover-bg);
+  background-color: var(--btn-hover-background-color);
   color: var(--btn-hover-color);
   transition: var(--btn-hover-transition);
   animation: var(--btn-hover-anima);
@@ -288,27 +288,27 @@
 /***** 5.1 Buttons Sizes *****/
 [class*="btn"][class*="xs"],
 [class*="button"][class*="xs"] {
-  padding: var(--btn-pad-xs);
+  padding: var(--btn-padding-xs);
 }
 
 [class*="btn"][class*="sm"],
 [class*="button"][class*="sm"] {
-  padding: var(--btn-pad-sm);
+  padding: var(--btn-padding-sm);
 }
 
 [class*="btn"][class*="md"],
 [class*="button"][class*="md"] {
-  padding: var(--btn-pad-md);
+  padding: var(--btn-padding-md);
 }
 
 [class*="btn"][class*="lg"],
 [class*="button"][class*="lg"] {
-  padding: var(--btn-pad-lg);
+  padding: var(--btn-padding-lg);
 }
 
 [class*="btn"][class*="xl"],
 [class*="button"][class*="xl"] {
-  padding: var(--btn-pad-xl);
+  padding: var(--btn-padding-xl);
 }
 
 /********** 6. BTN SHAPES **********/
