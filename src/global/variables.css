@@ -486,56 +486,56 @@ pre {
 .gallery {
   --gallery-flex-wrap: wrap;
   --gallery-flow: hidden;
-  --gallery-mar: auto;
+  --gallery-margin: auto;
   --gallery-max-w: 90%;
   --gallery-all-cursor: crosshair;
-  --gallery-figure-bord: thin dotted var(--silver);
+  --gallery-figure-border: thin dotted var(--silver);
   --gallery-figure-flow: hidden;
   --gallery-figure-line-height: 0;
-  --gallery-figure-mar: 5px;
+  --gallery-figure-margin: 5px;
   --gallery-figure-position: relative;
   --gallery-figure-shabox: 0 0 5px;
   --gallery-figure-width: calc(100% - 10px);
-  --gallery-figcaption-bg: rgba(0, 0, 0, 0.5);
+  --gallery-figcaption-background-color: rgba(0, 0, 0, 0.5);
   --gallery-figcaption-bot: -60%;
   --gallery-figcaption-line-height: 1;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-width: 100%;
   --gallery-figure-figcaption-anima: translateY-opac 2s;
   --gallery-figure-figcaption-bot: 0;
-  --gallery-figcaption-fa-bg: var(--blue);
-  --gallery-figcaption-fa-bord: 2px solid var(--white);
+  --gallery-figcaption-fa-background-color: var(--blue);
+  --gallery-figcaption-fa-border: 2px solid var(--white);
   --gallery-figcaption-fa-position: absolute;
   --gallery-figcaption-fa-right: 5px;
   --gallery-figcaption-fa-top: -15px;
-  --gallery-figcaption-fa-pad: 10px;
+  --gallery-figcaption-fa-padding: 10px;
   --gallery-figcaption-fa-radius: 50%;
-  --gallery-link-all-mar: 0;
+  --gallery-link-all-margin: 0;
   --gallery-link-all-cursor: pointer;
-  --gallery-link-all-even-pad: 0 10px 20px;
+  --gallery-link-all-even-padding: 0 10px 20px;
   --gallery-link-all-even-font-size: 1.2rem;
-  --gallery-link-all-odd-pad: 10px;
+  --gallery-link-all-odd-padding: 10px;
   --gallery-link-all-odd-font-size: 1.5rem;
   --gallery-link-color: var(--white);
 }
 
 @media (min-width: 576px) {
   .gallery {
-    --gallery-figure-mar: 6px;
+    --gallery-figure-margin: 6px;
     --gallery-figure-width: calc(100% / 2 - 12px);
   }
 }
 
 @media (min-width: 992px) {
   .gallery {
-    --gallery-figure-mar: 7px;
+    --gallery-figure-margin: 7px;
     --gallery-figure-width: calc(100% / 3 - 14px);
   }
 }
 
 @media (min-width: 1200px) {
   .gallery {
-    --gallery-figure-mar: 8px;
+    --gallery-figure-margin: 8px;
     --gallery-figure-width: calc(100% / 4 - 16px);
   }
 }

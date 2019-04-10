@@ -28,7 +28,7 @@
   display: flex;
   flex-wrap: var(--gallery-flex-wrap);
   overflow: var(--gallery-flow);
-  margin: var(--gallery-mar);
+  margin: var(--gallery-margin);
   max-width: var(--gallery-max-w);
 }
 
@@ -47,8 +47,8 @@
 .gallery figure {
   position: var(--gallery-figure-position);
   overflow: var(--gallery-figure-flow);
-  margin: var(--gallery-figure-mar);
-  border: var(--gallery-figure-bord);
+  margin: var(--gallery-figure-margin);
+  border: var(--gallery-figure-border);
   width: var(--gallery-figure-width);
   box-shadow: var(--gallery-figure-shabox);
   line-height: var(--gallery-figure-line-height);
@@ -68,7 +68,7 @@
   bottom: var(--gallery-figcaption-bot);
   width: var(--gallery-figcaption-width);
   line-height: var(--gallery-figcaption-line-height);
-  background-color: var(--gallery-figcaption-bg);
+  background-color: var(--gallery-figcaption-background-color);
 }
 
 /***** 3.2 Gallery Hover Figcaption *****/
@@ -91,10 +91,10 @@
   position: var(--gallery-figcaption-fa-position);
   top: var(--gallery-figcaption-fa-top);
   right: var(--gallery-figcaption-fa-right);
-  border: var(--gallery-figcaption-fa-bord);
+  border: var(--gallery-figcaption-fa-border);
   border-radius: var(--gallery-figcaption-fa-radius);
-  padding: var(--gallery-figcaption-fa-pad);
-  background-color: var(--gallery-figcaption-fa-bg);
+  padding: var(--gallery-figcaption-fa-padding);
+  background-color: var(--gallery-figcaption-fa-background-color);
 }
 
 /********** 5. GALLERY LINK **********/
@@ -111,17 +111,17 @@
 
 /***** 5.2 Gallery Link Items *****/
 .gallery a * {
-  margin: var(--gallery-link-all-mar);
+  margin: var(--gallery-link-all-margin);
   cursor: var(--gallery-link-all-cursor);
 }
 
 .gallery a *:nth-child(odd) {
-  padding: var(--gallery-link-all-odd-pad);
+  padding: var(--gallery-link-all-odd-padding);
   font-size: var(--gallery-link-all-odd-font-size);
 }
 
 .gallery a *:nth-child(even) {
-  padding: var(--gallery-link-all-even-pad);
+  padding: var(--gallery-link-all-even-padding);
   font-size: var(--gallery-link-all-even-font-size);
 }
 
