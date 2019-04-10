@@ -281,29 +281,29 @@ pre {
 
 /***** 2.2 Flex *****/
 [class*="flex-"] {
-  --flex-neg-mar-xs: -2px;
-  --flex-pos-mar-xs: 2px;
+  --flex-negative-margin-xs: -2px;
+  --flex-positive-margin-xs: 2px;
   --flex-width-xs: 4px;
-  --flex-neg-mar-sm: -5px;
-  --flex-pos-mar-sm: 5px;
+  --flex-negative-margin-sm: -5px;
+  --flex-positive-margin-sm: 5px;
   --flex-width-sm: 10px;
-  --flex-neg-mar-md: -10px;
-  --flex-pos-mar-md: 10px;
+  --flex-negative-margin-md: -10px;
+  --flex-positive-margin-md: 10px;
   --flex-width-md: 20px;
-  --flex-neg-mar-lg: -20px;
-  --flex-pos-mar-lg: 20px;
+  --flex-negative-margin-lg: -20px;
+  --flex-positive-margin-lg: 20px;
   --flex-width-lg: 40px;
-  --flex-neg-mar-xl: -50px;
-  --flex-pos-mar-xl: 50px;
+  --flex-negative-margin-xl: -50px;
+  --flex-positive-margin-xl: 50px;
   --flex-width-xl: 100px;
 }
 
 [class*="column"] {
-  --column-pad: 0 10px;
+  --column-padding: 0 10px;
 }
 
 [class*="row"] {
-  --row-pad: 10px 0;
+  --row-padding: 10px 0;
 }
 
 /***** 2.3 Align *****/
