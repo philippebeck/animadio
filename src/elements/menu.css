@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: var(--menu-flex-direction);
   justify-content: var(--menu-justify-content);
+  align-items: var(--menu-align-items);
   margin: var(--menu-mar);
   border: var(--menu-border);
   border-radius: var(--menu-radius);
@@ -55,6 +56,7 @@
 .menu label {
   display: flex;
   justify-content: var(--menu-label-justify-content);
+  align-items: var(--menu-label-align-items);
   position: var(--menu-label-position);
   border-radius: var(--menu-label-radius);
   padding: var(--menu-label-pad);

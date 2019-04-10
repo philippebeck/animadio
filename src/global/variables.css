@@ -542,6 +542,7 @@ pre {
 
 /***** 3.5 Menu *****/
 .menu {
+  --menu-align-items: stretch;
   --menu-bg: var(--silver);
   --menu-border: none;
   --menu-color: var(--gray);
@@ -553,6 +554,7 @@ pre {
   --menu-radius: 5px;
   --menu-width: 40%;
   --menu-all-cursor: pointer;
+  --menu-label-align-items: center;
   --menu-label-justify-content: center;
   --menu-label-pad: 6px 12px;
   --menu-label-position: relative;
