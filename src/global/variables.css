@@ -713,22 +713,22 @@ pre {
 
 /***** 3.8 Table *****/
 [class*="table"] {
-  --table-bord-collapse: collapse;
-  --table-bord-space: 10px;
+  --table-border-collapse: collapse;
+  --table-border-space: 10px;
   --table-width: 50%;
-  --table-row-even-bg: var(--yellow);
-  --table-row-odd-bg: var(--white);
+  --table-row-even-background-color: var(--yellow);
+  --table-row-odd-background-color: var(--white);
   --table-caption-font-weight: bold;
   --table-caption-color: var(--red);
   --table-caption-side: top;
-  --table-title-bg: var(--blue);
+  --table-title-background-color: var(--blue);
   --table-title-color: var(--white);
   --table-title-font-style: italic;
-  --table-cell-bord-color: var(--black);
-  --table-cell-bord-radius: 0;
-  --table-cell-bord-style: solid;
-  --table-cell-bord-width: thin;
-  --table-cell-pad: 10px;
+  --table-cell-border-color: var(--black);
+  --table-cell-border-radius: 0;
+  --table-cell-border-style: solid;
+  --table-cell-border-width: thin;
+  --table-cell-padding: 10px;
   --table-cell-text-align: center;
   --table-cell-vertical-align: middle;
   --table-cell-color: var(--blue);
