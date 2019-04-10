@@ -175,42 +175,42 @@ pre {
 
 /***** 1.5 Margin *****/
 [class*="mar-"] {
-  --mar-none: 0;
-  --mar-sm: 10px;
-  --mar-md: 20px;
-  --mar-lg: 50px;
-  --mar-bot-sm: 10px;
-  --mar-bot-md: 20px;
-  --mar-bot-lg: 50px;
-  --mar-left-sm: 10px;
-  --mar-left-md: 20px;
-  --mar-left-lg: 50px;
-  --mar-right-sm: 10px;
-  --mar-right-md: 20px;
-  --mar-right-lg: 50px;
-  --mar-top-sm: 10px;
-  --mar-top-md: 20px;
-  --mar-top-lg: 50px;
+  --margin-none: 0;
+  --margin-sm: 10px;
+  --margin-md: 20px;
+  --margin-lg: 50px;
+  --margin-bot-sm: 10px;
+  --margin-bot-md: 20px;
+  --margin-bot-lg: 50px;
+  --margin-left-sm: 10px;
+  --margin-left-md: 20px;
+  --margin-left-lg: 50px;
+  --margin-right-sm: 10px;
+  --margin-right-md: 20px;
+  --margin-right-lg: 50px;
+  --margin-top-sm: 10px;
+  --margin-top-md: 20px;
+  --margin-top-lg: 50px;
 }
 
 /***** 1.6 Padding *****/
 [class*="pad-"] {
-  --pad-none: 0;
-  --pad-sm: 10px;
-  --pad-md: 20px;
-  --pad-lg: 50px;
-  --pad-bot-sm: 10px;
-  --pad-bot-md: 20px;
-  --pad-bot-lg: 50px;
-  --pad-left-sm: 10px;
-  --pad-left-md: 20px;
-  --pad-left-lg: 50px;
-  --pad-right-sm: 10px;
-  --pad-right-md: 20px;
-  --pad-right-lg: 50px;
-  --pad-top-sm: 10px;
-  --pad-top-md: 20px;
-  --pad-top-lg: 50px;
+  --padding-none: 0;
+  --padding-sm: 10px;
+  --padding-md: 20px;
+  --padding-lg: 50px;
+  --padding-bot-sm: 10px;
+  --padding-bot-md: 20px;
+  --padding-bot-lg: 50px;
+  --padding-left-sm: 10px;
+  --padding-left-md: 20px;
+  --padding-left-lg: 50px;
+  --padding-right-sm: 10px;
+  --padding-right-md: 20px;
+  --padding-right-lg: 50px;
+  --padding-top-sm: 10px;
+  --padding-top-md: 20px;
+  --padding-top-lg: 50px;
 }
 
 /***** 1.7 Height *****/
