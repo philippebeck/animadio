@@ -601,7 +601,7 @@ pre {
 /***** 3.6 Navbar *****/
 [class*="nav"] {
   --navbar-align-items: center;
-  --navbar-bg: var(--blue);
+  --navbar-background-color: var(--blue);
   --navbar-bot: unset;
   --navbar-color: var(--white);
   --navbar-index: 1000;
@@ -647,7 +647,10 @@ pre {
 
 /***** 3.7 Slider *****/
 .slider {
-  --slider-min-height: 40vh;
+  --slider-margin: 0;
+  --slider-min-height: 30vh;
+  --slider-width: 100%;
+  --slider-position: relative;
   --slider-text-align: center;
   --slider-anima-direction: reverse;
   --slider-anima-iteration: infinite;
@@ -665,48 +668,50 @@ pre {
   --slider-radio3-slider-timeline-width: 50%;
   --slider-radio4-slider-timeline-width: 75%;
   --slider-radio5-slider-timeline-width: 100%;
-  --slide-height: auto;
-  --slide-mar: auto;
-  --slide-width: 80%;
-  --slide-max-width: 1000px;
-  --slider-controls-bg: var(--obsidian);
-  --slider-controls-bord: thin solid var(--black);
-  --slider-controls-juco: center;
-  --slider-controls-mar: 10px;
+  --slide-margin: 0 auto;
+  --slide-max-height: auto;
+  --slide-max-width: 100%;
+  --slide-object-fit: contain;
+  --slider-controls-background-color: var(--obsidian);
+  --slider-controls-border: thin solid var(--black);
+  --slider-controls-justify-content: center;
+  --slider-controls-margin: 10px;
   --slider-controls-opacity: 0;
-  --slider-controls-pad: 10px;
+  --slider-controls-padding: 10px;
   --slider-controls-radius: 5px;
+  --slider-controls-width: fit-content;
   --slider-controls-hover-opacity: 1;
-  --slider-label-color: var(--white);
-  --slider-label-pad: 10px 5px;
-  --slider-timeline-bg: var(--blue);
+  --slider-controls-link: var(--blue);
+  --slider-controls-label-color: var(--white);
+  --slider-controls-label-padding: 10px 5px;
+  --slider-timeline-background-color: var(--blue);
   --slider-timeline-height: 6px;
 }
 
 @media (min-width: 576px) {
   .slider {
-    --slider-min-height: 45vh;
+    --slider-min-height: 35vh;
     --slider-timeline-height: 7px;
   }
 }
 
 @media (min-width: 768px) {
   .slider {
-    --slider-min-height: 50vh;
+    --slider-min-height: 40vh;
     --slider-timeline-height: 8px;
   }
 }
 
 @media (min-width: 992px) {
   .slider {
-    --slider-min-height: 55vh;
+    --slider-min-height: 45vh;
     --slider-timeline-height: 9px;
   }
 }
 
 @media (min-width: 1200px) {
   .slider {
-    --slider-min-height: 60vh;
+    --slider-min-height: 50vh;
     --slider-timeline-height: 10px;
   }
 }

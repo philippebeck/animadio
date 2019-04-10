@@ -11,10 +11,11 @@
 3. SLIDER CONTROLS
   3.1 Slider Controls
   3.2 Hover Slider Controls
-  3.3 Slider Controls Label
-  3.4 Check Slider Controls Icon
-  3.5 Check Slider Controls FA
-  3.6 Radio Slider Controls Icon
+  3.3 Slider Controls Link
+  3.4 Slider Controls Label
+  3.5 Check Slider Controls Icon
+  3.6 Check Slider Controls FA
+  3.7 Radio Slider Controls Icon
 4. SLIDER TIMELINE
   4.1 Slider Timeline
   4.2 Check Timeline
@@ -29,7 +30,9 @@
 
 /***** 1.1 Slider *****/
 .slider {
-  position: relative;
+  position: var(--slider-position);
+  margin: var(--slider-margin);
+  width: var(--slider-width);
   min-height: var(--slider-min-height);
   text-align: var(--slider-text-align);
 }
@@ -45,10 +48,10 @@
 
 /***** 2.1 Slide *****/
 .slide {
-  margin: var(--slide-mar);
-  width: var(--slide-width);
+  margin: var(--slide-margin);
+  object-fit: var(--slide-object-fit);
   max-width: var(--slide-max-width);
-  height: var(--slide-height);
+  max-height: var(--slide-max-height);
 }
 
 /***** 2.2 Check Slide *****/
@@ -67,7 +70,7 @@
 /***** 2.3 Slide Items *****/
 .slide > * {
   display: none;
-  height: var(--slide-height);
+  max-height: var(--slide-max-height);
 }
 
 /***** 2.4 Radio Slide Items *****/
@@ -84,21 +87,23 @@
 /*
 3.1 Slider Controls
 3.2 Hover Slider Controls
-3.3 Slider Controls Label
-3.4 Check Slider Controls Icon
-3.5 Check Slider Controls FA
-3.6 Radio Slider Controls Icon
+3.3 Slider Controls Link
+3.4 Slider Controls Label
+3.5 Check Slider Controls Icon
+3.6 Check Slider Controls FA
+3.7 Radio Slider Controls Icon
 */
 
 /***** 3.1 Slider Controls *****/
 .slider-controls {
   display: inline-flex;
-  justify-content: var(--slider-controls-juco);
-  margin: var(--slider-controls-mar);
-  border: var(--slider-controls-bord);
+  justify-content: var(--slider-controls-justify-content);
+  margin: var(--slider-controls-margin);
+  border: var(--slider-controls-border);
   border-radius: var(--slider-controls-radius);
-  padding: var(--slider-controls-pad);
-  background-color: var(--slider-controls-bg);
+  padding: var(--slider-controls-padding);
+  width: var(--slider-controls-width);
+  background-color: var(--slider-controls-background-color);
   opacity: var(--slider-controls-opacity);
   transition: opacity var(--slider-transition-opacity);
 }
@@ -111,13 +116,18 @@
   transition: opacity var(--slider-transition-opacity);
 }
 
-/***** 3.3 Slider Controls Label *****/
-.slider-controls label {
-  color: var(--slider-label-color);
-  padding: var(--slider-label-pad);
+/***** 3.3 Slider Controls Link *****/
+.slider-controls a {
+  color: var(--slider-controls-link);
 }
 
-/***** 3.4 Check Slider Controls Icon *****/
+/***** 3.4 Slider Controls Label *****/
+.slider-controls label {
+  color: var(--slider-controls-label-color);
+  padding: var(--slider-controls-label-padding);
+}
+
+/***** 3.5 Check Slider Controls Icon *****/
 [class*="play-check"]:checked ~ .slider-controls [for="slide-play"] > i {
   color: var(--slider-icon-color);
   transition: color var(--slider-transition-color);
@@ -135,7 +145,7 @@
   content: var(--direction-check-slide-direction-icon-before);
 }
 
-/***** 3.5 Check Slider Controls FA *****/
+/***** 3.6 Check Slider Controls FA *****/
 [class*="play-check"]:checked ~ .slider-controls [for="slide1"] > .fas::before,
 [class*="play-check"]:checked ~ .slider-controls [for="slide2"] > .fas::before,
 [class*="play-check"]:checked ~ .slider-controls [for="slide3"] > .fas::before,
@@ -144,7 +154,7 @@
   color: var(--play-check-slide-icon-before-color);
 }
 
-/***** 3.6 Radio Slider Controls Icon *****/
+/***** 3.7 Radio Slider Controls Icon *****/
 [class*="slider-radio1"]:checked ~ .slider-controls [for="slide1"] > i::before,
 [class*="slider-radio2"]:checked ~ .slider-controls [for="slide2"] > i::before,
 [class*="slider-radio3"]:checked ~ .slider-controls [for="slide3"] > i::before,
@@ -166,7 +176,7 @@
 /***** 4.1 Slider Timeline *****/
 .slider-timeline {
   height: var(--slider-timeline-height);
-  background-color: var(--slider-timeline-bg);
+  background-color: var(--slider-timeline-background-color);
 }
 
 /***** 4.2 Check Timeline *****/
