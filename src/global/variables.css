@@ -112,7 +112,7 @@ body {
 }
 
 article {
-  --article-mar-bot: 20px;
+  --article-margin-bot: 20px;
 }
 
 h1,
@@ -142,8 +142,8 @@ a {
 }
 
 ul {
-  --list-mar: 0 0 10px;
-  --list-pad: 0;
+  --list-margin: 0 0 10px;
+  --list-padding: 0;
   --list-style: none;
 }
 
@@ -155,8 +155,8 @@ video {
 }
 
 table {
-  --table-mar: auto;
-  --table-bord-collapse: collapse;
+  --table-margin: auto;
+  --table-border-collapse: collapse;
   --table-text-align: center;
   --table-vertical-align: middle;
 }
@@ -168,8 +168,8 @@ label {
 pre {
   --pre-font-family: monospace;
   --pre-overflow: scroll;
-  --pre-pad: 10px;
-  --pre-selection-bg: var(--jade);
+  --pre-padding: 10px;
+  --pre-selection-background-color: var(--jade);
   --pre-selection-color: var(--black);
 }
 
