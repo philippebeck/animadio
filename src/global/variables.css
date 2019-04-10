@@ -766,16 +766,16 @@ pre {
 
 /***** 4.2 Bord *****/
 [class*="bord-"] {
-  --bord-style: solid;
-  --bord-width: medium;
-  --bord-color: var(--black);
-  --bord-radius: 5px;
-  --bord-width-sm: thin;
-  --bord-width-md: medium;
-  --bord-width-lg: thick;
-  --bord-radius-square: unset;
-  --bord-radius-round: 10px;
-  --bord-radius-circle: 50%;
+  --border-style: solid;
+  --border-width: medium;
+  --border-color: var(--black);
+  --border-radius: 5px;
+  --border-width-sm: thin;
+  --border-width-md: medium;
+  --border-width-lg: thick;
+  --border-radius-square: unset;
+  --border-radius-round: 10px;
+  --border-radius-circle: 50%;
 }
 
 /***** 4.3 Deco *****/

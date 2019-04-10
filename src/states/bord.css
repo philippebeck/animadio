@@ -60,10 +60,10 @@
 [class*="bord-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-relay"] [class*="bord-"][class*="-target4"],
 [class*="bord-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-relay"] [class*="bord-"][class*="-target5"],
 [class*="bord-"][class*="-check"]:checked ~ [class*="bord-"][class*="-hub"] [class*="bord-"][class*="-goal"] {
-  border-style: var(--bord-style);
-  border-width: var(--bord-width);
-  border-color: var(--bord-color);
-  border-radius: var(--bord-radius);
+  border-style: var(--border-style);
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
 }
 
 /********** 2. BORD STYLE **********/
@@ -300,7 +300,7 @@
 [class*="bord-"][class*="-sm-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-sm-"][class*="-relay"] [class*="bord-"][class*="-sm-"][class*="-target4"],
 [class*="bord-"][class*="-sm-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-sm-"][class*="-relay"] [class*="bord-"][class*="-sm-"][class*="-target5"],
 [class*="bord-"][class*="-sm-"][class*="-check"]:checked ~ [class*="bord-"][class*="-sm-"][class*="-hub"] [class*="bord-"][class*="-sm-"][class*="-goal"] {
-  border-width: var(--bord-width-sm);
+  border-width: var(--border-width-sm);
 }
 
 /***** 3.2 Bord MD *****/
@@ -324,7 +324,7 @@
 [class*="bord-"][class*="-md-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-md-"][class*="-relay"] [class*="bord-"][class*="-md-"][class*="-target4"],
 [class*="bord-"][class*="-md-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-md-"][class*="-relay"] [class*="bord-"][class*="-md-"][class*="-target5"],
 [class*="bord-"][class*="-md-"][class*="-check"]:checked ~ [class*="bord-"][class*="-md-"][class*="-hub"] [class*="bord-"][class*="-md-"][class*="-goal"] {
-  border-width: var(--bord-width-md);
+  border-width: var(--border-width-md);
 }
 
 /***** 3.3 Bord LG *****/
@@ -348,7 +348,7 @@
 [class*="bord-"][class*="-lg-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-lg-"][class*="-relay"] [class*="bord-"][class*="-lg-"][class*="-target4"],
 [class*="bord-"][class*="-lg-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-lg-"][class*="-relay"] [class*="bord-"][class*="-lg-"][class*="-target5"],
 [class*="bord-"][class*="-lg-"][class*="-check"]:checked ~ [class*="bord-"][class*="-lg-"][class*="-hub"] [class*="bord-"][class*="-lg-"][class*="-goal"] {
-  border-width: var(--bord-width-lg);
+  border-width: var(--border-width-lg);
 }
 
 /********** 4. BORD COLOR **********/
@@ -635,7 +635,7 @@
 [class*="bord-"][class*="-square-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-square-"][class*="-relay"] [class*="bord-"][class*="-square-"][class*="-target4"],
 [class*="bord-"][class*="-square-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-square-"][class*="-relay"] [class*="bord-"][class*="-square-"][class*="-target5"],
 [class*="bord-"][class*="-square-"][class*="-check"]:checked ~ [class*="bord-"][class*="-square-"][class*="-hub"] [class*="bord-"][class*="-square-"][class*="-goal"] {
-  border-radius: var(--bord-radius-square);
+  border-radius: var(--border-radius-square);
 }
 
 /***** 5.2 Bord Round *****/
@@ -659,7 +659,7 @@
 [class*="bord-"][class*="-round-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-round-"][class*="-relay"] [class*="bord-"][class*="-round-"][class*="-target4"],
 [class*="bord-"][class*="-round-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-round-"][class*="-relay"] [class*="bord-"][class*="-round-"][class*="-target5"],
 [class*="bord-"][class*="-round-"][class*="-check"]:checked ~ [class*="bord-"][class*="-round-"][class*="-hub"] [class*="bord-"][class*="-round-"][class*="-goal"] {
-  border-radius: var(--bord-radius-round);
+  border-radius: var(--border-radius-round);
 }
 
 /***** 5.3 Bord Circle *****/
@@ -683,6 +683,6 @@
 [class*="bord-"][class*="-circle-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-circle-"][class*="-relay"] [class*="bord-"][class*="-circle-"][class*="-target4"],
 [class*="bord-"][class*="-circle-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-circle-"][class*="-relay"] [class*="bord-"][class*="-circle-"][class*="-target5"],
 [class*="bord-"][class*="-circle-"][class*="-check"]:checked ~ [class*="bord-"][class*="-circle-"][class*="-hub"] [class*="bord-"][class*="-circle-"][class*="-goal"] {
-  border-radius: var(--bord-radius-circle);
+  border-radius: var(--border-radius-circle);
 }
 
