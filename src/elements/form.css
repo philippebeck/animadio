@@ -20,8 +20,8 @@
 
 /***** 1.1 Form *****/
 .form {
-  margin: var(--form-mar);
-  padding: var(--form-pad);
+  margin: var(--form-margin);
+  padding: var(--form-padding);
 }
 
 /********** 2. FORM GLOBAL **********/
@@ -55,9 +55,9 @@
 
 /***** 3.1 Form Fieldset *****/
 .form fieldset {
-  margin-left: var(--form-fieldset-mar-left);
-  border: var(--form-fieldset-bord);
-  padding: var(--form-fieldset-pad);
+  margin-left: var(--form-fieldset-margin-left);
+  border: var(--form-fieldset-border);
+  padding: var(--form-fieldset-padding);
 }
 
 /***** 3.2 Form Legend *****/
@@ -80,11 +80,11 @@
 .form [type="password"],
 .form textarea {
   line-height: var(--form-input-field-line-height);
-  margin: var(--form-input-field-mar);
-  border: var(--form-input-field-bord);
+  margin: var(--form-input-field-margin);
+  border: var(--form-input-field-border);
   border-radius: var(--form-input-field-radius);
-  padding: var(--form-input-field-pad);
-  background-color: var(--form-input-field-bg);
+  padding: var(--form-input-field-padding);
+  background-color: var(--form-input-field-background-color);
 }
 
 .form [type="reset"],
