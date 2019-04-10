@@ -29,13 +29,13 @@
   flex-direction: var(--menu-flex-direction);
   justify-content: var(--menu-justify-content);
   align-items: var(--menu-align-items);
-  margin: var(--menu-mar);
+  margin: var(--menu-margin);
   border: var(--menu-border);
   border-radius: var(--menu-radius);
-  padding: var(--menu-pad);
+  padding: var(--menu-padding);
   width: var(--menu-width);
   list-style: var(--menu-list-style);
-  background-color: var(--menu-bg);
+  background-color: var(--menu-background-color);
   color: var(--menu-color);
 }
 
@@ -59,7 +59,7 @@
   align-items: var(--menu-label-align-items);
   position: var(--menu-label-position);
   border-radius: var(--menu-label-radius);
-  padding: var(--menu-label-pad);
+  padding: var(--menu-label-padding);
   width: var(--menu-label-width);
 }
 
@@ -67,9 +67,9 @@
 .menu label:hover,
 .menu label:active,
 .menu label:focus {
-  border: var(--menu-label-hover-bord);
+  border: var(--menu-label-hover-border);
   font-style: var(--menu-label-hover-font-style);
-  background-color: var(--menu-label-hover-bg);
+  background-color: var(--menu-label-hover-background-color);
   color: var(--menu-label-hover-color);
 }
 
@@ -79,7 +79,7 @@
 [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"],
 [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"],
 [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] {
-  background-color: var(--menu-label-check-bg);
+  background-color: var(--menu-label-check-background-color);
   color: var(--menu-label-check-color);
   font-weight: var(--menu-label-check-font-weight);
 }

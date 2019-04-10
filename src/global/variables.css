@@ -543,28 +543,28 @@ pre {
 /***** 3.5 Menu *****/
 .menu {
   --menu-align-items: stretch;
-  --menu-bg: var(--silver);
+  --menu-background-color: var(--silver);
   --menu-border: none;
   --menu-color: var(--gray);
   --menu-flex-direction: column;
   --menu-justify-content: center;
   --menu-list-style: none;
-  --menu-mar: auto;
-  --menu-pad: 0;
+  --menu-margin: auto;
+  --menu-padding: 0;
   --menu-radius: 5px;
   --menu-width: 40%;
   --menu-all-cursor: pointer;
   --menu-label-align-items: center;
   --menu-label-justify-content: center;
-  --menu-label-pad: 6px 12px;
+  --menu-label-padding: 6px 12px;
   --menu-label-position: relative;
   --menu-label-radius: 5px;
   --menu-label-width: 100%;
-  --menu-label-hover-bg: var(--sapphire);
-  --menu-label-hover-bord: none;
+  --menu-label-hover-background-color: var(--sapphire);
+  --menu-label-hover-border: none;
   --menu-label-hover-color: var(--white);
   --menu-label-hover-font-style: italic;
-  --menu-label-check-bg: var(--blue);
+  --menu-label-check-background-color: var(--blue);
   --menu-label-check-color: var(--white);
   --menu-label-check-font-weight: bold;
   --menu-fa-bot: -18px;
