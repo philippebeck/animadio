@@ -48,7 +48,7 @@
 .foot-main,
 .foot-info {
   display: flex;
-  padding-bottom: var(--foot-global-pad-bot);
+  padding-bottom: var(--foot-global-padding-bot);
 }
 
 /********** 3. FOOT MAIN **********/
@@ -61,7 +61,7 @@
 .foot-main {
   flex-direction: var(--foot-main-flex-direction);
   justify-content: var(--foot-main-justify-content);
-  background-color: var(--foot-main-bg);
+  background-color: var(--foot-main-background-color);
   color: var(--foot-main-font-color);
   cursor: var(--foot-main-cursor);
 }
@@ -82,7 +82,7 @@
 
 /***** 4.2 Foot List Link *****/
 .foot-list a {
-  margin-bottom: var(--foot-list-link-mar-bot);
+  margin-bottom: var(--foot-list-link-margin-bot);
   color: var(--foot-list-link-font-color);
 }
 
@@ -103,15 +103,15 @@
 /***** 5.1 Foot Info *****/
 .foot-info {
   justify-content: var(--foot-info-justify-content);
-  padding-top: var(--foot-info-pad-top);
-  background-color: var(--foot-info-bg);
+  padding-top: var(--foot-info-padding-top);
+  background-color: var(--foot-info-background-color);
   cursor: var(--foot-info-cursor);
 }
 
 /***** 5.2 Foot Info Link *****/
 .foot-info a {
-  margin-right: var(--foot-info-link-mar-right);
-  margin-left: var(--foot-info-link-mar-left);
+  margin-right: var(--foot-info-link-margin-right);
+  margin-left: var(--foot-info-link-margin-left);
   cursor: var(--foot-info-cursor);
 }
 
