@@ -484,8 +484,10 @@ pre {
 
 /***** 3.4 Gallery *****/
 .gallery {
+  --gallery-align-items: center;
   --gallery-flex-wrap: wrap;
   --gallery-flow: hidden;
+  --gallery-justify-content: center;
   --gallery-margin: auto;
   --gallery-max-w: 90%;
   --gallery-all-cursor: crosshair;

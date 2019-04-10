@@ -45,6 +45,9 @@
 
 /***** 2.1 Gallery Figure *****/
 .gallery figure {
+  display: flex;
+  justify-content: var(--gallery-justify-content);
+  align-items: var(--gallery-align-items);
   position: var(--gallery-figure-position);
   overflow: var(--gallery-figure-flow);
   margin: var(--gallery-figure-margin);
