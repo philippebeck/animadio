@@ -577,7 +577,6 @@ pre {
 @media (min-width: 576px) {
   .menu {
     --menu-flex-direction: row;
-    --menu-align-items: flex-start;
     --menu-width: 100%;
   }
 }
