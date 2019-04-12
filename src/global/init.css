@@ -23,7 +23,7 @@
 /***** 1.1 Hidden *****/
 [class*="check"],
 [class*="radio"] {
-  display: none;
+  display: none !important;
 }
 
 /********** 2. TAGS **********/
