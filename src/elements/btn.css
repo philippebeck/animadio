@@ -344,40 +344,161 @@
 }
 
 /***** 4.3 Buttons Brand Colors *****/
-[class*="btn"][class*="fb"],
-[class*="button"][class*="fb"] {
+[class*="btn-fb"],
+[class*="button-fb"],
+[class*="btn-github"],
+[class*="button-github"],
+[class*="btn-linkedin"],
+[class*="button-linkedin"],
+[class*="btn-npm"],
+[class*="button-npm"],
+[class*="btn-stack"],
+[class*="button-stack"],
+[class*="btn-tw"],
+[class*="button-tw"] {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+[class*="btn-fb"],
+[class*="button-fb"] {
   background-color: var(--facebook);
-  color: var(--btn-color-fb);
 }
 
-[class*="btn"][class*="github"],
-[class*="button"][class*="github"] {
+[class*="btn-github"],
+[class*="button-github"] {
   background-color: var(--github);
-  color: var(--btn-color-github);
 }
 
-[class*="btn"][class*="Linkedin"],
-[class*="button"][class*="linkedin"] {
+[class*="btn-linkedin"],
+[class*="button-linkedin"] {
   background-color: var(--linkedin);
-  color: var(--btn-color-linkedin);
 }
 
-[class*="btn"][class*="npm"],
-[class*="button"][class*="npm"] {
+[class*="btn-npm"],
+[class*="button-npm"] {
   background-color: var(--npm);
-  color: var(--btn-color-npm);
 }
 
-[class*="btn"][class*="stack"],
-[class*="button"][class*="stack"] {
+[class*="btn-stack"],
+[class*="button-stack"] {
   background-color: var(--stackoverflow);
-  color: var(--btn-color-stack);
 }
 
-[class*="btn"][class*="tw"],
-[class*="button"][class*="tw"] {
+[class*="btn-tw"],
+[class*="button-tw"] {
   background-color: var(--twitter);
-  color: var(--btn-color-tw);
+}
+
+[class*="btn-fb"]:hover,
+[class*="button-fb"]:hover,
+[class*="btn-fb"]:focus,
+[class*="button-fb"]:focus,
+[class*="btn-fb"]:active,
+[class*="button-fb"]:active,
+[class*="button-fb-check"]:checked + [class*="button-fb"],
+[class*="btn-github"]:hover,
+[class*="button-github"]:hover,
+[class*="btn-github"]:focus,
+[class*="button-github"]:focus,
+[class*="btn-github"]:active,
+[class*="button-github"]:active,
+[class*="button-github-check"]:checked + [class*="button-github"],
+[class*="btn-linkedin"]:hover,
+[class*="button-linkedin"]:hover,
+[class*="btn-linkedin"]:focus,
+[class*="button-linkedin"]:focus,
+[class*="btn-linkedin"]:active,
+[class*="button-linkedin"]:active,
+[class*="button-linkedin-check"]:checked + [class*="button-linkedin"],
+[class*="btn-npm"]:hover,
+[class*="button-npm"]:hover,
+[class*="btn-npm"]:focus,
+[class*="button-npm"]:focus,
+[class*="btn-npm"]:active,
+[class*="button-npm"]:active,
+[class*="button-npm-check"]:checked + [class*="button-npm"],
+[class*="btn-stack"]:hover,
+[class*="button-stack"]:hover,
+[class*="btn-stack"]:focus,
+[class*="button-stack"]:focus,
+[class*="btn-stack"]:active,
+[class*="button-stack"]:active,
+[class*="button-stack-check"]:checked + [class*="button-stack"],
+[class*="btn-tw"]:hover,
+[class*="button-tw"]:hover,
+[class*="btn-tw"]:focus,
+[class*="button-tw"]:focus,
+[class*="btn-tw"]:active,
+[class*="button-tw"]:active,
+[class*="button-tw-check"]:checked + [class*="button-tw"] {
+  background-color: var(--white);
+}
+
+[class*="btn-fb"]:hover,
+[class*="button-fb"]:hover,
+[class*="btn-fb"]:focus,
+[class*="button-fb"]:focus,
+[class*="btn-fb"]:active,
+[class*="button-fb"]:active,
+[class*="button-fb-check"]:checked + [class*="button-fb"] {
+  border-color: var(--facebook);
+  color: var(--facebook);
+}
+
+[class*="btn-github"]:hover,
+[class*="button-github"]:hover,
+[class*="btn-github"]:focus,
+[class*="button-github"]:focus,
+[class*="btn-github"]:active,
+[class*="button-github"]:active,
+[class*="button-github-check"]:checked + [class*="button-github"] {
+  border-color: var(--github);
+  color: var(--github);
+}
+
+[class*="btn-linkedin"]:hover,
+[class*="button-linkedin"]:hover,
+[class*="btn-linkedin"]:focus,
+[class*="button-linkedin"]:focus,
+[class*="btn-linkedin"]:active,
+[class*="button-linkedin"]:active,
+[class*="button-linkedin-check"]:checked + [class*="button-linkedin"] {
+  border-color: var(--linkedin);
+  color: var(--linkedin);
+}
+
+[class*="btn-npm"]:hover,
+[class*="button-npm"]:hover,
+[class*="btn-npm"]:focus,
+[class*="button-npm"]:focus,
+[class*="btn-npm"]:active,
+[class*="button-npm"]:active,
+[class*="button-npm-check"]:checked + [class*="button-npm"] {
+  border-color: var(--npm);
+  color: var(--npm);
+}
+
+[class*="btn-stack"]:hover,
+[class*="button-stack"]:hover,
+[class*="btn-stack"]:focus,
+[class*="button-stack"]:focus,
+[class*="btn-stack"]:active,
+[class*="button-stack"]:active,
+[class*="button-stack-check"]:checked + [class*="button-stack"] {
+  border-color: var(--stackoverflow);
+  color: var(--stackoverflow);
+}
+
+[class*="btn-tw"]:hover,
+[class*="button-tw"]:hover,
+[class*="btn-tw"]:focus,
+[class*="button-tw"]:focus,
+[class*="btn-tw"]:active,
+[class*="button-tw"]:active,
+[class*="button-tw-check"]:checked + [class*="button-tw"] {
+  border-color: var(--twitter);
+  color: var(--twitter);
 }
 
 /***** 4.4 Buttons Transparent Colors *****/
