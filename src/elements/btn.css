@@ -217,56 +217,128 @@
 }
 
 /***** 4.2 Buttons Pale Colors *****/
-[class*="btn"][class*="choco"],
-[class*="button"][class*="choco"] {
+[class*="btn-choco"],
+[class*="button-choco"],
+[class*="btn-maroon"]:hover,
+[class*="button-maroon"]:hover,
+[class*="btn-maroon"]:focus,
+[class*="button-maroon"]:focus,
+[class*="btn-maroon"]:active,
+[class*="button-maroon"]:active,
+[class*="button-maroon-check"]:checked + [class*="button-maroon"] {
+  border-color: var(--btn-border-choco);
   background-color: var(--choco);
   color: var(--btn-color-choco);
 }
 
-[class*="btn"][class*="jade"],
-[class*="button"][class*="jade"] {
+[class*="btn-jade"],
+[class*="button-jade"],
+[class*="btn-green"]:hover,
+[class*="button-green"]:hover,
+[class*="btn-green"]:focus,
+[class*="button-green"]:focus,
+[class*="btn-green"]:active,
+[class*="button-green"]:active,
+[class*="button-green-check"]:checked + [class*="button-green"] {
+  border-color: var(--btn-border-jade);
   background-color: var(--jade);
   color: var(--btn-color-jade);
 }
 
-[class*="btn"][class*="khaki"],
-[class*="button"][class*="khaki"] {
+[class*="btn-khaki"],
+[class*="button-khaki"],
+[class*="btn-yellow"]:hover,
+[class*="button-yellow"]:hover,
+[class*="btn-yellow"]:focus,
+[class*="button-yellow"]:focus,
+[class*="btn-yellow"]:active,
+[class*="button-yellow"]:active,
+[class*="button-yellow-check"]:checked + [class*="button-yellow"] {
+  border-color: var(--btn-border-khaki);
   background-color: var(--khaki);
   color: var(--btn-color-khaki);
 }
 
-[class*="btn"][class*="salmon"],
-[class*="button"][class*="salmon"] {
+[class*="btn-salmon"],
+[class*="button-salmon"],
+[class*="btn-orange"]:hover,
+[class*="button-orange"]:hover,
+[class*="btn-orange"]:focus,
+[class*="button-orange"]:focus,
+[class*="btn-orange"]:active,
+[class*="button-orange"]:active,
+[class*="button-orange-check"]:checked + [class*="button-orange"] {
+  border-color: var(--btn-border-salmon);
   background-color: var(--salmon);
   color: var(--btn-color-salmon);
 }
 
-[class*="btn"][class*="silver"],
-[class*="button"][class*="silver"] {
+[class*="btn-silver"],
+[class*="button-silver"],
+[class*="btn-gray"]:hover,
+[class*="button-gray"]:hover,
+[class*="btn-gray"]:focus,
+[class*="button-gray"]:focus,
+[class*="btn-gray"]:active,
+[class*="button-gray"]:active,
+[class*="button-gray-check"]:checked + [class*="button-gray"] {
+  border-color: var(--btn-border-silver);
   background-color: var(--silver);
   color: var(--btn-color-silver);
 }
 
-[class*="btn"][class*="sky"],
-[class*="button"][class*="sky"] {
+[class*="btn-sky"],
+[class*="button-sky"],
+[class*="btn-blue"]:hover,
+[class*="button-blue"]:hover,
+[class*="btn-blue"]:focus,
+[class*="button-blue"]:focus,
+[class*="btn-blue"]:active,
+[class*="button-blue"]:active,
+[class*="button-blue-check"]:checked + [class*="button-blue"] {
+  border-color: var(--btn-border-sky);
   background-color: var(--sky);
   color: var(--btn-color-sky);
 }
 
-[class*="btn"][class*="tomato"],
-[class*="button"][class*="tomato"] {
+[class*="btn-tomato"],
+[class*="button-tomato"],
+[class*="btn-red"]:hover,
+[class*="button-red"]:hover,
+[class*="btn-red"]:focus,
+[class*="button-red"]:focus,
+[class*="btn-red"]:active,
+[class*="button-red"]:active,
+[class*="button-red-check"]:checked + [class*="button-red"] {
+  border-color: var(--btn-border-tomato);
   background-color: var(--tomato);
   color: var(--btn-color-tomato);
 }
 
-[class*="btn"][class*="violet"],
-[class*="button"][class*="violet"] {
+[class*="btn-violet"],
+[class*="button-violet"],
+[class*="btn-purple"]:hover,
+[class*="button-purple"]:hover,
+[class*="btn-purple"]:focus,
+[class*="button-purple"]:focus,
+[class*="btn-purple"]:active,
+[class*="button-purple"]:active,
+[class*="button-purple-check"]:checked + [class*="button-purple"] {
+  border-color: var(--btn-border-violet);
   background-color: var(--violet);
   color: var(--btn-color-violet);
 }
 
-[class*="btn"][class*="white"],
-[class*="button"][class*="white"] {
+[class*="btn-white"],
+[class*="button-white"],
+[class*="btn-black"]:hover,
+[class*="button-black"]:hover,
+[class*="btn-black"]:focus,
+[class*="button-black"]:focus,
+[class*="btn-black"]:active,
+[class*="button-black"]:active,
+[class*="button-black-check"]:checked + [class*="button-black"] {
+  border-color: var(--btn-border-white);
   background-color: var(--white);
   color: var(--btn-color-white);
 }
