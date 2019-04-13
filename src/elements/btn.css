@@ -59,7 +59,6 @@
   box-shadow: var(--btn-hover-shabox);
   background-color: var(--btn-hover-background-color);
   color: var(--btn-hover-color);
-  font-size: var(--btn-hover-font-size);
   transition: var(--btn-hover-transition);
   animation: var(--btn-hover-anima);
 }
