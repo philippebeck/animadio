@@ -747,18 +747,48 @@
 */
 
 /***** Buttons Shapes *****/
-[class*="btn"][class*="square"],
-[class*="button"][class*="square"] {
+[class*="btn-square"],
+[class*="button-square"] {
   border-radius: var(--btn-radius-square);
 }
 
-[class*="btn"][class*="round"],
-[class*="button"][class*="round"] {
+[class*="btn-square"]:hover,
+[class*="button-square"]:hover,
+[class*="btn-square"]:focus,
+[class*="button-square"]:focus,
+[class*="btn-square"]:active,
+[class*="button-square"]:active {
+  border-style: var(--btn-border-style-square);
+  border-radius: var(--btn-radius-square);
+}
+
+[class*="btn-round"],
+[class*="button-round"] {
   border-radius: var(--btn-radius-round);
 }
 
-[class*="btn"][class*="circle"],
-[class*="button"][class*="circle"] {
+[class*="btn-round"]:hover,
+[class*="button-round"]:hover,
+[class*="btn-round"]:focus,
+[class*="button-round"]:focus,
+[class*="btn-round"]:active,
+[class*="button-round"]:active {
+  border-style: var(--btn-border-style-round);
+  border-radius: var(--btn-radius-round);
+}
+
+[class*="btn-circle"],
+[class*="button-circle"] {
+  border-radius: var(--btn-radius-circle);
+}
+
+[class*="btn-circle"]:hover,
+[class*="button-circle"]:hover,
+[class*="btn-circle"]:focus,
+[class*="button-circle"]:focus,
+[class*="btn-circle"]:active,
+[class*="button-circle"]:active {
+  border-style: var(--btn-border-style-circle);
   border-radius: var(--btn-radius-circle);
 }
 
