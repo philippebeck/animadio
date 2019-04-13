@@ -1,4 +1,4 @@
-/*! animadio v0.2.35 | https://animadio.org | MIT License */
+/*! animadio v0.2.36 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -75,13 +75,13 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --npm: #c12127;
   --stackoverflow: #f48024;
   --twitter: #1da1f2;
-  --amethyst: rgba(153, 102, 204, 0.5);
-  --citrine: rgba(228, 208, 10, 0.5);
-  --emerald: rgba(80, 200, 120, 0.5);
-  --obsidian: rgba(15, 15, 15, 0.5);
-  --quartz: rgba(217, 217, 243, 0.5);
-  --ruby: rgba(224, 17, 95, 0.5);
-  --sapphire: rgba(15, 82, 186, 0.5);
+  --amethyst: rgba(153, 102, 204, 0.7);
+  --citrine: rgba(228, 208, 10, 0.7);
+  --emerald: rgba(80, 200, 120, 0.7);
+  --obsidian: rgba(15, 15, 15, 0.7);
+  --quartz: rgba(217, 217, 243, 0.7);
+  --ruby: rgba(224, 17, 95, 0.7);
+  --sapphire: rgba(15, 82, 186, 0.7);
 
   /***** 1.3 Keyframes *****/
   --keyframes-content1: url(https://animadio.org/img/svg/1.svg);
@@ -98,9 +98,9 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --keyframes-skew: 180deg, 180deg;
   --keyframes-skewX: 180deg;
   --keyframes-skewY: 180deg;
-  --keyframes-translate: -100vw, -100vh;
-  --keyframes-translateX: -100vw;
-  --keyframes-translateY: -100vh;
+  --keyframes-translate: -50vw, -50vh;
+  --keyframes-translateX: -50vw;
+  --keyframes-translateY: -50vh;
   --keyframes-translateY-opac: 68px;
   --keyframes-translateY-xs: 1vh;
   --keyframes-width: 100%;
@@ -111,6 +111,8 @@ body {
   --global-font-family: serif;
   --global-line-height: 1.6;
   --global-font-size: 1.8rem;
+  --global-background-color: none;
+  --global-scroll-behavior: smooth;
 }
 
 article {
@@ -373,7 +375,6 @@ pre {
   --btn-hover-background-color: var(--black);
   --btn-hover-border: outset medium var(--white);
   --btn-hover-color: var(--white);
-  --btn-hover-font-size: 90%;
   --btn-hover-radius: 0;
   --btn-hover-shabox: 5px 5px 5px var(--gray);
   --btn-hover-transition: background-color 1s;
@@ -419,21 +420,21 @@ pre {
   --btn-border-width-md: 3px;
   --btn-border-width-lg: 4px;
   --btn-border-width-xl: 5px;
-  --btn-font-size-xs: 70%;
-  --btn-font-size-sm: 90%;
-  --btn-font-size-lg: 110%;
-  --btn-font-size-xl: 130%;
+  --btn-font-size-xs: 60%;
+  --btn-font-size-sm: 80%;
+  --btn-font-size-lg: 120%;
+  --btn-font-size-xl: 140%;
   --btn-padding-xs: 1px 2px;
-  --btn-padding-sm: 2px 5px;
-  --btn-padding-md: 5px 10px;
-  --btn-padding-lg: 10px 20px;
-  --btn-padding-xl: 20px 50px;
-  --btn-border-style-square: dashed;
-  --btn-border-style-round: double;
-  --btn-border-style-circle: dotted;
+  --btn-padding-sm: 2px 4px;
+  --btn-padding-md: 3px 6px;
+  --btn-padding-lg: 4px 8px;
+  --btn-padding-xl: 5px 10px;
   --btn-radius-square: unset;
-  --btn-radius-round: 50px;
+  --btn-radius-round: 20px;
   --btn-radius-circle: 50%;
+  --btn-sizes-square: 80px;
+  --btn-sizes-round: 80px;
+  --btn-sizes-circle: 80px;
 }
 
 /***** 3.2 Foot *****/
@@ -929,13 +930,13 @@ pre {
 
 /***** 2.1 Rotate *****/
 @-webkit-keyframes rotate {
-  to {
+  from {
     -webkit-transform: rotate(var(--keyframes-rotate));
             transform: rotate(var(--keyframes-rotate));
   }
 }
 @keyframes rotate {
-  to {
+  from {
     -webkit-transform: rotate(var(--keyframes-rotate));
             transform: rotate(var(--keyframes-rotate));
   }
@@ -943,13 +944,13 @@ pre {
 
 /***** 2.2 RotateX *****/
 @-webkit-keyframes rotateX {
-  to {
+  from {
     -webkit-transform: rotateX(var(--keyframes-rotateX));
             transform: rotateX(var(--keyframes-rotateX));
   }
 }
 @keyframes rotateX {
-  to {
+  from {
     -webkit-transform: rotateX(var(--keyframes-rotateX));
             transform: rotateX(var(--keyframes-rotateX));
   }
@@ -957,13 +958,13 @@ pre {
 
 /***** 2.3 RotateY *****/
 @-webkit-keyframes rotateY {
-  to {
+  from {
     -webkit-transform: rotateY(var(--keyframes-rotateY));
             transform: rotateY(var(--keyframes-rotateY));
   }
 }
 @keyframes rotateY {
-  to {
+  from {
     -webkit-transform: rotateY(var(--keyframes-rotateY));
             transform: rotateY(var(--keyframes-rotateY));
   }
@@ -979,13 +980,13 @@ pre {
 
 /***** 3.1 Scale *****/
 @-webkit-keyframes scale {
-  to {
+  from {
     -webkit-transform: scale(var(--keyframes-scale));
             transform: scale(var(--keyframes-scale));
   }
 }
 @keyframes scale {
-  to {
+  from {
     -webkit-transform: scale(var(--keyframes-scale));
             transform: scale(var(--keyframes-scale));
   }
@@ -993,13 +994,13 @@ pre {
 
 /***** 3.2 ScaleX *****/
 @-webkit-keyframes scaleX {
-  to {
+  from {
     -webkit-transform: scaleX(var(--keyframes-scaleX));
             transform: scaleX(var(--keyframes-scaleX));
   }
 }
 @keyframes scaleX {
-  to {
+  from {
     -webkit-transform: scaleX(var(--keyframes-scaleX));
             transform: scaleX(var(--keyframes-scaleX));
   }
@@ -1007,13 +1008,13 @@ pre {
 
 /***** 3.3 ScaleY *****/
 @-webkit-keyframes scaleY {
-  to {
+  from {
     -webkit-transform: scaleY(var(--keyframes-scaleY));
             transform: scaleY(var(--keyframes-scaleY));
   }
 }
 @keyframes scaleY {
-  to {
+  from {
     -webkit-transform: scaleY(var(--keyframes-scaleY));
             transform: scaleY(var(--keyframes-scaleY));
   }
@@ -1029,13 +1030,13 @@ pre {
 
 /***** 4.1 Skew *****/
 @-webkit-keyframes skew {
-  to {
+  from {
     -webkit-transform: skew(var(--keyframes-skew));
             transform: skew(var(--keyframes-skew));
   }
 }
 @keyframes skew {
-  to {
+  from {
     -webkit-transform: skew(var(--keyframes-skew));
             transform: skew(var(--keyframes-skew));
   }
@@ -1043,13 +1044,13 @@ pre {
 
 /***** 4.2 SkewX *****/
 @-webkit-keyframes skewX {
-  to {
+  from {
     -webkit-transform: skewX(var(--keyframes-skewX));
             transform: skewX(var(--keyframes-skewX));
   }
 }
 @keyframes skewX {
-  to {
+  from {
     -webkit-transform: skewX(var(--keyframes-skewX));
             transform: skewX(var(--keyframes-skewX));
   }
@@ -1057,13 +1058,13 @@ pre {
 
 /***** 4.3 SkewY *****/
 @-webkit-keyframes skewY {
-  to {
+  from {
     -webkit-transform: skewY(var(--keyframes-skewY));
             transform: skewY(var(--keyframes-skewY));
   }
 }
 @keyframes skewY {
-  to {
+  from {
     -webkit-transform: skewY(var(--keyframes-skewY));
             transform: skewY(var(--keyframes-skewY));
   }
@@ -1079,13 +1080,13 @@ pre {
 
 /***** 5.1 Translate *****/
 @-webkit-keyframes translate {
-  to {
+  from {
     -webkit-transform: translate(var(--keyframes-translate));
             transform: translate(var(--keyframes-translate));
   }
 }
 @keyframes translate {
-  to {
+  from {
     -webkit-transform: translate(var(--keyframes-translate));
             transform: translate(var(--keyframes-translate));
   }
@@ -1093,13 +1094,13 @@ pre {
 
 /***** 5.2 TranslateX *****/
 @-webkit-keyframes translateX {
-  to {
+  from {
     -webkit-transform: translateX(var(--keyframes-translateX));
             transform: translateX(var(--keyframes-translateX));
   }
 }
 @keyframes translateX {
-  to {
+  from {
     -webkit-transform: translateX(var(--keyframes-translateX));
             transform: translateX(var(--keyframes-translateX));
   }
@@ -1107,13 +1108,13 @@ pre {
 
 /***** 5.3 TranslateY *****/
 @-webkit-keyframes translateY {
-  to {
+  from {
     -webkit-transform: translateY(var(--keyframes-translateY));
             transform: translateY(var(--keyframes-translateY));
   }
 }
 @keyframes translateY {
-  to {
+  from {
     -webkit-transform: translateY(var(--keyframes-translateY));
             transform: translateY(var(--keyframes-translateY));
   }
@@ -1579,7 +1580,8 @@ body {
   line-height: var(--global-line-height);
   font-size: var(--global-font-size);
   font-family: var(--global-font-family);
-  scroll-behavior: smooth;
+  background-color: var(--global-background-color);
+  scroll-behavior: var(--global-scroll-behavior);
 }
 
 article {
@@ -5133,7 +5135,6 @@ pre > *::selection {
           box-shadow: var(--btn-hover-shabox);
   background-color: var(--btn-hover-background-color);
   color: var(--btn-hover-color);
-  font-size: var(--btn-hover-font-size);
   -webkit-transition: var(--btn-hover-transition);
   transition: var(--btn-hover-transition);
   -webkit-animation: var(--btn-hover-anima);
@@ -5742,17 +5743,6 @@ pre > *::selection {
   font-size: var(--btn-font-size-xs);
 }
 
-[class*="btn-xs"]:hover,
-[class*="button-xs"]:hover,
-[class*="btn-xs"]:focus,
-[class*="button-xs"]:focus,
-[class*="btn-xs"]:active,
-[class*="button-xs"]:active,
-[class*="button-xs-check"]:checked + [class*="button-xs"] {
-  border-width: calc(var(--btn-border-width-xs) * 1.2);
-  font-size: calc(var(--btn-font-size-xs) * 1.2);
-}
-
 [class*="btn-sm"],
 [class*="button-sm"] {
   border-width: var(--btn-border-width-sm);
@@ -5760,32 +5750,10 @@ pre > *::selection {
   font-size: var(--btn-font-size-sm);
 }
 
-[class*="btn-sm"]:hover,
-[class*="button-sm"]:hover,
-[class*="btn-sm"]:focus,
-[class*="button-sm"]:focus,
-[class*="btn-sm"]:active,
-[class*="button-sm"]:active,
-[class*="button-sm-check"]:checked + [class*="button-sm"] {
-  border-width: calc(var(--btn-border-width-sm) * 1.4);
-  font-size: calc(var(--btn-font-size-sm) * 1.4);
-}
-
 [class*="btn-md"],
 [class*="button-md"] {
   border-width: var(--btn-border-width-md);
   padding: var(--btn-padding-md);
-}
-
-[class*="btn-md"]:hover,
-[class*="button-md"]:hover,
-[class*="btn-md"]:focus,
-[class*="button-md"]:focus,
-[class*="btn-md"]:active,
-[class*="button-md"]:active,
-[class*="button-md-check"]:checked + [class*="button-md"] {
-  border-width: calc(var(--btn-border-width-md) * 1.6);
-  font-size: calc(var(--btn-font-size) * 1.6);
 }
 
 [class*="btn-lg"],
@@ -5795,33 +5763,11 @@ pre > *::selection {
   font-size: var(--btn-font-size-lg);
 }
 
-[class*="btn-lg"]:hover,
-[class*="button-lg"]:hover,
-[class*="btn-lg"]:focus,
-[class*="button-lg"]:focus,
-[class*="btn-lg"]:active,
-[class*="button-lg"]:active,
-[class*="button-lg-check"]:checked + [class*="button-lg"] {
-  border-width: calc(var(--btn-border-width-lg) * 1.8);
-  font-size: calc(var(--btn-font-size-lg) * 1.8);
-}
-
 [class*="btn-xl"],
 [class*="button-xl"] {
   border-width: var(--btn-border-width-xl);
   padding: var(--btn-padding-xl);
   font-size: var(--btn-font-size-xl);
-}
-
-[class*="btn-xl"]:hover,
-[class*="button-xl"]:hover,
-[class*="btn-xl"]:focus,
-[class*="button-xl"]:focus,
-[class*="btn-xl"]:active,
-[class*="button-xl"]:active,
-[class*="button-xl-check"]:checked + [class*="button-xl"] {
-  border-width: calc(var(--btn-border-width-xl) * 2);
-  font-size: calc(var(--btn-font-size-xl) * 2);
 }
 
 /********** 6. BTN SHAPES **********/
@@ -5834,6 +5780,8 @@ pre > *::selection {
 [class*="btn-square"],
 [class*="button-square"] {
   border-radius: var(--btn-radius-square);
+  min-width: var(--btn-sizes-square);
+  min-height: var(--btn-sizes-square);
 }
 
 [class*="btn-square"]:hover,
@@ -5842,13 +5790,14 @@ pre > *::selection {
 [class*="button-square"]:focus,
 [class*="btn-square"]:active,
 [class*="button-square"]:active {
-  border-style: var(--btn-border-style-square);
   border-radius: var(--btn-radius-square);
 }
 
 [class*="btn-round"],
 [class*="button-round"] {
   border-radius: var(--btn-radius-round);
+  min-width: var(--btn-sizes-round);
+  min-height: var(--btn-sizes-round);
 }
 
 [class*="btn-round"]:hover,
@@ -5857,13 +5806,14 @@ pre > *::selection {
 [class*="button-round"]:focus,
 [class*="btn-round"]:active,
 [class*="button-round"]:active {
-  border-style: var(--btn-border-style-round);
   border-radius: var(--btn-radius-round);
 }
 
 [class*="btn-circle"],
 [class*="button-circle"] {
   border-radius: var(--btn-radius-circle);
+  min-width: var(--btn-sizes-circle);
+  min-height: var(--btn-sizes-circle);
 }
 
 [class*="btn-circle"]:hover,
@@ -5872,7 +5822,6 @@ pre > *::selection {
 [class*="button-circle"]:focus,
 [class*="btn-circle"]:active,
 [class*="button-circle"]:active {
-  border-style: var(--btn-border-style-circle);
   border-radius: var(--btn-radius-circle);
 }
 
@@ -12584,4 +12533,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 13th Apr 2019 @ 12:47:41 PM */
+ Updated: 13th Apr 2019 @ 6:53:47 PM */
