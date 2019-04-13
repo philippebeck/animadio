@@ -109,6 +109,8 @@ body {
   --global-font-family: serif;
   --global-line-height: 1.6;
   --global-font-size: 1.8rem;
+  --global-background-color: none;
+  --global-scroll-behavior: smooth;
 }
 
 article {

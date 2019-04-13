@@ -54,7 +54,8 @@ body {
   line-height: var(--global-line-height);
   font-size: var(--global-font-size);
   font-family: var(--global-font-family);
-  scroll-behavior: smooth;
+  background-color: var(--global-background-color);
+  scroll-behavior: var(--global-scroll-behavior);
 }
 
 article {
