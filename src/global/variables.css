@@ -427,12 +427,12 @@ pre {
   --btn-padding-md: 3px 6px;
   --btn-padding-lg: 4px 8px;
   --btn-padding-xl: 5px 10px;
-  --btn-border-style-square: dashed;
-  --btn-border-style-round: double;
-  --btn-border-style-circle: dotted;
   --btn-radius-square: unset;
-  --btn-radius-round: 50px;
+  --btn-radius-round: 20px;
   --btn-radius-circle: 50%;
+  --btn-sizes-square: 80px;
+  --btn-sizes-round: 80px;
+  --btn-sizes-circle: 80px;
 }
 
 /***** 3.2 Foot *****/

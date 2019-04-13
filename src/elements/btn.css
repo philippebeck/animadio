@@ -694,6 +694,8 @@
 [class*="btn-square"],
 [class*="button-square"] {
   border-radius: var(--btn-radius-square);
+  min-width: var(--btn-sizes-square);
+  min-height: var(--btn-sizes-square);
 }
 
 [class*="btn-square"]:hover,
@@ -702,13 +704,14 @@
 [class*="button-square"]:focus,
 [class*="btn-square"]:active,
 [class*="button-square"]:active {
-  border-style: var(--btn-border-style-square);
   border-radius: var(--btn-radius-square);
 }
 
 [class*="btn-round"],
 [class*="button-round"] {
   border-radius: var(--btn-radius-round);
+  min-width: var(--btn-sizes-round);
+  min-height: var(--btn-sizes-round);
 }
 
 [class*="btn-round"]:hover,
@@ -717,13 +720,14 @@
 [class*="button-round"]:focus,
 [class*="btn-round"]:active,
 [class*="button-round"]:active {
-  border-style: var(--btn-border-style-round);
   border-radius: var(--btn-radius-round);
 }
 
 [class*="btn-circle"],
 [class*="button-circle"] {
   border-radius: var(--btn-radius-circle);
+  min-width: var(--btn-sizes-circle);
+  min-height: var(--btn-sizes-circle);
 }
 
 [class*="btn-circle"]:hover,
@@ -732,7 +736,6 @@
 [class*="button-circle"]:focus,
 [class*="btn-circle"]:active,
 [class*="button-circle"]:active {
-  border-style: var(--btn-border-style-circle);
   border-radius: var(--btn-radius-circle);
 }
 
