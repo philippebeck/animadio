@@ -92,16 +92,16 @@
 */
 
 /***** 3.1 Menu Target *****/
-[class*="menu-relay"] > * {
+[class*="menu-"][class*="-relay"] > * {
   display: none;
 }
 
 /***** 3.2 Menu Check Target *****/
-[class*="menu-radio1"]:checked ~ [class*="menu-relay"] > [class*="menu-target1"],
-[class*="menu-radio2"]:checked ~ [class*="menu-relay"] > [class*="menu-target2"],
-[class*="menu-radio3"]:checked ~ [class*="menu-relay"] > [class*="menu-target3"],
-[class*="menu-radio4"]:checked ~ [class*="menu-relay"] > [class*="menu-target4"],
-[class*="menu-radio5"]:checked ~ [class*="menu-relay"] > [class*="menu-target5"] {
+[class*="menu-"][class*="-radio1"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target1"],
+[class*="menu-"][class*="-radio2"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target2"],
+[class*="menu-"][class*="-radio3"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target3"],
+[class*="menu-"][class*="-radio4"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target4"],
+[class*="menu-"][class*="-radio5"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target5"] {
   display: block;
 }
 
