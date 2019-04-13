@@ -96,9 +96,9 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --keyframes-skew: 180deg, 180deg;
   --keyframes-skewX: 180deg;
   --keyframes-skewY: 180deg;
-  --keyframes-translate: -100vw, -100vh;
-  --keyframes-translateX: -100vw;
-  --keyframes-translateY: -100vh;
+  --keyframes-translate: -50vw, -50vh;
+  --keyframes-translateX: -50vw;
+  --keyframes-translateY: -50vh;
   --keyframes-translateY-opac: 68px;
   --keyframes-translateY-xs: 1vh;
   --keyframes-width: 100%;
