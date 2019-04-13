@@ -506,7 +506,7 @@ pre {
   --gallery-flex-wrap: wrap;
   --gallery-flow: hidden;
   --gallery-justify-content: center;
-  --gallery-margin: auto;
+  --gallery-margin: 20px auto 50px;
   --gallery-max-w: 90%;
   --gallery-all-cursor: crosshair;
   --gallery-figure-border: thin dotted var(--silver);
@@ -569,7 +569,7 @@ pre {
   --menu-flex-direction: column;
   --menu-justify-content: center;
   --menu-list-style: none;
-  --menu-margin: auto;
+  --menu-margin: 20px auto 50px;
   --menu-padding: 0;
   --menu-radius: 5px;
   --menu-width: 40%;
