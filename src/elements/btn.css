@@ -52,12 +52,14 @@
 [class*="btn"]:focus,
 [class*="button"]:focus,
 [class*="btn"]:active,
-[class*="button"]:active {
+[class*="button"]:active,
+[class*="button-check"]:checked + [class*="button"] {
   border: var(--btn-hover-border);
   border-radius: var(--btn-hover-radius);
   box-shadow: var(--btn-hover-shabox);
   background-color: var(--btn-hover-background-color);
   color: var(--btn-hover-color);
+  font-size: var(--btn-hover-font-size);
   transition: var(--btn-hover-transition);
   animation: var(--btn-hover-anima);
 }
