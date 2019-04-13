@@ -658,17 +658,6 @@
   font-size: var(--btn-font-size-xs);
 }
 
-[class*="btn-xs"]:hover,
-[class*="button-xs"]:hover,
-[class*="btn-xs"]:focus,
-[class*="button-xs"]:focus,
-[class*="btn-xs"]:active,
-[class*="button-xs"]:active,
-[class*="button-xs-check"]:checked + [class*="button-xs"] {
-  border-width: calc(var(--btn-border-width-xs) * 1.2);
-  font-size: calc(var(--btn-font-size-xs) * 1.2);
-}
-
 [class*="btn-sm"],
 [class*="button-sm"] {
   border-width: var(--btn-border-width-sm);
@@ -676,32 +665,10 @@
   font-size: var(--btn-font-size-sm);
 }
 
-[class*="btn-sm"]:hover,
-[class*="button-sm"]:hover,
-[class*="btn-sm"]:focus,
-[class*="button-sm"]:focus,
-[class*="btn-sm"]:active,
-[class*="button-sm"]:active,
-[class*="button-sm-check"]:checked + [class*="button-sm"] {
-  border-width: calc(var(--btn-border-width-sm) * 1.4);
-  font-size: calc(var(--btn-font-size-sm) * 1.4);
-}
-
 [class*="btn-md"],
 [class*="button-md"] {
   border-width: var(--btn-border-width-md);
   padding: var(--btn-padding-md);
-}
-
-[class*="btn-md"]:hover,
-[class*="button-md"]:hover,
-[class*="btn-md"]:focus,
-[class*="button-md"]:focus,
-[class*="btn-md"]:active,
-[class*="button-md"]:active,
-[class*="button-md-check"]:checked + [class*="button-md"] {
-  border-width: calc(var(--btn-border-width-md) * 1.6);
-  font-size: calc(var(--btn-font-size) * 1.6);
 }
 
 [class*="btn-lg"],
@@ -711,33 +678,11 @@
   font-size: var(--btn-font-size-lg);
 }
 
-[class*="btn-lg"]:hover,
-[class*="button-lg"]:hover,
-[class*="btn-lg"]:focus,
-[class*="button-lg"]:focus,
-[class*="btn-lg"]:active,
-[class*="button-lg"]:active,
-[class*="button-lg-check"]:checked + [class*="button-lg"] {
-  border-width: calc(var(--btn-border-width-lg) * 1.8);
-  font-size: calc(var(--btn-font-size-lg) * 1.8);
-}
-
 [class*="btn-xl"],
 [class*="button-xl"] {
   border-width: var(--btn-border-width-xl);
   padding: var(--btn-padding-xl);
   font-size: var(--btn-font-size-xl);
-}
-
-[class*="btn-xl"]:hover,
-[class*="button-xl"]:hover,
-[class*="btn-xl"]:focus,
-[class*="button-xl"]:focus,
-[class*="btn-xl"]:active,
-[class*="button-xl"]:active,
-[class*="button-xl-check"]:checked + [class*="button-xl"] {
-  border-width: calc(var(--btn-border-width-xl) * 2);
-  font-size: calc(var(--btn-font-size-xl) * 2);
 }
 
 /********** 6. BTN SHAPES **********/
