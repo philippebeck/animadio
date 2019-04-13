@@ -1,4 +1,4 @@
-/*! animadio v0.2.34 | https://animadio.org | MIT License */
+/*! animadio v0.2.35 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -508,7 +508,7 @@ pre {
   --gallery-flex-wrap: wrap;
   --gallery-flow: hidden;
   --gallery-justify-content: center;
-  --gallery-margin: auto;
+  --gallery-margin: 20px auto 50px;
   --gallery-max-w: 90%;
   --gallery-all-cursor: crosshair;
   --gallery-figure-border: thin dotted var(--silver);
@@ -571,7 +571,7 @@ pre {
   --menu-flex-direction: column;
   --menu-justify-content: center;
   --menu-list-style: none;
-  --menu-margin: auto;
+  --menu-margin: 20px auto 50px;
   --menu-padding: 0;
   --menu-radius: 5px;
   --menu-width: 40%;
@@ -4585,4 +4585,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 13th Apr 2019 @ 2:31:31 AM */
+ Updated: 13th Apr 2019 @ 12:47:41 PM */
