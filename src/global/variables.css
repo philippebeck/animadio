@@ -371,7 +371,7 @@ pre {
   --btn-hover-background-color: var(--black);
   --btn-hover-border: outset medium var(--white);
   --btn-hover-color: var(--white);
-  --btn-hover-font-size: 80%;
+  --btn-hover-font-size: 90%;
   --btn-hover-radius: 0;
   --btn-hover-shabox: 5px 5px 5px var(--gray);
   --btn-hover-transition: background-color 1s;
