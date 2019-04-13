@@ -62,21 +62,21 @@
 
 /***** 2.1 Rotate *****/
 @keyframes rotate {
-  to {
+  from {
     transform: rotate(var(--keyframes-rotate));
   }
 }
 
 /***** 2.2 RotateX *****/
 @keyframes rotateX {
-  to {
+  from {
     transform: rotateX(var(--keyframes-rotateX));
   }
 }
 
 /***** 2.3 RotateY *****/
 @keyframes rotateY {
-  to {
+  from {
     transform: rotateY(var(--keyframes-rotateY));
   }
 }
@@ -91,21 +91,21 @@
 
 /***** 3.1 Scale *****/
 @keyframes scale {
-  to {
+  from {
     transform: scale(var(--keyframes-scale));
   }
 }
 
 /***** 3.2 ScaleX *****/
 @keyframes scaleX {
-  to {
+  from {
     transform: scaleX(var(--keyframes-scaleX));
   }
 }
 
 /***** 3.3 ScaleY *****/
 @keyframes scaleY {
-  to {
+  from {
     transform: scaleY(var(--keyframes-scaleY));
   }
 }
@@ -120,21 +120,21 @@
 
 /***** 4.1 Skew *****/
 @keyframes skew {
-  to {
+  from {
     transform: skew(var(--keyframes-skew));
   }
 }
 
 /***** 4.2 SkewX *****/
 @keyframes skewX {
-  to {
+  from {
     transform: skewX(var(--keyframes-skewX));
   }
 }
 
 /***** 4.3 SkewY *****/
 @keyframes skewY {
-  to {
+  from {
     transform: skewY(var(--keyframes-skewY));
   }
 }
@@ -149,21 +149,21 @@
 
 /***** 5.1 Translate *****/
 @keyframes translate {
-  to {
+  from {
     transform: translate(var(--keyframes-translate));
   }
 }
 
 /***** 5.2 TranslateX *****/
 @keyframes translateX {
-  to {
+  from {
     transform: translateX(var(--keyframes-translateX));
   }
 }
 
 /***** 5.3 TranslateY *****/
 @keyframes translateY {
-  to {
+  from {
     transform: translateY(var(--keyframes-translateY));
   }
 }
