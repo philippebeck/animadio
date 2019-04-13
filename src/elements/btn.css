@@ -502,46 +502,144 @@
 }
 
 /***** 4.4 Buttons Transparent Colors *****/
-[class*="btn"][class*="amethyst"],
-[class*="button"][class*="amethyst"] {
+[class*="btn-amethyst"],
+[class*="button-amethyst"] {
+  border-color: var(--purple);
   background-color: var(--amethyst);
-  color: var(--btn-color-amthyst);
+  color: var(--black);
 }
 
-[class*="btn"][class*="citrine"],
-[class*="button"][class*="citrine"] {
+[class*="btn-amethyst"]:hover,
+[class*="button-amethyst"]:hover,
+[class*="btn-amethyst"]:focus,
+[class*="button-amethyst"]:focus,
+[class*="btn-amethyst"]:active,
+[class*="button-amethyst"]:active,
+[class*="button-amethyst-check"]:checked + [class*="button-amethyst"] {
+  border-color: var(--amethyst);
+  background-color: var(--white);
+  color: var(--purple);
+  box-shadow: inset 0 0 5px 5px var(--amethyst);
+}
+
+[class*="btn-citrine"],
+[class*="button-citrine"] {
+  border-color: var(--blue);
   background-color: var(--citrine);
-  color: var(--btn-color-citrine);
+  color: var(--blue);
 }
 
-[class*="btn"][class*="quartz"],
-[class*="button"][class*="quartz"] {
-  background-color: var(--quartz);
-  color: var(--btn-color-quartz);
+[class*="btn-citrine"]:hover,
+[class*="button-citrine"]:hover,
+[class*="btn-citrine"]:focus,
+[class*="button-citrine"]:focus,
+[class*="btn-citrine"]:active,
+[class*="button-citrine"]:active,
+[class*="button-citrine-check"]:checked + [class*="button-citrine"] {
+  border-color: var(--citrine);
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: inset 0 0 5px 5px var(--citrine);
 }
 
-[class*="btn"][class*="emerald"],
-[class*="button"][class*="emerald"] {
+[class*="btn-emerald"],
+[class*="button-emerald"] {
+  border-color: var(--green);
   background-color: var(--emerald);
-  color: var(--btn-color-emerald);
+  color: var(--black);
 }
 
-[class*="btn"][class*="obsidian"],
-[class*="button"][class*="obsidian"] {
+[class*="btn-emerald"]:hover,
+[class*="button-emerald"]:hover,
+[class*="btn-emerald"]:focus,
+[class*="button-emerald"]:focus,
+[class*="btn-emerald"]:active,
+[class*="button-emerald"]:active,
+[class*="button-emerald-check"]:checked + [class*="button-emerald"] {
+  border-color: var(--emerald);
+  background-color: var(--white);
+  color: var(--green);
+  box-shadow: inset 0 0 5px 5px var(--emerald);
+}
+
+[class*="btn-obsidian"],
+[class*="button-obsidian"] {
+  border-color: var(--white);
   background-color: var(--obsidian);
-  color: var(--btn-color-obsidian);
+  color: var(--white);
 }
 
-[class*="btn"][class*="ruby"],
-[class*="button"][class*="ruby"] {
+[class*="btn-obsidian"]:hover,
+[class*="button-obsidian"]:hover,
+[class*="btn-obsidian"]:focus,
+[class*="button-obsidian"]:focus,
+[class*="btn-obsidian"]:active,
+[class*="button-obsidian"]:active,
+[class*="button-obsidian-check"]:checked + [class*="button-obsidian"] {
+  border-color: var(--obsidian);
+  background-color: var(--white);
+  color: var(--obsidian);
+  box-shadow: inset 0 0 5px 5px var(--obsidian);
+}
+
+[class*="btn-quartz"],
+[class*="button-quartz"] {
+  border-color: var(--black);
+  background-color: var(--quartz);
+  color: var(--black);
+}
+
+[class*="btn-quartz"]:hover,
+[class*="button-quartz"]:hover,
+[class*="btn-quartz"]:focus,
+[class*="button-quartz"]:focus,
+[class*="btn-quartz"]:active,
+[class*="button-quartz"]:active,
+[class*="button-quartz-check"]:checked + [class*="button-quartz"] {
+  border-color: var(--quartz);
+  background-color: var(--black);
+  color: var(--quartz);
+  box-shadow: inset 0 0 5px 5px var(--quartz);
+}
+
+[class*="btn-ruby"],
+[class*="button-ruby"] {
+  border-color: var(--red);
   background-color: var(--ruby);
-  color: var(--btn-color-ruby);
+  color: var(--white);
 }
 
-[class*="btn"][class*="sapphire"],
-[class*="button"][class*="sapphire"] {
+[class*="btn-ruby"]:hover,
+[class*="button-ruby"]:hover,
+[class*="btn-ruby"]:focus,
+[class*="button-ruby"]:focus,
+[class*="btn-ruby"]:active,
+[class*="button-ruby"]:active,
+[class*="button-ruby-check"]:checked + [class*="button-ruby"] {
+  border-color: var(--ruby);
+  background-color: var(--white);
+  color: var(--red);
+  box-shadow: inset 0 0 5px 5px var(--ruby);
+}
+
+[class*="btn-sapphire"],
+[class*="button-sapphire"] {
+  border-color: var(--blue);
   background-color: var(--sapphire);
-  color: var(--btn-color-sapphire);
+  color: var(--white);
+}
+
+[class*="btn-sapphire"]:hover,
+[class*="button-sapphire"]:hover,
+[class*="btn-sapphire"]:focus,
+[class*="button-sapphire"]:focus,
+[class*="btn-sapphire"]:active,
+[class*="button-sapphire"]:active,
+[class*="button-sapphire-check"]:checked + [class*="button-sapphire"] {
+  border-color: var(--sapphire);
+  background-color: var(--white);
+  color: var(--blue);
+  box-shadow: inset 0 0 5px 5px var(--sapphire);
 }
 
 /********** 5. BTN SIZES **********/
