@@ -1,4 +1,4 @@
-/*! animadio v0.2.33 | https://animadio.org | MIT License */
+/*! animadio v0.2.34 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -60,14 +60,14 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --purple: SlateBlue;
   --red: Crimson;
   --yellow: Gold;
-  --choco: Chocolate;
+  --choco: SandyBrown;
   --jade: PaleGreen;
   --khaki: Khaki;
-  --salmon: Salmon;
+  --salmon: LightSalmon;
   --silver: Silver;
-  --sky: SkyBlue;
-  --tomato: Tomato;
-  --violet: Violet;
+  --sky: LightBlue;
+  --tomato: LightCoral;
+  --violet: Thistle;
   --white: Ivory;
   --facebook: #4267b2;
   --github: #24292e;
@@ -77,9 +77,9 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --twitter: #1da1f2;
   --amethyst: rgba(153, 102, 204, 0.5);
   --citrine: rgba(228, 208, 10, 0.5);
-  --quartz: rgba(217, 217, 243, 0.5);
   --emerald: rgba(80, 200, 120, 0.5);
   --obsidian: rgba(15, 15, 15, 0.5);
+  --quartz: rgba(217, 217, 243, 0.5);
   --ruby: rgba(224, 17, 95, 0.5);
   --sapphire: rgba(15, 82, 186, 0.5);
 
@@ -361,22 +361,41 @@ pre {
 /***** 3.1 Btn *****/
 [class*="btn"],
 [class*="button"] {
-  --btn-background-color: var(--blue);
-  --btn-border: solid medium var(--quartz);
-  --btn-color: var(--white);
+  --btn-background-color: var(--white);
+  --btn-border: solid thin var(--black);
+  --btn-color: var(--black);
   --btn-font-size: 1.5rem;
   --btn-margin: 10px;
   --btn-padding: 5px 10px;
   --btn-radius: 10px;
   --btn-text-align: center;
   --btn-hover-anima: none;
-  --btn-hover-background-color: var(--blue);
-  --btn-hover-border: outset medium var(--obsidian);
-  --btn-hover-color: var(--silver);
+  --btn-hover-background-color: var(--black);
+  --btn-hover-border: outset medium var(--white);
+  --btn-hover-color: var(--white);
+  --btn-hover-font-size: 90%;
   --btn-hover-radius: 0;
   --btn-hover-shabox: 5px 5px 5px var(--gray);
-  --btn-hover-transition: border 1s;
+  --btn-hover-transition: background-color 1s;
   --check-button-transform: scale(0.9);
+  --btn-border-black: var(--white);
+  --btn-border-blue: var(--sky);
+  --btn-border-gray: var(--silver);
+  --btn-border-green: var(--jade);
+  --btn-border-maroon: var(--choco);
+  --btn-border-orange: var(--salmon);
+  --btn-border-purple: var(--violet);
+  --btn-border-red: var(--tomato);
+  --btn-border-yellow: var(--khaki);
+  --btn-border-choco: var(--maroon);
+  --btn-border-jade: var(--green);
+  --btn-border-khaki: var(--yellow);
+  --btn-border-salmon: var(--orange);
+  --btn-border-silver: var(--gray);
+  --btn-border-sky: var(--blue);
+  --btn-border-tomato: var(--red);
+  --btn-border-violet: var(--purple);
+  --btn-border-white: var(--black);
   --btn-color-black: var(--white);
   --btn-color-blue: var(--white);
   --btn-color-gray: var(--white);
@@ -386,33 +405,32 @@ pre {
   --btn-color-purple: var(--white);
   --btn-color-red: var(--white);
   --btn-color-yellow: var(--blue);
-  --btn-color-choco: var(--white);
-  --btn-color-jade: var(--violet);
-  --btn-color-khaki: var(--sky);
-  --btn-color-salmon: var(--white);
+  --btn-color-choco: var(--maroon);
+  --btn-color-jade: var(--green);
+  --btn-color-khaki: var(--black);
+  --btn-color-salmon: var(--maroon);
   --btn-color-silver: var(--black);
-  --btn-color-sky: var(--white);
-  --btn-color-tomato: var(--white);
-  --btn-color-violet: var(--white);
+  --btn-color-sky: var(--blue);
+  --btn-color-tomato: var(--red);
+  --btn-color-violet: var(--purple);
   --btn-color-white: var(--black);
-  --btn-color-fb: var(--white);
-  --btn-color-github: var(--white);
-  --btn-color-linkedin: var(--white);
-  --btn-color-npm: var(--white);
-  --btn-color-stack: var(--white);
-  --btn-color-tw: var(--white);
-  --btn-color-amthyst: var(--white);
-  --btn-color-citrine: var(--sky);
-  --btn-color-quartz: var(--black);
-  --btn-color-emerald: var(--violet);
-  --btn-color-obsidian: var(--white);
-  --btn-color-ruby: var(--white);
-  --btn-color-sapphire: var(--khaki);
+  --btn-border-width-xs: 1px;
+  --btn-border-width-sm: 2px;
+  --btn-border-width-md: 3px;
+  --btn-border-width-lg: 4px;
+  --btn-border-width-xl: 5px;
+  --btn-font-size-xs: 70%;
+  --btn-font-size-sm: 90%;
+  --btn-font-size-lg: 110%;
+  --btn-font-size-xl: 130%;
   --btn-padding-xs: 1px 2px;
   --btn-padding-sm: 2px 5px;
   --btn-padding-md: 5px 10px;
   --btn-padding-lg: 10px 20px;
   --btn-padding-xl: 20px 50px;
+  --btn-border-style-square: dashed;
+  --btn-border-style-round: double;
+  --btn-border-style-circle: dotted;
   --btn-radius-square: unset;
   --btn-radius-round: 50px;
   --btn-radius-circle: 50%;
@@ -486,8 +504,10 @@ pre {
 
 /***** 3.4 Gallery *****/
 .gallery {
+  --gallery-align-items: center;
   --gallery-flex-wrap: wrap;
   --gallery-flow: hidden;
+  --gallery-justify-content: center;
   --gallery-margin: auto;
   --gallery-max-w: 90%;
   --gallery-all-cursor: crosshair;
@@ -577,7 +597,6 @@ pre {
 @media (min-width: 576px) {
   .menu {
     --menu-flex-direction: row;
-    --menu-align-items: flex-start;
     --menu-width: 100%;
   }
 }
@@ -1528,7 +1547,7 @@ template {
 /***** 1.1 Hidden *****/
 [class*="check"],
 [class*="radio"] {
-  display: none;
+  display: none !important;
 }
 
 /********** 2. TAGS **********/
@@ -8289,4 +8308,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 10th Apr 2019 @ 3:39:18 PM */
+ Updated: 13th Apr 2019 @ 2:31:31 AM */
