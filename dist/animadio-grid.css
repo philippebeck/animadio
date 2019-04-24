@@ -1,4 +1,4 @@
-/*! animadio v0.2.36 | https://animadio.org | MIT License */
+/*! animadio v0.2.37 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -742,13 +742,25 @@ pre {
 [class*="table"] {
   --table-border-collapse: collapse;
   --table-border-space: 10px;
+  --table-box-shadow: 5px 5px 10px 5px var(--gray);
+  --table-margin-bottom: 50px;
   --table-width: 50%;
-  --table-row-even-background-color: var(--yellow);
+  --table-row-even-background-color: var(--silver);
+  --table-row-even-color: var(--black);
   --table-row-odd-background-color: var(--white);
+  --table-row-odd-color: var(--gray);
+  --table-row-hover-box-shadow: inset 0 0 10px 10px var(--white);
+  --table-row-even-hover-background-color: var(--blue);
+  --table-row-even-hover-color: var(--white);
+  --table-row-odd-hover-background-color: var(--tomato);
+  --table-row-odd-hover-color: var(--white);
+  --table-caption-color: var(--black);
+  --table-caption-font-size: 3rem;
   --table-caption-font-weight: bold;
-  --table-caption-color: var(--red);
+  --table-caption-margin-bottom: 10px;
   --table-caption-side: top;
-  --table-title-background-color: var(--blue);
+  --table-caption-text-shadow: 2px 2px 5px;
+  --table-title-background-color: var(--gray);
   --table-title-color: var(--white);
   --table-title-font-style: italic;
   --table-cell-border-color: var(--black);
@@ -758,7 +770,6 @@ pre {
   --table-cell-padding: 10px;
   --table-cell-text-align: center;
   --table-cell-vertical-align: middle;
-  --table-cell-color: var(--blue);
 }
 
 /********** 4. STATES VARIABLES **********/
@@ -4587,4 +4598,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 13th Apr 2019 @ 6:53:47 PM */
+ Updated: 24th Apr 2019 @ 6:20:21 PM */

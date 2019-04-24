@@ -1,4 +1,4 @@
-/*! animadio v0.2.36 | https://animadio.org | MIT License */
+/*! animadio v0.2.37 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -742,13 +742,25 @@ pre {
 [class*="table"] {
   --table-border-collapse: collapse;
   --table-border-space: 10px;
+  --table-box-shadow: 5px 5px 10px 5px var(--gray);
+  --table-margin-bottom: 50px;
   --table-width: 50%;
-  --table-row-even-background-color: var(--yellow);
+  --table-row-even-background-color: var(--silver);
+  --table-row-even-color: var(--black);
   --table-row-odd-background-color: var(--white);
+  --table-row-odd-color: var(--gray);
+  --table-row-hover-box-shadow: inset 0 0 10px 10px var(--white);
+  --table-row-even-hover-background-color: var(--blue);
+  --table-row-even-hover-color: var(--white);
+  --table-row-odd-hover-background-color: var(--tomato);
+  --table-row-odd-hover-color: var(--white);
+  --table-caption-color: var(--black);
+  --table-caption-font-size: 3rem;
   --table-caption-font-weight: bold;
-  --table-caption-color: var(--red);
+  --table-caption-margin-bottom: 10px;
   --table-caption-side: top;
-  --table-title-background-color: var(--blue);
+  --table-caption-text-shadow: 2px 2px 5px;
+  --table-title-background-color: var(--gray);
   --table-title-color: var(--white);
   --table-title-font-style: italic;
   --table-cell-border-color: var(--black);
@@ -758,7 +770,6 @@ pre {
   --table-cell-padding: 10px;
   --table-cell-text-align: center;
   --table-cell-vertical-align: middle;
-  --table-cell-color: var(--blue);
 }
 
 /********** 4. STATES VARIABLES **********/
@@ -3853,8 +3864,6 @@ pre > *::selection {
   4.1 Table Global
 5. TABLE ROWS
   5.1 Table Rows
-6. TABLE CELLS
-  6.1 Table Cells
 */
 
 /********** 1. TABLE **********/
@@ -3870,7 +3879,10 @@ pre > *::selection {
   display: table;
   border-collapse: var(--table-border-collapse);
   border-spacing: var(--table-border-space);
+  margin-bottom: var(--table-margin-bottom);
   width: var(--table-width);
+  -webkit-box-shadow: var(--table-box-shadow);
+          box-shadow: var(--table-box-shadow);
 }
 
 /***** 1.2 Table Display *****/
@@ -3912,8 +3924,11 @@ pre > *::selection {
 /***** 2.1 Table Caption *****/
 [class*="table"] > caption {
   caption-side: var(--table-caption-side);
+  margin-bottom: var(--table-caption-margin-bottom);
   color: var(--table-caption-color);
+  font-size: var(--table-caption-font-size);
   font-weight: var(--table-caption-font-weight);
+  text-shadow: var(--table-caption-text-shadow);
 }
 
 /********** 3. TABLE TITLES **********/
@@ -3924,8 +3939,7 @@ pre > *::selection {
 
 /***** 3.1 Table Titles *****/
 [class*="table"] thead,
-[class*="table"] tbody th,
-[class*="table"] tfoot th {
+[class*="table"] tfoot {
   background-color: var(--table-title-background-color);
   color: var(--table-title-color);
   font-style: var(--table-title-font-style);
@@ -3956,23 +3970,35 @@ pre > *::selection {
 */
 
 /***** 5.1 Table Rows *****/
+[class*="table"] tbody tr:hover,
+[class*="table"] tbody tr:focus,
+[class*="table"] tbody tr:active {
+  -webkit-box-shadow: var(--table-row-hover-box-shadow);
+          box-shadow: var(--table-row-hover-box-shadow);
+}
+
 [class*="table"] tbody tr:nth-child(even) {
   background-color: var(--table-row-even-background-color);
+  color: var(--table-row-even-color);
+}
+
+[class*="table"] tbody tr:nth-child(even):hover,
+[class*="table"] tbody tr:nth-child(even):focus,
+[class*="table"] tbody tr:nth-child(even):active {
+  background-color: var(--table-row-even-hover-background-color);
+  color: var(--table-row-even-hover-color);
 }
 
 [class*="table"] tbody tr:nth-child(odd) {
   background-color: var(--table-row-odd-background-color);
+  color: var(--table-row-odd-color);
 }
 
-/********** 6. TABLE CELLS **********/
-
-/*
-6.1 Table Cells
-*/
-
-/***** 6.1 Table Cells *****/
-[class*="table"] td {
-  color: var(--table-cell-color);
+[class*="table"] tbody tr:nth-child(odd):hover,
+[class*="table"] tbody tr:nth-child(odd):focus,
+[class*="table"] tbody tr:nth-child(odd):active {
+  background-color: var(--table-row-odd-hover-background-color);
+  color: var(--table-row-odd-hover-color);
 }
 
 
@@ -4252,4 +4278,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 13th Apr 2019 @ 6:53:47 PM */
+ Updated: 24th Apr 2019 @ 6:20:21 PM */
