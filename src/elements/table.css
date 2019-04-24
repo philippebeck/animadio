@@ -13,8 +13,6 @@
   4.1 Table Global
 5. TABLE ROWS
   5.1 Table Rows
-6. TABLE CELLS
-  6.1 Table Cells
 */
 
 /********** 1. TABLE **********/
@@ -30,7 +28,9 @@
   display: table;
   border-collapse: var(--table-border-collapse);
   border-spacing: var(--table-border-space);
+  margin-bottom: var(--table-margin-bottom);
   width: var(--table-width);
+  box-shadow: var(--table-box-shadow);
 }
 
 /***** 1.2 Table Display *****/
@@ -72,8 +72,11 @@
 /***** 2.1 Table Caption *****/
 [class*="table"] > caption {
   caption-side: var(--table-caption-side);
+  margin-bottom: var(--table-caption-margin-bottom);
   color: var(--table-caption-color);
+  font-size: var(--table-caption-font-size);
   font-weight: var(--table-caption-font-weight);
+  text-shadow: var(--table-caption-text-shadow);
 }
 
 /********** 3. TABLE TITLES **********/
@@ -84,8 +87,7 @@
 
 /***** 3.1 Table Titles *****/
 [class*="table"] thead,
-[class*="table"] tbody th,
-[class*="table"] tfoot th {
+[class*="table"] tfoot {
   background-color: var(--table-title-background-color);
   color: var(--table-title-color);
   font-style: var(--table-title-font-style);
@@ -116,22 +118,33 @@
 */
 
 /***** 5.1 Table Rows *****/
+[class*="table"] tbody tr:hover,
+[class*="table"] tbody tr:focus,
+[class*="table"] tbody tr:active {
+  box-shadow: var(--table-row-hover-box-shadow);
+}
+
 [class*="table"] tbody tr:nth-child(even) {
   background-color: var(--table-row-even-background-color);
+  color: var(--table-row-even-color);
+}
+
+[class*="table"] tbody tr:nth-child(even):hover,
+[class*="table"] tbody tr:nth-child(even):focus,
+[class*="table"] tbody tr:nth-child(even):active {
+  background-color: var(--table-row-even-hover-background-color);
+  color: var(--table-row-even-hover-color);
 }
 
 [class*="table"] tbody tr:nth-child(odd) {
   background-color: var(--table-row-odd-background-color);
+  color: var(--table-row-odd-color);
 }
 
-/********** 6. TABLE CELLS **********/
-
-/*
-6.1 Table Cells
-*/
-
-/***** 6.1 Table Cells *****/
-[class*="table"] td {
-  color: var(--table-cell-color);
+[class*="table"] tbody tr:nth-child(odd):hover,
+[class*="table"] tbody tr:nth-child(odd):focus,
+[class*="table"] tbody tr:nth-child(odd):active {
+  background-color: var(--table-row-odd-hover-background-color);
+  color: var(--table-row-odd-hover-color);
 }
 
