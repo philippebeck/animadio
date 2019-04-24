@@ -93,6 +93,12 @@
   font-style: var(--table-title-font-style);
 }
 
+[class*="table"] thead *::selection,
+[class*="table"] tfoot *::selection {
+  background-color: var(--table-title-selection-background-color);
+  color: var(--table-title-selection-color);
+}
+
 /********** 4. TABLE GLOBAL **********/
 
 /*
@@ -109,6 +115,7 @@
   padding: var(--table-cell-padding);
   text-align: var(--table-cell-text-align);
   vertical-align: var(--table-cell-vertical-align);
+  cursor: var(--table-cell-cursor);
 }
 
 /********** 5. TABLE ROWS **********/
@@ -118,12 +125,6 @@
 */
 
 /***** 5.1 Table Rows *****/
-[class*="table"] tbody tr:hover,
-[class*="table"] tbody tr:focus,
-[class*="table"] tbody tr:active {
-  box-shadow: var(--table-row-hover-box-shadow);
-}
-
 [class*="table"] tbody tr:nth-child(even) {
   background-color: var(--table-row-even-background-color);
   color: var(--table-row-even-color);
@@ -134,11 +135,18 @@
 [class*="table"] tbody tr:nth-child(even):active {
   background-color: var(--table-row-even-hover-background-color);
   color: var(--table-row-even-hover-color);
+  box-shadow: var(--table-row-even-hover-box-shadow);
+}
+
+[class*="table"] tbody tr:nth-child(even) > *::selection {
+  background-color: var(--table-row-even-selection-background-color);
+  color: var(--table-row-even-selection-color);
 }
 
 [class*="table"] tbody tr:nth-child(odd) {
   background-color: var(--table-row-odd-background-color);
   color: var(--table-row-odd-color);
+  box-shadow: var(--table-row-odd-hover-box-shadow);
 }
 
 [class*="table"] tbody tr:nth-child(odd):hover,
@@ -146,5 +154,11 @@
 [class*="table"] tbody tr:nth-child(odd):active {
   background-color: var(--table-row-odd-hover-background-color);
   color: var(--table-row-odd-hover-color);
+  box-shadow: var(--table-row-odd-hover-box-shadow);
+}
+
+[class*="table"] tbody tr:nth-child(odd) > *::selection {
+  background-color: var(--table-row-odd-selection-background-color);
+  color: var(--table-row-odd-selection-color);
 }
 
