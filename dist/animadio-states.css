@@ -1,4 +1,4 @@
-/*! animadio v0.2.38 | https://animadio.org | MIT License */
+/*! animadio v0.3.1 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -469,37 +469,87 @@ pre {
 
 /***** 3.3 Form *****/
 .form {
-  --form-margin: auto;
-  --form-padding: 20px 0 40px;
-  --form-width: 300px;
-  --form-flex-direction: column;
-  --form-fieldset-border: medium double;
-  --form-fieldset-margin-left: -13px;
-  --form-fieldset-padding: 20px;
+  --form-border: medium ridge var(--sky);
+  --form-box-shadow: inset 0 0 5px 5px var(--sapphire);
+  --form-margin: 20px auto;
+  --form-padding: 20px;
+  --form-width: 90%;
+  --form-fieldset-border: 0;
+  --form-legend-font-size: 2.5rem;
   --form-legend-font-weight: bold;
-  --form-input-placeholder-color: var(--blue);
-  --form-input-placeholder-font-style: italic;
-  --form-input-placeholder-text-align: center;
-  --form-input-field-background-color: var(--sapphire);
-  --form-input-field-border: thin solid var(--blue);
-  --form-input-field-line-height: 2;
-  --form-input-field-margin: 10px 0 20px;
-  --form-input-field-padding: 10px;
-  --form-input-field-radius: 10px;
-  --form-input-action-line-height: 2.5;
-  --form-input-action-cursor: pointer;
+  --form-legend-margin: auto;
+  --form-list-align-items: baseline;
+  --form-list-flex-direction: column;
+  --form-list-justify-content: center;
+  --form-label-border: thin dashed var(--white);
+  --form-label-color: var(--gray);
+  --form-label-margin: auto;
+  --form-label-padding: 5px;
+  --form-label-text-decoration: none;
+  --form-label-hover-border: thin dashed var(--silver);
+  --form-field-background-color: var(--silver);
+  --form-field-border: medium double var(--blue);
+  --form-field-box-shadow: 5px 5px 10px 10px var(--white);
+  --form-field-line-height: 1.8;
+  --form-field-margin: 10px 0 20px;
+  --form-field-padding: 5px;
+  --form-field-outline: 0;
+  --form-field-radius: 10px;
+  --form-field-width: 100%;
+  --form-field-hover-border: medium double var(--green);
+  --form-field-hover-box-shadow: 5px 5px 10px 5px var(--gray);
+  --form-field-placeholder-color: var(--blue);
+  --form-field-placeholder-font-style: italic;
+  --form-action-border: medium solid var(--quartz);
+  --form-action-box-shadow: inset 0 0 10px 10px var(--white);
+  --form-action-cursor: pointer;
+  --form-action-line-height: 2;
+  --form-action-margin: 10px auto;
+  --form-action-width: 80%;
+  --form-action-hover-box-shadow: inset 0 0 5px 5px var(--white);
+  --form-action-hover-transform: scale(0.9);
+  --form-action-hover-transition: box-shadow 1s;
+  --form-reset-background-color: var(--tomato);
+  --form-reset-border: medium solid var(--ruby);
+  --form-reset-color: var(--red);
+  --form-reset-hover-background-color: var(--red);
+  --form-reset-hover-color: var(--white);
+  --form-submit-background-color: var(--jade);
+  --form-submit-border: medium solid var(--emerald);
+  --form-submit-color: var(--green);
+  --form-submit-hover-background-color: var(--green);
+  --form-submit-hover-color: var(--white);
+}
+
+@media (min-width: 576px) {
+  .form {
+    --form-width: 80%;
+    --form-action-width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    --form-width: 70%;
+    --form-fieldset-margin-left: 0;
+    --form-list-flex-direction: row;
+    --form-list-justify-content: space-around;
+    --form-list-align-items: center;
+    --form-label-text-decoration: dotted underline var(--gray);
+    --form-field-width: 40%;
+    --form-action-width: 30%;
+  }
 }
 
 @media (min-width: 992px) {
   .form {
-    --form-width: 500px;
-    --form-li-flex-direction: row;
-    --form-li-justify-content: space-between;
-    --form-li-align-items: center;
-    --form-label-lg-flex: 2 0 auto;
-    --form-label-text-decoration: underline dashed;
-    --form-fieldset-margin-left: 0;
-    --form-input-width: 75%;
+    --form-width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form {
+    --form-width: 50%;
   }
 }
 
@@ -8330,4 +8380,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 24th Apr 2019 @ 8:32:36 PM */
+ Updated: 28th Apr 2019 @ 6:41:22 PM */
