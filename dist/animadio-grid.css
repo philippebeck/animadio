@@ -1,4 +1,4 @@
-/*! animadio v0.3.3 | https://animadio.org | MIT License */
+/*! animadio v0.3.4 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -214,15 +214,15 @@ pre {
 
 /***** 1.6 Height *****/
 [class*="height-"] {
-  --height-sm: 10vh;
+  --height-sm: 25vh;
   --height-md: 50vh;
-  --height-lg: 100vh;
+  --height-lg: 75vh;
 }
 
 [class*="max-h-"] {
-  --max-height-sm: 50vh;
-  --max-height-md: 75vh;
-  --max-height-lg: 100vh;
+  --max-height-sm: 25vh;
+  --max-height-md: 50vh;
+  --max-height-lg: 75vh;
 }
 
 [class*="min-h-"] {
@@ -235,13 +235,13 @@ pre {
 [class*="width-"] {
   --width-sm: 25%;
   --width-md: 50%;
-  --width-lg: 100%;
+  --width-lg: 75%;
 }
 
 [class*="max-w-"] {
-  --max-width-sm: 50%;
-  --max-width-md: 75%;
-  --max-width-lg: 100%;
+  --max-width-sm: 25%;
+  --max-width-md: 50%;
+  --max-width-lg: 75%;
 }
 
 [class*="min-w-"] {
@@ -564,7 +564,7 @@ pre {
   --gallery-figure-position: relative;
   --gallery-figure-shabox: 0 0 5px;
   --gallery-figure-width: calc(100% - 10px);
-  --gallery-figcaption-background-color: rgba(0, 0, 0, 0.5);
+  --gallery-figcaption-background-color: rgba(0, 0, 0, 0.8);
   --gallery-figcaption-bot: -60%;
   --gallery-figcaption-line-height: 1;
   --gallery-figcaption-position: absolute;
@@ -4647,4 +4647,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 5th May 2019 @ 11:42:44 AM */
+ Updated: 5th May 2019 @ 6:37:06 PM */
