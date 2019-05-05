@@ -126,16 +126,11 @@ h6 {
   --title-font-family: serif;
   --title-xl-font-size: 5rem;
   --title-xl-text-transform: capitalize;
-  --title-xl-color: var(--purple);
   --title-lg-font-size: 4rem;
   --title-lg-text-transform: none;
-  --title-lg-color: var(--green);
   --title-md-font-size: 3rem;
-  --title-md-color: var(--gray);
   --title-sm-font-size: 2.5rem;
-  --title-sm-color: var(--black);
   --title-xs-font-size: 2rem;
-  --title-xs-color: var(--gray);
 }
 
 a {
