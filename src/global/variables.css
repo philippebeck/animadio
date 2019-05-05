@@ -212,15 +212,15 @@ pre {
 
 /***** 1.6 Height *****/
 [class*="height-"] {
-  --height-sm: 10vh;
+  --height-sm: 25vh;
   --height-md: 50vh;
-  --height-lg: 100vh;
+  --height-lg: 75vh;
 }
 
 [class*="max-h-"] {
-  --max-height-sm: 50vh;
-  --max-height-md: 75vh;
-  --max-height-lg: 100vh;
+  --max-height-sm: 25vh;
+  --max-height-md: 50vh;
+  --max-height-lg: 75vh;
 }
 
 [class*="min-h-"] {
