@@ -105,15 +105,15 @@
 }
 
 /***** 2.2 Grid Gap XS *****/
-[class*="gap-"][class*="-1xs"] {
+.gap-1xs {
   grid-gap: var(--gap-1xs);
 }
 
-[class*="gap-"][class*="-2xs"] {
+.gap-2xs {
   grid-gap: var(--gap-2xs);
 }
 
-[class*="gap-"][class*="-3xs"] {
+.gap-3xs {
   grid-gap: var(--gap-3xs);
 }
 
@@ -184,15 +184,15 @@
 
 /***** 3.2 Grid Gap SM *****/
 @media (min-width: 576px) {
-  [class*="gap-"][class*="-1sm"] {
+  .gap-1sm {
     grid-gap: var(--gap-1sm);
   }
 
-  [class*="gap-"][class*="-2sm"] {
+  .gap-2sm {
     grid-gap: var(--gap-2sm);
   }
 
-  [class*="gap-"][class*="-3sm"] {
+  .gap-3sm {
     grid-gap: var(--gap-3sm);
   }
 }
@@ -264,15 +264,15 @@
 
 /***** 4.2 Grid Gap MD *****/
 @media (min-width: 768px) {
-  [class*="gap-"][class*="-1md"] {
+  .gap-1md {
     grid-gap: var(--gap-1md);
   }
 
-  [class*="gap-"][class*="-2md"] {
+  .gap-2md {
     grid-gap: var(--gap-2md);
   }
 
-  [class*="gap-"][class*="-3md"] {
+  .gap-3md {
     grid-gap: var(--gap-3md);
   }
 }
@@ -344,15 +344,15 @@
 
 /***** 5.2 Grid Gap LG *****/
 @media (min-width: 992px) {
-  [class*="gap-"][class*="-1lg"] {
+  .gap-1lg {
     grid-gap: var(--gap-1lg);
   }
 
-  [class*="gap-"][class*="-2lg"] {
+  .gap-2lg {
     grid-gap: var(--gap-2lg);
   }
 
-  [class*="gap-"][class*="-3lg"] {
+  .gap-3lg {
     grid-gap: var(--gap-3lg);
   }
 }
@@ -424,15 +424,15 @@
 
 /***** 6.2 Grid Gap XL *****/
 @media (min-width: 1200px) {
-  [class*="gap-"][class*="-1xl"] {
+  .gap-1xl {
     grid-gap: var(--gap-1xl);
   }
 
-  [class*="gap-"][class*="-2xl"] {
+  .gap-2xl {
     grid-gap: var(--gap-2xl);
   }
 
-  [class*="gap-"][class*="-3xl"] {
+  .gap-3xl {
     grid-gap: var(--gap-3xl);
   }
 }
