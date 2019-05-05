@@ -233,13 +233,13 @@ pre {
 [class*="width-"] {
   --width-sm: 25%;
   --width-md: 50%;
-  --width-lg: 100%;
+  --width-lg: 75%;
 }
 
 [class*="max-w-"] {
-  --max-width-sm: 50%;
-  --max-width-md: 75%;
-  --max-width-lg: 100%;
+  --max-width-sm: 25%;
+  --max-width-md: 50%;
+  --max-width-lg: 75%;
 }
 
 [class*="min-w-"] {
