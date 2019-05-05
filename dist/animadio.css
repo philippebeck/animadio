@@ -1,4 +1,4 @@
-/*! animadio v0.3.2 | https://animadio.org | MIT License */
+/*! animadio v0.3.3 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -83,7 +83,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --ruby: rgba(224, 17, 95, 0.7);
   --sapphire: rgba(15, 82, 186, 0.7);
 
-  /***** 1.3 Keyframes *****/
+  /***** 1.2 Keyframes *****/
   --keyframes-content1: url(https://animadio.org/img/svg/1.svg);
   --keyframes-content2: url(https://animadio.org/img/svg/2.svg);
   --keyframes-content3: url(https://animadio.org/img/svg/3.svg);
@@ -106,9 +106,9 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --keyframes-width: 100%;
 }
 
-/***** 1.4 Init *****/
+/***** 1.3 Init *****/
 body {
-  --global-font-family: serif;
+  --global-font-family: sans-serif;
   --global-line-height: 1.6;
   --global-font-size: 1.8rem;
   --global-background-color: none;
@@ -125,19 +125,14 @@ h3,
 h4,
 h5,
 h6 {
-  --title-font-family: sans-serif;
-  --title-xl-font-size: 6rem;
+  --title-font-family: serif;
+  --title-xl-font-size: 5rem;
   --title-xl-text-transform: capitalize;
-  --title-xl-color: var(--purple);
-  --title-lg-font-size: 5rem;
+  --title-lg-font-size: 4rem;
   --title-lg-text-transform: none;
-  --title-lg-color: var(--green);
-  --title-md-font-size: 4rem;
-  --title-md-color: var(--gray);
-  --title-sm-font-size: 3rem;
-  --title-sm-color: var(--black);
+  --title-md-font-size: 3rem;
+  --title-sm-font-size: 2.5rem;
   --title-xs-font-size: 2rem;
-  --title-xs-color: var(--gray);
 }
 
 a {
@@ -177,7 +172,7 @@ pre {
   --pre-selection-color: var(--black);
 }
 
-/***** 1.5 Margin *****/
+/***** 1.4 Margin *****/
 [class*="mar-"] {
   --margin-none: 0;
   --margin-sm: 10px;
@@ -197,7 +192,7 @@ pre {
   --margin-top-lg: 50px;
 }
 
-/***** 1.6 Padding *****/
+/***** 1.5 Padding *****/
 [class*="pad-"] {
   --padding-none: 0;
   --padding-sm: 10px;
@@ -217,7 +212,7 @@ pre {
   --padding-top-lg: 50px;
 }
 
-/***** 1.7 Height *****/
+/***** 1.6 Height *****/
 [class*="height-"] {
   --height-sm: 10vh;
   --height-md: 50vh;
@@ -236,7 +231,7 @@ pre {
   --min-height-lg: 75vh;
 }
 
-/***** 1.8 Width *****/
+/***** 1.7 Width *****/
 [class*="width-"] {
   --width-sm: 25%;
   --width-md: 50%;
@@ -1671,29 +1666,24 @@ h6 {
 h1 {
   font-size: var(--title-xl-font-size);
   text-transform: var(--title-xl-text-transform);
-  color: var(--title-xl-color);
 }
 
 h2 {
   font-size: var(--title-lg-font-size);
   text-transform: var(--title-lg-text-transform);
-  color: var(--title-lg-color);
 }
 
 h3 {
   font-size: var(--title-md-font-size);
-  color: var(--title-md-color);
 }
 
 h4 {
   font-size: var(--title-sm-font-size);
-  color: var(--title-sm-color);
 }
 
 h5,
 h6 {
   font-size: var(--title-xs-font-size);
-  color: var(--title-xs-color);
 }
 
 /***** 2.3 Link *****/
@@ -2484,15 +2474,15 @@ pre > *::selection {
 }
 
 /***** 2.2 Grid Gap XS *****/
-[class*="gap-"][class*="-1xs"] {
+.gap-1xs {
   grid-gap: var(--gap-1xs);
 }
 
-[class*="gap-"][class*="-2xs"] {
+.gap-2xs {
   grid-gap: var(--gap-2xs);
 }
 
-[class*="gap-"][class*="-3xs"] {
+.gap-3xs {
   grid-gap: var(--gap-3xs);
 }
 
@@ -2563,15 +2553,15 @@ pre > *::selection {
 
 /***** 3.2 Grid Gap SM *****/
 @media (min-width: 576px) {
-  [class*="gap-"][class*="-1sm"] {
+  .gap-1sm {
     grid-gap: var(--gap-1sm);
   }
 
-  [class*="gap-"][class*="-2sm"] {
+  .gap-2sm {
     grid-gap: var(--gap-2sm);
   }
 
-  [class*="gap-"][class*="-3sm"] {
+  .gap-3sm {
     grid-gap: var(--gap-3sm);
   }
 }
@@ -2643,15 +2633,15 @@ pre > *::selection {
 
 /***** 4.2 Grid Gap MD *****/
 @media (min-width: 768px) {
-  [class*="gap-"][class*="-1md"] {
+  .gap-1md {
     grid-gap: var(--gap-1md);
   }
 
-  [class*="gap-"][class*="-2md"] {
+  .gap-2md {
     grid-gap: var(--gap-2md);
   }
 
-  [class*="gap-"][class*="-3md"] {
+  .gap-3md {
     grid-gap: var(--gap-3md);
   }
 }
@@ -2723,15 +2713,15 @@ pre > *::selection {
 
 /***** 5.2 Grid Gap LG *****/
 @media (min-width: 992px) {
-  [class*="gap-"][class*="-1lg"] {
+  .gap-1lg {
     grid-gap: var(--gap-1lg);
   }
 
-  [class*="gap-"][class*="-2lg"] {
+  .gap-2lg {
     grid-gap: var(--gap-2lg);
   }
 
-  [class*="gap-"][class*="-3lg"] {
+  .gap-3lg {
     grid-gap: var(--gap-3lg);
   }
 }
@@ -2803,15 +2793,15 @@ pre > *::selection {
 
 /***** 6.2 Grid Gap XL *****/
 @media (min-width: 1200px) {
-  [class*="gap-"][class*="-1xl"] {
+  .gap-1xl {
     grid-gap: var(--gap-1xl);
   }
 
-  [class*="gap-"][class*="-2xl"] {
+  .gap-2xl {
     grid-gap: var(--gap-2xl);
   }
 
-  [class*="gap-"][class*="-3xl"] {
+  .gap-3xl {
     grid-gap: var(--gap-3xl);
   }
 }
@@ -12697,4 +12687,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 28th Apr 2019 @ 7:27:48 PM */
+ Updated: 5th May 2019 @ 11:42:44 AM */

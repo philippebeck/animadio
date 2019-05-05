@@ -1,4 +1,4 @@
-/*! animadio v0.3.2 | https://animadio.org | MIT License */
+/*! animadio v0.3.3 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -83,7 +83,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --ruby: rgba(224, 17, 95, 0.7);
   --sapphire: rgba(15, 82, 186, 0.7);
 
-  /***** 1.3 Keyframes *****/
+  /***** 1.2 Keyframes *****/
   --keyframes-content1: url(https://animadio.org/img/svg/1.svg);
   --keyframes-content2: url(https://animadio.org/img/svg/2.svg);
   --keyframes-content3: url(https://animadio.org/img/svg/3.svg);
@@ -106,9 +106,9 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --keyframes-width: 100%;
 }
 
-/***** 1.4 Init *****/
+/***** 1.3 Init *****/
 body {
-  --global-font-family: serif;
+  --global-font-family: sans-serif;
   --global-line-height: 1.6;
   --global-font-size: 1.8rem;
   --global-background-color: none;
@@ -125,19 +125,14 @@ h3,
 h4,
 h5,
 h6 {
-  --title-font-family: sans-serif;
-  --title-xl-font-size: 6rem;
+  --title-font-family: serif;
+  --title-xl-font-size: 5rem;
   --title-xl-text-transform: capitalize;
-  --title-xl-color: var(--purple);
-  --title-lg-font-size: 5rem;
+  --title-lg-font-size: 4rem;
   --title-lg-text-transform: none;
-  --title-lg-color: var(--green);
-  --title-md-font-size: 4rem;
-  --title-md-color: var(--gray);
-  --title-sm-font-size: 3rem;
-  --title-sm-color: var(--black);
+  --title-md-font-size: 3rem;
+  --title-sm-font-size: 2.5rem;
   --title-xs-font-size: 2rem;
-  --title-xs-color: var(--gray);
 }
 
 a {
@@ -177,7 +172,7 @@ pre {
   --pre-selection-color: var(--black);
 }
 
-/***** 1.5 Margin *****/
+/***** 1.4 Margin *****/
 [class*="mar-"] {
   --margin-none: 0;
   --margin-sm: 10px;
@@ -197,7 +192,7 @@ pre {
   --margin-top-lg: 50px;
 }
 
-/***** 1.6 Padding *****/
+/***** 1.5 Padding *****/
 [class*="pad-"] {
   --padding-none: 0;
   --padding-sm: 10px;
@@ -217,7 +212,7 @@ pre {
   --padding-top-lg: 50px;
 }
 
-/***** 1.7 Height *****/
+/***** 1.6 Height *****/
 [class*="height-"] {
   --height-sm: 10vh;
   --height-md: 50vh;
@@ -236,7 +231,7 @@ pre {
   --min-height-lg: 75vh;
 }
 
-/***** 1.8 Width *****/
+/***** 1.7 Width *****/
 [class*="width-"] {
   --width-sm: 25%;
   --width-md: 50%;
@@ -1671,29 +1666,24 @@ h6 {
 h1 {
   font-size: var(--title-xl-font-size);
   text-transform: var(--title-xl-text-transform);
-  color: var(--title-xl-color);
 }
 
 h2 {
   font-size: var(--title-lg-font-size);
   text-transform: var(--title-lg-text-transform);
-  color: var(--title-lg-color);
 }
 
 h3 {
   font-size: var(--title-md-font-size);
-  color: var(--title-md-color);
 }
 
 h4 {
   font-size: var(--title-sm-font-size);
-  color: var(--title-sm-color);
 }
 
 h5,
 h6 {
   font-size: var(--title-xs-font-size);
-  color: var(--title-xs-color);
 }
 
 /***** 2.3 Link *****/
@@ -4416,4 +4406,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 28th Apr 2019 @ 7:27:48 PM */
+ Updated: 5th May 2019 @ 11:42:44 AM */
