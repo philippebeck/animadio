@@ -562,7 +562,7 @@ pre {
   --gallery-figure-position: relative;
   --gallery-figure-shabox: 0 0 5px;
   --gallery-figure-width: calc(100% - 10px);
-  --gallery-figcaption-background-color: rgba(0, 0, 0, 0.5);
+  --gallery-figcaption-background-color: rgba(0, 0, 0, 0.8);
   --gallery-figcaption-bot: -60%;
   --gallery-figcaption-line-height: 1;
   --gallery-figcaption-position: absolute;
