@@ -1,4 +1,4 @@
-/*! animadio v0.3.4 | https://animadio.org | MIT License */
+/*! animadio v0.3.5 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -368,7 +368,7 @@ pre {
   --btn-text-align: center;
   --btn-hover-anima: none;
   --btn-hover-background-color: var(--black);
-  --btn-hover-border: outset medium var(--white);
+  --btn-hover-border: outset thin var(--white);
   --btn-hover-color: var(--white);
   --btn-hover-radius: 0;
   --btn-hover-shabox: 5px 5px 5px var(--gray);
@@ -589,22 +589,29 @@ pre {
 
 @media (min-width: 576px) {
   .gallery {
-    --gallery-figure-margin: 6px;
-    --gallery-figure-width: calc(100% / 2 - 12px);
+    --gallery-figure-margin: 10px;
+    --gallery-figure-width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    --gallery-figure-margin: 15px;
+    --gallery-figure-width: calc(100% / 3 - 30px);
   }
 }
 
 @media (min-width: 992px) {
   .gallery {
-    --gallery-figure-margin: 7px;
-    --gallery-figure-width: calc(100% / 3 - 14px);
+    --gallery-figure-margin: 20px;
+    --gallery-figure-width: calc(100% / 4 - 40px);
   }
 }
 
 @media (min-width: 1200px) {
   .gallery {
-    --gallery-figure-margin: 8px;
-    --gallery-figure-width: calc(100% / 4 - 16px);
+    --gallery-figure-margin: 30px;
+    --gallery-figure-width: calc(100% / 6 - 60px);
   }
 }
 
@@ -4647,4 +4654,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 5th May 2019 @ 6:37:06 PM */
+ Updated: 8th May 2019 @ 12:05:01 PM */
