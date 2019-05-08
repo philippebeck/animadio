@@ -366,7 +366,7 @@ pre {
   --btn-text-align: center;
   --btn-hover-anima: none;
   --btn-hover-background-color: var(--black);
-  --btn-hover-border: outset medium var(--white);
+  --btn-hover-border: outset thin var(--white);
   --btn-hover-color: var(--white);
   --btn-hover-radius: 0;
   --btn-hover-shabox: 5px 5px 5px var(--gray);
