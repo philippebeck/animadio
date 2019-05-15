@@ -382,27 +382,27 @@
   animation-name: translateX;
 }
 
-/***** 5.3 Anima Trany *****/
-[class*="anima-tranY-"][class*="-base"],
-[class*="anima-tranY-"][class*="-global"] > *,
-*:hover > [class*="anima-tranY-"][class*="-into"],
-*:focus > [class*="anima-tranY-"][class*="-into"],
-*:active > [class*="anima-tranY-"][class*="-into"],
-[class*="anima-tranY-"][class*="-onto"]:hover,
-[class*="anima-tranY-"][class*="-onto"]:focus,
-[class*="anima-tranY-"][class*="-onto"]:active,
-[class*="anima-tranY-"][class*="-toall"]:hover > *,
-[class*="anima-tranY-"][class*="-toall"]:focus > *,
-[class*="anima-tranY-"][class*="-toall"]:active > *,
-[class*="anima-tranY-"][class*="-toone"] > *:hover,
-[class*="anima-tranY-"][class*="-toone"] > *:focus,
-[class*="anima-tranY-"][class*="-toone"] > *:active,
-[class*="anima-tranY-"][class*="-radio1"]:checked ~ [class*="anima-tranY-"][class*="-relay"] [class*="anima-tranY-"][class*="-target1"],
-[class*="anima-tranY-"][class*="-radio2"]:checked ~ [class*="anima-tranY-"][class*="-relay"] [class*="anima-tranY-"][class*="-target2"],
-[class*="anima-tranY-"][class*="-radio3"]:checked ~ [class*="anima-tranY-"][class*="-relay"] [class*="anima-tranY-"][class*="-target3"],
-[class*="anima-tranY-"][class*="-radio4"]:checked ~ [class*="anima-tranY-"][class*="-relay"] [class*="anima-tranY-"][class*="-target4"],
-[class*="anima-tranY-"][class*="-radio5"]:checked ~ [class*="anima-tranY-"][class*="-relay"] [class*="anima-tranY-"][class*="-target5"],
-[class*="anima-tranY-"][class*="-check"]:checked ~ [class*="anima-tranY-"][class*="-hub"] [class*="anima-tranY-"][class*="-goal"] {
+/***** 5.3 Anima trany *****/
+[class*="anima-trany-"][class*="-base"],
+[class*="anima-trany-"][class*="-global"] > *,
+*:hover > [class*="anima-trany-"][class*="-into"],
+*:focus > [class*="anima-trany-"][class*="-into"],
+*:active > [class*="anima-trany-"][class*="-into"],
+[class*="anima-trany-"][class*="-onto"]:hover,
+[class*="anima-trany-"][class*="-onto"]:focus,
+[class*="anima-trany-"][class*="-onto"]:active,
+[class*="anima-trany-"][class*="-toall"]:hover > *,
+[class*="anima-trany-"][class*="-toall"]:focus > *,
+[class*="anima-trany-"][class*="-toall"]:active > *,
+[class*="anima-trany-"][class*="-toone"] > *:hover,
+[class*="anima-trany-"][class*="-toone"] > *:focus,
+[class*="anima-trany-"][class*="-toone"] > *:active,
+[class*="anima-trany-"][class*="-radio1"]:checked ~ [class*="anima-trany-"][class*="-relay"] [class*="anima-trany-"][class*="-target1"],
+[class*="anima-trany-"][class*="-radio2"]:checked ~ [class*="anima-trany-"][class*="-relay"] [class*="anima-trany-"][class*="-target2"],
+[class*="anima-trany-"][class*="-radio3"]:checked ~ [class*="anima-trany-"][class*="-relay"] [class*="anima-trany-"][class*="-target3"],
+[class*="anima-trany-"][class*="-radio4"]:checked ~ [class*="anima-trany-"][class*="-relay"] [class*="anima-trany-"][class*="-target4"],
+[class*="anima-trany-"][class*="-radio5"]:checked ~ [class*="anima-trany-"][class*="-relay"] [class*="anima-trany-"][class*="-target5"],
+[class*="anima-trany-"][class*="-check"]:checked ~ [class*="anima-trany-"][class*="-hub"] [class*="anima-trany-"][class*="-goal"] {
   animation-name: translateY;
 }
 
