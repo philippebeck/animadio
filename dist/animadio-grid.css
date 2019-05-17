@@ -443,6 +443,7 @@ pre {
   --foot-main-flex-direction: column;
   --foot-main-font-color: var(--white);
   --foot-main-justify-content: space-evenly;
+  --foot-main-margin: 0;
   --foot-list-cursor: pointer;
   --foot-list-text-align: center;
   --foot-list-link-font-color: var(--white);
@@ -451,6 +452,7 @@ pre {
   --foot-info-background-color: var(--white);
   --foot-info-cursor: crosshair;
   --foot-info-justify-content: center;
+  --foot-info-margin: 0;
   --foot-info-padding-top: 20px;
   --foot-info-link-margin-left: 10px;
   --foot-info-link-margin-right: 10px;
@@ -4654,4 +4656,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 8th May 2019 @ 12:05:01 PM */
+ Updated: 17th May 2019 @ 10:22:53 AM */

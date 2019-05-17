@@ -443,6 +443,7 @@ pre {
   --foot-main-flex-direction: column;
   --foot-main-font-color: var(--white);
   --foot-main-justify-content: space-evenly;
+  --foot-main-margin: 0;
   --foot-list-cursor: pointer;
   --foot-list-text-align: center;
   --foot-list-link-font-color: var(--white);
@@ -451,6 +452,7 @@ pre {
   --foot-info-background-color: var(--white);
   --foot-info-cursor: crosshair;
   --foot-info-justify-content: center;
+  --foot-info-margin: 0;
   --foot-info-padding-top: 20px;
   --foot-info-link-margin-left: 10px;
   --foot-info-link-margin-right: 10px;
@@ -4355,6 +4357,7 @@ pre > *::selection {
   -webkit-box-pack: var(--foot-main-justify-content);
       -ms-flex-pack: var(--foot-main-justify-content);
           justify-content: var(--foot-main-justify-content);
+  margin: var(--foot-main-margin);
   background-color: var(--foot-main-background-color);
   color: var(--foot-main-font-color);
   cursor: var(--foot-main-cursor);
@@ -4399,6 +4402,7 @@ pre > *::selection {
   -webkit-box-pack: var(--foot-info-justify-content);
       -ms-flex-pack: var(--foot-info-justify-content);
           justify-content: var(--foot-info-justify-content);
+  margin: var(--foot-info-margin);
   padding-top: var(--foot-info-padding-top);
   background-color: var(--foot-info-background-color);
   cursor: var(--foot-info-cursor);
@@ -4413,4 +4417,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 8th May 2019 @ 12:05:01 PM */
+ Updated: 17th May 2019 @ 10:22:53 AM */
