@@ -61,6 +61,7 @@
 .foot-main {
   flex-direction: var(--foot-main-flex-direction);
   justify-content: var(--foot-main-justify-content);
+  margin: var(--foot-main-margin);
   background-color: var(--foot-main-background-color);
   color: var(--foot-main-font-color);
   cursor: var(--foot-main-cursor);
@@ -103,6 +104,7 @@
 /***** 5.1 Foot Info *****/
 .foot-info {
   justify-content: var(--foot-info-justify-content);
+  margin: var(--foot-info-margin);
   padding-top: var(--foot-info-padding-top);
   background-color: var(--foot-info-background-color);
   cursor: var(--foot-info-cursor);
