@@ -441,6 +441,7 @@ pre {
   --foot-main-flex-direction: column;
   --foot-main-font-color: var(--white);
   --foot-main-justify-content: space-evenly;
+  --foot-main-margin: 0;
   --foot-list-cursor: pointer;
   --foot-list-text-align: center;
   --foot-list-link-font-color: var(--white);
@@ -449,6 +450,7 @@ pre {
   --foot-info-background-color: var(--white);
   --foot-info-cursor: crosshair;
   --foot-info-justify-content: center;
+  --foot-info-margin: 0;
   --foot-info-padding-top: 20px;
   --foot-info-link-margin-left: 10px;
   --foot-info-link-margin-right: 10px;
