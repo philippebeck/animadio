@@ -1,4 +1,4 @@
-/*! animadio v0.3.5 | https://animadio.org | MIT License */
+/*! animadio v0.3.7 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -126,13 +126,43 @@ h4,
 h5,
 h6 {
   --title-font-family: serif;
-  --title-xl-font-size: 5rem;
+  --title-xl-font-size: 3rem;
   --title-xl-text-transform: capitalize;
-  --title-lg-font-size: 4rem;
+  --title-lg-font-size: 2.5rem;
   --title-lg-text-transform: none;
-  --title-md-font-size: 3rem;
-  --title-sm-font-size: 2.5rem;
-  --title-xs-font-size: 2rem;
+  --title-md-font-size: 2rem;
+  --title-sm-font-size: 1.5rem;
+  --title-xs-font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    --title-xl-font-size: 3.5rem;
+    --title-lg-font-size: 3rem;
+    --title-md-font-size: 2.5rem;
+    --title-sm-font-size: 2rem;
+    --title-xs-font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    --title-xl-font-size: 4rem;
+    --title-lg-font-size: 3.5rem;
+    --title-md-font-size: 3rem;
+    --title-sm-font-size: 2.5rem;
+    --title-xs-font-size: 2rem;
+  }
 }
 
 a {
@@ -436,7 +466,7 @@ pre {
 [class*="foot"] {
   --foot-text-align: center;
   --foot-title-color: var(--khaki);
-  --foot-title-font-size: 1.8rem;
+  --foot-title-font-size: 2rem;
   --foot-global-padding-bot: 20px;
   --foot-main-background-color: var(--purple);
   --foot-main-cursor: help;
@@ -4417,4 +4447,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 17th May 2019 @ 10:22:53 AM */
+ Updated: 25th May 2019 @ 10:49:20 AM */
