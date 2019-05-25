@@ -464,7 +464,7 @@ pre {
 [class*="foot"] {
   --foot-text-align: center;
   --foot-title-color: var(--khaki);
-  --foot-title-font-size: 1.8rem;
+  --foot-title-font-size: 2rem;
   --foot-global-padding-bot: 20px;
   --foot-main-background-color: var(--purple);
   --foot-main-cursor: help;
