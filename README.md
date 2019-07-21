@@ -7,15 +7,12 @@
 -   Click anywhere on the page to **enable & disable any design effect** anywhere else
 -   Management of **keyframes animations** & their options
 -   Complete & simple customization with directly modifiable **CSS variables**
--   More than 99% of **pure CSS** ; so all of that without JavaScript, it's a joke ?... No ?!
+-   More than 99% of **pure CSS** : so all of that without JavaScript...
 
 [![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
-[![David Dev Dependencies](https://img.shields.io/david/dev/animadio/animadio.svg?label=Dev+Dependencies)](https://david-dm.org/animadio/animadio?type=dev)
-[![Travis Build](https://travis-ci.com/animadio/animadio.svg?branch=master)](https://travis-ci.com/animadio/animadio)
-
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg?label=Last+Commit)](https://github.com/animadio/animadio/commits/master)
+[![David Dev Dependencies](https://david-dm.org/animadio/animadio/dev-status.svg)](https://david-dm.org/animadio/animadio?type=dev)
 [![Codacy Code Quality](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
-[![CodeClimate Maintainability](https://img.shields.io/codeclimate/maintainability-percentage/animadio/animadio.svg?label=Maintainability)](https://codeclimate.com/github/animadio/animadio)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ad3b450099d132b4d98d/maintainability)](https://codeclimate.com/github/animadio/animadio/maintainability)
 
 ## Summary
 
@@ -41,8 +38,6 @@
 ## Package Managers
 
 [![NPM Version](https://img.shields.io/npm/v/animadio.svg?label=NPM)](https://www.npmjs.com/package/animadio)
-
-[![NPM Weekly Downloads](https://img.shields.io/npm/dw/animadio.svg?label=Weekly+Downloads)](https://www.npmjs.com/package/animadio)
 [![NPM Montly Downloads](https://img.shields.io/npm/dm/animadio.svg?label=Montly+Downloads)](https://www.npmjs.com/package/animadio)
 [![NPM Yearly Downloads](https://img.shields.io/npm/dy/animadio.svg?label=Yearly+Downloads)](https://www.npmjs.com/package/animadio)
 
@@ -61,7 +56,6 @@ Composer : `composer require animadio/animadio`
 
 ## CDN 
 
-[![jsDelivr Weekly Downloads](https://img.shields.io/jsdelivr/npm/hw/animadio.svg?label=jsDelivr+Weekly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 
@@ -130,7 +124,7 @@ You can simply use the library & if you want or if you need : you can overload t
 Animadio has continuous support & community networks will give all news !
 
 [![Project Maintained](https://img.shields.io/maintenance/yes/2019.svg?label=Maintained)](https://github.com/animadio/animadio)
-[![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/animadio/animadio.svg?label=Commit+Activity)](https://github.com/animadio/animadio/graphs/commit-activity)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg?label=Last+Commit)](https://github.com/animadio/animadio/commits/master)
 
 ---
 
@@ -160,7 +154,7 @@ Slack : [animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQ
 
 Documentation will arrive as soon as possible !
 
-[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg?label=https://animadio.org)](https://animadio.org)
+[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg?label=https://animadio.org)](https://danimadio.org)
 
 ---
 
