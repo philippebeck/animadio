@@ -1,4 +1,4 @@
-/*! animadio v0.4.0 | https://animadio.org | MIT License */
+/*! animadio v0.4.1 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -1767,6 +1767,12 @@ pre {
   overflow: var(--pre-overflow);
   padding: var(--pre-padding);
   font-family: var(--pre-font-family);
+}
+
+code > *::-moz-selection,
+pre > *::-moz-selection {
+  background-color: var(--pre-selection-background-color);
+  color: var(--pre-selection-color);
 }
 
 code > *::selection,
@@ -8409,4 +8415,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 1st Jun 2019 @ 7:04:30 PM */
+ Updated: 21st Jul 2019 @ 11:28:29 AM */
