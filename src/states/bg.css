@@ -24,10 +24,11 @@
 3. BRAND BACKGROUND COLORS
   3.1 FaceBook
   3.2 GitHub
-  3.3 LinkedIn
-  3.4 NPM
-  3.5 Stack Overflow
-  3.6 Twitter
+  3.3 JSDelivr
+  3.4 LinkedIn
+  3.5 NPM
+  3.6 Stack Overflow
+  3.7 Twitter
 4. TRANSPARENT BACKGROUND COLORS
   4.1 Amethyst
   4.2 Citrine
@@ -557,7 +558,31 @@
   background-color: var(--github);
 }
 
-/***** 3.3 LinkedIn Background Color *****/
+/***** 3.3 JSDelivr Background Color *****/
+[class*="bg-jsd-"][class*="-base"],
+[class*="bg-jsd-"][class*="-global"] > *,
+*:hover > [class*="bg-jsd-"][class*="-into"],
+*:focus > [class*="bg-jsd-"][class*="-into"],
+*:active > [class*="bg-jsd-"][class*="-into"],
+[class*="bg-jsd-"][class*="-onto"]:hover,
+[class*="bg-jsd-"][class*="-onto"]:focus,
+[class*="bg-jsd-"][class*="-onto"]:active,
+[class*="bg-jsd-"][class*="-toall"]:hover > *,
+[class*="bg-jsd-"][class*="-toall"]:focus > *,
+[class*="bg-jsd-"][class*="-toall"]:active > *,
+[class*="bg-jsd-"][class*="-toone"] > *:hover,
+[class*="bg-jsd-"][class*="-toone"] > *:focus,
+[class*="bg-jsd-"][class*="-toone"] > *:active,
+[class*="bg-jsd-"][class*="-radio1"]:checked ~ [class*="bg-jsd-"][class*="-relay"] [class*="bg-jsd-"][class*="-target1"],
+[class*="bg-jsd-"][class*="-radio2"]:checked ~ [class*="bg-jsd-"][class*="-relay"] [class*="bg-jsd-"][class*="-target2"],
+[class*="bg-jsd-"][class*="-radio3"]:checked ~ [class*="bg-jsd-"][class*="-relay"] [class*="bg-jsd-"][class*="-target3"],
+[class*="bg-jsd-"][class*="-radio4"]:checked ~ [class*="bg-jsd-"][class*="-relay"] [class*="bg-jsd-"][class*="-target4"],
+[class*="bg-jsd-"][class*="-radio5"]:checked ~ [class*="bg-jsd-"][class*="-relay"] [class*="bg-jsd-"][class*="-target5"],
+[class*="bg-jsd-"][class*="-check"]:checked ~ [class*="bg-jsd-"][class*="-hub"] [class*="bg-jsd-"][class*="-goal"] {
+  background-color: var(--jsdelivr);
+}
+
+/***** 3.4 LinkedIn Background Color *****/
 [class*="bg-linkedin-"][class*="-base"],
 [class*="bg-linkedin-"][class*="-global"] > *,
 *:hover > [class*="bg-linkedin-"][class*="-into"],
@@ -581,7 +606,7 @@
   background-color: var(--linkedin);
 }
 
-/***** 3.4 NPM Background Color *****/
+/***** 3.5 NPM Background Color *****/
 [class*="bg-npm-"][class*="-base"],
 [class*="bg-npm-"][class*="-global"] > *,
 *:hover > [class*="bg-npm-"][class*="-into"],
@@ -605,7 +630,7 @@
   background-color: var(--npm);
 }
 
-/***** 3.5 Stack Overflow Background Color *****/
+/***** 3.6 Stack Overflow Background Color *****/
 [class*="bg-stack-"][class*="-base"],
 [class*="bg-stack-"][class*="-global"] > *,
 *:hover > [class*="bg-stack-"][class*="-into"],
@@ -629,7 +654,7 @@
   background-color: var(--stackoverflow);
 }
 
-/***** 3.6 Twitter Background Color *****/
+/***** 3.7 Twitter Background Color *****/
 [class*="bg-tw-"][class*="-base"],
 [class*="bg-tw-"][class*="-global"] > *,
 *:hover > [class*="bg-tw-"][class*="-into"],
