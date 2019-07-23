@@ -16,7 +16,7 @@
 
 ## Summary
 
--   [Package Managers](#package-managers)  
+-   [Package Manager](#package-manager)  
 -   [CDN](#cdn)  
 -   [Download](#download)  
 -   [Content](#content)  
@@ -35,7 +35,7 @@
 
 ---
 
-## Package Managers
+## Package Manager
 
 [![NPM Version](https://img.shields.io/npm/v/animadio.svg?label=NPM)](https://www.npmjs.com/package/animadio)
 [![NPM Montly Downloads](https://img.shields.io/npm/dm/animadio.svg?label=Montly+Downloads)](https://www.npmjs.com/package/animadio)
@@ -43,14 +43,6 @@
 
 NPM : `npm i animadio`  
 Yarn : `yarn add animadio`  
-
-[![Meteor Project](https://img.shields.io/badge/meteor-animadio%3Aanimadio-blue.svg?label=Atmosphere)](https://atmospherejs.com/animadio/animadio)
-
-Meteor : `meteor add animadio:animadio`  
-
-[![Packagist Version](https://img.shields.io/packagist/v/animadio/animadio.svg?label=Packagist)](https://packagist.org/packages/animadio/animadio)
-
-Composer : `composer require animadio/animadio`  
 
 ---
 
