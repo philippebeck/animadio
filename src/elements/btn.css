@@ -349,6 +349,8 @@
 [class*="button-fb"],
 [class*="btn-github"],
 [class*="button-github"],
+[class*="btn-jsd"],
+[class*="button-jsd"],
 [class*="btn-linkedin"],
 [class*="button-linkedin"],
 [class*="btn-npm"],
@@ -369,6 +371,11 @@
 [class*="btn-github"],
 [class*="button-github"] {
   background-color: var(--github);
+}
+
+[class*="btn-jsd"],
+[class*="button-jsd"] {
+  background-color: var(--jsdelivr);
 }
 
 [class*="btn-linkedin"],
@@ -405,6 +412,13 @@
 [class*="btn-github"]:active,
 [class*="button-github"]:active,
 [class*="button-github-check"]:checked + [class*="button-github"],
+[class*="btn-jsd"]:hover,
+[class*="button-jsd"]:hover,
+[class*="btn-jsd"]:focus,
+[class*="button-jsd"]:focus,
+[class*="btn-jsd"]:active,
+[class*="button-jsd"]:active,
+[class*="button-jsd-check"]:checked + [class*="button-jsd"],
 [class*="btn-linkedin"]:hover,
 [class*="button-linkedin"]:hover,
 [class*="btn-linkedin"]:focus,
@@ -456,6 +470,17 @@
 [class*="button-github-check"]:checked + [class*="button-github"] {
   border-color: var(--github);
   color: var(--github);
+}
+
+[class*="btn-jsd"]:hover,
+[class*="button-jsd"]:hover,
+[class*="btn-jsd"]:focus,
+[class*="button-jsd"]:focus,
+[class*="btn-jsd"]:active,
+[class*="button-jsd"]:active,
+[class*="button-jsd-check"]:checked + [class*="button-jsd"] {
+  border-color: var(--jsdelivr);
+  color: var(--jsdelivr);
 }
 
 [class*="btn-linkedin"]:hover,

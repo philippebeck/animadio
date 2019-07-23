@@ -16,7 +16,7 @@
 
 ## Summary
 
--   [Package Managers](#package-managers)  
+-   [Package Manager](#package-manager)  
 -   [CDN](#cdn)  
 -   [Download](#download)  
 -   [Content](#content)  
@@ -35,7 +35,7 @@
 
 ---
 
-## Package Managers
+## Package Manager
 
 [![NPM Version](https://img.shields.io/npm/v/animadio.svg?label=NPM)](https://www.npmjs.com/package/animadio)
 [![NPM Montly Downloads](https://img.shields.io/npm/dm/animadio.svg?label=Montly+Downloads)](https://www.npmjs.com/package/animadio)
@@ -43,14 +43,6 @@
 
 NPM : `npm i animadio`  
 Yarn : `yarn add animadio`  
-
-[![Meteor Project](https://img.shields.io/badge/meteor-animadio%3Aanimadio-blue.svg?label=Atmosphere)](https://atmospherejs.com/animadio/animadio)
-
-Meteor : `meteor add animadio:animadio`  
-
-[![Packagist Version](https://img.shields.io/packagist/v/animadio/animadio.svg?label=Packagist)](https://packagist.org/packages/animadio/animadio)
-
-Composer : `composer require animadio/animadio`  
 
 ---
 
@@ -61,23 +53,23 @@ Composer : `composer require animadio/animadio`
 
 > **Full Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/min/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio.min.css)  
 
 > **Grid Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/animadio-grid.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/min/animadio-grid.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-grid.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-grid.min.css)  
 
 > **Elements Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/animadio-elements.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/min/animadio-elements.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-elements.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-elements.min.css)  
 
 > **States Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/animadio-states.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.1/dist/min/animadio-states.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-states.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-states.min.css)  
 
 ---
 
@@ -164,7 +156,9 @@ Issues can be created here
 
 [![GitHub Open Issues](https://img.shields.io/github/issues/animadio/animadio.svg?label=Issues)](https://github.com/animadio/animadio/issues)
 
-But for issues about Parse Error, see this before doing anything :
+But for Parse Error issues, from a CSS linter or a W3C validator :
+-   check the user agent from the browsers  
+-   look here before doing anything :  
 > For the W3C CSS Validator : [https://github.com/w3c/css-validator/issues/225](https://github.com/w3c/css-validator/issues/225)
 >
 > For the W3C Nu HTML Validator : [https://github.com/validator/validator/issues/644](https://github.com/validator/validator/issues/644)

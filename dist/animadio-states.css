@@ -1,4 +1,4 @@
-/*! animadio v0.4.1 | https://animadio.org | MIT License */
+/*! animadio v0.4.2 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -71,6 +71,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --white: Ivory;
   --facebook: #4267b2;
   --github: #24292e;
+  --jsdelivr: #fdc72e;
   --linkedin: #0077b5;
   --npm: #c12127;
   --stackoverflow: #f48024;
@@ -3875,10 +3876,11 @@ pre > *::selection {
 3. BRAND BACKGROUND COLORS
   3.1 FaceBook
   3.2 GitHub
-  3.3 LinkedIn
-  3.4 NPM
-  3.5 Stack Overflow
-  3.6 Twitter
+  3.3 JSDelivr
+  3.4 LinkedIn
+  3.5 NPM
+  3.6 Stack Overflow
+  3.7 Twitter
 4. TRANSPARENT BACKGROUND COLORS
   4.1 Amethyst
   4.2 Citrine
@@ -4408,7 +4410,31 @@ pre > *::selection {
   background-color: var(--github);
 }
 
-/***** 3.3 LinkedIn Background Color *****/
+/***** 3.3 JSDelivr Background Color *****/
+[class*="bg-jsd-"][class*="-base"],
+[class*="bg-jsd-"][class*="-global"] > *,
+*:hover > [class*="bg-jsd-"][class*="-into"],
+*:focus > [class*="bg-jsd-"][class*="-into"],
+*:active > [class*="bg-jsd-"][class*="-into"],
+[class*="bg-jsd-"][class*="-onto"]:hover,
+[class*="bg-jsd-"][class*="-onto"]:focus,
+[class*="bg-jsd-"][class*="-onto"]:active,
+[class*="bg-jsd-"][class*="-toall"]:hover > *,
+[class*="bg-jsd-"][class*="-toall"]:focus > *,
+[class*="bg-jsd-"][class*="-toall"]:active > *,
+[class*="bg-jsd-"][class*="-toone"] > *:hover,
+[class*="bg-jsd-"][class*="-toone"] > *:focus,
+[class*="bg-jsd-"][class*="-toone"] > *:active,
+[class*="bg-jsd-"][class*="-radio1"]:checked ~ [class*="bg-jsd-"][class*="-relay"] [class*="bg-jsd-"][class*="-target1"],
+[class*="bg-jsd-"][class*="-radio2"]:checked ~ [class*="bg-jsd-"][class*="-relay"] [class*="bg-jsd-"][class*="-target2"],
+[class*="bg-jsd-"][class*="-radio3"]:checked ~ [class*="bg-jsd-"][class*="-relay"] [class*="bg-jsd-"][class*="-target3"],
+[class*="bg-jsd-"][class*="-radio4"]:checked ~ [class*="bg-jsd-"][class*="-relay"] [class*="bg-jsd-"][class*="-target4"],
+[class*="bg-jsd-"][class*="-radio5"]:checked ~ [class*="bg-jsd-"][class*="-relay"] [class*="bg-jsd-"][class*="-target5"],
+[class*="bg-jsd-"][class*="-check"]:checked ~ [class*="bg-jsd-"][class*="-hub"] [class*="bg-jsd-"][class*="-goal"] {
+  background-color: var(--jsdelivr);
+}
+
+/***** 3.4 LinkedIn Background Color *****/
 [class*="bg-linkedin-"][class*="-base"],
 [class*="bg-linkedin-"][class*="-global"] > *,
 *:hover > [class*="bg-linkedin-"][class*="-into"],
@@ -4432,7 +4458,7 @@ pre > *::selection {
   background-color: var(--linkedin);
 }
 
-/***** 3.4 NPM Background Color *****/
+/***** 3.5 NPM Background Color *****/
 [class*="bg-npm-"][class*="-base"],
 [class*="bg-npm-"][class*="-global"] > *,
 *:hover > [class*="bg-npm-"][class*="-into"],
@@ -4456,7 +4482,7 @@ pre > *::selection {
   background-color: var(--npm);
 }
 
-/***** 3.5 Stack Overflow Background Color *****/
+/***** 3.6 Stack Overflow Background Color *****/
 [class*="bg-stack-"][class*="-base"],
 [class*="bg-stack-"][class*="-global"] > *,
 *:hover > [class*="bg-stack-"][class*="-into"],
@@ -4480,7 +4506,7 @@ pre > *::selection {
   background-color: var(--stackoverflow);
 }
 
-/***** 3.6 Twitter Background Color *****/
+/***** 3.7 Twitter Background Color *****/
 [class*="bg-tw-"][class*="-base"],
 [class*="bg-tw-"][class*="-global"] > *,
 *:hover > [class*="bg-tw-"][class*="-into"],
@@ -4711,10 +4737,11 @@ pre > *::selection {
 3. BRAND COLORS
   3.1 FaceBook
   3.2 GitHub
-  3.3 LinkedIn
-  3.4 NPM
-  3.5 Stack Overflow
-  3.6 Twitter
+  3.3 JSDelivr
+  3.4 LinkedIn
+  3.5 NPM
+  3.6 Stack Overflow
+  3.7 Twitter
 */
 
 /********** 1. MAIN COLORS **********/
@@ -5236,7 +5263,31 @@ pre > *::selection {
   color: var(--github);
 }
 
-/***** 3.3 LinkedIn Color *****/
+/***** 3.3 JSDelivr Color *****/
+[class*="color-jsd-"][class*="-base"],
+[class*="color-jsd-"][class*="-global"] > *,
+*:hover > [class*="color-jsd-"][class*="-into"],
+*:focus > [class*="color-jsd-"][class*="-into"],
+*:active > [class*="color-jsd-"][class*="-into"],
+[class*="color-jsd-"][class*="-onto"]:hover,
+[class*="color-jsd-"][class*="-onto"]:focus,
+[class*="color-jsd-"][class*="-onto"]:active,
+[class*="color-jsd-"][class*="-toall"]:hover > *,
+[class*="color-jsd-"][class*="-toall"]:focus > *,
+[class*="color-jsd-"][class*="-toall"]:active > *,
+[class*="color-jsd-"][class*="-toone"] > *:hover,
+[class*="color-jsd-"][class*="-toone"] > *:focus,
+[class*="color-jsd-"][class*="-toone"] > *:active,
+[class*="color-jsd-"][class*="-radio1"]:checked ~ [class*="color-jsd-"][class*="-relay"] [class*="color-jsd-"][class*="-target1"],
+[class*="color-jsd-"][class*="-radio2"]:checked ~ [class*="color-jsd-"][class*="-relay"] [class*="color-jsd-"][class*="-target2"],
+[class*="color-jsd-"][class*="-radio3"]:checked ~ [class*="color-jsd-"][class*="-relay"] [class*="color-jsd-"][class*="-target3"],
+[class*="color-jsd-"][class*="-radio4"]:checked ~ [class*="color-jsd-"][class*="-relay"] [class*="color-jsd-"][class*="-target4"],
+[class*="color-jsd-"][class*="-radio5"]:checked ~ [class*="color-jsd-"][class*="-relay"] [class*="color-jsd-"][class*="-target5"],
+[class*="color-jsd-"][class*="-check"]:checked ~ [class*="color-jsd-"][class*="-hub"] [class*="color-jsd-"][class*="-goal"] {
+  color: var(--jsdelivr);
+}
+
+/***** 3.4 LinkedIn Color *****/
 [class*="color-linkedin-"][class*="-base"],
 [class*="color-linkedin-"][class*="-global"] > *,
 *:hover > [class*="color-linkedin-"][class*="-into"],
@@ -5260,7 +5311,7 @@ pre > *::selection {
   color: var(--linkedin);
 }
 
-/***** 3.4 NPM Color *****/
+/***** 3.5 NPM Color *****/
 [class*="color-npm-"][class*="-base"],
 [class*="color-npm-"][class*="-global"] > *,
 *:hover > [class*="color-npm-"][class*="-into"],
@@ -5284,7 +5335,7 @@ pre > *::selection {
   color: var(--npm);
 }
 
-/***** 3.5 Stack Overflow Color *****/
+/***** 3.6 Stack Overflow Color *****/
 [class*="color-stack-"][class*="-base"],
 [class*="color-stack-"][class*="-global"] > *,
 *:hover > [class*="color-stack-"][class*="-into"],
@@ -5308,7 +5359,7 @@ pre > *::selection {
   color: var(--stackoverflow);
 }
 
-/***** 3.6 Twitter Color *****/
+/***** 3.7 Twitter Color *****/
 [class*="color-tw-"][class*="-base"],
 [class*="color-tw-"][class*="-global"] > *,
 *:hover > [class*="color-tw-"][class*="-into"],
@@ -8415,4 +8466,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 21st Jul 2019 @ 11:28:29 AM */
+ Updated: 23rd Jul 2019 @ 9:43:03 PM */

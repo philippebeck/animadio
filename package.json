@@ -1,6 +1,6 @@
 {
   "name": "animadio",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Animadio CSS Framework - Grid & Flexbox Layouts - Reusable & Customizable Elements - Perform Complex Animations - Controls by Radio Buttons - No JavaScript needed or used",
   "keywords": [
     "css framework",
@@ -22,7 +22,7 @@
   "repository": "github:animadio/animadio",
   "bugs": "https://github.com/animadio/animadio/issues",
   "devDependencies": {
-    "autoprefixer": "^9.4.10",
+    "autoprefixer": "^9.6.1",
     "grunt": "^1.0.3",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^3.0.0",
