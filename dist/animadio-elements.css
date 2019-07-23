@@ -1,4 +1,4 @@
-/*! animadio v0.4.1 | https://animadio.org | MIT License */
+/*! animadio v0.4.2 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -71,6 +71,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --white: Ivory;
   --facebook: #4267b2;
   --github: #24292e;
+  --jsdelivr: #fdc72e;
   --linkedin: #0077b5;
   --npm: #c12127;
   --stackoverflow: #f48024;
@@ -3254,6 +3255,8 @@ pre > *::selection {
 [class*="button-fb"],
 [class*="btn-github"],
 [class*="button-github"],
+[class*="btn-jsd"],
+[class*="button-jsd"],
 [class*="btn-linkedin"],
 [class*="button-linkedin"],
 [class*="btn-npm"],
@@ -3274,6 +3277,11 @@ pre > *::selection {
 [class*="btn-github"],
 [class*="button-github"] {
   background-color: var(--github);
+}
+
+[class*="btn-jsd"],
+[class*="button-jsd"] {
+  background-color: var(--jsdelivr);
 }
 
 [class*="btn-linkedin"],
@@ -3310,6 +3318,13 @@ pre > *::selection {
 [class*="btn-github"]:active,
 [class*="button-github"]:active,
 [class*="button-github-check"]:checked + [class*="button-github"],
+[class*="btn-jsd"]:hover,
+[class*="button-jsd"]:hover,
+[class*="btn-jsd"]:focus,
+[class*="button-jsd"]:focus,
+[class*="btn-jsd"]:active,
+[class*="button-jsd"]:active,
+[class*="button-jsd-check"]:checked + [class*="button-jsd"],
 [class*="btn-linkedin"]:hover,
 [class*="button-linkedin"]:hover,
 [class*="btn-linkedin"]:focus,
@@ -3361,6 +3376,17 @@ pre > *::selection {
 [class*="button-github-check"]:checked + [class*="button-github"] {
   border-color: var(--github);
   color: var(--github);
+}
+
+[class*="btn-jsd"]:hover,
+[class*="button-jsd"]:hover,
+[class*="btn-jsd"]:focus,
+[class*="button-jsd"]:focus,
+[class*="btn-jsd"]:active,
+[class*="button-jsd"]:active,
+[class*="button-jsd-check"]:checked + [class*="button-jsd"] {
+  border-color: var(--jsdelivr);
+  color: var(--jsdelivr);
 }
 
 [class*="btn-linkedin"]:hover,
@@ -4475,4 +4501,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 21st Jul 2019 @ 11:28:29 AM */
+ Updated: 23rd Jul 2019 @ 9:43:03 PM */

@@ -1,4 +1,4 @@
-/*! animadio v0.4.1 | https://animadio.org | MIT License */
+/*! animadio v0.4.2 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -71,6 +71,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --white: Ivory;
   --facebook: #4267b2;
   --github: #24292e;
+  --jsdelivr: #fdc72e;
   --linkedin: #0077b5;
   --npm: #c12127;
   --stackoverflow: #f48024;
@@ -4692,4 +4693,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 21st Jul 2019 @ 11:28:29 AM */
+ Updated: 23rd Jul 2019 @ 9:43:03 PM */
