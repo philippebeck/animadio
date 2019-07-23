@@ -24,10 +24,11 @@
 3. BRAND COLORS
   3.1 FaceBook
   3.2 GitHub
-  3.3 LinkedIn
-  3.4 NPM
-  3.5 Stack Overflow
-  3.6 Twitter
+  3.3 JSDelivr
+  3.4 LinkedIn
+  3.5 NPM
+  3.6 Stack Overflow
+  3.7 Twitter
 */
 
 /********** 1. MAIN COLORS **********/
@@ -549,7 +550,31 @@
   color: var(--github);
 }
 
-/***** 3.3 LinkedIn Color *****/
+/***** 3.3 JSDelivr Color *****/
+[class*="color-jsd-"][class*="-base"],
+[class*="color-jsd-"][class*="-global"] > *,
+*:hover > [class*="color-jsd-"][class*="-into"],
+*:focus > [class*="color-jsd-"][class*="-into"],
+*:active > [class*="color-jsd-"][class*="-into"],
+[class*="color-jsd-"][class*="-onto"]:hover,
+[class*="color-jsd-"][class*="-onto"]:focus,
+[class*="color-jsd-"][class*="-onto"]:active,
+[class*="color-jsd-"][class*="-toall"]:hover > *,
+[class*="color-jsd-"][class*="-toall"]:focus > *,
+[class*="color-jsd-"][class*="-toall"]:active > *,
+[class*="color-jsd-"][class*="-toone"] > *:hover,
+[class*="color-jsd-"][class*="-toone"] > *:focus,
+[class*="color-jsd-"][class*="-toone"] > *:active,
+[class*="color-jsd-"][class*="-radio1"]:checked ~ [class*="color-jsd-"][class*="-relay"] [class*="color-jsd-"][class*="-target1"],
+[class*="color-jsd-"][class*="-radio2"]:checked ~ [class*="color-jsd-"][class*="-relay"] [class*="color-jsd-"][class*="-target2"],
+[class*="color-jsd-"][class*="-radio3"]:checked ~ [class*="color-jsd-"][class*="-relay"] [class*="color-jsd-"][class*="-target3"],
+[class*="color-jsd-"][class*="-radio4"]:checked ~ [class*="color-jsd-"][class*="-relay"] [class*="color-jsd-"][class*="-target4"],
+[class*="color-jsd-"][class*="-radio5"]:checked ~ [class*="color-jsd-"][class*="-relay"] [class*="color-jsd-"][class*="-target5"],
+[class*="color-jsd-"][class*="-check"]:checked ~ [class*="color-jsd-"][class*="-hub"] [class*="color-jsd-"][class*="-goal"] {
+  color: var(--jsdelivr);
+}
+
+/***** 3.4 LinkedIn Color *****/
 [class*="color-linkedin-"][class*="-base"],
 [class*="color-linkedin-"][class*="-global"] > *,
 *:hover > [class*="color-linkedin-"][class*="-into"],
@@ -573,7 +598,7 @@
   color: var(--linkedin);
 }
 
-/***** 3.4 NPM Color *****/
+/***** 3.5 NPM Color *****/
 [class*="color-npm-"][class*="-base"],
 [class*="color-npm-"][class*="-global"] > *,
 *:hover > [class*="color-npm-"][class*="-into"],
@@ -597,7 +622,7 @@
   color: var(--npm);
 }
 
-/***** 3.5 Stack Overflow Color *****/
+/***** 3.6 Stack Overflow Color *****/
 [class*="color-stack-"][class*="-base"],
 [class*="color-stack-"][class*="-global"] > *,
 *:hover > [class*="color-stack-"][class*="-into"],
@@ -621,7 +646,7 @@
   color: var(--stackoverflow);
 }
 
-/***** 3.6 Twitter Color *****/
+/***** 3.7 Twitter Color *****/
 [class*="color-tw-"][class*="-base"],
 [class*="color-tw-"][class*="-global"] > *,
 *:hover > [class*="color-tw-"][class*="-into"],
