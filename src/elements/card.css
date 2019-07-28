@@ -1,0 +1,64 @@
+/******************** CARD ********************/
+
+/*
+1. CARD
+  1.1 Card
+  1.2
+*/
+
+/********** 1. CARD **********/
+
+/*
+1.1 Card
+1.2
+*/
+
+/***** 1.1 Card *****/
+[class*="card"] {
+    display: flex;
+    flex-direction: var(--card-flex-direction);
+    align-items: var(--card-align-items);
+    position: var(--card-position);
+    overflow: var(--card-overflow);
+    margin : var(--card-margin);
+    border: var(--card-border);
+    border-radius: var(--card-radius);
+    width: var(--card-width);
+    box-shadow: var(--card-box-shadow);
+    background-color: var(--card-bg);
+    color: var(--card-color);
+}
+
+[class*="card"] > * {
+    max-width: var(--card-child-max-width);
+    background-color: var(--card-child-bg);
+}
+
+[class*="card-media"] {
+    border: var(--card-media-border);
+    border-radius: var(--card-media-radius);
+}
+
+[class*="card-title"] {
+    margin: var(--card-title-margin);
+    font-size: var(--card-title-font-size);
+}
+
+[class*="card-content"] {
+    margin: var(--card-content-margin);
+    border-radius: var(--card-content-radius);
+    padding: var(--card-content-padding);
+    font-size: var(--card-content-font-size);
+    text-align: var(--card-content-text-align);
+}
+
+[class*="card-btn"] {
+    width: var(--card-btn-width);
+}
+
+[class*="card-blue"] [class*="card-head"],
+[class*="card-blue"] [class*="card-body"] {
+    border-color: var(--card-border-blue);
+    background-color : var(--blue);
+    color: var(--card-color-blue);
+}
