@@ -20,7 +20,7 @@
   align-items: var(--card-align-items);
   position: var(--card-position);
   overflow: var(--card-overflow);
-  margin : var(--card-margin);
+  margin: var(--card-margin);
   border: var(--card-border);
   border-radius: var(--card-radius);
   width: var(--card-width);
@@ -56,9 +56,8 @@
   width: var(--card-btn-width);
 }
 
-[class*="card-blue"] [class*="card-head"],
-[class*="card-blue"] [class*="card-body"] {
+[class*="card-blue"] > * {
   border-color: var(--card-border-blue);
-  background-color : var(--blue);
+  background-color: var(--blue);
   color: var(--card-color-blue);
 }
