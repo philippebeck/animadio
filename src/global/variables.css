@@ -18,13 +18,14 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   2.4 Justify
 3. ELEMENTS VARIABLES
   3.1 Btn
-  3.2 Foot
-  3.3 Form
-  3.4 Gallery
-  3.5 Menu
-  3.6 Navbar
-  3.7 Slider
-  3.8 Table
+  3.2 Card
+  3.3 Foot
+  3.4 Form
+  3.5 Gallery
+  3.6 Menu
+  3.7 Navbar
+  3.8 Slider
+  3.9 Table
 4. STATES VARIABLES
   4.1 Anima
   4.2 Bord
@@ -461,7 +462,36 @@ pre {
   --btn-sizes-circle: 80px;
 }
 
-/***** 3.2 Foot *****/
+/***** 3.2 Card *****/
+[class*="card"] {
+  --card-align-items: center;
+  --card-bg: var(--quartz);
+  --card-border: solid medium;
+  --card-box-shadow: 0 0 10px 5px var(--black);
+  --card-color: var(--black);
+  --card-flex-direction: column;
+  --card-margin: 20px;
+  --card-overflow: hidden;
+  --card-position: relative;
+  --card-radius: 10px;
+  --card-width: 300px;
+  --card-border-blue: var(--white);
+  --card-color-blue: var(--white);
+  --card-child-bg: var(--white);
+  --card-child-max-width: calc(var(--card-width) * 0.9);
+  --card-btn-width: calc(var(--card-child-max-width) * 0.5);
+  --card-content-font-size: 2rem;
+  --card-content-margin: 10px;
+  --card-content-padding: 5%;
+  --card-content-radius: 5px;
+  --card-content-text-align: justify;
+  --card-media-border: inset medium;
+  --card-media-radius: 20px;
+  --card-title-font-size: 3rem;
+  --card-title-margin: 10px;
+}
+
+/***** 3.3 Foot *****/
 [class*="foot"] {
   --foot-text-align: center;
   --foot-title-color: var(--khaki);
@@ -493,7 +523,7 @@ pre {
   }
 }
 
-/***** 3.3 Form *****/
+/***** 3.4 Form *****/
 .form {
   --form-border: medium ridge var(--sky);
   --form-box-shadow: inset 0 0 5px 5px var(--sapphire);
@@ -579,7 +609,7 @@ pre {
   }
 }
 
-/***** 3.4 Gallery *****/
+/***** 3.5 Gallery *****/
 .gallery {
   --gallery-align-items: center;
   --gallery-flex-wrap: wrap;
@@ -646,7 +676,7 @@ pre {
   }
 }
 
-/***** 3.5 Menu *****/
+/***** 3.6 Menu *****/
 .menu {
   --menu-align-items: stretch;
   --menu-background-color: var(--silver);
@@ -703,7 +733,7 @@ pre {
   }
 }
 
-/***** 3.6 Navbar *****/
+/***** 3.7 Navbar *****/
 [class*="nav"] {
   --navbar-align-items: center;
   --navbar-background-color: var(--blue);
@@ -750,7 +780,7 @@ pre {
   }
 }
 
-/***** 3.7 Slider *****/
+/***** 3.8 Slider *****/
 .slider {
   --slider-margin: 0;
   --slider-min-height: 30vh;
@@ -821,7 +851,7 @@ pre {
   }
 }
 
-/***** 3.8 Table *****/
+/***** 3.9 Table *****/
 [class*="table"] {
   --table-border-collapse: collapse;
   --table-border-space: 10px;
