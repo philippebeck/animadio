@@ -23,6 +23,7 @@
   margin: var(--card-margin);
   border: var(--card-border);
   border-radius: var(--card-radius);
+  padding: var(--card-padding);
   width: var(--card-width);
   box-shadow: var(--card-box-shadow);
   background-color: var(--card-bg);
@@ -30,34 +31,126 @@
 }
 
 [class*="card"] > * {
+  margin: var(--card-child-margin);
+  border: var(--card-child-border);
+  border-radius: var(--card-child-radius);
+  padding: var(--card-child-padding);
   max-width: var(--card-child-max-width);
   background-color: var(--card-child-bg);
+  font-size: var(--card-child-font-size);
+  text-align: var(--card-child-text-align);
 }
 
-[class*="card-media"] {
-  border: var(--card-media-border);
-  border-radius: var(--card-media-radius);
-}
-
-[class*="card-title"] {
-  margin: var(--card-title-margin);
+[class*="card"] > h2,
+[class*="card"] > h3,
+[class*="card"] > h4,
+[class*="card"] > h5,
+[class*="card"] > h6 {
   font-size: var(--card-title-font-size);
+  text-shadow: var(--card-title-text-shadow);
 }
 
-[class*="card-content"] {
-  margin: var(--card-content-margin);
-  border-radius: var(--card-content-radius);
-  padding: var(--card-content-padding);
-  font-size: var(--card-content-font-size);
-  text-align: var(--card-content-text-align);
+[class*="card"] > [class*="message"] {
+  box-shadow: var(--card-message-box-shadow);
 }
 
-[class*="card-btn"] {
+[class*="card"] > [class*="btn"] {
   width: var(--card-btn-width);
+  text-align: var(--card-btn-text-align);
 }
 
-[class*="card-blue"] > * {
-  border-color: var(--card-border-blue);
-  background-color: var(--blue);
-  color: var(--card-color-blue);
+[class*="card-black"] {
+  background-color: var(--card-black-bg);
+}
+
+[class*="card-black"] > h2,
+[class*="card-black"] > h3,
+[class*="card-black"] > h4,
+[class*="card-black"] > h5,
+[class*="card-black"] > h6 {
+  text-shadow: var(--card-black-title-text-shadow);
+}
+
+[class*="card-black"] > [class*="message"] {
+  box-shadow: var(--card-black-message-box-shadow);
+}
+
+[class*="card-blue"] {
+  background-color: var(--card-blue-bg);
+}
+
+[class*="card-blue"] > h2,
+[class*="card-blue"] > h3,
+[class*="card-blue"] > h4,
+[class*="card-blue"] > h5,
+[class*="card-blue"] > h6 {
+  text-shadow: var(--card-blue-title-text-shadow);
+}
+
+[class*="card-blue"] > [class*="message"] {
+  box-shadow: var(--card-blue-message-box-shadow);
+}
+
+[class*="card-green"] {
+  background-color: var(--card-green-bg);
+}
+
+[class*="card-green"] > h2,
+[class*="card-green"] > h3,
+[class*="card-green"] > h4,
+[class*="card-green"] > h5,
+[class*="card-green"] > h6 {
+  text-shadow: var(--card-green-title-text-shadow);
+}
+
+[class*="card-green"] > [class*="message"] {
+  box-shadow: var(--card-green-message-box-shadow);
+}
+
+[class*="card-purple"] {
+  background-color: var(--card-purple-bg);
+}
+
+[class*="card-purple"] > h2,
+[class*="card-purple"] > h3,
+[class*="card-purple"] > h4,
+[class*="card-purple"] > h5,
+[class*="card-purple"] > h6 {
+  text-shadow: var(--card-purple-title-text-shadow);
+}
+
+[class*="card-purple"] > [class*="message"] {
+  box-shadow: var(--card-purple-message-box-shadow);
+}
+
+[class*="card-red"] {
+  background-color: var(--card-red-bg);
+}
+
+[class*="card-red"] > h2,
+[class*="card-red"] > h3,
+[class*="card-red"] > h4,
+[class*="card-red"] > h5,
+[class*="card-red"] > h6 {
+  text-shadow: var(--card-red-title-text-shadow);
+}
+
+[class*="card-red"] > [class*="message"] {
+  box-shadow: var(--card-red-message-box-shadow);
+}
+
+[class*="card-yellow"] {
+  background-color: var(--card-yellow-bg);
+}
+
+[class*="card-yellow"] > h2,
+[class*="card-yellow"] > h3,
+[class*="card-yellow"] > h4,
+[class*="card-yellow"] > h5,
+[class*="card-yellow"] > h6 {
+  text-shadow: var(--card-yellow-title-text-shadow);
+}
+
+[class*="card-yellow"] > [class*="message"] {
+  box-shadow: var(--card-yellow-message-box-shadow);
 }
