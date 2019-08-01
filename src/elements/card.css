@@ -3,14 +3,22 @@
 /*
 1. CARD
   1.1 Card
-  1.2
+  1.2 Card States
+  1.3 Card Child
+  1.4 Card Titles
+  1.5 Card Message
+  1.6 Card Btn
 */
 
 /********** 1. CARD **********/
 
 /*
 1.1 Card
-1.2
+1.2 Card States
+1.3 Card Child
+1.4 Card Titles
+1.5 Card Message
+1.6 Card Btn
 */
 
 /***** 1.1 Card *****/
@@ -30,6 +38,7 @@
   color: var(--card-color);
 }
 
+/***** 1.3 Card *****/
 [class*="card"] > * {
   margin: var(--card-child-margin);
   border: var(--card-child-border);
@@ -41,6 +50,7 @@
   text-align: var(--card-child-text-align);
 }
 
+/***** 1.4 Card Titles *****/
 [class*="card"] > h2,
 [class*="card"] > h3,
 [class*="card"] > h4,
@@ -50,10 +60,12 @@
   text-shadow: var(--card-title-text-shadow);
 }
 
+/***** 1.5 Card Message *****/
 [class*="card"] > [class*="message"] {
   box-shadow: var(--card-message-box-shadow);
 }
 
+/***** 1.6 Card Btn *****/
 [class*="card"] > [class*="btn"] {
   width: var(--card-btn-width);
   text-align: var(--card-btn-text-align);
