@@ -476,6 +476,8 @@ pre {
   --card-position: relative;
   --card-radius: 10px;
   --card-width: 400px;
+  --card-selection-bg: var(--black);
+  --card-selection-color: var(--green);
   --card-child-bg: var(--white);
   --card-child-border: solid thin;
   --card-child-font-size: 2rem;
