@@ -3,22 +3,18 @@
 /*
 1. CARD
   1.1 Card
-  1.2 Card States
-  1.3 Card Child
-  1.4 Card Titles
-  1.5 Card Message
-  1.6 Card Btn
+2. CARD CHILD
+  2.1 Card Child
+  2.2 Card Titles
+  2.3 Card Btn
+3. CARD COLORS
+  3.1 Card Colors
 */
 
 /********** 1. CARD **********/
 
 /*
 1.1 Card
-1.2 Card States
-1.3 Card Child
-1.4 Card Titles
-1.5 Card Message
-1.6 Card Btn
 */
 
 /***** 1.1 Card *****/
@@ -38,7 +34,22 @@
   color: var(--card-color);
 }
 
-/***** 1.3 Card *****/
+[class*="card"]:hover,
+[class*="card"]:focus,
+[class*="card"]:active {
+  transform: var(--card-hover-transform);
+  transition: var(--card-hover-transition);
+}
+
+/********** 2. CARD CHILD **********/
+
+/*
+2.1 Card Child
+2.2 Card Titles
+2.3 Card Btn
+*/
+
+/***** 2.1 Card Child *****/
 [class*="card"] > * {
   margin: var(--card-child-margin);
   border: var(--card-child-border);
@@ -50,27 +61,35 @@
   text-align: var(--card-child-text-align);
 }
 
-/***** 1.4 Card Titles *****/
+[class*="card"] > *::selection {
+  background-color: var(--card-selection-bg);
+  color: var(--card-selection-color);
+}
+
+/***** 2.2 Card Titles *****/
 [class*="card"] > h2,
 [class*="card"] > h3,
 [class*="card"] > h4,
 [class*="card"] > h5,
 [class*="card"] > h6 {
   font-size: var(--card-title-font-size);
+  box-shadow: var(--card-title-box-shadow);
   text-shadow: var(--card-title-text-shadow);
 }
 
-/***** 1.5 Card Message *****/
-[class*="card"] > [class*="message"] {
-  box-shadow: var(--card-message-box-shadow);
-}
-
-/***** 1.6 Card Btn *****/
+/***** 2.3 Card Btn *****/
 [class*="card"] > [class*="btn"] {
   width: var(--card-btn-width);
   text-align: var(--card-btn-text-align);
 }
 
+/********** 3. CARD COLORS **********/
+
+/*
+3.1 Card Colors
+*/
+
+/***** 3.1 Card Colors *****/
 [class*="card-black"] {
   background-color: var(--card-black-bg);
 }
@@ -80,11 +99,8 @@
 [class*="card-black"] > h4,
 [class*="card-black"] > h5,
 [class*="card-black"] > h6 {
+  box-shadow: var(--card-black-title-box-shadow);
   text-shadow: var(--card-black-title-text-shadow);
-}
-
-[class*="card-black"] > [class*="message"] {
-  box-shadow: var(--card-black-message-box-shadow);
 }
 
 [class*="card-blue"] {
@@ -96,11 +112,8 @@
 [class*="card-blue"] > h4,
 [class*="card-blue"] > h5,
 [class*="card-blue"] > h6 {
+  box-shadow: var(--card-blue-title-box-shadow);
   text-shadow: var(--card-blue-title-text-shadow);
-}
-
-[class*="card-blue"] > [class*="message"] {
-  box-shadow: var(--card-blue-message-box-shadow);
 }
 
 [class*="card-green"] {
@@ -112,11 +125,8 @@
 [class*="card-green"] > h4,
 [class*="card-green"] > h5,
 [class*="card-green"] > h6 {
+  box-shadow: var(--card-green-title-box-shadow);
   text-shadow: var(--card-green-title-text-shadow);
-}
-
-[class*="card-green"] > [class*="message"] {
-  box-shadow: var(--card-green-message-box-shadow);
 }
 
 [class*="card-purple"] {
@@ -128,11 +138,8 @@
 [class*="card-purple"] > h4,
 [class*="card-purple"] > h5,
 [class*="card-purple"] > h6 {
+  box-shadow: var(--card-purple-title-box-shadow);
   text-shadow: var(--card-purple-title-text-shadow);
-}
-
-[class*="card-purple"] > [class*="message"] {
-  box-shadow: var(--card-purple-message-box-shadow);
 }
 
 [class*="card-red"] {
@@ -144,11 +151,8 @@
 [class*="card-red"] > h4,
 [class*="card-red"] > h5,
 [class*="card-red"] > h6 {
+  box-shadow: var(--card-red-title-box-shadow);
   text-shadow: var(--card-red-title-text-shadow);
-}
-
-[class*="card-red"] > [class*="message"] {
-  box-shadow: var(--card-red-message-box-shadow);
 }
 
 [class*="card-yellow"] {
@@ -160,9 +164,6 @@
 [class*="card-yellow"] > h4,
 [class*="card-yellow"] > h5,
 [class*="card-yellow"] > h6 {
+  box-shadow: var(--card-yellow-title-box-shadow);
   text-shadow: var(--card-yellow-title-text-shadow);
-}
-
-[class*="card-yellow"] > [class*="message"] {
-  box-shadow: var(--card-yellow-message-box-shadow);
 }
