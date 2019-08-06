@@ -476,6 +476,8 @@ pre {
   --card-position: relative;
   --card-radius: 10px;
   --card-width: 400px;
+  --card-hover-transform: rotate(1deg);
+  --card-hover-transition: transform 200ms;
   --card-selection-bg: var(--black);
   --card-selection-color: var(--green);
   --card-child-bg: var(--white);
