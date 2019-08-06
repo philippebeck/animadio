@@ -484,29 +484,29 @@ pre {
   --card-child-padding: 10px 20px;
   --card-child-radius: 20px;
   --card-child-text-align: justify;
+  --card-title-box-shadow: inset 0 0 5px 2px;
   --card-title-font-size: 3rem;
-  --card-title-text-shadow: 4px 4px 4px;
-  --card-message-box-shadow: inset 0 0 10px 5px var(--gray);
+  --card-title-text-shadow: 2px 2px 5px;
   --card-btn-text-align: center;
   --card-btn-width: calc(var(--card-child-max-width) * 0.5);
   --card-black-bg: var(--obsidian);
-  --card-black-title-text-shadow: 4px 4px 4px var(--black);
-  --card-black-message-box-shadow: inset 0 0 10px 5px var(--black);
+  --card-black-title-box-shadow: var(--card-title-box-shadow) var(--black);
+  --card-black-title-text-shadow: var(--card-title-text-shadow) var(--black);
   --card-blue-bg: var(--sapphire);
-  --card-blue-title-text-shadow: 4px 4px 4px var(--blue);
-  --card-blue-message-box-shadow: inset 0 0 10px 5px var(--sky);
+  --card-blue-title-box-shadow: var(--card-title-box-shadow) var(--sky);
+  --card-blue-title-text-shadow: var(--card-title-text-shadow) var(--blue);
   --card-green-bg: var(--emerald);
-  --card-green-title-text-shadow: 4px 4px 4px var(--green);
-  --card-green-message-box-shadow: inset 0 0 10px 5px var(--jade);
+  --card-green-title-box-shadow: var(--card-title-box-shadow) var(--jade);
+  --card-green-title-text-shadow: var(--card-title-text-shadow) var(--green);
   --card-purple-bg: var(--amethyst);
-  --card-purple-title-text-shadow: 4px 4px 4px var(--purple);
-  --card-purple-message-box-shadow: inset 0 0 10px 5px var(--violet);
+  --card-purple-title-box-shadow: var(--card-title-box-shadow) var(--violet);
+  --card-purple-title-text-shadow: var(--card-title-text-shadow) var(--purple);
   --card-red-bg: var(--ruby);
-  --card-red-title-text-shadow: 4px 4px 4px var(--red);
-  --card-red-message-box-shadow: inset 0 0 10px 5px var(--tomato);
+  --card-red-title-box-shadow: var(--card-title-box-shadow) var(--tomato);
+  --card-red-title-text-shadow: var(--card-title-text-shadow) var(--red);
   --card-yellow-bg: var(--citrine);
-  --card-yellow-title-text-shadow: 4px 4px 4px var(--yellow);
-  --card-yellow-message-box-shadow: inset 0 0 10px 5px var(--khaki);
+  --card-yellow-title-box-shadow: var(--card-title-box-shadow) var(--khaki);
+  --card-yellow-title-text-shadow: var(--card-title-text-shadow) var(--yellow);
 }
 
 /***** 3.3 Foot *****/
