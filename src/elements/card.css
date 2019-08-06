@@ -1,0 +1,169 @@
+/******************** CARD ********************/
+
+/*
+1. CARD
+  1.1 Card
+2. CARD CHILD
+  2.1 Card Child
+  2.2 Card Titles
+  2.3 Card Btn
+3. CARD COLORS
+  3.1 Card Colors
+*/
+
+/********** 1. CARD **********/
+
+/*
+1.1 Card
+*/
+
+/***** 1.1 Card *****/
+[class*="card"] {
+  display: flex;
+  flex-direction: var(--card-flex-direction);
+  align-items: var(--card-align-items);
+  position: var(--card-position);
+  overflow: var(--card-overflow);
+  margin: var(--card-margin);
+  border: var(--card-border);
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
+  width: var(--card-width);
+  box-shadow: var(--card-box-shadow);
+  background-color: var(--card-bg);
+  color: var(--card-color);
+}
+
+[class*="card"]:hover,
+[class*="card"]:focus,
+[class*="card"]:active {
+  transform: var(--card-hover-transform);
+  transition: var(--card-hover-transition);
+}
+
+/********** 2. CARD CHILD **********/
+
+/*
+2.1 Card Child
+2.2 Card Titles
+2.3 Card Btn
+*/
+
+/***** 2.1 Card Child *****/
+[class*="card"] > * {
+  margin: var(--card-child-margin);
+  border: var(--card-child-border);
+  border-radius: var(--card-child-radius);
+  padding: var(--card-child-padding);
+  max-width: var(--card-child-max-width);
+  background-color: var(--card-child-bg);
+  font-size: var(--card-child-font-size);
+  text-align: var(--card-child-text-align);
+}
+
+[class*="card"] > *::selection {
+  background-color: var(--card-selection-bg);
+  color: var(--card-selection-color);
+}
+
+/***** 2.2 Card Titles *****/
+[class*="card"] > h2,
+[class*="card"] > h3,
+[class*="card"] > h4,
+[class*="card"] > h5,
+[class*="card"] > h6 {
+  font-size: var(--card-title-font-size);
+  box-shadow: var(--card-title-box-shadow);
+  text-shadow: var(--card-title-text-shadow);
+}
+
+/***** 2.3 Card Btn *****/
+[class*="card"] > [class*="btn"] {
+  width: var(--card-btn-width);
+  text-align: var(--card-btn-text-align);
+}
+
+/********** 3. CARD COLORS **********/
+
+/*
+3.1 Card Colors
+*/
+
+/***** 3.1 Card Colors *****/
+[class*="card-black"] {
+  background-color: var(--card-black-bg);
+}
+
+[class*="card-black"] > h2,
+[class*="card-black"] > h3,
+[class*="card-black"] > h4,
+[class*="card-black"] > h5,
+[class*="card-black"] > h6 {
+  box-shadow: var(--card-black-title-box-shadow);
+  text-shadow: var(--card-black-title-text-shadow);
+}
+
+[class*="card-blue"] {
+  background-color: var(--card-blue-bg);
+}
+
+[class*="card-blue"] > h2,
+[class*="card-blue"] > h3,
+[class*="card-blue"] > h4,
+[class*="card-blue"] > h5,
+[class*="card-blue"] > h6 {
+  box-shadow: var(--card-blue-title-box-shadow);
+  text-shadow: var(--card-blue-title-text-shadow);
+}
+
+[class*="card-green"] {
+  background-color: var(--card-green-bg);
+}
+
+[class*="card-green"] > h2,
+[class*="card-green"] > h3,
+[class*="card-green"] > h4,
+[class*="card-green"] > h5,
+[class*="card-green"] > h6 {
+  box-shadow: var(--card-green-title-box-shadow);
+  text-shadow: var(--card-green-title-text-shadow);
+}
+
+[class*="card-purple"] {
+  background-color: var(--card-purple-bg);
+}
+
+[class*="card-purple"] > h2,
+[class*="card-purple"] > h3,
+[class*="card-purple"] > h4,
+[class*="card-purple"] > h5,
+[class*="card-purple"] > h6 {
+  box-shadow: var(--card-purple-title-box-shadow);
+  text-shadow: var(--card-purple-title-text-shadow);
+}
+
+[class*="card-red"] {
+  background-color: var(--card-red-bg);
+}
+
+[class*="card-red"] > h2,
+[class*="card-red"] > h3,
+[class*="card-red"] > h4,
+[class*="card-red"] > h5,
+[class*="card-red"] > h6 {
+  box-shadow: var(--card-red-title-box-shadow);
+  text-shadow: var(--card-red-title-text-shadow);
+}
+
+[class*="card-yellow"] {
+  background-color: var(--card-yellow-bg);
+}
+
+[class*="card-yellow"] > h2,
+[class*="card-yellow"] > h3,
+[class*="card-yellow"] > h4,
+[class*="card-yellow"] > h5,
+[class*="card-yellow"] > h6 {
+  box-shadow: var(--card-yellow-title-box-shadow);
+  text-shadow: var(--card-yellow-title-text-shadow);
+}

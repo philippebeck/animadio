@@ -53,23 +53,23 @@ Yarn : `yarn add animadio`
 
 > **Full Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/min/animadio.min.css)  
 
 > **Grid Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-grid.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-grid.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/animadio-grid.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/min/animadio-grid.min.css)  
 
 > **Elements Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-elements.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-elements.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/animadio-elements.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/min/animadio-elements.min.css)  
 
 > **States Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/animadio-states.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@0.4.2/dist/min/animadio-states.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/animadio-states.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@0.5.0/dist/min/animadio-states.min.css)  
 
 ---
 
@@ -159,6 +159,7 @@ Issues can be created here
 But for Parse Error issues, from a CSS linter or a W3C validator :
 -   check the user agent from the browsers  
 -   look here before doing anything :  
+
 > For the W3C CSS Validator : [https://github.com/w3c/css-validator/issues/225](https://github.com/w3c/css-validator/issues/225)
 >
 > For the W3C Nu HTML Validator : [https://github.com/validator/validator/issues/644](https://github.com/validator/validator/issues/644)

@@ -1,4 +1,4 @@
-/*! animadio v0.4.2 | https://animadio.org | MIT License */
+/*! animadio v0.5.0 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -20,13 +20,14 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   2.4 Justify
 3. ELEMENTS VARIABLES
   3.1 Btn
-  3.2 Foot
-  3.3 Form
-  3.4 Gallery
-  3.5 Menu
-  3.6 Navbar
-  3.7 Slider
-  3.8 Table
+  3.2 Card
+  3.3 Foot
+  3.4 Form
+  3.5 Gallery
+  3.6 Menu
+  3.7 Navbar
+  3.8 Slider
+  3.9 Table
 4. STATES VARIABLES
   4.1 Anima
   4.2 Bord
@@ -463,7 +464,58 @@ pre {
   --btn-sizes-circle: 80px;
 }
 
-/***** 3.2 Foot *****/
+/***** 3.2 Card *****/
+[class*="card"] {
+  --card-align-items: center;
+  --card-bg: var(--quartz);
+  --card-border: solid medium;
+  --card-box-shadow: 3px 5px 10px 5px var(--black);
+  --card-color: var(--black);
+  --card-flex-direction: column;
+  --card-margin: 20px;
+  --card-overflow: hidden;
+  --card-padding: 10px;
+  --card-position: relative;
+  --card-radius: 10px;
+  --card-width: 400px;
+  --card-hover-transform: rotate(1deg);
+  --card-hover-transition: transform 200ms;
+  --card-selection-bg: var(--black);
+  --card-selection-color: var(--jade);
+  --card-child-bg: var(--white);
+  --card-child-border: solid thin;
+  --card-child-font-size: 2rem;
+  --card-child-margin: 10px;
+  --card-child-max-width: calc(var(--card-width) * 0.9);
+  --card-child-padding: 10px 20px;
+  --card-child-radius: 20px;
+  --card-child-text-align: justify;
+  --card-title-box-shadow: inset 0 0 5px 2px;
+  --card-title-font-size: 3rem;
+  --card-title-text-shadow: 2px 2px 5px;
+  --card-btn-text-align: center;
+  --card-btn-width: calc(var(--card-child-max-width) * 0.5);
+  --card-black-bg: var(--obsidian);
+  --card-black-title-box-shadow: var(--card-title-box-shadow) var(--black);
+  --card-black-title-text-shadow: var(--card-title-text-shadow) var(--black);
+  --card-blue-bg: var(--sapphire);
+  --card-blue-title-box-shadow: var(--card-title-box-shadow) var(--sky);
+  --card-blue-title-text-shadow: var(--card-title-text-shadow) var(--blue);
+  --card-green-bg: var(--emerald);
+  --card-green-title-box-shadow: var(--card-title-box-shadow) var(--jade);
+  --card-green-title-text-shadow: var(--card-title-text-shadow) var(--green);
+  --card-purple-bg: var(--amethyst);
+  --card-purple-title-box-shadow: var(--card-title-box-shadow) var(--violet);
+  --card-purple-title-text-shadow: var(--card-title-text-shadow) var(--purple);
+  --card-red-bg: var(--ruby);
+  --card-red-title-box-shadow: var(--card-title-box-shadow) var(--tomato);
+  --card-red-title-text-shadow: var(--card-title-text-shadow) var(--red);
+  --card-yellow-bg: var(--citrine);
+  --card-yellow-title-box-shadow: var(--card-title-box-shadow) var(--khaki);
+  --card-yellow-title-text-shadow: var(--card-title-text-shadow) var(--yellow);
+}
+
+/***** 3.3 Foot *****/
 [class*="foot"] {
   --foot-text-align: center;
   --foot-title-color: var(--khaki);
@@ -495,7 +547,7 @@ pre {
   }
 }
 
-/***** 3.3 Form *****/
+/***** 3.4 Form *****/
 .form {
   --form-border: medium ridge var(--sky);
   --form-box-shadow: inset 0 0 5px 5px var(--sapphire);
@@ -581,7 +633,7 @@ pre {
   }
 }
 
-/***** 3.4 Gallery *****/
+/***** 3.5 Gallery *****/
 .gallery {
   --gallery-align-items: center;
   --gallery-flex-wrap: wrap;
@@ -648,7 +700,7 @@ pre {
   }
 }
 
-/***** 3.5 Menu *****/
+/***** 3.6 Menu *****/
 .menu {
   --menu-align-items: stretch;
   --menu-background-color: var(--silver);
@@ -705,7 +757,7 @@ pre {
   }
 }
 
-/***** 3.6 Navbar *****/
+/***** 3.7 Navbar *****/
 [class*="nav"] {
   --navbar-align-items: center;
   --navbar-background-color: var(--blue);
@@ -752,7 +804,7 @@ pre {
   }
 }
 
-/***** 3.7 Slider *****/
+/***** 3.8 Slider *****/
 .slider {
   --slider-margin: 0;
   --slider-min-height: 30vh;
@@ -823,7 +875,7 @@ pre {
   }
 }
 
-/***** 3.8 Table *****/
+/***** 3.9 Table *****/
 [class*="table"] {
   --table-border-collapse: collapse;
   --table-border-space: 10px;
@@ -3678,6 +3730,198 @@ pre > *::selection {
 }
 
 
+/******************** CARD ********************/
+
+/*
+1. CARD
+  1.1 Card
+2. CARD CHILD
+  2.1 Card Child
+  2.2 Card Titles
+  2.3 Card Btn
+3. CARD COLORS
+  3.1 Card Colors
+*/
+
+/********** 1. CARD **********/
+
+/*
+1.1 Card
+*/
+
+/***** 1.1 Card *****/
+[class*="card"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: var(--card-flex-direction);
+          flex-direction: var(--card-flex-direction);
+  -webkit-box-align: var(--card-align-items);
+      -ms-flex-align: var(--card-align-items);
+          align-items: var(--card-align-items);
+  position: var(--card-position);
+  overflow: var(--card-overflow);
+  margin: var(--card-margin);
+  border: var(--card-border);
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
+  width: var(--card-width);
+  -webkit-box-shadow: var(--card-box-shadow);
+          box-shadow: var(--card-box-shadow);
+  background-color: var(--card-bg);
+  color: var(--card-color);
+}
+
+[class*="card"]:hover,
+[class*="card"]:focus,
+[class*="card"]:active {
+  -webkit-transform: var(--card-hover-transform);
+          transform: var(--card-hover-transform);
+  -webkit-transition: var(--card-hover-transition);
+  transition: var(--card-hover-transition);
+}
+
+/********** 2. CARD CHILD **********/
+
+/*
+2.1 Card Child
+2.2 Card Titles
+2.3 Card Btn
+*/
+
+/***** 2.1 Card Child *****/
+[class*="card"] > * {
+  margin: var(--card-child-margin);
+  border: var(--card-child-border);
+  border-radius: var(--card-child-radius);
+  padding: var(--card-child-padding);
+  max-width: var(--card-child-max-width);
+  background-color: var(--card-child-bg);
+  font-size: var(--card-child-font-size);
+  text-align: var(--card-child-text-align);
+}
+
+[class*="card"] > *::-moz-selection {
+  background-color: var(--card-selection-bg);
+  color: var(--card-selection-color);
+}
+
+[class*="card"] > *::selection {
+  background-color: var(--card-selection-bg);
+  color: var(--card-selection-color);
+}
+
+/***** 2.2 Card Titles *****/
+[class*="card"] > h2,
+[class*="card"] > h3,
+[class*="card"] > h4,
+[class*="card"] > h5,
+[class*="card"] > h6 {
+  font-size: var(--card-title-font-size);
+  -webkit-box-shadow: var(--card-title-box-shadow);
+          box-shadow: var(--card-title-box-shadow);
+  text-shadow: var(--card-title-text-shadow);
+}
+
+/***** 2.3 Card Btn *****/
+[class*="card"] > [class*="btn"] {
+  width: var(--card-btn-width);
+  text-align: var(--card-btn-text-align);
+}
+
+/********** 3. CARD COLORS **********/
+
+/*
+3.1 Card Colors
+*/
+
+/***** 3.1 Card Colors *****/
+[class*="card-black"] {
+  background-color: var(--card-black-bg);
+}
+
+[class*="card-black"] > h2,
+[class*="card-black"] > h3,
+[class*="card-black"] > h4,
+[class*="card-black"] > h5,
+[class*="card-black"] > h6 {
+  -webkit-box-shadow: var(--card-black-title-box-shadow);
+          box-shadow: var(--card-black-title-box-shadow);
+  text-shadow: var(--card-black-title-text-shadow);
+}
+
+[class*="card-blue"] {
+  background-color: var(--card-blue-bg);
+}
+
+[class*="card-blue"] > h2,
+[class*="card-blue"] > h3,
+[class*="card-blue"] > h4,
+[class*="card-blue"] > h5,
+[class*="card-blue"] > h6 {
+  -webkit-box-shadow: var(--card-blue-title-box-shadow);
+          box-shadow: var(--card-blue-title-box-shadow);
+  text-shadow: var(--card-blue-title-text-shadow);
+}
+
+[class*="card-green"] {
+  background-color: var(--card-green-bg);
+}
+
+[class*="card-green"] > h2,
+[class*="card-green"] > h3,
+[class*="card-green"] > h4,
+[class*="card-green"] > h5,
+[class*="card-green"] > h6 {
+  -webkit-box-shadow: var(--card-green-title-box-shadow);
+          box-shadow: var(--card-green-title-box-shadow);
+  text-shadow: var(--card-green-title-text-shadow);
+}
+
+[class*="card-purple"] {
+  background-color: var(--card-purple-bg);
+}
+
+[class*="card-purple"] > h2,
+[class*="card-purple"] > h3,
+[class*="card-purple"] > h4,
+[class*="card-purple"] > h5,
+[class*="card-purple"] > h6 {
+  -webkit-box-shadow: var(--card-purple-title-box-shadow);
+          box-shadow: var(--card-purple-title-box-shadow);
+  text-shadow: var(--card-purple-title-text-shadow);
+}
+
+[class*="card-red"] {
+  background-color: var(--card-red-bg);
+}
+
+[class*="card-red"] > h2,
+[class*="card-red"] > h3,
+[class*="card-red"] > h4,
+[class*="card-red"] > h5,
+[class*="card-red"] > h6 {
+  -webkit-box-shadow: var(--card-red-title-box-shadow);
+          box-shadow: var(--card-red-title-box-shadow);
+  text-shadow: var(--card-red-title-text-shadow);
+}
+
+[class*="card-yellow"] {
+  background-color: var(--card-yellow-bg);
+}
+
+[class*="card-yellow"] > h2,
+[class*="card-yellow"] > h3,
+[class*="card-yellow"] > h4,
+[class*="card-yellow"] > h5,
+[class*="card-yellow"] > h6 {
+  -webkit-box-shadow: var(--card-yellow-title-box-shadow);
+          box-shadow: var(--card-yellow-title-box-shadow);
+  text-shadow: var(--card-yellow-title-text-shadow);
+}
+
 /******************** MENU ********************/
 
 /*
@@ -4501,4 +4745,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 23rd Jul 2019 @ 9:43:03 PM */
+ Updated: 6th Aug 2019 @ 11:26:39 PM */
