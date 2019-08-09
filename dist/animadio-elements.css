@@ -1,4 +1,4 @@
-/*! animadio v0.5.2 | https://animadio.org | MIT License */
+/*! animadio v0.5.3 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -705,29 +705,29 @@ pre {
   --menu-align-items: stretch;
   --menu-background-color: var(--silver);
   --menu-border: none;
+  --menu-border-radius: 5px;
   --menu-color: var(--gray);
   --menu-flex-direction: column;
   --menu-justify-content: center;
   --menu-list-style: none;
   --menu-margin: 20px auto 50px;
   --menu-padding: 0;
-  --menu-radius: 5px;
   --menu-width: 40%;
   --menu-all-cursor: pointer;
   --menu-label-align-items: center;
+  --menu-label-border-radius: 5px;
   --menu-label-justify-content: center;
   --menu-label-padding: 6px 12px;
   --menu-label-position: relative;
-  --menu-label-radius: 5px;
   --menu-label-width: 100%;
   --menu-label-hover-background-color: var(--sapphire);
   --menu-label-hover-border: none;
   --menu-label-hover-color: var(--white);
   --menu-label-hover-font-style: italic;
-  --menu-label-check-background-color: var(--blue);
-  --menu-label-check-color: var(--white);
-  --menu-label-check-font-weight: bold;
-  --menu-fa-bot: -18px;
+  --menu-checked-label-background-color: var(--blue);
+  --menu-checked-label-color: var(--white);
+  --menu-checked-label-font-weight: bold;
+  --menu-fa-bottom: -18px;
   --menu-fa-color: var(--blue);
   --menu-fa-position: absolute;
 }
@@ -878,7 +878,7 @@ pre {
 /***** 3.9 Table *****/
 [class*="table"] {
   --table-border-collapse: collapse;
-  --table-border-space: 10px;
+  --table-border-spacing: 10px;
   --table-box-shadow: 5px 5px 10px 5px var(--gray);
   --table-margin-bottom: 50px;
   --table-width: 50%;
@@ -3922,32 +3922,21 @@ pre > *::selection {
   text-shadow: var(--card-yellow-title-text-shadow);
 }
 
-/******************** MENU ********************/
+/********** MENU **********/
 
 /*
-1. MENU
-  1.1 Menu
-  1.2 Menu Items
-2. MENU LABEL
-  2.1 Menu Label
-  2.2 Menu Label Hover
-  2.3 Menu Check Label
-3. MENU TARGET
-  3.1 Menu Target
-  3.2 Menu Check Target
-4. MENU FA
-  4.1 Menu FA
-  4.2 Menu Check FA
+1 - Menu
+2 - Menu All
+3 - Menu Label
+4 - Menu Label Hover
+5 - Menu Checked Label
+6 - Menu Relay Child
+7 - Menu Checked Target
+8 - Menu FA
+9 - Menu Checked FA
 */
 
-/********** 1. MENU **********/
-
-/*
-1.1 Menu
-1.2 Menu Items
-*/
-
-/***** 1.1 Menu *****/
+/***** 1 - Menu *****/
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3964,7 +3953,7 @@ pre > *::selection {
           align-items: var(--menu-align-items);
   margin: var(--menu-margin);
   border: var(--menu-border);
-  border-radius: var(--menu-radius);
+  border-radius: var(--menu-border-radius);
   padding: var(--menu-padding);
   width: var(--menu-width);
   list-style: var(--menu-list-style);
@@ -3972,20 +3961,12 @@ pre > *::selection {
   color: var(--menu-color);
 }
 
-/***** 1.2 Menu Items *****/
+/***** 2 - Menu All *****/
 .menu * {
   cursor: var(--menu-all-cursor);
 }
 
-/********** 2. MENU LABEL **********/
-
-/*
-2.1 Menu Label
-2.2 Menu Label Hover
-2.3 Menu Check Label
-*/
-
-/***** 2.1 Menu Label *****/
+/***** 3 - Menu Label *****/
 .menu label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3997,12 +3978,12 @@ pre > *::selection {
       -ms-flex-align: var(--menu-label-align-items);
           align-items: var(--menu-label-align-items);
   position: var(--menu-label-position);
-  border-radius: var(--menu-label-radius);
+  border-radius: var(--menu-label-border-radius);
   padding: var(--menu-label-padding);
   width: var(--menu-label-width);
 }
 
-/***** 2.2 Menu Label Hover *****/
+/***** 4 - Menu Label Hover *****/
 .menu label:hover,
 .menu label:active,
 .menu label:focus {
@@ -4012,30 +3993,23 @@ pre > *::selection {
   color: var(--menu-label-hover-color);
 }
 
-/***** 2.3 Menu Check Label *****/
+/***** 5 - Menu Checked Label *****/
 [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"],
 [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"],
 [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"],
 [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"],
 [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] {
-  background-color: var(--menu-label-check-background-color);
-  color: var(--menu-label-check-color);
-  font-weight: var(--menu-label-check-font-weight);
+  background-color: var(--menu-checked-label-background-color);
+  color: var(--menu-checked-label-color);
+  font-weight: var(--menu-checked-label-font-weight);
 }
 
-/********** 3. MENU TARGET **********/
-
-/*
-3.1 Menu Target
-3.2 Menu Check Target
-*/
-
-/***** 3.1 Menu Target *****/
+/***** 6 - Menu Relay Child *****/
 [class*="menu-"][class*="-relay"] > * {
   display: none;
 }
 
-/***** 3.2 Menu Check Target *****/
+/***** 7 - Menu Checked Target *****/
 [class*="menu-"][class*="-radio1"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target1"],
 [class*="menu-"][class*="-radio2"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target2"],
 [class*="menu-"][class*="-radio3"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target3"],
@@ -4044,32 +4018,24 @@ pre > *::selection {
   display: block;
 }
 
-/********** 4. MENU FA **********/
-
-/*
-4.1 Menu FA
-4.2 Menu Check FA
-*/
-
-/***** 4.1 Menu FA *****/
-.menu [class*="fa-"][class*="-down"] {
+/***** 8 - Menu FA *****/
+.menu [class*="fa-"] {
   display: none;
   position: var(--menu-fa-position);
-  bottom: var(--menu-fa-bot);
+  bottom: var(--menu-fa-bottom);
   color: var(--menu-fa-color);
 }
 
-/***** 4.2 Menu Check FA *****/
+/***** 9 - Menu Checked FA *****/
 @media (min-width: 576px) {
-  [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"] > [class*="fa-"][class*="-down"],
-  [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"][class*="-down"],
-  [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"][class*="-down"],
-  [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"][class*="-down"],
-  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"][class*="-down"] {
+  [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"] {
     display: block;
   }
 }
-
 
 /********** GALLERY **********/
 
@@ -4178,43 +4144,36 @@ padding: var(--gallery-link-all-odd-padding);
 font-size: var(--gallery-link-all-odd-font-size);
 }
 
-/******************** TABLE ********************/
+/********** TABLE **********/
 
 /*
-1. TABLE
-  1.1 Table
-  1.2 Table Display
-  1.3 Table Collapse
-2. TABLE CAPTION
-  2.1 Table Caption
-3. TABLE TITLES
-  3.1 Table Titles
-4. TABLE GLOBAL
-  4.1 Table Global
-5. TABLE ROWS
-  5.1 Table Rows
+1 - Table
+2 - Table Display
+3 - Table Collapse
+4 - Table Caption
+5 - Table Title
+6 - Table Title Selection
+7 - Table Cell
+8 - Table Row Even
+9 - Table Row Even Hover
+10 - Table Row Even Selection
+11 - Table Row Odd
+12 - Table Row Odd Hover
+13 - Table Row Odd Selection
 */
 
-/********** 1. TABLE **********/
-
-/*
-1.1 Table
-1.2 Table Display
-1.3 Table Collapse
-*/
-
-/***** 1.1 Table *****/
+/***** 1 - Table *****/
 [class*="table"] {
   display: table;
   border-collapse: var(--table-border-collapse);
-  border-spacing: var(--table-border-space);
+  border-spacing: var(--table-border-spacing);
   margin-bottom: var(--table-margin-bottom);
   width: var(--table-width);
   -webkit-box-shadow: var(--table-box-shadow);
           box-shadow: var(--table-box-shadow);
 }
 
-/***** 1.2 Table Display *****/
+/***** 2 - Table Display *****/
 [class*="table-"][class*="-inline"] {
   display: inline-table;
 }
@@ -4235,7 +4194,7 @@ font-size: var(--gallery-link-all-odd-font-size);
   display: table-cell;
 }
 
-/***** 1.3 Table Collapse *****/
+/***** 3 - Table Collapse *****/
 [class*="table-"][class*="-collapse"] {
   border-collapse: collapse;
 }
@@ -4244,13 +4203,7 @@ font-size: var(--gallery-link-all-odd-font-size);
   border-collapse: separate;
 }
 
-/********** 2. TABLE CAPTION **********/
-
-/*
-2.1 Table Caption
-*/
-
-/***** 2.1 Table Caption *****/
+/***** 4 - Table Caption *****/
 [class*="table"] > caption {
   caption-side: var(--table-caption-side);
   margin-bottom: var(--table-caption-margin-bottom);
@@ -4260,13 +4213,7 @@ font-size: var(--gallery-link-all-odd-font-size);
   text-shadow: var(--table-caption-text-shadow);
 }
 
-/********** 3. TABLE TITLES **********/
-
-/*
-3.1 Table Titles
-*/
-
-/***** 3.1 Table Titles *****/
+/***** 5 - Table Title *****/
 [class*="table"] thead,
 [class*="table"] tfoot {
   background-color: var(--table-title-background-color);
@@ -4274,25 +4221,19 @@ font-size: var(--gallery-link-all-odd-font-size);
   font-style: var(--table-title-font-style);
 }
 
+/***** 6 - Table Title Selection *****/
 [class*="table"] thead *::-moz-selection,
 [class*="table"] tfoot *::-moz-selection {
   background-color: var(--table-title-selection-background-color);
   color: var(--table-title-selection-color);
 }
-
 [class*="table"] thead *::selection,
 [class*="table"] tfoot *::selection {
   background-color: var(--table-title-selection-background-color);
   color: var(--table-title-selection-color);
 }
 
-/********** 4. TABLE GLOBAL **********/
-
-/*
-4.1 Table Global
-*/
-
-/***** 4.1 Table Global *****/
+/***** 7 - Table Cell *****/
 [class*="table"] th,
 [class*="table"] td {
   border-style: var(--table-cell-border-style);
@@ -4305,18 +4246,13 @@ font-size: var(--gallery-link-all-odd-font-size);
   cursor: var(--table-cell-cursor);
 }
 
-/********** 5. TABLE ROWS **********/
-
-/*
-5.1 Table Rows
-*/
-
-/***** 5.1 Table Rows *****/
+/***** 8 - Table Row Even *****/
 [class*="table"] tbody tr:nth-child(even) {
   background-color: var(--table-row-even-background-color);
   color: var(--table-row-even-color);
 }
 
+/***** 9 - Table Row Even Hover *****/
 [class*="table"] tbody tr:nth-child(even):hover,
 [class*="table"] tbody tr:nth-child(even):focus,
 [class*="table"] tbody tr:nth-child(even):active {
@@ -4326,23 +4262,23 @@ font-size: var(--gallery-link-all-odd-font-size);
           box-shadow: var(--table-row-even-hover-box-shadow);
 }
 
+/***** 10 - Table Row Even Selection *****/
 [class*="table"] tbody tr:nth-child(even) > *::-moz-selection {
   background-color: var(--table-row-even-selection-background-color);
   color: var(--table-row-even-selection-color);
 }
-
 [class*="table"] tbody tr:nth-child(even) > *::selection {
   background-color: var(--table-row-even-selection-background-color);
   color: var(--table-row-even-selection-color);
 }
 
+/***** 11 - Table Row Odd *****/
 [class*="table"] tbody tr:nth-child(odd) {
   background-color: var(--table-row-odd-background-color);
   color: var(--table-row-odd-color);
-  -webkit-box-shadow: var(--table-row-odd-hover-box-shadow);
-          box-shadow: var(--table-row-odd-hover-box-shadow);
 }
 
+/***** 12 - Table Row Odd Hover *****/
 [class*="table"] tbody tr:nth-child(odd):hover,
 [class*="table"] tbody tr:nth-child(odd):focus,
 [class*="table"] tbody tr:nth-child(odd):active {
@@ -4352,16 +4288,15 @@ font-size: var(--gallery-link-all-odd-font-size);
           box-shadow: var(--table-row-odd-hover-box-shadow);
 }
 
+/***** 13 - Table Row Odd Selection *****/
 [class*="table"] tbody tr:nth-child(odd) > *::-moz-selection {
   background-color: var(--table-row-odd-selection-background-color);
   color: var(--table-row-odd-selection-color);
 }
-
 [class*="table"] tbody tr:nth-child(odd) > *::selection {
   background-color: var(--table-row-odd-selection-background-color);
   color: var(--table-row-odd-selection-color);
 }
-
 
 /********** FORM **********/
 
@@ -4637,4 +4572,4 @@ font-size: var(--gallery-link-all-odd-font-size);
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 10th Aug 2019 @ 12:43:47 AM */
+ Updated: 10th Aug 2019 @ 1:08:29 AM */

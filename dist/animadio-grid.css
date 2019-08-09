@@ -1,4 +1,4 @@
-/*! animadio v0.5.2 | https://animadio.org | MIT License */
+/*! animadio v0.5.3 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -705,29 +705,29 @@ pre {
   --menu-align-items: stretch;
   --menu-background-color: var(--silver);
   --menu-border: none;
+  --menu-border-radius: 5px;
   --menu-color: var(--gray);
   --menu-flex-direction: column;
   --menu-justify-content: center;
   --menu-list-style: none;
   --menu-margin: 20px auto 50px;
   --menu-padding: 0;
-  --menu-radius: 5px;
   --menu-width: 40%;
   --menu-all-cursor: pointer;
   --menu-label-align-items: center;
+  --menu-label-border-radius: 5px;
   --menu-label-justify-content: center;
   --menu-label-padding: 6px 12px;
   --menu-label-position: relative;
-  --menu-label-radius: 5px;
   --menu-label-width: 100%;
   --menu-label-hover-background-color: var(--sapphire);
   --menu-label-hover-border: none;
   --menu-label-hover-color: var(--white);
   --menu-label-hover-font-style: italic;
-  --menu-label-check-background-color: var(--blue);
-  --menu-label-check-color: var(--white);
-  --menu-label-check-font-weight: bold;
-  --menu-fa-bot: -18px;
+  --menu-checked-label-background-color: var(--blue);
+  --menu-checked-label-color: var(--white);
+  --menu-checked-label-font-weight: bold;
+  --menu-fa-bottom: -18px;
   --menu-fa-color: var(--blue);
   --menu-fa-position: absolute;
 }
@@ -878,7 +878,7 @@ pre {
 /***** 3.9 Table *****/
 [class*="table"] {
   --table-border-collapse: collapse;
-  --table-border-space: 10px;
+  --table-border-spacing: 10px;
   --table-box-shadow: 5px 5px 10px 5px var(--gray);
   --table-margin-bottom: 50px;
   --table-width: 50%;
@@ -4745,4 +4745,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 10th Aug 2019 @ 12:43:47 AM */
+ Updated: 10th Aug 2019 @ 1:08:29 AM */
