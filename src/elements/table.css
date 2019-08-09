@@ -1,39 +1,32 @@
-/******************** TABLE ********************/
+/********** TABLE **********/
 
 /*
-1. TABLE
-  1.1 Table
-  1.2 Table Display
-  1.3 Table Collapse
-2. TABLE CAPTION
-  2.1 Table Caption
-3. TABLE TITLES
-  3.1 Table Titles
-4. TABLE GLOBAL
-  4.1 Table Global
-5. TABLE ROWS
-  5.1 Table Rows
+1 - Table
+2 - Table Display
+3 - Table Collapse
+4 - Table Caption
+5 - Table Title
+6 - Table Title Selection
+7 - Table Cell
+8 - Table Row Even
+9 - Table Row Even Hover
+10 - Table Row Even Selection
+11 - Table Row Odd
+12 - Table Row Odd Hover
+13 - Table Row Odd Selection
 */
 
-/********** 1. TABLE **********/
-
-/*
-1.1 Table
-1.2 Table Display
-1.3 Table Collapse
-*/
-
-/***** 1.1 Table *****/
+/***** 1 - Table *****/
 [class*="table"] {
   display: table;
   border-collapse: var(--table-border-collapse);
-  border-spacing: var(--table-border-space);
+  border-spacing: var(--table-border-spacing);
   margin-bottom: var(--table-margin-bottom);
   width: var(--table-width);
   box-shadow: var(--table-box-shadow);
 }
 
-/***** 1.2 Table Display *****/
+/***** 2 - Table Display *****/
 [class*="table-"][class*="-inline"] {
   display: inline-table;
 }
@@ -54,7 +47,7 @@
   display: table-cell;
 }
 
-/***** 1.3 Table Collapse *****/
+/***** 3 - Table Collapse *****/
 [class*="table-"][class*="-collapse"] {
   border-collapse: collapse;
 }
@@ -63,13 +56,7 @@
   border-collapse: separate;
 }
 
-/********** 2. TABLE CAPTION **********/
-
-/*
-2.1 Table Caption
-*/
-
-/***** 2.1 Table Caption *****/
+/***** 4 - Table Caption *****/
 [class*="table"] > caption {
   caption-side: var(--table-caption-side);
   margin-bottom: var(--table-caption-margin-bottom);
@@ -79,13 +66,7 @@
   text-shadow: var(--table-caption-text-shadow);
 }
 
-/********** 3. TABLE TITLES **********/
-
-/*
-3.1 Table Titles
-*/
-
-/***** 3.1 Table Titles *****/
+/***** 5 - Table Title *****/
 [class*="table"] thead,
 [class*="table"] tfoot {
   background-color: var(--table-title-background-color);
@@ -93,19 +74,14 @@
   font-style: var(--table-title-font-style);
 }
 
+/***** 6 - Table Title Selection *****/
 [class*="table"] thead *::selection,
 [class*="table"] tfoot *::selection {
   background-color: var(--table-title-selection-background-color);
   color: var(--table-title-selection-color);
 }
 
-/********** 4. TABLE GLOBAL **********/
-
-/*
-4.1 Table Global
-*/
-
-/***** 4.1 Table Global *****/
+/***** 7 - Table Cell *****/
 [class*="table"] th,
 [class*="table"] td {
   border-style: var(--table-cell-border-style);
@@ -118,18 +94,13 @@
   cursor: var(--table-cell-cursor);
 }
 
-/********** 5. TABLE ROWS **********/
-
-/*
-5.1 Table Rows
-*/
-
-/***** 5.1 Table Rows *****/
+/***** 8 - Table Row Even *****/
 [class*="table"] tbody tr:nth-child(even) {
   background-color: var(--table-row-even-background-color);
   color: var(--table-row-even-color);
 }
 
+/***** 9 - Table Row Even Hover *****/
 [class*="table"] tbody tr:nth-child(even):hover,
 [class*="table"] tbody tr:nth-child(even):focus,
 [class*="table"] tbody tr:nth-child(even):active {
@@ -138,17 +109,19 @@
   box-shadow: var(--table-row-even-hover-box-shadow);
 }
 
+/***** 10 - Table Row Even Selection *****/
 [class*="table"] tbody tr:nth-child(even) > *::selection {
   background-color: var(--table-row-even-selection-background-color);
   color: var(--table-row-even-selection-color);
 }
 
+/***** 11 - Table Row Odd *****/
 [class*="table"] tbody tr:nth-child(odd) {
   background-color: var(--table-row-odd-background-color);
   color: var(--table-row-odd-color);
-  box-shadow: var(--table-row-odd-hover-box-shadow);
 }
 
+/***** 12 - Table Row Odd Hover *****/
 [class*="table"] tbody tr:nth-child(odd):hover,
 [class*="table"] tbody tr:nth-child(odd):focus,
 [class*="table"] tbody tr:nth-child(odd):active {
@@ -157,8 +130,8 @@
   box-shadow: var(--table-row-odd-hover-box-shadow);
 }
 
+/***** 13 - Table Row Odd Selection *****/
 [class*="table"] tbody tr:nth-child(odd) > *::selection {
   background-color: var(--table-row-odd-selection-background-color);
   color: var(--table-row-odd-selection-color);
 }
-
