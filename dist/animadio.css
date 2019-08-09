@@ -1,4 +1,4 @@
-/*! animadio v0.5.0 | https://animadio.org | MIT License */
+/*! animadio v0.5.1 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -520,30 +520,30 @@ pre {
   --foot-text-align: center;
   --foot-title-color: var(--khaki);
   --foot-title-font-size: 2rem;
-  --foot-global-padding-bot: 20px;
-  --foot-main-background-color: var(--purple);
-  --foot-main-cursor: help;
-  --foot-main-flex-direction: column;
-  --foot-main-font-color: var(--white);
-  --foot-main-justify-content: space-evenly;
-  --foot-main-margin: 0;
-  --foot-list-cursor: pointer;
-  --foot-list-text-align: center;
-  --foot-list-link-font-color: var(--white);
-  --foot-list-link-margin-bot: 5px;
-  --foot-list-link-hover-font-color: var(--jade);
-  --foot-info-background-color: var(--white);
-  --foot-info-cursor: crosshair;
-  --foot-info-justify-content: center;
-  --foot-info-margin: 0;
-  --foot-info-padding-top: 20px;
-  --foot-info-link-margin-left: 10px;
-  --foot-info-link-margin-right: 10px;
+  --foot-list-padding-bottom: 20px;
+  --foot-first-child-background-color: var(--purple);
+  --foot-first-child-cursor: help;
+  --foot-first-child-flex-direction: column;
+  --foot-first-child-font-color: var(--white);
+  --foot-first-child-justify-content: space-evenly;
+  --foot-first-child-margin: 0;
+  --foot-first-child-list-cursor: pointer;
+  --foot-first-child-list-text-align: center;
+  --foot-first-child-link-font-color: var(--white);
+  --foot-first-child-link-margin-bottom: 5px;
+  --foot-first-child-link-hover-font-color: var(--jade);
+  --foot-last-child-background-color: var(--white);
+  --foot-last-child-cursor: crosshair;
+  --foot-last-child-justify-content: center;
+  --foot-last-child-margin: 0;
+  --foot-last-child-padding-top: 20px;
+  --foot-last-child-link-margin-left: 10px;
+  --foot-last-child-link-margin-right: 10px;
 }
 
 @media (min-width: 576px) {
   [class*="foot"] {
-    --foot-main-flex-direction: row;
+    --foot-first-child-flex-direction: row;
   }
 }
 
@@ -6894,38 +6894,26 @@ pre > *::selection {
 }
 
 
-/******************** FOOT ********************/
+/********** FOOT **********/
 
 /*
-1. FOOT
-  1.1 Foot
-  1.2 Foot Titles
-2. FOOT GLOBAL
-  2.1 Foot Global
-3. FOOT MAIN
-  3.1 Foot Main
-4. FOOT LIST
-  4.1 Foot List
-  4.2 Foot List Link
-  4.3 Foot List Link Hover
-5. FOOT INFO
-  5.1 Foot Info
-  5.2 Foot Info Link
+1 - Foot
+2 - Foot Title
+3 - Foot List
+4 - Foot First Child
+5 - Foot First Child List
+6 - Foot First Child Link
+7 - Foot First Child Link Hover
+8 - Foot Last Child
+9 - Foot Last Child Link
 */
 
-/********** 1. FOOT **********/
-
-/*
-1.1 Foot
-1.2 Foot Titles
-*/
-
-/***** 1.1 Foot *****/
+/***** 1 - Foot *****/
 .foot {
   text-align: var(--foot-text-align);
 }
 
-/***** 1.2 Foot Titles *****/
+/***** 2 - Foot Title *****/
 .foot h3,
 .foot h4,
 .foot h5,
@@ -6934,94 +6922,65 @@ pre > *::selection {
   color: var(--foot-title-color);
 }
 
-/********** 2. FOOT GLOBAL **********/
-
-/*
-2.1 Foot Global
-*/
-
-/***** 2.1 Foot Global *****/
-.foot-main,
-.foot-info {
+/***** 3 - Foot List *****/
+.foot > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: var(--foot-global-padding-bot);
+  padding-bottom: var(--foot-list-padding-bottom);
 }
 
-/********** 3. FOOT MAIN **********/
-
-/*
-3.1 Foot Main
-*/
-
-/***** 3.1 Foot Main *****/
-.foot-main {
+/***** 4 - Foot First Child *****/
+.foot > ul:first-child {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: var(--foot-main-flex-direction);
-          flex-direction: var(--foot-main-flex-direction);
-  -webkit-box-pack: var(--foot-main-justify-content);
-      -ms-flex-pack: var(--foot-main-justify-content);
-          justify-content: var(--foot-main-justify-content);
-  margin: var(--foot-main-margin);
-  background-color: var(--foot-main-background-color);
-  color: var(--foot-main-font-color);
-  cursor: var(--foot-main-cursor);
+      -ms-flex-direction: var(--foot-first-child-flex-direction);
+          flex-direction: var(--foot-first-child-flex-direction);
+  -webkit-box-pack: var(--foot-first-child-justify-content);
+      -ms-flex-pack: var(--foot-first-child-justify-content);
+          justify-content: var(--foot-first-child-justify-content);
+  margin: var(--foot-first-child-margin);
+  background-color: var(--foot-first-child-background-color);
+  color: var(--foot-first-child-font-color);
+  cursor: var(--foot-first-child-cursor);
 }
 
-/********** 4. FOOT LIST **********/
-
-/*
-4.1 Foot List
-4.2 Foot List Link
-4.3 Foot List Link Hover
-*/
-
-/***** 4.1 Foot List *****/
-.foot-list {
-  text-align: var(--foot-list-text-align);
-  cursor: var(--foot-list-cursor);
+/***** 5 - Foot First Child List *****/
+.foot > ul:first-child ul {
+  text-align: var(--foot-first-child-list-text-align);
+  cursor: var(--foot-first-child-list-cursor);
 }
 
-/***** 4.2 Foot List Link *****/
-.foot-list a {
-  margin-bottom: var(--foot-list-link-margin-bot);
-  color: var(--foot-list-link-font-color);
+/***** 6 - Foot First Child Link *****/
+.foot > ul:first-child a {
+  margin-bottom: var(--foot-first-child-link-margin-bottom);
+  color: var(--foot-first-child-link-font-color);
 }
 
-/***** 4.3 Foot List Link Hover *****/
-.foot-list a:hover,
-.foot-list a:focus,
-.foot-list a:active {
-  color: var(--foot-list-link-hover-font-color);
+/***** 7 - Foot First Child Link Hover *****/
+.foot > ul:first-child a:hover,
+.foot > ul:first-child a:focus,
+.foot > ul:first-child a:active {
+  color: var(--foot-first-child-link-hover-font-color);
 }
 
-/********** 5. FOOT INFO **********/
-
-/*
-5.1 Foot Info
-5.2 Foot Info Link
-*/
-
-/***** 5.1 Foot Info *****/
-.foot-info {
-  -webkit-box-pack: var(--foot-info-justify-content);
-      -ms-flex-pack: var(--foot-info-justify-content);
-          justify-content: var(--foot-info-justify-content);
-  margin: var(--foot-info-margin);
-  padding-top: var(--foot-info-padding-top);
-  background-color: var(--foot-info-background-color);
-  cursor: var(--foot-info-cursor);
+/***** 8 - Foot Last Child *****/
+.foot > ul:last-child {
+  -webkit-box-pack: var(--foot-last-child-justify-content);
+      -ms-flex-pack: var(--foot-last-child-justify-content);
+          justify-content: var(--foot-last-child-justify-content);
+  margin: var(--foot-last-child-margin);
+  padding-top: var(--foot-last-child-padding-top);
+  background-color: var(--foot-last-child-background-color);
+  cursor: var(--foot-last-child-cursor);
 }
 
-/***** 5.2 Foot Info Link *****/
-.foot-info a {
-  margin-right: var(--foot-info-link-margin-right);
-  margin-left: var(--foot-info-link-margin-left);
-  cursor: var(--foot-info-cursor);
+/***** 9 - Foot Last Child Link *****/
+.foot > ul:last-child a {
+  margin-right: var(--foot-last-child-link-margin-right);
+  margin-left: var(--foot-last-child-link-margin-left);
+  cursor: var(--foot-last-child-cursor);
 }
-
 
 /******************** DISPLAY *********************/
 
@@ -13076,4 +13035,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 6th Aug 2019 @ 11:26:39 PM */
+ Updated: 9th Aug 2019 @ 11:27:21 PM */

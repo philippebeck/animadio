@@ -1,4 +1,4 @@
-/*! animadio v0.5.0 | https://animadio.org | MIT License */
+/*! animadio v0.5.1 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -520,30 +520,30 @@ pre {
   --foot-text-align: center;
   --foot-title-color: var(--khaki);
   --foot-title-font-size: 2rem;
-  --foot-global-padding-bot: 20px;
-  --foot-main-background-color: var(--purple);
-  --foot-main-cursor: help;
-  --foot-main-flex-direction: column;
-  --foot-main-font-color: var(--white);
-  --foot-main-justify-content: space-evenly;
-  --foot-main-margin: 0;
-  --foot-list-cursor: pointer;
-  --foot-list-text-align: center;
-  --foot-list-link-font-color: var(--white);
-  --foot-list-link-margin-bot: 5px;
-  --foot-list-link-hover-font-color: var(--jade);
-  --foot-info-background-color: var(--white);
-  --foot-info-cursor: crosshair;
-  --foot-info-justify-content: center;
-  --foot-info-margin: 0;
-  --foot-info-padding-top: 20px;
-  --foot-info-link-margin-left: 10px;
-  --foot-info-link-margin-right: 10px;
+  --foot-list-padding-bottom: 20px;
+  --foot-first-child-background-color: var(--purple);
+  --foot-first-child-cursor: help;
+  --foot-first-child-flex-direction: column;
+  --foot-first-child-font-color: var(--white);
+  --foot-first-child-justify-content: space-evenly;
+  --foot-first-child-margin: 0;
+  --foot-first-child-list-cursor: pointer;
+  --foot-first-child-list-text-align: center;
+  --foot-first-child-link-font-color: var(--white);
+  --foot-first-child-link-margin-bottom: 5px;
+  --foot-first-child-link-hover-font-color: var(--jade);
+  --foot-last-child-background-color: var(--white);
+  --foot-last-child-cursor: crosshair;
+  --foot-last-child-justify-content: center;
+  --foot-last-child-margin: 0;
+  --foot-last-child-padding-top: 20px;
+  --foot-last-child-link-margin-left: 10px;
+  --foot-last-child-link-margin-right: 10px;
 }
 
 @media (min-width: 576px) {
   [class*="foot"] {
-    --foot-main-flex-direction: row;
+    --foot-first-child-flex-direction: row;
   }
 }
 
@@ -8518,4 +8518,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 6th Aug 2019 @ 11:26:39 PM */
+ Updated: 9th Aug 2019 @ 11:27:21 PM */
