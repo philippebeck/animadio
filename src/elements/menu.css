@@ -1,29 +1,18 @@
-/******************** MENU ********************/
+/********** MENU **********/
 
 /*
-1. MENU
-  1.1 Menu
-  1.2 Menu Items
-2. MENU LABEL
-  2.1 Menu Label
-  2.2 Menu Label Hover
-  2.3 Menu Check Label
-3. MENU TARGET
-  3.1 Menu Target
-  3.2 Menu Check Target
-4. MENU FA
-  4.1 Menu FA
-  4.2 Menu Check FA
+1 - Menu
+2 - Menu All
+3 - Menu Label
+4 - Menu Label Hover
+5 - Menu Checked Label
+6 - Menu Relay Child
+7 - Menu Checked Target
+8 - Menu FA
+9 - Menu Checked FA
 */
 
-/********** 1. MENU **********/
-
-/*
-1.1 Menu
-1.2 Menu Items
-*/
-
-/***** 1.1 Menu *****/
+/***** 1 - Menu *****/
 .menu {
   display: flex;
   flex-direction: var(--menu-flex-direction);
@@ -31,7 +20,7 @@
   align-items: var(--menu-align-items);
   margin: var(--menu-margin);
   border: var(--menu-border);
-  border-radius: var(--menu-radius);
+  border-radius: var(--menu-border-radius);
   padding: var(--menu-padding);
   width: var(--menu-width);
   list-style: var(--menu-list-style);
@@ -39,31 +28,23 @@
   color: var(--menu-color);
 }
 
-/***** 1.2 Menu Items *****/
+/***** 2 - Menu All *****/
 .menu * {
   cursor: var(--menu-all-cursor);
 }
 
-/********** 2. MENU LABEL **********/
-
-/*
-2.1 Menu Label
-2.2 Menu Label Hover
-2.3 Menu Check Label
-*/
-
-/***** 2.1 Menu Label *****/
+/***** 3 - Menu Label *****/
 .menu label {
   display: flex;
   justify-content: var(--menu-label-justify-content);
   align-items: var(--menu-label-align-items);
   position: var(--menu-label-position);
-  border-radius: var(--menu-label-radius);
+  border-radius: var(--menu-label-border-radius);
   padding: var(--menu-label-padding);
   width: var(--menu-label-width);
 }
 
-/***** 2.2 Menu Label Hover *****/
+/***** 4 - Menu Label Hover *****/
 .menu label:hover,
 .menu label:active,
 .menu label:focus {
@@ -73,30 +54,23 @@
   color: var(--menu-label-hover-color);
 }
 
-/***** 2.3 Menu Check Label *****/
+/***** 5 - Menu Checked Label *****/
 [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"],
 [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"],
 [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"],
 [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"],
 [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] {
-  background-color: var(--menu-label-check-background-color);
-  color: var(--menu-label-check-color);
-  font-weight: var(--menu-label-check-font-weight);
+  background-color: var(--menu-checked-label-background-color);
+  color: var(--menu-checked-label-color);
+  font-weight: var(--menu-checked-label-font-weight);
 }
 
-/********** 3. MENU TARGET **********/
-
-/*
-3.1 Menu Target
-3.2 Menu Check Target
-*/
-
-/***** 3.1 Menu Target *****/
+/***** 6 - Menu Relay Child *****/
 [class*="menu-"][class*="-relay"] > * {
   display: none;
 }
 
-/***** 3.2 Menu Check Target *****/
+/***** 7 - Menu Checked Target *****/
 [class*="menu-"][class*="-radio1"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target1"],
 [class*="menu-"][class*="-radio2"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target2"],
 [class*="menu-"][class*="-radio3"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target3"],
@@ -105,29 +79,21 @@
   display: block;
 }
 
-/********** 4. MENU FA **********/
-
-/*
-4.1 Menu FA
-4.2 Menu Check FA
-*/
-
-/***** 4.1 Menu FA *****/
-.menu [class*="fa-"][class*="-down"] {
+/***** 8 - Menu FA *****/
+.menu [class*="fa-"] {
   display: none;
   position: var(--menu-fa-position);
-  bottom: var(--menu-fa-bot);
+  bottom: var(--menu-fa-bottom);
   color: var(--menu-fa-color);
 }
 
-/***** 4.2 Menu Check FA *****/
+/***** 9 - Menu Checked FA *****/
 @media (min-width: 576px) {
-  [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"] > [class*="fa-"][class*="-down"],
-  [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"][class*="-down"],
-  [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"][class*="-down"],
-  [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"][class*="-down"],
-  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"][class*="-down"] {
+  [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"] {
     display: block;
   }
 }
-
