@@ -1,4 +1,4 @@
-/*! animadio v0.5.1 | https://animadio.org | MIT License */
+/*! animadio v0.5.2 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -574,7 +574,7 @@ pre {
   --form-field-margin: 10px 0 20px;
   --form-field-padding: 5px;
   --form-field-outline: 0;
-  --form-field-radius: 10px;
+  --form-field-border-radius: 10px;
   --form-field-width: 100%;
   --form-field-hover-border: medium double var(--green);
   --form-field-hover-box-shadow: 5px 5px 10px 5px var(--gray);
@@ -635,27 +635,27 @@ pre {
 
 /***** 3.5 Gallery *****/
 .gallery {
-  --gallery-align-items: center;
   --gallery-flex-wrap: wrap;
-  --gallery-flow: hidden;
-  --gallery-justify-content: center;
+  --gallery-overflow: hidden;
   --gallery-margin: 20px auto 50px;
-  --gallery-max-w: 90%;
+  --gallery-max-width: 90%;
   --gallery-all-cursor: crosshair;
+  --gallery-figure-align-items: center;
   --gallery-figure-border: thin dotted var(--silver);
-  --gallery-figure-flow: hidden;
+  --gallery-figure-justify-content: center;
+  --gallery-figure-overflow: hidden;
   --gallery-figure-line-height: 0;
   --gallery-figure-margin: 5px;
   --gallery-figure-position: relative;
-  --gallery-figure-shabox: 0 0 5px;
+  --gallery-figure-box-shadow: 0 0 5px;
   --gallery-figure-width: calc(100% - 10px);
   --gallery-figcaption-background-color: rgba(0, 0, 0, 0.8);
-  --gallery-figcaption-bot: -60%;
+  --gallery-figcaption-bottom: -60%;
   --gallery-figcaption-line-height: 1;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-width: 100%;
-  --gallery-figure-figcaption-anima: translateY-opac 2s;
-  --gallery-figure-figcaption-bot: 0;
+  --gallery-figure-hover-figcaption-anima: translateY-opac 2s;
+  --gallery-figure-hover-figcaption-bottom: 0;
   --gallery-figcaption-fa-background-color: var(--blue);
   --gallery-figcaption-fa-border: 2px solid var(--white);
   --gallery-figcaption-fa-position: absolute;
@@ -663,13 +663,13 @@ pre {
   --gallery-figcaption-fa-top: -15px;
   --gallery-figcaption-fa-padding: 10px;
   --gallery-figcaption-fa-radius: 50%;
+  --gallery-link-color: var(--white);
   --gallery-link-all-margin: 0;
   --gallery-link-all-cursor: pointer;
   --gallery-link-all-even-padding: 0 10px 20px;
   --gallery-link-all-even-font-size: 1.2rem;
   --gallery-link-all-odd-padding: 10px;
   --gallery-link-all-odd-font-size: 1.5rem;
-  --gallery-link-color: var(--white);
 }
 
 @media (min-width: 576px) {
@@ -6350,109 +6350,80 @@ pre > *::selection {
 }
 
 
-/******************** GALLERY ********************/
+/********** GALLERY **********/
 
 /*
-1. GALLERY
-  1.1 Gallery
-  1.2 Gallery Items
-2. GALLERY FIGURE
-  2.1 Gallery Figure
-3. GALLERY FIGCAPTION
-  3.1 Gallery Figcaption
-  3.2 Gallery Hover Figcaption
-4. GALLERY FA
-  4.1 Gallery FA
-5. GALLERY LINK
-  5.1 Gallery Link
-  5.2 Gallery Link Items
+1 - Gallery
+2 - Gallery All
+3 - Gallery Figure
+4 - Gallery Figcaption
+5 - Gallery Figure Hover Figcaption
+6 - Gallery Figcaption FA
+7 - Gallery Link
+8 - Gallery Link All
+9 - Gallery Link All Odd
+10 - Gallery Link All Even
 */
 
-/********** 1. GALLERY **********/
-
-/*
-1.1 Gallery
-1.2 Gallery Items
-*/
-
-/***** 1.1 Gallery *****/
+/***** 1 - Gallery *****/
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: var(--gallery-flex-wrap);
       flex-wrap: var(--gallery-flex-wrap);
-  overflow: var(--gallery-flow);
+  overflow: var(--gallery-overflow);
   margin: var(--gallery-margin);
-  max-width: var(--gallery-max-w);
+  max-width: var(--gallery-max-width);
 }
 
-/***** 1.2 Gallery Items *****/
+/***** 2 - Gallery All *****/
 .gallery * {
   cursor: var(--gallery-all-cursor);
 }
 
-/********** 2. GALLERY FIGURE **********/
-
-/*
-2.1 Gallery Figure
-*/
-
-/***** 2.1 Gallery Figure *****/
+/***** 3 - Gallery Figure *****/
 .gallery figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: var(--gallery-justify-content);
-      -ms-flex-pack: var(--gallery-justify-content);
-          justify-content: var(--gallery-justify-content);
-  -webkit-box-align: var(--gallery-align-items);
-      -ms-flex-align: var(--gallery-align-items);
-          align-items: var(--gallery-align-items);
+  -webkit-box-pack: var(--gallery-figure-justify-content);
+      -ms-flex-pack: var(--gallery-figure-justify-content);
+          justify-content: var(--gallery-figure-justify-content);
+  -webkit-box-align: var(--gallery-figure-align-items);
+      -ms-flex-align: var(--gallery-figure-align-items);
+          align-items: var(--gallery-figure-align-items);
   position: var(--gallery-figure-position);
-  overflow: var(--gallery-figure-flow);
+  overflow: var(--gallery-figure-overflow);
   margin: var(--gallery-figure-margin);
   border: var(--gallery-figure-border);
   width: var(--gallery-figure-width);
-  -webkit-box-shadow: var(--gallery-figure-shabox);
-          box-shadow: var(--gallery-figure-shabox);
+  -webkit-box-shadow: var(--gallery-figure-box-shadow);
+          box-shadow: var(--gallery-figure-box-shadow);
   line-height: var(--gallery-figure-line-height);
 }
 
-/********** 3. GALLERY FIGCAPTION **********/
-
-/*
-3.1 Gallery Figcaption
-3.2 Gallery Hover Figcaption
-*/
-
-/***** 3.1 Gallery Figcaption *****/
+/***** 4 - Gallery Figcaption *****/
 .gallery figcaption {
   display: none;
   position: var(--gallery-figcaption-position);
-  bottom: var(--gallery-figcaption-bot);
+  bottom: var(--gallery-figcaption-bottom);
   width: var(--gallery-figcaption-width);
   line-height: var(--gallery-figcaption-line-height);
   background-color: var(--gallery-figcaption-background-color);
 }
 
-/***** 3.2 Gallery Hover Figcaption *****/
+/***** 5 - Gallery Figure Hover Figcaption *****/
 .gallery figure:hover figcaption,
 .gallery figure:focus figcaption,
 .gallery figure:active figcaption {
   display: block;
-  -webkit-animation: var(--gallery-figure-figcaption-anima);
-          animation: var(--gallery-figure-figcaption-anima);
-  bottom: var(--gallery-figure-figcaption-bot);
+  -webkit-animation: var(--gallery-figure-hover-figcaption-anima);
+          animation: var(--gallery-figure-hover-figcaption-anima);
+  bottom: var(--gallery-figure-hover-figcaption-bottom);
 }
 
-/********** 4. GALLERY FA **********/
-
-/*
-4.1 Gallery FA
-*/
-
-/***** 4.1 Gallery FA *****/
+/***** 6 - Gallery Figcaption FA *****/
 .gallery figcaption [class*="fa-"] {
   position: var(--gallery-figcaption-fa-position);
   top: var(--gallery-figcaption-fa-top);
@@ -6463,34 +6434,28 @@ pre > *::selection {
   background-color: var(--gallery-figcaption-fa-background-color);
 }
 
-/********** 5. GALLERY LINK **********/
-
-/*
-5.1 Gallery Link
-5.2 Gallery Link Items
-*/
-
-/***** 5.1 Gallery Link *****/
+/***** 7 - Gallery Link *****/
 .gallery a {
   color: var(--gallery-link-color);
 }
 
-/***** 5.2 Gallery Link Items *****/
+/***** 8 - Gallery Link All *****/
 .gallery a * {
   margin: var(--gallery-link-all-margin);
   cursor: var(--gallery-link-all-cursor);
 }
 
-.gallery a *:nth-child(odd) {
-  padding: var(--gallery-link-all-odd-padding);
-  font-size: var(--gallery-link-all-odd-font-size);
-}
-
+/***** 9 - Gallery Link All Even *****/
 .gallery a *:nth-child(even) {
   padding: var(--gallery-link-all-even-padding);
   font-size: var(--gallery-link-all-even-font-size);
 }
 
+/***** 10 - Gallery Link All Odd *****/
+.gallery a *:nth-child(odd) {
+padding: var(--gallery-link-all-odd-padding);
+font-size: var(--gallery-link-all-odd-font-size);
+}
 
 /******************** TABLE ********************/
 
@@ -6677,31 +6642,27 @@ pre > *::selection {
 }
 
 
-/******************** FORM ********************/
+/********** FORM **********/
 
 /*
-1. FORM
-  1.1 Form
-2. FORM FIELDSET
-  2.1 Form Fieldset
-  2.2 Form Legend
-3. FORM LIST
-  3.1 Form List
-4. FORM LABEL
-  4.1 Form Label
-5. FORM FIELDS
-  5.1 Form Inputs & Textarea
-6. FORM ACTION
-  6.1 Form Inputs Reset & Submit
+1 - Form
+2 - Form Fieldset
+3 - Form Legend
+4 - Form List
+5 - Form Label
+6 - Form Label Hover
+7 - Form Field
+8 - Form Field Hover
+9 - Form Field Placeholder
+10 - Form Action
+11 - Form Action Hover
+12 - Form Reset
+13 - Form Reset Hover
+14 - Form Submit
+15 - Form Submit Hover
 */
 
-/********** 1. FORM **********/
-
-/*
-1.1 Form
-*/
-
-/***** 1.1 Form *****/
+/***** 1 - Form *****/
 .form {
   margin: var(--form-margin);
   border: var(--form-border);
@@ -6711,32 +6672,19 @@ pre > *::selection {
           box-shadow: var(--form-box-shadow);
 }
 
-/********** 2. FORM FIELDSET **********/
-
-/*
-2.1 Form Fieldset
-2.2 Form Legend
-*/
-
-/***** 2.1 Form Fieldset *****/
+/***** 2 - Form Fieldset *****/
 .form fieldset {
   border: var(--form-fieldset-border);
 }
 
-/***** 2.2 Form Legend *****/
+/***** 3 - Form Legend *****/
 .form legend {
   margin: var(--form-legend-margin);
   font-size: var(--form-legend-font-size);
   font-weight: var(--form-legend-font-weight);
 }
 
-/********** 3. FORM LIST **********/
-
-/*
-3.1 Form List
-*/
-
-/***** 3.1 Form List *****/
+/***** 4 - Form List *****/
 .form li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6753,13 +6701,7 @@ pre > *::selection {
           align-items: var(--form-list-align-items);
 }
 
-/********** 4. FORM LABEL **********/
-
-/*
-4.1 Form Label
-*/
-
-/***** 4.1 Form Label *****/
+/***** 5 - Form Label *****/
 .form label {
   margin: var(--form-label-margin);
   border: var(--form-label-border);
@@ -6769,24 +6711,19 @@ pre > *::selection {
           text-decoration: var(--form-label-text-decoration);
 }
 
+/***** 6 - Form Label Hover *****/
 .form label:hover,
 .form label:focus,
 .form label:active {
   border: var(--form-label-hover-border);
 }
 
-/********** 5. FORM FIELDS **********/
-
-/*
-5.1 Form Input & Textarea
-*/
-
-/***** 5.1 Form Inputs & Textarea *****/
+/***** 7 - Form Field *****/
 .form input,
 .form textarea {
   margin: var(--form-field-margin);
   border: var(--form-field-border);
-  border-radius: var(--form-field-radius);
+  border-radius: var(--form-field-border-radius);
   outline: var(--form-field-outline);
   padding: var(--form-field-padding);
   width: var(--form-field-width);
@@ -6794,6 +6731,7 @@ pre > *::selection {
   background-color: var(--form-field-background-color);
 }
 
+/***** 8 - Form Field Hover *****/
 .form input:hover,
 .form textarea:hover,
 .form input:focus,
@@ -6805,43 +6743,34 @@ pre > *::selection {
           box-shadow: var(--form-field-hover-box-shadow);
 }
 
+/***** 9 - Form Field Placeholder *****/
 .form input::-webkit-input-placeholder,
 .form textarea::-webkit-input-placeholder {
   font-style: var(--form-field-placeholder-font-style);
   color: var(--form-field-placeholder-color);
 }
-
 .form input::-moz-placeholder,
 .form textarea::-moz-placeholder {
   font-style: var(--form-field-placeholder-font-style);
   color: var(--form-field-placeholder-color);
 }
-
 .form input:-ms-input-placeholder,
 .form textarea:-ms-input-placeholder {
   font-style: var(--form-field-placeholder-font-style);
   color: var(--form-field-placeholder-color);
 }
-
 .form input::-ms-input-placeholder,
 .form textarea::-ms-input-placeholder {
   font-style: var(--form-field-placeholder-font-style);
   color: var(--form-field-placeholder-color);
 }
-
 .form input::placeholder,
 .form textarea::placeholder {
   font-style: var(--form-field-placeholder-font-style);
   color: var(--form-field-placeholder-color);
 }
 
-/********** 6. FORM ACTION **********/
-
-/*
-6.1 Form Inputs Reset & Submit
-*/
-
-/***** 6.1 Form Inputs Reset & Submit *****/
+/***** 10 - Form Action *****/
 .form [type="reset"],
 .form [type="submit"] {
   margin: var(--form-action-margin);
@@ -6853,6 +6782,7 @@ pre > *::selection {
           box-shadow: var(--form-action-box-shadow);
 }
 
+/***** 11 - Form Action Hover *****/
 .form [type="reset"]:hover,
 .form [type="reset"]:focus,
 .form [type="reset"]:active,
@@ -6867,12 +6797,14 @@ pre > *::selection {
   transition: var(--form-action-hover-transition);
 }
 
+/***** 12 - Form Reset *****/
 .form [type="reset"] {
   border: var(--form-reset-border);
   background-color: var(--form-reset-background-color);
   color: var(--form-reset-color);
 }
 
+/***** 13 - Form Reset Hover *****/
 .form [type="reset"]:hover,
 .form [type="reset"]:focus,
 .form [type="reset"]:active {
@@ -6880,19 +6812,20 @@ pre > *::selection {
   color: var(--form-reset-hover-color);
 }
 
+/***** 14 - Form Submit *****/
 .form [type="submit"] {
   border: var(--form-submit-border);
   background-color: var(--form-submit-background-color);
   color: var(--form-submit-color);
 }
 
+/***** 15 - Form Submit Hover *****/
 .form [type="submit"]:hover,
 .form [type="submit"]:focus,
 .form [type="submit"]:active {
   background-color: var(--form-submit-hover-background-color);
   color: var(--form-submit-hover-color);
 }
-
 
 /********** FOOT **********/
 
@@ -13035,4 +12968,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 9th Aug 2019 @ 11:27:21 PM */
+ Updated: 10th Aug 2019 @ 12:43:47 AM */
