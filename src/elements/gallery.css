@@ -1,95 +1,66 @@
-/******************** GALLERY ********************/
+/********** GALLERY **********/
 
 /*
-1. GALLERY
-  1.1 Gallery
-  1.2 Gallery Items
-2. GALLERY FIGURE
-  2.1 Gallery Figure
-3. GALLERY FIGCAPTION
-  3.1 Gallery Figcaption
-  3.2 Gallery Hover Figcaption
-4. GALLERY FA
-  4.1 Gallery FA
-5. GALLERY LINK
-  5.1 Gallery Link
-  5.2 Gallery Link Items
+1 - Gallery
+2 - Gallery All
+3 - Gallery Figure
+4 - Gallery Figcaption
+5 - Gallery Figure Hover Figcaption
+6 - Gallery Figcaption FA
+7 - Gallery Link
+8 - Gallery Link All
+9 - Gallery Link All Odd
+10 - Gallery Link All Even
 */
 
-/********** 1. GALLERY **********/
-
-/*
-1.1 Gallery
-1.2 Gallery Items
-*/
-
-/***** 1.1 Gallery *****/
+/***** 1 - Gallery *****/
 .gallery {
   display: flex;
   flex-wrap: var(--gallery-flex-wrap);
-  overflow: var(--gallery-flow);
+  overflow: var(--gallery-overflow);
   margin: var(--gallery-margin);
-  max-width: var(--gallery-max-w);
+  max-width: var(--gallery-max-width);
 }
 
-/***** 1.2 Gallery Items *****/
+/***** 2 - Gallery All *****/
 .gallery * {
   cursor: var(--gallery-all-cursor);
 }
 
-/********** 2. GALLERY FIGURE **********/
-
-/*
-2.1 Gallery Figure
-*/
-
-/***** 2.1 Gallery Figure *****/
+/***** 3 - Gallery Figure *****/
 .gallery figure {
   display: flex;
-  justify-content: var(--gallery-justify-content);
-  align-items: var(--gallery-align-items);
+  justify-content: var(--gallery-figure-justify-content);
+  align-items: var(--gallery-figure-align-items);
   position: var(--gallery-figure-position);
-  overflow: var(--gallery-figure-flow);
+  overflow: var(--gallery-figure-overflow);
   margin: var(--gallery-figure-margin);
   border: var(--gallery-figure-border);
   width: var(--gallery-figure-width);
-  box-shadow: var(--gallery-figure-shabox);
+  box-shadow: var(--gallery-figure-box-shadow);
   line-height: var(--gallery-figure-line-height);
 }
 
-/********** 3. GALLERY FIGCAPTION **********/
-
-/*
-3.1 Gallery Figcaption
-3.2 Gallery Hover Figcaption
-*/
-
-/***** 3.1 Gallery Figcaption *****/
+/***** 4 - Gallery Figcaption *****/
 .gallery figcaption {
   display: none;
   position: var(--gallery-figcaption-position);
-  bottom: var(--gallery-figcaption-bot);
+  bottom: var(--gallery-figcaption-bottom);
   width: var(--gallery-figcaption-width);
   line-height: var(--gallery-figcaption-line-height);
   background-color: var(--gallery-figcaption-background-color);
 }
 
-/***** 3.2 Gallery Hover Figcaption *****/
+/***** 5 - Gallery Figure Hover Figcaption *****/
 .gallery figure:hover figcaption,
 .gallery figure:focus figcaption,
 .gallery figure:active figcaption {
   display: block;
-  animation: var(--gallery-figure-figcaption-anima);
-  bottom: var(--gallery-figure-figcaption-bot);
+  animation: var(--gallery-figure-hover-figcaption-anima);
+  bottom: var(--gallery-figure-hover-figcaption-bottom);
 }
 
-/********** 4. GALLERY FA **********/
-
-/*
-4.1 Gallery FA
-*/
-
-/***** 4.1 Gallery FA *****/
+/***** 6 - Gallery Figcaption FA *****/
 .gallery figcaption [class*="fa-"] {
   position: var(--gallery-figcaption-fa-position);
   top: var(--gallery-figcaption-fa-top);
@@ -100,31 +71,25 @@
   background-color: var(--gallery-figcaption-fa-background-color);
 }
 
-/********** 5. GALLERY LINK **********/
-
-/*
-5.1 Gallery Link
-5.2 Gallery Link Items
-*/
-
-/***** 5.1 Gallery Link *****/
+/***** 7 - Gallery Link *****/
 .gallery a {
   color: var(--gallery-link-color);
 }
 
-/***** 5.2 Gallery Link Items *****/
+/***** 8 - Gallery Link All *****/
 .gallery a * {
   margin: var(--gallery-link-all-margin);
   cursor: var(--gallery-link-all-cursor);
 }
 
-.gallery a *:nth-child(odd) {
-  padding: var(--gallery-link-all-odd-padding);
-  font-size: var(--gallery-link-all-odd-font-size);
-}
-
+/***** 9 - Gallery Link All Even *****/
 .gallery a *:nth-child(even) {
   padding: var(--gallery-link-all-even-padding);
   font-size: var(--gallery-link-all-even-font-size);
 }
 
+/***** 10 - Gallery Link All Odd *****/
+.gallery a *:nth-child(odd) {
+padding: var(--gallery-link-all-odd-padding);
+font-size: var(--gallery-link-all-odd-font-size);
+}
