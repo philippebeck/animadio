@@ -572,7 +572,7 @@ pre {
   --form-field-margin: 10px 0 20px;
   --form-field-padding: 5px;
   --form-field-outline: 0;
-  --form-field-radius: 10px;
+  --form-field-border-radius: 10px;
   --form-field-width: 100%;
   --form-field-hover-border: medium double var(--green);
   --form-field-hover-box-shadow: 5px 5px 10px 5px var(--gray);
