@@ -633,27 +633,27 @@ pre {
 
 /***** 3.5 Gallery *****/
 .gallery {
-  --gallery-align-items: center;
   --gallery-flex-wrap: wrap;
-  --gallery-flow: hidden;
-  --gallery-justify-content: center;
+  --gallery-overflow: hidden;
   --gallery-margin: 20px auto 50px;
-  --gallery-max-w: 90%;
+  --gallery-max-width: 90%;
   --gallery-all-cursor: crosshair;
+  --gallery-figure-align-items: center;
   --gallery-figure-border: thin dotted var(--silver);
-  --gallery-figure-flow: hidden;
+  --gallery-figure-justify-content: center;
+  --gallery-figure-overflow: hidden;
   --gallery-figure-line-height: 0;
   --gallery-figure-margin: 5px;
   --gallery-figure-position: relative;
-  --gallery-figure-shabox: 0 0 5px;
+  --gallery-figure-box-shadow: 0 0 5px;
   --gallery-figure-width: calc(100% - 10px);
   --gallery-figcaption-background-color: rgba(0, 0, 0, 0.8);
-  --gallery-figcaption-bot: -60%;
+  --gallery-figcaption-bottom: -60%;
   --gallery-figcaption-line-height: 1;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-width: 100%;
-  --gallery-figure-figcaption-anima: translateY-opac 2s;
-  --gallery-figure-figcaption-bot: 0;
+  --gallery-figure-hover-figcaption-anima: translateY-opac 2s;
+  --gallery-figure-hover-figcaption-bottom: 0;
   --gallery-figcaption-fa-background-color: var(--blue);
   --gallery-figcaption-fa-border: 2px solid var(--white);
   --gallery-figcaption-fa-position: absolute;
@@ -661,13 +661,13 @@ pre {
   --gallery-figcaption-fa-top: -15px;
   --gallery-figcaption-fa-padding: 10px;
   --gallery-figcaption-fa-radius: 50%;
+  --gallery-link-color: var(--white);
   --gallery-link-all-margin: 0;
   --gallery-link-all-cursor: pointer;
   --gallery-link-all-even-padding: 0 10px 20px;
   --gallery-link-all-even-font-size: 1.2rem;
   --gallery-link-all-odd-padding: 10px;
   --gallery-link-all-odd-font-size: 1.5rem;
-  --gallery-link-color: var(--white);
 }
 
 @media (min-width: 576px) {
