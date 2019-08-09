@@ -22,12 +22,12 @@
   "repository": "github:animadio/animadio",
   "bugs": "https://github.com/animadio/animadio/issues",
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "grunt": "^1.0.3",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-postcss": "^0.9.0",
-    "normalize.css": "~8.0.1"
+    "autoprefixer": "9.x",
+    "grunt": "1.x",
+    "grunt-contrib-concat": "1.x",
+    "grunt-contrib-cssmin": "3.x",
+    "grunt-postcss": "0.x",
+    "normalize.css": "8.x"
   },
   "author": {
     "name": "Philippe Beck",
