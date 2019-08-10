@@ -1,4 +1,4 @@
-/******************** VARIABLES ********************/
+/********** VARIABLES **********/
 
 /*
 You can override any variable of Animadio you want in your custom stylesheet file to cutomize the tag & class properties !
@@ -32,18 +32,6 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   4.3 Deco
   4.4 Shabox
   4.5 Shatex
-*/
-
-/********** 1. GLOBAL VARIABLES **********/
-
-/*
-1.1 Colors
-1.2 Keyframes
-1.3 Init
-1.4 Margin
-1.5 Padding
-1.6 Height
-1.7 Width
 */
 
 :root {
@@ -280,15 +268,6 @@ pre {
   --min-width-lg: 75%;
 }
 
-/********** 2. GRID VARIABLES **********/
-
-/*
-2.1 Grid
-2.2 Flex
-2.3 Align
-2.4 Justify
-*/
-
 /***** 2.1 Grid *****/
 [class*="gap-"] {
   --gap-1xs: 1px;
@@ -371,19 +350,6 @@ pre {
   --justify-self-end: flex-end;
   --justify-self-start: flex-start;
 }
-
-/********** 3. ELEMENTS VARIABLES **********/
-
-/*
-3.1 Btn
-3.2 Foot
-3.3 Form
-3.4 Gallery
-3.5 Menu
-3.6 Navbar
-3.7 Slider
-3.8 Table
-*/
 
 /***** 3.1 Btn *****/
 [class*="btn"],
@@ -916,16 +882,6 @@ pre {
   --table-cell-vertical-align: middle;
 }
 
-/********** 4. STATES VARIABLES **********/
-
-/*
-4.1 Anima
-4.2 Bord
-4.3 Deco
-4.4 Shabox
-4.5 Shatex
-*/
-
 /***** 4.1 Anima *****/
 [class*="anima-"] {
   --anima-delay: 0;
@@ -998,4 +954,3 @@ pre {
   --shatex-blur-md: 2px 2px 2px;
   --shatex-blur-lg: 5px 5px 5px;
 }
-
