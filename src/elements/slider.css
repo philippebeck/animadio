@@ -1,34 +1,24 @@
-/******************** SLIDER ********************/
+/********** SLIDER **********/
 
 /*
-1. SLIDER
-  1.1 Slider
-2. SLIDE
-  2.1 Slide
-  2.2 Check Slide
-  2.3 Slide Items
-  2.4 Radio Slide Items
-3. SLIDER CONTROLS
-  3.1 Slider Controls
-  3.2 Hover Slider Controls
-  3.3 Slider Controls Link
-  3.4 Slider Controls Label
-  3.5 Check Slider Controls Icon
-  3.6 Check Slider Controls FA
-  3.7 Radio Slider Controls Icon
-4. SLIDER TIMELINE
-  4.1 Slider Timeline
-  4.2 Check Timeline
-  4.3 Radio Timeline
+1 - Slider
+2 - Slider Figure
+3 - Slider Check Figure
+4 - Slider Figure All
+5 - Slider Check Figure Image
+6 - Slider List
+7 - Slider Hover List
+8 - Slider List Link
+9 - Slider List Label
+10 - Slider Check List Icon
+11 - Slider Check List FA
+12 - Slider Check List Icon
+13 - Slider Progress
+14 - Slider Check Progress
+15 - Slider Radio Progress
 */
 
-/********** 1. SLIDER **********/
-
-/*
-1.1 Slider
-*/
-
-/***** 1.1 Slider *****/
+/***** 1 - Slider *****/
 .slider {
   position: var(--slider-position);
   margin: var(--slider-margin);
@@ -37,179 +27,149 @@
   text-align: var(--slider-text-align);
 }
 
-/********** 2. SLIDE **********/
-
-/*
-2.1 Slide
-2.2 Check Slide
-2.3 Slide Items
-2.4 Radio Slide Items
-*/
-
-/***** 2.1 Slide *****/
-.slide {
-  margin: var(--slide-margin);
-  object-fit: var(--slide-object-fit);
-  max-width: var(--slide-max-width);
-  max-height: var(--slide-max-height);
+/***** 2 - Slider Figure *****/
+.slider > figure {
+  margin: var(--slider-figure-margin);
+  object-fit: var(--slider-figure-object-fit);
+  max-width: var(--slider-figure-max-width);
+  max-height: var(--slider-figure-max-height);
 }
 
-/***** 2.2 Check Slide *****/
-[class*="play-check"]:checked ~ .slide {
-  animation: content var(--play-check-slide-anima);
+/***** 3 - Slider Check Figure *****/
+#slider-check-play:checked ~ figure {
+  animation: content var(--slider-check-play-animation);
 }
 
-[class*="repeat-check"]:checked ~ .slide {
-  animation-iteration-count: var(--slider-anima-iteration);
+#slider-check-repeat:checked ~ figure {
+  animation-iteration-count: var(--slider-check-repeat-animation-iteration-count);
 }
 
-[class*="direction-check"]:checked ~ .slide {
-  animation-direction: var(--slider-anima-direction);
+#slider-check-direction:checked ~ figure {
+  animation-direction: var(--slider-check-direction-animation-direction);
 }
 
-/***** 2.3 Slide Items *****/
-.slide > * {
+/***** 4 - Slider Figure All *****/
+.slider > figure > * {
   display: none;
-  max-height: var(--slide-max-height);
+  max-height: var(--slider-figure-max-height);
 }
 
-/***** 2.4 Radio Slide Items *****/
-[class*="slider-radio1"]:checked ~ .slide .slide1,
-[class*="slider-radio2"]:checked ~ .slide .slide2,
-[class*="slider-radio3"]:checked ~ .slide .slide3,
-[class*="slider-radio4"]:checked ~ .slide .slide4,
-[class*="slider-radio5"]:checked ~ .slide .slide5 {
+/***** 5 - Slider Check Figure Image *****/
+#slider-radio1:checked ~ figure > img:nth-child(1),
+#slider-radio2:checked ~ figure > img:nth-child(2),
+#slider-radio3:checked ~ figure > img:nth-child(3),
+#slider-radio4:checked ~ figure > img:nth-child(4),
+#slider-radio5:checked ~ figure > img:nth-child(5) {
   display: inline-block;
 }
 
-/********** 3. SLIDER CONTROLS **********/
-
-/*
-3.1 Slider Controls
-3.2 Hover Slider Controls
-3.3 Slider Controls Link
-3.4 Slider Controls Label
-3.5 Check Slider Controls Icon
-3.6 Check Slider Controls FA
-3.7 Radio Slider Controls Icon
-*/
-
-/***** 3.1 Slider Controls *****/
-.slider-controls {
+/***** 6 - Slider List *****/
+.slider > ul {
   display: inline-flex;
-  justify-content: var(--slider-controls-justify-content);
-  margin: var(--slider-controls-margin);
-  border: var(--slider-controls-border);
-  border-radius: var(--slider-controls-radius);
-  padding: var(--slider-controls-padding);
-  width: var(--slider-controls-width);
-  background-color: var(--slider-controls-background-color);
-  opacity: var(--slider-controls-opacity);
+  justify-content: var(--slider-list-justify-content);
+  margin: var(--slider-list-margin);
+  border: var(--slider-list-border);
+  border-radius: var(--slider-list-border-radius);
+  padding: var(--slider-list-padding);
+  width: var(--slider-list-width);
+  background-color: var(--slider-list-background-color);
+  opacity: var(--slider-list-opacity);
   transition: opacity var(--slider-transition-opacity);
 }
 
-/***** 3.2 Hover Slider Controls *****/
-.slider:hover .slider-controls,
-.slider:focus .slider-controls,
-.slider:active .slider-controls {
-  opacity: var(--slider-controls-hover-opacity);
+/***** 7 - Slider Hover List *****/
+.slider:hover > ul,
+.slider:focus > ul,
+.slider:active > ul {
+  opacity: var(--slider-hover-list-opacity);
   transition: opacity var(--slider-transition-opacity);
 }
 
-/***** 3.3 Slider Controls Link *****/
-.slider-controls a {
-  color: var(--slider-controls-link);
+/***** 8 - Slider List Link *****/
+.slider > ul a {
+  color: var(--slider-list-link-color);
 }
 
-/***** 3.4 Slider Controls Label *****/
-.slider-controls label {
-  color: var(--slider-controls-label-color);
-  padding: var(--slider-controls-label-padding);
+/***** 9 - Slider List Label *****/
+.slider > ul label {
+  color: var(--slider-list-label-color);
+  padding: var(--slider-list-label-padding);
 }
 
-/***** 3.5 Check Slider Controls Icon *****/
-[class*="play-check"]:checked ~ .slider-controls [for="slide-play"] > i {
+/***** 10 - Slider Check List Icon *****/
+#slider-check-play:checked ~ ul [for="slider-check-play"] > i {
   color: var(--slider-icon-color);
   transition: color var(--slider-transition-color);
 }
 
-[class*="play-check"]:checked ~ .slider-controls [for="slide-play"] > i::before {
-  content: var(--play-check-slide-play-icon-before);
+#slider-check-play:checked ~ ul [for="slider-check-play"] > i::before {
+  content: var(--slider-check-play-list-icon-before-content);
 }
 
-[class*="repeat-check"]:checked ~ .slider-controls [for="slide-repeat"] > i::before {
-  content: var(--repeat-check-slide-repeat-icon-before);
+#slider-check-repeat:checked ~ ul [for="slider-check-repeat"] > i::before {
+  content: var(--slider-check-repeat-list-icon-before-content);
 }
 
-[class*="direction-check"]:checked ~ .slider-controls [for="slide-direction"] > i::before {
-  content: var(--direction-check-slide-direction-icon-before);
+#slider-check-direction:checked ~ ul [for="slider-check-direction"] > i::before {
+  content: var(--slider-check-direction-list-icon-before-content);
 }
 
-/***** 3.6 Check Slider Controls FA *****/
-[class*="play-check"]:checked ~ .slider-controls [for="slide1"] > .fas::before,
-[class*="play-check"]:checked ~ .slider-controls [for="slide2"] > .fas::before,
-[class*="play-check"]:checked ~ .slider-controls [for="slide3"] > .fas::before,
-[class*="play-check"]:checked ~ .slider-controls [for="slide4"] > .fas::before,
-[class*="play-check"]:checked ~ .slider-controls [for="slide5"] > .fas::before {
-  color: var(--play-check-slide-icon-before-color);
+/***** 11 - Slider Check List FA *****/
+#slider-check-play:checked ~ ul [for="slider-radio1"] > .fas::before,
+#slider-check-play:checked ~ ul [for="slider-radio2"] > .fas::before,
+#slider-check-play:checked ~ ul [for="slider-radio3"] > .fas::before,
+#slider-check-play:checked ~ ul [for="slider-radio4"] > .fas::before,
+#slider-check-play:checked ~ ul [for="slider-radio5"] > .fas::before {
+  color: var(--slider-check-play-list-icon-before-color);
 }
 
-/***** 3.7 Radio Slider Controls Icon *****/
-[class*="slider-radio1"]:checked ~ .slider-controls [for="slide1"] > i::before,
-[class*="slider-radio2"]:checked ~ .slider-controls [for="slide2"] > i::before,
-[class*="slider-radio3"]:checked ~ .slider-controls [for="slide3"] > i::before,
-[class*="slider-radio4"]:checked ~ .slider-controls [for="slide4"] > i::before,
-[class*="slider-radio5"]:checked ~ .slider-controls [for="slide5"] > i::before {
+/***** 12 - Slider Check List Icon  *****/
+#slider-radio2:checked ~ ul [for="slider-radio2"] > i::before,
+#slider-radio1:checked ~ ul [for="slider-radio1"] > i::before,
+#slider-radio3:checked ~ ul [for="slider-radio3"] > i::before,
+#slider-radio4:checked ~ ul [for="slider-radio4"] > i::before,
+#slider-radio5:checked ~ ul [for="slider-radio5"] > i::before {
   color: var(--slider-icon-color);
   transition: color var(--slider-transition-color);
-  content: var(--slider-radio-slide-icon-before-content);
+  content: var(--slider-radio-list-icon-before-content);
 }
 
-/********** 4. SLIDER TIMELINE **********/
-
-/*
-4.1 Slider Timeline
-4.2 Check Timeline
-4.3 Radio Timeline
-*/
-
-/***** 4.1 Slider Timeline *****/
-.slider-timeline {
-  height: var(--slider-timeline-height);
-  background-color: var(--slider-timeline-background-color);
+/***** 13 - Slider Progress *****/
+.slider > div {
+  height: var(--slider-progress-height);
+  background-color: var(--slider-progress-background-color);
 }
 
-/***** 4.2 Check Timeline *****/
-[class*="play-check"]:checked ~ .slider-timeline {
-  animation: width var(--play-check-slide-anima);
+/***** 14 - Slider Check Progress *****/
+#slider-check-play:checked ~ div {
+  animation: width var(--slider-check-play-animation);
 }
 
-[class*="repeat-check"]:checked ~ .slider-timeline {
-  animation-iteration-count: var(--slider-anima-iteration);
+#slider-check-repeat:checked ~ div {
+  animation-iteration-count: var(--slider-check-repeat-animation-iteration-count);
 }
 
-[class*="direction-check"]:checked ~ .slider-timeline {
-  animation-direction: var(--slider-anima-direction);
+#slider-check-direction:checked ~ div {
+  animation-direction: var(--slider-check-direction-animation-direction);
 }
 
-/***** 4.3 Radio Timeline *****/
-[class*="slider-radio1"]:checked ~ .slider-timeline {
-  width: var(--slider-radio1-slider-timeline-width);
+/***** 15 - Slider Radio Progress *****/
+#slider-radio1:checked ~ div {
+  width: var(--slider-radio1-checked-progress-width);
 }
 
-[class*="slider-radio2"]:checked ~ .slider-timeline {
-  width: var(--slider-radio2-slider-timeline-width);
+#slider-radio2:checked ~ div {
+  width: var(--slider-radio2-checked-progress-width);
 }
 
-[class*="slider-radio3"]:checked ~ .slider-timeline {
-  width: var(--slider-radio3-slider-timeline-width);
+#slider-radio3:checked ~ div {
+  width: var(--slider-radio3-checked-progress-width);
 }
 
-[class*="slider-radio4"]:checked ~ .slider-timeline {
-  width: var(--slider-radio4-slider-timeline-width);
+#slider-radio4:checked ~ div {
+  width: var(--slider-radio4-checked-progress-width);
 }
 
-[class*="slider-radio5"]:checked ~ .slider-timeline {
-  width: var(--slider-radio5-slider-timeline-width);
+#slider-radio5:checked ~ div {
+  width: var(--slider-radio5-checked-progress-width);
 }
-
