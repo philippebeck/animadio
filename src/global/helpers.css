@@ -1,165 +1,131 @@
-/******************** HELPERS ********************/
+/********** HELPERS **********/
 
 /*
-1. FONT CLASSES
-  1.1 Font
-2. TEXT CLASSES
-  2.1 Text XS
-  2.2 Text SM
-  2.3 Text MD
-  2.4 Text LG
-  2.5 Text XL
-3. CURSOR CLASSES
-  3.1 Cursor
-*/
-
-/********** 1. FONT CLASSES **********/
-
-/*
-1.1 Font
+1 - Font
+2 - Text
+3 - Cursor
 */
 
 /***** 1.1 Font *****/
-[class*="font-"][class*="-normal"] {
+.font-normal {
   font-style: normal;
   font-weight: normal;
 }
 
-[class*="font-"][class*="-italic"] {
+.font-italic {
   font-style: italic;
 }
 
-[class*="font-"][class*="-bold"] {
+.font-bold {
   font-weight: bold;
 }
 
-/********** 2. TEXT CLASSES **********/
-
-/*
-2.1 Text XS
-2.2 Text SM
-2.3 Text MD
-2.4 Text LG
-2.5 Text XL
-*/
-
-/***** 2.1 Text XS *****/
-[class*="text-"][class*="-center-xs"] {
+/***** 2 - Text *****/
+.text-center {
   text-align: center;
 }
 
-[class*="text-"][class*="-justify-xs"] {
+.text-justify-xs {
   text-align: justify;
 }
 
-[class*="text-"][class*="-right-xs"] {
+.text-right-xs {
   text-align: right;
 }
 
-[class*="text-"][class*="-left-xs"] {
+.text-left-xs {
   text-align: left;
 }
 
-/***** 2.2 Text SM *****/
 @media (min-width: 576px) {
-  [class*="text-"][class*="-center-sm"] {
+  .text-center-sm {
     text-align: center;
   }
 
-  [class*="text-"][class*="-justify-sm"] {
+  .text-justify-sm {
     text-align: justify;
   }
 
-  [class*="text-"][class*="-right-sm"] {
+  .text-right-sm {
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-sm"] {
+  .text-left-sm {
     text-align: left;
   }
 }
 
-/***** 2.3 Text MD *****/
 @media (min-width: 768px) {
-  [class*="text-"][class*="-center-md"] {
+  .text-center-md {
     text-align: center;
   }
 
-  [class*="text-"][class*="-justify-md"] {
+  .text-justify-md {
     text-align: justify;
   }
 
-  [class*="text-"][class*="-right-md"] {
+  .text-right-md {
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-md"] {
+  .text-left-md {
     text-align: left;
   }
 }
 
-/***** 2.4 Text LG *****/
 @media (min-width: 992px) {
-  [class*="text-"][class*="-center-lg"] {
+  .text-center-lg {
     text-align: center;
   }
 
-  [class*="text-"][class*="-justify-lg"] {
+  .text-justify-lg {
     text-align: justify;
   }
 
-  [class*="text-"][class*="-right-lg"] {
+  .text-right-lg {
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-lg"] {
+  .text-left-lg {
     text-align: left;
   }
 }
 
-/***** 2.5 Text XL *****/
 @media (min-width: 1200px) {
-  [class*="text-"][class*="-center-xl"] {
+  .text-center-xl {
     text-align: center;
   }
 
-  [class*="text-"][class*="-justify-xl"] {
+  .text-justify-xl {
     text-align: justify;
   }
 
-  [class*="text-"][class*="-right-xl"] {
+  .text-right-xl {
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-xl"] {
+  .text-left-xl {
     text-align: left;
   }
 }
 
-/********** 3. CURSOR CLASSES **********/
-
-/*
-3.1 Cursor
-*/
-
-/***** 3.1 Cursor *****/
-[class*="cursor-"][class*="-cross"],
-[class*="cursor-"][class*="-cross"] > * {
+/***** 3 - Cursor *****/
+.cursor-cross,
+.cursor-cross > * {
   cursor: crosshair;
 }
 
-[class*="cursor-"][class*="-help"],
-[class*="cursor-"][class*="-help"] > * {
+.cursor-help,
+.cursor-help > * {
   cursor: help;
 }
 
-[class*="cursor-"][class*="-none"],
-[class*="cursor-"][class*="-none"] > * {
+.cursor-none,
+.cursor-none > * {
   cursor: not-allowed;
 }
 
-[class*="cursor-"][class*="-hand"],
-[class*="cursor-"][class*="-hand"] > * {
+.cursor-hand,
+.cursor-hand > * {
   cursor: pointer;
 }
-
