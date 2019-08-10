@@ -1,6 +1,6 @@
-/*! animadio v0.5.6 | https://animadio.org | MIT License */
+/*! animadio v0.5.7 | https://animadio.org | MIT License */
 
-/******************** VARIABLES ********************/
+/********** VARIABLES **********/
 
 /*
 You can override any variable of Animadio you want in your custom stylesheet file to cutomize the tag & class properties !
@@ -34,18 +34,6 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   4.3 Deco
   4.4 Shabox
   4.5 Shatex
-*/
-
-/********** 1. GLOBAL VARIABLES **********/
-
-/*
-1.1 Colors
-1.2 Keyframes
-1.3 Init
-1.4 Margin
-1.5 Padding
-1.6 Height
-1.7 Width
 */
 
 :root {
@@ -110,15 +98,15 @@ You can override any variable of Animadio you want in your custom stylesheet fil
 
 /***** 1.3 Init *****/
 body {
-  --global-font-family: sans-serif;
-  --global-line-height: 1.6;
-  --global-font-size: 1.8rem;
-  --global-background-color: none;
-  --global-scroll-behavior: smooth;
+  --body-font-family: sans-serif;
+  --body-line-height: 1.6;
+  --body-font-size: 1.8rem;
+  --body-background-color: none;
+  --body-scroll-behavior: smooth;
 }
 
 article {
-  --article-margin-bot: 20px;
+  --article-margin-bottom: 20px;
 }
 
 h1,
@@ -168,7 +156,7 @@ h6 {
 }
 
 a {
-  --link-deco: none;
+  --link-text-decoration: none;
   --link-outline: 0;
 }
 
@@ -197,11 +185,11 @@ label {
 }
 
 pre {
-  --pre-font-family: monospace;
-  --pre-overflow: scroll;
-  --pre-padding: 10px;
-  --pre-selection-background-color: var(--jade);
-  --pre-selection-color: var(--black);
+  --code-font-family: monospace;
+  --code-overflow: scroll;
+  --code-padding: 10px;
+  --code-selection-background-color: var(--jade);
+  --code-selection-color: var(--black);
 }
 
 /***** 1.4 Margin *****/
@@ -281,15 +269,6 @@ pre {
   --min-width-md: 50%;
   --min-width-lg: 75%;
 }
-
-/********** 2. GRID VARIABLES **********/
-
-/*
-2.1 Grid
-2.2 Flex
-2.3 Align
-2.4 Justify
-*/
 
 /***** 2.1 Grid *****/
 [class*="gap-"] {
@@ -373,19 +352,6 @@ pre {
   --justify-self-end: flex-end;
   --justify-self-start: flex-start;
 }
-
-/********** 3. ELEMENTS VARIABLES **********/
-
-/*
-3.1 Btn
-3.2 Foot
-3.3 Form
-3.4 Gallery
-3.5 Menu
-3.6 Navbar
-3.7 Slider
-3.8 Table
-*/
 
 /***** 3.1 Btn *****/
 [class*="btn"],
@@ -918,16 +884,6 @@ pre {
   --table-cell-vertical-align: middle;
 }
 
-/********** 4. STATES VARIABLES **********/
-
-/*
-4.1 Anima
-4.2 Bord
-4.3 Deco
-4.4 Shabox
-4.5 Shatex
-*/
-
 /***** 4.1 Anima *****/
 [class*="anima-"] {
   --anima-delay: 0;
@@ -1001,39 +957,18 @@ pre {
   --shatex-blur-lg: 5px 5px 5px;
 }
 
-
-/******************** KEYFRAMES ********************/
-
-/*
-1. CONTENT KEYFRAMES
-  1.1 Content
-2. ROTATE KEYFRAMES
-  2.1 Rotate
-  2.2 RotateX
-  2.3 RotateY
-3. SCALE KEYFRAMES
-  3.1 Scale
-  3.2 ScaleX
-  3.3 ScaleY
-4. SKEW KEYFRAMES
-  4.1 Skew
-  4.2 SkewX
-  4.3 SkewY
-5. TRANSLATE KEYFRAMES
-  5.1 Translate
-  5.2 TranslateX
-  5.3 TranslateY
-6. WIDTH KEYFRAMES
-  6.1 Width
-*/
-
-/********** 1. CONTENT KEYFRAMES **********/
+/********** KEYFRAMES **********/
 
 /*
-1.1 Content
+1 - Content
+2 - Rotate
+3 - Scale
+4 - Skew
+5 - Translate
+6 - Width
 */
 
-/***** 1.1 Content *****/
+/***** 1 - Content *****/
 @-webkit-keyframes content {
   0% {
     content: var(--keyframes-content1);
@@ -1077,15 +1012,7 @@ pre {
   }
 }
 
-/********** 2. ROTATE KEYFRAMES **********/
-
-/*
-2.1 Rotate
-2.2 RotateX
-2.3 RotateY
-*/
-
-/***** 2.1 Rotate *****/
+/***** 2 - Rotate *****/
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(var(--keyframes-rotate));
@@ -1099,13 +1026,13 @@ pre {
   }
 }
 
-/***** 2.2 RotateX *****/
 @-webkit-keyframes rotateX {
   from {
     -webkit-transform: rotateX(var(--keyframes-rotateX));
             transform: rotateX(var(--keyframes-rotateX));
   }
 }
+
 @keyframes rotateX {
   from {
     -webkit-transform: rotateX(var(--keyframes-rotateX));
@@ -1113,13 +1040,13 @@ pre {
   }
 }
 
-/***** 2.3 RotateY *****/
 @-webkit-keyframes rotateY {
   from {
     -webkit-transform: rotateY(var(--keyframes-rotateY));
             transform: rotateY(var(--keyframes-rotateY));
   }
 }
+
 @keyframes rotateY {
   from {
     -webkit-transform: rotateY(var(--keyframes-rotateY));
@@ -1127,15 +1054,7 @@ pre {
   }
 }
 
-/********** 3. SCALE KEYFRAMES **********/
-
-/*
-3.1 Scale
-3.2 ScaleX
-3.3 ScaleY
-*/
-
-/***** 3.1 Scale *****/
+/***** 3 - Scale *****/
 @-webkit-keyframes scale {
   from {
     -webkit-transform: scale(var(--keyframes-scale));
@@ -1149,13 +1068,13 @@ pre {
   }
 }
 
-/***** 3.2 ScaleX *****/
 @-webkit-keyframes scaleX {
   from {
     -webkit-transform: scaleX(var(--keyframes-scaleX));
             transform: scaleX(var(--keyframes-scaleX));
   }
 }
+
 @keyframes scaleX {
   from {
     -webkit-transform: scaleX(var(--keyframes-scaleX));
@@ -1163,13 +1082,13 @@ pre {
   }
 }
 
-/***** 3.3 ScaleY *****/
 @-webkit-keyframes scaleY {
   from {
     -webkit-transform: scaleY(var(--keyframes-scaleY));
             transform: scaleY(var(--keyframes-scaleY));
   }
 }
+
 @keyframes scaleY {
   from {
     -webkit-transform: scaleY(var(--keyframes-scaleY));
@@ -1177,15 +1096,7 @@ pre {
   }
 }
 
-/********** 4. SKEW KEYFRAMES **********/
-
-/*
-4.1 Skew
-4.2 SkewX
-4.3 SkewY
-*/
-
-/***** 4.1 Skew *****/
+/***** 4 - Skew *****/
 @-webkit-keyframes skew {
   from {
     -webkit-transform: skew(var(--keyframes-skew));
@@ -1199,13 +1110,13 @@ pre {
   }
 }
 
-/***** 4.2 SkewX *****/
 @-webkit-keyframes skewX {
   from {
     -webkit-transform: skewX(var(--keyframes-skewX));
             transform: skewX(var(--keyframes-skewX));
   }
 }
+
 @keyframes skewX {
   from {
     -webkit-transform: skewX(var(--keyframes-skewX));
@@ -1213,13 +1124,13 @@ pre {
   }
 }
 
-/***** 4.3 SkewY *****/
 @-webkit-keyframes skewY {
   from {
     -webkit-transform: skewY(var(--keyframes-skewY));
             transform: skewY(var(--keyframes-skewY));
   }
 }
+
 @keyframes skewY {
   from {
     -webkit-transform: skewY(var(--keyframes-skewY));
@@ -1227,15 +1138,7 @@ pre {
   }
 }
 
-/********** 5. TRANSLATE KEYFRAMES **********/
-
-/*
-5.1 Translate
-5.2 TranslateX
-5.3 TranslateY
-*/
-
-/***** 5.1 Translate *****/
+/***** 5 - Translate *****/
 @-webkit-keyframes translate {
   from {
     -webkit-transform: translate(var(--keyframes-translate));
@@ -1249,13 +1152,13 @@ pre {
   }
 }
 
-/***** 5.2 TranslateX *****/
 @-webkit-keyframes translateX {
   from {
     -webkit-transform: translateX(var(--keyframes-translateX));
             transform: translateX(var(--keyframes-translateX));
   }
 }
+
 @keyframes translateX {
   from {
     -webkit-transform: translateX(var(--keyframes-translateX));
@@ -1263,13 +1166,13 @@ pre {
   }
 }
 
-/***** 5.3 TranslateY *****/
 @-webkit-keyframes translateY {
   from {
     -webkit-transform: translateY(var(--keyframes-translateY));
             transform: translateY(var(--keyframes-translateY));
   }
 }
+
 @keyframes translateY {
   from {
     -webkit-transform: translateY(var(--keyframes-translateY));
@@ -1307,13 +1210,7 @@ pre {
   }
 }
 
-/********** 6. WIDTH KEYFRAMES **********/
-
-/*
-6.1 Width
-*/
-
-/***** 6.1 Width *****/
+/***** 6 - Width *****/
 @-webkit-keyframes width {
   to {
     width: var(--keyframes-width);
@@ -1324,7 +1221,6 @@ pre {
     width: var(--keyframes-width);
   }
 }
-
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -1680,29 +1576,21 @@ template {
   display: none;
 }
 
-/******************** INIT ********************/
+/********** INIT **********/
 
 /*
-1. CLASSES
-  1.1 Hidden
-2. TAGS
-  2.1 Global
-  2.2 Title
-  2.3 Link
-  2.4 List
-  2.5 Media
-  2.6 Table
-  2.7 Form
-  2.8 Code
+1 - Hidden
+2 - Global
+3 - Title
+4 - Link
+5 - List
+6 - Media
+7 - Table
+8 - Form
+9 - Code
 */
 
-/********** 1. CLASSES **********/
-
-/*
-1.1 Hidden
-*/
-
-/***** 1.1 Hidden *****/
+/***** 1 - Hidden *****/
 [class*="check"],
 [class*="radio"],
 [id*="check"],
@@ -1710,20 +1598,7 @@ template {
   display: none !important;
 }
 
-/********** 2. TAGS **********/
-
-/*
-2.1 Global
-2.2 Title
-2.3 Link
-2.4 List
-2.5 Media
-2.6 Table
-2.7 Form
-2.8 Code
-*/
-
-/***** 2.1 Global *****/
+/***** 2 - Global *****/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1736,18 +1611,18 @@ html {
 body {
   margin: 0;
   padding: 0;
-  line-height: var(--global-line-height);
-  font-size: var(--global-font-size);
-  font-family: var(--global-font-family);
-  background-color: var(--global-background-color);
-  scroll-behavior: var(--global-scroll-behavior);
+  line-height: var(--body-line-height);
+  font-size: var(--body-font-size);
+  font-family: var(--body-font-family);
+  background-color: var(--body-background-color);
+  scroll-behavior: var(--body-scroll-behavior);
 }
 
 article {
-  margin-bottom: var(--article-margin-bot);
+  margin-bottom: var(--article-margin-bottom);
 }
 
-/***** 2.2 Title *****/
+/***** 3 - Title *****/
 h1,
 h2,
 h3,
@@ -1780,21 +1655,21 @@ h6 {
   font-size: var(--title-xs-font-size);
 }
 
-/***** 2.3 Link *****/
+/***** 4 - Link *****/
 a {
-  -webkit-text-decoration: var(--link-deco);
-          text-decoration: var(--link-deco);
+  -webkit-text-decoration: var(--link-text-decoration);
+          text-decoration: var(--link-text-decoration);
   outline: var(--link-outline);
 }
 
-/***** 2.4 List *****/
+/***** 5 - List *****/
 ul {
   margin: var(--list-margin);
   padding: var(--list-padding);
   list-style: var(--list-style);
 }
 
-/***** 2.5 Media *****/
+/***** 6 - Media *****/
 img,
 video {
   -o-object-fit: var(--img-object-fit);
@@ -1803,7 +1678,7 @@ video {
   max-height: var(--img-max-height);
 }
 
-/***** 2.6 Table *****/
+/***** 7 - Table *****/
 table {
   margin: var(--table-margin);
   border-collapse: var(--table-border-collapse);
@@ -1811,661 +1686,539 @@ table {
   vertical-align: var(--table-vertical-align);
 }
 
-/***** 2.7 Form *****/
+/***** 8 - Form *****/
 label {
   cursor: var(--label-cursor);
 }
 
-/***** 2.8 Code *****/
+/***** 9 - Code *****/
 code,
 pre {
-  overflow: var(--pre-overflow);
-  padding: var(--pre-padding);
-  font-family: var(--pre-font-family);
+  overflow: var(--code-overflow);
+  padding: var(--code-padding);
+  font-family: var(--code-font-family);
 }
 
 code > *::-moz-selection,
 pre > *::-moz-selection {
-  background-color: var(--pre-selection-background-color);
-  color: var(--pre-selection-color);
+  background-color: var(--code-selection-background-color);
+  color: var(--code-selection-color);
 }
 
 code > *::selection,
 pre > *::selection {
-  background-color: var(--pre-selection-background-color);
-  color: var(--pre-selection-color);
+  background-color: var(--code-selection-background-color);
+  color: var(--code-selection-color);
 }
 
-
-/******************** BOX *********************/
-
-/*
-1. CONTAINER CLASSES
-  1.1 Container
-  1.2 Container XS
-  1.3 Container SM
-  1.4 Container MD
-  1.5 Container LG
-  1.6 Container XL
-2. MARGIN CLASSES
-  2.1 Margin All
-  2.2 Margin Top
-  2.3 Margin Right
-  2.4 Margin Bottom
-  2.5 Margin Left
-3. PADDING CLASSES
-  3.1 Padding All
-  3.2 Padding Top
-  3.3 Padding Right
-  3.4 Padding Bottom
-  3.5 Padding Left
-4. HEIGHT CLASSES
-  4.1 Height
-  4.2 Max Height
-  4.3 Min Height
-5. WIDTH CLASSES
-  5.1 Width
-  5.2 Max Width
-  5.3 Min Width
-*/
-
-/********** 1. CONTAINER CLASSES **********/
+/********** BOX **********/
 
 /*
-1.1 Container
-1.2 Container XS
-1.3 Container SM
-1.4 Container MD
-1.5 Container LG
-1.6 Container XL
+1 - Container
+2 - Margin
+3 - Padding
+4 - Height
+5 - Width
 */
 
-/***** 1.1 Container *****/
-[class*="container-"] {
+/***** 1 - Container *****/
+[class*="container"] {
   margin: auto;
 }
 
-/***** 1.2 Container XS *****/
-[class*="container-"][class*="-70xs"] {
+.container-70xs {
   max-width: 70%;
 }
 
-[class*="container-"][class*="-80xs"] {
+.container-80xs {
   max-width: 80%;
 }
 
-[class*="container-"][class*="-90xs"] {
+.container-90xs {
   max-width: 90%;
 }
 
-/***** 1.3 Container SM *****/
 @media (min-width: 576px) {
-  [class*="container-"][class*="-70sm"] {
+  .container-70sm {
     max-width: 70%;
   }
 
-  [class*="container-"][class*="-80sm"] {
+  .container-80sm {
     max-width: 80%;
   }
 
-  [class*="container-"][class*="-90sm"] {
+  .container-90sm {
     max-width: 90%;
   }
 }
 
-/***** 1.4 Container MD *****/
 @media (min-width: 768px) {
-  [class*="container-"][class*="-70md"] {
+  .container-70md {
     max-width: 70%;
   }
 
-  [class*="container-"][class*="-80md"] {
+  .container-80md {
     max-width: 80%;
   }
 
-  [class*="container-"][class*="-90md"] {
+  .container-90md {
     max-width: 90%;
   }
 }
 
-/***** 1.5 Container LG *****/
 @media (min-width: 992px) {
-  [class*="container-"][class*="-70lg"] {
+  .container-70lg {
     max-width: 70%;
   }
 
-  [class*="container-"][class*="-80lg"] {
+  .container-80lg {
     max-width: 80%;
   }
 
-  [class*="container-"][class*="-90lg"] {
+  .container-90lg {
     max-width: 90%;
   }
 }
 
-/***** 1.6 Container XL *****/
 @media (min-width: 1200px) {
-  [class*="container-"][class*="-70xl"] {
+  .container-70xl {
     max-width: 70%;
   }
 
-  [class*="container-"][class*="-80xl"] {
+  .container-80xl {
     max-width: 80%;
   }
 
-  [class*="container-"][class*="-90xl"] {
+  .container-90xl {
     max-width: 90%;
   }
 }
 
-/********** 2. MARGIN **********/
-
-/*
-2.1 Margin All
-2.2 Margin Top
-2.3 Margin Right
-2.4 Margin Bottom
-2.5 Margin Left
-*/
-
-/***** 2.1 Margin All *****/
-[class*="mar-all-none-"][class*="-base"],
-[class*="mar-all-none-"][class*="-global"] > * {
+/***** 2 - Margin *****/
+.mar-all-none,
+.mar-all-none-global > * {
   margin: var(--margin-none);
 }
 
-[class*="mar-all-sm-"][class*="-base"],
-[class*="mar-all-sm-"][class*="-global"] > * {
+.mar-all-sm,
+.mar-all-sm-global > * {
   margin: var(--margin-sm);
 }
 
-[class*="mar-all-md-"][class*="-base"],
-[class*="mar-all-md-"][class*="-global"] > * {
+.mar-all-md,
+.mar-all-md-global > * {
   margin: var(--margin-md);
 }
 
-[class*="mar-all-lg-"][class*="-base"],
-[class*="mar-all-lg-"][class*="-global"] > * {
+.mar-all-lg,
+.mar-all-lg-global > * {
   margin: var(--margin-lg);
 }
 
-/***** 2.2 Margin Top *****/
-[class*="mar-top-none-"][class*="-base"],
-[class*="mar-top-none-"][class*="-global"] > * {
+.mar-top-none,
+.mar-top-none-global > * {
   margin-top: var(--margin-none);
 }
 
-[class*="mar-top-sm-"][class*="-base"],
-[class*="mar-top-sm-"][class*="-global"] > * {
+.mar-top-sm,
+.mar-top-sm-global > * {
   margin-top: var(--margin-top-sm);
 }
 
-[class*="mar-top-md-"][class*="-base"],
-[class*="mar-top-md-"][class*="-global"] > * {
+.mar-top-md,
+.mar-top-md-global > * {
   margin-top: var(--margin-top-md);
 }
 
-[class*="mar-top-lg-"][class*="-base"],
-[class*="mar-top-lg-"][class*="-global"] > * {
+.mar-top-lg,
+.mar-top-lg-global > * {
   margin-top: var(--margin-top-lg);
 }
 
-/***** 2.3 Margin Right *****/
-[class*="mar-right-none-"][class*="-base"],
-[class*="mar-right-none-"][class*="-global"] > * {
+.mar-right-none,
+.mar-right-none-global > * {
   margin-right: var(--margin-none);
 }
 
-[class*="mar-right-sm-"][class*="-base"],
-[class*="mar-right-sm-"][class*="-global"] > * {
+.mar-right-sm,
+.mar-right-sm-global > * {
   margin-right: var(--margin-right-sm);
 }
 
-[class*="mar-right-md-"][class*="-base"],
-[class*="mar-right-md-"][class*="-global"] > * {
+.mar-right-md,
+.mar-right-md-global > * {
   margin-right: var(--margin-right-md);
 }
 
-[class*="mar-right-lg-"][class*="-base"],
-[class*="mar-right-lg-"][class*="-global"] > * {
+.mar-right-lg,
+.mar-right-lg-global > * {
   margin-right: var(--margin-right-lg);
 }
 
-/***** 2.4 Margin Bottom *****/
-[class*="mar-bot-none-"][class*="-base"],
-[class*="mar-bot-none-"][class*="-global"] > * {
+.mar-bot-none,
+.mar-bot-none-global > * {
   margin-bottom: var(--margin-none);
 }
 
-[class*="mar-bot-sm-"][class*="-base"],
-[class*="mar-bot-sm-"][class*="-global"] > * {
+.mar-bot-sm,
+.mar-bot-sm-global > * {
   margin-bottom: var(--margin-bot-sm);
 }
 
-[class*="mar-bot-md-"][class*="-base"],
-[class*="mar-bot-md-"][class*="-global"] > * {
+.mar-bot-md,
+.mar-bot-md-global > * {
   margin-bottom: var(--margin-bot-md);
 }
 
-[class*="mar-bot-lg-"][class*="-base"],
-[class*="mar-bot-lg-"][class*="-global"] > * {
+.mar-bot-lg,
+.mar-bot-lg-global > * {
   margin-bottom: var(--margin-bot-lg);
 }
 
-/***** 2.5 Margin Left *****/
-[class*="mar-left-none-"][class*="-base"],
-[class*="mar-left-none-"][class*="-global"] > * {
+.mar-left-none,
+.mar-left-none-global > * {
   margin-left: var(--margin-none);
 }
 
-[class*="mar-left-sm-"][class*="-base"],
-[class*="mar-left-sm-"][class*="-global"] > * {
+.mar-left-sm,
+.mar-left-sm-global > * {
   margin-left: var(--margin-left-sm);
 }
 
-[class*="mar-left-md-"][class*="-base"],
-[class*="mar-left-md-"][class*="-global"] > * {
+.mar-left-md,
+.mar-left-md-global > * {
   margin-left: var(--margin-left-md);
 }
 
-[class*="mar-left-lg-"][class*="-base"],
-[class*="mar-left-lg-"][class*="-global"] > * {
+.mar-left-lg,
+.mar-left-lg-global > * {
   margin-left: var(--margin-left-lg);
 }
 
-/********** 3. PADDING **********/
-
-/*
-3.1 Padding All
-3.2 Padding Top
-3.3 Padding Right
-3.4 Padding Bottom
-3.5 Padding Left
-*/
-
-/***** 3.1 Padding All *****/
-[class*="pad-all-none-"][class*="-base"],
-[class*="pad-all-none-"][class*="-global"] > * {
+/***** 3 - Padding *****/
+.pad-all-none,
+.pad-all-none-global > * {
   padding: var(--padding-none);
 }
 
-[class*="pad-all-sm-"][class*="-base"],
-[class*="pad-all-sm-"][class*="-global"] > * {
+.pad-all-sm,
+.pad-all-sm-global > * {
   padding: var(--padding-sm);
 }
 
-[class*="pad-all-md-"][class*="-base"],
-[class*="pad-all-md-"][class*="-global"] > * {
+.pad-all-md,
+.pad-all-md-global > * {
   padding: var(--padding-md);
 }
 
-[class*="pad-all-lg-"][class*="-base"],
-[class*="pad-all-lg-"][class*="-global"] > * {
+.pad-all-lg,
+.pad-all-lg-global > * {
   padding: var(--padding-lg);
 }
 
-/***** 3.2 Padding Top *****/
-[class*="pad-top-none-"][class*="-base"],
-[class*="pad-top-none-"][class*="-global"] > * {
+.pad-top-none,
+.pad-top-none-global > * {
   padding-top: var(--padding-none);
 }
 
-[class*="pad-top-sm-"][class*="-base"],
-[class*="pad-top-sm-"][class*="-global"] > * {
+.pad-top-sm,
+.pad-top-sm-global > * {
   padding-top: var(--padding-top-sm);
 }
 
-[class*="pad-top-md-"][class*="-base"],
-[class*="pad-top-md-"][class*="-global"] > * {
+.pad-top-md,
+.pad-top-md-global > * {
   padding-top: var(--padding-top-md);
 }
 
-[class*="pad-top-lg-"][class*="-base"],
-[class*="pad-top-lg-"][class*="-global"] > * {
+.pad-top-lg,
+.pad-top-lg-global > * {
   padding-top: var(--padding-top-lg);
 }
 
-/***** 3.3 Padding Right *****/
-[class*="pad-right-none-"][class*="-base"],
-[class*="pad-right-none-"][class*="-global"] > * {
+.pad-right-none,
+.pad-right-none-global > * {
   padding-right: var(--padding-none);
 }
 
-[class*="pad-right-sm-"][class*="-base"],
-[class*="pad-right-sm-"][class*="-global"] > * {
+.pad-right-sm,
+.pad-right-sm-global > * {
   padding-right: var(--padding-right-sm);
 }
 
-[class*="pad-right-md-"][class*="-base"],
-[class*="pad-right-md-"][class*="-global"] > * {
+.pad-right-md,
+.pad-right-md-global > * {
   padding-right: var(--padding-right-md);
 }
 
-[class*="pad-right-lg-"][class*="-base"],
-[class*="pad-right-lg-"][class*="-global"] > * {
+.pad-right-lg,
+.pad-right-lg-global > * {
   padding-right: var(--padding-right-lg);
 }
 
-/***** 3.4 Padding Bottom *****/
-[class*="pad-bot-none-"][class*="-base"],
-[class*="pad-bot-none-"][class*="-global"] > * {
+.pad-bot-none,
+.pad-bot-none-global > * {
   padding-bottom: var(--padding-none);
 }
 
-[class*="pad-bot-sm-"][class*="-base"],
-[class*="pad-bot-sm-"][class*="-global"] > * {
+.pad-bot-sm,
+.pad-bot-sm-global > * {
   padding-bottom: var(--padding-bot-sm);
 }
 
-[class*="pad-bot-md-"][class*="-base"],
-[class*="pad-bot-md-"][class*="-global"] > * {
+.pad-bot-md,
+.pad-bot-md-global > * {
   padding-bottom: var(--padding-bot-md);
 }
 
-[class*="pad-bot-lg-"][class*="-base"],
-[class*="pad-bot-lg-"][class*="-global"] > * {
+.pad-bot-lg,
+.pad-bot-lg-global > * {
   padding-bottom: var(--padding-bot-lg);
 }
 
-/***** 3.5 Padding Left *****/
-[class*="pad-left-none-"][class*="-base"],
-[class*="pad-left-none-"][class*="-global"] > * {
+.pad-left-none,
+.pad-left-none-global > * {
   padding-left: var(--padding-none);
 }
 
-[class*="pad-left-sm-"][class*="-base"],
-[class*="pad-left-sm-"][class*="-global"] > * {
+.pad-left-sm,
+.pad-left-sm-global > * {
   padding-left: var(--padding-left-sm);
 }
 
-[class*="pad-left-md-"][class*="-base"],
-[class*="pad-left-md-"][class*="-global"] > * {
+.pad-left-md,
+.pad-left-md-global > * {
   padding-left: var(--padding-left-md);
 }
 
-[class*="pad-left-lg-"][class*="-base"],
-[class*="pad-left-lg-"][class*="-global"] > * {
+.pad-left-lg,
+.pad-left-lg-global > * {
   padding-left: var(--padding-left-lg);
 }
 
-/********** 4. HEIGHT CLASSES ***********/
-
-/*
-4.1 Height
-4.2 Max Height
-4.3 Min Height
-*/
-
-/***** 4.1 Height *****/
-[class*="height-sm-"][class*="-base"],
-[class*="height-sm-"][class*="-global"] > * {
+/***** 4 - Height *****/
+.height-sm,
+.height-sm-global > * {
   height: var(--height-sm);
 }
 
-[class*="height-md-"][class*="-base"],
-[class*="height-md-"][class*="-global"] > * {
+.height-md,
+.height-md-global > * {
   height: var(--height-md);
 }
 
-[class*="height-lg-"][class*="-base"],
-[class*="height-lg-"][class*="-global"] > * {
+.height-lg,
+.height-lg-global > * {
   height: var(--height-lg);
 }
 
-/***** 4.2 Max Height *****/
-[class*="max-h-sm-"][class*="-base"],
-[class*="max-h-sm-"][class*="-global"] > * {
+.max-h-sm,
+.max-h-sm-global > * {
   max-height: var(--max-height-sm);
 }
 
-[class*="max-h-md-"][class*="-base"],
-[class*="max-h-md-"][class*="-global"] > * {
+.max-h-md,
+.max-h-md-global > * {
   max-height: var(--max-height-md);
 }
 
-[class*="max-h-lg-"][class*="-base"],
-[class*="max-h-lg-"][class*="-global"] > * {
+.max-h-lg,
+.max-h-lg-global > * {
   max-height: var(--max-height-lg);
 }
 
-/***** 4.3 Min Height *****/
-[class*="min-h-sm-"][class*="-base"],
-[class*="min-h-sm-"][class*="-global"] > * {
+.min-h-sm,
+.min-h-sm-global > * {
   min-height: var(--min-height-sm);
 }
 
-[class*="min-h-md-"][class*="-base"],
-[class*="min-h-md-"][class*="-global"] > * {
+.min-h-md,
+.min-h-md-global > * {
   min-height: var(--min-height-md);
 }
 
-[class*="min-h-lg-"][class*="-base"],
-[class*="min-h-lg-"][class*="-global"] > * {
+.min-h-lg,
+.min-h-lg-global > * {
   min-height: var(--min-height-lg);
 }
 
-/********** 5. WIDTH CLASSES ***********/
-
-/*
-5.1 Width
-5.2 Max Width
-5.3 Min Width
-*/
-
-/***** 5.1 Width *****/
-[class*="width-sm-"][class*="-base"],
-[class*="width-sm-"][class*="-global"] > * {
+/***** 5 - Width *****/
+.width-sm,
+.width-sm-global > * {
   width: var(--width-sm);
 }
 
-[class*="width-md-"][class*="-base"],
-[class*="width-md-"][class*="-global"] > * {
+.width-md,
+.width-md-global > * {
   width: var(--width-md);
 }
 
-[class*="width-lg-"][class*="-base"],
-[class*="width-lg-"][class*="-global"] > * {
+.width-lg,
+.width-lg-global > * {
   width: var(--width-lg);
 }
 
-/***** 5.2 Max Width *****/
-[class*="max-w-sm-"][class*="-base"],
-[class*="max-w-sm-"][class*="-global"] > * {
+.max-w-sm,
+.max-w-sm-global > * {
   max-width: var(--max-width-sm);
 }
 
-[class*="max-w-md-"][class*="-base"],
-[class*="max-w-md-"][class*="-global"] > * {
+.max-w-md,
+.max-w-md-global > * {
   max-width: var(--max-width-md);
 }
 
-[class*="max-w-lg-"][class*="-base"],
-[class*="max-w-lg-"][class*="-global"] > * {
+.max-w-lg,
+.max-w-lg-global > * {
   max-width: var(--max-width-lg);
 }
 
-/***** 5.3 Min Width *****/
-[class*="min-w-sm-"][class*="-base"],
-[class*="min-w-sm-"][class*="-global"] > * {
+.min-w-sm,
+.min-w-sm-global > * {
   min-width: var(--min-width-sm);
 }
 
-[class*="min-w-md-"][class*="-base"],
-[class*="min-w-md-"][class*="-global"] > * {
+.min-w-md,
+.min-w-md-global > * {
   min-width: var(--min-width-md);
 }
 
-[class*="min-w-lg-"][class*="-base"],
-[class*="min-w-lg-"][class*="-global"] > * {
+.min-w-lg,
+.min-w-lg-global > * {
   min-width: var(--min-width-lg);
 }
 
-
-/******************** HELPERS ********************/
-
-/*
-1. FONT CLASSES
-  1.1 Font
-2. TEXT CLASSES
-  2.1 Text XS
-  2.2 Text SM
-  2.3 Text MD
-  2.4 Text LG
-  2.5 Text XL
-3. CURSOR CLASSES
-  3.1 Cursor
-*/
-
-/********** 1. FONT CLASSES **********/
+/********** HELPERS **********/
 
 /*
-1.1 Font
+1 - Font
+2 - Text
+3 - Cursor
 */
 
 /***** 1.1 Font *****/
-[class*="font-"][class*="-normal"] {
+.font-normal {
   font-style: normal;
   font-weight: normal;
 }
 
-[class*="font-"][class*="-italic"] {
+.font-italic {
   font-style: italic;
 }
 
-[class*="font-"][class*="-bold"] {
+.font-bold {
   font-weight: bold;
 }
 
-/********** 2. TEXT CLASSES **********/
-
-/*
-2.1 Text XS
-2.2 Text SM
-2.3 Text MD
-2.4 Text LG
-2.5 Text XL
-*/
-
-/***** 2.1 Text XS *****/
-[class*="text-"][class*="-center-xs"] {
+/***** 2 - Text *****/
+.text-center {
   text-align: center;
 }
 
-[class*="text-"][class*="-justify-xs"] {
+.text-justify-xs {
   text-align: justify;
 }
 
-[class*="text-"][class*="-right-xs"] {
+.text-right-xs {
   text-align: right;
 }
 
-[class*="text-"][class*="-left-xs"] {
+.text-left-xs {
   text-align: left;
 }
 
-/***** 2.2 Text SM *****/
 @media (min-width: 576px) {
-  [class*="text-"][class*="-center-sm"] {
+  .text-center-sm {
     text-align: center;
   }
 
-  [class*="text-"][class*="-justify-sm"] {
+  .text-justify-sm {
     text-align: justify;
   }
 
-  [class*="text-"][class*="-right-sm"] {
+  .text-right-sm {
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-sm"] {
+  .text-left-sm {
     text-align: left;
   }
 }
 
-/***** 2.3 Text MD *****/
 @media (min-width: 768px) {
-  [class*="text-"][class*="-center-md"] {
+  .text-center-md {
     text-align: center;
   }
 
-  [class*="text-"][class*="-justify-md"] {
+  .text-justify-md {
     text-align: justify;
   }
 
-  [class*="text-"][class*="-right-md"] {
+  .text-right-md {
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-md"] {
+  .text-left-md {
     text-align: left;
   }
 }
 
-/***** 2.4 Text LG *****/
 @media (min-width: 992px) {
-  [class*="text-"][class*="-center-lg"] {
+  .text-center-lg {
     text-align: center;
   }
 
-  [class*="text-"][class*="-justify-lg"] {
+  .text-justify-lg {
     text-align: justify;
   }
 
-  [class*="text-"][class*="-right-lg"] {
+  .text-right-lg {
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-lg"] {
+  .text-left-lg {
     text-align: left;
   }
 }
 
-/***** 2.5 Text XL *****/
 @media (min-width: 1200px) {
-  [class*="text-"][class*="-center-xl"] {
+  .text-center-xl {
     text-align: center;
   }
 
-  [class*="text-"][class*="-justify-xl"] {
+  .text-justify-xl {
     text-align: justify;
   }
 
-  [class*="text-"][class*="-right-xl"] {
+  .text-right-xl {
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-xl"] {
+  .text-left-xl {
     text-align: left;
   }
 }
 
-/********** 3. CURSOR CLASSES **********/
-
-/*
-3.1 Cursor
-*/
-
-/***** 3.1 Cursor *****/
-[class*="cursor-"][class*="-cross"],
-[class*="cursor-"][class*="-cross"] > * {
+/***** 3 - Cursor *****/
+.cursor-cross,
+.cursor-cross > * {
   cursor: crosshair;
 }
 
-[class*="cursor-"][class*="-help"],
-[class*="cursor-"][class*="-help"] > * {
+.cursor-help,
+.cursor-help > * {
   cursor: help;
 }
 
-[class*="cursor-"][class*="-none"],
-[class*="cursor-"][class*="-none"] > * {
+.cursor-none,
+.cursor-none > * {
   cursor: not-allowed;
 }
 
-[class*="cursor-"][class*="-hand"],
-[class*="cursor-"][class*="-hand"] > * {
+.cursor-hand,
+.cursor-hand > * {
   cursor: pointer;
 }
-
 
 /******************** DISPLAY *********************/
 
@@ -8520,4 +8273,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 11th Aug 2019 @ 12:29:10 AM */
+ Updated: 11th Aug 2019 @ 1:40:17 AM */
