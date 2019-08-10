@@ -850,28 +850,28 @@ pre {
 @media (min-width: 576px) {
   .slider {
     --slider-min-height: 35vh;
-    --slider-div-height: 7px;
+    --slider-progress-height: 7px;
   }
 }
 
 @media (min-width: 768px) {
   .slider {
     --slider-min-height: 40vh;
-    --slider-div-height: 8px;
+    --slider-progress-height: 8px;
   }
 }
 
 @media (min-width: 992px) {
   .slider {
     --slider-min-height: 45vh;
-    --slider-div-height: 9px;
+    --slider-progress-height: 9px;
   }
 }
 
 @media (min-width: 1200px) {
   .slider {
     --slider-min-height: 50vh;
-    --slider-div-height: 10px;
+    --slider-progress-height: 10px;
   }
 }
 
@@ -12810,4 +12810,4 @@ font-size: var(--gallery-link-all-odd-font-size);
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 10th Aug 2019 @ 10:36:03 PM */
+ Updated: 10th Aug 2019 @ 10:40:37 PM */
