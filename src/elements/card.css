@@ -17,7 +17,7 @@
 
 /***** 1 - Card *****/
 [class*="card"] {
-  display: flex;
+  display: inline-flex;
   flex-direction: var(--card-flex-direction);
   align-items: var(--card-align-items);
   position: var(--card-position);
