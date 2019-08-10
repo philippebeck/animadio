@@ -1,4 +1,4 @@
-/*! animadio v0.5.5 | https://animadio.org | MIT License */
+/*! animadio v0.5.6 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -516,7 +516,7 @@ pre {
 }
 
 /***** 3.3 Foot *****/
-[class*="foot"] {
+.foot {
   --foot-text-align: center;
   --foot-title-color: var(--khaki);
   --foot-title-font-size: 2rem;
@@ -542,7 +542,7 @@ pre {
 }
 
 @media (min-width: 576px) {
-  [class*="foot"] {
+  .foot {
     --foot-first-child-flex-direction: row;
   }
 }
@@ -758,40 +758,40 @@ pre {
 }
 
 /***** 3.7 Navbar *****/
-[class*="nav"] {
+.navbar {
   --navbar-align-items: center;
   --navbar-background-color: var(--blue);
-  --navbar-bot: unset;
+  --navbar-bottom: unset;
   --navbar-color: var(--white);
-  --navbar-index: 1000;
   --navbar-justify-content: center;
   --navbar-left: 0;
   --navbar-position: fixed;
   --navbar-right: 0;
   --navbar-top: 0;
+  --navbar-z-index: 1000;
   --navbar-link-color: var(--white);
   --navbar-link-cursor: pointer;
   --navbar-link-padding: 20px 10px;
   --navbar-link-hover-color: var(--yellow);
   --navbar-icon-align-self: center;
-  --navs-align-items: center;
-  --navs-list-style: none;
-  --navs-margin: 0;
-  --navs-padding: 0;
-  --navs-link-flex-direction: column;
-  --nav-brand-left: 10px;
-  --nav-brand-img-height: 40px;
-  --nav-main-link-hover-scale: 0.9;
-  --nav-info-height: 50px;
-  --nav-info-img-margin: 5px;
-  --nav-info-link-hover-scale: 1.5;
-  --nav-toggle-anima: translateY-xs 1s linear infinite alternate;
-  --nav-toggle-right: 10px;
-  --nav-toggle-top: 0;
+  --navbar-list-align-items: center;
+  --navbar-list-list-style: none;
+  --navbar-list-margin: 0;
+  --navbar-list-padding: 0;
+  --navbar-list-link-flex-direction: column;
+  --navbar-brand-link-left: 10px;
+  --navbar-brand-link-img-height: 40px;
+  --navbar-first-list-link-hover-scale: 0.9;
+  --navbar-last-list-height: 50px;
+  --navbar-last-list-img-margin: 5px;
+  --navbar-last-list-link-hover-scale: 1.5;
+  --navbar-label-animation: translateY-xs 1s linear infinite alternate;
+  --navbar-label-right: 10px;
+  --navbar-label-top: 0;
 }
 
 @media (min-width: 576px) {
-  [class*="nav"] {
+  .navbar {
     --navbar-flex-direction: row;
     --navbar-justify-content: space-around;
     --navbar-padding: 10px;
@@ -799,7 +799,7 @@ pre {
 }
 
 @media (min-width: 768px) {
-  [class*="nav"] {
+  .navbar {
     --navbar-justify-content: space-evenly;
   }
 }
@@ -876,7 +876,7 @@ pre {
 }
 
 /***** 3.9 Table *****/
-[class*="table"] {
+.table {
   --table-border-collapse: collapse;
   --table-border-spacing: 10px;
   --table-box-shadow: 5px 5px 10px 5px var(--gray);
@@ -4747,4 +4747,4 @@ pre > *::selection {
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 10th Aug 2019 @ 10:40:37 PM */
+ Updated: 11th Aug 2019 @ 12:29:10 AM */
