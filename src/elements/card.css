@@ -1,23 +1,21 @@
-/******************** CARD ********************/
+/********** CARD **********/
 
 /*
-1. CARD
-  1.1 Card
-2. CARD CHILD
-  2.1 Card Child
-  2.2 Card Titles
-  2.3 Card Btn
-3. CARD COLORS
-  3.1 Card Colors
+1 - Card
+2 - Card Hover
+3 - Card Child
+4 - Card Selection
+5 - Card Title
+6 - Card Btn
+7 - Card Black
+8 - Card Blue
+9 - Card Green
+10 - Card Purple
+11 - Card Red
+12 - Card Yellow
 */
 
-/********** 1. CARD **********/
-
-/*
-1.1 Card
-*/
-
-/***** 1.1 Card *****/
+/***** 1 - Card *****/
 [class*="card"] {
   display: flex;
   flex-direction: var(--card-flex-direction);
@@ -26,14 +24,15 @@
   overflow: var(--card-overflow);
   margin: var(--card-margin);
   border: var(--card-border);
-  border-radius: var(--card-radius);
+  border-radius: var(--card-border-radius);
   padding: var(--card-padding);
   width: var(--card-width);
   box-shadow: var(--card-box-shadow);
-  background-color: var(--card-bg);
+  background-color: var(--card-background-color);
   color: var(--card-color);
 }
 
+/***** 2 - Card Hover *****/
 [class*="card"]:hover,
 [class*="card"]:focus,
 [class*="card"]:active {
@@ -41,32 +40,25 @@
   transition: var(--card-hover-transition);
 }
 
-/********** 2. CARD CHILD **********/
-
-/*
-2.1 Card Child
-2.2 Card Titles
-2.3 Card Btn
-*/
-
-/***** 2.1 Card Child *****/
+/***** 3 - Card Child *****/
 [class*="card"] > * {
   margin: var(--card-child-margin);
   border: var(--card-child-border);
-  border-radius: var(--card-child-radius);
+  border-radius: var(--card-child-border-radius);
   padding: var(--card-child-padding);
   max-width: var(--card-child-max-width);
-  background-color: var(--card-child-bg);
+  background-color: var(--card-child-background-color);
   font-size: var(--card-child-font-size);
   text-align: var(--card-child-text-align);
 }
 
+/***** 4 - Card Selection *****/
 [class*="card"] > *::selection {
-  background-color: var(--card-selection-bg);
+  background-color: var(--card-selection-background-color);
   color: var(--card-selection-color);
 }
 
-/***** 2.2 Card Titles *****/
+/***** 5 - Card Title *****/
 [class*="card"] > h2,
 [class*="card"] > h3,
 [class*="card"] > h4,
@@ -77,93 +69,92 @@
   text-shadow: var(--card-title-text-shadow);
 }
 
-/***** 2.3 Card Btn *****/
+/***** 6 - Card Btn *****/
 [class*="card"] > [class*="btn"] {
   width: var(--card-btn-width);
   text-align: var(--card-btn-text-align);
 }
 
-/********** 3. CARD COLORS **********/
-
-/*
-3.1 Card Colors
-*/
-
-/***** 3.1 Card Colors *****/
-[class*="card-black"] {
-  background-color: var(--card-black-bg);
+/***** 7 - Card Black *****/
+.card-black {
+  background-color: var(--card-black-background-color);
 }
 
-[class*="card-black"] > h2,
-[class*="card-black"] > h3,
-[class*="card-black"] > h4,
-[class*="card-black"] > h5,
-[class*="card-black"] > h6 {
+.card-black > h2,
+.card-black > h3,
+.card-black > h4,
+.card-black > h5,
+.card-black > h6 {
   box-shadow: var(--card-black-title-box-shadow);
   text-shadow: var(--card-black-title-text-shadow);
 }
 
-[class*="card-blue"] {
-  background-color: var(--card-blue-bg);
+/***** 8 - Card Blue *****/
+.card-blue {
+  background-color: var(--card-blue-background-color);
 }
 
-[class*="card-blue"] > h2,
-[class*="card-blue"] > h3,
-[class*="card-blue"] > h4,
-[class*="card-blue"] > h5,
-[class*="card-blue"] > h6 {
+.card-blue > h2,
+.card-blue > h3,
+.card-blue > h4,
+.card-blue > h5,
+.card-blue > h6 {
   box-shadow: var(--card-blue-title-box-shadow);
   text-shadow: var(--card-blue-title-text-shadow);
 }
 
-[class*="card-green"] {
-  background-color: var(--card-green-bg);
+/***** 9 - Card Green *****/
+.card-green {
+  background-color: var(--card-green-background-color);
 }
 
-[class*="card-green"] > h2,
-[class*="card-green"] > h3,
-[class*="card-green"] > h4,
-[class*="card-green"] > h5,
-[class*="card-green"] > h6 {
+.card-green > h2,
+.card-green > h3,
+.card-green > h4,
+.card-green > h5,
+.card-green > h6 {
   box-shadow: var(--card-green-title-box-shadow);
   text-shadow: var(--card-green-title-text-shadow);
 }
 
-[class*="card-purple"] {
-  background-color: var(--card-purple-bg);
+/***** 10 - Card Purple *****/
+.card-purple {
+  background-color: var(--card-purple-background-color);
 }
 
-[class*="card-purple"] > h2,
-[class*="card-purple"] > h3,
-[class*="card-purple"] > h4,
-[class*="card-purple"] > h5,
-[class*="card-purple"] > h6 {
+.card-purple > h2,
+.card-purple > h3,
+.card-purple > h4,
+.card-purple > h5,
+.card-purple > h6 {
   box-shadow: var(--card-purple-title-box-shadow);
   text-shadow: var(--card-purple-title-text-shadow);
 }
 
-[class*="card-red"] {
-  background-color: var(--card-red-bg);
+/***** 11 - Card Red *****/
+.card-red {
+  background-color: var(--card-red-background-color);
 }
 
-[class*="card-red"] > h2,
-[class*="card-red"] > h3,
-[class*="card-red"] > h4,
-[class*="card-red"] > h5,
-[class*="card-red"] > h6 {
+.card-red > h2,
+.card-red > h3,
+.card-red > h4,
+.card-red > h5,
+.card-red > h6 {
   box-shadow: var(--card-red-title-box-shadow);
   text-shadow: var(--card-red-title-text-shadow);
 }
 
-[class*="card-yellow"] {
-  background-color: var(--card-yellow-bg);
+/***** 12 - Card Yellow *****/
+.card-yellow {
+  background-color: var(--card-yellow-background-color);
 }
 
-[class*="card-yellow"] > h2,
-[class*="card-yellow"] > h3,
-[class*="card-yellow"] > h4,
-[class*="card-yellow"] > h5,
-[class*="card-yellow"] > h6 {
+.card-yellow > h2,
+.card-yellow > h3,
+.card-yellow > h4,
+.card-yellow > h5,
+.card-yellow > h6 {
   box-shadow: var(--card-yellow-title-box-shadow);
   text-shadow: var(--card-yellow-title-text-shadow);
 }
