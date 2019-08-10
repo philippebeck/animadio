@@ -1,26 +1,18 @@
-/******************** INIT ********************/
+/********** INIT **********/
 
 /*
-1. CLASSES
-  1.1 Hidden
-2. TAGS
-  2.1 Global
-  2.2 Title
-  2.3 Link
-  2.4 List
-  2.5 Media
-  2.6 Table
-  2.7 Form
-  2.8 Code
+1 - Hidden
+2 - Global
+3 - Title
+4 - Link
+5 - List
+6 - Media
+7 - Table
+8 - Form
+9 - Code
 */
 
-/********** 1. CLASSES **********/
-
-/*
-1.1 Hidden
-*/
-
-/***** 1.1 Hidden *****/
+/***** 1 - Hidden *****/
 [class*="check"],
 [class*="radio"],
 [id*="check"],
@@ -28,20 +20,7 @@
   display: none !important;
 }
 
-/********** 2. TAGS **********/
-
-/*
-2.1 Global
-2.2 Title
-2.3 Link
-2.4 List
-2.5 Media
-2.6 Table
-2.7 Form
-2.8 Code
-*/
-
-/***** 2.1 Global *****/
+/***** 2 - Global *****/
 * {
   box-sizing: border-box;
 }
@@ -53,18 +32,18 @@ html {
 body {
   margin: 0;
   padding: 0;
-  line-height: var(--global-line-height);
-  font-size: var(--global-font-size);
-  font-family: var(--global-font-family);
-  background-color: var(--global-background-color);
-  scroll-behavior: var(--global-scroll-behavior);
+  line-height: var(--body-line-height);
+  font-size: var(--body-font-size);
+  font-family: var(--body-font-family);
+  background-color: var(--body-background-color);
+  scroll-behavior: var(--body-scroll-behavior);
 }
 
 article {
-  margin-bottom: var(--article-margin-bot);
+  margin-bottom: var(--article-margin-bottom);
 }
 
-/***** 2.2 Title *****/
+/***** 3 - Title *****/
 h1,
 h2,
 h3,
@@ -97,20 +76,20 @@ h6 {
   font-size: var(--title-xs-font-size);
 }
 
-/***** 2.3 Link *****/
+/***** 4 - Link *****/
 a {
-  text-decoration: var(--link-deco);
+  text-decoration: var(--link-text-decoration);
   outline: var(--link-outline);
 }
 
-/***** 2.4 List *****/
+/***** 5 - List *****/
 ul {
   margin: var(--list-margin);
   padding: var(--list-padding);
   list-style: var(--list-style);
 }
 
-/***** 2.5 Media *****/
+/***** 6 - Media *****/
 img,
 video {
   object-fit: var(--img-object-fit);
@@ -118,7 +97,7 @@ video {
   max-height: var(--img-max-height);
 }
 
-/***** 2.6 Table *****/
+/***** 7 - Table *****/
 table {
   margin: var(--table-margin);
   border-collapse: var(--table-border-collapse);
@@ -126,22 +105,21 @@ table {
   vertical-align: var(--table-vertical-align);
 }
 
-/***** 2.7 Form *****/
+/***** 8 - Form *****/
 label {
   cursor: var(--label-cursor);
 }
 
-/***** 2.8 Code *****/
+/***** 9 - Code *****/
 code,
 pre {
-  overflow: var(--pre-overflow);
-  padding: var(--pre-padding);
-  font-family: var(--pre-font-family);
+  overflow: var(--code-overflow);
+  padding: var(--code-padding);
+  font-family: var(--code-font-family);
 }
 
 code > *::selection,
 pre > *::selection {
-  background-color: var(--pre-selection-background-color);
-  color: var(--pre-selection-color);
+  background-color: var(--code-selection-background-color);
+  color: var(--code-selection-color);
 }
-
