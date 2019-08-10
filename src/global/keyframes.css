@@ -35,19 +35,19 @@
     content: var(--keyframes-content1);
   }
 
-  20% {
+  25% {
     content: var(--keyframes-content2);
   }
 
-  40% {
+  50% {
     content: var(--keyframes-content3);
   }
 
-  60% {
+  75% {
     content: var(--keyframes-content4);
   }
 
-  80% {
+  100% {
     content: var(--keyframes-content5);
   }
 }
