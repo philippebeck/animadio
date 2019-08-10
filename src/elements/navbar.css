@@ -1,85 +1,59 @@
-/******************** NAVBAR ********************/
+/********** NAVBAR **********/
 
 /*
-1. NAVBAR DISPLAY
-  1.1 Navbar Visible
-  1.2 Navbar Hidden
-2. NAVBAR
-  2.1 Navbar
-  2.2 Navbar Link & Label
-  2.3 Navbar Icon
-  2.4 Navbar Fixed Next Element
-3. NAVS
-  3.1 Navs
-  3.2 Navs Link & Label
-4. NAV BRAND
-  4.1 Nav Brand
-  4.2 Nav Brand Images
-5. NAV MAIN
-  5.1 Nav Main
-  5.1 Nav Main Hover
-6. NAV INFO
-  6.1 Nav Info
-  6.2 Nav Info Hover
-7. NAV TOGGLE
-  7.1 Nav Toggle
+1 - Navbar
+2 - Navbar Visible
+3 - Navbar Hidden
+4 - Navbar Link & Label
+5 - Navbar Icon
+6 - Navbar Next All
+7 - Navbar List
+8 - Navbar List Link & Label
+9 - Navbar Brand Link
+10 - Navbar First List
+11 - Navbar Last List
+12 - Navbar Label
 */
 
-/********** 1. NAVBAR DISPLAY **********/
-
-/*
-1.1 Navbar Visible
-1.2 Navbar Hidden
-*/
-
-/***** 1.1 Navbar Visible *****/
-.navbar,
-.nav-close:checked ~ .nav-main,
-.nav-open:checked ~ .nav-info,
-.nav-main a,
-.nav-main label,
-.nav-info a,
-.nav-info label {
-  display: flex;
-}
-
-/***** 1.2 Navbar Hidden *****/
-.nav-main span,
-.nav-info span,
-.nav-close,
-.nav-open,
-.nav-open:checked ~ .nav-main,
-.nav-close:checked ~ .nav-info,
-.nav-close:checked ~ [for="nav-close"],
-.nav-open:checked ~ [for="nav-open"] {
-  display: none;
-}
-
-/********** 2. NAVBAR **********/
-
-/*
-2.1 Navbar
-2.2 Navbar Link & Label
-2.3 Navbar Icon
-2.4 Navbar Fixed Next Element
-*/
-
-/***** 2.1 Navbar *****/
+/***** 1 - Navbar *****/
 .navbar {
   justify-content: var(--navbar-justify-content);
   align-items: var(--navbar-align-items);
   position: var(--navbar-position);
   top: var(--navbar-top);
   right: var(--navbar-right);
-  bottom: var(--navbar-bot);
+  bottom: var(--navbar-bottom);
   left: var(--navbar-left);
-  z-index: var(--navbar-index);
+  z-index: var(--navbar-z-index);
   height: var(--navbar-height);
   background-color: var(--navbar-background-color);
   color: var(--navbar-color);
 }
 
-/***** 2.2 Navbar Link & Label *****/
+/***** 2 - Navbar Visible *****/
+.navbar,
+#navbar-close:checked ~ .navbar > ul:first-of-type,
+#navbar-open:checked ~ .navbar > ul:last-of-type,
+.navbar > ul:first-of-type a,
+.navbar > ul:first-of-type label,
+.navbar > ul:last-of-type a,
+.navbar > ul:last-of-type label {
+  display: flex;
+}
+
+/***** 3 - Navbar Hidden *****/
+.navbar > ul:first-of-type span,
+.navbar > ul:last-of-type span,
+#navbar-close,
+#navbar-open,
+#navbar-open:checked ~ .navbar > ul:first-of-type,
+#navbar-close:checked ~ .navbar > ul:last-of-type,
+#navbar-close:checked ~ [for="navbar-close"],
+#navbar-open:checked ~ [for="navbar-open"] {
+  display: none;
+}
+
+/***** 4 - Navbar Link & Label *****/
 .navbar a,
 .navbar label {
   padding: var(--navbar-link-padding);
@@ -96,143 +70,101 @@
   color: var(--navbar-link-hover-color);
 }
 
-/***** 2.3 Navbar Icon *****/
+/***** 5 - Navbar Icon *****/
 .navbar i {
   align-self: var(--navbar-icon-align-self);
 }
 
-/***** 2.4 Navbar Fixed Next Element *****/
+/***** 6 - Navbar Next All *****/
 .navbar + * {
   margin-top: var(--navbar-height);
 }
 
-/********** 3. NAVS **********/
-
-/*
-3.1 Navs
-3.2 Navs Link & Label
-*/
-
-/***** 3.1 Navs *****/
-.nav-main,
-.nav-info {
-  align-items: var(--navs-align-items);
-  margin: var(--navs-margin);
-  padding: var(--navs-padding);
-  list-style: var(--navs-list-style);
+/***** 7 - Navbar List *****/
+.navbar > ul {
+  align-items: var(--navbar-list-align-items);
+  margin: var(--navbar-list-margin);
+  padding: var(--navbar-list-padding);
+  list-style: var(--navbar-list-list-style);
 }
 
 @media (min-width: 576px) {
-  .nav-main,
-  .nav-info {
-    display: flex !important;
+  .navbar > ul {
+    display: flex;
   }
 }
 
-/***** 3.2 Navs Link & Label *****/
-.nav-main a,
-.nav-main label,
-.nav-info a,
-.nav-info label {
-  flex-direction: var(--navs-link-flex-direction);
+/***** 8 - Navbar List Link & Label *****/
+.navbar > ul a,
+.navbar > ul label {
+  flex-direction: var(--navbar-list-link-flex-direction);
 }
 
-/********** 4. NAV BRAND **********/
-
-/*
-4.1 Nav Brand
-4.2 Nav Brand Images
-*/
-
-/***** 4.1 Nav Brand *****/
-.nav-brand {
+/***** 9 - Navbar Brand Link *****/
+.navbar > a {
   position: absolute;
-  left: var(--nav-brand-left);
+  left: var(--navbar-brand-link-left);
 }
 
 @media (min-width: 576px) {
-  .nav-brand {
+  .navbar > a {
     position: static;
   }
 }
 
-/***** 4.2 Nav Brand Images *****/
-.nav-brand img,
-.nav-brand svg {
-  height: var(--nav-brand-img-height);
+.navbar > a img,
+.navbar > a svg {
+  height: var(--navbar-brand-link-img-height);
 }
 
-/********** 5. NAV MAIN **********/
-
-/*
-5.1 Nav Main
-5.1 Nav Main Hover
-*/
-
-/***** 5.1 Nav Main *****/
+/***** 10 - Navbar First List *****/
 @media (min-width: 768px) {
-  .nav-main span {
+  .navbar > ul:first-of-type span {
     display: block;
   }
 }
 
-/***** 5.1 Nav Main Hover *****/
-.nav-main a:hover,
-.nav-main a:focus,
-.nav-main a:active,
-.nav-main label:hover,
-.nav-main label:focus,
-.nav-main label:active {
-  transform: scale(var(--nav-main-link-hover-scale));
+.navbar > ul:first-of-type a:hover,
+.navbar > ul:first-of-type a:focus,
+.navbar > ul:first-of-type a:active,
+.navbar > ul:first-of-type label:hover,
+.navbar > ul:first-of-type label:focus,
+.navbar > ul:first-of-type label:active {
+  transform: scale(var(--navbar-first-list-link-hover-scale));
 }
 
-/********** 6. NAV INFO **********/
-
-/*
-6.1 Nav Info
-6.2 Nav Info Hover
-*/
-
-/***** 6.1 Nav Info *****/
-.nav-info img,
-.nav-info svg {
-  margin: var(--nav-info-img-margin);
-  height: var(--nav-info-height);
+/***** 11 - Navbar Last List *****/
+.navbar > ul:last-of-type img,
+.navbar > ul:last-of-type svg {
+  margin: var(--navbar-last-list-img-margin);
+  height: var(--navbar-last-list-height);
 }
 
 @media (min-width: 768px) {
-  .nav-info span {
+  .navbar > ul:last-of-type span {
     display: block;
   }
 }
 
-/***** 6.2 Nav Info Hover *****/
-.nav-info a:hover,
-.nav-info a:focus,
-.nav-info a:active,
-.nav-info label:hover,
-.nav-info label:focus,
-.nav-info label:active {
-  transform: scale(var(--nav-info-link-hover-scale));
+.navbar > ul:last-of-type a:hover,
+.navbar > ul:last-of-type a:focus,
+.navbar > ul:last-of-type a:active,
+.navbar > ul:last-of-type label:hover,
+.navbar > ul:last-of-type label:focus,
+.navbar > ul:last-of-type label:active {
+  transform: scale(var(--navbar-last-list-link-hover-scale));
 }
 
-/********** 7. NAV TOGGLE **********/
-
-/*
-7.1 Nav Toggle
-*/
-
-/***** 7.1 Nav Toggle *****/
-.nav-toggle {
+/***** 12 - Navbar Label *****/
+.navbar > label {
   position: absolute;
-  top: var(--nav-toggle-top);
-  right: var(--nav-toggle-right);
-  animation: var(--nav-toggle-anima);
+  top: var(--navbar-label-top);
+  right: var(--navbar-label-right);
+  animation: var(--navbar-label-animation);
 }
 
 @media (min-width: 576px) {
-  .nav-toggle {
+  .navbar > label {
     display: none;
   }
 }
-
