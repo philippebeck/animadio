@@ -22,7 +22,9 @@
 
 /***** 1.1 Hidden *****/
 [class*="check"],
-[class*="radio"] {
+[class*="radio"],
+[id*="check"],
+[id*="radio"] {
   display: none !important;
 }
 
