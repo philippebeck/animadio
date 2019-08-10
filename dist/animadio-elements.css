@@ -1,4 +1,4 @@
-/*! animadio v0.5.3 | https://animadio.org | MIT License */
+/*! animadio v0.5.4 | https://animadio.org | MIT License */
 
 /******************** VARIABLES ********************/
 
@@ -392,83 +392,84 @@ pre {
 [class*="button"] {
   --btn-background-color: var(--white);
   --btn-border: solid thin var(--black);
+  --btn-border-radius: 10px;
   --btn-color: var(--black);
   --btn-font-size: 1.5rem;
   --btn-margin: 10px;
   --btn-padding: 5px 10px;
-  --btn-radius: 10px;
   --btn-text-align: center;
-  --btn-hover-anima: none;
+  --btn-hover-animation: none;
   --btn-hover-background-color: var(--black);
   --btn-hover-border: outset thin var(--white);
+  --btn-hover-border-radius: 0;
   --btn-hover-color: var(--white);
-  --btn-hover-radius: 0;
-  --btn-hover-shabox: 5px 5px 5px var(--gray);
+  --btn-hover-box-shadow: 5px 5px 5px var(--gray);
   --btn-hover-transition: background-color 1s;
   --check-button-transform: scale(0.9);
-  --btn-border-black: var(--white);
-  --btn-border-blue: var(--sky);
-  --btn-border-gray: var(--silver);
-  --btn-border-green: var(--jade);
-  --btn-border-maroon: var(--choco);
-  --btn-border-orange: var(--salmon);
-  --btn-border-purple: var(--violet);
-  --btn-border-red: var(--tomato);
-  --btn-border-yellow: var(--khaki);
-  --btn-border-choco: var(--maroon);
-  --btn-border-jade: var(--green);
-  --btn-border-khaki: var(--yellow);
-  --btn-border-salmon: var(--orange);
-  --btn-border-silver: var(--gray);
-  --btn-border-sky: var(--blue);
-  --btn-border-tomato: var(--red);
-  --btn-border-violet: var(--purple);
-  --btn-border-white: var(--black);
-  --btn-color-black: var(--white);
-  --btn-color-blue: var(--white);
-  --btn-color-gray: var(--white);
-  --btn-color-green: var(--white);
-  --btn-color-maroon: var(--white);
-  --btn-color-orange: var(--white);
-  --btn-color-purple: var(--white);
-  --btn-color-red: var(--white);
-  --btn-color-yellow: var(--blue);
-  --btn-color-choco: var(--maroon);
-  --btn-color-jade: var(--green);
-  --btn-color-khaki: var(--black);
-  --btn-color-salmon: var(--maroon);
-  --btn-color-silver: var(--black);
-  --btn-color-sky: var(--blue);
-  --btn-color-tomato: var(--red);
-  --btn-color-violet: var(--purple);
-  --btn-color-white: var(--black);
-  --btn-border-width-xs: 1px;
-  --btn-border-width-sm: 2px;
-  --btn-border-width-md: 3px;
-  --btn-border-width-lg: 4px;
-  --btn-border-width-xl: 5px;
-  --btn-font-size-xs: 60%;
-  --btn-font-size-sm: 80%;
-  --btn-font-size-lg: 120%;
-  --btn-font-size-xl: 140%;
-  --btn-padding-xs: 1px 2px;
-  --btn-padding-sm: 2px 4px;
-  --btn-padding-md: 3px 6px;
-  --btn-padding-lg: 4px 8px;
-  --btn-padding-xl: 5px 10px;
-  --btn-radius-square: unset;
-  --btn-radius-round: 20px;
-  --btn-radius-circle: 50%;
-  --btn-sizes-square: 80px;
-  --btn-sizes-round: 80px;
-  --btn-sizes-circle: 80px;
+  --btn-black-border-color: var(--white);
+  --btn-black-color: var(--white);
+  --btn-blue-border-color: var(--sky);
+  --btn-blue-color: var(--white);
+  --btn-gray-border-color: var(--silver);
+  --btn-gray-color: var(--white);
+  --btn-green-border-color: var(--jade);
+  --btn-green-color: var(--white);
+  --btn-maroon-border-color: var(--choco);
+  --btn-maroon-color: var(--white);
+  --btn-orange-border-color: var(--salmon);
+  --btn-orange-color: var(--white);
+  --btn-purple-border-color: var(--violet);
+  --btn-purple-color: var(--white);
+  --btn-red-border-color: var(--tomato);
+  --btn-red-color: var(--white);
+  --btn-yellow-border-color: var(--khaki);
+  --btn-yellow-color: var(--blue);
+  --btn-choco-border-color: var(--maroon);
+  --btn-choco-color: var(--maroon);
+  --btn-jade-border-color: var(--green);
+  --btn-jade-color: var(--green);
+  --btn-khaki-border-color: var(--yellow);
+  --btn-khaki-color: var(--black);
+  --btn-salmon-border-color: var(--orange);
+  --btn-salmon-color: var(--maroon);
+  --btn-silver-border-color: var(--gray);
+  --btn-silver-color: var(--black);
+  --btn-sky-border-color: var(--blue);
+  --btn-sky-color: var(--blue);
+  --btn-tomato-border-color: var(--red);
+  --btn-tomato-color: var(--red);
+  --btn-violet-border-color: var(--purple);
+  --btn-violet-color: var(--purple);
+  --btn-white-border-color: var(--black);
+  --btn-white-color: var(--black);
+  --btn-xs-border-width: 1px;
+  --btn-xs-font-size: 60%;
+  --btn-xs-padding: 1px 2px;
+  --btn-sm-border-width: 2px;
+  --btn-sm-font-size: 80%;
+  --btn-sm-padding: 2px 4px;
+  --btn-md-border-width: 3px;
+  --btn-md-padding: 3px 6px;
+  --btn-lg-border-width: 4px;
+  --btn-lg-font-size: 120%;
+  --btn-lg-padding: 4px 8px;
+  --btn-xl-border-width: 5px;
+  --btn-xl-font-size: 140%;
+  --btn-xl-padding: 5px 10px;
+  --btn-circle-border-radius: 50%;
+  --btn-circle-sizes: 80px;
+  --btn-round-border-radius: 20px;
+  --btn-round-sizes: 80px;
+  --btn-square-border-radius: unset;
+  --btn-square-sizes: 80px;
 }
 
 /***** 3.2 Card *****/
 [class*="card"] {
   --card-align-items: center;
-  --card-bg: var(--quartz);
+  --card-background-color: var(--quartz);
   --card-border: solid medium;
+  --card-border-radius: 10px;
   --card-box-shadow: 3px 5px 10px 5px var(--black);
   --card-color: var(--black);
   --card-flex-direction: column;
@@ -476,41 +477,40 @@ pre {
   --card-overflow: hidden;
   --card-padding: 10px;
   --card-position: relative;
-  --card-radius: 10px;
   --card-width: 400px;
   --card-hover-transform: rotate(1deg);
   --card-hover-transition: transform 200ms;
-  --card-selection-bg: var(--black);
+  --card-selection-background-color: var(--black);
   --card-selection-color: var(--jade);
-  --card-child-bg: var(--white);
+  --card-child-background-color: var(--white);
   --card-child-border: solid thin;
+  --card-child-border-radius: 20px;
   --card-child-font-size: 2rem;
   --card-child-margin: 10px;
   --card-child-max-width: calc(var(--card-width) * 0.9);
   --card-child-padding: 10px 20px;
-  --card-child-radius: 20px;
   --card-child-text-align: justify;
   --card-title-box-shadow: inset 0 0 5px 2px;
   --card-title-font-size: 3rem;
   --card-title-text-shadow: 2px 2px 5px;
   --card-btn-text-align: center;
   --card-btn-width: calc(var(--card-child-max-width) * 0.5);
-  --card-black-bg: var(--obsidian);
+  --card-black-background-color: var(--obsidian);
   --card-black-title-box-shadow: var(--card-title-box-shadow) var(--black);
   --card-black-title-text-shadow: var(--card-title-text-shadow) var(--black);
-  --card-blue-bg: var(--sapphire);
+  --card-blue-background-color: var(--sapphire);
   --card-blue-title-box-shadow: var(--card-title-box-shadow) var(--sky);
   --card-blue-title-text-shadow: var(--card-title-text-shadow) var(--blue);
-  --card-green-bg: var(--emerald);
+  --card-green-background-color: var(--emerald);
   --card-green-title-box-shadow: var(--card-title-box-shadow) var(--jade);
   --card-green-title-text-shadow: var(--card-title-text-shadow) var(--green);
-  --card-purple-bg: var(--amethyst);
+  --card-purple-background-color: var(--amethyst);
   --card-purple-title-box-shadow: var(--card-title-box-shadow) var(--violet);
   --card-purple-title-text-shadow: var(--card-title-text-shadow) var(--purple);
-  --card-red-bg: var(--ruby);
+  --card-red-background-color: var(--ruby);
   --card-red-title-box-shadow: var(--card-title-box-shadow) var(--tomato);
   --card-red-title-text-shadow: var(--card-title-text-shadow) var(--red);
-  --card-yellow-bg: var(--citrine);
+  --card-yellow-background-color: var(--citrine);
   --card-yellow-title-box-shadow: var(--card-title-box-shadow) var(--khaki);
   --card-yellow-title-text-shadow: var(--card-title-text-shadow) var(--yellow);
 }
@@ -2952,40 +2952,29 @@ pre > *::selection {
 }
 
 
-/******************** BTN ********************/
+/********** BTN **********/
 
 /*
-1. BTN
-  1.1 Btn & Button
-2. BTN STATES
-  2.1 Buttons Hover, Focus & Active
-  2.2 Buttons Active & Checked
-3. BTN ICON
-  3.1 Buttons Icon
-4. BTN COLORS
-  4.1 Buttons Main Colors
-  4.2 Buttons Pale Colors
-  4.3 Buttons Brand Colors
-  4.4 Buttons Transparent Colors
-5. BTN SIZES
-  5.1 Buttons Sizes
-6. BTN SHAPES
-  6.1 Buttons Shapes
+1 - Btn
+2 - Btn Hover
+3 - Check Button
+4 - Btn Icon
+5 - Btn Main Colors
+6 - Btn Pale Colors
+7 - Btn Brand Colors
+8 - Btn Brand Colors Hover
+9 - Btn Transparent Colors
+10 - Btn Size
+11 - Btn Shape
 */
 
-/********** 1. BTN **********/
-
-/*
-1.1 Btn & Button
-*/
-
-/***** Btn & Button *****/
+/***** 1 - Btn *****/
 [class*="btn"],
 [class*="button"] {
   display: inline-block;
   margin: var(--btn-margin);
   border: var(--btn-border);
-  border-radius: var(--btn-radius);
+  border-radius: var(--btn-border-radius);
   padding: var(--btn-padding);
   font-size: var(--btn-font-size);
   text-align: var(--btn-text-align);
@@ -2993,14 +2982,7 @@ pre > *::selection {
   color: var(--btn-color);
 }
 
-/********** 2. BTN STATES **********/
-
-/*
-2.1 Buttons Hover, Focus & Active
-2.2 Buttons Active & Checked
-*/
-
-/***** 2.1 Buttons Hover, Focus & Active *****/
+/***** 2 - Btn Hover *****/
 [class*="btn"]:hover,
 [class*="button"]:hover,
 [class*="btn"]:focus,
@@ -3009,46 +2991,31 @@ pre > *::selection {
 [class*="button"]:active,
 [class*="button-check"]:checked + [class*="button"] {
   border: var(--btn-hover-border);
-  border-radius: var(--btn-hover-radius);
-  -webkit-box-shadow: var(--btn-hover-shabox);
-          box-shadow: var(--btn-hover-shabox);
+  border-radius: var(--btn-hover-border-radius);
+  -webkit-box-shadow: var(--btn-hover-box-shadow);
+          box-shadow: var(--btn-hover-box-shadow);
   background-color: var(--btn-hover-background-color);
   color: var(--btn-hover-color);
   -webkit-transition: var(--btn-hover-transition);
   transition: var(--btn-hover-transition);
-  -webkit-animation: var(--btn-hover-anima);
-          animation: var(--btn-hover-anima);
+  -webkit-animation: var(--btn-hover-animation);
+          animation: var(--btn-hover-animation);
 }
 
-/***** 2.2 Buttons Active & Checked *****/
+/***** 3 - Check Button *****/
 [class*="btn"]:active,
 [class*="check"]:checked + [class*="button"] {
   -webkit-transform: var(--check-button-transform);
           transform: var(--check-button-transform);
 }
 
-/********** 3. BTN ICON **********/
-
-/*
-3.1 Buttons Icons
-*/
-
-/***** 3.1 Buttons Icons *****/
+/***** 4 - Btn Icon *****/
 [class*="btn"] > i,
 [class*="button"] > i {
   display: block;
 }
 
-/********** 4. BTN COLORS **********/
-
-/*
-4.1 Buttons Main Colors
-4.2 Buttons Pale Colors
-4.3 Buttons Brand Colors
-4.4 Buttons Transparent Colors
-*/
-
-/***** 4.1 Buttons Main Colors *****/
+/***** 5 - Btn Main Colors *****/
 [class*="btn-black"],
 [class*="button-black"],
 [class*="btn-white"]:hover,
@@ -3058,9 +3025,9 @@ pre > *::selection {
 [class*="btn-white"]:active,
 [class*="button-white"]:active,
 [class*="button-white-check"]:checked + [class*="button-white"] {
-  border-color: var(--btn-border-black);
+  border-color: var(--btn-black-border-color);
   background-color: var(--black);
-  color: var(--btn-color-black);
+  color: var(--btn-black-color);
 }
 
 [class*="btn-blue"],
@@ -3072,9 +3039,9 @@ pre > *::selection {
 [class*="btn-sky"]:active,
 [class*="button-sky"]:active,
 [class*="button-sky-check"]:checked + [class*="button-sky"] {
-  border-color: var(--btn-border-blue);
+  border-color: var(--btn-blue-border-color);
   background-color: var(--blue);
-  color: var(--btn-color-blue);
+  color: var(--btn-blue-color);
 }
 
 [class*="btn-gray"],
@@ -3086,9 +3053,9 @@ pre > *::selection {
 [class*="btn-silver"]:active,
 [class*="button-silver"]:active,
 [class*="button-silver-check"]:checked + [class*="button-silver"] {
-  border-color: var(--btn-border-gray);
+  border-color: var(--btn-gray-border-color);
   background-color: var(--gray);
-  color: var(--btn-color-gray);
+  color: var(--btn-gray-color);
 }
 
 [class*="btn-green"],
@@ -3100,9 +3067,9 @@ pre > *::selection {
 [class*="btn-jade"]:active,
 [class*="button-jade"]:active,
 [class*="button-jade-check"]:checked + [class*="button-jade"] {
-  border-color: var(--btn-border-green);
+  border-color: var(--btn-green-border-color);
   background-color: var(--green);
-  color: var(--btn-color-green);
+  color: var(--btn-green-color);
 }
 
 [class*="btn-maroon"],
@@ -3114,9 +3081,9 @@ pre > *::selection {
 [class*="btn-choco"]:active,
 [class*="button-choco"]:active,
 [class*="button-blue-choco"]:checked + [class*="button-choco"] {
-  border-color: var(--btn-border-maroon);
+  border-color: var(--btn-maroon-border-color);
   background-color: var(--maroon);
-  color: var(--btn-color-maroon);
+  color: var(--btn-maroon-color);
 }
 
 [class*="btn-orange"],
@@ -3128,9 +3095,9 @@ pre > *::selection {
 [class*="btn-salmon"]:active,
 [class*="button-salmon"]:active,
 [class*="button-salmon-check"]:checked + [class*="button-salmon"] {
-  border-color: var(--btn-border-orange);
+  border-color: var(--btn-orange-border-color);
   background-color: var(--orange);
-  color: var(--btn-color-orange);
+  color: var(--btn-orange-color);
 }
 
 [class*="btn-purple"],
@@ -3142,9 +3109,9 @@ pre > *::selection {
 [class*="btn-violet"]:active,
 [class*="button-violet"]:active,
 [class*="button-violet-check"]:checked + [class*="button-violet"] {
-  border-color: var(--btn-border-purple);
+  border-color: var(--btn-purple-border-color);
   background-color: var(--purple);
-  color: var(--btn-color-purple);
+  color: var(--btn-purple-color);
 }
 
 [class*="btn-red"],
@@ -3156,9 +3123,9 @@ pre > *::selection {
 [class*="btn-tomato"]:active,
 [class*="button-tomato"]:active,
 [class*="button-tomato-check"]:checked + [class*="button-tomato"] {
-  border-color: var(--btn-border-red);
+  border-color: var(--btn-red-border-color);
   background-color: var(--red);
-  color: var(--btn-color-red);
+  color: var(--btn-red-color);
 }
 
 [class*="btn-yellow"],
@@ -3170,12 +3137,12 @@ pre > *::selection {
 [class*="btn-khaki"]:active,
 [class*="button-khaki"]:active,
 [class*="button-khaki-check"]:checked + [class*="button-khaki"] {
-  border-color: var(--btn-border-yellow);
+  border-color: var(--btn-yellow-border-color);
   background-color: var(--yellow);
-  color: var(--btn-color-yellow);
+  color: var(--btn-yellow-color);
 }
 
-/***** 4.2 Buttons Pale Colors *****/
+/***** 6 - Btn Pale Colors *****/
 [class*="btn-choco"],
 [class*="button-choco"],
 [class*="btn-maroon"]:hover,
@@ -3185,9 +3152,9 @@ pre > *::selection {
 [class*="btn-maroon"]:active,
 [class*="button-maroon"]:active,
 [class*="button-maroon-check"]:checked + [class*="button-maroon"] {
-  border-color: var(--btn-border-choco);
+  border-color: var(--btn-choco-border-color);
   background-color: var(--choco);
-  color: var(--btn-color-choco);
+  color: var(--btn-choco-color);
 }
 
 [class*="btn-jade"],
@@ -3199,9 +3166,9 @@ pre > *::selection {
 [class*="btn-green"]:active,
 [class*="button-green"]:active,
 [class*="button-green-check"]:checked + [class*="button-green"] {
-  border-color: var(--btn-border-jade);
+  border-color: var(--btn-jade-border-color);
   background-color: var(--jade);
-  color: var(--btn-color-jade);
+  color: var(--btn-jade-color);
 }
 
 [class*="btn-khaki"],
@@ -3213,9 +3180,9 @@ pre > *::selection {
 [class*="btn-yellow"]:active,
 [class*="button-yellow"]:active,
 [class*="button-yellow-check"]:checked + [class*="button-yellow"] {
-  border-color: var(--btn-border-khaki);
+  border-color: var(--btn-khaki-border-color);
   background-color: var(--khaki);
-  color: var(--btn-color-khaki);
+  color: var(--btn-khaki-color);
 }
 
 [class*="btn-salmon"],
@@ -3227,9 +3194,9 @@ pre > *::selection {
 [class*="btn-orange"]:active,
 [class*="button-orange"]:active,
 [class*="button-orange-check"]:checked + [class*="button-orange"] {
-  border-color: var(--btn-border-salmon);
+  border-color: var(--btn-salmon-border-color);
   background-color: var(--salmon);
-  color: var(--btn-color-salmon);
+  color: var(--btn-salmon-color);
 }
 
 [class*="btn-silver"],
@@ -3241,9 +3208,9 @@ pre > *::selection {
 [class*="btn-gray"]:active,
 [class*="button-gray"]:active,
 [class*="button-gray-check"]:checked + [class*="button-gray"] {
-  border-color: var(--btn-border-silver);
+  border-color: var(--btn-silver-border-color);
   background-color: var(--silver);
-  color: var(--btn-color-silver);
+  color: var(--btn-silver-color);
 }
 
 [class*="btn-sky"],
@@ -3255,9 +3222,9 @@ pre > *::selection {
 [class*="btn-blue"]:active,
 [class*="button-blue"]:active,
 [class*="button-blue-check"]:checked + [class*="button-blue"] {
-  border-color: var(--btn-border-sky);
+  border-color: var(--btn-sky-border-color);
   background-color: var(--sky);
-  color: var(--btn-color-sky);
+  color: var(--btn-sky-color);
 }
 
 [class*="btn-tomato"],
@@ -3269,9 +3236,9 @@ pre > *::selection {
 [class*="btn-red"]:active,
 [class*="button-red"]:active,
 [class*="button-red-check"]:checked + [class*="button-red"] {
-  border-color: var(--btn-border-tomato);
+  border-color: var(--btn-tomato-border-color);
   background-color: var(--tomato);
-  color: var(--btn-color-tomato);
+  color: var(--btn-tomato-color);
 }
 
 [class*="btn-violet"],
@@ -3283,9 +3250,9 @@ pre > *::selection {
 [class*="btn-purple"]:active,
 [class*="button-purple"]:active,
 [class*="button-purple-check"]:checked + [class*="button-purple"] {
-  border-color: var(--btn-border-violet);
+  border-color: var(--btn-violet-border-color);
   background-color: var(--violet);
-  color: var(--btn-color-violet);
+  color: var(--btn-violet-color);
 }
 
 [class*="btn-white"],
@@ -3297,12 +3264,12 @@ pre > *::selection {
 [class*="btn-black"]:active,
 [class*="button-black"]:active,
 [class*="button-black-check"]:checked + [class*="button-black"] {
-  border-color: var(--btn-border-white);
+  border-color: var(--btn-white-border-color);
   background-color: var(--white);
-  color: var(--btn-color-white);
+  color: var(--btn-white-color);
 }
 
-/***** 4.3 Buttons Brand Colors *****/
+/***** 7 - Btn Brand Colors *****/
 [class*="btn-fb"],
 [class*="button-fb"],
 [class*="btn-github"],
@@ -3356,6 +3323,7 @@ pre > *::selection {
   background-color: var(--twitter);
 }
 
+/***** 8 - Btn Brand Colors Hover *****/
 [class*="btn-fb"]:hover,
 [class*="button-fb"]:hover,
 [class*="btn-fb"]:focus,
@@ -3485,7 +3453,7 @@ pre > *::selection {
   color: var(--twitter);
 }
 
-/***** 4.4 Buttons Transparent Colors *****/
+/***** 9 - Btn Transparent Colors *****/
 [class*="btn-amethyst"],
 [class*="button-amethyst"] {
   border-color: var(--purple);
@@ -3633,59 +3601,47 @@ pre > *::selection {
           box-shadow: inset 0 0 5px 5px var(--sapphire);
 }
 
-/********** 5. BTN SIZES **********/
-
-/*
-5.1 Buttons Sizes
-*/
-
-/***** 5.1 Buttons Sizes *****/
+/***** 10 - Btn Size *****/
 [class*="btn-xs"],
 [class*="button-xs"] {
-  border-width: var(--btn-border-width-xs);
-  padding: var(--btn-padding-xs);
-  font-size: var(--btn-font-size-xs);
+  border-width: var(--btn-xs-border-width);
+  padding: var(--btn-xs-padding);
+  font-size: var(--btn-xs-font-size);
 }
 
 [class*="btn-sm"],
 [class*="button-sm"] {
-  border-width: var(--btn-border-width-sm);
-  padding: var(--btn-padding-sm);
-  font-size: var(--btn-font-size-sm);
+  border-width: var(--btn-sm-border-width);
+  padding: var(--btn-sm-padding);
+  font-size: var(--btn-sm-font-size);
 }
 
 [class*="btn-md"],
 [class*="button-md"] {
-  border-width: var(--btn-border-width-md);
-  padding: var(--btn-padding-md);
+  border-width: var(--btn-md-border-width);
+  padding: var(--btn-md-padding);
 }
 
 [class*="btn-lg"],
 [class*="button-lg"] {
-  border-width: var(--btn-border-width-lg);
-  padding: var(--btn-padding-lg);
-  font-size: var(--btn-font-size-lg);
+  border-width: var(--btn-lg-border-width);
+  padding: var(--btn-lg-padding);
+  font-size: var(--btn-lg-font-size);
 }
 
 [class*="btn-xl"],
 [class*="button-xl"] {
-  border-width: var(--btn-border-width-xl);
-  padding: var(--btn-padding-xl);
-  font-size: var(--btn-font-size-xl);
+  border-width: var(--btn-xl-border-width);
+  padding: var(--btn-xl-padding);
+  font-size: var(--btn-xl-font-size);
 }
 
-/********** 6. BTN SHAPES **********/
-
-/*
-6.1 Buttons Shapes
-*/
-
-/***** Buttons Shapes *****/
+/***** 11 - Btn Shape *****/
 [class*="btn-square"],
 [class*="button-square"] {
-  border-radius: var(--btn-radius-square);
-  min-width: var(--btn-sizes-square);
-  min-height: var(--btn-sizes-square);
+  border-radius: var(--btn-square-border-radius);
+  min-width: var(--btn-square-sizes);
+  min-height: var(--btn-square-sizes);
 }
 
 [class*="btn-square"]:hover,
@@ -3694,14 +3650,14 @@ pre > *::selection {
 [class*="button-square"]:focus,
 [class*="btn-square"]:active,
 [class*="button-square"]:active {
-  border-radius: var(--btn-radius-square);
+  border-radius: var(--btn-square-border-radius);
 }
 
 [class*="btn-round"],
 [class*="button-round"] {
-  border-radius: var(--btn-radius-round);
-  min-width: var(--btn-sizes-round);
-  min-height: var(--btn-sizes-round);
+  border-radius: var(--btn-round-border-radius);
+  min-width: var(--btn-round-sizes);
+  min-height: var(--btn-round-sizes);
 }
 
 [class*="btn-round"]:hover,
@@ -3710,14 +3666,14 @@ pre > *::selection {
 [class*="button-round"]:focus,
 [class*="btn-round"]:active,
 [class*="button-round"]:active {
-  border-radius: var(--btn-radius-round);
+  border-radius: var(--btn-round-border-radius);
 }
 
 [class*="btn-circle"],
 [class*="button-circle"] {
-  border-radius: var(--btn-radius-circle);
-  min-width: var(--btn-sizes-circle);
-  min-height: var(--btn-sizes-circle);
+  border-radius: var(--btn-circle-border-radius);
+  min-width: var(--btn-circle-sizes);
+  min-height: var(--btn-circle-sizes);
 }
 
 [class*="btn-circle"]:hover,
@@ -3726,30 +3682,27 @@ pre > *::selection {
 [class*="button-circle"]:focus,
 [class*="btn-circle"]:active,
 [class*="button-circle"]:active {
-  border-radius: var(--btn-radius-circle);
+  border-radius: var(--btn-circle-border-radius);
 }
 
-
-/******************** CARD ********************/
-
-/*
-1. CARD
-  1.1 Card
-2. CARD CHILD
-  2.1 Card Child
-  2.2 Card Titles
-  2.3 Card Btn
-3. CARD COLORS
-  3.1 Card Colors
-*/
-
-/********** 1. CARD **********/
+/********** CARD **********/
 
 /*
-1.1 Card
+1 - Card
+2 - Card Hover
+3 - Card Child
+4 - Card Selection
+5 - Card Title
+6 - Card Btn
+7 - Card Black
+8 - Card Blue
+9 - Card Green
+10 - Card Purple
+11 - Card Red
+12 - Card Yellow
 */
 
-/***** 1.1 Card *****/
+/***** 1 - Card *****/
 [class*="card"] {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3765,15 +3718,16 @@ pre > *::selection {
   overflow: var(--card-overflow);
   margin: var(--card-margin);
   border: var(--card-border);
-  border-radius: var(--card-radius);
+  border-radius: var(--card-border-radius);
   padding: var(--card-padding);
   width: var(--card-width);
   -webkit-box-shadow: var(--card-box-shadow);
           box-shadow: var(--card-box-shadow);
-  background-color: var(--card-bg);
+  background-color: var(--card-background-color);
   color: var(--card-color);
 }
 
+/***** 2 - Card Hover *****/
 [class*="card"]:hover,
 [class*="card"]:focus,
 [class*="card"]:active {
@@ -3783,37 +3737,29 @@ pre > *::selection {
   transition: var(--card-hover-transition);
 }
 
-/********** 2. CARD CHILD **********/
-
-/*
-2.1 Card Child
-2.2 Card Titles
-2.3 Card Btn
-*/
-
-/***** 2.1 Card Child *****/
+/***** 3 - Card Child *****/
 [class*="card"] > * {
   margin: var(--card-child-margin);
   border: var(--card-child-border);
-  border-radius: var(--card-child-radius);
+  border-radius: var(--card-child-border-radius);
   padding: var(--card-child-padding);
   max-width: var(--card-child-max-width);
-  background-color: var(--card-child-bg);
+  background-color: var(--card-child-background-color);
   font-size: var(--card-child-font-size);
   text-align: var(--card-child-text-align);
 }
 
+/***** 4 - Card Selection *****/
 [class*="card"] > *::-moz-selection {
-  background-color: var(--card-selection-bg);
+  background-color: var(--card-selection-background-color);
   color: var(--card-selection-color);
 }
-
 [class*="card"] > *::selection {
-  background-color: var(--card-selection-bg);
+  background-color: var(--card-selection-background-color);
   color: var(--card-selection-color);
 }
 
-/***** 2.2 Card Titles *****/
+/***** 5 - Card Title *****/
 [class*="card"] > h2,
 [class*="card"] > h3,
 [class*="card"] > h4,
@@ -3825,98 +3771,97 @@ pre > *::selection {
   text-shadow: var(--card-title-text-shadow);
 }
 
-/***** 2.3 Card Btn *****/
+/***** 6 - Card Btn *****/
 [class*="card"] > [class*="btn"] {
   width: var(--card-btn-width);
   text-align: var(--card-btn-text-align);
 }
 
-/********** 3. CARD COLORS **********/
-
-/*
-3.1 Card Colors
-*/
-
-/***** 3.1 Card Colors *****/
-[class*="card-black"] {
-  background-color: var(--card-black-bg);
+/***** 7 - Card Black *****/
+.card-black {
+  background-color: var(--card-black-background-color);
 }
 
-[class*="card-black"] > h2,
-[class*="card-black"] > h3,
-[class*="card-black"] > h4,
-[class*="card-black"] > h5,
-[class*="card-black"] > h6 {
+.card-black > h2,
+.card-black > h3,
+.card-black > h4,
+.card-black > h5,
+.card-black > h6 {
   -webkit-box-shadow: var(--card-black-title-box-shadow);
           box-shadow: var(--card-black-title-box-shadow);
   text-shadow: var(--card-black-title-text-shadow);
 }
 
-[class*="card-blue"] {
-  background-color: var(--card-blue-bg);
+/***** 8 - Card Blue *****/
+.card-blue {
+  background-color: var(--card-blue-background-color);
 }
 
-[class*="card-blue"] > h2,
-[class*="card-blue"] > h3,
-[class*="card-blue"] > h4,
-[class*="card-blue"] > h5,
-[class*="card-blue"] > h6 {
+.card-blue > h2,
+.card-blue > h3,
+.card-blue > h4,
+.card-blue > h5,
+.card-blue > h6 {
   -webkit-box-shadow: var(--card-blue-title-box-shadow);
           box-shadow: var(--card-blue-title-box-shadow);
   text-shadow: var(--card-blue-title-text-shadow);
 }
 
-[class*="card-green"] {
-  background-color: var(--card-green-bg);
+/***** 9 - Card Green *****/
+.card-green {
+  background-color: var(--card-green-background-color);
 }
 
-[class*="card-green"] > h2,
-[class*="card-green"] > h3,
-[class*="card-green"] > h4,
-[class*="card-green"] > h5,
-[class*="card-green"] > h6 {
+.card-green > h2,
+.card-green > h3,
+.card-green > h4,
+.card-green > h5,
+.card-green > h6 {
   -webkit-box-shadow: var(--card-green-title-box-shadow);
           box-shadow: var(--card-green-title-box-shadow);
   text-shadow: var(--card-green-title-text-shadow);
 }
 
-[class*="card-purple"] {
-  background-color: var(--card-purple-bg);
+/***** 10 - Card Purple *****/
+.card-purple {
+  background-color: var(--card-purple-background-color);
 }
 
-[class*="card-purple"] > h2,
-[class*="card-purple"] > h3,
-[class*="card-purple"] > h4,
-[class*="card-purple"] > h5,
-[class*="card-purple"] > h6 {
+.card-purple > h2,
+.card-purple > h3,
+.card-purple > h4,
+.card-purple > h5,
+.card-purple > h6 {
   -webkit-box-shadow: var(--card-purple-title-box-shadow);
           box-shadow: var(--card-purple-title-box-shadow);
   text-shadow: var(--card-purple-title-text-shadow);
 }
 
-[class*="card-red"] {
-  background-color: var(--card-red-bg);
+/***** 11 - Card Red *****/
+.card-red {
+  background-color: var(--card-red-background-color);
 }
 
-[class*="card-red"] > h2,
-[class*="card-red"] > h3,
-[class*="card-red"] > h4,
-[class*="card-red"] > h5,
-[class*="card-red"] > h6 {
+.card-red > h2,
+.card-red > h3,
+.card-red > h4,
+.card-red > h5,
+.card-red > h6 {
   -webkit-box-shadow: var(--card-red-title-box-shadow);
           box-shadow: var(--card-red-title-box-shadow);
   text-shadow: var(--card-red-title-text-shadow);
 }
 
-[class*="card-yellow"] {
-  background-color: var(--card-yellow-bg);
+/***** 12 - Card Yellow *****/
+.card-yellow {
+  background-color: var(--card-yellow-background-color);
 }
 
-[class*="card-yellow"] > h2,
-[class*="card-yellow"] > h3,
-[class*="card-yellow"] > h4,
-[class*="card-yellow"] > h5,
-[class*="card-yellow"] > h6 {
+.card-yellow > h2,
+.card-yellow > h3,
+.card-yellow > h4,
+.card-yellow > h5,
+.card-yellow > h6 {
   -webkit-box-shadow: var(--card-yellow-title-box-shadow);
           box-shadow: var(--card-yellow-title-box-shadow);
   text-shadow: var(--card-yellow-title-text-shadow);
@@ -4572,4 +4517,4 @@ font-size: var(--gallery-link-all-odd-font-size);
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 10th Aug 2019 @ 1:08:29 AM */
+ Updated: 10th Aug 2019 @ 2:02:18 AM */
