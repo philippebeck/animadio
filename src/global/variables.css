@@ -108,15 +108,15 @@ You can override any variable of Animadio you want in your custom stylesheet fil
 
 /***** 1.3 Init *****/
 body {
-  --global-font-family: sans-serif;
-  --global-line-height: 1.6;
-  --global-font-size: 1.8rem;
-  --global-background-color: none;
-  --global-scroll-behavior: smooth;
+  --body-font-family: sans-serif;
+  --body-line-height: 1.6;
+  --body-font-size: 1.8rem;
+  --body-background-color: none;
+  --body-scroll-behavior: smooth;
 }
 
 article {
-  --article-margin-bot: 20px;
+  --article-margin-bottom: 20px;
 }
 
 h1,
@@ -166,7 +166,7 @@ h6 {
 }
 
 a {
-  --link-deco: none;
+  --link-text-decoration: none;
   --link-outline: 0;
 }
 
@@ -195,11 +195,11 @@ label {
 }
 
 pre {
-  --pre-font-family: monospace;
-  --pre-overflow: scroll;
-  --pre-padding: 10px;
-  --pre-selection-background-color: var(--jade);
-  --pre-selection-color: var(--black);
+  --code-font-family: monospace;
+  --code-overflow: scroll;
+  --code-padding: 10px;
+  --code-selection-background-color: var(--jade);
+  --code-selection-color: var(--black);
 }
 
 /***** 1.4 Margin *****/
