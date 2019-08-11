@@ -1,26 +1,11 @@
-/******************** SHATEX ********************/
+/********** SHATEX **********/
 
 /*
-1. SHADOW TEXT
-  1.1 Shatex SM
-  1.2 Shatex MD
-  1.3 Shatex LG
-2. SHADOW TEXT BLUR
-  2.1 Shatex Blur All
-  2.2 Shatex Blur SM
-  2.3 Shatex Blur MD
-  2.4 Shatex Blur LG
+1 - Text Shadow
+2 - Text Shadow Blur
 */
 
-/********** 1. SHADOW TEXT **********/
-
-/*
-1.1 Shatex SM
-1.2 Shatex MD
-1.3 Shatex LG
-*/
-
-/***** 1.1 Shatex SM *****/
+/***** 1 - Text Shadow *****/
 [class*="shatex-sm-"][class*="-base"],
 [class*="shatex-sm-"][class*="-global"] > *,
 *:hover > [class*="shatex-sm-"][class*="-into"],
@@ -41,10 +26,9 @@
 [class*="shatex-sm-"][class*="-radio4"]:checked ~ [class*="shatex-sm-"][class*="-relay"] [class*="shatex-sm-"][class*="-target4"],
 [class*="shatex-sm-"][class*="-radio5"]:checked ~ [class*="shatex-sm-"][class*="-relay"] [class*="shatex-sm-"][class*="-target5"],
 [class*="shatex-sm-"][class*="-check"]:checked ~ [class*="shatex-sm-"][class*="-hub"] [class*="shatex-sm-"][class*="-goal"] {
-  text-shadow: var(--shatex-sm);
+  text-shadow: var(--text-shadow-sm);
 }
 
-/***** 1.2 Shatex MD *****/
 [class*="shatex-md-"][class*="-base"],
 [class*="shatex-md-"][class*="-global"] > *,
 *:hover > [class*="shatex-md-"][class*="-into"],
@@ -65,10 +49,9 @@
 [class*="shatex-md-"][class*="-radio4"]:checked ~ [class*="shatex-md-"][class*="-relay"] [class*="shatex-md-"][class*="-target4"],
 [class*="shatex-md-"][class*="-radio5"]:checked ~ [class*="shatex-md-"][class*="-relay"] [class*="shatex-md-"][class*="-target5"],
 [class*="shatex-md-"][class*="-check"]:checked ~ [class*="shatex-md-"][class*="-hub"] [class*="shatex-md-"][class*="-goal"] {
-  text-shadow: var(--shatex-md);
+  text-shadow: var(--text-shadow-md);
 }
 
-/***** 1.3 Shatex LG *****/
 [class*="shatex-lg-"][class*="-base"],
 [class*="shatex-lg-"][class*="-global"] > *,
 *:hover > [class*="shatex-lg-"][class*="-into"],
@@ -89,19 +72,10 @@
 [class*="shatex-lg-"][class*="-radio4"]:checked ~ [class*="shatex-lg-"][class*="-relay"] [class*="shatex-lg-"][class*="-target4"],
 [class*="shatex-lg-"][class*="-radio5"]:checked ~ [class*="shatex-lg-"][class*="-relay"] [class*="shatex-lg-"][class*="-target5"],
 [class*="shatex-lg-"][class*="-check"]:checked ~ [class*="shatex-lg-"][class*="-hub"] [class*="shatex-lg-"][class*="-goal"] {
-  text-shadow: var(--shatex-lg);
+  text-shadow: var(--text-shadow-lg);
 }
 
-/********** 2. SHADOW TEXT BLUR **********/
-
-/*
-2.1 Shatex Blur All
-2.2 Shatex Blur SM
-2.3 Shatex Blur MD
-2.4 Shatex Blur LG
-*/
-
-/***** 2.1 Shatex Blur All *****/
+/***** 2 - Text Shadow Blur *****/
 [class*="shatex-blur-all-"][class*="-base"],
 [class*="shatex-blur-all-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-all-"][class*="-into"],
@@ -122,10 +96,9 @@
 [class*="shatex-blur-all-"][class*="-radio4"]:checked ~ [class*="shatex-blur-all-"][class*="-relay"] [class*="shatex-blur-all-"][class*="-target4"],
 [class*="shatex-blur-all-"][class*="-radio5"]:checked ~ [class*="shatex-blur-all-"][class*="-relay"] [class*="shatex-blur-all-"][class*="-target5"],
 [class*="shatex-blur-all-"][class*="-check"]:checked ~ [class*="shatex-blur-all-"][class*="-hub"] [class*="shatex-blur-all-"][class*="-goal"] {
-  text-shadow: var(--shatex-blur-all);
+  text-shadow: var(--text-shadow-blur-all);
 }
 
-/***** 2.2 Shatex Blur SM *****/
 [class*="shatex-blur-sm-"][class*="-base"],
 [class*="shatex-blur-sm-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-sm-"][class*="-into"],
@@ -146,10 +119,9 @@
 [class*="shatex-blur-sm-"][class*="-radio4"]:checked ~ [class*="shatex-blur-sm-"][class*="-relay"] [class*="shatex-blur-sm-"][class*="-target4"],
 [class*="shatex-blur-sm-"][class*="-radio5"]:checked ~ [class*="shatex-blur-sm-"][class*="-relay"] [class*="shatex-blur-sm-"][class*="-target5"],
 [class*="shatex-blur-sm-"][class*="-check"]:checked ~ [class*="shatex-blur-sm-"][class*="-hub"] [class*="shatex-blur-sm-"][class*="-goal"] {
-  text-shadow: var(--shatex-blur-sm);
+  text-shadow: var(--text-shadow-blur-sm);
 }
 
-/***** 2.3 Shatex Blur MD *****/
 [class*="shatex-blur-md-"][class*="-base"],
 [class*="shatex-blur-md-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-md-"][class*="-into"],
@@ -170,10 +142,9 @@
 [class*="shatex-blur-md-"][class*="-radio4"]:checked ~ [class*="shatex-blur-md-"][class*="-relay"] [class*="shatex-blur-md-"][class*="-target4"],
 [class*="shatex-blur-md-"][class*="-radio5"]:checked ~ [class*="shatex-blur-md-"][class*="-relay"] [class*="shatex-blur-md-"][class*="-target5"],
 [class*="shatex-blur-md-"][class*="-check"]:checked ~ [class*="shatex-blur-md-"][class*="-hub"] [class*="shatex-blur-md-"][class*="-goal"] {
-  text-shadow: var(--shatex-blur-md);
+  text-shadow: var(--text-shadow-blur-md);
 }
 
-/***** 2.4 Shatex Blur LG *****/
 [class*="shatex-blur-lg-"][class*="-base"],
 [class*="shatex-blur-lg-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-lg-"][class*="-into"],
@@ -194,6 +165,5 @@
 [class*="shatex-blur-lg-"][class*="-radio4"]:checked ~ [class*="shatex-blur-lg-"][class*="-relay"] [class*="shatex-blur-lg-"][class*="-target4"],
 [class*="shatex-blur-lg-"][class*="-radio5"]:checked ~ [class*="shatex-blur-lg-"][class*="-relay"] [class*="shatex-blur-lg-"][class*="-target5"],
 [class*="shatex-blur-lg-"][class*="-check"]:checked ~ [class*="shatex-blur-lg-"][class*="-hub"] [class*="shatex-blur-lg-"][class*="-goal"] {
-  text-shadow: var(--shatex-blur-lg);
+  text-shadow: var(--text-shadow-blur-lg);
 }
-
