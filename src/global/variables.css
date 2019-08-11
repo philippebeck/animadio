@@ -884,26 +884,26 @@ pre {
 
 /***** 4.1 Anima *****/
 [class*="anima-"] {
-  --anima-delay: 0;
-  --anima-direction: normal;
-  --anima-duration: 2s;
-  --anima-fill-mode: none;
-  --anima-timing-function: linear;
-  --anima-iteration-count: 1;
-  --anima-name: scale;
-  --anima-duration-xs: 1s;
-  --anima-duration-sm: 2s;
-  --anima-duration-md: 5s;
-  --anima-duration-lg: 10s;
-  --anima-duration-xl: 60s;
-  --anima-timing-function-ease: ease-in-out;
-  --anima-timing-function-steps: 60, start;
-  --anima-timing-function-bezier: 1, 5, 1, -5;
-  --anima-iteration-count-few: 2;
-  --anima-iteration-count-many: 5;
-  --anima-delay-small: 1s;
-  --anima-delay-medium: 2s;
-  --anima-delay-large: 3s;
+  --animation-delay: 0;
+  --animation-direction: normal;
+  --animation-duration: 2s;
+  --animation-fill-mode: none;
+  --animation-timing-function: linear;
+  --animation-iteration-count: 1;
+  --animation-name: scale;
+  --animation-duration-xs: 1s;
+  --animation-duration-sm: 2s;
+  --animation-duration-md: 5s;
+  --animation-duration-lg: 10s;
+  --animation-duration-xl: 60s;
+  --animation-timing-function-ease: ease-in-out;
+  --animation-timing-function-steps: 60, start;
+  --animation-timing-function-bezier: 1, 5, 1, -5;
+  --animation-iteration-count-few: 2;
+  --animation-iteration-count-many: 5;
+  --animation-delay-small: 1s;
+  --animation-delay-medium: 2s;
+  --animation-delay-large: 3s;
   --transform-origin-near: 50px 50px;
   --transform-origin-far: top right 50px;
 }
