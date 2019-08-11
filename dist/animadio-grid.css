@@ -1,11 +1,11 @@
-/*! animadio v0.5.8 | https://animadio.org | MIT License */
+/*! animadio v0.5.9 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
 /*
 You can override any variable of Animadio you want in your custom stylesheet file to cutomize the tag & class properties !
 
-1. GLOBAL VARIABLES
+1. GLOBAL
   1.1 Colors
   1.2 Keyframes
   1.3 Init
@@ -13,12 +13,12 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   1.5 Padding
   1.6 Height
   1.7 Width
-2. GRID VARIABLES
+2. GRID
   2.1 Grid
   2.2 Flex
   2.3 Align
   2.4 Justify
-3. ELEMENTS VARIABLES
+3. ELEMENTS
   3.1 Btn
   3.2 Card
   3.3 Foot
@@ -28,7 +28,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   3.7 Navbar
   3.8 Slider
   3.9 Table
-4. STATES VARIABLES
+4. STATES
   4.1 Anima
   4.2 Bord
   4.3 Deco
@@ -620,7 +620,7 @@ pre {
   --gallery-figcaption-line-height: 1;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-width: 100%;
-  --gallery-figure-hover-figcaption-anima: translateY-opac 2s;
+  --gallery-figure-hover-figcaption-animation: translateY-opac 2s;
   --gallery-figure-hover-figcaption-bottom: 0;
   --gallery-figcaption-fa-background-color: var(--blue);
   --gallery-figcaption-fa-border: 2px solid var(--white);
@@ -886,26 +886,26 @@ pre {
 
 /***** 4.1 Anima *****/
 [class*="anima-"] {
-  --anima-delay: 0;
-  --anima-direction: normal;
-  --anima-duration: 2s;
-  --anima-fill-mode: none;
-  --anima-timing-function: linear;
-  --anima-iteration-count: 1;
-  --anima-name: scale;
-  --anima-duration-xs: 1s;
-  --anima-duration-sm: 2s;
-  --anima-duration-md: 5s;
-  --anima-duration-lg: 10s;
-  --anima-duration-xl: 60s;
-  --anima-timing-function-ease: ease-in-out;
-  --anima-timing-function-steps: 60, start;
-  --anima-timing-function-bezier: 1, 5, 1, -5;
-  --anima-iteration-count-few: 2;
-  --anima-iteration-count-many: 5;
-  --anima-delay-small: 1s;
-  --anima-delay-medium: 2s;
-  --anima-delay-large: 3s;
+  --animation-delay: 0;
+  --animation-direction: normal;
+  --animation-duration: 2s;
+  --animation-fill-mode: none;
+  --animation-timing-function: linear;
+  --animation-iteration-count: 1;
+  --animation-name: scale;
+  --animation-duration-xs: 1s;
+  --animation-duration-sm: 2s;
+  --animation-duration-md: 5s;
+  --animation-duration-lg: 10s;
+  --animation-duration-xl: 60s;
+  --animation-timing-function-ease: ease-in-out;
+  --animation-timing-function-steps: 60, start;
+  --animation-timing-function-bezier: 1, 5, 1, -5;
+  --animation-iteration-count-few: 2;
+  --animation-iteration-count-many: 5;
+  --animation-delay-small: 1s;
+  --animation-delay-medium: 2s;
+  --animation-delay-large: 3s;
   --transform-origin-near: 50px 50px;
   --transform-origin-far: top right 50px;
 }
@@ -926,35 +926,35 @@ pre {
 
 /***** 4.3 Deco *****/
 [class*="deco-"] {
-  --deco-line: underline;
-  --deco-style: solid;
-  --deco-color: var(--black);
+  --text-decoration-line: underline;
+  --text-decoration-style: solid;
+  --text-decoration-color: var(--black);
 }
 
 /***** 4.4 Shabox *****/
 [class*="shabox-"] {
-  --shabox-sm: 1px 1px;
-  --shabox-md: 2px 2px;
-  --shabox-lg: 5px 5px;
-  --shabox-blur-all: 0 0 2px;
-  --shabox-blur-sm: 1px 1px 1px;
-  --shabox-blur-md: 2px 2px 2px;
-  --shabox-blur-lg: 5px 5px 5px;
-  --shabox-spread-all: 0 0 2px 2px;
-  --shabox-spread-sm: 1px 1px 1px 1px;
-  --shabox-spread-md: 2px 2px 2px 2px;
-  --shabox-spread-lg: 5px 5px 5px 5px;
+  --box-shadow-sm: 1px 1px;
+  --box-shadow-md: 2px 2px;
+  --box-shadow-lg: 5px 5px;
+  --box-shadow-blur-all: 0 0 2px;
+  --box-shadow-blur-sm: 1px 1px 1px;
+  --box-shadow-blur-md: 2px 2px 2px;
+  --box-shadow-blur-lg: 5px 5px 5px;
+  --box-shadow-spread-all: 0 0 2px 2px;
+  --box-shadow-spread-sm: 1px 1px 1px 1px;
+  --box-shadow-spread-md: 2px 2px 2px 2px;
+  --box-shadow-spread-lg: 5px 5px 5px 5px;
 }
 
 /***** 4.5 Shatex *****/
 [class*="shatex-"] {
-  --shatex-sm: 1px 1px;
-  --shatex-md: 2px 2px;
-  --shatex-lg: 5px 5px;
-  --shatex-blur-all: 0 0 2px;
-  --shatex-blur-sm: 1px 1px 1px;
-  --shatex-blur-md: 2px 2px 2px;
-  --shatex-blur-lg: 5px 5px 5px;
+  --text-shadow-sm: 1px 1px;
+  --text-shadow-md: 2px 2px;
+  --text-shadow-lg: 5px 5px;
+  --text-shadow-blur-all: 0 0 2px;
+  --text-shadow-blur-sm: 1px 1px 1px;
+  --text-shadow-blur-md: 2px 2px 2px;
+  --text-shadow-blur-lg: 5px 5px 5px;
 }
 
 /********** KEYFRAMES **********/
@@ -4256,4 +4256,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 11th Aug 2019 @ 2:59:54 AM */
+ Updated: 11th Aug 2019 @ 9:30:07 PM */
