@@ -924,9 +924,9 @@ pre {
 
 /***** 4.3 Deco *****/
 [class*="deco-"] {
-  --deco-line: underline;
-  --deco-style: solid;
-  --deco-color: var(--black);
+  --text-decoration-line: underline;
+  --text-decoration-style: solid;
+  --text-decoration-color: var(--black);
 }
 
 /***** 4.4 Shabox *****/
