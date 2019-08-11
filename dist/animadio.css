@@ -1,4 +1,4 @@
-/*! animadio v0.5.7 | https://animadio.org | MIT License */
+/*! animadio v0.5.8 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -2220,35 +2220,15 @@ pre > *::selection {
   cursor: pointer;
 }
 
-/******************** GRID ********************/
+/********** GRID **********/
 
 /*
-1. GRID
-  1. Grid & Fluid
-2. GRID XS
-  2.1 Grid & Fluid XS
-  2.2 Grid Gap XS
-3. GRID SM
-  3.1 Grid & Fluid SM
-  3.2 Grid Gap SM
-4. GRID MD
-  4.1 Grid & Fluid MD
-  4.2 Grid Gap MD
-5. GRID LG
-  5.1 Grid & Fluid LG
-  5.2 Grid Gap LG
-6. GRID XL
-  6.1 Grid & Fluid XL
-  6.2 Grid Gap XL
+1 - Grid & Fluid Global
+2 - Grid & Fluid
+3 - Grid Gap
 */
 
-/********** 1. GRID **********/
-
-/*
-1.1 Grid & Fluid
-*/
-
-/***** Grid & Fluid *****/
+/***** 1 - Grid & Fluid Global *****/
 [class*="grid"],
 [class*="fluid"] {
   display: grid;
@@ -2263,14 +2243,7 @@ pre > *::selection {
   max-width: 100%;
 }
 
-/********** 2. GRID XS **********/
-
-/*
-2.1 Grid & Fluid XS
-2.2 Grid Gap XS
-*/
-
-/***** 2.1 Grid & Fluid XS *****/
+/***** 2 - Grid & Fluid *****/
 [class*="grid-"][class*="-2xs"],
 [class*="fluid-"][class*="-2xs"] {
   grid-template: auto/repeat(2, auto);
@@ -2326,27 +2299,6 @@ pre > *::selection {
   grid-template: auto/repeat(12, auto);
 }
 
-/***** 2.2 Grid Gap XS *****/
-.gap-1xs {
-  grid-gap: var(--gap-1xs);
-}
-
-.gap-2xs {
-  grid-gap: var(--gap-2xs);
-}
-
-.gap-3xs {
-  grid-gap: var(--gap-3xs);
-}
-
-/********** 3. GRID SM **********/
-
-/*
-3.1 Grid & Fluid SM
-3.2 Grid Gap SM
-*/
-
-/***** 3.1 Grid & Fluid SM *****/
 @media (min-width: 576px) {
   [class*="grid-"][class*="-2sm"],
   [class*="fluid-"][class*="-2sm"] {
@@ -2404,29 +2356,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.2 Grid Gap SM *****/
-@media (min-width: 576px) {
-  .gap-1sm {
-    grid-gap: var(--gap-1sm);
-  }
-
-  .gap-2sm {
-    grid-gap: var(--gap-2sm);
-  }
-
-  .gap-3sm {
-    grid-gap: var(--gap-3sm);
-  }
-}
-
-/********** 4. GRID MD **********/
-
-/*
-4.1 Grid & Fluid MD
-4.2 Grid Gap MD
-*/
-
-/***** 4.1 Grid & Fluid MD *****/
 @media (min-width: 768px) {
   [class*="grid-"][class*="-2md"],
   [class*="fluid-"][class*="-2md"] {
@@ -2484,29 +2413,6 @@ pre > *::selection {
   }
 }
 
-/***** 4.2 Grid Gap MD *****/
-@media (min-width: 768px) {
-  .gap-1md {
-    grid-gap: var(--gap-1md);
-  }
-
-  .gap-2md {
-    grid-gap: var(--gap-2md);
-  }
-
-  .gap-3md {
-    grid-gap: var(--gap-3md);
-  }
-}
-
-/********** 5. GRID LG **********/
-
-/*
-5.1 Grid & Fluid LG
-5.2 Grid Gap LG
-*/
-
-/***** 5.1 Grid & Fluid LG *****/
 @media (min-width: 992px) {
   [class*="grid-"][class*="-2lg"],
   [class*="fluid-"][class*="-2lg"] {
@@ -2564,29 +2470,6 @@ pre > *::selection {
   }
 }
 
-/***** 5.2 Grid Gap LG *****/
-@media (min-width: 992px) {
-  .gap-1lg {
-    grid-gap: var(--gap-1lg);
-  }
-
-  .gap-2lg {
-    grid-gap: var(--gap-2lg);
-  }
-
-  .gap-3lg {
-    grid-gap: var(--gap-3lg);
-  }
-}
-
-/********** 6. GRID XL **********/
-
-/*
-6.1 Grid & Fluid XL
-6.2 Grid Gap XL
-*/
-
-/***** 6.1 Grid & Fluid XL *****/
 @media (min-width: 1200px) {
   [class*="grid-"][class*="-2xl"],
   [class*="fluid-"][class*="-2xl"] {
@@ -2644,7 +2527,61 @@ pre > *::selection {
   }
 }
 
-/***** 6.2 Grid Gap XL *****/
+/***** 3 - Grid Gap *****/
+.gap-1xs {
+  grid-gap: var(--gap-1xs);
+}
+
+.gap-2xs {
+  grid-gap: var(--gap-2xs);
+}
+
+.gap-3xs {
+  grid-gap: var(--gap-3xs);
+}
+
+@media (min-width: 576px) {
+  .gap-1sm {
+    grid-gap: var(--gap-1sm);
+  }
+
+  .gap-2sm {
+    grid-gap: var(--gap-2sm);
+  }
+
+  .gap-3sm {
+    grid-gap: var(--gap-3sm);
+  }
+}
+
+@media (min-width: 768px) {
+  .gap-1md {
+    grid-gap: var(--gap-1md);
+  }
+
+  .gap-2md {
+    grid-gap: var(--gap-2md);
+  }
+
+  .gap-3md {
+    grid-gap: var(--gap-3md);
+  }
+}
+
+@media (min-width: 992px) {
+  .gap-1lg {
+    grid-gap: var(--gap-1lg);
+  }
+
+  .gap-2lg {
+    grid-gap: var(--gap-2lg);
+  }
+
+  .gap-3lg {
+    grid-gap: var(--gap-3lg);
+  }
+}
+
 @media (min-width: 1200px) {
   .gap-1xl {
     grid-gap: var(--gap-1xl);
@@ -2659,36 +2596,15 @@ pre > *::selection {
   }
 }
 
-
-/******************** FLEX ********************/
-
-/*
-1. FLEX
-  1.1 Flex, Col & Row
-2. FLEX XS
-  2.1 Flex XS Container
-  2.2 Flex XS Items
-3. FLEX SM
-  3.1 Flex SM Container
-  3.2 Flex SM Items
-4. FLEX MD
-  4.1 Flex MD Container
-  4.2 Flex MD Items
-5. FLEX LG
-  5.1 Flex LG Container
-  5.2 Flex LG Items
-6. FLEX XL
-  6.1 Flex XL Container
-  6.2 Flex XL Items
-*/
-
-/********** 1. FLEX **********/
+/********** FLEX **********/
 
 /*
-1.1 Flex, Column & Row
+1 - Flex Global
+2 - Column & Row
+3 - Flex
 */
 
-/***** 1.1 Flex, Column & Row *****/
+/***** 1 - Flex Global *****/
 [class*="flex"],
 [class*="column"],
 [class*="row"] {
@@ -2701,6 +2617,8 @@ pre > *::selection {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+/***** 2 - Column & Row *****/
 
 [class*="column"] {
   -webkit-box-orient: vertical;
@@ -2744,62 +2662,18 @@ pre > *::selection {
       flex-wrap: wrap-reverse;
 }
 
-/********** 2. FLEX XS **********/
-
-/*
-2.1 Flex XS Container
-2.2 Flex XS Items
-*/
-
-/***** 2.1 Flex XS Container *****/
+/***** 3 - Flex *****/
 [class*="flex-"][class*="-2xs"] {
   margin: var(--flex-negative-margin-xs);
 }
 
-[class*="flex-"][class*="-3xs"] {
-  margin: var(--flex-negative-margin-xs);
-}
-
-[class*="flex-"][class*="-4xs"] {
-  margin: var(--flex-negative-margin-xs);
-}
-
-[class*="flex-"][class*="-5xs"] {
-  margin: var(--flex-negative-margin-xs);
-}
-
-[class*="flex-"][class*="-6xs"] {
-  margin: var(--flex-negative-margin-xs);
-}
-
-[class*="flex-"][class*="-7xs"] {
-  margin: var(--flex-negative-margin-xs);
-}
-
-[class*="flex-"][class*="-8xs"] {
-  margin: var(--flex-negative-margin-xs);
-}
-
-[class*="flex-"][class*="-9xs"] {
-  margin: var(--flex-negative-margin-xs);
-}
-
-[class*="flex-"][class*="-10xs"] {
-  margin: var(--flex-negative-margin-xs);
-}
-
-[class*="flex-"][class*="-11xs"] {
-  margin: var(--flex-negative-margin-xs);
-}
-
-[class*="flex-"][class*="-12xs"] {
-  margin: var(--flex-negative-margin-xs);
-}
-
-/***** 2.2 Flex XS Items *****/
 [class*="flex-"][class*="-2xs"] > * {
   width: calc(100% / 2 - var(--flex-width-xs));
   margin: var(--flex-positive-margin-xs);
+}
+
+[class*="flex-"][class*="-3xs"] {
+  margin: var(--flex-negative-margin-xs);
 }
 
 [class*="flex-"][class*="-3xs"] > * {
@@ -2807,9 +2681,17 @@ pre > *::selection {
   margin: var(--flex-positive-margin-xs);
 }
 
+[class*="flex-"][class*="-4xs"] {
+  margin: var(--flex-negative-margin-xs);
+}
+
 [class*="flex-"][class*="-4xs"] > * {
   width: calc(100% / 4 - var(--flex-width-xs));
   margin: var(--flex-positive-margin-xs);
+}
+
+[class*="flex-"][class*="-5xs"] {
+  margin: var(--flex-negative-margin-xs);
 }
 
 [class*="flex-"][class*="-5xs"] > * {
@@ -2817,9 +2699,17 @@ pre > *::selection {
   margin: var(--flex-positive-margin-xs);
 }
 
+[class*="flex-"][class*="-6xs"] {
+  margin: var(--flex-negative-margin-xs);
+}
+
 [class*="flex-"][class*="-6xs"] > * {
   width: calc(100% / 6 - var(--flex-width-xs));
   margin: var(--flex-positive-margin-xs);
+}
+
+[class*="flex-"][class*="-7xs"] {
+  margin: var(--flex-negative-margin-xs);
 }
 
 [class*="flex-"][class*="-7xs"] > * {
@@ -2827,9 +2717,17 @@ pre > *::selection {
   margin: var(--flex-positive-margin-xs);
 }
 
+[class*="flex-"][class*="-8xs"] {
+  margin: var(--flex-negative-margin-xs);
+}
+
 [class*="flex-"][class*="-8xs"] > * {
   width: calc(100% / 8 - var(--flex-width-xs));
   margin: var(--flex-positive-margin-xs);
+}
+
+[class*="flex-"][class*="-9xs"] {
+  margin: var(--flex-negative-margin-xs);
 }
 
 [class*="flex-"][class*="-9xs"] > * {
@@ -2837,9 +2735,17 @@ pre > *::selection {
   margin: var(--flex-positive-margin-xs);
 }
 
+[class*="flex-"][class*="-10xs"] {
+  margin: var(--flex-negative-margin-xs);
+}
+
 [class*="flex-"][class*="-10xs"] > * {
   width: calc(100% / 10 - var(--flex-width-xs));
   margin: var(--flex-positive-margin-xs);
+}
+
+[class*="flex-"][class*="-11xs"] {
+  margin: var(--flex-negative-margin-xs);
 }
 
 [class*="flex-"][class*="-11xs"] > * {
@@ -2847,68 +2753,27 @@ pre > *::selection {
   margin: var(--flex-positive-margin-xs);
 }
 
+[class*="flex-"][class*="-12xs"] {
+  margin: var(--flex-negative-margin-xs);
+}
+
 [class*="flex-"][class*="-12xs"] > * {
   width: calc(100% / 12 - var(--flex-width-xs));
   margin: var(--flex-positive-margin-xs);
 }
 
-/********** 3. FLEX SM **********/
-
-/*
-3.1 Flex SM Container
-3.2 Flex SM Items
-*/
-
 @media (min-width: 576px) {
-  /***** 3.1 Flex SM Container *****/
   [class*="flex-"][class*="-2sm"] {
     margin: var(--flex-negative-margin-sm);
   }
 
-  [class*="flex-"][class*="-3sm"] {
-    margin: var(--flex-negative-margin-sm);
-  }
-
-  [class*="flex-"][class*="-4sm"] {
-    margin: var(--flex-negative-margin-sm);
-  }
-
-  [class*="flex-"][class*="-5sm"] {
-    margin: var(--flex-negative-margin-sm);
-  }
-
-  [class*="flex-"][class*="-6sm"] {
-    margin: var(--flex-negative-margin-sm);
-  }
-
-  [class*="flex-"][class*="-7sm"] {
-    margin: var(--flex-negative-margin-sm);
-  }
-
-  [class*="flex-"][class*="-8sm"] {
-    margin: var(--flex-negative-margin-sm);
-  }
-
-  [class*="flex-"][class*="-9sm"] {
-    margin: var(--flex-negative-margin-sm);
-  }
-
-  [class*="flex-"][class*="-10sm"] {
-    margin: var(--flex-negative-margin-sm);
-  }
-
-  [class*="flex-"][class*="-11sm"] {
-    margin: var(--flex-negative-margin-sm);
-  }
-
-  [class*="flex-"][class*="-12sm"] {
-    margin: var(--flex-negative-margin-sm);
-  }
-
-  /***** 3.2 Flex SM Items *****/
   [class*="flex-"][class*="-2sm"] > * {
     width: calc(100% / 2 - var(--flex-width-sm));
     margin: var(--flex-positive-margin-sm);
+  }
+
+  [class*="flex-"][class*="-3sm"] {
+    margin: var(--flex-negative-margin-sm);
   }
 
   [class*="flex-"][class*="-3sm"] > * {
@@ -2916,9 +2781,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-sm);
   }
 
+  [class*="flex-"][class*="-4sm"] {
+    margin: var(--flex-negative-margin-sm);
+  }
+
   [class*="flex-"][class*="-4sm"] > * {
     width: calc(100% / 4 - var(--flex-width-sm));
     margin: var(--flex-positive-margin-sm);
+  }
+
+  [class*="flex-"][class*="-5sm"] {
+    margin: var(--flex-negative-margin-sm);
   }
 
   [class*="flex-"][class*="-5sm"] > * {
@@ -2926,9 +2799,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-sm);
   }
 
+  [class*="flex-"][class*="-6sm"] {
+    margin: var(--flex-negative-margin-sm);
+  }
+
   [class*="flex-"][class*="-6sm"] > * {
     width: calc(100% / 6 - var(--flex-width-sm));
     margin: var(--flex-positive-margin-sm);
+  }
+
+  [class*="flex-"][class*="-7sm"] {
+    margin: var(--flex-negative-margin-sm);
   }
 
   [class*="flex-"][class*="-7sm"] > * {
@@ -2936,9 +2817,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-sm);
   }
 
+  [class*="flex-"][class*="-8sm"] {
+    margin: var(--flex-negative-margin-sm);
+  }
+
   [class*="flex-"][class*="-8sm"] > * {
     width: calc(100% / 8 - var(--flex-width-sm));
     margin: var(--flex-positive-margin-sm);
+  }
+
+  [class*="flex-"][class*="-9sm"] {
+    margin: var(--flex-negative-margin-sm);
   }
 
   [class*="flex-"][class*="-9sm"] > * {
@@ -2946,14 +2835,26 @@ pre > *::selection {
     margin: var(--flex-positive-margin-sm);
   }
 
+  [class*="flex-"][class*="-10sm"] {
+    margin: var(--flex-negative-margin-sm);
+  }
+
   [class*="flex-"][class*="-10sm"] > * {
     width: calc(100% / 10 - var(--flex-width-sm));
     margin: var(--flex-positive-margin-sm);
   }
 
+  [class*="flex-"][class*="-11sm"] {
+    margin: var(--flex-negative-margin-sm);
+  }
+
   [class*="flex-"][class*="-11sm"] > * {
     width: calc(100% / 11 - var(--flex-width-sm));
     margin: var(--flex-positive-margin-sm);
+  }
+
+  [class*="flex-"][class*="-12sm"] {
+    margin: var(--flex-negative-margin-sm);
   }
 
   [class*="flex-"][class*="-12sm"] > * {
@@ -2962,63 +2863,18 @@ pre > *::selection {
   }
 }
 
-/********** 4. FLEX MD **********/
-
-/*
-4.1 Flex MD Container
-4.2 Flex MD Items
-*/
-
 @media (min-width: 768px) {
-  /***** 4.1 Flex MD Container *****/
   [class*="flex-"][class*="-2md"] {
     margin: var(--flex-negative-margin-md);
   }
 
-  [class*="flex-"][class*="-3md"] {
-    margin: var(--flex-negative-margin-md);
-  }
-
-  [class*="flex-"][class*="-4md"] {
-    margin: var(--flex-negative-margin-md);
-  }
-
-  [class*="flex-"][class*="-5md"] {
-    margin: var(--flex-negative-margin-md);
-  }
-
-  [class*="flex-"][class*="-6md"] {
-    margin: var(--flex-negative-margin-md);
-  }
-
-  [class*="flex-"][class*="-7md"] {
-    margin: var(--flex-negative-margin-md);
-  }
-
-  [class*="flex-"][class*="-8md"] {
-    margin: var(--flex-negative-margin-md);
-  }
-
-  [class*="flex-"][class*="-9md"] {
-    margin: var(--flex-negative-margin-md);
-  }
-
-  [class*="flex-"][class*="-10md"] {
-    margin: var(--flex-negative-margin-md);
-  }
-
-  [class*="flex-"][class*="-11md"] {
-    margin: var(--flex-negative-margin-md);
-  }
-
-  [class*="flex-"][class*="-12md"] {
-    margin: var(--flex-negative-margin-md);
-  }
-
-  /***** 4.2 Flex MD Items *****/
   [class*="flex-"][class*="-2md"] > * {
     width: calc(100% / 2 - var(--flex-width-md));
     margin: var(--flex-positive-margin-md);
+  }
+
+  [class*="flex-"][class*="-3md"] {
+    margin: var(--flex-negative-margin-md);
   }
 
   [class*="flex-"][class*="-3md"] > * {
@@ -3026,9 +2882,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-md);
   }
 
+  [class*="flex-"][class*="-4md"] {
+    margin: var(--flex-negative-margin-md);
+  }
+
   [class*="flex-"][class*="-4md"] > * {
     width: calc(100% / 4 - var(--flex-width-md));
     margin: var(--flex-positive-margin-md);
+  }
+
+  [class*="flex-"][class*="-5md"] {
+    margin: var(--flex-negative-margin-md);
   }
 
   [class*="flex-"][class*="-5md"] > * {
@@ -3036,9 +2900,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-md);
   }
 
+  [class*="flex-"][class*="-6md"] {
+    margin: var(--flex-negative-margin-md);
+  }
+
   [class*="flex-"][class*="-6md"] > * {
     width: calc(100% / 6 - var(--flex-width-md));
     margin: var(--flex-positive-margin-md);
+  }
+
+  [class*="flex-"][class*="-7md"] {
+    margin: var(--flex-negative-margin-md);
   }
 
   [class*="flex-"][class*="-7md"] > * {
@@ -3046,9 +2918,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-md);
   }
 
+  [class*="flex-"][class*="-8md"] {
+    margin: var(--flex-negative-margin-md);
+  }
+
   [class*="flex-"][class*="-8md"] > * {
     width: calc(100% / 8 - var(--flex-width-md));
     margin: var(--flex-positive-margin-md);
+  }
+
+  [class*="flex-"][class*="-9md"] {
+    margin: var(--flex-negative-margin-md);
   }
 
   [class*="flex-"][class*="-9md"] > * {
@@ -3056,14 +2936,26 @@ pre > *::selection {
     margin: var(--flex-positive-margin-md);
   }
 
+  [class*="flex-"][class*="-10md"] {
+    margin: var(--flex-negative-margin-md);
+  }
+
   [class*="flex-"][class*="-10md"] > * {
     width: calc(100% / 10 - var(--flex-width-md));
     margin: var(--flex-positive-margin-md);
   }
 
+  [class*="flex-"][class*="-11md"] {
+    margin: var(--flex-negative-margin-md);
+  }
+
   [class*="flex-"][class*="-11md"] > * {
     width: calc(100% / 11 - var(--flex-width-md));
     margin: var(--flex-positive-margin-md);
+  }
+
+  [class*="flex-"][class*="-12md"] {
+    margin: var(--flex-negative-margin-md);
   }
 
   [class*="flex-"][class*="-12md"] > * {
@@ -3072,63 +2964,18 @@ pre > *::selection {
   }
 }
 
-/********** 5. FLEX LG **********/
-
-/*
-5.1 Flex LG Container
-5.2 Flex LG Items
-*/
-
 @media (min-width: 992px) {
-  /***** 5.1 Flex LG Container *****/
   [class*="flex-"][class*="-2lg"] {
     margin: var(--flex-negative-margin-lg);
   }
 
-  [class*="flex-"][class*="-3lg"] {
-    margin: var(--flex-negative-margin-lg);
-  }
-
-  [class*="flex-"][class*="-4lg"] {
-    margin: var(--flex-negative-margin-lg);
-  }
-
-  [class*="flex-"][class*="-5lg"] {
-    margin: var(--flex-negative-margin-lg);
-  }
-
-  [class*="flex-"][class*="-6lg"] {
-    margin: var(--flex-negative-margin-lg);
-  }
-
-  [class*="flex-"][class*="-7lg"] {
-    margin: var(--flex-negative-margin-lg);
-  }
-
-  [class*="flex-"][class*="-8lg"] {
-    margin: var(--flex-negative-margin-lg);
-  }
-
-  [class*="flex-"][class*="-9lg"] {
-    margin: var(--flex-negative-margin-lg);
-  }
-
-  [class*="flex-"][class*="-10lg"] {
-    margin: var(--flex-negative-margin-lg);
-  }
-
-  [class*="flex-"][class*="-11lg"] {
-    margin: var(--flex-negative-margin-lg);
-  }
-
-  [class*="flex-"][class*="-12lg"] {
-    margin: var(--flex-negative-margin-lg);
-  }
-
-  /***** 5.2 Flex LG Items *****/
   [class*="flex-"][class*="-2lg"] > * {
     width: calc(100% / 2 - var(--flex-width-lg));
     margin: var(--flex-positive-margin-lg);
+  }
+
+  [class*="flex-"][class*="-3lg"] {
+    margin: var(--flex-negative-margin-lg);
   }
 
   [class*="flex-"][class*="-3lg"] > * {
@@ -3136,9 +2983,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-lg);
   }
 
+  [class*="flex-"][class*="-4lg"] {
+    margin: var(--flex-negative-margin-lg);
+  }
+
   [class*="flex-"][class*="-4lg"] > * {
     width: calc(100% / 4 - var(--flex-width-lg));
     margin: var(--flex-positive-margin-lg);
+  }
+
+  [class*="flex-"][class*="-5lg"] {
+    margin: var(--flex-negative-margin-lg);
   }
 
   [class*="flex-"][class*="-5lg"] > * {
@@ -3146,9 +3001,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-lg);
   }
 
+  [class*="flex-"][class*="-6lg"] {
+    margin: var(--flex-negative-margin-lg);
+  }
+
   [class*="flex-"][class*="-6lg"] > * {
     width: calc(100% / 6 - var(--flex-width-lg));
     margin: var(--flex-positive-margin-lg);
+  }
+
+  [class*="flex-"][class*="-7lg"] {
+    margin: var(--flex-negative-margin-lg);
   }
 
   [class*="flex-"][class*="-7lg"] > * {
@@ -3156,9 +3019,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-lg);
   }
 
+  [class*="flex-"][class*="-8lg"] {
+    margin: var(--flex-negative-margin-lg);
+  }
+
   [class*="flex-"][class*="-8lg"] > * {
     width: calc(100% / 8 - var(--flex-width-lg));
     margin: var(--flex-positive-margin-lg);
+  }
+
+  [class*="flex-"][class*="-9lg"] {
+    margin: var(--flex-negative-margin-lg);
   }
 
   [class*="flex-"][class*="-9lg"] > * {
@@ -3166,14 +3037,26 @@ pre > *::selection {
     margin: var(--flex-positive-margin-lg);
   }
 
+  [class*="flex-"][class*="-10lg"] {
+    margin: var(--flex-negative-margin-lg);
+  }
+
   [class*="flex-"][class*="-10lg"] > * {
     width: calc(100% / 10 - var(--flex-width-lg));
     margin: var(--flex-positive-margin-lg);
   }
 
+  [class*="flex-"][class*="-11lg"] {
+    margin: var(--flex-negative-margin-lg);
+  }
+
   [class*="flex-"][class*="-11lg"] > * {
     width: calc(100% / 11 - var(--flex-width-lg));
     margin: var(--flex-positive-margin-lg);
+  }
+
+  [class*="flex-"][class*="-12lg"] {
+    margin: var(--flex-negative-margin-lg);
   }
 
   [class*="flex-"][class*="-12lg"] > * {
@@ -3182,63 +3065,18 @@ pre > *::selection {
   }
 }
 
-/********** 6. FLEX XL **********/
-
-/*
-6.1 Flex XL Container
-6.2 Flex XL Items
-*/
-
 @media (min-width: 1200px) {
-  /***** 6.1 Flex XL Container *****/
   [class*="flex-"][class*="-2xl"] {
     margin: var(--flex-negative-margin-xl);
   }
 
-  [class*="flex-"][class*="-3xl"] {
-    margin: var(--flex-negative-margin-xl);
-  }
-
-  [class*="flex-"][class*="-4xl"] {
-    margin: var(--flex-negative-margin-xl);
-  }
-
-  [class*="flex-"][class*="-5xl"] {
-    margin: var(--flex-negative-margin-xl);
-  }
-
-  [class*="flex-"][class*="-6xl"] {
-    margin: var(--flex-negative-margin-xl);
-  }
-
-  [class*="flex-"][class*="-7xl"] {
-    margin: var(--flex-negative-margin-xl);
-  }
-
-  [class*="flex-"][class*="-8xl"] {
-    margin: var(--flex-negative-margin-xl);
-  }
-
-  [class*="flex-"][class*="-9xl"] {
-    margin: var(--flex-negative-margin-xl);
-  }
-
-  [class*="flex-"][class*="-10xl"] {
-    margin: var(--flex-negative-margin-xl);
-  }
-
-  [class*="flex-"][class*="-11xl"] {
-    margin: var(--flex-negative-margin-xl);
-  }
-
-  [class*="flex-"][class*="-12xl"] {
-    margin: var(--flex-negative-margin-xl);
-  }
-
-  /***** 6.2 Flex XL Items *****/
   [class*="flex-"][class*="-2xl"] > * {
     width: calc(100% / 2 - var(--flex-width-xl));
     margin: var(--flex-positive-margin-xl);
+  }
+
+  [class*="flex-"][class*="-3xl"] {
+    margin: var(--flex-negative-margin-xl);
   }
 
   [class*="flex-"][class*="-3xl"] > * {
@@ -3246,9 +3084,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-xl);
   }
 
+  [class*="flex-"][class*="-4xl"] {
+    margin: var(--flex-negative-margin-xl);
+  }
+
   [class*="flex-"][class*="-4xl"] > * {
     width: calc(100% / 4 - var(--flex-width-xl));
     margin: var(--flex-positive-margin-xl);
+  }
+
+  [class*="flex-"][class*="-5xl"] {
+    margin: var(--flex-negative-margin-xl);
   }
 
   [class*="flex-"][class*="-5xl"] > * {
@@ -3256,9 +3102,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-xl);
   }
 
+  [class*="flex-"][class*="-6xl"] {
+    margin: var(--flex-negative-margin-xl);
+  }
+
   [class*="flex-"][class*="-6xl"] > * {
     width: calc(100% / 6 - var(--flex-width-xl));
     margin: var(--flex-positive-margin-xl);
+  }
+
+  [class*="flex-"][class*="-7xl"] {
+    margin: var(--flex-negative-margin-xl);
   }
 
   [class*="flex-"][class*="-7xl"] > * {
@@ -3266,9 +3120,17 @@ pre > *::selection {
     margin: var(--flex-positive-margin-xl);
   }
 
+  [class*="flex-"][class*="-8xl"] {
+    margin: var(--flex-negative-margin-xl);
+  }
+
   [class*="flex-"][class*="-8xl"] > * {
     width: calc(100% / 8 - var(--flex-width-xl));
     margin: var(--flex-positive-margin-xl);
+  }
+
+  [class*="flex-"][class*="-9xl"] {
+    margin: var(--flex-negative-margin-xl);
   }
 
   [class*="flex-"][class*="-9xl"] > * {
@@ -3276,14 +3138,26 @@ pre > *::selection {
     margin: var(--flex-positive-margin-xl);
   }
 
+  [class*="flex-"][class*="-10xl"] {
+    margin: var(--flex-negative-margin-xl);
+  }
+
   [class*="flex-"][class*="-10xl"] > * {
     width: calc(100% / 10 - var(--flex-width-xl));
     margin: var(--flex-positive-margin-xl);
   }
 
+  [class*="flex-"][class*="-11xl"] {
+    margin: var(--flex-negative-margin-xl);
+  }
+
   [class*="flex-"][class*="-11xl"] > * {
     width: calc(100% / 11 - var(--flex-width-xl));
     margin: var(--flex-positive-margin-xl);
+  }
+
+  [class*="flex-"][class*="-12xl"] {
+    margin: var(--flex-negative-margin-xl);
   }
 
   [class*="flex-"][class*="-12xl"] > * {
@@ -3292,41 +3166,15 @@ pre > *::selection {
   }
 }
 
-
-/******************** ALIGN ********************/
-
-/*
-1. ALIGN CONTENT
-  1.1 Align Content XS
-  1.2 Align Content SM
-  1.3 Align Content MD
-  1.4 Align Content LG
-  1.5 Align Content XL
-2. ALIGN ITEMS
-  2.1 Align Items XS
-  2.2 Align Items SM
-  2.3 Align Items MD
-  2.4 Align Items LG
-  2.5 Align Items XL
-3. ALIGN SELF
-  3.1 Align Self XS
-  3.2 Align Self SM
-  3.3 Align Self MD
-  3.4 Align Self LG
-  3.5 Align Self XL
-*/
-
-/********** 1. ALIGN CONTENT **********/
+/********** ALIGN **********/
 
 /*
-1.1 Align Content XS
-1.2 Align Content SM
-1.3 Align Content MD
-1.4 Align Content LG
-1.5 Align Content XL
+1 - Align Content
+2 - Align Items
+3 - Align Self
 */
 
-/***** 1.1 Align Content XS *****/
+/***** 1 - Align Content *****/
 [class*="alco-"][class*="-around-xs"] {
   -ms-flex-line-pack: distribute;
       align-content: space-around;
@@ -3367,7 +3215,6 @@ pre > *::selection {
       align-content: stretch;
 }
 
-/***** 1.2 Align Content SM *****/
 @media (min-width: 576px) {
   [class*="alco-"][class*="-around-sm"] {
     -ms-flex-line-pack: distribute;
@@ -3410,7 +3257,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.3 Align Content MD *****/
 @media (min-width: 768px) {
   [class*="alco-"][class*="-around-md"] {
     -ms-flex-line-pack: distribute;
@@ -3453,7 +3299,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.4 Align Content LG *****/
 @media (min-width: 992px) {
   [class*="alco-"][class*="-around-lg"] {
     -ms-flex-line-pack: distribute;
@@ -3496,7 +3341,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.5 Align Content XL *****/
 @media (min-width: 1200px) {
   [class*="alco-"][class*="-around-xl"] {
     -ms-flex-line-pack: distribute;
@@ -3539,17 +3383,6 @@ pre > *::selection {
   }
 }
 
-/********** 2. ALIGN ITEMS **********/
-
-/*
-2.1 Align Items XS
-2.2 Align Items SM
-2.3 Align Items MD
-2.4 Align Items LG
-2.5 Align Items XL
-*/
-
-/***** 2.1 Align Items XS *****/
 [class*="alit-"][class*="-base-xs"] {
   -webkit-box-align: var(--align-items-base);
       -ms-flex-align: var(--align-items-base);
@@ -3580,7 +3413,6 @@ pre > *::selection {
           align-items: stretch;
 }
 
-/***** 2.2 Align Items SM *****/
 @media (min-width: 576px) {
   [class*="alit-"][class*="-base-sm"] {
     -webkit-box-align: var(--align-items-base);
@@ -3613,7 +3445,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.3 Align Items MD *****/
 @media (min-width: 768px) {
   [class*="alit-"][class*="-base-md"] {
     -webkit-box-align: var(--align-items-base);
@@ -3646,7 +3477,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.4 Align Items LG *****/
 @media (min-width: 992px) {
   [class*="alit-"][class*="-base-lg"] {
     -webkit-box-align: var(--align-items-base);
@@ -3679,7 +3509,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.5 Align Items XL *****/
 @media (min-width: 1200px) {
   [class*="alit-"][class*="-base-xl"] {
     -webkit-box-align: var(--align-items-base);
@@ -3712,17 +3541,7 @@ pre > *::selection {
   }
 }
 
-/********** 3. ALIGN SELF **********/
-
-/*
-3.1 Align Self XS
-3.2 Align Self SM
-3.3 Align Self MD
-3.4 Align Self LG
-3.5 Align Self XL
-*/
-
-/***** 3.1 Align Self XS *****/
+/***** 3 - Align Self *****/
 [class*="alse-"][class*="-base-xs"] {
   -ms-flex-item-align: var(--align-self-base);
       align-self: var(--align-self-base);
@@ -3748,7 +3567,6 @@ pre > *::selection {
       align-self: stretch;
 }
 
-/***** 3.2 Align Self SM *****/
 @media (min-width: 576px) {
   [class*="alse-"][class*="-base-sm"] {
     -ms-flex-item-align: var(--align-self-base);
@@ -3776,7 +3594,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.3 Align Self MD *****/
 @media (min-width: 768px) {
   [class*="alse-"][class*="-base-md"] {
     -ms-flex-item-align: var(--align-self-base);
@@ -3804,7 +3621,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.4 Align Self LG *****/
 @media (min-width: 992px) {
   [class*="alse-"][class*="-base-lg"] {
     -ms-flex-item-align: var(--align-self-base);
@@ -3832,7 +3648,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.5 Align Self XL *****/
 @media (min-width: 1200px) {
   [class*="alse-"][class*="-base-xl"] {
     -ms-flex-item-align: var(--align-self-base);
@@ -3860,41 +3675,15 @@ pre > *::selection {
   }
 }
 
-
-/******************** JUSTIFY ********************/
-
-/*
-1. JUSTIFY CONTENT
-  1.1 Justify Content XS
-  1.2 Justify Content SM
-  1.3 Justify Content MD
-  1.4 Justify Content LG
-  1.5 Justify Content XL
-2. JUSTIFY ITEMS
-  2.1 Justify Items XS
-  2.2 Justify Items SM
-  2.3 Justify Items MD
-  2.4 Justify Items LG
-  2.5 Justify Items XL
-3. JUSTIFY SELF
-  3.1 Justify Self XS
-  3.2 Justify Self SM
-  3.3 Justify Self MD
-  3.4 Justify Self LG
-  3.5 Justify Self XL
-*/
-
-/********** 1. JUSTIFY CONTENT **********/
+/********** JUSTIFY **********/
 
 /*
-1.1 Justify Content XS
-1.2 Justify Content SM
-1.3 Justify Content MD
-1.4 Justify Content LG
-1.5 Justify Content XL
+1 - Justify Content
+2 - Justify Items
+3 - Jusitfy Self
 */
 
-/***** 1.1 Justify Content XS *****/
+/***** 1 - Justify Content *****/
 [class*="juco-"][class*="-around-xs"] {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -3948,7 +3737,6 @@ pre > *::selection {
           justify-content: stretch;
 }
 
-/***** 1.2 Justify Content SM *****/
 @media (min-width: 576px) {
   [class*="juco-"][class*="-around-sm"] {
     -ms-flex-pack: distribute;
@@ -4004,7 +3792,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.3 Justify Content MD *****/
 @media (min-width: 768px) {
   [class*="juco-"][class*="-around-md"] {
     -ms-flex-pack: distribute;
@@ -4060,7 +3847,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.4 Justify Content LG *****/
 @media (min-width: 992px) {
   [class*="juco-"][class*="-around-lg"] {
     -ms-flex-pack: distribute;
@@ -4116,7 +3902,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.5 Justify Content XL *****/
 @media (min-width: 1200px) {
   [class*="juco-"][class*="-around-xl"] {
     -ms-flex-pack: distribute;
@@ -4172,17 +3957,7 @@ pre > *::selection {
   }
 }
 
-/********** 2. JUSTIFY ITEMS **********/
-
-/*
-2.1 Justify Items XS
-2.2 Justify Items SM
-2.3 Justify Items MD
-2.4 Justify Items LG
-2.5 Justify Items XL
-*/
-
-/***** 2.1 Justify Items XS *****/
+/***** 2 - Justify Items *****/
 [class*="juit-"][class*="-base-xs"] {
   justify-items: var(--justify-items-base);
 }
@@ -4211,7 +3986,6 @@ pre > *::selection {
   justify-items: stretch;
 }
 
-/***** 2.2 Justify Items SM *****/
 @media (min-width: 576px) {
   [class*="juit-"][class*="-base-sm"] {
     justify-items: var(--justify-items-base);
@@ -4242,7 +4016,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.3 Justify Items MD *****/
 @media (min-width: 768px) {
   [class*="juit-"][class*="-base-md"] {
     justify-items: var(--justify-items-base);
@@ -4273,7 +4046,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.4 Justify Items LG *****/
 @media (min-width: 992px) {
   [class*="juit-"][class*="-base-lg"] {
     justify-items: var(--justify-items-base);
@@ -4304,7 +4076,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.5 Justify Items XL *****/
 @media (min-width: 1200px) {
   [class*="juit-"][class*="-base-xl"] {
     justify-items: var(--justify-items-base);
@@ -4335,17 +4106,7 @@ pre > *::selection {
   }
 }
 
-/********** 3. JUSTIFY SELF **********/
-
-/*
-3.1 Justify Self XS
-3.2 Justify Self SM
-3.3 Justify Self MD
-3.4 Justify Self LG
-3.5 Justify Self XL
-*/
-
-/***** 3.1 Justify Self XS *****/
+/***** 3 - Justify Self *****/
 [class*="juse-"][class*="-base-xs"] {
   justify-self: var(--justify-self-base);
 }
@@ -4374,7 +4135,6 @@ pre > *::selection {
   justify-self: stretch;
 }
 
-/***** 3.2 Justify Self SM *****/
 @media (min-width: 576px) {
   [class*="juse-"][class*="-base-sm"] {
     justify-self: var(--justify-self-base);
@@ -4405,7 +4165,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.3 Justify Self MD *****/
 @media (min-width: 768px) {
   [class*="juse-"][class*="-base-md"] {
     justify-self: var(--justify-self-base);
@@ -4436,7 +4195,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.4 Justify Self LG *****/
 @media (min-width: 992px) {
   [class*="juse-"][class*="-base-lg"] {
     justify-self: var(--justify-self-base);
@@ -4467,7 +4225,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.5 Justify Self XL *****/
 @media (min-width: 1200px) {
   [class*="juse-"][class*="-base-xl"] {
     justify-self: var(--justify-self-base);
@@ -4497,7 +4254,6 @@ pre > *::selection {
     justify-self: stretch;
   }
 }
-
 
 /********** NAVBAR **********/
 
@@ -6011,8 +5767,8 @@ pre > *::selection {
 
 /***** 10 - Gallery Link All Odd *****/
 .gallery a *:nth-child(odd) {
-padding: var(--gallery-link-all-odd-padding);
-font-size: var(--gallery-link-all-odd-font-size);
+  padding: var(--gallery-link-all-odd-padding);
+  font-size: var(--gallery-link-all-odd-font-size);
 }
 
 /********** TABLE **********/
@@ -12495,4 +12251,4 @@ font-size: var(--gallery-link-all-odd-font-size);
 
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 11th Aug 2019 @ 1:40:17 AM */
+ Updated: 11th Aug 2019 @ 2:59:54 AM */
