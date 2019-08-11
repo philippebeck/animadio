@@ -101,19 +101,23 @@
 }
 
 /***** 9 - Navbar Brand Link *****/
-.navbar > a {
+.navbar > a:first-of-type,
+.navbar > label:first-of-type {
   position: absolute;
   left: var(--navbar-brand-link-left);
 }
 
 @media (min-width: 576px) {
-  .navbar > a {
+  .navbar > a:first-of-type,
+  .navbar > label:first-of-type {
     position: static;
   }
 }
 
-.navbar > a img,
-.navbar > a svg {
+.navbar > a:first-of-type img,
+.navbar > label:first-of-type img,
+.navbar > a:first-of-type svg,
+.navbar > label:first-of-type svg {
   height: var(--navbar-brand-link-img-height);
 }
 
@@ -156,7 +160,7 @@
 }
 
 /***** 12 - Navbar Label *****/
-.navbar > label {
+.navbar > [for*="navbar"] {
   position: absolute;
   top: var(--navbar-label-top);
   right: var(--navbar-label-right);
@@ -164,7 +168,7 @@
 }
 
 @media (min-width: 576px) {
-  .navbar > label {
+  .navbar > [for*="navbar"] {
     display: none;
   }
 }
