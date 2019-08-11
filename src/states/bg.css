@@ -1,59 +1,13 @@
-/******************** BG ********************/
+/********** BG **********/
 
 /*
-1. MAIN BACKGROUND COLORS
-  1.1 Black
-  1.2 Blue
-  1.3 Gray
-  1.4 Green
-  1.5 Maroon
-  1.6 Orange
-  1.7 Purple
-  1.8 Red
-  1.9 Yellow
-2. PALE BACKGROUND COLORS
-  2.1 Choco
-  2.2 Jade
-  2.3 Khaki
-  2.4 Salmon
-  2.5 Silver
-  2.6 Sky
-  2.7 Tomato
-  2.8 Violet
-  2.9 White
-3. BRAND BACKGROUND COLORS
-  3.1 FaceBook
-  3.2 GitHub
-  3.3 JSDelivr
-  3.4 LinkedIn
-  3.5 NPM
-  3.6 Stack Overflow
-  3.7 Twitter
-4. TRANSPARENT BACKGROUND COLORS
-  4.1 Amethyst
-  4.2 Citrine
-  4.3 Quartz
-  4.4 Emerald
-  4.5 Obsidian
-  4.6 Ruby
-  4.7 Sapphire
+1 - Main Background Colors
+2 - Pale Background Colors
+3 - Brand Background Colors
+4 - Transparent Background Colors
 */
 
-/********** 1. MAIN BACKGROUND COLORS **********/
-
-/*
-1.1 Black
-1.2 Blue
-1.3 Gray
-1.4 Green
-1.5 Maroon
-1.6 Orange
-1.7 Purple
-1.8 Red
-1.9 Yellow
-*/
-
-/***** 1.1 Black Background Color *****/
+/***** 1 - Main Background Colors *****/
 [class*="bg-black-"][class*="-base"],
 [class*="bg-black-"][class*="-global"] > *,
 *:hover > [class*="bg-black-"][class*="-into"],
@@ -77,7 +31,6 @@
   background-color: var(--black);
 }
 
-/***** 1.2 Blue Background Color *****/
 [class*="bg-blue-"][class*="-base"],
 [class*="bg-blue-"][class*="-global"] > *,
 *:hover > [class*="bg-blue-"][class*="-into"],
@@ -101,7 +54,6 @@
   background-color: var(--blue);
 }
 
-/***** 1.3 Maroon Background Color *****/
 [class*="bg-maroon-"][class*="-base"],
 [class*="bg-maroon-"][class*="-global"] > *,
 *:hover > [class*="bg-maroon-"][class*="-into"],
@@ -125,7 +77,6 @@
   background-color: var(--maroon);
 }
 
-/***** 1.4 Gray Background Color *****/
 [class*="bg-gray-"][class*="-base"],
 [class*="bg-gray-"][class*="-global"] > *,
 *:hover > [class*="bg-gray-"][class*="-into"],
@@ -149,7 +100,6 @@
   background-color: var(--gray);
 }
 
-/***** 1.5 Green Background Color *****/
 [class*="bg-green-"][class*="-base"],
 [class*="bg-green-"][class*="-global"] > *,
 *:hover > [class*="bg-green-"][class*="-into"],
@@ -173,7 +123,6 @@
   background-color: var(--green);
 }
 
-/***** 1.6 Orange Background Color *****/
 [class*="bg-orange-"][class*="-base"],
 [class*="bg-orange-"][class*="-global"] > *,
 *:hover > [class*="bg-orange-"][class*="-into"],
@@ -197,7 +146,6 @@
   background-color: var(--orange);
 }
 
-/***** 1.7 Purple Background Color *****/
 [class*="bg-purple-"][class*="-base"],
 [class*="bg-purple-"][class*="-global"] > *,
 *:hover > [class*="bg-purple-"][class*="-into"],
@@ -221,7 +169,6 @@
   background-color: var(--purple);
 }
 
-/***** 1.8 Red Background Color *****/
 [class*="bg-red-"][class*="-base"],
 [class*="bg-red-"][class*="-global"] > *,
 *:hover > [class*="bg-red-"][class*="-into"],
@@ -245,7 +192,6 @@
   background-color: var(--red);
 }
 
-/***** 1.9 Yellow Background Color *****/
 [class*="bg-yellow-"][class*="-base"],
 [class*="bg-yellow-"][class*="-global"] > *,
 *:hover > [class*="bg-yellow-"][class*="-into"],
@@ -269,21 +215,7 @@
   background-color: var(--yellow);
 }
 
-/********** 2. PALE BACKGROUND COLORS **********/
-
-/*
-2.1 Choco
-2.2 Jade
-2.3 Khaki
-2.4 Salmon
-2.5 Silver
-2.6 Sky
-2.7 Tomato
-2.8 Violet
-2.9 White
-*/
-
-/***** 2.1 Choco Beckground Color *****/
+/***** 2 - Pale Background Colors *****/
 [class*="bg-choco-"][class*="-base"],
 [class*="bg-choco-"][class*="-global"] > *,
 *:hover > [class*="bg-choco-"][class*="-into"],
@@ -307,7 +239,6 @@
   background-color: var(--choco);
 }
 
-/***** 2.2 Jade Beckground Color *****/
 [class*="bg-jade-"][class*="-base"],
 [class*="bg-jade-"][class*="-global"] > *,
 *:hover > [class*="bg-jade-"][class*="-into"],
@@ -331,7 +262,6 @@
   background-color: var(--jade);
 }
 
-/***** 2.3 Khaki Beckground Color *****/
 [class*="bg-khaki-"][class*="-base"],
 [class*="bg-khaki-"][class*="-global"] > *,
 *:hover > [class*="bg-khaki-"][class*="-into"],
@@ -355,7 +285,6 @@
   background-color: var(--khaki);
 }
 
-/***** 2.4 Salmon Beckground Color *****/
 [class*="bg-salmon-"][class*="-base"],
 [class*="bg-salmon-"][class*="-global"] > *,
 *:hover > [class*="bg-salmon-"][class*="-into"],
@@ -379,7 +308,6 @@
   background-color: var(--salmon);
 }
 
-/***** 2.5 Silver Beckground Color *****/
 [class*="bg-silver-"][class*="-base"],
 [class*="bg-silver-"][class*="-global"] > *,
 *:hover > [class*="bg-silver-"][class*="-into"],
@@ -403,7 +331,6 @@
   background-color: var(--silver);
 }
 
-/***** 2.6 Sky Beckground Color *****/
 [class*="bg-sky-"][class*="-base"],
 [class*="bg-sky-"][class*="-global"] > *,
 *:hover > [class*="bg-sky-"][class*="-into"],
@@ -427,7 +354,6 @@
   background-color: var(--sky);
 }
 
-/***** 2.7 Tomat Beckground Color *****/
 [class*="bg-tomato-"][class*="-base"],
 [class*="bg-tomato-"][class*="-global"] > *,
 *:hover > [class*="bg-tomato-"][class*="-into"],
@@ -451,7 +377,6 @@
   background-color: var(--tomato);
 }
 
-/***** 2.8 Violet Beckground Color *****/
 [class*="bg-violet-"][class*="-base"],
 [class*="bg-violet-"][class*="-global"] > *,
 *:hover > [class*="bg-violet-"][class*="-into"],
@@ -475,7 +400,6 @@
   background-color: var(--violet);
 }
 
-/***** 2.9 White Beckground Color *****/
 [class*="bg-white-"][class*="-base"],
 [class*="bg-white-"][class*="-global"] > *,
 *:hover > [class*="bg-white-"][class*="-into"],
@@ -499,18 +423,7 @@
   background-color: var(--white);
 }
 
-/********** 3. BRAND BACKGROUND COLORS **********/
-
-/*
-3.1 FaceBook
-3.2 GitHub
-3.3 LinkedIn
-3.4 NPM
-3.5 Stack Overflow
-3.6 Twitter
-*/
-
-/***** 3.1 FaceBook Background Color *****/
+/***** 3 - Brand Background Colors *****/
 [class*="bg-fb-"][class*="-base"],
 [class*="bg-fb-"][class*="-global"] > *,
 *:hover > [class*="bg-fb-"][class*="-into"],
@@ -534,7 +447,6 @@
   background-color: var(--facebook);
 }
 
-/***** 3.2 GitHub Background Color *****/
 [class*="bg-github-"][class*="-base"],
 [class*="bg-github-"][class*="-global"] > *,
 *:hover > [class*="bg-github-"][class*="-into"],
@@ -558,7 +470,6 @@
   background-color: var(--github);
 }
 
-/***** 3.3 JSDelivr Background Color *****/
 [class*="bg-jsd-"][class*="-base"],
 [class*="bg-jsd-"][class*="-global"] > *,
 *:hover > [class*="bg-jsd-"][class*="-into"],
@@ -582,7 +493,6 @@
   background-color: var(--jsdelivr);
 }
 
-/***** 3.4 LinkedIn Background Color *****/
 [class*="bg-linkedin-"][class*="-base"],
 [class*="bg-linkedin-"][class*="-global"] > *,
 *:hover > [class*="bg-linkedin-"][class*="-into"],
@@ -606,7 +516,6 @@
   background-color: var(--linkedin);
 }
 
-/***** 3.5 NPM Background Color *****/
 [class*="bg-npm-"][class*="-base"],
 [class*="bg-npm-"][class*="-global"] > *,
 *:hover > [class*="bg-npm-"][class*="-into"],
@@ -630,7 +539,6 @@
   background-color: var(--npm);
 }
 
-/***** 3.6 Stack Overflow Background Color *****/
 [class*="bg-stack-"][class*="-base"],
 [class*="bg-stack-"][class*="-global"] > *,
 *:hover > [class*="bg-stack-"][class*="-into"],
@@ -654,7 +562,6 @@
   background-color: var(--stackoverflow);
 }
 
-/***** 3.7 Twitter Background Color *****/
 [class*="bg-tw-"][class*="-base"],
 [class*="bg-tw-"][class*="-global"] > *,
 *:hover > [class*="bg-tw-"][class*="-into"],
@@ -678,19 +585,7 @@
   background-color: var(--twitter);
 }
 
-/********** 4. TRANSPARENT BACKGROUND COLORS **********/
-
-/*
-4.1 Amethyst
-4.2 Citrine
-4.3 Quartz
-4.4 Emerald
-4.5 Obsidian
-4.6 Ruby
-4.7 Sapphire
-*/
-
-/***** 4.1 Amethyst Transparent Background Color *****/
+/***** 4 - Transparent Background Colors *****/
 [class*="amethyst-"][class*="-base"],
 [class*="amethyst-"][class*="-global"] > *,
 *:hover > [class*="amethyst-"][class*="-into"],
@@ -714,7 +609,6 @@
   background-color: var(--amethyst);
 }
 
-/***** 4.2 Citrine Transparent Background Color *****/
 [class*="citrine-"][class*="-base"],
 [class*="citrine-"][class*="-global"] > *,
 *:hover > [class*="citrine-"][class*="-into"],
@@ -738,7 +632,6 @@
   background-color: var(--citrine);
 }
 
-/***** 4.3 Quartz Transparent Background Color *****/
 [class*="quartz-"][class*="-base"],
 [class*="quartz-"][class*="-global"] > *,
 *:hover > [class*="quartz-"][class*="-into"],
@@ -762,7 +655,6 @@
   background-color: var(--quartz);
 }
 
-/***** 4.4 Emerald Transparent Background Color *****/
 [class*="emerald-"][class*="-base"],
 [class*="emerald-"][class*="-global"] > *,
 *:hover > [class*="emerald-"][class*="-into"],
@@ -786,7 +678,6 @@
   background-color: var(--emerald);
 }
 
-/***** 4.5 Obsidian Transparent Background Color *****/
 [class*="obsidian-"][class*="-base"],
 [class*="obsidian-"][class*="-global"] > *,
 *:hover > [class*="obsidian-"][class*="-into"],
@@ -810,7 +701,6 @@
   background-color: var(--obsidian);
 }
 
-/***** 4.6 Ruby Transparent Background Color *****/
 [class*="ruby-"][class*="-base"],
 [class*="ruby-"][class*="-global"] > *,
 *:hover > [class*="ruby-"][class*="-into"],
@@ -834,7 +724,6 @@
   background-color: var(--ruby);
 }
 
-/***** 4.7 Sapphire Transparent Background Color *****/
 [class*="sapphire-"][class*="-base"],
 [class*="sapphire-"][class*="-global"] > *,
 *:hover > [class*="sapphire-"][class*="-into"],
@@ -857,4 +746,3 @@
 [class*="sapphire-"][class*="-check"]:checked ~ [class*="sapphire-"][class*="-hub"] [class*="sapphire-"][class*="-goal"] {
   background-color: var(--sapphire);
 }
-
