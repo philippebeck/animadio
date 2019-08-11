@@ -1,32 +1,12 @@
-/******************** FLEX ********************/
+/********** FLEX **********/
 
 /*
-1. FLEX
-  1.1 Flex, Col & Row
-2. FLEX XS
-  2.1 Flex XS Container
-  2.2 Flex XS Items
-3. FLEX SM
-  3.1 Flex SM Container
-  3.2 Flex SM Items
-4. FLEX MD
-  4.1 Flex MD Container
-  4.2 Flex MD Items
-5. FLEX LG
-  5.1 Flex LG Container
-  5.2 Flex LG Items
-6. FLEX XL
-  6.1 Flex XL Container
-  6.2 Flex XL Items
+1 - Flex Global
+2 - Column & Row
+3 - Flex
 */
 
-/********** 1. FLEX **********/
-
-/*
-1.1 Flex, Column & Row
-*/
-
-/***** 1.1 Flex, Column & Row *****/
+/***** 1 - Flex Global *****/
 [class*="flex"],
 [class*="column"],
 [class*="row"] {
@@ -34,6 +14,8 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+/***** 2 - Column & Row *****/
 
 [class*="column"] {
   flex-direction: column;
@@ -63,14 +45,7 @@
   flex-wrap: wrap-reverse;
 }
 
-/********** 2. FLEX XS **********/
-
-/*
-2.1 Flex XS Container
-2.2 Flex XS Items
-*/
-
-/***** 2.1 Flex XS Container *****/
+/***** 3 - Flex *****/
 [class*="flex-"][class*="-2xs"] {
   margin: var(--flex-negative-margin-xs);
 }
@@ -115,7 +90,6 @@
   margin: var(--flex-negative-margin-xs);
 }
 
-/***** 2.2 Flex XS Items *****/
 [class*="flex-"][class*="-2xs"] > * {
   width: calc(100% / 2 - var(--flex-width-xs));
   margin: var(--flex-positive-margin-xs);
@@ -171,15 +145,7 @@
   margin: var(--flex-positive-margin-xs);
 }
 
-/********** 3. FLEX SM **********/
-
-/*
-3.1 Flex SM Container
-3.2 Flex SM Items
-*/
-
 @media (min-width: 576px) {
-  /***** 3.1 Flex SM Container *****/
   [class*="flex-"][class*="-2sm"] {
     margin: var(--flex-negative-margin-sm);
   }
@@ -224,7 +190,6 @@
     margin: var(--flex-negative-margin-sm);
   }
 
-  /***** 3.2 Flex SM Items *****/
   [class*="flex-"][class*="-2sm"] > * {
     width: calc(100% / 2 - var(--flex-width-sm));
     margin: var(--flex-positive-margin-sm);
@@ -281,15 +246,7 @@
   }
 }
 
-/********** 4. FLEX MD **********/
-
-/*
-4.1 Flex MD Container
-4.2 Flex MD Items
-*/
-
 @media (min-width: 768px) {
-  /***** 4.1 Flex MD Container *****/
   [class*="flex-"][class*="-2md"] {
     margin: var(--flex-negative-margin-md);
   }
@@ -334,7 +291,6 @@
     margin: var(--flex-negative-margin-md);
   }
 
-  /***** 4.2 Flex MD Items *****/
   [class*="flex-"][class*="-2md"] > * {
     width: calc(100% / 2 - var(--flex-width-md));
     margin: var(--flex-positive-margin-md);
@@ -391,15 +347,7 @@
   }
 }
 
-/********** 5. FLEX LG **********/
-
-/*
-5.1 Flex LG Container
-5.2 Flex LG Items
-*/
-
 @media (min-width: 992px) {
-  /***** 5.1 Flex LG Container *****/
   [class*="flex-"][class*="-2lg"] {
     margin: var(--flex-negative-margin-lg);
   }
@@ -444,7 +392,6 @@
     margin: var(--flex-negative-margin-lg);
   }
 
-  /***** 5.2 Flex LG Items *****/
   [class*="flex-"][class*="-2lg"] > * {
     width: calc(100% / 2 - var(--flex-width-lg));
     margin: var(--flex-positive-margin-lg);
@@ -501,15 +448,7 @@
   }
 }
 
-/********** 6. FLEX XL **********/
-
-/*
-6.1 Flex XL Container
-6.2 Flex XL Items
-*/
-
 @media (min-width: 1200px) {
-  /***** 6.1 Flex XL Container *****/
   [class*="flex-"][class*="-2xl"] {
     margin: var(--flex-negative-margin-xl);
   }
@@ -554,7 +493,6 @@
     margin: var(--flex-negative-margin-xl);
   }
 
-  /***** 6.2 Flex XL Items *****/
   [class*="flex-"][class*="-2xl"] > * {
     width: calc(100% / 2 - var(--flex-width-xl));
     margin: var(--flex-positive-margin-xl);
@@ -610,4 +548,3 @@
     margin: var(--flex-positive-margin-xl);
   }
 }
-
