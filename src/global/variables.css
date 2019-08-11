@@ -618,7 +618,7 @@ pre {
   --gallery-figcaption-line-height: 1;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-width: 100%;
-  --gallery-figure-hover-figcaption-anima: translateY-opac 2s;
+  --gallery-figure-hover-figcaption-animation: translateY-opac 2s;
   --gallery-figure-hover-figcaption-bottom: 0;
   --gallery-figcaption-fa-background-color: var(--blue);
   --gallery-figcaption-fa-border: 2px solid var(--white);

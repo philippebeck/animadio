@@ -56,7 +56,7 @@
 .gallery figure:focus figcaption,
 .gallery figure:active figcaption {
   display: block;
-  animation: var(--gallery-figure-hover-figcaption-anima);
+  animation: var(--gallery-figure-hover-figcaption-animation);
   bottom: var(--gallery-figure-hover-figcaption-bottom);
 }
 
