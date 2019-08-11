@@ -1,31 +1,11 @@
-/******************** FLOW ********************/
+/********** FLOW **********/
 
 /*
-1. OVERFLOW HIDDEN
-  1.1 Hidden XS
-  1.2 Hidden SM
-  1.3 Hidden MD
-  1.4 Hidden LG
-  1.5 Hidden XL
-2. OVERFLOW SCROLL
-  2.1 Scroll XS
-  2.2 Scroll SM
-  2.3 Scroll MD
-  2.4 Scroll LG
-  2.5 Scroll XL
-*/
+1 - Overflow Hidden
+2 - Overflow Scroll
+ */
 
-/********** 1. OVERFLOW HIDDEN **********/
-
-/*
-1.1 Hidden XS
-1.2 Hidden SM
-1.3 Hidden MD
-1.4 Hidden LG
-1.5 Hidden XL
-*/
-
-/***** 1.1 Hidden XS *****/
+/***** 1 - Overflow Hidden *****/
 [class*="hidden-xs-"][class*="-base"],
 [class*="hidden-xs-"][class*="-global"] > *,
 *:hover > [class*="hidden-xs-"][class*="-into"],
@@ -49,7 +29,6 @@
   overflow: hidden;
 }
 
-/***** 1.2 Hidden SM *****/
 @media (min-width: 576px) {
   [class*="hidden-sm-"][class*="-base"],
   [class*="hidden-sm-"][class*="-global"] > *,
@@ -75,7 +54,6 @@
   }
 }
 
-/***** 1.3 Hidden MD *****/
 @media (min-width: 768px) {
   [class*="hidden-md-"][class*="-base"],
   [class*="hidden-md-"][class*="-global"] > *,
@@ -101,7 +79,6 @@
   }
 }
 
-/***** 1.4 Hidden LG *****/
 @media (min-width: 992px) {
   [class*="hidden-lg-"][class*="-base"],
   [class*="hidden-lg-"][class*="-global"] > *,
@@ -127,7 +104,6 @@
   }
 }
 
-/***** 1.5 Hidden XL *****/
 @media (min-width: 1200px) {
   [class*="hidden-xl-"][class*="-base"],
   [class*="hidden-xl-"][class*="-global"] > *,
@@ -153,17 +129,7 @@
   }
 }
 
-/********** 2. OVERFLOW SCROLL **********/
-
-/*
-2.1 Scroll XS
-2.2 Scroll SM
-2.3 Scroll MD
-2.4 Scroll LG
-2.5 Scroll XL
-*/
-
-/***** 2.1 Scroll XS *****/
+/***** 2 - Overflow Scroll *****/
 [class*="scroll-xs-"][class*="-base"],
 [class*="scroll-xs-"][class*="-global"] > *,
 *:hover > [class*="scroll-xs-"][class*="-into"],
@@ -187,7 +153,6 @@
   overflow: scroll;
 }
 
-/***** 2.2 Scroll SM *****/
 @media (min-width: 576px) {
   [class*="scroll-sm-"][class*="-base"],
   [class*="scroll-sm-"][class*="-global"] > *,
@@ -213,7 +178,6 @@
   }
 }
 
-/***** 2.3 Scroll MD *****/
 @media (min-width: 768px) {
   [class*="scroll-md-"][class*="-base"],
   [class*="scroll-md-"][class*="-global"] > *,
@@ -239,7 +203,6 @@
   }
 }
 
-/***** 2.4 Scroll LG *****/
 @media (min-width: 992px) {
   [class*="scroll-lg-"][class*="-base"],
   [class*="scroll-lg-"][class*="-global"] > *,
@@ -265,7 +228,6 @@
   }
 }
 
-/***** 2.5 Scroll XL *****/
 @media (min-width: 1200px) {
   [class*="scroll-xl-"][class*="-base"],
   [class*="scroll-xl-"][class*="-global"] > *,
@@ -290,4 +252,3 @@
     overflow: scroll;
   }
 }
-
