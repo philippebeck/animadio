@@ -1,37 +1,12 @@
-/******************** DISPLAY *********************/
+/********** DISPLAY **********/
 
 /*
-1. DISPLAY BLOCK
-  1.1 Block XS
-  1.2 Block SM
-  1.3 Block MD
-  1.4 Block LG
-  1.5 Block XL
-2. DISPLAY NONE
-  2.1 Hide XS
-  2.2 Hide SM
-  2.3 Hide MD
-  2.4 Hide LG
-  2.5 Hide XL
-3. DISPLAY INLINE
-  3.1 Inline XS
-  3.2 Inline SM
-  3.3 Inline MD
-  3.4 Inline LG
-  3.5 Inline XL
+1 - Display Block
+2 - Display None
+3 - Display Inline
 */
 
-/********** 1. DISPLAY BLOCK **********/
-
-/*
-1.1 Block XS
-1.2 Block SM
-1.3 Block MD
-1.4 Block LG
-1.5 Block XL
-*/
-
-/***** 1.1 Block XS *****/
+/***** 1 - Display Block *****/
 [class*="block-xs-"][class*="-base"],
 [class*="block-xs-"][class*="-global"] > *,
 *:hover > [class*="block-xs-"][class*="-into"],
@@ -55,7 +30,6 @@
   display: block;
 }
 
-/***** 1.2 Block SM *****/
 @media (min-width: 576px) {
   [class*="block-sm-"][class*="-base"],
   [class*="block-sm-"][class*="-global"] > *,
@@ -81,7 +55,6 @@
   }
 }
 
-/***** 1.3 Block MD *****/
 @media (min-width: 768px) {
   [class*="block-md-"][class*="-base"],
   [class*="block-md-"][class*="-global"] > *,
@@ -107,7 +80,6 @@
   }
 }
 
-/***** 1.4 Block LG *****/
 @media (min-width: 992px) {
   [class*="block-lg-"][class*="-base"],
   [class*="block-lg-"][class*="-global"] > *,
@@ -133,7 +105,6 @@
   }
 }
 
-/***** 1.5 Block XL *****/
 @media (min-width: 1200px) {
   [class*="block-xl-"][class*="-base"],
   [class*="block-xl-"][class*="-global"] > *,
@@ -159,17 +130,7 @@
   }
 }
 
-/********** 2. DISPLAY NONE **********/
-
-/*
-2.1 Hide XS
-2.2 Hide SM
-2.3 Hide MD
-2.4 Hide LG
-2.5 Hide XL
-*/
-
-/***** 2.1 Hide XS *****/
+/***** 2 - Display None *****/
 [class*="hide-xs-"][class*="-base"],
 [class*="hide-xs-"][class*="-global"] > *,
 *:hover > [class*="hide-xs-"][class*="-into"],
@@ -193,7 +154,6 @@
   display: none;
 }
 
-/***** 2.2 Hide SM *****/
 @media (min-width: 576px) {
   [class*="hide-sm-"][class*="-base"],
   [class*="hide-sm-"][class*="-global"] > *,
@@ -219,7 +179,6 @@
   }
 }
 
-/***** 2.3 Hide MD *****/
 @media (min-width: 768px) {
   [class*="hide-md-"][class*="-base"],
   [class*="hide-md-"][class*="-global"] > *,
@@ -245,7 +204,6 @@
   }
 }
 
-/***** 2.4 Hide LG *****/
 @media (min-width: 992px) {
   [class*="hide-lg-"][class*="-base"],
   [class*="hide-lg-"][class*="-global"] > *,
@@ -271,7 +229,6 @@
   }
 }
 
-/***** 2.5 Hide XL *****/
 @media (min-width: 1200px) {
   [class*="hide-xl-"][class*="-base"],
   [class*="hide-xl-"][class*="-global"] > *,
@@ -297,17 +254,7 @@
   }
 }
 
-/********** 3. DISPLAY INLINE **********/
-
-/*
-3.1 Inline XS
-3.2 Inline SM
-3.3 Inline MD
-3.4 Inline LG
-3.5 Inline XL
-*/
-
-/***** 3.1 Inline XS *****/
+/***** 3 - Display Inline *****/
 [class*="inline-xs-"][class*="-base"],
 [class*="inline-xs-"][class*="-global"] > *,
 *:hover > [class*="inline-xs-"][class*="-into"],
@@ -331,7 +278,6 @@
   display: inline;
 }
 
-/***** 3.2 Inline SM *****/
 @media (min-width: 576px) {
   [class*="inline-sm-"][class*="-base"],
   [class*="inline-sm-"][class*="-global"] > *,
@@ -357,7 +303,6 @@
   }
 }
 
-/***** 3.3 Inline MD *****/
 @media (min-width: 768px) {
   [class*="inline-md-"][class*="-base"],
   [class*="inline-md-"][class*="-global"] > *,
@@ -383,7 +328,6 @@
   }
 }
 
-/***** 3.4 Inline LG *****/
 @media (min-width: 992px) {
   [class*="inline-lg-"][class*="-base"],
   [class*="inline-lg-"][class*="-global"] > *,
@@ -409,7 +353,6 @@
   }
 }
 
-/***** 3.5 Inline XL *****/
 @media (min-width: 1200px) {
   [class*="inline-xl-"][class*="-base"],
   [class*="inline-xl-"][class*="-global"] > *,
@@ -434,4 +377,3 @@
     display: inline;
   }
 }
-
