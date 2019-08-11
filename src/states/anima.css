@@ -1,62 +1,21 @@
 /********** ANIMA **********/
 
 /*
-1. ANIMA
-  1.1 Anima
-2. ANIMA ROTATE
-  2.1 Anima Rota
-  2.2 Anima Rotax
-  2.3 Anima Rotay
-3. ANIMA SCALE
-  3.1 Anima Scal
-  3.2 Anima Scalx
-  3.3 Anima Scaly
-4. ANIMA SKEW
-  4.1 Anima Skew
-  4.2 Anima Skewx
-  4.3 Anima Skewy
-5. ANIMA TRANSLATE
-  5.1 Anima Tran
-  5.2 Anima Tranx
-  5.3 Anima Trany
-6. ANIMA DURATION
-  6.1 Anima Duration XS
-  6.2 Anima Duration SM
-  6.3 Anima Duration MD
-  6.4 Anima Duration LG
-  6.5 Anima Duration XL
-7. ANIMA TIMING FUNCTION
-  7.1 Anima Funtion Linear
-  7.2 Anima Funtion Ease
-  7.3 Anima Funtion Steps
-  7.4 Anima Funtion Bezier
-8. ANIMA ITERATION COUNT
-  8.1 Anima Iteration Few
-  8.2 Anima Iteration Many
-  8.3 Anima Iteration Loop
-9. ANIMA DIRECTION
-  9.1 Anima Direction Alter
-  9.2 Anima Direction Rever
-  9.3 Anima Direction Altrev
-10. ANIMA DELAY
-  10.1 Anima Delay Small
-  10.2 Anima Delay Medium
-  10.3 Anima Delay Large
-11. ANIMA FILL MODE
-  11.1 Anima Mode Back
-  11.2 Anima Mode Front
-12. TRANSFORM ORIGIN
-  12.1 Transform Origin Far
-  12.2 Transform Origin Near
+1 - Animation
+2. Animation rotate
+3. Animation Scale
+4. Animation Skew
+5. Animation Translate
+6. Animation Duration
+7. Animation Timing Function
+8. Animation Iteration Count
+9. Animation duration
+10. Animation Delay
+11. Animation Fill Mode
+12. Transform Origin
 */
 
-/********** 1. ANIMA **********/
-
-/*
-1.1 Anima
-*/
-
-/***** 1.1 Anima *****/
+/***** 1 - Animation *****/
 [class*="anima-"][class*="-base"],
 [class*="anima-"][class*="-global"] > *,
 *:hover > [class*="anima-"][class*="-into"],
@@ -77,24 +36,16 @@
 [class*="anima-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target4"],
 [class*="anima-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target5"],
 [class*="anima-"][class*="-check"]:checked ~ [class*="anima-"][class*="-hub"] [class*="anima-"][class*="-goal"] {
-  animation-name: var(--anima-name);
-  animation-duration: var(--anima-duration);
-  animation-timing-function: var(--anima-timing-function);
-  animation-direction: var(--anima-direction);
-  animation-delay: var(--anima-delay);
-  animation-iteration-count: var(--anima-iteration-count);
-  animation-fill-mode: var(--anima-fill-mode);
+  animation-name: var(--animation-name);
+  animation-duration: var(--animation-duration);
+  animation-timing-function: var(--animation-timing-function);
+  animation-direction: var(--animation-direction);
+  animation-delay: var(--animation-delay);
+  animation-iteration-count: var(--animation-iteration-count);
+  animation-fill-mode: var(--animation-fill-mode);
 }
 
-/********** 2. ANIMA ROTATE **********/
-
-/*
-2.1 Anima Rota
-2.2 Anima Rotax
-2.3 Anima Rotay
-*/
-
-/***** 2.1 Anima Rota *****/
+/***** 2 - Animation Rotate *****/
 [class*="anima-rota-"][class*="-base"],
 [class*="anima-rota-"][class*="-global"] > *,
 *:hover > [class*="anima-rota-"][class*="-into"],
@@ -118,7 +69,6 @@
   animation-name: rotate;
 }
 
-/***** 2.2 Anima Rotax *****/
 [class*="anima-rotax-"][class*="-base"],
 [class*="anima-rotax-"][class*="-global"] > *,
 *:hover > [class*="anima-rotax-"][class*="-into"],
@@ -142,7 +92,6 @@
   animation-name: rotateX;
 }
 
-/***** 2.3 Anima Rotay *****/
 [class*="anima-rotay-"][class*="-base"],
 [class*="anima-rotay-"][class*="-global"] > *,
 *:hover > [class*="anima-rotay-"][class*="-into"],
@@ -166,15 +115,7 @@
   animation-name: rotateY;
 }
 
-/********** 3. ANIMA SCALE **********/
-
-/*
-3.1 Scal
-3.2 Scalx
-3.3 Scaly
-*/
-
-/***** 3.1 Anima Scal *****/
+/***** 3 - Animation Scale *****/
 [class*="anima-scal-"][class*="-base"],
 [class*="anima-scal-"][class*="-global"] > *,
 *:hover > [class*="anima-scal-"][class*="-into"],
@@ -198,7 +139,6 @@
   animation-name: scale;
 }
 
-/***** 3.2 Anima Scalx *****/
 [class*="anima-scalx-"][class*="-base"],
 [class*="anima-scalx-"][class*="-global"] > *,
 *:hover > [class*="anima-scalx-"][class*="-into"],
@@ -222,7 +162,6 @@
   animation-name: scaleX;
 }
 
-/***** 3.3 Anima Scaly *****/
 [class*="anima-scaly-"][class*="-base"],
 [class*="anima-scaly-"][class*="-global"] > *,
 *:hover > [class*="anima-scaly-"][class*="-into"],
@@ -246,15 +185,7 @@
   animation-name: scaleY;
 }
 
-/********** 4. ANIMA SKEW **********/
-
-/*
-4.1 Anima Skew
-4.2 Anima Skewx
-4.3 Anima Skewy
-*/
-
-/***** 4.1 Anima Skew *****/
+/***** 4 - Animation Skew *****/
 [class*="anima-skew-"][class*="-base"],
 [class*="anima-skew-"][class*="-global"] > *,
 *:hover > [class*="anima-skew-"][class*="-into"],
@@ -278,7 +209,6 @@
   animation-name: skew;
 }
 
-/***** 4.2 Anima Skewx *****/
 [class*="anima-skewx-"][class*="-base"],
 [class*="anima-skewx-"][class*="-global"] > *,
 *:hover > [class*="anima-skewx-"][class*="-into"],
@@ -302,7 +232,6 @@
   animation-name: skewX;
 }
 
-/***** 4.3 Anima Skewy *****/
 [class*="anima-skewy-"][class*="-base"],
 [class*="anima-skewy-"][class*="-global"] > *,
 *:hover > [class*="anima-skewy-"][class*="-into"],
@@ -326,15 +255,7 @@
   animation-name: skewY;
 }
 
-/********** 5. ANIMA TRANSLATE **********/
-
-/*
-5.1 Anima Tran
-5.2 Anima Tranx
-5.3 Anima Trany
-*/
-
-/***** 5.1 Anima Tran *****/
+/***** 5 - Animation Translate *****/
 [class*="anima-tran-"][class*="-base"],
 [class*="anima-tran-"][class*="-global"] > *,
 *:hover > [class*="anima-tran-"][class*="-into"],
@@ -358,7 +279,6 @@
   animation-name: translate;
 }
 
-/***** 5.2 Anima Tranx *****/
 [class*="anima-tranx-"][class*="-base"],
 [class*="anima-tranx-"][class*="-global"] > *,
 *:hover > [class*="anima-tranx-"][class*="-into"],
@@ -382,7 +302,6 @@
   animation-name: translateX;
 }
 
-/***** 5.3 Anima trany *****/
 [class*="anima-trany-"][class*="-base"],
 [class*="anima-trany-"][class*="-global"] > *,
 *:hover > [class*="anima-trany-"][class*="-into"],
@@ -406,17 +325,7 @@
   animation-name: translateY;
 }
 
-/********** 6. ANIMA DURATION **********/
-
-/*
-6.1 Anima Duration XS
-6.2 Anima Duration SM
-6.3 Anima Duration MD
-6.4 Anima Duration LG
-6.5 Anima Duration XL
-*/
-
-/***** 6.1 Anima Duration XS *****/
+/***** 6 - Animation Duration *****/
 [class*="anima-xs-"][class*="-base"],
 [class*="anima-xs-"][class*="-global"] > *,
 *:hover > [class*="anima-xs-"][class*="-into"],
@@ -437,10 +346,9 @@
 [class*="anima-xs-"][class*="-radio4"]:checked ~ [class*="anima-xs-"][class*="-relay"] [class*="anima-xs-"][class*="-target4"],
 [class*="anima-xs-"][class*="-radio5"]:checked ~ [class*="anima-xs-"][class*="-relay"] [class*="anima-xs-"][class*="-target5"],
 [class*="anima-xs-"][class*="-check"]:checked ~ [class*="anima-xs-"][class*="-hub"] [class*="anima-xs-"][class*="-goal"] {
-  animation-duration: var(--anima-duration-xs);
+  animation-duration: var(--animation-duration-xs);
 }
 
-/***** 6.2 Anima Duration SM *****/
 [class*="anima-sm-"][class*="-base"],
 [class*="anima-sm-"][class*="-global"] > *,
 *:hover > [class*="anima-sm-"][class*="-into"],
@@ -461,10 +369,9 @@
 [class*="anima-sm-"][class*="-radio4"]:checked ~ [class*="anima-sm-"][class*="-relay"] [class*="anima-sm-"][class*="-target4"],
 [class*="anima-sm-"][class*="-radio5"]:checked ~ [class*="anima-sm-"][class*="-relay"] [class*="anima-sm-"][class*="-target5"],
 [class*="anima-sm-"][class*="-check"]:checked ~ [class*="anima-sm-"][class*="-hub"] [class*="anima-sm-"][class*="-goal"] {
-  animation-duration: var(--anima-duration-sm);
+  animation-duration: var(--animation-duration-sm);
 }
 
-/***** 6.3 Anima Duration MD *****/
 [class*="anima-md-"][class*="-base"],
 [class*="anima-md-"][class*="-global"] > *,
 *:hover > [class*="anima-md-"][class*="-into"],
@@ -485,10 +392,9 @@
 [class*="anima-md-"][class*="-radio4"]:checked ~ [class*="anima-md-"][class*="-relay"] [class*="anima-md-"][class*="-target4"],
 [class*="anima-md-"][class*="-radio5"]:checked ~ [class*="anima-md-"][class*="-relay"] [class*="anima-md-"][class*="-target5"],
 [class*="anima-md-"][class*="-check"]:checked ~ [class*="anima-md-"][class*="-hub"] [class*="anima-md-"][class*="-goal"] {
-  animation-duration: var(--anima-duration-md);
+  animation-duration: var(--animation-duration-md);
 }
 
-/***** 6.4 Anima Duration LG *****/
 [class*="anima-lg-"][class*="-base"],
 [class*="anima-lg-"][class*="-global"] > *,
 *:hover > [class*="anima-lg-"][class*="-into"],
@@ -509,10 +415,9 @@
 [class*="anima-lg-"][class*="-radio4"]:checked ~ [class*="anima-lg-"][class*="-relay"] [class*="anima-lg-"][class*="-target4"],
 [class*="anima-lg-"][class*="-radio5"]:checked ~ [class*="anima-lg-"][class*="-relay"] [class*="anima-lg-"][class*="-target5"],
 [class*="anima-lg-"][class*="-check"]:checked ~ [class*="anima-lg-"][class*="-hub"] [class*="anima-lg-"][class*="-goal"] {
-  animation-duration: var(--anima-duration-lg);
+  animation-duration: var(--animation-duration-lg);
 }
 
-/***** 6.5 Anima Duration XL *****/
 [class*="anima-xl-"][class*="-base"],
 [class*="anima-xl-"][class*="-global"] > *,
 *:hover > [class*="anima-xl-"][class*="-into"],
@@ -533,19 +438,10 @@
 [class*="anima-xl-"][class*="-radio4"]:checked ~ [class*="anima-xl-"][class*="-relay"] [class*="anima-xl-"][class*="-target4"],
 [class*="anima-xl-"][class*="-radio5"]:checked ~ [class*="anima-xl-"][class*="-relay"] [class*="anima-xl-"][class*="-target5"],
 [class*="anima-xl-"][class*="-check"]:checked ~ [class*="anima-xl-"][class*="-hub"] [class*="anima-xl-"][class*="-goal"] {
-  animation-duration: var(--anima-duration-xl);
+  animation-duration: var(--animation-duration-xl);
 }
 
-/********** 7. ANIMA TIMING FUNCTION **********/
-
-/*
-7.1 Anima Function Linear
-7.2 Anima Function Ease
-7.3 Anima Function Steps
-7.4 Anima Function Bezier
-*/
-
-/***** 7.1 Anima Function Linear *****/
+/***** 7 - Animation Timing Function *****/
 [class*="anima-linear-"][class*="-base"],
 [class*="anima-linear-"][class*="-global"] > *,
 *:hover > [class*="anima-linear-"][class*="-into"],
@@ -569,7 +465,6 @@
   animation-timing-function: linear;
 }
 
-/***** 7.2 Anima Function Ease *****/
 [class*="anima-ease-"][class*="-base"],
 [class*="anima-ease-"][class*="-global"] > *,
 *:hover > [class*="anima-ease-"][class*="-into"],
@@ -590,10 +485,9 @@
 [class*="anima-ease-"][class*="-radio4"]:checked ~ [class*="anima-ease-"][class*="-relay"] [class*="anima-ease-"][class*="-target4"],
 [class*="anima-ease-"][class*="-radio5"]:checked ~ [class*="anima-ease-"][class*="-relay"] [class*="anima-ease-"][class*="-target5"],
 [class*="anima-ease-"][class*="-check"]:checked ~ [class*="anima-ease-"][class*="-hub"] [class*="anima-ease-"][class*="-goal"] {
-  animation-timing-function: var(--anima-timing-function-ease);
+  animation-timing-function: var(--animation-timing-function-ease);
 }
 
-/***** 7.1 Anima Function Steps *****/
 [class*="anima-steps-"][class*="-base"],
 [class*="anima-steps-"][class*="-global"] > *,
 *:hover > [class*="anima-steps-"][class*="-into"],
@@ -614,10 +508,9 @@
 [class*="anima-steps-"][class*="-radio4"]:checked ~ [class*="anima-steps-"][class*="-relay"] [class*="anima-steps-"][class*="-target4"],
 [class*="anima-steps-"][class*="-radio5"]:checked ~ [class*="anima-steps-"][class*="-relay"] [class*="anima-steps-"][class*="-target5"],
 [class*="anima-steps-"][class*="-check"]:checked ~ [class*="anima-steps-"][class*="-hub"] [class*="anima-steps-"][class*="-goal"] {
-  animation-timing-function: steps(var(--anima-timing-function-steps));
+  animation-timing-function: steps(var(--animation-timing-function-steps));
 }
 
-/***** 7.4 Anima Function Bezier *****/
 [class*="anima-bezier-"][class*="-base"],
 [class*="anima-bezier-"][class*="-global"] > *,
 *:hover > [class*="anima-bezier-"][class*="-into"],
@@ -638,18 +531,10 @@
 [class*="anima-bezier-"][class*="-radio4"]:checked ~ [class*="anima-bezier-"][class*="-relay"] [class*="anima-bezier-"][class*="-target4"],
 [class*="anima-bezier-"][class*="-radio5"]:checked ~ [class*="anima-bezier-"][class*="-relay"] [class*="anima-bezier-"][class*="-target5"],
 [class*="anima-bezier-"][class*="-check"]:checked ~ [class*="anima-bezier-"][class*="-hub"] [class*="anima-bezier-"][class*="-goal"] {
-  animation-timing-function: cubic-bezier(var(--anima-timing-function-bezier));
+  animation-timing-function: cubic-bezier(var(--animation-timing-function-bezier));
 }
 
-/********** 8. ANIMA ITERATION COUNT **********/
-
-/*
-8.1 Anima Iteration Few
-8.2 Anima Iteration Many
-8.3 Anima Iteration Loop
-*/
-
-/***** 8.1 Anima Iteration Few *****/
+/***** 8 - Animation Iteration Count *****/
 [class*="anima-few-"][class*="-base"],
 [class*="anima-few-"][class*="-global"] > *,
 *:hover > [class*="anima-few-"][class*="-into"],
@@ -670,10 +555,9 @@
 [class*="anima-few-"][class*="-radio4"]:checked ~ [class*="anima-few-"][class*="-relay"] [class*="anima-few-"][class*="-target4"],
 [class*="anima-few-"][class*="-radio5"]:checked ~ [class*="anima-few-"][class*="-relay"] [class*="anima-few-"][class*="-target5"],
 [class*="anima-few-"][class*="-check"]:checked ~ [class*="anima-few-"][class*="-hub"] [class*="anima-few-"][class*="-goal"] {
-  animation-iteration-count: var(--anima-iteration-count-few);
+  animation-iteration-count: var(--animation-iteration-count-few);
 }
 
-/***** 8.2 Anima Iteration Many *****/
 [class*="anima-many-"][class*="-base"],
 [class*="anima-many-"][class*="-global"] > *,
 *:hover > [class*="anima-many-"][class*="-into"],
@@ -694,10 +578,9 @@
 [class*="anima-many-"][class*="-radio4"]:checked ~ [class*="anima-many-"][class*="-relay"] [class*="anima-many-"][class*="-target4"],
 [class*="anima-many-"][class*="-radio5"]:checked ~ [class*="anima-many-"][class*="-relay"] [class*="anima-many-"][class*="-target5"],
 [class*="anima-many-"][class*="-check"]:checked ~ [class*="anima-many-"][class*="-hub"] [class*="anima-many-"][class*="-goal"] {
-  animation-iteration-count: var(--anima-iteration-count-many);
+  animation-iteration-count: var(--animation-iteration-count-many);
 }
 
-/***** 8.3 Anima Iteration Loop *****/
 [class*="anima-loop-"][class*="-base"],
 [class*="anima-loop-"][class*="-global"] > *,
 *:hover > [class*="anima-loop-"][class*="-into"],
@@ -721,15 +604,7 @@
   animation-iteration-count: infinite;
 }
 
-/********** 9. ANIMA DIRECTION **********/
-
-/*
-9.1 Anima Direction Alter
-9.2 Anima Direction Rever
-9.3 Anima Direction Altrev
-*/
-
-/***** 9.1 Anima Direction Alter *****/
+/***** 9 - Animation Direction *****/
 [class*="anima-alter-"][class*="-base"],
 [class*="anima-alter-"][class*="-global"] > *,
 *:hover > [class*="anima-alter-"][class*="-into"],
@@ -753,7 +628,6 @@
   animation-direction: alternate;
 }
 
-/***** 9.2 Anima Direction Rever *****/
 [class*="anima-rever-"][class*="-base"],
 [class*="anima-rever-"][class*="-global"] > *,
 *:hover > [class*="anima-rever-"][class*="-into"],
@@ -777,7 +651,6 @@
   animation-direction: reverse;
 }
 
-/***** 9.3 Anima Direction Altrev *****/
 [class*="anima-altrev-"][class*="-base"],
 [class*="anima-altrev-"][class*="-global"] > *,
 *:hover > [class*="anima-altrev-"][class*="-into"],
@@ -801,15 +674,7 @@
   animation-direction: alternate-reverse;
 }
 
-/********** 10. ANIMA DELAY **********/
-
-/*
-10.1 Anima Delay Small
-10.2 Anima Delay Medium
-10.3 Anima Delay Large
-*/
-
-/***** 10.1 Anima Delay Small *****/
+/***** 10 - Animation Delay *****/
 [class*="anima-small-"][class*="-base"],
 [class*="anima-small-"][class*="-global"] > *,
 *:hover > [class*="anima-small-"][class*="-into"],
@@ -830,10 +695,9 @@
 [class*="anima-small-"][class*="-radio4"]:checked ~ [class*="anima-small-"][class*="-relay"] [class*="anima-small-"][class*="-target4"],
 [class*="anima-small-"][class*="-radio5"]:checked ~ [class*="anima-small-"][class*="-relay"] [class*="anima-small-"][class*="-target5"],
 [class*="anima-small-"][class*="-check"]:checked ~ [class*="anima-small-"][class*="-hub"] [class*="anima-small-"][class*="-goal"] {
-  animation-delay: var(--anima-delay-small);
+  animation-delay: var(--animation-delay-small);
 }
 
-/***** 10.2 Anima Delay Medium *****/
 [class*="anima-medium-"][class*="-base"],
 [class*="anima-medium-"][class*="-global"] > *,
 *:hover > [class*="anima-medium-"][class*="-into"],
@@ -854,10 +718,9 @@
 [class*="anima-medium-"][class*="-radio4"]:checked ~ [class*="anima-medium-"][class*="-relay"] [class*="anima-medium-"][class*="-target4"],
 [class*="anima-medium-"][class*="-radio5"]:checked ~ [class*="anima-medium-"][class*="-relay"] [class*="anima-medium-"][class*="-target5"],
 [class*="anima-medium-"][class*="-check"]:checked ~ [class*="anima-medium-"][class*="-hub"] [class*="anima-medium-"][class*="-goal"] {
-  animation-delay: var(--anima-delay-medium);
+  animation-delay: var(--animation-delay-medium);
 }
 
-/***** 10.3 Anima Delay Large *****/
 [class*="anima-large-"][class*="-base"],
 [class*="anima-large-"][class*="-global"] > *,
 *:hover > [class*="anima-large-"][class*="-into"],
@@ -878,17 +741,10 @@
 [class*="anima-large-"][class*="-radio4"]:checked ~ [class*="anima-large-"][class*="-relay"] [class*="anima-large-"][class*="-target4"],
 [class*="anima-large-"][class*="-radio5"]:checked ~ [class*="anima-large-"][class*="-relay"] [class*="anima-large-"][class*="-target5"],
 [class*="anima-large-"][class*="-check"]:checked ~ [class*="anima-large-"][class*="-hub"] [class*="anima-large-"][class*="-goal"] {
-  animation-delay: var(--anima-delay-large);
+  animation-delay: var(--animation-delay-large);
 }
 
-/********** 11. ANIMA FILL MODE **********/
-
-/*
-11.1 Anima Mode Back
-11.2 Anima Mode Front
-*/
-
-/***** 11.1 Anima Mode Back *****/
+/***** 11 - Animation Fill Mode *****/
 [class*="anima-back-"][class*="-base"],
 [class*="anima-back-"][class*="-global"] > *,
 *:hover > [class*="anima-back-"][class*="-into"],
@@ -912,7 +768,6 @@
   animation-fill-mode: backwards;
 }
 
-/***** 11.2 Anima Mode Front *****/
 [class*="anima-front-"][class*="-base"],
 [class*="anima-front-"][class*="-global"] > *,
 *:hover > [class*="anima-front-"][class*="-into"],
@@ -936,14 +791,7 @@
   animation-fill-mode: forwards;
 }
 
-/********** 12. TRANSFORM ORIGIN **********/
-
-/*
-12.1 Transform Origin Far
-12.2 Transform Origin Near
-*/
-
-/***** 12.1 Transform Origin Far *****/
+/***** 12 - Transform Origin *****/
 [class*="anima-far-"][class*="-base"],
 [class*="anima-far-"][class*="-global"] > *,
 *:hover > [class*="anima-far-"][class*="-into"],
@@ -967,7 +815,6 @@
   transform-origin: var(--transform-origin-far);
 }
 
-/***** 12.2 Transform Origin Near *****/
 [class*="anima-near-"][class*="-base"],
 [class*="anima-near-"][class*="-global"] > *,
 *:hover > [class*="anima-near-"][class*="-into"],
@@ -990,4 +837,3 @@
 [class*="anima-near-"][class*="-check"]:checked ~ [class*="anima-near-"][class*="-hub"] [class*="anima-near-"][class*="-goal"] {
   transform-origin: var(--transform-origin-near);
 }
-

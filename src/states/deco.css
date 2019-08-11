@@ -1,39 +1,13 @@
-/******************** DECO *********************/
+/********** DECO **********/
 
 /*
-1. TEXT DECORATION
-  1.1 Deco
-2. TEXT DECORATION LINE
-  2.1 None
-  2.2 Under
-  2.3 Through
-  2.4 Over
-3. TEXT DECORATION STYLE
-  3.1 Solid
-  3.2 Double
-  3.3 Dash
-  3.4 Dot
-  3.5 Wavy
-4. TEXT DECORATION COLOR
-  4.1 Black
-  4.2 Blue
-  4.3 Gray
-  4.4 Green
-  4.5 Maroon
-  4.6 Orange
-  4.7 Purple
-  4.8 Red
-  4.9 White
-  4.10 Yellow
+1 - Text Decoration
+2 - Text Decoration Line
+3 - Text Decoration Style
+4 - Text Decoration Color
 */
 
-/********** 1. TEXT DECORATION **********/
-
-/*
-1.1 Deco
-*/
-
-/***** 1.1 Deco *****/
+/***** 1 - Text Decoration *****/
 [class*="deco-"][class*="-base"],
 [class*="deco-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-into"],
@@ -54,21 +28,12 @@
 [class*="deco-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-relay"] [class*="deco-"][class*="-target4"],
 [class*="deco-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-relay"] [class*="deco-"][class*="-target5"],
 [class*="deco-"][class*="-check"]:checked ~ [class*="deco-"][class*="-hub"] [class*="deco-"][class*="-goal"] {
-  text-decoration-line: var(--deco-line);
-  text-decoration-style: var(--deco-style);
-  text-decoration-color: var(--deco-color);
+  text-decoration-line: var(--text-decoration-line);
+  text-decoration-style: var(--text-decoration-style);
+  text-decoration-color: var(--text-decoration-color);
 }
 
-/********** 1. TEXT DECORATION LINE **********/
-
-/*
-2.1 None
-2.2 Under
-2.3 Through
-2.4 Over
-*/
-
-/***** 2.1 Deco None *****/
+/***** 2 - Text Decoration Line *****/
 [class*="deco-none-"][class*="-base"],
 [class*="deco-none-"][class*="-global"] > *,
 *:hover > [class*="deco-none-"][class*="-into"],
@@ -92,7 +57,6 @@
   text-decoration-line: none;
 }
 
-/***** 2.2 Deco Under *****/
 [class*="deco-under-"][class*="-base"],
 [class*="deco-under-"][class*="-global"] > *,
 *:hover > [class*="deco-under-"][class*="-into"],
@@ -116,7 +80,6 @@
   text-decoration-line: underline;
 }
 
-/***** 2.3 Deco Through *****/
 [class*="deco-through-"][class*="-base"],
 [class*="deco-through-"][class*="-global"] > *,
 *:hover > [class*="deco-through-"][class*="-into"],
@@ -140,7 +103,6 @@
   text-decoration-line: line-through;
 }
 
-/***** 2.4 Deco Over *****/
 [class*="deco-over-"][class*="-base"],
 [class*="deco-over-"][class*="-global"] > *,
 *:hover > [class*="deco-over-"][class*="-into"],
@@ -164,17 +126,7 @@
   text-decoration-line: overline;
 }
 
-/********** 3. TEXT DECORATION STYLE **********/
-
-/*
-3.1 Solid
-3.2 Double
-3.3 Dash
-3.4 Dot
-3.5 Wavy
-*/
-
-/***** 3.1 Deco Solid *****/
+/***** 3 - Text Decoration Style *****/
 [class*="deco-solid-"][class*="-base"],
 [class*="deco-solid-"][class*="-global"] > *,
 *:hover > [class*="deco-solid-"][class*="-into"],
@@ -198,7 +150,6 @@
   text-decoration-style: solid;
 }
 
-/***** 3.2 Deco Double *****/
 [class*="deco-double-"][class*="-base"],
 [class*="deco-double-"][class*="-global"] > *,
 *:hover > [class*="deco-double-"][class*="-into"],
@@ -222,7 +173,6 @@
   text-decoration-style: double;
 }
 
-/***** 3.3 Deco Dash *****/
 [class*="deco-dash-"][class*="-base"],
 [class*="deco-dash-"][class*="-global"] > *,
 *:hover > [class*="deco-dash-"][class*="-into"],
@@ -246,7 +196,6 @@
   text-decoration-style: dashed;
 }
 
-/***** 3.4 Deco Dot *****/
 [class*="deco-dot-"][class*="-base"],
 [class*="deco-dot-"][class*="-global"] > *,
 *:hover > [class*="deco-dot-"][class*="-into"],
@@ -270,7 +219,6 @@
   text-decoration-style: dotted;
 }
 
-/***** 3.5 Deco Wavy *****/
 [class*="deco-wavy-"][class*="-base"],
 [class*="deco-wavy-"][class*="-global"] > *,
 *:hover > [class*="deco-wavy-"][class*="-into"],
@@ -294,22 +242,7 @@
   text-decoration-style: wavy;
 }
 
-/********** 4. TEXT DECORATION COLOR **********/
-
-/*
-4.1 Black
-4.2 Blue
-4.3 Gray
-4.4 Green
-4.5 Maroon
-4.6 Orange
-4.7 Purple
-4.8 Red
-4.9 White
-4.10 Yellow
-*/
-
-/***** 4.1 Deco Black *****/
+/***** 4 - Text Decoration Color *****/
 [class*="deco-black-"][class*="-base"],
 [class*="deco-black-"][class*="-global"] > *,
 *:hover > [class*="deco-black-"][class*="-into"],
@@ -333,7 +266,6 @@
   text-decoration-color: var(--black);
 }
 
-/***** 4.2 Deco Blue *****/
 [class*="deco-blue-"][class*="-base"],
 [class*="deco-blue-"][class*="-global"] > *,
 *:hover > [class*="deco-blue-"][class*="-into"],
@@ -357,7 +289,6 @@
   text-decoration-color: var(--blue);
 }
 
-/***** 4.3 Deco Gray *****/
 [class*="deco-gray-"][class*="-base"],
 [class*="deco-gray-"][class*="-global"] > *,
 *:hover > [class*="deco-gray-"][class*="-into"],
@@ -381,7 +312,6 @@
   text-decoration-color: var(--gray);
 }
 
-/***** 4.4 Deco Green *****/
 [class*="deco-green-"][class*="-base"],
 [class*="deco-green-"][class*="-global"] > *,
 *:hover > [class*="deco-green-"][class*="-into"],
@@ -405,7 +335,6 @@
   text-decoration-color: var(--green);
 }
 
-/***** 4.5 Deco Maroon *****/
 [class*="deco-maroon-"][class*="-base"],
 [class*="deco-maroon-"][class*="-global"] > *,
 *:hover > [class*="deco-maroon-"][class*="-into"],
@@ -429,7 +358,6 @@
   text-decoration-color: var(--maroon);
 }
 
-/***** 4.6 Deco Orange *****/
 [class*="deco-orange-"][class*="-base"],
 [class*="deco-orange-"][class*="-global"] > *,
 *:hover > [class*="deco-orange-"][class*="-into"],
@@ -453,7 +381,6 @@
   text-decoration-color: var(--orange);
 }
 
-/***** 4.7 Deco Purple *****/
 [class*="deco-purple-"][class*="-base"],
 [class*="deco-purple-"][class*="-global"] > *,
 *:hover > [class*="deco-purple-"][class*="-into"],
@@ -477,7 +404,6 @@
   text-decoration-color: var(--purple);
 }
 
-/***** 4.8 Deco Red *****/
 [class*="deco-red-"][class*="-base"],
 [class*="deco-red-"][class*="-global"] > *,
 *:hover > [class*="deco-red-"][class*="-into"],
@@ -501,7 +427,6 @@
   text-decoration-color: var(--red);
 }
 
-/***** 4.9 Deco White *****/
 [class*="deco-white-"][class*="-base"],
 [class*="deco-white-"][class*="-global"] > *,
 *:hover > [class*="deco-white-"][class*="-into"],
@@ -525,7 +450,6 @@
   text-decoration-color: var(--white);
 }
 
-/***** 4.10 Deco Yellow *****/
 [class*="deco-yellow-"][class*="-base"],
 [class*="deco-yellow-"][class*="-global"] > *,
 *:hover > [class*="deco-yellow-"][class*="-into"],
@@ -548,4 +472,3 @@
 [class*="deco-yellow-"][class*="-check"]:checked ~ [class*="deco-yellow-"][class*="-hub"] [class*="deco-yellow-"][class*="-goal"] {
   text-decoration-color: var(--yellow);
 }
-

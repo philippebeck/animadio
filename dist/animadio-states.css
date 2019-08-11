@@ -1,11 +1,11 @@
-/*! animadio v0.5.8 | https://animadio.org | MIT License */
+/*! animadio v0.5.9 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
 /*
 You can override any variable of Animadio you want in your custom stylesheet file to cutomize the tag & class properties !
 
-1. GLOBAL VARIABLES
+1. GLOBAL
   1.1 Colors
   1.2 Keyframes
   1.3 Init
@@ -13,12 +13,12 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   1.5 Padding
   1.6 Height
   1.7 Width
-2. GRID VARIABLES
+2. GRID
   2.1 Grid
   2.2 Flex
   2.3 Align
   2.4 Justify
-3. ELEMENTS VARIABLES
+3. ELEMENTS
   3.1 Btn
   3.2 Card
   3.3 Foot
@@ -28,7 +28,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   3.7 Navbar
   3.8 Slider
   3.9 Table
-4. STATES VARIABLES
+4. STATES
   4.1 Anima
   4.2 Bord
   4.3 Deco
@@ -620,7 +620,7 @@ pre {
   --gallery-figcaption-line-height: 1;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-width: 100%;
-  --gallery-figure-hover-figcaption-anima: translateY-opac 2s;
+  --gallery-figure-hover-figcaption-animation: translateY-opac 2s;
   --gallery-figure-hover-figcaption-bottom: 0;
   --gallery-figcaption-fa-background-color: var(--blue);
   --gallery-figcaption-fa-border: 2px solid var(--white);
@@ -886,26 +886,26 @@ pre {
 
 /***** 4.1 Anima *****/
 [class*="anima-"] {
-  --anima-delay: 0;
-  --anima-direction: normal;
-  --anima-duration: 2s;
-  --anima-fill-mode: none;
-  --anima-timing-function: linear;
-  --anima-iteration-count: 1;
-  --anima-name: scale;
-  --anima-duration-xs: 1s;
-  --anima-duration-sm: 2s;
-  --anima-duration-md: 5s;
-  --anima-duration-lg: 10s;
-  --anima-duration-xl: 60s;
-  --anima-timing-function-ease: ease-in-out;
-  --anima-timing-function-steps: 60, start;
-  --anima-timing-function-bezier: 1, 5, 1, -5;
-  --anima-iteration-count-few: 2;
-  --anima-iteration-count-many: 5;
-  --anima-delay-small: 1s;
-  --anima-delay-medium: 2s;
-  --anima-delay-large: 3s;
+  --animation-delay: 0;
+  --animation-direction: normal;
+  --animation-duration: 2s;
+  --animation-fill-mode: none;
+  --animation-timing-function: linear;
+  --animation-iteration-count: 1;
+  --animation-name: scale;
+  --animation-duration-xs: 1s;
+  --animation-duration-sm: 2s;
+  --animation-duration-md: 5s;
+  --animation-duration-lg: 10s;
+  --animation-duration-xl: 60s;
+  --animation-timing-function-ease: ease-in-out;
+  --animation-timing-function-steps: 60, start;
+  --animation-timing-function-bezier: 1, 5, 1, -5;
+  --animation-iteration-count-few: 2;
+  --animation-iteration-count-many: 5;
+  --animation-delay-small: 1s;
+  --animation-delay-medium: 2s;
+  --animation-delay-large: 3s;
   --transform-origin-near: 50px 50px;
   --transform-origin-far: top right 50px;
 }
@@ -926,35 +926,35 @@ pre {
 
 /***** 4.3 Deco *****/
 [class*="deco-"] {
-  --deco-line: underline;
-  --deco-style: solid;
-  --deco-color: var(--black);
+  --text-decoration-line: underline;
+  --text-decoration-style: solid;
+  --text-decoration-color: var(--black);
 }
 
 /***** 4.4 Shabox *****/
 [class*="shabox-"] {
-  --shabox-sm: 1px 1px;
-  --shabox-md: 2px 2px;
-  --shabox-lg: 5px 5px;
-  --shabox-blur-all: 0 0 2px;
-  --shabox-blur-sm: 1px 1px 1px;
-  --shabox-blur-md: 2px 2px 2px;
-  --shabox-blur-lg: 5px 5px 5px;
-  --shabox-spread-all: 0 0 2px 2px;
-  --shabox-spread-sm: 1px 1px 1px 1px;
-  --shabox-spread-md: 2px 2px 2px 2px;
-  --shabox-spread-lg: 5px 5px 5px 5px;
+  --box-shadow-sm: 1px 1px;
+  --box-shadow-md: 2px 2px;
+  --box-shadow-lg: 5px 5px;
+  --box-shadow-blur-all: 0 0 2px;
+  --box-shadow-blur-sm: 1px 1px 1px;
+  --box-shadow-blur-md: 2px 2px 2px;
+  --box-shadow-blur-lg: 5px 5px 5px;
+  --box-shadow-spread-all: 0 0 2px 2px;
+  --box-shadow-spread-sm: 1px 1px 1px 1px;
+  --box-shadow-spread-md: 2px 2px 2px 2px;
+  --box-shadow-spread-lg: 5px 5px 5px 5px;
 }
 
 /***** 4.5 Shatex *****/
 [class*="shatex-"] {
-  --shatex-sm: 1px 1px;
-  --shatex-md: 2px 2px;
-  --shatex-lg: 5px 5px;
-  --shatex-blur-all: 0 0 2px;
-  --shatex-blur-sm: 1px 1px 1px;
-  --shatex-blur-md: 2px 2px 2px;
-  --shatex-blur-lg: 5px 5px 5px;
+  --text-shadow-sm: 1px 1px;
+  --text-shadow-md: 2px 2px;
+  --text-shadow-lg: 5px 5px;
+  --text-shadow-blur-all: 0 0 2px;
+  --text-shadow-blur-sm: 1px 1px 1px;
+  --text-shadow-blur-md: 2px 2px 2px;
+  --text-shadow-blur-lg: 5px 5px 5px;
 }
 
 /********** KEYFRAMES **********/
@@ -2220,40 +2220,15 @@ pre > *::selection {
   cursor: pointer;
 }
 
-/******************** DISPLAY *********************/
+/********** DISPLAY **********/
 
 /*
-1. DISPLAY BLOCK
-  1.1 Block XS
-  1.2 Block SM
-  1.3 Block MD
-  1.4 Block LG
-  1.5 Block XL
-2. DISPLAY NONE
-  2.1 Hide XS
-  2.2 Hide SM
-  2.3 Hide MD
-  2.4 Hide LG
-  2.5 Hide XL
-3. DISPLAY INLINE
-  3.1 Inline XS
-  3.2 Inline SM
-  3.3 Inline MD
-  3.4 Inline LG
-  3.5 Inline XL
+1 - Display Block
+2 - Display None
+3 - Display Inline
 */
 
-/********** 1. DISPLAY BLOCK **********/
-
-/*
-1.1 Block XS
-1.2 Block SM
-1.3 Block MD
-1.4 Block LG
-1.5 Block XL
-*/
-
-/***** 1.1 Block XS *****/
+/***** 1 - Display Block *****/
 [class*="block-xs-"][class*="-base"],
 [class*="block-xs-"][class*="-global"] > *,
 *:hover > [class*="block-xs-"][class*="-into"],
@@ -2277,7 +2252,6 @@ pre > *::selection {
   display: block;
 }
 
-/***** 1.2 Block SM *****/
 @media (min-width: 576px) {
   [class*="block-sm-"][class*="-base"],
   [class*="block-sm-"][class*="-global"] > *,
@@ -2303,7 +2277,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.3 Block MD *****/
 @media (min-width: 768px) {
   [class*="block-md-"][class*="-base"],
   [class*="block-md-"][class*="-global"] > *,
@@ -2329,7 +2302,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.4 Block LG *****/
 @media (min-width: 992px) {
   [class*="block-lg-"][class*="-base"],
   [class*="block-lg-"][class*="-global"] > *,
@@ -2355,7 +2327,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.5 Block XL *****/
 @media (min-width: 1200px) {
   [class*="block-xl-"][class*="-base"],
   [class*="block-xl-"][class*="-global"] > *,
@@ -2381,17 +2352,7 @@ pre > *::selection {
   }
 }
 
-/********** 2. DISPLAY NONE **********/
-
-/*
-2.1 Hide XS
-2.2 Hide SM
-2.3 Hide MD
-2.4 Hide LG
-2.5 Hide XL
-*/
-
-/***** 2.1 Hide XS *****/
+/***** 2 - Display None *****/
 [class*="hide-xs-"][class*="-base"],
 [class*="hide-xs-"][class*="-global"] > *,
 *:hover > [class*="hide-xs-"][class*="-into"],
@@ -2415,7 +2376,6 @@ pre > *::selection {
   display: none;
 }
 
-/***** 2.2 Hide SM *****/
 @media (min-width: 576px) {
   [class*="hide-sm-"][class*="-base"],
   [class*="hide-sm-"][class*="-global"] > *,
@@ -2441,7 +2401,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.3 Hide MD *****/
 @media (min-width: 768px) {
   [class*="hide-md-"][class*="-base"],
   [class*="hide-md-"][class*="-global"] > *,
@@ -2467,7 +2426,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.4 Hide LG *****/
 @media (min-width: 992px) {
   [class*="hide-lg-"][class*="-base"],
   [class*="hide-lg-"][class*="-global"] > *,
@@ -2493,7 +2451,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.5 Hide XL *****/
 @media (min-width: 1200px) {
   [class*="hide-xl-"][class*="-base"],
   [class*="hide-xl-"][class*="-global"] > *,
@@ -2519,17 +2476,7 @@ pre > *::selection {
   }
 }
 
-/********** 3. DISPLAY INLINE **********/
-
-/*
-3.1 Inline XS
-3.2 Inline SM
-3.3 Inline MD
-3.4 Inline LG
-3.5 Inline XL
-*/
-
-/***** 3.1 Inline XS *****/
+/***** 3 - Display Inline *****/
 [class*="inline-xs-"][class*="-base"],
 [class*="inline-xs-"][class*="-global"] > *,
 *:hover > [class*="inline-xs-"][class*="-into"],
@@ -2553,7 +2500,6 @@ pre > *::selection {
   display: inline;
 }
 
-/***** 3.2 Inline SM *****/
 @media (min-width: 576px) {
   [class*="inline-sm-"][class*="-base"],
   [class*="inline-sm-"][class*="-global"] > *,
@@ -2579,7 +2525,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.3 Inline MD *****/
 @media (min-width: 768px) {
   [class*="inline-md-"][class*="-base"],
   [class*="inline-md-"][class*="-global"] > *,
@@ -2605,7 +2550,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.4 Inline LG *****/
 @media (min-width: 992px) {
   [class*="inline-lg-"][class*="-base"],
   [class*="inline-lg-"][class*="-global"] > *,
@@ -2631,7 +2575,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.5 Inline XL *****/
 @media (min-width: 1200px) {
   [class*="inline-xl-"][class*="-base"],
   [class*="inline-xl-"][class*="-global"] > *,
@@ -2657,52 +2600,17 @@ pre > *::selection {
   }
 }
 
-
-/******************** POSITION ********************/
-
-/*
-1. POSITION ABSOLUTE
-  1.1 Absolute XS
-  1.2 Absolute SM
-  1.3 Absolute MD
-  1.4 Absolute LG
-  1.5 Absolute XL
-2. POSITION FIXED
-  2.1 Fixed XS
-  2.2 Fixed SM
-  2.3 Fixed MD
-  2.4 Fixed LG
-  2.5 Fixed XL
-3. POSITION RELATIVE
-  3.1 Relative XS
-  3.2 Relative SM
-  3.3 Relative MD
-  3.4 Relative LG
-  3.5 Relative XL
-4. POSITION STICKY
-  4.1 Sticky XS
-  4.2 Sticky SM
-  4.3 Sticky MD
-  4.4 Sticky LG
-  4.5 Sticky XL
-5. TOP, BOTTOM, RIGHT & LEFT
-  5.1 Pos Top
-  5.2 Pos Bot
-  5.3 Pos Right
-  5.4 Pos Left
-*/
-
-/********** 1. POSITION ABSOLUTE **********/
+/********** POSITION **********/
 
 /*
-1.1 Absolute XS
-1.2 Absolute SM
-1.3 Absolute MD
-1.4 Absolute LG
-1.5 Absolute XL
+1 - Position Absolute
+2 - Position Fixed
+3 - Position Relative
+4 - Position Sticky
+5 - Top, Right, Bottom & Left
 */
 
-/***** 1.1 Absolute XS *****/
+/***** 1 - Position Absolute *****/
 [class*="absolute-xs-"][class*="-base"],
 [class*="absolute-xs-"][class*="-global"] > *,
 *:hover > [class*="absolute-xs-"][class*="-into"],
@@ -2726,7 +2634,6 @@ pre > *::selection {
   position: absolute;
 }
 
-/***** 1.2 Absolute SM *****/
 @media (min-width: 576px) {
   [class*="absolute-sm-"][class*="-base"],
   [class*="absolute-sm-"][class*="-global"] > *,
@@ -2752,7 +2659,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.3 Absolute MD *****/
 @media (min-width: 768px) {
   [class*="absolute-md-"][class*="-base"],
   [class*="absolute-md-"][class*="-global"] > *,
@@ -2778,7 +2684,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.4 Absolute LG *****/
 @media (min-width: 992px) {
   [class*="absolute-lg-"][class*="-base"],
   [class*="absolute-lg-"][class*="-global"] > *,
@@ -2804,7 +2709,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.5 Absolute XL *****/
 @media (min-width: 1200px) {
   [class*="absolute-xl-"][class*="-base"],
   [class*="absolute-xl-"][class*="-global"] > *,
@@ -2830,17 +2734,7 @@ pre > *::selection {
   }
 }
 
-/********** 2. POSITION FIXED **********/
-
-/*
-2.1 Fixed XS
-2.2 Fixed SM
-2.3 Fixed MD
-2.4 Fixed LG
-2.5 Fixed XL
-*/
-
-/***** 2.1 Fixed XS *****/
+/***** 2 - Position Fixed *****/
 [class*="fixed-xs-"][class*="-base"],
 [class*="fixed-xs-"][class*="-global"] > *,
 *:hover > [class*="fixed-xs-"][class*="-into"],
@@ -2864,7 +2758,6 @@ pre > *::selection {
   position: fixed;
 }
 
-/***** 2.2 Fixed SM *****/
 @media (min-width: 576px) {
   [class*="fixed-sm-"][class*="-base"],
   [class*="fixed-sm-"][class*="-global"] > *,
@@ -2890,7 +2783,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.3 Fixed MD *****/
 @media (min-width: 768px) {
   [class*="fixed-md-"][class*="-base"],
   [class*="fixed-md-"][class*="-global"] > *,
@@ -2916,7 +2808,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.4 Fixed LG *****/
 @media (min-width: 992px) {
   [class*="fixed-lg-"][class*="-base"],
   [class*="fixed-lg-"][class*="-global"] > *,
@@ -2942,7 +2833,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.5 Fixed XL *****/
 @media (min-width: 1200px) {
   [class*="fixed-xl-"][class*="-base"],
   [class*="fixed-xl-"][class*="-global"] > *,
@@ -2968,17 +2858,7 @@ pre > *::selection {
   }
 }
 
-/********** 3. POSITION RELATIVE **********/
-
-/*
-3.1 Relative XS
-3.2 Relative SM
-3.3 Relative MD
-3.4 Relative LG
-3.5 Relative XL
-*/
-
-/***** 3.1 Relative XS *****/
+/***** 3 - Position Relative *****/
 [class*="relative-xs-"][class*="-base"],
 [class*="relative-xs-"][class*="-global"] > *,
 *:hover > [class*="relative-xs-"][class*="-into"],
@@ -3002,7 +2882,6 @@ pre > *::selection {
   position: relative;
 }
 
-/***** 3.2 Relative SM *****/
 @media (min-width: 576px) {
   [class*="relative-sm-"][class*="-base"],
   [class*="relative-sm-"][class*="-global"] > *,
@@ -3028,7 +2907,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.3 Relative MD *****/
 @media (min-width: 768px) {
   [class*="relative-md-"][class*="-base"],
   [class*="relative-md-"][class*="-global"] > *,
@@ -3054,7 +2932,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.4 Relative LG *****/
 @media (min-width: 992px) {
   [class*="relative-lg-"][class*="-base"],
   [class*="relative-lg-"][class*="-global"] > *,
@@ -3080,7 +2957,6 @@ pre > *::selection {
   }
 }
 
-/***** 3.5 Relative XL *****/
 @media (min-width: 1200px) {
   [class*="relative-xl-"][class*="-base"],
   [class*="relative-xl-"][class*="-global"] > *,
@@ -3106,17 +2982,7 @@ pre > *::selection {
   }
 }
 
-/********** 4. POSITION STICKY **********/
-
-/*
-4.1 Sticky XS
-4.2 Sticky SM
-4.3 Sticky MD
-4.4 Sticky LG
-4.5 Sticky XL
-*/
-
-/***** 4.1 Sticky XS *****/
+/***** 4 - Position Sticky *****/
 [class*="sticky-xs-"][class*="-base"],
 [class*="sticky-xs-"][class*="-global"] > *,
 *:hover > [class*="sticky-xs-"][class*="-into"],
@@ -3141,7 +3007,6 @@ pre > *::selection {
   position: sticky;
 }
 
-/***** 4.2 Sticky SM *****/
 @media (min-width: 576px) {
   [class*="sticky-sm-"][class*="-base"],
   [class*="sticky-sm-"][class*="-global"] > *,
@@ -3168,7 +3033,6 @@ pre > *::selection {
   }
 }
 
-/***** 4.3 Sticky MD *****/
 @media (min-width: 768px) {
   [class*="sticky-md-"][class*="-base"],
   [class*="sticky-md-"][class*="-global"] > *,
@@ -3195,7 +3059,6 @@ pre > *::selection {
   }
 }
 
-/***** 4.4 Sticky LG *****/
 @media (min-width: 992px) {
   [class*="sticky-lg-"][class*="-base"],
   [class*="sticky-lg-"][class*="-global"] > *,
@@ -3222,7 +3085,6 @@ pre > *::selection {
   }
 }
 
-/***** 4.5 Sticky XL *****/
 @media (min-width: 1200px) {
   [class*="sticky-xl-"][class*="-base"],
   [class*="sticky-xl-"][class*="-global"] > *,
@@ -3249,16 +3111,7 @@ pre > *::selection {
   }
 }
 
-/********** 5. TOP, BOTTOM, RIGHT & LEFT **********/
-
-/*
-5.1 Pos Top
-5.2 Pos Bot
-5.3 Pos Right
-5.4 Pos Left
-*/
-
-/***** 5.1 Pos Top *****/
+/***** 5 - Top, Right, Bottom & Left *****/
 [class*="pos-top-"][class*="-base"],
 [class*="pos-top-"][class*="-global"] > *,
 *:hover > [class*="pos-top-"][class*="-into"],
@@ -3284,7 +3137,6 @@ pre > *::selection {
   left: 0;
 }
 
-/***** 5.2 Pos Bot *****/
 [class*="pos-bot-"][class*="-base"],
 [class*="pos-bot-"][class*="-global"] > *,
 *:hover > [class*="pos-bot-"][class*="-into"],
@@ -3310,7 +3162,6 @@ pre > *::selection {
   left: 0;
 }
 
-/***** 5.3 Pos Right *****/
 [class*="pos-right-"][class*="-base"],
 [class*="pos-right-"][class*="-global"] > *,
 *:hover > [class*="pos-right-"][class*="-into"],
@@ -3336,7 +3187,6 @@ pre > *::selection {
   bottom: 0;
 }
 
-/***** 5.4 Pos Left *****/
 [class*="pos-left-"][class*="-base"],
 [class*="pos-left-"][class*="-global"] > *,
 *:hover > [class*="pos-left-"][class*="-into"],
@@ -3362,35 +3212,14 @@ pre > *::selection {
   bottom: 0;
 }
 
-
-/******************** FLOW ********************/
-
-/*
-1. OVERFLOW HIDDEN
-  1.1 Hidden XS
-  1.2 Hidden SM
-  1.3 Hidden MD
-  1.4 Hidden LG
-  1.5 Hidden XL
-2. OVERFLOW SCROLL
-  2.1 Scroll XS
-  2.2 Scroll SM
-  2.3 Scroll MD
-  2.4 Scroll LG
-  2.5 Scroll XL
-*/
-
-/********** 1. OVERFLOW HIDDEN **********/
+/********** FLOW **********/
 
 /*
-1.1 Hidden XS
-1.2 Hidden SM
-1.3 Hidden MD
-1.4 Hidden LG
-1.5 Hidden XL
-*/
+1 - Overflow Hidden
+2 - Overflow Scroll
+ */
 
-/***** 1.1 Hidden XS *****/
+/***** 1 - Overflow Hidden *****/
 [class*="hidden-xs-"][class*="-base"],
 [class*="hidden-xs-"][class*="-global"] > *,
 *:hover > [class*="hidden-xs-"][class*="-into"],
@@ -3414,7 +3243,6 @@ pre > *::selection {
   overflow: hidden;
 }
 
-/***** 1.2 Hidden SM *****/
 @media (min-width: 576px) {
   [class*="hidden-sm-"][class*="-base"],
   [class*="hidden-sm-"][class*="-global"] > *,
@@ -3440,7 +3268,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.3 Hidden MD *****/
 @media (min-width: 768px) {
   [class*="hidden-md-"][class*="-base"],
   [class*="hidden-md-"][class*="-global"] > *,
@@ -3466,7 +3293,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.4 Hidden LG *****/
 @media (min-width: 992px) {
   [class*="hidden-lg-"][class*="-base"],
   [class*="hidden-lg-"][class*="-global"] > *,
@@ -3492,7 +3318,6 @@ pre > *::selection {
   }
 }
 
-/***** 1.5 Hidden XL *****/
 @media (min-width: 1200px) {
   [class*="hidden-xl-"][class*="-base"],
   [class*="hidden-xl-"][class*="-global"] > *,
@@ -3518,17 +3343,7 @@ pre > *::selection {
   }
 }
 
-/********** 2. OVERFLOW SCROLL **********/
-
-/*
-2.1 Scroll XS
-2.2 Scroll SM
-2.3 Scroll MD
-2.4 Scroll LG
-2.5 Scroll XL
-*/
-
-/***** 2.1 Scroll XS *****/
+/***** 2 - Overflow Scroll *****/
 [class*="scroll-xs-"][class*="-base"],
 [class*="scroll-xs-"][class*="-global"] > *,
 *:hover > [class*="scroll-xs-"][class*="-into"],
@@ -3552,7 +3367,6 @@ pre > *::selection {
   overflow: scroll;
 }
 
-/***** 2.2 Scroll SM *****/
 @media (min-width: 576px) {
   [class*="scroll-sm-"][class*="-base"],
   [class*="scroll-sm-"][class*="-global"] > *,
@@ -3578,7 +3392,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.3 Scroll MD *****/
 @media (min-width: 768px) {
   [class*="scroll-md-"][class*="-base"],
   [class*="scroll-md-"][class*="-global"] > *,
@@ -3604,7 +3417,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.4 Scroll LG *****/
 @media (min-width: 992px) {
   [class*="scroll-lg-"][class*="-base"],
   [class*="scroll-lg-"][class*="-global"] > *,
@@ -3630,7 +3442,6 @@ pre > *::selection {
   }
 }
 
-/***** 2.5 Scroll XL *****/
 @media (min-width: 1200px) {
   [class*="scroll-xl-"][class*="-base"],
   [class*="scroll-xl-"][class*="-global"] > *,
@@ -3656,63 +3467,16 @@ pre > *::selection {
   }
 }
 
-
-/******************** BG ********************/
-
-/*
-1. MAIN BACKGROUND COLORS
-  1.1 Black
-  1.2 Blue
-  1.3 Gray
-  1.4 Green
-  1.5 Maroon
-  1.6 Orange
-  1.7 Purple
-  1.8 Red
-  1.9 Yellow
-2. PALE BACKGROUND COLORS
-  2.1 Choco
-  2.2 Jade
-  2.3 Khaki
-  2.4 Salmon
-  2.5 Silver
-  2.6 Sky
-  2.7 Tomato
-  2.8 Violet
-  2.9 White
-3. BRAND BACKGROUND COLORS
-  3.1 FaceBook
-  3.2 GitHub
-  3.3 JSDelivr
-  3.4 LinkedIn
-  3.5 NPM
-  3.6 Stack Overflow
-  3.7 Twitter
-4. TRANSPARENT BACKGROUND COLORS
-  4.1 Amethyst
-  4.2 Citrine
-  4.3 Quartz
-  4.4 Emerald
-  4.5 Obsidian
-  4.6 Ruby
-  4.7 Sapphire
-*/
-
-/********** 1. MAIN BACKGROUND COLORS **********/
+/********** BG **********/
 
 /*
-1.1 Black
-1.2 Blue
-1.3 Gray
-1.4 Green
-1.5 Maroon
-1.6 Orange
-1.7 Purple
-1.8 Red
-1.9 Yellow
+1 - Main Background Colors
+2 - Pale Background Colors
+3 - Brand Background Colors
+4 - Transparent Background Colors
 */
 
-/***** 1.1 Black Background Color *****/
+/***** 1 - Main Background Colors *****/
 [class*="bg-black-"][class*="-base"],
 [class*="bg-black-"][class*="-global"] > *,
 *:hover > [class*="bg-black-"][class*="-into"],
@@ -3736,7 +3500,6 @@ pre > *::selection {
   background-color: var(--black);
 }
 
-/***** 1.2 Blue Background Color *****/
 [class*="bg-blue-"][class*="-base"],
 [class*="bg-blue-"][class*="-global"] > *,
 *:hover > [class*="bg-blue-"][class*="-into"],
@@ -3760,7 +3523,6 @@ pre > *::selection {
   background-color: var(--blue);
 }
 
-/***** 1.3 Maroon Background Color *****/
 [class*="bg-maroon-"][class*="-base"],
 [class*="bg-maroon-"][class*="-global"] > *,
 *:hover > [class*="bg-maroon-"][class*="-into"],
@@ -3784,7 +3546,6 @@ pre > *::selection {
   background-color: var(--maroon);
 }
 
-/***** 1.4 Gray Background Color *****/
 [class*="bg-gray-"][class*="-base"],
 [class*="bg-gray-"][class*="-global"] > *,
 *:hover > [class*="bg-gray-"][class*="-into"],
@@ -3808,7 +3569,6 @@ pre > *::selection {
   background-color: var(--gray);
 }
 
-/***** 1.5 Green Background Color *****/
 [class*="bg-green-"][class*="-base"],
 [class*="bg-green-"][class*="-global"] > *,
 *:hover > [class*="bg-green-"][class*="-into"],
@@ -3832,7 +3592,6 @@ pre > *::selection {
   background-color: var(--green);
 }
 
-/***** 1.6 Orange Background Color *****/
 [class*="bg-orange-"][class*="-base"],
 [class*="bg-orange-"][class*="-global"] > *,
 *:hover > [class*="bg-orange-"][class*="-into"],
@@ -3856,7 +3615,6 @@ pre > *::selection {
   background-color: var(--orange);
 }
 
-/***** 1.7 Purple Background Color *****/
 [class*="bg-purple-"][class*="-base"],
 [class*="bg-purple-"][class*="-global"] > *,
 *:hover > [class*="bg-purple-"][class*="-into"],
@@ -3880,7 +3638,6 @@ pre > *::selection {
   background-color: var(--purple);
 }
 
-/***** 1.8 Red Background Color *****/
 [class*="bg-red-"][class*="-base"],
 [class*="bg-red-"][class*="-global"] > *,
 *:hover > [class*="bg-red-"][class*="-into"],
@@ -3904,7 +3661,6 @@ pre > *::selection {
   background-color: var(--red);
 }
 
-/***** 1.9 Yellow Background Color *****/
 [class*="bg-yellow-"][class*="-base"],
 [class*="bg-yellow-"][class*="-global"] > *,
 *:hover > [class*="bg-yellow-"][class*="-into"],
@@ -3928,21 +3684,7 @@ pre > *::selection {
   background-color: var(--yellow);
 }
 
-/********** 2. PALE BACKGROUND COLORS **********/
-
-/*
-2.1 Choco
-2.2 Jade
-2.3 Khaki
-2.4 Salmon
-2.5 Silver
-2.6 Sky
-2.7 Tomato
-2.8 Violet
-2.9 White
-*/
-
-/***** 2.1 Choco Beckground Color *****/
+/***** 2 - Pale Background Colors *****/
 [class*="bg-choco-"][class*="-base"],
 [class*="bg-choco-"][class*="-global"] > *,
 *:hover > [class*="bg-choco-"][class*="-into"],
@@ -3966,7 +3708,6 @@ pre > *::selection {
   background-color: var(--choco);
 }
 
-/***** 2.2 Jade Beckground Color *****/
 [class*="bg-jade-"][class*="-base"],
 [class*="bg-jade-"][class*="-global"] > *,
 *:hover > [class*="bg-jade-"][class*="-into"],
@@ -3990,7 +3731,6 @@ pre > *::selection {
   background-color: var(--jade);
 }
 
-/***** 2.3 Khaki Beckground Color *****/
 [class*="bg-khaki-"][class*="-base"],
 [class*="bg-khaki-"][class*="-global"] > *,
 *:hover > [class*="bg-khaki-"][class*="-into"],
@@ -4014,7 +3754,6 @@ pre > *::selection {
   background-color: var(--khaki);
 }
 
-/***** 2.4 Salmon Beckground Color *****/
 [class*="bg-salmon-"][class*="-base"],
 [class*="bg-salmon-"][class*="-global"] > *,
 *:hover > [class*="bg-salmon-"][class*="-into"],
@@ -4038,7 +3777,6 @@ pre > *::selection {
   background-color: var(--salmon);
 }
 
-/***** 2.5 Silver Beckground Color *****/
 [class*="bg-silver-"][class*="-base"],
 [class*="bg-silver-"][class*="-global"] > *,
 *:hover > [class*="bg-silver-"][class*="-into"],
@@ -4062,7 +3800,6 @@ pre > *::selection {
   background-color: var(--silver);
 }
 
-/***** 2.6 Sky Beckground Color *****/
 [class*="bg-sky-"][class*="-base"],
 [class*="bg-sky-"][class*="-global"] > *,
 *:hover > [class*="bg-sky-"][class*="-into"],
@@ -4086,7 +3823,6 @@ pre > *::selection {
   background-color: var(--sky);
 }
 
-/***** 2.7 Tomat Beckground Color *****/
 [class*="bg-tomato-"][class*="-base"],
 [class*="bg-tomato-"][class*="-global"] > *,
 *:hover > [class*="bg-tomato-"][class*="-into"],
@@ -4110,7 +3846,6 @@ pre > *::selection {
   background-color: var(--tomato);
 }
 
-/***** 2.8 Violet Beckground Color *****/
 [class*="bg-violet-"][class*="-base"],
 [class*="bg-violet-"][class*="-global"] > *,
 *:hover > [class*="bg-violet-"][class*="-into"],
@@ -4134,7 +3869,6 @@ pre > *::selection {
   background-color: var(--violet);
 }
 
-/***** 2.9 White Beckground Color *****/
 [class*="bg-white-"][class*="-base"],
 [class*="bg-white-"][class*="-global"] > *,
 *:hover > [class*="bg-white-"][class*="-into"],
@@ -4158,18 +3892,7 @@ pre > *::selection {
   background-color: var(--white);
 }
 
-/********** 3. BRAND BACKGROUND COLORS **********/
-
-/*
-3.1 FaceBook
-3.2 GitHub
-3.3 LinkedIn
-3.4 NPM
-3.5 Stack Overflow
-3.6 Twitter
-*/
-
-/***** 3.1 FaceBook Background Color *****/
+/***** 3 - Brand Background Colors *****/
 [class*="bg-fb-"][class*="-base"],
 [class*="bg-fb-"][class*="-global"] > *,
 *:hover > [class*="bg-fb-"][class*="-into"],
@@ -4193,7 +3916,6 @@ pre > *::selection {
   background-color: var(--facebook);
 }
 
-/***** 3.2 GitHub Background Color *****/
 [class*="bg-github-"][class*="-base"],
 [class*="bg-github-"][class*="-global"] > *,
 *:hover > [class*="bg-github-"][class*="-into"],
@@ -4217,7 +3939,6 @@ pre > *::selection {
   background-color: var(--github);
 }
 
-/***** 3.3 JSDelivr Background Color *****/
 [class*="bg-jsd-"][class*="-base"],
 [class*="bg-jsd-"][class*="-global"] > *,
 *:hover > [class*="bg-jsd-"][class*="-into"],
@@ -4241,7 +3962,6 @@ pre > *::selection {
   background-color: var(--jsdelivr);
 }
 
-/***** 3.4 LinkedIn Background Color *****/
 [class*="bg-linkedin-"][class*="-base"],
 [class*="bg-linkedin-"][class*="-global"] > *,
 *:hover > [class*="bg-linkedin-"][class*="-into"],
@@ -4265,7 +3985,6 @@ pre > *::selection {
   background-color: var(--linkedin);
 }
 
-/***** 3.5 NPM Background Color *****/
 [class*="bg-npm-"][class*="-base"],
 [class*="bg-npm-"][class*="-global"] > *,
 *:hover > [class*="bg-npm-"][class*="-into"],
@@ -4289,7 +4008,6 @@ pre > *::selection {
   background-color: var(--npm);
 }
 
-/***** 3.6 Stack Overflow Background Color *****/
 [class*="bg-stack-"][class*="-base"],
 [class*="bg-stack-"][class*="-global"] > *,
 *:hover > [class*="bg-stack-"][class*="-into"],
@@ -4313,7 +4031,6 @@ pre > *::selection {
   background-color: var(--stackoverflow);
 }
 
-/***** 3.7 Twitter Background Color *****/
 [class*="bg-tw-"][class*="-base"],
 [class*="bg-tw-"][class*="-global"] > *,
 *:hover > [class*="bg-tw-"][class*="-into"],
@@ -4337,19 +4054,7 @@ pre > *::selection {
   background-color: var(--twitter);
 }
 
-/********** 4. TRANSPARENT BACKGROUND COLORS **********/
-
-/*
-4.1 Amethyst
-4.2 Citrine
-4.3 Quartz
-4.4 Emerald
-4.5 Obsidian
-4.6 Ruby
-4.7 Sapphire
-*/
-
-/***** 4.1 Amethyst Transparent Background Color *****/
+/***** 4 - Transparent Background Colors *****/
 [class*="amethyst-"][class*="-base"],
 [class*="amethyst-"][class*="-global"] > *,
 *:hover > [class*="amethyst-"][class*="-into"],
@@ -4373,7 +4078,6 @@ pre > *::selection {
   background-color: var(--amethyst);
 }
 
-/***** 4.2 Citrine Transparent Background Color *****/
 [class*="citrine-"][class*="-base"],
 [class*="citrine-"][class*="-global"] > *,
 *:hover > [class*="citrine-"][class*="-into"],
@@ -4397,7 +4101,6 @@ pre > *::selection {
   background-color: var(--citrine);
 }
 
-/***** 4.3 Quartz Transparent Background Color *****/
 [class*="quartz-"][class*="-base"],
 [class*="quartz-"][class*="-global"] > *,
 *:hover > [class*="quartz-"][class*="-into"],
@@ -4421,7 +4124,6 @@ pre > *::selection {
   background-color: var(--quartz);
 }
 
-/***** 4.4 Emerald Transparent Background Color *****/
 [class*="emerald-"][class*="-base"],
 [class*="emerald-"][class*="-global"] > *,
 *:hover > [class*="emerald-"][class*="-into"],
@@ -4445,7 +4147,6 @@ pre > *::selection {
   background-color: var(--emerald);
 }
 
-/***** 4.5 Obsidian Transparent Background Color *****/
 [class*="obsidian-"][class*="-base"],
 [class*="obsidian-"][class*="-global"] > *,
 *:hover > [class*="obsidian-"][class*="-into"],
@@ -4469,7 +4170,6 @@ pre > *::selection {
   background-color: var(--obsidian);
 }
 
-/***** 4.6 Ruby Transparent Background Color *****/
 [class*="ruby-"][class*="-base"],
 [class*="ruby-"][class*="-global"] > *,
 *:hover > [class*="ruby-"][class*="-into"],
@@ -4493,7 +4193,6 @@ pre > *::selection {
   background-color: var(--ruby);
 }
 
-/***** 4.7 Sapphire Transparent Background Color *****/
 [class*="sapphire-"][class*="-base"],
 [class*="sapphire-"][class*="-global"] > *,
 *:hover > [class*="sapphire-"][class*="-into"],
@@ -4517,55 +4216,15 @@ pre > *::selection {
   background-color: var(--sapphire);
 }
 
-
-/******************** COLOR ********************/
-
-/*
-1. MAIN COLORS
-  1.1 Black
-  1.2 Blue
-  1.3 Gray
-  1.4 Green
-  1.5 Maroon
-  1.6 Orange
-  1.7 Purple
-  1.8 Red
-  1.9 Yellow
-2. PALE COLORS
-  2.1 Choco
-  2.2 Jade
-  2.3 Khaki
-  2.4 Salmon
-  2.5 Silver
-  2.6 Sky
-  2.7 Tomato
-  2.8 Violet
-  2.9 White
-3. BRAND COLORS
-  3.1 FaceBook
-  3.2 GitHub
-  3.3 JSDelivr
-  3.4 LinkedIn
-  3.5 NPM
-  3.6 Stack Overflow
-  3.7 Twitter
-*/
-
-/********** 1. MAIN COLORS **********/
+/********** COLOR **********/
 
 /*
-1.1 Black
-1.2 Blue
-1.3 Gray
-1.4 Green
-1.5 Maroon
-1.6 Orange
-1.7 Purple
-1.8 Red
-1.9 Yellow
+1 - Main Colors
+2 - Pale Colors
+3 - Brand Colors
 */
 
-/***** 1.1 Black Color *****/
+/***** 1 - Main Colors *****/
 [class*="color-black-"][class*="-base"],
 [class*="color-black-"][class*="-global"] > *,
 *:hover > [class*="color-black-"][class*="-into"],
@@ -4589,7 +4248,6 @@ pre > *::selection {
   color: var(--black);
 }
 
-/***** 1.2 Blue Color *****/
 [class*="color-blue-"][class*="-base"],
 [class*="color-blue-"][class*="-global"] > *,
 *:hover > [class*="color-blue-"][class*="-into"],
@@ -4613,7 +4271,6 @@ pre > *::selection {
   color: var(--blue);
 }
 
-/***** 1.3 Maroon Color *****/
 [class*="color-maroon-"][class*="-base"],
 [class*="color-maroon-"][class*="-global"] > *,
 *:hover > [class*="color-maroon-"][class*="-into"],
@@ -4637,7 +4294,6 @@ pre > *::selection {
   color: var(--maroon);
 }
 
-/***** 1.4 Gray Color *****/
 [class*="color-gray-"][class*="-base"],
 [class*="color-gray-"][class*="-global"] > *,
 *:hover > [class*="color-gray-"][class*="-into"],
@@ -4661,7 +4317,6 @@ pre > *::selection {
   color: var(--gray);
 }
 
-/***** 1.5 Green Color *****/
 [class*="color-green-"][class*="-base"],
 [class*="color-green-"][class*="-global"] > *,
 *:hover > [class*="color-green-"][class*="-into"],
@@ -4685,7 +4340,6 @@ pre > *::selection {
   color: var(--green);
 }
 
-/***** 1.6 Orange Color *****/
 [class*="color-orange-"][class*="-base"],
 [class*="color-orange-"][class*="-global"] > *,
 *:hover > [class*="color-orange-"][class*="-into"],
@@ -4709,7 +4363,6 @@ pre > *::selection {
   color: var(--orange);
 }
 
-/***** 1.7 Purple Color *****/
 [class*="color-purple-"][class*="-base"],
 [class*="color-purple-"][class*="-global"] > *,
 *:hover > [class*="color-purple-"][class*="-into"],
@@ -4733,7 +4386,6 @@ pre > *::selection {
   color: var(--purple);
 }
 
-/***** 1.8 Red Color *****/
 [class*="color-red-"][class*="-base"],
 [class*="color-red-"][class*="-global"] > *,
 *:hover > [class*="color-red-"][class*="-into"],
@@ -4757,7 +4409,6 @@ pre > *::selection {
   color: var(--red);
 }
 
-/***** 1.9 Yellow Color *****/
 [class*="color-yellow-"][class*="-base"],
 [class*="color-yellow-"][class*="-global"] > *,
 *:hover > [class*="color-yellow-"][class*="-into"],
@@ -4781,21 +4432,7 @@ pre > *::selection {
   color: var(--yellow);
 }
 
-/********** 2. PALE COLORS **********/
-
-/*
-2.1 Choco
-2.2 Jade
-2.3 Khaki
-2.4 Salmon
-2.5 Silver
-2.6 Sky
-2.7 Tomato
-2.8 Violet
-2.9 White
-*/
-
-/***** 2.1 Choco Color *****/
+/***** 2 - Pale Colors *****/
 [class*="color-choco-"][class*="-base"],
 [class*="color-choco-"][class*="-global"] > *,
 *:hover > [class*="color-choco-"][class*="-into"],
@@ -4819,7 +4456,6 @@ pre > *::selection {
   color: var(--choco);
 }
 
-/***** 2.2 Jade Color *****/
 [class*="color-jade-"][class*="-base"],
 [class*="color-jade-"][class*="-global"] > *,
 *:hover > [class*="color-jade-"][class*="-into"],
@@ -4843,7 +4479,6 @@ pre > *::selection {
   color: var(--jade);
 }
 
-/***** 2.3 Khaki Color *****/
 [class*="color-khaki-"][class*="-base"],
 [class*="color-khaki-"][class*="-global"] > *,
 *:hover > [class*="color-khaki-"][class*="-into"],
@@ -4867,7 +4502,6 @@ pre > *::selection {
   color: var(--khaki);
 }
 
-/***** 2.4 Salmon Color *****/
 [class*="color-salmon-"][class*="-base"],
 [class*="color-salmon-"][class*="-global"] > *,
 *:hover > [class*="color-salmon-"][class*="-into"],
@@ -4891,7 +4525,6 @@ pre > *::selection {
   color: var(--salmon);
 }
 
-/***** 2.5 Silver Color *****/
 [class*="color-silver-"][class*="-base"],
 [class*="color-silver-"][class*="-global"] > *,
 *:hover > [class*="color-silver-"][class*="-into"],
@@ -4915,7 +4548,6 @@ pre > *::selection {
   color: var(--silver);
 }
 
-/***** 2.6 Sky Color *****/
 [class*="color-sky-"][class*="-base"],
 [class*="color-sky-"][class*="-global"] > *,
 *:hover > [class*="color-sky-"][class*="-into"],
@@ -4939,7 +4571,6 @@ pre > *::selection {
   color: var(--sky);
 }
 
-/***** 2.7 Tomato Color *****/
 [class*="color-tomato-"][class*="-base"],
 [class*="color-tomato-"][class*="-global"] > *,
 *:hover > [class*="color-tomato-"][class*="-into"],
@@ -4963,7 +4594,6 @@ pre > *::selection {
   color: var(--tomato);
 }
 
-/***** 2.8 Violet Color *****/
 [class*="color-violet-"][class*="-base"],
 [class*="color-violet-"][class*="-global"] > *,
 *:hover > [class*="color-violet-"][class*="-into"],
@@ -4987,7 +4617,6 @@ pre > *::selection {
   color: var(--violet);
 }
 
-/***** 2.9 White Color *****/
 [class*="color-white-"][class*="-base"],
 [class*="color-white-"][class*="-global"] > *,
 *:hover > [class*="color-white-"][class*="-into"],
@@ -5011,18 +4640,7 @@ pre > *::selection {
   color: var(--white);
 }
 
-/********** 3. BRAND COLORS **********/
-
-/*
-3.1 FaceBook
-3.2 GitHub
-3.3 LinkedIn
-3.4 NPM
-3.5 Stack Overflow
-3.6 Twitter
-*/
-
-/***** 3.1 FaceBook Color *****/
+/***** 3 - Brand Colors *****/
 [class*="color-fb-"][class*="-base"],
 [class*="color-fb-"][class*="-global"] > *,
 *:hover > [class*="color-fb-"][class*="-into"],
@@ -5046,7 +4664,6 @@ pre > *::selection {
   color: var(--facebook);
 }
 
-/***** 3.2 GitHub Color *****/
 [class*="color-github-"][class*="-base"],
 [class*="color-github-"][class*="-global"] > *,
 *:hover > [class*="color-github-"][class*="-into"],
@@ -5070,7 +4687,6 @@ pre > *::selection {
   color: var(--github);
 }
 
-/***** 3.3 JSDelivr Color *****/
 [class*="color-jsd-"][class*="-base"],
 [class*="color-jsd-"][class*="-global"] > *,
 *:hover > [class*="color-jsd-"][class*="-into"],
@@ -5094,7 +4710,6 @@ pre > *::selection {
   color: var(--jsdelivr);
 }
 
-/***** 3.4 LinkedIn Color *****/
 [class*="color-linkedin-"][class*="-base"],
 [class*="color-linkedin-"][class*="-global"] > *,
 *:hover > [class*="color-linkedin-"][class*="-into"],
@@ -5118,7 +4733,6 @@ pre > *::selection {
   color: var(--linkedin);
 }
 
-/***** 3.5 NPM Color *****/
 [class*="color-npm-"][class*="-base"],
 [class*="color-npm-"][class*="-global"] > *,
 *:hover > [class*="color-npm-"][class*="-into"],
@@ -5142,7 +4756,6 @@ pre > *::selection {
   color: var(--npm);
 }
 
-/***** 3.6 Stack Overflow Color *****/
 [class*="color-stack-"][class*="-base"],
 [class*="color-stack-"][class*="-global"] > *,
 *:hover > [class*="color-stack-"][class*="-into"],
@@ -5166,7 +4779,6 @@ pre > *::selection {
   color: var(--stackoverflow);
 }
 
-/***** 3.7 Twitter Color *****/
 [class*="color-tw-"][class*="-base"],
 [class*="color-tw-"][class*="-global"] > *,
 *:hover > [class*="color-tw-"][class*="-into"],
@@ -5190,35 +4802,15 @@ pre > *::selection {
   color: var(--twitter);
 }
 
-
-/******************** SHABOX ********************/
-
-/*
-1. SHADOW BOX
-  1.1 Shabox SM
-  1.2 Shabox MD
-  1.3 Shabox LG
-2. SHADOW BOX BLUR
-  2.1 Shabox Blur All
-  2.2 Shabox Blur SM
-  2.3 Shabox Blur MD
-  2.4 Shabox Blur LG
-3. SHADOW BOX SPREAD
-  3.1 Shabox Spread All
-  3.2 Shabox Spread SM
-  3.3 Shabox Spread MD
-  3.4 Shabox Spread LG
-*/
-
-/********** 1. SHADOW BOX **********/
+/********** SHABOX **********/
 
 /*
-1.1 Shabox SM
-1.2 Shabox MD
-1.3 Shabox LG
+1 - Box Shadow
+2 - Box Shadow Blur
+3 - Box Shadow Spread
 */
 
-/***** 1.1 Shabox SM *****/
+/***** 1 - Box Shadow *****/
 [class*="shabox-sm-"][class*="-base"],
 [class*="shabox-sm-"][class*="-global"] > *,
 *:hover > [class*="shabox-sm-"][class*="-into"],
@@ -5239,8 +4831,8 @@ pre > *::selection {
 [class*="shabox-sm-"][class*="-radio4"]:checked ~ [class*="shabox-sm-"][class*="-relay"] [class*="shabox-sm-"][class*="-target4"],
 [class*="shabox-sm-"][class*="-radio5"]:checked ~ [class*="shabox-sm-"][class*="-relay"] [class*="shabox-sm-"][class*="-target5"],
 [class*="shabox-sm-"][class*="-check"]:checked ~ [class*="shabox-sm-"][class*="-hub"] [class*="shabox-sm-"][class*="-goal"] {
-  -webkit-box-shadow: var(--shabox-sm);
-          box-shadow: var(--shabox-sm);
+  -webkit-box-shadow: var(--box-shadow-sm);
+          box-shadow: var(--box-shadow-sm);
 }
 
 [class*="shabox-in-sm-"][class*="-base"],
@@ -5263,11 +4855,10 @@ pre > *::selection {
 [class*="shabox-in-sm-"][class*="-radio4"]:checked ~ [class*="shabox-in-sm-"][class*="-relay"] [class*="shabox-in-sm-"][class*="-target4"],
 [class*="shabox-in-sm-"][class*="-radio5"]:checked ~ [class*="shabox-in-sm-"][class*="-relay"] [class*="shabox-in-sm-"][class*="-target5"],
 [class*="shabox-in-sm-"][class*="-check"]:checked ~ [class*="shabox-in-sm-"][class*="-hub"] [class*="shabox-in-sm-"][class*="-goal"] {
-  -webkit-box-shadow: inset var(--shabox-sm);
-          box-shadow: inset var(--shabox-sm);
+  -webkit-box-shadow: inset var(--box-shadow-sm);
+          box-shadow: inset var(--box-shadow-sm);
 }
 
-/***** 1.2 Shabox MD *****/
 [class*="shabox-md-"][class*="-base"],
 [class*="shabox-md-"][class*="-global"] > *,
 *:hover > [class*="shabox-md-"][class*="-into"],
@@ -5288,8 +4879,8 @@ pre > *::selection {
 [class*="shabox-md-"][class*="-radio4"]:checked ~ [class*="shabox-md-"][class*="-relay"] [class*="shabox-md-"][class*="-target4"],
 [class*="shabox-md-"][class*="-radio5"]:checked ~ [class*="shabox-md-"][class*="-relay"] [class*="shabox-md-"][class*="-target5"],
 [class*="shabox-md-"][class*="-check"]:checked ~ [class*="shabox-md-"][class*="-hub"] [class*="shabox-md-"][class*="-goal"] {
-  -webkit-box-shadow: var(--shabox-md);
-          box-shadow: var(--shabox-md);
+  -webkit-box-shadow: var(--box-shadow-md);
+          box-shadow: var(--box-shadow-md);
 }
 
 [class*="shabox-in-md-"][class*="-base"],
@@ -5312,11 +4903,10 @@ pre > *::selection {
 [class*="shabox-in-md-"][class*="-radio4"]:checked ~ [class*="shabox-in-md-"][class*="-relay"] [class*="shabox-in-md-"][class*="-target4"],
 [class*="shabox-in-md-"][class*="-radio5"]:checked ~ [class*="shabox-in-md-"][class*="-relay"] [class*="shabox-in-md-"][class*="-target5"],
 [class*="shabox-in-md-"][class*="-check"]:checked ~ [class*="shabox-in-md-"][class*="-hub"] [class*="shabox-in-md-"][class*="-goal"] {
-  -webkit-box-shadow: inset var(--shabox-md);
-          box-shadow: inset var(--shabox-md);
+  -webkit-box-shadow: inset var(--box-shadow-md);
+          box-shadow: inset var(--box-shadow-md);
 }
 
-/***** 1.3 Shabox LG *****/
 [class*="shabox-lg-"][class*="-base"],
 [class*="shabox-lg-"][class*="-global"] > *,
 *:hover > [class*="shabox-lg-"][class*="-into"],
@@ -5337,8 +4927,8 @@ pre > *::selection {
 [class*="shabox-lg-"][class*="-radio4"]:checked ~ [class*="shabox-lg-"][class*="-relay"] [class*="shabox-lg-"][class*="-target4"],
 [class*="shabox-lg-"][class*="-radio5"]:checked ~ [class*="shabox-lg-"][class*="-relay"] [class*="shabox-lg-"][class*="-target5"],
 [class*="shabox-lg-"][class*="-check"]:checked ~ [class*="shabox-lg-"][class*="-hub"] [class*="shabox-lg-"][class*="-goal"] {
-  -webkit-box-shadow: var(--shabox-lg);
-          box-shadow: var(--shabox-lg);
+  -webkit-box-shadow: var(--box-shadow-lg);
+          box-shadow: var(--box-shadow-lg);
 }
 
 [class*="shabox-in-lg-"][class*="-base"],
@@ -5361,20 +4951,11 @@ pre > *::selection {
 [class*="shabox-in-lg-"][class*="-radio4"]:checked ~ [class*="shabox-in-lg-"][class*="-relay"] [class*="shabox-in-lg-"][class*="-target4"],
 [class*="shabox-in-lg-"][class*="-radio5"]:checked ~ [class*="shabox-in-lg-"][class*="-relay"] [class*="shabox-in-lg-"][class*="-target5"],
 [class*="shabox-in-lg-"][class*="-check"]:checked ~ [class*="shabox-in-lg-"][class*="-hub"] [class*="shabox-in-lg-"][class*="-goal"] {
-  -webkit-box-shadow: inset var(--shabox-lg);
-          box-shadow: inset var(--shabox-lg);
+  -webkit-box-shadow: inset var(--box-shadow-lg);
+          box-shadow: inset var(--box-shadow-lg);
 }
 
-/********** 2. SHADOW BOX BLUR **********/
-
-/*
-2.1 Shabox Blur All
-2.2 Shabox Blur SM
-2.3 Shabox Blur MD
-2.4 Shabox Blur LG
-*/
-
-/***** 2.1 Shabox Blur All *****/
+/***** 2 - Box Shadow Blur *****/
 [class*="shabox-blur-all-"][class*="-base"],
 [class*="shabox-blur-all-"][class*="-global"] > *,
 *:hover > [class*="shabox-blur-all-"][class*="-into"],
@@ -5395,8 +4976,8 @@ pre > *::selection {
 [class*="shabox-blur-all-"][class*="-radio4"]:checked ~ [class*="shabox-blur-all-"][class*="-relay"] [class*="shabox-blur-all-"][class*="-target4"],
 [class*="shabox-blur-all-"][class*="-radio5"]:checked ~ [class*="shabox-blur-all-"][class*="-relay"] [class*="shabox-blur-all-"][class*="-target5"],
 [class*="shabox-blur-all-"][class*="-check"]:checked ~ [class*="shabox-blur-all-"][class*="-hub"] [class*="shabox-blur-all-"][class*="-goal"] {
-  -webkit-box-shadow: var(--shabox-blur-all);
-          box-shadow: var(--shabox-blur-all);
+  -webkit-box-shadow: var(--box-shadow-blur-all);
+          box-shadow: var(--box-shadow-blur-all);
 }
 
 [class*="shabox-in-blur-all-"][class*="-base"],
@@ -5419,11 +5000,10 @@ pre > *::selection {
 [class*="shabox-in-blur-all-"][class*="-radio4"]:checked ~ [class*="shabox-in-blur-all-"][class*="-relay"] [class*="shabox-in-blur-all-"][class*="-target4"],
 [class*="shabox-in-blur-all-"][class*="-radio5"]:checked ~ [class*="shabox-in-blur-all-"][class*="-relay"] [class*="shabox-in-blur-all-"][class*="-target5"],
 [class*="shabox-in-blur-all-"][class*="-check"]:checked ~ [class*="shabox-in-blur-all-"][class*="-hub"] [class*="shabox-in-blur-all-"][class*="-goal"] {
-  -webkit-box-shadow: inset var(--shabox-blur-all);
-          box-shadow: inset var(--shabox-blur-all);
+  -webkit-box-shadow: inset var(--box-shadow-blur-all);
+          box-shadow: inset var(--box-shadow-blur-all);
 }
 
-/***** 2.2 Shabox Blur SM *****/
 [class*="shabox-blur-sm-"][class*="-base"],
 [class*="shabox-blur-sm-"][class*="-global"] > *,
 *:hover > [class*="shabox-blur-sm-"][class*="-into"],
@@ -5444,8 +5024,8 @@ pre > *::selection {
 [class*="shabox-blur-sm-"][class*="-radio4"]:checked ~ [class*="shabox-blur-sm-"][class*="-relay"] [class*="shabox-blur-sm-"][class*="-target4"],
 [class*="shabox-blur-sm-"][class*="-radio5"]:checked ~ [class*="shabox-blur-sm-"][class*="-relay"] [class*="shabox-blur-sm-"][class*="-target5"],
 [class*="shabox-blur-sm-"][class*="-check"]:checked ~ [class*="shabox-blur-sm-"][class*="-hub"] [class*="shabox-blur-sm-"][class*="-goal"] {
-  -webkit-box-shadow: var(--shabox-blur-sm);
-          box-shadow: var(--shabox-blur-sm);
+  -webkit-box-shadow: var(--box-shadow-blur-sm);
+          box-shadow: var(--box-shadow-blur-sm);
 }
 
 [class*="shabox-in-blur-sm-"][class*="-base"],
@@ -5468,11 +5048,10 @@ pre > *::selection {
 [class*="shabox-in-blur-sm-"][class*="-radio4"]:checked ~ [class*="shabox-in-blur-sm-"][class*="-relay"] [class*="shabox-in-blur-sm-"][class*="-target4"],
 [class*="shabox-in-blur-sm-"][class*="-radio5"]:checked ~ [class*="shabox-in-blur-sm-"][class*="-relay"] [class*="shabox-in-blur-sm-"][class*="-target5"],
 [class*="shabox-in-blur-sm-"][class*="-check"]:checked ~ [class*="shabox-in-blur-sm-"][class*="-hub"] [class*="shabox-in-blur-sm-"][class*="-goal"] {
-  -webkit-box-shadow: inset var(--shabox-blur-sm);
-          box-shadow: inset var(--shabox-blur-sm);
+  -webkit-box-shadow: inset var(--box-shadow-blur-sm);
+          box-shadow: inset var(--box-shadow-blur-sm);
 }
 
-/***** 2.3 Shabox Blur MD *****/
 [class*="shabox-blur-md-"][class*="-base"],
 [class*="shabox-blur-md-"][class*="-global"] > *,
 *:hover > [class*="shabox-blur-md-"][class*="-into"],
@@ -5493,8 +5072,8 @@ pre > *::selection {
 [class*="shabox-blur-md-"][class*="-radio4"]:checked ~ [class*="shabox-blur-md-"][class*="-relay"] [class*="shabox-blur-md-"][class*="-target4"],
 [class*="shabox-blur-md-"][class*="-radio5"]:checked ~ [class*="shabox-blur-md-"][class*="-relay"] [class*="shabox-blur-md-"][class*="-target5"],
 [class*="shabox-blur-md-"][class*="-check"]:checked ~ [class*="shabox-blur-md-"][class*="-hub"] [class*="shabox-blur-md-"][class*="-goal"] {
-  -webkit-box-shadow: var(--shabox-blur-md);
-          box-shadow: var(--shabox-blur-md);
+  -webkit-box-shadow: var(--box-shadow-blur-md);
+          box-shadow: var(--box-shadow-blur-md);
 }
 
 [class*="shabox-in-blur-md-"][class*="-base"],
@@ -5517,11 +5096,10 @@ pre > *::selection {
 [class*="shabox-in-blur-md-"][class*="-radio4"]:checked ~ [class*="shabox-in-blur-md-"][class*="-relay"] [class*="shabox-in-blur-md-"][class*="-target4"],
 [class*="shabox-in-blur-md-"][class*="-radio5"]:checked ~ [class*="shabox-in-blur-md-"][class*="-relay"] [class*="shabox-in-blur-md-"][class*="-target5"],
 [class*="shabox-in-blur-md-"][class*="-check"]:checked ~ [class*="shabox-in-blur-md-"][class*="-hub"] [class*="shabox-in-blur-md-"][class*="-goal"] {
-  -webkit-box-shadow: inset var(--shabox-blur-md);
-          box-shadow: inset var(--shabox-blur-md);
+  -webkit-box-shadow: inset var(--box-shadow-blur-md);
+          box-shadow: inset var(--box-shadow-blur-md);
 }
 
-/***** 2.4 Shabox Blur LG *****/
 [class*="shabox-blur-lg-"][class*="-base"],
 [class*="shabox-blur-lg-"][class*="-global"] > *,
 *:hover > [class*="shabox-blur-lg-"][class*="-into"],
@@ -5542,8 +5120,8 @@ pre > *::selection {
 [class*="shabox-blur-lg-"][class*="-radio4"]:checked ~ [class*="shabox-blur-lg-"][class*="-relay"] [class*="shabox-blur-lg-"][class*="-target4"],
 [class*="shabox-blur-lg-"][class*="-radio5"]:checked ~ [class*="shabox-blur-lg-"][class*="-relay"] [class*="shabox-blur-lg-"][class*="-target5"],
 [class*="shabox-blur-lg-"][class*="-check"]:checked ~ [class*="shabox-blur-lg-"][class*="-hub"] [class*="shabox-blur-lg-"][class*="-goal"] {
-  -webkit-box-shadow: var(--shabox-blur-lg);
-          box-shadow: var(--shabox-blur-lg);
+  -webkit-box-shadow: var(--box-shadow-blur-lg);
+          box-shadow: var(--box-shadow-blur-lg);
 }
 
 [class*="shabox-in-blur-lg-"][class*="-base"],
@@ -5566,20 +5144,11 @@ pre > *::selection {
 [class*="shabox-in-blur-lg-"][class*="-radio4"]:checked ~ [class*="shabox-in-blur-lg-"][class*="-relay"] [class*="shabox-in-blur-lg-"][class*="-target4"],
 [class*="shabox-in-blur-lg-"][class*="-radio5"]:checked ~ [class*="shabox-in-blur-lg-"][class*="-relay"] [class*="shabox-in-blur-lg-"][class*="-target5"],
 [class*="shabox-in-blur-lg-"][class*="-check"]:checked ~ [class*="shabox-in-blur-lg-"][class*="-hub"] [class*="shabox-in-blur-lg-"][class*="-goal"] {
-  -webkit-box-shadow: inset var(--shabox-blur-lg);
-          box-shadow: inset var(--shabox-blur-lg);
+  -webkit-box-shadow: inset var(--box-shadow-blur-lg);
+          box-shadow: inset var(--box-shadow-blur-lg);
 }
 
-/********** 3. SHADOW BOX SPREAD **********/
-
-/*
-3.1 Shabox Spread All
-3.2 Shabox Spread SM
-3.3 Shabox Spread MD
-3.4 Shabox Spread LG
-*/
-
-/***** 3.1 Shabox Spread All *****/
+/***** 3 - Box Shadow Spread *****/
 [class*="shabox-spread-all-"][class*="-base"],
 [class*="shabox-spread-all-"][class*="-global"] > *,
 *:hover > [class*="shabox-spread-all-"][class*="-into"],
@@ -5600,8 +5169,8 @@ pre > *::selection {
 [class*="shabox-spread-all-"][class*="-radio4"]:checked ~ [class*="shabox-spread-all-"][class*="-relay"] [class*="shabox-spread-all-"][class*="-target4"],
 [class*="shabox-spread-all-"][class*="-radio5"]:checked ~ [class*="shabox-spread-all-"][class*="-relay"] [class*="shabox-spread-all-"][class*="-target5"],
 [class*="shabox-spread-all-"][class*="-check"]:checked ~ [class*="shabox-spread-all-"][class*="-hub"] [class*="shabox-spread-all-"][class*="-goal"] {
-  -webkit-box-shadow: var(--shabox-spread-all);
-          box-shadow: var(--shabox-spread-all);
+  -webkit-box-shadow: var(--box-shadow-spread-all);
+          box-shadow: var(--box-shadow-spread-all);
 }
 
 [class*="shabox-in-spread-all-"][class*="-base"],
@@ -5624,11 +5193,10 @@ pre > *::selection {
 [class*="shabox-in-spread-all-"][class*="-radio4"]:checked ~ [class*="shabox-in-spread-all-"][class*="-relay"] [class*="shabox-in-spread-all-"][class*="-target4"],
 [class*="shabox-in-spread-all-"][class*="-radio5"]:checked ~ [class*="shabox-in-spread-all-"][class*="-relay"] [class*="shabox-in-spread-all-"][class*="-target5"],
 [class*="shabox-in-spread-all-"][class*="-check"]:checked ~ [class*="shabox-in-spread-all-"][class*="-hub"] [class*="shabox-in-spread-all-"][class*="-goal"] {
-  -webkit-box-shadow: inset var(--shabox-spread-all);
-          box-shadow: inset var(--shabox-spread-all);
+  -webkit-box-shadow: inset var(--box-shadow-spread-all);
+          box-shadow: inset var(--box-shadow-spread-all);
 }
 
-/***** 3.2 Shabox Spread SM *****/
 [class*="shabox-spread-sm-"][class*="-base"],
 [class*="shabox-spread-sm-"][class*="-global"] > *,
 *:hover > [class*="shabox-spread-sm-"][class*="-into"],
@@ -5649,8 +5217,8 @@ pre > *::selection {
 [class*="shabox-spread-sm-"][class*="-radio4"]:checked ~ [class*="shabox-spread-sm-"][class*="-relay"] [class*="shabox-spread-sm-"][class*="-target4"],
 [class*="shabox-spread-sm-"][class*="-radio5"]:checked ~ [class*="shabox-spread-sm-"][class*="-relay"] [class*="shabox-spread-sm-"][class*="-target5"],
 [class*="shabox-spread-sm-"][class*="-check"]:checked ~ [class*="shabox-spread-sm-"][class*="-hub"] [class*="shabox-spread-sm-"][class*="-goal"] {
-  -webkit-box-shadow: var(--shabox-spread-sm);
-          box-shadow: var(--shabox-spread-sm);
+  -webkit-box-shadow: var(--box-shadow-spread-sm);
+          box-shadow: var(--box-shadow-spread-sm);
 }
 
 [class*="shabox-in-spread-sm-"][class*="-base"],
@@ -5673,11 +5241,10 @@ pre > *::selection {
 [class*="shabox-in-spread-sm-"][class*="-radio4"]:checked ~ [class*="shabox-in-spread-sm-"][class*="-relay"] [class*="shabox-in-spread-sm-"][class*="-target4"],
 [class*="shabox-in-spread-sm-"][class*="-radio5"]:checked ~ [class*="shabox-in-spread-sm-"][class*="-relay"] [class*="shabox-in-spread-sm-"][class*="-target5"],
 [class*="shabox-in-spread-sm-"][class*="-check"]:checked ~ [class*="shabox-in-spread-sm-"][class*="-hub"] [class*="shabox-in-spread-sm-"][class*="-goal"] {
-  -webkit-box-shadow: inset var(--shabox-spread-sm);
-          box-shadow: inset var(--shabox-spread-sm);
+  -webkit-box-shadow: inset var(--box-shadow-spread-sm);
+          box-shadow: inset var(--box-shadow-spread-sm);
 }
 
-/***** 3.3 Shabox Spread MD *****/
 [class*="shabox-spread-md-"][class*="-base"],
 [class*="shabox-spread-md-"][class*="-global"] > *,
 *:hover > [class*="shabox-spread-md-"][class*="-into"],
@@ -5698,8 +5265,8 @@ pre > *::selection {
 [class*="shabox-spread-md-"][class*="-radio4"]:checked ~ [class*="shabox-spread-md-"][class*="-relay"] [class*="shabox-spread-md-"][class*="-target4"],
 [class*="shabox-spread-md-"][class*="-radio5"]:checked ~ [class*="shabox-spread-md-"][class*="-relay"] [class*="shabox-spread-md-"][class*="-target5"],
 [class*="shabox-spread-md-"][class*="-check"]:checked ~ [class*="shabox-spread-md-"][class*="-hub"] [class*="shabox-spread-md-"][class*="-goal"] {
-  -webkit-box-shadow: var(--shabox-spread-md);
-          box-shadow: var(--shabox-spread-md);
+  -webkit-box-shadow: var(--box-shadow-spread-md);
+          box-shadow: var(--box-shadow-spread-md);
 }
 
 [class*="shabox-in-spread-md-"][class*="-base"],
@@ -5722,11 +5289,10 @@ pre > *::selection {
 [class*="shabox-in-spread-md-"][class*="-radio4"]:checked ~ [class*="shabox-in-spread-md-"][class*="-relay"] [class*="shabox-in-spread-md-"][class*="-target4"],
 [class*="shabox-in-spread-md-"][class*="-radio5"]:checked ~ [class*="shabox-in-spread-md-"][class*="-relay"] [class*="shabox-in-spread-md-"][class*="-target5"],
 [class*="shabox-in-spread-md-"][class*="-check"]:checked ~ [class*="shabox-in-spread-md-"][class*="-hub"] [class*="shabox-in-spread-md-"][class*="-goal"] {
-  -webkit-box-shadow: inset var(--shabox-spread-md);
-          box-shadow: inset var(--shabox-spread-md);
+  -webkit-box-shadow: inset var(--box-shadow-spread-md);
+          box-shadow: inset var(--box-shadow-spread-md);
 }
 
-/***** 3.4 Shabox Spread LG *****/
 [class*="shabox-spread-lg-"][class*="-base"],
 [class*="shabox-spread-lg-"][class*="-global"] > *,
 *:hover > [class*="shabox-spread-lg-"][class*="-into"],
@@ -5747,8 +5313,8 @@ pre > *::selection {
 [class*="shabox-spread-lg-"][class*="-radio4"]:checked ~ [class*="shabox-spread-lg-"][class*="-relay"] [class*="shabox-spread-lg-"][class*="-target4"],
 [class*="shabox-spread-lg-"][class*="-radio5"]:checked ~ [class*="shabox-spread-lg-"][class*="-relay"] [class*="shabox-spread-lg-"][class*="-target5"],
 [class*="shabox-spread-lg-"][class*="-check"]:checked ~ [class*="shabox-spread-lg-"][class*="-hub"] [class*="shabox-spread-lg-"][class*="-goal"] {
-  -webkit-box-shadow: var(--shabox-spread-lg);
-          box-shadow: var(--shabox-spread-lg);
+  -webkit-box-shadow: var(--box-shadow-spread-lg);
+          box-shadow: var(--box-shadow-spread-lg);
 }
 
 [class*="shabox-in-spread-lg-"][class*="-base"],
@@ -5771,34 +5337,18 @@ pre > *::selection {
 [class*="shabox-in-spread-lg-"][class*="-radio4"]:checked ~ [class*="shabox-in-spread-lg-"][class*="-relay"] [class*="shabox-in-spread-lg-"][class*="-target4"],
 [class*="shabox-in-spread-lg-"][class*="-radio5"]:checked ~ [class*="shabox-in-spread-lg-"][class*="-relay"] [class*="shabox-in-spread-lg-"][class*="-target5"],
 [class*="shabox-in-spread-lg-"][class*="-check"]:checked ~ [class*="shabox-in-spread-lg-"][class*="-hub"] [class*="shabox-in-spread-lg-"][class*="-goal"] {
-  -webkit-box-shadow: inset var(--shabox-spread-lg);
-          box-shadow: inset var(--shabox-spread-lg);
+  -webkit-box-shadow: inset var(--box-shadow-spread-lg);
+          box-shadow: inset var(--box-shadow-spread-lg);
 }
 
-
-/******************** SHATEX ********************/
-
-/*
-1. SHADOW TEXT
-  1.1 Shatex SM
-  1.2 Shatex MD
-  1.3 Shatex LG
-2. SHADOW TEXT BLUR
-  2.1 Shatex Blur All
-  2.2 Shatex Blur SM
-  2.3 Shatex Blur MD
-  2.4 Shatex Blur LG
-*/
-
-/********** 1. SHADOW TEXT **********/
+/********** SHATEX **********/
 
 /*
-1.1 Shatex SM
-1.2 Shatex MD
-1.3 Shatex LG
+1 - Text Shadow
+2 - Text Shadow Blur
 */
 
-/***** 1.1 Shatex SM *****/
+/***** 1 - Text Shadow *****/
 [class*="shatex-sm-"][class*="-base"],
 [class*="shatex-sm-"][class*="-global"] > *,
 *:hover > [class*="shatex-sm-"][class*="-into"],
@@ -5819,10 +5369,9 @@ pre > *::selection {
 [class*="shatex-sm-"][class*="-radio4"]:checked ~ [class*="shatex-sm-"][class*="-relay"] [class*="shatex-sm-"][class*="-target4"],
 [class*="shatex-sm-"][class*="-radio5"]:checked ~ [class*="shatex-sm-"][class*="-relay"] [class*="shatex-sm-"][class*="-target5"],
 [class*="shatex-sm-"][class*="-check"]:checked ~ [class*="shatex-sm-"][class*="-hub"] [class*="shatex-sm-"][class*="-goal"] {
-  text-shadow: var(--shatex-sm);
+  text-shadow: var(--text-shadow-sm);
 }
 
-/***** 1.2 Shatex MD *****/
 [class*="shatex-md-"][class*="-base"],
 [class*="shatex-md-"][class*="-global"] > *,
 *:hover > [class*="shatex-md-"][class*="-into"],
@@ -5843,10 +5392,9 @@ pre > *::selection {
 [class*="shatex-md-"][class*="-radio4"]:checked ~ [class*="shatex-md-"][class*="-relay"] [class*="shatex-md-"][class*="-target4"],
 [class*="shatex-md-"][class*="-radio5"]:checked ~ [class*="shatex-md-"][class*="-relay"] [class*="shatex-md-"][class*="-target5"],
 [class*="shatex-md-"][class*="-check"]:checked ~ [class*="shatex-md-"][class*="-hub"] [class*="shatex-md-"][class*="-goal"] {
-  text-shadow: var(--shatex-md);
+  text-shadow: var(--text-shadow-md);
 }
 
-/***** 1.3 Shatex LG *****/
 [class*="shatex-lg-"][class*="-base"],
 [class*="shatex-lg-"][class*="-global"] > *,
 *:hover > [class*="shatex-lg-"][class*="-into"],
@@ -5867,19 +5415,10 @@ pre > *::selection {
 [class*="shatex-lg-"][class*="-radio4"]:checked ~ [class*="shatex-lg-"][class*="-relay"] [class*="shatex-lg-"][class*="-target4"],
 [class*="shatex-lg-"][class*="-radio5"]:checked ~ [class*="shatex-lg-"][class*="-relay"] [class*="shatex-lg-"][class*="-target5"],
 [class*="shatex-lg-"][class*="-check"]:checked ~ [class*="shatex-lg-"][class*="-hub"] [class*="shatex-lg-"][class*="-goal"] {
-  text-shadow: var(--shatex-lg);
+  text-shadow: var(--text-shadow-lg);
 }
 
-/********** 2. SHADOW TEXT BLUR **********/
-
-/*
-2.1 Shatex Blur All
-2.2 Shatex Blur SM
-2.3 Shatex Blur MD
-2.4 Shatex Blur LG
-*/
-
-/***** 2.1 Shatex Blur All *****/
+/***** 2 - Text Shadow Blur *****/
 [class*="shatex-blur-all-"][class*="-base"],
 [class*="shatex-blur-all-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-all-"][class*="-into"],
@@ -5900,10 +5439,9 @@ pre > *::selection {
 [class*="shatex-blur-all-"][class*="-radio4"]:checked ~ [class*="shatex-blur-all-"][class*="-relay"] [class*="shatex-blur-all-"][class*="-target4"],
 [class*="shatex-blur-all-"][class*="-radio5"]:checked ~ [class*="shatex-blur-all-"][class*="-relay"] [class*="shatex-blur-all-"][class*="-target5"],
 [class*="shatex-blur-all-"][class*="-check"]:checked ~ [class*="shatex-blur-all-"][class*="-hub"] [class*="shatex-blur-all-"][class*="-goal"] {
-  text-shadow: var(--shatex-blur-all);
+  text-shadow: var(--text-shadow-blur-all);
 }
 
-/***** 2.2 Shatex Blur SM *****/
 [class*="shatex-blur-sm-"][class*="-base"],
 [class*="shatex-blur-sm-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-sm-"][class*="-into"],
@@ -5924,10 +5462,9 @@ pre > *::selection {
 [class*="shatex-blur-sm-"][class*="-radio4"]:checked ~ [class*="shatex-blur-sm-"][class*="-relay"] [class*="shatex-blur-sm-"][class*="-target4"],
 [class*="shatex-blur-sm-"][class*="-radio5"]:checked ~ [class*="shatex-blur-sm-"][class*="-relay"] [class*="shatex-blur-sm-"][class*="-target5"],
 [class*="shatex-blur-sm-"][class*="-check"]:checked ~ [class*="shatex-blur-sm-"][class*="-hub"] [class*="shatex-blur-sm-"][class*="-goal"] {
-  text-shadow: var(--shatex-blur-sm);
+  text-shadow: var(--text-shadow-blur-sm);
 }
 
-/***** 2.3 Shatex Blur MD *****/
 [class*="shatex-blur-md-"][class*="-base"],
 [class*="shatex-blur-md-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-md-"][class*="-into"],
@@ -5948,10 +5485,9 @@ pre > *::selection {
 [class*="shatex-blur-md-"][class*="-radio4"]:checked ~ [class*="shatex-blur-md-"][class*="-relay"] [class*="shatex-blur-md-"][class*="-target4"],
 [class*="shatex-blur-md-"][class*="-radio5"]:checked ~ [class*="shatex-blur-md-"][class*="-relay"] [class*="shatex-blur-md-"][class*="-target5"],
 [class*="shatex-blur-md-"][class*="-check"]:checked ~ [class*="shatex-blur-md-"][class*="-hub"] [class*="shatex-blur-md-"][class*="-goal"] {
-  text-shadow: var(--shatex-blur-md);
+  text-shadow: var(--text-shadow-blur-md);
 }
 
-/***** 2.4 Shatex Blur LG *****/
 [class*="shatex-blur-lg-"][class*="-base"],
 [class*="shatex-blur-lg-"][class*="-global"] > *,
 *:hover > [class*="shatex-blur-lg-"][class*="-into"],
@@ -5972,52 +5508,20 @@ pre > *::selection {
 [class*="shatex-blur-lg-"][class*="-radio4"]:checked ~ [class*="shatex-blur-lg-"][class*="-relay"] [class*="shatex-blur-lg-"][class*="-target4"],
 [class*="shatex-blur-lg-"][class*="-radio5"]:checked ~ [class*="shatex-blur-lg-"][class*="-relay"] [class*="shatex-blur-lg-"][class*="-target5"],
 [class*="shatex-blur-lg-"][class*="-check"]:checked ~ [class*="shatex-blur-lg-"][class*="-hub"] [class*="shatex-blur-lg-"][class*="-goal"] {
-  text-shadow: var(--shatex-blur-lg);
+  text-shadow: var(--text-shadow-blur-lg);
 }
-
 
 /********** BORD *********/
 
 /*
-1. BORD
-  1.1 Bord
-2. BORD STYLE
-  2.1 Dashed
-  2.2 Dotted
-  2.3 Double
-  2.4 Groove
-  2.5 Inset
-  2.6 Outset
-  2.7 Ridge
-  2.8 Solid
-3. BORD WIDTH
-  3.1 Width SM
-  3.2 Width MD
-  3.3 Width LG
-4. BORD COLOR
-  4.1 Black
-  4.2 Blue
-  4.3 Gray
-  4.4 Green
-  4.5 Maroon
-  4.6 Orange
-  4.7 Purple
-  4.8 Red
-  4.9 White
-  4.10 Yellow
-5. BORD RADIUS
-  5.1 Square
-  5.2 Round
-  5.3 Circle
+1 - Bord
+2 - Bord Style
+3 - Bord Width
+4 - Bord Color
+5 - Bord Radius
 */
 
-/********** 1. BORD **********/
-
-/*
-1.1 Bord
-*/
-
-/***** 1.1 Bord *****/
+/***** 1 - Bord *****/
 [class*="bord-"][class*="-base"],
 [class*="bord-"][class*="-global"] > *,
 [class*="bord-"][class*="-onto"]:hover,
@@ -6044,20 +5548,7 @@ pre > *::selection {
   border-radius: var(--border-radius);
 }
 
-/********** 2. BORD STYLE **********/
-
-/*
-2.1 Dashed
-2.2 Dotted
-2.3 Double
-2.4 Groove
-2.5 Inset
-2.6 Outset
-2.7 Ridge
-2.8 Solid
-*/
-
-/***** 2.1 Bord Dashed *****/
+/***** 2 - Bord Style *****/
 [class*="bord-dash-"][class*="-base"],
 [class*="bord-dash-"][class*="-global"] > *,
 *:hover > [class*="bord-dash-"][class*="-into"],
@@ -6081,7 +5572,6 @@ pre > *::selection {
   border-style: dashed;
 }
 
-/***** 2.2 Bord Dotted *****/
 [class*="bord-dot-"][class*="-base"],
 [class*="bord-dot-"][class*="-global"] > *,
 *:hover > [class*="bord-dot-"][class*="-into"],
@@ -6105,7 +5595,6 @@ pre > *::selection {
   border-style: dotted;
 }
 
-/***** 2.3 Bord Double *****/
 [class*="bord-double-"][class*="-base"],
 [class*="bord-double-"][class*="-global"] > *,
 *:hover > [class*="bord-double-"][class*="-into"],
@@ -6129,7 +5618,6 @@ pre > *::selection {
   border-style: double;
 }
 
-/***** 2.4 Bord Groove *****/
 [class*="bord-groove-"][class*="-base"],
 [class*="bord-groove-"][class*="-global"] > *,
 *:hover > [class*="bord-groove-"][class*="-into"],
@@ -6153,7 +5641,6 @@ pre > *::selection {
   border-style: groove;
 }
 
-/***** 2.5 Bord Inset *****/
 [class*="bord-inset-"][class*="-base"],
 [class*="bord-inset-"][class*="-global"] > *,
 *:hover > [class*="bord-inset-"][class*="-into"],
@@ -6177,7 +5664,6 @@ pre > *::selection {
   border-style: inset;
 }
 
-/***** 2.6 Bord Outset *****/
 [class*="bord-outset-"][class*="-base"],
 [class*="bord-outset-"][class*="-global"] > *,
 *:hover > [class*="bord-outset-"][class*="-into"],
@@ -6201,7 +5687,6 @@ pre > *::selection {
   border-style: outset;
 }
 
-/***** 2.7 Bord Ridge *****/
 [class*="bord-ridge-"][class*="-base"],
 [class*="bord-ridge-"][class*="-global"] > *,
 *:hover > [class*="bord-ridge-"][class*="-into"],
@@ -6225,7 +5710,6 @@ pre > *::selection {
   border-style: ridge;
 }
 
-/***** 2.8 Bord Solid *****/
 [class*="bord-solid-"][class*="-base"],
 [class*="bord-solid-"][class*="-global"] > *,
 *:hover > [class*="bord-solid-"][class*="-into"],
@@ -6249,15 +5733,7 @@ pre > *::selection {
   border-style: solid;
 }
 
-/********** 3. BORD WIDTH **********/
-
-/*
-3.1 Width SM
-3.2 Width MD
-3.3 Width LG
-*/
-
-/***** 3.1 Bord SM *****/
+/***** 3 - Bord Width *****/
 [class*="bord-sm-"][class*="-base"],
 [class*="bord-sm-"][class*="-global"] > *,
 *:hover > [class*="bord-sm-"][class*="-into"],
@@ -6281,7 +5757,6 @@ pre > *::selection {
   border-width: var(--border-width-sm);
 }
 
-/***** 3.2 Bord MD *****/
 [class*="bord-md-"][class*="-base"],
 [class*="bord-md-"][class*="-global"] > *,
 *:hover > [class*="bord-md-"][class*="-into"],
@@ -6305,7 +5780,6 @@ pre > *::selection {
   border-width: var(--border-width-md);
 }
 
-/***** 3.3 Bord LG *****/
 [class*="bord-lg-"][class*="-base"],
 [class*="bord-lg-"][class*="-global"] > *,
 *:hover > [class*="bord-lg-"][class*="-into"],
@@ -6329,22 +5803,7 @@ pre > *::selection {
   border-width: var(--border-width-lg);
 }
 
-/********** 4. BORD COLOR **********/
-
-/*
-4.1 Black
-4.2 Blue
-4.3 Gray
-4.4 Green
-4.5 Maroon
-4.6 Orange
-4.7 Purple
-4.8 Red
-4.9 White
-4.10 Yellow
-*/
-
-/***** 4.1 Bord Black *****/
+/***** 4 - Bord Color *****/
 [class*="bord-black-"][class*="-base"],
 [class*="bord-black-"][class*="-global"] > *,
 *:hover > [class*="bord-black-"][class*="-into"],
@@ -6368,7 +5827,6 @@ pre > *::selection {
   border-color: var(--black);
 }
 
-/***** 4.2 Bord Blue *****/
 [class*="bord-blue-"][class*="-base"],
 [class*="bord-blue-"][class*="-global"] > *,
 *:hover > [class*="bord-blue-"][class*="-into"],
@@ -6392,7 +5850,6 @@ pre > *::selection {
   border-color: var(--blue);
 }
 
-/***** 4.3 Bord Gray *****/
 [class*="bord-gray-"][class*="-base"],
 [class*="bord-gray-"][class*="-global"] > *,
 *:hover > [class*="bord-gray-"][class*="-into"],
@@ -6416,7 +5873,6 @@ pre > *::selection {
   border-color: var(--gray);
 }
 
-/***** 4.4 Bord Green *****/
 [class*="bord-green-"][class*="-base"],
 [class*="bord-green-"][class*="-global"] > *,
 *:hover > [class*="bord-green-"][class*="-into"],
@@ -6440,7 +5896,6 @@ pre > *::selection {
   border-color: var(--green);
 }
 
-/***** 4.5 Bord Maroon *****/
 [class*="bord-maroon-"][class*="-base"],
 [class*="bord-maroon-"][class*="-global"] > *,
 *:hover > [class*="bord-maroon-"][class*="-into"],
@@ -6464,7 +5919,6 @@ pre > *::selection {
   border-color: var(--maroon);
 }
 
-/***** 4.6 Bord Orange *****/
 [class*="bord-orange-"][class*="-base"],
 [class*="bord-orange-"][class*="-global"] > *,
 *:hover > [class*="bord-orange-"][class*="-into"],
@@ -6488,7 +5942,6 @@ pre > *::selection {
   border-color: var(--orange);
 }
 
-/***** 4.7 Bord Purple *****/
 [class*="bord-purple-"][class*="-base"],
 [class*="bord-purple-"][class*="-global"] > *,
 *:hover > [class*="bord-purple-"][class*="-into"],
@@ -6512,7 +5965,6 @@ pre > *::selection {
   border-color: var(--purple);
 }
 
-/***** 4.8 Bord Red *****/
 [class*="bord-red-"][class*="-base"],
 [class*="bord-red-"][class*="-global"] > *,
 *:hover > [class*="bord-red-"][class*="-into"],
@@ -6536,7 +5988,6 @@ pre > *::selection {
   border-color: var(--red);
 }
 
-/***** 4.9 Bord White *****/
 [class*="bord-white-"][class*="-base"],
 [class*="bord-white-"][class*="-global"] > *,
 *:hover > [class*="bord-white-"][class*="-into"],
@@ -6560,7 +6011,6 @@ pre > *::selection {
   border-color: var(--white);
 }
 
-/***** 4.10 Bord Yellow *****/
 [class*="bord-yellow-"][class*="-base"],
 [class*="bord-yellow-"][class*="-global"] > *,
 *:hover > [class*="bord-yellow-"][class*="-into"],
@@ -6584,15 +6034,7 @@ pre > *::selection {
   border-color: var(--yellow);
 }
 
-/********** 5. BORD RADIUS **********/
-
-/*
-5.1 Square
-5.2 Round
-5.3 Circle
-*/
-
-/***** 5.1 Bord Square *****/
+/***** 5 - Bord Radius *****/
 [class*="bord-square-"][class*="-base"],
 [class*="bord-square-"][class*="-global"] > *,
 *:hover > [class*="bord-square-"][class*="-into"],
@@ -6616,7 +6058,6 @@ pre > *::selection {
   border-radius: var(--border-radius-square);
 }
 
-/***** 5.2 Bord Round *****/
 [class*="bord-round-"][class*="-base"],
 [class*="bord-round-"][class*="-global"] > *,
 *:hover > [class*="bord-round-"][class*="-into"],
@@ -6640,7 +6081,6 @@ pre > *::selection {
   border-radius: var(--border-radius-round);
 }
 
-/***** 5.3 Bord Circle *****/
 [class*="bord-circle-"][class*="-base"],
 [class*="bord-circle-"][class*="-global"] > *,
 *:hover > [class*="bord-circle-"][class*="-into"],
@@ -6664,66 +6104,24 @@ pre > *::selection {
   border-radius: var(--border-radius-circle);
 }
 
-
 /********** ANIMA **********/
 
 /*
-1. ANIMA
-  1.1 Anima
-2. ANIMA ROTATE
-  2.1 Anima Rota
-  2.2 Anima Rotax
-  2.3 Anima Rotay
-3. ANIMA SCALE
-  3.1 Anima Scal
-  3.2 Anima Scalx
-  3.3 Anima Scaly
-4. ANIMA SKEW
-  4.1 Anima Skew
-  4.2 Anima Skewx
-  4.3 Anima Skewy
-5. ANIMA TRANSLATE
-  5.1 Anima Tran
-  5.2 Anima Tranx
-  5.3 Anima Trany
-6. ANIMA DURATION
-  6.1 Anima Duration XS
-  6.2 Anima Duration SM
-  6.3 Anima Duration MD
-  6.4 Anima Duration LG
-  6.5 Anima Duration XL
-7. ANIMA TIMING FUNCTION
-  7.1 Anima Funtion Linear
-  7.2 Anima Funtion Ease
-  7.3 Anima Funtion Steps
-  7.4 Anima Funtion Bezier
-8. ANIMA ITERATION COUNT
-  8.1 Anima Iteration Few
-  8.2 Anima Iteration Many
-  8.3 Anima Iteration Loop
-9. ANIMA DIRECTION
-  9.1 Anima Direction Alter
-  9.2 Anima Direction Rever
-  9.3 Anima Direction Altrev
-10. ANIMA DELAY
-  10.1 Anima Delay Small
-  10.2 Anima Delay Medium
-  10.3 Anima Delay Large
-11. ANIMA FILL MODE
-  11.1 Anima Mode Back
-  11.2 Anima Mode Front
-12. TRANSFORM ORIGIN
-  12.1 Transform Origin Far
-  12.2 Transform Origin Near
+1 - Animation
+2. Animation rotate
+3. Animation Scale
+4. Animation Skew
+5. Animation Translate
+6. Animation Duration
+7. Animation Timing Function
+8. Animation Iteration Count
+9. Animation duration
+10. Animation Delay
+11. Animation Fill Mode
+12. Transform Origin
 */
 
-/********** 1. ANIMA **********/
-
-/*
-1.1 Anima
-*/
-
-/***** 1.1 Anima *****/
+/***** 1 - Animation *****/
 [class*="anima-"][class*="-base"],
 [class*="anima-"][class*="-global"] > *,
 *:hover > [class*="anima-"][class*="-into"],
@@ -6744,31 +6142,23 @@ pre > *::selection {
 [class*="anima-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target4"],
 [class*="anima-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target5"],
 [class*="anima-"][class*="-check"]:checked ~ [class*="anima-"][class*="-hub"] [class*="anima-"][class*="-goal"] {
-  -webkit-animation-name: var(--anima-name);
-          animation-name: var(--anima-name);
-  -webkit-animation-duration: var(--anima-duration);
-          animation-duration: var(--anima-duration);
-  -webkit-animation-timing-function: var(--anima-timing-function);
-          animation-timing-function: var(--anima-timing-function);
-  -webkit-animation-direction: var(--anima-direction);
-          animation-direction: var(--anima-direction);
-  -webkit-animation-delay: var(--anima-delay);
-          animation-delay: var(--anima-delay);
-  -webkit-animation-iteration-count: var(--anima-iteration-count);
-          animation-iteration-count: var(--anima-iteration-count);
-  -webkit-animation-fill-mode: var(--anima-fill-mode);
-          animation-fill-mode: var(--anima-fill-mode);
+  -webkit-animation-name: var(--animation-name);
+          animation-name: var(--animation-name);
+  -webkit-animation-duration: var(--animation-duration);
+          animation-duration: var(--animation-duration);
+  -webkit-animation-timing-function: var(--animation-timing-function);
+          animation-timing-function: var(--animation-timing-function);
+  -webkit-animation-direction: var(--animation-direction);
+          animation-direction: var(--animation-direction);
+  -webkit-animation-delay: var(--animation-delay);
+          animation-delay: var(--animation-delay);
+  -webkit-animation-iteration-count: var(--animation-iteration-count);
+          animation-iteration-count: var(--animation-iteration-count);
+  -webkit-animation-fill-mode: var(--animation-fill-mode);
+          animation-fill-mode: var(--animation-fill-mode);
 }
 
-/********** 2. ANIMA ROTATE **********/
-
-/*
-2.1 Anima Rota
-2.2 Anima Rotax
-2.3 Anima Rotay
-*/
-
-/***** 2.1 Anima Rota *****/
+/***** 2 - Animation Rotate *****/
 [class*="anima-rota-"][class*="-base"],
 [class*="anima-rota-"][class*="-global"] > *,
 *:hover > [class*="anima-rota-"][class*="-into"],
@@ -6793,7 +6183,6 @@ pre > *::selection {
           animation-name: rotate;
 }
 
-/***** 2.2 Anima Rotax *****/
 [class*="anima-rotax-"][class*="-base"],
 [class*="anima-rotax-"][class*="-global"] > *,
 *:hover > [class*="anima-rotax-"][class*="-into"],
@@ -6818,7 +6207,6 @@ pre > *::selection {
           animation-name: rotateX;
 }
 
-/***** 2.3 Anima Rotay *****/
 [class*="anima-rotay-"][class*="-base"],
 [class*="anima-rotay-"][class*="-global"] > *,
 *:hover > [class*="anima-rotay-"][class*="-into"],
@@ -6843,15 +6231,7 @@ pre > *::selection {
           animation-name: rotateY;
 }
 
-/********** 3. ANIMA SCALE **********/
-
-/*
-3.1 Scal
-3.2 Scalx
-3.3 Scaly
-*/
-
-/***** 3.1 Anima Scal *****/
+/***** 3 - Animation Scale *****/
 [class*="anima-scal-"][class*="-base"],
 [class*="anima-scal-"][class*="-global"] > *,
 *:hover > [class*="anima-scal-"][class*="-into"],
@@ -6876,7 +6256,6 @@ pre > *::selection {
           animation-name: scale;
 }
 
-/***** 3.2 Anima Scalx *****/
 [class*="anima-scalx-"][class*="-base"],
 [class*="anima-scalx-"][class*="-global"] > *,
 *:hover > [class*="anima-scalx-"][class*="-into"],
@@ -6901,7 +6280,6 @@ pre > *::selection {
           animation-name: scaleX;
 }
 
-/***** 3.3 Anima Scaly *****/
 [class*="anima-scaly-"][class*="-base"],
 [class*="anima-scaly-"][class*="-global"] > *,
 *:hover > [class*="anima-scaly-"][class*="-into"],
@@ -6926,15 +6304,7 @@ pre > *::selection {
           animation-name: scaleY;
 }
 
-/********** 4. ANIMA SKEW **********/
-
-/*
-4.1 Anima Skew
-4.2 Anima Skewx
-4.3 Anima Skewy
-*/
-
-/***** 4.1 Anima Skew *****/
+/***** 4 - Animation Skew *****/
 [class*="anima-skew-"][class*="-base"],
 [class*="anima-skew-"][class*="-global"] > *,
 *:hover > [class*="anima-skew-"][class*="-into"],
@@ -6959,7 +6329,6 @@ pre > *::selection {
           animation-name: skew;
 }
 
-/***** 4.2 Anima Skewx *****/
 [class*="anima-skewx-"][class*="-base"],
 [class*="anima-skewx-"][class*="-global"] > *,
 *:hover > [class*="anima-skewx-"][class*="-into"],
@@ -6984,7 +6353,6 @@ pre > *::selection {
           animation-name: skewX;
 }
 
-/***** 4.3 Anima Skewy *****/
 [class*="anima-skewy-"][class*="-base"],
 [class*="anima-skewy-"][class*="-global"] > *,
 *:hover > [class*="anima-skewy-"][class*="-into"],
@@ -7009,15 +6377,7 @@ pre > *::selection {
           animation-name: skewY;
 }
 
-/********** 5. ANIMA TRANSLATE **********/
-
-/*
-5.1 Anima Tran
-5.2 Anima Tranx
-5.3 Anima Trany
-*/
-
-/***** 5.1 Anima Tran *****/
+/***** 5 - Animation Translate *****/
 [class*="anima-tran-"][class*="-base"],
 [class*="anima-tran-"][class*="-global"] > *,
 *:hover > [class*="anima-tran-"][class*="-into"],
@@ -7042,7 +6402,6 @@ pre > *::selection {
           animation-name: translate;
 }
 
-/***** 5.2 Anima Tranx *****/
 [class*="anima-tranx-"][class*="-base"],
 [class*="anima-tranx-"][class*="-global"] > *,
 *:hover > [class*="anima-tranx-"][class*="-into"],
@@ -7067,7 +6426,6 @@ pre > *::selection {
           animation-name: translateX;
 }
 
-/***** 5.3 Anima trany *****/
 [class*="anima-trany-"][class*="-base"],
 [class*="anima-trany-"][class*="-global"] > *,
 *:hover > [class*="anima-trany-"][class*="-into"],
@@ -7092,17 +6450,7 @@ pre > *::selection {
           animation-name: translateY;
 }
 
-/********** 6. ANIMA DURATION **********/
-
-/*
-6.1 Anima Duration XS
-6.2 Anima Duration SM
-6.3 Anima Duration MD
-6.4 Anima Duration LG
-6.5 Anima Duration XL
-*/
-
-/***** 6.1 Anima Duration XS *****/
+/***** 6 - Animation Duration *****/
 [class*="anima-xs-"][class*="-base"],
 [class*="anima-xs-"][class*="-global"] > *,
 *:hover > [class*="anima-xs-"][class*="-into"],
@@ -7123,11 +6471,10 @@ pre > *::selection {
 [class*="anima-xs-"][class*="-radio4"]:checked ~ [class*="anima-xs-"][class*="-relay"] [class*="anima-xs-"][class*="-target4"],
 [class*="anima-xs-"][class*="-radio5"]:checked ~ [class*="anima-xs-"][class*="-relay"] [class*="anima-xs-"][class*="-target5"],
 [class*="anima-xs-"][class*="-check"]:checked ~ [class*="anima-xs-"][class*="-hub"] [class*="anima-xs-"][class*="-goal"] {
-  -webkit-animation-duration: var(--anima-duration-xs);
-          animation-duration: var(--anima-duration-xs);
+  -webkit-animation-duration: var(--animation-duration-xs);
+          animation-duration: var(--animation-duration-xs);
 }
 
-/***** 6.2 Anima Duration SM *****/
 [class*="anima-sm-"][class*="-base"],
 [class*="anima-sm-"][class*="-global"] > *,
 *:hover > [class*="anima-sm-"][class*="-into"],
@@ -7148,11 +6495,10 @@ pre > *::selection {
 [class*="anima-sm-"][class*="-radio4"]:checked ~ [class*="anima-sm-"][class*="-relay"] [class*="anima-sm-"][class*="-target4"],
 [class*="anima-sm-"][class*="-radio5"]:checked ~ [class*="anima-sm-"][class*="-relay"] [class*="anima-sm-"][class*="-target5"],
 [class*="anima-sm-"][class*="-check"]:checked ~ [class*="anima-sm-"][class*="-hub"] [class*="anima-sm-"][class*="-goal"] {
-  -webkit-animation-duration: var(--anima-duration-sm);
-          animation-duration: var(--anima-duration-sm);
+  -webkit-animation-duration: var(--animation-duration-sm);
+          animation-duration: var(--animation-duration-sm);
 }
 
-/***** 6.3 Anima Duration MD *****/
 [class*="anima-md-"][class*="-base"],
 [class*="anima-md-"][class*="-global"] > *,
 *:hover > [class*="anima-md-"][class*="-into"],
@@ -7173,11 +6519,10 @@ pre > *::selection {
 [class*="anima-md-"][class*="-radio4"]:checked ~ [class*="anima-md-"][class*="-relay"] [class*="anima-md-"][class*="-target4"],
 [class*="anima-md-"][class*="-radio5"]:checked ~ [class*="anima-md-"][class*="-relay"] [class*="anima-md-"][class*="-target5"],
 [class*="anima-md-"][class*="-check"]:checked ~ [class*="anima-md-"][class*="-hub"] [class*="anima-md-"][class*="-goal"] {
-  -webkit-animation-duration: var(--anima-duration-md);
-          animation-duration: var(--anima-duration-md);
+  -webkit-animation-duration: var(--animation-duration-md);
+          animation-duration: var(--animation-duration-md);
 }
 
-/***** 6.4 Anima Duration LG *****/
 [class*="anima-lg-"][class*="-base"],
 [class*="anima-lg-"][class*="-global"] > *,
 *:hover > [class*="anima-lg-"][class*="-into"],
@@ -7198,11 +6543,10 @@ pre > *::selection {
 [class*="anima-lg-"][class*="-radio4"]:checked ~ [class*="anima-lg-"][class*="-relay"] [class*="anima-lg-"][class*="-target4"],
 [class*="anima-lg-"][class*="-radio5"]:checked ~ [class*="anima-lg-"][class*="-relay"] [class*="anima-lg-"][class*="-target5"],
 [class*="anima-lg-"][class*="-check"]:checked ~ [class*="anima-lg-"][class*="-hub"] [class*="anima-lg-"][class*="-goal"] {
-  -webkit-animation-duration: var(--anima-duration-lg);
-          animation-duration: var(--anima-duration-lg);
+  -webkit-animation-duration: var(--animation-duration-lg);
+          animation-duration: var(--animation-duration-lg);
 }
 
-/***** 6.5 Anima Duration XL *****/
 [class*="anima-xl-"][class*="-base"],
 [class*="anima-xl-"][class*="-global"] > *,
 *:hover > [class*="anima-xl-"][class*="-into"],
@@ -7223,20 +6567,11 @@ pre > *::selection {
 [class*="anima-xl-"][class*="-radio4"]:checked ~ [class*="anima-xl-"][class*="-relay"] [class*="anima-xl-"][class*="-target4"],
 [class*="anima-xl-"][class*="-radio5"]:checked ~ [class*="anima-xl-"][class*="-relay"] [class*="anima-xl-"][class*="-target5"],
 [class*="anima-xl-"][class*="-check"]:checked ~ [class*="anima-xl-"][class*="-hub"] [class*="anima-xl-"][class*="-goal"] {
-  -webkit-animation-duration: var(--anima-duration-xl);
-          animation-duration: var(--anima-duration-xl);
+  -webkit-animation-duration: var(--animation-duration-xl);
+          animation-duration: var(--animation-duration-xl);
 }
 
-/********** 7. ANIMA TIMING FUNCTION **********/
-
-/*
-7.1 Anima Function Linear
-7.2 Anima Function Ease
-7.3 Anima Function Steps
-7.4 Anima Function Bezier
-*/
-
-/***** 7.1 Anima Function Linear *****/
+/***** 7 - Animation Timing Function *****/
 [class*="anima-linear-"][class*="-base"],
 [class*="anima-linear-"][class*="-global"] > *,
 *:hover > [class*="anima-linear-"][class*="-into"],
@@ -7261,7 +6596,6 @@ pre > *::selection {
           animation-timing-function: linear;
 }
 
-/***** 7.2 Anima Function Ease *****/
 [class*="anima-ease-"][class*="-base"],
 [class*="anima-ease-"][class*="-global"] > *,
 *:hover > [class*="anima-ease-"][class*="-into"],
@@ -7282,11 +6616,10 @@ pre > *::selection {
 [class*="anima-ease-"][class*="-radio4"]:checked ~ [class*="anima-ease-"][class*="-relay"] [class*="anima-ease-"][class*="-target4"],
 [class*="anima-ease-"][class*="-radio5"]:checked ~ [class*="anima-ease-"][class*="-relay"] [class*="anima-ease-"][class*="-target5"],
 [class*="anima-ease-"][class*="-check"]:checked ~ [class*="anima-ease-"][class*="-hub"] [class*="anima-ease-"][class*="-goal"] {
-  -webkit-animation-timing-function: var(--anima-timing-function-ease);
-          animation-timing-function: var(--anima-timing-function-ease);
+  -webkit-animation-timing-function: var(--animation-timing-function-ease);
+          animation-timing-function: var(--animation-timing-function-ease);
 }
 
-/***** 7.1 Anima Function Steps *****/
 [class*="anima-steps-"][class*="-base"],
 [class*="anima-steps-"][class*="-global"] > *,
 *:hover > [class*="anima-steps-"][class*="-into"],
@@ -7307,11 +6640,10 @@ pre > *::selection {
 [class*="anima-steps-"][class*="-radio4"]:checked ~ [class*="anima-steps-"][class*="-relay"] [class*="anima-steps-"][class*="-target4"],
 [class*="anima-steps-"][class*="-radio5"]:checked ~ [class*="anima-steps-"][class*="-relay"] [class*="anima-steps-"][class*="-target5"],
 [class*="anima-steps-"][class*="-check"]:checked ~ [class*="anima-steps-"][class*="-hub"] [class*="anima-steps-"][class*="-goal"] {
-  -webkit-animation-timing-function: steps(var(--anima-timing-function-steps));
-          animation-timing-function: steps(var(--anima-timing-function-steps));
+  -webkit-animation-timing-function: steps(var(--animation-timing-function-steps));
+          animation-timing-function: steps(var(--animation-timing-function-steps));
 }
 
-/***** 7.4 Anima Function Bezier *****/
 [class*="anima-bezier-"][class*="-base"],
 [class*="anima-bezier-"][class*="-global"] > *,
 *:hover > [class*="anima-bezier-"][class*="-into"],
@@ -7332,19 +6664,11 @@ pre > *::selection {
 [class*="anima-bezier-"][class*="-radio4"]:checked ~ [class*="anima-bezier-"][class*="-relay"] [class*="anima-bezier-"][class*="-target4"],
 [class*="anima-bezier-"][class*="-radio5"]:checked ~ [class*="anima-bezier-"][class*="-relay"] [class*="anima-bezier-"][class*="-target5"],
 [class*="anima-bezier-"][class*="-check"]:checked ~ [class*="anima-bezier-"][class*="-hub"] [class*="anima-bezier-"][class*="-goal"] {
-  -webkit-animation-timing-function: cubic-bezier(var(--anima-timing-function-bezier));
-          animation-timing-function: cubic-bezier(var(--anima-timing-function-bezier));
+  -webkit-animation-timing-function: cubic-bezier(var(--animation-timing-function-bezier));
+          animation-timing-function: cubic-bezier(var(--animation-timing-function-bezier));
 }
 
-/********** 8. ANIMA ITERATION COUNT **********/
-
-/*
-8.1 Anima Iteration Few
-8.2 Anima Iteration Many
-8.3 Anima Iteration Loop
-*/
-
-/***** 8.1 Anima Iteration Few *****/
+/***** 8 - Animation Iteration Count *****/
 [class*="anima-few-"][class*="-base"],
 [class*="anima-few-"][class*="-global"] > *,
 *:hover > [class*="anima-few-"][class*="-into"],
@@ -7365,11 +6689,10 @@ pre > *::selection {
 [class*="anima-few-"][class*="-radio4"]:checked ~ [class*="anima-few-"][class*="-relay"] [class*="anima-few-"][class*="-target4"],
 [class*="anima-few-"][class*="-radio5"]:checked ~ [class*="anima-few-"][class*="-relay"] [class*="anima-few-"][class*="-target5"],
 [class*="anima-few-"][class*="-check"]:checked ~ [class*="anima-few-"][class*="-hub"] [class*="anima-few-"][class*="-goal"] {
-  -webkit-animation-iteration-count: var(--anima-iteration-count-few);
-          animation-iteration-count: var(--anima-iteration-count-few);
+  -webkit-animation-iteration-count: var(--animation-iteration-count-few);
+          animation-iteration-count: var(--animation-iteration-count-few);
 }
 
-/***** 8.2 Anima Iteration Many *****/
 [class*="anima-many-"][class*="-base"],
 [class*="anima-many-"][class*="-global"] > *,
 *:hover > [class*="anima-many-"][class*="-into"],
@@ -7390,11 +6713,10 @@ pre > *::selection {
 [class*="anima-many-"][class*="-radio4"]:checked ~ [class*="anima-many-"][class*="-relay"] [class*="anima-many-"][class*="-target4"],
 [class*="anima-many-"][class*="-radio5"]:checked ~ [class*="anima-many-"][class*="-relay"] [class*="anima-many-"][class*="-target5"],
 [class*="anima-many-"][class*="-check"]:checked ~ [class*="anima-many-"][class*="-hub"] [class*="anima-many-"][class*="-goal"] {
-  -webkit-animation-iteration-count: var(--anima-iteration-count-many);
-          animation-iteration-count: var(--anima-iteration-count-many);
+  -webkit-animation-iteration-count: var(--animation-iteration-count-many);
+          animation-iteration-count: var(--animation-iteration-count-many);
 }
 
-/***** 8.3 Anima Iteration Loop *****/
 [class*="anima-loop-"][class*="-base"],
 [class*="anima-loop-"][class*="-global"] > *,
 *:hover > [class*="anima-loop-"][class*="-into"],
@@ -7419,15 +6741,7 @@ pre > *::selection {
           animation-iteration-count: infinite;
 }
 
-/********** 9. ANIMA DIRECTION **********/
-
-/*
-9.1 Anima Direction Alter
-9.2 Anima Direction Rever
-9.3 Anima Direction Altrev
-*/
-
-/***** 9.1 Anima Direction Alter *****/
+/***** 9 - Animation Direction *****/
 [class*="anima-alter-"][class*="-base"],
 [class*="anima-alter-"][class*="-global"] > *,
 *:hover > [class*="anima-alter-"][class*="-into"],
@@ -7452,7 +6766,6 @@ pre > *::selection {
           animation-direction: alternate;
 }
 
-/***** 9.2 Anima Direction Rever *****/
 [class*="anima-rever-"][class*="-base"],
 [class*="anima-rever-"][class*="-global"] > *,
 *:hover > [class*="anima-rever-"][class*="-into"],
@@ -7476,7 +6789,6 @@ pre > *::selection {
   animation-direction: reverse;
 }
 
-/***** 9.3 Anima Direction Altrev *****/
 [class*="anima-altrev-"][class*="-base"],
 [class*="anima-altrev-"][class*="-global"] > *,
 *:hover > [class*="anima-altrev-"][class*="-into"],
@@ -7500,15 +6812,7 @@ pre > *::selection {
   animation-direction: alternate-reverse;
 }
 
-/********** 10. ANIMA DELAY **********/
-
-/*
-10.1 Anima Delay Small
-10.2 Anima Delay Medium
-10.3 Anima Delay Large
-*/
-
-/***** 10.1 Anima Delay Small *****/
+/***** 10 - Animation Delay *****/
 [class*="anima-small-"][class*="-base"],
 [class*="anima-small-"][class*="-global"] > *,
 *:hover > [class*="anima-small-"][class*="-into"],
@@ -7529,11 +6833,10 @@ pre > *::selection {
 [class*="anima-small-"][class*="-radio4"]:checked ~ [class*="anima-small-"][class*="-relay"] [class*="anima-small-"][class*="-target4"],
 [class*="anima-small-"][class*="-radio5"]:checked ~ [class*="anima-small-"][class*="-relay"] [class*="anima-small-"][class*="-target5"],
 [class*="anima-small-"][class*="-check"]:checked ~ [class*="anima-small-"][class*="-hub"] [class*="anima-small-"][class*="-goal"] {
-  -webkit-animation-delay: var(--anima-delay-small);
-          animation-delay: var(--anima-delay-small);
+  -webkit-animation-delay: var(--animation-delay-small);
+          animation-delay: var(--animation-delay-small);
 }
 
-/***** 10.2 Anima Delay Medium *****/
 [class*="anima-medium-"][class*="-base"],
 [class*="anima-medium-"][class*="-global"] > *,
 *:hover > [class*="anima-medium-"][class*="-into"],
@@ -7554,11 +6857,10 @@ pre > *::selection {
 [class*="anima-medium-"][class*="-radio4"]:checked ~ [class*="anima-medium-"][class*="-relay"] [class*="anima-medium-"][class*="-target4"],
 [class*="anima-medium-"][class*="-radio5"]:checked ~ [class*="anima-medium-"][class*="-relay"] [class*="anima-medium-"][class*="-target5"],
 [class*="anima-medium-"][class*="-check"]:checked ~ [class*="anima-medium-"][class*="-hub"] [class*="anima-medium-"][class*="-goal"] {
-  -webkit-animation-delay: var(--anima-delay-medium);
-          animation-delay: var(--anima-delay-medium);
+  -webkit-animation-delay: var(--animation-delay-medium);
+          animation-delay: var(--animation-delay-medium);
 }
 
-/***** 10.3 Anima Delay Large *****/
 [class*="anima-large-"][class*="-base"],
 [class*="anima-large-"][class*="-global"] > *,
 *:hover > [class*="anima-large-"][class*="-into"],
@@ -7579,18 +6881,11 @@ pre > *::selection {
 [class*="anima-large-"][class*="-radio4"]:checked ~ [class*="anima-large-"][class*="-relay"] [class*="anima-large-"][class*="-target4"],
 [class*="anima-large-"][class*="-radio5"]:checked ~ [class*="anima-large-"][class*="-relay"] [class*="anima-large-"][class*="-target5"],
 [class*="anima-large-"][class*="-check"]:checked ~ [class*="anima-large-"][class*="-hub"] [class*="anima-large-"][class*="-goal"] {
-  -webkit-animation-delay: var(--anima-delay-large);
-          animation-delay: var(--anima-delay-large);
+  -webkit-animation-delay: var(--animation-delay-large);
+          animation-delay: var(--animation-delay-large);
 }
 
-/********** 11. ANIMA FILL MODE **********/
-
-/*
-11.1 Anima Mode Back
-11.2 Anima Mode Front
-*/
-
-/***** 11.1 Anima Mode Back *****/
+/***** 11 - Animation Fill Mode *****/
 [class*="anima-back-"][class*="-base"],
 [class*="anima-back-"][class*="-global"] > *,
 *:hover > [class*="anima-back-"][class*="-into"],
@@ -7615,7 +6910,6 @@ pre > *::selection {
           animation-fill-mode: backwards;
 }
 
-/***** 11.2 Anima Mode Front *****/
 [class*="anima-front-"][class*="-base"],
 [class*="anima-front-"][class*="-global"] > *,
 *:hover > [class*="anima-front-"][class*="-into"],
@@ -7640,14 +6934,7 @@ pre > *::selection {
           animation-fill-mode: forwards;
 }
 
-/********** 12. TRANSFORM ORIGIN **********/
-
-/*
-12.1 Transform Origin Far
-12.2 Transform Origin Near
-*/
-
-/***** 12.1 Transform Origin Far *****/
+/***** 12 - Transform Origin *****/
 [class*="anima-far-"][class*="-base"],
 [class*="anima-far-"][class*="-global"] > *,
 *:hover > [class*="anima-far-"][class*="-into"],
@@ -7672,7 +6959,6 @@ pre > *::selection {
           transform-origin: var(--transform-origin-far);
 }
 
-/***** 12.2 Transform Origin Near *****/
 [class*="anima-near-"][class*="-base"],
 [class*="anima-near-"][class*="-global"] > *,
 *:hover > [class*="anima-near-"][class*="-into"],
@@ -7697,43 +6983,16 @@ pre > *::selection {
           transform-origin: var(--transform-origin-near);
 }
 
-
-/******************** DECO *********************/
-
-/*
-1. TEXT DECORATION
-  1.1 Deco
-2. TEXT DECORATION LINE
-  2.1 None
-  2.2 Under
-  2.3 Through
-  2.4 Over
-3. TEXT DECORATION STYLE
-  3.1 Solid
-  3.2 Double
-  3.3 Dash
-  3.4 Dot
-  3.5 Wavy
-4. TEXT DECORATION COLOR
-  4.1 Black
-  4.2 Blue
-  4.3 Gray
-  4.4 Green
-  4.5 Maroon
-  4.6 Orange
-  4.7 Purple
-  4.8 Red
-  4.9 White
-  4.10 Yellow
-*/
-
-/********** 1. TEXT DECORATION **********/
+/********** DECO **********/
 
 /*
-1.1 Deco
+1 - Text Decoration
+2 - Text Decoration Line
+3 - Text Decoration Style
+4 - Text Decoration Color
 */
 
-/***** 1.1 Deco *****/
+/***** 1 - Text Decoration *****/
 [class*="deco-"][class*="-base"],
 [class*="deco-"][class*="-global"] > *,
 *:hover > [class*="deco-"][class*="-into"],
@@ -7754,24 +7013,15 @@ pre > *::selection {
 [class*="deco-"][class*="-radio4"]:checked ~ [class*="deco-"][class*="-relay"] [class*="deco-"][class*="-target4"],
 [class*="deco-"][class*="-radio5"]:checked ~ [class*="deco-"][class*="-relay"] [class*="deco-"][class*="-target5"],
 [class*="deco-"][class*="-check"]:checked ~ [class*="deco-"][class*="-hub"] [class*="deco-"][class*="-goal"] {
-  -webkit-text-decoration-line: var(--deco-line);
-          text-decoration-line: var(--deco-line);
-  -webkit-text-decoration-style: var(--deco-style);
-          text-decoration-style: var(--deco-style);
-  -webkit-text-decoration-color: var(--deco-color);
-          text-decoration-color: var(--deco-color);
+  -webkit-text-decoration-line: var(--text-decoration-line);
+          text-decoration-line: var(--text-decoration-line);
+  -webkit-text-decoration-style: var(--text-decoration-style);
+          text-decoration-style: var(--text-decoration-style);
+  -webkit-text-decoration-color: var(--text-decoration-color);
+          text-decoration-color: var(--text-decoration-color);
 }
 
-/********** 1. TEXT DECORATION LINE **********/
-
-/*
-2.1 None
-2.2 Under
-2.3 Through
-2.4 Over
-*/
-
-/***** 2.1 Deco None *****/
+/***** 2 - Text Decoration Line *****/
 [class*="deco-none-"][class*="-base"],
 [class*="deco-none-"][class*="-global"] > *,
 *:hover > [class*="deco-none-"][class*="-into"],
@@ -7796,7 +7046,6 @@ pre > *::selection {
           text-decoration-line: none;
 }
 
-/***** 2.2 Deco Under *****/
 [class*="deco-under-"][class*="-base"],
 [class*="deco-under-"][class*="-global"] > *,
 *:hover > [class*="deco-under-"][class*="-into"],
@@ -7821,7 +7070,6 @@ pre > *::selection {
           text-decoration-line: underline;
 }
 
-/***** 2.3 Deco Through *****/
 [class*="deco-through-"][class*="-base"],
 [class*="deco-through-"][class*="-global"] > *,
 *:hover > [class*="deco-through-"][class*="-into"],
@@ -7846,7 +7094,6 @@ pre > *::selection {
           text-decoration-line: line-through;
 }
 
-/***** 2.4 Deco Over *****/
 [class*="deco-over-"][class*="-base"],
 [class*="deco-over-"][class*="-global"] > *,
 *:hover > [class*="deco-over-"][class*="-into"],
@@ -7871,17 +7118,7 @@ pre > *::selection {
           text-decoration-line: overline;
 }
 
-/********** 3. TEXT DECORATION STYLE **********/
-
-/*
-3.1 Solid
-3.2 Double
-3.3 Dash
-3.4 Dot
-3.5 Wavy
-*/
-
-/***** 3.1 Deco Solid *****/
+/***** 3 - Text Decoration Style *****/
 [class*="deco-solid-"][class*="-base"],
 [class*="deco-solid-"][class*="-global"] > *,
 *:hover > [class*="deco-solid-"][class*="-into"],
@@ -7906,7 +7143,6 @@ pre > *::selection {
           text-decoration-style: solid;
 }
 
-/***** 3.2 Deco Double *****/
 [class*="deco-double-"][class*="-base"],
 [class*="deco-double-"][class*="-global"] > *,
 *:hover > [class*="deco-double-"][class*="-into"],
@@ -7931,7 +7167,6 @@ pre > *::selection {
           text-decoration-style: double;
 }
 
-/***** 3.3 Deco Dash *****/
 [class*="deco-dash-"][class*="-base"],
 [class*="deco-dash-"][class*="-global"] > *,
 *:hover > [class*="deco-dash-"][class*="-into"],
@@ -7956,7 +7191,6 @@ pre > *::selection {
           text-decoration-style: dashed;
 }
 
-/***** 3.4 Deco Dot *****/
 [class*="deco-dot-"][class*="-base"],
 [class*="deco-dot-"][class*="-global"] > *,
 *:hover > [class*="deco-dot-"][class*="-into"],
@@ -7981,7 +7215,6 @@ pre > *::selection {
           text-decoration-style: dotted;
 }
 
-/***** 3.5 Deco Wavy *****/
 [class*="deco-wavy-"][class*="-base"],
 [class*="deco-wavy-"][class*="-global"] > *,
 *:hover > [class*="deco-wavy-"][class*="-into"],
@@ -8006,22 +7239,7 @@ pre > *::selection {
           text-decoration-style: wavy;
 }
 
-/********** 4. TEXT DECORATION COLOR **********/
-
-/*
-4.1 Black
-4.2 Blue
-4.3 Gray
-4.4 Green
-4.5 Maroon
-4.6 Orange
-4.7 Purple
-4.8 Red
-4.9 White
-4.10 Yellow
-*/
-
-/***** 4.1 Deco Black *****/
+/***** 4 - Text Decoration Color *****/
 [class*="deco-black-"][class*="-base"],
 [class*="deco-black-"][class*="-global"] > *,
 *:hover > [class*="deco-black-"][class*="-into"],
@@ -8046,7 +7264,6 @@ pre > *::selection {
           text-decoration-color: var(--black);
 }
 
-/***** 4.2 Deco Blue *****/
 [class*="deco-blue-"][class*="-base"],
 [class*="deco-blue-"][class*="-global"] > *,
 *:hover > [class*="deco-blue-"][class*="-into"],
@@ -8071,7 +7288,6 @@ pre > *::selection {
           text-decoration-color: var(--blue);
 }
 
-/***** 4.3 Deco Gray *****/
 [class*="deco-gray-"][class*="-base"],
 [class*="deco-gray-"][class*="-global"] > *,
 *:hover > [class*="deco-gray-"][class*="-into"],
@@ -8096,7 +7312,6 @@ pre > *::selection {
           text-decoration-color: var(--gray);
 }
 
-/***** 4.4 Deco Green *****/
 [class*="deco-green-"][class*="-base"],
 [class*="deco-green-"][class*="-global"] > *,
 *:hover > [class*="deco-green-"][class*="-into"],
@@ -8121,7 +7336,6 @@ pre > *::selection {
           text-decoration-color: var(--green);
 }
 
-/***** 4.5 Deco Maroon *****/
 [class*="deco-maroon-"][class*="-base"],
 [class*="deco-maroon-"][class*="-global"] > *,
 *:hover > [class*="deco-maroon-"][class*="-into"],
@@ -8146,7 +7360,6 @@ pre > *::selection {
           text-decoration-color: var(--maroon);
 }
 
-/***** 4.6 Deco Orange *****/
 [class*="deco-orange-"][class*="-base"],
 [class*="deco-orange-"][class*="-global"] > *,
 *:hover > [class*="deco-orange-"][class*="-into"],
@@ -8171,7 +7384,6 @@ pre > *::selection {
           text-decoration-color: var(--orange);
 }
 
-/***** 4.7 Deco Purple *****/
 [class*="deco-purple-"][class*="-base"],
 [class*="deco-purple-"][class*="-global"] > *,
 *:hover > [class*="deco-purple-"][class*="-into"],
@@ -8196,7 +7408,6 @@ pre > *::selection {
           text-decoration-color: var(--purple);
 }
 
-/***** 4.8 Deco Red *****/
 [class*="deco-red-"][class*="-base"],
 [class*="deco-red-"][class*="-global"] > *,
 *:hover > [class*="deco-red-"][class*="-into"],
@@ -8221,7 +7432,6 @@ pre > *::selection {
           text-decoration-color: var(--red);
 }
 
-/***** 4.9 Deco White *****/
 [class*="deco-white-"][class*="-base"],
 [class*="deco-white-"][class*="-global"] > *,
 *:hover > [class*="deco-white-"][class*="-into"],
@@ -8246,7 +7456,6 @@ pre > *::selection {
           text-decoration-color: var(--white);
 }
 
-/***** 4.10 Deco Yellow *****/
 [class*="deco-yellow-"][class*="-base"],
 [class*="deco-yellow-"][class*="-global"] > *,
 *:hover > [class*="deco-yellow-"][class*="-into"],
@@ -8271,6 +7480,5 @@ pre > *::selection {
           text-decoration-color: var(--yellow);
 }
 
-
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 11th Aug 2019 @ 2:59:54 AM */
+ Updated: 11th Aug 2019 @ 9:30:07 PM */

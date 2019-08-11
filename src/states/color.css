@@ -1,51 +1,12 @@
-/******************** COLOR ********************/
+/********** COLOR **********/
 
 /*
-1. MAIN COLORS
-  1.1 Black
-  1.2 Blue
-  1.3 Gray
-  1.4 Green
-  1.5 Maroon
-  1.6 Orange
-  1.7 Purple
-  1.8 Red
-  1.9 Yellow
-2. PALE COLORS
-  2.1 Choco
-  2.2 Jade
-  2.3 Khaki
-  2.4 Salmon
-  2.5 Silver
-  2.6 Sky
-  2.7 Tomato
-  2.8 Violet
-  2.9 White
-3. BRAND COLORS
-  3.1 FaceBook
-  3.2 GitHub
-  3.3 JSDelivr
-  3.4 LinkedIn
-  3.5 NPM
-  3.6 Stack Overflow
-  3.7 Twitter
+1 - Main Colors
+2 - Pale Colors
+3 - Brand Colors
 */
 
-/********** 1. MAIN COLORS **********/
-
-/*
-1.1 Black
-1.2 Blue
-1.3 Gray
-1.4 Green
-1.5 Maroon
-1.6 Orange
-1.7 Purple
-1.8 Red
-1.9 Yellow
-*/
-
-/***** 1.1 Black Color *****/
+/***** 1 - Main Colors *****/
 [class*="color-black-"][class*="-base"],
 [class*="color-black-"][class*="-global"] > *,
 *:hover > [class*="color-black-"][class*="-into"],
@@ -69,7 +30,6 @@
   color: var(--black);
 }
 
-/***** 1.2 Blue Color *****/
 [class*="color-blue-"][class*="-base"],
 [class*="color-blue-"][class*="-global"] > *,
 *:hover > [class*="color-blue-"][class*="-into"],
@@ -93,7 +53,6 @@
   color: var(--blue);
 }
 
-/***** 1.3 Maroon Color *****/
 [class*="color-maroon-"][class*="-base"],
 [class*="color-maroon-"][class*="-global"] > *,
 *:hover > [class*="color-maroon-"][class*="-into"],
@@ -117,7 +76,6 @@
   color: var(--maroon);
 }
 
-/***** 1.4 Gray Color *****/
 [class*="color-gray-"][class*="-base"],
 [class*="color-gray-"][class*="-global"] > *,
 *:hover > [class*="color-gray-"][class*="-into"],
@@ -141,7 +99,6 @@
   color: var(--gray);
 }
 
-/***** 1.5 Green Color *****/
 [class*="color-green-"][class*="-base"],
 [class*="color-green-"][class*="-global"] > *,
 *:hover > [class*="color-green-"][class*="-into"],
@@ -165,7 +122,6 @@
   color: var(--green);
 }
 
-/***** 1.6 Orange Color *****/
 [class*="color-orange-"][class*="-base"],
 [class*="color-orange-"][class*="-global"] > *,
 *:hover > [class*="color-orange-"][class*="-into"],
@@ -189,7 +145,6 @@
   color: var(--orange);
 }
 
-/***** 1.7 Purple Color *****/
 [class*="color-purple-"][class*="-base"],
 [class*="color-purple-"][class*="-global"] > *,
 *:hover > [class*="color-purple-"][class*="-into"],
@@ -213,7 +168,6 @@
   color: var(--purple);
 }
 
-/***** 1.8 Red Color *****/
 [class*="color-red-"][class*="-base"],
 [class*="color-red-"][class*="-global"] > *,
 *:hover > [class*="color-red-"][class*="-into"],
@@ -237,7 +191,6 @@
   color: var(--red);
 }
 
-/***** 1.9 Yellow Color *****/
 [class*="color-yellow-"][class*="-base"],
 [class*="color-yellow-"][class*="-global"] > *,
 *:hover > [class*="color-yellow-"][class*="-into"],
@@ -261,21 +214,7 @@
   color: var(--yellow);
 }
 
-/********** 2. PALE COLORS **********/
-
-/*
-2.1 Choco
-2.2 Jade
-2.3 Khaki
-2.4 Salmon
-2.5 Silver
-2.6 Sky
-2.7 Tomato
-2.8 Violet
-2.9 White
-*/
-
-/***** 2.1 Choco Color *****/
+/***** 2 - Pale Colors *****/
 [class*="color-choco-"][class*="-base"],
 [class*="color-choco-"][class*="-global"] > *,
 *:hover > [class*="color-choco-"][class*="-into"],
@@ -299,7 +238,6 @@
   color: var(--choco);
 }
 
-/***** 2.2 Jade Color *****/
 [class*="color-jade-"][class*="-base"],
 [class*="color-jade-"][class*="-global"] > *,
 *:hover > [class*="color-jade-"][class*="-into"],
@@ -323,7 +261,6 @@
   color: var(--jade);
 }
 
-/***** 2.3 Khaki Color *****/
 [class*="color-khaki-"][class*="-base"],
 [class*="color-khaki-"][class*="-global"] > *,
 *:hover > [class*="color-khaki-"][class*="-into"],
@@ -347,7 +284,6 @@
   color: var(--khaki);
 }
 
-/***** 2.4 Salmon Color *****/
 [class*="color-salmon-"][class*="-base"],
 [class*="color-salmon-"][class*="-global"] > *,
 *:hover > [class*="color-salmon-"][class*="-into"],
@@ -371,7 +307,6 @@
   color: var(--salmon);
 }
 
-/***** 2.5 Silver Color *****/
 [class*="color-silver-"][class*="-base"],
 [class*="color-silver-"][class*="-global"] > *,
 *:hover > [class*="color-silver-"][class*="-into"],
@@ -395,7 +330,6 @@
   color: var(--silver);
 }
 
-/***** 2.6 Sky Color *****/
 [class*="color-sky-"][class*="-base"],
 [class*="color-sky-"][class*="-global"] > *,
 *:hover > [class*="color-sky-"][class*="-into"],
@@ -419,7 +353,6 @@
   color: var(--sky);
 }
 
-/***** 2.7 Tomato Color *****/
 [class*="color-tomato-"][class*="-base"],
 [class*="color-tomato-"][class*="-global"] > *,
 *:hover > [class*="color-tomato-"][class*="-into"],
@@ -443,7 +376,6 @@
   color: var(--tomato);
 }
 
-/***** 2.8 Violet Color *****/
 [class*="color-violet-"][class*="-base"],
 [class*="color-violet-"][class*="-global"] > *,
 *:hover > [class*="color-violet-"][class*="-into"],
@@ -467,7 +399,6 @@
   color: var(--violet);
 }
 
-/***** 2.9 White Color *****/
 [class*="color-white-"][class*="-base"],
 [class*="color-white-"][class*="-global"] > *,
 *:hover > [class*="color-white-"][class*="-into"],
@@ -491,18 +422,7 @@
   color: var(--white);
 }
 
-/********** 3. BRAND COLORS **********/
-
-/*
-3.1 FaceBook
-3.2 GitHub
-3.3 LinkedIn
-3.4 NPM
-3.5 Stack Overflow
-3.6 Twitter
-*/
-
-/***** 3.1 FaceBook Color *****/
+/***** 3 - Brand Colors *****/
 [class*="color-fb-"][class*="-base"],
 [class*="color-fb-"][class*="-global"] > *,
 *:hover > [class*="color-fb-"][class*="-into"],
@@ -526,7 +446,6 @@
   color: var(--facebook);
 }
 
-/***** 3.2 GitHub Color *****/
 [class*="color-github-"][class*="-base"],
 [class*="color-github-"][class*="-global"] > *,
 *:hover > [class*="color-github-"][class*="-into"],
@@ -550,7 +469,6 @@
   color: var(--github);
 }
 
-/***** 3.3 JSDelivr Color *****/
 [class*="color-jsd-"][class*="-base"],
 [class*="color-jsd-"][class*="-global"] > *,
 *:hover > [class*="color-jsd-"][class*="-into"],
@@ -574,7 +492,6 @@
   color: var(--jsdelivr);
 }
 
-/***** 3.4 LinkedIn Color *****/
 [class*="color-linkedin-"][class*="-base"],
 [class*="color-linkedin-"][class*="-global"] > *,
 *:hover > [class*="color-linkedin-"][class*="-into"],
@@ -598,7 +515,6 @@
   color: var(--linkedin);
 }
 
-/***** 3.5 NPM Color *****/
 [class*="color-npm-"][class*="-base"],
 [class*="color-npm-"][class*="-global"] > *,
 *:hover > [class*="color-npm-"][class*="-into"],
@@ -622,7 +538,6 @@
   color: var(--npm);
 }
 
-/***** 3.6 Stack Overflow Color *****/
 [class*="color-stack-"][class*="-base"],
 [class*="color-stack-"][class*="-global"] > *,
 *:hover > [class*="color-stack-"][class*="-into"],
@@ -646,7 +561,6 @@
   color: var(--stackoverflow);
 }
 
-/***** 3.7 Twitter Color *****/
 [class*="color-tw-"][class*="-base"],
 [class*="color-tw-"][class*="-global"] > *,
 *:hover > [class*="color-tw-"][class*="-into"],
@@ -669,4 +583,3 @@
 [class*="color-tw-"][class*="-check"]:checked ~ [class*="color-tw-"][class*="-hub"] [class*="color-tw-"][class*="-goal"] {
   color: var(--twitter);
 }
-
