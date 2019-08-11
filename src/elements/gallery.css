@@ -90,6 +90,6 @@
 
 /***** 10 - Gallery Link All Odd *****/
 .gallery a *:nth-child(odd) {
-padding: var(--gallery-link-all-odd-padding);
-font-size: var(--gallery-link-all-odd-font-size);
+  padding: var(--gallery-link-all-odd-padding);
+  font-size: var(--gallery-link-all-odd-font-size);
 }

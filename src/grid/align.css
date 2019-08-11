@@ -1,37 +1,12 @@
-/******************** ALIGN ********************/
+/********** ALIGN **********/
 
 /*
-1. ALIGN CONTENT
-  1.1 Align Content XS
-  1.2 Align Content SM
-  1.3 Align Content MD
-  1.4 Align Content LG
-  1.5 Align Content XL
-2. ALIGN ITEMS
-  2.1 Align Items XS
-  2.2 Align Items SM
-  2.3 Align Items MD
-  2.4 Align Items LG
-  2.5 Align Items XL
-3. ALIGN SELF
-  3.1 Align Self XS
-  3.2 Align Self SM
-  3.3 Align Self MD
-  3.4 Align Self LG
-  3.5 Align Self XL
+1 - Align Content
+2 - Align Items
+3 - Align Self
 */
 
-/********** 1. ALIGN CONTENT **********/
-
-/*
-1.1 Align Content XS
-1.2 Align Content SM
-1.3 Align Content MD
-1.4 Align Content LG
-1.5 Align Content XL
-*/
-
-/***** 1.1 Align Content XS *****/
+/***** 1 - Align Content *****/
 [class*="alco-"][class*="-around-xs"] {
   align-content: space-around;
 }
@@ -64,7 +39,6 @@
   align-content: stretch;
 }
 
-/***** 1.2 Align Content SM *****/
 @media (min-width: 576px) {
   [class*="alco-"][class*="-around-sm"] {
     align-content: space-around;
@@ -99,7 +73,6 @@
   }
 }
 
-/***** 1.3 Align Content MD *****/
 @media (min-width: 768px) {
   [class*="alco-"][class*="-around-md"] {
     align-content: space-around;
@@ -134,7 +107,6 @@
   }
 }
 
-/***** 1.4 Align Content LG *****/
 @media (min-width: 992px) {
   [class*="alco-"][class*="-around-lg"] {
     align-content: space-around;
@@ -169,7 +141,6 @@
   }
 }
 
-/***** 1.5 Align Content XL *****/
 @media (min-width: 1200px) {
   [class*="alco-"][class*="-around-xl"] {
     align-content: space-around;
@@ -204,17 +175,6 @@
   }
 }
 
-/********** 2. ALIGN ITEMS **********/
-
-/*
-2.1 Align Items XS
-2.2 Align Items SM
-2.3 Align Items MD
-2.4 Align Items LG
-2.5 Align Items XL
-*/
-
-/***** 2.1 Align Items XS *****/
 [class*="alit-"][class*="-base-xs"] {
   align-items: var(--align-items-base);
 }
@@ -235,7 +195,6 @@
   align-items: stretch;
 }
 
-/***** 2.2 Align Items SM *****/
 @media (min-width: 576px) {
   [class*="alit-"][class*="-base-sm"] {
     align-items: var(--align-items-base);
@@ -258,7 +217,6 @@
   }
 }
 
-/***** 2.3 Align Items MD *****/
 @media (min-width: 768px) {
   [class*="alit-"][class*="-base-md"] {
     align-items: var(--align-items-base);
@@ -281,7 +239,6 @@
   }
 }
 
-/***** 2.4 Align Items LG *****/
 @media (min-width: 992px) {
   [class*="alit-"][class*="-base-lg"] {
     align-items: var(--align-items-base);
@@ -304,7 +261,6 @@
   }
 }
 
-/***** 2.5 Align Items XL *****/
 @media (min-width: 1200px) {
   [class*="alit-"][class*="-base-xl"] {
     align-items: var(--align-items-base);
@@ -327,17 +283,7 @@
   }
 }
 
-/********** 3. ALIGN SELF **********/
-
-/*
-3.1 Align Self XS
-3.2 Align Self SM
-3.3 Align Self MD
-3.4 Align Self LG
-3.5 Align Self XL
-*/
-
-/***** 3.1 Align Self XS *****/
+/***** 3 - Align Self *****/
 [class*="alse-"][class*="-base-xs"] {
   align-self: var(--align-self-base);
 }
@@ -358,7 +304,6 @@
   align-self: stretch;
 }
 
-/***** 3.2 Align Self SM *****/
 @media (min-width: 576px) {
   [class*="alse-"][class*="-base-sm"] {
     align-self: var(--align-self-base);
@@ -381,7 +326,6 @@
   }
 }
 
-/***** 3.3 Align Self MD *****/
 @media (min-width: 768px) {
   [class*="alse-"][class*="-base-md"] {
     align-self: var(--align-self-base);
@@ -404,7 +348,6 @@
   }
 }
 
-/***** 3.4 Align Self LG *****/
 @media (min-width: 992px) {
   [class*="alse-"][class*="-base-lg"] {
     align-self: var(--align-self-base);
@@ -427,7 +370,6 @@
   }
 }
 
-/***** 3.5 Align Self XL *****/
 @media (min-width: 1200px) {
   [class*="alse-"][class*="-base-xl"] {
     align-self: var(--align-self-base);
@@ -449,4 +391,3 @@
     align-self: stretch;
   }
 }
-
