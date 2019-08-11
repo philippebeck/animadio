@@ -1,45 +1,14 @@
 /********** BORD *********/
 
 /*
-1. BORD
-  1.1 Bord
-2. BORD STYLE
-  2.1 Dashed
-  2.2 Dotted
-  2.3 Double
-  2.4 Groove
-  2.5 Inset
-  2.6 Outset
-  2.7 Ridge
-  2.8 Solid
-3. BORD WIDTH
-  3.1 Width SM
-  3.2 Width MD
-  3.3 Width LG
-4. BORD COLOR
-  4.1 Black
-  4.2 Blue
-  4.3 Gray
-  4.4 Green
-  4.5 Maroon
-  4.6 Orange
-  4.7 Purple
-  4.8 Red
-  4.9 White
-  4.10 Yellow
-5. BORD RADIUS
-  5.1 Square
-  5.2 Round
-  5.3 Circle
+1 - Bord
+2 - Bord Style
+3 - Bord Width
+4 - Bord Color
+5 - Bord Radius
 */
 
-/********** 1. BORD **********/
-
-/*
-1.1 Bord
-*/
-
-/***** 1.1 Bord *****/
+/***** 1 - Bord *****/
 [class*="bord-"][class*="-base"],
 [class*="bord-"][class*="-global"] > *,
 [class*="bord-"][class*="-onto"]:hover,
@@ -66,20 +35,7 @@
   border-radius: var(--border-radius);
 }
 
-/********** 2. BORD STYLE **********/
-
-/*
-2.1 Dashed
-2.2 Dotted
-2.3 Double
-2.4 Groove
-2.5 Inset
-2.6 Outset
-2.7 Ridge
-2.8 Solid
-*/
-
-/***** 2.1 Bord Dashed *****/
+/***** 2 - Bord Style *****/
 [class*="bord-dash-"][class*="-base"],
 [class*="bord-dash-"][class*="-global"] > *,
 *:hover > [class*="bord-dash-"][class*="-into"],
@@ -103,7 +59,6 @@
   border-style: dashed;
 }
 
-/***** 2.2 Bord Dotted *****/
 [class*="bord-dot-"][class*="-base"],
 [class*="bord-dot-"][class*="-global"] > *,
 *:hover > [class*="bord-dot-"][class*="-into"],
@@ -127,7 +82,6 @@
   border-style: dotted;
 }
 
-/***** 2.3 Bord Double *****/
 [class*="bord-double-"][class*="-base"],
 [class*="bord-double-"][class*="-global"] > *,
 *:hover > [class*="bord-double-"][class*="-into"],
@@ -151,7 +105,6 @@
   border-style: double;
 }
 
-/***** 2.4 Bord Groove *****/
 [class*="bord-groove-"][class*="-base"],
 [class*="bord-groove-"][class*="-global"] > *,
 *:hover > [class*="bord-groove-"][class*="-into"],
@@ -175,7 +128,6 @@
   border-style: groove;
 }
 
-/***** 2.5 Bord Inset *****/
 [class*="bord-inset-"][class*="-base"],
 [class*="bord-inset-"][class*="-global"] > *,
 *:hover > [class*="bord-inset-"][class*="-into"],
@@ -199,7 +151,6 @@
   border-style: inset;
 }
 
-/***** 2.6 Bord Outset *****/
 [class*="bord-outset-"][class*="-base"],
 [class*="bord-outset-"][class*="-global"] > *,
 *:hover > [class*="bord-outset-"][class*="-into"],
@@ -223,7 +174,6 @@
   border-style: outset;
 }
 
-/***** 2.7 Bord Ridge *****/
 [class*="bord-ridge-"][class*="-base"],
 [class*="bord-ridge-"][class*="-global"] > *,
 *:hover > [class*="bord-ridge-"][class*="-into"],
@@ -247,7 +197,6 @@
   border-style: ridge;
 }
 
-/***** 2.8 Bord Solid *****/
 [class*="bord-solid-"][class*="-base"],
 [class*="bord-solid-"][class*="-global"] > *,
 *:hover > [class*="bord-solid-"][class*="-into"],
@@ -271,15 +220,7 @@
   border-style: solid;
 }
 
-/********** 3. BORD WIDTH **********/
-
-/*
-3.1 Width SM
-3.2 Width MD
-3.3 Width LG
-*/
-
-/***** 3.1 Bord SM *****/
+/***** 3 - Bord Width *****/
 [class*="bord-sm-"][class*="-base"],
 [class*="bord-sm-"][class*="-global"] > *,
 *:hover > [class*="bord-sm-"][class*="-into"],
@@ -303,7 +244,6 @@
   border-width: var(--border-width-sm);
 }
 
-/***** 3.2 Bord MD *****/
 [class*="bord-md-"][class*="-base"],
 [class*="bord-md-"][class*="-global"] > *,
 *:hover > [class*="bord-md-"][class*="-into"],
@@ -327,7 +267,6 @@
   border-width: var(--border-width-md);
 }
 
-/***** 3.3 Bord LG *****/
 [class*="bord-lg-"][class*="-base"],
 [class*="bord-lg-"][class*="-global"] > *,
 *:hover > [class*="bord-lg-"][class*="-into"],
@@ -351,22 +290,7 @@
   border-width: var(--border-width-lg);
 }
 
-/********** 4. BORD COLOR **********/
-
-/*
-4.1 Black
-4.2 Blue
-4.3 Gray
-4.4 Green
-4.5 Maroon
-4.6 Orange
-4.7 Purple
-4.8 Red
-4.9 White
-4.10 Yellow
-*/
-
-/***** 4.1 Bord Black *****/
+/***** 4 - Bord Color *****/
 [class*="bord-black-"][class*="-base"],
 [class*="bord-black-"][class*="-global"] > *,
 *:hover > [class*="bord-black-"][class*="-into"],
@@ -390,7 +314,6 @@
   border-color: var(--black);
 }
 
-/***** 4.2 Bord Blue *****/
 [class*="bord-blue-"][class*="-base"],
 [class*="bord-blue-"][class*="-global"] > *,
 *:hover > [class*="bord-blue-"][class*="-into"],
@@ -414,7 +337,6 @@
   border-color: var(--blue);
 }
 
-/***** 4.3 Bord Gray *****/
 [class*="bord-gray-"][class*="-base"],
 [class*="bord-gray-"][class*="-global"] > *,
 *:hover > [class*="bord-gray-"][class*="-into"],
@@ -438,7 +360,6 @@
   border-color: var(--gray);
 }
 
-/***** 4.4 Bord Green *****/
 [class*="bord-green-"][class*="-base"],
 [class*="bord-green-"][class*="-global"] > *,
 *:hover > [class*="bord-green-"][class*="-into"],
@@ -462,7 +383,6 @@
   border-color: var(--green);
 }
 
-/***** 4.5 Bord Maroon *****/
 [class*="bord-maroon-"][class*="-base"],
 [class*="bord-maroon-"][class*="-global"] > *,
 *:hover > [class*="bord-maroon-"][class*="-into"],
@@ -486,7 +406,6 @@
   border-color: var(--maroon);
 }
 
-/***** 4.6 Bord Orange *****/
 [class*="bord-orange-"][class*="-base"],
 [class*="bord-orange-"][class*="-global"] > *,
 *:hover > [class*="bord-orange-"][class*="-into"],
@@ -510,7 +429,6 @@
   border-color: var(--orange);
 }
 
-/***** 4.7 Bord Purple *****/
 [class*="bord-purple-"][class*="-base"],
 [class*="bord-purple-"][class*="-global"] > *,
 *:hover > [class*="bord-purple-"][class*="-into"],
@@ -534,7 +452,6 @@
   border-color: var(--purple);
 }
 
-/***** 4.8 Bord Red *****/
 [class*="bord-red-"][class*="-base"],
 [class*="bord-red-"][class*="-global"] > *,
 *:hover > [class*="bord-red-"][class*="-into"],
@@ -558,7 +475,6 @@
   border-color: var(--red);
 }
 
-/***** 4.9 Bord White *****/
 [class*="bord-white-"][class*="-base"],
 [class*="bord-white-"][class*="-global"] > *,
 *:hover > [class*="bord-white-"][class*="-into"],
@@ -582,7 +498,6 @@
   border-color: var(--white);
 }
 
-/***** 4.10 Bord Yellow *****/
 [class*="bord-yellow-"][class*="-base"],
 [class*="bord-yellow-"][class*="-global"] > *,
 *:hover > [class*="bord-yellow-"][class*="-into"],
@@ -606,15 +521,7 @@
   border-color: var(--yellow);
 }
 
-/********** 5. BORD RADIUS **********/
-
-/*
-5.1 Square
-5.2 Round
-5.3 Circle
-*/
-
-/***** 5.1 Bord Square *****/
+/***** 5 - Bord Radius *****/
 [class*="bord-square-"][class*="-base"],
 [class*="bord-square-"][class*="-global"] > *,
 *:hover > [class*="bord-square-"][class*="-into"],
@@ -638,7 +545,6 @@
   border-radius: var(--border-radius-square);
 }
 
-/***** 5.2 Bord Round *****/
 [class*="bord-round-"][class*="-base"],
 [class*="bord-round-"][class*="-global"] > *,
 *:hover > [class*="bord-round-"][class*="-into"],
@@ -662,7 +568,6 @@
   border-radius: var(--border-radius-round);
 }
 
-/***** 5.3 Bord Circle *****/
 [class*="bord-circle-"][class*="-base"],
 [class*="bord-circle-"][class*="-global"] > *,
 *:hover > [class*="bord-circle-"][class*="-into"],
@@ -685,4 +590,3 @@
 [class*="bord-circle-"][class*="-check"]:checked ~ [class*="bord-circle-"][class*="-hub"] [class*="bord-circle-"][class*="-goal"] {
   border-radius: var(--border-radius-circle);
 }
-
