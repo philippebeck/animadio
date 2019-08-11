@@ -931,17 +931,17 @@ pre {
 
 /***** 4.4 Shabox *****/
 [class*="shabox-"] {
-  --shabox-sm: 1px 1px;
-  --shabox-md: 2px 2px;
-  --shabox-lg: 5px 5px;
-  --shabox-blur-all: 0 0 2px;
-  --shabox-blur-sm: 1px 1px 1px;
-  --shabox-blur-md: 2px 2px 2px;
-  --shabox-blur-lg: 5px 5px 5px;
-  --shabox-spread-all: 0 0 2px 2px;
-  --shabox-spread-sm: 1px 1px 1px 1px;
-  --shabox-spread-md: 2px 2px 2px 2px;
-  --shabox-spread-lg: 5px 5px 5px 5px;
+  --box-shadow-sm: 1px 1px;
+  --box-shadow-md: 2px 2px;
+  --box-shadow-lg: 5px 5px;
+  --box-shadow-blur-all: 0 0 2px;
+  --box-shadow-blur-sm: 1px 1px 1px;
+  --box-shadow-blur-md: 2px 2px 2px;
+  --box-shadow-blur-lg: 5px 5px 5px;
+  --box-shadow-spread-all: 0 0 2px 2px;
+  --box-shadow-spread-sm: 1px 1px 1px 1px;
+  --box-shadow-spread-md: 2px 2px 2px 2px;
+  --box-shadow-spread-lg: 5px 5px 5px 5px;
 }
 
 /***** 4.5 Shatex *****/
