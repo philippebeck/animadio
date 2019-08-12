@@ -90,7 +90,7 @@
 
 @media (min-width: 576px) {
   .navbar > ul {
-    display: flex;
+    display: flex !important;
   }
 }
 
