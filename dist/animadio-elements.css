@@ -2258,8 +2258,8 @@ pre > *::selection {
 
 /***** 2 - Navbar Visible *****/
 .navbar,
-#navbar-close:checked ~ .navbar > ul:first-of-type,
-#navbar-open:checked ~ .navbar > ul:last-of-type,
+#navbar-close:checked ~ ul:first-of-type,
+#navbar-open:checked ~ ul:last-of-type,
 .navbar > ul:first-of-type a,
 .navbar > ul:first-of-type label,
 .navbar > ul:last-of-type a,
@@ -2274,8 +2274,8 @@ pre > *::selection {
 .navbar > ul:last-of-type span,
 #navbar-close,
 #navbar-open,
-#navbar-open:checked ~ .navbar > ul:first-of-type,
-#navbar-close:checked ~ .navbar > ul:last-of-type,
+#navbar-open:checked ~ ul:first-of-type,
+#navbar-close:checked ~ ul:last-of-type,
 #navbar-close:checked ~ [for="navbar-close"],
 #navbar-open:checked ~ [for="navbar-open"] {
   display: none;
@@ -2321,9 +2321,9 @@ pre > *::selection {
 
 @media (min-width: 576px) {
   .navbar > ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 }
 
@@ -4168,4 +4168,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 11th Aug 2019 @ 9:30:07 PM */
+ Updated: 12th Aug 2019 @ 6:36:24 PM */
