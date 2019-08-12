@@ -176,12 +176,14 @@ table {
   --table-border-collapse: collapse;
   --table-text-align: center;
   --table-vertical-align: middle;
+  --table-font-family: monospace;
 }
 
 label {
   --label-cursor: pointer;
 }
 
+code,
 pre {
   --code-font-family: monospace;
   --code-overflow: scroll;

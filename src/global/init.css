@@ -103,6 +103,7 @@ table {
   border-collapse: var(--table-border-collapse);
   text-align: var(--table-text-align);
   vertical-align: var(--table-vertical-align);
+  font-family: var(--table-font-family);
 }
 
 /***** 8 - Form *****/
