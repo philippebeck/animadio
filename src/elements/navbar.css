@@ -32,8 +32,8 @@
 
 /***** 2 - Navbar Visible *****/
 .navbar,
-#navbar-close:checked ~ .navbar > ul:first-of-type,
-#navbar-open:checked ~ .navbar > ul:last-of-type,
+#navbar-close:checked ~ ul:first-of-type,
+#navbar-open:checked ~ ul:last-of-type,
 .navbar > ul:first-of-type a,
 .navbar > ul:first-of-type label,
 .navbar > ul:last-of-type a,
@@ -46,8 +46,8 @@
 .navbar > ul:last-of-type span,
 #navbar-close,
 #navbar-open,
-#navbar-open:checked ~ .navbar > ul:first-of-type,
-#navbar-close:checked ~ .navbar > ul:last-of-type,
+#navbar-open:checked ~ ul:first-of-type,
+#navbar-close:checked ~ ul:last-of-type,
 #navbar-close:checked ~ [for="navbar-close"],
 #navbar-open:checked ~ [for="navbar-open"] {
   display: none;
