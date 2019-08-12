@@ -845,7 +845,7 @@ pre {
   --table-border-spacing: 10px;
   --table-box-shadow: 5px 5px 10px 5px var(--gray);
   --table-margin-bottom: 50px;
-  --table-width: 50%;
+  --table-width: 90%;
   --table-row-even-background-color: var(--silver);
   --table-row-even-color: var(--black);
   --table-row-odd-background-color: var(--white);
