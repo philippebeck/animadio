@@ -101,23 +101,19 @@
 }
 
 /***** 9 - Navbar Brand Link *****/
-.navbar > a:first-of-type,
-.navbar > label:first-of-type {
+.navbar > a:first-of-type {
   position: absolute;
   left: var(--navbar-brand-link-left);
 }
 
 @media (min-width: 576px) {
-  .navbar > a:first-of-type,
-  .navbar > label:first-of-type {
+  .navbar > a:first-of-type {
     position: static;
   }
 }
 
 .navbar > a:first-of-type img,
-.navbar > label:first-of-type img,
-.navbar > a:first-of-type svg,
-.navbar > label:first-of-type svg {
+.navbar > a:first-of-type svg {
   height: var(--navbar-brand-link-img-height);
 }
 
