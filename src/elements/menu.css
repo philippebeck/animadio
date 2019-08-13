@@ -59,7 +59,11 @@
 [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"],
 [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"],
 [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"],
-[class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] {
+[class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"],
+[class*="menu-"][class*="-radio6"]:checked ~ .menu > [for*="menu-"][for*="-radio6"],
+[class*="menu-"][class*="-radio7"]:checked ~ .menu > [for*="menu-"][for*="-radio7"],
+[class*="menu-"][class*="-radio8"]:checked ~ .menu > [for*="menu-"][for*="-radio8"],
+[class*="menu-"][class*="-radio9"]:checked ~ .menu > [for*="menu-"][for*="-radio9"] {
   background-color: var(--menu-checked-label-background-color);
   color: var(--menu-checked-label-color);
   font-weight: var(--menu-checked-label-font-weight);
@@ -75,7 +79,11 @@
 [class*="menu-"][class*="-radio2"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target2"],
 [class*="menu-"][class*="-radio3"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target3"],
 [class*="menu-"][class*="-radio4"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target4"],
-[class*="menu-"][class*="-radio5"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target5"] {
+[class*="menu-"][class*="-radio5"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target5"],
+[class*="menu-"][class*="-radio6"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target6"],
+[class*="menu-"][class*="-radio7"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target7"],
+[class*="menu-"][class*="-radio8"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target8"],
+[class*="menu-"][class*="-radio9"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target9"] {
   display: block;
 }
 
@@ -93,7 +101,11 @@
   [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"],
   [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"],
   [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"],
-  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"] {
+  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio6"]:checked ~ .menu > [for*="menu-"][for*="-radio6"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio7"]:checked ~ .menu > [for*="menu-"][for*="-radio7"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio8"]:checked ~ .menu > [for*="menu-"][for*="-radio8"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio9"]:checked ~ .menu > [for*="menu-"][for*="-radio9"] > [class*="fa-"] {
     display: block;
   }
 }
