@@ -1,4 +1,4 @@
-/*! animadio v0.5.11 | https://animadio.org | MIT License */
+/*! animadio v0.5.12 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -178,12 +178,14 @@ table {
   --table-border-collapse: collapse;
   --table-text-align: center;
   --table-vertical-align: middle;
+  --table-font-family: monospace;
 }
 
 label {
   --label-cursor: pointer;
 }
 
+code,
 pre {
   --code-font-family: monospace;
   --code-overflow: scroll;
@@ -198,9 +200,9 @@ pre {
   --margin-sm: 10px;
   --margin-md: 20px;
   --margin-lg: 50px;
-  --margin-bot-sm: 10px;
-  --margin-bot-md: 20px;
-  --margin-bot-lg: 50px;
+  --margin-bottom-sm: 10px;
+  --margin-bottom-md: 20px;
+  --margin-bottom-lg: 50px;
   --margin-left-sm: 10px;
   --margin-left-md: 20px;
   --margin-left-lg: 50px;
@@ -218,9 +220,9 @@ pre {
   --padding-sm: 10px;
   --padding-md: 20px;
   --padding-lg: 50px;
-  --padding-bot-sm: 10px;
-  --padding-bot-md: 20px;
-  --padding-bot-lg: 50px;
+  --padding-bottom-sm: 10px;
+  --padding-bottom-md: 20px;
+  --padding-bottom-lg: 50px;
   --padding-left-sm: 10px;
   --padding-left-md: 20px;
   --padding-left-lg: 50px;
@@ -847,7 +849,7 @@ pre {
   --table-border-spacing: 10px;
   --table-box-shadow: 5px 5px 10px 5px var(--gray);
   --table-margin-bottom: 50px;
-  --table-width: 50%;
+  --table-width: 90%;
   --table-row-even-background-color: var(--silver);
   --table-row-even-color: var(--black);
   --table-row-odd-background-color: var(--white);
@@ -1684,6 +1686,7 @@ table {
   border-collapse: var(--table-border-collapse);
   text-align: var(--table-text-align);
   vertical-align: var(--table-vertical-align);
+  font-family: var(--table-font-family);
 }
 
 /***** 8 - Form *****/
@@ -1862,17 +1865,17 @@ pre > *::selection {
 
 .mar-bot-sm,
 .mar-bot-sm-global > * {
-  margin-bottom: var(--margin-bot-sm);
+  margin-bottom: var(--margin-bottom-sm);
 }
 
 .mar-bot-md,
 .mar-bot-md-global > * {
-  margin-bottom: var(--margin-bot-md);
+  margin-bottom: var(--margin-bottom-md);
 }
 
 .mar-bot-lg,
 .mar-bot-lg-global > * {
-  margin-bottom: var(--margin-bot-lg);
+  margin-bottom: var(--margin-bottom-lg);
 }
 
 .mar-left-none,
@@ -1963,17 +1966,17 @@ pre > *::selection {
 
 .pad-bot-sm,
 .pad-bot-sm-global > * {
-  padding-bottom: var(--padding-bot-sm);
+  padding-bottom: var(--padding-bottom-sm);
 }
 
 .pad-bot-md,
 .pad-bot-md-global > * {
-  padding-bottom: var(--padding-bot-md);
+  padding-bottom: var(--padding-bottom-md);
 }
 
 .pad-bot-lg,
 .pad-bot-lg-global > * {
-  padding-bottom: var(--padding-bot-lg);
+  padding-bottom: var(--padding-bottom-lg);
 }
 
 .pad-left-none,
@@ -3590,7 +3593,11 @@ pre > *::selection {
 [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"],
 [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"],
 [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"],
-[class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] {
+[class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"],
+[class*="menu-"][class*="-radio6"]:checked ~ .menu > [for*="menu-"][for*="-radio6"],
+[class*="menu-"][class*="-radio7"]:checked ~ .menu > [for*="menu-"][for*="-radio7"],
+[class*="menu-"][class*="-radio8"]:checked ~ .menu > [for*="menu-"][for*="-radio8"],
+[class*="menu-"][class*="-radio9"]:checked ~ .menu > [for*="menu-"][for*="-radio9"] {
   background-color: var(--menu-checked-label-background-color);
   color: var(--menu-checked-label-color);
   font-weight: var(--menu-checked-label-font-weight);
@@ -3606,7 +3613,11 @@ pre > *::selection {
 [class*="menu-"][class*="-radio2"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target2"],
 [class*="menu-"][class*="-radio3"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target3"],
 [class*="menu-"][class*="-radio4"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target4"],
-[class*="menu-"][class*="-radio5"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target5"] {
+[class*="menu-"][class*="-radio5"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target5"],
+[class*="menu-"][class*="-radio6"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target6"],
+[class*="menu-"][class*="-radio7"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target7"],
+[class*="menu-"][class*="-radio8"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target8"],
+[class*="menu-"][class*="-radio9"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target9"] {
   display: block;
 }
 
@@ -3624,7 +3635,11 @@ pre > *::selection {
   [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"],
   [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"],
   [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"],
-  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"] {
+  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio6"]:checked ~ .menu > [for*="menu-"][for*="-radio6"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio7"]:checked ~ .menu > [for*="menu-"][for*="-radio7"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio8"]:checked ~ .menu > [for*="menu-"][for*="-radio8"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio9"]:checked ~ .menu > [for*="menu-"][for*="-radio9"] > [class*="fa-"] {
     display: block;
   }
 }
@@ -4164,4 +4179,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 12th Aug 2019 @ 8:32:07 PM */
+ Updated: 13th Aug 2019 @ 2:21:34 AM */

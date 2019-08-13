@@ -149,17 +149,17 @@
 
 .mar-bot-sm,
 .mar-bot-sm-global > * {
-  margin-bottom: var(--margin-bot-sm);
+  margin-bottom: var(--margin-bottom-sm);
 }
 
 .mar-bot-md,
 .mar-bot-md-global > * {
-  margin-bottom: var(--margin-bot-md);
+  margin-bottom: var(--margin-bottom-md);
 }
 
 .mar-bot-lg,
 .mar-bot-lg-global > * {
-  margin-bottom: var(--margin-bot-lg);
+  margin-bottom: var(--margin-bottom-lg);
 }
 
 .mar-left-none,
@@ -250,17 +250,17 @@
 
 .pad-bot-sm,
 .pad-bot-sm-global > * {
-  padding-bottom: var(--padding-bot-sm);
+  padding-bottom: var(--padding-bottom-sm);
 }
 
 .pad-bot-md,
 .pad-bot-md-global > * {
-  padding-bottom: var(--padding-bot-md);
+  padding-bottom: var(--padding-bottom-md);
 }
 
 .pad-bot-lg,
 .pad-bot-lg-global > * {
-  padding-bottom: var(--padding-bot-lg);
+  padding-bottom: var(--padding-bottom-lg);
 }
 
 .pad-left-none,
