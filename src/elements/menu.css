@@ -55,6 +55,7 @@
 }
 
 /***** 5 - Menu Checked Label *****/
+[class*="menu-"][class*="-radio0"]:checked ~ .menu > [for*="menu-"][for*="-radio0"],
 [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"],
 [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"],
 [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"],
@@ -75,6 +76,7 @@
 }
 
 /***** 7 - Menu Checked Target *****/
+[class*="menu-"][class*="-radio0"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target0"],
 [class*="menu-"][class*="-radio1"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target1"],
 [class*="menu-"][class*="-radio2"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target2"],
 [class*="menu-"][class*="-radio3"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target3"],
@@ -97,6 +99,7 @@
 
 /***** 9 - Menu Checked FA *****/
 @media (min-width: 576px) {
+  [class*="menu-"][class*="-radio0"]:checked ~ .menu > [for*="menu-"][for*="-radio0"] > [class*="fa-"],
   [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"] > [class*="fa-"],
   [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"],
   [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"],
