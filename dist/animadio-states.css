@@ -1,4 +1,4 @@
-/*! animadio v0.5.13 | https://animadio.org | MIT License */
+/*! animadio v0.6.0 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -16,8 +16,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
 2. GRID
   2.1 Grid
   2.2 Flex
-  2.3 Align
-  2.4 Justify
+  2.3 Place
 3. ELEMENTS
   3.1 Btn
   3.2 Card
@@ -318,41 +317,22 @@ pre {
   --row-padding: 10px 0;
 }
 
-/***** 2.3 Align *****/
-[class*="alco-"][class*="-"] {
-  --align-content-base: baseline;
-  --align-content-end: flex-end;
-  --align-content-start: flex-start;
+/***** 2.3 Place *****/
+[class*="placo-"][class*="-"] {
+  --place-content-end: flex-end;
+  --place-content-start: flex-start;
 }
 
-[class*="alit-"] {
-  --align-items-base: baseline;
-  --align-items-end: flex-end;
-  --align-items-start: flex-start;
+[class*="plait-"] {
+  --place-items-baseline: baseline;
+  --place-items-end: flex-end;
+  --place-items-start: flex-start;
 }
 
-[class*="alse-"] {
-  --align-self-base: baseline;
-  --align-self-end: flex-end;
-  --align-self-start: flex-start;
-}
-
-/***** 2.4 Justify *****/
-[class*="juco-"][class*="-"] {
-  --justify-content-end: flex-end;
-  --justify-content-start: flex-start;
-}
-
-[class*="juit-"] {
-  --justify-items-base: baseline;
-  --justify-items-end: flex-end;
-  --justify-items-start: flex-start;
-}
-
-[class*="juse-"] {
-  --justify-self-base: baseline;
-  --justify-self-end: flex-end;
-  --justify-self-start: flex-start;
+[class*="plase-"] {
+  --place-self-baseline: baseline;
+  --place-self-end: flex-end;
+  --place-self-start: flex-start;
 }
 
 /***** 3.1 Btn *****/
@@ -1729,70 +1709,70 @@ pre > *::selection {
   margin: auto;
 }
 
-.container-70xs {
+[class*="container-"][class*="-70xs"] {
   max-width: 70%;
 }
 
-.container-80xs {
+[class*="container-"][class*="-80xs"] {
   max-width: 80%;
 }
 
-.container-90xs {
+[class*="container-"][class*="-90xs"] {
   max-width: 90%;
 }
 
 @media (min-width: 576px) {
-  .container-70sm {
+  [class*="container-"][class*="-70sm"] {
     max-width: 70%;
   }
 
-  .container-80sm {
+  [class*="container-"][class*="-80sm"] {
     max-width: 80%;
   }
 
-  .container-90sm {
+  [class*="container-"][class*="-90sm"] {
     max-width: 90%;
   }
 }
 
 @media (min-width: 768px) {
-  .container-70md {
+  [class*="container-"][class*="-70md"] {
     max-width: 70%;
   }
 
-  .container-80md {
+  [class*="container-"][class*="-80md"] {
     max-width: 80%;
   }
 
-  .container-90md {
+  [class*="container-"][class*="-90md"] {
     max-width: 90%;
   }
 }
 
 @media (min-width: 992px) {
-  .container-70lg {
+  [class*="container-"][class*="-70lg"] {
     max-width: 70%;
   }
 
-  .container-80lg {
+  [class*="container-"][class*="-80lg"] {
     max-width: 80%;
   }
 
-  .container-90lg {
+  [class*="container-"][class*="-90lg"] {
     max-width: 90%;
   }
 }
 
 @media (min-width: 1200px) {
-  .container-70xl {
+  [class*="container-"][class*="-70xl"] {
     max-width: 70%;
   }
 
-  .container-80xl {
+  [class*="container-"][class*="-80xl"] {
     max-width: 80%;
   }
 
-  .container-90xl {
+  [class*="container-"][class*="-90xl"] {
     max-width: 90%;
   }
 }
@@ -7484,4 +7464,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 13th Aug 2019 @ 7:11:53 PM */
+ Updated: 14th Aug 2019 @ 10:17:04 PM */
