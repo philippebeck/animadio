@@ -12,7 +12,7 @@
 [class*="row"] {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  place-content: center;
 }
 
 /***** 2 - Column & Row *****/

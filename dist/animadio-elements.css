@@ -1,4 +1,4 @@
-/*! animadio v0.6.0 | https://animadio.org | MIT License */
+/*! animadio v0.6.1 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -414,7 +414,7 @@ pre {
 
 /***** 3.2 Card *****/
 [class*="card"] {
-  --card-align-items: center;
+  --card-place-items: center;
   --card-background-color: var(--quartz);
   --card-border: solid medium;
   --card-border-radius: 10px;
@@ -473,7 +473,7 @@ pre {
   --foot-first-child-cursor: help;
   --foot-first-child-flex-direction: column;
   --foot-first-child-font-color: var(--white);
-  --foot-first-child-justify-content: space-evenly;
+  --foot-first-child-place-content: space-evenly;
   --foot-first-child-margin: 0;
   --foot-first-child-list-cursor: pointer;
   --foot-first-child-list-text-align: center;
@@ -482,7 +482,7 @@ pre {
   --foot-first-child-link-hover-font-color: var(--jade);
   --foot-last-child-background-color: var(--white);
   --foot-last-child-cursor: crosshair;
-  --foot-last-child-justify-content: center;
+  --foot-last-child-place-content: center;
   --foot-last-child-margin: 0;
   --foot-last-child-padding-top: 20px;
   --foot-last-child-link-margin-left: 10px;
@@ -506,9 +506,9 @@ pre {
   --form-legend-font-size: 2.5rem;
   --form-legend-font-weight: bold;
   --form-legend-margin: auto;
-  --form-list-align-items: baseline;
+  --form-list-place-items: baseline;
   --form-list-flex-direction: column;
-  --form-list-justify-content: center;
+  --form-list-place-content: center;
   --form-label-border: thin dashed var(--white);
   --form-label-color: var(--gray);
   --form-label-margin: auto;
@@ -588,9 +588,9 @@ pre {
   --gallery-margin: 20px auto 50px;
   --gallery-max-width: 90%;
   --gallery-all-cursor: crosshair;
-  --gallery-figure-align-items: center;
+  --gallery-figure-place-items: center;
   --gallery-figure-border: thin dotted var(--silver);
-  --gallery-figure-justify-content: center;
+  --gallery-figure-place-content: center;
   --gallery-figure-overflow: hidden;
   --gallery-figure-line-height: 0;
   --gallery-figure-margin: 5px;
@@ -650,21 +650,21 @@ pre {
 
 /***** 3.6 Menu *****/
 .menu {
-  --menu-align-items: stretch;
+  --menu-place-items: stretch;
   --menu-background-color: var(--silver);
   --menu-border: none;
   --menu-border-radius: 5px;
   --menu-color: var(--gray);
   --menu-flex-direction: column;
-  --menu-justify-content: center;
+  --menu-place-content: center;
   --menu-list-style: none;
   --menu-margin: 20px auto 50px;
   --menu-padding: 0;
   --menu-width: 40%;
   --menu-all-cursor: pointer;
-  --menu-label-align-items: center;
+  --menu-label-place-items: center;
   --menu-label-border-radius: 5px;
-  --menu-label-justify-content: center;
+  --menu-label-place-content: center;
   --menu-label-padding: 6px 12px;
   --menu-label-position: relative;
   --menu-label-width: 100%;
@@ -707,11 +707,11 @@ pre {
 
 /***** 3.7 Navbar *****/
 .navbar {
-  --navbar-align-items: center;
+  --navbar-place-items: center;
   --navbar-background-color: var(--blue);
   --navbar-bottom: unset;
   --navbar-color: var(--white);
-  --navbar-justify-content: center;
+  --navbar-place-content: center;
   --navbar-left: 0;
   --navbar-position: fixed;
   --navbar-right: 0;
@@ -721,8 +721,8 @@ pre {
   --navbar-link-cursor: pointer;
   --navbar-link-padding: 20px 10px;
   --navbar-link-hover-color: var(--yellow);
-  --navbar-icon-align-self: center;
-  --navbar-list-align-items: center;
+  --navbar-icon-place-self: center;
+  --navbar-list-place-items: center;
   --navbar-list-list-style: none;
   --navbar-list-margin: 0;
   --navbar-list-padding: 0;
@@ -741,14 +741,14 @@ pre {
 @media (min-width: 576px) {
   .navbar {
     --navbar-flex-direction: row;
-    --navbar-justify-content: space-around;
+    --navbar-place-content: space-around;
     --navbar-padding: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .navbar {
-    --navbar-justify-content: space-evenly;
+    --navbar-place-content: space-evenly;
   }
 }
 
@@ -768,7 +768,7 @@ pre {
   --slider-check-repeat-animation-iteration-count: infinite;
   --slider-list-background-color: var(--obsidian);
   --slider-list-border: thin solid var(--black);
-  --slider-list-justify-content: center;
+  --slider-list-place-content: center;
   --slider-list-margin: 10px;
   --slider-list-opacity: 0;
   --slider-list-padding: 10px;
@@ -2222,12 +2222,8 @@ pre > *::selection {
 
 /***** 1 - Navbar *****/
 .navbar {
-  -webkit-box-pack: var(--navbar-justify-content);
-      -ms-flex-pack: var(--navbar-justify-content);
-          justify-content: var(--navbar-justify-content);
-  -webkit-box-align: var(--navbar-align-items);
-      -ms-flex-align: var(--navbar-align-items);
-          align-items: var(--navbar-align-items);
+  place-content: var(--navbar-place-content);
+  place-items: var(--navbar-place-items);
   position: var(--navbar-position);
   top: var(--navbar-top);
   right: var(--navbar-right);
@@ -2283,8 +2279,7 @@ pre > *::selection {
 
 /***** 5 - Navbar Icon *****/
 .navbar i {
-  -ms-flex-item-align: var(--navbar-icon-align-self);
-      align-self: var(--navbar-icon-align-self);
+  place-self: var(--navbar-icon-place-self);
 }
 
 /***** 6 - Navbar Next All *****/
@@ -2294,9 +2289,7 @@ pre > *::selection {
 
 /***** 7 - Navbar List *****/
 .navbar > ul {
-  -webkit-box-align: var(--navbar-list-align-items);
-      -ms-flex-align: var(--navbar-list-align-items);
-          align-items: var(--navbar-list-align-items);
+  place-items: var(--navbar-list-place-items);
   margin: var(--navbar-list-margin);
   padding: var(--navbar-list-padding);
   list-style: var(--navbar-list-list-style);
@@ -2465,9 +2458,7 @@ pre > *::selection {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: var(--slider-list-justify-content);
-      -ms-flex-pack: var(--slider-list-justify-content);
-          justify-content: var(--slider-list-justify-content);
+  place-content: var(--slider-list-place-content);
   margin: var(--slider-list-margin);
   border: var(--slider-list-border);
   border-radius: var(--slider-list-border-radius);
@@ -3341,9 +3332,7 @@ pre > *::selection {
   -webkit-box-direction: normal;
       -ms-flex-direction: var(--card-flex-direction);
           flex-direction: var(--card-flex-direction);
-  -webkit-box-align: var(--card-align-items);
-      -ms-flex-align: var(--card-align-items);
-          align-items: var(--card-align-items);
+  place-items: var(--card-place-items);
   position: var(--card-position);
   overflow: var(--card-overflow);
   margin: var(--card-margin);
@@ -3520,12 +3509,8 @@ pre > *::selection {
   -webkit-box-direction: normal;
       -ms-flex-direction: var(--menu-flex-direction);
           flex-direction: var(--menu-flex-direction);
-  -webkit-box-pack: var(--menu-justify-content);
-      -ms-flex-pack: var(--menu-justify-content);
-          justify-content: var(--menu-justify-content);
-  -webkit-box-align: var(--menu-align-items);
-      -ms-flex-align: var(--menu-align-items);
-          align-items: var(--menu-align-items);
+  place-content: var(--menu-place-content);
+  place-items: var(--menu-place-items);
   margin: var(--menu-margin);
   border: var(--menu-border);
   border-radius: var(--menu-border-radius);
@@ -3546,12 +3531,8 @@ pre > *::selection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: var(--menu-label-justify-content);
-      -ms-flex-pack: var(--menu-label-justify-content);
-          justify-content: var(--menu-label-justify-content);
-  -webkit-box-align: var(--menu-label-align-items);
-      -ms-flex-align: var(--menu-label-align-items);
-          align-items: var(--menu-label-align-items);
+  place-content: var(--menu-label-place-content);
+  place-items: var(--menu-label-place-items);
   position: var(--menu-label-position);
   border-radius: var(--menu-label-border-radius);
   padding: var(--menu-label-padding);
@@ -3664,12 +3645,8 @@ pre > *::selection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: var(--gallery-figure-justify-content);
-      -ms-flex-pack: var(--gallery-figure-justify-content);
-          justify-content: var(--gallery-figure-justify-content);
-  -webkit-box-align: var(--gallery-figure-align-items);
-      -ms-flex-align: var(--gallery-figure-align-items);
-          align-items: var(--gallery-figure-align-items);
+  place-content: var(--gallery-figure-place-content);
+  place-items: var(--gallery-figure-place-items);
   position: var(--gallery-figure-position);
   overflow: var(--gallery-figure-overflow);
   margin: var(--gallery-figure-margin);
@@ -3939,12 +3916,8 @@ pre > *::selection {
   -webkit-box-direction: normal;
       -ms-flex-direction: var(--form-list-flex-direction);
           flex-direction: var(--form-list-flex-direction);
-  -webkit-box-pack: var(--form-list-justify-content);
-      -ms-flex-pack: var(--form-list-justify-content);
-          justify-content: var(--form-list-justify-content);
-  -webkit-box-align: var(--form-list-align-items);
-      -ms-flex-align: var(--form-list-align-items);
-          align-items: var(--form-list-align-items);
+  place-content: var(--form-list-place-content);
+  place-items: var(--form-list-place-items);
 }
 
 /***** 5 - Form Label *****/
@@ -4115,9 +4088,7 @@ pre > *::selection {
   -webkit-box-direction: normal;
       -ms-flex-direction: var(--foot-first-child-flex-direction);
           flex-direction: var(--foot-first-child-flex-direction);
-  -webkit-box-pack: var(--foot-first-child-justify-content);
-      -ms-flex-pack: var(--foot-first-child-justify-content);
-          justify-content: var(--foot-first-child-justify-content);
+  place-content: var(--foot-first-child-place-content);
   margin: var(--foot-first-child-margin);
   background-color: var(--foot-first-child-background-color);
   color: var(--foot-first-child-font-color);
@@ -4145,9 +4116,7 @@ pre > *::selection {
 
 /***** 8 - Foot Last Child *****/
 .foot > ul:last-child {
-  -webkit-box-pack: var(--foot-last-child-justify-content);
-      -ms-flex-pack: var(--foot-last-child-justify-content);
-          justify-content: var(--foot-last-child-justify-content);
+  place-content: var(--foot-last-child-place-content);
   margin: var(--foot-last-child-margin);
   padding-top: var(--foot-last-child-padding-top);
   background-color: var(--foot-last-child-background-color);
@@ -4162,4 +4131,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 14th Aug 2019 @ 10:17:04 PM */
+ Updated: 15th Aug 2019 @ 12:57:49 AM */

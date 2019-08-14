@@ -16,8 +16,8 @@
 .menu {
   display: flex;
   flex-direction: var(--menu-flex-direction);
-  justify-content: var(--menu-justify-content);
-  align-items: var(--menu-align-items);
+  place-content: var(--menu-place-content);
+  place-items: var(--menu-place-items);
   margin: var(--menu-margin);
   border: var(--menu-border);
   border-radius: var(--menu-border-radius);
@@ -36,8 +36,8 @@
 /***** 3 - Menu Label *****/
 .menu label {
   display: flex;
-  justify-content: var(--menu-label-justify-content);
-  align-items: var(--menu-label-align-items);
+  place-content: var(--menu-label-place-content);
+  place-items: var(--menu-label-place-items);
   position: var(--menu-label-position);
   border-radius: var(--menu-label-border-radius);
   padding: var(--menu-label-padding);
