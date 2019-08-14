@@ -14,8 +14,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
 2. GRID
   2.1 Grid
   2.2 Flex
-  2.3 Align
-  2.4 Justify
+  2.3 Place
 3. ELEMENTS
   3.1 Btn
   3.2 Card
@@ -316,41 +315,22 @@ pre {
   --row-padding: 10px 0;
 }
 
-/***** 2.3 Align *****/
-[class*="alco-"][class*="-"] {
-  --align-content-base: baseline;
-  --align-content-end: flex-end;
-  --align-content-start: flex-start;
+/***** 2.3 Place *****/
+[class*="placo-"][class*="-"] {
+  --place-content-end: flex-end;
+  --place-content-start: flex-start;
 }
 
-[class*="alit-"] {
-  --align-items-base: baseline;
-  --align-items-end: flex-end;
-  --align-items-start: flex-start;
+[class*="plait-"] {
+  --place-items-baseline: baseline;
+  --place-items-end: flex-end;
+  --place-items-start: flex-start;
 }
 
-[class*="alse-"] {
-  --align-self-base: baseline;
-  --align-self-end: flex-end;
-  --align-self-start: flex-start;
-}
-
-/***** 2.4 Justify *****/
-[class*="juco-"][class*="-"] {
-  --justify-content-end: flex-end;
-  --justify-content-start: flex-start;
-}
-
-[class*="juit-"] {
-  --justify-items-base: baseline;
-  --justify-items-end: flex-end;
-  --justify-items-start: flex-start;
-}
-
-[class*="juse-"] {
-  --justify-self-base: baseline;
-  --justify-self-end: flex-end;
-  --justify-self-start: flex-start;
+[class*="plase-"] {
+  --place-self-baseline: baseline;
+  --place-self-end: flex-end;
+  --place-self-start: flex-start;
 }
 
 /***** 3.1 Btn *****/
