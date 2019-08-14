@@ -1,4 +1,4 @@
-/*! animadio v0.6.0 | https://animadio.org | MIT License */
+/*! animadio v0.6.1 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -414,7 +414,7 @@ pre {
 
 /***** 3.2 Card *****/
 [class*="card"] {
-  --card-align-items: center;
+  --card-place-items: center;
   --card-background-color: var(--quartz);
   --card-border: solid medium;
   --card-border-radius: 10px;
@@ -473,7 +473,7 @@ pre {
   --foot-first-child-cursor: help;
   --foot-first-child-flex-direction: column;
   --foot-first-child-font-color: var(--white);
-  --foot-first-child-justify-content: space-evenly;
+  --foot-first-child-place-content: space-evenly;
   --foot-first-child-margin: 0;
   --foot-first-child-list-cursor: pointer;
   --foot-first-child-list-text-align: center;
@@ -482,7 +482,7 @@ pre {
   --foot-first-child-link-hover-font-color: var(--jade);
   --foot-last-child-background-color: var(--white);
   --foot-last-child-cursor: crosshair;
-  --foot-last-child-justify-content: center;
+  --foot-last-child-place-content: center;
   --foot-last-child-margin: 0;
   --foot-last-child-padding-top: 20px;
   --foot-last-child-link-margin-left: 10px;
@@ -506,9 +506,9 @@ pre {
   --form-legend-font-size: 2.5rem;
   --form-legend-font-weight: bold;
   --form-legend-margin: auto;
-  --form-list-align-items: baseline;
+  --form-list-place-items: baseline;
   --form-list-flex-direction: column;
-  --form-list-justify-content: center;
+  --form-list-place-content: center;
   --form-label-border: thin dashed var(--white);
   --form-label-color: var(--gray);
   --form-label-margin: auto;
@@ -588,9 +588,9 @@ pre {
   --gallery-margin: 20px auto 50px;
   --gallery-max-width: 90%;
   --gallery-all-cursor: crosshair;
-  --gallery-figure-align-items: center;
+  --gallery-figure-place-items: center;
   --gallery-figure-border: thin dotted var(--silver);
-  --gallery-figure-justify-content: center;
+  --gallery-figure-place-content: center;
   --gallery-figure-overflow: hidden;
   --gallery-figure-line-height: 0;
   --gallery-figure-margin: 5px;
@@ -650,21 +650,21 @@ pre {
 
 /***** 3.6 Menu *****/
 .menu {
-  --menu-align-items: stretch;
+  --menu-place-items: stretch;
   --menu-background-color: var(--silver);
   --menu-border: none;
   --menu-border-radius: 5px;
   --menu-color: var(--gray);
   --menu-flex-direction: column;
-  --menu-justify-content: center;
+  --menu-place-content: center;
   --menu-list-style: none;
   --menu-margin: 20px auto 50px;
   --menu-padding: 0;
   --menu-width: 40%;
   --menu-all-cursor: pointer;
-  --menu-label-align-items: center;
+  --menu-label-place-items: center;
   --menu-label-border-radius: 5px;
-  --menu-label-justify-content: center;
+  --menu-label-place-content: center;
   --menu-label-padding: 6px 12px;
   --menu-label-position: relative;
   --menu-label-width: 100%;
@@ -707,11 +707,11 @@ pre {
 
 /***** 3.7 Navbar *****/
 .navbar {
-  --navbar-align-items: center;
+  --navbar-place-items: center;
   --navbar-background-color: var(--blue);
   --navbar-bottom: unset;
   --navbar-color: var(--white);
-  --navbar-justify-content: center;
+  --navbar-place-content: center;
   --navbar-left: 0;
   --navbar-position: fixed;
   --navbar-right: 0;
@@ -721,8 +721,8 @@ pre {
   --navbar-link-cursor: pointer;
   --navbar-link-padding: 20px 10px;
   --navbar-link-hover-color: var(--yellow);
-  --navbar-icon-align-self: center;
-  --navbar-list-align-items: center;
+  --navbar-icon-place-self: center;
+  --navbar-list-place-items: center;
   --navbar-list-list-style: none;
   --navbar-list-margin: 0;
   --navbar-list-padding: 0;
@@ -741,14 +741,14 @@ pre {
 @media (min-width: 576px) {
   .navbar {
     --navbar-flex-direction: row;
-    --navbar-justify-content: space-around;
+    --navbar-place-content: space-around;
     --navbar-padding: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .navbar {
-    --navbar-justify-content: space-evenly;
+    --navbar-place-content: space-evenly;
   }
 }
 
@@ -768,7 +768,7 @@ pre {
   --slider-check-repeat-animation-iteration-count: infinite;
   --slider-list-background-color: var(--obsidian);
   --slider-list-border: thin solid var(--black);
-  --slider-list-justify-content: center;
+  --slider-list-place-content: center;
   --slider-list-margin: 10px;
   --slider-list-opacity: 0;
   --slider-list-padding: 10px;
@@ -2596,9 +2596,7 @@ pre > *::selection {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  place-content: center;
 }
 
 /***** 2 - Column & Row *****/
@@ -3585,4 +3583,4 @@ place-items: center;
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 14th Aug 2019 @ 10:17:04 PM */
+ Updated: 15th Aug 2019 @ 12:57:49 AM */
