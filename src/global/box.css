@@ -13,70 +13,70 @@
   margin: auto;
 }
 
-.container-70xs {
+[class*="container-"][class*="-70xs"] {
   max-width: 70%;
 }
 
-.container-80xs {
+[class*="container-"][class*="-80xs"] {
   max-width: 80%;
 }
 
-.container-90xs {
+[class*="container-"][class*="-90xs"] {
   max-width: 90%;
 }
 
 @media (min-width: 576px) {
-  .container-70sm {
+  [class*="container-"][class*="-70sm"] {
     max-width: 70%;
   }
 
-  .container-80sm {
+  [class*="container-"][class*="-80sm"] {
     max-width: 80%;
   }
 
-  .container-90sm {
+  [class*="container-"][class*="-90sm"] {
     max-width: 90%;
   }
 }
 
 @media (min-width: 768px) {
-  .container-70md {
+  [class*="container-"][class*="-70md"] {
     max-width: 70%;
   }
 
-  .container-80md {
+  [class*="container-"][class*="-80md"] {
     max-width: 80%;
   }
 
-  .container-90md {
+  [class*="container-"][class*="-90md"] {
     max-width: 90%;
   }
 }
 
 @media (min-width: 992px) {
-  .container-70lg {
+  [class*="container-"][class*="-70lg"] {
     max-width: 70%;
   }
 
-  .container-80lg {
+  [class*="container-"][class*="-80lg"] {
     max-width: 80%;
   }
 
-  .container-90lg {
+  [class*="container-"][class*="-90lg"] {
     max-width: 90%;
   }
 }
 
 @media (min-width: 1200px) {
-  .container-70xl {
+  [class*="container-"][class*="-70xl"] {
     max-width: 70%;
   }
 
-  .container-80xl {
+  [class*="container-"][class*="-80xl"] {
     max-width: 80%;
   }
 
-  .container-90xl {
+  [class*="container-"][class*="-90xl"] {
     max-width: 90%;
   }
 }
