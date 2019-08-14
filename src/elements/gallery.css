@@ -30,8 +30,8 @@
 /***** 3 - Gallery Figure *****/
 .gallery figure {
   display: flex;
-  justify-content: var(--gallery-figure-justify-content);
-  align-items: var(--gallery-figure-align-items);
+  place-content: var(--gallery-figure-place-content);
+  place-items: var(--gallery-figure-place-items);
   position: var(--gallery-figure-position);
   overflow: var(--gallery-figure-overflow);
   margin: var(--gallery-figure-margin);

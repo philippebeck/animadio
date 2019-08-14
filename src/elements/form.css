@@ -43,8 +43,8 @@
 .form li {
   display: flex;
   flex-direction: var(--form-list-flex-direction);
-  justify-content: var(--form-list-justify-content);
-  align-items: var(--form-list-align-items);
+  place-content: var(--form-list-place-content);
+  place-items: var(--form-list-place-items);
 }
 
 /***** 5 - Form Label *****/

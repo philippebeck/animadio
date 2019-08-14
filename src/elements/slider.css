@@ -66,7 +66,7 @@
 /***** 6 - Slider List *****/
 .slider > ul {
   display: inline-flex;
-  justify-content: var(--slider-list-justify-content);
+  place-content: var(--slider-list-place-content);
   margin: var(--slider-list-margin);
   border: var(--slider-list-border);
   border-radius: var(--slider-list-border-radius);

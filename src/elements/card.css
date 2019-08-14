@@ -19,7 +19,7 @@
 [class*="card"] {
   display: inline-flex;
   flex-direction: var(--card-flex-direction);
-  align-items: var(--card-align-items);
+  place-items: var(--card-place-items);
   position: var(--card-position);
   overflow: var(--card-overflow);
   margin: var(--card-margin);

@@ -35,7 +35,7 @@
 /***** 4 - Foot First Child *****/
 .foot > ul:first-child {
   flex-direction: var(--foot-first-child-flex-direction);
-  justify-content: var(--foot-first-child-justify-content);
+  place-content: var(--foot-first-child-place-content);
   margin: var(--foot-first-child-margin);
   background-color: var(--foot-first-child-background-color);
   color: var(--foot-first-child-font-color);
@@ -63,7 +63,7 @@
 
 /***** 8 - Foot Last Child *****/
 .foot > ul:last-child {
-  justify-content: var(--foot-last-child-justify-content);
+  place-content: var(--foot-last-child-place-content);
   margin: var(--foot-last-child-margin);
   padding-top: var(--foot-last-child-padding-top);
   background-color: var(--foot-last-child-background-color);

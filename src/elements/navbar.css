@@ -17,8 +17,8 @@
 
 /***** 1 - Navbar *****/
 .navbar {
-  justify-content: var(--navbar-justify-content);
-  align-items: var(--navbar-align-items);
+  place-content: var(--navbar-place-content);
+  place-items: var(--navbar-place-items);
   position: var(--navbar-position);
   top: var(--navbar-top);
   right: var(--navbar-right);
@@ -72,7 +72,7 @@
 
 /***** 5 - Navbar Icon *****/
 .navbar i {
-  align-self: var(--navbar-icon-align-self);
+  place-self: var(--navbar-icon-place-self);
 }
 
 /***** 6 - Navbar Next All *****/
@@ -82,7 +82,7 @@
 
 /***** 7 - Navbar List *****/
 .navbar > ul {
-  align-items: var(--navbar-list-align-items);
+  place-items: var(--navbar-list-place-items);
   margin: var(--navbar-list-margin);
   padding: var(--navbar-list-padding);
   list-style: var(--navbar-list-list-style);
