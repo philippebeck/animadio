@@ -559,7 +559,7 @@
 [class*="bg-stack-"][class*="-radio4"]:checked ~ [class*="bg-stack-"][class*="-relay"] [class*="bg-stack-"][class*="-target4"],
 [class*="bg-stack-"][class*="-radio5"]:checked ~ [class*="bg-stack-"][class*="-relay"] [class*="bg-stack-"][class*="-target5"],
 [class*="bg-stack-"][class*="-check"]:checked ~ [class*="bg-stack-"][class*="-hub"] [class*="bg-stack-"][class*="-goal"] {
-  background-color: var(--stackoverflow);
+  background-color: var(--stack-overflow);
 }
 
 [class*="bg-tw-"][class*="-base"],
