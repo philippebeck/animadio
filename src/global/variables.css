@@ -823,7 +823,6 @@ pre {
 
 /***** 3.9 Table *****/
 .table {
-  --table-border-collapse: collapse;
   --table-border-spacing: 10px;
   --table-box-shadow: 5px 5px 10px 5px var(--gray);
   --table-caption-color: var(--black);
