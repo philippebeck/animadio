@@ -48,7 +48,7 @@
 /***** 3 - Check Button *****/
 [class*="btn"]:active,
 [class*="check"]:checked + [class*="button"] {
-  transform: var(--check-button-transform);
+  transform: var(--btn-checked-transform);
 }
 
 /***** 4 - Btn Icon *****/
