@@ -136,7 +136,7 @@ CodePen : [@animadio](https://codepen.io/animadio)
 
 ## Community
 
-Slack : [animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQtNTY1NTc5NzgyNDA3LTI2YWIxM2ZkMGM5ODBkNjNjZmI5ZGVlNTM1ZWEwMWI5ZDJjNzViYjNmNWE2MjllMTc3MDhlMzYzZDYzNTkxNjU)
+Slack : [animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQtNjAxMjg0OTUyODM5LWE5ZjNhNWYxMzVjZTdlMjhkNDhiNDVlYmQ1NjY3NTVhZGFmNDg2ODVhMmYyYmQwMDBkYmYyY2Q0NGQ5OGY3NWY)
 
 [![Twitter Follow](https://badgen.net/twitter/follow/animadio)](https://twitter.com/animadio)
 
