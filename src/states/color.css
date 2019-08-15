@@ -558,7 +558,7 @@
 [class*="color-stack-"][class*="-radio4"]:checked ~ [class*="color-stack-"][class*="-relay"] [class*="color-stack-"][class*="-target4"],
 [class*="color-stack-"][class*="-radio5"]:checked ~ [class*="color-stack-"][class*="-relay"] [class*="color-stack-"][class*="-target5"],
 [class*="color-stack-"][class*="-check"]:checked ~ [class*="color-stack-"][class*="-hub"] [class*="color-stack-"][class*="-goal"] {
-  color: var(--stackoverflow);
+  color: var(--stack-overflow);
 }
 
 [class*="color-tw-"][class*="-base"],

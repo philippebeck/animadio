@@ -357,7 +357,7 @@
 
 .btn-stack,
 .button-stack {
-  background-color: var(--stackoverflow);
+  background-color: var(--stack-overflow);
 }
 
 .btn-tw,
@@ -480,8 +480,8 @@
 .btn-stack:active,
 .button-stack:active,
 .button-stack-check:checked + .button-stack {
-  border-color: var(--stackoverflow);
-  color: var(--stackoverflow);
+  border-color: var(--stack-overflow);
+  color: var(--stack-overflow);
 }
 
 .btn-tw:hover,
