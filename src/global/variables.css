@@ -316,7 +316,7 @@ pre {
 }
 
 /***** 2.3 Place *****/
-[class*="placo-"][class*="-"] {
+[class*="placo-"] {
   --place-content-end: flex-end;
   --place-content-start: flex-start;
 }
