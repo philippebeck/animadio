@@ -1,4 +1,4 @@
-/*! animadio v0.6.3 | https://animadio.org | MIT License */
+/*! animadio v0.6.4 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -2084,99 +2084,99 @@ pre > *::selection {
   font-weight: normal;
 }
 
-.font-italic {
+[class*="font-"][class*="-italic"] {
   font-style: italic;
 }
 
-.font-bold {
+[class*="font-"][class*="-bold"] {
   font-weight: bold;
 }
 
 /***** 2 - Text *****/
-.text-center {
+[class*="text-"][class*="-center-xs"] {
   text-align: center;
 }
 
-.text-justify-xs {
+[class*="text-"][class*="-justify-xs"] {
   text-align: justify;
 }
 
-.text-right-xs {
+[class*="text-"][class*="-right-xs"] {
   text-align: right;
 }
 
-.text-left-xs {
+[class*="text-"][class*="-left-xs"] {
   text-align: left;
 }
 
 @media (min-width: 576px) {
-  .text-center-sm {
+  [class*="text-"][class*="-center-sm"] {
     text-align: center;
   }
 
-  .text-justify-sm {
+  [class*="text-"][class*="-justify-sm"] {
     text-align: justify;
   }
 
-  .text-right-sm {
+  [class*="text-"][class*="-right-sm"] {
     text-align: right;
   }
 
-  .text-left-sm {
+  [class*="text-"][class*="-left-sm"]  {
     text-align: left;
   }
 }
 
 @media (min-width: 768px) {
-  .text-center-md {
+  [class*="text-"][class*="-center-md"] {
     text-align: center;
   }
 
-  .text-justify-md {
+  [class*="text-"][class*="-justify-md"] {
     text-align: justify;
   }
 
-  .text-right-md {
+  [class*="text-"][class*="-right-md"] {
     text-align: right;
   }
 
-  .text-left-md {
+  [class*="text-"][class*="-left-md"] {
     text-align: left;
   }
 }
 
 @media (min-width: 992px) {
-  .text-center-lg {
+  [class*="text-"][class*="-center-lg"] {
     text-align: center;
   }
 
-  .text-justify-lg {
+  [class*="text-"][class*="-justify-lg"] {
     text-align: justify;
   }
 
-  .text-right-lg {
+  [class*="text-"][class*="-right-lg"] {
     text-align: right;
   }
 
-  .text-left-lg {
+  [class*="text-"][class*="-left-lg"] {
     text-align: left;
   }
 }
 
 @media (min-width: 1200px) {
-  .text-center-xl {
+  [class*="text-"][class*="-center-xl"] {
     text-align: center;
   }
 
-  .text-justify-xl {
+  [class*="text-"][class*="-justify-xl"] {
     text-align: justify;
   }
 
-  .text-right-xl {
+  [class*="text-"][class*="-right-xl"] {
     text-align: right;
   }
 
-  .text-left-xl {
+  [class*="text-"][class*="-left-xl"] {
     text-align: left;
   }
 }
@@ -10514,4 +10514,4 @@ place-items: center;
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 17th Aug 2019 @ 1:57:52 PM */
+ Updated: 18th Aug 2019 @ 8:00:40 PM */
