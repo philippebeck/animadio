@@ -117,6 +117,8 @@ pre {
   overflow: var(--code-overflow);
   padding: var(--code-padding);
   font-family: var(--code-font-family);
+  background-color: var(--code-background-color);
+  color: var(--code-color);
 }
 
 code > *::selection,

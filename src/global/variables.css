@@ -187,6 +187,8 @@ pre {
   --code-font-family: monospace;
   --code-overflow: scroll;
   --code-padding: 10px;
+  --code-background-color: var(--black);
+  --code-color: var(--jade);
   --code-selection-background-color: var(--jade);
   --code-selection-color: var(--black);
 }
