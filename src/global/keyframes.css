@@ -39,6 +39,12 @@
   }
 }
 
+@keyframes rotate3d {
+  from {
+    transform: rotate3d(var(--keyframes-rotate3d));
+  }
+}
+
 @keyframes rotateX {
   from {
     transform: rotateX(var(--keyframes-rotateX));
@@ -51,10 +57,22 @@
   }
 }
 
+@keyframes rotateZ {
+  from {
+    transform: rotateZ(var(--keyframes-rotateZ));
+  }
+}
+
 /***** 3 - Scale *****/
 @keyframes scale {
   from {
     transform: scale(var(--keyframes-scale));
+  }
+}
+
+@keyframes scale3d {
+  from {
+    transform: scale3d(var(--keyframes-scale3d));
   }
 }
 
@@ -67,6 +85,12 @@
 @keyframes scaleY {
   from {
     transform: scaleY(var(--keyframes-scaleY));
+  }
+}
+
+@keyframes scaleZ {
+  from {
+    transform: scaleZ(var(--keyframes-scaleZ));
   }
 }
 
@@ -96,6 +120,12 @@
   }
 }
 
+@keyframes translate3d {
+  from {
+    transform: translate3d(var(--keyframes-translate3d));
+  }
+}
+
 @keyframes translateX {
   from {
     transform: translateX(var(--keyframes-translateX));
@@ -118,6 +148,12 @@
 @keyframes translateY-xs {
   to {
     transform: translateY(var(--keyframes-translateY-xs));
+  }
+}
+
+@keyframes translateZ {
+  from {
+    transform: translateZ(var(--keyframes-translateZ));
   }
 }
 
