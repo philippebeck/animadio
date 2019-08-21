@@ -46,7 +46,6 @@
 
 /***** 4 - Menu Label Hover *****/
 .menu label:hover,
-.menu label:active,
 .menu label:focus {
   border: var(--menu-label-hover-border);
   font-style: var(--menu-label-hover-font-style);

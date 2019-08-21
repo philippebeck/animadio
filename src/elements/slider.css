@@ -79,8 +79,7 @@
 
 /***** 7 - Slider Hover List *****/
 .slider:hover > ul,
-.slider:focus > ul,
-.slider:active > ul {
+.slider:focus > ul {
   opacity: var(--slider-hover-list-opacity);
   transition: opacity var(--slider-transition-opacity);
 }

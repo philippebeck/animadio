@@ -56,8 +56,7 @@
 
 /***** 7 - Foot First Child Link Hover *****/
 .foot > ul:first-child a:hover,
-.foot > ul:first-child a:focus,
-.foot > ul:first-child a:active {
+.foot > ul:first-child a:focus {
   color: var(--foot-first-child-link-hover-font-color);
 }
 

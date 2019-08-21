@@ -1,4 +1,4 @@
-/*! animadio v0.6.5 | https://animadio.org | MIT License */
+/*! animadio v0.7.0 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -79,19 +79,25 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --keyframes-content4: url(https://animadio.org/img/svg/4.svg);
   --keyframes-content5: url(https://animadio.org/img/svg/5.svg);
   --keyframes-rotate: -360deg;
+  --keyframes-rotate3d: -360deg;
   --keyframes-rotateX: -360deg;
   --keyframes-rotateY: -360deg;
+  --keyframes-rotateZ: -360deg;
   --keyframes-scale: 0;
+  --keyframes-scale3d: 0;
   --keyframes-scaleX: 0;
   --keyframes-scaleY: 0;
+  --keyframes-scaleZ: 0;
   --keyframes-skew: 180deg, 180deg;
   --keyframes-skewX: 180deg;
   --keyframes-skewY: 180deg;
   --keyframes-translate: -50vw, -50vh;
+  --keyframes-translate3d: -50vw, -50vh;
   --keyframes-translateX: -50vw;
   --keyframes-translateY: -50vh;
   --keyframes-translateY-opac: 68px;
   --keyframes-translateY-xs: 1vh;
+  --keyframes-translateZ: -50vh;
   --keyframes-width: 100%;
 }
 
@@ -426,6 +432,9 @@ pre {
   --card-border: solid medium;
   --card-border-radius: 10px;
   --card-box-shadow: 3px 5px 10px 5px var(--black);
+  --card-btn-color: var(--white);
+  --card-btn-hover-background-color: var(--white);
+  --card-btn-hover-color: initial;
   --card-btn-text-align: center;
   --card-btn-width: calc(var(--card-child-max-width) * 0.5);
   --card-child-background-color: var(--white);
@@ -1009,6 +1018,20 @@ pre {
   }
 }
 
+@-webkit-keyframes rotate3d {
+  from {
+    -webkit-transform: rotate3d(var(--keyframes-rotate3d));
+            transform: rotate3d(var(--keyframes-rotate3d));
+  }
+}
+
+@keyframes rotate3d {
+  from {
+    -webkit-transform: rotate3d(var(--keyframes-rotate3d));
+            transform: rotate3d(var(--keyframes-rotate3d));
+  }
+}
+
 @-webkit-keyframes rotateX {
   from {
     -webkit-transform: rotateX(var(--keyframes-rotateX));
@@ -1037,6 +1060,20 @@ pre {
   }
 }
 
+@-webkit-keyframes rotateZ {
+  from {
+    -webkit-transform: rotateZ(var(--keyframes-rotateZ));
+            transform: rotateZ(var(--keyframes-rotateZ));
+  }
+}
+
+@keyframes rotateZ {
+  from {
+    -webkit-transform: rotateZ(var(--keyframes-rotateZ));
+            transform: rotateZ(var(--keyframes-rotateZ));
+  }
+}
+
 /***** 3 - Scale *****/
 @-webkit-keyframes scale {
   from {
@@ -1048,6 +1085,20 @@ pre {
   from {
     -webkit-transform: scale(var(--keyframes-scale));
             transform: scale(var(--keyframes-scale));
+  }
+}
+
+@-webkit-keyframes scale3d {
+  from {
+    -webkit-transform: scale3d(var(--keyframes-scale3d));
+            transform: scale3d(var(--keyframes-scale3d));
+  }
+}
+
+@keyframes scale3d {
+  from {
+    -webkit-transform: scale3d(var(--keyframes-scale3d));
+            transform: scale3d(var(--keyframes-scale3d));
   }
 }
 
@@ -1076,6 +1127,20 @@ pre {
   from {
     -webkit-transform: scaleY(var(--keyframes-scaleY));
             transform: scaleY(var(--keyframes-scaleY));
+  }
+}
+
+@-webkit-keyframes scaleZ {
+  from {
+    -webkit-transform: scaleZ(var(--keyframes-scaleZ));
+            transform: scaleZ(var(--keyframes-scaleZ));
+  }
+}
+
+@keyframes scaleZ {
+  from {
+    -webkit-transform: scaleZ(var(--keyframes-scaleZ));
+            transform: scaleZ(var(--keyframes-scaleZ));
   }
 }
 
@@ -1135,6 +1200,20 @@ pre {
   }
 }
 
+@-webkit-keyframes translate3d {
+  from {
+    -webkit-transform: translate3d(var(--keyframes-translate3d));
+            transform: translate3d(var(--keyframes-translate3d));
+  }
+}
+
+@keyframes translate3d {
+  from {
+    -webkit-transform: translate3d(var(--keyframes-translate3d));
+            transform: translate3d(var(--keyframes-translate3d));
+  }
+}
+
 @-webkit-keyframes translateX {
   from {
     -webkit-transform: translateX(var(--keyframes-translateX));
@@ -1190,6 +1269,20 @@ pre {
   to {
     -webkit-transform: translateY(var(--keyframes-translateY-xs));
             transform: translateY(var(--keyframes-translateY-xs));
+  }
+}
+
+@-webkit-keyframes translateZ {
+  from {
+    -webkit-transform: translateZ(var(--keyframes-translateZ));
+            transform: translateZ(var(--keyframes-translateZ));
+  }
+}
+
+@keyframes translateZ {
+  from {
+    -webkit-transform: translateZ(var(--keyframes-translateZ));
+            transform: translateZ(var(--keyframes-translateZ));
   }
 }
 
@@ -2273,10 +2366,8 @@ pre > *::selection {
 
 .navbar a:hover,
 .navbar a:focus,
-.navbar a:active,
 .navbar label:hover,
-.navbar label:focus,
-.navbar label:active {
+.navbar label:focus {
   color: var(--navbar-link-hover-color);
 }
 
@@ -2341,10 +2432,8 @@ pre > *::selection {
 
 .navbar > ul:first-of-type a:hover,
 .navbar > ul:first-of-type a:focus,
-.navbar > ul:first-of-type a:active,
 .navbar > ul:first-of-type label:hover,
-.navbar > ul:first-of-type label:focus,
-.navbar > ul:first-of-type label:active {
+.navbar > ul:first-of-type label:focus {
   -webkit-transform: scale(var(--navbar-first-list-link-hover-scale));
           transform: scale(var(--navbar-first-list-link-hover-scale));
 }
@@ -2364,10 +2453,8 @@ pre > *::selection {
 
 .navbar > ul:last-of-type a:hover,
 .navbar > ul:last-of-type a:focus,
-.navbar > ul:last-of-type a:active,
 .navbar > ul:last-of-type label:hover,
-.navbar > ul:last-of-type label:focus,
-.navbar > ul:last-of-type label:active {
+.navbar > ul:last-of-type label:focus {
   -webkit-transform: scale(var(--navbar-last-list-link-hover-scale));
           transform: scale(var(--navbar-last-list-link-hover-scale));
 }
@@ -2475,8 +2562,7 @@ pre > *::selection {
 
 /***** 7 - Slider Hover List *****/
 .slider:hover > ul,
-.slider:focus > ul,
-.slider:active > ul {
+.slider:focus > ul {
   opacity: var(--slider-hover-list-opacity);
   -webkit-transition: opacity var(--slider-transition-opacity);
   transition: opacity var(--slider-transition-opacity);
@@ -2611,8 +2697,6 @@ pre > *::selection {
 [class*="button"]:hover,
 [class*="btn"]:focus,
 [class*="button"]:focus,
-[class*="btn"]:active,
-[class*="button"]:active,
 [class*="button-check"]:checked + [class*="button"] {
   border: var(--btn-hover-border);
   border-radius: var(--btn-hover-border-radius);
@@ -2627,7 +2711,6 @@ pre > *::selection {
 }
 
 /***** 3 - Check Button *****/
-[class*="btn"]:active,
 [class*="check"]:checked + [class*="button"] {
   -webkit-transform: var(--btn-checked-transform);
           transform: var(--btn-checked-transform);
@@ -2646,8 +2729,6 @@ pre > *::selection {
 .button-white:hover,
 .btn-white:focus,
 .button-white:focus,
-.btn-white:active,
-.button-white:active,
 .button-white-check:checked + .button-white {
   border-color: var(--btn-black-border-color);
   background-color: var(--black);
@@ -2660,8 +2741,6 @@ pre > *::selection {
 .button-sky:hover,
 .btn-sky:focus,
 .button-sky:focus,
-.btn-sky:active,
-.button-sky:active,
 .button-sky-check:checked + .button-sky {
   border-color: var(--btn-blue-border-color);
   background-color: var(--blue);
@@ -2674,8 +2753,6 @@ pre > *::selection {
 .button-silver:hover,
 .btn-silver:focus,
 .button-silver:focus,
-.btn-silver:active,
-.button-silver:active,
 .button-silver-check:checked + .button-silver {
   border-color: var(--btn-gray-border-color);
   background-color: var(--gray);
@@ -2688,8 +2765,6 @@ pre > *::selection {
 .button-jade:hover,
 .btn-jade:focus,
 .button-jade:focus,
-.btn-jade:active,
-.button-jade:active,
 .button-jade-check:checked + .button-jade {
   border-color: var(--btn-green-border-color);
   background-color: var(--green);
@@ -2702,8 +2777,6 @@ pre > *::selection {
 .button-choco:hover,
 .btn-choco:focus,
 .button-choco:focus,
-.btn-choco:active,
-.button-choco:active,
 .button-blue-choco:checked + .button-choco {
   border-color: var(--btn-maroon-border-color);
   background-color: var(--maroon);
@@ -2716,8 +2789,6 @@ pre > *::selection {
 .button-salmon:hover,
 .btn-salmon:focus,
 .button-salmon:focus,
-.btn-salmon:active,
-.button-salmon:active,
 .button-salmon-check:checked + .button-salmon {
   border-color: var(--btn-orange-border-color);
   background-color: var(--orange);
@@ -2730,8 +2801,6 @@ pre > *::selection {
 .button-violet:hover,
 .btn-violet:focus,
 .button-violet:focus,
-.btn-violet:active,
-.button-violet:active,
 .button-violet-check:checked + .button-violet {
   border-color: var(--btn-purple-border-color);
   background-color: var(--purple);
@@ -2744,8 +2813,6 @@ pre > *::selection {
 .button-tomato:hover,
 .btn-tomato:focus,
 .button-tomato:focus,
-.btn-tomato:active,
-.button-tomato:active,
 .button-tomato-check:checked + .button-tomato {
   border-color: var(--btn-red-border-color);
   background-color: var(--red);
@@ -2758,8 +2825,6 @@ pre > *::selection {
 .button-khaki:hover,
 .btn-khaki:focus,
 .button-khaki:focus,
-.btn-khaki:active,
-.button-khaki:active,
 .button-khaki-check:checked + .button-khaki {
   border-color: var(--btn-yellow-border-color);
   background-color: var(--yellow);
@@ -2773,8 +2838,6 @@ pre > *::selection {
 .button-maroon:hover,
 .btn-maroon:focus,
 .button-maroon:focus,
-.btn-maroon:active,
-.button-maroon:active,
 .button-maroon-check:checked + .button-maroon {
   border-color: var(--btn-choco-border-color);
   background-color: var(--choco);
@@ -2787,8 +2850,6 @@ pre > *::selection {
 .button-green:hover,
 .btn-green:focus,
 .button-green:focus,
-.btn-green:active,
-.button-green:active,
 .button-green-check:checked + .button-green {
   border-color: var(--btn-jade-border-color);
   background-color: var(--jade);
@@ -2801,8 +2862,6 @@ pre > *::selection {
 .button-yellow:hover,
 .btn-yellow:focus,
 .button-yellow:focus,
-.btn-yellow:active,
-.button-yellow:active,
 .button-yellow-check:checked + .button-yellow {
   border-color: var(--btn-khaki-border-color);
   background-color: var(--khaki);
@@ -2815,8 +2874,6 @@ pre > *::selection {
 .button-orange:hover,
 .btn-orange:focus,
 .button-orange:focus,
-.btn-orange:active,
-.button-orange:active,
 .button-orange-check:checked + .button-orange {
   border-color: var(--btn-salmon-border-color);
   background-color: var(--salmon);
@@ -2829,8 +2886,6 @@ pre > *::selection {
 .button-gray:hover,
 .btn-gray:focus,
 .button-gray:focus,
-.btn-gray:active,
-.button-gray:active,
 .button-gray-check:checked + .button-gray {
   border-color: var(--btn-silver-border-color);
   background-color: var(--silver);
@@ -2843,8 +2898,6 @@ pre > *::selection {
 .button-blue:hover,
 .btn-blue:focus,
 .button-blue:focus,
-.btn-blue:active,
-.button-blue:active,
 .button-blue-check:checked + .button-blue {
   border-color: var(--btn-sky-border-color);
   background-color: var(--sky);
@@ -2857,8 +2910,6 @@ pre > *::selection {
 .button-red:hover,
 .btn-red:focus,
 .button-red:focus,
-.btn-red:active,
-.button-red:active,
 .button-red-check:checked + .button-red {
   border-color: var(--btn-tomato-border-color);
   background-color: var(--tomato);
@@ -2871,8 +2922,6 @@ pre > *::selection {
 .button-purple:hover,
 .btn-purple:focus,
 .button-purple:focus,
-.btn-purple:active,
-.button-purple:active,
 .button-purple-check:checked + .button-purple {
   border-color: var(--btn-violet-border-color);
   background-color: var(--violet);
@@ -2885,8 +2934,6 @@ pre > *::selection {
 .button-black:hover,
 .btn-black:focus,
 .button-black:focus,
-.btn-black:active,
-.button-black:active,
 .button-black-check:checked + .button-black {
   border-color: var(--btn-white-border-color);
   background-color: var(--white);
@@ -2952,50 +2999,36 @@ pre > *::selection {
 .button-fb:hover,
 .btn-fb:focus,
 .button-fb:focus,
-.btn-fb:active,
-.button-fb:active,
 .button-fb-check:checked + .button-fb,
 .btn-github:hover,
 .button-github:hover,
 .btn-github:focus,
 .button-github:focus,
-.btn-github:active,
-.button-github:active,
 .button-github-check:checked + .button-github,
 .btn-jsd:hover,
 .button-jsd:hover,
 .btn-jsd:focus,
 .button-jsd:focus,
-.btn-jsd:active,
-.button-jsd:active,
 .button-jsd-check:checked + .button-jsd,
 .btn-linkedin:hover,
 .button-linkedin:hover,
 .btn-linkedin:focus,
 .button-linkedin:focus,
-.btn-linkedin:active,
-.button-linkedin:active,
 .button-linkedin-check:checked + .button-linkedin,
 .btn-npm:hover,
 .button-npm:hover,
 .btn-npm:focus,
 .button-npm:focus,
-.btn-npm:active,
-.button-npm:active,
 .button-npm-check:checked + .button-npm,
 .btn-stack:hover,
 .button-stack:hover,
 .btn-stack:focus,
 .button-stack:focus,
-.btn-stack:active,
-.button-stack:active,
 .button-stack-check:checked + .button-stack,
 .btn-tw:hover,
 .button-tw:hover,
 .btn-tw:focus,
 .button-tw:focus,
-.btn-tw:active,
-.button-tw:active,
 .button-tw-check:checked + .button-tw {
   background-color: var(--white);
 }
@@ -3004,8 +3037,6 @@ pre > *::selection {
 .button-fb:hover,
 .btn-fb:focus,
 .button-fb:focus,
-.btn-fb:active,
-.button-fb:active,
 .button-fb-check:checked + .button-fb {
   border-color: var(--facebook);
   color: var(--facebook);
@@ -3015,8 +3046,6 @@ pre > *::selection {
 .button-github:hover,
 .btn-github:focus,
 .button-github:focus,
-.btn-github:active,
-.button-github:active,
 .button-github-check:checked + .button-github {
   border-color: var(--github);
   color: var(--github);
@@ -3026,8 +3055,6 @@ pre > *::selection {
 .button-jsd:hover,
 .btn-jsd:focus,
 .button-jsd:focus,
-.btn-jsd:active,
-.button-jsd:active,
 .button-jsd-check:checked + .button-jsd {
   border-color: var(--jsdelivr);
   color: var(--jsdelivr);
@@ -3037,8 +3064,6 @@ pre > *::selection {
 .button-linkedin:hover,
 .btn-linkedin:focus,
 .button-linkedin:focus,
-.btn-linkedin:active,
-.button-linkedin:active,
 .button-linkedin-check:checked + .button-linkedin {
   border-color: var(--linkedin);
   color: var(--linkedin);
@@ -3048,8 +3073,6 @@ pre > *::selection {
 .button-npm:hover,
 .btn-npm:focus,
 .button-npm:focus,
-.btn-npm:active,
-.button-npm:active,
 .button-npm-check:checked + .button-npm {
   border-color: var(--npm);
   color: var(--npm);
@@ -3059,8 +3082,6 @@ pre > *::selection {
 .button-stack:hover,
 .btn-stack:focus,
 .button-stack:focus,
-.btn-stack:active,
-.button-stack:active,
 .button-stack-check:checked + .button-stack {
   border-color: var(--stack-overflow);
   color: var(--stack-overflow);
@@ -3070,8 +3091,6 @@ pre > *::selection {
 .button-tw:hover,
 .btn-tw:focus,
 .button-tw:focus,
-.btn-tw:active,
-.button-tw:active,
 .button-tw-check:checked + .button-tw {
   border-color: var(--twitter);
   color: var(--twitter);
@@ -3089,8 +3108,6 @@ pre > *::selection {
 .button-amethyst:hover,
 .btn-amethyst:focus,
 .button-amethyst:focus,
-.btn-amethyst:active,
-.button-amethyst:active,
 .button-amethyst-check:checked + .button-amethyst {
   border-color: var(--amethyst);
   background-color: var(--white);
@@ -3110,8 +3127,6 @@ pre > *::selection {
 .button-citrine:hover,
 .btn-citrine:focus,
 .button-citrine:focus,
-.btn-citrine:active,
-.button-citrine:active,
 .button-citrine-check:checked + .button-citrine {
   border-color: var(--citrine);
   background-color: var(--white);
@@ -3131,8 +3146,6 @@ pre > *::selection {
 .button-emerald:hover,
 .btn-emerald:focus,
 .button-emerald:focus,
-.btn-emerald:active,
-.button-emerald:active,
 .button-emerald-check:checked + .button-emerald {
   border-color: var(--emerald);
   background-color: var(--white);
@@ -3152,8 +3165,6 @@ pre > *::selection {
 .button-obsidian:hover,
 .btn-obsidian:focus,
 .button-obsidian:focus,
-.btn-obsidian:active,
-.button-obsidian:active,
 .button-obsidian-check:checked + .button-obsidian {
   border-color: var(--obsidian);
   background-color: var(--white);
@@ -3173,8 +3184,6 @@ pre > *::selection {
 .button-quartz:hover,
 .btn-quartz:focus,
 .button-quartz:focus,
-.btn-quartz:active,
-.button-quartz:active,
 .button-quartz-check:checked + .button-quartz {
   border-color: var(--quartz);
   background-color: var(--black);
@@ -3194,8 +3203,6 @@ pre > *::selection {
 .button-ruby:hover,
 .btn-ruby:focus,
 .button-ruby:focus,
-.btn-ruby:active,
-.button-ruby:active,
 .button-ruby-check:checked + .button-ruby {
   border-color: var(--ruby);
   background-color: var(--white);
@@ -3215,8 +3222,6 @@ pre > *::selection {
 .button-sapphire:hover,
 .btn-sapphire:focus,
 .button-sapphire:focus,
-.btn-sapphire:active,
-.button-sapphire:active,
 .button-sapphire-check:checked + .button-sapphire {
   border-color: var(--sapphire);
   background-color: var(--white);
@@ -3271,9 +3276,7 @@ pre > *::selection {
 .btn-square:hover,
 .button-square:hover,
 .btn-square:focus,
-.button-square:focus,
-.btn-square:active,
-.button-square:active {
+.button-square:focus {
   border-radius: var(--btn-square-border-radius);
 }
 
@@ -3287,9 +3290,7 @@ pre > *::selection {
 .btn-round:hover,
 .button-round:hover,
 .btn-round:focus,
-.button-round:focus,
-.btn-round:active,
-.button-round:active {
+.button-round:focus {
   border-radius: var(--btn-round-border-radius);
 }
 
@@ -3303,9 +3304,7 @@ pre > *::selection {
 .btn-circle:hover,
 .button-circle:hover,
 .btn-circle:focus,
-.button-circle:focus,
-.btn-circle:active,
-.button-circle:active {
+.button-circle:focus {
   border-radius: var(--btn-circle-border-radius);
 }
 
@@ -3351,8 +3350,7 @@ pre > *::selection {
 
 /***** 2 - Card Hover *****/
 [class*="card"]:hover,
-[class*="card"]:focus,
-[class*="card"]:active {
+[class*="card"]:focus {
   -webkit-transform: var(--card-hover-transform);
           transform: var(--card-hover-transform);
   -webkit-transition: var(--card-hover-transition);
@@ -3396,7 +3394,15 @@ pre > *::selection {
 /***** 6 - Card Btn *****/
 [class*="card"] > [class*="btn"] {
   width: var(--card-btn-width);
+  background-color: inherit;
+  color: var(--card-btn-color);
   text-align: var(--card-btn-text-align);
+}
+
+[class*="card"] > [class*="btn"]:hover,
+[class*="card"] > [class*="btn"]:focus {
+  background-color: var(--card-btn-hover-background-color);
+  color: var(--card-btn-hover-color);
 }
 
 /***** 7 - Card Black *****/
@@ -3544,7 +3550,6 @@ pre > *::selection {
 
 /***** 4 - Menu Label Hover *****/
 .menu label:hover,
-.menu label:active,
 .menu label:focus {
   border: var(--menu-label-hover-border);
   font-style: var(--menu-label-hover-font-style);
@@ -3672,8 +3677,7 @@ pre > *::selection {
 
 /***** 5 - Gallery Figure Hover Figcaption *****/
 .gallery figure:hover figcaption,
-.gallery figure:focus figcaption,
-.gallery figure:active figcaption {
+.gallery figure:focus figcaption {
   display: block;
   -webkit-animation: var(--gallery-figure-hover-figcaption-animation);
           animation: var(--gallery-figure-hover-figcaption-animation);
@@ -3824,8 +3828,7 @@ pre > *::selection {
 
 /***** 9 - Table Row Even Hover *****/
 [class*="table"] tbody tr:nth-child(even):hover,
-[class*="table"] tbody tr:nth-child(even):focus,
-[class*="table"] tbody tr:nth-child(even):active {
+[class*="table"] tbody tr:nth-child(even):focus {
   background-color: var(--table-row-even-hover-background-color);
   color: var(--table-row-even-hover-color);
   -webkit-box-shadow: var(--table-row-even-hover-box-shadow);
@@ -3850,8 +3853,7 @@ pre > *::selection {
 
 /***** 12 - Table Row Odd Hover *****/
 [class*="table"] tbody tr:nth-child(odd):hover,
-[class*="table"] tbody tr:nth-child(odd):focus,
-[class*="table"] tbody tr:nth-child(odd):active {
+[class*="table"] tbody tr:nth-child(odd):focus {
   background-color: var(--table-row-odd-hover-background-color);
   color: var(--table-row-odd-hover-color);
   -webkit-box-shadow: var(--table-row-odd-hover-box-shadow);
@@ -3935,8 +3937,7 @@ pre > *::selection {
 
 /***** 6 - Form Label Hover *****/
 .form label:hover,
-.form label:focus,
-.form label:active {
+.form label:focus {
   border: var(--form-label-hover-border);
 }
 
@@ -3957,9 +3958,7 @@ pre > *::selection {
 .form input:hover,
 .form textarea:hover,
 .form input:focus,
-.form textarea:focus,
-.form input:active,
-.form textarea:active {
+.form textarea:focus {
   border: var(--form-field-hover-border);
   -webkit-box-shadow: var(--form-field-hover-box-shadow);
           box-shadow: var(--form-field-hover-box-shadow);
@@ -4007,10 +4006,8 @@ pre > *::selection {
 /***** 11 - Form Action Hover *****/
 .form [type="reset"]:hover,
 .form [type="reset"]:focus,
-.form [type="reset"]:active,
 .form [type="submit"]:hover,
-.form [type="submit"]:focus,
-.form [type="submit"]:active {
+.form [type="submit"]:focus {
   -webkit-box-shadow: var(--form-action-hover-box-shadow);
           box-shadow: var(--form-action-hover-box-shadow);
   -webkit-transform: var(--form-action-hover-transform);
@@ -4028,8 +4025,7 @@ pre > *::selection {
 
 /***** 13 - Form Reset Hover *****/
 .form [type="reset"]:hover,
-.form [type="reset"]:focus,
-.form [type="reset"]:active {
+.form [type="reset"]:focus {
   background-color: var(--form-reset-hover-background-color);
   color: var(--form-reset-hover-color);
 }
@@ -4043,8 +4039,7 @@ pre > *::selection {
 
 /***** 15 - Form Submit Hover *****/
 .form [type="submit"]:hover,
-.form [type="submit"]:focus,
-.form [type="submit"]:active {
+.form [type="submit"]:focus {
   background-color: var(--form-submit-hover-background-color);
   color: var(--form-submit-hover-color);
 }
@@ -4112,8 +4107,7 @@ pre > *::selection {
 
 /***** 7 - Foot First Child Link Hover *****/
 .foot > ul:first-child a:hover,
-.foot > ul:first-child a:focus,
-.foot > ul:first-child a:active {
+.foot > ul:first-child a:focus {
   color: var(--foot-first-child-link-hover-font-color);
 }
 
@@ -4134,4 +4128,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 18th Aug 2019 @ 11:44:56 PM */
+ Updated: 21st Aug 2019 @ 9:01:46 AM */

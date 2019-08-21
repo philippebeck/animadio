@@ -102,8 +102,7 @@
 
 /***** 9 - Table Row Even Hover *****/
 [class*="table"] tbody tr:nth-child(even):hover,
-[class*="table"] tbody tr:nth-child(even):focus,
-[class*="table"] tbody tr:nth-child(even):active {
+[class*="table"] tbody tr:nth-child(even):focus {
   background-color: var(--table-row-even-hover-background-color);
   color: var(--table-row-even-hover-color);
   box-shadow: var(--table-row-even-hover-box-shadow);
@@ -123,8 +122,7 @@
 
 /***** 12 - Table Row Odd Hover *****/
 [class*="table"] tbody tr:nth-child(odd):hover,
-[class*="table"] tbody tr:nth-child(odd):focus,
-[class*="table"] tbody tr:nth-child(odd):active {
+[class*="table"] tbody tr:nth-child(odd):focus {
   background-color: var(--table-row-odd-hover-background-color);
   color: var(--table-row-odd-hover-color);
   box-shadow: var(--table-row-odd-hover-box-shadow);

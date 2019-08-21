@@ -53,8 +53,7 @@
 
 /***** 5 - Gallery Figure Hover Figcaption *****/
 .gallery figure:hover figcaption,
-.gallery figure:focus figcaption,
-.gallery figure:active figcaption {
+.gallery figure:focus figcaption {
   display: block;
   animation: var(--gallery-figure-hover-figcaption-animation);
   bottom: var(--gallery-figure-hover-figcaption-bottom);
