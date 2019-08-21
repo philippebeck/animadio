@@ -34,8 +34,7 @@
 
 /***** 2 - Card Hover *****/
 [class*="card"]:hover,
-[class*="card"]:focus,
-[class*="card"]:active {
+[class*="card"]:focus {
   transform: var(--card-hover-transform);
   transition: var(--card-hover-transition);
 }
@@ -72,7 +71,15 @@
 /***** 6 - Card Btn *****/
 [class*="card"] > [class*="btn"] {
   width: var(--card-btn-width);
+  background-color: inherit;
+  color: var(--card-btn-color);
   text-align: var(--card-btn-text-align);
+}
+
+[class*="card"] > [class*="btn"]:hover,
+[class*="card"] > [class*="btn"]:focus {
+  background-color: var(--card-btn-hover-background-color);
+  color: var(--card-btn-hover-color);
 }
 
 /***** 7 - Card Black *****/
