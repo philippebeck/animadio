@@ -1,4 +1,4 @@
-/*! animadio v0.6.5 | https://animadio.org | MIT License */
+/*! animadio v0.7.0 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -79,19 +79,25 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --keyframes-content4: url(https://animadio.org/img/svg/4.svg);
   --keyframes-content5: url(https://animadio.org/img/svg/5.svg);
   --keyframes-rotate: -360deg;
+  --keyframes-rotate3d: -360deg;
   --keyframes-rotateX: -360deg;
   --keyframes-rotateY: -360deg;
+  --keyframes-rotateZ: -360deg;
   --keyframes-scale: 0;
+  --keyframes-scale3d: 0;
   --keyframes-scaleX: 0;
   --keyframes-scaleY: 0;
+  --keyframes-scaleZ: 0;
   --keyframes-skew: 180deg, 180deg;
   --keyframes-skewX: 180deg;
   --keyframes-skewY: 180deg;
   --keyframes-translate: -50vw, -50vh;
+  --keyframes-translate3d: -50vw, -50vh;
   --keyframes-translateX: -50vw;
   --keyframes-translateY: -50vh;
   --keyframes-translateY-opac: 68px;
   --keyframes-translateY-xs: 1vh;
+  --keyframes-translateZ: -50vh;
   --keyframes-width: 100%;
 }
 
@@ -426,6 +432,9 @@ pre {
   --card-border: solid medium;
   --card-border-radius: 10px;
   --card-box-shadow: 3px 5px 10px 5px var(--black);
+  --card-btn-color: var(--white);
+  --card-btn-hover-background-color: var(--white);
+  --card-btn-hover-color: initial;
   --card-btn-text-align: center;
   --card-btn-width: calc(var(--card-child-max-width) * 0.5);
   --card-child-background-color: var(--white);
@@ -1009,6 +1018,20 @@ pre {
   }
 }
 
+@-webkit-keyframes rotate3d {
+  from {
+    -webkit-transform: rotate3d(var(--keyframes-rotate3d));
+            transform: rotate3d(var(--keyframes-rotate3d));
+  }
+}
+
+@keyframes rotate3d {
+  from {
+    -webkit-transform: rotate3d(var(--keyframes-rotate3d));
+            transform: rotate3d(var(--keyframes-rotate3d));
+  }
+}
+
 @-webkit-keyframes rotateX {
   from {
     -webkit-transform: rotateX(var(--keyframes-rotateX));
@@ -1037,6 +1060,20 @@ pre {
   }
 }
 
+@-webkit-keyframes rotateZ {
+  from {
+    -webkit-transform: rotateZ(var(--keyframes-rotateZ));
+            transform: rotateZ(var(--keyframes-rotateZ));
+  }
+}
+
+@keyframes rotateZ {
+  from {
+    -webkit-transform: rotateZ(var(--keyframes-rotateZ));
+            transform: rotateZ(var(--keyframes-rotateZ));
+  }
+}
+
 /***** 3 - Scale *****/
 @-webkit-keyframes scale {
   from {
@@ -1048,6 +1085,20 @@ pre {
   from {
     -webkit-transform: scale(var(--keyframes-scale));
             transform: scale(var(--keyframes-scale));
+  }
+}
+
+@-webkit-keyframes scale3d {
+  from {
+    -webkit-transform: scale3d(var(--keyframes-scale3d));
+            transform: scale3d(var(--keyframes-scale3d));
+  }
+}
+
+@keyframes scale3d {
+  from {
+    -webkit-transform: scale3d(var(--keyframes-scale3d));
+            transform: scale3d(var(--keyframes-scale3d));
   }
 }
 
@@ -1076,6 +1127,20 @@ pre {
   from {
     -webkit-transform: scaleY(var(--keyframes-scaleY));
             transform: scaleY(var(--keyframes-scaleY));
+  }
+}
+
+@-webkit-keyframes scaleZ {
+  from {
+    -webkit-transform: scaleZ(var(--keyframes-scaleZ));
+            transform: scaleZ(var(--keyframes-scaleZ));
+  }
+}
+
+@keyframes scaleZ {
+  from {
+    -webkit-transform: scaleZ(var(--keyframes-scaleZ));
+            transform: scaleZ(var(--keyframes-scaleZ));
   }
 }
 
@@ -1135,6 +1200,20 @@ pre {
   }
 }
 
+@-webkit-keyframes translate3d {
+  from {
+    -webkit-transform: translate3d(var(--keyframes-translate3d));
+            transform: translate3d(var(--keyframes-translate3d));
+  }
+}
+
+@keyframes translate3d {
+  from {
+    -webkit-transform: translate3d(var(--keyframes-translate3d));
+            transform: translate3d(var(--keyframes-translate3d));
+  }
+}
+
 @-webkit-keyframes translateX {
   from {
     -webkit-transform: translateX(var(--keyframes-translateX));
@@ -1190,6 +1269,20 @@ pre {
   to {
     -webkit-transform: translateY(var(--keyframes-translateY-xs));
             transform: translateY(var(--keyframes-translateY-xs));
+  }
+}
+
+@-webkit-keyframes translateZ {
+  from {
+    -webkit-transform: translateZ(var(--keyframes-translateZ));
+            transform: translateZ(var(--keyframes-translateZ));
+  }
+}
+
+@keyframes translateZ {
+  from {
+    -webkit-transform: translateZ(var(--keyframes-translateZ));
+            transform: translateZ(var(--keyframes-translateZ));
   }
 }
 
@@ -3586,4 +3679,4 @@ place-items: center;
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 18th Aug 2019 @ 11:44:56 PM */
+ Updated: 21st Aug 2019 @ 9:01:46 AM */
