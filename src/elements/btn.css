@@ -33,8 +33,6 @@
 [class*="button"]:hover,
 [class*="btn"]:focus,
 [class*="button"]:focus,
-[class*="btn"]:active,
-[class*="button"]:active,
 [class*="button-check"]:checked + [class*="button"] {
   border: var(--btn-hover-border);
   border-radius: var(--btn-hover-border-radius);
@@ -46,7 +44,6 @@
 }
 
 /***** 3 - Check Button *****/
-[class*="btn"]:active,
 [class*="check"]:checked + [class*="button"] {
   transform: var(--btn-checked-transform);
 }
@@ -64,8 +61,6 @@
 .button-white:hover,
 .btn-white:focus,
 .button-white:focus,
-.btn-white:active,
-.button-white:active,
 .button-white-check:checked + .button-white {
   border-color: var(--btn-black-border-color);
   background-color: var(--black);
@@ -78,8 +73,6 @@
 .button-sky:hover,
 .btn-sky:focus,
 .button-sky:focus,
-.btn-sky:active,
-.button-sky:active,
 .button-sky-check:checked + .button-sky {
   border-color: var(--btn-blue-border-color);
   background-color: var(--blue);
@@ -92,8 +85,6 @@
 .button-silver:hover,
 .btn-silver:focus,
 .button-silver:focus,
-.btn-silver:active,
-.button-silver:active,
 .button-silver-check:checked + .button-silver {
   border-color: var(--btn-gray-border-color);
   background-color: var(--gray);
@@ -106,8 +97,6 @@
 .button-jade:hover,
 .btn-jade:focus,
 .button-jade:focus,
-.btn-jade:active,
-.button-jade:active,
 .button-jade-check:checked + .button-jade {
   border-color: var(--btn-green-border-color);
   background-color: var(--green);
@@ -120,8 +109,6 @@
 .button-choco:hover,
 .btn-choco:focus,
 .button-choco:focus,
-.btn-choco:active,
-.button-choco:active,
 .button-blue-choco:checked + .button-choco {
   border-color: var(--btn-maroon-border-color);
   background-color: var(--maroon);
@@ -134,8 +121,6 @@
 .button-salmon:hover,
 .btn-salmon:focus,
 .button-salmon:focus,
-.btn-salmon:active,
-.button-salmon:active,
 .button-salmon-check:checked + .button-salmon {
   border-color: var(--btn-orange-border-color);
   background-color: var(--orange);
@@ -148,8 +133,6 @@
 .button-violet:hover,
 .btn-violet:focus,
 .button-violet:focus,
-.btn-violet:active,
-.button-violet:active,
 .button-violet-check:checked + .button-violet {
   border-color: var(--btn-purple-border-color);
   background-color: var(--purple);
@@ -162,8 +145,6 @@
 .button-tomato:hover,
 .btn-tomato:focus,
 .button-tomato:focus,
-.btn-tomato:active,
-.button-tomato:active,
 .button-tomato-check:checked + .button-tomato {
   border-color: var(--btn-red-border-color);
   background-color: var(--red);
@@ -176,8 +157,6 @@
 .button-khaki:hover,
 .btn-khaki:focus,
 .button-khaki:focus,
-.btn-khaki:active,
-.button-khaki:active,
 .button-khaki-check:checked + .button-khaki {
   border-color: var(--btn-yellow-border-color);
   background-color: var(--yellow);
@@ -191,8 +170,6 @@
 .button-maroon:hover,
 .btn-maroon:focus,
 .button-maroon:focus,
-.btn-maroon:active,
-.button-maroon:active,
 .button-maroon-check:checked + .button-maroon {
   border-color: var(--btn-choco-border-color);
   background-color: var(--choco);
@@ -205,8 +182,6 @@
 .button-green:hover,
 .btn-green:focus,
 .button-green:focus,
-.btn-green:active,
-.button-green:active,
 .button-green-check:checked + .button-green {
   border-color: var(--btn-jade-border-color);
   background-color: var(--jade);
@@ -219,8 +194,6 @@
 .button-yellow:hover,
 .btn-yellow:focus,
 .button-yellow:focus,
-.btn-yellow:active,
-.button-yellow:active,
 .button-yellow-check:checked + .button-yellow {
   border-color: var(--btn-khaki-border-color);
   background-color: var(--khaki);
@@ -233,8 +206,6 @@
 .button-orange:hover,
 .btn-orange:focus,
 .button-orange:focus,
-.btn-orange:active,
-.button-orange:active,
 .button-orange-check:checked + .button-orange {
   border-color: var(--btn-salmon-border-color);
   background-color: var(--salmon);
@@ -247,8 +218,6 @@
 .button-gray:hover,
 .btn-gray:focus,
 .button-gray:focus,
-.btn-gray:active,
-.button-gray:active,
 .button-gray-check:checked + .button-gray {
   border-color: var(--btn-silver-border-color);
   background-color: var(--silver);
@@ -261,8 +230,6 @@
 .button-blue:hover,
 .btn-blue:focus,
 .button-blue:focus,
-.btn-blue:active,
-.button-blue:active,
 .button-blue-check:checked + .button-blue {
   border-color: var(--btn-sky-border-color);
   background-color: var(--sky);
@@ -275,8 +242,6 @@
 .button-red:hover,
 .btn-red:focus,
 .button-red:focus,
-.btn-red:active,
-.button-red:active,
 .button-red-check:checked + .button-red {
   border-color: var(--btn-tomato-border-color);
   background-color: var(--tomato);
@@ -289,8 +254,6 @@
 .button-purple:hover,
 .btn-purple:focus,
 .button-purple:focus,
-.btn-purple:active,
-.button-purple:active,
 .button-purple-check:checked + .button-purple {
   border-color: var(--btn-violet-border-color);
   background-color: var(--violet);
@@ -303,8 +266,6 @@
 .button-black:hover,
 .btn-black:focus,
 .button-black:focus,
-.btn-black:active,
-.button-black:active,
 .button-black-check:checked + .button-black {
   border-color: var(--btn-white-border-color);
   background-color: var(--white);
@@ -370,50 +331,36 @@
 .button-fb:hover,
 .btn-fb:focus,
 .button-fb:focus,
-.btn-fb:active,
-.button-fb:active,
 .button-fb-check:checked + .button-fb,
 .btn-github:hover,
 .button-github:hover,
 .btn-github:focus,
 .button-github:focus,
-.btn-github:active,
-.button-github:active,
 .button-github-check:checked + .button-github,
 .btn-jsd:hover,
 .button-jsd:hover,
 .btn-jsd:focus,
 .button-jsd:focus,
-.btn-jsd:active,
-.button-jsd:active,
 .button-jsd-check:checked + .button-jsd,
 .btn-linkedin:hover,
 .button-linkedin:hover,
 .btn-linkedin:focus,
 .button-linkedin:focus,
-.btn-linkedin:active,
-.button-linkedin:active,
 .button-linkedin-check:checked + .button-linkedin,
 .btn-npm:hover,
 .button-npm:hover,
 .btn-npm:focus,
 .button-npm:focus,
-.btn-npm:active,
-.button-npm:active,
 .button-npm-check:checked + .button-npm,
 .btn-stack:hover,
 .button-stack:hover,
 .btn-stack:focus,
 .button-stack:focus,
-.btn-stack:active,
-.button-stack:active,
 .button-stack-check:checked + .button-stack,
 .btn-tw:hover,
 .button-tw:hover,
 .btn-tw:focus,
 .button-tw:focus,
-.btn-tw:active,
-.button-tw:active,
 .button-tw-check:checked + .button-tw {
   background-color: var(--white);
 }
@@ -422,8 +369,6 @@
 .button-fb:hover,
 .btn-fb:focus,
 .button-fb:focus,
-.btn-fb:active,
-.button-fb:active,
 .button-fb-check:checked + .button-fb {
   border-color: var(--facebook);
   color: var(--facebook);
@@ -433,8 +378,6 @@
 .button-github:hover,
 .btn-github:focus,
 .button-github:focus,
-.btn-github:active,
-.button-github:active,
 .button-github-check:checked + .button-github {
   border-color: var(--github);
   color: var(--github);
@@ -444,8 +387,6 @@
 .button-jsd:hover,
 .btn-jsd:focus,
 .button-jsd:focus,
-.btn-jsd:active,
-.button-jsd:active,
 .button-jsd-check:checked + .button-jsd {
   border-color: var(--jsdelivr);
   color: var(--jsdelivr);
@@ -455,8 +396,6 @@
 .button-linkedin:hover,
 .btn-linkedin:focus,
 .button-linkedin:focus,
-.btn-linkedin:active,
-.button-linkedin:active,
 .button-linkedin-check:checked + .button-linkedin {
   border-color: var(--linkedin);
   color: var(--linkedin);
@@ -466,8 +405,6 @@
 .button-npm:hover,
 .btn-npm:focus,
 .button-npm:focus,
-.btn-npm:active,
-.button-npm:active,
 .button-npm-check:checked + .button-npm {
   border-color: var(--npm);
   color: var(--npm);
@@ -477,8 +414,6 @@
 .button-stack:hover,
 .btn-stack:focus,
 .button-stack:focus,
-.btn-stack:active,
-.button-stack:active,
 .button-stack-check:checked + .button-stack {
   border-color: var(--stack-overflow);
   color: var(--stack-overflow);
@@ -488,8 +423,6 @@
 .button-tw:hover,
 .btn-tw:focus,
 .button-tw:focus,
-.btn-tw:active,
-.button-tw:active,
 .button-tw-check:checked + .button-tw {
   border-color: var(--twitter);
   color: var(--twitter);
@@ -507,8 +440,6 @@
 .button-amethyst:hover,
 .btn-amethyst:focus,
 .button-amethyst:focus,
-.btn-amethyst:active,
-.button-amethyst:active,
 .button-amethyst-check:checked + .button-amethyst {
   border-color: var(--amethyst);
   background-color: var(--white);
@@ -527,8 +458,6 @@
 .button-citrine:hover,
 .btn-citrine:focus,
 .button-citrine:focus,
-.btn-citrine:active,
-.button-citrine:active,
 .button-citrine-check:checked + .button-citrine {
   border-color: var(--citrine);
   background-color: var(--white);
@@ -547,8 +476,6 @@
 .button-emerald:hover,
 .btn-emerald:focus,
 .button-emerald:focus,
-.btn-emerald:active,
-.button-emerald:active,
 .button-emerald-check:checked + .button-emerald {
   border-color: var(--emerald);
   background-color: var(--white);
@@ -567,8 +494,6 @@
 .button-obsidian:hover,
 .btn-obsidian:focus,
 .button-obsidian:focus,
-.btn-obsidian:active,
-.button-obsidian:active,
 .button-obsidian-check:checked + .button-obsidian {
   border-color: var(--obsidian);
   background-color: var(--white);
@@ -587,8 +512,6 @@
 .button-quartz:hover,
 .btn-quartz:focus,
 .button-quartz:focus,
-.btn-quartz:active,
-.button-quartz:active,
 .button-quartz-check:checked + .button-quartz {
   border-color: var(--quartz);
   background-color: var(--black);
@@ -607,8 +530,6 @@
 .button-ruby:hover,
 .btn-ruby:focus,
 .button-ruby:focus,
-.btn-ruby:active,
-.button-ruby:active,
 .button-ruby-check:checked + .button-ruby {
   border-color: var(--ruby);
   background-color: var(--white);
@@ -627,8 +548,6 @@
 .button-sapphire:hover,
 .btn-sapphire:focus,
 .button-sapphire:focus,
-.btn-sapphire:active,
-.button-sapphire:active,
 .button-sapphire-check:checked + .button-sapphire {
   border-color: var(--sapphire);
   background-color: var(--white);
@@ -682,9 +601,7 @@
 .btn-square:hover,
 .button-square:hover,
 .btn-square:focus,
-.button-square:focus,
-.btn-square:active,
-.button-square:active {
+.button-square:focus {
   border-radius: var(--btn-square-border-radius);
 }
 
@@ -698,9 +615,7 @@
 .btn-round:hover,
 .button-round:hover,
 .btn-round:focus,
-.button-round:focus,
-.btn-round:active,
-.button-round:active {
+.button-round:focus {
   border-radius: var(--btn-round-border-radius);
 }
 
@@ -714,8 +629,6 @@
 .btn-circle:hover,
 .button-circle:hover,
 .btn-circle:focus,
-.button-circle:focus,
-.btn-circle:active,
-.button-circle:active {
+.button-circle:focus {
   border-radius: var(--btn-circle-border-radius);
 }

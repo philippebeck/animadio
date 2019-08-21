@@ -63,10 +63,8 @@
 
 .navbar a:hover,
 .navbar a:focus,
-.navbar a:active,
 .navbar label:hover,
-.navbar label:focus,
-.navbar label:active {
+.navbar label:focus {
   color: var(--navbar-link-hover-color);
 }
 
@@ -126,10 +124,8 @@
 
 .navbar > ul:first-of-type a:hover,
 .navbar > ul:first-of-type a:focus,
-.navbar > ul:first-of-type a:active,
 .navbar > ul:first-of-type label:hover,
-.navbar > ul:first-of-type label:focus,
-.navbar > ul:first-of-type label:active {
+.navbar > ul:first-of-type label:focus {
   transform: scale(var(--navbar-first-list-link-hover-scale));
 }
 
@@ -148,10 +144,8 @@
 
 .navbar > ul:last-of-type a:hover,
 .navbar > ul:last-of-type a:focus,
-.navbar > ul:last-of-type a:active,
 .navbar > ul:last-of-type label:hover,
-.navbar > ul:last-of-type label:focus,
-.navbar > ul:last-of-type label:active {
+.navbar > ul:last-of-type label:focus {
   transform: scale(var(--navbar-last-list-link-hover-scale));
 }
 
