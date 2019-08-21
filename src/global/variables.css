@@ -424,6 +424,9 @@ pre {
   --card-border: solid medium;
   --card-border-radius: 10px;
   --card-box-shadow: 3px 5px 10px 5px var(--black);
+  --card-btn-color: var(--white);
+  --card-btn-hover-background-color: var(--white);
+  --card-btn-hover-color: initial;
   --card-btn-text-align: center;
   --card-btn-width: calc(var(--card-child-max-width) * 0.5);
   --card-child-background-color: var(--white);
