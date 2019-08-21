@@ -1,4 +1,4 @@
-/*! animadio v0.7.0 | https://animadio.org | MIT License */
+/*! animadio v0.7.1 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -422,8 +422,7 @@ pre {
 
 /***** 3.2 Card *****/
 [class*="card"] {
-  --card-background-color: var(--quartz);
-  --card-black-background-color: var(--obsidian);
+  --card-background-color: var(--obsidian);
   --card-black-title-box-shadow: var(--card-title-box-shadow) var(--black);
   --card-black-title-text-shadow: var(--card-title-text-shadow) var(--black);
   --card-blue-background-color: var(--sapphire);
@@ -433,6 +432,7 @@ pre {
   --card-border-radius: 10px;
   --card-box-shadow: 3px 5px 10px 5px var(--black);
   --card-btn-color: var(--white);
+  --card-btn-font-weight: bold;
   --card-btn-hover-background-color: var(--white);
   --card-btn-hover-color: initial;
   --card-btn-text-align: center;
@@ -3317,12 +3317,11 @@ pre > *::selection {
 4 - Card Selection
 5 - Card Title
 6 - Card Btn
-7 - Card Black
-8 - Card Blue
-9 - Card Green
-10 - Card Purple
-11 - Card Red
-12 - Card Yellow
+7 - Card Blue
+8 - Card Green
+9 - Card Purple
+10 - Card Red
+11 - Card Yellow
 */
 
 /***** 1 - Card *****/
@@ -3392,35 +3391,24 @@ pre > *::selection {
 }
 
 /***** 6 - Card Btn *****/
-[class*="card"] > [class*="btn"] {
+[class*="card"] > [class*="btn"],
+[class*="card"] > [class*="button"] {
   width: var(--card-btn-width);
   background-color: inherit;
   color: var(--card-btn-color);
+  font-weight: var(--card-btn-font-weight);
   text-align: var(--card-btn-text-align);
 }
 
 [class*="card"] > [class*="btn"]:hover,
-[class*="card"] > [class*="btn"]:focus {
+[class*="card"] > [class*="btn"]:focus,
+[class*="card"] > [class*="button"]:hover,
+[class*="card"] > [class*="button"]:focus {
   background-color: var(--card-btn-hover-background-color);
   color: var(--card-btn-hover-color);
 }
 
-/***** 7 - Card Black *****/
-.card-black {
-  background-color: var(--card-black-background-color);
-}
-
-.card-black > h2,
-.card-black > h3,
-.card-black > h4,
-.card-black > h5,
-.card-black > h6 {
-  -webkit-box-shadow: var(--card-black-title-box-shadow);
-          box-shadow: var(--card-black-title-box-shadow);
-  text-shadow: var(--card-black-title-text-shadow);
-}
-
-/***** 8 - Card Blue *****/
+/***** 7 - Card Blue *****/
 .card-blue {
   background-color: var(--card-blue-background-color);
 }
@@ -3435,7 +3423,7 @@ pre > *::selection {
   text-shadow: var(--card-blue-title-text-shadow);
 }
 
-/***** 9 - Card Green *****/
+/***** 8 - Card Green *****/
 .card-green {
   background-color: var(--card-green-background-color);
 }
@@ -3450,7 +3438,7 @@ pre > *::selection {
   text-shadow: var(--card-green-title-text-shadow);
 }
 
-/***** 10 - Card Purple *****/
+/***** 9 - Card Purple *****/
 .card-purple {
   background-color: var(--card-purple-background-color);
 }
@@ -3465,7 +3453,7 @@ pre > *::selection {
   text-shadow: var(--card-purple-title-text-shadow);
 }
 
-/***** 11 - Card Red *****/
+/***** 10 - Card Red *****/
 .card-red {
   background-color: var(--card-red-background-color);
 }
@@ -3480,7 +3468,7 @@ pre > *::selection {
   text-shadow: var(--card-red-title-text-shadow);
 }
 
-/***** 12 - Card Yellow *****/
+/***** 11 - Card Yellow *****/
 .card-yellow {
   background-color: var(--card-yellow-background-color);
 }
@@ -4128,4 +4116,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 21st Aug 2019 @ 9:01:46 AM */
+ Updated: 21st Aug 2019 @ 2:01:08 PM */

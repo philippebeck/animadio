@@ -420,8 +420,7 @@ pre {
 
 /***** 3.2 Card *****/
 [class*="card"] {
-  --card-background-color: var(--quartz);
-  --card-black-background-color: var(--obsidian);
+  --card-background-color: var(--obsidian);
   --card-black-title-box-shadow: var(--card-title-box-shadow) var(--black);
   --card-black-title-text-shadow: var(--card-title-text-shadow) var(--black);
   --card-blue-background-color: var(--sapphire);
@@ -431,6 +430,7 @@ pre {
   --card-border-radius: 10px;
   --card-box-shadow: 3px 5px 10px 5px var(--black);
   --card-btn-color: var(--white);
+  --card-btn-font-weight: bold;
   --card-btn-hover-background-color: var(--white);
   --card-btn-hover-color: initial;
   --card-btn-text-align: center;
