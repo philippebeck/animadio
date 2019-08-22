@@ -195,8 +195,6 @@ pre {
   --code-padding: 10px;
   --code-background-color: var(--black);
   --code-color: var(--jade);
-  --code-selection-background-color: var(--jade);
-  --code-selection-color: var(--black);
 }
 
 /***** 1.4 Margin *****/
