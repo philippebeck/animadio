@@ -1,4 +1,4 @@
-/*! animadio v0.7.3 | https://animadio.org | MIT License */
+/*! animadio v0.7.4 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -78,26 +78,26 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --keyframes-content3: url(https://animadio.org/img/svg/3.svg);
   --keyframes-content4: url(https://animadio.org/img/svg/4.svg);
   --keyframes-content5: url(https://animadio.org/img/svg/5.svg);
-  --keyframes-rotate: -360deg;
-  --keyframes-rotate3d: -360deg;
+  --keyframes-rotate: 360deg;
+  --keyframes-rotate3d: 1, 1, 1, 360deg;
   --keyframes-rotateX: -360deg;
   --keyframes-rotateY: -360deg;
   --keyframes-rotateZ: -360deg;
   --keyframes-scale: 0;
-  --keyframes-scale3d: 0;
+  --keyframes-scale3d: 5, 5, 1;
   --keyframes-scaleX: 0;
   --keyframes-scaleY: 0;
-  --keyframes-scaleZ: 0;
+  --keyframes-scaleZ: -1;
   --keyframes-skew: 180deg, 180deg;
   --keyframes-skewX: 180deg;
   --keyframes-skewY: 180deg;
   --keyframes-translate: -50vw, -50vh;
-  --keyframes-translate3d: -50vw, -50vh;
+  --keyframes-translate3d: 50vw, 50vh, 0;
   --keyframes-translateX: -50vw;
   --keyframes-translateY: -50vh;
   --keyframes-translateY-opac: 68px;
   --keyframes-translateY-xs: 1vh;
-  --keyframes-translateZ: -50vh;
+  --keyframes-translateZ: 100px;
   --keyframes-width: 100%;
 }
 
@@ -2210,7 +2210,7 @@ pre > *::selection {
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-sm"]  {
+  [class*="text-"][class*="-left-sm"] {
     text-align: left;
   }
 }
@@ -4109,4 +4109,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 22nd Aug 2019 @ 8:22:47 AM */
+ Updated: 22nd Aug 2019 @ 5:44:42 PM */
