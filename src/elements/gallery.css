@@ -17,6 +17,8 @@
 .gallery {
   display: flex;
   flex-wrap: var(--gallery-flex-wrap);
+  place-content: var(--gallery-place-content);
+  place-items: var(--gallery-place-items);
   overflow: var(--gallery-overflow);
   margin: var(--gallery-margin);
   max-width: var(--gallery-max-width);
@@ -30,8 +32,8 @@
 /***** 3 - Gallery Figure *****/
 .gallery figure {
   display: flex;
-  place-content: var(--gallery-figure-place-content);
-  place-items: var(--gallery-figure-place-items);
+  place-content: var(--gallery-place-content);
+  place-items: var(--gallery-place-items);
   position: var(--gallery-figure-position);
   overflow: var(--gallery-figure-overflow);
   margin: var(--gallery-figure-margin);
