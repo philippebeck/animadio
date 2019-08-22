@@ -123,6 +123,6 @@ pre {
 
 code > *::selection,
 pre > *::selection {
-  background-color: var(--code-selection-background-color);
-  color: var(--code-selection-color);
+  background-color: var(--code-color);
+  color: var(--code-background-color);
 }

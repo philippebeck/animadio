@@ -1,4 +1,4 @@
-/*! animadio v0.7.2 | https://animadio.org | MIT License */
+/*! animadio v0.7.3 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -197,8 +197,6 @@ pre {
   --code-padding: 10px;
   --code-background-color: var(--black);
   --code-color: var(--jade);
-  --code-selection-background-color: var(--jade);
-  --code-selection-color: var(--black);
 }
 
 /***** 1.4 Margin *****/
@@ -1773,14 +1771,14 @@ pre {
 
 code > *::-moz-selection,
 pre > *::-moz-selection {
-  background-color: var(--code-selection-background-color);
-  color: var(--code-selection-color);
+  background-color: var(--code-color);
+  color: var(--code-background-color);
 }
 
 code > *::selection,
 pre > *::selection {
-  background-color: var(--code-selection-background-color);
-  color: var(--code-selection-color);
+  background-color: var(--code-color);
+  color: var(--code-background-color);
 }
 
 /********** BOX **********/
@@ -9675,4 +9673,4 @@ place-items: center;
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 22nd Aug 2019 @ 7:47:26 AM */
+ Updated: 22nd Aug 2019 @ 8:22:47 AM */
