@@ -1,4 +1,4 @@
-/*! animadio v0.7.1 | https://animadio.org | MIT License */
+/*! animadio v0.7.2 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -440,11 +440,11 @@ pre {
   --card-child-background-color: var(--white);
   --card-child-border: solid thin;
   --card-child-border-radius: 20px;
-  --card-child-font-size: 2rem;
+  --card-child-font-size: 1.8rem;
   --card-child-margin: 10px;
   --card-child-max-width: calc(var(--card-width) * 0.9);
-  --card-child-padding: 10px 20px;
-  --card-child-text-align: justify;
+  --card-child-padding: 5px 10px;
+  --card-child-text-align: center;
   --card-color: var(--black);
   --card-flex-direction: column;
   --card-green-background-color: var(--emerald);
@@ -468,7 +468,7 @@ pre {
   --card-title-box-shadow: inset 0 0 5px 2px;
   --card-title-font-size: 3rem;
   --card-title-text-shadow: 2px 2px 5px;
-  --card-width: 400px;
+  --card-width: 300px;
   --card-yellow-background-color: var(--citrine);
   --card-yellow-title-box-shadow: var(--card-title-box-shadow) var(--khaki);
   --card-yellow-title-text-shadow: var(--card-title-text-shadow) var(--yellow);
@@ -605,7 +605,7 @@ pre {
   --gallery-figcaption-fa-radius: 50%;
   --gallery-figcaption-fa-right: 5px;
   --gallery-figcaption-fa-top: -15px;
-  --gallery-figcaption-line-height: 1;
+  --gallery-figcaption-line-height: 0.8;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-width: 100%;
   --gallery-figure-border: thin dotted var(--silver);
@@ -615,14 +615,14 @@ pre {
   --gallery-figure-line-height: 0;
   --gallery-figure-margin: 5px;
   --gallery-figure-overflow: hidden;
-  --gallery-figure-place-content: center;
-  --gallery-figure-place-items: center;
+  --gallery-place-content: center;
+  --gallery-place-items: center;
   --gallery-figure-position: relative;
   --gallery-figure-width: calc(100% - 10px);
   --gallery-link-all-cursor: pointer;
   --gallery-link-all-margin: 0;
   --gallery-link-all-even-font-size: 1.2rem;
-  --gallery-link-all-even-padding: 0 10px 20px;
+  --gallery-link-all-even-padding: 0 10px;
   --gallery-link-all-odd-font-size: 1.5rem;
   --gallery-link-all-odd-padding: 10px;
   --gallery-link-color: var(--white);
@@ -638,24 +638,17 @@ pre {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .gallery {
     --gallery-figure-margin: 15px;
     --gallery-figure-width: calc(100% / 3 - 30px);
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .gallery {
     --gallery-figure-margin: 20px;
     --gallery-figure-width: calc(100% / 4 - 40px);
-  }
-}
-
-@media (min-width: 1200px) {
-  .gallery {
-    --gallery-figure-margin: 30px;
-    --gallery-figure-width: calc(100% / 6 - 60px);
   }
 }
 
@@ -3679,4 +3672,4 @@ place-items: center;
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 21st Aug 2019 @ 2:01:08 PM */
+ Updated: 22nd Aug 2019 @ 7:47:26 AM */
