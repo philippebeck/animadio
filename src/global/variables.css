@@ -438,11 +438,11 @@ pre {
   --card-child-background-color: var(--white);
   --card-child-border: solid thin;
   --card-child-border-radius: 20px;
-  --card-child-font-size: 2rem;
+  --card-child-font-size: 1.8rem;
   --card-child-margin: 10px;
   --card-child-max-width: calc(var(--card-width) * 0.9);
-  --card-child-padding: 10px 20px;
-  --card-child-text-align: justify;
+  --card-child-padding: 5px 10px;
+  --card-child-text-align: center;
   --card-color: var(--black);
   --card-flex-direction: column;
   --card-green-background-color: var(--emerald);
@@ -466,7 +466,7 @@ pre {
   --card-title-box-shadow: inset 0 0 5px 2px;
   --card-title-font-size: 3rem;
   --card-title-text-shadow: 2px 2px 5px;
-  --card-width: 400px;
+  --card-width: 300px;
   --card-yellow-background-color: var(--citrine);
   --card-yellow-title-box-shadow: var(--card-title-box-shadow) var(--khaki);
   --card-yellow-title-text-shadow: var(--card-title-text-shadow) var(--yellow);
