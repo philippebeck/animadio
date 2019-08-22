@@ -50,7 +50,7 @@
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-sm"]  {
+  [class*="text-"][class*="-left-sm"] {
     text-align: left;
   }
 }
