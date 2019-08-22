@@ -1,4 +1,4 @@
-/*! animadio v0.7.3 | https://animadio.org | MIT License */
+/*! animadio v0.7.4 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -78,26 +78,26 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --keyframes-content3: url(https://animadio.org/img/svg/3.svg);
   --keyframes-content4: url(https://animadio.org/img/svg/4.svg);
   --keyframes-content5: url(https://animadio.org/img/svg/5.svg);
-  --keyframes-rotate: -360deg;
-  --keyframes-rotate3d: -360deg;
+  --keyframes-rotate: 360deg;
+  --keyframes-rotate3d: 1, 1, 1, 360deg;
   --keyframes-rotateX: -360deg;
   --keyframes-rotateY: -360deg;
   --keyframes-rotateZ: -360deg;
   --keyframes-scale: 0;
-  --keyframes-scale3d: 0;
+  --keyframes-scale3d: 5, 5, 1;
   --keyframes-scaleX: 0;
   --keyframes-scaleY: 0;
-  --keyframes-scaleZ: 0;
+  --keyframes-scaleZ: -1;
   --keyframes-skew: 180deg, 180deg;
   --keyframes-skewX: 180deg;
   --keyframes-skewY: 180deg;
   --keyframes-translate: -50vw, -50vh;
-  --keyframes-translate3d: -50vw, -50vh;
+  --keyframes-translate3d: 50vw, 50vh, 0;
   --keyframes-translateX: -50vw;
   --keyframes-translateY: -50vh;
   --keyframes-translateY-opac: 68px;
   --keyframes-translateY-xs: 1vh;
-  --keyframes-translateZ: -50vh;
+  --keyframes-translateZ: 100px;
   --keyframes-width: 100%;
 }
 
@@ -2210,7 +2210,7 @@ pre > *::selection {
     text-align: right;
   }
 
-  [class*="text-"][class*="-left-sm"]  {
+  [class*="text-"][class*="-left-sm"] {
     text-align: left;
   }
 }
@@ -5390,6 +5390,26 @@ pre > *::selection {
           animation-name: rotate;
 }
 
+[class*="anima-rota3d-"][class*="-base"],
+[class*="anima-rota3d-"][class*="-global"] > *,
+*:hover > [class*="anima-rota3d-"][class*="-into"],
+*:focus > [class*="anima-rota3d-"][class*="-into"],
+[class*="anima-rota3d-"][class*="-onto"]:hover,
+[class*="anima-rota3d-"][class*="-onto"]:focus,
+[class*="anima-rota3d-"][class*="-toall"]:hover > *,
+[class*="anima-rota3d-"][class*="-toall"]:focus > *,
+[class*="anima-rota3d-"][class*="-toone"] > *:hover,
+[class*="anima-rota3d-"][class*="-toone"] > *:focus,
+[class*="anima-rota3d-"][class*="-radio1"]:checked ~ [class*="anima-rota3d-"][class*="-relay"] [class*="anima-rota3d-"][class*="-target1"],
+[class*="anima-rota3d-"][class*="-radio2"]:checked ~ [class*="anima-rota3d-"][class*="-relay"] [class*="anima-rota3d-"][class*="-target2"],
+[class*="anima-rota3d-"][class*="-radio3"]:checked ~ [class*="anima-rota3d-"][class*="-relay"] [class*="anima-rota3d-"][class*="-target3"],
+[class*="anima-rota3d-"][class*="-radio4"]:checked ~ [class*="anima-rota3d-"][class*="-relay"] [class*="anima-rota3d-"][class*="-target4"],
+[class*="anima-rota3d-"][class*="-radio5"]:checked ~ [class*="anima-rota3d-"][class*="-relay"] [class*="anima-rota3d-"][class*="-target5"],
+[class*="anima-rota3d-"][class*="-check"]:checked ~ [class*="anima-rota3d-"][class*="-hub"] [class*="anima-rota3d-"][class*="-goal"] {
+  -webkit-animation-name: rotate3d;
+          animation-name: rotate3d;
+}
+
 [class*="anima-rotax-"][class*="-base"],
 [class*="anima-rotax-"][class*="-global"] > *,
 *:hover > [class*="anima-rotax-"][class*="-into"],
@@ -5430,6 +5450,26 @@ pre > *::selection {
           animation-name: rotateY;
 }
 
+[class*="anima-rotaz-"][class*="-base"],
+[class*="anima-rotaz-"][class*="-global"] > *,
+*:hover > [class*="anima-rotaz-"][class*="-into"],
+*:focus > [class*="anima-rotaz-"][class*="-into"],
+[class*="anima-rotaz-"][class*="-onto"]:hover,
+[class*="anima-rotaz-"][class*="-onto"]:focus,
+[class*="anima-rotaz-"][class*="-toall"]:hover > *,
+[class*="anima-rotaz-"][class*="-toall"]:focus > *,
+[class*="anima-rotaz-"][class*="-toone"] > *:hover,
+[class*="anima-rotaz-"][class*="-toone"] > *:focus,
+[class*="anima-rotaz-"][class*="-radio1"]:checked ~ [class*="anima-rotaz-"][class*="-relay"] [class*="anima-rotaz-"][class*="-target1"],
+[class*="anima-rotaz-"][class*="-radio2"]:checked ~ [class*="anima-rotaz-"][class*="-relay"] [class*="anima-rotaz-"][class*="-target2"],
+[class*="anima-rotaz-"][class*="-radio3"]:checked ~ [class*="anima-rotaz-"][class*="-relay"] [class*="anima-rotaz-"][class*="-target3"],
+[class*="anima-rotaz-"][class*="-radio4"]:checked ~ [class*="anima-rotaz-"][class*="-relay"] [class*="anima-rotaz-"][class*="-target4"],
+[class*="anima-rotaz-"][class*="-radio5"]:checked ~ [class*="anima-rotaz-"][class*="-relay"] [class*="anima-rotaz-"][class*="-target5"],
+[class*="anima-rotaz-"][class*="-check"]:checked ~ [class*="anima-rotaz-"][class*="-hub"] [class*="anima-rotaz-"][class*="-goal"] {
+  -webkit-animation-name: rotateZ;
+          animation-name: rotateZ;
+}
+
 /***** 3 - Animation Scale *****/
 [class*="anima-scal-"][class*="-base"],
 [class*="anima-scal-"][class*="-global"] > *,
@@ -5449,6 +5489,26 @@ pre > *::selection {
 [class*="anima-scal-"][class*="-check"]:checked ~ [class*="anima-scal-"][class*="-hub"] [class*="anima-scal-"][class*="-goal"] {
   -webkit-animation-name: scale;
           animation-name: scale;
+}
+
+[class*="anima-scal3d-"][class*="-base"],
+[class*="anima-scal3d-"][class*="-global"] > *,
+*:hover > [class*="anima-scal3d-"][class*="-into"],
+*:focus > [class*="anima-scal3d-"][class*="-into"],
+[class*="anima-scal3d-"][class*="-onto"]:hover,
+[class*="anima-scal3d-"][class*="-onto"]:focus,
+[class*="anima-scal3d-"][class*="-toall"]:hover > *,
+[class*="anima-scal3d-"][class*="-toall"]:focus > *,
+[class*="anima-scal3d-"][class*="-toone"] > *:hover,
+[class*="anima-scal3d-"][class*="-toone"] > *:focus,
+[class*="anima-scal3d-"][class*="-radio1"]:checked ~ [class*="anima-scal3d-"][class*="-relay"] [class*="anima-scal3d-"][class*="-target1"],
+[class*="anima-scal3d-"][class*="-radio2"]:checked ~ [class*="anima-scal3d-"][class*="-relay"] [class*="anima-scal3d-"][class*="-target2"],
+[class*="anima-scal3d-"][class*="-radio3"]:checked ~ [class*="anima-scal3d-"][class*="-relay"] [class*="anima-scal3d-"][class*="-target3"],
+[class*="anima-scal3d-"][class*="-radio4"]:checked ~ [class*="anima-scal3d-"][class*="-relay"] [class*="anima-scal3d-"][class*="-target4"],
+[class*="anima-scal3d-"][class*="-radio5"]:checked ~ [class*="anima-scal3d-"][class*="-relay"] [class*="anima-scal3d-"][class*="-target5"],
+[class*="anima-scal3d-"][class*="-check"]:checked ~ [class*="anima-scal3d-"][class*="-hub"] [class*="anima-scal3d-"][class*="-goal"] {
+  -webkit-animation-name: scale3d;
+          animation-name: scale3d;
 }
 
 [class*="anima-scalx-"][class*="-base"],
@@ -5489,6 +5549,26 @@ pre > *::selection {
 [class*="anima-scaly-"][class*="-check"]:checked ~ [class*="anima-scaly-"][class*="-hub"] [class*="anima-scaly-"][class*="-goal"] {
   -webkit-animation-name: scaleY;
           animation-name: scaleY;
+}
+
+[class*="anima-scalz-"][class*="-base"],
+[class*="anima-scalz-"][class*="-global"] > *,
+*:hover > [class*="anima-scalz-"][class*="-into"],
+*:focus > [class*="anima-scalz-"][class*="-into"],
+[class*="anima-scalz-"][class*="-onto"]:hover,
+[class*="anima-scalz-"][class*="-onto"]:focus,
+[class*="anima-scalz-"][class*="-toall"]:hover > *,
+[class*="anima-scalz-"][class*="-toall"]:focus > *,
+[class*="anima-scalz-"][class*="-toone"] > *:hover,
+[class*="anima-scalz-"][class*="-toone"] > *:focus,
+[class*="anima-scalz-"][class*="-radio1"]:checked ~ [class*="anima-scalz-"][class*="-relay"] [class*="anima-scalz-"][class*="-target1"],
+[class*="anima-scalz-"][class*="-radio2"]:checked ~ [class*="anima-scalz-"][class*="-relay"] [class*="anima-scalz-"][class*="-target2"],
+[class*="anima-scalz-"][class*="-radio3"]:checked ~ [class*="anima-scalz-"][class*="-relay"] [class*="anima-scalz-"][class*="-target3"],
+[class*="anima-scalz-"][class*="-radio4"]:checked ~ [class*="anima-scalz-"][class*="-relay"] [class*="anima-scalz-"][class*="-target4"],
+[class*="anima-scalz-"][class*="-radio5"]:checked ~ [class*="anima-scalz-"][class*="-relay"] [class*="anima-scalz-"][class*="-target5"],
+[class*="anima-scalz-"][class*="-check"]:checked ~ [class*="anima-scalz-"][class*="-hub"] [class*="anima-scalz-"][class*="-goal"] {
+  -webkit-animation-name: scaleZ;
+          animation-name: scaleZ;
 }
 
 /***** 4 - Animation Skew *****/
@@ -5573,6 +5653,26 @@ pre > *::selection {
           animation-name: translate;
 }
 
+[class*="anima-tran3d-"][class*="-base"],
+[class*="anima-tran3d-"][class*="-global"] > *,
+*:hover > [class*="anima-tran3d-"][class*="-into"],
+*:focus > [class*="anima-tran3d-"][class*="-into"],
+[class*="anima-tran3d-"][class*="-onto"]:hover,
+[class*="anima-tran3d-"][class*="-onto"]:focus,
+[class*="anima-tran3d-"][class*="-toall"]:hover > *,
+[class*="anima-tran3d-"][class*="-toall"]:focus > *,
+[class*="anima-tran3d-"][class*="-toone"] > *:hover,
+[class*="anima-tran3d-"][class*="-toone"] > *:focus,
+[class*="anima-tran3d-"][class*="-radio1"]:checked ~ [class*="anima-tran3d-"][class*="-relay"] [class*="anima-tran3d-"][class*="-target1"],
+[class*="anima-tran3d-"][class*="-radio2"]:checked ~ [class*="anima-tran3d-"][class*="-relay"] [class*="anima-tran3d-"][class*="-target2"],
+[class*="anima-tran3d-"][class*="-radio3"]:checked ~ [class*="anima-tran3d-"][class*="-relay"] [class*="anima-tran3d-"][class*="-target3"],
+[class*="anima-tran3d-"][class*="-radio4"]:checked ~ [class*="anima-tran3d-"][class*="-relay"] [class*="anima-tran3d-"][class*="-target4"],
+[class*="anima-tran3d-"][class*="-radio5"]:checked ~ [class*="anima-tran3d-"][class*="-relay"] [class*="anima-tran3d-"][class*="-target5"],
+[class*="anima-tran3d-"][class*="-check"]:checked ~ [class*="anima-tran3d-"][class*="-hub"] [class*="anima-tran3d-"][class*="-goal"] {
+  -webkit-animation-name: translate3d;
+          animation-name: translate3d;
+}
+
 [class*="anima-tranx-"][class*="-base"],
 [class*="anima-tranx-"][class*="-global"] > *,
 *:hover > [class*="anima-tranx-"][class*="-into"],
@@ -5611,6 +5711,26 @@ pre > *::selection {
 [class*="anima-trany-"][class*="-check"]:checked ~ [class*="anima-trany-"][class*="-hub"] [class*="anima-trany-"][class*="-goal"] {
   -webkit-animation-name: translateY;
           animation-name: translateY;
+}
+
+[class*="anima-tranz-"][class*="-base"],
+[class*="anima-tranz-"][class*="-global"] > *,
+*:hover > [class*="anima-tranz-"][class*="-into"],
+*:focus > [class*="anima-tranz-"][class*="-into"],
+[class*="anima-tranz-"][class*="-onto"]:hover,
+[class*="anima-tranz-"][class*="-onto"]:focus,
+[class*="anima-tranz-"][class*="-toall"]:hover > *,
+[class*="anima-tranz-"][class*="-toall"]:focus > *,
+[class*="anima-tranz-"][class*="-toone"] > *:hover,
+[class*="anima-tranz-"][class*="-toone"] > *:focus,
+[class*="anima-tranz-"][class*="-radio1"]:checked ~ [class*="anima-tranz-"][class*="-relay"] [class*="anima-tranz-"][class*="-target1"],
+[class*="anima-tranz-"][class*="-radio2"]:checked ~ [class*="anima-tranz-"][class*="-relay"] [class*="anima-tranz-"][class*="-target2"],
+[class*="anima-tranz-"][class*="-radio3"]:checked ~ [class*="anima-tranz-"][class*="-relay"] [class*="anima-tranz-"][class*="-target3"],
+[class*="anima-tranz-"][class*="-radio4"]:checked ~ [class*="anima-tranz-"][class*="-relay"] [class*="anima-tranz-"][class*="-target4"],
+[class*="anima-tranz-"][class*="-radio5"]:checked ~ [class*="anima-tranz-"][class*="-relay"] [class*="anima-tranz-"][class*="-target5"],
+[class*="anima-tranz-"][class*="-check"]:checked ~ [class*="anima-tranz-"][class*="-hub"] [class*="anima-tranz-"][class*="-goal"] {
+  -webkit-animation-name: translateZ;
+          animation-name: translateZ;
 }
 
 /***** 6 - Animation Duration *****/
@@ -6476,4 +6596,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 22nd Aug 2019 @ 8:22:47 AM */
+ Updated: 22nd Aug 2019 @ 5:44:42 PM */
