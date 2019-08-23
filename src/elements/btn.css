@@ -109,7 +109,7 @@
 .button-choco:hover,
 .btn-choco:focus,
 .button-choco:focus,
-.button-blue-choco:checked + .button-choco {
+.button-choco-check:checked + .button-choco {
   border-color: var(--btn-maroon-border-color);
   background-color: var(--maroon);
   color: var(--btn-maroon-color);
@@ -558,34 +558,24 @@
 /***** 10 - Btn Size *****/
 .btn-xs,
 .button-xs {
-  border-width: var(--btn-xs-border-width);
   padding: var(--btn-xs-padding);
   font-size: var(--btn-xs-font-size);
 }
 
 .btn-sm,
 .button-sm {
-  border-width: var(--btn-sm-border-width);
   padding: var(--btn-sm-padding);
   font-size: var(--btn-sm-font-size);
 }
 
-.btn-md,
-.button-md {
-  border-width: var(--btn-md-border-width);
-  padding: var(--btn-md-padding);
-}
-
 .btn-lg,
 .button-lg {
-  border-width: var(--btn-lg-border-width);
   padding: var(--btn-lg-padding);
   font-size: var(--btn-lg-font-size);
 }
 
 .btn-xl,
 .button-xl {
-  border-width: var(--btn-xl-border-width);
   padding: var(--btn-xl-padding);
   font-size: var(--btn-xl-font-size);
 }
@@ -594,6 +584,7 @@
 .btn-square,
 .button-square {
   border-radius: var(--btn-square-border-radius);
+  padding-top: var(--btn-square-padding-top);
   min-width: var(--btn-square-sizes);
   min-height: var(--btn-square-sizes);
 }
@@ -608,6 +599,7 @@
 .btn-round,
 .button-round {
   border-radius: var(--btn-round-border-radius);
+  padding-top: var(--btn-round-padding-top);
   min-width: var(--btn-round-sizes);
   min-height: var(--btn-round-sizes);
 }
@@ -622,6 +614,7 @@
 .btn-circle,
 .button-circle {
   border-radius: var(--btn-circle-border-radius);
+  padding-top: var(--btn-circle-padding-top);
   min-width: var(--btn-circle-sizes);
   min-height: var(--btn-circle-sizes);
 }
