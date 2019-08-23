@@ -1,4 +1,4 @@
-/*! animadio v0.7.4 | https://animadio.org | MIT License */
+/*! animadio v0.7.5 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -355,7 +355,8 @@ pre {
   --btn-choco-border-color: var(--maroon);
   --btn-choco-color: var(--maroon);
   --btn-circle-border-radius: 50%;
-  --btn-circle-sizes: 80px;
+  --btn-circle-padding-top: calc(var(--btn-circle-sizes) / 4);
+  --btn-circle-sizes: 100px;
   --btn-color: var(--black);
   --btn-font-size: 1.5rem;
   --btn-gray-border-color: var(--silver);
@@ -373,14 +374,11 @@ pre {
   --btn-jade-color: var(--green);
   --btn-khaki-border-color: var(--yellow);
   --btn-khaki-color: var(--black);
-  --btn-lg-border-width: 4px;
-  --btn-lg-font-size: 120%;
-  --btn-lg-padding: 4px 8px;
+  --btn-lg-font-size: 140%;
+  --btn-lg-padding: 7px 14px;
   --btn-margin: 10px;
   --btn-maroon-border-color: var(--choco);
   --btn-maroon-color: var(--white);
-  --btn-md-border-width: 3px;
-  --btn-md-padding: 3px 6px;
   --btn-orange-border-color: var(--salmon);
   --btn-orange-color: var(--white);
   --btn-padding: 5px 10px;
@@ -388,8 +386,9 @@ pre {
   --btn-purple-color: var(--white);
   --btn-red-border-color: var(--tomato);
   --btn-red-color: var(--white);
-  --btn-round-border-radius: 20px;
-  --btn-round-sizes: 80px;
+  --btn-round-border-radius: 30px;
+  --btn-round-padding-top: calc(var(--btn-round-sizes) / 4);
+  --btn-round-sizes: 100px;
   --btn-text-align: center;
   --btn-salmon-border-color: var(--orange);
   --btn-salmon-color: var(--maroon);
@@ -397,11 +396,11 @@ pre {
   --btn-silver-color: var(--black);
   --btn-sky-border-color: var(--blue);
   --btn-sky-color: var(--blue);
-  --btn-sm-border-width: 2px;
   --btn-sm-font-size: 80%;
-  --btn-sm-padding: 2px 4px;
+  --btn-sm-padding: 4px 8px;
   --btn-square-border-radius: unset;
-  --btn-square-sizes: 80px;
+  --btn-square-padding-top: calc(var(--btn-square-sizes) / 4);
+  --btn-square-sizes: 100px;
   --btn-tomato-border-color: var(--red);
   --btn-tomato-color: var(--red);
   --btn-violet-border-color: var(--purple);
@@ -410,12 +409,10 @@ pre {
   --btn-white-color: var(--black);
   --btn-yellow-border-color: var(--khaki);
   --btn-yellow-color: var(--blue);
-  --btn-xl-border-width: 5px;
-  --btn-xl-font-size: 140%;
-  --btn-xl-padding: 5px 10px;
-  --btn-xs-border-width: 1px;
+  --btn-xl-font-size: 180%;
+  --btn-xl-padding: 9px 18px;
   --btn-xs-font-size: 60%;
-  --btn-xs-padding: 1px 2px;
+  --btn-xs-padding: 3px 6px;
 }
 
 /***** 3.2 Card *****/
@@ -6596,4 +6593,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 22nd Aug 2019 @ 5:44:42 PM */
+ Updated: 23rd Aug 2019 @ 7:27:42 AM */
