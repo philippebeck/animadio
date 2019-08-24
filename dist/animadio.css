@@ -1,4 +1,4 @@
-/*! animadio v0.7.5 | https://animadio.org | MIT License */
+/*! animadio v0.7.6 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -2169,11 +2169,11 @@ pre > *::selection {
   font-weight: normal;
 }
 
-[class*="font-"][class*="-italic"] {
+.font-italic {
   font-style: italic;
 }
 
-[class*="font-"][class*="-bold"] {
+.font-bold {
   font-weight: bold;
 }
 
@@ -2595,70 +2595,70 @@ pre > *::selection {
 }
 
 /***** 3 - Grid Gap *****/
-.gap-1xs {
+[class*="gap-"][class*="-1xs"] {
   grid-gap: var(--gap-1xs);
 }
 
-.gap-2xs {
+[class*="gap-"][class*="-2xs"] {
   grid-gap: var(--gap-2xs);
 }
 
-.gap-3xs {
+[class*="gap-"][class*="-3xs"] {
   grid-gap: var(--gap-3xs);
 }
 
 @media (min-width: 576px) {
-  .gap-1sm {
+  [class*="gap-"][class*="-1sm"] {
     grid-gap: var(--gap-1sm);
   }
 
-  .gap-2sm {
+  [class*="gap-"][class*="-2sm"] {
     grid-gap: var(--gap-2sm);
   }
 
-  .gap-3sm {
+  [class*="gap-"][class*="-3sm"] {
     grid-gap: var(--gap-3sm);
   }
 }
 
 @media (min-width: 768px) {
-  .gap-1md {
+  [class*="gap-"][class*="-1md"] {
     grid-gap: var(--gap-1md);
   }
 
-  .gap-2md {
+  [class*="gap-"][class*="-2md"] {
     grid-gap: var(--gap-2md);
   }
 
-  .gap-3md {
+  [class*="gap-"][class*="-3md"] {
     grid-gap: var(--gap-3md);
   }
 }
 
 @media (min-width: 992px) {
-  .gap-1lg {
+  [class*="gap-"][class*="-1lg"] {
     grid-gap: var(--gap-1lg);
   }
 
-  .gap-2lg {
+  [class*="gap-"][class*="-2lg"] {
     grid-gap: var(--gap-2lg);
   }
 
-  .gap-3lg {
+  [class*="gap-"][class*="-3lg"] {
     grid-gap: var(--gap-3lg);
   }
 }
 
 @media (min-width: 1200px) {
-  .gap-1xl {
+  [class*="gap-"][class*="-1xl"] {
     grid-gap: var(--gap-1xl);
   }
 
-  .gap-2xl {
+  [class*="gap-"][class*="-2xl"] {
     grid-gap: var(--gap-2xl);
   }
 
-  .gap-3xl {
+  [class*="gap-"][class*="-3xl"] {
     grid-gap: var(--gap-3xl);
   }
 }
@@ -2673,8 +2673,8 @@ pre > *::selection {
 
 /***** 1 - Flex Global *****/
 [class*="flex"],
-[class*="column"],
-[class*="row"] {
+.column,
+.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2685,7 +2685,7 @@ pre > *::selection {
 
 /***** 2 - Column & Row *****/
 
-[class*="column"] {
+.column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2693,7 +2693,7 @@ pre > *::selection {
   padding: var(--column-padding);
 }
 
-[class*="row"] {
+.row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -2701,28 +2701,28 @@ pre > *::selection {
   padding: var(--row-padding);
 }
 
-[class*="column-"][class*="-reverse"] {
+.col-reverse {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
 
-[class*="row-"][class*="-reverse"] {
+.row-reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-[class*="column-"][class*="-nowrap"],
-[class*="row-"][class*="-nowrap"] {
+.col-nowrap,
+.row-nowrap {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
 
-[class*="column-"][class*="-inverse"],
-[class*="row-"][class*="-inverse"] {
+.col-inverse,
+.row-inverse {
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
 }
@@ -5087,7 +5087,7 @@ pre > *::selection {
 */
 
 /***** 1 - Table *****/
-[class*="table"] {
+.table {
   display: table;
   border-collapse: var(--table-border-collapse);
   border-spacing: var(--table-border-spacing);
@@ -5098,37 +5098,37 @@ pre > *::selection {
 }
 
 /***** 2 - Table Display *****/
-[class*="table-"][class*="-inline"] {
+.table-inline {
   display: inline-table;
 }
 
-[class*="table-"][class*="-caption"] {
+.table-caption {
   display: table-caption;
 }
 
-[class*="table-"][class*="-row"] {
+.table-row {
   display: table-row;
 }
 
-[class*="table-"][class*="-column"] {
+.table-col {
   display: table-column;
 }
 
-[class*="table-"][class*="-cell"] {
+.table-cell {
   display: table-cell;
 }
 
 /***** 3 - Table Collapse *****/
-[class*="table-"][class*="-collapse"] {
+.table-collapse {
   border-collapse: collapse;
 }
 
-[class*="table-"][class*="-separate"] {
+.table-separate {
   border-collapse: separate;
 }
 
 /***** 4 - Table Caption *****/
-[class*="table"] > caption {
+.table > caption {
   caption-side: var(--table-caption-side);
   margin-bottom: var(--table-caption-margin-bottom);
   color: var(--table-caption-color);
@@ -5138,28 +5138,28 @@ pre > *::selection {
 }
 
 /***** 5 - Table Title *****/
-[class*="table"] thead,
-[class*="table"] tfoot {
+.table thead,
+.table tfoot {
   background-color: var(--table-title-background-color);
   color: var(--table-title-color);
   font-style: var(--table-title-font-style);
 }
 
 /***** 6 - Table Title Selection *****/
-[class*="table"] thead *::-moz-selection,
-[class*="table"] tfoot *::-moz-selection {
+.table thead *::-moz-selection,
+.table tfoot *::-moz-selection {
   background-color: var(--table-title-selection-background-color);
   color: var(--table-title-selection-color);
 }
-[class*="table"] thead *::selection,
-[class*="table"] tfoot *::selection {
+.table thead *::selection,
+.table tfoot *::selection {
   background-color: var(--table-title-selection-background-color);
   color: var(--table-title-selection-color);
 }
 
 /***** 7 - Table Cell *****/
-[class*="table"] th,
-[class*="table"] td {
+.table th,
+.table td {
   border-style: var(--table-cell-border-style);
   border-width: var(--table-cell-border-width);
   border-color: var(--table-cell-border-color);
@@ -5171,14 +5171,14 @@ pre > *::selection {
 }
 
 /***** 8 - Table Row Even *****/
-[class*="table"] tbody tr:nth-child(even) {
+.table tbody tr:nth-child(even) {
   background-color: var(--table-row-even-background-color);
   color: var(--table-row-even-color);
 }
 
 /***** 9 - Table Row Even Hover *****/
-[class*="table"] tbody tr:nth-child(even):hover,
-[class*="table"] tbody tr:nth-child(even):focus {
+.table tbody tr:nth-child(even):hover,
+.table tbody tr:nth-child(even):focus {
   background-color: var(--table-row-even-hover-background-color);
   color: var(--table-row-even-hover-color);
   -webkit-box-shadow: var(--table-row-even-hover-box-shadow);
@@ -5186,24 +5186,24 @@ pre > *::selection {
 }
 
 /***** 10 - Table Row Even Selection *****/
-[class*="table"] tbody tr:nth-child(even) > *::-moz-selection {
+.table tbody tr:nth-child(even) > *::-moz-selection {
   background-color: var(--table-row-even-selection-background-color);
   color: var(--table-row-even-selection-color);
 }
-[class*="table"] tbody tr:nth-child(even) > *::selection {
+.table tbody tr:nth-child(even) > *::selection {
   background-color: var(--table-row-even-selection-background-color);
   color: var(--table-row-even-selection-color);
 }
 
 /***** 11 - Table Row Odd *****/
-[class*="table"] tbody tr:nth-child(odd) {
+.table tbody tr:nth-child(odd) {
   background-color: var(--table-row-odd-background-color);
   color: var(--table-row-odd-color);
 }
 
 /***** 12 - Table Row Odd Hover *****/
-[class*="table"] tbody tr:nth-child(odd):hover,
-[class*="table"] tbody tr:nth-child(odd):focus {
+.table tbody tr:nth-child(odd):hover,
+.table tbody tr:nth-child(odd):focus {
   background-color: var(--table-row-odd-hover-background-color);
   color: var(--table-row-odd-hover-color);
   -webkit-box-shadow: var(--table-row-odd-hover-box-shadow);
@@ -5211,11 +5211,11 @@ pre > *::selection {
 }
 
 /***** 13 - Table Row Odd Selection *****/
-[class*="table"] tbody tr:nth-child(odd) > *::-moz-selection {
+.table tbody tr:nth-child(odd) > *::-moz-selection {
   background-color: var(--table-row-odd-selection-background-color);
   color: var(--table-row-odd-selection-color);
 }
-[class*="table"] tbody tr:nth-child(odd) > *::selection {
+.table tbody tr:nth-child(odd) > *::selection {
   background-color: var(--table-row-odd-selection-background-color);
   color: var(--table-row-odd-selection-color);
 }
@@ -9783,4 +9783,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 23rd Aug 2019 @ 7:27:42 AM */
+ Updated: 24th Aug 2019 @ 4:16:01 PM */
