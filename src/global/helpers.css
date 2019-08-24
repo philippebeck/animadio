@@ -12,11 +12,11 @@
   font-weight: normal;
 }
 
-[class*="font-"][class*="-italic"] {
+.font-italic {
   font-style: italic;
 }
 
-[class*="font-"][class*="-bold"] {
+.font-bold {
   font-weight: bold;
 }
 
