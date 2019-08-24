@@ -7,112 +7,49 @@
 */
 
 /***** 1.1 Font *****/
-.font-normal {
-  font-style: normal;
-  font-weight: normal;
+.font-bold {
+  font-weight: bold;
 }
 
 .font-italic {
   font-style: italic;
 }
 
-.font-bold {
-  font-weight: bold;
+.font-oblique {
+  font-style: oblique;
+}
+
+.font-normal {
+  font-style: normal;
+  font-weight: normal;
 }
 
 /***** 2 - Text *****/
-[class*="text-"][class*="-center-xs"] {
+.text-center {
   text-align: center;
 }
 
-[class*="text-"][class*="-justify-xs"] {
+.text-justify {
   text-align: justify;
 }
 
-[class*="text-"][class*="-right-xs"] {
-  text-align: right;
-}
-
-[class*="text-"][class*="-left-xs"] {
+.text-left {
   text-align: left;
 }
 
-@media (min-width: 576px) {
-  [class*="text-"][class*="-center-sm"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-sm"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-sm"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-sm"] {
-    text-align: left;
-  }
-}
-
-@media (min-width: 768px) {
-  [class*="text-"][class*="-center-md"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-md"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-md"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-md"] {
-    text-align: left;
-  }
-}
-
-@media (min-width: 992px) {
-  [class*="text-"][class*="-center-lg"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-lg"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-lg"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-lg"] {
-    text-align: left;
-  }
-}
-
-@media (min-width: 1200px) {
-  [class*="text-"][class*="-center-xl"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-xl"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-xl"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-xl"] {
-    text-align: left;
-  }
+.text-right {
+  text-align: right;
 }
 
 /***** 3 - Cursor *****/
 .cursor-cross,
 .cursor-cross > * {
   cursor: crosshair;
+}
+
+.cursor-hand,
+.cursor-hand > * {
+  cursor: pointer;
 }
 
 .cursor-help,
@@ -123,9 +60,4 @@
 .cursor-none,
 .cursor-none > * {
   cursor: not-allowed;
-}
-
-.cursor-hand,
-.cursor-hand > * {
-  cursor: pointer;
 }

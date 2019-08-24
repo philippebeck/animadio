@@ -277,21 +277,21 @@ pre {
 
 /***** 2.1 Grid *****/
 [class*="gap-"] {
-  --gap-1lg: 10px;
-  --gap-2lg: 20px;
-  --gap-3lg: 50px;
-  --gap-1md: 5px;
-  --gap-2md: 10px;
-  --gap-3md: 20px;
-  --gap-1sm: 2px;
-  --gap-2sm: 5px;
-  --gap-3sm: 10px;
-  --gap-1xl: 20px;
-  --gap-2xl: 50px;
-  --gap-3xl: 100px;
-  --gap-1xs: 1px;
-  --gap-2xs: 2px;
-  --gap-3xs: 5px;
+  --gap-small-lg: 10px;
+  --gap-medium-lg: 20px;
+  --gap-large-lg: 50px;
+  --gap-small-md: 5px;
+  --gap-medium-md: 10px;
+  --gap-large-md: 20px;
+  --gap-small-sm: 2px;
+  --gap-medium-sm: 5px;
+  --gap-large-sm: 10px;
+  --gap-small-xl: 20px;
+  --gap-medium-xl: 50px;
+  --gap-large-xl: 100px;
+  --gap-small-xs: 1px;
+  --gap-medium-xs: 2px;
+  --gap-large-xs: 5px;
 }
 
 /***** 2.2 Flex *****/
