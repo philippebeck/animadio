@@ -17,7 +17,7 @@
 */
 
 /***** 1 - Table *****/
-[class*="table"] {
+.table {
   display: table;
   border-collapse: var(--table-border-collapse);
   border-spacing: var(--table-border-spacing);
@@ -27,37 +27,37 @@
 }
 
 /***** 2 - Table Display *****/
-[class*="table-"][class*="-inline"] {
+.table-inline {
   display: inline-table;
 }
 
-[class*="table-"][class*="-caption"] {
+.table-caption {
   display: table-caption;
 }
 
-[class*="table-"][class*="-row"] {
+.table-row {
   display: table-row;
 }
 
-[class*="table-"][class*="-column"] {
+.table-col {
   display: table-column;
 }
 
-[class*="table-"][class*="-cell"] {
+.table-cell {
   display: table-cell;
 }
 
 /***** 3 - Table Collapse *****/
-[class*="table-"][class*="-collapse"] {
+.table-collapse {
   border-collapse: collapse;
 }
 
-[class*="table-"][class*="-separate"] {
+.table-separate {
   border-collapse: separate;
 }
 
 /***** 4 - Table Caption *****/
-[class*="table"] > caption {
+.table > caption {
   caption-side: var(--table-caption-side);
   margin-bottom: var(--table-caption-margin-bottom);
   color: var(--table-caption-color);
@@ -67,23 +67,23 @@
 }
 
 /***** 5 - Table Title *****/
-[class*="table"] thead,
-[class*="table"] tfoot {
+.table thead,
+.table tfoot {
   background-color: var(--table-title-background-color);
   color: var(--table-title-color);
   font-style: var(--table-title-font-style);
 }
 
 /***** 6 - Table Title Selection *****/
-[class*="table"] thead *::selection,
-[class*="table"] tfoot *::selection {
+.table thead *::selection,
+.table tfoot *::selection {
   background-color: var(--table-title-selection-background-color);
   color: var(--table-title-selection-color);
 }
 
 /***** 7 - Table Cell *****/
-[class*="table"] th,
-[class*="table"] td {
+.table th,
+.table td {
   border-style: var(--table-cell-border-style);
   border-width: var(--table-cell-border-width);
   border-color: var(--table-cell-border-color);
@@ -95,41 +95,41 @@
 }
 
 /***** 8 - Table Row Even *****/
-[class*="table"] tbody tr:nth-child(even) {
+.table tbody tr:nth-child(even) {
   background-color: var(--table-row-even-background-color);
   color: var(--table-row-even-color);
 }
 
 /***** 9 - Table Row Even Hover *****/
-[class*="table"] tbody tr:nth-child(even):hover,
-[class*="table"] tbody tr:nth-child(even):focus {
+.table tbody tr:nth-child(even):hover,
+.table tbody tr:nth-child(even):focus {
   background-color: var(--table-row-even-hover-background-color);
   color: var(--table-row-even-hover-color);
   box-shadow: var(--table-row-even-hover-box-shadow);
 }
 
 /***** 10 - Table Row Even Selection *****/
-[class*="table"] tbody tr:nth-child(even) > *::selection {
+.table tbody tr:nth-child(even) > *::selection {
   background-color: var(--table-row-even-selection-background-color);
   color: var(--table-row-even-selection-color);
 }
 
 /***** 11 - Table Row Odd *****/
-[class*="table"] tbody tr:nth-child(odd) {
+.table tbody tr:nth-child(odd) {
   background-color: var(--table-row-odd-background-color);
   color: var(--table-row-odd-color);
 }
 
 /***** 12 - Table Row Odd Hover *****/
-[class*="table"] tbody tr:nth-child(odd):hover,
-[class*="table"] tbody tr:nth-child(odd):focus {
+.table tbody tr:nth-child(odd):hover,
+.table tbody tr:nth-child(odd):focus {
   background-color: var(--table-row-odd-hover-background-color);
   color: var(--table-row-odd-hover-color);
   box-shadow: var(--table-row-odd-hover-box-shadow);
 }
 
 /***** 13 - Table Row Odd Selection *****/
-[class*="table"] tbody tr:nth-child(odd) > *::selection {
+.table tbody tr:nth-child(odd) > *::selection {
   background-color: var(--table-row-odd-selection-background-color);
   color: var(--table-row-odd-selection-color);
 }
