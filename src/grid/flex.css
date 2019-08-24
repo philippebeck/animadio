@@ -8,8 +8,8 @@
 
 /***** 1 - Flex Global *****/
 [class*="flex"],
-[class*="column"],
-[class*="row"] {
+.column,
+.row {
   display: flex;
   flex-wrap: wrap;
   place-content: center;
@@ -17,31 +17,31 @@
 
 /***** 2 - Column & Row *****/
 
-[class*="column"] {
+.column {
   flex-direction: column;
   padding: var(--column-padding);
 }
 
-[class*="row"] {
+.row {
   flex-direction: row;
   padding: var(--row-padding);
 }
 
-[class*="column-"][class*="-reverse"] {
+.col-reverse {
   flex-direction: column-reverse;
 }
 
-[class*="row-"][class*="-reverse"] {
+.row-reverse {
   flex-direction: row-reverse;
 }
 
-[class*="column-"][class*="-nowrap"],
-[class*="row-"][class*="-nowrap"] {
+.col-nowrap,
+.row-nowrap {
   flex-wrap: nowrap;
 }
 
-[class*="column-"][class*="-inverse"],
-[class*="row-"][class*="-inverse"] {
+.col-inverse,
+.row-inverse {
   flex-wrap: wrap-reverse;
 }
 

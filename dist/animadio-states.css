@@ -1,4 +1,4 @@
-/*! animadio v0.7.5 | https://animadio.org | MIT License */
+/*! animadio v0.7.6 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -2169,11 +2169,11 @@ pre > *::selection {
   font-weight: normal;
 }
 
-[class*="font-"][class*="-italic"] {
+.font-italic {
   font-style: italic;
 }
 
-[class*="font-"][class*="-bold"] {
+.font-bold {
   font-weight: bold;
 }
 
@@ -6593,4 +6593,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 23rd Aug 2019 @ 7:27:42 AM */
+ Updated: 24th Aug 2019 @ 4:16:01 PM */
