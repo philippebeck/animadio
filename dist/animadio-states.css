@@ -1,4 +1,4 @@
-/*! animadio v0.7.6 | https://animadio.org | MIT License */
+/*! animadio v0.7.7 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -279,21 +279,21 @@ pre {
 
 /***** 2.1 Grid *****/
 [class*="gap-"] {
-  --gap-1lg: 10px;
-  --gap-2lg: 20px;
-  --gap-3lg: 50px;
-  --gap-1md: 5px;
-  --gap-2md: 10px;
-  --gap-3md: 20px;
-  --gap-1sm: 2px;
-  --gap-2sm: 5px;
-  --gap-3sm: 10px;
-  --gap-1xl: 20px;
-  --gap-2xl: 50px;
-  --gap-3xl: 100px;
-  --gap-1xs: 1px;
-  --gap-2xs: 2px;
-  --gap-3xs: 5px;
+  --gap-small-lg: 10px;
+  --gap-medium-lg: 20px;
+  --gap-large-lg: 50px;
+  --gap-small-md: 5px;
+  --gap-medium-md: 10px;
+  --gap-large-md: 20px;
+  --gap-small-sm: 2px;
+  --gap-medium-sm: 5px;
+  --gap-large-sm: 10px;
+  --gap-small-xl: 20px;
+  --gap-medium-xl: 50px;
+  --gap-large-xl: 100px;
+  --gap-small-xs: 1px;
+  --gap-medium-xs: 2px;
+  --gap-large-xs: 5px;
 }
 
 /***** 2.2 Flex *****/
@@ -2164,112 +2164,49 @@ pre > *::selection {
 */
 
 /***** 1.1 Font *****/
-.font-normal {
-  font-style: normal;
-  font-weight: normal;
+.font-bold {
+  font-weight: bold;
 }
 
 .font-italic {
   font-style: italic;
 }
 
-.font-bold {
-  font-weight: bold;
+.font-oblique {
+  font-style: oblique;
+}
+
+.font-normal {
+  font-style: normal;
+  font-weight: normal;
 }
 
 /***** 2 - Text *****/
-[class*="text-"][class*="-center-xs"] {
+.text-center {
   text-align: center;
 }
 
-[class*="text-"][class*="-justify-xs"] {
+.text-justify {
   text-align: justify;
 }
 
-[class*="text-"][class*="-right-xs"] {
-  text-align: right;
-}
-
-[class*="text-"][class*="-left-xs"] {
+.text-left {
   text-align: left;
 }
 
-@media (min-width: 576px) {
-  [class*="text-"][class*="-center-sm"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-sm"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-sm"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-sm"] {
-    text-align: left;
-  }
-}
-
-@media (min-width: 768px) {
-  [class*="text-"][class*="-center-md"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-md"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-md"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-md"] {
-    text-align: left;
-  }
-}
-
-@media (min-width: 992px) {
-  [class*="text-"][class*="-center-lg"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-lg"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-lg"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-lg"] {
-    text-align: left;
-  }
-}
-
-@media (min-width: 1200px) {
-  [class*="text-"][class*="-center-xl"] {
-    text-align: center;
-  }
-
-  [class*="text-"][class*="-justify-xl"] {
-    text-align: justify;
-  }
-
-  [class*="text-"][class*="-right-xl"] {
-    text-align: right;
-  }
-
-  [class*="text-"][class*="-left-xl"] {
-    text-align: left;
-  }
+.text-right {
+  text-align: right;
 }
 
 /***** 3 - Cursor *****/
 .cursor-cross,
 .cursor-cross > * {
   cursor: crosshair;
+}
+
+.cursor-hand,
+.cursor-hand > * {
+  cursor: pointer;
 }
 
 .cursor-help,
@@ -2280,11 +2217,6 @@ pre > *::selection {
 .cursor-none,
 .cursor-none > * {
   cursor: not-allowed;
-}
-
-.cursor-hand,
-.cursor-hand > * {
-  cursor: pointer;
 }
 
 /********** DISPLAY **********/
@@ -6593,4 +6525,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 24th Aug 2019 @ 4:16:01 PM */
+ Updated: 24th Aug 2019 @ 5:29:44 PM */
