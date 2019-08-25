@@ -597,8 +597,9 @@ pre {
   --gallery-figcaption-fa-position: absolute;
   --gallery-figcaption-fa-radius: 50%;
   --gallery-figcaption-fa-right: 5px;
-  --gallery-figcaption-fa-top: -15px;
+  --gallery-figcaption-fa-top: -20px;
   --gallery-figcaption-line-height: 0.8;
+  --gallery-figcaption-padding: 10px;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-width: 100%;
   --gallery-figure-border: thin dotted var(--silver);
@@ -613,11 +614,9 @@ pre {
   --gallery-figure-position: relative;
   --gallery-figure-width: calc(100% - 10px);
   --gallery-link-all-cursor: pointer;
+  --gallery-link-all-font-size: 80%;
   --gallery-link-all-margin: 0;
-  --gallery-link-all-even-font-size: 1.2rem;
-  --gallery-link-all-even-padding: 0 10px;
-  --gallery-link-all-odd-font-size: 1.5rem;
-  --gallery-link-all-odd-padding: 10px;
+  --gallery-link-all-padding: 5px;
   --gallery-link-color: var(--white);
   --gallery-margin: 20px auto 50px;
   --gallery-max-width: 90%;
