@@ -48,6 +48,7 @@
   display: none;
   position: var(--gallery-figcaption-position);
   bottom: var(--gallery-figcaption-bottom);
+  padding: var(--gallery-figcaption-padding);
   width: var(--gallery-figcaption-width);
   line-height: var(--gallery-figcaption-line-height);
   background-color: var(--gallery-figcaption-background-color);
@@ -80,17 +81,7 @@
 /***** 8 - Gallery Link All *****/
 .gallery a * {
   margin: var(--gallery-link-all-margin);
+  padding: var(--gallery-link-all-padding);
+  font-size: var(--gallery-link-all-font-size);
   cursor: var(--gallery-link-all-cursor);
-}
-
-/***** 9 - Gallery Link All Even *****/
-.gallery a *:nth-child(even) {
-  padding: var(--gallery-link-all-even-padding);
-  font-size: var(--gallery-link-all-even-font-size);
-}
-
-/***** 10 - Gallery Link All Odd *****/
-.gallery a *:nth-child(odd) {
-  padding: var(--gallery-link-all-odd-padding);
-  font-size: var(--gallery-link-all-odd-font-size);
 }
