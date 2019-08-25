@@ -676,28 +676,22 @@ pre {
   --menu-width: 40%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .menu {
     --menu-flex-direction: row;
     --menu-width: 100%;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .menu {
     --menu-width: 90%;
   }
 }
 
-@media (min-width: 992px) {
-  .menu {
-    --menu-width: 80%;
-  }
-}
-
 @media (min-width: 1200px) {
   .menu {
-    --menu-width: 70%;
+    --menu-width: 80%;
   }
 }
 
