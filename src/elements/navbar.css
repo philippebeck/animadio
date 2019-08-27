@@ -61,13 +61,6 @@
   cursor: var(--navbar-link-cursor);
 }
 
-.navbar a:hover,
-.navbar a:focus,
-.navbar label:hover,
-.navbar label:focus {
-  color: var(--navbar-link-hover-color);
-}
-
 /***** 5 - Navbar Icon *****/
 .navbar i {
   place-self: var(--navbar-icon-place-self);
@@ -99,13 +92,15 @@
 }
 
 /***** 9 - Navbar Brand Link *****/
-.navbar > a:first-of-type {
+.navbar > a:first-of-type,
+.navbar > label:first-of-type {
   position: absolute;
   left: var(--navbar-brand-link-left);
 }
 
 @media (min-width: 576px) {
-  .navbar > a:first-of-type {
+  .navbar > a:first-of-type,
+  .navbar > label:first-of-type {
     position: static;
   }
 }
@@ -126,6 +121,7 @@
 .navbar > ul:first-of-type a:focus,
 .navbar > ul:first-of-type label:hover,
 .navbar > ul:first-of-type label:focus {
+  color: var(--navbar-link-hover-color);
   transform: scale(var(--navbar-first-list-link-hover-scale));
 }
 

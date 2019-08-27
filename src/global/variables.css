@@ -699,7 +699,7 @@ pre {
   --navbar-background-color: var(--blue);
   --navbar-bottom: unset;
   --navbar-brand-link-img-height: 40px;
-  --navbar-brand-link-left: 10px;
+  --navbar-brand-link-left: 0;
   --navbar-color: var(--white);
   --navbar-first-list-link-hover-scale: 0.9;
   --navbar-icon-place-self: center;
