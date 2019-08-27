@@ -61,13 +61,6 @@
   cursor: var(--navbar-link-cursor);
 }
 
-.navbar ul:first-of-type a:hover,
-.navbar ul:first-of-type a:focus,
-.navbar ul:first-of-type label:hover,
-.navbar ul:first-of-type label:focus {
-  color: var(--navbar-link-hover-color);
-}
-
 /***** 5 - Navbar Icon *****/
 .navbar i {
   place-self: var(--navbar-icon-place-self);
@@ -128,6 +121,7 @@
 .navbar > ul:first-of-type a:focus,
 .navbar > ul:first-of-type label:hover,
 .navbar > ul:first-of-type label:focus {
+  color: var(--navbar-link-hover-color);
   transform: scale(var(--navbar-first-list-link-hover-scale));
 }
 
