@@ -232,7 +232,7 @@
 .inblock-radio4:checked ~ .inblock-relay .inblock-target4,
 .inblock-radio5:checked ~ .inblock-relay .inblock-target5,
 .inblock-check:checked ~ .inblock-hub .inblock-goal {
-  display: inblock-block;
+  display: inline-block;
 }
 
 @media (min-width: 576px) {
