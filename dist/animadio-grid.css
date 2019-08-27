@@ -1,4 +1,4 @@
-/*! animadio v0.8.1 | https://animadio.org | MIT License */
+/*! animadio v0.8.2 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -701,7 +701,7 @@ pre {
   --navbar-background-color: var(--blue);
   --navbar-bottom: unset;
   --navbar-brand-link-img-height: 40px;
-  --navbar-brand-link-left: 10px;
+  --navbar-brand-link-left: 0;
   --navbar-color: var(--white);
   --navbar-first-list-link-hover-scale: 0.9;
   --navbar-icon-place-self: center;
@@ -3831,4 +3831,4 @@ grid-template: auto/repeat(7, auto);
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 27th Aug 2019 @ 2:02:44 PM */
+ Updated: 27th Aug 2019 @ 9:25:24 PM */
