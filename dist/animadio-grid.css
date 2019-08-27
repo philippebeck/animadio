@@ -1,4 +1,4 @@
-/*! animadio v0.7.8 | https://animadio.org | MIT License */
+/*! animadio v0.7.9 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -30,9 +30,8 @@ You can override any variable of Animadio you want in your custom stylesheet fil
 4. STATES
   4.1 Anima
   4.2 Bord
-  4.3 Deco
-  4.4 Shabox
-  4.5 Shatex
+  4.3 Shabox
+  4.4 Shatex
 */
 
 :root {
@@ -859,23 +858,17 @@ pre {
 
 /***** 4.1 Anima *****/
 [class*="anima-"] {
-  --animation-delay: 0;
   --animation-delay-large: 3s;
   --animation-delay-medium: 2s;
   --animation-delay-small: 1s;
-  --animation-direction: normal;
   --animation-duration: 2s;
   --animation-duration-xs: 1s;
   --animation-duration-sm: 2s;
   --animation-duration-md: 5s;
   --animation-duration-lg: 10s;
   --animation-duration-xl: 60s;
-  --animation-fill-mode: none;
-  --animation-iteration-count: 1;
   --animation-iteration-count-few: 2;
   --animation-iteration-count-many: 5;
-  --animation-name: scale;
-  --animation-timing-function: linear;
   --animation-timing-function-bezier: 1, 5, 1, -5;
   --animation-timing-function-ease: ease-in-out;
   --animation-timing-function-steps: 60, start;
@@ -885,43 +878,33 @@ pre {
 
 /***** 4.2 Bord *****/
 [class*="bord-"] {
-  --border-color: var(--black);
   --border-radius: 5px;
   --border-radius-circle: 50%;
   --border-radius-round: 10px;
   --border-radius-square: unset;
-  --border-style: solid;
-  --border-width: medium;
   --border-width-lg: thick;
   --border-width-md: medium;
   --border-width-sm: thin;
 }
 
-/***** 4.3 Deco *****/
-[class*="deco-"] {
-  --text-decoration-color: var(--black);
-  --text-decoration-line: underline;
-  --text-decoration-style: solid;
-}
-
-/***** 4.4 Shabox *****/
+/***** 4.3 Shabox *****/
 [class*="shabox-"] {
-  --box-shadow-blur-all: 0 0 2px;
+  --box-shadow-blur: 0 0 2px;
   --box-shadow-blur-lg: 5px 5px 5px;
   --box-shadow-blur-md: 2px 2px 2px;
   --box-shadow-blur-sm: 1px 1px 1px;
   --box-shadow-lg: 5px 5px;
   --box-shadow-md: 2px 2px;
   --box-shadow-sm: 1px 1px;
-  --box-shadow-spread-all: 0 0 2px 2px;
+  --box-shadow-spread: 0 0 2px 2px;
   --box-shadow-spread-lg: 5px 5px 5px 5px;
   --box-shadow-spread-md: 2px 2px 2px 2px;
   --box-shadow-spread-sm: 1px 1px 1px 1px;
 }
 
-/***** 4.5 Shatex *****/
+/***** 4.4 Shatex *****/
 [class*="shatex-"] {
-  --text-shadow-blur-all: 0 0 2px;
+  --text-shadow-blur: 0 0 2px;
   --text-shadow-blur-lg: 5px 5px 5px;
   --text-shadow-blur-md: 2px 2px 2px;
   --text-shadow-blur-sm: 1px 1px 1px;
@@ -2210,6 +2193,131 @@ pre > *::selection {
 .cursor-none,
 .cursor-none > * {
   cursor: not-allowed;
+}
+
+/********** DISPLAY **********/
+
+/*
+1 - Display Block
+2 - Display Hide
+3 - Display Inline
+4 - Display Inblock
+*/
+
+/***** 1 - Display Block *****/
+.block {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .block-sm {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .block-md {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-lg {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block-xl {
+    display: block;
+  }
+}
+
+/***** 2 - Display None *****/
+.hide {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .hide-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-md {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .hide-lg {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hide-xl {
+    display: none;
+  }
+}
+
+/***** 3 - Display Inline *****/
+.inline {
+  display: inline;
+}
+
+@media (min-width: 576px) {
+  .inline-sm {
+    display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .inline-md {
+    display: inline;
+  }
+}
+
+@media (min-width: 992px) {
+  .inline-lg {
+    display: inline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .inline-xl {
+    display: inline;
+  }
+}
+
+/***** 4 - Display Inblock *****/
+.inblock {
+  display: inline-block;
+}
+
+@media (min-width: 576px) {
+  .inblock-sm {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .inblock-md {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  .inblock-lg {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .inblock-xl {
+    display: inline-block;
+  }
 }
 
 /********** GRID **********/
@@ -3591,5 +3699,265 @@ pre > *::selection {
   }
 }
 
+/********** POSITION **********/
+
+/*
+1 - Position Absolute
+2 - Position Fixed
+3 - Position Relative
+4 - Position Sticky
+5 - Top, Right, Bottom & Left
+*/
+
+/***** 1 - Position Absolute *****/
+.absolute {
+  position: absolute;
+}
+
+@media (min-width: 576px) {
+  .absolute-sm {
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) {
+  .absolute-md {
+    position: absolute;
+  }
+}
+
+@media (min-width: 992px) {
+  .absolute-lg {
+    position: absolute;
+  }
+}
+
+@media (min-width: 1200px) {
+  .absolute-xl {
+    position: absolute;
+  }
+}
+
+/***** 2 - Position Fixed *****/
+.fixed {
+  position: fixed;
+}
+
+@media (min-width: 576px) {
+  .fixed-sm {
+    position: fixed;
+  }
+}
+
+@media (min-width: 768px) {
+  .fixed-md {
+    position: fixed;
+  }
+}
+
+@media (min-width: 992px) {
+  .fixed-lg {
+    position: fixed;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fixed-xl {
+    position: fixed;
+  }
+}
+
+/***** 3 - Position Relative *****/
+.relative {
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .relative-sm {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .relative-md {
+    position: relative;
+  }
+}
+
+@media (min-width: 992px) {
+  .relative-lg {
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .relative-xl {
+    position: relative;
+  }
+}
+
+/***** 4 - Position Sticky *****/
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+@media (min-width: 576px) {
+  .sticky-sm {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+@media (min-width: 768px) {
+  .sticky-md {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+@media (min-width: 992px) {
+  .sticky-lg {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sticky-xl {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+/***** 5 - Top, Right, Bottom & Left *****/
+.top {
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.bot {
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .top-sm {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-sm {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-sm {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-sm {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-md {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-md {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-md {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-md {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-lg {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-lg {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-lg {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-lg {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-xl {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-xl {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-xl {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-xl {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 25th Aug 2019 @ 4:43:57 PM */
+ Updated: 27th Aug 2019 @ 9:53:25 AM */
