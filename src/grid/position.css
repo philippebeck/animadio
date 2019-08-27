@@ -1,0 +1,254 @@
+/********** POSITION **********/
+
+/*
+1 - Position Absolute
+2 - Position Fixed
+3 - Position Relative
+4 - Position Sticky
+5 - Top, Right, Bottom & Left
+*/
+
+/***** 1 - Position Absolute *****/
+.absolute {
+  position: absolute;
+}
+
+@media (min-width: 576px) {
+  .absolute-sm {
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) {
+  .absolute-md {
+    position: absolute;
+  }
+}
+
+@media (min-width: 992px) {
+  .absolute-lg {
+    position: absolute;
+  }
+}
+
+@media (min-width: 1200px) {
+  .absolute-xl {
+    position: absolute;
+  }
+}
+
+/***** 2 - Position Fixed *****/
+.fixed {
+  position: fixed;
+}
+
+@media (min-width: 576px) {
+  .fixed-sm {
+    position: fixed;
+  }
+}
+
+@media (min-width: 768px) {
+  .fixed-md {
+    position: fixed;
+  }
+}
+
+@media (min-width: 992px) {
+  .fixed-lg {
+    position: fixed;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fixed-xl {
+    position: fixed;
+  }
+}
+
+/***** 3 - Position Relative *****/
+.relative {
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .relative-sm {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .relative-md {
+    position: relative;
+  }
+}
+
+@media (min-width: 992px) {
+  .relative-lg {
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .relative-xl {
+    position: relative;
+  }
+}
+
+/***** 4 - Position Sticky *****/
+.sticky {
+  position: sticky;
+}
+
+@media (min-width: 576px) {
+  .sticky-sm {
+    position: sticky;
+  }
+}
+
+@media (min-width: 768px) {
+  .sticky-md {
+    position: sticky;
+  }
+}
+
+@media (min-width: 992px) {
+  .sticky-lg {
+    position: sticky;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sticky-xl {
+    position: sticky;
+  }
+}
+
+/***** 5 - Top, Right, Bottom & Left *****/
+.top {
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.bot {
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .top-sm {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-sm {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-sm {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-sm {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-md {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-md {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-md {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-md {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-lg {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-lg {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-lg {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-lg {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-xl {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-xl {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-xl {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-xl {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
