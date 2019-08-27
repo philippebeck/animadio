@@ -28,9 +28,8 @@ You can override any variable of Animadio you want in your custom stylesheet fil
 4. STATES
   4.1 Anima
   4.2 Bord
-  4.3 Deco
-  4.4 Shabox
-  4.5 Shatex
+  4.3 Shabox
+  4.4 Shatex
 */
 
 :root {
@@ -857,23 +856,17 @@ pre {
 
 /***** 4.1 Anima *****/
 [class*="anima-"] {
-  --animation-delay: 0;
   --animation-delay-large: 3s;
   --animation-delay-medium: 2s;
   --animation-delay-small: 1s;
-  --animation-direction: normal;
   --animation-duration: 2s;
   --animation-duration-xs: 1s;
   --animation-duration-sm: 2s;
   --animation-duration-md: 5s;
   --animation-duration-lg: 10s;
   --animation-duration-xl: 60s;
-  --animation-fill-mode: none;
-  --animation-iteration-count: 1;
   --animation-iteration-count-few: 2;
   --animation-iteration-count-many: 5;
-  --animation-name: scale;
-  --animation-timing-function: linear;
   --animation-timing-function-bezier: 1, 5, 1, -5;
   --animation-timing-function-ease: ease-in-out;
   --animation-timing-function-steps: 60, start;
@@ -883,43 +876,33 @@ pre {
 
 /***** 4.2 Bord *****/
 [class*="bord-"] {
-  --border-color: var(--black);
   --border-radius: 5px;
   --border-radius-circle: 50%;
   --border-radius-round: 10px;
   --border-radius-square: unset;
-  --border-style: solid;
-  --border-width: medium;
   --border-width-lg: thick;
   --border-width-md: medium;
   --border-width-sm: thin;
 }
 
-/***** 4.3 Deco *****/
-[class*="deco-"] {
-  --text-decoration-color: var(--black);
-  --text-decoration-line: underline;
-  --text-decoration-style: solid;
-}
-
-/***** 4.4 Shabox *****/
+/***** 4.3 Shabox *****/
 [class*="shabox-"] {
-  --box-shadow-blur-all: 0 0 2px;
+  --box-shadow-blur: 0 0 2px;
   --box-shadow-blur-lg: 5px 5px 5px;
   --box-shadow-blur-md: 2px 2px 2px;
   --box-shadow-blur-sm: 1px 1px 1px;
   --box-shadow-lg: 5px 5px;
   --box-shadow-md: 2px 2px;
   --box-shadow-sm: 1px 1px;
-  --box-shadow-spread-all: 0 0 2px 2px;
+  --box-shadow-spread: 0 0 2px 2px;
   --box-shadow-spread-lg: 5px 5px 5px 5px;
   --box-shadow-spread-md: 2px 2px 2px 2px;
   --box-shadow-spread-sm: 1px 1px 1px 1px;
 }
 
-/***** 4.5 Shatex *****/
+/***** 4.4 Shatex *****/
 [class*="shatex-"] {
-  --text-shadow-blur-all: 0 0 2px;
+  --text-shadow-blur: 0 0 2px;
   --text-shadow-blur-lg: 5px 5px 5px;
   --text-shadow-blur-md: 2px 2px 2px;
   --text-shadow-blur-sm: 1px 1px 1px;
