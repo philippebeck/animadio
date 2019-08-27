@@ -61,10 +61,10 @@
   cursor: var(--navbar-link-cursor);
 }
 
-.navbar a:hover,
-.navbar a:focus,
-.navbar label:hover,
-.navbar label:focus {
+.navbar ul:first-of-type a:hover,
+.navbar ul:first-of-type a:focus,
+.navbar ul:first-of-type label:hover,
+.navbar ul:first-of-type label:focus {
   color: var(--navbar-link-hover-color);
 }
 
