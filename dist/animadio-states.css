@@ -1,4 +1,4 @@
-/*! animadio v0.8.0 | https://animadio.org | MIT License */
+/*! animadio v0.8.1 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -2209,6 +2209,1291 @@ pre > *::selection {
 .cursor-none,
 .cursor-none > * {
   cursor: not-allowed;
+}
+
+/********** DISPLAY **********/
+
+/*
+1 - Display Block
+2 - Display Hide
+3 - Display Inblock
+4 - Display Inline
+*/
+
+/***** 1 - Display Block *****/
+.block,
+.block-global > *,
+*:hover > .block-into,
+*:focus > .block-into,
+.block-onto:hover,
+.block-onto:focus,
+.block-toall:hover > *,
+.block-toall:focus > *,
+.block-toone > *:hover,
+.block-toone > *:focus,
+.block-radio1:checked ~ .block-relay .block-target1,
+.block-radio2:checked ~ .block-relay .block-target2,
+.block-radio3:checked ~ .block-relay .block-target3,
+.block-radio4:checked ~ .block-relay .block-target4,
+.block-radio5:checked ~ .block-relay .block-target5,
+.block-check:checked ~ .block-hub .block-goal {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .block-sm,
+  .block-sm-global > *,
+  *:hover > .block-sm-into,
+  *:focus > .block-sm-into,
+  .block-sm-onto:hover,
+  .block-sm-onto:focus,
+  .block-sm-toall:hover > *,
+  .block-sm-toall:focus > *,
+  .block-sm-toone > *:hover,
+  .block-sm-toone > *:focus,
+  .block-sm-radio1:checked ~ .block-sm-relay .block-sm-target1,
+  .block-sm-radio2:checked ~ .block-sm-relay .block-sm-target2,
+  .block-sm-radio3:checked ~ .block-sm-relay .block-sm-target3,
+  .block-sm-radio4:checked ~ .block-sm-relay .block-sm-target4,
+  .block-sm-radio5:checked ~ .block-sm-relay .block-sm-target5,
+  .block-sm-check:checked ~ .block-sm-hub .block-sm-goal {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .block-md,
+  .block-md-global > *,
+  *:hover > .block-md-into,
+  *:focus > .block-md-into,
+  .block-md-onto:hover,
+  .block-md-onto:focus,
+  .block-md-toall:hover > *,
+  .block-md-toall:focus > *,
+  .block-md-toone > *:hover,
+  .block-md-toone > *:focus,
+  .block-md-radio1:checked ~ .block-md-relay .block-md-target1,
+  .block-md-radio2:checked ~ .block-md-relay .block-md-target2,
+  .block-md-radio3:checked ~ .block-md-relay .block-md-target3,
+  .block-md-radio4:checked ~ .block-md-relay .block-md-target4,
+  .block-md-radio5:checked ~ .block-md-relay .block-md-target5,
+  .block-md-check:checked ~ .block-md-hub .block-md-goal {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-lg,
+  .block-lg-global > *,
+  *:hover > .block-lg-into,
+  *:focus > .block-lg-into,
+  .block-lg-onto:hover,
+  .block-lg-onto:focus,
+  .block-lg-toall:hover > *,
+  .block-lg-toall:focus > *,
+  .block-lg-toone > *:hover,
+  .block-lg-toone > *:focus,
+  .block-lg-radio1:checked ~ .block-lg-relay .block-lg-target1,
+  .block-lg-radio2:checked ~ .block-lg-relay .block-lg-target2,
+  .block-lg-radio3:checked ~ .block-lg-relay .block-lg-target3,
+  .block-lg-radio4:checked ~ .block-lg-relay .block-lg-target4,
+  .block-lg-radio5:checked ~ .block-lg-relay .block-lg-target5,
+  .block-lg-check:checked ~ .block-lg-hub .block-lg-goal {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block-xl,
+  .block-xl-global > *,
+  *:hover > .block-xl-into,
+  *:focus > .block-xl-into,
+  .block-xl-onto:hover,
+  .block-xl-onto:focus,
+  .block-xl-toall:hover > *,
+  .block-xl-toall:focus > *,
+  .block-xl-toone > *:hover,
+  .block-xl-toone > *:focus,
+  .block-xl-radio1:checked ~ .block-xl-relay .block-xl-target1,
+  .block-xl-radio2:checked ~ .block-xl-relay .block-xl-target2,
+  .block-xl-radio3:checked ~ .block-xl-relay .block-xl-target3,
+  .block-xl-radio4:checked ~ .block-xl-relay .block-xl-target4,
+  .block-xl-radio5:checked ~ .block-xl-relay .block-xl-target5,
+  .block-xl-check:checked ~ .block-xl-hub .block-xl-goal {
+    display: block;
+  }
+}
+
+/***** 2 - Display None *****/
+.hide,
+.hide-global > *,
+*:hover > .hide-into,
+*:focus > .hide-into,
+.hide-onto:hover,
+.hide-onto:focus,
+.hide-toall:hover > *,
+.hide-toall:focus > *,
+.hide-toone > *:hover,
+.hide-toone > *:focus,
+.hide-radio1:checked ~ .hide-relay .hide-target1,
+.hide-radio2:checked ~ .hide-relay .hide-target2,
+.hide-radio3:checked ~ .hide-relay .hide-target3,
+.hide-radio4:checked ~ .hide-relay .hide-target4,
+.hide-radio5:checked ~ .hide-relay .hide-target5,
+.hide-check:checked ~ .hide-hub .hide-goal {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .hide-sm,
+  .hide-sm-global > *,
+  *:hover > .hide-sm-into,
+  *:focus > .hide-sm-into,
+  .hide-sm-onto:hover,
+  .hide-sm-onto:focus,
+  .hide-sm-toall:hover > *,
+  .hide-sm-toall:focus > *,
+  .hide-sm-toone > *:hover,
+  .hide-sm-toone > *:focus,
+  .hide-sm-radio1:checked ~ .hide-sm-relay .hide-sm-target1,
+  .hide-sm-radio2:checked ~ .hide-sm-relay .hide-sm-target2,
+  .hide-sm-radio3:checked ~ .hide-sm-relay .hide-sm-target3,
+  .hide-sm-radio4:checked ~ .hide-sm-relay .hide-sm-target4,
+  .hide-sm-radio5:checked ~ .hide-sm-relay .hide-sm-target5,
+  .hide-sm-check:checked ~ .hide-sm-hub .hide-sm-goal {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-md,
+  .hide-md-global > *,
+  *:hover > .hide-md-into,
+  *:focus > .hide-md-into,
+  .hide-md-onto:hover,
+  .hide-md-onto:focus,
+  .hide-md-toall:hover > *,
+  .hide-md-toall:focus > *,
+  .hide-md-toone > *:hover,
+  .hide-md-toone > *:focus,
+  .hide-md-radio1:checked ~ .hide-md-relay .hide-md-target1,
+  .hide-md-radio2:checked ~ .hide-md-relay .hide-md-target2,
+  .hide-md-radio3:checked ~ .hide-md-relay .hide-md-target3,
+  .hide-md-radio4:checked ~ .hide-md-relay .hide-md-target4,
+  .hide-md-radio5:checked ~ .hide-md-relay .hide-md-target5,
+  .hide-md-check:checked ~ .hide-md-hub .hide-md-goal {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .hide-lg,
+  .hide-lg-global > *,
+  *:hover > .hide-lg-into,
+  *:focus > .hide-lg-into,
+  .hide-lg-onto:hover,
+  .hide-lg-onto:focus,
+  .hide-lg-toall:hover > *,
+  .hide-lg-toall:focus > *,
+  .hide-lg-toone > *:hover,
+  .hide-lg-toone > *:focus,
+  .hide-lg-radio1:checked ~ .hide-lg-relay .hide-lg-target1,
+  .hide-lg-radio2:checked ~ .hide-lg-relay .hide-lg-target2,
+  .hide-lg-radio3:checked ~ .hide-lg-relay .hide-lg-target3,
+  .hide-lg-radio4:checked ~ .hide-lg-relay .hide-lg-target4,
+  .hide-lg-radio5:checked ~ .hide-lg-relay .hide-lg-target5,
+  .hide-lg-check:checked ~ .hide-lg-hub .hide-lg-goal {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hide-xl,
+  .hide-xl-global > *,
+  *:hover > .hide-xl-into,
+  *:focus > .hide-xl-into,
+  .hide-xl-onto:hover,
+  .hide-xl-onto:focus,
+  .hide-xl-toall:hover > *,
+  .hide-xl-toall:focus > *,
+  .hide-xl-toone > *:hover,
+  .hide-xl-toone > *:focus,
+  .hide-xl-radio1:checked ~ .hide-xl-relay .hide-xl-target1,
+  .hide-xl-radio2:checked ~ .hide-xl-relay .hide-xl-target2,
+  .hide-xl-radio3:checked ~ .hide-xl-relay .hide-xl-target3,
+  .hide-xl-radio4:checked ~ .hide-xl-relay .hide-xl-target4,
+  .hide-xl-radio5:checked ~ .hide-xl-relay .hide-xl-target5,
+  .hide-xl-check:checked ~ .hide-xl-hub .hide-xl-goal {
+    display: none;
+  }
+}
+
+/***** 3 - Display Inblock *****/
+.inblock,
+.inblock-global > *,
+*:hover > .inblock-into,
+*:focus > .inblock-into,
+.inblock-onto:hover,
+.inblock-onto:focus,
+.inblock-toall:hover > *,
+.inblock-toall:focus > *,
+.inblock-toone > *:hover,
+.inblock-toone > *:focus,
+.inblock-radio1:checked ~ .inblock-relay .inblock-target1,
+.inblock-radio2:checked ~ .inblock-relay .inblock-target2,
+.inblock-radio3:checked ~ .inblock-relay .inblock-target3,
+.inblock-radio4:checked ~ .inblock-relay .inblock-target4,
+.inblock-radio5:checked ~ .inblock-relay .inblock-target5,
+.inblock-check:checked ~ .inblock-hub .inblock-goal {
+  display: inline-block;
+}
+
+@media (min-width: 576px) {
+  .inblock-sm,
+  .inblock-sm-global > *,
+  *:hover > .inblock-sm-into,
+  *:focus > .inblock-sm-into,
+  .inblock-sm-onto:hover,
+  .inblock-sm-onto:focus,
+  .inblock-sm-toall:hover > *,
+  .inblock-sm-toall:focus > *,
+  .inblock-sm-toone > *:hover,
+  .inblock-sm-toone > *:focus,
+  .inblock-sm-radio1:checked ~ .inblock-sm-relay .inblock-sm-target1,
+  .inblock-sm-radio2:checked ~ .inblock-sm-relay .inblock-sm-target2,
+  .inblock-sm-radio3:checked ~ .inblock-sm-relay .inblock-sm-target3,
+  .inblock-sm-radio4:checked ~ .inblock-sm-relay .inblock-sm-target4,
+  .inblock-sm-radio5:checked ~ .inblock-sm-relay .inblock-sm-target5,
+  .inblock-sm-check:checked ~ .inblock-sm-hub .inblock-sm-goal {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .inblock-md,
+  .inblock-md-global > *,
+  *:hover > .inblock-md-into,
+  *:focus > .inblock-md-into,
+  .inblock-md-onto:hover,
+  .inblock-md-onto:focus,
+  .inblock-md-toall:hover > *,
+  .inblock-md-toall:focus > *,
+  .inblock-md-toone > *:hover,
+  .inblock-md-toone > *:focus,
+  .inblock-md-radio1:checked ~ .inblock-md-relay .inblock-md-target1,
+  .inblock-md-radio2:checked ~ .inblock-md-relay .inblock-md-target2,
+  .inblock-md-radio3:checked ~ .inblock-md-relay .inblock-md-target3,
+  .inblock-md-radio4:checked ~ .inblock-md-relay .inblock-md-target4,
+  .inblock-md-radio5:checked ~ .inblock-md-relay .inblock-md-target5,
+  .inblock-md-check:checked ~ .inblock-md-hub .inblock-md-goal {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  .inblock-lg,
+  .inblock-lg-global > *,
+  *:hover > .inblock-lg-into,
+  *:focus > .inblock-lg-into,
+  .inblock-lg-onto:hover,
+  .inblock-lg-onto:focus,
+  .inblock-lg-toall:hover > *,
+  .inblock-lg-toall:focus > *,
+  .inblock-lg-toone > *:hover,
+  .inblock-lg-toone > *:focus,
+  .inblock-lg-radio1:checked ~ .inblock-lg-relay .inblock-lg-target1,
+  .inblock-lg-radio2:checked ~ .inblock-lg-relay .inblock-lg-target2,
+  .inblock-lg-radio3:checked ~ .inblock-lg-relay .inblock-lg-target3,
+  .inblock-lg-radio4:checked ~ .inblock-lg-relay .inblock-lg-target4,
+  .inblock-lg-radio5:checked ~ .inblock-lg-relay .inblock-lg-target5,
+  .inblock-lg-check:checked ~ .inblock-lg-hub .inblock-lg-goal {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .inblock-xl,
+  .inblock-xl-global > *,
+  *:hover > .inblock-xl-into,
+  *:focus > .inblock-xl-into,
+  .inblock-xl-onto:hover,
+  .inblock-xl-onto:focus,
+  .inblock-xl-toall:hover > *,
+  .inblock-xl-toall:focus > *,
+  .inblock-xl-toone > *:hover,
+  .inblock-xl-toone > *:focus,
+  .inblock-xl-radio1:checked ~ .inblock-xl-relay .inblock-xl-target1,
+  .inblock-xl-radio2:checked ~ .inblock-xl-relay .inblock-xl-target2,
+  .inblock-xl-radio3:checked ~ .inblock-xl-relay .inblock-xl-target3,
+  .inblock-xl-radio4:checked ~ .inblock-xl-relay .inblock-xl-target4,
+  .inblock-xl-radio5:checked ~ .inblock-xl-relay .inblock-xl-target5,
+  .inblock-xl-check:checked ~ .inblock-xl-hub .inblock-xl-goal {
+    display: inline-block;
+  }
+}
+
+/***** 4 - Display Inline *****/
+.inline,
+.inline-global > *,
+*:hover > .inline-into,
+*:focus > .inline-into,
+.inline-onto:hover,
+.inline-onto:focus,
+.inline-toall:hover > *,
+.inline-toall:focus > *,
+.inline-toone > *:hover,
+.inline-toone > *:focus,
+.inline-radio1:checked ~ .inline-relay .inline-target1,
+.inline-radio2:checked ~ .inline-relay .inline-target2,
+.inline-radio3:checked ~ .inline-relay .inline-target3,
+.inline-radio4:checked ~ .inline-relay .inline-target4,
+.inline-radio5:checked ~ .inline-relay .inline-target5,
+.inline-check:checked ~ .inline-hub .inline-goal {
+  display: inline;
+}
+
+@media (min-width: 576px) {
+  .inline-sm,
+  .inline-sm-global > *,
+  *:hover > .inline-sm-into,
+  *:focus > .inline-sm-into,
+  .inline-sm-onto:hover,
+  .inline-sm-onto:focus,
+  .inline-sm-toall:hover > *,
+  .inline-sm-toall:focus > *,
+  .inline-sm-toone > *:hover,
+  .inline-sm-toone > *:focus,
+  .inline-sm-radio1:checked ~ .inline-sm-relay .inline-sm-target1,
+  .inline-sm-radio2:checked ~ .inline-sm-relay .inline-sm-target2,
+  .inline-sm-radio3:checked ~ .inline-sm-relay .inline-sm-target3,
+  .inline-sm-radio4:checked ~ .inline-sm-relay .inline-sm-target4,
+  .inline-sm-radio5:checked ~ .inline-sm-relay .inline-sm-target5,
+  .inline-sm-check:checked ~ .inline-sm-hub .inline-sm-goal {
+    display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .inline-md,
+  .inline-md-global > *,
+  *:hover > .inline-md-into,
+  *:focus > .inline-md-into,
+  .inline-md-onto:hover,
+  .inline-md-onto:focus,
+  .inline-md-toall:hover > *,
+  .inline-md-toall:focus > *,
+  .inline-md-toone > *:hover,
+  .inline-md-toone > *:focus,
+  .inline-md-radio1:checked ~ .inline-md-relay .inline-md-target1,
+  .inline-md-radio2:checked ~ .inline-md-relay .inline-md-target2,
+  .inline-md-radio3:checked ~ .inline-md-relay .inline-md-target3,
+  .inline-md-radio4:checked ~ .inline-md-relay .inline-md-target4,
+  .inline-md-radio5:checked ~ .inline-md-relay .inline-md-target5,
+  .inline-md-check:checked ~ .inline-md-hub .inline-md-goal {
+    display: inline;
+  }
+}
+
+@media (min-width: 992px) {
+  .inline-lg,
+  .inline-lg-global > *,
+  *:hover > .inline-lg-into,
+  *:focus > .inline-lg-into,
+  .inline-lg-onto:hover,
+  .inline-lg-onto:focus,
+  .inline-lg-toall:hover > *,
+  .inline-lg-toall:focus > *,
+  .inline-lg-toone > *:hover,
+  .inline-lg-toone > *:focus,
+  .inline-lg-radio1:checked ~ .inline-lg-relay .inline-lg-target1,
+  .inline-lg-radio2:checked ~ .inline-lg-relay .inline-lg-target2,
+  .inline-lg-radio3:checked ~ .inline-lg-relay .inline-lg-target3,
+  .inline-lg-radio4:checked ~ .inline-lg-relay .inline-lg-target4,
+  .inline-lg-radio5:checked ~ .inline-lg-relay .inline-lg-target5,
+  .inline-lg-check:checked ~ .inline-lg-hub .inline-lg-goal {
+    display: inline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .inline-xl,
+  .inline-xl-global > *,
+  *:hover > .inline-xl-into,
+  *:focus > .inline-xl-into,
+  .inline-xl-onto:hover,
+  .inline-xl-onto:focus,
+  .inline-xl-toall:hover > *,
+  .inline-xl-toall:focus > *,
+  .inline-xl-toone > *:hover,
+  .inline-xl-toone > *:focus,
+  .inline-xl-radio1:checked ~ .inline-xl-relay .inline-xl-target1,
+  .inline-xl-radio2:checked ~ .inline-xl-relay .inline-xl-target2,
+  .inline-xl-radio3:checked ~ .inline-xl-relay .inline-xl-target3,
+  .inline-xl-radio4:checked ~ .inline-xl-relay .inline-xl-target4,
+  .inline-xl-radio5:checked ~ .inline-xl-relay .inline-xl-target5,
+  .inline-xl-check:checked ~ .inline-xl-hub .inline-xl-goal {
+    display: inline;
+  }
+}
+
+/********** POSITION **********/
+
+/*
+1 - Position Absolute
+2 - Position Fixed
+3 - Position Relative
+4 - Position Sticky
+5 - Top, Right, Bottom & Left
+*/
+
+/***** 1 - Position Absolute *****/
+.absolute,
+.absolute-global > *,
+*:hover > .absolute-into,
+*:focus > .absolute-into,
+.absolute-onto:hover,
+.absolute-onto:focus,
+.absolute-toall:hover > *,
+.absolute-toall:focus > *,
+.absolute-toone > *:hover,
+.absolute-toone > *:focus,
+.absolute-radio1:checked ~ .absolute-relay .absolute-target1,
+.absolute-radio2:checked ~ .absolute-relay .absolute-target2,
+.absolute-radio3:checked ~ .absolute-relay .absolute-target3,
+.absolute-radio4:checked ~ .absolute-relay .absolute-target4,
+.absolute-radio5:checked ~ .absolute-relay .absolute-target5,
+.absolute-check:checked ~ .absolute-hub .absolute-goal {
+  position: absolute;
+}
+
+@media (min-width: 576px) {
+  .absolute-sm,
+  .absolute-sm-global > *,
+  *:hover > .absolute-sm-into,
+  *:focus > .absolute-sm-into,
+  .absolute-sm-onto:hover,
+  .absolute-sm-onto:focus,
+  .absolute-sm-toall:hover > *,
+  .absolute-sm-toall:focus > *,
+  .absolute-sm-toone > *:hover,
+  .absolute-sm-toone > *:focus,
+  .absolute-sm-radio1:checked ~ .absolute-sm-relay .absolute-sm-target1,
+  .absolute-sm-radio2:checked ~ .absolute-sm-relay .absolute-sm-target2,
+  .absolute-sm-radio3:checked ~ .absolute-sm-relay .absolute-sm-target3,
+  .absolute-sm-radio4:checked ~ .absolute-sm-relay .absolute-sm-target4,
+  .absolute-sm-radio5:checked ~ .absolute-sm-relay .absolute-sm-target5,
+  .absolute-sm-check:checked ~ .absolute-sm-hub .absolute-sm-goal {
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) {
+  .absolute-md,
+  .absolute-md-global > *,
+  *:hover > .absolute-md-into,
+  *:focus > .absolute-md-into,
+  .absolute-md-onto:hover,
+  .absolute-md-onto:focus,
+  .absolute-md-toall:hover > *,
+  .absolute-md-toall:focus > *,
+  .absolute-md-toone > *:hover,
+  .absolute-md-toone > *:focus,
+  .absolute-md-radio1:checked ~ .absolute-md-relay .absolute-md-target1,
+  .absolute-md-radio2:checked ~ .absolute-md-relay .absolute-md-target2,
+  .absolute-md-radio3:checked ~ .absolute-md-relay .absolute-md-target3,
+  .absolute-md-radio4:checked ~ .absolute-md-relay .absolute-md-target4,
+  .absolute-md-radio5:checked ~ .absolute-md-relay .absolute-md-target5,
+  .absolute-md-check:checked ~ .absolute-md-hub .absolute-md-goal {
+    position: absolute;
+  }
+}
+
+@media (min-width: 992px) {
+  .absolute-lg,
+  .absolute-lg-global > *,
+  *:hover > .absolute-lg-into,
+  *:focus > .absolute-lg-into,
+  .absolute-lg-onto:hover,
+  .absolute-lg-onto:focus,
+  .absolute-lg-toall:hover > *,
+  .absolute-lg-toall:focus > *,
+  .absolute-lg-toone > *:hover,
+  .absolute-lg-toone > *:focus,
+  .absolute-lg-radio1:checked ~ .absolute-lg-relay .absolute-lg-target1,
+  .absolute-lg-radio2:checked ~ .absolute-lg-relay .absolute-lg-target2,
+  .absolute-lg-radio3:checked ~ .absolute-lg-relay .absolute-lg-target3,
+  .absolute-lg-radio4:checked ~ .absolute-lg-relay .absolute-lg-target4,
+  .absolute-lg-radio5:checked ~ .absolute-lg-relay .absolute-lg-target5,
+  .absolute-lg-check:checked ~ .absolute-lg-hub .absolute-lg-goal {
+    position: absolute;
+  }
+}
+
+@media (min-width: 1200px) {
+  .absolute-xl,
+  .absolute-xl-global > *,
+  *:hover > .absolute-xl-into,
+  *:focus > .absolute-xl-into,
+  .absolute-xl-onto:hover,
+  .absolute-xl-onto:focus,
+  .absolute-xl-toall:hover > *,
+  .absolute-xl-toall:focus > *,
+  .absolute-xl-toone > *:hover,
+  .absolute-xl-toone > *:focus,
+  .absolute-xl-radio1:checked ~ .absolute-xl-relay .absolute-xl-target1,
+  .absolute-xl-radio2:checked ~ .absolute-xl-relay .absolute-xl-target2,
+  .absolute-xl-radio3:checked ~ .absolute-xl-relay .absolute-xl-target3,
+  .absolute-xl-radio4:checked ~ .absolute-xl-relay .absolute-xl-target4,
+  .absolute-xl-radio5:checked ~ .absolute-xl-relay .absolute-xl-target5,
+  .absolute-xl-check:checked ~ .absolute-xl-hub .absolute-xl-goal {
+    position: absolute;
+  }
+}
+
+/***** 2 - Position Fixed *****/
+.fixed,
+.fixed-global > *,
+*:hover > .fixed-into,
+*:focus > .fixed-into,
+.fixed-onto:hover,
+.fixed-onto:focus,
+.fixed-toall:hover > *,
+.fixed-toall:focus > *,
+.fixed-toone > *:hover,
+.fixed-toone > *:focus,
+.fixed-radio1:checked ~ .fixed-relay .fixed-target1,
+.fixed-radio2:checked ~ .fixed-relay .fixed-target2,
+.fixed-radio3:checked ~ .fixed-relay .fixed-target3,
+.fixed-radio4:checked ~ .fixed-relay .fixed-target4,
+.fixed-radio5:checked ~ .fixed-relay .fixed-target5,
+.fixed-check:checked ~ .fixed-hub .fixed-goal {
+  position: fixed;
+}
+
+@media (min-width: 576px) {
+  .fixed-sm,
+  .fixed-sm-global > *,
+  *:hover > .fixed-sm-into,
+  *:focus > .fixed-sm-into,
+  .fixed-sm-onto:hover,
+  .fixed-sm-onto:focus,
+  .fixed-sm-toall:hover > *,
+  .fixed-sm-toall:focus > *,
+  .fixed-sm-toone > *:hover,
+  .fixed-sm-toone > *:focus,
+  .fixed-sm-radio1:checked ~ .fixed-sm-relay .fixed-sm-target1,
+  .fixed-sm-radio2:checked ~ .fixed-sm-relay .fixed-sm-target2,
+  .fixed-sm-radio3:checked ~ .fixed-sm-relay .fixed-sm-target3,
+  .fixed-sm-radio4:checked ~ .fixed-sm-relay .fixed-sm-target4,
+  .fixed-sm-radio5:checked ~ .fixed-sm-relay .fixed-sm-target5,
+  .fixed-sm-check:checked ~ .fixed-sm-hub .fixed-sm-goal {
+    position: fixed;
+  }
+}
+
+@media (min-width: 768px) {
+  .fixed-md,
+  .fixed-md-global > *,
+  *:hover > .fixed-md-into,
+  *:focus > .fixed-md-into,
+  .fixed-md-onto:hover,
+  .fixed-md-onto:focus,
+  .fixed-md-toall:hover > *,
+  .fixed-md-toall:focus > *,
+  .fixed-md-toone > *:hover,
+  .fixed-md-toone > *:focus,
+  .fixed-md-radio1:checked ~ .fixed-md-relay .fixed-md-target1,
+  .fixed-md-radio2:checked ~ .fixed-md-relay .fixed-md-target2,
+  .fixed-md-radio3:checked ~ .fixed-md-relay .fixed-md-target3,
+  .fixed-md-radio4:checked ~ .fixed-md-relay .fixed-md-target4,
+  .fixed-md-radio5:checked ~ .fixed-md-relay .fixed-md-target5,
+  .fixed-md-check:checked ~ .fixed-md-hub .fixed-md-goal {
+    position: fixed;
+  }
+}
+
+@media (min-width: 992px) {
+  .fixed-lg,
+  .fixed-lg-global > *,
+  *:hover > .fixed-lg-into,
+  *:focus > .fixed-lg-into,
+  .fixed-lg-onto:hover,
+  .fixed-lg-onto:focus,
+  .fixed-lg-toall:hover > *,
+  .fixed-lg-toall:focus > *,
+  .fixed-lg-toone > *:hover,
+  .fixed-lg-toone > *:focus,
+  .fixed-lg-radio1:checked ~ .fixed-lg-relay .fixed-lg-target1,
+  .fixed-lg-radio2:checked ~ .fixed-lg-relay .fixed-lg-target2,
+  .fixed-lg-radio3:checked ~ .fixed-lg-relay .fixed-lg-target3,
+  .fixed-lg-radio4:checked ~ .fixed-lg-relay .fixed-lg-target4,
+  .fixed-lg-radio5:checked ~ .fixed-lg-relay .fixed-lg-target5,
+  .fixed-lg-check:checked ~ .fixed-lg-hub .fixed-lg-goal {
+    position: fixed;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fixed-xl,
+  .fixed-xl-global > *,
+  *:hover > .fixed-xl-into,
+  *:focus > .fixed-xl-into,
+  .fixed-xl-onto:hover,
+  .fixed-xl-onto:focus,
+  .fixed-xl-toall:hover > *,
+  .fixed-xl-toall:focus > *,
+  .fixed-xl-toone > *:hover,
+  .fixed-xl-toone > *:focus,
+  .fixed-xl-radio1:checked ~ .fixed-xl-relay .fixed-xl-target1,
+  .fixed-xl-radio2:checked ~ .fixed-xl-relay .fixed-xl-target2,
+  .fixed-xl-radio3:checked ~ .fixed-xl-relay .fixed-xl-target3,
+  .fixed-xl-radio4:checked ~ .fixed-xl-relay .fixed-xl-target4,
+  .fixed-xl-radio5:checked ~ .fixed-xl-relay .fixed-xl-target5,
+  .fixed-xl-check:checked ~ .fixed-xl-hub .fixed-xl-goal {
+    position: fixed;
+  }
+}
+
+/***** 3 - Position Relative *****/
+.relative,
+.relative-global > *,
+*:hover > .relative-into,
+*:focus > .relative-into,
+.relative-onto:hover,
+.relative-onto:focus,
+.relative-toall:hover > *,
+.relative-toall:focus > *,
+.relative-toone > *:hover,
+.relative-toone > *:focus,
+.relative-radio1:checked ~ .relative-relay .relative-target1,
+.relative-radio2:checked ~ .relative-relay .relative-target2,
+.relative-radio3:checked ~ .relative-relay .relative-target3,
+.relative-radio4:checked ~ .relative-relay .relative-target4,
+.relative-radio5:checked ~ .relative-relay .relative-target5,
+.relative-check:checked ~ .relative-hub .relative-goal {
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .relative-sm,
+  .relative-sm-global > *,
+  *:hover > .relative-sm-into,
+  *:focus > .relative-sm-into,
+  .relative-sm-onto:hover,
+  .relative-sm-onto:focus,
+  .relative-sm-toall:hover > *,
+  .relative-sm-toall:focus > *,
+  .relative-sm-toone > *:hover,
+  .relative-sm-toone > *:focus,
+  .relative-sm-radio1:checked ~ .relative-sm-relay .relative-sm-target1,
+  .relative-sm-radio2:checked ~ .relative-sm-relay .relative-sm-target2,
+  .relative-sm-radio3:checked ~ .relative-sm-relay .relative-sm-target3,
+  .relative-sm-radio4:checked ~ .relative-sm-relay .relative-sm-target4,
+  .relative-sm-radio5:checked ~ .relative-sm-relay .relative-sm-target5,
+  .relative-sm-check:checked ~ .relative-sm-hub .relative-sm-goal {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .relative-md,
+  .relative-md-global > *,
+  *:hover > .relative-md-into,
+  *:focus > .relative-md-into,
+  .relative-md-onto:hover,
+  .relative-md-onto:focus,
+  .relative-md-toall:hover > *,
+  .relative-md-toall:focus > *,
+  .relative-md-toone > *:hover,
+  .relative-md-toone > *:focus,
+  .relative-md-radio1:checked ~ .relative-md-relay .relative-md-target1,
+  .relative-md-radio2:checked ~ .relative-md-relay .relative-md-target2,
+  .relative-md-radio3:checked ~ .relative-md-relay .relative-md-target3,
+  .relative-md-radio4:checked ~ .relative-md-relay .relative-md-target4,
+  .relative-md-radio5:checked ~ .relative-md-relay .relative-md-target5,
+  .relative-md-check:checked ~ .relative-md-hub .relative-md-goal {
+    position: relative;
+  }
+}
+
+@media (min-width: 992px) {
+  .relative-lg,
+  .relative-lg-global > *,
+  *:hover > .relative-lg-into,
+  *:focus > .relative-lg-into,
+  .relative-lg-onto:hover,
+  .relative-lg-onto:focus,
+  .relative-lg-toall:hover > *,
+  .relative-lg-toall:focus > *,
+  .relative-lg-toone > *:hover,
+  .relative-lg-toone > *:focus,
+  .relative-lg-radio1:checked ~ .relative-lg-relay .relative-lg-target1,
+  .relative-lg-radio2:checked ~ .relative-lg-relay .relative-lg-target2,
+  .relative-lg-radio3:checked ~ .relative-lg-relay .relative-lg-target3,
+  .relative-lg-radio4:checked ~ .relative-lg-relay .relative-lg-target4,
+  .relative-lg-radio5:checked ~ .relative-lg-relay .relative-lg-target5,
+  .relative-lg-check:checked ~ .relative-lg-hub .relative-lg-goal {
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .relative-xl,
+  .relative-xl-global > *,
+  *:hover > .relative-xl-into,
+  *:focus > .relative-xl-into,
+  .relative-xl-onto:hover,
+  .relative-xl-onto:focus,
+  .relative-xl-toall:hover > *,
+  .relative-xl-toall:focus > *,
+  .relative-xl-toone > *:hover,
+  .relative-xl-toone > *:focus,
+  .relative-xl-radio1:checked ~ .relative-xl-relay .relative-xl-target1,
+  .relative-xl-radio2:checked ~ .relative-xl-relay .relative-xl-target2,
+  .relative-xl-radio3:checked ~ .relative-xl-relay .relative-xl-target3,
+  .relative-xl-radio4:checked ~ .relative-xl-relay .relative-xl-target4,
+  .relative-xl-radio5:checked ~ .relative-xl-relay .relative-xl-target5,
+  .relative-xl-check:checked ~ .relative-xl-hub .relative-xl-goal {
+    position: relative;
+  }
+}
+
+/***** 4 - Position Sticky *****/
+.sticky,
+.sticky-global > *,
+*:hover > .sticky-into,
+*:focus > .sticky-into,
+.sticky-onto:hover,
+.sticky-onto:focus,
+.sticky-toall:hover > *,
+.sticky-toall:focus > *,
+.sticky-toone > *:hover,
+.sticky-toone > *:focus,
+.sticky-radio1:checked ~ .sticky-relay .sticky-target1,
+.sticky-radio2:checked ~ .sticky-relay .sticky-target2,
+.sticky-radio3:checked ~ .sticky-relay .sticky-target3,
+.sticky-radio4:checked ~ .sticky-relay .sticky-target4,
+.sticky-radio5:checked ~ .sticky-relay .sticky-target5,
+.sticky-check:checked ~ .sticky-hub .sticky-goal {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+@media (min-width: 576px) {
+  .sticky-sm,
+  .sticky-sm-global > *,
+  *:hover > .sticky-sm-into,
+  *:focus > .sticky-sm-into,
+  .sticky-sm-onto:hover,
+  .sticky-sm-onto:focus,
+  .sticky-sm-toall:hover > *,
+  .sticky-sm-toall:focus > *,
+  .sticky-sm-toone > *:hover,
+  .sticky-sm-toone > *:focus,
+  .sticky-sm-radio1:checked ~ .sticky-sm-relay .sticky-sm-target1,
+  .sticky-sm-radio2:checked ~ .sticky-sm-relay .sticky-sm-target2,
+  .sticky-sm-radio3:checked ~ .sticky-sm-relay .sticky-sm-target3,
+  .sticky-sm-radio4:checked ~ .sticky-sm-relay .sticky-sm-target4,
+  .sticky-sm-radio5:checked ~ .sticky-sm-relay .sticky-sm-target5,
+  .sticky-sm-check:checked ~ .sticky-sm-hub .sticky-sm-goal {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+@media (min-width: 768px) {
+  .sticky-md,
+  .sticky-md-global > *,
+  *:hover > .sticky-md-into,
+  *:focus > .sticky-md-into,
+  .sticky-md-onto:hover,
+  .sticky-md-onto:focus,
+  .sticky-md-toall:hover > *,
+  .sticky-md-toall:focus > *,
+  .sticky-md-toone > *:hover,
+  .sticky-md-toone > *:focus,
+  .sticky-md-radio1:checked ~ .sticky-md-relay .sticky-md-target1,
+  .sticky-md-radio2:checked ~ .sticky-md-relay .sticky-md-target2,
+  .sticky-md-radio3:checked ~ .sticky-md-relay .sticky-md-target3,
+  .sticky-md-radio4:checked ~ .sticky-md-relay .sticky-md-target4,
+  .sticky-md-radio5:checked ~ .sticky-md-relay .sticky-md-target5,
+  .sticky-md-check:checked ~ .sticky-md-hub .sticky-md-goal {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+@media (min-width: 992px) {
+  .sticky-lg,
+  .sticky-lg-global > *,
+  *:hover > .sticky-lg-into,
+  *:focus > .sticky-lg-into,
+  .sticky-lg-onto:hover,
+  .sticky-lg-onto:focus,
+  .sticky-lg-toall:hover > *,
+  .sticky-lg-toall:focus > *,
+  .sticky-lg-toone > *:hover,
+  .sticky-lg-toone > *:focus,
+  .sticky-lg-radio1:checked ~ .sticky-lg-relay .sticky-lg-target1,
+  .sticky-lg-radio2:checked ~ .sticky-lg-relay .sticky-lg-target2,
+  .sticky-lg-radio3:checked ~ .sticky-lg-relay .sticky-lg-target3,
+  .sticky-lg-radio4:checked ~ .sticky-lg-relay .sticky-lg-target4,
+  .sticky-lg-radio5:checked ~ .sticky-lg-relay .sticky-lg-target5,
+  .sticky-lg-check:checked ~ .sticky-lg-hub .sticky-lg-goal {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sticky-xl,
+  .sticky-xl-global > *,
+  *:hover > .sticky-xl-into,
+  *:focus > .sticky-xl-into,
+  .sticky-xl-onto:hover,
+  .sticky-xl-onto:focus,
+  .sticky-xl-toall:hover > *,
+  .sticky-xl-toall:focus > *,
+  .sticky-xl-toone > *:hover,
+  .sticky-xl-toone > *:focus,
+  .sticky-xl-radio1:checked ~ .sticky-xl-relay .sticky-xl-target1,
+  .sticky-xl-radio2:checked ~ .sticky-xl-relay .sticky-xl-target2,
+  .sticky-xl-radio3:checked ~ .sticky-xl-relay .sticky-xl-target3,
+  .sticky-xl-radio4:checked ~ .sticky-xl-relay .sticky-xl-target4,
+  .sticky-xl-radio5:checked ~ .sticky-xl-relay .sticky-xl-target5,
+  .sticky-xl-check:checked ~ .sticky-xl-hub .sticky-xl-goal {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+/***** 5 - Top, Right, Bottom & Left *****/
+.top,
+.top-global > *,
+*:hover > .top-into,
+*:focus > .top-into,
+.top-onto:hover,
+.top-onto:focus,
+.top-toall:hover > *,
+.top-toall:focus > *,
+.top-toone > *:hover,
+.top-toone > *:focus,
+.top-radio1:checked ~ .top-relay .top-target1,
+.top-radio2:checked ~ .top-relay .top-target2,
+.top-radio3:checked ~ .top-relay .top-target3,
+.top-radio4:checked ~ .top-relay .top-target4,
+.top-radio5:checked ~ .top-relay .top-target5,
+.top-check:checked ~ .top-hub .top-goal {
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.bot,
+.bot-global > *,
+*:hover > .bot-into,
+*:focus > .bot-into,
+.bot-onto:hover,
+.bot-onto:focus,
+.bot-toall:hover > *,
+.bot-toall:focus > *,
+.bot-toone > *:hover,
+.bot-toone > *:focus,
+.bot-radio1:checked ~ .bot-relay .bot-target1,
+.bot-radio2:checked ~ .bot-relay .bot-target2,
+.bot-radio3:checked ~ .bot-relay .bot-target3,
+.bot-radio4:checked ~ .bot-relay .bot-target4,
+.bot-radio5:checked ~ .bot-relay .bot-target5,
+.bot-check:checked ~ .bot-hub .bot-goal {
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.right,
+.right-global > *,
+*:hover > .right-into,
+*:focus > .right-into,
+.right-onto:hover,
+.right-onto:focus,
+.right-toall:hover > *,
+.right-toall:focus > *,
+.right-toone > *:hover,
+.right-toone > *:focus,
+.right-radio1:checked ~ .right-relay .right-target1,
+.right-radio2:checked ~ .right-relay .right-target2,
+.right-radio3:checked ~ .right-relay .right-target3,
+.right-radio4:checked ~ .right-relay .right-target4,
+.right-radio5:checked ~ .right-relay .right-target5,
+.right-check:checked ~ .right-hub .right-goal {
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.left,
+.left-global > *,
+*:hover > .left-into,
+*:focus > .left-into,
+.left-onto:hover,
+.left-onto:focus,
+.left-toall:hover > *,
+.left-toall:focus > *,
+.left-toone > *:hover,
+.left-toone > *:focus,
+.left-radio1:checked ~ .left-relay .left-target1,
+.left-radio2:checked ~ .left-relay .left-target2,
+.left-radio3:checked ~ .left-relay .left-target3,
+.left-radio4:checked ~ .left-relay .left-target4,
+.left-radio5:checked ~ .left-relay .left-target5,
+.left-check:checked ~ .left-hub .left-goal {
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .top-sm,
+  .top-sm-global > *,
+  *:hover > .top-sm-into,
+  *:focus > .top-sm-into,
+  .top-sm-onto:hover,
+  .top-sm-onto:focus,
+  .top-sm-toall:hover > *,
+  .top-sm-toall:focus > *,
+  .top-sm-toone > *:hover,
+  .top-sm-toone > *:focus,
+  .top-sm-radio1:checked ~ .top-sm-relay .top-sm-target1,
+  .top-sm-radio2:checked ~ .top-sm-relay .top-sm-target2,
+  .top-sm-radio3:checked ~ .top-sm-relay .top-sm-target3,
+  .top-sm-radio4:checked ~ .top-sm-relay .top-sm-target4,
+  .top-sm-radio5:checked ~ .top-sm-relay .top-sm-target5,
+  .top-sm-check:checked ~ .top-sm-hub .top-sm-goal {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-sm,
+  .bot-sm-global > *,
+  *:hover > .bot-sm-into,
+  *:focus > .bot-sm-into,
+  .bot-sm-onto:hover,
+  .bot-sm-onto:focus,
+  .bot-sm-toall:hover > *,
+  .bot-sm-toall:focus > *,
+  .bot-sm-toone > *:hover,
+  .bot-sm-toone > *:focus,
+  .bot-sm-radio1:checked ~ .bot-sm-relay .bot-sm-target1,
+  .bot-sm-radio2:checked ~ .bot-sm-relay .bot-sm-target2,
+  .bot-sm-radio3:checked ~ .bot-sm-relay .bot-sm-target3,
+  .bot-sm-radio4:checked ~ .bot-sm-relay .bot-sm-target4,
+  .bot-sm-radio5:checked ~ .bot-sm-relay .bot-sm-target5,
+  .bot-sm-check:checked ~ .bot-sm-hub .bot-sm-goal {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-sm,
+  .right-sm-global > *,
+  *:hover > .right-sm-into,
+  *:focus > .right-sm-into,
+  .right-sm-onto:hover,
+  .right-sm-onto:focus,
+  .right-sm-toall:hover > *,
+  .right-sm-toall:focus > *,
+  .right-sm-toone > *:hover,
+  .right-sm-toone > *:focus,
+  .right-sm-radio1:checked ~ .right-sm-relay .right-sm-target1,
+  .right-sm-radio2:checked ~ .right-sm-relay .right-sm-target2,
+  .right-sm-radio3:checked ~ .right-sm-relay .right-sm-target3,
+  .right-sm-radio4:checked ~ .right-sm-relay .right-sm-target4,
+  .right-sm-radio5:checked ~ .right-sm-relay .right-sm-target5,
+  .right-sm-check:checked ~ .right-sm-hub .right-sm-goal {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-sm,
+  .left-sm-global > *,
+  *:hover > .left-sm-into,
+  *:focus > .left-sm-into,
+  .left-sm-onto:hover,
+  .left-sm-onto:focus,
+  .left-sm-toall:hover > *,
+  .left-sm-toall:focus > *,
+  .left-sm-toone > *:hover,
+  .left-sm-toone > *:focus,
+  .left-sm-radio1:checked ~ .left-sm-relay .left-sm-target1,
+  .left-sm-radio2:checked ~ .left-sm-relay .left-sm-target2,
+  .left-sm-radio3:checked ~ .left-sm-relay .left-sm-target3,
+  .left-sm-radio4:checked ~ .left-sm-relay .left-sm-target4,
+  .left-sm-radio5:checked ~ .left-sm-relay .left-sm-target5,
+  .left-sm-check:checked ~ .left-sm-hub .left-sm-goal {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-md,
+  .top-md-global > *,
+  *:hover > .top-md-into,
+  *:focus > .top-md-into,
+  .top-md-onto:hover,
+  .top-md-onto:focus,
+  .top-md-toall:hover > *,
+  .top-md-toall:focus > *,
+  .top-md-toone > *:hover,
+  .top-md-toone > *:focus,
+  .top-md-radio1:checked ~ .top-md-relay .top-md-target1,
+  .top-md-radio2:checked ~ .top-md-relay .top-md-target2,
+  .top-md-radio3:checked ~ .top-md-relay .top-md-target3,
+  .top-md-radio4:checked ~ .top-md-relay .top-md-target4,
+  .top-md-radio5:checked ~ .top-md-relay .top-md-target5,
+  .top-md-check:checked ~ .top-md-hub .top-md-goal {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-md,
+  .bot-md-global > *,
+  *:hover > .bot-md-into,
+  *:focus > .bot-md-into,
+  .bot-md-onto:hover,
+  .bot-md-onto:focus,
+  .bot-md-toall:hover > *,
+  .bot-md-toall:focus > *,
+  .bot-md-toone > *:hover,
+  .bot-md-toone > *:focus,
+  .bot-md-radio1:checked ~ .bot-md-relay .bot-md-target1,
+  .bot-md-radio2:checked ~ .bot-md-relay .bot-md-target2,
+  .bot-md-radio3:checked ~ .bot-md-relay .bot-md-target3,
+  .bot-md-radio4:checked ~ .bot-md-relay .bot-md-target4,
+  .bot-md-radio5:checked ~ .bot-md-relay .bot-md-target5,
+  .bot-md-check:checked ~ .bot-md-hub .bot-md-goal {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-md,
+  .right-md-global > *,
+  *:hover > .right-md-into,
+  *:focus > .right-md-into,
+  .right-md-onto:hover,
+  .right-md-onto:focus,
+  .right-md-toall:hover > *,
+  .right-md-toall:focus > *,
+  .right-md-toone > *:hover,
+  .right-md-toone > *:focus,
+  .right-md-radio1:checked ~ .right-md-relay .right-md-target1,
+  .right-md-radio2:checked ~ .right-md-relay .right-md-target2,
+  .right-md-radio3:checked ~ .right-md-relay .right-md-target3,
+  .right-md-radio4:checked ~ .right-md-relay .right-md-target4,
+  .right-md-radio5:checked ~ .right-md-relay .right-md-target5,
+  .right-md-check:checked ~ .right-md-hub .right-md-goal {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-md,
+  .left-md-global > *,
+  *:hover > .left-md-into,
+  *:focus > .left-md-into,
+  .left-md-onto:hover,
+  .left-md-onto:focus,
+  .left-md-toall:hover > *,
+  .left-md-toall:focus > *,
+  .left-md-toone > *:hover,
+  .left-md-toone > *:focus,
+  .left-md-radio1:checked ~ .left-md-relay .left-md-target1,
+  .left-md-radio2:checked ~ .left-md-relay .left-md-target2,
+  .left-md-radio3:checked ~ .left-md-relay .left-md-target3,
+  .left-md-radio4:checked ~ .left-md-relay .left-md-target4,
+  .left-md-radio5:checked ~ .left-md-relay .left-md-target5,
+  .left-md-check:checked ~ .left-md-hub .left-md-goal {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-lg,
+  .top-lg-global > *,
+  *:hover > .top-lg-into,
+  *:focus > .top-lg-into,
+  .top-lg-onto:hover,
+  .top-lg-onto:focus,
+  .top-lg-toall:hover > *,
+  .top-lg-toall:focus > *,
+  .top-lg-toone > *:hover,
+  .top-lg-toone > *:focus,
+  .top-lg-radio1:checked ~ .top-lg-relay .top-lg-target1,
+  .top-lg-radio2:checked ~ .top-lg-relay .top-lg-target2,
+  .top-lg-radio3:checked ~ .top-lg-relay .top-lg-target3,
+  .top-lg-radio4:checked ~ .top-lg-relay .top-lg-target4,
+  .top-lg-radio5:checked ~ .top-lg-relay .top-lg-target5,
+  .top-lg-check:checked ~ .top-lg-hub .top-lg-goal {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-lg,
+  .bot-lg-global > *,
+  *:hover > .bot-lg-into,
+  *:focus > .bot-lg-into,
+  .bot-lg-onto:hover,
+  .bot-lg-onto:focus,
+  .bot-lg-toall:hover > *,
+  .bot-lg-toall:focus > *,
+  .bot-lg-toone > *:hover,
+  .bot-lg-toone > *:focus,
+  .bot-lg-radio1:checked ~ .bot-lg-relay .bot-lg-target1,
+  .bot-lg-radio2:checked ~ .bot-lg-relay .bot-lg-target2,
+  .bot-lg-radio3:checked ~ .bot-lg-relay .bot-lg-target3,
+  .bot-lg-radio4:checked ~ .bot-lg-relay .bot-lg-target4,
+  .bot-lg-radio5:checked ~ .bot-lg-relay .bot-lg-target5,
+  .bot-lg-check:checked ~ .bot-lg-hub .bot-lg-goal {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-lg,
+  .right-lg-global > *,
+  *:hover > .right-lg-into,
+  *:focus > .right-lg-into,
+  .right-lg-onto:hover,
+  .right-lg-onto:focus,
+  .right-lg-toall:hover > *,
+  .right-lg-toall:focus > *,
+  .right-lg-toone > *:hover,
+  .right-lg-toone > *:focus,
+  .right-lg-radio1:checked ~ .right-lg-relay .right-lg-target1,
+  .right-lg-radio2:checked ~ .right-lg-relay .right-lg-target2,
+  .right-lg-radio3:checked ~ .right-lg-relay .right-lg-target3,
+  .right-lg-radio4:checked ~ .right-lg-relay .right-lg-target4,
+  .right-lg-radio5:checked ~ .right-lg-relay .right-lg-target5,
+  .right-lg-check:checked ~ .right-lg-hub .right-lg-goal {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-lg,
+  .left-lg-global > *,
+  *:hover > .left-lg-into,
+  *:focus > .left-lg-into,
+  .left-lg-onto:hover,
+  .left-lg-onto:focus,
+  .left-lg-toall:hover > *,
+  .left-lg-toall:focus > *,
+  .left-lg-toone > *:hover,
+  .left-lg-toone > *:focus,
+  .left-lg-radio1:checked ~ .left-lg-relay .left-lg-target1,
+  .left-lg-radio2:checked ~ .left-lg-relay .left-lg-target2,
+  .left-lg-radio3:checked ~ .left-lg-relay .left-lg-target3,
+  .left-lg-radio4:checked ~ .left-lg-relay .left-lg-target4,
+  .left-lg-radio5:checked ~ .left-lg-relay .left-lg-target5,
+  .left-lg-check:checked ~ .left-lg-hub .left-lg-goal {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-xl,
+  .top-xl-global > *,
+  *:hover > .top-xl-into,
+  *:focus > .top-xl-into,
+  .top-xl-onto:hover,
+  .top-xl-onto:focus,
+  .top-xl-toall:hover > *,
+  .top-xl-toall:focus > *,
+  .top-xl-toone > *:hover,
+  .top-xl-toone > *:focus,
+  .top-xl-radio1:checked ~ .top-xl-relay .top-xl-target1,
+  .top-xl-radio2:checked ~ .top-xl-relay .top-xl-target2,
+  .top-xl-radio3:checked ~ .top-xl-relay .top-xl-target3,
+  .top-xl-radio4:checked ~ .top-xl-relay .top-xl-target4,
+  .top-xl-radio5:checked ~ .top-xl-relay .top-xl-target5,
+  .top-xl-check:checked ~ .top-xl-hub .top-xl-goal {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .bot-xl,
+  .bot-xl-global > *,
+  *:hover > .bot-xl-into,
+  *:focus > .bot-xl-into,
+  .bot-xl-onto:hover,
+  .bot-xl-onto:focus,
+  .bot-xl-toall:hover > *,
+  .bot-xl-toall:focus > *,
+  .bot-xl-toone > *:hover,
+  .bot-xl-toone > *:focus,
+  .bot-xl-radio1:checked ~ .bot-xl-relay .bot-xl-target1,
+  .bot-xl-radio2:checked ~ .bot-xl-relay .bot-xl-target2,
+  .bot-xl-radio3:checked ~ .bot-xl-relay .bot-xl-target3,
+  .bot-xl-radio4:checked ~ .bot-xl-relay .bot-xl-target4,
+  .bot-xl-radio5:checked ~ .bot-xl-relay .bot-xl-target5,
+  .bot-xl-check:checked ~ .bot-xl-hub .bot-xl-goal {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .right-xl,
+  .right-xl-global > *,
+  *:hover > .right-xl-into,
+  *:focus > .right-xl-into,
+  .right-xl-onto:hover,
+  .right-xl-onto:focus,
+  .right-xl-toall:hover > *,
+  .right-xl-toall:focus > *,
+  .right-xl-toone > *:hover,
+  .right-xl-toone > *:focus,
+  .right-xl-radio1:checked ~ .right-xl-relay .right-xl-target1,
+  .right-xl-radio2:checked ~ .right-xl-relay .right-xl-target2,
+  .right-xl-radio3:checked ~ .right-xl-relay .right-xl-target3,
+  .right-xl-radio4:checked ~ .right-xl-relay .right-xl-target4,
+  .right-xl-radio5:checked ~ .right-xl-relay .right-xl-target5,
+  .right-xl-check:checked ~ .right-xl-hub .right-xl-goal {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left-xl,
+  .left-xl-global > *,
+  *:hover > .left-xl-into,
+  *:focus > .left-xl-into,
+  .left-xl-onto:hover,
+  .left-xl-onto:focus,
+  .left-xl-toall:hover > *,
+  .left-xl-toall:focus > *,
+  .left-xl-toone > *:hover,
+  .left-xl-toone > *:focus,
+  .left-xl-radio1:checked ~ .left-xl-relay .left-xl-target1,
+  .left-xl-radio2:checked ~ .left-xl-relay .left-xl-target2,
+  .left-xl-radio3:checked ~ .left-xl-relay .left-xl-target3,
+  .left-xl-radio4:checked ~ .left-xl-relay .left-xl-target4,
+  .left-xl-radio5:checked ~ .left-xl-relay .left-xl-target5,
+  .left-xl-check:checked ~ .left-xl-hub .left-xl-goal {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
 }
 
 /********** BG **********/
@@ -5640,4 +6925,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 27th Aug 2019 @ 12:21:05 PM */
+ Updated: 27th Aug 2019 @ 2:02:44 PM */
