@@ -279,8 +279,8 @@
 .button-github,
 .btn-jsd,
 .button-jsd,
-.btn-linkedin,
-.button-linkedin,
+.btn-in,
+.button-in,
 .btn-npm,
 .button-npm,
 .btn-stack,
@@ -306,8 +306,8 @@
   background-color: var(--jsdelivr);
 }
 
-.btn-linkedin,
-.button-linkedin {
+.btn-in,
+.button-in {
   background-color: var(--linkedin);
 }
 
@@ -342,11 +342,11 @@
 .btn-jsd:focus,
 .button-jsd:focus,
 .button-jsd-check:checked + .button-jsd,
-.btn-linkedin:hover,
-.button-linkedin:hover,
-.btn-linkedin:focus,
-.button-linkedin:focus,
-.button-linkedin-check:checked + .button-linkedin,
+.btn-in:hover,
+.button-in:hover,
+.btn-in:focus,
+.button-in:focus,
+.button-in-check:checked + .button-in,
 .btn-npm:hover,
 .button-npm:hover,
 .btn-npm:focus,
@@ -392,11 +392,11 @@
   color: var(--jsdelivr);
 }
 
-.btn-linkedin:hover,
-.button-linkedin:hover,
-.btn-linkedin:focus,
-.button-linkedin:focus,
-.button-linkedin-check:checked + .button-linkedin {
+.btn-in:hover,
+.button-in:hover,
+.btn-in:focus,
+.button-in:focus,
+.button-in-check:checked + .button-in {
   border-color: var(--linkedin);
   color: var(--linkedin);
 }
