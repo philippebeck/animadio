@@ -115,8 +115,11 @@ label {
 code,
 pre {
   overflow: var(--code-overflow);
+  margin: var(--code-margin);
   padding: var(--code-padding);
+  width: var(--code-width);
   font-family: var(--code-font-family);
+  text-align: var(--code-text-align);
   background-color: var(--code-background-color);
   color: var(--code-color);
 }
