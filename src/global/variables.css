@@ -118,42 +118,120 @@ h4,
 h5,
 h6 {
   --title-font-family: serif;
-  --title-lg-font-size: 2.5rem;
-  --title-lg-text-transform: none;
-  --title-md-font-size: 2rem;
-  --title-sm-font-size: 1.5rem;
-  --title-xl-font-size: 3rem;
+}
+
+h1 {
+  --title-xl-font-size: 4rem;
   --title-xl-text-transform: capitalize;
-  --title-xs-font-size: 1.5rem;
+}
+
+h2 {
+  --title-lg-font-size: 3.5rem;
+  --title-lg-text-transform: none;
+}
+
+h3 {
+  --title-md-font-size: 3rem;
+}
+
+h4 {
+  --title-sm-font-size: 2.5rem;
+}
+
+h5,
+h6 {
+  --title-xs-font-size: 2rem;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    --title-xl-font-size: 4.2rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.6rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.1rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.6rem;
+  }
+
+  h5,
+  h6 {
+    --title-xs-font-size: 2.1rem;
+  }
 }
 
 @media (min-width: 768px) {
-  h1,
-  h2,
-  h3,
-  h4,
+  h1 {
+    --title-xl-font-size: 4.4rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.8rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.3rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.8rem;
+  }
+
   h5,
   h6 {
-    --title-lg-font-size: 3rem;
-    --title-md-font-size: 2.5rem;
-    --title-sm-font-size: 2rem;
-    --title-xl-font-size: 3.5rem;
-    --title-xs-font-size: 1.5rem;
+    --title-xs-font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    --title-xl-font-size: 4.7rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.9rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.4rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.9rem;
+  }
+
+  h5,
+  h6 {
+    --title-xs-font-size: 2.4rem;
   }
 }
 
 @media (min-width: 1200px) {
-  h1,
-  h2,
-  h3,
-  h4,
+  h1 {
+    --title-xl-font-size: 5rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 4rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.5rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 3rem;
+  }
+
   h5,
   h6 {
-    --title-lg-font-size: 3.5rem;
-    --title-md-font-size: 3rem;
-    --title-sm-font-size: 2.5rem;
-    --title-xl-font-size: 4rem;
-    --title-xs-font-size: 2rem;
+    --title-xs-font-size: 2.5rem;
   }
 }
 
