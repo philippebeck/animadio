@@ -189,11 +189,42 @@ label {
 
 code,
 pre {
-  --code-font-family: monospace;
-  --code-overflow: scroll;
-  --code-padding: 10px;
   --code-background-color: var(--black);
   --code-color: var(--jade);
+  --code-font-family: monospace;
+  --code-margin: auto;
+  --code-overflow: scroll;
+  --code-padding: 10px;
+  --code-text-align: initial;
+  --code-width: 100%;
+}
+
+@media (min-width: 576px) {
+  code,
+  pre {
+    --code-width: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  code,
+  pre {
+    --code-width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  code,
+  pre {
+    --code-width: 85%;
+  }
+}
+
+@media (min-width: 1200px) {
+  code,
+  pre {
+    --code-width: 80%;
+  }
 }
 
 /***** 1.4 Margin *****/
