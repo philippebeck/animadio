@@ -10,7 +10,13 @@
 [class^="flex"],
 [class*=" flex"],
 .column,
-.row {
+.col-inverse,
+.col-nowrap,
+.col-reverse,
+.row,
+.row-inverse,
+.row-nowrap,
+.row-reverse {
   display: flex;
   flex-wrap: wrap;
   place-content: center;
@@ -18,12 +24,18 @@
 
 /***** 2 - Column & Row *****/
 
-.column {
+.column,
+.col-inverse,
+.col-nowrap,
+.col-reverse {
   flex-direction: column;
   padding: var(--column-padding);
 }
 
-.row {
+.row,
+.row-inverse,
+.row-nowrap,
+.row-reverse {
   flex-direction: row;
   padding: var(--row-padding);
 }
