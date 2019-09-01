@@ -1,8 +1,7 @@
 [![Animadio Logo](https://animadio.org/img/logo.png)](https://animadio.org)
 # [Animadio CSS Framework](https://animadio.org)
 
--   Eight types of selectors working with hover, focus, active & **checked states**
--   Hundreds of **class combinations by concatenation**
+-   Eight types of selectors working with hover, focus & **checked states**
 -   **Flexbox & Grid** systems included with common options
 -   Click anywhere on the page to **enable & disable any design effect** anywhere else
 -   Management of **keyframes animations** & their options
@@ -54,23 +53,23 @@ Yarn : `yarn add animadio`
 
 > **Full Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/min/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/min/animadio.min.css)  
 
 > **Grid Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/animadio-grid.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/min/animadio-grid.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/animadio-grid.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/min/animadio-grid.min.css)  
 
 > **Elements Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/animadio-elements.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/min/animadio-elements.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/animadio-elements.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/min/animadio-elements.min.css)  
 
 > **States Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/animadio-states.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@0.8.3/dist/min/animadio-states.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/animadio-states.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@1.0.0/dist/min/animadio-states.min.css)  
 
 ---
 
@@ -114,7 +113,7 @@ You can simply use the library & if you want or if you need : you can overload t
 
 ## Support
 
-Animadio has continuous support & community networks will give all news !
+Animadio has continuous support **until the 31st of December 2021** & community networks will give all news !
 
 [![Project Maintained](https://img.shields.io/maintenance/yes/2019.svg?label=Maintained)](https://github.com/animadio/animadio)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg?label=Last+Commit)](https://github.com/animadio/animadio/commits/master)
@@ -145,9 +144,9 @@ Slack : [animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQ
 
 ## Documentation
 
-Documentation will arrive as soon as possible !
+Animadio Documentation is available !
 
-[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg?label=https://animadio.org)](https://danimadio.org)
+[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/doc.animadio.org.svg?label=https://doc.animadio.org)](https://doc.animadio.org)
 
 ---
 
@@ -210,6 +209,12 @@ Lisa Lecieux
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/philippebeck.net.svg?label=https://sangodraws.com)](https://sangodraws.com)
 [![GitHub Followers](https://img.shields.io/github/followers/sangodraws.svg?label=GitHub+:+sangodraws+|+Followers)](https://github.com/sangodraws)
 [![Twitter Follow](https://badgen.net/twitter/follow/sangodraws)](https://twitter.com/sangodraws)
+
+Valentin Antoin
+
+[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/valentin-antoin.fr.svg?label=https://valentin-antoin.fr)](https://valentin-antoin.fr)
+[![GitHub Followers](https://img.shields.io/github/followers/valentinantoin.svg?label=GitHub+:+valentinantoin+|+Followers)](https://github.com/sangodraws)
+[![Twitter Follow](https://badgen.net/twitter/follow/Valentin_Antoin)](https://twitter.com/Valentin_Antoin)
 
 ---
 
