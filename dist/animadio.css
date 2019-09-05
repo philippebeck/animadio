@@ -1,4 +1,4 @@
-/*! animadio v1.0.0 | https://animadio.org | MIT License */
+/*! animadio v1.1.0 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -9,10 +9,11 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   1.1 Colors
   1.2 Keyframes
   1.3 Init
-  1.4 Margin
-  1.5 Padding
-  1.6 Height
-  1.7 Width
+  1.4 Container
+  1.5 Margin
+  1.6 Padding
+  1.7 Height
+  1.8 Width
 2. GRID
   2.1 Grid
   2.2 Flex
@@ -45,6 +46,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --citrine: rgba(228, 208, 10, 0.7);
   --emerald: rgba(80, 200, 120, 0.7);
   --facebook: #4267b2;
+  --free-code-camp: #006400;
   --github: #24292e;
   --gray: DimGray;
   --green: ForestGreen;
@@ -103,6 +105,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
 /***** 1.3 Init *****/
 body {
   --body-background-color: none;
+  --body-color: var(--black);
   --body-font-family: sans-serif;
   --body-font-size: 1.8rem;
   --body-line-height: 1.6;
@@ -305,6 +308,11 @@ pre {
   pre {
     --code-width: 80%;
   }
+}
+
+/***** 1.4 Container *****/
+[class*="container"] {
+  --container-background-color: transparent;
 }
 
 /***** 1.4 Margin *****/
@@ -1763,6 +1771,7 @@ body {
   line-height: var(--body-line-height);
   font-size: var(--body-font-size);
   font-family: var(--body-font-family);
+  color: var(--body-color);
   background-color: var(--body-background-color);
   scroll-behavior: var(--body-scroll-behavior);
 }
@@ -1880,6 +1889,7 @@ pre > *::selection {
 [class^="container"],
 [class*=" container"] {
   margin: auto;
+  background-color: var(--container-background-color);
 }
 
 [class^="container-"][class*="-70xs"],
@@ -4594,6 +4604,8 @@ grid-template: auto/repeat(7, auto);
 /***** 7 - Btn Brand Colors *****/
 .btn-fb,
 .button-fb,
+.btn-fcc,
+.button-fcc,
 .btn-github,
 .button-github,
 .btn-jsd,
@@ -4613,6 +4625,11 @@ grid-template: auto/repeat(7, auto);
 .btn-fb,
 .button-fb {
   background-color: var(--facebook);
+}
+
+.btn-fcc,
+.button-fcc {
+  background-color: var(--free-code-camp);
 }
 
 .btn-github,
@@ -4651,6 +4668,11 @@ grid-template: auto/repeat(7, auto);
 .btn-fb:focus,
 .button-fb:focus,
 .button-fb-check:checked + .button-fb,
+.btn-fcc:hover,
+.button-fcc:hover,
+.btn-fcc:focus,
+.button-fcc:focus,
+.button-fcc-check:checked + .button-fcc,
 .btn-github:hover,
 .button-github:hover,
 .btn-github:focus,
@@ -4691,6 +4713,15 @@ grid-template: auto/repeat(7, auto);
 .button-fb-check:checked + .button-fb {
   border-color: var(--facebook);
   color: var(--facebook);
+}
+
+.btn-fcc:hover,
+.button-fcc:hover,
+.btn-fcc:focus,
+.button-fcc:focus,
+.button-fcc-check:checked + .button-fcc {
+  border-color: var(--free-code-camp);
+  color: var(--free-code-camp);
 }
 
 .btn-github:hover,
@@ -7410,6 +7441,25 @@ grid-template: auto/repeat(7, auto);
   background-color: var(--facebook);
 }
 
+.bg-fcc,
+.bg-fcc-global > *,
+*:hover > .bg-fcc-into,
+*:focus > .bg-fcc-into,
+.bg-fcc-onto:hover,
+.bg-fcc-onto:focus,
+.bg-fcc-toall:hover > *,
+.bg-fcc-toall:focus > *,
+.bg-fcc-toone > *:hover,
+.bg-fcc-toone > *:focus,
+.bg-fcc-radio1:checked ~ .bg-fcc-relay .bg-fcc-target1,
+.bg-fcc-radio2:checked ~ .bg-fcc-relay .bg-fcc-target2,
+.bg-fcc-radio3:checked ~ .bg-fcc-relay .bg-fcc-target3,
+.bg-fcc-radio4:checked ~ .bg-fcc-relay .bg-fcc-target4,
+.bg-fcc-radio5:checked ~ .bg-fcc-relay .bg-fcc-target5,
+.bg-fcc-check:checked ~ .bg-fcc-hub .bg-fcc-goal {
+  background-color: var(--free-code-camp);
+}
+
 .bg-github,
 .bg-github-global > *,
 *:hover > .bg-github-into,
@@ -8028,6 +8078,25 @@ grid-template: auto/repeat(7, auto);
 .color-fb-radio5:checked ~ .color-fb-relay .color-fb-target5,
 .color-fb-check:checked ~ .color-fb-hub .color-fb-goal {
   color: var(--facebook);
+}
+
+.color-fcc,
+.color-fcc-global > *,
+*:hover > .color-fcc-into,
+*:focus > .color-fcc-into,
+.color-fcc-onto:hover,
+.color-fcc-onto:focus,
+.color-fcc-toall:hover > *,
+.color-fcc-toall:focus > *,
+.color-fcc-toone > *:hover,
+.color-fcc-toone > *:focus,
+.color-fcc-radio1:checked ~ .color-fcc-relay .color-fcc-target1,
+.color-fcc-radio2:checked ~ .color-fcc-relay .color-fcc-target2,
+.color-fcc-radio3:checked ~ .color-fcc-relay .color-fcc-target3,
+.color-fcc-radio4:checked ~ .color-fcc-relay .color-fcc-target4,
+.color-fcc-radio5:checked ~ .color-fcc-relay .color-fcc-target5,
+.color-fcc-check:checked ~ .color-fcc-hub .color-fcc-goal {
+  color: var(--free-code-camp);
 }
 
 .color-github,
@@ -10466,4 +10535,4 @@ grid-template: auto/repeat(7, auto);
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 1st Sep 2019 @ 9:55:31 AM */
+ Updated: 5th Sep 2019 @ 1:14:36 PM */
