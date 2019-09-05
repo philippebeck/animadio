@@ -275,6 +275,8 @@
 /***** 7 - Btn Brand Colors *****/
 .btn-fb,
 .button-fb,
+.btn-fcc,
+.button-fcc,
 .btn-github,
 .button-github,
 .btn-jsd,
@@ -294,6 +296,11 @@
 .btn-fb,
 .button-fb {
   background-color: var(--facebook);
+}
+
+.btn-fcc,
+.button-fcc {
+  background-color: var(--free-code-camp);
 }
 
 .btn-github,
@@ -332,6 +339,11 @@
 .btn-fb:focus,
 .button-fb:focus,
 .button-fb-check:checked + .button-fb,
+.btn-fcc:hover,
+.button-fcc:hover,
+.btn-fcc:focus,
+.button-fcc:focus,
+.button-fcc-check:checked + .button-fcc,
 .btn-github:hover,
 .button-github:hover,
 .btn-github:focus,
@@ -372,6 +384,15 @@
 .button-fb-check:checked + .button-fb {
   border-color: var(--facebook);
   color: var(--facebook);
+}
+
+.btn-fcc:hover,
+.button-fcc:hover,
+.btn-fcc:focus,
+.button-fcc:focus,
+.button-fcc-check:checked + .button-fcc {
+  border-color: var(--free-code-camp);
+  color: var(--free-code-camp);
 }
 
 .btn-github:hover,

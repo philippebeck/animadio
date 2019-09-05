@@ -371,6 +371,25 @@
   background-color: var(--facebook);
 }
 
+.bg-fcc,
+.bg-fcc-global > *,
+*:hover > .bg-fcc-into,
+*:focus > .bg-fcc-into,
+.bg-fcc-onto:hover,
+.bg-fcc-onto:focus,
+.bg-fcc-toall:hover > *,
+.bg-fcc-toall:focus > *,
+.bg-fcc-toone > *:hover,
+.bg-fcc-toone > *:focus,
+.bg-fcc-radio1:checked ~ .bg-fcc-relay .bg-fcc-target1,
+.bg-fcc-radio2:checked ~ .bg-fcc-relay .bg-fcc-target2,
+.bg-fcc-radio3:checked ~ .bg-fcc-relay .bg-fcc-target3,
+.bg-fcc-radio4:checked ~ .bg-fcc-relay .bg-fcc-target4,
+.bg-fcc-radio5:checked ~ .bg-fcc-relay .bg-fcc-target5,
+.bg-fcc-check:checked ~ .bg-fcc-hub .bg-fcc-goal {
+  background-color: var(--free-code-camp);
+}
+
 .bg-github,
 .bg-github-global > *,
 *:hover > .bg-github-into,

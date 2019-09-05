@@ -7,10 +7,11 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   1.1 Colors
   1.2 Keyframes
   1.3 Init
-  1.4 Margin
-  1.5 Padding
-  1.6 Height
-  1.7 Width
+  1.4 Container
+  1.5 Margin
+  1.6 Padding
+  1.7 Height
+  1.8 Width
 2. GRID
   2.1 Grid
   2.2 Flex
@@ -43,6 +44,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --citrine: rgba(228, 208, 10, 0.7);
   --emerald: rgba(80, 200, 120, 0.7);
   --facebook: #4267b2;
+  --free-code-camp: #006400;
   --github: #24292e;
   --gray: DimGray;
   --green: ForestGreen;
@@ -101,6 +103,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
 /***** 1.3 Init *****/
 body {
   --body-background-color: none;
+  --body-color: var(--black);
   --body-font-family: sans-serif;
   --body-font-size: 1.8rem;
   --body-line-height: 1.6;
@@ -303,6 +306,11 @@ pre {
   pre {
     --code-width: 80%;
   }
+}
+
+/***** 1.4 Container *****/
+[class*="container"] {
+  --container-background-color: transparent;
 }
 
 /***** 1.4 Margin *****/

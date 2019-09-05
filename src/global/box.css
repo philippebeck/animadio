@@ -12,6 +12,7 @@
 [class^="container"],
 [class*=" container"] {
   margin: auto;
+  background-color: var(--container-background-color);
 }
 
 [class^="container-"][class*="-70xs"],
