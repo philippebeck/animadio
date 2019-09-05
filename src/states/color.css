@@ -370,6 +370,25 @@
   color: var(--facebook);
 }
 
+.color-fcc,
+.color-fcc-global > *,
+*:hover > .color-fcc-into,
+*:focus > .color-fcc-into,
+.color-fcc-onto:hover,
+.color-fcc-onto:focus,
+.color-fcc-toall:hover > *,
+.color-fcc-toall:focus > *,
+.color-fcc-toone > *:hover,
+.color-fcc-toone > *:focus,
+.color-fcc-radio1:checked ~ .color-fcc-relay .color-fcc-target1,
+.color-fcc-radio2:checked ~ .color-fcc-relay .color-fcc-target2,
+.color-fcc-radio3:checked ~ .color-fcc-relay .color-fcc-target3,
+.color-fcc-radio4:checked ~ .color-fcc-relay .color-fcc-target4,
+.color-fcc-radio5:checked ~ .color-fcc-relay .color-fcc-target5,
+.color-fcc-check:checked ~ .color-fcc-hub .color-fcc-goal {
+  color: var(--free-code-camp);
+}
+
 .color-github,
 .color-github-global > *,
 *:hover > .color-github-into,
