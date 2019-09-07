@@ -114,6 +114,7 @@
 @media (min-width: 768px) {
   .navbar > ul:first-of-type span {
     display: block;
+    font-size: var(--navbar-first-list-span-font-size);
   }
 }
 
