@@ -819,6 +819,7 @@ pre {
   --navbar-brand-link-left: 0;
   --navbar-color: var(--white);
   --navbar-first-list-link-hover-scale: 0.9;
+  --navbar-first-list-span-font-size: 2rem;
   --navbar-icon-place-self: center;
   --navbar-left: 0;
   --navbar-label-animation: translateY-xs 1s linear infinite alternate;
