@@ -83,7 +83,7 @@ You can override any variable of Animadio you want in your custom stylesheet fil
   --keyframes-rotateY: -360deg;
   --keyframes-rotateZ: -360deg;
   --keyframes-scale: 0;
-  --keyframes-scale3d: 5, 5, 1;
+  --keyframes-scale3d: 2, 2, 1;
   --keyframes-scaleX: 0;
   --keyframes-scaleY: 0;
   --keyframes-scaleZ: -1;
@@ -819,6 +819,7 @@ pre {
   --navbar-brand-link-left: 0;
   --navbar-color: var(--white);
   --navbar-first-list-link-hover-scale: 0.9;
+  --navbar-first-list-span-font-size: 2rem;
   --navbar-icon-place-self: center;
   --navbar-left: 0;
   --navbar-label-animation: translateY-xs 1s linear infinite alternate;
