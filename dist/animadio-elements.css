@@ -1,4 +1,4 @@
-/*! animadio v1.1.1 | https://animadio.org | MIT License */
+/*! animadio v1.1.2 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -561,11 +561,13 @@ pre {
   --card-green-background-color: var(--emerald);
   --card-green-title-box-shadow: var(--card-title-box-shadow) var(--jade);
   --card-green-title-text-shadow: var(--card-title-text-shadow) var(--green);
+  --card-height: initial;
   --card-hover-transform: rotate(1deg);
   --card-hover-transition: transform 200ms;
   --card-margin: 20px;
   --card-overflow: hidden;
   --card-padding: 10px;
+  --card-place-content: space-evenly;
   --card-place-items: center;
   --card-position: relative;
   --card-purple-background-color: var(--amethyst);
@@ -3379,6 +3381,7 @@ pre > *::selection {
   -webkit-box-direction: normal;
       -ms-flex-direction: var(--card-flex-direction);
           flex-direction: var(--card-flex-direction);
+  place-content: var(--card-place-content);
   place-items: var(--card-place-items);
   position: var(--card-position);
   overflow: var(--card-overflow);
@@ -3386,6 +3389,7 @@ pre > *::selection {
   border: var(--card-border);
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
+  height: var(--card-height);
   width: var(--card-width);
   -webkit-box-shadow: var(--card-box-shadow);
           box-shadow: var(--card-box-shadow);
@@ -4155,4 +4159,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 7th Sep 2019 @ 11:48:47 AM */
+ Updated: 13th Sep 2019 @ 9:53:42 AM */
