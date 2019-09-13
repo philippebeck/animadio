@@ -18,6 +18,7 @@
 [class*="card"] {
   display: inline-flex;
   flex-direction: var(--card-flex-direction);
+  place-content: var(--card-place-content);
   place-items: var(--card-place-items);
   position: var(--card-position);
   overflow: var(--card-overflow);
@@ -25,6 +26,7 @@
   border: var(--card-border);
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
+  height: var(--card-height);
   width: var(--card-width);
   box-shadow: var(--card-box-shadow);
   background-color: var(--card-background-color);

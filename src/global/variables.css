@@ -559,11 +559,13 @@ pre {
   --card-green-background-color: var(--emerald);
   --card-green-title-box-shadow: var(--card-title-box-shadow) var(--jade);
   --card-green-title-text-shadow: var(--card-title-text-shadow) var(--green);
+  --card-height: initial;
   --card-hover-transform: rotate(1deg);
   --card-hover-transition: transform 200ms;
   --card-margin: 20px;
   --card-overflow: hidden;
   --card-padding: 10px;
+  --card-place-content: space-evenly;
   --card-place-items: center;
   --card-position: relative;
   --card-purple-background-color: var(--amethyst);
