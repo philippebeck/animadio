@@ -74,6 +74,14 @@
   display: none;
 }
 
+[class*="menu-"][class*="-relay"] > h2,
+[class*="menu-"][class*="-relay"] > h3,
+[class*="menu-"][class*="-relay"] > h4,
+[class*="menu-"][class*="-relay"] > h5,
+[class*="menu-"][class*="-relay"] > h6 {
+  display: block;
+}
+
 /***** 7 - Menu Checked Target *****/
 [class*="menu-"][class*="-radio0"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target0"],
 [class*="menu-"][class*="-radio1"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target1"],
