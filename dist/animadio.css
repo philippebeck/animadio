@@ -1,4 +1,4 @@
-/*! animadio v1.1.3 | https://animadio.org | MIT License */
+/*! animadio v1.1.4 | https://animadio.org | MIT License */
 
 /********** VARIABLES **********/
 
@@ -5245,6 +5245,14 @@ grid-template: auto/repeat(7, auto);
 /***** 6 - Menu Relay Child *****/
 [class*="menu-"][class*="-relay"] > * {
   display: none;
+}
+
+[class*="menu-"][class*="-relay"] > h2,
+[class*="menu-"][class*="-relay"] > h3,
+[class*="menu-"][class*="-relay"] > h4,
+[class*="menu-"][class*="-relay"] > h5,
+[class*="menu-"][class*="-relay"] > h6 {
+  display: block;
 }
 
 /***** 7 - Menu Checked Target *****/
@@ -10541,4 +10549,4 @@ grid-template: auto/repeat(7, auto);
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 13th Sep 2019 @ 10:08:56 AM */
+ Updated: 21st Sep 2019 @ 9:31:30 AM */
