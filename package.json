@@ -22,7 +22,7 @@
   "repository": "github:animadio/animadio",
   "bugs": "https://github.com/animadio/animadio/issues",
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
+    "autoprefixer": "^9.7.4",
     "grunt": "^1.0.4",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^3.0.0",
