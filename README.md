@@ -11,8 +11,6 @@
 [![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
 [![Codacy Code Quality](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ad3b450099d132b4d98d/maintainability)](https://codeclimate.com/github/animadio/animadio/maintainability)
-[![Dependabot](https://badgen.net/dependabot/dependabot/dependabot-core/?icon=dependabot)](https://github.com/animadio/animadio/graphs/contributors)
-[![David Dev Dependencies](https://david-dm.org/animadio/animadio/dev-status.svg)](https://david-dm.org/animadio/animadio?type=dev)
 
 ## Summary
 
@@ -53,23 +51,23 @@ Yarn : `yarn add animadio`
 
 > **Full Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/min/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio.min.css)  
 
 > **Grid Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/animadio-grid.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/min/animadio-grid.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-grid.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-grid.min.css)  
 
 > **Elements Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/animadio-elements.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/min/animadio-elements.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-elements.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-elements.min.css)  
 
 > **States Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/animadio-states.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.4/dist/min/animadio-states.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-states.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-states.min.css)  
 
 ---
 
@@ -115,7 +113,7 @@ You can simply use the library & if you want or if you need : you can overload t
 
 Animadio has continuous support **until the 31st of December 2021** & community networks will give all news !
 
-[![Project Maintained](https://img.shields.io/maintenance/yes/2019.svg?label=Maintained)](https://github.com/animadio/animadio)
+[![Project Maintained](https://img.shields.io/maintenance/yes/2020.svg?label=Maintained)](https://github.com/animadio/animadio)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg?label=Last+Commit)](https://github.com/animadio/animadio/commits/master)
 
 ---
@@ -214,7 +212,6 @@ Valentin Antoin
 
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/valentin-antoin.fr.svg?label=https://valentin-antoin.fr)](https://valentin-antoin.fr)
 [![GitHub Followers](https://img.shields.io/github/followers/valentinantoin.svg?label=GitHub+:+valentinantoin+|+Followers)](https://github.com/valentinantoin)
-[![Twitter Follow](https://badgen.net/twitter/follow/Valentin_Antoin)](https://twitter.com/Valentin_Antoin)
 
 ---
 
