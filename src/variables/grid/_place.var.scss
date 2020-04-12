@@ -1,0 +1,18 @@
+/***** Variables : Grid : Place *****/
+
+[class*="placo-"] {
+  --place-content-end: flex-end;
+  --place-content-start: flex-start;
+}
+
+[class*="plait-"] {
+  --place-items-baseline: baseline;
+  --place-items-end: flex-end;
+  --place-items-start: flex-start;
+}
+
+[class*="plase-"] {
+  --place-self-baseline: baseline;
+  --place-self-end: flex-end;
+  --place-self-start: flex-start;
+}
