@@ -1,0 +1,52 @@
+/***** Variables : Elements : Navbar *****/
+
+:root {
+  --navbar-height: 80px;
+}
+
+.navbar {
+  --navbar-background-color: var(--blue);
+  --navbar-bottom: unset;
+  --navbar-brand-link-img-height: 40px;
+  --navbar-brand-link-left: 0;
+  --navbar-color: var(--white);
+  --navbar-first-list-link-hover-scale: 0.9;
+  --navbar-first-list-span-font-size: 2rem;
+  --navbar-icon-place-self: center;
+  --navbar-left: 0;
+  --navbar-label-animation: translateY-xs 1s linear infinite alternate;
+  --navbar-label-right: 10px;
+  --navbar-label-top: 0;
+  --navbar-last-list-height: 50px;
+  --navbar-last-list-img-margin: 5px;
+  --navbar-last-list-link-hover-scale: 1.5;
+  --navbar-link-color: var(--white);
+  --navbar-link-cursor: pointer;
+  --navbar-link-hover-color: var(--yellow);
+  --navbar-link-padding: 20px 10px;
+  --navbar-list-link-flex-direction: column;
+  --navbar-list-list-style: none;
+  --navbar-list-margin: 0;
+  --navbar-list-padding: 0;
+  --navbar-list-place-items: center;
+  --navbar-place-content: center;
+  --navbar-place-items: center;
+  --navbar-position: fixed;
+  --navbar-right: 0;
+  --navbar-top: 0;
+  --navbar-z-index: 1000;
+}
+
+@media (min-width: $breakpoint-sm) {
+  .navbar {
+    --navbar-flex-direction: row;
+    --navbar-place-content: space-around;
+    --navbar-padding: 10px;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .navbar {
+    --navbar-place-content: space-evenly;
+  }
+}
