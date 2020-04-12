@@ -1,0 +1,30 @@
+/***** Variables : Global : Keyframes *****/
+
+:root {
+  --keyframes-content1: url(https://animadio.org/img/svg/1.svg);
+  --keyframes-content2: url(https://animadio.org/img/svg/2.svg);
+  --keyframes-content3: url(https://animadio.org/img/svg/3.svg);
+  --keyframes-content4: url(https://animadio.org/img/svg/4.svg);
+  --keyframes-content5: url(https://animadio.org/img/svg/5.svg);
+  --keyframes-rotate: 360deg;
+  --keyframes-rotate3d: 1, 1, 1, 360deg;
+  --keyframes-rotateX: -360deg;
+  --keyframes-rotateY: -360deg;
+  --keyframes-rotateZ: -360deg;
+  --keyframes-scale: 0;
+  --keyframes-scale3d: 2, 2, 1;
+  --keyframes-scaleX: 0;
+  --keyframes-scaleY: 0;
+  --keyframes-scaleZ: -1;
+  --keyframes-skew: 180deg, 180deg;
+  --keyframes-skewX: 180deg;
+  --keyframes-skewY: 180deg;
+  --keyframes-translate: -50vw, -50vh;
+  --keyframes-translate3d: 50vw, 50vh, 0;
+  --keyframes-translateX: -50vw;
+  --keyframes-translateY: -50vh;
+  --keyframes-translateY-opac: 68px;
+  --keyframes-translateY-xs: 1vh;
+  --keyframes-translateZ: 100px;
+  --keyframes-width: 100%;
+}
