@@ -1,0 +1,19 @@
+/***** Variables : Grid : Grid *****/
+
+[class*="gap-"] {
+  --gap-small-lg: 10px;
+  --gap-medium-lg: 20px;
+  --gap-large-lg: 50px;
+  --gap-small-md: 5px;
+  --gap-medium-md: 10px;
+  --gap-large-md: 20px;
+  --gap-small-sm: 2px;
+  --gap-medium-sm: 5px;
+  --gap-large-sm: 10px;
+  --gap-small-xl: 20px;
+  --gap-medium-xl: 50px;
+  --gap-large-xl: 100px;
+  --gap-small-xs: 1px;
+  --gap-medium-xs: 2px;
+  --gap-large-xs: 5px;
+}
