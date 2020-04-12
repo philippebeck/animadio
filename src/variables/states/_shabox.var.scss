@@ -1,0 +1,15 @@
+/***** Variables : States : Shabox *****/
+
+[class*="shabox-"] {
+  --box-shadow-blur: 0 0 2px;
+  --box-shadow-blur-lg: 5px 5px 5px;
+  --box-shadow-blur-md: 2px 2px 2px;
+  --box-shadow-blur-sm: 1px 1px 1px;
+  --box-shadow-lg: 5px 5px;
+  --box-shadow-md: 2px 2px;
+  --box-shadow-sm: 1px 1px;
+  --box-shadow-spread: 0 0 2px 2px;
+  --box-shadow-spread-lg: 5px 5px 5px 5px;
+  --box-shadow-spread-md: 2px 2px 2px 2px;
+  --box-shadow-spread-sm: 1px 1px 1px 1px;
+}
