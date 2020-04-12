@@ -1,0 +1,48 @@
+/***** Variables : States : Bord *****/
+
+$border-styles: (
+  'dash':     dashed,
+  'dot':      dotted,
+  'double':   double,
+  'groove':   groove,
+  'inset':    inset,
+  'outset':   outset,
+  'ridge':    ridge,
+  'solid':    solid
+) !default;
+
+$border-width-sm:   thin      !default;
+$border-width-md:   medium    !default;
+$border-width-lg:   thick     !default;
+
+$border-widths: (
+  'sm':   $border-width-sm,
+  'md':   $border-width-md,
+  'lg':   $border-width-lg
+) !default;
+
+$border-radius:           5px     !default;
+$border-radius-circle:    50%     !default;
+$border-radius-round:     10px    !default;
+$border-radius-square:    unset   !default;
+
+$border-radiuses: (
+'circle':   $border-radius-circle,
+'round':    $border-radius-round,
+'square':   $border-radius-square
+) !default;
+
+$borders : (
+  "width":    $border-widths,
+  "radius":   $border-radiuses
+) !default;
+
+[class*="bord-"] {
+  --border-radius: #{$border-radius};
+  --border-radius-circle: #{$border-radius-circle};
+  --border-radius-round: #{$border-radius-round};
+  --border-radius-square: #{$border-radius-square};
+  --border-width-lg: #{$border-width-lg};
+  --border-width-md: #{$border-width-md};
+  --border-width-sm: #{$border-width-sm};
+}
