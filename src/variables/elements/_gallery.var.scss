@@ -1,0 +1,59 @@
+/***** Variables : Elements : Gallery *****/
+
+.gallery {
+  --gallery-all-cursor: crosshair;
+  --gallery-flex-wrap: wrap;
+  --gallery-figcaption-background-color: rgba(0, 0, 0, 0.8);
+  --gallery-figcaption-bottom: -60%;
+  --gallery-figcaption-fa-background-color: var(--blue);
+  --gallery-figcaption-fa-border: 2px solid var(--white);
+  --gallery-figcaption-fa-padding: 10px;
+  --gallery-figcaption-fa-position: absolute;
+  --gallery-figcaption-fa-radius: 50%;
+  --gallery-figcaption-fa-right: 5px;
+  --gallery-figcaption-fa-top: -20px;
+  --gallery-figcaption-line-height: 0.8;
+  --gallery-figcaption-padding: 10px;
+  --gallery-figcaption-position: absolute;
+  --gallery-figcaption-width: 100%;
+  --gallery-figure-border: thin dotted var(--silver);
+  --gallery-figure-box-shadow: 0 0 5px;
+  --gallery-figure-hover-figcaption-animation: translateY-opac 2s;
+  --gallery-figure-hover-figcaption-bottom: 0;
+  --gallery-figure-line-height: 0;
+  --gallery-figure-margin: 5px;
+  --gallery-figure-overflow: hidden;
+  --gallery-place-content: center;
+  --gallery-place-items: center;
+  --gallery-figure-position: relative;
+  --gallery-figure-width: calc(100% - 10px);
+  --gallery-link-all-cursor: pointer;
+  --gallery-link-all-font-size: 80%;
+  --gallery-link-all-margin: 0;
+  --gallery-link-all-padding: 5px;
+  --gallery-link-color: var(--white);
+  --gallery-margin: 20px auto 50px;
+  --gallery-max-width: 90%;
+  --gallery-overflow: hidden;
+}
+
+@media (min-width: $breakpoint-sm) {
+  .gallery {
+    --gallery-figure-margin: 10px;
+    --gallery-figure-width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .gallery {
+    --gallery-figure-margin: 15px;
+    --gallery-figure-width: calc(100% / 3 - 30px);
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .gallery {
+    --gallery-figure-margin: 20px;
+    --gallery-figure-width: calc(100% / 4 - 40px);
+  }
+}
