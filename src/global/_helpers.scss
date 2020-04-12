@@ -1,0 +1,57 @@
+/***** Global : Helpers *****/
+
+/* Helpers : Font */
+.font-bold {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-oblique {
+  font-style: oblique;
+}
+
+.font-normal {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Helpers : Text */
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Helpers : Cursor */
+.cursor-cross,
+.cursor-cross > * {
+  cursor: crosshair;
+}
+
+.cursor-hand,
+.cursor-hand > * {
+  cursor: pointer;
+}
+
+.cursor-help,
+.cursor-help > * {
+  cursor: help;
+}
+
+.cursor-none,
+.cursor-none > * {
+  cursor: not-allowed;
+}
