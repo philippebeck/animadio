@@ -1,0 +1,73 @@
+/***** States : Bg *****/
+
+/* Basic Background Colors */
+@each $color in $all-colors {
+  @each $name, $value in $color {
+    .bg-#{$name},
+    .bg-#{$name}-global > *,
+    *:hover > .bg-#{$name}-into,
+    *:focus > .bg-#{$name}-into,
+    .bg-#{$name}-onto:hover,
+    .bg-#{$name}-onto:focus,
+    .bg-#{$name}-toall:hover > *,
+    .bg-#{$name}-toall:focus > *,
+    .bg-#{$name}-toone > *:hover,
+    .bg-#{$name}-toone > *:focus,
+    .bg-#{$name}-radio1:checked ~ .bg-#{$name}-relay .bg-#{$name}-target1,
+    .bg-#{$name}-radio2:checked ~ .bg-#{$name}-relay .bg-#{$name}-target2,
+    .bg-#{$name}-radio3:checked ~ .bg-#{$name}-relay .bg-#{$name}-target3,
+    .bg-#{$name}-radio4:checked ~ .bg-#{$name}-relay .bg-#{$name}-target4,
+    .bg-#{$name}-radio5:checked ~ .bg-#{$name}-relay .bg-#{$name}-target5,
+    .bg-#{$name}-check:checked ~ .bg-#{$name}-hub .bg-#{$name}-goal {
+      background-color: var(--#{$name});
+    }
+  }
+}
+
+/* Dark Transparent Background Colors */
+@each $color in $main-colors {
+  @each $name, $value in $color {
+    .bg-#{$name}-dark,
+    .bg-#{$name}-dark-global > *,
+    *:hover > .bg-#{$name}-dark-into,
+    *:focus > .bg-#{$name}-dark-into,
+    .bg-#{$name}-dark-onto:hover,
+    .bg-#{$name}-dark-onto:focus,
+    .bg-#{$name}-dark-toall:hover > *,
+    .bg-#{$name}-dark-toall:focus > *,
+    .bg-#{$name}-dark-toone > *:hover,
+    .bg-#{$name}-dark-toone > *:focus,
+    .bg-#{$name}-dark-radio1:checked ~ .bg-#{$name}-dark-relay .bg-#{$name}-dark-target1,
+    .bg-#{$name}-dark-radio2:checked ~ .bg-#{$name}-dark-relay .bg-#{$name}-dark-target2,
+    .bg-#{$name}-dark-radio3:checked ~ .bg-#{$name}-dark-relay .bg-#{$name}-dark-target3,
+    .bg-#{$name}-dark-radio4:checked ~ .bg-#{$name}-dark-relay .bg-#{$name}-dark-target4,
+    .bg-#{$name}-dark-radio5:checked ~ .bg-#{$name}-dark-relay .bg-#{$name}-dark-target5,
+    .bg-#{$name}-dark-check:checked ~ .bg-#{$name}-dark-hub .bg-#{$name}-dark-goal {
+      background-color: var(--#{$name}-dark);
+    }
+  }
+}
+
+/* Light Transparent Background Colors */
+@each $color in $main-colors {
+  @each $name, $value in $color {
+    .bg-#{$name}-light,
+    .bg-#{$name}-light-global > *,
+    *:hover > .bg-#{$name}-light-into,
+    *:focus > .bg-#{$name}-light-into,
+    .bg-#{$name}-light-onto:hover,
+    .bg-#{$name}-light-onto:focus,
+    .bg-#{$name}-light-toall:hover > *,
+    .bg-#{$name}-light-toall:focus > *,
+    .bg-#{$name}-light-toone > *:hover,
+    .bg-#{$name}-light-toone > *:focus,
+    .bg-#{$name}-light-radio1:checked ~ .bg-#{$name}-light-relay .bg-#{$name}-light-target1,
+    .bg-#{$name}-light-radio2:checked ~ .bg-#{$name}-light-relay .bg-#{$name}-light-target2,
+    .bg-#{$name}-light-radio3:checked ~ .bg-#{$name}-light-relay .bg-#{$name}-light-target3,
+    .bg-#{$name}-light-radio4:checked ~ .bg-#{$name}-light-relay .bg-#{$name}-light-target4,
+    .bg-#{$name}-light-radio5:checked ~ .bg-#{$name}-light-relay .bg-#{$name}-light-target5,
+    .bg-#{$name}-light-check:checked ~ .bg-#{$name}-light-hub .bg-#{$name}-light-goal {
+      background-color: var(--#{$name}-light);
+    }
+  }
+}
