@@ -1,0 +1,56 @@
+/***** Variables : Elements : Card *****/
+
+[class*="card"] {
+  --card-background-color: var(--obsidian);
+  --card-black-title-box-shadow: var(--card-title-box-shadow) var(--black);
+  --card-black-title-text-shadow: var(--card-title-text-shadow) var(--black);
+  --card-blue-background-color: var(--sapphire);
+  --card-blue-title-box-shadow: var(--card-title-box-shadow) var(--sky);
+  --card-blue-title-text-shadow: var(--card-title-text-shadow) var(--blue);
+  --card-border: solid medium;
+  --card-border-radius: 10px;
+  --card-box-shadow: 3px 5px 10px 5px var(--black);
+  --card-btn-color: var(--white);
+  --card-btn-font-weight: bold;
+  --card-btn-hover-background-color: var(--white);
+  --card-btn-hover-color: initial;
+  --card-btn-text-align: center;
+  --card-btn-width: calc(var(--card-child-max-width) * 0.5);
+  --card-child-background-color: var(--white);
+  --card-child-border: solid thin;
+  --card-child-border-radius: 20px;
+  --card-child-font-size: 1.8rem;
+  --card-child-margin: 10px;
+  --card-child-max-width: calc(var(--card-width) * 0.9);
+  --card-child-padding: 5px 10px;
+  --card-child-text-align: center;
+  --card-color: var(--black);
+  --card-flex-direction: column;
+  --card-green-background-color: var(--emerald);
+  --card-green-title-box-shadow: var(--card-title-box-shadow) var(--jade);
+  --card-green-title-text-shadow: var(--card-title-text-shadow) var(--green);
+  --card-height: initial;
+  --card-hover-transform: rotate(1deg);
+  --card-hover-transition: transform 200ms;
+  --card-margin: 20px;
+  --card-overflow: hidden;
+  --card-padding: 10px;
+  --card-place-content: space-evenly;
+  --card-place-items: center;
+  --card-position: relative;
+  --card-purple-background-color: var(--amethyst);
+  --card-purple-title-box-shadow: var(--card-title-box-shadow) var(--violet);
+  --card-purple-title-text-shadow: var(--card-title-text-shadow) var(--purple);
+  --card-red-background-color: var(--ruby);
+  --card-red-title-box-shadow: var(--card-title-box-shadow) var(--tomato);
+  --card-red-title-text-shadow: var(--card-title-text-shadow) var(--red);
+  --card-selection-background-color: var(--black);
+  --card-selection-color: var(--jade);
+  --card-title-box-shadow: inset 0 0 5px 2px;
+  --card-title-font-size: 3rem;
+  --card-title-text-shadow: 2px 2px 5px;
+  --card-width: 300px;
+  --card-yellow-background-color: var(--citrine);
+  --card-yellow-title-box-shadow: var(--card-title-box-shadow) var(--khaki);
+  --card-yellow-title-text-shadow: var(--card-title-text-shadow) var(--yellow);
+}
