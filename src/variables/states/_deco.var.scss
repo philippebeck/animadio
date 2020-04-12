@@ -1,0 +1,21 @@
+// Variables : States : Deco
+
+$deco-lines: (
+  'none':       none,
+  'under':      underline,
+  'through':    line-through,
+  'over':       overline
+) !default;
+
+$deco-styles: (
+  'dash':     dashed,
+  'dot':      dotted,
+  'double':   double,
+  'solid':    solid,
+  'wavy':     wavy
+) !default;
+
+$decos : (
+  "line":    $deco-lines,
+  "style":   $deco-styles
+) !default;
