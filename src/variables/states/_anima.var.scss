@@ -1,0 +1,114 @@
+/***** Variables : States : Anima *****/
+
+$animation-names: (
+  'rota':     rotate,
+  'rota3d':   rotate3d,
+  'rotax':    rotateX,
+  'rotay':    rotateY,
+  'rotaz':    rotateZ,
+  'scal':     scale,
+  'scal3d':   scale3d,
+  'scalx':    scaleX,
+  'scaly':    scaleY,
+  'scalz':    scaleZ,
+  'skew':     skew,
+  'skewx':    skewX,
+  'skewy':    skewY,
+  'tran':     translate,
+  'tran3d':   translate3d,
+  'tranx':    translateX,
+  'trany':    translateY,
+  'tranz':    translateZ
+) !default;
+
+$animation-duration-xs:   1s    !default;
+$animation-duration-sm:   2s    !default;
+$animation-duration-md:   5s    !default;
+$animation-duration-lg:   10s   !default;
+$animation-duration-xl:   60s   !default;
+
+$animation-durations: (
+  'xs':   $animation-duration-xs,
+  'sm':   $animation-duration-sm,
+  'md':   $animation-duration-md,
+  'lg':   $animation-duration-lg,
+  'xl':   $animation-duration-xl
+) !default;
+
+$animation-timing-function-bezier:    1, 5, 1, -5   !default;
+$animation-timing-function-ease:      ease-in-out   !default;
+$animation-timing-function-steps:     60, start     !default;
+
+$animation-timing-functions: (
+  'linear':   linear,
+  'ease':     $animation-timing-function-ease,
+  'steps':    $animation-timing-function-steps,
+  'bezier':   $animation-timing-function-bezier
+) !default;
+
+$animation-iteration-count-few:     2   !default;
+$animation-iteration-count-many:    5   !default;
+
+$animation-iteration-counts: (
+  'few':    $animation-iteration-count-few,
+  'loop':   loop,
+  'many':   $animation-iteration-count-many
+) !default;
+
+$animation-directions: (
+  'alter':    alternate,
+  'rever':    reverse,
+  'altrev':   alternate-reverse
+) !default;
+
+$animation-delay-small:     1s    !default;
+$animation-delay-medium:    2s    !default;
+$animation-delay-large:     3s    !default;
+
+$animation-delays: (
+  'small':    $animation-delay-small,
+  'medium':   $animation-delay-medium,
+  'large':    $animation-delay-large
+) !default;
+
+$animation-fill-modes: (
+  'back':     backwards,
+  'front':    forwards
+) !default;
+
+$transform-origin-near:   50px 50px         !default;
+$transform-origin-far:    top right 50px    !default;
+
+$transform-origins: (
+  'near':   $transform-origin-near,
+  'far':    $transform-origin-far
+) !default;
+
+[class*="anima-"] {
+  --animation-duration: 2s;
+
+  /* Animation Durations */
+  @each $name, $value in $animation-durations {
+    --anima-duration-#{$name}: #{$value};
+  }
+
+  /* Animation Timing Functions */
+  @each $name, $value in $animation-timing-functions {
+    --anima-function-#{$name}: #{$value};
+  }
+
+  /* Animation Iteration Counts */
+  @each $name, $value in $animation-iteration-counts {
+    --anima-count-#{$name}: #{$value};
+  }
+
+  /* Animation Delays */
+  @each $name, $value in $animation-delays {
+    --anima-delay-#{$name}: #{$value};
+  }
+
+  /* Transform Origins */
+  @each $name, $value in $transform-origins {
+    --transform-origin-#{$name}: #{$value};
+  }
+}
