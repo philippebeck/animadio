@@ -1,0 +1,99 @@
+/***** Variables : Global : Colors *****/
+
+$black:     15, 15, 15      !default;
+$blue:      65, 105, 225    !default;
+$gray:      105, 105, 105   !default;
+$green:     34, 139, 34     !default;
+$maroon:    139, 69, 19     !default;
+$orange:    255, 140, 0     !default;
+$purple:    106, 90, 205    !default;
+$red:       220, 20, 60     !default;
+$white:     255, 255, 240   !default;
+$yellow:    255, 215, 0     !default;
+
+$primary-colors: (
+  "black":    $black,
+  "blue":     $blue,
+  "gray":     $gray,
+  "green":    $green,
+  "maroon":   $maroon,
+  "orange":   $orange,
+  "purple":   $purple,
+  "red":      $red,
+  "white":    $white,
+  "yellow":   $yellow
+) !default;
+
+$aqua:      0, 255, 255     !default;
+$choco:     244, 164, 96    !default;
+$jade:      152, 251, 152   !default;
+$khaki:     240, 230, 140   !default;
+$navy:      0, 0, 128       !default;
+$salmon:    255, 160, 122   !default;
+$silver:    192, 192, 192   !default;
+$sky:       173, 216, 230   !default;
+$tomato:    240, 128, 128   !default;
+$violet:    216, 191, 216   !default;
+
+$secondary-colors: (
+  "aqua":     $aqua,
+  "choco":    $choco,
+  "jade":     $jade,
+  "khaki":    $khaki,
+  "navy":     $navy,
+  "salmon":   $salmon,
+  "silver":   $silver,
+  "sky":      $sky,
+  "tomato":   $tomato,
+  "violet":   $violet
+) !default;
+
+$facebook:        66, 103, 178    !default;
+$freecodecamp:    0, 100, 0       !default;
+$github:          36, 41, 46      !default;
+$jsdelivr:        253, 199, 46    !default;
+$linkedin:        0, 119, 181     !default;
+$medium:          2, 158, 116     !default;
+$npm:             193, 33, 39     !default;
+$packagist:       242, 141, 26    !default;
+$stackoverflow:   244, 128, 36    !default;
+$twitter:         29, 161, 242    !default;
+
+$brand-colors: (
+  "fb":           $facebook,
+  "fcc":          $freecodecamp,
+  "github":       $github,
+  "jsd":          $jsdelivr,
+  "in":           $linkedin,
+  "medium":       $medium,
+  "npm":          $npm,
+  "packagist":    $packagist,
+  "stack":        $stackoverflow,
+  "tw":           $twitter
+) !default;
+
+$main-colors:   $primary-colors, $secondary-colors;
+$all-colors:    $primary-colors, $secondary-colors, $brand-colors;
+
+:root {
+  /* Basic Colors */
+  @each $color in $all-colors {
+    @each $color-name, $color-value in $color {
+      --#{$color-name}: rgb(#{$color-value});
+    }
+  }
+
+  /* Dark Transparent Colors */
+  @each $color in $main-colors {
+    @each $color-name, $color-value in $color {
+      --#{$color-name}-dark: rgba(#{$color-value}, 0.7);
+    }
+  }
+
+  /* Light Transparent Colors */
+  @each $color in $main-colors {
+    @each $color-name, $color-value in $color {
+      --#{$color-name}-light: rgba(#{$color-value}, 0.3);
+    }
+  }
+}
