@@ -1,0 +1,71 @@
+/***** Variables : Elements : Slider *****/
+
+.slider {
+  --slider-check-direction-animation-direction: reverse;
+  --slider-check-direction-list-icon-before-content: "\f137";
+  --slider-check-play-animation: 10s linear;
+  --slider-check-play-list-icon-before-color: var(--white);
+  --slider-check-play-list-icon-before-content: "\f28d";
+  --slider-check-repeat-animation-iteration-count: infinite;
+  --slider-check-repeat-list-icon-before-content: "\f056";
+  --slider-figure-margin: 0 auto;
+  --slider-figure-max-height: auto;
+  --slider-figure-max-width: 100%;
+  --slider-figure-object-fit: contain;
+  --slider-hover-list-opacity: 1;
+  --slider-icon-color: var(--blue);
+  --slider-list-background-color: var(--obsidian);
+  --slider-list-border: thin solid var(--black);
+  --slider-list-border-radius: 5px;
+  --slider-list-label-color: var(--white);
+  --slider-list-label-padding: 10px 5px;
+  --slider-list-link-color: var(--blue);
+  --slider-list-margin: 10px;
+  --slider-list-opacity: 0;
+  --slider-list-padding: 10px;
+  --slider-list-place-content: center;
+  --slider-list-width: fit-content;
+  --slider-margin: 0;
+  --slider-min-height: 30vh;
+  --slider-position: relative;
+  --slider-progress-background-color: var(--blue);
+  --slider-progress-height: 6px;
+  --slider-radio-list-icon-before-content: "\f058";
+  --slider-radio1-checked-progress-width: 0;
+  --slider-radio2-checked-progress-width: 25%;
+  --slider-radio3-checked-progress-width: 50%;
+  --slider-radio4-checked-progress-width: 75%;
+  --slider-radio5-checked-progress-width: 100%;
+  --slider-text-align: center;
+  --slider-transition-color: 1s;
+  --slider-transition-opacity: 2s;
+  --slider-width: 100%;
+}
+
+@media (min-width: $breakpoint-sm) {
+  .slider {
+    --slider-min-height: 35vh;
+    --slider-progress-height: 7px;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .slider {
+    --slider-min-height: 40vh;
+    --slider-progress-height: 8px;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .slider {
+    --slider-min-height: 45vh;
+    --slider-progress-height: 9px;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .slider {
+    --slider-min-height: 50vh;
+    --slider-progress-height: 10px;
+  }
+}
