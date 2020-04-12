@@ -1,0 +1,51 @@
+/***** Variables : Elements : Menu *****/
+
+.menu {
+  --menu-all-cursor: pointer;
+  --menu-background-color: var(--silver);
+  --menu-border: none;
+  --menu-border-radius: 5px;
+  --menu-checked-label-background-color: var(--blue);
+  --menu-checked-label-color: var(--white);
+  --menu-checked-label-font-weight: bold;
+  --menu-color: var(--gray);
+  --menu-fa-bottom: -18px;
+  --menu-fa-color: var(--blue);
+  --menu-fa-position: absolute;
+  --menu-flex-direction: column;
+  --menu-label-border-radius: 5px;
+  --menu-label-hover-background-color: var(--sapphire);
+  --menu-label-hover-border: none;
+  --menu-label-hover-color: var(--white);
+  --menu-label-hover-font-style: italic;
+  --menu-label-padding: 6px 12px;
+  --menu-label-place-content: center;
+  --menu-label-place-items: center;
+  --menu-label-position: relative;
+  --menu-label-width: 100%;
+  --menu-list-style: none;
+  --menu-margin: 20px auto 50px;
+  --menu-padding: 0;
+  --menu-place-content: center;
+  --menu-place-items: stretch;
+  --menu-width: 40%;
+}
+
+@media (min-width: $breakpoint-md) {
+  .menu {
+    --menu-flex-direction: row;
+    --menu-width: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .menu {
+    --menu-width: 90%;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .menu {
+    --menu-width: 80%;
+  }
+}
