@@ -1,0 +1,104 @@
+/***** Elements : Menu *****/
+
+.menu {
+  display: flex;
+  flex-direction: var(--menu-flex-direction);
+  place-content: var(--menu-place-content);
+  place-items: var(--menu-place-items);
+  margin: var(--menu-margin);
+  border: var(--menu-border);
+  border-radius: var(--menu-border-radius);
+  padding: var(--menu-padding);
+  width: var(--menu-width);
+  list-style: var(--menu-list-style);
+  background-color: var(--menu-background-color);
+  color: var(--menu-color);
+
+  * {
+    cursor: var(--menu-all-cursor);
+  }
+
+  label {
+    display: flex;
+    place-content: var(--menu-label-place-content);
+    place-items: var(--menu-label-place-items);
+    position: var(--menu-label-position);
+    border-radius: var(--menu-label-border-radius);
+    padding: var(--menu-label-padding);
+    width: var(--menu-label-width);
+
+    &:hover,
+    &:focus {
+      border: var(--menu-label-hover-border);
+      font-style: var(--menu-label-hover-font-style);
+      background-color: var(--menu-label-hover-background-color);
+      color: var(--menu-label-hover-color);
+    }
+  }
+
+  [class*="fa-"] {
+    display: none;
+    position: var(--menu-fa-position);
+    bottom: var(--menu-fa-bottom);
+    color: var(--menu-fa-color);
+  }
+}
+
+[class*="menu-"] {
+  [class*="-relay"] {
+    & > * {
+      display: none;
+    }
+
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6 {
+      display: block;
+    }
+  }
+
+  [class*="-radio0"]:checked ~ .menu > [for*="menu-"][for*="-radio0"],
+  [class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"],
+  [class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"],
+  [class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"],
+  [class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"],
+  [class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"],
+  [class*="-radio6"]:checked ~ .menu > [for*="menu-"][for*="-radio6"],
+  [class*="-radio7"]:checked ~ .menu > [for*="menu-"][for*="-radio7"],
+  [class*="-radio8"]:checked ~ .menu > [for*="menu-"][for*="-radio8"],
+  [class*="-radio9"]:checked ~ .menu > [for*="menu-"][for*="-radio9"] {
+    background-color: var(--menu-checked-label-background-color);
+    color: var(--menu-checked-label-color);
+    font-weight: var(--menu-checked-label-font-weight);
+  }
+
+  [class*="-radio0"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target0"],
+  [class*="-radio1"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target1"],
+  [class*="-radio2"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target2"],
+  [class*="-radio3"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target3"],
+  [class*="-radio4"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target4"],
+  [class*="-radio5"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target5"],
+  [class*="-radio6"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target6"],
+  [class*="-radio7"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target7"],
+  [class*="-radio8"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target8"],
+  [class*="-radio9"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target9"] {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) {
+  [class*="menu-"][class*="-radio0"]:checked ~ .menu > [for*="menu-"][for*="-radio0"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio6"]:checked ~ .menu > [for*="menu-"][for*="-radio6"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio7"]:checked ~ .menu > [for*="menu-"][for*="-radio7"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio8"]:checked ~ .menu > [for*="menu-"][for*="-radio8"] > [class*="fa-"],
+  [class*="menu-"][class*="-radio9"]:checked ~ .menu > [for*="menu-"][for*="-radio9"] > [class*="fa-"] {
+    display: block;
+  }
+}
