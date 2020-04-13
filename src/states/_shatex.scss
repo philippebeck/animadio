@@ -1,0 +1,22 @@
+/***** States : Shatex *****/
+
+@each $text-shadow-name, $text-shadow-value in $text-shadows {
+  .shatex-#{$text-shadow-name},
+  .shatex-#{$text-shadow-name}-global > *,
+  *:hover > .shatex-#{$text-shadow-name}-into,
+  *:focus > .shatex-#{$text-shadow-name}-into,
+  .shatex-#{$text-shadow-name}-onto:hover,
+  .shatex-#{$text-shadow-name}-onto:focus,
+  .shatex-#{$text-shadow-name}-toall:hover > *,
+  .shatex-#{$text-shadow-name}-toall:focus > *,
+  .shatex-#{$text-shadow-name}-toone > *:hover,
+  .shatex-#{$text-shadow-name}-toone > *:focus,
+  .shatex-#{$text-shadow-name}-radio1:checked ~ .shatex-#{$text-shadow-name}-relay .shatex-#{$text-shadow-name}-target1,
+  .shatex-#{$text-shadow-name}-radio2:checked ~ .shatex-#{$text-shadow-name}-relay .shatex-#{$text-shadow-name}-target2,
+  .shatex-#{$text-shadow-name}-radio3:checked ~ .shatex-#{$text-shadow-name}-relay .shatex-#{$text-shadow-name}-target3,
+  .shatex-#{$text-shadow-name}-radio4:checked ~ .shatex-#{$text-shadow-name}-relay .shatex-#{$text-shadow-name}-target4,
+  .shatex-#{$text-shadow-name}-radio5:checked ~ .shatex-#{$text-shadow-name}-relay .shatex-#{$text-shadow-name}-target5,
+  .shatex-#{$text-shadow-name}-check:checked ~ .shatex-#{$text-shadow-name}-hub .shatex-#{$text-shadow-name}-goal {
+    text-shadow: var(--text-shadow-#{$text-shadow-name});
+  }
+}
