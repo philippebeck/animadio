@@ -1,19 +1,47 @@
 /***** Variables : Grid : Grid *****/
 
+$gap-small-xs:    1px     !default;
+$gap-medium-xs:   2px     !default;
+$gap-large-xs:    5px     !default;
+
+$gap-small-sm:    2px     !default;
+$gap-medium-sm:   5px     !default;
+$gap-large-sm:    10px    !default;
+
+$gap-small-md:    5px     !default;
+$gap-medium-md:   10px    !default;
+$gap-large-md:    20px    !default;
+
+$gap-small-lg:    10px    !default;
+$gap-medium-lg:   20px    !default;
+$gap-large-lg:    50px    !default;
+
+$gap-small-xl:    20px    !default;
+$gap-medium-xl:   50px    !default;
+$gap-large-xl:    100px   !default;
+
+$gaps: (
+  'small-xs':     $gap-small-xs,
+  'medium-xs':    $gap-medium-xs,
+  'large-xs':     $gap-large-xs,
+  'small-sm':     $gap-small-sm,
+  'medium-sm':    $gap-medium-sm,
+  'large-sm':     $gap-large-sm,
+  'small-md':     $gap-small-md,
+  'medium-md':    $gap-medium-md,
+  'large-md':     $gap-large-md,
+  'small-lg':     $gap-small-lg,
+  'medium-lg':    $gap-medium-lg,
+  'large-lg':     $gap-large-lg,
+  'small-xl':     $gap-small-xl,
+  'medium-xl':    $gap-medium-xl,
+  'large-xl':     $gap-large-xl
+) !default;
+
+$gap-sizes : 'small', 'medium', 'large';
+
 [class*="gap-"] {
-  --gap-small-lg: 10px;
-  --gap-medium-lg: 20px;
-  --gap-large-lg: 50px;
-  --gap-small-md: 5px;
-  --gap-medium-md: 10px;
-  --gap-large-md: 20px;
-  --gap-small-sm: 2px;
-  --gap-medium-sm: 5px;
-  --gap-large-sm: 10px;
-  --gap-small-xl: 20px;
-  --gap-medium-xl: 50px;
-  --gap-large-xl: 100px;
-  --gap-small-xs: 1px;
-  --gap-medium-xs: 2px;
-  --gap-large-xs: 5px;
+  @each $gap-name, $gap-value in $gaps {
+    --gap-#{$gap-name}: #{$gap-value};
+  }
 }
