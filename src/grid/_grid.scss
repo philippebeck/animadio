@@ -1,0 +1,59 @@
+/***** 2.2.1 - Grid:Grid:Base *****/
+
+[class^="grid"],
+[class*=" grid"],
+[class^="fluid"],
+[class*=" fluid"] {
+  display: grid;
+}
+
+[class^="grid"],
+[class*=" grid"] {
+  margin: auto;
+  max-width: 80%;
+}
+
+[class^="fluid"],
+[class*=" fluid"] {
+  max-width: 100%;
+}
+
+@for $i from 2 to 12 {
+  [class^="grid-"][class*="-#{$i}xs"],
+  [class*=" grid-"][class*="-#{$i}xs"],
+  [class^="fluid-"][class*="-#{$i}xs"],
+  [class*=" fluid-"][class*="-#{$i}xs"] {
+    grid-template: auto/repeat(#{$i}, auto);
+  }
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @media (min-width: $breakpoint-value) {
+    @for $i from 2 to 12 {
+      [class^="grid-"][class*="-#{$i}#{$breakpoint-name}"],
+      [class*=" grid-"][class*="-#{$i}#{$breakpoint-name}"],
+      [class^="fluid-"][class*="-#{$i}#{$breakpoint-name}"],
+      [class*=" fluid-"][class*="-#{$i}#{$breakpoint-name}"] {
+        grid-template: auto/repeat(#{$i}, auto);
+      }
+    }
+  }
+}
+
+@each $gap-size in $gap-sizes {
+  [class^="gap-"][class*="-#{$gap-size}-xs"],
+  [class*=" gap-"][class*="-#{$gap-size}-xs"] {
+    grid-gap: var(--gap-#{$gap-size}-xs);
+  }
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @media (min-width: $breakpoint-value) {
+    @each $gap-size in $gap-sizes {
+      [class^="gap-"][class*="-#{$gap-size}-#{$breakpoint-name}"],
+      [class*=" gap-"][class*="-#{$gap-size}-#{$breakpoint-name}"] {
+        grid-gap: var(--gap-#{$gap-size}-#{$breakpoint-name});
+      }
+    }
+  }
+}
