@@ -1,0 +1,43 @@
+/***** States : Shabox *****/
+
+@each $box-shadow-name, $box-shadow-value in $box-shadows {
+  .shabox-#{$box-shadow-name},
+  .shabox-#{$box-shadow-name}-global > *,
+  *:hover > .shabox-#{$box-shadow-name}-into,
+  *:focus > .shabox-#{$box-shadow-name}-into,
+  .shabox-#{$box-shadow-name}-onto:hover,
+  .shabox-#{$box-shadow-name}-onto:focus,
+  .shabox-#{$box-shadow-name}-toall:hover > *,
+  .shabox-#{$box-shadow-name}-toall:focus > *,
+  .shabox-#{$box-shadow-name}-toone > *:hover,
+  .shabox-#{$box-shadow-name}-toone > *:focus,
+  .shabox-#{$box-shadow-name}-radio1:checked ~ .shabox-#{$box-shadow-name}-relay .shabox-#{$box-shadow-name}-target1,
+  .shabox-#{$box-shadow-name}-radio2:checked ~ .shabox-#{$box-shadow-name}-relay .shabox-#{$box-shadow-name}-target2,
+  .shabox-#{$box-shadow-name}-radio3:checked ~ .shabox-#{$box-shadow-name}-relay .shabox-#{$box-shadow-name}-target3,
+  .shabox-#{$box-shadow-name}-radio4:checked ~ .shabox-#{$box-shadow-name}-relay .shabox-#{$box-shadow-name}-target4,
+  .shabox-#{$box-shadow-name}-radio5:checked ~ .shabox-#{$box-shadow-name}-relay .shabox-#{$box-shadow-name}-target5,
+  .shabox-#{$box-shadow-name}-check:checked ~ .shabox-#{$box-shadow-name}-hub .shabox-#{$box-shadow-name}-goal {
+    box-shadow: var(--box-shadow-#{$box-shadow-name});
+  }
+}
+
+@each $box-shadow-name, $box-shadow-value in $box-shadows {
+  .shabox-in-#{$box-shadow-name},
+  .shabox-in-#{$box-shadow-name}-global > *,
+  *:hover > .shabox-in-#{$box-shadow-name}-into,
+  *:focus > .shabox-in-#{$box-shadow-name}-into,
+  .shabox-in-#{$box-shadow-name}-onto:hover,
+  .shabox-in-#{$box-shadow-name}-onto:focus,
+  .shabox-in-#{$box-shadow-name}-toall:hover > *,
+  .shabox-in-#{$box-shadow-name}-toall:focus > *,
+  .shabox-in-#{$box-shadow-name}-toone > *:hover,
+  .shabox-in-#{$box-shadow-name}-toone > *:focus,
+  .shabox-in-#{$box-shadow-name}-radio1:checked ~ .shabox-in-#{$box-shadow-name}-relay .shabox-in-#{$box-shadow-name}-target1,
+  .shabox-in-#{$box-shadow-name}-radio2:checked ~ .shabox-in-#{$box-shadow-name}-relay .shabox-in-#{$box-shadow-name}-target2,
+  .shabox-in-#{$box-shadow-name}-radio3:checked ~ .shabox-in-#{$box-shadow-name}-relay .shabox-in-#{$box-shadow-name}-target3,
+  .shabox-in-#{$box-shadow-name}-radio4:checked ~ .shabox-in-#{$box-shadow-name}-relay .shabox-in-#{$box-shadow-name}-target4,
+  .shabox-in-#{$box-shadow-name}-radio5:checked ~ .shabox-in-#{$box-shadow-name}-relay .shabox-in-#{$box-shadow-name}-target5,
+  .shabox-in-#{$box-shadow-name}-check:checked ~ .shabox-in-#{$box-shadow-name}-hub .shabox-in-#{$box-shadow-name}-goal {
+    box-shadow: inset var(--box-shadow-#{$box-shadow-name});
+  }
+}
