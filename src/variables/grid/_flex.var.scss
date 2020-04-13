@@ -1,27 +1,54 @@
 /***** Variables : Grid : Flex *****/
 
-[class*="flex-"] {
-  --flex-negative-margin-lg: -20px;
-  --flex-negative-margin-md: -10px;
-  --flex-negative-margin-sm: -5px;
-  --flex-negative-margin-xl: -50px;
-  --flex-negative-margin-xs: -2px;
-  --flex-positive-margin-lg: 20px;
-  --flex-positive-margin-md: 10px;
-  --flex-positive-margin-sm: 5px;
-  --flex-positive-margin-xl: 50px;
-  --flex-positive-margin-xs: 2px;
-  --flex-width-lg: 40px;
-  --flex-width-md: 20px;
-  --flex-width-sm: 10px;
-  --flex-width-xl: 100px;
-  --flex-width-xs: 4px;
-}
+$column-padding:    0 10px    !default;
+$row-padding:       10px 0    !default;
+
+$flex-negative-margin-xs:   -2px    !default;
+$flex-negative-margin-sm:   -5px    !default;
+$flex-negative-margin-md:   -10px   !default;
+$flex-negative-margin-lg:   -20px   !default;
+$flex-negative-margin-xl:   -50px   !default;
+
+$flex-width-xs:   4px     !default;
+$flex-width-sm:   10px    !default;
+$flex-width-md:   20px    !default;
+$flex-width-lg:   40px    !default;
+$flex-width-xl:   100px   !default;
+
+$flex-positive-margin-xs:   2px     !default;
+$flex-positive-margin-sm:   5px     !default;
+$flex-positive-margin-md:   10px    !default;
+$flex-positive-margin-lg:   20px    !default;
+$flex-positive-margin-xl:   50px    !default;
+
+$flex: (
+  'negative-margin-xs':   $flex-negative-margin-xs,
+  'negative-margin-sm':   $flex-negative-margin-sm,
+  'negative-margin-md':   $flex-negative-margin-md,
+  'negative-margin-lg':   $flex-negative-margin-lg,
+  'negative-margin-xl':   $flex-negative-margin-xl,
+  'width-xs':             $flex-width-xs,
+  'width-sm':             $flex-width-sm,
+  'width-md':             $flex-width-md,
+  'width-lg':             $flex-width-lg,
+  'width-xl':             $flex-width-xl,
+  'positive-margin-xs':   $flex-positive-margin-xs,
+  'positive-margin-sm':   $flex-positive-margin-sm,
+  'positive-margin-md':   $flex-positive-margin-md,
+  'positive-margin-lg':   $flex-positive-margin-lg,
+  'positive-margin-xl':   $flex-positive-margin-xl
+ ) !default;
 
 [class*="column"] {
-  --column-padding: 0 10px;
+  --column-padding: #{$column-padding};
 }
 
 [class*="row"] {
-  --row-padding: 10px 0;
+  --row-padding: #{$row-padding};
+}
+
+[class*="flex-"] {
+  @each $flex-name, $flex-value in $flex {
+    --flex-#{$flex-name}: #{$flex-value};
+  }
 }
