@@ -1,15 +1,35 @@
 /***** Variables : States : Shabox *****/
 
+$box-shadow-sm:   1px 1px   !default;
+$box-shadow-md:   2px 2px   !default;
+$box-shadow-lg:   5px 5px   !default;
+
+$box-shadow-blur:       0 0 2px       !default;
+$box-shadow-blur-sm:    1px 1px 1px   !default;
+$box-shadow-blur-md:    2px 2px 2px   !default;
+$box-shadow-blur-lg:    5px 5px 5px   !default;
+
+$box-shadow-spread:       0 0 2px 2px       !default;
+$box-shadow-spread-sm:    1px 1px 1px 1px   !default;
+$box-shadow-spread-md:    2px 2px 2px 2px   !default;
+$box-shadow-spread-lg:    5px 5px 5px 5px   !default;
+
+$box-shadows: (
+  'sm':           $box-shadow-sm,
+  'md':           $box-shadow-md,
+  'lg':           $box-shadow-lg,
+  'blur':         $box-shadow-blur,
+  'blur-sm':      $box-shadow-blur-sm,
+  'blur-md':      $box-shadow-blur-md,
+  'blur-lg':      $box-shadow-blur-lg,
+  'spread':       $box-shadow-spread,
+  'spread-sm':    $box-shadow-spread-sm,
+  'spread-md':    $box-shadow-spread-md,
+  'spread-lg':    $box-shadow-spread-lg
+) !default;
+
 [class*="shabox-"] {
-  --box-shadow-blur: 0 0 2px;
-  --box-shadow-blur-lg: 5px 5px 5px;
-  --box-shadow-blur-md: 2px 2px 2px;
-  --box-shadow-blur-sm: 1px 1px 1px;
-  --box-shadow-lg: 5px 5px;
-  --box-shadow-md: 2px 2px;
-  --box-shadow-sm: 1px 1px;
-  --box-shadow-spread: 0 0 2px 2px;
-  --box-shadow-spread-lg: 5px 5px 5px 5px;
-  --box-shadow-spread-md: 2px 2px 2px 2px;
-  --box-shadow-spread-sm: 1px 1px 1px 1px;
+  @each $box-shadow-name, $box-shadow-value in $box-shadows {
+    --box-shadow-#{$box-shadow-name}: #{$box-shadow-value};
+  }
 }
