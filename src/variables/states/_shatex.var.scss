@@ -1,11 +1,26 @@
 /***** Variables : States : Shatex *****/
 
+$text-shadow-sm:    1px 1px   !default;
+$text-shadow-md:    2px 2px   !default;
+$text-shadow-lg:    5px 5px   !default;
+
+$text-shadow-blur:      0 0 2px       !default;
+$text-shadow-blur-sm:   1px 1px 1px   !default;
+$text-shadow-blur-md:   2px 2px 2px   !default;
+$text-shadow-blur-lg:   5px 5px 5px   !default;
+
+$text-shadows: (
+  'sm':         $text-shadow-sm,
+  'md':         $text-shadow-md,
+  'lg':         $text-shadow-lg,
+  'blur':       $text-shadow-blur,
+  'blur-sm':    $text-shadow-blur-sm,
+  'blur-md':    $text-shadow-blur-md,
+  'blur-lg':    $text-shadow-blur-lg,
+) !default;
+
 [class*="shatex-"] {
-  --text-shadow-blur: 0 0 2px;
-  --text-shadow-blur-lg: 5px 5px 5px;
-  --text-shadow-blur-md: 2px 2px 2px;
-  --text-shadow-blur-sm: 1px 1px 1px;
-  --text-shadow-lg: 5px 5px;
-  --text-shadow-md: 2px 2px;
-  --text-shadow-sm: 1px 1px;
+  @each $text-shadow-name, $text-shadow-value in $text-shadows {
+    --text-shadow-#{$text-shadow-name}: #{$text-shadow-value};
+  }
 }
