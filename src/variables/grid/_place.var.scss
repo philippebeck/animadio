@@ -1,18 +1,74 @@
 /***** Variables : Grid : Place *****/
 
+// Place Content
+$place-content-around:    space-around    !default;
+$place-content-between:   space-between   !default;
+$place-content-evenly:    space-evenly    !default;
+$place-content-center:    center          !default;
+$place-content-stretch:   stretch         !default;
+$place-content-start:     flex-start      !default;
+$place-content-end:       flex-end        !default;
+
+$place-content: (
+  'around':     $place-content-around,
+  'between':    $place-content-between,
+  'evenly':     $place-content-evenly,
+  'center':     $place-content-center,
+  'stretch':    $place-content-stretch,
+  'start':      $place-content-start,
+  'end':        $place-content-end
+) !default;
+
 [class*="placo-"] {
-  --place-content-end: flex-end;
-  --place-content-start: flex-start;
+  @each $place-content-name, $place-content-value in $place-content {
+    --place-content-#{$place-content-name}: #{$place-content-value};
+  }
 }
+
+// Place Items
+$place-items-baseline:    baseline      !default;
+$place-items-normal:      normal        !default;
+$place-items-center:      center        !default;
+$place-items-stretch:     stretch       !default;
+$place-items-start:       flex-start    !default;
+$place-items-end:         flex-end      !default;
+
+$place-items: (
+  'base':       $place-items-baseline,
+  'normal':     $place-items-normal,
+  'center':     $place-items-center,
+  'stretch':    $place-items-stretch,
+  'start':      $place-items-start,
+  'end':        $place-items-end
+) !default;
 
 [class*="plait-"] {
-  --place-items-baseline: baseline;
-  --place-items-end: flex-end;
-  --place-items-start: flex-start;
+  @each $place-items-name, $place-items-value in $place-items {
+    --place-items-#{$place-items-name}: #{$place-items-value};
+  }
 }
 
+// Place Self
+$place-self-auto:       auto          !default;
+$place-self-baseline:   baseline      !default;
+$place-self-normal:     normal        !default;
+$place-self-center:     center        !default;
+$place-self-stretch:    stretch       !default;
+$place-self-start:      flex-start    !default;
+$place-self-end:        flex-end      !default;
+
+$place-self: (
+  'auto':       $place-self-auto,
+  'base':       $place-self-baseline,
+  'normal':     $place-self-normal,
+  'center':     $place-self-center,
+  'stretch':    $place-self-stretch,
+  'start':      $place-self-start,
+  'end':        $place-self-end
+) !default;
+
 [class*="plase-"] {
-  --place-self-baseline: baseline;
-  --place-self-end: flex-end;
-  --place-self-start: flex-start;
+  @each $place-self-name, $place-self-value in $place-self {
+    --place-self-#{$place-self-name}: #{$place-self-value};
+  }
 }
