@@ -1,0 +1,52 @@
+/***** Grid : Place *****/
+
+/* Place Content */
+@each $place-content-name, $place-content-value in $place-content {
+  .placo-#{$place-content-name} {
+    place-content: var(--place-content-#{$place-content-name});
+  }
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @media (min-width: $breakpoint-value) {
+    @each $place-content-name, $place-content-value in $place-content {
+      .placo-#{$place-content-name}-#{$breakpoint-name} {
+        place-content: var(--place-content-#{$place-content-name});
+      }
+    }
+  }
+}
+
+/* Place Items */
+@each $place-items-name, $place-items-value in $place-items {
+  .plait-#{$place-items-name} {
+    place-items: var(--place-items-#{$place-items-name});
+  }
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @media (min-width: $breakpoint-value) {
+    @each $place-items-name, $place-items-value in $place-items {
+      .plait-#{$place-items-name}-#{$breakpoint-name} {
+        place-items: var(--place-items-#{$place-items-name});
+      }
+    }
+  }
+}
+
+/* Place Self */
+@each $place-self-name, $place-self-value in $place-self {
+  .plase-#{$place-self-name} {
+    place-self: var(--place-self-#{$place-self-name});
+  }
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @media (min-width: $breakpoint-value) {
+    @each $place-self-name, $place-self-value in $place-self {
+      .plase-#{$place-self-name}-#{$breakpoint-name} {
+        place-self: var(--place-self-#{$place-self-name});
+      }
+    }
+  }
+}
