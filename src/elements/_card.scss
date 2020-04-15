@@ -1,0 +1,81 @@
+/***** Elements : Card *****/
+
+[class*="card"] {
+  display: inline-flex;
+  flex-direction: var(--card-flex-direction);
+  place-content: var(--card-place-content);
+  place-items: var(--card-place-items);
+  position: var(--card-position);
+  overflow: var(--card-overflow);
+  margin: var(--card-margin);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  height: var(--card-height);
+  width: var(--card-width);
+  box-shadow: var(--card-box-shadow);
+  background-color: var(--card-background-color);
+  color: var(--card-color);
+
+  &:hover,
+  &:focus {
+    transform: var(--card-hover-transform);
+    transition: var(--card-hover-transition);
+  }
+
+  & > * {
+    margin: var(--card-child-margin);
+    border: var(--card-child-border);
+    border-radius: var(--card-child-border-radius);
+    padding: var(--card-child-padding);
+    max-width: var(--card-child-max-width);
+    background-color: var(--card-child-background-color);
+    font-size: var(--card-child-font-size);
+    text-align: var(--card-child-text-align);
+
+    &::selection {
+      background-color: var(--card-selection-background-color);
+      color: var(--card-selection-color);
+    }
+  }
+
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    font-size: var(--card-title-font-size);
+    box-shadow: var(--card-title-box-shadow);
+    text-shadow: var(--card-title-text-shadow);
+  }
+
+  & > [class*="btn"],
+  & > [class*="button"] {
+    width: var(--card-btn-width);
+    background-color: inherit;
+    color: var(--card-btn-color);
+    font-weight: var(--card-btn-font-weight);
+    text-align: var(--card-btn-text-align);
+
+    &:hover,
+    &:focus {
+      background-color: var(--card-btn-hover-background-color);
+      color: var(--card-btn-hover-color);
+    }
+  }
+}
+
+@each $primary-colors-name, $primary-colors-value in $primary-colors {
+  .card-#{$primary-colors-name} {
+    background-color: var(--card-#{$primary-colors-name}-background-color);
+
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6 {
+      box-shadow: var(--card-#{$primary-colors-name}-title-box-shadow);
+      text-shadow: var(--card-#{$primary-colors-name}-title-text-shadow);
+    }
+  }
+}
