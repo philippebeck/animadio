@@ -43,9 +43,9 @@
   --card-btn-hover-background-color: var(--white);
   --card-btn-hover-color: initial;
 
-  @each $primary-colors-name, $primary-colors-value in $primary-colors {
-    --card-#{$primary-colors-name}-background-color: var(--#{$primary-colors-name}-dark);
-    --card-#{$primary-colors-name}-title-box-shadow: var(--card-title-box-shadow) var(--#{$primary-colors-name});
-    --card-#{$primary-colors-name}-title-text-shadow: var(--card-title-text-shadow) var(--#{$primary-colors-name});
+  @each $primary-color-name, $primary-color-value in $primary-colors {
+    --card-#{$primary-color-name}-background-color: var(--#{$primary-color-name}-dark);
+    --card-#{$primary-color-name}-title-box-shadow: var(--card-title-box-shadow) var(--#{$primary-color-name});
+    --card-#{$primary-color-name}-title-text-shadow: var(--card-title-text-shadow) var(--#{$primary-color-name});
   }
 }
