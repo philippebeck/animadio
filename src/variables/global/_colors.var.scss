@@ -75,9 +75,24 @@ $brand-colors: (
   "tw":           $twitter
 ) !default;
 
+// Composite Colors
 $main-colors:   $primary-colors, $secondary-colors;
 $all-colors:    $primary-colors, $secondary-colors, $brand-colors;
 
+$duo-colors: (
+  "black":    "white",
+  "blue":     "sky",
+  "gray":     "silver",
+  "green":    "jade",
+  "maroon":   "choco",
+  "navy":     "aqua",
+  "orange":   "salmon",
+  "purple":   "violet",
+  "red":      "tomato",
+  "yellow":   "khaki"
+) !default;
+
+// CSS Colors
 :root {
   /* Basic Colors */
   @each $color in $all-colors {
