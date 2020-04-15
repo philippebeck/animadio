@@ -65,17 +65,17 @@
   }
 }
 
-@each $primary-colors-name, $primary-colors-value in $primary-colors {
-  .card-#{$primary-colors-name} {
-    background-color: var(--card-#{$primary-colors-name}-background-color);
+@each $primary-color-name, $primary-color-value in $primary-colors {
+  .card-#{$primary-color-name} {
+    background-color: var(--card-#{$primary-color-name}-background-color);
 
     & > h2,
     & > h3,
     & > h4,
     & > h5,
     & > h6 {
-      box-shadow: var(--card-#{$primary-colors-name}-title-box-shadow);
-      text-shadow: var(--card-#{$primary-colors-name}-title-text-shadow);
+      box-shadow: var(--card-#{$primary-color-name}-title-box-shadow);
+      text-shadow: var(--card-#{$primary-color-name}-title-text-shadow);
     }
   }
 }
