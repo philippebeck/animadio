@@ -1,0 +1,42 @@
+/****************************/
+/********** GLOBAL **********/
+/****************************/
+
+@import 'global/variables/breakpoints.var';
+@import 'global/variables/keyframes.var';
+@import 'global/variables/colors.var';
+@import 'global/variables/init.var';
+@import 'global/variables/box.var';
+
+@import 'global/keyframes/content.key';
+@import 'global/keyframes/rotate.key';
+@import 'global/keyframes/scale.key';
+@import 'global/keyframes/skew.key';
+@import 'global/keyframes/translate.key';
+@import 'global/keyframes/width.key';
+
+@import 'global/init';
+@import 'global/box';
+@import 'global/helpers';
+
+/****************************/
+/********** STATES **********/
+/****************************/
+
+@import 'states/variables/anima.var';
+@import 'states/variables/bord.var';
+@import 'states/variables/deco.var';
+@import 'states/variables/display.var';
+@import 'states/variables/position.var';
+@import 'states/variables/shabox.var';
+@import 'states/variables/shatex.var';
+
+@import 'states/anima';
+@import 'states/bg';
+@import 'states/bord';
+@import 'states/color';
+@import 'states/deco';
+@import 'states/display';
+@import 'states/position';
+@import 'states/shabox';
+@import 'states/shatex';
