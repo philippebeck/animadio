@@ -1,0 +1,50 @@
+/***** Variables : Elements : Btn *****/
+
+[class*="btn"],
+[class*="button"] {
+  --btn-margin: 10px;
+  --btn-border: solid thin var(--black);
+  --btn-border-radius: 10px;
+  --btn-padding: 5px 10px;
+  --btn-font-size: 1.5rem;
+  --btn-text-align: center;
+  --btn-background-color: var(--white);
+  --btn-color: var(--black);
+
+  --btn-hover-border: outset thin var(--white);
+  --btn-hover-border-radius: 0;
+  --btn-hover-box-shadow: 5px 5px 5px var(--gray);
+  --btn-hover-background-color: var(--black);
+  --btn-hover-color: var(--white);
+  --btn-hover-transition: background-color 1s;
+  --btn-hover-animation: none;
+
+  --btn-checked-transform: scale(0.9);
+
+  @each $primary-color, $secondary-color in $duo-colors {
+    --btn-#{$primary-color}-border-color: var(--#{$secondary-color});
+    --btn-#{$primary-color}-color: var(--#{$secondary-color});
+
+    --btn-#{$secondary-color}-border-color: var(--#{$primary-color});
+    --btn-#{$secondary-color}-color: var(--#{$primary-color});
+  }
+
+  --btn-xs-padding: 3px 6px;
+  --btn-xs-font-size: 60%;
+  --btn-sm-padding: 4px 8px;
+  --btn-sm-font-size: 80%;
+  --btn-lg-padding: 7px 14px;
+  --btn-lg-font-size: 140%;
+  --btn-xl-padding: 9px 18px;
+  --btn-xl-font-size: 180%;
+
+  --btn-square-border-radius: unset;
+  --btn-square-padding-top: calc(var(--btn-square-sizes) / 4);
+  --btn-square-sizes: 100px;
+  --btn-round-border-radius: 30px;
+  --btn-round-padding-top: calc(var(--btn-round-sizes) / 4);
+  --btn-round-sizes: 100px;
+  --btn-circle-border-radius: 50%;
+  --btn-circle-padding-top: calc(var(--btn-circle-sizes) / 4);
+  --btn-circle-sizes: 100px;
+}
