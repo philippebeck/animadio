@@ -16,8 +16,9 @@
 @import 'global/keyframes/width.key';
 
 @import 'global/init';
-@import 'global/box';
-@import 'global/helpers';
+
+@import 'global/classes/box';
+@import 'global/classes/helpers';
 
 /**************************/
 /********** GRID **********/
@@ -27,9 +28,9 @@
 @import 'grid/variables/flex.var';
 @import 'grid/variables/place.var';
 
-@import 'grid/flex';
-@import 'grid/grid';
-@import 'grid/place';
+@import 'grid/classes/flex';
+@import 'grid/classes/grid';
+@import 'grid/classes/place';
 
 /******************************/
 /********** ELEMENTS **********/
@@ -45,15 +46,15 @@
 @import 'elements/variables/slider.var';
 @import 'elements/variables/table.var';
 
-@import 'elements/btn';
-@import 'elements/card';
-@import 'elements/foot';
-@import 'elements/form';
-@import 'elements/gallery';
-@import 'elements/menu';
-@import 'elements/navbar';
-@import 'elements/slider';
-@import 'elements/table';
+@import 'elements/classes/btn';
+@import 'elements/classes/card';
+@import 'elements/classes/foot';
+@import 'elements/classes/form';
+@import 'elements/classes/gallery';
+@import 'elements/classes/menu';
+@import 'elements/classes/navbar';
+@import 'elements/classes/slider';
+@import 'elements/classes/table';
 
 /****************************/
 /********** STATES **********/
@@ -67,12 +68,12 @@
 @import 'states/variables/shabox.var';
 @import 'states/variables/shatex.var';
 
-@import 'states/anima';
-@import 'states/bg';
-@import 'states/bord';
-@import 'states/color';
-@import 'states/deco';
-@import 'states/display';
-@import 'states/position';
-@import 'states/shabox';
-@import 'states/shatex';
+@import 'states/classes/anima';
+@import 'states/classes/bg';
+@import 'states/classes/bord';
+@import 'states/classes/color';
+@import 'states/classes/deco';
+@import 'states/classes/display';
+@import 'states/classes/position';
+@import 'states/classes/shabox';
+@import 'states/classes/shatex';
