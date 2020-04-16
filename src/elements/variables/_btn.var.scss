@@ -1,4 +1,55 @@
-/***** Variables : Elements : Btn *****/
+/***** Elements : Variables : Btn *****/
+
+$btn-xs-padding:      3px 6px     !default;
+$btn-xs-font-size:    60%         !default;
+
+$btn-sm-padding:      4px 8px     !default;
+$btn-sm-font-size:    80%         !default;
+
+$btn-lg-padding:      7px 14px    !default;
+$btn-lg-font-size:    140%        !default;
+
+$btn-xl-padding:      9px 18px    !default;
+$btn-xl-font-size:    180%        !default;
+
+$btn-size: 'xs', 'sm', 'lg', 'xl';
+
+$btn-sizes: (
+  'xs-padding':     $btn-xs-padding,
+  'xs-font-size':   $btn-xs-font-size,
+  'sm-padding':     $btn-sm-padding,
+  'sm-font-size':   $btn-sm-font-size,
+  'lg-padding':     $btn-lg-padding,
+  'lg-font-size':   $btn-lg-font-size,
+  'xl-padding':     $btn-xl-padding,
+  'xl-font-size':   $btn-xl-font-size
+) !default;
+
+$btn-square-border-radius:    unset                               !default;
+$btn-square-padding-top:      calc(var(--btn-square-sizes) / 4)   !default;
+$btn-square-sizes:            100px                               !default;
+
+$btn-round-border-radius:   30px                                  !default;
+$btn-round-padding-top:     calc(var(--btn-round-sizes) / 4)      !default;
+$btn-round-sizes:           100px                                 !default;
+
+$btn-circle-border-radius:    50%                                 !default;
+$btn-circle-padding-top:      calc(var(--btn-circle-sizes) / 4)   !default;
+$btn-circle-sizes:            100px                               !default;
+
+$btn-shape: 'square', 'round', 'circle';
+
+$btn-shapes: (
+  'square-border-radius':   $btn-square-border-radius,
+  'square-padding-top':     $btn-square-padding-top,
+  'square-sizes':           $btn-square-sizes,
+  'round-border-radius':    $btn-round-border-radius,
+  'round-padding-top':      $btn-round-padding-top,
+  'round-sizes':            $btn-round-sizes,
+  'circle-border-radius':   $btn-circle-border-radius,
+  'circle-padding-top':     $btn-circle-padding-top,
+  'circle-sizes':           $btn-circle-sizes,
+) !default;
 
 [class*="btn"],
 [class*="button"] {
@@ -29,22 +80,11 @@
     --btn-#{$secondary-color}-color: var(--#{$primary-color});
   }
 
-  --btn-xs-padding: 3px 6px;
-  --btn-xs-font-size: 60%;
-  --btn-sm-padding: 4px 8px;
-  --btn-sm-font-size: 80%;
-  --btn-lg-padding: 7px 14px;
-  --btn-lg-font-size: 140%;
-  --btn-xl-padding: 9px 18px;
-  --btn-xl-font-size: 180%;
+  @each $btn-size-name, $btn-size-value in $btn-sizes {
+    --btn-#{$btn-size-name}: #{$btn-size-value};
+  }
 
-  --btn-square-border-radius: unset;
-  --btn-square-padding-top: calc(var(--btn-square-sizes) / 4);
-  --btn-square-sizes: 100px;
-  --btn-round-border-radius: 30px;
-  --btn-round-padding-top: calc(var(--btn-round-sizes) / 4);
-  --btn-round-sizes: 100px;
-  --btn-circle-border-radius: 50%;
-  --btn-circle-padding-top: calc(var(--btn-circle-sizes) / 4);
-  --btn-circle-sizes: 100px;
+  @each $btn-size-name, $btn-size-value in $btn-shapes {
+    --btn-#{$btn-size-name}: #{$btn-size-value};
+  }
 }
