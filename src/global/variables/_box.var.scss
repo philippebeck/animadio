@@ -1,0 +1,159 @@
+/***** Variables : Global : Box *****/
+
+/* Variables : Global : Box : Container */
+$containers: (
+  '70':   70%,
+  '80':   80%,
+  '90':   90%
+) !default;
+
+[class*="container"] {
+  --container-background-color: transparent;
+}
+
+/* Variables : Global : Box : Margin */
+[class*="mar-"] {
+  --margin-none: 0;
+
+  --margin-sm: 10px;
+  --margin-md: 20px;
+  --margin-lg: 50px;
+
+  --margin-bottom-sm: 10px;
+  --margin-bottom-md: 20px;
+  --margin-bottom-lg: 50px;
+
+  --margin-left-sm: 10px;
+  --margin-left-md: 20px;
+  --margin-left-lg: 50px;
+
+  --margin-right-sm: 10px;
+  --margin-right-md: 20px;
+  --margin-right-lg: 50px;
+
+  --margin-top-sm: 10px;
+  --margin-top-md: 20px;
+  --margin-top-lg: 50px;
+}
+
+/* Variables : Global : Box : Padding */
+[class*="pad-"] {
+  --padding-lg: 50px;
+  --padding-md: 20px;
+  --padding-none: 0;
+  --padding-sm: 10px;
+  --padding-bottom-lg: 50px;
+  --padding-bottom-md: 20px;
+  --padding-bottom-sm: 10px;
+  --padding-left-lg: 50px;
+  --padding-left-md: 20px;
+  --padding-left-sm: 10px;
+  --padding-right-lg: 50px;
+  --padding-right-md: 20px;
+  --padding-right-sm: 10px;
+  --padding-top-lg: 50px;
+  --padding-top-md: 20px;
+  --padding-top-sm: 10px;
+}
+
+/* Variables : Global : Box : Height */
+$height-sm:    25%   !default;
+$height-md:    50%   !default;
+$height-lg:    75%   !default;
+
+$heights: (
+  'sm':   $height-sm,
+  'md':   $height-md,
+  'lg':   $height-lg
+) !default;
+
+[class*="height-"] {
+  @each $height-name, $height-value in $heights {
+    --height-#{$height-name}: #{$height-value};
+  }
+}
+
+/* Variables : Global : Box : Max-Height */
+$max-height-sm:    25vh   !default;
+$max-height-md:    50vh   !default;
+$max-height-lg:    75vh   !default;
+
+$max-heights: (
+  'sm':   $max-height-sm,
+  'md':   $max-height-md,
+  'lg':   $max-height-lg
+) !default;
+
+[class*="max-h-"] {
+  @each $max-height-name, $max-height-value in $max-heights {
+    --max-height-#{$max-height-name}: #{$max-height-value};
+  }
+}
+
+/* Variables : Global : Box : Min-Height */
+$min-height-sm:    25vh   !default;
+$min-height-md:    50vh   !default;
+$min-height-lg:    75vh   !default;
+
+$min-heights: (
+  'sm':   $min-height-sm,
+  'md':   $min-height-md,
+  'lg':   $min-height-lg
+) !default;
+
+[class*="min-h-"] {
+  @each $min-height-name, $min-height-value in $min-heights {
+    --min-height-#{$min-height-name}: #{$min-height-value};
+  }
+}
+
+/* Variables : Global : Box : Width */
+$width-sm:    25%   !default;
+$width-md:    50%   !default;
+$width-lg:    75%   !default;
+
+$widths: (
+  'sm':   $width-sm,
+  'md':   $width-md,
+  'lg':   $width-lg
+) !default;
+
+[class*="width-"] {
+  @each $width-name, $width-value in $widths {
+    --width-#{$width-name}: #{$width-value};
+  }
+}
+
+/* Variables : Global : Box : Max-Width */
+$max-width-sm:    25%   !default;
+$max-width-md:    50%   !default;
+$max-width-lg:    75%   !default;
+
+$max-widths: (
+  'sm':   $max-width-sm,
+  'md':   $max-width-md,
+  'lg':   $max-width-lg
+) !default;
+
+[class*="max-w-"] {
+  @each $max-width-name, $max-width-value in $max-widths {
+    --max-width-#{$max-width-name}: #{$max-width-value};
+  }
+}
+
+/* Variables : Global : Box : Min-Width */
+$min-width-sm:    25%   !default;
+$min-width-md:    50%   !default;
+$min-width-lg:    75%   !default;
+
+$min-widths: (
+  'sm':   $min-width-sm,
+  'md':   $min-width-md,
+  'lg':   $min-width-lg
+) !default;
+
+[class*="min-w-"] {
+  @each $min-width-name, $min-width-value in $min-widths {
+    --min-width-#{$min-width-name}: #{$min-width-value};
+  }
+}
