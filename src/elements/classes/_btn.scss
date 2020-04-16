@@ -1,0 +1,168 @@
+/***** Elements : Classes : Btn *****/
+
+[class*="btn"],
+[class*="button"] {
+  display: inline-block;
+  margin: var(--btn-margin);
+  border: var(--btn-border);
+  border-radius: var(--btn-border-radius);
+  padding: var(--btn-padding);
+  font-size: var(--btn-font-size);
+  text-align: var(--btn-text-align);
+  background-color: var(--btn-background-color);
+  color: var(--btn-color);
+
+  & > i {
+    display: block;
+  }
+}
+
+[class*="btn"]:hover,
+[class*="button"]:hover,
+[class*="btn"]:focus,
+[class*="button"]:focus,
+[class*="button-check"]:checked + [class*="button"] {
+  border: var(--btn-hover-border);
+  border-radius: var(--btn-hover-border-radius);
+  box-shadow: var(--btn-hover-box-shadow);
+  background-color: var(--btn-hover-background-color);
+  color: var(--btn-hover-color);
+  transition: var(--btn-hover-transition);
+  animation: var(--btn-hover-animation);
+}
+
+[class*="check"]:checked + [class*="button"] {
+  transform: var(--btn-checked-transform);
+}
+
+@each $primary-color, $secondary-color in $duo-colors {
+  .btn-#{$primary-color},
+  .button-#{$primary-color},
+  .btn-#{$secondary-color}:hover,
+  .button-#{$secondary-color}:hover,
+  .btn-#{$secondary-color}:focus,
+  .button-#{$secondary-color}:focus,
+  .button-#{$secondary-color}-check:checked + .button-#{$secondary-color} {
+    border-color: var(--btn-#{$primary-color}-border-color);
+    background-color: var(--#{$primary-color});
+    color: var(--btn-#{$primary-color}-color);
+  }
+
+  .btn-#{$secondary-color},
+  .button-#{$secondary-color},
+  .btn-#{$primary-color}:hover,
+  .button-#{$primary-color}:hover,
+  .btn-#{$primary-color}:focus,
+  .button-#{$primary-color}:focus,
+  .button-#{$primary-color}-check:checked + .button-#{$primary-color} {
+    border-color: var(--btn-#{$secondary-color}-border-color);
+    background-color: var(--#{$secondary-color});
+    color: var(--btn-#{$secondary-color}-color);
+  }
+}
+
+.btn-fb,
+.button-fb,
+.btn-fcc,
+.button-fcc,
+.btn-github,
+.button-github,
+.btn-jsd,
+.button-jsd,
+.btn-in,
+.button-in,
+.btn-npm,
+.button-npm,
+.btn-stack,
+.button-stack,
+.btn-tw,
+.button-tw {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+@each $brand-color-name, $brand-color-value in $brand-colors {
+  .btn-#{$brand-color-name},
+  .button-#{$brand-color-name} {
+    background-color: var(--#{$brand-color-name});
+  }
+}
+
+.btn-fb:hover,
+.button-fb:hover,
+.btn-fb:focus,
+.button-fb:focus,
+.button-fb-check:checked + .button-fb,
+.btn-fcc:hover,
+.button-fcc:hover,
+.btn-fcc:focus,
+.button-fcc:focus,
+.button-fcc-check:checked + .button-fcc,
+.btn-github:hover,
+.button-github:hover,
+.btn-github:focus,
+.button-github:focus,
+.button-github-check:checked + .button-github,
+.btn-jsd:hover,
+.button-jsd:hover,
+.btn-jsd:focus,
+.button-jsd:focus,
+.button-jsd-check:checked + .button-jsd,
+.btn-in:hover,
+.button-in:hover,
+.btn-in:focus,
+.button-in:focus,
+.button-in-check:checked + .button-in,
+.btn-npm:hover,
+.button-npm:hover,
+.btn-npm:focus,
+.button-npm:focus,
+.button-npm-check:checked + .button-npm,
+.btn-stack:hover,
+.button-stack:hover,
+.btn-stack:focus,
+.button-stack:focus,
+.button-stack-check:checked + .button-stack,
+.btn-tw:hover,
+.button-tw:hover,
+.btn-tw:focus,
+.button-tw:focus,
+.button-tw-check:checked + .button-tw {
+  background-color: var(--white);
+}
+
+@each $brand-color-name, $brand-color-value in $brand-colors {
+  .btn-#{$brand-color-name}:hover,
+  .button-#{$brand-color-name}:hover,
+  .btn-#{$brand-color-name}:focus,
+  .button-#{$brand-color-name}:focus,
+  .button-#{$brand-color-name}-check:checked + .button-#{$brand-color-name} {
+    border-color: var(--#{$brand-color-name});
+    color: var(--#{$brand-color-name});
+  }
+}
+
+@each $size in $btn-size {
+  .btn-#{$size},
+  .button-#{$size} {
+    padding: var(--btn-#{$size}-padding);
+    font-size: var(--btn-#{$size}-font-size);
+  }
+}
+
+@each $shape in $btn-shape {
+  .btn-#{$shape},
+  .button-#{$shape} {
+    border-radius: var(--btn-#{$shape}-border-radius);
+    padding-top: var(--btn-#{$shape}-padding-top);
+    min-width: var(--btn-#{$shape}-sizes);
+    min-height: var(--btn-#{$shape}-sizes);
+  }
+
+  .btn-#{$shape}:hover,
+  .button-#{$shape}:hover,
+  .btn-#{$shape}:focus,
+  .button-#{$shape}:focus {
+    border-radius: var(--btn-#{$shape}-border-radius);
+  }
+}
