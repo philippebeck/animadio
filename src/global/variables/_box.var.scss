@@ -1,6 +1,6 @@
-/***** Variables : Global : Box *****/
+/***** Global : Variables : Box *****/
 
-/* Variables : Global : Box : Container */
+/* Variables : Box : Container */
 $containers: (
   '70':   70%,
   '80':   80%,
@@ -11,52 +11,155 @@ $containers: (
   --container-background-color: transparent;
 }
 
-/* Variables : Global : Box : Margin */
+/* Variables : Box : Margin */
+$margin-none:   0   !default;
+
+$margin-sm:   10px    !default;
+$margin-md:   20px    !default;
+$margin-lg:   50px    !default;
+
+$margin-top-sm:   10px    !default;
+$margin-top-md:   20px    !default;
+$margin-top-lg:   50px    !default;
+
+$margin-right-sm:   10px    !default;
+$margin-right-md:   20px    !default;
+$margin-right-lg:   50px    !default;
+
+$margin-bottom-md:    20px    !default;
+$margin-bottom-sm:    10px    !default;
+$margin-bottom-lg:    50px    !default;
+
+$margin-left-sm:    10px    !default;
+$margin-left-md:    20px    !default;
+$margin-left-lg:    50px    !default;
+
+$margins: (
+  'none':         $margin-none,
+  'sm':           $margin-sm,
+  'md':           $margin-md,
+  'lg':           $margin-lg,
+  'top-sm':       $margin-top-sm,
+  'top-md':       $margin-top-md,
+  'top-lg':       $margin-top-lg,
+  'right-sm':     $margin-right-sm,
+  'right-md':     $margin-right-md,
+  'right-lg':     $margin-right-lg,
+  'bottom-sm':    $margin-bottom-sm,
+  'bottom-md':    $margin-bottom-md,
+  'bottom-lg':    $margin-bottom-lg,
+  'left-sm':      $margin-left-sm,
+  'left-md':      $margin-left-md,
+  'left-lg':      $margin-left-lg
+) !default;
+
+$margin-nones: (
+  'none':           '',
+  'top-none':       '-top',
+  'right-none':     '-right',
+  'bottom-none':    '-bottom',
+  'left-none':      '-left',
+) !default;
+
+$margin-sizes: (
+  'sm':           '',
+  'md':           '',
+  'lg':           '',
+  'top-sm':       '-top',
+  'top-md':       '-top',
+  'top-lg':       '-top',
+  'right-sm':     '-right',
+  'right-md':     '-right',
+  'right-lg':     '-right',
+  'bottom-sm':    '-bottom',
+  'bottom-md':    '-bottom',
+  'bottom-lg':    '-bottom',
+  'left-sm':      '-left',
+  'left-md':      '-left',
+  'left-lg':      '-left'
+) !default;
+
 [class*="mar-"] {
-  --margin-none: 0;
-
-  --margin-sm: 10px;
-  --margin-md: 20px;
-  --margin-lg: 50px;
-
-  --margin-bottom-sm: 10px;
-  --margin-bottom-md: 20px;
-  --margin-bottom-lg: 50px;
-
-  --margin-left-sm: 10px;
-  --margin-left-md: 20px;
-  --margin-left-lg: 50px;
-
-  --margin-right-sm: 10px;
-  --margin-right-md: 20px;
-  --margin-right-lg: 50px;
-
-  --margin-top-sm: 10px;
-  --margin-top-md: 20px;
-  --margin-top-lg: 50px;
+  @each $margin-name, $margin-value in $margins {
+    --margin-#{$margin-name}: #{$margin-value};
+  }
 }
 
-/* Variables : Global : Box : Padding */
+/* Variables : Box : Padding */
+$padding-none:   0   !default;
+
+$padding-sm:   10px    !default;
+$padding-md:   20px    !default;
+$padding-lg:   50px    !default;
+
+$padding-top-sm:   10px    !default;
+$padding-top-md:   20px    !default;
+$padding-top-lg:   50px    !default;
+
+$padding-right-sm:   10px    !default;
+$padding-right-md:   20px    !default;
+$padding-right-lg:   50px    !default;
+
+$padding-bottom-md:    20px    !default;
+$padding-bottom-sm:    10px    !default;
+$padding-bottom-lg:    50px    !default;
+
+$padding-left-sm:    10px    !default;
+$padding-left-md:    20px    !default;
+$padding-left-lg:    50px    !default;
+
+$paddings: (
+  'none':         $padding-none,
+  'sm':           $padding-sm,
+  'md':           $padding-md,
+  'lg':           $padding-lg,
+  'top-sm':       $padding-top-sm,
+  'top-md':       $padding-top-md,
+  'top-lg':       $padding-top-lg,
+  'right-sm':     $padding-right-sm,
+  'right-md':     $padding-right-md,
+  'right-lg':     $padding-right-lg,
+  'bottom-sm':    $padding-bottom-sm,
+  'bottom-md':    $padding-bottom-md,
+  'bottom-lg':    $padding-bottom-lg,
+  'left-sm':      $padding-left-sm,
+  'left-md':      $padding-left-md,
+  'left-lg':      $padding-left-lg
+) !default;
+
+$padding-nones: (
+  'none':           '',
+  'top-none':       '-top',
+  'right-none':     '-right',
+  'bottom-none':    '-bottom',
+  'left-none':      '-left',
+) !default;
+
+$padding-sizes: (
+  'sm':           '',
+  'md':           '',
+  'lg':           '',
+  'top-sm':       '-top',
+  'top-md':       '-top',
+  'top-lg':       '-top',
+  'right-sm':     '-right',
+  'right-md':     '-right',
+  'right-lg':     '-right',
+  'bottom-sm':    '-bottom',
+  'bottom-md':    '-bottom',
+  'bottom-lg':    '-bottom',
+  'left-sm':      '-left',
+  'left-md':      '-left',
+  'left-lg':      '-left'
+) !default;
+
 [class*="pad-"] {
-  --padding-lg: 50px;
-  --padding-md: 20px;
-  --padding-none: 0;
-  --padding-sm: 10px;
-  --padding-bottom-lg: 50px;
-  --padding-bottom-md: 20px;
-  --padding-bottom-sm: 10px;
-  --padding-left-lg: 50px;
-  --padding-left-md: 20px;
-  --padding-left-sm: 10px;
-  --padding-right-lg: 50px;
-  --padding-right-md: 20px;
-  --padding-right-sm: 10px;
-  --padding-top-lg: 50px;
-  --padding-top-md: 20px;
-  --padding-top-sm: 10px;
+  @each $padding-name, $padding-value in $paddings {
+    --padding-#{$padding-name}: #{$padding-value};
+  }
 }
 
-/* Variables : Global : Box : Height */
+/* Variables : Box : Height */
 $height-sm:    25%   !default;
 $height-md:    50%   !default;
 $height-lg:    75%   !default;
@@ -73,7 +176,6 @@ $heights: (
   }
 }
 
-/* Variables : Global : Box : Max-Height */
 $max-height-sm:    25vh   !default;
 $max-height-md:    50vh   !default;
 $max-height-lg:    75vh   !default;
@@ -90,7 +192,6 @@ $max-heights: (
   }
 }
 
-/* Variables : Global : Box : Min-Height */
 $min-height-sm:    25vh   !default;
 $min-height-md:    50vh   !default;
 $min-height-lg:    75vh   !default;
@@ -107,7 +208,7 @@ $min-heights: (
   }
 }
 
-/* Variables : Global : Box : Width */
+/* Variables : Box : Width */
 $width-sm:    25%   !default;
 $width-md:    50%   !default;
 $width-lg:    75%   !default;
@@ -124,7 +225,6 @@ $widths: (
   }
 }
 
-/* Variables : Global : Box : Max-Width */
 $max-width-sm:    25%   !default;
 $max-width-md:    50%   !default;
 $max-width-lg:    75%   !default;
@@ -141,7 +241,6 @@ $max-widths: (
   }
 }
 
-/* Variables : Global : Box : Min-Width */
 $min-width-sm:    25%   !default;
 $min-width-md:    50%   !default;
 $min-width-lg:    75%   !default;
