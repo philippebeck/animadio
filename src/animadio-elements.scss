@@ -1,0 +1,44 @@
+/****************************/
+/********** GLOBAL **********/
+/****************************/
+
+@import 'global/variables/breakpoints.var';
+@import 'global/variables/keyframes.var';
+@import 'global/variables/colors.var';
+@import 'global/variables/init.var';
+@import 'global/variables/box.var';
+
+@import 'global/keyframes/content.key';
+@import 'global/keyframes/rotate.key';
+@import 'global/keyframes/scale.key';
+@import 'global/keyframes/skew.key';
+@import 'global/keyframes/translate.key';
+@import 'global/keyframes/width.key';
+
+@import 'global/init';
+@import 'global/box';
+@import 'global/helpers';
+
+/******************************/
+/********** ELEMENTS **********/
+/******************************/
+
+@import 'elements/variables/btn.var';
+@import 'elements/variables/card.var';
+@import 'elements/variables/foot.var';
+@import 'elements/variables/form.var';
+@import 'elements/variables/gallery.var';
+@import 'elements/variables/menu.var';
+@import 'elements/variables/navbar.var';
+@import 'elements/variables/slider.var';
+@import 'elements/variables/table.var';
+
+@import 'elements/btn';
+@import 'elements/card';
+@import 'elements/foot';
+@import 'elements/form';
+@import 'elements/gallery';
+@import 'elements/menu';
+@import 'elements/navbar';
+@import 'elements/slider';
+@import 'elements/table';
