@@ -95,23 +95,23 @@ $duo-colors: (
 // CSS Colors
 :root {
   /* Basic Colors */
-  @each $color in $all-colors {
-    @each $color-name, $color-value in $color {
-      --#{$color-name}: rgb(#{$color-value});
+  @each $colors in $all-colors {
+    @each $key, $value in $colors {
+      --#{$key}: rgb(#{$value});
     }
   }
 
   /* Dark Transparent Colors */
-  @each $color in $main-colors {
-    @each $color-name, $color-value in $color {
-      --#{$color-name}-dark: rgba(#{$color-value}, 0.7);
+  @each $colors in $main-colors {
+    @each $key, $value in $colors {
+      --#{$key}-dark: rgba(#{$value}, 0.7);
     }
   }
 
   /* Light Transparent Colors */
-  @each $color in $main-colors {
-    @each $color-name, $color-value in $color {
-      --#{$color-name}-light: rgba(#{$color-value}, 0.3);
+  @each $colors in $main-colors {
+    @each $key, $value in $colors {
+      --#{$key}-light: rgba(#{$value}, 0.3);
     }
   }
 }

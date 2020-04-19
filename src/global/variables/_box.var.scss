@@ -80,8 +80,8 @@ $margin-sizes: (
 ) !default;
 
 [class*="mar-"] {
-  @each $margin-name, $margin-value in $margins {
-    --margin-#{$margin-name}: #{$margin-value};
+  @each $key, $value in $margins {
+    --margin-#{$key}: #{$value};
   }
 }
 
@@ -154,8 +154,8 @@ $padding-sizes: (
 ) !default;
 
 [class*="pad-"] {
-  @each $padding-name, $padding-value in $paddings {
-    --padding-#{$padding-name}: #{$padding-value};
+  @each $key, $value in $paddings {
+    --padding-#{$key}: #{$value};
   }
 }
 
@@ -171,8 +171,8 @@ $heights: (
 ) !default;
 
 [class*="height-"] {
-  @each $height-name, $height-value in $heights {
-    --height-#{$height-name}: #{$height-value};
+  @each $key, $value in $heights {
+    --height-#{$key}: #{$value};
   }
 }
 
@@ -187,8 +187,8 @@ $max-heights: (
 ) !default;
 
 [class*="max-h-"] {
-  @each $max-height-name, $max-height-value in $max-heights {
-    --max-height-#{$max-height-name}: #{$max-height-value};
+  @each $key, $value in $max-heights {
+    --max-height-#{$key}: #{$value};
   }
 }
 
@@ -203,8 +203,8 @@ $min-heights: (
 ) !default;
 
 [class*="min-h-"] {
-  @each $min-height-name, $min-height-value in $min-heights {
-    --min-height-#{$min-height-name}: #{$min-height-value};
+  @each $key, $value in $min-heights {
+    --min-height-#{$key}: #{$value};
   }
 }
 
@@ -220,8 +220,8 @@ $widths: (
 ) !default;
 
 [class*="width-"] {
-  @each $width-name, $width-value in $widths {
-    --width-#{$width-name}: #{$width-value};
+  @each $key, $value in $widths {
+    --width-#{$key}: #{$value};
   }
 }
 
@@ -236,8 +236,8 @@ $max-widths: (
 ) !default;
 
 [class*="max-w-"] {
-  @each $max-width-name, $max-width-value in $max-widths {
-    --max-width-#{$max-width-name}: #{$max-width-value};
+  @each $key, $value in $max-widths {
+    --max-width-#{$key}: #{$value};
   }
 }
 
@@ -252,7 +252,7 @@ $min-widths: (
 ) !default;
 
 [class*="min-w-"] {
-  @each $min-width-name, $min-width-value in $min-widths {
-    --min-width-#{$min-width-name}: #{$min-width-value};
+  @each $key, $value in $min-widths {
+    --min-width-#{$key}: #{$value};
   }
 }
