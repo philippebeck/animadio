@@ -72,19 +72,19 @@ $btn-shapes: (
 
   --btn-checked-transform: scale(0.9);
 
-  @each $primary-color, $secondary-color in $duo-colors {
-    --btn-#{$primary-color}-border-color: var(--#{$secondary-color});
-    --btn-#{$primary-color}-color: var(--#{$secondary-color});
+  @each $primary, $secondary in $duo-colors {
+    --btn-#{$primary}-border-color: var(--#{$secondary});
+    --btn-#{$primary}-color: var(--#{$secondary});
 
-    --btn-#{$secondary-color}-border-color: var(--#{$primary-color});
-    --btn-#{$secondary-color}-color: var(--#{$primary-color});
+    --btn-#{$secondary}-border-color: var(--#{$primary});
+    --btn-#{$secondary}-color: var(--#{$primary});
   }
 
-  @each $btn-size-name, $btn-size-value in $btn-sizes {
-    --btn-#{$btn-size-name}: #{$btn-size-value};
+  @each $key, $value in $btn-sizes {
+    --btn-#{$key}: #{$value};
   }
 
-  @each $btn-size-name, $btn-size-value in $btn-shapes {
-    --btn-#{$btn-size-name}: #{$btn-size-value};
+  @each $key, $value in $btn-shapes {
+    --btn-#{$key}: #{$value};
   }
 }
