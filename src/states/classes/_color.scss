@@ -3,47 +3,13 @@
 /* Basic Colors */
 @each $color in $all-colors {
   @each $name, $value in $color {
-    .color-#{$name},
-    .color-#{$name}-global > *,
-    *:hover > .color-#{$name}-into,
-    *:focus > .color-#{$name}-into,
-    .color-#{$name}-onto:hover,
-    .color-#{$name}-onto:focus,
-    .color-#{$name}-toall:hover > *,
-    .color-#{$name}-toall:focus > *,
-    .color-#{$name}-toone > *:hover,
-    .color-#{$name}-toone > *:focus,
-    .color-#{$name}-radio1:checked ~ .color-#{$name}-relay .color-#{$name}-target1,
-    .color-#{$name}-radio2:checked ~ .color-#{$name}-relay .color-#{$name}-target2,
-    .color-#{$name}-radio3:checked ~ .color-#{$name}-relay .color-#{$name}-target3,
-    .color-#{$name}-radio4:checked ~ .color-#{$name}-relay .color-#{$name}-target4,
-    .color-#{$name}-radio5:checked ~ .color-#{$name}-relay .color-#{$name}-target5,
-    .color-#{$name}-check:checked ~ .color-#{$name}-hub .color-#{$name}-goal {
-      color: var(--#{$name});
-    }
+    @include states('.color-#{$name}', 'color', 'var(--#{$name})');
   }
 }
 
 /* Dark Transparent Colors */
 @each $color in $main-colors {
   @each $name, $value in $color {
-    .color-#{$name}-dark,
-    .color-#{$name}-dark-global > *,
-    *:hover > .color-#{$name}-dark-into,
-    *:focus > .color-#{$name}-dark-into,
-    .color-#{$name}-dark-onto:hover,
-    .color-#{$name}-dark-onto:focus,
-    .color-#{$name}-dark-toall:hover > *,
-    .color-#{$name}-dark-toall:focus > *,
-    .color-#{$name}-dark-toone > *:hover,
-    .color-#{$name}-dark-toone > *:focus,
-    .color-#{$name}-dark-radio1:checked ~ .color-#{$name}-dark-relay .color-#{$name}-dark-target1,
-    .color-#{$name}-dark-radio2:checked ~ .color-#{$name}-dark-relay .color-#{$name}-dark-target2,
-    .color-#{$name}-dark-radio3:checked ~ .color-#{$name}-dark-relay .color-#{$name}-dark-target3,
-    .color-#{$name}-dark-radio4:checked ~ .color-#{$name}-dark-relay .color-#{$name}-dark-target4,
-    .color-#{$name}-dark-radio5:checked ~ .color-#{$name}-dark-relay .color-#{$name}-dark-target5,
-    .color-#{$name}-dark-check:checked ~ .color-#{$name}-dark-hub .color-#{$name}-dark-goal {
-      color: var(--#{$name}-dark);
-    }
+    @include states('.color-#{$name}-dark', 'color', 'var(--#{$name}-dark)');
   }
 }
