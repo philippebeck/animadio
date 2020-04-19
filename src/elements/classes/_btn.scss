@@ -36,29 +36,8 @@
 }
 
 @each $primary-color, $secondary-color in $duo-colors {
-  .btn-#{$primary-color},
-  .button-#{$primary-color},
-  .btn-#{$secondary-color}:hover,
-  .button-#{$secondary-color}:hover,
-  .btn-#{$secondary-color}:focus,
-  .button-#{$secondary-color}:focus,
-  .button-#{$secondary-color}-check:checked + .button-#{$secondary-color} {
-    border-color: var(--btn-#{$primary-color}-border-color);
-    background-color: var(--#{$primary-color});
-    color: var(--btn-#{$primary-color}-color);
-  }
-
-  .btn-#{$secondary-color},
-  .button-#{$secondary-color},
-  .btn-#{$primary-color}:hover,
-  .button-#{$primary-color}:hover,
-  .btn-#{$primary-color}:focus,
-  .button-#{$primary-color}:focus,
-  .button-#{$primary-color}-check:checked + .button-#{$primary-color} {
-    border-color: var(--btn-#{$secondary-color}-border-color);
-    background-color: var(--#{$secondary-color});
-    color: var(--btn-#{$secondary-color}-color);
-  }
+  @include btn($primary-color, $secondary-color);
+  @include btn($secondary-color, $primary-color);
 }
 
 .btn-fb,
