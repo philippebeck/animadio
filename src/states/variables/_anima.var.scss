@@ -88,27 +88,27 @@ $transform-origins: (
   --animation-duration: 2s;
 
   /* Animation Durations */
-  @each $name, $value in $animation-durations {
-    --anima-duration-#{$name}: #{$value};
+  @each $key, $value in $animation-durations {
+    --anima-duration-#{$key}: #{$value};
   }
 
   /* Animation Timing Functions */
-  @each $name, $value in $animation-timing-functions {
-    --anima-function-#{$name}: #{$value};
+  @each $key, $value in $animation-timing-functions {
+    --anima-function-#{$key}: #{$value};
   }
 
   /* Animation Iteration Counts */
-  @each $name, $value in $animation-iteration-counts {
-    --anima-count-#{$name}: #{$value};
+  @each $key, $value in $animation-iteration-counts {
+    --anima-count-#{$key}: #{$value};
   }
 
   /* Animation Delays */
-  @each $name, $value in $animation-delays {
-    --anima-delay-#{$name}: #{$value};
+  @each $key, $value in $animation-delays {
+    --anima-delay-#{$key}: #{$value};
   }
 
   /* Transform Origins */
-  @each $name, $value in $transform-origins {
-    --transform-origin-#{$name}: #{$value};
+  @each $key, $value in $transform-origins {
+    --transform-origin-#{$key}: #{$value};
   }
 }

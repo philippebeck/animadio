@@ -29,7 +29,7 @@ $box-shadows: (
 ) !default;
 
 [class*="shabox-"] {
-  @each $box-shadow-name, $box-shadow-value in $box-shadows {
-    --box-shadow-#{$box-shadow-name}: #{$box-shadow-value};
+  @each $key, $value in $box-shadows {
+    --box-shadow-#{$key}: #{$value};
   }
 }

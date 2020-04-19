@@ -20,7 +20,7 @@ $text-shadows: (
 ) !default;
 
 [class*="shatex-"] {
-  @each $text-shadow-name, $text-shadow-value in $text-shadows {
-    --text-shadow-#{$text-shadow-name}: #{$text-shadow-value};
+  @each $key, $value in $text-shadows {
+    --text-shadow-#{$key}: #{$value};
   }
 }
