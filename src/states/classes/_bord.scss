@@ -1,87 +1,19 @@
 /***** States : Bord *****/
 
-[class*="bord-"],
-[class*="bord-"][class*="-global"] > *,
-[class*="bord-"][class*="-onto"]:hover,
-[class*="bord-"][class*="-onto"]:focus,
-*:hover > [class*="bord-"][class*="-into"],
-*:focus > [class*="bord-"][class*="-into"],
-[class*="bord-"][class*="-toall"]:hover > *,
-[class*="bord-"][class*="-toall"]:focus > *,
-[class*="bord-"][class*="-toone"] > *:hover,
-[class*="bord-"][class*="-toone"] > *:focus,
-[class*="bord-"][class*="-radio1"]:checked ~ [class*="bord-"][class*="-relay"] [class*="bord-"][class*="-target1"],
-[class*="bord-"][class*="-radio2"]:checked ~ [class*="bord-"][class*="-relay"] [class*="bord-"][class*="-target2"],
-[class*="bord-"][class*="-radio3"]:checked ~ [class*="bord-"][class*="-relay"] [class*="bord-"][class*="-target3"],
-[class*="bord-"][class*="-radio4"]:checked ~ [class*="bord-"][class*="-relay"] [class*="bord-"][class*="-target4"],
-[class*="bord-"][class*="-radio5"]:checked ~ [class*="bord-"][class*="-relay"] [class*="bord-"][class*="-target5"],
-[class*="bord-"][class*="-check"]:checked ~ [class*="bord-"][class*="-hub"] [class*="bord-"][class*="-goal"] {
-  border-radius: var(--border-radius);
-}
+@include states('[class*="bord-"]', 'border-radius', 'var(--border-radius)');
 
-@each $name, $value in $border-styles {
-  .bord-#{$name},
-  .bord-#{$name}-global > *,
-  *:hover > .bord-#{$name}-into,
-  *:focus > .bord-#{$name}-into,
-  .bord-#{$name}-onto:hover,
-  .bord-#{$name}-onto:focus,
-  .bord-#{$name}-toall:hover > *,
-  .bord-#{$name}-toall:focus > *,
-  .bord-#{$name}-toone > *:hover,
-  .bord-#{$name}-toone > *:focus,
-  .bord-#{$name}-radio1:checked ~ .bord-#{$name}-relay .bord-#{$name}-target1,
-  .bord-#{$name}-radio2:checked ~ .bord-#{$name}-relay .bord-#{$name}-target2,
-  .bord-#{$name}-radio3:checked ~ .bord-#{$name}-relay .bord-#{$name}-target3,
-  .bord-#{$name}-radio4:checked ~ .bord-#{$name}-relay .bord-#{$name}-target4,
-  .bord-#{$name}-radio5:checked ~ .bord-#{$name}-relay .bord-#{$name}-target5,
-  .bord-#{$name}-check:checked ~ .bord-#{$name}-hub .bord-#{$name}-goal {
-    border-style: #{$value};
-  }
+@each $class, $value in $border-styles {
+  @include states('.bord-#{$class}', 'border-style', '#{$value}');
 }
 
 @each $borders-name, $borders-value in $borders {
   @each $name, $value in $borders-value {
-    .bord-#{$name},
-    .bord-#{$name}-global > *,
-    *:hover > .bord-#{$name}-into,
-    *:focus > .bord-#{$name}-into,
-    .bord-#{$name}-onto:hover,
-    .bord-#{$name}-onto:focus,
-    .bord-#{$name}-toall:hover > *,
-    .bord-#{$name}-toall:focus > *,
-    .bord-#{$name}-toone > *:hover,
-    .bord-#{$name}-toone > *:focus,
-    .bord-#{$name}-radio1:checked ~ .bord-#{$name}-relay .bord-#{$name}-target1,
-    .bord-#{$name}-radio2:checked ~ .bord-#{$name}-relay .bord-#{$name}-target2,
-    .bord-#{$name}-radio3:checked ~ .bord-#{$name}-relay .bord-#{$name}-target3,
-    .bord-#{$name}-radio4:checked ~ .bord-#{$name}-relay .bord-#{$name}-target4,
-    .bord-#{$name}-radio5:checked ~ .bord-#{$name}-relay .bord-#{$name}-target5,
-    .bord-#{$name}-check:checked ~ .bord-#{$name}-hub .bord-#{$name}-goal {
-      border-#{$borders-name}: var(--border-#{$borders-name}-#{$name});
-    }
+    @include states('.bord-#{$name}', 'border-#{$borders-name}', 'var(--border-#{$borders-name}-#{$name})');
   }
 }
 
 @each $color in $main-colors {
   @each $name, $value in $color {
-    .bord-#{$name},
-    .bord-#{$name}-global > *,
-    *:hover > .bord-#{$name}-into,
-    *:focus > .bord-#{$name}-into,
-    .bord-#{$name}-onto:hover,
-    .bord-#{$name}-onto:focus,
-    .bord-#{$name}-toall:hover > *,
-    .bord-#{$name}-toall:focus > *,
-    .bord-#{$name}-toone > *:hover,
-    .bord-#{$name}-toone > *:focus,
-    .bord-#{$name}-radio1:checked ~ .bord-#{$name}-relay .bord-#{$name}-target1,
-    .bord-#{$name}-radio2:checked ~ .bord-#{$name}-relay .bord-#{$name}-target2,
-    .bord-#{$name}-radio3:checked ~ .bord-#{$name}-relay .bord-#{$name}-target3,
-    .bord-#{$name}-radio4:checked ~ .bord-#{$name}-relay .bord-#{$name}-target4,
-    .bord-#{$name}-radio5:checked ~ .bord-#{$name}-relay .bord-#{$name}-target5,
-    .bord-#{$name}-check:checked ~ .bord-#{$name}-hub .bord-#{$name}-goal {
-      border-color: var(--#{$name});
-    }
+    @include states('.bord-#{$name}', 'border-color', 'var(--#{$name})');
   }
 }
