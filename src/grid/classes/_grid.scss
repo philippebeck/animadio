@@ -27,32 +27,32 @@
   }
 }
 
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @media (min-width: $breakpoint-value) {
+@each $key, $value in $breakpoints {
+  @media (min-width: $value) {
     @for $i from 2 to 13 {
-      [class^="grid-"][class*="-#{$i}#{$breakpoint-name}"],
-      [class*=" grid-"][class*="-#{$i}#{$breakpoint-name}"],
-      [class^="fluid-"][class*="-#{$i}#{$breakpoint-name}"],
-      [class*=" fluid-"][class*="-#{$i}#{$breakpoint-name}"] {
+      [class^="grid-"][class*="-#{$i}#{$key}"],
+      [class*=" grid-"][class*="-#{$i}#{$key}"],
+      [class^="fluid-"][class*="-#{$i}#{$key}"],
+      [class*=" fluid-"][class*="-#{$i}#{$key}"] {
         grid-template: auto/repeat(#{$i}, auto);
       }
     }
   }
 }
 
-@each $gap-size in $gap-sizes {
-  [class^="gap-"][class*="-#{$gap-size}-xs"],
-  [class*=" gap-"][class*="-#{$gap-size}-xs"] {
-    grid-gap: var(--gap-#{$gap-size}-xs);
+@each $size in $gap-sizes {
+  [class^="gap-"][class*="-#{$size}-xs"],
+  [class*=" gap-"][class*="-#{$size}-xs"] {
+    grid-gap: var(--gap-#{$size}-xs);
   }
 }
 
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @media (min-width: $breakpoint-value) {
-    @each $gap-size in $gap-sizes {
-      [class^="gap-"][class*="-#{$gap-size}-#{$breakpoint-name}"],
-      [class*=" gap-"][class*="-#{$gap-size}-#{$breakpoint-name}"] {
-        grid-gap: var(--gap-#{$gap-size}-#{$breakpoint-name});
+@each $key, $value in $breakpoints {
+  @media (min-width: $value) {
+    @each $size in $gap-sizes {
+      [class^="gap-"][class*="-#{$size}-#{$key}"],
+      [class*=" gap-"][class*="-#{$size}-#{$key}"] {
+        grid-gap: var(--gap-#{$size}-#{$key});
       }
     }
   }

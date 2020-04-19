@@ -62,18 +62,18 @@
   }
 }
 
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @media (min-width: $breakpoint-value) {
+@each $key, $value in $breakpoints {
+  @media (min-width: $value) {
     @for $i from 2 to 13 {
-      [class^="flex-"][class*="-#{$i}#{$breakpoint-name}"],
-      [class*=" flex-"][class*="-#{$i}#{$breakpoint-name}"] {
-        margin: var(--flex-negative-margin-#{$breakpoint-name});
+      [class^="flex-"][class*="-#{$i}#{$key}"],
+      [class*=" flex-"][class*="-#{$i}#{$key}"] {
+        margin: var(--flex-negative-margin-#{$key});
       }
 
-      [class^="flex-"][class*="-#{$i}#{$breakpoint-name}"] > *,
-      [class*=" flex-"][class*="-#{$i}#{$breakpoint-name}"] > * {
-        width: calc(100% / #{$i} - var(--flex-width-#{$breakpoint-name}));
-        margin: var(--flex-positive-margin-#{$breakpoint-name});
+      [class^="flex-"][class*="-#{$i}#{$key}"] > *,
+      [class*=" flex-"][class*="-#{$i}#{$key}"] > * {
+        width: calc(100% / #{$i} - var(--flex-width-#{$key}));
+        margin: var(--flex-positive-margin-#{$key});
       }
     }
   }

@@ -1,51 +1,51 @@
 /***** Grid : Place *****/
 
 /* Place Content */
-@each $place-content-name, $place-content-value in $place-content {
-  .placo-#{$place-content-name} {
-    place-content: var(--place-content-#{$place-content-name});
+@each $key, $value in $place-content {
+  .placo-#{$key} {
+    place-content: var(--place-content-#{$key});
   }
 }
 
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
   @media (min-width: $breakpoint-value) {
-    @each $place-content-name, $place-content-value in $place-content {
-      .placo-#{$place-content-name}-#{$breakpoint-name} {
-        place-content: var(--place-content-#{$place-content-name});
+    @each $key, $value in $place-content {
+      .placo-#{$key}-#{$breakpoint-key} {
+        place-content: var(--place-content-#{$key});
       }
     }
   }
 }
 
 /* Place Items */
-@each $place-items-name, $place-items-value in $place-items {
-  .plait-#{$place-items-name} {
-    place-items: var(--place-items-#{$place-items-name});
+@each $key, $value in $place-items {
+  .plait-#{$key} {
+    place-items: var(--place-items-#{$key});
   }
 }
 
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
   @media (min-width: $breakpoint-value) {
-    @each $place-items-name, $place-items-value in $place-items {
-      .plait-#{$place-items-name}-#{$breakpoint-name} {
-        place-items: var(--place-items-#{$place-items-name});
+    @each $key, $value in $place-items {
+      .plait-#{$key}-#{$breakpoint-key} {
+        place-items: var(--place-items-#{$key});
       }
     }
   }
 }
 
 /* Place Self */
-@each $place-self-name, $place-self-value in $place-self {
-  .plase-#{$place-self-name} {
-    place-self: var(--place-self-#{$place-self-name});
+@each $key, $value in $place-self {
+  .plase-#{$key} {
+    place-self: var(--place-self-#{$key});
   }
 }
 
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
   @media (min-width: $breakpoint-value) {
-    @each $place-self-name, $place-self-value in $place-self {
-      .plase-#{$place-self-name}-#{$breakpoint-name} {
-        place-self: var(--place-self-#{$place-self-name});
+    @each $key, $value in $place-self {
+      .plase-#{$key}-#{$breakpoint-key} {
+        place-self: var(--place-self-#{$key});
       }
     }
   }
