@@ -36,6 +36,8 @@
 /********** ELEMENTS **********/
 /******************************/
 
+@import "elements/mixins/elements.mix";
+
 @import 'elements/variables/btn.var';
 @import 'elements/variables/card.var';
 @import 'elements/variables/foot.var';
@@ -60,6 +62,8 @@
 /********** STATES **********/
 /****************************/
 
+@import 'states/mixins/states.mix';
+
 @import 'states/variables/anima.var';
 @import 'states/variables/bord.var';
 @import 'states/variables/deco.var';
@@ -67,8 +71,6 @@
 @import 'states/variables/position.var';
 @import 'states/variables/shabox.var';
 @import 'states/variables/shatex.var';
-
-@import 'states/mixins/states.mix';
 
 @import 'states/classes/anima';
 @import 'states/classes/bg';

@@ -24,6 +24,8 @@
 /********** ELEMENTS **********/
 /******************************/
 
+@import "elements/mixins/elements.mix";
+
 @import 'elements/variables/btn.var';
 @import 'elements/variables/card.var';
 @import 'elements/variables/foot.var';
