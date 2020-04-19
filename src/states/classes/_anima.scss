@@ -4,41 +4,41 @@
 @include states('[class*="anima-"]', 'animation-duration', 'var(--animation-duration)');
 
 /* Animation Names */
-@each $name, $value in $animation-names {
-  @include states('.anima-#{$name}', 'animation-name', '#{$value}');
+@each $key, $value in $animation-names {
+  @include states('.anima-#{$key}', 'animation-name', '#{$value}');
 }
 
 /* Animation Durations */
-@each $name, $value in $animation-durations {
-  @include states('.anima-#{$name}', 'animation-duration', 'var(--anima-duration-#{$name})');
+@each $key, $value in $animation-durations {
+  @include states('.anima-#{$key}', 'animation-duration', 'var(--anima-duration-#{$key})');
 }
 
 /* Animation Timing Functions */
-@each $name, $value in $animation-timing-functions {
-  @include states('.anima-#{$name}', 'animation-timing-function', 'var(--anima-function-#{$name})');
+@each $key, $value in $animation-timing-functions {
+  @include states('.anima-#{$key}', 'animation-timing-function', 'var(--anima-function-#{$key})');
 }
 
 /* Animation Iteration Counts */
-@each $name, $value in $animation-iteration-counts {
-  @include states('.anima-#{$name}', 'animation-iteration-count', 'var(--anima-count-#{$name})');
+@each $key, $value in $animation-iteration-counts {
+  @include states('.anima-#{$key}', 'animation-iteration-count', 'var(--anima-count-#{$key})');
 }
 
 /* Animation Directions */
-@each $name, $value in $animation-directions {
-  @include states('.anima-#{$name}', 'animation-direction', '#{$value}');
+@each $key, $value in $animation-directions {
+  @include states('.anima-#{$key}', 'animation-direction', '#{$value}');
 }
 
 /* Animation Delays */
-@each $name, $value in $animation-delays {
-  @include states('.anima-#{$name}', 'animation-delay', 'var(--anima-delay-#{$name})');
+@each $key, $value in $animation-delays {
+  @include states('.anima-#{$key}', 'animation-delay', 'var(--anima-delay-#{$key})');
 }
 
 /* Animation Fill Modes */
-@each $name, $value in $animation-fill-modes {
-  @include states('.anima-#{$name}', 'animation-fill-mode', '#{$value}');
+@each $key, $value in $animation-fill-modes {
+  @include states('.anima-#{$key}', 'animation-fill-mode', '#{$value}');
 }
 
 /* Transform Origins */
-@each $name, $value in $transform-origins {
-  @include states('.anima-#{$name}', 'transform-origin', 'var(--transform-origin-#{$name})');
+@each $key, $value in $transform-origins {
+  @include states('.anima-#{$key}', 'transform-origin', 'var(--transform-origin-#{$key})');
 }

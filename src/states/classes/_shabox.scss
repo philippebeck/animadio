@@ -1,9 +1,9 @@
 /***** States : Shabox *****/
 
-@each $box-shadow-name, $box-shadow-value in $box-shadows {
-  @include states('.shabox-#{$box-shadow-name}', 'box-shadow', 'var(--box-shadow-#{$box-shadow-name})');
+@each $key, $value in $box-shadows {
+  @include states('.shabox-#{$key}', 'box-shadow', 'var(--box-shadow-#{$key})');
 }
 
-@each $box-shadow-name, $box-shadow-value in $box-shadows {
-  @include states('.shabox-in-#{$box-shadow-name}', 'box-shadow', 'inset var(--box-shadow-#{$box-shadow-name})');
+@each $key, $value in $box-shadows {
+  @include states('.shabox-in-#{$key}', 'box-shadow', 'inset var(--box-shadow-#{$key})');
 }

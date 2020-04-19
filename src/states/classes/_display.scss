@@ -1,13 +1,13 @@
 /***** States : Display *****/
 
-@each $display-name, $display-value in $displays {
-  @include states('.#{$display-name}', 'display', '#{$display-value}');
+@each $key, $value in $displays {
+  @include states('.#{$key}', 'display', '#{$value}');
 }
 
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
   @media (min-width: $breakpoint-value) {
-    @each $display-name, $display-value in $displays {
-      @include states('.#{$display-name}-#{$breakpoint-name}', 'display', '#{$display-value}');
+    @each $key, $value in $displays {
+      @include states('.#{$key}-#{$breakpoint-key}', 'display', '#{$value}');
     }
   }
 }

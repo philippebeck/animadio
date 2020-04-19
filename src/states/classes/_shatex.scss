@@ -1,5 +1,5 @@
 /***** States : Shatex *****/
 
-@each $text-shadow-name, $text-shadow-value in $text-shadows {
-  @include states('.shatex-#{$text-shadow-name}', 'text-shadow', 'var(--text-shadow-#{$text-shadow-name})');
+@each $key, $value in $text-shadows {
+  @include states('.shatex-#{$key}', 'text-shadow', 'var(--text-shadow-#{$key})');
 }

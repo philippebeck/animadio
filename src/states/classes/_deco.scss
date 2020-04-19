@@ -1,15 +1,15 @@
 /***** States : Deco *****/
 
-@each $deco-name, $deco-value in $decos {
-  /* Text Decoration #{$deco-name} */
-  @each $name, $value in $deco-value {
-    @include states('.deco-#{$name}', 'text-decoration-#{$deco-name}', '#{$value}');
+@each $deco-key, $deco-value in $decos {
+  /* Text Decoration #{$deco-key} */
+  @each $key, $value in $deco-value {
+    @include states('.deco-#{$key}', 'text-decoration-#{$deco-key}', '#{$value}');
   }
 }
 
 /* Text Decoration Colors */
 @each $color in $main-colors {
-  @each $name, $value in $color {
-    @include states('.deco-#{$name}', 'text-decoration-color', 'var(--#{$name})');
+  @each $key, $value in $color {
+    @include states('.deco-#{$key}', 'text-decoration-color', 'var(--#{$key})');
   }
 }

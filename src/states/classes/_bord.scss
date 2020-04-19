@@ -2,18 +2,18 @@
 
 @include states('[class*="bord-"]', 'border-radius', 'var(--border-radius)');
 
-@each $class, $value in $border-styles {
-  @include states('.bord-#{$class}', 'border-style', '#{$value}');
+@each $key, $value in $border-styles {
+  @include states('.bord-#{$key}', 'border-style', '#{$value}');
 }
 
-@each $borders-name, $borders-value in $borders {
-  @each $name, $value in $borders-value {
-    @include states('.bord-#{$name}', 'border-#{$borders-name}', 'var(--border-#{$borders-name}-#{$name})');
+@each $borders-key, $borders-value in $borders {
+  @each $key, $value in $borders-value {
+    @include states('.bord-#{$key}', 'border-#{$borders-key}', 'var(--border-#{$borders-key}-#{$key})');
   }
 }
 
 @each $color in $main-colors {
-  @each $name, $value in $color {
-    @include states('.bord-#{$name}', 'border-color', 'var(--#{$name})');
+  @each $key, $value in $color {
+    @include states('.bord-#{$key}', 'border-color', 'var(--#{$key})');
   }
 }

@@ -1,22 +1,22 @@
 /***** States : Bg *****/
 
 /* Basic Background Colors */
-@each $color in $all-colors {
-  @each $name, $value in $color {
-    @include states('.bg-#{$name}', 'background-color', 'var(--#{$name})');
+@each $colors in $all-colors {
+  @each $key, $value in $colors {
+    @include states('.bg-#{$key}', 'background-color', 'var(--#{$key})');
   }
 }
 
 /* Dark Transparent Background Colors */
-@each $color in $main-colors {
-  @each $name, $value in $color {
-    @include states('.bg-#{$name}-dark', 'background-color', 'var(--#{$name}-dark)');
+@each $colors in $main-colors {
+  @each $key, $value in $colors {
+    @include states('.bg-#{$key}-dark', 'background-color', 'var(--#{$key}-dark)');
   }
 }
 
 /* Light Transparent Background Colors */
-@each $color in $main-colors {
-  @each $name, $value in $color {
-    @include states('.bg-#{$name}-light', 'background-color', 'var(--#{$name}-light)');
+@each $colors in $main-colors {
+  @each $key, $value in $colors {
+    @include states('.bg-#{$key}-light', 'background-color', 'var(--#{$key}-light)');
   }
 }
