@@ -81,10 +81,10 @@
   color: var(--white);
 }
 
-@each $brand-color-name, $brand-color-value in $brand-colors {
-  .btn-#{$brand-color-name},
-  .button-#{$brand-color-name} {
-    background-color: var(--#{$brand-color-name});
+@each $key, $value in $brand-colors {
+  .btn-#{$key},
+  .button-#{$key} {
+    background-color: var(--#{$key});
   }
 }
 
@@ -131,14 +131,14 @@
   background-color: var(--white);
 }
 
-@each $brand-color-name, $brand-color-value in $brand-colors {
-  .btn-#{$brand-color-name}:hover,
-  .button-#{$brand-color-name}:hover,
-  .btn-#{$brand-color-name}:focus,
-  .button-#{$brand-color-name}:focus,
-  .button-#{$brand-color-name}-check:checked + .button-#{$brand-color-name} {
-    border-color: var(--#{$brand-color-name});
-    color: var(--#{$brand-color-name});
+@each $key, $value in $brand-colors {
+  .btn-#{$key}:hover,
+  .button-#{$key}:hover,
+  .btn-#{$key}:focus,
+  .button-#{$key}:focus,
+  .button-#{$key}-check:checked + .button-#{$key} {
+    border-color: var(--#{$key});
+    color: var(--#{$key});
   }
 }
 
