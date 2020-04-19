@@ -20,8 +20,8 @@ $place-content: (
 ) !default;
 
 [class*="placo-"] {
-  @each $place-content-name, $place-content-value in $place-content {
-    --place-content-#{$place-content-name}: #{$place-content-value};
+  @each $key, $value in $place-content {
+    --place-content-#{$key}: #{$value};
   }
 }
 
@@ -43,8 +43,8 @@ $place-items: (
 ) !default;
 
 [class*="plait-"] {
-  @each $place-items-name, $place-items-value in $place-items {
-    --place-items-#{$place-items-name}: #{$place-items-value};
+  @each $key, $value in $place-items {
+    --place-items-#{$key}: #{$value};
   }
 }
 
@@ -68,7 +68,7 @@ $place-self: (
 ) !default;
 
 [class*="plase-"] {
-  @each $place-self-name, $place-self-value in $place-self {
-    --place-self-#{$place-self-name}: #{$place-self-value};
+  @each $key, $value in $place-self {
+    --place-self-#{$key}: #{$value};
   }
 }

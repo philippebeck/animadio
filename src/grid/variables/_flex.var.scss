@@ -48,7 +48,7 @@ $flex: (
 }
 
 [class*="flex-"] {
-  @each $flex-name, $flex-value in $flex {
-    --flex-#{$flex-name}: #{$flex-value};
+  @each $key, $value in $flex {
+    --flex-#{$key}: #{$value};
   }
 }

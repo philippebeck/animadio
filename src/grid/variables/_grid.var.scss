@@ -41,7 +41,7 @@ $gaps: (
 $gap-sizes : 'small', 'medium', 'large';
 
 [class*="gap-"] {
-  @each $gap-name, $gap-value in $gaps {
-    --gap-#{$gap-name}: #{$gap-value};
+  @each $key, $value in $gaps {
+    --gap-#{$key}: #{$value};
   }
 }
