@@ -38,22 +38,13 @@
 }
 
 @media (min-width: $breakpoint-sm) {
-  .gallery {
-    --gallery-figure-margin: 10px;
-    --gallery-figure-width: calc(100% / 2 - 20px);
-  }
+  @include gallery(10px, calc(100% / 2 - 20px));
 }
 
 @media (min-width: $breakpoint-lg) {
-  .gallery {
-    --gallery-figure-margin: 15px;
-    --gallery-figure-width: calc(100% / 3 - 30px);
-  }
+  @include gallery(15px, calc(100% / 3 - 30px));
 }
 
 @media (min-width: $breakpoint-xl) {
-  .gallery {
-    --gallery-figure-margin: 20px;
-    --gallery-figure-width: calc(100% / 4 - 40px);
-  }
+  @include gallery(20px, calc(100% / 4 - 40px));
 }
