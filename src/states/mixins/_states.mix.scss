@@ -1,0 +1,22 @@
+// States : Mixins : States
+
+@mixin states($class, $property, $value) {
+  #{$class},
+  #{$class}[class*="-global"] > *,
+  #{$class}[class*="-onto"]:hover,
+  #{$class}[class*="-onto"]:focus,
+  *:hover > #{$class}[class*="-into"],
+  *:focus > #{$class}[class*="-into"],
+  #{$class}[class*="-toall"]:hover > *,
+  #{$class}[class*="-toall"]:focus > *,
+  #{$class}[class*="-toone"] > *:hover,
+  #{$class}[class*="-toone"] > *:focus,
+  #{$class}[class*="-radio1"]:checked ~ #{$class}[class*="-relay"] #{$class}[class*="-target1"],
+  #{$class}[class*="-radio2"]:checked ~ #{$class}[class*="-relay"] #{$class}[class*="-target2"],
+  #{$class}[class*="-radio3"]:checked ~ #{$class}[class*="-relay"] #{$class}[class*="-target3"],
+  #{$class}[class*="-radio4"]:checked ~ #{$class}[class*="-relay"] #{$class}[class*="-target4"],
+  #{$class}[class*="-radio5"]:checked ~ #{$class}[class*="-relay"] #{$class}[class*="-target5"],
+  #{$class}[class*="-check"]:checked ~ #{$class}[class*="-hub"] #{$class}[class*="-goal"] {
+    #{$property}: #{$value};
+  }
+}
