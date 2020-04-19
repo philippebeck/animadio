@@ -10,7 +10,7 @@
 
 /* Animation Durations */
 @each $name, $value in $animation-durations {
-  @include states('.anima-#{$name}', 'animation-duration', 'var(--anima-duration-#{$name}');
+  @include states('.anima-#{$name}', 'animation-duration', 'var(--anima-duration-#{$name})');
 }
 
 /* Animation Timing Functions */
