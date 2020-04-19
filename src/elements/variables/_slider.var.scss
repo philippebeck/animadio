@@ -43,29 +43,17 @@
 }
 
 @media (min-width: $breakpoint-sm) {
-  .slider {
-    --slider-min-height: 35vh;
-    --slider-progress-height: 7px;
-  }
+  @include slider(35vh, 7px);
 }
 
 @media (min-width: $breakpoint-md) {
-  .slider {
-    --slider-min-height: 40vh;
-    --slider-progress-height: 8px;
-  }
+  @include slider(40vh, 8px);
 }
 
 @media (min-width: $breakpoint-lg) {
-  .slider {
-    --slider-min-height: 45vh;
-    --slider-progress-height: 9px;
-  }
+  @include slider(45vh, 9px);
 }
 
 @media (min-width: $breakpoint-xl) {
-  .slider {
-    --slider-min-height: 50vh;
-    --slider-progress-height: 10px;
-  }
+  @include slider(50vh, 10px);
 }
