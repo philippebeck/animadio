@@ -1,7 +1,7 @@
 /***** Elements : Variables : Form *****/
 
 .form {
-  --form-action-border: medium solid var(--quartz);
+  --form-action-border: medium solid var(--white-dark);
   --form-action-box-shadow: inset 0 0 10px 10px var(--white);
   --form-action-cursor: pointer;
   --form-action-hover-box-shadow: inset 0 0 5px 5px var(--white);
@@ -11,7 +11,7 @@
   --form-action-margin: 10px auto;
   --form-action-width: 80%;
   --form-border: medium ridge var(--sky);
-  --form-box-shadow: inset 0 0 5px 5px var(--sapphire);
+  --form-box-shadow: inset 0 0 5px 5px var(--blue-dark);
   --form-field-background-color: var(--silver);
   --form-field-border: medium double var(--blue);
   --form-field-border-radius: 10px;
@@ -46,7 +46,7 @@
   --form-reset-hover-background-color: var(--red);
   --form-reset-hover-color: var(--white);
   --form-submit-background-color: var(--jade);
-  --form-submit-border: medium solid var(--emerald);
+  --form-submit-border: medium solid var(--green-dark);
   --form-submit-color: var(--green);
   --form-submit-hover-background-color: var(--green);
   --form-submit-hover-color: var(--white);
