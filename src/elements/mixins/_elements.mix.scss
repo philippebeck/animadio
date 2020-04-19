@@ -1,0 +1,22 @@
+// Elements : Mixins : Elements
+
+@mixin btn($first-color, $second-color) {
+  .btn-#{$first-color},
+  .button-#{$first-color},
+  .btn-#{$second-color}:hover,
+  .button-#{$second-color}:hover,
+  .btn-#{$second-color}:focus,
+  .button-#{$second-color}:focus,
+  .button-#{$second-color}-check:checked + .button-#{$second-color} {
+    border-color: var(--btn-#{$first-color}-border-color);
+    background-color: var(--#{$first-color});
+    color: var(--btn-#{$first-color}-color);
+  }
+}
+
+@mixin slider($min, $progress) {
+  .slider {
+    --slider-min-height: $min;
+    --slider-progress-height: $progress;
+  }
+}
