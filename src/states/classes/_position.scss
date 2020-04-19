@@ -1,47 +1,13 @@
 /***** States : Position *****/
 
 @each $position-name, $position-value in $positions {
-  .#{$position-name},
-  .#{$position-name}-global > *,
-  *:hover > .#{$position-name}-into,
-  *:focus > .#{$position-name}-into,
-  .#{$position-name}-onto:hover,
-  .#{$position-name}-onto:focus,
-  .#{$position-name}-toall:hover > *,
-  .#{$position-name}-toall:focus > *,
-  .#{$position-name}-toone > *:hover,
-  .#{$position-name}-toone > *:focus,
-  .#{$position-name}-radio1:checked ~ .#{$position-name}-relay .#{$position-name}-target1,
-  .#{$position-name}-radio2:checked ~ .#{$position-name}-relay .#{$position-name}-target2,
-  .#{$position-name}-radio3:checked ~ .#{$position-name}-relay .#{$position-name}-target3,
-  .#{$position-name}-radio4:checked ~ .#{$position-name}-relay .#{$position-name}-target4,
-  .#{$position-name}-radio5:checked ~ .#{$position-name}-relay .#{$position-name}-target5,
-  .#{$position-name}-check:checked ~ .#{$position-name}-hub .#{$position-name}-goal {
-    position: #{$position-value};
-  }
+  @include states('.#{$position-name}', 'position', '#{$position-value}');
 }
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   @media (min-width: $breakpoint-value) {
     @each $position-name, $position-value in $positions {
-      .#{$position-name}-#{$breakpoint-name},
-      .#{$position-name}-#{$breakpoint-name}-global > *,
-      *:hover > .#{$position-name}-#{$breakpoint-name}-into,
-      *:focus > .#{$position-name}-#{$breakpoint-name}-into,
-      .#{$position-name}-#{$breakpoint-name}-onto:hover,
-      .#{$position-name}-#{$breakpoint-name}-onto:focus,
-      .#{$position-name}-#{$breakpoint-name}-toall:hover > *,
-      .#{$position-name}-#{$breakpoint-name}-toall:focus > *,
-      .#{$position-name}-#{$breakpoint-name}-toone > *:hover,
-      .#{$position-name}-#{$breakpoint-name}-toone > *:focus,
-      .#{$position-name}-#{$breakpoint-name}-radio1:checked ~ .#{$position-name}-#{$breakpoint-name}-relay .#{$position-name}-#{$breakpoint-name}-target1,
-      .#{$position-name}-#{$breakpoint-name}-radio2:checked ~ .#{$position-name}-#{$breakpoint-name}-relay .#{$position-name}-#{$breakpoint-name}-target2,
-      .#{$position-name}-#{$breakpoint-name}-radio3:checked ~ .#{$position-name}-#{$breakpoint-name}-relay .#{$position-name}-#{$breakpoint-name}-target3,
-      .#{$position-name}-#{$breakpoint-name}-radio4:checked ~ .#{$position-name}-#{$breakpoint-name}-relay .#{$position-name}-#{$breakpoint-name}-target4,
-      .#{$position-name}-#{$breakpoint-name}-radio5:checked ~ .#{$position-name}-#{$breakpoint-name}-relay .#{$position-name}-#{$breakpoint-name}-target5,
-      .#{$position-name}-#{$breakpoint-name}-check:checked ~ .#{$position-name}-#{$breakpoint-name}-hub .#{$position-name}-#{$breakpoint-name}-goal {
-        position: #{$position-value};
-      }
+      @include states('.#{$position-name}-#{$breakpoint-name}', 'position', '#{$position-value}');
     }
   }
 }
