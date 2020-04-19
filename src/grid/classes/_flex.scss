@@ -49,7 +49,7 @@
   flex-wrap: wrap-reverse;
 }
 
-@for $i from 2 to 12 {
+@for $i from 2 to 13 {
   [class^=" flex-"][class*="-#{$i}xs"],
   [class*=" flex-"][class*="-#{$i}xs"] {
     margin: var(--flex-negative-margin-xs);
@@ -64,7 +64,7 @@
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   @media (min-width: $breakpoint-value) {
-    @for $i from 2 to 12 {
+    @for $i from 2 to 13 {
       [class^="flex-"][class*="-#{$i}#{$breakpoint-name}"],
       [class*=" flex-"][class*="-#{$i}#{$breakpoint-name}"] {
         margin: var(--flex-negative-margin-#{$breakpoint-name});

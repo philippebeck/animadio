@@ -18,7 +18,7 @@
   max-width: 100%;
 }
 
-@for $i from 2 to 12 {
+@for $i from 2 to 13 {
   [class^="grid-"][class*="-#{$i}xs"],
   [class*=" grid-"][class*="-#{$i}xs"],
   [class^="fluid-"][class*="-#{$i}xs"],
@@ -29,7 +29,7 @@
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
   @media (min-width: $breakpoint-value) {
-    @for $i from 2 to 12 {
+    @for $i from 2 to 13 {
       [class^="grid-"][class*="-#{$i}#{$breakpoint-name}"],
       [class*=" grid-"][class*="-#{$i}#{$breakpoint-name}"],
       [class^="fluid-"][class*="-#{$i}#{$breakpoint-name}"],
