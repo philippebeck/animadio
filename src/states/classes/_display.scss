@@ -1,4 +1,4 @@
-/***** States : Display *****/
+/***** States : Classes : Display *****/
 
 @each $key, $value in $displays {
   @include states('.#{$key}', 'display', '#{$value}');

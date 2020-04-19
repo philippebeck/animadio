@@ -1,4 +1,4 @@
-/***** States : Anima *****/
+/***** States : Classes : Anima *****/
 
 /* Basic Animation */
 @include states('[class*="anima-"]', 'animation-duration', 'var(--animation-duration)');

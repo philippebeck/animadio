@@ -1,4 +1,4 @@
-/***** States : Shabox *****/
+/***** States : Classes : Shabox *****/
 
 @each $key, $value in $box-shadows {
   @include states('.shabox-#{$key}', 'box-shadow', 'var(--box-shadow-#{$key})');

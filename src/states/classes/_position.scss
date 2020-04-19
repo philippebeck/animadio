@@ -1,4 +1,4 @@
-/***** States : Position *****/
+/***** States : Classes : Position *****/
 
 @each $key, $value in $positions {
   @include states('.#{$key}', 'position', '#{$value}');
