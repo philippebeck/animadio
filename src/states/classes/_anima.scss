@@ -1,197 +1,44 @@
 /***** States : Anima *****/
 
 /* Basic Animation */
-[class*="anima-"],
-[class*="anima-"][class*="-global"] > *,
-*:hover > [class*="anima-"][class*="-into"],
-*:focus > [class*="anima-"][class*="-into"],
-[class*="anima-"][class*="-onto"]:hover,
-[class*="anima-"][class*="-onto"]:focus,
-[class*="anima-"][class*="-toall"]:hover > *,
-[class*="anima-"][class*="-toall"]:focus > *,
-[class*="anima-"][class*="-toone"] > *:hover,
-[class*="anima-"][class*="-toone"] > *:focus,
-[class*="anima-"][class*="-radio1"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target1"],
-[class*="anima-"][class*="-radio2"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target2"],
-[class*="anima-"][class*="-radio3"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target3"],
-[class*="anima-"][class*="-radio4"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target4"],
-[class*="anima-"][class*="-radio5"]:checked ~ [class*="anima-"][class*="-relay"] [class*="anima-"][class*="-target5"],
-[class*="anima-"][class*="-check"]:checked ~ [class*="anima-"][class*="-hub"] [class*="anima-"][class*="-goal"] {
-  animation-duration: var(--animation-duration);
-}
+@include states('[class*="anima-"]', 'animation-duration', 'var(--animation-duration)');
 
 /* Animation Names */
 @each $name, $value in $animation-names {
-  .anima-#{$name},
-  .anima-#{$name}-global > *,
-  *:hover > .anima-#{$name}-into,
-  *:focus > .anima-#{$name}-into,
-  .anima-#{$name}-onto:hover,
-  .anima-#{$name}-onto:focus,
-  .anima-#{$name}-toall:hover > *,
-  .anima-#{$name}-toall:focus > *,
-  .anima-#{$name}-toone > *:hover,
-  .anima-#{$name}-toone > *:focus,
-  .anima-#{$name}-radio1:checked ~ .anima-#{$name}-relay .anima-#{$name}-target1,
-  .anima-#{$name}-radio2:checked ~ .anima-#{$name}-relay .anima-#{$name}-target2,
-  .anima-#{$name}-radio3:checked ~ .anima-#{$name}-relay .anima-#{$name}-target3,
-  .anima-#{$name}-radio4:checked ~ .anima-#{$name}-relay .anima-#{$name}-target4,
-  .anima-#{$name}-radio5:checked ~ .anima-#{$name}-relay .anima-#{$name}-target5,
-  .anima-#{$name}-check:checked ~ .anima-#{$name}-hub .anima-#{$name}-goal {
-    animation-name: #{$value};
-  }
+  @include states('.anima-#{$name}', 'animation-name', '#{$value}');
 }
 
 /* Animation Durations */
 @each $name, $value in $animation-durations {
-  .anima-#{$name},
-  .anima-#{$name}-global > *,
-  *:hover > .anima-#{$name}-into,
-  *:focus > .anima-#{$name}-into,
-  .anima-#{$name}-onto:hover,
-  .anima-#{$name}-onto:focus,
-  .anima-#{$name}-toall:hover > *,
-  .anima-#{$name}-toall:focus > *,
-  .anima-#{$name}-toone > *:hover,
-  .anima-#{$name}-toone > *:focus,
-  .anima-#{$name}-radio1:checked ~ .anima-#{$name}-relay .anima-#{$name}-target1,
-  .anima-#{$name}-radio2:checked ~ .anima-#{$name}-relay .anima-#{$name}-target2,
-  .anima-#{$name}-radio3:checked ~ .anima-#{$name}-relay .anima-#{$name}-target3,
-  .anima-#{$name}-radio4:checked ~ .anima-#{$name}-relay .anima-#{$name}-target4,
-  .anima-#{$name}-radio5:checked ~ .anima-#{$name}-relay .anima-#{$name}-target5,
-  .anima-#{$name}-check:checked ~ .anima-#{$name}-hub .anima-#{$name}-goal {
-    animation-duration: var(--anima-duration-#{$name});
-  }
+  @include states('.anima-#{$name}', 'animation-duration', 'var(--anima-duration-#{$name}');
 }
 
 /* Animation Timing Functions */
 @each $name, $value in $animation-timing-functions {
-  .anima-#{$name},
-  .anima-#{$name}-global > *,
-  *:hover > .anima-#{$name}-into,
-  *:focus > .anima-#{$name}-into,
-  .anima-#{$name}-onto:hover,
-  .anima-#{$name}-onto:focus,
-  .anima-#{$name}-toall:hover > *,
-  .anima-#{$name}-toall:focus > *,
-  .anima-#{$name}-toone > *:hover,
-  .anima-#{$name}-toone > *:focus,
-  .anima-#{$name}-radio1:checked ~ .anima-#{$name}-relay .anima-#{$name}-target1,
-  .anima-#{$name}-radio2:checked ~ .anima-#{$name}-relay .anima-#{$name}-target2,
-  .anima-#{$name}-radio3:checked ~ .anima-#{$name}-relay .anima-#{$name}-target3,
-  .anima-#{$name}-radio4:checked ~ .anima-#{$name}-relay .anima-#{$name}-target4,
-  .anima-#{$name}-radio5:checked ~ .anima-#{$name}-relay .anima-#{$name}-target5,
-  .anima-#{$name}-check:checked ~ .anima-#{$name}-hub .anima-#{$name}-goal {
-    animation-timing-function: var(--anima-function-#{$name});
-  }
+  @include states('.anima-#{$name}', 'animation-timing-function', 'var(--anima-function-#{$name})');
 }
 
 /* Animation Iteration Counts */
 @each $name, $value in $animation-iteration-counts {
-  .anima-#{$name},
-  .anima-#{$name}-global > *,
-  *:hover > .anima-#{$name}-into,
-  *:focus > .anima-#{$name}-into,
-  .anima-#{$name}-onto:hover,
-  .anima-#{$name}-onto:focus,
-  .anima-#{$name}-toall:hover > *,
-  .anima-#{$name}-toall:focus > *,
-  .anima-#{$name}-toone > *:hover,
-  .anima-#{$name}-toone > *:focus,
-  .anima-#{$name}-radio1:checked ~ .anima-#{$name}-relay .anima-#{$name}-target1,
-  .anima-#{$name}-radio2:checked ~ .anima-#{$name}-relay .anima-#{$name}-target2,
-  .anima-#{$name}-radio3:checked ~ .anima-#{$name}-relay .anima-#{$name}-target3,
-  .anima-#{$name}-radio4:checked ~ .anima-#{$name}-relay .anima-#{$name}-target4,
-  .anima-#{$name}-radio5:checked ~ .anima-#{$name}-relay .anima-#{$name}-target5,
-  .anima-#{$name}-check:checked ~ .anima-#{$name}-hub .anima-#{$name}-goal {
-    animation-iteration-count: var(--anima-count-#{$name});
-  }
+  @include states('.anima-#{$name}', 'animation-iteration-count', 'var(--anima-count-#{$name})');
 }
 
 /* Animation Directions */
 @each $name, $value in $animation-directions {
-  .anima-#{$name},
-  .anima-#{$name}-global > *,
-  *:hover > .anima-#{$name}-into,
-  *:focus > .anima-#{$name}-into,
-  .anima-#{$name}-onto:hover,
-  .anima-#{$name}-onto:focus,
-  .anima-#{$name}-toall:hover > *,
-  .anima-#{$name}-toall:focus > *,
-  .anima-#{$name}-toone > *:hover,
-  .anima-#{$name}-toone > *:focus,
-  .anima-#{$name}-radio1:checked ~ .anima-#{$name}-relay .anima-#{$name}-target1,
-  .anima-#{$name}-radio2:checked ~ .anima-#{$name}-relay .anima-#{$name}-target2,
-  .anima-#{$name}-radio3:checked ~ .anima-#{$name}-relay .anima-#{$name}-target3,
-  .anima-#{$name}-radio4:checked ~ .anima-#{$name}-relay .anima-#{$name}-target4,
-  .anima-#{$name}-radio5:checked ~ .anima-#{$name}-relay .anima-#{$name}-target5,
-  .anima-#{$name}-check:checked ~ .anima-#{$name}-hub .anima-#{$name}-goal {
-    animation-direction: #{$value};
-  }
+  @include states('.anima-#{$name}', 'animation-direction', '#{$value}');
 }
 
 /* Animation Delays */
 @each $name, $value in $animation-delays {
-  .anima-#{$name},
-  .anima-#{$name}-global > *,
-  *:hover > .anima-#{$name}-into,
-  *:focus > .anima-#{$name}-into,
-  .anima-#{$name}-onto:hover,
-  .anima-#{$name}-onto:focus,
-  .anima-#{$name}-toall:hover > *,
-  .anima-#{$name}-toall:focus > *,
-  .anima-#{$name}-toone > *:hover,
-  .anima-#{$name}-toone > *:focus,
-  .anima-#{$name}-radio1:checked ~ .anima-#{$name}-relay .anima-#{$name}-target1,
-  .anima-#{$name}-radio2:checked ~ .anima-#{$name}-relay .anima-#{$name}-target2,
-  .anima-#{$name}-radio3:checked ~ .anima-#{$name}-relay .anima-#{$name}-target3,
-  .anima-#{$name}-radio4:checked ~ .anima-#{$name}-relay .anima-#{$name}-target4,
-  .anima-#{$name}-radio5:checked ~ .anima-#{$name}-relay .anima-#{$name}-target5,
-  .anima-#{$name}-check:checked ~ .anima-#{$name}-hub .anima-#{$name}-goal {
-    animation-delay: var(--anima-delay-#{$name});
-  }
+  @include states('.anima-#{$name}', 'animation-delay', 'var(--anima-delay-#{$name})');
 }
 
 /* Animation Fill Modes */
 @each $name, $value in $animation-fill-modes {
-  .anima-#{$name},
-  .anima-#{$name}-global > *,
-  *:hover > .anima-#{$name}-into,
-  *:focus > .anima-#{$name}-into,
-  .anima-#{$name}-onto:hover,
-  .anima-#{$name}-onto:focus,
-  .anima-#{$name}-toall:hover > *,
-  .anima-#{$name}-toall:focus > *,
-  .anima-#{$name}-toone > *:hover,
-  .anima-#{$name}-toone > *:focus,
-  .anima-#{$name}-radio1:checked ~ .anima-#{$name}-relay .anima-#{$name}-target1,
-  .anima-#{$name}-radio2:checked ~ .anima-#{$name}-relay .anima-#{$name}-target2,
-  .anima-#{$name}-radio3:checked ~ .anima-#{$name}-relay .anima-#{$name}-target3,
-  .anima-#{$name}-radio4:checked ~ .anima-#{$name}-relay .anima-#{$name}-target4,
-  .anima-#{$name}-radio5:checked ~ .anima-#{$name}-relay .anima-#{$name}-target5,
-  .anima-#{$name}-check:checked ~ .anima-#{$name}-hub .anima-#{$name}-goal {
-    animation-fill-mode: #{$value};
-  }
+  @include states('.anima-#{$name}', 'animation-fill-mode', '#{$value}');
 }
 
 /* Transform Origins */
 @each $name, $value in $transform-origins {
-  .anima-#{$name},
-  .anima-#{$name}-global > *,
-  *:hover > .anima-#{$name}-into,
-  *:focus > .anima-#{$name}-into,
-  .anima-#{$name}-onto:hover,
-  .anima-#{$name}-onto:focus,
-  .anima-#{$name}-toall:hover > *,
-  .anima-#{$name}-toall:focus > *,
-  .anima-#{$name}-toone > *:hover,
-  .anima-#{$name}-toone > *:focus,
-  .anima-#{$name}-radio1:checked ~ .anima-#{$name}-relay .anima-#{$name}-target1,
-  .anima-#{$name}-radio2:checked ~ .anima-#{$name}-relay .anima-#{$name}-target2,
-  .anima-#{$name}-radio3:checked ~ .anima-#{$name}-relay .anima-#{$name}-target3,
-  .anima-#{$name}-radio4:checked ~ .anima-#{$name}-relay .anima-#{$name}-target4,
-  .anima-#{$name}-radio5:checked ~ .anima-#{$name}-relay .anima-#{$name}-target5,
-  .anima-#{$name}-check:checked ~ .anima-#{$name}-hub .anima-#{$name}-goal {
-    transform-origin: var(--transform-origin-#{$name});
-  }
+  @include states('.anima-#{$name}', 'transform-origin', 'var(--transform-origin-#{$name})');
 }
