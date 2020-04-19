@@ -7,94 +7,94 @@
   background-color: var(--container-background-color);
 }
 
-@each $container-name, $container-value in $containers {
-  [class^="container-"][class*="-#{$container-name}xs"],
-  [class*=" container-"][class*="-#{$container-name}xs"] {
-    max-width: #{$container-value};
+@each $key, $value in $containers {
+  [class^="container-"][class*="-#{$key}xs"],
+  [class*=" container-"][class*="-#{$key}xs"] {
+    max-width: #{$value};
   }
 }
 
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
   @media (min-width: $breakpoint-value) {
-    @each $container-name, $container-value in $containers {
-      [class^="container-"][class*="-#{$container-name}#{$breakpoint-name}"],
-      [class*=" container-"][class*="-#{$container-name}#{$breakpoint-name}"] {
-        max-width: #{$container-value};
+    @each $key, $value in $containers {
+      [class^="container-"][class*="-#{$key}#{$breakpoint-key}"],
+      [class*=" container-"][class*="-#{$key}#{$breakpoint-key}"] {
+        max-width: #{$value};
       }
     }
   }
 }
 
 /* Classes : Box : Margin */
-@each $margin-name, $margin-value in $margin-nones {
-  .mar-#{$margin-name},
-  .mar-#{$margin-name}-global > * {
-    margin#{$margin-value}: var(--margin-none);
+@each $key, $value in $margin-nones {
+  .mar-#{$key},
+  .mar-#{$key}-global > * {
+    margin#{$value}: var(--margin-none);
   }
 }
 
-@each $margin-name, $margin-value in $margin-sizes {
-  .mar-#{$margin-name},
-  .mar-#{$margin-name}-global > * {
-    margin#{$margin-value}: var(--margin-#{$margin-name});
+@each $key, $value in $margin-sizes {
+  .mar-#{$key},
+  .mar-#{$key}-global > * {
+    margin#{$value}: var(--margin-#{$key});
   }
 }
 
 /* Classes : Box : Padding */
-@each $padding-name, $padding-value in $padding-nones {
-  .pad-#{$padding-name},
-  .pad-#{$padding-name}-global > * {
-    padding#{$padding-value}: var(--padding-none);
+@each $key, $value in $padding-nones {
+  .pad-#{$key},
+  .pad-#{$key}-global > * {
+    padding#{$value}: var(--padding-none);
   }
 }
 
-@each $padding-name, $padding-value in $padding-sizes {
-  .pad-#{$padding-name},
-  .pad-#{$padding-name}-global > * {
-    padding#{$padding-value}: var(--padding-#{$padding-name});
+@each $key, $value in $padding-sizes {
+  .pad-#{$key},
+  .pad-#{$key}-global > * {
+    padding#{$value}: var(--padding-#{$key});
   }
 }
 
 /* Classes : Box : Height */
-@each $height-name, $height-value in $heights {
-  .height-#{$height-name},
-  .height-#{$height-name}-global > * {
-    height: var(--height-#{$height-name});
+@each $key, $value in $heights {
+  .height-#{$key},
+  .height-#{$key}-global > * {
+    height: var(--height-#{$key});
   }
 }
 
-@each $max-height-name, $max-height-value in $max-heights {
-  .max-h-#{$max-height-name},
-  .max-h-#{$max-height-name}-global > * {
-    max-height: var(--max-height-#{$max-height-name});
+@each $key, $value in $max-heights {
+  .max-h-#{$key},
+  .max-h-#{$key}-global > * {
+    max-height: var(--max-height-#{$key});
   }
 }
 
-@each $min-height-name, $min-height-value in $min-heights {
-  .min-h-#{$min-height-name},
-  .min-h-#{$min-height-name}-global > * {
-    min-height: var(--min-height-#{$min-height-name});
+@each $key, $value in $min-heights {
+  .min-h-#{$key},
+  .min-h-#{$key}-global > * {
+    min-height: var(--min-height-#{$key});
   }
 }
 
 /* Classes : Box : Width */
-@each $width-name, $width-value in $widths {
-  .width-#{$width-name},
-  .width-#{$width-name}-global > * {
-    width: var(--width-#{$width-name});
+@each $key, $value in $widths {
+  .width-#{$key},
+  .width-#{$key}-global > * {
+    width: var(--width-#{$key});
   }
 }
 
-@each $max-width-name, $max-width-value in $max-widths {
-  .max-w-#{$max-width-name},
-  .max-w-#{$max-width-name}-global > * {
-    max-width: var(--max-width-#{$max-width-name});
+@each $key, $value in $max-widths {
+  .max-w-#{$key},
+  .max-w-#{$key}-global > * {
+    max-width: var(--max-width-#{$key});
   }
 }
 
-@each $min-width-name, $min-width-value in $min-widths {
-  .min-w-#{$min-width-name},
-  .min-w-#{$min-width-name}-global > * {
-    min-width: var(--min-width-#{$min-width-name});
+@each $key, $value in $min-widths {
+  .min-w-#{$key},
+  .min-w-#{$key}-global > * {
+    min-width: var(--min-width-#{$key});
   }
 }
