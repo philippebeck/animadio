@@ -3,47 +3,13 @@
 @each $deco-name, $deco-value in $decos {
   /* Text Decoration #{$deco-name} */
   @each $name, $value in $deco-value {
-    .deco-#{$name},
-    .deco-#{$name}-global > *,
-    *:hover > .deco-#{$name}-into,
-    *:focus > .deco-#{$name}-into,
-    .deco-#{$name}-onto:hover,
-    .deco-#{$name}-onto:focus,
-    .deco-#{$name}-toall:hover > *,
-    .deco-#{$name}-toall:focus > *,
-    .deco-#{$name}-toone > *:hover,
-    .deco-#{$name}-toone > *:focus,
-    .deco-#{$name}-radio1:checked ~ .deco-#{$name}-relay .deco-#{$name}-target1,
-    .deco-#{$name}-radio2:checked ~ .deco-#{$name}-relay .deco-#{$name}-target2,
-    .deco-#{$name}-radio3:checked ~ .deco-#{$name}-relay .deco-#{$name}-target3,
-    .deco-#{$name}-radio4:checked ~ .deco-#{$name}-relay .deco-#{$name}-target4,
-    .deco-#{$name}-radio5:checked ~ .deco-#{$name}-relay .deco-#{$name}-target5,
-    .deco-#{$name}-check:checked ~ .deco-#{$name}-hub .deco-#{$name}-goal {
-      text-decoration-#{$deco-name}: #{$value};
-    }
+    @include states('.deco-#{$name}', 'text-decoration-#{$deco-name}', '#{$value}');
   }
 }
 
 /* Text Decoration Colors */
 @each $color in $main-colors {
   @each $name, $value in $color {
-    .deco-#{$name},
-    .deco-#{$name}-global > *,
-    *:hover > .deco-#{$name}-into,
-    *:focus > .deco-#{$name}-into,
-    .deco-#{$name}-onto:hover,
-    .deco-#{$name}-onto:focus,
-    .deco-#{$name}-toall:hover > *,
-    .deco-#{$name}-toall:focus > *,
-    .deco-#{$name}-toone > *:hover,
-    .deco-#{$name}-toone > *:focus,
-    .deco-#{$name}-radio1:checked ~ .deco-#{$name}-relay .deco-#{$name}-target1,
-    .deco-#{$name}-radio2:checked ~ .deco-#{$name}-relay .deco-#{$name}-target2,
-    .deco-#{$name}-radio3:checked ~ .deco-#{$name}-relay .deco-#{$name}-target3,
-    .deco-#{$name}-radio4:checked ~ .deco-#{$name}-relay .deco-#{$name}-target4,
-    .deco-#{$name}-radio5:checked ~ .deco-#{$name}-relay .deco-#{$name}-target5,
-    .deco-#{$name}-check:checked ~ .deco-#{$name}-hub .deco-#{$name}-goal {
-      text-decoration-color: var(--#{$name});
-    }
+    @include states('.deco-#{$name}', 'text-decoration-color', 'var(--#{$name})');
   }
 }
