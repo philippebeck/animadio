@@ -16,7 +16,7 @@
 
 @mixin slider($min, $progress) {
   .slider {
-    --slider-min-height: $min;
-    --slider-progress-height: $progress;
+    --slider-min-height: #{$min};
+    --slider-progress-height: #{$progress};
   }
 }
