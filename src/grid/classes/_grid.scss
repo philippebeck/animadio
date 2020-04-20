@@ -40,19 +40,19 @@
   }
 }
 
-@each $size in $gap-sizes {
-  [class^="gap-"][class*="-#{$size}-xs"],
-  [class*=" gap-"][class*="-#{$size}-xs"] {
-    grid-gap: var(--gap-#{$size}-xs);
+@for $i from 1 to 4 {
+  [class^="gap-"][class*="-#{$i}xs"],
+  [class*=" gap-"][class*="-#{$i}xs"] {
+    grid-gap: var(--gap-#{$i}xs);
   }
 }
 
 @each $key, $value in $breakpoints {
   @media (min-width: $value) {
-    @each $size in $gap-sizes {
-      [class^="gap-"][class*="-#{$size}-#{$key}"],
-      [class*=" gap-"][class*="-#{$size}-#{$key}"] {
-        grid-gap: var(--gap-#{$size}-#{$key});
+    @for $i from 1 to 4 {
+      [class^="gap-"][class*="-#{$i}#{$key}"],
+      [class*=" gap-"][class*="-#{$i}#{$key}"] {
+        grid-gap: var(--gap-#{$i}#{$key});
       }
     }
   }
