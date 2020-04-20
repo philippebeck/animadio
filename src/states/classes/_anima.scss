@@ -1,7 +1,7 @@
 /***** States : Classes : Anima *****/
 
 /* Basic Animation */
-@include states('[class*="anima-"]', 'animation-duration', 'var(--animation-duration)');
+@include states-concat('[class*="anima-"]', 'animation-duration', 'var(--animation-duration)');
 
 /* Animation Names */
 @each $key, $value in $animation-names {
