@@ -2,6 +2,27 @@
 
 @mixin states($class, $property, $value) {
   #{$class},
+  #{$class}-global > *,
+  #{$class}-onto:hover,
+  #{$class}-onto:focus,
+  *:hover > #{$class}-into,
+  *:focus > #{$class}-into,
+  #{$class}-toall:hover > *,
+  #{$class}-toall:focus > *,
+  #{$class}-toone > *:hover,
+  #{$class}-toone > *:focus,
+  #{$class}-radio1:checked ~ #{$class}-relay #{$class}-target1,
+  #{$class}-radio2:checked ~ #{$class}-relay #{$class}-target2,
+  #{$class}-radio3:checked ~ #{$class}-relay #{$class}-target3,
+  #{$class}-radio4:checked ~ #{$class}-relay #{$class}-target4,
+  #{$class}-radio5:checked ~ #{$class}-relay #{$class}-target5,
+  #{$class}-check:checked ~ #{$class}-hub #{$class}-goal {
+    #{$property}: #{$value};
+  }
+}
+
+@mixin states-concat($class, $property, $value) {
+  #{$class},
   #{$class}[class*="-global"] > *,
   #{$class}[class*="-onto"]:hover,
   #{$class}[class*="-onto"]:focus,
