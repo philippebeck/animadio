@@ -50,7 +50,7 @@
 }
 
 @for $i from 2 to 13 {
-  [class^=" flex-"][class*="-#{$i}xs"],
+  [class^="flex-"][class*="-#{$i}xs"],
   [class*=" flex-"][class*="-#{$i}xs"] {
     margin: var(--flex-negative-margin-xs);
   }
