@@ -44,61 +44,56 @@
   }
 }
 
-[class*="menu-"] {
-  [class*="-relay"] {
-    & > * {
-      display: none;
-    }
-
-    & > h2,
-    & > h3,
-    & > h4,
-    & > h5,
-    & > h6 {
-      display: block;
-    }
+.menu-relay {
+  & > * {
+    display: none;
   }
 
-  [class*="-radio0"]:checked ~ .menu > [for*="menu-"][for*="-radio0"],
-  [class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"],
-  [class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"],
-  [class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"],
-  [class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"],
-  [class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"],
-  [class*="-radio6"]:checked ~ .menu > [for*="menu-"][for*="-radio6"],
-  [class*="-radio7"]:checked ~ .menu > [for*="menu-"][for*="-radio7"],
-  [class*="-radio8"]:checked ~ .menu > [for*="menu-"][for*="-radio8"],
-  [class*="-radio9"]:checked ~ .menu > [for*="menu-"][for*="-radio9"] {
-    background-color: var(--menu-checked-label-background-color);
-    color: var(--menu-checked-label-color);
-    font-weight: var(--menu-checked-label-font-weight);
-  }
-
-  [class*="-radio0"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target0"],
-  [class*="-radio1"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target1"],
-  [class*="-radio2"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target2"],
-  [class*="-radio3"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target3"],
-  [class*="-radio4"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target4"],
-  [class*="-radio5"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target5"],
-  [class*="-radio6"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target6"],
-  [class*="-radio7"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target7"],
-  [class*="-radio8"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target8"],
-  [class*="-radio9"]:checked ~ [class*="menu-"][class*="-relay"] > [class*="menu-"][class*="-target9"] {
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
     display: block;
-  }
+  } 
+}
+
+.menu-radio1:checked ~ .menu > [for*="menu-"][for*="-radio1"],
+.menu-radio2:checked ~ .menu > [for*="menu-"][for*="-radio2"],
+.menu-radio3:checked ~ .menu > [for*="menu-"][for*="-radio3"],
+.menu-radio4:checked ~ .menu > [for*="menu-"][for*="-radio4"],
+.menu-radio5:checked ~ .menu > [for*="menu-"][for*="-radio5"],
+.menu-radio6:checked ~ .menu > [for*="menu-"][for*="-radio6"],
+.menu-radio7:checked ~ .menu > [for*="menu-"][for*="-radio7"],
+.menu-radio8:checked ~ .menu > [for*="menu-"][for*="-radio8"],
+.menu-radio9:checked ~ .menu > [for*="menu-"][for*="-radio9"] {
+  background-color: var(--menu-checked-label-background-color);
+  color: var(--menu-checked-label-color);
+  font-weight: var(--menu-checked-label-font-weight);
+}
+
+.menu-radio1:checked ~ .menu-relay > .menu-target1,
+.menu-radio2:checked ~ .menu-relay > .menu-target2,
+.menu-radio3:checked ~ .menu-relay > .menu-target3,
+.menu-radio4:checked ~ .menu-relay > .menu-target4,
+.menu-radio5:checked ~ .menu-relay > .menu-target5,
+.menu-radio6:checked ~ .menu-relay > .menu-target6,
+.menu-radio7:checked ~ .menu-relay > .menu-target7,
+.menu-radio8:checked ~ .menu-relay > .menu-target8,
+.menu-radio9:checked ~ .menu-relay > .menu-target9 {
+  display: block;
 }
 
 @media (min-width: 576px) {
-  [class*="menu-"][class*="-radio0"]:checked ~ .menu > [for*="menu-"][for*="-radio0"] > [class*="fa-"],
-  [class*="menu-"][class*="-radio1"]:checked ~ .menu > [for*="menu-"][for*="-radio1"] > [class*="fa-"],
-  [class*="menu-"][class*="-radio2"]:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"],
-  [class*="menu-"][class*="-radio3"]:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"],
-  [class*="menu-"][class*="-radio4"]:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"],
-  [class*="menu-"][class*="-radio5"]:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"],
-  [class*="menu-"][class*="-radio6"]:checked ~ .menu > [for*="menu-"][for*="-radio6"] > [class*="fa-"],
-  [class*="menu-"][class*="-radio7"]:checked ~ .menu > [for*="menu-"][for*="-radio7"] > [class*="fa-"],
-  [class*="menu-"][class*="-radio8"]:checked ~ .menu > [for*="menu-"][for*="-radio8"] > [class*="fa-"],
-  [class*="menu-"][class*="-radio9"]:checked ~ .menu > [for*="menu-"][for*="-radio9"] > [class*="fa-"] {
+  .menu-radio1:checked ~ .menu > [for*="menu-"][for*="-radio1"] > [class*="fa-"],
+  .menu-radio2:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"],
+  .menu-radio3:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"],
+  .menu-radio4:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"],
+  .menu-radio5:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"],
+  .menu-radio6:checked ~ .menu > [for*="menu-"][for*="-radio6"] > [class*="fa-"],
+  .menu-radio7:checked ~ .menu > [for*="menu-"][for*="-radio7"] > [class*="fa-"],
+  .menu-radio8:checked ~ .menu > [for*="menu-"][for*="-radio8"] > [class*="fa-"],
+  .menu-radio9:checked ~ .menu > [for*="menu-"][for*="-radio9"] > [class*="fa-"] {
     display: block;
   }
 }
