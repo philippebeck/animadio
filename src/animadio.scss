@@ -2,21 +2,19 @@
 /********** GLOBAL **********/
 /****************************/
 
+@import 'global/mixins/global';
+
 @import 'global/variables/breakpoints.var';
 @import 'global/variables/keyframes.var';
 @import 'global/variables/colors.var';
 @import 'global/variables/init.var';
 @import 'global/variables/box.var';
 
-@import 'global/keyframes/content.key';
-@import 'global/keyframes/rotate.key';
-@import 'global/keyframes/scale.key';
-@import 'global/keyframes/skew.key';
-@import 'global/keyframes/translate.key';
-@import 'global/keyframes/width.key';
+@import 'global/rules/keyframes';
 
-@import 'global/init';
+@import 'global/tags/init';
 
+@import 'global/classes/base';
 @import 'global/classes/box';
 @import 'global/classes/helpers';
 
@@ -36,7 +34,7 @@
 /********** ELEMENTS **********/
 /******************************/
 
-@import "elements/mixins/elements.mix";
+@import "elements/mixins/elements";
 
 @import 'elements/variables/btn.var';
 @import 'elements/variables/card.var';
@@ -62,7 +60,7 @@
 /********** STATES **********/
 /****************************/
 
-@import 'states/mixins/states.mix';
+@import 'states/mixins/states';
 
 @import 'states/variables/anima.var';
 @import 'states/variables/bord.var';
