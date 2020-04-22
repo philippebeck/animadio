@@ -1,30 +1,200 @@
 /***** Global : Variables : Keyframes *****/
 
+// ***** Rotate *****
+// RotateX
+$quarterX:    rotateX(90deg)    !default;
+$halfX:       rotateX(180deg)   !default;
+$fullX:       rotateX(360deg)   !default;
+// RotateY
+$quarterY:    rotateY(90deg)    !default;
+$halfY:       rotateY(180deg)   !default;
+$fullY:       rotateY(360deg)   !default;
+// Rotate
+$quarter:   rotate(90deg)     !default;
+$half:      rotate(180deg)    !default;
+$full:      rotate(360deg)    !default;
+// Rotate3d
+$quarterX3d:    rotate3d(0, 1, 1, 90deg)    !default;
+$halfX3d:       rotate3d(0, 1, 1, 180deg)   !default;
+$quarterY3d:    rotate3d(1, 0, 1, 90deg)    !default;
+$halfY3d:       rotate3d(1, 0, 1, 180deg)   !default;
+$quarterZ3d:    rotate3d(1, 1, 0, 90deg)    !default;
+$halfZ3d:       rotate3d(1, 1, 0, 180deg)   !default;
+$quarter3d:     rotate3d(1, 1, 1, 90deg)    !default;
+$half3d:        rotate3d(1, 1, 1, 180deg)   !default;
+
+// ***** Scale *****
+// ScaleX
+$flipY:     scaleX(-1)    !default;
+$growX:     scaleX(0)     !default;
+$shrinkX:   scaleX(3)     !default;
+// ScaleY
+$flipX:     scaleY(-1)    !default;
+$growY:     scaleY(0)     !default;
+$shrinkY:   scaleY(3)     !default;
+// Scale
+$bounceL:     scale(-3)       !default;
+$bounceM:     scale(-2)       !default;
+$bounceS:     scale(-1)       !default;
+$flipperYL:   scale(-3, 0)    !default;
+$flipperYM:   scale(-2, 0)    !default;
+$flipperYS:   scale(-1, 0)    !default;
+$fallYL:      scale(-4, 4)    !default;
+$fallYM:      scale(-3, 3)    !default;
+$fallYS:      scale(-2, 2)    !default;
+$flipperXL:   scale(0, -3)    !default;
+$flipperXM:   scale(0, -2)    !default;
+$flipperXS:   scale(0, -1)    !default;
+$grow:        scale(0)        !default;
+$openYS:      scale(0, 2)     !default;
+$openYM:      scale(0, 3)     !default;
+$openYL:      scale(0, 4)     !default;
+$fallXS:      scale(2, -2)    !default;
+$fallXM:      scale(3, -3)    !default;
+$fallXL:      scale(4, -4)    !default;
+$openXS:      scale(2, 0)     !default;
+$openXM:      scale(3, 0)     !default;
+$openXL:      scale(4, 0)     !default;
+$shrinkS:     scale(2)        !default;
+$shrinkM:     scale(3)        !default;
+$shrinkL:     scale(4)        !default;
+
+// ***** Skew *****
+// SkewX
+$twistR:      skewX(90deg)      !default;
+$twistL:      skewX(-90deg)     !default;
+$torsionR:    skewX(180deg)     !default;
+$torsionL:    skewX(-180deg)    !default;
+// SkewY
+$twistT:      skewY(-90deg)     !default;
+$twistB:      skewY(90deg)      !default;
+$torsionT:    skewY(-180deg)    !default;
+$torsionB:    skewY(180deg)     !default;
+// Skew
+$twisterR:    skew(90deg, -90deg)       !default;
+$twisterL:    skew(-90deg, 90deg)       !default;
+$twisterT:    skew(-90deg, -90deg)      !default;
+$twisterB:    skew(90deg, 90deg)        !default;
+$cycloneR:    skew(180deg, -180deg)     !default;
+$cycloneL:    skew(-180deg, 180deg)     !default;
+$cycloneT:    skew(-180deg, -180deg)    !default;
+$cycloneB:    skew(180deg, 180deg)      !default;
+
+// ***** Translate *****
+// TranslateX
+$slipR:     translateX(-10vw)    !default;
+$slipL:     translateX(10vw)     !default;
+$slideR:    translateX(-100vw)   !default;
+$slideL:    translateX(100vw)    !default;
+// TranslateY
+$slipT:     translateY(5vh)      !default;
+$slipB:     translateY(-5vh)     !default;
+$slideT:    translateY(50vh)     !default;
+$slideB:    translateY(-50vh)    !default;
+// Translate
+$slipTR:    translate(-10vw, 5vh)       !default;
+$slipBR:    translate(-10vw, -5vh)      !default;
+$slipTL:    translate(10vw, 5vh)        !default;
+$slipBL:    translate(10vw, -5vh)       !default;
+$slideTR:   translate(-100vw, 50vh)     !default;
+$slideBR:   translate(-100vw, -50vh)    !default;
+$slideTL:   translate(100vw, 50vh)      !default;
+$slideBL:   translate(100vw, -50vh)     !default;
+
+$transforms: (
+  // Rotate
+  'quarterX':     $quarterX,
+  'halfX':        $halfX,
+  'fullX':        $fullX,
+  'quarterY':     $quarterY,
+  'halfY':        $halfY,
+  'fullY':        $fullY,
+  'quarter':      $quarter,
+  'half':         $half,
+  'full':         $full,
+  'quarterX3d':   $quarterX3d,
+  'halfX3d':      $halfX3d,
+  'quarterY3d':   $quarterY3d,
+  'halfY3d':      $halfY3d,
+  'quarterZ3d':   $quarterZ3d,
+  'halfZ3d':      $halfZ3d,
+  'quarter3d':    $quarter3d,
+  'half3d':       $half3d,
+  // Scale
+  'flipY':        $flipY,
+  'growX':        $growX,
+  'shrinkX':      $shrinkX,
+  'flipX':        $flipX,
+  'growY':        $growY,
+  'shrinkY':      $shrinkY,
+  'bounceL':      $bounceL,
+  'bounceM':      $bounceM,
+  'bounceS':      $bounceS,
+  'flipperYL':    $flipperYL,
+  'flipperYM':    $flipperYM,
+  'flipperYS':    $flipperYS,
+  'fallYL':       $fallYL,
+  'fallYM':       $fallYM,
+  'fallYS':       $fallYS,
+  'flipperXL':    $flipperXL,
+  'flipperXM':    $flipperXM,
+  'flipperXS':    $flipperXS,
+  'grow':         $grow,
+  'openYS':       $openYS,
+  'openYM':       $openYM,
+  'openYL':       $openYL,
+  'fallXS':       $fallXS,
+  'fallXM':       $fallXM,
+  'fallXL':       $fallXL,
+  'openXS':       $openXS,
+  'openXM':       $openXM,
+  'openXL':       $openXL,
+  'shrinkL':      $shrinkL,
+  'shrinkM':      $shrinkM,
+  'shrinkS':      $shrinkS,
+  // Skew
+  'twistR':     $twistR,
+  'twistL':     $twistL,
+  'torsionR':   $torsionR,
+  'torsionL':   $torsionL,
+  'twistT':     $twistT,
+  'twistB':     $twistB,
+  'torsionT':   $torsionT,
+  'torsionB':   $torsionB,
+  'twisterR':   $twisterR,
+  'twisterL':   $twisterL,
+  'twisterT':   $twisterT,
+  'twisterB':   $twisterB,
+  'cycloneR':   $cycloneR,
+  'cycloneL':   $cycloneL,
+  'cycloneT':   $cycloneT,
+  'cycloneB':   $cycloneB,
+  // Translate
+  'slipR':      $slipR,
+  'slipL':      $slipL,
+  'slideR':     $slideR,
+  'slideL':     $slideL,
+  'slipT':      $slipT,
+  'slipB':      $slipB,
+  'slideT':     $slideT,
+  'slideB':     $slideB,
+  'slipTR':     $slipTR,
+  'slipBR':     $slipBR,
+  'slipTL':     $slipTL,
+  'slipBL':     $slipBL,
+  'slideTR':    $slideTR,
+  'slideBR':    $slideBR,
+  'slideTL':    $slideTL,
+  'slideBL':    $slideBL
+) !default;
+
+$opacity:   0         !default;
+$origin:    center    !default;
+
 :root {
-  --keyframes-content1: url(https://animadio.org/img/svg/1.svg);
-  --keyframes-content2: url(https://animadio.org/img/svg/2.svg);
-  --keyframes-content3: url(https://animadio.org/img/svg/3.svg);
-  --keyframes-content4: url(https://animadio.org/img/svg/4.svg);
-  --keyframes-content5: url(https://animadio.org/img/svg/5.svg);
-  --keyframes-rotate: 360deg;
-  --keyframes-rotate3d: 1, 1, 1, 360deg;
-  --keyframes-rotateX: -360deg;
-  --keyframes-rotateY: -360deg;
-  --keyframes-rotateZ: -360deg;
-  --keyframes-scale: 0;
-  --keyframes-scale3d: 2, 2, 1;
-  --keyframes-scaleX: 0;
-  --keyframes-scaleY: 0;
-  --keyframes-scaleZ: -1;
-  --keyframes-skew: 180deg, 180deg;
-  --keyframes-skewX: 180deg;
-  --keyframes-skewY: 180deg;
-  --keyframes-translate: -50vw, -50vh;
-  --keyframes-translate3d: 50vw, 50vh, 0;
-  --keyframes-translateX: -50vw;
-  --keyframes-translateY: -50vh;
-  --keyframes-translateY-opac: 68px;
-  --keyframes-translateY-xs: 1vh;
-  --keyframes-translateZ: 100px;
-  --keyframes-width: 100%;
+  @each $key, $value in $transforms {
+    --opacity-#{$key}: #{$opacity};
+    --transform-#{$key}: #{$value};
+    --origin-#{$key}: #{$origin};
+  }
 }
