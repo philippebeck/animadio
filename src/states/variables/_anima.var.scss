@@ -67,6 +67,11 @@ $animation-fill-modes: (
   'front':    forwards
 ) !default;
 
+$animations-other-options : (
+  'direction':    $animation-directions,
+  'fill-mode':    $animation-fill-modes
+) !default;
+
 $transform-origin-near:   50px 50px         !default;
 $transform-origin-far:    top right 50px    !default;
 

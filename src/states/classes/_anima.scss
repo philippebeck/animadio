@@ -15,12 +15,11 @@
   }
 }
 
-@each $key, $value in $animation-directions {
-  @include states('.anima-#{$key}', 'animation-direction', '#{$value}');
-}
-
-@each $key, $value in $animation-fill-modes {
-  @include states('.anima-#{$key}', 'animation-fill-mode', '#{$value}');
+/* Animation Other Options */
+@each $type, $option in $animations-other-options {
+  @each $key, $value in $option {
+    @include states('.anima-#{$key}', 'animation-#{$type}', '#{$value}');
+  }
 }
 
 /* Transform Origins */
