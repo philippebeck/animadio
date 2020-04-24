@@ -1,26 +1,5 @@
 /***** States : Variables : Anima *****/
 
-$animation-names: (
-  'rota':     rotate,
-  'rota3d':   rotate3d,
-  'rotax':    rotateX,
-  'rotay':    rotateY,
-  'rotaz':    rotateZ,
-  'scal':     scale,
-  'scal3d':   scale3d,
-  'scalx':    scaleX,
-  'scaly':    scaleY,
-  'scalz':    scaleZ,
-  'skew':     skew,
-  'skewx':    skewX,
-  'skewy':    skewY,
-  'tran':     translate,
-  'tran3d':   translate3d,
-  'tranx':    translateX,
-  'trany':    translateY,
-  'tranz':    translateZ
-) !default;
-
 $animation-duration-xs:   1s    !default;
 $animation-duration-sm:   2s    !default;
 $animation-duration-md:   5s    !default;
