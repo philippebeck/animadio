@@ -89,6 +89,13 @@ $transform-origins: (
   'far':    $transform-origin-far
 ) !default;
 
+$animation-options: (
+'duration':           $animation-durations,
+'timing-function':    $animation-timing-functions,
+'iteration-count':    $animation-iteration-counts,
+'delay':              $animation-delays
+) !default;
+
 [class*="anima-"] {
   --animation-duration: 2s;
 
