@@ -4,8 +4,8 @@
 @include states-concat('[class*="anima-"]', 'animation-duration', 'var(--animation-duration)');
 
 /* Animation Names */
-@each $key, $value in $animation-names {
-  @include states('.anima-#{$key}', 'animation-name', '#{$value}');
+@each $key, $value in $transforms {
+  @include states('.anima-#{$key}', 'animation-name', '#{$key}');
 }
 
 /* Animation Durations */
