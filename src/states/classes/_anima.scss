@@ -8,8 +8,8 @@
   @include states('.anima-#{$key}', 'animation-name', '#{$key}');
 }
 
-/* Animation Options */
-@each $type, $option in $animation-options {
+/* Animation Main Options */
+@each $type, $option in $animation-main-options {
   @each $key, $value in $option {
     @include states('.anima-#{$key}', 'animation-#{$type}', 'var(--anima-#{$type}-#{$key})');
   }
