@@ -67,17 +67,18 @@ $animation-fill-modes: (
   'front':    forwards
 ) !default;
 
-$animations-other-options : (
-  'direction':    $animation-directions,
-  'fill-mode':    $animation-fill-modes
+$transform-origins: (
+  'center':   center,
+  'top':      top,
+  'right':    right,
+  'bottom':   bottom,
+  'left':     left
 ) !default;
 
-$transform-origin-near:   50px 50px         !default;
-$transform-origin-far:    top right 50px    !default;
-
-$transform-origins: (
-  'near':   $transform-origin-near,
-  'far':    $transform-origin-far
+$animations-other-options : (
+  'animation-direction':    $animation-directions,
+  'animation-fill-mode':    $animation-fill-modes,
+  'transform-origin':       $transform-origins
 ) !default;
 
 [class*="anima-"] {
@@ -87,9 +88,5 @@ $transform-origins: (
     @each $key, $value in $option {
       --anima-#{$type}-#{$key}: #{$value};
     }
-  }
-
-  @each $key, $value in $transform-origins {
-    --transform-origin-#{$key}: #{$value};
   }
 }
