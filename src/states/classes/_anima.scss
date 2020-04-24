@@ -8,32 +8,17 @@
   @include states('.anima-#{$key}', 'animation-name', '#{$key}');
 }
 
-/* Animation Durations */
-@each $key, $value in $animation-durations {
-  @include states('.anima-#{$key}', 'animation-duration', 'var(--anima-duration-#{$key})');
+/* Animation Options */
+@each $type, $option in $animation-options {
+  @each $key, $value in $option {
+    @include states('.anima-#{$key}', 'animation-#{$type}', 'var(--anima-#{$type}-#{$key})');
+  }
 }
 
-/* Animation Timing Functions */
-@each $key, $value in $animation-timing-functions {
-  @include states('.anima-#{$key}', 'animation-timing-function', 'var(--anima-function-#{$key})');
-}
-
-/* Animation Iteration Counts */
-@each $key, $value in $animation-iteration-counts {
-  @include states('.anima-#{$key}', 'animation-iteration-count', 'var(--anima-count-#{$key})');
-}
-
-/* Animation Directions */
 @each $key, $value in $animation-directions {
   @include states('.anima-#{$key}', 'animation-direction', '#{$value}');
 }
 
-/* Animation Delays */
-@each $key, $value in $animation-delays {
-  @include states('.anima-#{$key}', 'animation-delay', 'var(--anima-delay-#{$key})');
-}
-
-/* Animation Fill Modes */
 @each $key, $value in $animation-fill-modes {
   @include states('.anima-#{$key}', 'animation-fill-mode', '#{$value}');
 }
