@@ -5,7 +5,7 @@
 
 /* Animations */
 @each $key, $value in $transforms {
-  @include states('.anima-#{$key}', 'animation-name', '#{$key}');
+  @include states('.anima-#{$key}', 'animation-name', #{$key});
 }
 
 /* Animation Main Options */
@@ -18,11 +18,6 @@
 /* Animation Other Options */
 @each $type, $option in $animations-other-options {
   @each $key, $value in $option {
-    @include states('.anima-#{$key}', 'animation-#{$type}', '#{$value}');
+    @include states('.anima-#{$key}', #{$type}, #{$value});
   }
-}
-
-/* Transform Origins */
-@each $key, $value in $transform-origins {
-  @include states('.anima-#{$key}', 'transform-origin', 'var(--transform-origin-#{$key})');
 }
