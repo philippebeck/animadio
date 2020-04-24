@@ -99,27 +99,12 @@ $animation-options: (
 [class*="anima-"] {
   --animation-duration: 2s;
 
-  /* Animation Durations */
-  @each $key, $value in $animation-durations {
-    --anima-duration-#{$key}: #{$value};
+  @each $type, $option in $animation-options {
+    @each $key, $value in $option {
+      --anima-#{$type}-#{$key}: #{$value};
+    }
   }
 
-  /* Animation Timing Functions */
-  @each $key, $value in $animation-timing-functions {
-    --anima-function-#{$key}: #{$value};
-  }
-
-  /* Animation Iteration Counts */
-  @each $key, $value in $animation-iteration-counts {
-    --anima-count-#{$key}: #{$value};
-  }
-
-  /* Animation Delays */
-  @each $key, $value in $animation-delays {
-    --anima-delay-#{$key}: #{$value};
-  }
-
-  /* Transform Origins */
   @each $key, $value in $transform-origins {
     --transform-origin-#{$key}: #{$value};
   }
