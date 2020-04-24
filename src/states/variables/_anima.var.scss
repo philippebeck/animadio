@@ -55,20 +55,24 @@ $animation-iteration-counts: (
   'many':   $animation-iteration-count-many
 ) !default;
 
+$animation-delay-xs:    1s    !default;
+$animation-delay-sm:    2s    !default;
+$animation-delay-md:    3s    !default;
+$animation-delay-lg:    4s    !default;
+$animation-delay-xl:    5s    !default;
+
+$animation-delays: (
+  'xs':   $animation-delay-xs,
+  'sm':   $animation-delay-sm,
+  'md':   $animation-delay-md,
+  'lg':   $animation-delay-lg,
+  'xl':   $animation-delay-xl
+) !default;
+
 $animation-directions: (
   'alter':    alternate,
   'rever':    reverse,
   'altrev':   alternate-reverse
-) !default;
-
-$animation-delay-small:     1s    !default;
-$animation-delay-medium:    2s    !default;
-$animation-delay-large:     3s    !default;
-
-$animation-delays: (
-  'small':    $animation-delay-small,
-  'medium':   $animation-delay-medium,
-  'large':    $animation-delay-large
 ) !default;
 
 $animation-fill-modes: (
