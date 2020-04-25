@@ -1,16 +1,18 @@
 /***** States : Variables : Bord *****/
 
+// Border Style
 $border-styles: (
   'dash':     dashed,
   'dot':      dotted,
+  'solid':    solid,
   'double':   double,
   'groove':   groove,
-  'inset':    inset,
-  'outset':   outset,
   'ridge':    ridge,
-  'solid':    solid
+  'in':       inset,
+  'out':      outset
 ) !default;
 
+// Border Width
 $border-width-sm:   thin      !default;
 $border-width-md:   medium    !default;
 $border-width-lg:   thick     !default;
@@ -21,28 +23,34 @@ $border-widths: (
   'lg':   $border-width-lg
 ) !default;
 
-$border-radius:           5px     !default;
-$border-radius-circle:    50%     !default;
-$border-radius-round:     10px    !default;
+// Border Radius
+$border-radius: 2px !default;
+
 $border-radius-square:    unset   !default;
+$border-radius-curve:     5px     !default;
+$border-radius-rounded:   10px    !default;
+$border-radius-circle:    50%     !default;
 
 $border-radiuses: (
-'circle':   $border-radius-circle,
-'round':    $border-radius-round,
-'square':   $border-radius-square
+  'square':     $border-radius-square,
+  'curve':      $border-radius-curve,
+  'rounded':    $border-radius-rounded,
+  'circle':     $border-radius-circle
 ) !default;
 
+// Borders
 $borders : (
   "width":    $border-widths,
   "radius":   $border-radiuses
 ) !default;
 
+// Border CSS Variables
 [class*="bord-"] {
   --border-radius: #{$border-radius};
-  --border-radius-circle: #{$border-radius-circle};
-  --border-radius-round: #{$border-radius-round};
-  --border-radius-square: #{$border-radius-square};
-  --border-width-lg: #{$border-width-lg};
-  --border-width-md: #{$border-width-md};
-  --border-width-sm: #{$border-width-sm};
+
+  @each $type, $border in $borders {
+    @each $key, $value in $border {
+      --border-#{$type}-#{$key}: #{$value};
+    }
+  }
 }
