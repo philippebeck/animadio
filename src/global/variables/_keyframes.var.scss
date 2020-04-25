@@ -16,12 +16,19 @@ $full:      rotate(360deg)    !default;
 // Rotate3d
 $quarterX3d:    rotate3d(0, 1, 1, 90deg)    !default;
 $halfX3d:       rotate3d(0, 1, 1, 180deg)   !default;
+$fullX3d:       rotate3d(0, 1, 1, 360deg)   !default;
+
 $quarterY3d:    rotate3d(1, 0, 1, 90deg)    !default;
 $halfY3d:       rotate3d(1, 0, 1, 180deg)   !default;
+$fullY3d:       rotate3d(1, 0, 1, 360deg)   !default;
+
 $quarterZ3d:    rotate3d(1, 1, 0, 90deg)    !default;
 $halfZ3d:       rotate3d(1, 1, 0, 180deg)   !default;
-$quarter3d:     rotate3d(1, 1, 1, 90deg)    !default;
-$half3d:        rotate3d(1, 1, 1, 180deg)   !default;
+$fullZ3d:       rotate3d(1, 1, 0, 360deg)   !default;
+
+$quarter3d:   rotate3d(1, 1, 1, 90deg)    !default;
+$half3d:      rotate3d(1, 1, 1, 180deg)   !default;
+$full3d:      rotate3d(1, 1, 1, 360deg)   !default;
 
 // ***** Scale *****
 // ScaleX
@@ -33,31 +40,39 @@ $flipX:     scaleY(-1)    !default;
 $growY:     scaleY(0)     !default;
 $shrinkY:   scaleY(3)     !default;
 // Scale
-$bounceL:     scale(-3)       !default;
-$bounceM:     scale(-2)       !default;
-$bounceS:     scale(-1)       !default;
+$bounceL:   scale(-3)   !default;
+$bounceM:   scale(-2)   !default;
+$bounceS:   scale(-1)   !default;
+
 $flipperYL:   scale(-3, 0)    !default;
 $flipperYM:   scale(-2, 0)    !default;
 $flipperYS:   scale(-1, 0)    !default;
-$fallYL:      scale(-4, 4)    !default;
-$fallYM:      scale(-3, 3)    !default;
-$fallYS:      scale(-2, 2)    !default;
+
+$fallYL:    scale(-4, 4)    !default;
+$fallYM:    scale(-3, 3)    !default;
+$fallYS:    scale(-2, 2)    !default;
+
 $flipperXL:   scale(0, -3)    !default;
 $flipperXM:   scale(0, -2)    !default;
 $flipperXS:   scale(0, -1)    !default;
-$grow:        scale(0)        !default;
-$openYS:      scale(0, 2)     !default;
-$openYM:      scale(0, 3)     !default;
-$openYL:      scale(0, 4)     !default;
-$fallXS:      scale(2, -2)    !default;
-$fallXM:      scale(3, -3)    !default;
-$fallXL:      scale(4, -4)    !default;
-$openXS:      scale(2, 0)     !default;
-$openXM:      scale(3, 0)     !default;
-$openXL:      scale(4, 0)     !default;
-$shrinkS:     scale(2)        !default;
-$shrinkM:     scale(3)        !default;
-$shrinkL:     scale(4)        !default;
+
+$grow:    scale(0)    !default;
+
+$openYS:    scale(0, 2)   !default;
+$openYM:    scale(0, 3)   !default;
+$openYL:    scale(0, 4)   !default;
+
+$fallXS:    scale(2, -2)    !default;
+$fallXM:    scale(3, -3)    !default;
+$fallXL:    scale(4, -4)    !default;
+
+$openXS:    scale(2, 0)   !default;
+$openXM:    scale(3, 0)   !default;
+$openXL:    scale(4, 0)   !default;
+
+$shrinkS:   scale(2)    !default;
+$shrinkM:   scale(3)    !default;
+$shrinkL:   scale(4)    !default;
 
 // ***** Skew *****
 // SkewX
@@ -71,10 +86,11 @@ $twistB:      skewY(90deg)      !default;
 $torsionT:    skewY(-180deg)    !default;
 $torsionB:    skewY(180deg)     !default;
 // Skew
-$twisterR:    skew(90deg, -90deg)       !default;
-$twisterL:    skew(-90deg, 90deg)       !default;
-$twisterT:    skew(-90deg, -90deg)      !default;
-$twisterB:    skew(90deg, 90deg)        !default;
+$twisterR:    skew(90deg, -90deg)     !default;
+$twisterL:    skew(-90deg, 90deg)     !default;
+$twisterT:    skew(-90deg, -90deg)    !default;
+$twisterB:    skew(90deg, 90deg)      !default;
+
 $cycloneR:    skew(180deg, -180deg)     !default;
 $cycloneL:    skew(-180deg, 180deg)     !default;
 $cycloneT:    skew(-180deg, -180deg)    !default;
@@ -82,24 +98,25 @@ $cycloneB:    skew(180deg, 180deg)      !default;
 
 // ***** Translate *****
 // TranslateX
-$slipR:     translateX(-10vw)    !default;
-$slipL:     translateX(10vw)     !default;
-$slideR:    translateX(-100vw)   !default;
-$slideL:    translateX(100vw)    !default;
+$slipR:     translateX(-5vw)    !default;
+$slipL:     translateX(5vw)     !default;
+$slideR:    translateX(-50vw)   !default;
+$slideL:    translateX(50vw)    !default;
 // TranslateY
-$slipT:     translateY(5vh)      !default;
-$slipB:     translateY(-5vh)     !default;
-$slideT:    translateY(50vh)     !default;
-$slideB:    translateY(-50vh)    !default;
+$slipT:     translateY(2vh)     !default;
+$slipB:     translateY(-2vh)    !default;
+$slideT:    translateY(20vh)    !default;
+$slideB:    translateY(-20vh)   !default;
 // Translate
-$slipTR:    translate(-10vw, 5vh)       !default;
-$slipBR:    translate(-10vw, -5vh)      !default;
-$slipTL:    translate(10vw, 5vh)        !default;
-$slipBL:    translate(10vw, -5vh)       !default;
-$slideTR:   translate(-100vw, 50vh)     !default;
-$slideBR:   translate(-100vw, -50vh)    !default;
-$slideTL:   translate(100vw, 50vh)      !default;
-$slideBL:   translate(100vw, -50vh)     !default;
+$slipTR:    translate(-5vw, 2vh)    !default;
+$slipBR:    translate(-5vw, -2vh)   !default;
+$slipTL:    translate(5vw, 2vh)     !default;
+$slipBL:    translate(5vw, -2vh)    !default;
+
+$slideTR:   translate(-50vw, 20vh)    !default;
+$slideBR:   translate(-50vw, -20vh)   !default;
+$slideTL:   translate(50vw, 20vh)     !default;
+$slideBL:   translate(50vw, -20vh)    !default;
 
 $transforms: (
   // Rotate
@@ -114,12 +131,16 @@ $transforms: (
   'full':         $full,
   'quarterX3d':   $quarterX3d,
   'halfX3d':      $halfX3d,
+  'fullX3d':      $fullX3d,
   'quarterY3d':   $quarterY3d,
   'halfY3d':      $halfY3d,
+  'fullY3d':      $fullY3d,
   'quarterZ3d':   $quarterZ3d,
   'halfZ3d':      $halfZ3d,
+  'fullZ3d':      $fullZ3d,
   'quarter3d':    $quarter3d,
   'half3d':       $half3d,
+  'full3d':       $full3d,
   // Scale
   'flipY':        $flipY,
   'growX':        $growX,
