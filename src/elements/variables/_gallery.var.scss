@@ -37,14 +37,14 @@
   --gallery-overflow: hidden;
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-tn) {
   @include gallery(10px, calc(100% / 2 - 20px));
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-md) {
   @include gallery(15px, calc(100% / 3 - 30px));
 }
 
-@media (min-width: $breakpoint-xl) {
+@media (min-width: $breakpoint-lg) {
   @include gallery(20px, calc(100% / 4 - 40px));
 }

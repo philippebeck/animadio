@@ -31,20 +31,20 @@
   --menu-width: 40%;
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-sm) {
   .menu {
     --menu-flex-direction: row;
     --menu-width: 100%;
   }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-md) {
   .menu {
     --menu-width: 90%;
   }
 }
 
-@media (min-width: $breakpoint-xl) {
+@media (min-width: $breakpoint-lg) {
   .menu {
     --menu-width: 80%;
   }

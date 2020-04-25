@@ -87,7 +87,7 @@ pre {
   --code-width: 100%;
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-tn) {
   h1 {
     --title-xl-font-size: 4.2rem;
   }
@@ -115,7 +115,7 @@ pre {
   }
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-sm) {
   h1 {
     --title-xl-font-size: 4.4rem;
   }
@@ -143,7 +143,7 @@ pre {
   }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-md) {
   h1 {
     --title-xl-font-size: 4.7rem;
   }
@@ -171,7 +171,7 @@ pre {
   }
 }
 
-@media (min-width: $breakpoint-xl) {
+@media (min-width: $breakpoint-lg) {
   h1 {
     --title-xl-font-size: 5rem;
   }

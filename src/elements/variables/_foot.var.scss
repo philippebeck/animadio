@@ -25,7 +25,7 @@
   --foot-title-font-size: 2rem;
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-tn) {
   .foot {
     --foot-first-child-flex-direction: row;
   }

@@ -37,7 +37,7 @@
   --navbar-z-index: 1000;
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-tn) {
   .navbar {
     --navbar-flex-direction: row;
     --navbar-place-content: space-around;
@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-sm) {
   .navbar {
     --navbar-place-content: space-evenly;
   }

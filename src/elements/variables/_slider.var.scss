@@ -42,18 +42,18 @@
   --slider-width: 100%;
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-tn) {
   @include slider(35vh, 7px);
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-sm) {
   @include slider(40vh, 8px);
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-md) {
   @include slider(45vh, 9px);
 }
 
-@media (min-width: $breakpoint-xl) {
+@media (min-width: $breakpoint-lg) {
   @include slider(50vh, 10px);
 }

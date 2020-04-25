@@ -7,10 +7,10 @@
   }
 }
 
-@each $breakpoint-key, $breakpoint-value in $breakpoints {
-  @media (min-width: $breakpoint-value) {
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
     @each $key, $value in $place-content {
-      .placo-#{$key}-#{$breakpoint-key} {
+      .placo-#{$key}-#{$type} {
         place-content: var(--place-content-#{$key});
       }
     }
@@ -24,10 +24,10 @@
   }
 }
 
-@each $breakpoint-key, $breakpoint-value in $breakpoints {
-  @media (min-width: $breakpoint-value) {
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
     @each $key, $value in $place-items {
-      .plait-#{$key}-#{$breakpoint-key} {
+      .plait-#{$key}-#{$type} {
         place-items: var(--place-items-#{$key});
       }
     }
@@ -41,10 +41,10 @@
   }
 }
 
-@each $breakpoint-key, $breakpoint-value in $breakpoints {
-  @media (min-width: $breakpoint-value) {
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
     @each $key, $value in $place-self {
-      .plase-#{$key}-#{$breakpoint-key} {
+      .plase-#{$key}-#{$type} {
         place-self: var(--place-self-#{$key});
       }
     }

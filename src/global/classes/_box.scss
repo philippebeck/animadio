@@ -14,18 +14,18 @@
   }
 }
 
-@each $breakpoint-key, $breakpoint-value in $breakpoints {
-  @media (min-width: $breakpoint-value) {
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
     @each $key, $value in $containers {
-      [class^="container-"][class*="-#{$key}#{$breakpoint-key}"],
-      [class*=" container-"][class*="-#{$key}#{$breakpoint-key}"] {
+      [class^="container-"][class*="-#{$key}#{$type}"],
+      [class*=" container-"][class*="-#{$key}#{$type}"] {
         max-width: #{$value};
       }
     }
   }
 }
 
-/* Classes : Box : Margin */
+/* Margin */
 @each $key, $value in $margin-nones {
   .mar-#{$key},
   .mar-#{$key}-global > * {
