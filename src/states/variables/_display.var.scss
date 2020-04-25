@@ -1,8 +1,8 @@
 // States : Variables : Display
 
 $displays: (
-  'block':      block,
   'hide':       none,
-  'inblock':    inline-block,
-  'inline':     inline
+  'inline':     inline,
+  'block':      block,
+  'inblock':    inline-block
 ) !default;
