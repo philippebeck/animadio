@@ -8,15 +8,15 @@
   @include states('.anima-#{$key}', 'animation-name', #{$key});
 }
 
-/* Animation Main Options */
-@each $type, $option in $animation-main-options {
+/* Animation Primary Options */
+@each $type, $option in $animation-primary-options {
   @each $key, $value in $option {
-    @include states('.anima-#{$key}', 'animation-#{$type}', 'var(--anima-#{$type}-#{$key})');
+    @include states('.anima-#{$key}', 'animation-#{$type}', 'var(--animation-#{$type}-#{$key})');
   }
 }
 
-/* Animation Other Options */
-@each $type, $option in $animations-other-options {
+/* Animation Secondary Options */
+@each $type, $option in $animations-secondary-options {
   @each $key, $value in $option {
     @include states('.anima-#{$key}', #{$type}, #{$value});
   }
