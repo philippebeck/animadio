@@ -1,7 +1,7 @@
 /***** States : Classes : Bord *****/
 
 /* Border default */
-@include states-concat('[class*="bord-"]', 'border-radius', 'var(--border-radius)');
+@include states-concat('[class*="bord"]', 'border-style', 'var(--border-style)');
 
 /* Border style */
 @each $key, $value in $border-styles {

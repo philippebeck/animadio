@@ -1,6 +1,8 @@
 /***** States : Variables : Bord *****/
 
 // Border Style
+$border-style: solid !default;
+
 $border-styles: (
   'dash':     dashed,
   'dot':      dotted,
@@ -24,8 +26,6 @@ $border-widths: (
 ) !default;
 
 // Border Radius
-$border-radius: 2px !default;
-
 $border-radius-square:    unset   !default;
 $border-radius-curve:     5px     !default;
 $border-radius-rounded:   10px    !default;
@@ -45,8 +45,8 @@ $borders : (
 ) !default;
 
 // Border CSS Variables
-[class*="bord-"] {
-  --border-radius: #{$border-radius};
+[class*="bord"] {
+  --border-style: #{$border-style};
 
   @each $type, $border in $borders {
     @each $key, $value in $border {
