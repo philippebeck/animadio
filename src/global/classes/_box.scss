@@ -4,7 +4,7 @@
 [class^="container"],
 [class*=" container"] {
   margin: auto;
-  background-color: var(--container-background-color);
+  max-width: var(--container-max-width);
 }
 
 @each $key, $value in $containers {
@@ -26,14 +26,14 @@
 }
 
 /* Margin */
-@each $key, $value in $margin-nones {
+@each $key, $value in $box-nones {
   .mar-#{$key},
   .mar-#{$key}-global > * {
     margin#{$value}: var(--margin-none);
   }
 }
 
-@each $key, $value in $margin-sizes {
+@each $key, $value in $box-sizes {
   .mar-#{$key},
   .mar-#{$key}-global > * {
     margin#{$value}: var(--margin-#{$key});
@@ -41,14 +41,14 @@
 }
 
 /* Padding */
-@each $key, $value in $padding-nones {
+@each $key, $value in $box-nones {
   .pad-#{$key},
   .pad-#{$key}-global > * {
     padding#{$value}: var(--padding-none);
   }
 }
 
-@each $key, $value in $padding-sizes {
+@each $key, $value in $box-sizes {
   .pad-#{$key},
   .pad-#{$key}-global > * {
     padding#{$value}: var(--padding-#{$key});
