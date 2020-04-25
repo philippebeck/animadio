@@ -8,8 +8,8 @@
 }
 
 @each $key, $value in $containers {
-  [class^="container-"][class*="-#{$key}xs"],
-  [class*=" container-"][class*="-#{$key}xs"] {
+  [class^="container-"][class*="-#{$key}tn"],
+  [class*=" container-"][class*="-#{$key}tn"] {
     max-width: #{$value};
   }
 }

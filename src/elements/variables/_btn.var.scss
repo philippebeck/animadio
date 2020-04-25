@@ -1,7 +1,7 @@
 /***** Elements : Variables : Btn *****/
 
-$btn-xs-padding:      3px 6px     !default;
-$btn-xs-font-size:    60%         !default;
+$btn-tn-padding:      3px 6px     !default;
+$btn-tn-font-size:    60%         !default;
 
 $btn-sm-padding:      4px 8px     !default;
 $btn-sm-font-size:    80%         !default;
@@ -9,20 +9,20 @@ $btn-sm-font-size:    80%         !default;
 $btn-lg-padding:      7px 14px    !default;
 $btn-lg-font-size:    140%        !default;
 
-$btn-xl-padding:      9px 18px    !default;
-$btn-xl-font-size:    180%        !default;
+$btn-wd-padding:      9px 18px    !default;
+$btn-wd-font-size:    180%        !default;
 
-$btn-size: 'xs', 'sm', 'lg', 'xl';
+$btn-size: 'tn', 'sm', 'lg', 'wd';
 
 $btn-sizes: (
-  'xs-padding':     $btn-xs-padding,
-  'xs-font-size':   $btn-xs-font-size,
+  'tn-padding':     $btn-tn-padding,
+  'tn-font-size':   $btn-tn-font-size,
   'sm-padding':     $btn-sm-padding,
   'sm-font-size':   $btn-sm-font-size,
   'lg-padding':     $btn-lg-padding,
   'lg-font-size':   $btn-lg-font-size,
-  'xl-padding':     $btn-xl-padding,
-  'xl-font-size':   $btn-xl-font-size
+  'wd-padding':     $btn-wd-padding,
+  'wd-font-size':   $btn-wd-font-size
 ) !default;
 
 $btn-square-border-radius:    unset                               !default;

@@ -23,8 +23,8 @@ h6 {
 }
 
 h1 {
-  --title-xl-font-size: 4rem;
-  --title-xl-text-transform: capitalize;
+  --title-wd-font-size: 4rem;
+  --title-wd-text-transform: capitalize;
 }
 
 h2 {
@@ -42,7 +42,7 @@ h4 {
 
 h5,
 h6 {
-  --title-xs-font-size: 2rem;
+  --title-tn-font-size: 2rem;
 }
 
 a {
@@ -89,7 +89,7 @@ pre {
 
 @media (min-width: $breakpoint-tn) {
   h1 {
-    --title-xl-font-size: 4.2rem;
+    --title-wd-font-size: 4.2rem;
   }
 
   h2 {
@@ -106,7 +106,7 @@ pre {
 
   h5,
   h6 {
-    --title-xs-font-size: 2.1rem;
+    --title-tn-font-size: 2.1rem;
   }
 
   code,
@@ -117,7 +117,7 @@ pre {
 
 @media (min-width: $breakpoint-sm) {
   h1 {
-    --title-xl-font-size: 4.4rem;
+    --title-wd-font-size: 4.4rem;
   }
 
   h2 {
@@ -134,7 +134,7 @@ pre {
 
   h5,
   h6 {
-    --title-xs-font-size: 2.3rem;
+    --title-tn-font-size: 2.3rem;
   }
 
   code,
@@ -145,7 +145,7 @@ pre {
 
 @media (min-width: $breakpoint-md) {
   h1 {
-    --title-xl-font-size: 4.7rem;
+    --title-wd-font-size: 4.7rem;
   }
 
   h2 {
@@ -162,7 +162,7 @@ pre {
 
   h5,
   h6 {
-    --title-xs-font-size: 2.4rem;
+    --title-tn-font-size: 2.4rem;
   }
 
   code,
@@ -173,7 +173,7 @@ pre {
 
 @media (min-width: $breakpoint-lg) {
   h1 {
-    --title-xl-font-size: 5rem;
+    --title-wd-font-size: 5rem;
   }
 
   h2 {
@@ -190,7 +190,7 @@ pre {
 
   h5,
   h6 {
-    --title-xs-font-size: 2.5rem;
+    --title-tn-font-size: 2.5rem;
   }
 
   code,

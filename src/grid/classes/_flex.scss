@@ -50,15 +50,15 @@
 }
 
 @for $i from 2 to 13 {
-  [class^="flex-"][class*="-#{$i}xs"],
-  [class*=" flex-"][class*="-#{$i}xs"] {
-    margin: var(--flex-negative-margin-xs);
+  [class^="flex-"][class*="-#{$i}tn"],
+  [class*=" flex-"][class*="-#{$i}tn"] {
+    margin: var(--flex-negative-margin-tn);
   }
 
-  [class^="flex-"][class*="-#{$i}xs"] > *,
-  [class*=" flex-"][class*="-#{$i}xs"] > * {
-    width: calc(100% / #{$i} - var(--flex-width-xs));
-    margin: var(--flex-positive-margin-xs);
+  [class^="flex-"][class*="-#{$i}tn"] > *,
+  [class*=" flex-"][class*="-#{$i}tn"] > * {
+    width: calc(100% / #{$i} - var(--flex-width-tn));
+    margin: var(--flex-positive-margin-tn);
   }
 }
 

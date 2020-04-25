@@ -1,8 +1,8 @@
 /***** Grid : Variables : Grid *****/
 
-$gap-1xs:   1px   !default;
-$gap-2xs:   2px   !default;
-$gap-3xs:   5px   !default;
+$gap-1tn:   1px   !default;
+$gap-2tn:   2px   !default;
+$gap-3tn:   5px   !default;
 
 $gap-1sm:   2px     !default;
 $gap-2sm:   5px     !default;
@@ -16,14 +16,14 @@ $gap-1lg:   10px    !default;
 $gap-2lg:   20px    !default;
 $gap-3lg:   50px    !default;
 
-$gap-1xl:   20px    !default;
-$gap-2xl:   50px    !default;
-$gap-3xl:   100px   !default;
+$gap-1wd:   20px    !default;
+$gap-2wd:   50px    !default;
+$gap-3wd:   100px   !default;
 
 $gaps: (
-  '1xs':    $gap-1xs,
-  '2xs':    $gap-2xs,
-  '3xs':    $gap-3xs,
+  '1tn':    $gap-1tn,
+  '2tn':    $gap-2tn,
+  '3tn':    $gap-3tn,
   '1sm':    $gap-1sm,
   '2sm':    $gap-2sm,
   '3sm':    $gap-3sm,
@@ -33,9 +33,9 @@ $gaps: (
   '1lg':    $gap-1lg,
   '2lg':    $gap-2lg,
   '3lg':    $gap-3lg,
-  '1xl':    $gap-1xl,
-  '2xl':    $gap-2xl,
-  '3xl':    $gap-3xl
+  '1wd':    $gap-1wd,
+  '2wd':    $gap-2wd,
+  '3wd':    $gap-3wd
 ) !default;
 
 [class*="gap-"] {

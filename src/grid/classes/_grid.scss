@@ -19,10 +19,10 @@
 }
 
 @for $i from 2 to 13 {
-  [class^="grid-"][class*="-#{$i}xs"],
-  [class*=" grid-"][class*="-#{$i}xs"],
-  [class^="fluid-"][class*="-#{$i}xs"],
-  [class*=" fluid-"][class*="-#{$i}xs"] {
+  [class^="grid-"][class*="-#{$i}tn"],
+  [class*=" grid-"][class*="-#{$i}tn"],
+  [class^="fluid-"][class*="-#{$i}tn"],
+  [class*=" fluid-"][class*="-#{$i}tn"] {
     grid-template: auto/repeat(#{$i}, auto);
   }
 }
@@ -41,9 +41,9 @@
 }
 
 @for $i from 1 to 4 {
-  [class^="gap-"][class*="-#{$i}xs"],
-  [class*=" gap-"][class*="-#{$i}xs"] {
-    grid-gap: var(--gap-#{$i}xs);
+  [class^="gap-"][class*="-#{$i}tn"],
+  [class*=" gap-"][class*="-#{$i}tn"] {
+    grid-gap: var(--gap-#{$i}tn);
   }
 }
 
