@@ -1,13 +1,17 @@
 // States : Variables : Deco
 
-$deco-lines: (
+// Text Decoration Line
+$text-decoration-line: underline !default;
+
+$text-decoration-lines: (
   'none':       none,
   'under':      underline,
   'through':    line-through,
   'over':       overline
 ) !default;
 
-$deco-styles: (
+// Text Decoration Style
+$text-decoration-styles: (
   'dash':     dashed,
   'dot':      dotted,
   'double':   double,
@@ -15,7 +19,13 @@ $deco-styles: (
   'wavy':     wavy
 ) !default;
 
-$decos : (
-  "line":    $deco-lines,
-  "style":   $deco-styles
+// Text Decorations
+$text-decorations : (
+  "line":    $text-decoration-lines,
+  "style":   $text-decoration-styles
 ) !default;
+
+// Text Decoration CSS variable
+[class*="deco"] {
+  --text-decoration-line: #{$text-decoration-line};
+}
