@@ -1,17 +1,22 @@
 /***** States : Classes : Bord *****/
 
+/* Border default */
 @include states-concat('[class*="bord-"]', 'border-radius', 'var(--border-radius)');
 
+/* Border style */
 @each $key, $value in $border-styles {
   @include states('.bord-#{$key}', 'border-style', '#{$value}');
 }
 
-@each $borders-key, $borders-value in $borders {
-  @each $key, $value in $borders-value {
-    @include states('.bord-#{$key}', 'border-#{$borders-key}', 'var(--border-#{$borders-key}-#{$key})');
+// Border Width & Radius
+@each $type, $border in $borders {
+  /* Border #{$type} */
+  @each $key, $value in $border {
+    @include states('.bord-#{$key}', 'border-#{$type}', 'var(--border-#{$type}-#{$key})');
   }
 }
 
+/* Border color */
 @each $color in $main-colors {
   @each $key, $value in $color {
     @include states('.bord-#{$key}', 'border-color', 'var(--#{$key})');
