@@ -1,19 +1,21 @@
 /***** Global : Variables : Box *****/
 
-/* Variables : Box : Container */
+/* Container */
+$container-max-width: 100% !default;
+
 $containers: (
+  '50':   50%,
+  '60':   60%,
   '70':   70%,
   '80':   80%,
   '90':   90%
 ) !default;
 
 [class*="container"] {
-  --container-background-color: transparent;
+  --container-max-width: #{$container-max-width};
 }
 
-/* Variables : Box : Margin */
-$margin-none:   0   !default;
-
+/* Margin */
 $margin-sm:   10px    !default;
 $margin-md:   20px    !default;
 $margin-lg:   50px    !default;
@@ -35,7 +37,7 @@ $margin-left-md:    20px    !default;
 $margin-left-lg:    50px    !default;
 
 $margins: (
-  'none':         $margin-none,
+  'none':         0,
   'sm':           $margin-sm,
   'md':           $margin-md,
   'lg':           $margin-lg,
@@ -53,41 +55,13 @@ $margins: (
   'left-lg':      $margin-left-lg
 ) !default;
 
-$margin-nones: (
-  'none':           '',
-  'top-none':       '-top',
-  'right-none':     '-right',
-  'bottom-none':    '-bottom',
-  'left-none':      '-left',
-) !default;
-
-$margin-sizes: (
-  'sm':           '',
-  'md':           '',
-  'lg':           '',
-  'top-sm':       '-top',
-  'top-md':       '-top',
-  'top-lg':       '-top',
-  'right-sm':     '-right',
-  'right-md':     '-right',
-  'right-lg':     '-right',
-  'bottom-sm':    '-bottom',
-  'bottom-md':    '-bottom',
-  'bottom-lg':    '-bottom',
-  'left-sm':      '-left',
-  'left-md':      '-left',
-  'left-lg':      '-left'
-) !default;
-
 [class*="mar-"] {
   @each $key, $value in $margins {
     --margin-#{$key}: #{$value};
   }
 }
 
-/* Variables : Box : Padding */
-$padding-none:   0   !default;
-
+/* Padding */
 $padding-sm:   10px    !default;
 $padding-md:   20px    !default;
 $padding-lg:   50px    !default;
@@ -109,7 +83,7 @@ $padding-left-md:    20px    !default;
 $padding-left-lg:    50px    !default;
 
 $paddings: (
-  'none':         $padding-none,
+  'none':         0,
   'sm':           $padding-sm,
   'md':           $padding-md,
   'lg':           $padding-lg,
@@ -127,7 +101,13 @@ $paddings: (
   'left-lg':      $padding-left-lg
 ) !default;
 
-$padding-nones: (
+[class*="pad-"] {
+  @each $key, $value in $paddings {
+    --padding-#{$key}: #{$value};
+  }
+}
+
+$box-nones: (
   'none':           '',
   'top-none':       '-top',
   'right-none':     '-right',
@@ -135,7 +115,7 @@ $padding-nones: (
   'left-none':      '-left',
 ) !default;
 
-$padding-sizes: (
+$box-sizes: (
   'sm':           '',
   'md':           '',
   'lg':           '',
@@ -153,16 +133,10 @@ $padding-sizes: (
   'left-lg':      '-left'
 ) !default;
 
-[class*="pad-"] {
-  @each $key, $value in $paddings {
-    --padding-#{$key}: #{$value};
-  }
-}
-
-/* Variables : Box : Height */
-$height-sm:    25%   !default;
-$height-md:    50%   !default;
-$height-lg:    75%   !default;
+/* Height */
+$height-sm:    25vh   !default;
+$height-md:    50vh   !default;
+$height-lg:    75vh   !default;
 
 $heights: (
   'sm':   $height-sm,
@@ -208,10 +182,10 @@ $min-heights: (
   }
 }
 
-/* Variables : Box : Width */
-$width-sm:    25%   !default;
-$width-md:    50%   !default;
-$width-lg:    75%   !default;
+/* Width */
+$width-sm:    25vw    !default;
+$width-md:    50vw    !default;
+$width-lg:    75vw    !default;
 
 $widths: (
   'sm':   $width-sm,
@@ -225,9 +199,9 @@ $widths: (
   }
 }
 
-$max-width-sm:    25%   !default;
-$max-width-md:    50%   !default;
-$max-width-lg:    75%   !default;
+$max-width-sm:    25vw    !default;
+$max-width-md:    50vw    !default;
+$max-width-lg:    75vw    !default;
 
 $max-widths: (
   'sm':   $max-width-sm,
@@ -241,9 +215,9 @@ $max-widths: (
   }
 }
 
-$min-width-sm:    25%   !default;
-$min-width-md:    50%   !default;
-$min-width-lg:    75%   !default;
+$min-width-sm:    25vw    !default;
+$min-width-md:    50vw    !default;
+$min-width-lg:    75vw    !default;
 
 $min-widths: (
   'sm':   $min-width-sm,
