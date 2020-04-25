@@ -14,14 +14,18 @@ $border-styles: (
 ) !default;
 
 // Border Width
-$border-width-sm:   thin      !default;
-$border-width-md:   medium    !default;
-$border-width-lg:   thick     !default;
+$border-width-tn:   1px   !default;
+$border-width-sm:   2px   !default;
+$border-width-md:   3px   !default;
+$border-width-lg:   4px   !default;
+$border-width-wd:   5px   !default;
 
 $border-widths: (
+  'tn':   $border-width-tn,
   'sm':   $border-width-sm,
   'md':   $border-width-md,
-  'lg':   $border-width-lg
+  'lg':   $border-width-lg,
+  'wd':   $border-width-wd
 ) !default;
 
 // Border Radius
