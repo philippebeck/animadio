@@ -1,7 +1,4 @@
-/****************************/
-/********** GLOBAL **********/
-/****************************/
-
+// ********** GLOBAL **********
 @import 'global/mixins/global';
 
 @import 'global/variables/breakpoints.var';
@@ -16,28 +13,18 @@
 
 @import 'global/classes/base';
 @import 'global/classes/box';
-@import 'global/classes/helpers';
 
-/****************************/
-/********** STATES **********/
-/****************************/
-
+// ********** STATES **********
 @import 'states/mixins/states';
 
 @import 'states/variables/anima.var';
 @import 'states/variables/bord.var';
-@import 'states/variables/deco.var';
 @import 'states/variables/display.var';
 @import 'states/variables/position.var';
-@import 'states/variables/shabox.var';
-@import 'states/variables/shatex.var';
 
 @import 'states/classes/anima';
 @import 'states/classes/bg';
 @import 'states/classes/bord';
 @import 'states/classes/color';
-@import 'states/classes/deco';
 @import 'states/classes/display';
 @import 'states/classes/position';
-@import 'states/classes/shabox';
-@import 'states/classes/shatex';

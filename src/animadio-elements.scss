@@ -1,7 +1,4 @@
-/****************************/
-/********** GLOBAL **********/
-/****************************/
-
+// ********** GLOBAL **********
 @import 'global/mixins/global';
 
 @import 'global/variables/breakpoints.var';
@@ -16,12 +13,8 @@
 
 @import 'global/classes/base';
 @import 'global/classes/box';
-@import 'global/classes/helpers';
 
-/******************************/
-/********** ELEMENTS **********/
-/******************************/
-
+// ********** ELEMENTS **********
 @import "elements/mixins/elements";
 
 @import 'elements/variables/btn.var';

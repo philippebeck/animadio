@@ -1,7 +1,4 @@
-/****************************/
-/********** GLOBAL **********/
-/****************************/
-
+// ********** GLOBAL **********
 @import 'global/mixins/global';
 
 @import 'global/variables/breakpoints.var';
@@ -16,24 +13,17 @@
 
 @import 'global/classes/base';
 @import 'global/classes/box';
-@import 'global/classes/helpers';
 
-/**************************/
-/********** GRID **********/
-/**************************/
-
-@import 'grid/variables/grid.var';
+// ********** GRID **********
 @import 'grid/variables/flex.var';
+@import 'grid/variables/grid.var';
 @import 'grid/variables/place.var';
 
 @import 'grid/classes/flex';
 @import 'grid/classes/grid';
 @import 'grid/classes/place';
 
-/******************************/
-/********** ELEMENTS **********/
-/******************************/
-
+// ********** ELEMENTS **********
 @import "elements/mixins/elements";
 
 @import 'elements/variables/btn.var';
@@ -54,26 +44,34 @@
 @import 'elements/classes/navbar';
 @import 'elements/classes/table';
 
-/****************************/
-/********** STATES **********/
-/****************************/
-
+// ********** STATES **********
 @import 'states/mixins/states';
 
 @import 'states/variables/anima.var';
 @import 'states/variables/bord.var';
-@import 'states/variables/deco.var';
 @import 'states/variables/display.var';
 @import 'states/variables/position.var';
-@import 'states/variables/shabox.var';
-@import 'states/variables/shatex.var';
 
 @import 'states/classes/anima';
 @import 'states/classes/bg';
 @import 'states/classes/bord';
 @import 'states/classes/color';
-@import 'states/classes/deco';
 @import 'states/classes/display';
 @import 'states/classes/position';
-@import 'states/classes/shabox';
-@import 'states/classes/shatex';
+
+// ********** HELPERS **********
+@import 'helpers/mixins/helpers';
+
+@import 'helpers/variables/align.var';
+@import 'helpers/variables/cursor.var';
+@import 'helpers/variables/deco.var';
+@import 'helpers/variables/font.var';
+@import 'helpers/variables/shabox.var';
+@import 'helpers/variables/shatex.var';
+
+@import 'helpers/classes/align';
+@import 'helpers/classes/cursor';
+@import 'helpers/classes/deco';
+@import 'helpers/classes/font';
+@import 'helpers/classes/shabox';
+@import 'helpers/classes/shatex';
