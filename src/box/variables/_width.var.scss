@@ -1,0 +1,52 @@
+/***** Box : Variables : Width *****/
+
+// Width
+$width-sm:    25vw    !default;
+$width-md:    50vw    !default;
+$width-lg:    75vw    !default;
+
+$widths: (
+  'sm':   $width-sm,
+  'md':   $width-md,
+  'lg':   $width-lg
+) !default;
+
+[class*="width-"] {
+  @each $key, $value in $widths {
+    --width-#{$key}: #{$value};
+  }
+}
+
+// Max-Width
+$max-width-sm:    25vw    !default;
+$max-width-md:    50vw    !default;
+$max-width-lg:    75vw    !default;
+
+$max-widths: (
+  'sm':   $max-width-sm,
+  'md':   $max-width-md,
+  'lg':   $max-width-lg
+) !default;
+
+[class*="max-w-"] {
+  @each $key, $value in $max-widths {
+    --max-width-#{$key}: #{$value};
+  }
+}
+
+// Min-Width
+$min-width-sm:    25vw    !default;
+$min-width-md:    50vw    !default;
+$min-width-lg:    75vw    !default;
+
+$min-widths: (
+  'sm':   $min-width-sm,
+  'md':   $min-width-md,
+  'lg':   $min-width-lg
+) !default;
+
+[class*="min-w-"] {
+  @each $key, $value in $min-widths {
+    --min-width-#{$key}: #{$value};
+  }
+}
