@@ -1,57 +1,23 @@
 /***** Global : Classes : Helpers *****/
 
-/* Helpers : Font */
-.font-bold {
-  font-weight: bold;
+/* Font */
+@each $key, $value in $font {
+  .font-#{$key} {
+    font-#{$value}: #{$key};
+  }
 }
 
-.font-italic {
-  font-style: italic;
+/* Text align */
+@each $key, $value in $text-align {
+  .text-#{$key} {
+    text-align: #{$value};
+  }
 }
 
-.font-oblique {
-  font-style: oblique;
-}
-
-.font-normal {
-  font-style: normal;
-  font-weight: normal;
-}
-
-/* Helpers : Text */
-.text-center {
-  text-align: center;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-/* Helpers : Cursor */
-.cursor-cross,
-.cursor-cross > * {
-  cursor: crosshair;
-}
-
-.cursor-hand,
-.cursor-hand > * {
-  cursor: pointer;
-}
-
-.cursor-help,
-.cursor-help > * {
-  cursor: help;
-}
-
-.cursor-none,
-.cursor-none > * {
-  cursor: not-allowed;
+/* Cursor */
+@each $key, $value in $cursor {
+  .cursor-#{$key},
+  .cursor-#{$key} > * {
+    cursor: #{$value};
+  }
 }
