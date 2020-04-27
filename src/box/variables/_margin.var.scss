@@ -1,0 +1,46 @@
+/***** Box : Variables : Margin *****/
+
+$margin-sm:   10px    !default;
+$margin-md:   20px    !default;
+$margin-lg:   50px    !default;
+
+$margin-top-sm:   10px    !default;
+$margin-top-md:   20px    !default;
+$margin-top-lg:   50px    !default;
+
+$margin-right-sm:   10px    !default;
+$margin-right-md:   20px    !default;
+$margin-right-lg:   50px    !default;
+
+$margin-bottom-md:    20px    !default;
+$margin-bottom-sm:    10px    !default;
+$margin-bottom-lg:    50px    !default;
+
+$margin-left-sm:    10px    !default;
+$margin-left-md:    20px    !default;
+$margin-left-lg:    50px    !default;
+
+$margins: (
+  'none':         0,
+  'sm':           $margin-sm,
+  'md':           $margin-md,
+  'lg':           $margin-lg,
+  'top-sm':       $margin-top-sm,
+  'top-md':       $margin-top-md,
+  'top-lg':       $margin-top-lg,
+  'right-sm':     $margin-right-sm,
+  'right-md':     $margin-right-md,
+  'right-lg':     $margin-right-lg,
+  'bottom-sm':    $margin-bottom-sm,
+  'bottom-md':    $margin-bottom-md,
+  'bottom-lg':    $margin-bottom-lg,
+  'left-sm':      $margin-left-sm,
+  'left-md':      $margin-left-md,
+  'left-lg':      $margin-left-lg
+) !default;
+
+[class*="mar-"] {
+  @each $key, $value in $margins {
+    --margin-#{$key}: #{$value};
+  }
+}
