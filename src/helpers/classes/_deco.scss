@@ -1,0 +1,19 @@
+/***** Helpers : Classes : Deco *****/
+
+// Text decoration default
+@include helpers-concat('[class*="deco"]', 'text-decoration-line', 'var(--text-decoration-line)');
+
+// Text Decoration Line & Style
+@each $deco-key, $deco-value in $text-decorations {
+  /* Text decoration #{$deco-key} */
+  @each $key, $value in $deco-value {
+    @include helpers('.deco-#{$key}', 'text-decoration-#{$deco-key}', '#{$value}');
+  }
+}
+
+/* Text decoration color */
+@each $color in $main-colors {
+  @each $key, $value in $color {
+    @include helpers('.deco-#{$key}', 'text-decoration-color', 'var(--#{$key})');
+  }
+}
