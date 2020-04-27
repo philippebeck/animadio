@@ -1,0 +1,31 @@
+// ***** Helpers : Mixins : Helpers *****
+
+@mixin helpers($class, $property, $value) {
+  #{$class},
+  #{$class}-global > *,
+  #{$class}-onto:hover,
+  #{$class}-onto:focus,
+  *:hover > #{$class}-into,
+  *:focus > #{$class}-into,
+  #{$class}-toall:hover > *,
+  #{$class}-toall:focus > *,
+  #{$class}-toone > *:hover,
+  #{$class}-toone > *:focus {
+    #{$property}: #{$value};
+  }
+}
+
+@mixin helpers-concat($class, $property, $value) {
+  #{$class},
+  #{$class}[class*="-global"] > *,
+  #{$class}[class*="-onto"]:hover,
+  #{$class}[class*="-onto"]:focus,
+  *:hover > #{$class}[class*="-into"],
+  *:focus > #{$class}[class*="-into"],
+  #{$class}[class*="-toall"]:hover > *,
+  #{$class}[class*="-toall"]:focus > *,
+  #{$class}[class*="-toone"] > *:hover,
+  #{$class}[class*="-toone"] > *:focus {
+    #{$property}: #{$value};
+  }
+}
