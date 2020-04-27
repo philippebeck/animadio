@@ -1,0 +1,27 @@
+/***** Global : Variables : Helpers *****/
+
+// Font
+$font: (
+  'bold':       'weight',
+  'italic':     'style',
+  'oblique':    'style'
+) !default;
+
+// Test Align
+$text-align: (
+  'center':     center,
+  'justify':    justify,
+  'right':      right,
+  'left':       left
+) !default;
+
+// Cursor
+$cursor: (
+  'cell':     cell,
+  'cross':    crosshair,
+  'hand':     pointer,
+  'help':     help,
+  'move':     move,
+  'none':     not-allowed,
+  'text':     text
+) !default;
