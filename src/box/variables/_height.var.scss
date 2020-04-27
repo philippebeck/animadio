@@ -1,0 +1,52 @@
+/***** Box : Variables : Height *****/
+
+// Height
+$height-sm:    25vh   !default;
+$height-md:    50vh   !default;
+$height-lg:    75vh   !default;
+
+$heights: (
+  'sm':   $height-sm,
+  'md':   $height-md,
+  'lg':   $height-lg
+) !default;
+
+[class*="height-"] {
+  @each $key, $value in $heights {
+    --height-#{$key}: #{$value};
+  }
+}
+
+// Max-Height
+$max-height-sm:    25vh   !default;
+$max-height-md:    50vh   !default;
+$max-height-lg:    75vh   !default;
+
+$max-heights: (
+  'sm':   $max-height-sm,
+  'md':   $max-height-md,
+  'lg':   $max-height-lg
+) !default;
+
+[class*="max-h-"] {
+  @each $key, $value in $max-heights {
+    --max-height-#{$key}: #{$value};
+  }
+}
+
+// Min-Height
+$min-height-sm:    25vh   !default;
+$min-height-md:    50vh   !default;
+$min-height-lg:    75vh   !default;
+
+$min-heights: (
+  'sm':   $min-height-sm,
+  'md':   $min-height-md,
+  'lg':   $min-height-lg
+) !default;
+
+[class*="min-h-"] {
+  @each $key, $value in $min-heights {
+    --min-height-#{$key}: #{$value};
+  }
+}
