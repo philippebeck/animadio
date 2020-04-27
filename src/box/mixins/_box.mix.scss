@@ -1,6 +1,6 @@
-// ***** Helpers : Mixins : Helpers *****
+// ***** Box : Mixins : Box *****
 
-@mixin helpers($class, $property, $value) {
+@mixin box($class, $property, $value) {
   #{$class},
   #{$class}-global > *,
   #{$class}-onto:hover,
@@ -15,7 +15,7 @@
   }
 }
 
-@mixin helpers-concat($class, $property, $value) {
+@mixin box-concat($class, $property, $value) {
   #{$class},
   #{$class}[class*="-global"] > *,
   #{$class}[class*="-onto"]:hover,
