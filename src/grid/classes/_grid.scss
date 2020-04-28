@@ -18,42 +18,28 @@
   max-width: 100%;
 }
 
+/* Grid-template */
 @for $i from 2 to 13 {
-  [class^="grid-"][class*="-#{$i}tn"],
-  [class*=" grid-"][class*="-#{$i}tn"],
-  [class^="fluid-"][class*="-#{$i}tn"],
-  [class*=" fluid-"][class*="-#{$i}tn"] {
-    grid-template: auto/repeat(#{$i}, auto);
-  }
+  @include grid-template($i, 'tn');
 }
 
 @each $key, $value in $breakpoints {
   @media (min-width: $value) {
     @for $i from 2 to 13 {
-      [class^="grid-"][class*="-#{$i}#{$key}"],
-      [class*=" grid-"][class*="-#{$i}#{$key}"],
-      [class^="fluid-"][class*="-#{$i}#{$key}"],
-      [class*=" fluid-"][class*="-#{$i}#{$key}"] {
-        grid-template: auto/repeat(#{$i}, auto);
-      }
+      @include grid-template($i, $key);
     }
   }
 }
 
+/* Grid-gap */
 @for $i from 1 to 4 {
-  [class^="gap-"][class*="-#{$i}tn"],
-  [class*=" gap-"][class*="-#{$i}tn"] {
-    grid-gap: var(--gap-#{$i}tn);
-  }
+  @include grid-gap($i, 'tn');
 }
 
 @each $key, $value in $breakpoints {
   @media (min-width: $value) {
     @for $i from 1 to 4 {
-      [class^="gap-"][class*="-#{$i}#{$key}"],
-      [class*=" gap-"][class*="-#{$i}#{$key}"] {
-        grid-gap: var(--gap-#{$i}#{$key});
-      }
+      @include grid-gap($i, $key);
     }
   }
 }
