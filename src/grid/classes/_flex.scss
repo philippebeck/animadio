@@ -49,32 +49,17 @@
   flex-wrap: wrap-reverse;
 }
 
+/* Flex system */
 @for $i from 2 to 13 {
-  [class^="flex-"][class*="-#{$i}tn"],
-  [class*=" flex-"][class*="-#{$i}tn"] {
-    margin: var(--flex-negative-margin-tn);
-  }
-
-  [class^="flex-"][class*="-#{$i}tn"] > *,
-  [class*=" flex-"][class*="-#{$i}tn"] > * {
-    width: calc(100% / #{$i} - var(--flex-width-tn));
-    margin: var(--flex-positive-margin-tn);
-  }
+  @include flex-container($i, 'tn');
+  @include flex-children($i, 'tn');
 }
 
 @each $key, $value in $breakpoints {
   @media (min-width: $value) {
     @for $i from 2 to 13 {
-      [class^="flex-"][class*="-#{$i}#{$key}"],
-      [class*=" flex-"][class*="-#{$i}#{$key}"] {
-        margin: var(--flex-negative-margin-#{$key});
-      }
-
-      [class^="flex-"][class*="-#{$i}#{$key}"] > *,
-      [class*=" flex-"][class*="-#{$i}#{$key}"] > * {
-        width: calc(100% / #{$i} - var(--flex-width-#{$key}));
-        margin: var(--flex-positive-margin-#{$key});
-      }
+      @include flex-container($i, $key);
+      @include flex-children($i, $key);
     }
   }
 }
