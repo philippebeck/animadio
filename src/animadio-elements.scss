@@ -1,32 +1,28 @@
 // ********** GLOBAL **********
 @import 'global/mixins/global.mix';
-
 @import 'global/variables/breakpoints.var';
 @import 'global/variables/colors.var';
 @import 'global/variables/keyframes.var';
-@import 'global/variables/init.var';
-
 @import 'global/rules/keyframes';
+@import 'global/variables/init.var';
 @import 'global/tags/init';
 @import 'global/classes/base';
 
 // ********** ELEMENTS **********
 @import "elements/mixins/elements.mix";
-
 @import 'elements/variables/btn.var';
-@import 'elements/variables/card.var';
-@import 'elements/variables/foot.var';
-@import 'elements/variables/form.var';
-@import 'elements/variables/gallery.var';
-@import 'elements/variables/menu.var';
-@import 'elements/variables/navbar.var';
-@import 'elements/variables/table.var';
-
 @import 'elements/classes/btn';
+@import 'elements/variables/card.var';
 @import 'elements/classes/card';
+@import 'elements/variables/foot.var';
 @import 'elements/classes/foot';
+@import 'elements/variables/form.var';
 @import 'elements/classes/form';
+@import 'elements/variables/gallery.var';
 @import 'elements/classes/gallery';
+@import 'elements/variables/menu.var';
 @import 'elements/classes/menu';
+@import 'elements/variables/navbar.var';
 @import 'elements/classes/navbar';
+@import 'elements/variables/table.var';
 @import 'elements/classes/table';

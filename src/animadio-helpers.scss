@@ -1,28 +1,24 @@
 // ********** GLOBAL **********
 @import 'global/mixins/global.mix';
-
 @import 'global/variables/breakpoints.var';
 @import 'global/variables/colors.var';
 @import 'global/variables/keyframes.var';
-@import 'global/variables/init.var';
-
 @import 'global/rules/keyframes';
+@import 'global/variables/init.var';
 @import 'global/tags/init';
 @import 'global/classes/base';
 
 // ********** HELPERS **********
 @import 'helpers/mixins/helpers.mix';
-
 @import 'helpers/variables/align.var';
-@import 'helpers/variables/cursor.var';
-@import 'helpers/variables/deco.var';
-@import 'helpers/variables/font.var';
-@import 'helpers/variables/shabox.var';
-@import 'helpers/variables/shatex.var';
-
 @import 'helpers/classes/align';
+@import 'helpers/variables/cursor.var';
 @import 'helpers/classes/cursor';
+@import 'helpers/variables/deco.var';
 @import 'helpers/classes/deco';
+@import 'helpers/variables/font.var';
 @import 'helpers/classes/font';
+@import 'helpers/variables/shabox.var';
 @import 'helpers/classes/shabox';
+@import 'helpers/variables/shatex.var';
 @import 'helpers/classes/shatex';

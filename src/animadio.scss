@@ -1,91 +1,79 @@
 // ********** GLOBAL **********
 @import 'global/mixins/global.mix';
-
 @import 'global/variables/breakpoints.var';
 @import 'global/variables/colors.var';
 @import 'global/variables/keyframes.var';
-@import 'global/variables/init.var';
-
 @import 'global/rules/keyframes';
+@import 'global/variables/init.var';
 @import 'global/tags/init';
 @import 'global/classes/base';
 
 // ********** BOX **********
 @import 'box/mixins/box.mix';
-
 @import 'box/variables/box.var';
 @import 'box/variables/container.var';
-@import 'box/variables/margin.var';
-@import 'box/variables/border.var';
-@import 'box/variables/padding.var';
-@import 'box/variables/height.var';
-@import 'box/variables/width.var';
-
 @import 'box/classes/container';
+@import 'box/variables/margin.var';
 @import 'box/classes/margin';
+@import 'box/variables/border.var';
 @import 'box/classes/border';
+@import 'box/variables/padding.var';
 @import 'box/classes/padding';
+@import 'box/variables/height.var';
 @import 'box/classes/height';
+@import 'box/variables/width.var';
 @import 'box/classes/width';
 
 // ********** GRID **********
 @import "grid/mixins/grid.mix";
-
 @import 'grid/variables/flex.var';
-@import 'grid/variables/grid.var';
-@import 'grid/variables/place.var';
-
 @import 'grid/classes/flex';
+@import 'grid/variables/grid.var';
 @import 'grid/classes/grid';
+@import 'grid/variables/place.var';
 @import 'grid/classes/place';
 
 // ********** ELEMENTS **********
 @import "elements/mixins/elements.mix";
-
 @import 'elements/variables/btn.var';
-@import 'elements/variables/card.var';
-@import 'elements/variables/foot.var';
-@import 'elements/variables/form.var';
-@import 'elements/variables/gallery.var';
-@import 'elements/variables/menu.var';
-@import 'elements/variables/navbar.var';
-@import 'elements/variables/table.var';
-
 @import 'elements/classes/btn';
+@import 'elements/variables/card.var';
 @import 'elements/classes/card';
+@import 'elements/variables/foot.var';
 @import 'elements/classes/foot';
+@import 'elements/variables/form.var';
 @import 'elements/classes/form';
+@import 'elements/variables/gallery.var';
 @import 'elements/classes/gallery';
+@import 'elements/variables/menu.var';
 @import 'elements/classes/menu';
+@import 'elements/variables/navbar.var';
 @import 'elements/classes/navbar';
+@import 'elements/variables/table.var';
 @import 'elements/classes/table';
 
 // ********** STATES **********
 @import 'states/mixins/states.mix';
-
 @import 'states/variables/anima.var';
-@import 'states/variables/display.var';
-@import 'states/variables/position.var';
-
 @import 'states/classes/anima';
+@import 'states/variables/display.var';
+@import 'states/classes/display';
+@import 'states/variables/position.var';
+@import 'states/classes/position';
 @import 'states/classes/bg';
 @import 'states/classes/color';
-@import 'states/classes/display';
-@import 'states/classes/position';
 
 // ********** HELPERS **********
 @import 'helpers/mixins/helpers.mix';
-
 @import 'helpers/variables/align.var';
-@import 'helpers/variables/cursor.var';
-@import 'helpers/variables/deco.var';
-@import 'helpers/variables/font.var';
-@import 'helpers/variables/shabox.var';
-@import 'helpers/variables/shatex.var';
-
 @import 'helpers/classes/align';
+@import 'helpers/variables/cursor.var';
 @import 'helpers/classes/cursor';
+@import 'helpers/variables/deco.var';
 @import 'helpers/classes/deco';
+@import 'helpers/variables/font.var';
 @import 'helpers/classes/font';
+@import 'helpers/variables/shabox.var';
 @import 'helpers/classes/shabox';
+@import 'helpers/variables/shatex.var';
 @import 'helpers/classes/shatex';
