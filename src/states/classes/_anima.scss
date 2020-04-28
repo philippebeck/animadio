@@ -1,18 +1,18 @@
 /***** States : Classes : Anima *****/
 
 /* Animation default */
-@include states-concat('[class*="anima-"]', 'animation-duration', 'var(--animation-duration)');
+@include states-concat('anima-', 'animation-duration', 'var(--animation-duration)');
 
 /* Animations */
 @each $key, $value in $transforms {
-  @include states('.anima-#{$key}', 'animation-name', #{$key});
+  @include states('anima-#{$key}', 'animation-name', $key);
 }
 
 // Animation Primary Options
 @each $type, $option in $animation-primary-options {
   /* Animation #{$type} */
   @each $key, $value in $option {
-    @include states('.anima-#{$key}', 'animation-#{$type}', 'var(--animation-#{$type}-#{$key})');
+    @include states('anima-#{$key}', 'animation-#{$type}', 'var(--animation-#{$type}-#{$key})');
   }
 }
 
@@ -20,6 +20,6 @@
 @each $type, $option in $animations-secondary-options {
   /* Animation #{$type} */
   @each $key, $value in $option {
-    @include states('.anima-#{$key}', #{$type}, #{$value});
+    @include states('anima-#{$key}', 'animation-#{$type}', $value);
   }
 }

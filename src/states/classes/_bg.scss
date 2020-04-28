@@ -3,18 +3,18 @@
 /* Basic Background Colors */
 @each $colors in $all-colors {
   @each $key, $value in $colors {
-    @include states('.bg-#{$key}', 'background-color', 'var(--#{$key})');
+    @include states('bg-#{$key}', 'background-color', 'var(--#{$key})');
   }
 }
 
 /* Dark Transparent Background Colors */
 @each $colors in $main-colors {
   @each $key, $value in $colors {
-    @include states('.bg-#{$key}-dark', 'background-color', 'var(--#{$key}-dark)');
+    @include states('bg-#{$key}-dark', 'background-color', 'var(--#{$key}-dark)');
   }
 }
 
 /* Light Transparent Background Colors */
 @each $key, $value in $primary-colors {
-  @include states('.bg-#{$key}-light', 'background-color', 'var(--#{$key}-light)');
+  @include states('bg-#{$key}-light', 'background-color', 'var(--#{$key}-light)');
 }
