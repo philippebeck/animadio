@@ -1,13 +1,13 @@
 /***** Helpers : Variables : Shatex *****/
 
-$text-shadow-sm:    1px 1px   !default;
-$text-shadow-md:    2px 2px   !default;
-$text-shadow-lg:    5px 5px   !default;
+$text-shadow-sm:    1px   1px   !default;
+$text-shadow-md:    2px   2px   !default;
+$text-shadow-lg:    5px   5px   !default;
 
-$text-shadow-blur:      0 0 2px       !default;
-$text-shadow-blur-sm:   1px 1px 1px   !default;
-$text-shadow-blur-md:   2px 2px 2px   !default;
-$text-shadow-blur-lg:   5px 5px 5px   !default;
+$text-shadow-blur:      0     0     2px   !default;
+$text-shadow-blur-sm:   1px   1px   1px   !default;
+$text-shadow-blur-md:   2px   2px   2px   !default;
+$text-shadow-blur-lg:   5px   5px   5px   !default;
 
 $text-shadows: (
   'sm':         $text-shadow-sm,
