@@ -1,31 +1,31 @@
 // ***** Box : Mixins : Box *****
 
 @mixin box($class, $property, $value) {
-  #{$class},
-  #{$class}-global > *,
-  #{$class}-onto:hover,
-  #{$class}-onto:focus,
-  *:hover > #{$class}-into,
-  *:focus > #{$class}-into,
-  #{$class}-toall:hover > *,
-  #{$class}-toall:focus > *,
-  #{$class}-toone > *:hover,
-  #{$class}-toone > *:focus {
+  .#{$class},
+  .#{$class}-global > *,
+  .#{$class}-onto:hover,
+  .#{$class}-onto:focus,
+  *:hover > .#{$class}-into,
+  *:focus > .#{$class}-into,
+  .#{$class}-toall:hover > *,
+  .#{$class}-toall:focus > *,
+  .#{$class}-toone > *:hover,
+  .#{$class}-toone > *:focus {
     #{$property}: #{$value};
   }
 }
 
 @mixin box-concat($class, $property, $value) {
-  #{$class},
-  #{$class}[class*="-global"] > *,
-  #{$class}[class*="-onto"]:hover,
-  #{$class}[class*="-onto"]:focus,
-  *:hover > #{$class}[class*="-into"],
-  *:focus > #{$class}[class*="-into"],
-  #{$class}[class*="-toall"]:hover > *,
-  #{$class}[class*="-toall"]:focus > *,
-  #{$class}[class*="-toone"] > *:hover,
-  #{$class}[class*="-toone"] > *:focus {
+  [class*="#{$class}"],
+  [class*="#{$class}"][class*="-global"] > *,
+  [class*="#{$class}"][class*="-onto"]:hover,
+  [class*="#{$class}"][class*="-onto"]:focus,
+  *:hover > [class*="#{$class}"][class*="-into"],
+  *:focus > [class*="#{$class}"][class*="-into"],
+  [class*="#{$class}"][class*="-toall"]:hover > *,
+  [class*="#{$class}"][class*="-toall"]:focus > *,
+  [class*="#{$class}"][class*="-toone"] > *:hover,
+  [class*="#{$class}"][class*="-toone"] > *:focus {
     #{$property}: #{$value};
   }
 }

@@ -1,9 +1,9 @@
 /***** Box : Classes : Margin *****/
 
 @each $key, $value in $box-nones {
-  @include box('.mar-#{$key}', 'margin#{$value}', 'var(--margin-none)');
+  @include box('mar-#{$key}', 'margin#{$value}', 'var(--margin-none)');
 }
 
 @each $key, $value in $box-sizes {
-  @include box('.mar-#{$key}', 'margin#{$value}', 'var(--margin-#{$key})');
+  @include box('mar-#{$key}', 'margin#{$value}', 'var(--margin-#{$key})');
 }

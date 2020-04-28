@@ -2,15 +2,15 @@
 
 /* Width */
 @each $key, $value in $widths {
-  @include box('.width-#{$key}', 'width', 'var(--width-#{$key})');
+  @include box('width-#{$key}', 'width', 'var(--width-#{$key})');
 }
 
 /* Max-width */
 @each $key, $value in $max-widths {
-  @include box('.max-w-#{$key}', 'max-width', 'var(--max-width-#{$key})');
+  @include box('max-w-#{$key}', 'max-width', 'var(--max-width-#{$key})');
 }
 
 /* Min-width */
 @each $key, $value in $min-widths {
-  @include box('.min-w-#{$key}', 'min-width', 'var(--min-width-#{$key})');
+  @include box('min-w-#{$key}', 'min-width', 'var(--min-width-#{$key})');
 }
