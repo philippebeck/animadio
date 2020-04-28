@@ -53,14 +53,14 @@
   --form-width: 90%;
 }
 
-@media (min-width: $breakpoint-tn) {
+@media (min-width: $breakpoint-sm) {
   .form {
     --form-action-width: 60%;
     --form-width: 80%;
   }
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-md) {
   .form {
     --form-action-width: 30%;
     --form-field-width: 40%;
@@ -73,13 +73,13 @@
   }
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-lg) {
   .form {
     --form-width: 60%;
   }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-wd) {
   .form {
     --form-width: 50%;
   }
