@@ -1,62 +1,28 @@
 /***** Global : Variables : Keyframes *****/
 
-// ***** Rotate *****
-// Quarter
-$quarter:     rotate3d(0, 0, 1, 90deg)    !default;
-$quarterX:    rotate3d(1, 0, 0, 90deg)    !default;
-$quarterY:    rotate3d(0, 1, 0, 90deg)    !default;
-$quarterXY:   rotate3d(1, 1, 0, 90deg)    !default;
-$quarterXZ:   rotate3d(1, 0, 1, 90deg)    !default;
-$quarterYZ:   rotate3d(0, 1, 1, 90deg)    !default;
-$quarter3D:   rotate3d(1, 1, 1, 90deg)    !default;
-// Half
-$half:      rotate3d(0, 0, 1, 180deg)   !default;
-$halfX:     rotate3d(1, 0, 0, 180deg)   !default;
-$halfY:     rotate3d(0, 1, 0, 180deg)   !default;
-$halfXY:    rotate3d(1, 1, 0, 180deg)   !default;
-$halfXZ:    rotate3d(1, 0, 1, 180deg)   !default;
-$halfYZ:    rotate3d(0, 1, 1, 180deg)   !default;
-$half3D:    rotate3d(1, 1, 1, 180deg)   !default;
-// Full
-$full:      rotate3d(0, 0, 1, 360deg)   !default;
-$fullX:     rotate3d(1, 0, 0, 360deg)   !default;
-$fullY:     rotate3d(0, 1, 0, 360deg)   !default;
-$fullXY:    rotate3d(1, 1, 0, 360deg)   !default;
-$fullXZ:    rotate3d(1, 0, 1, 360deg)   !default;
-$fullYZ:    rotate3d(0, 1, 1, 360deg)   !default;
-$full3D:    rotate3d(1, 1, 1, 360deg)   !default;
-
 // ***** Scale *****
+// Bounce
+$bounce:    scale(-2, -2)   !default;
+// Flipper
+$flipperX:    scale(0, -2)    !default;
+$flipperY:    scale(-2, 0)    !default;
+// Open
+$openX:     scale(2, 0)   !default;
+$openY:     scale(0, 2)   !default;
+// Flip
+$flipX:   scale(1, -2)    !default;
+$flipY:   scale(-2, 1)    !default;
+// Fall
+$fallX:     scale(2, -2)    !default;
+$fallY:     scale(-2, 2)    !default;
 // Grow
 $grow:    scale(0, 0)   !default;
 $growX:   scale(0, 1)   !default;
 $growY:   scale(1, 0)   !default;
-// Flip
-$flipX:   scale(1, -2)    !default;
-$flipY:   scale(-2, 1)    !default;
-// Bounce
-$bounce:    scale(-2, -2)   !default;
-$bounceL:   scale(-5, -5)   !default;
 // Shrink
 $shrink:    scale(2, 2)   !default;
-$shrinkL:   scale(5, 5)   !default;
 $shrinkX:   scale(5, 1)   !default;
 $shrinkY:   scale(1, 5)   !default;
-// Open
-$openX:     scale(2, 0)   !default;
-$openY:     scale(0, 2)   !default;
-$openXL:    scale(5, 0)   !default;
-$openYL:    scale(0, 5)   !default;
-// Flipper
-$flipperX:    scale(0, -2)    !default;
-$flipperY:    scale(-2, 0)    !default;
-$flipperXL:   scale(0, -5)    !default;
-$flipperYL:   scale(-5, 0)    !default;
-// Fall
-$fallX:     scale(2, -2)    !default;
-$fallY:     scale(-2, 2)    !default;
-$fallXL:    scale(5, -5)    !default;
-$fallYL:    scale(-5, 5)    !default;
 
 // ***** Skew *****
 // Twist
@@ -80,6 +46,24 @@ $cycloneR:    skew(180deg, -180deg)     !default;
 $cycloneB:    skew(180deg, 180deg)      !default;
 $cycloneL:    skew(-180deg, 180deg)     !default;
 
+// ***** Rotate *****
+// Half
+$half:      rotate3d(0, 0, 1, 180deg)   !default;
+$halfX:     rotate3d(1, 0, 0, 180deg)   !default;
+$halfY:     rotate3d(0, 1, 0, 180deg)   !default;
+$halfXY:    rotate3d(1, 1, 0, 180deg)   !default;
+$halfXZ:    rotate3d(1, 0, 1, 180deg)   !default;
+$halfYZ:    rotate3d(0, 1, 1, 180deg)   !default;
+$half3D:    rotate3d(1, 1, 1, 180deg)   !default;
+// Full
+$full:      rotate3d(0, 0, 1, 360deg)   !default;
+$fullX:     rotate3d(1, 0, 0, 360deg)   !default;
+$fullY:     rotate3d(0, 1, 0, 360deg)   !default;
+$fullXY:    rotate3d(1, 1, 0, 360deg)   !default;
+$fullXZ:    rotate3d(1, 0, 1, 360deg)   !default;
+$fullYZ:    rotate3d(0, 1, 1, 360deg)   !default;
+$full3D:    rotate3d(1, 1, 1, 360deg)   !default;
+
 // ***** Translate *****
 // Slip
 $slipT:     translate(0, 5vh)        !default;
@@ -101,60 +85,28 @@ $slideBL:   translate(50vw, -50vh)     !default;
 $slideTL:   translate(50vw, 50vh)      !default;
 
 $transforms: (
-  // Quarter
-  'quarter':      $quarter,
-  'quarterX':     $quarterX,
-  'quarterY':     $quarterY,
-  'quarterXY':    $quarterXY,
-  'quarterXZ':    $quarterXZ,
-  'quarterYZ':    $quarterYZ,
-  'quarter3D':    $quarter3D,
-  // Half
-  'half':     $half,
-  'halfX':    $halfX,
-  'halfY':    $halfY,
-  'halfXY':   $halfXY,
-  'halfXZ':   $halfXZ,
-  'halfYZ':   $halfYZ,
-  'half3D':   $half3D,
-  // Full
-  'full':     $full,
-  'fullX':    $fullX,
-  'fullY':    $fullY,
-  'fullXY':   $fullXY,
-  'fullXZ':   $fullXZ,
-  'fullYZ':   $fullYZ,
-  'full3D':   $full3D,
+  // Bounce
+  'bounce':     $bounce,
+  // Flipper
+  'flipperX':     $flipperX,
+  'flipperY':     $flipperY,
+  // Open
+  'openX':      $openX,
+  'openY':      $openY,
+  // Flip
+  'flipX':    $flipX,
+  'flipY':    $flipY,
+  // Fall
+  'fallX':    $fallX,
+  'fallY':    $fallY,
   // Grow
   'grow':     $grow,
   'growX':    $growX,
   'growY':    $growY,
-  // Flip
-  'flipX':    $flipX,
-  'flipY':    $flipY,
-  // Bounce
-  'bounce':     $bounce,
-  'bounceL':    $bounceL,
   // Shrink
   'shrink':     $shrink,
-  'shrinkL':    $shrinkL,
   'shrinkX':    $shrinkX,
   'shrinkY':    $shrinkY,
-  // Open
-  'openX':      $openX,
-  'openY':      $openY,
-  'openXL':     $openXL,
-  'openYL':     $openYL,
-  // Flipper
-  'flipperX':     $flipperX,
-  'flipperY':     $flipperY,
-  'flipperXL':    $flipperXL,
-  'flipperYL':    $flipperYL,
-  // Fall
-  'fallX':    $fallX,
-  'fallY':    $fallY,
-  'fallXL':   $fallXL,
-  'fallYL':   $fallYL,
   // Twist
   'twistT':     $twistT,
   'twistR':     $twistR,
@@ -175,6 +127,22 @@ $transforms: (
   'cycloneR':   $cycloneR,
   'cycloneB':   $cycloneB,
   'cycloneL':   $cycloneL,
+  // Half
+  'half':     $half,
+  'halfX':    $halfX,
+  'halfY':    $halfY,
+  'halfXY':   $halfXY,
+  'halfXZ':   $halfXZ,
+  'halfYZ':   $halfYZ,
+  'half3D':   $half3D,
+  // Full
+  'full':     $full,
+  'fullX':    $fullX,
+  'fullY':    $fullY,
+  'fullXY':   $fullXY,
+  'fullXZ':   $fullXZ,
+  'fullYZ':   $fullYZ,
+  'full3D':   $full3D,
   // Slip
   'slipT':      $slipT,
   'slipR':      $slipR,
