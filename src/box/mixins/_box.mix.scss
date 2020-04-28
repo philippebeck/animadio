@@ -29,3 +29,10 @@
     #{$property}: #{$value};
   }
 }
+
+@mixin container($key, $type, $value) {
+  [class^="container-"][class*="-#{$key}#{$type}"],
+  [class*=" container-"][class*="-#{$key}#{$type}"] {
+    max-width: #{$value};
+  }
+}
