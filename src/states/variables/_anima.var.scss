@@ -18,7 +18,6 @@ $animation-durations: (
 ) !default;
 
 // Animation Timing Function
-$animation-timing-function-ease:            cubic-bezier(0.25, 0.1, 0.25, 1)    !default;
 $animation-timing-function-linear:          cubic-bezier(0, 0, 1, 1)            !default;
 $animation-timing-function-ease-in:         cubic-bezier(0.42, 0, 1, 1)         !default;
 $animation-timing-function-ease-out:        cubic-bezier(0, 0, 0.58, 1)         !default;
@@ -31,7 +30,6 @@ $animation-timing-function-steps-chrono:    steps(60, start)    !default;
 $animation-timing-function-steps-timer:     steps(60, end)      !default;
 
 $animation-timing-functions: (
-  'ease':     $animation-timing-function-ease,
   'linear':   $animation-timing-function-linear,
   'in':       $animation-timing-function-ease-in,
   'out':      $animation-timing-function-ease-out,
@@ -54,18 +52,14 @@ $animation-iteration-counts: (
 ) !default;
 
 // Animation Delay
-$animation-delay-tn:    1s    !default;
-$animation-delay-sm:    2s    !default;
-$animation-delay-md:    3s    !default;
-$animation-delay-lg:    4s    !default;
-$animation-delay-wd:    5s    !default;
+$animation-delay-sm:    1s    !default;
+$animation-delay-md:    2s    !default;
+$animation-delay-lg:    3s    !default;
 
 $animation-delays: (
-  'tiny':     $animation-delay-tn,
   'small':    $animation-delay-sm,
   'medium':   $animation-delay-md,
   'large':    $animation-delay-lg,
-  'wide':     $animation-delay-wd
 ) !default;
 
 // Animation Direction
@@ -82,15 +76,6 @@ $animation-fill-modes: (
   'both':     both
 ) !default;
 
-// Transform Origin
-$transform-origins: (
-  'center':   center,
-  'top':      top,
-  'right':    right,
-  'bottom':   bottom,
-  'left':     left
-) !default;
-
 // Animation Options
 $animation-primary-options: (
   'duration':           $animation-durations,
@@ -100,9 +85,8 @@ $animation-primary-options: (
 ) !default;
 
 $animations-secondary-options : (
-  'animation-direction':    $animation-directions,
-  'animation-fill-mode':    $animation-fill-modes,
-  'transform-origin':       $transform-origins
+  'direction':    $animation-directions,
+  'fill-mode':    $animation-fill-modes
 ) !default;
 
 // Animation CSS Variables
