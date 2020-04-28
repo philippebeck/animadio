@@ -12,8 +12,6 @@
 }
 
 /* Text decoration color */
-@each $color in $main-colors {
-  @each $key, $value in $color {
-    @include helpers('.deco-#{$key}', 'text-decoration-color', 'var(--#{$key})');
-  }
+@each $key, $value in $primary-colors {
+  @include helpers('.deco-#{$key}', 'text-decoration-color', 'var(--#{$key})');
 }

@@ -15,8 +15,6 @@
 }
 
 /* Light Transparent Background Colors */
-@each $colors in $main-colors {
-  @each $key, $value in $colors {
-    @include states('.bg-#{$key}-light', 'background-color', 'var(--#{$key}-light)');
-  }
+@each $key, $value in $primary-colors {
+  @include states('.bg-#{$key}-light', 'background-color', 'var(--#{$key}-light)');
 }

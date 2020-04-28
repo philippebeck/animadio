@@ -109,9 +109,7 @@ $duo-colors: (
   }
 
   /* Light Transparent Colors */
-  @each $colors in $main-colors {
-    @each $key, $value in $colors {
-      --#{$key}-light: rgba(#{$value}, 0.3);
-    }
+  @each $key, $value in $primary-colors {
+    --#{$key}-light: rgba(#{$value}, 0.3);
   }
 }
