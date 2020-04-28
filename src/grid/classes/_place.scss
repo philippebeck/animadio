@@ -1,52 +1,40 @@
 /***** Grid : Classes : Place *****/
 
-/* Place Content */
+/* Place-content */
 @each $key, $value in $place-content {
-  .placo-#{$key} {
-    place-content: var(--place-content-#{$key});
-  }
+  @include place-content($key);
 }
 
 @each $type, $breakpoint in $breakpoints {
   @media (min-width: $breakpoint) {
     @each $key, $value in $place-content {
-      .placo-#{$key}-#{$type} {
-        place-content: var(--place-content-#{$key});
-      }
+      @include place-content($key, $type);
     }
   }
 }
 
-/* Place Items */
+/* Place-items */
 @each $key, $value in $place-items {
-  .plait-#{$key} {
-    place-items: var(--place-items-#{$key});
-  }
+  @include place-items($key);
 }
 
 @each $type, $breakpoint in $breakpoints {
   @media (min-width: $breakpoint) {
     @each $key, $value in $place-items {
-      .plait-#{$key}-#{$type} {
-        place-items: var(--place-items-#{$key});
-      }
+      @include place-items($key, $type);
     }
   }
 }
 
-/* Place Self */
+/* Place-self */
 @each $key, $value in $place-self {
-  .plase-#{$key} {
-    place-self: var(--place-self-#{$key});
-  }
+  @include place-self($key);
 }
 
 @each $type, $breakpoint in $breakpoints {
   @media (min-width: $breakpoint) {
     @each $key, $value in $place-self {
-      .plase-#{$key}-#{$type} {
-        place-self: var(--place-self-#{$key});
-      }
+      @include place-self($key, $type);
     }
   }
 }
