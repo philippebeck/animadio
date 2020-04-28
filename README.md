@@ -51,23 +51,33 @@ Yarn : `yarn add animadio`
 
 > **Full Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio.min.css)  
+
+> **Box Version**
+
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-box.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-box.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-box.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-box.min.css)  
 
 > **Grid Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-grid.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-grid.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-grid.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-grid.min.css)  
 
 > **Elements Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-elements.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-elements.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-elements.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-elements.min.css)  
 
 > **States Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/animadio-states.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@1.1.5/dist/min/animadio-states.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-states.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-states.min.css)  
+
+> **Helpers Version**
+
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-helpers.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-helpers.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-helpers.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-helpers.min.css)  
 
 ---
 
@@ -91,19 +101,23 @@ The main library distribution is :
 [![CSS Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg?label=animadio.min.css)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
 
 But if you only need a part of Animadio, you can use one of those dist files :
+-   To get Global + Box : `dist/animadio-box.css` for dev or `dist/min/animadio-box.min.css` for prod  
 -   To get Global + Grid : `dist/animadio-grid.css` for dev or `dist/min/animadio-grid.min.css` for prod  
 -   To get Global + Elements : `dist/animadio-elements.css` for dev or `dist/min/animadio-elements.min.css` for prod  
 -   To get Global + States : `dist/animadio-states.css` for dev or `dist/min/animadio-states.min.css` for prod  
+-   To get Global + Helpers : `dist/animadio-helpers.css` for dev or `dist/min/animadio-helpers.min.css` for prod  
 
 ---
 
 ## CSS Only
 
-Animadio is a CSS framework whose library is composed only of CSS source code: jQuery, or even Javascript, are not included or needed in production...
+Source files are written with Sass in SCSS to offer better flexibility, simplified scalability & a project more maintainable over time.
 
-Grunt is the only JavaScript app used in the framework developement side for recursive tasks (concat, source map, webkit & min) to build the library file (but it can be used to concat CSS elements of your choice)
+Animadio library is composed only of CSS source code : jQuery, or even Javascript, are not included or needed in production...
 
-You can simply use the library & if you want or if you need : you can overload the CSS variables.
+Grunt is the only JavaScript app used in the framework development side for recursive tasks (concat, source map, webkit & min) to build the library file (but it can be used to concat CSS elements of your choice)
+
+You can simply use the library & if you need : you can overload the CSS variables.
 
 [![GitHub Top Language](https://img.shields.io/github/languages/top/animadio/animadio.svg?label=CSS)](https://github.com/animadio/animadio)
 
@@ -111,7 +125,7 @@ You can simply use the library & if you want or if you need : you can overload t
 
 ## Support
 
-Animadio has continuous support **until the 31st of December 2021** & community networks will give all news !
+Animadio has continuous support & community networks will give all news !
 
 [![Project Maintained](https://img.shields.io/maintenance/yes/2020.svg?label=Maintained)](https://github.com/animadio/animadio)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg?label=Last+Commit)](https://github.com/animadio/animadio/commits/master)
@@ -120,7 +134,7 @@ Animadio has continuous support **until the 31st of December 2021** & community 
 
 ## Browsers
 
-Animadio uses PostCSS with autoprefixer to provide a maximum of compatibility for all main browsers, including mainly Firefox, Chrome & Opera, secondarily Edge, Safari & Explorer (for some effects, especially all Skew animations)
+Animadio uses PostCSS with autoprefixer to provide a maximum of compatibility for all main browsers, including mainly Firefox, Chrome & Opera, secondarily Edge, Safari & Explorer (for some effects, especially some animations)
 
 ---
 
@@ -133,8 +147,6 @@ CodePen : [@animadio](https://codepen.io/animadio)
 ---
 
 ## Community
-
-Slack : [animadio.slack.com](https://join.slack.com/t/animadio/shared_invite/enQtNjAxMjg0OTUyODM5LWE5ZjNhNWYxMzVjZTdlMjhkNDhiNDVlYmQ1NjY3NTVhZGFmNDg2ODVhMmYyYmQwMDBkYmYyY2Q0NGQ5OGY3NWY)
 
 [![Twitter Follow](https://badgen.net/twitter/follow/animadio)](https://twitter.com/animadio)
 
@@ -220,10 +232,3 @@ Valentin Antoin
 Code released under the MIT License
 
 [![GitHub License](https://img.shields.io/npm/l/animadio.svg?label=License)](https://github.com/animadio/animadio/blob/master/LICENSE)
-
----
-
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/animadio/animadio/badge.svg?style=beer-square)](https://beerpay.io/animadio/animadio)  [![Beerpay](https://beerpay.io/animadio/animadio/make-wish.svg?style=flat-square)](https://beerpay.io/animadio/animadio?focus=wish)
