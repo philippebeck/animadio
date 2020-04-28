@@ -1,0 +1,54 @@
+/***** Grid : Variables : Flex *****/
+
+$column-padding:    0 10px    !default;
+$row-padding:       10px 0    !default;
+
+$flex-negative-margin-tn:   -2px    !default;
+$flex-negative-margin-sm:   -5px    !default;
+$flex-negative-margin-md:   -10px   !default;
+$flex-negative-margin-lg:   -20px   !default;
+$flex-negative-margin-wd:   -50px   !default;
+
+$flex-width-tn:   4px     !default;
+$flex-width-sm:   10px    !default;
+$flex-width-md:   20px    !default;
+$flex-width-lg:   40px    !default;
+$flex-width-wd:   100px   !default;
+
+$flex-positive-margin-tn:   2px     !default;
+$flex-positive-margin-sm:   5px     !default;
+$flex-positive-margin-md:   10px    !default;
+$flex-positive-margin-lg:   20px    !default;
+$flex-positive-margin-wd:   50px    !default;
+
+$flex: (
+  'negative-margin-tn':   $flex-negative-margin-tn,
+  'negative-margin-sm':   $flex-negative-margin-sm,
+  'negative-margin-md':   $flex-negative-margin-md,
+  'negative-margin-lg':   $flex-negative-margin-lg,
+  'negative-margin-wd':   $flex-negative-margin-wd,
+  'width-tn':             $flex-width-tn,
+  'width-sm':             $flex-width-sm,
+  'width-md':             $flex-width-md,
+  'width-lg':             $flex-width-lg,
+  'width-wd':             $flex-width-wd,
+  'positive-margin-tn':   $flex-positive-margin-tn,
+  'positive-margin-sm':   $flex-positive-margin-sm,
+  'positive-margin-md':   $flex-positive-margin-md,
+  'positive-margin-lg':   $flex-positive-margin-lg,
+  'positive-margin-wd':   $flex-positive-margin-wd
+ ) !default;
+
+[class*="column"] {
+  --column-padding: #{$column-padding};
+}
+
+[class*="row"] {
+  --row-padding: #{$row-padding};
+}
+
+[class*="flex-"] {
+  @each $key, $value in $flex {
+    --flex-#{$key}: #{$value};
+  }
+}

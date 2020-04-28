@@ -1,0 +1,53 @@
+// ***** Grid : Mixins : Grid *****
+
+// Flex
+@mixin flex-container($column, $key) {
+  [class^="flex-"][class*="-#{$column}#{$key}"],
+  [class*=" flex-"][class*="-#{$column}#{$key}"] {
+    margin: var(--flex-negative-margin-#{$key});
+  }
+}
+
+@mixin flex-children($column, $key) {
+  [class^="flex-"][class*="-#{$column}#{$key}"] > *,
+  [class*=" flex-"][class*="-#{$column}#{$key}"] > * {
+    width: calc(100% / #{$column} - var(--flex-width-#{$key}));
+    margin: var(--flex-positive-margin-#{$key});
+  }
+}
+
+// Grid
+@mixin grid-template($column, $key) {
+  [class^="grid-"][class*="-#{$column}#{$key}"],
+  [class*=" grid-"][class*="-#{$column}#{$key}"],
+  [class^="fluid-"][class*="-#{$column}#{$key}"],
+  [class*=" fluid-"][class*="-#{$column}#{$key}"] {
+    grid-template: auto/repeat(#{$column}, auto);
+  }
+}
+
+@mixin grid-gap($column, $key) {
+  [class^="gap-"][class*="-#{$column}#{$key}"],
+  [class*=" gap-"][class*="-#{$column}#{$key}"] {
+    grid-gap: var(--gap-#{$column}#{$key});
+  }
+}
+
+// Place
+@mixin place-content($key, $type: '') {
+  .placo-#{$key}-#{$type} {
+    place-content: var(--place-content-#{$key});
+  }
+}
+
+@mixin place-items($key, $type: '') {
+  .plait-#{$key}-#{$type} {
+    place-items: var(--place-items-#{$key});
+  }
+}
+
+@mixin place-self($key, $type: '') {
+  .plase-#{$key}-#{$type} {
+    place-self: var(--place-self-#{$key});
+  }
+}

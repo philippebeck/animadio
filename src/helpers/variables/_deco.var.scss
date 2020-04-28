@@ -1,0 +1,30 @@
+/***** Helpers : Variables : Deco *****/
+
+// Text Decoration Line
+$text-decoration-line: underline !default;
+
+$text-decoration-lines: (
+  'none':       none,
+  'through':    line-through,
+  'over':       overline
+) !default;
+
+// Text Decoration Style
+$text-decoration-styles: (
+  'dash':     dashed,
+  'dot':      dotted,
+  'double':   double,
+  'solid':    solid,
+  'wavy':     wavy
+) !default;
+
+// Text Decorations
+$text-decorations : (
+  "line":    $text-decoration-lines,
+  "style":   $text-decoration-styles
+) !default;
+
+// Text Decoration CSS variable
+[class*="deco"] {
+  --text-decoration-line: #{$text-decoration-line};
+}

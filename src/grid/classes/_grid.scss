@@ -1,0 +1,45 @@
+/***** Grid : Classes : Grid *****/
+
+[class^="grid"],
+[class*=" grid"],
+[class^="fluid"],
+[class*=" fluid"] {
+  display: grid;
+}
+
+[class^="grid"],
+[class*=" grid"] {
+  margin: auto;
+  max-width: 80%;
+}
+
+[class^="fluid"],
+[class*=" fluid"] {
+  max-width: 100%;
+}
+
+/* Grid-template */
+@for $i from 2 to 13 {
+  @include grid-template($i, 'tn');
+}
+
+@each $key, $value in $breakpoints {
+  @media (min-width: $value) {
+    @for $i from 2 to 13 {
+      @include grid-template($i, $key);
+    }
+  }
+}
+
+/* Grid-gap */
+@for $i from 1 to 4 {
+  @include grid-gap($i, 'tn');
+}
+
+@each $key, $value in $breakpoints {
+  @media (min-width: $value) {
+    @for $i from 1 to 4 {
+      @include grid-gap($i, $key);
+    }
+  }
+}

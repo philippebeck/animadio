@@ -1,0 +1,32 @@
+/***** Elements : Variables : Foot *****/
+
+.foot {
+  --foot-first-child-background-color: var(--purple);
+  --foot-first-child-cursor: help;
+  --foot-first-child-flex-direction: column;
+  --foot-first-child-font-color: var(--white);
+  --foot-first-child-link-font-color: var(--white);
+  --foot-first-child-link-hover-font-color: var(--jade);
+  --foot-first-child-link-margin-bottom: 5px;
+  --foot-first-child-list-cursor: pointer;
+  --foot-first-child-list-text-align: center;
+  --foot-first-child-margin: 0;
+  --foot-first-child-place-content: space-evenly;
+  --foot-last-child-background-color: var(--white);
+  --foot-last-child-cursor: crosshair;
+  --foot-last-child-link-margin-left: 10px;
+  --foot-last-child-link-margin-right: 10px;
+  --foot-last-child-margin: 0;
+  --foot-last-child-padding-top: 20px;
+  --foot-last-child-place-content: center;
+  --foot-list-padding-bottom: 20px;
+  --foot-text-align: center;
+  --foot-title-color: var(--khaki);
+  --foot-title-font-size: 2rem;
+}
+
+@media (min-width: $breakpoint-sm) {
+  .foot {
+    --foot-first-child-flex-direction: row;
+  }
+}

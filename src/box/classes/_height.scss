@@ -1,0 +1,16 @@
+/***** Box : Classes : Height *****/
+
+/* Height */
+@each $key, $value in $heights {
+  @include box('height-#{$key}', 'height', 'var(--height-#{$key})');
+}
+
+/* Max-height */
+@each $key, $value in $max-heights {
+  @include box('max-h-#{$key}', 'max-height', 'var(--max-height-#{$key})');
+}
+
+/* Min-height */
+@each $key, $value in $min-heights {
+  @include box('min-h-#{$key}', 'min-height', 'var(--min-height-#{$key})');
+}

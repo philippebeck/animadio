@@ -1,0 +1,8 @@
+/***** Global : Classes : Base *****/
+
+[class*="check"],
+[class*="radio"],
+[id*="check"],
+[id*="radio"] {
+  display: none !important;
+}

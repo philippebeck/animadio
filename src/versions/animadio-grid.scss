@@ -1,0 +1,18 @@
+// ********** GLOBAL **********
+@import '../global/mixins/global.mix';
+@import '../global/variables/breakpoints.var';
+@import '../global/variables/colors.var';
+@import '../global/variables/keyframes.var';
+@import '../global/rules/keyframes';
+@import '../global/variables/init.var';
+@import '../global/tags/init';
+@import '../global/classes/base';
+
+// ********** GRID **********
+@import "../grid/mixins/grid.mix";
+@import '../grid/variables/flex.var';
+@import '../grid/classes/flex';
+@import '../grid/variables/grid.var';
+@import '../grid/classes/grid';
+@import '../grid/variables/place.var';
+@import '../grid/classes/place';

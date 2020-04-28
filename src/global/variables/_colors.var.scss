@@ -1,0 +1,115 @@
+/***** Global : Variables : Colors *****/
+
+// Primary Colors
+$black:     15, 15, 15      !default;
+$blue:      65, 105, 225    !default;
+$gray:      105, 105, 105   !default;
+$green:     34, 139, 34     !default;
+$maroon:    139, 69, 19     !default;
+$navy:      0, 0, 128       !default;
+$orange:    255, 140, 0     !default;
+$purple:    106, 90, 205    !default;
+$red:       220, 20, 60     !default;
+$yellow:    255, 215, 0     !default;
+
+$primary-colors: (
+  "black":    $black,
+  "blue":     $blue,
+  "gray":     $gray,
+  "green":    $green,
+  "maroon":   $maroon,
+  "navy":     $navy,
+  "orange":   $orange,
+  "purple":   $purple,
+  "red":      $red,
+  "yellow":   $yellow
+) !default;
+
+// Secondary Colors
+$white:     255, 255, 240   !default;
+$sky:       173, 216, 230   !default;
+$silver:    192, 192, 192   !default;
+$jade:      152, 251, 152   !default;
+$choco:     244, 164, 96    !default;
+$aqua:      0, 255, 255     !default;
+$salmon:    255, 160, 122   !default;
+$violet:    216, 191, 216   !default;
+$tomato:    240, 128, 128   !default;
+$khaki:     240, 230, 140   !default;
+
+$secondary-colors: (
+  "white":    $white,
+  "sky":      $sky,
+  "silver":   $silver,
+  "jade":     $jade,
+  "choco":    $choco,
+  "aqua":     $aqua,
+  "salmon":   $salmon,
+  "violet":   $violet,
+  "tomato":   $tomato,
+  "khaki":    $khaki
+) !default;
+
+// Brand Colors
+$facebook:        66, 103, 178    !default;
+$freecodecamp:    0, 100, 0       !default;
+$github:          36, 41, 46      !default;
+$jsdelivr:        253, 199, 46    !default;
+$linkedin:        0, 119, 181     !default;
+$medium:          2, 158, 116     !default;
+$npm:             193, 33, 39     !default;
+$packagist:       242, 141, 26    !default;
+$stackoverflow:   244, 128, 36    !default;
+$twitter:         29, 161, 242    !default;
+
+$brand-colors: (
+  "fb":           $facebook,
+  "fcc":          $freecodecamp,
+  "github":       $github,
+  "jsd":          $jsdelivr,
+  "in":           $linkedin,
+  "medium":       $medium,
+  "npm":          $npm,
+  "packagist":    $packagist,
+  "stack":        $stackoverflow,
+  "tw":           $twitter
+) !default;
+
+// Composite Colors
+$main-colors:   $primary-colors, $secondary-colors;
+$all-colors:    $primary-colors, $secondary-colors, $brand-colors;
+
+$duo-colors: (
+  "black":    "white",
+  "blue":     "sky",
+  "gray":     "silver",
+  "green":    "jade",
+  "maroon":   "choco",
+  "navy":     "aqua",
+  "orange":   "salmon",
+  "purple":   "violet",
+  "red":      "tomato",
+  "yellow":   "khaki"
+) !default;
+
+// CSS Colors
+:root {
+  /* Basic Colors */
+  @each $colors in $all-colors {
+    @each $key, $value in $colors {
+      --#{$key}: rgb(#{$value});
+    }
+  }
+
+  /* Dark Transparent Colors */
+  @each $colors in $main-colors {
+    @each $key, $value in $colors {
+      --#{$key}-dark: rgba(#{$value}, 0.7);
+    }
+  }
+
+  /* Light Transparent Colors */
+  @each $key, $value in $primary-colors {
+    --#{$key}-light: rgba(#{$value}, 0.3);
+  }
+}

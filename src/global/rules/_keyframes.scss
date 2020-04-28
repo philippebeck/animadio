@@ -1,0 +1,5 @@
+/***** Global : Rules : Keyframes *****/
+
+@each $key, $value in $transforms {
+  @include keyframes($key);
+}

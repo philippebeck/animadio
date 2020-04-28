@@ -1,0 +1,15 @@
+/***** States : Classes : Color *****/
+
+/* Basic Colors */
+@each $color in $all-colors {
+  @each $key, $value in $color {
+    @include states('color-#{$key}', 'color', 'var(--#{$key})');
+  }
+}
+
+/* Dark Transparent Colors */
+@each $color in $main-colors {
+  @each $key, $value in $color {
+    @include states('color-#{$key}-dark', 'color', 'var(--#{$key}-dark)');
+  }
+}

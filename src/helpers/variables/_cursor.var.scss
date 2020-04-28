@@ -1,0 +1,11 @@
+// ***** Helpers : Variables : Cursor *****
+
+$cursor: (
+  'cell':     cell,
+  'cross':    crosshair,
+  'hand':     pointer,
+  'help':     help,
+  'move':     move,
+  'none':     not-allowed,
+  'text':     text
+) !default;

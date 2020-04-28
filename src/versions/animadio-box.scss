@@ -1,0 +1,25 @@
+// ********** GLOBAL **********
+@import '../global/mixins/global.mix';
+@import '../global/variables/breakpoints.var';
+@import '../global/variables/colors.var';
+@import '../global/variables/keyframes.var';
+@import '../global/rules/keyframes';
+@import '../global/variables/init.var';
+@import '../global/tags/init';
+@import '../global/classes/base';
+
+// ********** BOX **********
+@import '../box/mixins/box.mix';
+@import '../box/variables/box.var';
+@import '../box/variables/container.var';
+@import '../box/classes/container';
+@import '../box/variables/margin.var';
+@import '../box/classes/margin';
+@import '../box/variables/border.var';
+@import '../box/classes/border';
+@import '../box/variables/padding.var';
+@import '../box/classes/padding';
+@import '../box/variables/height.var';
+@import '../box/classes/height';
+@import '../box/variables/width.var';
+@import '../box/classes/width';

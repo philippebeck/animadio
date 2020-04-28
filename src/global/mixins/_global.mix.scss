@@ -1,0 +1,11 @@
+// ***** Global : Mixins : Global *****
+
+@mixin keyframes($key) {
+  @keyframes #{$key} {
+    from {
+      opacity: var(--opacity-#{$key});
+      transform: var(--transform-#{$key});
+      transform-origin: var(--origin-#{$key});;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+// States : Variables : Position
+
+$positions: (
+  'absolute':   absolute,
+  'fixed':      fixed,
+  'relative':   relative,
+  'sticky':     sticky
+) !default;

@@ -1,0 +1,27 @@
+// ***** Box : Variables : Box *****
+
+$box-nones: (
+  'none':           '',
+  'top-none':       '-top',
+  'right-none':     '-right',
+  'bottom-none':    '-bottom',
+  'left-none':      '-left',
+) !default;
+
+$box-sizes: (
+  'sm':           '',
+  'md':           '',
+  'lg':           '',
+  'top-sm':       '-top',
+  'top-md':       '-top',
+  'top-lg':       '-top',
+  'right-sm':     '-right',
+  'right-md':     '-right',
+  'right-lg':     '-right',
+  'bottom-sm':    '-bottom',
+  'bottom-md':    '-bottom',
+  'bottom-lg':    '-bottom',
+  'left-sm':      '-left',
+  'left-md':      '-left',
+  'left-lg':      '-left'
+) !default;

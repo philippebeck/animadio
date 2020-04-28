@@ -1,0 +1,40 @@
+/***** Grid : Classes : Place *****/
+
+/* Place-content */
+@each $key, $value in $place-content {
+  @include place-content($key);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $place-content {
+      @include place-content($key, $type);
+    }
+  }
+}
+
+/* Place-items */
+@each $key, $value in $place-items {
+  @include place-items($key);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $place-items {
+      @include place-items($key, $type);
+    }
+  }
+}
+
+/* Place-self */
+@each $key, $value in $place-self {
+  @include place-self($key);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $place-self {
+      @include place-self($key, $type);
+    }
+  }
+}

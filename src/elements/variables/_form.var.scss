@@ -1,0 +1,86 @@
+/***** Elements : Variables : Form *****/
+
+.form {
+  --form-action-border: medium solid var(--white-dark);
+  --form-action-box-shadow: inset 0 0 10px 10px var(--white);
+  --form-action-cursor: pointer;
+  --form-action-hover-box-shadow: inset 0 0 5px 5px var(--white);
+  --form-action-hover-transform: scale(0.9);
+  --form-action-hover-transition: box-shadow 1s;
+  --form-action-line-height: 2;
+  --form-action-margin: 10px auto;
+  --form-action-width: 80%;
+  --form-border: medium ridge var(--sky);
+  --form-box-shadow: inset 0 0 5px 5px var(--blue-dark);
+  --form-field-background-color: var(--silver);
+  --form-field-border: medium double var(--blue);
+  --form-field-border-radius: 10px;
+  --form-field-box-shadow: 5px 5px 10px 10px var(--white);
+  --form-field-hover-border: medium double var(--green);
+  --form-field-hover-box-shadow: 5px 5px 10px 5px var(--gray);
+  --form-field-line-height: 1.8;
+  --form-field-margin: 10px 0 20px;
+  --form-field-outline: 0;
+  --form-field-padding: 5px;
+  --form-field-placeholder-color: var(--blue);
+  --form-field-placeholder-font-style: italic;
+  --form-field-width: 100%;
+  --form-fieldset-border: 0;
+  --form-label-border: thin dashed var(--white);
+  --form-label-color: var(--gray);
+  --form-label-hover-border: thin dashed var(--silver);
+  --form-label-margin: auto;
+  --form-label-padding: 5px;
+  --form-label-text-decoration: none;
+  --form-legend-font-size: 2.5rem;
+  --form-legend-font-weight: bold;
+  --form-legend-margin: auto;
+  --form-list-flex-direction: column;
+  --form-list-place-content: center;
+  --form-list-place-items: baseline;
+  --form-margin: 20px auto;
+  --form-padding: 20px;
+  --form-reset-background-color: var(--tomato);
+  --form-reset-border: medium solid var(--red-dark);
+  --form-reset-color: var(--red);
+  --form-reset-hover-background-color: var(--red);
+  --form-reset-hover-color: var(--white);
+  --form-submit-background-color: var(--jade);
+  --form-submit-border: medium solid var(--green-dark);
+  --form-submit-color: var(--green);
+  --form-submit-hover-background-color: var(--green);
+  --form-submit-hover-color: var(--white);
+  --form-width: 90%;
+}
+
+@media (min-width: $breakpoint-sm) {
+  .form {
+    --form-action-width: 60%;
+    --form-width: 80%;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .form {
+    --form-action-width: 30%;
+    --form-field-width: 40%;
+    --form-fieldset-margin-left: 0;
+    --form-label-text-decoration: dotted underline var(--gray);
+    --form-list-flex-direction: row;
+    --form-list-place-content: space-around;
+    --form-list-place-items: center;
+    --form-width: 70%;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .form {
+    --form-width: 60%;
+  }
+}
+
+@media (min-width: $breakpoint-wd) {
+  .form {
+    --form-width: 50%;
+  }
+}
