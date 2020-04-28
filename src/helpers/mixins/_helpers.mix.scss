@@ -1,15 +1,15 @@
 // ***** Helpers : Mixins : Helpers *****
 
 @mixin helpers($class, $property, $value) {
-  #{$class},
-  #{$class}-global > * {
+  .#{$class},
+  .#{$class}-global > * {
     #{$property}: #{$value};
   }
 }
 
 @mixin helpers-concat($class, $property, $value) {
-  #{$class},
-  #{$class}[class*="-global"] > * {
+  [class*="#{$class}"],
+  [class*="#{$class}"][class*="-global"] > * {
     #{$property}: #{$value};
   }
 }

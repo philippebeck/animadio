@@ -1,5 +1,5 @@
 /***** Helpers : Classes : Font *****/
 
 @each $key, $value in $font {
-  @include helpers('.font-#{$key}', 'font-#{$value}', '#{$key}');
+  @include helpers('font-#{$key}', 'font-#{$value}', $key);
 }
