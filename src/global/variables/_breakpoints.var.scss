@@ -1,13 +1,11 @@
 // Global : Variables : Breakpoints
 
-$breakpoint-tn:   576px     !default;
-$breakpoint-sm:   768px     !default;
-$breakpoint-md:   992px     !default;
-$breakpoint-lg:   1200px    !default;
-$breakpoint-wd:   1600px    !default;
+$breakpoint-sm:   576px     !default;
+$breakpoint-md:   768px     !default;
+$breakpoint-lg:   992px     !default;
+$breakpoint-wd:   1200px    !default;
 
 $breakpoints: (
-  'tn':   $breakpoint-tn,
   'sm':   $breakpoint-sm,
   'md':   $breakpoint-md,
   'lg':   $breakpoint-lg,
