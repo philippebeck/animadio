@@ -987,6 +987,22 @@ pre > *::selection {
   display: none !important;
 }
 
+/***** Helpers : Classes : Font *****/
+.font-bold,
+.font-bold-global > * {
+  font-weight: bold;
+}
+
+.font-italic,
+.font-italic-global > * {
+  font-style: italic;
+}
+
+.font-oblique,
+.font-oblique-global > * {
+  font-style: oblique;
+}
+
 /***** Helpers : Classes : Align *****/
 .text-center,
 .text-center-global > * {
@@ -1008,42 +1024,6 @@ pre > *::selection {
   text-align: left;
 }
 
-/***** Helpers : Classes : Cursor *****/
-.cursor-cell,
-.cursor-cell-global > * {
-  cursor: cell;
-}
-
-.cursor-cross,
-.cursor-cross-global > * {
-  cursor: crosshair;
-}
-
-.cursor-hand,
-.cursor-hand-global > * {
-  cursor: pointer;
-}
-
-.cursor-help,
-.cursor-help-global > * {
-  cursor: help;
-}
-
-.cursor-move,
-.cursor-move-global > * {
-  cursor: move;
-}
-
-.cursor-none,
-.cursor-none-global > * {
-  cursor: not-allowed;
-}
-
-.cursor-text,
-.cursor-text-global > * {
-  cursor: text;
-}
-
 /***** Helpers : Variables : Deco *****/
 [class*=deco] {
   --text-decoration-line: underline;
@@ -1061,14 +1041,19 @@ pre > *::selection {
   text-decoration-line: none;
 }
 
-.deco-through,
-.deco-through-global > * {
-  text-decoration-line: line-through;
+.deco-under,
+.deco-under-global > * {
+  text-decoration-line: underline;
 }
 
 .deco-over,
 .deco-over-global > * {
   text-decoration-line: overline;
+}
+
+.deco-through,
+.deco-through-global > * {
+  text-decoration-line: line-through;
 }
 
 /* Text decoration style */
@@ -1148,20 +1133,51 @@ pre > *::selection {
   text-decoration-color: var(--yellow);
 }
 
-/***** Helpers : Classes : Font *****/
-.font-bold,
-.font-bold-global > * {
-  font-weight: bold;
+/***** Helpers : Variables : Shatex *****/
+[class*=shatex-] {
+  --text-shadow-sm: 1px 1px;
+  --text-shadow-md: 2px 2px;
+  --text-shadow-lg: 5px 5px;
+  --text-shadow-blur: 0 0 2px;
+  --text-shadow-blur-sm: 1px 1px 1px;
+  --text-shadow-blur-md: 2px 2px 2px;
+  --text-shadow-blur-lg: 5px 5px 5px;
 }
 
-.font-italic,
-.font-italic-global > * {
-  font-style: italic;
+/***** Helpers : Classes : Shatex *****/
+.shatex-sm,
+.shatex-sm-global > * {
+  text-shadow: var(--text-shadow-sm);
 }
 
-.font-oblique,
-.font-oblique-global > * {
-  font-style: oblique;
+.shatex-md,
+.shatex-md-global > * {
+  text-shadow: var(--text-shadow-md);
+}
+
+.shatex-lg,
+.shatex-lg-global > * {
+  text-shadow: var(--text-shadow-lg);
+}
+
+.shatex-blur,
+.shatex-blur-global > * {
+  text-shadow: var(--text-shadow-blur);
+}
+
+.shatex-blur-sm,
+.shatex-blur-sm-global > * {
+  text-shadow: var(--text-shadow-blur-sm);
+}
+
+.shatex-blur-md,
+.shatex-blur-md-global > * {
+  text-shadow: var(--text-shadow-blur-md);
+}
+
+.shatex-blur-lg,
+.shatex-blur-lg-global > * {
+  text-shadow: var(--text-shadow-blur-lg);
 }
 
 /***** Helpers : Variables : Shabox *****/
@@ -1290,51 +1306,40 @@ pre > *::selection {
   box-shadow: inset var(--box-shadow-spread-lg);
 }
 
-/***** Helpers : Variables : Shatex *****/
-[class*=shatex-] {
-  --text-shadow-sm: 1px 1px;
-  --text-shadow-md: 2px 2px;
-  --text-shadow-lg: 5px 5px;
-  --text-shadow-blur: 0 0 2px;
-  --text-shadow-blur-sm: 1px 1px 1px;
-  --text-shadow-blur-md: 2px 2px 2px;
-  --text-shadow-blur-lg: 5px 5px 5px;
+/***** Helpers : Classes : Cursor *****/
+.cursor-cell,
+.cursor-cell-global > * {
+  cursor: cell;
 }
 
-/***** Helpers : Classes : Shatex *****/
-.shatex-sm,
-.shatex-sm-global > * {
-  text-shadow: var(--text-shadow-sm);
+.cursor-cross,
+.cursor-cross-global > * {
+  cursor: crosshair;
 }
 
-.shatex-md,
-.shatex-md-global > * {
-  text-shadow: var(--text-shadow-md);
+.cursor-hand,
+.cursor-hand-global > * {
+  cursor: pointer;
 }
 
-.shatex-lg,
-.shatex-lg-global > * {
-  text-shadow: var(--text-shadow-lg);
+.cursor-help,
+.cursor-help-global > * {
+  cursor: help;
 }
 
-.shatex-blur,
-.shatex-blur-global > * {
-  text-shadow: var(--text-shadow-blur);
+.cursor-move,
+.cursor-move-global > * {
+  cursor: move;
 }
 
-.shatex-blur-sm,
-.shatex-blur-sm-global > * {
-  text-shadow: var(--text-shadow-blur-sm);
+.cursor-none,
+.cursor-none-global > * {
+  cursor: not-allowed;
 }
 
-.shatex-blur-md,
-.shatex-blur-md-global > * {
-  text-shadow: var(--text-shadow-blur-md);
-}
-
-.shatex-blur-lg,
-.shatex-blur-lg-global > * {
-  text-shadow: var(--text-shadow-blur-lg);
+.cursor-text,
+.cursor-text-global > * {
+  cursor: text;
 }
 
 /*# sourceMappingURL=animadio-helpers.css.map */

@@ -35,19 +35,19 @@
 
 // Place
 @mixin place-content($key, $type: '') {
-  .placo-#{$key}-#{$type} {
+  .placo-#{$key}#{$type} {
     place-content: var(--place-content-#{$key});
   }
 }
 
 @mixin place-items($key, $type: '') {
-  .plait-#{$key}-#{$type} {
+  .plait-#{$key}#{$type} {
     place-items: var(--place-items-#{$key});
   }
 }
 
 @mixin place-self($key, $type: '') {
-  .plase-#{$key}-#{$type} {
+  .plase-#{$key}#{$type} {
     place-self: var(--place-self-#{$key});
   }
 }
