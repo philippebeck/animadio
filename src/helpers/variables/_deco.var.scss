@@ -5,8 +5,9 @@ $text-decoration-line: underline !default;
 
 $text-decoration-lines: (
   'none':       none,
-  'through':    line-through,
-  'over':       overline
+  'under':      underline,
+  'over':       overline,
+  'through':    line-through
 ) !default;
 
 // Text Decoration Style
