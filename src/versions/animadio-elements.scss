@@ -9,20 +9,20 @@
 @import '../global/classes/base';
 
 // ********** ELEMENTS **********
-@import "../elements/mixins/elements.mix";
+@import '../elements/mixins/elements.mix';
+@import '../elements/variables/navbar.var';
+@import '../elements/classes/navbar';
 @import '../elements/variables/btn.var';
 @import '../elements/classes/btn';
 @import '../elements/variables/card.var';
 @import '../elements/classes/card';
-@import '../elements/variables/foot.var';
-@import '../elements/classes/foot';
-@import '../elements/variables/form.var';
-@import '../elements/classes/form';
-@import '../elements/variables/gallery.var';
-@import '../elements/classes/gallery';
 @import '../elements/variables/menu.var';
 @import '../elements/classes/menu';
-@import '../elements/variables/navbar.var';
-@import '../elements/classes/navbar';
+@import '../elements/variables/gallery.var';
+@import '../elements/classes/gallery';
+@import '../elements/variables/form.var';
+@import '../elements/classes/form';
 @import '../elements/variables/table.var';
 @import '../elements/classes/table';
+@import '../elements/variables/foot.var';
+@import '../elements/classes/foot';
