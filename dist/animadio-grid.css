@@ -1,4 +1,4 @@
-/*! animadio v2.0.0 | https://animadio.org | MIT License */
+/*! animadio v2.0.1 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
@@ -1677,21 +1677,21 @@ pre > *::selection {
 }
 
 [class*=flex-] {
-  --flex-negative-margin-tn: -2px;
-  --flex-negative-margin-sm: -5px;
-  --flex-negative-margin-md: -10px;
-  --flex-negative-margin-lg: -20px;
-  --flex-negative-margin-wd: -50px;
-  --flex-width-tn: 4px;
-  --flex-width-sm: 10px;
-  --flex-width-md: 20px;
-  --flex-width-lg: 40px;
-  --flex-width-wd: 100px;
-  --flex-positive-margin-tn: 2px;
-  --flex-positive-margin-sm: 5px;
-  --flex-positive-margin-md: 10px;
-  --flex-positive-margin-lg: 20px;
-  --flex-positive-margin-wd: 50px;
+  --flex-container-margin-tn: -2px;
+  --flex-container-margin-sm: -5px;
+  --flex-container-margin-md: -10px;
+  --flex-container-margin-lg: -20px;
+  --flex-container-margin-wd: -50px;
+  --flex-children-width-tn: 4px;
+  --flex-children-width-sm: 10px;
+  --flex-children-width-md: 20px;
+  --flex-children-width-lg: 40px;
+  --flex-children-width-wd: 100px;
+  --flex-children-margin-tn: 2px;
+  --flex-children-margin-sm: 5px;
+  --flex-children-margin-md: 10px;
+  --flex-children-margin-lg: 20px;
+  --flex-children-margin-wd: 50px;
 }
 
 /***** Grid : Classes : Flex *****/
@@ -2911,31 +2911,31 @@ pre > *::selection {
 
 /***** Grid : Classes : Place *****/
 /* Place-content */
-.placo-around- {
+.placo-around {
   place-content: var(--place-content-around);
 }
 
-.placo-between- {
+.placo-between {
   place-content: var(--place-content-between);
 }
 
-.placo-evenly- {
+.placo-evenly {
   place-content: var(--place-content-evenly);
 }
 
-.placo-center- {
+.placo-center {
   place-content: var(--place-content-center);
 }
 
-.placo-stretch- {
+.placo-stretch {
   place-content: var(--place-content-stretch);
 }
 
-.placo-start- {
+.placo-start {
   place-content: var(--place-content-start);
 }
 
-.placo-end- {
+.placo-end {
   place-content: var(--place-content-end);
 }
 
@@ -3056,27 +3056,27 @@ pre > *::selection {
   }
 }
 /* Place-items */
-.plait-base- {
+.plait-base {
   place-items: var(--place-items-base);
 }
 
-.plait-normal- {
+.plait-normal {
   place-items: var(--place-items-normal);
 }
 
-.plait-center- {
+.plait-center {
   place-items: var(--place-items-center);
 }
 
-.plait-stretch- {
+.plait-stretch {
   place-items: var(--place-items-stretch);
 }
 
-.plait-start- {
+.plait-start {
   place-items: var(--place-items-start);
 }
 
-.plait-end- {
+.plait-end {
   place-items: var(--place-items-end);
 }
 
@@ -3181,31 +3181,31 @@ pre > *::selection {
   }
 }
 /* Place-self */
-.plase-auto- {
+.plase-auto {
   place-self: var(--place-self-auto);
 }
 
-.plase-base- {
+.plase-base {
   place-self: var(--place-self-base);
 }
 
-.plase-normal- {
+.plase-normal {
   place-self: var(--place-self-normal);
 }
 
-.plase-center- {
+.plase-center {
   place-self: var(--place-self-center);
 }
 
-.plase-stretch- {
+.plase-stretch {
   place-self: var(--place-self-stretch);
 }
 
-.plase-start- {
+.plase-start {
   place-self: var(--place-self-start);
 }
 
-.plase-end- {
+.plase-end {
   place-self: var(--place-self-end);
 }
 
@@ -3327,4 +3327,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 28th Apr 2020 @ 8:30:22 PM */
+ Updated: 30th Apr 2020 @ 11:12:05 PM */

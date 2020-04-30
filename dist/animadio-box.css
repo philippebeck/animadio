@@ -1,4 +1,4 @@
-/*! animadio v2.0.0 | https://animadio.org | MIT License */
+/*! animadio v2.0.1 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
@@ -1821,9 +1821,9 @@ pre > *::selection {
   --margin-right-sm: 10px;
   --margin-right-md: 20px;
   --margin-right-lg: 50px;
-  --margin-bottom-sm: 10px;
-  --margin-bottom-md: 20px;
-  --margin-bottom-lg: 50px;
+  --margin-bot-sm: 10px;
+  --margin-bot-md: 20px;
+  --margin-bot-lg: 50px;
   --margin-left-sm: 10px;
   --margin-left-md: 20px;
   --margin-left-lg: 50px;
@@ -2144,6 +2144,19 @@ pre > *::selection {
 .bord-dot-toone > *:hover,
 .bord-dot-toone > *:focus {
   border-style: dotted;
+}
+
+.bord-solid,
+.bord-solid-global > *,
+.bord-solid-onto:hover,
+.bord-solid-onto:focus,
+*:hover > .bord-solid-into,
+*:focus > .bord-solid-into,
+.bord-solid-toall:hover > *,
+.bord-solid-toall:focus > *,
+.bord-solid-toone > *:hover,
+.bord-solid-toone > *:focus {
+  border-style: solid;
 }
 
 .bord-double,
@@ -2603,9 +2616,9 @@ pre > *::selection {
   --padding-right-sm: 10px;
   --padding-right-md: 20px;
   --padding-right-lg: 50px;
-  --padding-bottom-sm: 10px;
-  --padding-bottom-md: 20px;
-  --padding-bottom-lg: 50px;
+  --padding-bot-sm: 10px;
+  --padding-bot-md: 20px;
+  --padding-bot-lg: 50px;
   --padding-left-sm: 10px;
   --padding-left-md: 20px;
   --padding-left-lg: 50px;
@@ -3153,4 +3166,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 28th Apr 2020 @ 8:30:22 PM */
+ Updated: 30th Apr 2020 @ 11:12:05 PM */

@@ -1,4 +1,4 @@
-/*! animadio v2.0.0 | https://animadio.org | MIT License */
+/*! animadio v2.0.1 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
@@ -3340,42 +3340,42 @@ pre > *::selection {
 }
 
 /* Animation direction */
-.anima-alter,
-.anima-alter-global > *,
-.anima-alter-onto:hover,
-.anima-alter-onto:focus,
-*:hover > .anima-alter-into,
-*:focus > .anima-alter-into,
-.anima-alter-toall:hover > *,
-.anima-alter-toall:focus > *,
-.anima-alter-toone > *:hover,
-.anima-alter-toone > *:focus,
-.anima-alter-radio1:checked ~ .anima-alter-relay .anima-alter-target1,
-.anima-alter-radio2:checked ~ .anima-alter-relay .anima-alter-target2,
-.anima-alter-radio3:checked ~ .anima-alter-relay .anima-alter-target3,
-.anima-alter-radio4:checked ~ .anima-alter-relay .anima-alter-target4,
-.anima-alter-radio5:checked ~ .anima-alter-relay .anima-alter-target5,
-.anima-alter-check:checked ~ .anima-alter-hub .anima-alter-goal {
+.anima-alt,
+.anima-alt-global > *,
+.anima-alt-onto:hover,
+.anima-alt-onto:focus,
+*:hover > .anima-alt-into,
+*:focus > .anima-alt-into,
+.anima-alt-toall:hover > *,
+.anima-alt-toall:focus > *,
+.anima-alt-toone > *:hover,
+.anima-alt-toone > *:focus,
+.anima-alt-radio1:checked ~ .anima-alt-relay .anima-alt-target1,
+.anima-alt-radio2:checked ~ .anima-alt-relay .anima-alt-target2,
+.anima-alt-radio3:checked ~ .anima-alt-relay .anima-alt-target3,
+.anima-alt-radio4:checked ~ .anima-alt-relay .anima-alt-target4,
+.anima-alt-radio5:checked ~ .anima-alt-relay .anima-alt-target5,
+.anima-alt-check:checked ~ .anima-alt-hub .anima-alt-goal {
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
 
-.anima-rever,
-.anima-rever-global > *,
-.anima-rever-onto:hover,
-.anima-rever-onto:focus,
-*:hover > .anima-rever-into,
-*:focus > .anima-rever-into,
-.anima-rever-toall:hover > *,
-.anima-rever-toall:focus > *,
-.anima-rever-toone > *:hover,
-.anima-rever-toone > *:focus,
-.anima-rever-radio1:checked ~ .anima-rever-relay .anima-rever-target1,
-.anima-rever-radio2:checked ~ .anima-rever-relay .anima-rever-target2,
-.anima-rever-radio3:checked ~ .anima-rever-relay .anima-rever-target3,
-.anima-rever-radio4:checked ~ .anima-rever-relay .anima-rever-target4,
-.anima-rever-radio5:checked ~ .anima-rever-relay .anima-rever-target5,
-.anima-rever-check:checked ~ .anima-rever-hub .anima-rever-goal {
+.anima-rev,
+.anima-rev-global > *,
+.anima-rev-onto:hover,
+.anima-rev-onto:focus,
+*:hover > .anima-rev-into,
+*:focus > .anima-rev-into,
+.anima-rev-toall:hover > *,
+.anima-rev-toall:focus > *,
+.anima-rev-toone > *:hover,
+.anima-rev-toone > *:focus,
+.anima-rev-radio1:checked ~ .anima-rev-relay .anima-rev-target1,
+.anima-rev-radio2:checked ~ .anima-rev-relay .anima-rev-target2,
+.anima-rev-radio3:checked ~ .anima-rev-relay .anima-rev-target3,
+.anima-rev-radio4:checked ~ .anima-rev-relay .anima-rev-target4,
+.anima-rev-radio5:checked ~ .anima-rev-relay .anima-rev-target5,
+.anima-rev-check:checked ~ .anima-rev-hub .anima-rev-goal {
   animation-direction: reverse;
 }
 
@@ -6332,4 +6332,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 28th Apr 2020 @ 8:30:22 PM */
+ Updated: 30th Apr 2020 @ 11:12:05 PM */
