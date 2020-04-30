@@ -8,7 +8,7 @@
 @each $type, $breakpoint in $breakpoints {
   @media (min-width: $breakpoint) {
     @each $key, $value in $place-content {
-      @include place-content($key, $type);
+      @include place-content($key, '-#{$type}');
     }
   }
 }
@@ -21,7 +21,7 @@
 @each $type, $breakpoint in $breakpoints {
   @media (min-width: $breakpoint) {
     @each $key, $value in $place-items {
-      @include place-items($key, $type);
+      @include place-items($key, '-#{$type}');
     }
   }
 }
@@ -34,7 +34,7 @@
 @each $type, $breakpoint in $breakpoints {
   @media (min-width: $breakpoint) {
     @each $key, $value in $place-self {
-      @include place-self($key, $type);
+      @include place-self($key, '-#{$type}');
     }
   }
 }
