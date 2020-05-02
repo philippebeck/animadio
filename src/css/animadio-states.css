@@ -1006,7 +1006,7 @@ pre > *::selection {
   --animation-timing-function-timer: steps(60, end);
   --animation-iteration-count-few: 2;
   --animation-iteration-count-many: 5;
-  --animation-iteration-count-loop: loop;
+  --animation-iteration-count-loop: infinite;
   --animation-delay-small: 1s;
   --animation-delay-medium: 2s;
   --animation-delay-large: 3s;

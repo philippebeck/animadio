@@ -1,4 +1,4 @@
-/*! animadio v2.0.1 | https://animadio.org | MIT License */
+/*! animadio v2.0.2 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
@@ -2012,43 +2012,43 @@ pre > *::selection {
   margin-right: var(--margin-right-lg);
 }
 
-.mar-bottom-sm,
-.mar-bottom-sm-global > *,
-.mar-bottom-sm-onto:hover,
-.mar-bottom-sm-onto:focus,
-*:hover > .mar-bottom-sm-into,
-*:focus > .mar-bottom-sm-into,
-.mar-bottom-sm-toall:hover > *,
-.mar-bottom-sm-toall:focus > *,
-.mar-bottom-sm-toone > *:hover,
-.mar-bottom-sm-toone > *:focus {
-  margin-bottom: var(--margin-bottom-sm);
+.mar-bot-sm,
+.mar-bot-sm-global > *,
+.mar-bot-sm-onto:hover,
+.mar-bot-sm-onto:focus,
+*:hover > .mar-bot-sm-into,
+*:focus > .mar-bot-sm-into,
+.mar-bot-sm-toall:hover > *,
+.mar-bot-sm-toall:focus > *,
+.mar-bot-sm-toone > *:hover,
+.mar-bot-sm-toone > *:focus {
+  margin-bottom: var(--margin-bot-sm);
 }
 
-.mar-bottom-md,
-.mar-bottom-md-global > *,
-.mar-bottom-md-onto:hover,
-.mar-bottom-md-onto:focus,
-*:hover > .mar-bottom-md-into,
-*:focus > .mar-bottom-md-into,
-.mar-bottom-md-toall:hover > *,
-.mar-bottom-md-toall:focus > *,
-.mar-bottom-md-toone > *:hover,
-.mar-bottom-md-toone > *:focus {
-  margin-bottom: var(--margin-bottom-md);
+.mar-bot-md,
+.mar-bot-md-global > *,
+.mar-bot-md-onto:hover,
+.mar-bot-md-onto:focus,
+*:hover > .mar-bot-md-into,
+*:focus > .mar-bot-md-into,
+.mar-bot-md-toall:hover > *,
+.mar-bot-md-toall:focus > *,
+.mar-bot-md-toone > *:hover,
+.mar-bot-md-toone > *:focus {
+  margin-bottom: var(--margin-bot-md);
 }
 
-.mar-bottom-lg,
-.mar-bottom-lg-global > *,
-.mar-bottom-lg-onto:hover,
-.mar-bottom-lg-onto:focus,
-*:hover > .mar-bottom-lg-into,
-*:focus > .mar-bottom-lg-into,
-.mar-bottom-lg-toall:hover > *,
-.mar-bottom-lg-toall:focus > *,
-.mar-bottom-lg-toone > *:hover,
-.mar-bottom-lg-toone > *:focus {
-  margin-bottom: var(--margin-bottom-lg);
+.mar-bot-lg,
+.mar-bot-lg-global > *,
+.mar-bot-lg-onto:hover,
+.mar-bot-lg-onto:focus,
+*:hover > .mar-bot-lg-into,
+*:focus > .mar-bot-lg-into,
+.mar-bot-lg-toall:hover > *,
+.mar-bot-lg-toall:focus > *,
+.mar-bot-lg-toone > *:hover,
+.mar-bot-lg-toone > *:focus {
+  margin-bottom: var(--margin-bot-lg);
 }
 
 .mar-left-sm,
@@ -2807,43 +2807,43 @@ pre > *::selection {
   padding-right: var(--padding-right-lg);
 }
 
-.pad-bottom-sm,
-.pad-bottom-sm-global > *,
-.pad-bottom-sm-onto:hover,
-.pad-bottom-sm-onto:focus,
-*:hover > .pad-bottom-sm-into,
-*:focus > .pad-bottom-sm-into,
-.pad-bottom-sm-toall:hover > *,
-.pad-bottom-sm-toall:focus > *,
-.pad-bottom-sm-toone > *:hover,
-.pad-bottom-sm-toone > *:focus {
-  padding-bottom: var(--padding-bottom-sm);
+.pad-bot-sm,
+.pad-bot-sm-global > *,
+.pad-bot-sm-onto:hover,
+.pad-bot-sm-onto:focus,
+*:hover > .pad-bot-sm-into,
+*:focus > .pad-bot-sm-into,
+.pad-bot-sm-toall:hover > *,
+.pad-bot-sm-toall:focus > *,
+.pad-bot-sm-toone > *:hover,
+.pad-bot-sm-toone > *:focus {
+  padding-bottom: var(--padding-bot-sm);
 }
 
-.pad-bottom-md,
-.pad-bottom-md-global > *,
-.pad-bottom-md-onto:hover,
-.pad-bottom-md-onto:focus,
-*:hover > .pad-bottom-md-into,
-*:focus > .pad-bottom-md-into,
-.pad-bottom-md-toall:hover > *,
-.pad-bottom-md-toall:focus > *,
-.pad-bottom-md-toone > *:hover,
-.pad-bottom-md-toone > *:focus {
-  padding-bottom: var(--padding-bottom-md);
+.pad-bot-md,
+.pad-bot-md-global > *,
+.pad-bot-md-onto:hover,
+.pad-bot-md-onto:focus,
+*:hover > .pad-bot-md-into,
+*:focus > .pad-bot-md-into,
+.pad-bot-md-toall:hover > *,
+.pad-bot-md-toall:focus > *,
+.pad-bot-md-toone > *:hover,
+.pad-bot-md-toone > *:focus {
+  padding-bottom: var(--padding-bot-md);
 }
 
-.pad-bottom-lg,
-.pad-bottom-lg-global > *,
-.pad-bottom-lg-onto:hover,
-.pad-bottom-lg-onto:focus,
-*:hover > .pad-bottom-lg-into,
-*:focus > .pad-bottom-lg-into,
-.pad-bottom-lg-toall:hover > *,
-.pad-bottom-lg-toall:focus > *,
-.pad-bottom-lg-toone > *:hover,
-.pad-bottom-lg-toone > *:focus {
-  padding-bottom: var(--padding-bottom-lg);
+.pad-bot-lg,
+.pad-bot-lg-global > *,
+.pad-bot-lg-onto:hover,
+.pad-bot-lg-onto:focus,
+*:hover > .pad-bot-lg-into,
+*:focus > .pad-bot-lg-into,
+.pad-bot-lg-toall:hover > *,
+.pad-bot-lg-toall:focus > *,
+.pad-bot-lg-toone > *:hover,
+.pad-bot-lg-toone > *:focus {
+  padding-bottom: var(--padding-bot-lg);
 }
 
 .pad-left-sm,
@@ -3166,4 +3166,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 30th Apr 2020 @ 11:12:05 PM */
+ Updated: 2nd May 2020 @ 11:28:09 AM */

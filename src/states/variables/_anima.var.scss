@@ -48,7 +48,7 @@ $animation-iteration-count-many:    5   !default;
 $animation-iteration-counts: (
   'few':    $animation-iteration-count-few,
   'many':   $animation-iteration-count-many,
-  'loop':   loop
+  'loop':   infinite
 ) !default;
 
 // Animation Delay
