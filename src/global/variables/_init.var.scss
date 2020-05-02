@@ -1,9 +1,16 @@
 /***** Global : Variables : Init *****/
 
+:root {
+  --sans-serif-font-family: sans-serif;
+  --serif-font-family: serif;
+  --monospace-font-family: monospace;
+  --cursive-font-family: cursive;
+  --fantasy-font-family: fantasy;
+}
+
 body {
   --body-background-color: none;
   --body-color: var(--black);
-  --body-font-family: sans-serif;
   --body-font-size: 1.8rem;
   --body-line-height: 1.6;
   --body-scroll-behavior: smooth;
@@ -11,15 +18,6 @@ body {
 
 article {
   --article-margin-bottom: 20px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  --title-font-family: serif;
 }
 
 h1 {
@@ -79,7 +77,6 @@ code,
 pre {
   --code-background-color: var(--black);
   --code-color: var(--jade);
-  --code-font-family: monospace;
   --code-margin: auto;
   --code-overflow: scroll;
   --code-padding: 10px;

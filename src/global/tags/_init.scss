@@ -13,7 +13,7 @@ body {
   padding: 0;
   line-height: var(--body-line-height);
   font-size: var(--body-font-size);
-  font-family: var(--body-font-family);
+  font-family: var(--sans-serif-font-family);
   color: var(--body-color);
   background-color: var(--body-background-color);
   scroll-behavior: var(--body-scroll-behavior);
@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--title-font-family);
+  font-family: var(--serif-font-family);
 }
 
 h1 {
@@ -91,7 +91,7 @@ pre {
   margin: var(--code-margin);
   padding: var(--code-padding);
   width: var(--code-width);
-  font-family: var(--code-font-family);
+  font-family: var(--monospace-font-family);
   text-align: var(--code-text-align);
   background-color: var(--code-background-color);
   color: var(--code-color);
