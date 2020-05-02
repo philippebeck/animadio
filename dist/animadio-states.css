@@ -1,4 +1,4 @@
-/*! animadio v2.0.1 | https://animadio.org | MIT License */
+/*! animadio v2.0.2 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
@@ -1686,7 +1686,7 @@ pre > *::selection {
   --animation-timing-function-timer: steps(60, end);
   --animation-iteration-count-few: 2;
   --animation-iteration-count-many: 5;
-  --animation-iteration-count-loop: loop;
+  --animation-iteration-count-loop: infinite;
   --animation-delay-small: 1s;
   --animation-delay-medium: 2s;
   --animation-delay-large: 3s;
@@ -6332,4 +6332,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 30th Apr 2020 @ 11:12:05 PM */
+ Updated: 2nd May 2020 @ 11:28:09 AM */
