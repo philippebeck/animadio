@@ -4,15 +4,15 @@
 @mixin flex-container($column, $key) {
   [class^="flex-"][class*="-#{$column}#{$key}"],
   [class*=" flex-"][class*="-#{$column}#{$key}"] {
-    margin: var(--flex-negative-margin-#{$key});
+    margin: var(--flex-container-margin-#{$key});
   }
 }
 
 @mixin flex-children($column, $key) {
   [class^="flex-"][class*="-#{$column}#{$key}"] > *,
   [class*=" flex-"][class*="-#{$column}#{$key}"] > * {
-    width: calc(100% / #{$column} - var(--flex-width-#{$key}));
-    margin: var(--flex-positive-margin-#{$key});
+    width: calc(100% / #{$column} - var(--flex-items-width-#{$key}));
+    margin: var(--flex-items-margin-#{$key});
   }
 }
 
