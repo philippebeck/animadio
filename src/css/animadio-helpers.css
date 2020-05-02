@@ -681,10 +681,17 @@
   }
 }
 /***** Global : Variables : Init *****/
+:root {
+  --sans-serif-font-family: sans-serif;
+  --serif-font-family: serif;
+  --monospace-font-family: monospace;
+  --cursive-font-family: cursive;
+  --fantasy-font-family: fantasy;
+}
+
 body {
   --body-background-color: none;
   --body-color: var(--black);
-  --body-font-family: sans-serif;
   --body-font-size: 1.8rem;
   --body-line-height: 1.6;
   --body-scroll-behavior: smooth;
@@ -692,15 +699,6 @@ body {
 
 article {
   --article-margin-bottom: 20px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  --title-font-family: serif;
 }
 
 h1 {
@@ -760,7 +758,6 @@ code,
 pre {
   --code-background-color: var(--black);
   --code-color: var(--jade);
-  --code-font-family: monospace;
   --code-margin: auto;
   --code-overflow: scroll;
   --code-padding: 10px;
@@ -890,7 +887,7 @@ body {
   padding: 0;
   line-height: var(--body-line-height);
   font-size: var(--body-font-size);
-  font-family: var(--body-font-family);
+  font-family: var(--sans-serif-font-family);
   color: var(--body-color);
   background-color: var(--body-background-color);
   scroll-behavior: var(--body-scroll-behavior);
@@ -906,7 +903,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--title-font-family);
+  font-family: var(--serif-font-family);
 }
 
 h1 {
@@ -968,7 +965,7 @@ pre {
   margin: var(--code-margin);
   padding: var(--code-padding);
   width: var(--code-width);
-  font-family: var(--code-font-family);
+  font-family: var(--monospace-font-family);
   text-align: var(--code-text-align);
   background-color: var(--code-background-color);
   color: var(--code-color);
@@ -1003,24 +1000,44 @@ pre > *::selection {
   font-style: oblique;
 }
 
+.font-sans-serif {
+  font-family: var(--sans-serif-font-family);
+}
+
+.font-serif {
+  font-family: var(--serif-font-family);
+}
+
+.font-monospace {
+  font-family: var(--monospace-font-family);
+}
+
+.font-cursive {
+  font-family: var(--cursive-font-family);
+}
+
+.font-fantasy {
+  font-family: var(--fantasy-font-family);
+}
+
 /***** Helpers : Classes : Align *****/
-.text-center,
-.text-center-global > * {
+.align-center,
+.align-center-global > * {
   text-align: center;
 }
 
-.text-justify,
-.text-justify-global > * {
+.align-justify,
+.align-justify-global > * {
   text-align: justify;
 }
 
-.text-right,
-.text-right-global > * {
+.align-right,
+.align-right-global > * {
   text-align: right;
 }
 
-.text-left,
-.text-left-global > * {
+.align-left,
+.align-left-global > * {
   text-align: left;
 }
 
