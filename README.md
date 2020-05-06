@@ -36,8 +36,10 @@
 ## Package Manager
 
 [![NPM Version](https://img.shields.io/npm/v/animadio.svg?label=NPM)](https://www.npmjs.com/package/animadio)
+[![NPM Weekly Downloads](https://img.shields.io/npm/dw/animadio.svg?label=Weekly+Downloads)](https://www.npmjs.com/package/animadio)
 [![NPM Montly Downloads](https://img.shields.io/npm/dm/animadio.svg?label=Montly+Downloads)](https://www.npmjs.com/package/animadio)
 [![NPM Yearly Downloads](https://img.shields.io/npm/dy/animadio.svg?label=Yearly+Downloads)](https://www.npmjs.com/package/animadio)
+[![NPM Total Downloads](https://img.shields.io/npm/dt/animadio.svg?label=Total+Downloads)](https://www.npmjs.com/package/animadio)
 
 NPM : `npm i animadio`  
 Yarn : `yarn add animadio`  
@@ -46,6 +48,7 @@ Yarn : `yarn add animadio`
 
 ## CDN 
 
+[![jsDelivr Weekly Downloads](https://img.shields.io/jsdelivr/npm/hw/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 
