@@ -1,34 +1,39 @@
 /***** Elements : Variables : Menu *****/
 
 .menu {
-  --menu-all-cursor: pointer;
-  --menu-background-color: var(--silver);
+  --menu-flex-direction: column;
+  --menu-place-content: center;
+  --menu-place-items: stretch;
+  --menu-margin: 20px auto 50px;
   --menu-border: none;
   --menu-border-radius: 5px;
-  --menu-checked-label-background-color: var(--blue);
-  --menu-checked-label-color: var(--white);
-  --menu-checked-label-font-weight: bold;
+  --menu-padding: 0;
+  --menu-width: 40%;
+  --menu-list-style: none;
+  --menu-background-color: var(--silver);
   --menu-color: var(--gray);
-  --menu-fa-bottom: -18px;
-  --menu-fa-color: var(--blue);
-  --menu-fa-position: absolute;
-  --menu-flex-direction: column;
-  --menu-label-border-radius: 5px;
-  --menu-label-hover-background-color: var(--blue-dark);
-  --menu-label-hover-border: none;
-  --menu-label-hover-color: var(--white);
-  --menu-label-hover-font-style: italic;
-  --menu-label-padding: 6px 12px;
+
+  --menu-all-cursor: pointer;
+
   --menu-label-place-content: center;
   --menu-label-place-items: center;
   --menu-label-position: relative;
+  --menu-label-border-radius: 5px;
+  --menu-label-padding: 6px 12px;
   --menu-label-width: 100%;
-  --menu-list-style: none;
-  --menu-margin: 20px auto 50px;
-  --menu-padding: 0;
-  --menu-place-content: center;
-  --menu-place-items: stretch;
-  --menu-width: 40%;
+
+  --menu-label-hover-border: none;
+  --menu-label-hover-font-style: italic;
+  --menu-label-hover-background-color: var(--blue-dark);
+  --menu-label-hover-color: var(--white);
+
+  --menu-fa-position: absolute;
+  --menu-fa-bottom: -18px;
+  --menu-fa-color: var(--blue);
+
+  --menu-checked-label-font-weight: bold;
+  --menu-checked-label-background-color: var(--blue);
+  --menu-checked-label-color: var(--white);
 }
 
 @media (min-width: $breakpoint-md) {

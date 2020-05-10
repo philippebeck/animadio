@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***** Global : Variables : Colors *****/
 :root {
   /* Basic Colors */
@@ -986,379 +987,133 @@ pre > *::selection {
   display: none !important;
 }
 
-/***** Helpers : Classes : Font *****/
-.font-bold,
-.font-bold-global > * {
-  font-weight: bold;
-}
-
-.font-italic,
-.font-italic-global > * {
-  font-style: italic;
-}
-
-.font-oblique,
-.font-oblique-global > * {
-  font-style: oblique;
-}
-
-.font-sans-serif {
-  font-family: var(--sans-serif-font-family);
-}
-
-.font-serif {
-  font-family: var(--serif-font-family);
-}
-
-.font-monospace {
-  font-family: var(--monospace-font-family);
-}
-
-.font-cursive {
-  font-family: var(--cursive-font-family);
-}
-
-.font-fantasy {
-  font-family: var(--fantasy-font-family);
-}
-
-/***** Helpers : Classes : Align *****/
-.align-center,
-.align-center-global > * {
-  text-align: center;
-}
-
-.align-justify,
-.align-justify-global > * {
-  text-align: justify;
-}
-
-.align-right,
-.align-right-global > * {
-  text-align: right;
-}
-
-.align-left,
-.align-left-global > * {
-  text-align: left;
-}
-
-/***** Helpers : Variables : Deco *****/
-[class*=deco] {
-  --text-decoration-line: underline;
-}
-
-/***** Helpers : Classes : Deco *****/
-[class*=deco],
-[class*=deco][class*=-global] > * {
-  text-decoration-line: var(--text-decoration-line);
-}
-
-/* Text decoration line */
-.deco-none,
-.deco-none-global > * {
-  text-decoration-line: none;
-}
-
-.deco-under,
-.deco-under-global > * {
-  text-decoration-line: underline;
-}
-
-.deco-over,
-.deco-over-global > * {
-  text-decoration-line: overline;
-}
-
-.deco-through,
-.deco-through-global > * {
-  text-decoration-line: line-through;
-}
-
-/* Text decoration style */
-.deco-dash,
-.deco-dash-global > * {
-  text-decoration-style: dashed;
-}
-
-.deco-dot,
-.deco-dot-global > * {
-  text-decoration-style: dotted;
-}
-
-.deco-double,
-.deco-double-global > * {
-  text-decoration-style: double;
-}
-
-.deco-solid,
-.deco-solid-global > * {
-  text-decoration-style: solid;
-}
-
-.deco-wavy,
-.deco-wavy-global > * {
-  text-decoration-style: wavy;
-}
-
-/* Text decoration color */
-.deco-black,
-.deco-black-global > * {
-  text-decoration-color: var(--black);
-}
-
-.deco-blue,
-.deco-blue-global > * {
-  text-decoration-color: var(--blue);
-}
-
-.deco-gray,
-.deco-gray-global > * {
-  text-decoration-color: var(--gray);
-}
-
-.deco-green,
-.deco-green-global > * {
-  text-decoration-color: var(--green);
-}
-
-.deco-maroon,
-.deco-maroon-global > * {
-  text-decoration-color: var(--maroon);
-}
-
-.deco-navy,
-.deco-navy-global > * {
-  text-decoration-color: var(--navy);
-}
-
-.deco-orange,
-.deco-orange-global > * {
-  text-decoration-color: var(--orange);
-}
-
-.deco-purple,
-.deco-purple-global > * {
-  text-decoration-color: var(--purple);
-}
-
-.deco-red,
-.deco-red-global > * {
-  text-decoration-color: var(--red);
-}
-
-.deco-yellow,
-.deco-yellow-global > * {
-  text-decoration-color: var(--yellow);
-}
-
-/***** Helpers : Variables : Shatex *****/
-[class*=shatex-] {
-  --text-shadow-sm: 1px 1px;
-  --text-shadow-md: 2px 2px;
-  --text-shadow-lg: 5px 5px;
-  --text-shadow-blur: 0 0 2px;
-  --text-shadow-blur-sm: 1px 1px 1px;
-  --text-shadow-blur-md: 2px 2px 2px;
-  --text-shadow-blur-lg: 5px 5px 5px;
-}
-
-/***** Helpers : Classes : Shatex *****/
-.shatex-sm,
-.shatex-sm-global > * {
-  text-shadow: var(--text-shadow-sm);
-}
-
-.shatex-md,
-.shatex-md-global > * {
-  text-shadow: var(--text-shadow-md);
-}
-
-.shatex-lg,
-.shatex-lg-global > * {
-  text-shadow: var(--text-shadow-lg);
-}
-
-.shatex-blur,
-.shatex-blur-global > * {
-  text-shadow: var(--text-shadow-blur);
-}
-
-.shatex-blur-sm,
-.shatex-blur-sm-global > * {
-  text-shadow: var(--text-shadow-blur-sm);
-}
-
-.shatex-blur-md,
-.shatex-blur-md-global > * {
-  text-shadow: var(--text-shadow-blur-md);
-}
-
-.shatex-blur-lg,
-.shatex-blur-lg-global > * {
-  text-shadow: var(--text-shadow-blur-lg);
-}
-
-/***** Helpers : Variables : Shabox *****/
-[class*=shabox-] {
-  --box-shadow-sm: 1px 1px;
-  --box-shadow-md: 2px 2px;
-  --box-shadow-lg: 5px 5px;
-  --box-shadow-blur: 0 0 2px;
-  --box-shadow-blur-sm: 1px 1px 1px;
-  --box-shadow-blur-md: 2px 2px 2px;
-  --box-shadow-blur-lg: 5px 5px 5px;
-  --box-shadow-spread: 0 0 2px 2px;
-  --box-shadow-spread-sm: 1px 1px 1px 1px;
-  --box-shadow-spread-md: 2px 2px 2px 2px;
-  --box-shadow-spread-lg: 5px 5px 5px 5px;
-}
-
-/***** Helpers : Classes : Shabox *****/
-.shabox-sm,
-.shabox-sm-global > * {
-  box-shadow: var(--box-shadow-sm);
-}
-
-.shabox-md,
-.shabox-md-global > * {
-  box-shadow: var(--box-shadow-md);
-}
-
-.shabox-lg,
-.shabox-lg-global > * {
-  box-shadow: var(--box-shadow-lg);
-}
-
-.shabox-blur,
-.shabox-blur-global > * {
-  box-shadow: var(--box-shadow-blur);
-}
-
-.shabox-blur-sm,
-.shabox-blur-sm-global > * {
-  box-shadow: var(--box-shadow-blur-sm);
-}
-
-.shabox-blur-md,
-.shabox-blur-md-global > * {
-  box-shadow: var(--box-shadow-blur-md);
-}
-
-.shabox-blur-lg,
-.shabox-blur-lg-global > * {
-  box-shadow: var(--box-shadow-blur-lg);
-}
-
-.shabox-spread,
-.shabox-spread-global > * {
-  box-shadow: var(--box-shadow-spread);
-}
-
-.shabox-spread-sm,
-.shabox-spread-sm-global > * {
-  box-shadow: var(--box-shadow-spread-sm);
-}
-
-.shabox-spread-md,
-.shabox-spread-md-global > * {
-  box-shadow: var(--box-shadow-spread-md);
-}
-
-.shabox-spread-lg,
-.shabox-spread-lg-global > * {
-  box-shadow: var(--box-shadow-spread-lg);
-}
-
-.shabox-in-sm,
-.shabox-in-sm-global > * {
-  box-shadow: inset var(--box-shadow-sm);
-}
-
-.shabox-in-md,
-.shabox-in-md-global > * {
-  box-shadow: inset var(--box-shadow-md);
-}
-
-.shabox-in-lg,
-.shabox-in-lg-global > * {
-  box-shadow: inset var(--box-shadow-lg);
-}
-
-.shabox-in-blur,
-.shabox-in-blur-global > * {
-  box-shadow: inset var(--box-shadow-blur);
-}
-
-.shabox-in-blur-sm,
-.shabox-in-blur-sm-global > * {
-  box-shadow: inset var(--box-shadow-blur-sm);
-}
-
-.shabox-in-blur-md,
-.shabox-in-blur-md-global > * {
-  box-shadow: inset var(--box-shadow-blur-md);
-}
-
-.shabox-in-blur-lg,
-.shabox-in-blur-lg-global > * {
-  box-shadow: inset var(--box-shadow-blur-lg);
-}
-
-.shabox-in-spread,
-.shabox-in-spread-global > * {
-  box-shadow: inset var(--box-shadow-spread);
-}
-
-.shabox-in-spread-sm,
-.shabox-in-spread-sm-global > * {
-  box-shadow: inset var(--box-shadow-spread-sm);
-}
-
-.shabox-in-spread-md,
-.shabox-in-spread-md-global > * {
-  box-shadow: inset var(--box-shadow-spread-md);
-}
-
-.shabox-in-spread-lg,
-.shabox-in-spread-lg-global > * {
-  box-shadow: inset var(--box-shadow-spread-lg);
-}
-
-/***** Helpers : Classes : Cursor *****/
-.cursor-cell,
-.cursor-cell-global > * {
-  cursor: cell;
-}
-
-.cursor-cross,
-.cursor-cross-global > * {
-  cursor: crosshair;
-}
-
-.cursor-hand,
-.cursor-hand-global > * {
-  cursor: pointer;
-}
-
-.cursor-help,
-.cursor-help-global > * {
-  cursor: help;
-}
-
-.cursor-move,
-.cursor-move-global > * {
-  cursor: move;
-}
-
-.cursor-none,
-.cursor-none-global > * {
-  cursor: not-allowed;
-}
-
-.cursor-text,
-.cursor-text-global > * {
-  cursor: text;
-}
-
-/*# sourceMappingURL=animadio-helpers.css.map */
+/***** Events : Variables : Slider *****/
+.slider {
+  --slider-position: relative;
+  --slider-margin: 0;
+  --slider-width: 100%;
+  --slider-min-height: 30vh;
+  --slider-text-align: center;
+  --slider-figure-margin: 0 auto;
+  --slider-figure-object-fit: contain;
+  --slider-figure-max-width: 100%;
+  --slider-figure-max-height: 50vh;
+  --slider-image-max-height: 50vh;
+  --slider-hover-list-opacity: 1;
+  --slider-transition-opacity: 2s;
+  --slider-controls-place-content: space-between;
+  --slider-controls-margin: 10px;
+  --slider-controls-border: thin solid var(--black);
+  --slider-controls-border-radius: 5px;
+  --slider-controls-padding: 10px;
+  --slider-controls-width: fit-content;
+  --slider-controls-background-color: var(--black-dark);
+  --slider-controls-opacity: 0;
+  --slider-controls-link-color: var(--blue);
+  --slider-controls-label-padding: 5px;
+  --slider-controls-label-color: var(--white);
+  --slider-icon-color: var(--blue);
+  --slider-transition-color: 1s;
+  --slider-radio-list-icon-before-content: "";
+}
+
+@media (min-width: 576px) {
+  .slider {
+    --slider-min-height: 35vh;
+  }
+}
+@media (min-width: 768px) {
+  .slider {
+    --slider-min-height: 40vh;
+  }
+}
+@media (min-width: 992px) {
+  .slider {
+    --slider-min-height: 45vh;
+  }
+}
+@media (min-width: 1200px) {
+  .slider {
+    --slider-min-height: 50vh;
+  }
+}
+/***** Events : Classes : Slider *****/
+.slider {
+  position: var(--slider-position);
+  margin: var(--slider-margin);
+  width: var(--slider-width);
+  min-height: var(--slider-min-height);
+  text-align: var(--slider-text-align);
+}
+.slider > figure {
+  margin: var(--slider-figure-margin);
+  object-fit: var(--slider-figure-object-fit);
+  max-width: var(--slider-figure-max-width);
+  max-height: var(--slider-figure-max-height);
+}
+.slider > figure > * {
+  max-height: var(--slider-figure-max-height);
+}
+.slider img {
+  max-height: var(--slider-image-max-height);
+}
+.slider:hover > .slider-controls, .slider:focus > .slider-controls {
+  opacity: var(--slider-hover-list-opacity);
+  transition: opacity var(--slider-transition-opacity);
+}
+
+.slider-relay > * {
+  display: none;
+}
+
+.slider-controls {
+  display: inline-flex;
+  flex-direction: column;
+  margin: var(--slider-controls-margin);
+  border: var(--slider-controls-border);
+  border-radius: var(--slider-controls-border-radius);
+  padding: var(--slider-controls-padding);
+  width: var(--slider-controls-width);
+  background-color: var(--slider-controls-background-color);
+  opacity: var(--slider-controls-opacity);
+  transition: opacity var(--slider-transition-opacity);
+}
+.slider-controls ul {
+  display: flex;
+  place-content: var(--slider-controls-place-content);
+}
+.slider-controls a {
+  color: var(--slider-controls-link-color);
+}
+.slider-controls label {
+  padding: var(--slider-controls-label-padding);
+  color: var(--slider-controls-label-color);
+}
+
+.slider-radio1:checked ~ .slider-relay > .slider-target1,
+.slider-radio2:checked ~ .slider-relay > .slider-target2,
+.slider-radio3:checked ~ .slider-relay > .slider-target3,
+.slider-radio4:checked ~ .slider-relay > .slider-target4,
+.slider-radio5:checked ~ .slider-relay > .slider-target5,
+.slider-radio6:checked ~ .slider-relay > .slider-target6,
+.slider-radio7:checked ~ .slider-relay > .slider-target7,
+.slider-radio8:checked ~ .slider-relay > .slider-target8,
+.slider-radio9:checked ~ .slider-relay > .slider-target9 {
+  display: inline-block;
+}
+
+.slider-radio1:checked ~ ul [for=slider-radio1] > i::before,
+.slider-radio2:checked ~ ul [for=slider-radio2] > i::before,
+.slider-radio3:checked ~ ul [for=slider-radio3] > i::before,
+.slider-radio4:checked ~ ul [for=slider-radio4] > i::before,
+.slider-radio5:checked ~ ul [for=slider-radio5] > i::before,
+.slider-radio6:checked ~ ul [for=slider-radio6] > i::before,
+.slider-radio7:checked ~ ul [for=slider-radio7] > i::before,
+.slider-radio8:checked ~ ul [for=slider-radio8] > i::before,
+.slider-radio9:checked ~ ul [for=slider-radio9] > i::before {
+  color: var(--slider-icon-color);
+  transition: color var(--slider-transition-color);
+  content: var(--slider-radio-list-icon-before-content);
+}
+
+/*# sourceMappingURL=animadio-events.css.map */

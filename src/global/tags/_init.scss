@@ -34,25 +34,29 @@ h6 {
 
 h1 {
   font-size: var(--title-wd-font-size);
+  color: var(--title-wd-color);
   text-transform: var(--title-wd-text-transform);
 }
 
 h2 {
   font-size: var(--title-lg-font-size);
+  color: var(--title-lg-color);
   text-transform: var(--title-lg-text-transform);
 }
 
 h3 {
   font-size: var(--title-md-font-size);
+  color: var(--title-md-color);
 }
 
 h4 {
   font-size: var(--title-sm-font-size);
+  color: var(--title-sm-color);
 }
 
 h5,
-h6 {
-  font-size: var(--title-tn-font-size);
+h6 {  font-size: var(--title-tn-font-size);
+  color: var(--title-tn-color);
 }
 
 a {

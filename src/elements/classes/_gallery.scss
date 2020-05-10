@@ -22,8 +22,8 @@
     margin: var(--gallery-figure-margin);
     border: var(--gallery-figure-border);
     width: var(--gallery-figure-width);
-    box-shadow: var(--gallery-figure-box-shadow);
     line-height: var(--gallery-figure-line-height);
+    box-shadow: var(--gallery-figure-box-shadow);
 
     &:hover figcaption,
     &:focus figcaption {

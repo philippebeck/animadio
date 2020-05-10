@@ -67,9 +67,9 @@
 .menu-radio7:checked ~ .menu > [for*="menu-"][for*="-radio7"],
 .menu-radio8:checked ~ .menu > [for*="menu-"][for*="-radio8"],
 .menu-radio9:checked ~ .menu > [for*="menu-"][for*="-radio9"] {
+  font-weight: var(--menu-checked-label-font-weight);
   background-color: var(--menu-checked-label-background-color);
   color: var(--menu-checked-label-color);
-  font-weight: var(--menu-checked-label-font-weight);
 }
 
 .menu-radio1:checked ~ .menu-relay > .menu-target1,

@@ -1,0 +1,14 @@
+// ********** GLOBAL **********
+@import '../global/mixins/global.mix';
+@import '../global/variables/breakpoints.var';
+@import '../global/variables/colors.var';
+@import '../global/variables/keyframes.var';
+@import '../global/rules/keyframes';
+@import '../global/variables/init.var';
+@import '../global/tags/init';
+@import '../global/classes/base';
+
+
+// ********** EVENTS **********
+@import '../events/variables/slider.var';
+@import '../events/classes/slider';

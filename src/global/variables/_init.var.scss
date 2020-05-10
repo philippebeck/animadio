@@ -20,27 +20,24 @@ article {
   --article-margin-bottom: 20px;
 }
 
-h1 {
-  --title-wd-font-size: 4rem;
-  --title-wd-text-transform: capitalize;
-}
-
-h2 {
-  --title-lg-font-size: 3.5rem;
-  --title-lg-text-transform: none;
-}
-
-h3 {
-  --title-md-font-size: 3rem;
-}
-
-h4 {
-  --title-sm-font-size: 2.5rem;
-}
-
+h1,
+h2,
+h3,
+h4,
 h5,
 h6 {
+  --title-wd-font-size: 4rem;
+  --title-wd-color: var(--purple);
+  --title-wd-text-transform: capitalize;
+  --title-lg-font-size: 3.5rem;
+  --title-lg-color: var(--green);
+  --title-lg-text-transform: none;
+  --title-md-font-size: 3rem;
+  --title-md-color: var(--navy);
+  --title-sm-font-size: 2.5rem;
+  --title-sm-color: var(--red);
   --title-tn-font-size: 2rem;
+  --title-tn-color: var(--maroon);
 }
 
 a {
