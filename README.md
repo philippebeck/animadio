@@ -6,7 +6,7 @@
 -   Click anywhere on the page to **enable & disable any design effect** anywhere else
 -   Management of **keyframes animations** & their options
 -   Complete & simple customization with directly modifiable **CSS variables**
--   More than 99% of **pure CSS** : so all of that without JavaScript...
+-   More than 99% of **pure CSS**
 
 [![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
 [![Codacy Code Quality](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
@@ -114,6 +114,7 @@ But if you only need a part of Animadio, you can use one of those dist files :
 -   To get Global + Elements : `dist/animadio-elements.css` for dev or `dist/min/animadio-elements.min.css` for prod  
 -   To get Global + States : `dist/animadio-states.css` for dev or `dist/min/animadio-states.min.css` for prod  
 -   To get Global + Helpers : `dist/animadio-helpers.css` for dev or `dist/min/animadio-helpers.min.css` for prod  
+-   To get Global + Events : `dist/animadio-events.css` for dev or `dist/min/animadio-events.min.css` for prod  
 
 ---
 
@@ -121,7 +122,7 @@ But if you only need a part of Animadio, you can use one of those dist files :
 
 Source files are written with Sass in SCSS to offer better flexibility, simplified scalability & a project more maintainable over time.
 
-Animadio library is composed only of CSS source code : jQuery, or even Javascript, are not included or needed in production...
+Animadio library is composed only of CSS source code : jQuery is not included or needed in production...
 
 Grunt is the only JavaScript app used in the framework development side for recursive tasks (concat, source map, webkit & min) to build the library file (but it can be used to concat CSS elements of your choice)
 
@@ -173,16 +174,6 @@ Animadio Documentation is available !
 Issues can be created here
 
 [![GitHub Open Issues](https://img.shields.io/github/issues/animadio/animadio.svg?label=Issues)](https://github.com/animadio/animadio/issues)
-
-But for Parse Error issues, from a CSS linter or a W3C validator :
--   check the user agent from the browsers  
--   look here before doing anything :  
-
-> For the W3C CSS Validator : [https://github.com/w3c/css-validator/issues/225](https://github.com/w3c/css-validator/issues/225)
->
-> For the W3C Nu HTML Validator : [https://github.com/validator/validator/issues/644](https://github.com/validator/validator/issues/644)
->
-> For CSS Lint : [https://github.com/CSSLint/csslint/issues/720](https://github.com/CSSLint/csslint/issues/720)
 
 ---
 
