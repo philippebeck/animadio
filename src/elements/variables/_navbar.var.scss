@@ -5,36 +5,47 @@
 }
 
 .navbar {
-  --navbar-background-color: var(--blue);
-  --navbar-bottom: unset;
-  --navbar-brand-link-img-height: 40px;
-  --navbar-brand-link-left: 0;
-  --navbar-color: var(--white);
-  --navbar-first-list-link-hover-scale: 0.9;
-  --navbar-first-list-span-font-size: 2rem;
-  --navbar-icon-place-self: center;
-  --navbar-left: 0;
-  --navbar-label-animation: slipT 1s linear infinite alternate;
-  --navbar-label-right: 10px;
-  --navbar-label-top: 0;
-  --navbar-last-list-height: 50px;
-  --navbar-last-list-img-margin: 5px;
-  --navbar-last-list-link-hover-scale: 1.5;
-  --navbar-link-color: var(--white);
-  --navbar-link-cursor: pointer;
-  --navbar-link-hover-color: var(--yellow);
-  --navbar-link-padding: 20px 10px;
-  --navbar-list-link-flex-direction: column;
-  --navbar-list-list-style: none;
-  --navbar-list-margin: 0;
-  --navbar-list-padding: 0;
-  --navbar-list-place-items: center;
   --navbar-place-content: center;
   --navbar-place-items: center;
   --navbar-position: fixed;
-  --navbar-right: 0;
   --navbar-top: 0;
+  --navbar-right: 0;
+  --navbar-bottom: unset;
+  --navbar-left: 0;
   --navbar-z-index: 1000;
+  --navbar-background-color: var(--blue);
+  --navbar-color: var(--white);
+
+  --navbar-link-padding: 20px 10px;
+  --navbar-link-color: var(--white);
+  --navbar-link-cursor: pointer;
+
+  --navbar-icon-place-self: center;
+
+  --navbar-list-place-items: center;
+  --navbar-list-margin: 0;
+  --navbar-list-padding: 0;
+  --navbar-list-list-style: none;
+
+  --navbar-list-link-flex-direction: column;
+
+  --navbar-link-hover-color: var(--yellow);
+  --navbar-first-list-link-hover-scale: 0.9;
+
+  --navbar-last-list-img-margin: 5px;
+  --navbar-last-list-height: 50px;
+
+  --navbar-last-list-link-hover-scale: 1.5;
+
+  --navbar-brand-link-left: 0;
+
+  --navbar-brand-link-img-height: 40px;
+
+  --navbar-label-top: 0;
+  --navbar-label-right: 10px;
+  --navbar-label-animation: slipT 1s linear infinite alternate;
+
+  --navbar-first-list-span-font-size: 2rem;
 }
 
 @media (min-width: $breakpoint-sm) {
