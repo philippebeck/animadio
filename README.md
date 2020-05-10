@@ -52,35 +52,40 @@ Yarn : `yarn add animadio`
 [![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 
-> **Full Version**
+> **Full Version** ([Animadio.js](https://github.com/animadio/animadio.js) required)
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio.min.css)  
 
 > **Box Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-box.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-box.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-box.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-box.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-box.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-box.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-box.min.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-box.min.css)  
 
 > **Grid Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-grid.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-grid.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-grid.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-grid.min.css)  
 
 > **Elements Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-elements.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-elements.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-elements.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-elements.min.css)  
 
 > **States Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-states.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-states.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-states.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-states.min.css)  
 
 > **Helpers Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-helpers.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/animadio-helpers.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-helpers.min.css](https://cdn.jsdelivr.net/npm/animadio@2.0.0/dist/min/animadio-helpers.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-helpers.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-helpers.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-helpers.min.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-helpers.min.css)  
+
+> **Events Version** (*[Animadio.js](https://github.com/animadio/animadio.js) required*)
+
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-events.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/animadio-events.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-events.min.css](https://cdn.jsdelivr.net/npm/animadio@2.1.0/dist/min/animadio-events.min.css)  
 
 ---
 
