@@ -47,6 +47,7 @@
     width: var(--form-field-width);
     line-height: var(--form-field-line-height);
     background-color: var(--form-field-background-color);
+    box-shadow: var(--form-field-box-shadow);
 
     &:hover,
     &:focus {
