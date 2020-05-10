@@ -1,4 +1,4 @@
-/*! animadio v2.0.3 | https://animadio.org | MIT License */
+/*! animadio v2.0.0 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
@@ -1374,27 +1374,24 @@ article {
   --article-margin-bottom: 20px;
 }
 
-h1 {
-  --title-wd-font-size: 4rem;
-  --title-wd-text-transform: capitalize;
-}
-
-h2 {
-  --title-lg-font-size: 3.5rem;
-  --title-lg-text-transform: none;
-}
-
-h3 {
-  --title-md-font-size: 3rem;
-}
-
-h4 {
-  --title-sm-font-size: 2.5rem;
-}
-
+h1,
+h2,
+h3,
+h4,
 h5,
 h6 {
+  --title-wd-font-size: 4rem;
+  --title-wd-color: var(--purple);
+  --title-wd-text-transform: capitalize;
+  --title-lg-font-size: 3.5rem;
+  --title-lg-color: var(--green);
+  --title-lg-text-transform: none;
+  --title-md-font-size: 3rem;
+  --title-md-color: var(--navy);
+  --title-sm-font-size: 2.5rem;
+  --title-sm-color: var(--red);
   --title-tn-font-size: 2rem;
+  --title-tn-color: var(--maroon);
 }
 
 a {
@@ -1582,25 +1579,30 @@ h6 {
 
 h1 {
   font-size: var(--title-wd-font-size);
+  color: var(--title-wd-color);
   text-transform: var(--title-wd-text-transform);
 }
 
 h2 {
   font-size: var(--title-lg-font-size);
+  color: var(--title-lg-color);
   text-transform: var(--title-lg-text-transform);
 }
 
 h3 {
   font-size: var(--title-md-font-size);
+  color: var(--title-md-color);
 }
 
 h4 {
   font-size: var(--title-sm-font-size);
+  color: var(--title-sm-color);
 }
 
 h5,
 h6 {
   font-size: var(--title-tn-font-size);
+  color: var(--title-tn-color);
 }
 
 a {
@@ -3163,4 +3165,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 2nd May 2020 @ 6:40:48 PM */
+ Updated: 10th May 2020 @ 7:16:26 PM */
