@@ -1,4 +1,4 @@
-/*! animadio v2.1.1 | https://animadio.org | MIT License */
+/*! animadio v2.1.2 | https://animadio.org | MIT License */
 
 @charset "UTF-8";
 /***** Global : Variables : Colors *****/
@@ -1717,6 +1717,27 @@ pre > *::selection {
     --slider-min-height: 50vh;
   }
 }
+/***** Events : Variables : Canvas *****/
+.canvas {
+  --canvas-border: thick double var(--blue);
+  --canvas-border-radius: 20px;
+  --canvas-cursor: crosshair;
+  --canvas-hover-controls-opacity: 1;
+  --canvas-hover-controls-transition: 2s;
+  --canvas-controls-margin: auto;
+  --canvas-controls-border: thin solid var(--black);
+  --canvas-controls-border-radius: 10px;
+  --canvas-controls-width: 200px;
+  --canvas-controls-background-color: var(--gray-dark);
+  --canvas-controls-opacity: 0;
+  --canvas-controls-transition: 2s;
+  --canvas-controls-list-flex-direction: column;
+  --canvas-controls-list-place-items: center;
+  --canvas-controls-list-margin: 5px;
+  --canvas-controls-label-padding: 5px;
+  --canvas-controls-label-color: var(--white);
+}
+
 /***** Events : Classes : Slider *****/
 .slider {
   position: var(--slider-position);
@@ -1807,5 +1828,43 @@ pre > *::selection {
   content: var(--slider-radio-list-icon-before-content);
 }
 
+/***** Events : Classes : Canvas *****/
+.canvas > canvas {
+  border: var(--canvas-border);
+  border-radius: var(--canvas-border-radius);
+  cursor: var(--canvas-cursor);
+}
+.canvas:hover > .canvas-controls, .canvas:focus > .canvas-controls {
+  opacity: var(--canvas-hover-controls-opacity);
+  -webkit-transition: opacity var(--canvas-hover-controls-transition);
+  transition: opacity var(--canvas-hover-controls-transition);
+}
+
+.canvas-controls {
+  margin: var(--canvas-controls-margin);
+  border: var(--canvas-controls-border);
+  border-radius: var(--canvas-controls-border-radius);
+  width: var(--canvas-controls-width);
+  background-color: var(--canvas-controls-background-color);
+  opacity: var(--canvas-controls-opacity);
+  -webkit-transition: opacity var(--canvas-controls-transition);
+  transition: opacity var(--canvas-controls-transition);
+}
+.canvas-controls li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: var(--canvas-controls-list-flex-direction);
+          flex-direction: var(--canvas-controls-list-flex-direction);
+  place-items: var(--canvas-controls-list-place-items);
+  margin: var(--canvas-controls-list-margin);
+}
+.canvas-controls label {
+  padding: var(--canvas-controls-label-padding);
+  color: var(--canvas-controls-label-color);
+}
+
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 10th May 2020 @ 7:21:32 PM */
+ Updated: 12th May 2020 @ 9:06:18 AM */
