@@ -37,7 +37,7 @@ $flex: (
   'items-margin-md':        $flex-items-margin-md,
   'items-margin-lg':        $flex-items-margin-lg,
   'items-margin-wd':        $flex-items-margin-wd
- ) !default;
+) !default;
 
 [class*="column"] {
   --column-padding: #{$column-padding};

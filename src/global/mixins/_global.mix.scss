@@ -5,7 +5,7 @@
     from {
       opacity: var(--opacity-#{$key});
       transform: var(--transform-#{$key});
-      transform-origin: var(--origin-#{$key});;
+      transform-origin: var(--origin-#{$key});
     }
   }
 }
