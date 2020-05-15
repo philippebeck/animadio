@@ -1,4 +1,4 @@
-/*! animadio v2.1.3 | https://animadio.org | MIT License */
+/*! animadio v2.1.4 | https://animadio.org | MIT License */
 
 @charset "UTF-8";
 /***** Global : Variables : Colors *****/
@@ -5937,7 +5937,7 @@ pre > *::selection {
 }
 
 .menu-relay > * {
-  display: none;
+  display: none !important;
 }
 .menu-relay > h2, .menu-relay > h3, .menu-relay > h4, .menu-relay > h5, .menu-relay > h6 {
   display: block;
@@ -5957,16 +5957,16 @@ pre > *::selection {
   color: var(--menu-checked-label-color);
 }
 
-.menu-radio1:checked ~ .menu-relay > .menu-target1,
-.menu-radio2:checked ~ .menu-relay > .menu-target2,
-.menu-radio3:checked ~ .menu-relay > .menu-target3,
-.menu-radio4:checked ~ .menu-relay > .menu-target4,
-.menu-radio5:checked ~ .menu-relay > .menu-target5,
-.menu-radio6:checked ~ .menu-relay > .menu-target6,
-.menu-radio7:checked ~ .menu-relay > .menu-target7,
-.menu-radio8:checked ~ .menu-relay > .menu-target8,
-.menu-radio9:checked ~ .menu-relay > .menu-target9 {
-  display: block;
+.menu-radio1:checked ~ .menu-relay > [class*=menu-][class*=-target1],
+.menu-radio2:checked ~ .menu-relay > [class*=menu-][class*=-target2],
+.menu-radio3:checked ~ .menu-relay > [class*=menu-][class*=-target3],
+.menu-radio4:checked ~ .menu-relay > [class*=menu-][class*=-target4],
+.menu-radio5:checked ~ .menu-relay > [class*=menu-][class*=-target5],
+.menu-radio6:checked ~ .menu-relay > [class*=menu-][class*=-target6],
+.menu-radio7:checked ~ .menu-relay > [class*=menu-][class*=-target7],
+.menu-radio8:checked ~ .menu-relay > [class*=menu-][class*=-target8],
+.menu-radio9:checked ~ .menu-relay > [class*=menu-][class*=-target9] {
+  display: block !important;
 }
 
 @media (min-width: 576px) {
@@ -11815,4 +11815,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 14th May 2020 @ 8:25:46 AM */
+ Updated: 15th May 2020 @ 7:42:20 PM */
