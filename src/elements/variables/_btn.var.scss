@@ -72,14 +72,6 @@ $btn-shapes: (
 
   --btn-checked-transform: scale(0.9);
 
-  @each $primary, $secondary in $duo-colors {
-    --btn-#{$primary}-border-color: var(--#{$secondary});
-    --btn-#{$primary}-color: var(--#{$secondary});
-
-    --btn-#{$secondary}-border-color: var(--#{$primary});
-    --btn-#{$secondary}-color: var(--#{$primary});
-  }
-
   @each $key, $value in $btn-sizes {
     --btn-#{$key}: #{$value};
   }

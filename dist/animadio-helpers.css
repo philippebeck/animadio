@@ -1,4 +1,4 @@
-/*! animadio v2.1.4 | https://animadio.org | MIT License */
+/*! animadio v2.2.0 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
@@ -1407,7 +1407,7 @@ ul {
 
 img,
 video {
-  --img-max-height: auto;
+  --img-height: auto;
   --img-max-width: 100%;
   --img-object-fit: contain;
 }
@@ -1622,7 +1622,7 @@ video {
   -o-object-fit: var(--img-object-fit);
      object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
-  max-height: var(--img-max-height);
+  height: var(--img-height);
 }
 
 table {
@@ -2084,4 +2084,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 15th May 2020 @ 7:42:20 PM */
+ Updated: 19th May 2020 @ 9:31:27 PM */
