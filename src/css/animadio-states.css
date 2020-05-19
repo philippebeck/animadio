@@ -734,7 +734,7 @@ ul {
 
 img,
 video {
-  --img-max-height: auto;
+  --img-height: auto;
   --img-max-width: 100%;
   --img-object-fit: contain;
 }
@@ -946,7 +946,7 @@ img,
 video {
   object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
-  max-height: var(--img-max-height);
+  height: var(--img-height);
 }
 
 table {
