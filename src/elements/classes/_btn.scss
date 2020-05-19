@@ -35,89 +35,10 @@
   transform: var(--btn-checked-transform);
 }
 
-@each $primary-color, $secondary-color in $duo-colors {
-  @include btn($primary-color, $secondary-color);
-  @include btn($secondary-color, $primary-color);
-}
-
-.btn-fb,
-.button-fb,
-.btn-fcc,
-.button-fcc,
-.btn-github,
-.button-github,
-.btn-jsd,
-.button-jsd,
-.btn-in,
-.button-in,
-.btn-npm,
-.button-npm,
-.btn-stack,
-.button-stack,
-.btn-tw,
-.button-tw {
-  border-color: var(--white);
-  color: var(--white);
-}
-
-@each $key, $value in $brand-colors {
-  .btn-#{$key},
-  .button-#{$key} {
-    background-color: var(--#{$key});
-  }
-}
-
-.btn-fb:hover,
-.button-fb:hover,
-.btn-fb:focus,
-.button-fb:focus,
-.button-fb-check:checked + .button-fb,
-.btn-fcc:hover,
-.button-fcc:hover,
-.btn-fcc:focus,
-.button-fcc:focus,
-.button-fcc-check:checked + .button-fcc,
-.btn-github:hover,
-.button-github:hover,
-.btn-github:focus,
-.button-github:focus,
-.button-github-check:checked + .button-github,
-.btn-jsd:hover,
-.button-jsd:hover,
-.btn-jsd:focus,
-.button-jsd:focus,
-.button-jsd-check:checked + .button-jsd,
-.btn-in:hover,
-.button-in:hover,
-.btn-in:focus,
-.button-in:focus,
-.button-in-check:checked + .button-in,
-.btn-npm:hover,
-.button-npm:hover,
-.btn-npm:focus,
-.button-npm:focus,
-.button-npm-check:checked + .button-npm,
-.btn-stack:hover,
-.button-stack:hover,
-.btn-stack:focus,
-.button-stack:focus,
-.button-stack-check:checked + .button-stack,
-.btn-tw:hover,
-.button-tw:hover,
-.btn-tw:focus,
-.button-tw:focus,
-.button-tw-check:checked + .button-tw {
-  background-color: var(--white);
-}
-
-@each $key, $value in $brand-colors {
-  .btn-#{$key}:hover,
-  .button-#{$key}:hover,
-  .btn-#{$key}:focus,
-  .button-#{$key}:focus,
-  .button-#{$key}-check:checked + .button-#{$key} {
-    border-color: var(--#{$key});
-    color: var(--#{$key});
+@each $colors in $all-colors {
+  @each $key, $value in $colors {
+    @include btn($key, $value);
+    @include button($key, $value);
   }
 }
 
