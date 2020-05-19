@@ -1,16 +1,34 @@
 // ***** Elements : Mixins : Elements *****
 
-@mixin btn($first-color, $second-color) {
-  .btn-#{$first-color},
-  .button-#{$first-color},
-  .btn-#{$second-color}:hover,
-  .button-#{$second-color}:hover,
-  .btn-#{$second-color}:focus,
-  .button-#{$second-color}:focus,
-  .button-#{$second-color}-check:checked + .button-#{$second-color} {
-    border-color: var(--btn-#{$first-color}-border-color);
-    background-color: var(--#{$first-color});
-    color: var(--btn-#{$first-color}-color);
+@mixin btn($key, $value) {
+  .btn-#{$key} {
+    border-color: var(--white);
+    background-color: var(--#{$key});
+    color: var(--white);
+  }
+
+  .btn-#{$key}:hover,
+  .btn-#{$key}:focus,
+  .btn-#{$key}-check:checked + .btn-#{$key} {
+    border-color: var(--#{$key});
+    background-color: var(--white);
+    color: var(--#{$key});
+  }
+}
+
+@mixin button($key, $value) {
+  .button-#{$key} {
+    border-color: var(--#{$key});
+    background-color: var(--white);
+    color: var(--#{$key});
+  }
+
+  .button-#{$key}:hover,
+  .button-#{$key}:focus,
+  .button-#{$key}-check:checked + .button-#{$key} {
+    border-color: var(--white);
+    background-color: var(--#{$key});
+    color: var(--white);
   }
 }
 
