@@ -75,7 +75,7 @@ img,
 video {
   object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
-  max-height: var(--img-max-height);
+  height: var(--img-height);
 }
 
 table {
