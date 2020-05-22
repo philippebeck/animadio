@@ -10895,6 +10895,22 @@ pre > *::selection {
   font-family: var(--fantasy-font-family);
 }
 
+/***** Helpers : Classes : Trans *****/
+.trans-cap,
+.trans-cap-global > * {
+  text-transform: capitalize;
+}
+
+.trans-up,
+.trans-up-global > * {
+  text-transform: uppercase;
+}
+
+.trans-low,
+.trans-low-global > * {
+  text-transform: lowercase;
+}
+
 /***** Helpers : Classes : Align *****/
 .align-center,
 .align-center-global > * {
