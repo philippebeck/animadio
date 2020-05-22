@@ -88,15 +88,11 @@ $all-colors:    $primary-colors, $secondary-colors, $brand-colors;
     }
   }
 
-  /* Dark Transparent Colors */
+  /* Transparent Colors */
   @each $colors in $main-colors {
     @each $key, $value in $colors {
       --#{$key}-dark: rgba(#{$value}, 0.7);
+      --#{$key}-light: rgba(#{$value}, 0.3);
     }
-  }
-
-  /* Light Transparent Colors */
-  @each $key, $value in $primary-colors {
-    --#{$key}-light: rgba(#{$value}, 0.3);
   }
 }
