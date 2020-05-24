@@ -8454,6 +8454,462 @@ pre > *::selection {
   background-color: var(--magenta);
 }
 
+.bg-red,
+.bg-red-global > *,
+.bg-red-onto:hover,
+.bg-red-onto:focus,
+*:hover > .bg-red-into,
+*:focus > .bg-red-into,
+.bg-red-toall:hover > *,
+.bg-red-toall:focus > *,
+.bg-red-toone > *:hover,
+.bg-red-toone > *:focus,
+.bg-red-radio1:checked ~ .bg-red-relay .bg-red-target1,
+.bg-red-radio2:checked ~ .bg-red-relay .bg-red-target2,
+.bg-red-radio3:checked ~ .bg-red-relay .bg-red-target3,
+.bg-red-radio4:checked ~ .bg-red-relay .bg-red-target4,
+.bg-red-radio5:checked ~ .bg-red-relay .bg-red-target5,
+.bg-red-check:checked ~ .bg-red-hub .bg-red-goal {
+  background-color: var(--red);
+}
+
+.bg-orange,
+.bg-orange-global > *,
+.bg-orange-onto:hover,
+.bg-orange-onto:focus,
+*:hover > .bg-orange-into,
+*:focus > .bg-orange-into,
+.bg-orange-toall:hover > *,
+.bg-orange-toall:focus > *,
+.bg-orange-toone > *:hover,
+.bg-orange-toone > *:focus,
+.bg-orange-radio1:checked ~ .bg-orange-relay .bg-orange-target1,
+.bg-orange-radio2:checked ~ .bg-orange-relay .bg-orange-target2,
+.bg-orange-radio3:checked ~ .bg-orange-relay .bg-orange-target3,
+.bg-orange-radio4:checked ~ .bg-orange-relay .bg-orange-target4,
+.bg-orange-radio5:checked ~ .bg-orange-relay .bg-orange-target5,
+.bg-orange-check:checked ~ .bg-orange-hub .bg-orange-goal {
+  background-color: var(--orange);
+}
+
+.bg-gold,
+.bg-gold-global > *,
+.bg-gold-onto:hover,
+.bg-gold-onto:focus,
+*:hover > .bg-gold-into,
+*:focus > .bg-gold-into,
+.bg-gold-toall:hover > *,
+.bg-gold-toall:focus > *,
+.bg-gold-toone > *:hover,
+.bg-gold-toone > *:focus,
+.bg-gold-radio1:checked ~ .bg-gold-relay .bg-gold-target1,
+.bg-gold-radio2:checked ~ .bg-gold-relay .bg-gold-target2,
+.bg-gold-radio3:checked ~ .bg-gold-relay .bg-gold-target3,
+.bg-gold-radio4:checked ~ .bg-gold-relay .bg-gold-target4,
+.bg-gold-radio5:checked ~ .bg-gold-relay .bg-gold-target5,
+.bg-gold-check:checked ~ .bg-gold-hub .bg-gold-goal {
+  background-color: var(--gold);
+}
+
+.bg-maroon,
+.bg-maroon-global > *,
+.bg-maroon-onto:hover,
+.bg-maroon-onto:focus,
+*:hover > .bg-maroon-into,
+*:focus > .bg-maroon-into,
+.bg-maroon-toall:hover > *,
+.bg-maroon-toall:focus > *,
+.bg-maroon-toone > *:hover,
+.bg-maroon-toone > *:focus,
+.bg-maroon-radio1:checked ~ .bg-maroon-relay .bg-maroon-target1,
+.bg-maroon-radio2:checked ~ .bg-maroon-relay .bg-maroon-target2,
+.bg-maroon-radio3:checked ~ .bg-maroon-relay .bg-maroon-target3,
+.bg-maroon-radio4:checked ~ .bg-maroon-relay .bg-maroon-target4,
+.bg-maroon-radio5:checked ~ .bg-maroon-relay .bg-maroon-target5,
+.bg-maroon-check:checked ~ .bg-maroon-hub .bg-maroon-goal {
+  background-color: var(--maroon);
+}
+
+.bg-green,
+.bg-green-global > *,
+.bg-green-onto:hover,
+.bg-green-onto:focus,
+*:hover > .bg-green-into,
+*:focus > .bg-green-into,
+.bg-green-toall:hover > *,
+.bg-green-toall:focus > *,
+.bg-green-toone > *:hover,
+.bg-green-toone > *:focus,
+.bg-green-radio1:checked ~ .bg-green-relay .bg-green-target1,
+.bg-green-radio2:checked ~ .bg-green-relay .bg-green-target2,
+.bg-green-radio3:checked ~ .bg-green-relay .bg-green-target3,
+.bg-green-radio4:checked ~ .bg-green-relay .bg-green-target4,
+.bg-green-radio5:checked ~ .bg-green-relay .bg-green-target5,
+.bg-green-check:checked ~ .bg-green-hub .bg-green-goal {
+  background-color: var(--green);
+}
+
+.bg-blue,
+.bg-blue-global > *,
+.bg-blue-onto:hover,
+.bg-blue-onto:focus,
+*:hover > .bg-blue-into,
+*:focus > .bg-blue-into,
+.bg-blue-toall:hover > *,
+.bg-blue-toall:focus > *,
+.bg-blue-toone > *:hover,
+.bg-blue-toone > *:focus,
+.bg-blue-radio1:checked ~ .bg-blue-relay .bg-blue-target1,
+.bg-blue-radio2:checked ~ .bg-blue-relay .bg-blue-target2,
+.bg-blue-radio3:checked ~ .bg-blue-relay .bg-blue-target3,
+.bg-blue-radio4:checked ~ .bg-blue-relay .bg-blue-target4,
+.bg-blue-radio5:checked ~ .bg-blue-relay .bg-blue-target5,
+.bg-blue-check:checked ~ .bg-blue-hub .bg-blue-goal {
+  background-color: var(--blue);
+}
+
+.bg-navy,
+.bg-navy-global > *,
+.bg-navy-onto:hover,
+.bg-navy-onto:focus,
+*:hover > .bg-navy-into,
+*:focus > .bg-navy-into,
+.bg-navy-toall:hover > *,
+.bg-navy-toall:focus > *,
+.bg-navy-toone > *:hover,
+.bg-navy-toone > *:focus,
+.bg-navy-radio1:checked ~ .bg-navy-relay .bg-navy-target1,
+.bg-navy-radio2:checked ~ .bg-navy-relay .bg-navy-target2,
+.bg-navy-radio3:checked ~ .bg-navy-relay .bg-navy-target3,
+.bg-navy-radio4:checked ~ .bg-navy-relay .bg-navy-target4,
+.bg-navy-radio5:checked ~ .bg-navy-relay .bg-navy-target5,
+.bg-navy-check:checked ~ .bg-navy-hub .bg-navy-goal {
+  background-color: var(--navy);
+}
+
+.bg-purple,
+.bg-purple-global > *,
+.bg-purple-onto:hover,
+.bg-purple-onto:focus,
+*:hover > .bg-purple-into,
+*:focus > .bg-purple-into,
+.bg-purple-toall:hover > *,
+.bg-purple-toall:focus > *,
+.bg-purple-toone > *:hover,
+.bg-purple-toone > *:focus,
+.bg-purple-radio1:checked ~ .bg-purple-relay .bg-purple-target1,
+.bg-purple-radio2:checked ~ .bg-purple-relay .bg-purple-target2,
+.bg-purple-radio3:checked ~ .bg-purple-relay .bg-purple-target3,
+.bg-purple-radio4:checked ~ .bg-purple-relay .bg-purple-target4,
+.bg-purple-radio5:checked ~ .bg-purple-relay .bg-purple-target5,
+.bg-purple-check:checked ~ .bg-purple-hub .bg-purple-goal {
+  background-color: var(--purple);
+}
+
+.bg-gray,
+.bg-gray-global > *,
+.bg-gray-onto:hover,
+.bg-gray-onto:focus,
+*:hover > .bg-gray-into,
+*:focus > .bg-gray-into,
+.bg-gray-toall:hover > *,
+.bg-gray-toall:focus > *,
+.bg-gray-toone > *:hover,
+.bg-gray-toone > *:focus,
+.bg-gray-radio1:checked ~ .bg-gray-relay .bg-gray-target1,
+.bg-gray-radio2:checked ~ .bg-gray-relay .bg-gray-target2,
+.bg-gray-radio3:checked ~ .bg-gray-relay .bg-gray-target3,
+.bg-gray-radio4:checked ~ .bg-gray-relay .bg-gray-target4,
+.bg-gray-radio5:checked ~ .bg-gray-relay .bg-gray-target5,
+.bg-gray-check:checked ~ .bg-gray-hub .bg-gray-goal {
+  background-color: var(--gray);
+}
+
+.bg-pink,
+.bg-pink-global > *,
+.bg-pink-onto:hover,
+.bg-pink-onto:focus,
+*:hover > .bg-pink-into,
+*:focus > .bg-pink-into,
+.bg-pink-toall:hover > *,
+.bg-pink-toall:focus > *,
+.bg-pink-toone > *:hover,
+.bg-pink-toone > *:focus,
+.bg-pink-radio1:checked ~ .bg-pink-relay .bg-pink-target1,
+.bg-pink-radio2:checked ~ .bg-pink-relay .bg-pink-target2,
+.bg-pink-radio3:checked ~ .bg-pink-relay .bg-pink-target3,
+.bg-pink-radio4:checked ~ .bg-pink-relay .bg-pink-target4,
+.bg-pink-radio5:checked ~ .bg-pink-relay .bg-pink-target5,
+.bg-pink-check:checked ~ .bg-pink-hub .bg-pink-goal {
+  background-color: var(--pink);
+}
+
+.bg-tomato,
+.bg-tomato-global > *,
+.bg-tomato-onto:hover,
+.bg-tomato-onto:focus,
+*:hover > .bg-tomato-into,
+*:focus > .bg-tomato-into,
+.bg-tomato-toall:hover > *,
+.bg-tomato-toall:focus > *,
+.bg-tomato-toone > *:hover,
+.bg-tomato-toone > *:focus,
+.bg-tomato-radio1:checked ~ .bg-tomato-relay .bg-tomato-target1,
+.bg-tomato-radio2:checked ~ .bg-tomato-relay .bg-tomato-target2,
+.bg-tomato-radio3:checked ~ .bg-tomato-relay .bg-tomato-target3,
+.bg-tomato-radio4:checked ~ .bg-tomato-relay .bg-tomato-target4,
+.bg-tomato-radio5:checked ~ .bg-tomato-relay .bg-tomato-target5,
+.bg-tomato-check:checked ~ .bg-tomato-hub .bg-tomato-goal {
+  background-color: var(--tomato);
+}
+
+.bg-coral,
+.bg-coral-global > *,
+.bg-coral-onto:hover,
+.bg-coral-onto:focus,
+*:hover > .bg-coral-into,
+*:focus > .bg-coral-into,
+.bg-coral-toall:hover > *,
+.bg-coral-toall:focus > *,
+.bg-coral-toone > *:hover,
+.bg-coral-toone > *:focus,
+.bg-coral-radio1:checked ~ .bg-coral-relay .bg-coral-target1,
+.bg-coral-radio2:checked ~ .bg-coral-relay .bg-coral-target2,
+.bg-coral-radio3:checked ~ .bg-coral-relay .bg-coral-target3,
+.bg-coral-radio4:checked ~ .bg-coral-relay .bg-coral-target4,
+.bg-coral-radio5:checked ~ .bg-coral-relay .bg-coral-target5,
+.bg-coral-check:checked ~ .bg-coral-hub .bg-coral-goal {
+  background-color: var(--coral);
+}
+
+.bg-yellow,
+.bg-yellow-global > *,
+.bg-yellow-onto:hover,
+.bg-yellow-onto:focus,
+*:hover > .bg-yellow-into,
+*:focus > .bg-yellow-into,
+.bg-yellow-toall:hover > *,
+.bg-yellow-toall:focus > *,
+.bg-yellow-toone > *:hover,
+.bg-yellow-toone > *:focus,
+.bg-yellow-radio1:checked ~ .bg-yellow-relay .bg-yellow-target1,
+.bg-yellow-radio2:checked ~ .bg-yellow-relay .bg-yellow-target2,
+.bg-yellow-radio3:checked ~ .bg-yellow-relay .bg-yellow-target3,
+.bg-yellow-radio4:checked ~ .bg-yellow-relay .bg-yellow-target4,
+.bg-yellow-radio5:checked ~ .bg-yellow-relay .bg-yellow-target5,
+.bg-yellow-check:checked ~ .bg-yellow-hub .bg-yellow-goal {
+  background-color: var(--yellow);
+}
+
+.bg-brown,
+.bg-brown-global > *,
+.bg-brown-onto:hover,
+.bg-brown-onto:focus,
+*:hover > .bg-brown-into,
+*:focus > .bg-brown-into,
+.bg-brown-toall:hover > *,
+.bg-brown-toall:focus > *,
+.bg-brown-toone > *:hover,
+.bg-brown-toone > *:focus,
+.bg-brown-radio1:checked ~ .bg-brown-relay .bg-brown-target1,
+.bg-brown-radio2:checked ~ .bg-brown-relay .bg-brown-target2,
+.bg-brown-radio3:checked ~ .bg-brown-relay .bg-brown-target3,
+.bg-brown-radio4:checked ~ .bg-brown-relay .bg-brown-target4,
+.bg-brown-radio5:checked ~ .bg-brown-relay .bg-brown-target5,
+.bg-brown-check:checked ~ .bg-brown-hub .bg-brown-goal {
+  background-color: var(--brown);
+}
+
+.bg-aqua,
+.bg-aqua-global > *,
+.bg-aqua-onto:hover,
+.bg-aqua-onto:focus,
+*:hover > .bg-aqua-into,
+*:focus > .bg-aqua-into,
+.bg-aqua-toall:hover > *,
+.bg-aqua-toall:focus > *,
+.bg-aqua-toone > *:hover,
+.bg-aqua-toone > *:focus,
+.bg-aqua-radio1:checked ~ .bg-aqua-relay .bg-aqua-target1,
+.bg-aqua-radio2:checked ~ .bg-aqua-relay .bg-aqua-target2,
+.bg-aqua-radio3:checked ~ .bg-aqua-relay .bg-aqua-target3,
+.bg-aqua-radio4:checked ~ .bg-aqua-relay .bg-aqua-target4,
+.bg-aqua-radio5:checked ~ .bg-aqua-relay .bg-aqua-target5,
+.bg-aqua-check:checked ~ .bg-aqua-hub .bg-aqua-goal {
+  background-color: var(--aqua);
+}
+
+.bg-cyan,
+.bg-cyan-global > *,
+.bg-cyan-onto:hover,
+.bg-cyan-onto:focus,
+*:hover > .bg-cyan-into,
+*:focus > .bg-cyan-into,
+.bg-cyan-toall:hover > *,
+.bg-cyan-toall:focus > *,
+.bg-cyan-toone > *:hover,
+.bg-cyan-toone > *:focus,
+.bg-cyan-radio1:checked ~ .bg-cyan-relay .bg-cyan-target1,
+.bg-cyan-radio2:checked ~ .bg-cyan-relay .bg-cyan-target2,
+.bg-cyan-radio3:checked ~ .bg-cyan-relay .bg-cyan-target3,
+.bg-cyan-radio4:checked ~ .bg-cyan-relay .bg-cyan-target4,
+.bg-cyan-radio5:checked ~ .bg-cyan-relay .bg-cyan-target5,
+.bg-cyan-check:checked ~ .bg-cyan-hub .bg-cyan-goal {
+  background-color: var(--cyan);
+}
+
+.bg-sky,
+.bg-sky-global > *,
+.bg-sky-onto:hover,
+.bg-sky-onto:focus,
+*:hover > .bg-sky-into,
+*:focus > .bg-sky-into,
+.bg-sky-toall:hover > *,
+.bg-sky-toall:focus > *,
+.bg-sky-toone > *:hover,
+.bg-sky-toone > *:focus,
+.bg-sky-radio1:checked ~ .bg-sky-relay .bg-sky-target1,
+.bg-sky-radio2:checked ~ .bg-sky-relay .bg-sky-target2,
+.bg-sky-radio3:checked ~ .bg-sky-relay .bg-sky-target3,
+.bg-sky-radio4:checked ~ .bg-sky-relay .bg-sky-target4,
+.bg-sky-radio5:checked ~ .bg-sky-relay .bg-sky-target5,
+.bg-sky-check:checked ~ .bg-sky-hub .bg-sky-goal {
+  background-color: var(--sky);
+}
+
+.bg-violet,
+.bg-violet-global > *,
+.bg-violet-onto:hover,
+.bg-violet-onto:focus,
+*:hover > .bg-violet-into,
+*:focus > .bg-violet-into,
+.bg-violet-toall:hover > *,
+.bg-violet-toall:focus > *,
+.bg-violet-toone > *:hover,
+.bg-violet-toone > *:focus,
+.bg-violet-radio1:checked ~ .bg-violet-relay .bg-violet-target1,
+.bg-violet-radio2:checked ~ .bg-violet-relay .bg-violet-target2,
+.bg-violet-radio3:checked ~ .bg-violet-relay .bg-violet-target3,
+.bg-violet-radio4:checked ~ .bg-violet-relay .bg-violet-target4,
+.bg-violet-radio5:checked ~ .bg-violet-relay .bg-violet-target5,
+.bg-violet-check:checked ~ .bg-violet-hub .bg-violet-goal {
+  background-color: var(--violet);
+}
+
+.bg-silver,
+.bg-silver-global > *,
+.bg-silver-onto:hover,
+.bg-silver-onto:focus,
+*:hover > .bg-silver-into,
+*:focus > .bg-silver-into,
+.bg-silver-toall:hover > *,
+.bg-silver-toall:focus > *,
+.bg-silver-toone > *:hover,
+.bg-silver-toone > *:focus,
+.bg-silver-radio1:checked ~ .bg-silver-relay .bg-silver-target1,
+.bg-silver-radio2:checked ~ .bg-silver-relay .bg-silver-target2,
+.bg-silver-radio3:checked ~ .bg-silver-relay .bg-silver-target3,
+.bg-silver-radio4:checked ~ .bg-silver-relay .bg-silver-target4,
+.bg-silver-radio5:checked ~ .bg-silver-relay .bg-silver-target5,
+.bg-silver-check:checked ~ .bg-silver-hub .bg-silver-goal {
+  background-color: var(--silver);
+}
+
+.bg-fb,
+.bg-fb-global > *,
+.bg-fb-onto:hover,
+.bg-fb-onto:focus,
+*:hover > .bg-fb-into,
+*:focus > .bg-fb-into,
+.bg-fb-toall:hover > *,
+.bg-fb-toall:focus > *,
+.bg-fb-toone > *:hover,
+.bg-fb-toone > *:focus,
+.bg-fb-radio1:checked ~ .bg-fb-relay .bg-fb-target1,
+.bg-fb-radio2:checked ~ .bg-fb-relay .bg-fb-target2,
+.bg-fb-radio3:checked ~ .bg-fb-relay .bg-fb-target3,
+.bg-fb-radio4:checked ~ .bg-fb-relay .bg-fb-target4,
+.bg-fb-radio5:checked ~ .bg-fb-relay .bg-fb-target5,
+.bg-fb-check:checked ~ .bg-fb-hub .bg-fb-goal {
+  background-color: var(--fb);
+}
+
+.bg-gh,
+.bg-gh-global > *,
+.bg-gh-onto:hover,
+.bg-gh-onto:focus,
+*:hover > .bg-gh-into,
+*:focus > .bg-gh-into,
+.bg-gh-toall:hover > *,
+.bg-gh-toall:focus > *,
+.bg-gh-toone > *:hover,
+.bg-gh-toone > *:focus,
+.bg-gh-radio1:checked ~ .bg-gh-relay .bg-gh-target1,
+.bg-gh-radio2:checked ~ .bg-gh-relay .bg-gh-target2,
+.bg-gh-radio3:checked ~ .bg-gh-relay .bg-gh-target3,
+.bg-gh-radio4:checked ~ .bg-gh-relay .bg-gh-target4,
+.bg-gh-radio5:checked ~ .bg-gh-relay .bg-gh-target5,
+.bg-gh-check:checked ~ .bg-gh-hub .bg-gh-goal {
+  background-color: var(--gh);
+}
+
+.bg-in,
+.bg-in-global > *,
+.bg-in-onto:hover,
+.bg-in-onto:focus,
+*:hover > .bg-in-into,
+*:focus > .bg-in-into,
+.bg-in-toall:hover > *,
+.bg-in-toall:focus > *,
+.bg-in-toone > *:hover,
+.bg-in-toone > *:focus,
+.bg-in-radio1:checked ~ .bg-in-relay .bg-in-target1,
+.bg-in-radio2:checked ~ .bg-in-relay .bg-in-target2,
+.bg-in-radio3:checked ~ .bg-in-relay .bg-in-target3,
+.bg-in-radio4:checked ~ .bg-in-relay .bg-in-target4,
+.bg-in-radio5:checked ~ .bg-in-relay .bg-in-target5,
+.bg-in-check:checked ~ .bg-in-hub .bg-in-goal {
+  background-color: var(--in);
+}
+
+.bg-pp,
+.bg-pp-global > *,
+.bg-pp-onto:hover,
+.bg-pp-onto:focus,
+*:hover > .bg-pp-into,
+*:focus > .bg-pp-into,
+.bg-pp-toall:hover > *,
+.bg-pp-toall:focus > *,
+.bg-pp-toone > *:hover,
+.bg-pp-toone > *:focus,
+.bg-pp-radio1:checked ~ .bg-pp-relay .bg-pp-target1,
+.bg-pp-radio2:checked ~ .bg-pp-relay .bg-pp-target2,
+.bg-pp-radio3:checked ~ .bg-pp-relay .bg-pp-target3,
+.bg-pp-radio4:checked ~ .bg-pp-relay .bg-pp-target4,
+.bg-pp-radio5:checked ~ .bg-pp-relay .bg-pp-target5,
+.bg-pp-check:checked ~ .bg-pp-hub .bg-pp-goal {
+  background-color: var(--pp);
+}
+
+.bg-tw,
+.bg-tw-global > *,
+.bg-tw-onto:hover,
+.bg-tw-onto:focus,
+*:hover > .bg-tw-into,
+*:focus > .bg-tw-into,
+.bg-tw-toall:hover > *,
+.bg-tw-toall:focus > *,
+.bg-tw-toone > *:hover,
+.bg-tw-toone > *:focus,
+.bg-tw-radio1:checked ~ .bg-tw-relay .bg-tw-target1,
+.bg-tw-radio2:checked ~ .bg-tw-relay .bg-tw-target2,
+.bg-tw-radio3:checked ~ .bg-tw-relay .bg-tw-target3,
+.bg-tw-radio4:checked ~ .bg-tw-relay .bg-tw-target4,
+.bg-tw-radio5:checked ~ .bg-tw-relay .bg-tw-target5,
+.bg-tw-check:checked ~ .bg-tw-hub .bg-tw-goal {
+  background-color: var(--tw);
+}
+
 .bg-magenta-dark,
 .bg-magenta-dark-global > *,
 .bg-magenta-dark-onto:hover,
@@ -8490,25 +8946,6 @@ pre > *::selection {
 .bg-magenta-light-radio5:checked ~ .bg-magenta-light-relay .bg-magenta-light-target5,
 .bg-magenta-light-check:checked ~ .bg-magenta-light-hub .bg-magenta-light-goal {
   background-color: var(--magenta-light);
-}
-
-.bg-red,
-.bg-red-global > *,
-.bg-red-onto:hover,
-.bg-red-onto:focus,
-*:hover > .bg-red-into,
-*:focus > .bg-red-into,
-.bg-red-toall:hover > *,
-.bg-red-toall:focus > *,
-.bg-red-toone > *:hover,
-.bg-red-toone > *:focus,
-.bg-red-radio1:checked ~ .bg-red-relay .bg-red-target1,
-.bg-red-radio2:checked ~ .bg-red-relay .bg-red-target2,
-.bg-red-radio3:checked ~ .bg-red-relay .bg-red-target3,
-.bg-red-radio4:checked ~ .bg-red-relay .bg-red-target4,
-.bg-red-radio5:checked ~ .bg-red-relay .bg-red-target5,
-.bg-red-check:checked ~ .bg-red-hub .bg-red-goal {
-  background-color: var(--red);
 }
 
 .bg-red-dark,
@@ -8549,25 +8986,6 @@ pre > *::selection {
   background-color: var(--red-light);
 }
 
-.bg-orange,
-.bg-orange-global > *,
-.bg-orange-onto:hover,
-.bg-orange-onto:focus,
-*:hover > .bg-orange-into,
-*:focus > .bg-orange-into,
-.bg-orange-toall:hover > *,
-.bg-orange-toall:focus > *,
-.bg-orange-toone > *:hover,
-.bg-orange-toone > *:focus,
-.bg-orange-radio1:checked ~ .bg-orange-relay .bg-orange-target1,
-.bg-orange-radio2:checked ~ .bg-orange-relay .bg-orange-target2,
-.bg-orange-radio3:checked ~ .bg-orange-relay .bg-orange-target3,
-.bg-orange-radio4:checked ~ .bg-orange-relay .bg-orange-target4,
-.bg-orange-radio5:checked ~ .bg-orange-relay .bg-orange-target5,
-.bg-orange-check:checked ~ .bg-orange-hub .bg-orange-goal {
-  background-color: var(--orange);
-}
-
 .bg-orange-dark,
 .bg-orange-dark-global > *,
 .bg-orange-dark-onto:hover,
@@ -8604,25 +9022,6 @@ pre > *::selection {
 .bg-orange-light-radio5:checked ~ .bg-orange-light-relay .bg-orange-light-target5,
 .bg-orange-light-check:checked ~ .bg-orange-light-hub .bg-orange-light-goal {
   background-color: var(--orange-light);
-}
-
-.bg-gold,
-.bg-gold-global > *,
-.bg-gold-onto:hover,
-.bg-gold-onto:focus,
-*:hover > .bg-gold-into,
-*:focus > .bg-gold-into,
-.bg-gold-toall:hover > *,
-.bg-gold-toall:focus > *,
-.bg-gold-toone > *:hover,
-.bg-gold-toone > *:focus,
-.bg-gold-radio1:checked ~ .bg-gold-relay .bg-gold-target1,
-.bg-gold-radio2:checked ~ .bg-gold-relay .bg-gold-target2,
-.bg-gold-radio3:checked ~ .bg-gold-relay .bg-gold-target3,
-.bg-gold-radio4:checked ~ .bg-gold-relay .bg-gold-target4,
-.bg-gold-radio5:checked ~ .bg-gold-relay .bg-gold-target5,
-.bg-gold-check:checked ~ .bg-gold-hub .bg-gold-goal {
-  background-color: var(--gold);
 }
 
 .bg-gold-dark,
@@ -8663,25 +9062,6 @@ pre > *::selection {
   background-color: var(--gold-light);
 }
 
-.bg-maroon,
-.bg-maroon-global > *,
-.bg-maroon-onto:hover,
-.bg-maroon-onto:focus,
-*:hover > .bg-maroon-into,
-*:focus > .bg-maroon-into,
-.bg-maroon-toall:hover > *,
-.bg-maroon-toall:focus > *,
-.bg-maroon-toone > *:hover,
-.bg-maroon-toone > *:focus,
-.bg-maroon-radio1:checked ~ .bg-maroon-relay .bg-maroon-target1,
-.bg-maroon-radio2:checked ~ .bg-maroon-relay .bg-maroon-target2,
-.bg-maroon-radio3:checked ~ .bg-maroon-relay .bg-maroon-target3,
-.bg-maroon-radio4:checked ~ .bg-maroon-relay .bg-maroon-target4,
-.bg-maroon-radio5:checked ~ .bg-maroon-relay .bg-maroon-target5,
-.bg-maroon-check:checked ~ .bg-maroon-hub .bg-maroon-goal {
-  background-color: var(--maroon);
-}
-
 .bg-maroon-dark,
 .bg-maroon-dark-global > *,
 .bg-maroon-dark-onto:hover,
@@ -8718,25 +9098,6 @@ pre > *::selection {
 .bg-maroon-light-radio5:checked ~ .bg-maroon-light-relay .bg-maroon-light-target5,
 .bg-maroon-light-check:checked ~ .bg-maroon-light-hub .bg-maroon-light-goal {
   background-color: var(--maroon-light);
-}
-
-.bg-green,
-.bg-green-global > *,
-.bg-green-onto:hover,
-.bg-green-onto:focus,
-*:hover > .bg-green-into,
-*:focus > .bg-green-into,
-.bg-green-toall:hover > *,
-.bg-green-toall:focus > *,
-.bg-green-toone > *:hover,
-.bg-green-toone > *:focus,
-.bg-green-radio1:checked ~ .bg-green-relay .bg-green-target1,
-.bg-green-radio2:checked ~ .bg-green-relay .bg-green-target2,
-.bg-green-radio3:checked ~ .bg-green-relay .bg-green-target3,
-.bg-green-radio4:checked ~ .bg-green-relay .bg-green-target4,
-.bg-green-radio5:checked ~ .bg-green-relay .bg-green-target5,
-.bg-green-check:checked ~ .bg-green-hub .bg-green-goal {
-  background-color: var(--green);
 }
 
 .bg-green-dark,
@@ -8777,25 +9138,6 @@ pre > *::selection {
   background-color: var(--green-light);
 }
 
-.bg-blue,
-.bg-blue-global > *,
-.bg-blue-onto:hover,
-.bg-blue-onto:focus,
-*:hover > .bg-blue-into,
-*:focus > .bg-blue-into,
-.bg-blue-toall:hover > *,
-.bg-blue-toall:focus > *,
-.bg-blue-toone > *:hover,
-.bg-blue-toone > *:focus,
-.bg-blue-radio1:checked ~ .bg-blue-relay .bg-blue-target1,
-.bg-blue-radio2:checked ~ .bg-blue-relay .bg-blue-target2,
-.bg-blue-radio3:checked ~ .bg-blue-relay .bg-blue-target3,
-.bg-blue-radio4:checked ~ .bg-blue-relay .bg-blue-target4,
-.bg-blue-radio5:checked ~ .bg-blue-relay .bg-blue-target5,
-.bg-blue-check:checked ~ .bg-blue-hub .bg-blue-goal {
-  background-color: var(--blue);
-}
-
 .bg-blue-dark,
 .bg-blue-dark-global > *,
 .bg-blue-dark-onto:hover,
@@ -8832,25 +9174,6 @@ pre > *::selection {
 .bg-blue-light-radio5:checked ~ .bg-blue-light-relay .bg-blue-light-target5,
 .bg-blue-light-check:checked ~ .bg-blue-light-hub .bg-blue-light-goal {
   background-color: var(--blue-light);
-}
-
-.bg-navy,
-.bg-navy-global > *,
-.bg-navy-onto:hover,
-.bg-navy-onto:focus,
-*:hover > .bg-navy-into,
-*:focus > .bg-navy-into,
-.bg-navy-toall:hover > *,
-.bg-navy-toall:focus > *,
-.bg-navy-toone > *:hover,
-.bg-navy-toone > *:focus,
-.bg-navy-radio1:checked ~ .bg-navy-relay .bg-navy-target1,
-.bg-navy-radio2:checked ~ .bg-navy-relay .bg-navy-target2,
-.bg-navy-radio3:checked ~ .bg-navy-relay .bg-navy-target3,
-.bg-navy-radio4:checked ~ .bg-navy-relay .bg-navy-target4,
-.bg-navy-radio5:checked ~ .bg-navy-relay .bg-navy-target5,
-.bg-navy-check:checked ~ .bg-navy-hub .bg-navy-goal {
-  background-color: var(--navy);
 }
 
 .bg-navy-dark,
@@ -8891,25 +9214,6 @@ pre > *::selection {
   background-color: var(--navy-light);
 }
 
-.bg-purple,
-.bg-purple-global > *,
-.bg-purple-onto:hover,
-.bg-purple-onto:focus,
-*:hover > .bg-purple-into,
-*:focus > .bg-purple-into,
-.bg-purple-toall:hover > *,
-.bg-purple-toall:focus > *,
-.bg-purple-toone > *:hover,
-.bg-purple-toone > *:focus,
-.bg-purple-radio1:checked ~ .bg-purple-relay .bg-purple-target1,
-.bg-purple-radio2:checked ~ .bg-purple-relay .bg-purple-target2,
-.bg-purple-radio3:checked ~ .bg-purple-relay .bg-purple-target3,
-.bg-purple-radio4:checked ~ .bg-purple-relay .bg-purple-target4,
-.bg-purple-radio5:checked ~ .bg-purple-relay .bg-purple-target5,
-.bg-purple-check:checked ~ .bg-purple-hub .bg-purple-goal {
-  background-color: var(--purple);
-}
-
 .bg-purple-dark,
 .bg-purple-dark-global > *,
 .bg-purple-dark-onto:hover,
@@ -8946,25 +9250,6 @@ pre > *::selection {
 .bg-purple-light-radio5:checked ~ .bg-purple-light-relay .bg-purple-light-target5,
 .bg-purple-light-check:checked ~ .bg-purple-light-hub .bg-purple-light-goal {
   background-color: var(--purple-light);
-}
-
-.bg-gray,
-.bg-gray-global > *,
-.bg-gray-onto:hover,
-.bg-gray-onto:focus,
-*:hover > .bg-gray-into,
-*:focus > .bg-gray-into,
-.bg-gray-toall:hover > *,
-.bg-gray-toall:focus > *,
-.bg-gray-toone > *:hover,
-.bg-gray-toone > *:focus,
-.bg-gray-radio1:checked ~ .bg-gray-relay .bg-gray-target1,
-.bg-gray-radio2:checked ~ .bg-gray-relay .bg-gray-target2,
-.bg-gray-radio3:checked ~ .bg-gray-relay .bg-gray-target3,
-.bg-gray-radio4:checked ~ .bg-gray-relay .bg-gray-target4,
-.bg-gray-radio5:checked ~ .bg-gray-relay .bg-gray-target5,
-.bg-gray-check:checked ~ .bg-gray-hub .bg-gray-goal {
-  background-color: var(--gray);
 }
 
 .bg-gray-dark,
@@ -9005,25 +9290,6 @@ pre > *::selection {
   background-color: var(--gray-light);
 }
 
-.bg-pink,
-.bg-pink-global > *,
-.bg-pink-onto:hover,
-.bg-pink-onto:focus,
-*:hover > .bg-pink-into,
-*:focus > .bg-pink-into,
-.bg-pink-toall:hover > *,
-.bg-pink-toall:focus > *,
-.bg-pink-toone > *:hover,
-.bg-pink-toone > *:focus,
-.bg-pink-radio1:checked ~ .bg-pink-relay .bg-pink-target1,
-.bg-pink-radio2:checked ~ .bg-pink-relay .bg-pink-target2,
-.bg-pink-radio3:checked ~ .bg-pink-relay .bg-pink-target3,
-.bg-pink-radio4:checked ~ .bg-pink-relay .bg-pink-target4,
-.bg-pink-radio5:checked ~ .bg-pink-relay .bg-pink-target5,
-.bg-pink-check:checked ~ .bg-pink-hub .bg-pink-goal {
-  background-color: var(--pink);
-}
-
 .bg-pink-dark,
 .bg-pink-dark-global > *,
 .bg-pink-dark-onto:hover,
@@ -9060,25 +9326,6 @@ pre > *::selection {
 .bg-pink-light-radio5:checked ~ .bg-pink-light-relay .bg-pink-light-target5,
 .bg-pink-light-check:checked ~ .bg-pink-light-hub .bg-pink-light-goal {
   background-color: var(--pink-light);
-}
-
-.bg-tomato,
-.bg-tomato-global > *,
-.bg-tomato-onto:hover,
-.bg-tomato-onto:focus,
-*:hover > .bg-tomato-into,
-*:focus > .bg-tomato-into,
-.bg-tomato-toall:hover > *,
-.bg-tomato-toall:focus > *,
-.bg-tomato-toone > *:hover,
-.bg-tomato-toone > *:focus,
-.bg-tomato-radio1:checked ~ .bg-tomato-relay .bg-tomato-target1,
-.bg-tomato-radio2:checked ~ .bg-tomato-relay .bg-tomato-target2,
-.bg-tomato-radio3:checked ~ .bg-tomato-relay .bg-tomato-target3,
-.bg-tomato-radio4:checked ~ .bg-tomato-relay .bg-tomato-target4,
-.bg-tomato-radio5:checked ~ .bg-tomato-relay .bg-tomato-target5,
-.bg-tomato-check:checked ~ .bg-tomato-hub .bg-tomato-goal {
-  background-color: var(--tomato);
 }
 
 .bg-tomato-dark,
@@ -9119,25 +9366,6 @@ pre > *::selection {
   background-color: var(--tomato-light);
 }
 
-.bg-coral,
-.bg-coral-global > *,
-.bg-coral-onto:hover,
-.bg-coral-onto:focus,
-*:hover > .bg-coral-into,
-*:focus > .bg-coral-into,
-.bg-coral-toall:hover > *,
-.bg-coral-toall:focus > *,
-.bg-coral-toone > *:hover,
-.bg-coral-toone > *:focus,
-.bg-coral-radio1:checked ~ .bg-coral-relay .bg-coral-target1,
-.bg-coral-radio2:checked ~ .bg-coral-relay .bg-coral-target2,
-.bg-coral-radio3:checked ~ .bg-coral-relay .bg-coral-target3,
-.bg-coral-radio4:checked ~ .bg-coral-relay .bg-coral-target4,
-.bg-coral-radio5:checked ~ .bg-coral-relay .bg-coral-target5,
-.bg-coral-check:checked ~ .bg-coral-hub .bg-coral-goal {
-  background-color: var(--coral);
-}
-
 .bg-coral-dark,
 .bg-coral-dark-global > *,
 .bg-coral-dark-onto:hover,
@@ -9174,25 +9402,6 @@ pre > *::selection {
 .bg-coral-light-radio5:checked ~ .bg-coral-light-relay .bg-coral-light-target5,
 .bg-coral-light-check:checked ~ .bg-coral-light-hub .bg-coral-light-goal {
   background-color: var(--coral-light);
-}
-
-.bg-yellow,
-.bg-yellow-global > *,
-.bg-yellow-onto:hover,
-.bg-yellow-onto:focus,
-*:hover > .bg-yellow-into,
-*:focus > .bg-yellow-into,
-.bg-yellow-toall:hover > *,
-.bg-yellow-toall:focus > *,
-.bg-yellow-toone > *:hover,
-.bg-yellow-toone > *:focus,
-.bg-yellow-radio1:checked ~ .bg-yellow-relay .bg-yellow-target1,
-.bg-yellow-radio2:checked ~ .bg-yellow-relay .bg-yellow-target2,
-.bg-yellow-radio3:checked ~ .bg-yellow-relay .bg-yellow-target3,
-.bg-yellow-radio4:checked ~ .bg-yellow-relay .bg-yellow-target4,
-.bg-yellow-radio5:checked ~ .bg-yellow-relay .bg-yellow-target5,
-.bg-yellow-check:checked ~ .bg-yellow-hub .bg-yellow-goal {
-  background-color: var(--yellow);
 }
 
 .bg-yellow-dark,
@@ -9233,25 +9442,6 @@ pre > *::selection {
   background-color: var(--yellow-light);
 }
 
-.bg-brown,
-.bg-brown-global > *,
-.bg-brown-onto:hover,
-.bg-brown-onto:focus,
-*:hover > .bg-brown-into,
-*:focus > .bg-brown-into,
-.bg-brown-toall:hover > *,
-.bg-brown-toall:focus > *,
-.bg-brown-toone > *:hover,
-.bg-brown-toone > *:focus,
-.bg-brown-radio1:checked ~ .bg-brown-relay .bg-brown-target1,
-.bg-brown-radio2:checked ~ .bg-brown-relay .bg-brown-target2,
-.bg-brown-radio3:checked ~ .bg-brown-relay .bg-brown-target3,
-.bg-brown-radio4:checked ~ .bg-brown-relay .bg-brown-target4,
-.bg-brown-radio5:checked ~ .bg-brown-relay .bg-brown-target5,
-.bg-brown-check:checked ~ .bg-brown-hub .bg-brown-goal {
-  background-color: var(--brown);
-}
-
 .bg-brown-dark,
 .bg-brown-dark-global > *,
 .bg-brown-dark-onto:hover,
@@ -9288,25 +9478,6 @@ pre > *::selection {
 .bg-brown-light-radio5:checked ~ .bg-brown-light-relay .bg-brown-light-target5,
 .bg-brown-light-check:checked ~ .bg-brown-light-hub .bg-brown-light-goal {
   background-color: var(--brown-light);
-}
-
-.bg-aqua,
-.bg-aqua-global > *,
-.bg-aqua-onto:hover,
-.bg-aqua-onto:focus,
-*:hover > .bg-aqua-into,
-*:focus > .bg-aqua-into,
-.bg-aqua-toall:hover > *,
-.bg-aqua-toall:focus > *,
-.bg-aqua-toone > *:hover,
-.bg-aqua-toone > *:focus,
-.bg-aqua-radio1:checked ~ .bg-aqua-relay .bg-aqua-target1,
-.bg-aqua-radio2:checked ~ .bg-aqua-relay .bg-aqua-target2,
-.bg-aqua-radio3:checked ~ .bg-aqua-relay .bg-aqua-target3,
-.bg-aqua-radio4:checked ~ .bg-aqua-relay .bg-aqua-target4,
-.bg-aqua-radio5:checked ~ .bg-aqua-relay .bg-aqua-target5,
-.bg-aqua-check:checked ~ .bg-aqua-hub .bg-aqua-goal {
-  background-color: var(--aqua);
 }
 
 .bg-aqua-dark,
@@ -9347,25 +9518,6 @@ pre > *::selection {
   background-color: var(--aqua-light);
 }
 
-.bg-cyan,
-.bg-cyan-global > *,
-.bg-cyan-onto:hover,
-.bg-cyan-onto:focus,
-*:hover > .bg-cyan-into,
-*:focus > .bg-cyan-into,
-.bg-cyan-toall:hover > *,
-.bg-cyan-toall:focus > *,
-.bg-cyan-toone > *:hover,
-.bg-cyan-toone > *:focus,
-.bg-cyan-radio1:checked ~ .bg-cyan-relay .bg-cyan-target1,
-.bg-cyan-radio2:checked ~ .bg-cyan-relay .bg-cyan-target2,
-.bg-cyan-radio3:checked ~ .bg-cyan-relay .bg-cyan-target3,
-.bg-cyan-radio4:checked ~ .bg-cyan-relay .bg-cyan-target4,
-.bg-cyan-radio5:checked ~ .bg-cyan-relay .bg-cyan-target5,
-.bg-cyan-check:checked ~ .bg-cyan-hub .bg-cyan-goal {
-  background-color: var(--cyan);
-}
-
 .bg-cyan-dark,
 .bg-cyan-dark-global > *,
 .bg-cyan-dark-onto:hover,
@@ -9402,25 +9554,6 @@ pre > *::selection {
 .bg-cyan-light-radio5:checked ~ .bg-cyan-light-relay .bg-cyan-light-target5,
 .bg-cyan-light-check:checked ~ .bg-cyan-light-hub .bg-cyan-light-goal {
   background-color: var(--cyan-light);
-}
-
-.bg-sky,
-.bg-sky-global > *,
-.bg-sky-onto:hover,
-.bg-sky-onto:focus,
-*:hover > .bg-sky-into,
-*:focus > .bg-sky-into,
-.bg-sky-toall:hover > *,
-.bg-sky-toall:focus > *,
-.bg-sky-toone > *:hover,
-.bg-sky-toone > *:focus,
-.bg-sky-radio1:checked ~ .bg-sky-relay .bg-sky-target1,
-.bg-sky-radio2:checked ~ .bg-sky-relay .bg-sky-target2,
-.bg-sky-radio3:checked ~ .bg-sky-relay .bg-sky-target3,
-.bg-sky-radio4:checked ~ .bg-sky-relay .bg-sky-target4,
-.bg-sky-radio5:checked ~ .bg-sky-relay .bg-sky-target5,
-.bg-sky-check:checked ~ .bg-sky-hub .bg-sky-goal {
-  background-color: var(--sky);
 }
 
 .bg-sky-dark,
@@ -9461,25 +9594,6 @@ pre > *::selection {
   background-color: var(--sky-light);
 }
 
-.bg-violet,
-.bg-violet-global > *,
-.bg-violet-onto:hover,
-.bg-violet-onto:focus,
-*:hover > .bg-violet-into,
-*:focus > .bg-violet-into,
-.bg-violet-toall:hover > *,
-.bg-violet-toall:focus > *,
-.bg-violet-toone > *:hover,
-.bg-violet-toone > *:focus,
-.bg-violet-radio1:checked ~ .bg-violet-relay .bg-violet-target1,
-.bg-violet-radio2:checked ~ .bg-violet-relay .bg-violet-target2,
-.bg-violet-radio3:checked ~ .bg-violet-relay .bg-violet-target3,
-.bg-violet-radio4:checked ~ .bg-violet-relay .bg-violet-target4,
-.bg-violet-radio5:checked ~ .bg-violet-relay .bg-violet-target5,
-.bg-violet-check:checked ~ .bg-violet-hub .bg-violet-goal {
-  background-color: var(--violet);
-}
-
 .bg-violet-dark,
 .bg-violet-dark-global > *,
 .bg-violet-dark-onto:hover,
@@ -9516,25 +9630,6 @@ pre > *::selection {
 .bg-violet-light-radio5:checked ~ .bg-violet-light-relay .bg-violet-light-target5,
 .bg-violet-light-check:checked ~ .bg-violet-light-hub .bg-violet-light-goal {
   background-color: var(--violet-light);
-}
-
-.bg-silver,
-.bg-silver-global > *,
-.bg-silver-onto:hover,
-.bg-silver-onto:focus,
-*:hover > .bg-silver-into,
-*:focus > .bg-silver-into,
-.bg-silver-toall:hover > *,
-.bg-silver-toall:focus > *,
-.bg-silver-toone > *:hover,
-.bg-silver-toone > *:focus,
-.bg-silver-radio1:checked ~ .bg-silver-relay .bg-silver-target1,
-.bg-silver-radio2:checked ~ .bg-silver-relay .bg-silver-target2,
-.bg-silver-radio3:checked ~ .bg-silver-relay .bg-silver-target3,
-.bg-silver-radio4:checked ~ .bg-silver-relay .bg-silver-target4,
-.bg-silver-radio5:checked ~ .bg-silver-relay .bg-silver-target5,
-.bg-silver-check:checked ~ .bg-silver-hub .bg-silver-goal {
-  background-color: var(--silver);
 }
 
 .bg-silver-dark,
@@ -9595,6 +9690,462 @@ pre > *::selection {
   color: var(--magenta);
 }
 
+.color-red,
+.color-red-global > *,
+.color-red-onto:hover,
+.color-red-onto:focus,
+*:hover > .color-red-into,
+*:focus > .color-red-into,
+.color-red-toall:hover > *,
+.color-red-toall:focus > *,
+.color-red-toone > *:hover,
+.color-red-toone > *:focus,
+.color-red-radio1:checked ~ .color-red-relay .color-red-target1,
+.color-red-radio2:checked ~ .color-red-relay .color-red-target2,
+.color-red-radio3:checked ~ .color-red-relay .color-red-target3,
+.color-red-radio4:checked ~ .color-red-relay .color-red-target4,
+.color-red-radio5:checked ~ .color-red-relay .color-red-target5,
+.color-red-check:checked ~ .color-red-hub .color-red-goal {
+  color: var(--red);
+}
+
+.color-orange,
+.color-orange-global > *,
+.color-orange-onto:hover,
+.color-orange-onto:focus,
+*:hover > .color-orange-into,
+*:focus > .color-orange-into,
+.color-orange-toall:hover > *,
+.color-orange-toall:focus > *,
+.color-orange-toone > *:hover,
+.color-orange-toone > *:focus,
+.color-orange-radio1:checked ~ .color-orange-relay .color-orange-target1,
+.color-orange-radio2:checked ~ .color-orange-relay .color-orange-target2,
+.color-orange-radio3:checked ~ .color-orange-relay .color-orange-target3,
+.color-orange-radio4:checked ~ .color-orange-relay .color-orange-target4,
+.color-orange-radio5:checked ~ .color-orange-relay .color-orange-target5,
+.color-orange-check:checked ~ .color-orange-hub .color-orange-goal {
+  color: var(--orange);
+}
+
+.color-gold,
+.color-gold-global > *,
+.color-gold-onto:hover,
+.color-gold-onto:focus,
+*:hover > .color-gold-into,
+*:focus > .color-gold-into,
+.color-gold-toall:hover > *,
+.color-gold-toall:focus > *,
+.color-gold-toone > *:hover,
+.color-gold-toone > *:focus,
+.color-gold-radio1:checked ~ .color-gold-relay .color-gold-target1,
+.color-gold-radio2:checked ~ .color-gold-relay .color-gold-target2,
+.color-gold-radio3:checked ~ .color-gold-relay .color-gold-target3,
+.color-gold-radio4:checked ~ .color-gold-relay .color-gold-target4,
+.color-gold-radio5:checked ~ .color-gold-relay .color-gold-target5,
+.color-gold-check:checked ~ .color-gold-hub .color-gold-goal {
+  color: var(--gold);
+}
+
+.color-maroon,
+.color-maroon-global > *,
+.color-maroon-onto:hover,
+.color-maroon-onto:focus,
+*:hover > .color-maroon-into,
+*:focus > .color-maroon-into,
+.color-maroon-toall:hover > *,
+.color-maroon-toall:focus > *,
+.color-maroon-toone > *:hover,
+.color-maroon-toone > *:focus,
+.color-maroon-radio1:checked ~ .color-maroon-relay .color-maroon-target1,
+.color-maroon-radio2:checked ~ .color-maroon-relay .color-maroon-target2,
+.color-maroon-radio3:checked ~ .color-maroon-relay .color-maroon-target3,
+.color-maroon-radio4:checked ~ .color-maroon-relay .color-maroon-target4,
+.color-maroon-radio5:checked ~ .color-maroon-relay .color-maroon-target5,
+.color-maroon-check:checked ~ .color-maroon-hub .color-maroon-goal {
+  color: var(--maroon);
+}
+
+.color-green,
+.color-green-global > *,
+.color-green-onto:hover,
+.color-green-onto:focus,
+*:hover > .color-green-into,
+*:focus > .color-green-into,
+.color-green-toall:hover > *,
+.color-green-toall:focus > *,
+.color-green-toone > *:hover,
+.color-green-toone > *:focus,
+.color-green-radio1:checked ~ .color-green-relay .color-green-target1,
+.color-green-radio2:checked ~ .color-green-relay .color-green-target2,
+.color-green-radio3:checked ~ .color-green-relay .color-green-target3,
+.color-green-radio4:checked ~ .color-green-relay .color-green-target4,
+.color-green-radio5:checked ~ .color-green-relay .color-green-target5,
+.color-green-check:checked ~ .color-green-hub .color-green-goal {
+  color: var(--green);
+}
+
+.color-blue,
+.color-blue-global > *,
+.color-blue-onto:hover,
+.color-blue-onto:focus,
+*:hover > .color-blue-into,
+*:focus > .color-blue-into,
+.color-blue-toall:hover > *,
+.color-blue-toall:focus > *,
+.color-blue-toone > *:hover,
+.color-blue-toone > *:focus,
+.color-blue-radio1:checked ~ .color-blue-relay .color-blue-target1,
+.color-blue-radio2:checked ~ .color-blue-relay .color-blue-target2,
+.color-blue-radio3:checked ~ .color-blue-relay .color-blue-target3,
+.color-blue-radio4:checked ~ .color-blue-relay .color-blue-target4,
+.color-blue-radio5:checked ~ .color-blue-relay .color-blue-target5,
+.color-blue-check:checked ~ .color-blue-hub .color-blue-goal {
+  color: var(--blue);
+}
+
+.color-navy,
+.color-navy-global > *,
+.color-navy-onto:hover,
+.color-navy-onto:focus,
+*:hover > .color-navy-into,
+*:focus > .color-navy-into,
+.color-navy-toall:hover > *,
+.color-navy-toall:focus > *,
+.color-navy-toone > *:hover,
+.color-navy-toone > *:focus,
+.color-navy-radio1:checked ~ .color-navy-relay .color-navy-target1,
+.color-navy-radio2:checked ~ .color-navy-relay .color-navy-target2,
+.color-navy-radio3:checked ~ .color-navy-relay .color-navy-target3,
+.color-navy-radio4:checked ~ .color-navy-relay .color-navy-target4,
+.color-navy-radio5:checked ~ .color-navy-relay .color-navy-target5,
+.color-navy-check:checked ~ .color-navy-hub .color-navy-goal {
+  color: var(--navy);
+}
+
+.color-purple,
+.color-purple-global > *,
+.color-purple-onto:hover,
+.color-purple-onto:focus,
+*:hover > .color-purple-into,
+*:focus > .color-purple-into,
+.color-purple-toall:hover > *,
+.color-purple-toall:focus > *,
+.color-purple-toone > *:hover,
+.color-purple-toone > *:focus,
+.color-purple-radio1:checked ~ .color-purple-relay .color-purple-target1,
+.color-purple-radio2:checked ~ .color-purple-relay .color-purple-target2,
+.color-purple-radio3:checked ~ .color-purple-relay .color-purple-target3,
+.color-purple-radio4:checked ~ .color-purple-relay .color-purple-target4,
+.color-purple-radio5:checked ~ .color-purple-relay .color-purple-target5,
+.color-purple-check:checked ~ .color-purple-hub .color-purple-goal {
+  color: var(--purple);
+}
+
+.color-gray,
+.color-gray-global > *,
+.color-gray-onto:hover,
+.color-gray-onto:focus,
+*:hover > .color-gray-into,
+*:focus > .color-gray-into,
+.color-gray-toall:hover > *,
+.color-gray-toall:focus > *,
+.color-gray-toone > *:hover,
+.color-gray-toone > *:focus,
+.color-gray-radio1:checked ~ .color-gray-relay .color-gray-target1,
+.color-gray-radio2:checked ~ .color-gray-relay .color-gray-target2,
+.color-gray-radio3:checked ~ .color-gray-relay .color-gray-target3,
+.color-gray-radio4:checked ~ .color-gray-relay .color-gray-target4,
+.color-gray-radio5:checked ~ .color-gray-relay .color-gray-target5,
+.color-gray-check:checked ~ .color-gray-hub .color-gray-goal {
+  color: var(--gray);
+}
+
+.color-pink,
+.color-pink-global > *,
+.color-pink-onto:hover,
+.color-pink-onto:focus,
+*:hover > .color-pink-into,
+*:focus > .color-pink-into,
+.color-pink-toall:hover > *,
+.color-pink-toall:focus > *,
+.color-pink-toone > *:hover,
+.color-pink-toone > *:focus,
+.color-pink-radio1:checked ~ .color-pink-relay .color-pink-target1,
+.color-pink-radio2:checked ~ .color-pink-relay .color-pink-target2,
+.color-pink-radio3:checked ~ .color-pink-relay .color-pink-target3,
+.color-pink-radio4:checked ~ .color-pink-relay .color-pink-target4,
+.color-pink-radio5:checked ~ .color-pink-relay .color-pink-target5,
+.color-pink-check:checked ~ .color-pink-hub .color-pink-goal {
+  color: var(--pink);
+}
+
+.color-tomato,
+.color-tomato-global > *,
+.color-tomato-onto:hover,
+.color-tomato-onto:focus,
+*:hover > .color-tomato-into,
+*:focus > .color-tomato-into,
+.color-tomato-toall:hover > *,
+.color-tomato-toall:focus > *,
+.color-tomato-toone > *:hover,
+.color-tomato-toone > *:focus,
+.color-tomato-radio1:checked ~ .color-tomato-relay .color-tomato-target1,
+.color-tomato-radio2:checked ~ .color-tomato-relay .color-tomato-target2,
+.color-tomato-radio3:checked ~ .color-tomato-relay .color-tomato-target3,
+.color-tomato-radio4:checked ~ .color-tomato-relay .color-tomato-target4,
+.color-tomato-radio5:checked ~ .color-tomato-relay .color-tomato-target5,
+.color-tomato-check:checked ~ .color-tomato-hub .color-tomato-goal {
+  color: var(--tomato);
+}
+
+.color-coral,
+.color-coral-global > *,
+.color-coral-onto:hover,
+.color-coral-onto:focus,
+*:hover > .color-coral-into,
+*:focus > .color-coral-into,
+.color-coral-toall:hover > *,
+.color-coral-toall:focus > *,
+.color-coral-toone > *:hover,
+.color-coral-toone > *:focus,
+.color-coral-radio1:checked ~ .color-coral-relay .color-coral-target1,
+.color-coral-radio2:checked ~ .color-coral-relay .color-coral-target2,
+.color-coral-radio3:checked ~ .color-coral-relay .color-coral-target3,
+.color-coral-radio4:checked ~ .color-coral-relay .color-coral-target4,
+.color-coral-radio5:checked ~ .color-coral-relay .color-coral-target5,
+.color-coral-check:checked ~ .color-coral-hub .color-coral-goal {
+  color: var(--coral);
+}
+
+.color-yellow,
+.color-yellow-global > *,
+.color-yellow-onto:hover,
+.color-yellow-onto:focus,
+*:hover > .color-yellow-into,
+*:focus > .color-yellow-into,
+.color-yellow-toall:hover > *,
+.color-yellow-toall:focus > *,
+.color-yellow-toone > *:hover,
+.color-yellow-toone > *:focus,
+.color-yellow-radio1:checked ~ .color-yellow-relay .color-yellow-target1,
+.color-yellow-radio2:checked ~ .color-yellow-relay .color-yellow-target2,
+.color-yellow-radio3:checked ~ .color-yellow-relay .color-yellow-target3,
+.color-yellow-radio4:checked ~ .color-yellow-relay .color-yellow-target4,
+.color-yellow-radio5:checked ~ .color-yellow-relay .color-yellow-target5,
+.color-yellow-check:checked ~ .color-yellow-hub .color-yellow-goal {
+  color: var(--yellow);
+}
+
+.color-brown,
+.color-brown-global > *,
+.color-brown-onto:hover,
+.color-brown-onto:focus,
+*:hover > .color-brown-into,
+*:focus > .color-brown-into,
+.color-brown-toall:hover > *,
+.color-brown-toall:focus > *,
+.color-brown-toone > *:hover,
+.color-brown-toone > *:focus,
+.color-brown-radio1:checked ~ .color-brown-relay .color-brown-target1,
+.color-brown-radio2:checked ~ .color-brown-relay .color-brown-target2,
+.color-brown-radio3:checked ~ .color-brown-relay .color-brown-target3,
+.color-brown-radio4:checked ~ .color-brown-relay .color-brown-target4,
+.color-brown-radio5:checked ~ .color-brown-relay .color-brown-target5,
+.color-brown-check:checked ~ .color-brown-hub .color-brown-goal {
+  color: var(--brown);
+}
+
+.color-aqua,
+.color-aqua-global > *,
+.color-aqua-onto:hover,
+.color-aqua-onto:focus,
+*:hover > .color-aqua-into,
+*:focus > .color-aqua-into,
+.color-aqua-toall:hover > *,
+.color-aqua-toall:focus > *,
+.color-aqua-toone > *:hover,
+.color-aqua-toone > *:focus,
+.color-aqua-radio1:checked ~ .color-aqua-relay .color-aqua-target1,
+.color-aqua-radio2:checked ~ .color-aqua-relay .color-aqua-target2,
+.color-aqua-radio3:checked ~ .color-aqua-relay .color-aqua-target3,
+.color-aqua-radio4:checked ~ .color-aqua-relay .color-aqua-target4,
+.color-aqua-radio5:checked ~ .color-aqua-relay .color-aqua-target5,
+.color-aqua-check:checked ~ .color-aqua-hub .color-aqua-goal {
+  color: var(--aqua);
+}
+
+.color-cyan,
+.color-cyan-global > *,
+.color-cyan-onto:hover,
+.color-cyan-onto:focus,
+*:hover > .color-cyan-into,
+*:focus > .color-cyan-into,
+.color-cyan-toall:hover > *,
+.color-cyan-toall:focus > *,
+.color-cyan-toone > *:hover,
+.color-cyan-toone > *:focus,
+.color-cyan-radio1:checked ~ .color-cyan-relay .color-cyan-target1,
+.color-cyan-radio2:checked ~ .color-cyan-relay .color-cyan-target2,
+.color-cyan-radio3:checked ~ .color-cyan-relay .color-cyan-target3,
+.color-cyan-radio4:checked ~ .color-cyan-relay .color-cyan-target4,
+.color-cyan-radio5:checked ~ .color-cyan-relay .color-cyan-target5,
+.color-cyan-check:checked ~ .color-cyan-hub .color-cyan-goal {
+  color: var(--cyan);
+}
+
+.color-sky,
+.color-sky-global > *,
+.color-sky-onto:hover,
+.color-sky-onto:focus,
+*:hover > .color-sky-into,
+*:focus > .color-sky-into,
+.color-sky-toall:hover > *,
+.color-sky-toall:focus > *,
+.color-sky-toone > *:hover,
+.color-sky-toone > *:focus,
+.color-sky-radio1:checked ~ .color-sky-relay .color-sky-target1,
+.color-sky-radio2:checked ~ .color-sky-relay .color-sky-target2,
+.color-sky-radio3:checked ~ .color-sky-relay .color-sky-target3,
+.color-sky-radio4:checked ~ .color-sky-relay .color-sky-target4,
+.color-sky-radio5:checked ~ .color-sky-relay .color-sky-target5,
+.color-sky-check:checked ~ .color-sky-hub .color-sky-goal {
+  color: var(--sky);
+}
+
+.color-violet,
+.color-violet-global > *,
+.color-violet-onto:hover,
+.color-violet-onto:focus,
+*:hover > .color-violet-into,
+*:focus > .color-violet-into,
+.color-violet-toall:hover > *,
+.color-violet-toall:focus > *,
+.color-violet-toone > *:hover,
+.color-violet-toone > *:focus,
+.color-violet-radio1:checked ~ .color-violet-relay .color-violet-target1,
+.color-violet-radio2:checked ~ .color-violet-relay .color-violet-target2,
+.color-violet-radio3:checked ~ .color-violet-relay .color-violet-target3,
+.color-violet-radio4:checked ~ .color-violet-relay .color-violet-target4,
+.color-violet-radio5:checked ~ .color-violet-relay .color-violet-target5,
+.color-violet-check:checked ~ .color-violet-hub .color-violet-goal {
+  color: var(--violet);
+}
+
+.color-silver,
+.color-silver-global > *,
+.color-silver-onto:hover,
+.color-silver-onto:focus,
+*:hover > .color-silver-into,
+*:focus > .color-silver-into,
+.color-silver-toall:hover > *,
+.color-silver-toall:focus > *,
+.color-silver-toone > *:hover,
+.color-silver-toone > *:focus,
+.color-silver-radio1:checked ~ .color-silver-relay .color-silver-target1,
+.color-silver-radio2:checked ~ .color-silver-relay .color-silver-target2,
+.color-silver-radio3:checked ~ .color-silver-relay .color-silver-target3,
+.color-silver-radio4:checked ~ .color-silver-relay .color-silver-target4,
+.color-silver-radio5:checked ~ .color-silver-relay .color-silver-target5,
+.color-silver-check:checked ~ .color-silver-hub .color-silver-goal {
+  color: var(--silver);
+}
+
+.color-fb,
+.color-fb-global > *,
+.color-fb-onto:hover,
+.color-fb-onto:focus,
+*:hover > .color-fb-into,
+*:focus > .color-fb-into,
+.color-fb-toall:hover > *,
+.color-fb-toall:focus > *,
+.color-fb-toone > *:hover,
+.color-fb-toone > *:focus,
+.color-fb-radio1:checked ~ .color-fb-relay .color-fb-target1,
+.color-fb-radio2:checked ~ .color-fb-relay .color-fb-target2,
+.color-fb-radio3:checked ~ .color-fb-relay .color-fb-target3,
+.color-fb-radio4:checked ~ .color-fb-relay .color-fb-target4,
+.color-fb-radio5:checked ~ .color-fb-relay .color-fb-target5,
+.color-fb-check:checked ~ .color-fb-hub .color-fb-goal {
+  color: var(--fb);
+}
+
+.color-gh,
+.color-gh-global > *,
+.color-gh-onto:hover,
+.color-gh-onto:focus,
+*:hover > .color-gh-into,
+*:focus > .color-gh-into,
+.color-gh-toall:hover > *,
+.color-gh-toall:focus > *,
+.color-gh-toone > *:hover,
+.color-gh-toone > *:focus,
+.color-gh-radio1:checked ~ .color-gh-relay .color-gh-target1,
+.color-gh-radio2:checked ~ .color-gh-relay .color-gh-target2,
+.color-gh-radio3:checked ~ .color-gh-relay .color-gh-target3,
+.color-gh-radio4:checked ~ .color-gh-relay .color-gh-target4,
+.color-gh-radio5:checked ~ .color-gh-relay .color-gh-target5,
+.color-gh-check:checked ~ .color-gh-hub .color-gh-goal {
+  color: var(--gh);
+}
+
+.color-in,
+.color-in-global > *,
+.color-in-onto:hover,
+.color-in-onto:focus,
+*:hover > .color-in-into,
+*:focus > .color-in-into,
+.color-in-toall:hover > *,
+.color-in-toall:focus > *,
+.color-in-toone > *:hover,
+.color-in-toone > *:focus,
+.color-in-radio1:checked ~ .color-in-relay .color-in-target1,
+.color-in-radio2:checked ~ .color-in-relay .color-in-target2,
+.color-in-radio3:checked ~ .color-in-relay .color-in-target3,
+.color-in-radio4:checked ~ .color-in-relay .color-in-target4,
+.color-in-radio5:checked ~ .color-in-relay .color-in-target5,
+.color-in-check:checked ~ .color-in-hub .color-in-goal {
+  color: var(--in);
+}
+
+.color-pp,
+.color-pp-global > *,
+.color-pp-onto:hover,
+.color-pp-onto:focus,
+*:hover > .color-pp-into,
+*:focus > .color-pp-into,
+.color-pp-toall:hover > *,
+.color-pp-toall:focus > *,
+.color-pp-toone > *:hover,
+.color-pp-toone > *:focus,
+.color-pp-radio1:checked ~ .color-pp-relay .color-pp-target1,
+.color-pp-radio2:checked ~ .color-pp-relay .color-pp-target2,
+.color-pp-radio3:checked ~ .color-pp-relay .color-pp-target3,
+.color-pp-radio4:checked ~ .color-pp-relay .color-pp-target4,
+.color-pp-radio5:checked ~ .color-pp-relay .color-pp-target5,
+.color-pp-check:checked ~ .color-pp-hub .color-pp-goal {
+  color: var(--pp);
+}
+
+.color-tw,
+.color-tw-global > *,
+.color-tw-onto:hover,
+.color-tw-onto:focus,
+*:hover > .color-tw-into,
+*:focus > .color-tw-into,
+.color-tw-toall:hover > *,
+.color-tw-toall:focus > *,
+.color-tw-toone > *:hover,
+.color-tw-toone > *:focus,
+.color-tw-radio1:checked ~ .color-tw-relay .color-tw-target1,
+.color-tw-radio2:checked ~ .color-tw-relay .color-tw-target2,
+.color-tw-radio3:checked ~ .color-tw-relay .color-tw-target3,
+.color-tw-radio4:checked ~ .color-tw-relay .color-tw-target4,
+.color-tw-radio5:checked ~ .color-tw-relay .color-tw-target5,
+.color-tw-check:checked ~ .color-tw-hub .color-tw-goal {
+  color: var(--tw);
+}
+
 .color-magenta-dark,
 .color-magenta-dark-global > *,
 .color-magenta-dark-onto:hover,
@@ -9631,25 +10182,6 @@ pre > *::selection {
 .color-magenta-light-radio5:checked ~ .color-magenta-light-relay .color-magenta-light-target5,
 .color-magenta-light-check:checked ~ .color-magenta-light-hub .color-magenta-light-goal {
   color: var(--magenta-light);
-}
-
-.color-red,
-.color-red-global > *,
-.color-red-onto:hover,
-.color-red-onto:focus,
-*:hover > .color-red-into,
-*:focus > .color-red-into,
-.color-red-toall:hover > *,
-.color-red-toall:focus > *,
-.color-red-toone > *:hover,
-.color-red-toone > *:focus,
-.color-red-radio1:checked ~ .color-red-relay .color-red-target1,
-.color-red-radio2:checked ~ .color-red-relay .color-red-target2,
-.color-red-radio3:checked ~ .color-red-relay .color-red-target3,
-.color-red-radio4:checked ~ .color-red-relay .color-red-target4,
-.color-red-radio5:checked ~ .color-red-relay .color-red-target5,
-.color-red-check:checked ~ .color-red-hub .color-red-goal {
-  color: var(--red);
 }
 
 .color-red-dark,
@@ -9690,25 +10222,6 @@ pre > *::selection {
   color: var(--red-light);
 }
 
-.color-orange,
-.color-orange-global > *,
-.color-orange-onto:hover,
-.color-orange-onto:focus,
-*:hover > .color-orange-into,
-*:focus > .color-orange-into,
-.color-orange-toall:hover > *,
-.color-orange-toall:focus > *,
-.color-orange-toone > *:hover,
-.color-orange-toone > *:focus,
-.color-orange-radio1:checked ~ .color-orange-relay .color-orange-target1,
-.color-orange-radio2:checked ~ .color-orange-relay .color-orange-target2,
-.color-orange-radio3:checked ~ .color-orange-relay .color-orange-target3,
-.color-orange-radio4:checked ~ .color-orange-relay .color-orange-target4,
-.color-orange-radio5:checked ~ .color-orange-relay .color-orange-target5,
-.color-orange-check:checked ~ .color-orange-hub .color-orange-goal {
-  color: var(--orange);
-}
-
 .color-orange-dark,
 .color-orange-dark-global > *,
 .color-orange-dark-onto:hover,
@@ -9745,25 +10258,6 @@ pre > *::selection {
 .color-orange-light-radio5:checked ~ .color-orange-light-relay .color-orange-light-target5,
 .color-orange-light-check:checked ~ .color-orange-light-hub .color-orange-light-goal {
   color: var(--orange-light);
-}
-
-.color-gold,
-.color-gold-global > *,
-.color-gold-onto:hover,
-.color-gold-onto:focus,
-*:hover > .color-gold-into,
-*:focus > .color-gold-into,
-.color-gold-toall:hover > *,
-.color-gold-toall:focus > *,
-.color-gold-toone > *:hover,
-.color-gold-toone > *:focus,
-.color-gold-radio1:checked ~ .color-gold-relay .color-gold-target1,
-.color-gold-radio2:checked ~ .color-gold-relay .color-gold-target2,
-.color-gold-radio3:checked ~ .color-gold-relay .color-gold-target3,
-.color-gold-radio4:checked ~ .color-gold-relay .color-gold-target4,
-.color-gold-radio5:checked ~ .color-gold-relay .color-gold-target5,
-.color-gold-check:checked ~ .color-gold-hub .color-gold-goal {
-  color: var(--gold);
 }
 
 .color-gold-dark,
@@ -9804,25 +10298,6 @@ pre > *::selection {
   color: var(--gold-light);
 }
 
-.color-maroon,
-.color-maroon-global > *,
-.color-maroon-onto:hover,
-.color-maroon-onto:focus,
-*:hover > .color-maroon-into,
-*:focus > .color-maroon-into,
-.color-maroon-toall:hover > *,
-.color-maroon-toall:focus > *,
-.color-maroon-toone > *:hover,
-.color-maroon-toone > *:focus,
-.color-maroon-radio1:checked ~ .color-maroon-relay .color-maroon-target1,
-.color-maroon-radio2:checked ~ .color-maroon-relay .color-maroon-target2,
-.color-maroon-radio3:checked ~ .color-maroon-relay .color-maroon-target3,
-.color-maroon-radio4:checked ~ .color-maroon-relay .color-maroon-target4,
-.color-maroon-radio5:checked ~ .color-maroon-relay .color-maroon-target5,
-.color-maroon-check:checked ~ .color-maroon-hub .color-maroon-goal {
-  color: var(--maroon);
-}
-
 .color-maroon-dark,
 .color-maroon-dark-global > *,
 .color-maroon-dark-onto:hover,
@@ -9859,25 +10334,6 @@ pre > *::selection {
 .color-maroon-light-radio5:checked ~ .color-maroon-light-relay .color-maroon-light-target5,
 .color-maroon-light-check:checked ~ .color-maroon-light-hub .color-maroon-light-goal {
   color: var(--maroon-light);
-}
-
-.color-green,
-.color-green-global > *,
-.color-green-onto:hover,
-.color-green-onto:focus,
-*:hover > .color-green-into,
-*:focus > .color-green-into,
-.color-green-toall:hover > *,
-.color-green-toall:focus > *,
-.color-green-toone > *:hover,
-.color-green-toone > *:focus,
-.color-green-radio1:checked ~ .color-green-relay .color-green-target1,
-.color-green-radio2:checked ~ .color-green-relay .color-green-target2,
-.color-green-radio3:checked ~ .color-green-relay .color-green-target3,
-.color-green-radio4:checked ~ .color-green-relay .color-green-target4,
-.color-green-radio5:checked ~ .color-green-relay .color-green-target5,
-.color-green-check:checked ~ .color-green-hub .color-green-goal {
-  color: var(--green);
 }
 
 .color-green-dark,
@@ -9918,25 +10374,6 @@ pre > *::selection {
   color: var(--green-light);
 }
 
-.color-blue,
-.color-blue-global > *,
-.color-blue-onto:hover,
-.color-blue-onto:focus,
-*:hover > .color-blue-into,
-*:focus > .color-blue-into,
-.color-blue-toall:hover > *,
-.color-blue-toall:focus > *,
-.color-blue-toone > *:hover,
-.color-blue-toone > *:focus,
-.color-blue-radio1:checked ~ .color-blue-relay .color-blue-target1,
-.color-blue-radio2:checked ~ .color-blue-relay .color-blue-target2,
-.color-blue-radio3:checked ~ .color-blue-relay .color-blue-target3,
-.color-blue-radio4:checked ~ .color-blue-relay .color-blue-target4,
-.color-blue-radio5:checked ~ .color-blue-relay .color-blue-target5,
-.color-blue-check:checked ~ .color-blue-hub .color-blue-goal {
-  color: var(--blue);
-}
-
 .color-blue-dark,
 .color-blue-dark-global > *,
 .color-blue-dark-onto:hover,
@@ -9973,25 +10410,6 @@ pre > *::selection {
 .color-blue-light-radio5:checked ~ .color-blue-light-relay .color-blue-light-target5,
 .color-blue-light-check:checked ~ .color-blue-light-hub .color-blue-light-goal {
   color: var(--blue-light);
-}
-
-.color-navy,
-.color-navy-global > *,
-.color-navy-onto:hover,
-.color-navy-onto:focus,
-*:hover > .color-navy-into,
-*:focus > .color-navy-into,
-.color-navy-toall:hover > *,
-.color-navy-toall:focus > *,
-.color-navy-toone > *:hover,
-.color-navy-toone > *:focus,
-.color-navy-radio1:checked ~ .color-navy-relay .color-navy-target1,
-.color-navy-radio2:checked ~ .color-navy-relay .color-navy-target2,
-.color-navy-radio3:checked ~ .color-navy-relay .color-navy-target3,
-.color-navy-radio4:checked ~ .color-navy-relay .color-navy-target4,
-.color-navy-radio5:checked ~ .color-navy-relay .color-navy-target5,
-.color-navy-check:checked ~ .color-navy-hub .color-navy-goal {
-  color: var(--navy);
 }
 
 .color-navy-dark,
@@ -10032,25 +10450,6 @@ pre > *::selection {
   color: var(--navy-light);
 }
 
-.color-purple,
-.color-purple-global > *,
-.color-purple-onto:hover,
-.color-purple-onto:focus,
-*:hover > .color-purple-into,
-*:focus > .color-purple-into,
-.color-purple-toall:hover > *,
-.color-purple-toall:focus > *,
-.color-purple-toone > *:hover,
-.color-purple-toone > *:focus,
-.color-purple-radio1:checked ~ .color-purple-relay .color-purple-target1,
-.color-purple-radio2:checked ~ .color-purple-relay .color-purple-target2,
-.color-purple-radio3:checked ~ .color-purple-relay .color-purple-target3,
-.color-purple-radio4:checked ~ .color-purple-relay .color-purple-target4,
-.color-purple-radio5:checked ~ .color-purple-relay .color-purple-target5,
-.color-purple-check:checked ~ .color-purple-hub .color-purple-goal {
-  color: var(--purple);
-}
-
 .color-purple-dark,
 .color-purple-dark-global > *,
 .color-purple-dark-onto:hover,
@@ -10087,25 +10486,6 @@ pre > *::selection {
 .color-purple-light-radio5:checked ~ .color-purple-light-relay .color-purple-light-target5,
 .color-purple-light-check:checked ~ .color-purple-light-hub .color-purple-light-goal {
   color: var(--purple-light);
-}
-
-.color-gray,
-.color-gray-global > *,
-.color-gray-onto:hover,
-.color-gray-onto:focus,
-*:hover > .color-gray-into,
-*:focus > .color-gray-into,
-.color-gray-toall:hover > *,
-.color-gray-toall:focus > *,
-.color-gray-toone > *:hover,
-.color-gray-toone > *:focus,
-.color-gray-radio1:checked ~ .color-gray-relay .color-gray-target1,
-.color-gray-radio2:checked ~ .color-gray-relay .color-gray-target2,
-.color-gray-radio3:checked ~ .color-gray-relay .color-gray-target3,
-.color-gray-radio4:checked ~ .color-gray-relay .color-gray-target4,
-.color-gray-radio5:checked ~ .color-gray-relay .color-gray-target5,
-.color-gray-check:checked ~ .color-gray-hub .color-gray-goal {
-  color: var(--gray);
 }
 
 .color-gray-dark,
@@ -10146,25 +10526,6 @@ pre > *::selection {
   color: var(--gray-light);
 }
 
-.color-pink,
-.color-pink-global > *,
-.color-pink-onto:hover,
-.color-pink-onto:focus,
-*:hover > .color-pink-into,
-*:focus > .color-pink-into,
-.color-pink-toall:hover > *,
-.color-pink-toall:focus > *,
-.color-pink-toone > *:hover,
-.color-pink-toone > *:focus,
-.color-pink-radio1:checked ~ .color-pink-relay .color-pink-target1,
-.color-pink-radio2:checked ~ .color-pink-relay .color-pink-target2,
-.color-pink-radio3:checked ~ .color-pink-relay .color-pink-target3,
-.color-pink-radio4:checked ~ .color-pink-relay .color-pink-target4,
-.color-pink-radio5:checked ~ .color-pink-relay .color-pink-target5,
-.color-pink-check:checked ~ .color-pink-hub .color-pink-goal {
-  color: var(--pink);
-}
-
 .color-pink-dark,
 .color-pink-dark-global > *,
 .color-pink-dark-onto:hover,
@@ -10201,25 +10562,6 @@ pre > *::selection {
 .color-pink-light-radio5:checked ~ .color-pink-light-relay .color-pink-light-target5,
 .color-pink-light-check:checked ~ .color-pink-light-hub .color-pink-light-goal {
   color: var(--pink-light);
-}
-
-.color-tomato,
-.color-tomato-global > *,
-.color-tomato-onto:hover,
-.color-tomato-onto:focus,
-*:hover > .color-tomato-into,
-*:focus > .color-tomato-into,
-.color-tomato-toall:hover > *,
-.color-tomato-toall:focus > *,
-.color-tomato-toone > *:hover,
-.color-tomato-toone > *:focus,
-.color-tomato-radio1:checked ~ .color-tomato-relay .color-tomato-target1,
-.color-tomato-radio2:checked ~ .color-tomato-relay .color-tomato-target2,
-.color-tomato-radio3:checked ~ .color-tomato-relay .color-tomato-target3,
-.color-tomato-radio4:checked ~ .color-tomato-relay .color-tomato-target4,
-.color-tomato-radio5:checked ~ .color-tomato-relay .color-tomato-target5,
-.color-tomato-check:checked ~ .color-tomato-hub .color-tomato-goal {
-  color: var(--tomato);
 }
 
 .color-tomato-dark,
@@ -10260,25 +10602,6 @@ pre > *::selection {
   color: var(--tomato-light);
 }
 
-.color-coral,
-.color-coral-global > *,
-.color-coral-onto:hover,
-.color-coral-onto:focus,
-*:hover > .color-coral-into,
-*:focus > .color-coral-into,
-.color-coral-toall:hover > *,
-.color-coral-toall:focus > *,
-.color-coral-toone > *:hover,
-.color-coral-toone > *:focus,
-.color-coral-radio1:checked ~ .color-coral-relay .color-coral-target1,
-.color-coral-radio2:checked ~ .color-coral-relay .color-coral-target2,
-.color-coral-radio3:checked ~ .color-coral-relay .color-coral-target3,
-.color-coral-radio4:checked ~ .color-coral-relay .color-coral-target4,
-.color-coral-radio5:checked ~ .color-coral-relay .color-coral-target5,
-.color-coral-check:checked ~ .color-coral-hub .color-coral-goal {
-  color: var(--coral);
-}
-
 .color-coral-dark,
 .color-coral-dark-global > *,
 .color-coral-dark-onto:hover,
@@ -10315,25 +10638,6 @@ pre > *::selection {
 .color-coral-light-radio5:checked ~ .color-coral-light-relay .color-coral-light-target5,
 .color-coral-light-check:checked ~ .color-coral-light-hub .color-coral-light-goal {
   color: var(--coral-light);
-}
-
-.color-yellow,
-.color-yellow-global > *,
-.color-yellow-onto:hover,
-.color-yellow-onto:focus,
-*:hover > .color-yellow-into,
-*:focus > .color-yellow-into,
-.color-yellow-toall:hover > *,
-.color-yellow-toall:focus > *,
-.color-yellow-toone > *:hover,
-.color-yellow-toone > *:focus,
-.color-yellow-radio1:checked ~ .color-yellow-relay .color-yellow-target1,
-.color-yellow-radio2:checked ~ .color-yellow-relay .color-yellow-target2,
-.color-yellow-radio3:checked ~ .color-yellow-relay .color-yellow-target3,
-.color-yellow-radio4:checked ~ .color-yellow-relay .color-yellow-target4,
-.color-yellow-radio5:checked ~ .color-yellow-relay .color-yellow-target5,
-.color-yellow-check:checked ~ .color-yellow-hub .color-yellow-goal {
-  color: var(--yellow);
 }
 
 .color-yellow-dark,
@@ -10374,25 +10678,6 @@ pre > *::selection {
   color: var(--yellow-light);
 }
 
-.color-brown,
-.color-brown-global > *,
-.color-brown-onto:hover,
-.color-brown-onto:focus,
-*:hover > .color-brown-into,
-*:focus > .color-brown-into,
-.color-brown-toall:hover > *,
-.color-brown-toall:focus > *,
-.color-brown-toone > *:hover,
-.color-brown-toone > *:focus,
-.color-brown-radio1:checked ~ .color-brown-relay .color-brown-target1,
-.color-brown-radio2:checked ~ .color-brown-relay .color-brown-target2,
-.color-brown-radio3:checked ~ .color-brown-relay .color-brown-target3,
-.color-brown-radio4:checked ~ .color-brown-relay .color-brown-target4,
-.color-brown-radio5:checked ~ .color-brown-relay .color-brown-target5,
-.color-brown-check:checked ~ .color-brown-hub .color-brown-goal {
-  color: var(--brown);
-}
-
 .color-brown-dark,
 .color-brown-dark-global > *,
 .color-brown-dark-onto:hover,
@@ -10429,25 +10714,6 @@ pre > *::selection {
 .color-brown-light-radio5:checked ~ .color-brown-light-relay .color-brown-light-target5,
 .color-brown-light-check:checked ~ .color-brown-light-hub .color-brown-light-goal {
   color: var(--brown-light);
-}
-
-.color-aqua,
-.color-aqua-global > *,
-.color-aqua-onto:hover,
-.color-aqua-onto:focus,
-*:hover > .color-aqua-into,
-*:focus > .color-aqua-into,
-.color-aqua-toall:hover > *,
-.color-aqua-toall:focus > *,
-.color-aqua-toone > *:hover,
-.color-aqua-toone > *:focus,
-.color-aqua-radio1:checked ~ .color-aqua-relay .color-aqua-target1,
-.color-aqua-radio2:checked ~ .color-aqua-relay .color-aqua-target2,
-.color-aqua-radio3:checked ~ .color-aqua-relay .color-aqua-target3,
-.color-aqua-radio4:checked ~ .color-aqua-relay .color-aqua-target4,
-.color-aqua-radio5:checked ~ .color-aqua-relay .color-aqua-target5,
-.color-aqua-check:checked ~ .color-aqua-hub .color-aqua-goal {
-  color: var(--aqua);
 }
 
 .color-aqua-dark,
@@ -10488,25 +10754,6 @@ pre > *::selection {
   color: var(--aqua-light);
 }
 
-.color-cyan,
-.color-cyan-global > *,
-.color-cyan-onto:hover,
-.color-cyan-onto:focus,
-*:hover > .color-cyan-into,
-*:focus > .color-cyan-into,
-.color-cyan-toall:hover > *,
-.color-cyan-toall:focus > *,
-.color-cyan-toone > *:hover,
-.color-cyan-toone > *:focus,
-.color-cyan-radio1:checked ~ .color-cyan-relay .color-cyan-target1,
-.color-cyan-radio2:checked ~ .color-cyan-relay .color-cyan-target2,
-.color-cyan-radio3:checked ~ .color-cyan-relay .color-cyan-target3,
-.color-cyan-radio4:checked ~ .color-cyan-relay .color-cyan-target4,
-.color-cyan-radio5:checked ~ .color-cyan-relay .color-cyan-target5,
-.color-cyan-check:checked ~ .color-cyan-hub .color-cyan-goal {
-  color: var(--cyan);
-}
-
 .color-cyan-dark,
 .color-cyan-dark-global > *,
 .color-cyan-dark-onto:hover,
@@ -10543,25 +10790,6 @@ pre > *::selection {
 .color-cyan-light-radio5:checked ~ .color-cyan-light-relay .color-cyan-light-target5,
 .color-cyan-light-check:checked ~ .color-cyan-light-hub .color-cyan-light-goal {
   color: var(--cyan-light);
-}
-
-.color-sky,
-.color-sky-global > *,
-.color-sky-onto:hover,
-.color-sky-onto:focus,
-*:hover > .color-sky-into,
-*:focus > .color-sky-into,
-.color-sky-toall:hover > *,
-.color-sky-toall:focus > *,
-.color-sky-toone > *:hover,
-.color-sky-toone > *:focus,
-.color-sky-radio1:checked ~ .color-sky-relay .color-sky-target1,
-.color-sky-radio2:checked ~ .color-sky-relay .color-sky-target2,
-.color-sky-radio3:checked ~ .color-sky-relay .color-sky-target3,
-.color-sky-radio4:checked ~ .color-sky-relay .color-sky-target4,
-.color-sky-radio5:checked ~ .color-sky-relay .color-sky-target5,
-.color-sky-check:checked ~ .color-sky-hub .color-sky-goal {
-  color: var(--sky);
 }
 
 .color-sky-dark,
@@ -10602,25 +10830,6 @@ pre > *::selection {
   color: var(--sky-light);
 }
 
-.color-violet,
-.color-violet-global > *,
-.color-violet-onto:hover,
-.color-violet-onto:focus,
-*:hover > .color-violet-into,
-*:focus > .color-violet-into,
-.color-violet-toall:hover > *,
-.color-violet-toall:focus > *,
-.color-violet-toone > *:hover,
-.color-violet-toone > *:focus,
-.color-violet-radio1:checked ~ .color-violet-relay .color-violet-target1,
-.color-violet-radio2:checked ~ .color-violet-relay .color-violet-target2,
-.color-violet-radio3:checked ~ .color-violet-relay .color-violet-target3,
-.color-violet-radio4:checked ~ .color-violet-relay .color-violet-target4,
-.color-violet-radio5:checked ~ .color-violet-relay .color-violet-target5,
-.color-violet-check:checked ~ .color-violet-hub .color-violet-goal {
-  color: var(--violet);
-}
-
 .color-violet-dark,
 .color-violet-dark-global > *,
 .color-violet-dark-onto:hover,
@@ -10657,25 +10866,6 @@ pre > *::selection {
 .color-violet-light-radio5:checked ~ .color-violet-light-relay .color-violet-light-target5,
 .color-violet-light-check:checked ~ .color-violet-light-hub .color-violet-light-goal {
   color: var(--violet-light);
-}
-
-.color-silver,
-.color-silver-global > *,
-.color-silver-onto:hover,
-.color-silver-onto:focus,
-*:hover > .color-silver-into,
-*:focus > .color-silver-into,
-.color-silver-toall:hover > *,
-.color-silver-toall:focus > *,
-.color-silver-toone > *:hover,
-.color-silver-toone > *:focus,
-.color-silver-radio1:checked ~ .color-silver-relay .color-silver-target1,
-.color-silver-radio2:checked ~ .color-silver-relay .color-silver-target2,
-.color-silver-radio3:checked ~ .color-silver-relay .color-silver-target3,
-.color-silver-radio4:checked ~ .color-silver-relay .color-silver-target4,
-.color-silver-radio5:checked ~ .color-silver-relay .color-silver-target5,
-.color-silver-check:checked ~ .color-silver-hub .color-silver-goal {
-  color: var(--silver);
 }
 
 .color-silver-dark,
