@@ -77,15 +77,14 @@ $brand-colors: (
 ) !default;
 
 // Composite Colors
-$main-colors:   $primary-colors, $secondary-colors;
-$all-colors:    $primary-colors, $secondary-colors, $brand-colors;
+$basic-colors:  $primary-colors, $secondary-colors;
+$main-colors:   $grayscale, $primary-colors, $secondary-colors;
+$extent-colors: $primary-colors, $secondary-colors, $brand-colors;
+$all-colors:    $grayscale, $primary-colors, $secondary-colors, $brand-colors;
 
 // CSS Colors
 :root {
-  --black: rgb(#{$black});
-  --white: rgb(#{$white});
-
-  /* Basic Colors */
+  /* Opaque Colors */
   @each $colors in $all-colors {
     @each $key, $value in $colors {
       --#{$key}: rgb(#{$value});
