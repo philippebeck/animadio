@@ -1,7 +1,19 @@
 /***** Global : Variables : Colors *****/
 
-$black: 15, 15, 15    !default;
-$white: 255, 255, 240 !default;
+// Grayscale
+$black:   15, 15, 15      !default;
+$slate:   47, 79, 79      !default;
+$gray:    105, 105, 105   !default;
+$silver:  192, 192, 192   !default;
+$white:   255, 255, 240   !default;
+
+$grayscale: (
+  "black":    $black,
+  "slate":    $slate,
+  "gray":     $gray,
+  "silver":   $silver,
+  "white":    $white
+) !default;
 
 // Primary Colors
 $magenta:   255, 0, 255     !default;
@@ -13,7 +25,6 @@ $green:     34, 139, 34     !default;
 $blue:      65, 105, 225    !default;
 $navy:      0, 0, 128       !default;
 $purple:    106, 90, 205    !default;
-$gray:      105, 105, 105   !default;
 
 $primary-colors: (
   "magenta":  $magenta,
@@ -24,8 +35,7 @@ $primary-colors: (
   "green":    $green,
   "blue":     $blue,
   "navy":     $navy,
-  "purple":   $purple,
-  "gray":     $gray
+  "purple":   $purple
 ) !default;
 
 // Secondary Colors
@@ -38,7 +48,6 @@ $aqua:      127, 255, 212   !default;
 $cyan:      0, 255, 255     !default;
 $sky:       135, 206, 235   !default;
 $violet:    238, 130, 238   !default;
-$silver:    192, 192, 192   !default;
 
 $secondary-colors: (
   "pink":     $pink,
@@ -49,8 +58,7 @@ $secondary-colors: (
   "aqua":     $aqua,
   "cyan":     $cyan,
   "sky":      $sky,
-  "violet":   $violet,
-  "silver":   $silver
+  "violet":   $violet
 ) !default;
 
 // Brand Colors
@@ -69,15 +77,14 @@ $brand-colors: (
 ) !default;
 
 // Composite Colors
-$main-colors:   $primary-colors, $secondary-colors;
-$all-colors:    $primary-colors, $secondary-colors, $brand-colors;
+$basic-colors:  $primary-colors, $secondary-colors;
+$main-colors:   $grayscale, $primary-colors, $secondary-colors;
+$extent-colors: $primary-colors, $secondary-colors, $brand-colors;
+$all-colors:    $grayscale, $primary-colors, $secondary-colors, $brand-colors;
 
 // CSS Colors
 :root {
-  --black: rgb(#{$black});
-  --white: rgb(#{$white});
-
-  /* Basic Colors */
+  /* Opaque Colors */
   @each $colors in $all-colors {
     @each $key, $value in $colors {
       --#{$key}: rgb(#{$value});

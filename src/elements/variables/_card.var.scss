@@ -43,9 +43,11 @@
   --card-btn-hover-background-color: var(--white);
   --card-btn-hover-color: initial;
 
-  @each $key, $value in $primary-colors {
-    --card-#{$key}-background-color: var(--#{$key}-dark);
-    --card-#{$key}-title-box-shadow: var(--card-title-box-shadow) var(--#{$key});
-    --card-#{$key}-title-text-shadow: var(--card-title-text-shadow) var(--#{$key});
+  @each $colors in $basic-colors {
+    @each $key, $value in $colors {
+      --card-#{$key}-background-color: var(--#{$key}-dark);
+      --card-#{$key}-title-box-shadow: var(--card-title-box-shadow) var(--#{$key});
+      --card-#{$key}-title-text-shadow: var(--card-title-text-shadow) var(--#{$key});
+    }
   }
 }

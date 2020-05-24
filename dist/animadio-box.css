@@ -1,10 +1,13 @@
-/*! animadio v2.3.3 | https://animadio.org | MIT License */
+/*! animadio v2.3.4 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
+  /* Opaque Colors */
   --black: rgb(15, 15, 15);
+  --slate: rgb(47, 79, 79);
+  --gray: rgb(105, 105, 105);
+  --silver: rgb(192, 192, 192);
   --white: rgb(255, 255, 240);
-  /* Basic Colors */
   --magenta: rgb(255, 0, 255);
   --red: rgb(220, 20, 60);
   --orange: rgb(255, 140, 0);
@@ -14,7 +17,6 @@
   --blue: rgb(65, 105, 225);
   --navy: rgb(0, 0, 128);
   --purple: rgb(106, 90, 205);
-  --gray: rgb(105, 105, 105);
   --pink: rgb(255, 192, 203);
   --tomato: rgb(255, 99, 71);
   --coral: rgb(255, 127, 80);
@@ -24,13 +26,22 @@
   --cyan: rgb(0, 255, 255);
   --sky: rgb(135, 206, 235);
   --violet: rgb(238, 130, 238);
-  --silver: rgb(192, 192, 192);
   --fb: rgb(66, 103, 178);
   --gh: rgb(36, 41, 46);
   --in: rgb(0, 119, 181);
   --pp: rgb(39, 52, 106);
   --tw: rgb(29, 161, 242);
   /* Transparent Colors */
+  --black-dark: rgba(15, 15, 15, 0.7);
+  --black-light: rgba(15, 15, 15, 0.3);
+  --slate-dark: rgba(47, 79, 79, 0.7);
+  --slate-light: rgba(47, 79, 79, 0.3);
+  --gray-dark: rgba(105, 105, 105, 0.7);
+  --gray-light: rgba(105, 105, 105, 0.3);
+  --silver-dark: rgba(192, 192, 192, 0.7);
+  --silver-light: rgba(192, 192, 192, 0.3);
+  --white-dark: rgba(255, 255, 240, 0.7);
+  --white-light: rgba(255, 255, 240, 0.3);
   --magenta-dark: rgba(255, 0, 255, 0.7);
   --magenta-light: rgba(255, 0, 255, 0.3);
   --red-dark: rgba(220, 20, 60, 0.7);
@@ -49,8 +60,6 @@
   --navy-light: rgba(0, 0, 128, 0.3);
   --purple-dark: rgba(106, 90, 205, 0.7);
   --purple-light: rgba(106, 90, 205, 0.3);
-  --gray-dark: rgba(105, 105, 105, 0.7);
-  --gray-light: rgba(105, 105, 105, 0.3);
   --pink-dark: rgba(255, 192, 203, 0.7);
   --pink-light: rgba(255, 192, 203, 0.3);
   --tomato-dark: rgba(255, 99, 71, 0.7);
@@ -69,8 +78,6 @@
   --sky-light: rgba(135, 206, 235, 0.3);
   --violet-dark: rgba(238, 130, 238, 0.7);
   --violet-light: rgba(238, 130, 238, 0.3);
-  --silver-dark: rgba(192, 192, 192, 0.7);
-  --silver-light: rgba(192, 192, 192, 0.3);
 }
 
 /***** Global : Variables : Keyframes *****/
@@ -2349,6 +2356,71 @@ pre > *::selection {
 }
 
 /* Border color */
+.bord-black,
+.bord-black-global > *,
+.bord-black-onto:hover,
+.bord-black-onto:focus,
+*:hover > .bord-black-into,
+*:focus > .bord-black-into,
+.bord-black-toall:hover > *,
+.bord-black-toall:focus > *,
+.bord-black-toone > *:hover,
+.bord-black-toone > *:focus {
+  border-color: var(--black);
+}
+
+.bord-slate,
+.bord-slate-global > *,
+.bord-slate-onto:hover,
+.bord-slate-onto:focus,
+*:hover > .bord-slate-into,
+*:focus > .bord-slate-into,
+.bord-slate-toall:hover > *,
+.bord-slate-toall:focus > *,
+.bord-slate-toone > *:hover,
+.bord-slate-toone > *:focus {
+  border-color: var(--slate);
+}
+
+.bord-gray,
+.bord-gray-global > *,
+.bord-gray-onto:hover,
+.bord-gray-onto:focus,
+*:hover > .bord-gray-into,
+*:focus > .bord-gray-into,
+.bord-gray-toall:hover > *,
+.bord-gray-toall:focus > *,
+.bord-gray-toone > *:hover,
+.bord-gray-toone > *:focus {
+  border-color: var(--gray);
+}
+
+.bord-silver,
+.bord-silver-global > *,
+.bord-silver-onto:hover,
+.bord-silver-onto:focus,
+*:hover > .bord-silver-into,
+*:focus > .bord-silver-into,
+.bord-silver-toall:hover > *,
+.bord-silver-toall:focus > *,
+.bord-silver-toone > *:hover,
+.bord-silver-toone > *:focus {
+  border-color: var(--silver);
+}
+
+.bord-white,
+.bord-white-global > *,
+.bord-white-onto:hover,
+.bord-white-onto:focus,
+*:hover > .bord-white-into,
+*:focus > .bord-white-into,
+.bord-white-toall:hover > *,
+.bord-white-toall:focus > *,
+.bord-white-toone > *:hover,
+.bord-white-toone > *:focus {
+  border-color: var(--white);
+}
+
 .bord-magenta,
 .bord-magenta-global > *,
 .bord-magenta-onto:hover,
@@ -2466,19 +2538,6 @@ pre > *::selection {
   border-color: var(--purple);
 }
 
-.bord-gray,
-.bord-gray-global > *,
-.bord-gray-onto:hover,
-.bord-gray-onto:focus,
-*:hover > .bord-gray-into,
-*:focus > .bord-gray-into,
-.bord-gray-toall:hover > *,
-.bord-gray-toall:focus > *,
-.bord-gray-toone > *:hover,
-.bord-gray-toone > *:focus {
-  border-color: var(--gray);
-}
-
 .bord-pink,
 .bord-pink-global > *,
 .bord-pink-onto:hover,
@@ -2594,19 +2653,6 @@ pre > *::selection {
 .bord-violet-toone > *:hover,
 .bord-violet-toone > *:focus {
   border-color: var(--violet);
-}
-
-.bord-silver,
-.bord-silver-global > *,
-.bord-silver-onto:hover,
-.bord-silver-onto:focus,
-*:hover > .bord-silver-into,
-*:focus > .bord-silver-into,
-.bord-silver-toall:hover > *,
-.bord-silver-toall:focus > *,
-.bord-silver-toone > *:hover,
-.bord-silver-toone > *:focus {
-  border-color: var(--silver);
 }
 
 /***** Box : Variables : Padding *****/
@@ -3171,4 +3217,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 24th May 2020 @ 11:04:01 AM */
+ Updated: 24th May 2020 @ 5:20:07 PM */

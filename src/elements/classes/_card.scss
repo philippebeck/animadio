@@ -65,17 +65,19 @@
   }
 }
 
-@each $key, $value in $primary-colors {
-  .card-#{$key} {
-    background-color: var(--card-#{$key}-background-color);
+@each $colors in $basic-colors {
+  @each $key, $value in $colors {
+    .card-#{$key} {
+      background-color: var(--card-#{$key}-background-color);
 
-    & > h2,
-    & > h3,
-    & > h4,
-    & > h5,
-    & > h6 {
-      box-shadow: var(--card-#{$key}-title-box-shadow);
-      text-shadow: var(--card-#{$key}-title-text-shadow);
+      & > h2,
+      & > h3,
+      & > h4,
+      & > h5,
+      & > h6 {
+        box-shadow: var(--card-#{$key}-title-box-shadow);
+        text-shadow: var(--card-#{$key}-title-text-shadow);
+      }
     }
   }
 }
