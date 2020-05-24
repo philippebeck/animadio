@@ -1933,56 +1933,72 @@ pre > *::selection {
   color: var(--white);
 }
 
-.btn-tn {
+.btn-tn,
+.button-tn {
   padding: var(--btn-tn-padding);
   font-size: var(--btn-tn-font-size);
 }
 
-.btn-sm {
+.btn-sm,
+.button-sm {
   padding: var(--btn-sm-padding);
   font-size: var(--btn-sm-font-size);
 }
 
-.btn-lg {
+.btn-lg,
+.button-lg {
   padding: var(--btn-lg-padding);
   font-size: var(--btn-lg-font-size);
 }
 
-.btn-wd {
+.btn-wd,
+.button-wd {
   padding: var(--btn-wd-padding);
   font-size: var(--btn-wd-font-size);
 }
 
-.btn-square {
+.btn-square,
+.button-square {
   border-radius: var(--btn-square-border-radius);
   padding-top: var(--btn-square-padding-top);
   min-width: var(--btn-square-sizes);
   min-height: var(--btn-square-sizes);
 }
 
-.btn-square:hover .btn-square:focus {
+.btn-square:hover,
+.button-square:hover,
+.btn-square:focus,
+.button-square:focus {
   border-radius: var(--btn-square-border-radius);
 }
 
-.btn-round {
+.btn-round,
+.button-round {
   border-radius: var(--btn-round-border-radius);
   padding-top: var(--btn-round-padding-top);
   min-width: var(--btn-round-sizes);
   min-height: var(--btn-round-sizes);
 }
 
-.btn-round:hover .btn-round:focus {
+.btn-round:hover,
+.button-round:hover,
+.btn-round:focus,
+.button-round:focus {
   border-radius: var(--btn-round-border-radius);
 }
 
-.btn-circle {
+.btn-circle,
+.button-circle {
   border-radius: var(--btn-circle-border-radius);
   padding-top: var(--btn-circle-padding-top);
   min-width: var(--btn-circle-sizes);
   min-height: var(--btn-circle-sizes);
 }
 
-.btn-circle:hover .btn-circle:focus {
+.btn-circle:hover,
+.button-circle:hover,
+.btn-circle:focus,
+.button-circle:focus {
   border-radius: var(--btn-circle-border-radius);
 }
 
