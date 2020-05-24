@@ -43,26 +43,22 @@
 }
 
 @each $size in $btn-size {
-  .btn-#{$size},
-  .button-#{$size} {
+  .btn-#{$size} {
     padding: var(--btn-#{$size}-padding);
     font-size: var(--btn-#{$size}-font-size);
   }
 }
 
 @each $shape in $btn-shape {
-  .btn-#{$shape},
-  .button-#{$shape} {
+  .btn-#{$shape} {
     border-radius: var(--btn-#{$shape}-border-radius);
     padding-top: var(--btn-#{$shape}-padding-top);
     min-width: var(--btn-#{$shape}-sizes);
     min-height: var(--btn-#{$shape}-sizes);
   }
 
-  .btn-#{$shape}:hover,
-  .button-#{$shape}:hover,
-  .btn-#{$shape}:focus,
-  .button-#{$shape}:focus {
+  .btn-#{$shape}:hover
+  .btn-#{$shape}:focus {
     border-radius: var(--btn-#{$shape}-border-radius);
   }
 }
