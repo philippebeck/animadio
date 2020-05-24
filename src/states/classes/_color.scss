@@ -1,13 +1,13 @@
 /***** States : Classes : Color *****/
 
-@each $color in $all-colors {
-  @each $key, $value in $color {
+@each $colors in $all-colors {
+  @each $key, $value in $colors {
     @include states('color-#{$key}', 'color', 'var(--#{$key})');
   }
 }
 
-@each $color in $main-colors {
-  @each $key, $value in $color {
+@each $colors in $main-colors {
+  @each $key, $value in $colors {
     @include states('color-#{$key}-dark', 'color', 'var(--#{$key}-dark)');
     @include states('color-#{$key}-light', 'color', 'var(--#{$key}-light)');
   }
