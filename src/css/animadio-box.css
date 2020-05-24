@@ -1,77 +1,74 @@
 /***** Global : Variables : Colors *****/
 :root {
-  /* Basic Colors */
   --black: rgb(15, 15, 15);
-  --blue: rgb(65, 105, 225);
-  --gray: rgb(105, 105, 105);
-  --green: rgb(34, 139, 34);
-  --maroon: rgb(139, 69, 19);
-  --navy: rgb(0, 0, 128);
-  --orange: rgb(255, 140, 0);
-  --purple: rgb(106, 90, 205);
-  --red: rgb(220, 20, 60);
-  --yellow: rgb(255, 215, 0);
   --white: rgb(255, 255, 240);
-  --sky: rgb(173, 216, 230);
+  /* Basic Colors */
+  --magenta: rgb(255, 0, 255);
+  --red: rgb(220, 20, 60);
+  --orange: rgb(255, 140, 0);
+  --gold: rgb(255, 215, 0);
+  --maroon: rgb(139, 69, 19);
+  --green: rgb(34, 139, 34);
+  --blue: rgb(65, 105, 225);
+  --navy: rgb(0, 0, 128);
+  --purple: rgb(106, 90, 205);
+  --gray: rgb(105, 105, 105);
+  --pink: rgb(255, 192, 203);
+  --tomato: rgb(255, 99, 71);
+  --coral: rgb(255, 127, 80);
+  --yellow: rgb(240, 230, 140);
+  --brown: rgb(244, 164, 96);
+  --aqua: rgb(127, 255, 212);
+  --cyan: rgb(0, 255, 255);
+  --sky: rgb(135, 206, 235);
+  --violet: rgb(238, 130, 238);
   --silver: rgb(192, 192, 192);
-  --jade: rgb(152, 251, 152);
-  --choco: rgb(244, 164, 96);
-  --aqua: rgb(0, 255, 255);
-  --salmon: rgb(255, 160, 122);
-  --violet: rgb(216, 191, 216);
-  --tomato: rgb(240, 128, 128);
-  --khaki: rgb(240, 230, 140);
   --fb: rgb(66, 103, 178);
-  --fcc: rgb(0, 100, 0);
-  --github: rgb(36, 41, 46);
-  --jsd: rgb(253, 199, 46);
+  --gh: rgb(36, 41, 46);
   --in: rgb(0, 119, 181);
-  --medium: rgb(2, 158, 116);
-  --npm: rgb(193, 33, 39);
-  --packagist: rgb(242, 141, 26);
-  --stack: rgb(244, 128, 36);
+  --pp: rgb(39, 52, 106);
   --tw: rgb(29, 161, 242);
   /* Transparent Colors */
-  --black-dark: rgba(15, 15, 15, 0.7);
-  --black-light: rgba(15, 15, 15, 0.3);
-  --blue-dark: rgba(65, 105, 225, 0.7);
-  --blue-light: rgba(65, 105, 225, 0.3);
-  --gray-dark: rgba(105, 105, 105, 0.7);
-  --gray-light: rgba(105, 105, 105, 0.3);
-  --green-dark: rgba(34, 139, 34, 0.7);
-  --green-light: rgba(34, 139, 34, 0.3);
-  --maroon-dark: rgba(139, 69, 19, 0.7);
-  --maroon-light: rgba(139, 69, 19, 0.3);
-  --navy-dark: rgba(0, 0, 128, 0.7);
-  --navy-light: rgba(0, 0, 128, 0.3);
-  --orange-dark: rgba(255, 140, 0, 0.7);
-  --orange-light: rgba(255, 140, 0, 0.3);
-  --purple-dark: rgba(106, 90, 205, 0.7);
-  --purple-light: rgba(106, 90, 205, 0.3);
+  --magenta-dark: rgba(255, 0, 255, 0.7);
+  --magenta-light: rgba(255, 0, 255, 0.3);
   --red-dark: rgba(220, 20, 60, 0.7);
   --red-light: rgba(220, 20, 60, 0.3);
-  --yellow-dark: rgba(255, 215, 0, 0.7);
-  --yellow-light: rgba(255, 215, 0, 0.3);
-  --white-dark: rgba(255, 255, 240, 0.7);
-  --white-light: rgba(255, 255, 240, 0.3);
-  --sky-dark: rgba(173, 216, 230, 0.7);
-  --sky-light: rgba(173, 216, 230, 0.3);
+  --orange-dark: rgba(255, 140, 0, 0.7);
+  --orange-light: rgba(255, 140, 0, 0.3);
+  --gold-dark: rgba(255, 215, 0, 0.7);
+  --gold-light: rgba(255, 215, 0, 0.3);
+  --maroon-dark: rgba(139, 69, 19, 0.7);
+  --maroon-light: rgba(139, 69, 19, 0.3);
+  --green-dark: rgba(34, 139, 34, 0.7);
+  --green-light: rgba(34, 139, 34, 0.3);
+  --blue-dark: rgba(65, 105, 225, 0.7);
+  --blue-light: rgba(65, 105, 225, 0.3);
+  --navy-dark: rgba(0, 0, 128, 0.7);
+  --navy-light: rgba(0, 0, 128, 0.3);
+  --purple-dark: rgba(106, 90, 205, 0.7);
+  --purple-light: rgba(106, 90, 205, 0.3);
+  --gray-dark: rgba(105, 105, 105, 0.7);
+  --gray-light: rgba(105, 105, 105, 0.3);
+  --pink-dark: rgba(255, 192, 203, 0.7);
+  --pink-light: rgba(255, 192, 203, 0.3);
+  --tomato-dark: rgba(255, 99, 71, 0.7);
+  --tomato-light: rgba(255, 99, 71, 0.3);
+  --coral-dark: rgba(255, 127, 80, 0.7);
+  --coral-light: rgba(255, 127, 80, 0.3);
+  --yellow-dark: rgba(240, 230, 140, 0.7);
+  --yellow-light: rgba(240, 230, 140, 0.3);
+  --brown-dark: rgba(244, 164, 96, 0.7);
+  --brown-light: rgba(244, 164, 96, 0.3);
+  --aqua-dark: rgba(127, 255, 212, 0.7);
+  --aqua-light: rgba(127, 255, 212, 0.3);
+  --cyan-dark: rgba(0, 255, 255, 0.7);
+  --cyan-light: rgba(0, 255, 255, 0.3);
+  --sky-dark: rgba(135, 206, 235, 0.7);
+  --sky-light: rgba(135, 206, 235, 0.3);
+  --violet-dark: rgba(238, 130, 238, 0.7);
+  --violet-light: rgba(238, 130, 238, 0.3);
   --silver-dark: rgba(192, 192, 192, 0.7);
   --silver-light: rgba(192, 192, 192, 0.3);
-  --jade-dark: rgba(152, 251, 152, 0.7);
-  --jade-light: rgba(152, 251, 152, 0.3);
-  --choco-dark: rgba(244, 164, 96, 0.7);
-  --choco-light: rgba(244, 164, 96, 0.3);
-  --aqua-dark: rgba(0, 255, 255, 0.7);
-  --aqua-light: rgba(0, 255, 255, 0.3);
-  --salmon-dark: rgba(255, 160, 122, 0.7);
-  --salmon-light: rgba(255, 160, 122, 0.3);
-  --violet-dark: rgba(216, 191, 216, 0.7);
-  --violet-light: rgba(216, 191, 216, 0.3);
-  --tomato-dark: rgba(240, 128, 128, 0.7);
-  --tomato-light: rgba(240, 128, 128, 0.3);
-  --khaki-dark: rgba(240, 230, 140, 0.7);
-  --khaki-light: rgba(240, 230, 140, 0.3);
 }
 
 /***** Global : Variables : Keyframes *****/
@@ -763,7 +760,7 @@ label {
 code,
 pre {
   --code-background-color: var(--black);
-  --code-color: var(--jade);
+  --code-color: var(--aqua);
   --code-margin: auto;
   --code-overflow: scroll;
   --code-padding: 10px;
@@ -1672,108 +1669,17 @@ pre > *::selection {
 }
 
 /* Border color */
-.bord-black,
-.bord-black-global > *,
-.bord-black-onto:hover,
-.bord-black-onto:focus,
-*:hover > .bord-black-into,
-*:focus > .bord-black-into,
-.bord-black-toall:hover > *,
-.bord-black-toall:focus > *,
-.bord-black-toone > *:hover,
-.bord-black-toone > *:focus {
-  border-color: var(--black);
-}
-
-.bord-blue,
-.bord-blue-global > *,
-.bord-blue-onto:hover,
-.bord-blue-onto:focus,
-*:hover > .bord-blue-into,
-*:focus > .bord-blue-into,
-.bord-blue-toall:hover > *,
-.bord-blue-toall:focus > *,
-.bord-blue-toone > *:hover,
-.bord-blue-toone > *:focus {
-  border-color: var(--blue);
-}
-
-.bord-gray,
-.bord-gray-global > *,
-.bord-gray-onto:hover,
-.bord-gray-onto:focus,
-*:hover > .bord-gray-into,
-*:focus > .bord-gray-into,
-.bord-gray-toall:hover > *,
-.bord-gray-toall:focus > *,
-.bord-gray-toone > *:hover,
-.bord-gray-toone > *:focus {
-  border-color: var(--gray);
-}
-
-.bord-green,
-.bord-green-global > *,
-.bord-green-onto:hover,
-.bord-green-onto:focus,
-*:hover > .bord-green-into,
-*:focus > .bord-green-into,
-.bord-green-toall:hover > *,
-.bord-green-toall:focus > *,
-.bord-green-toone > *:hover,
-.bord-green-toone > *:focus {
-  border-color: var(--green);
-}
-
-.bord-maroon,
-.bord-maroon-global > *,
-.bord-maroon-onto:hover,
-.bord-maroon-onto:focus,
-*:hover > .bord-maroon-into,
-*:focus > .bord-maroon-into,
-.bord-maroon-toall:hover > *,
-.bord-maroon-toall:focus > *,
-.bord-maroon-toone > *:hover,
-.bord-maroon-toone > *:focus {
-  border-color: var(--maroon);
-}
-
-.bord-navy,
-.bord-navy-global > *,
-.bord-navy-onto:hover,
-.bord-navy-onto:focus,
-*:hover > .bord-navy-into,
-*:focus > .bord-navy-into,
-.bord-navy-toall:hover > *,
-.bord-navy-toall:focus > *,
-.bord-navy-toone > *:hover,
-.bord-navy-toone > *:focus {
-  border-color: var(--navy);
-}
-
-.bord-orange,
-.bord-orange-global > *,
-.bord-orange-onto:hover,
-.bord-orange-onto:focus,
-*:hover > .bord-orange-into,
-*:focus > .bord-orange-into,
-.bord-orange-toall:hover > *,
-.bord-orange-toall:focus > *,
-.bord-orange-toone > *:hover,
-.bord-orange-toone > *:focus {
-  border-color: var(--orange);
-}
-
-.bord-purple,
-.bord-purple-global > *,
-.bord-purple-onto:hover,
-.bord-purple-onto:focus,
-*:hover > .bord-purple-into,
-*:focus > .bord-purple-into,
-.bord-purple-toall:hover > *,
-.bord-purple-toall:focus > *,
-.bord-purple-toone > *:hover,
-.bord-purple-toone > *:focus {
-  border-color: var(--purple);
+.bord-magenta,
+.bord-magenta-global > *,
+.bord-magenta-onto:hover,
+.bord-magenta-onto:focus,
+*:hover > .bord-magenta-into,
+*:focus > .bord-magenta-into,
+.bord-magenta-toall:hover > *,
+.bord-magenta-toall:focus > *,
+.bord-magenta-toone > *:hover,
+.bord-magenta-toone > *:focus {
+  border-color: var(--magenta);
 }
 
 .bord-red,
@@ -1789,121 +1695,121 @@ pre > *::selection {
   border-color: var(--red);
 }
 
-.bord-yellow,
-.bord-yellow-global > *,
-.bord-yellow-onto:hover,
-.bord-yellow-onto:focus,
-*:hover > .bord-yellow-into,
-*:focus > .bord-yellow-into,
-.bord-yellow-toall:hover > *,
-.bord-yellow-toall:focus > *,
-.bord-yellow-toone > *:hover,
-.bord-yellow-toone > *:focus {
-  border-color: var(--yellow);
+.bord-orange,
+.bord-orange-global > *,
+.bord-orange-onto:hover,
+.bord-orange-onto:focus,
+*:hover > .bord-orange-into,
+*:focus > .bord-orange-into,
+.bord-orange-toall:hover > *,
+.bord-orange-toall:focus > *,
+.bord-orange-toone > *:hover,
+.bord-orange-toone > *:focus {
+  border-color: var(--orange);
 }
 
-.bord-white,
-.bord-white-global > *,
-.bord-white-onto:hover,
-.bord-white-onto:focus,
-*:hover > .bord-white-into,
-*:focus > .bord-white-into,
-.bord-white-toall:hover > *,
-.bord-white-toall:focus > *,
-.bord-white-toone > *:hover,
-.bord-white-toone > *:focus {
-  border-color: var(--white);
+.bord-gold,
+.bord-gold-global > *,
+.bord-gold-onto:hover,
+.bord-gold-onto:focus,
+*:hover > .bord-gold-into,
+*:focus > .bord-gold-into,
+.bord-gold-toall:hover > *,
+.bord-gold-toall:focus > *,
+.bord-gold-toone > *:hover,
+.bord-gold-toone > *:focus {
+  border-color: var(--gold);
 }
 
-.bord-sky,
-.bord-sky-global > *,
-.bord-sky-onto:hover,
-.bord-sky-onto:focus,
-*:hover > .bord-sky-into,
-*:focus > .bord-sky-into,
-.bord-sky-toall:hover > *,
-.bord-sky-toall:focus > *,
-.bord-sky-toone > *:hover,
-.bord-sky-toone > *:focus {
-  border-color: var(--sky);
+.bord-maroon,
+.bord-maroon-global > *,
+.bord-maroon-onto:hover,
+.bord-maroon-onto:focus,
+*:hover > .bord-maroon-into,
+*:focus > .bord-maroon-into,
+.bord-maroon-toall:hover > *,
+.bord-maroon-toall:focus > *,
+.bord-maroon-toone > *:hover,
+.bord-maroon-toone > *:focus {
+  border-color: var(--maroon);
 }
 
-.bord-silver,
-.bord-silver-global > *,
-.bord-silver-onto:hover,
-.bord-silver-onto:focus,
-*:hover > .bord-silver-into,
-*:focus > .bord-silver-into,
-.bord-silver-toall:hover > *,
-.bord-silver-toall:focus > *,
-.bord-silver-toone > *:hover,
-.bord-silver-toone > *:focus {
-  border-color: var(--silver);
+.bord-green,
+.bord-green-global > *,
+.bord-green-onto:hover,
+.bord-green-onto:focus,
+*:hover > .bord-green-into,
+*:focus > .bord-green-into,
+.bord-green-toall:hover > *,
+.bord-green-toall:focus > *,
+.bord-green-toone > *:hover,
+.bord-green-toone > *:focus {
+  border-color: var(--green);
 }
 
-.bord-jade,
-.bord-jade-global > *,
-.bord-jade-onto:hover,
-.bord-jade-onto:focus,
-*:hover > .bord-jade-into,
-*:focus > .bord-jade-into,
-.bord-jade-toall:hover > *,
-.bord-jade-toall:focus > *,
-.bord-jade-toone > *:hover,
-.bord-jade-toone > *:focus {
-  border-color: var(--jade);
+.bord-blue,
+.bord-blue-global > *,
+.bord-blue-onto:hover,
+.bord-blue-onto:focus,
+*:hover > .bord-blue-into,
+*:focus > .bord-blue-into,
+.bord-blue-toall:hover > *,
+.bord-blue-toall:focus > *,
+.bord-blue-toone > *:hover,
+.bord-blue-toone > *:focus {
+  border-color: var(--blue);
 }
 
-.bord-choco,
-.bord-choco-global > *,
-.bord-choco-onto:hover,
-.bord-choco-onto:focus,
-*:hover > .bord-choco-into,
-*:focus > .bord-choco-into,
-.bord-choco-toall:hover > *,
-.bord-choco-toall:focus > *,
-.bord-choco-toone > *:hover,
-.bord-choco-toone > *:focus {
-  border-color: var(--choco);
+.bord-navy,
+.bord-navy-global > *,
+.bord-navy-onto:hover,
+.bord-navy-onto:focus,
+*:hover > .bord-navy-into,
+*:focus > .bord-navy-into,
+.bord-navy-toall:hover > *,
+.bord-navy-toall:focus > *,
+.bord-navy-toone > *:hover,
+.bord-navy-toone > *:focus {
+  border-color: var(--navy);
 }
 
-.bord-aqua,
-.bord-aqua-global > *,
-.bord-aqua-onto:hover,
-.bord-aqua-onto:focus,
-*:hover > .bord-aqua-into,
-*:focus > .bord-aqua-into,
-.bord-aqua-toall:hover > *,
-.bord-aqua-toall:focus > *,
-.bord-aqua-toone > *:hover,
-.bord-aqua-toone > *:focus {
-  border-color: var(--aqua);
+.bord-purple,
+.bord-purple-global > *,
+.bord-purple-onto:hover,
+.bord-purple-onto:focus,
+*:hover > .bord-purple-into,
+*:focus > .bord-purple-into,
+.bord-purple-toall:hover > *,
+.bord-purple-toall:focus > *,
+.bord-purple-toone > *:hover,
+.bord-purple-toone > *:focus {
+  border-color: var(--purple);
 }
 
-.bord-salmon,
-.bord-salmon-global > *,
-.bord-salmon-onto:hover,
-.bord-salmon-onto:focus,
-*:hover > .bord-salmon-into,
-*:focus > .bord-salmon-into,
-.bord-salmon-toall:hover > *,
-.bord-salmon-toall:focus > *,
-.bord-salmon-toone > *:hover,
-.bord-salmon-toone > *:focus {
-  border-color: var(--salmon);
+.bord-gray,
+.bord-gray-global > *,
+.bord-gray-onto:hover,
+.bord-gray-onto:focus,
+*:hover > .bord-gray-into,
+*:focus > .bord-gray-into,
+.bord-gray-toall:hover > *,
+.bord-gray-toall:focus > *,
+.bord-gray-toone > *:hover,
+.bord-gray-toone > *:focus {
+  border-color: var(--gray);
 }
 
-.bord-violet,
-.bord-violet-global > *,
-.bord-violet-onto:hover,
-.bord-violet-onto:focus,
-*:hover > .bord-violet-into,
-*:focus > .bord-violet-into,
-.bord-violet-toall:hover > *,
-.bord-violet-toall:focus > *,
-.bord-violet-toone > *:hover,
-.bord-violet-toone > *:focus {
-  border-color: var(--violet);
+.bord-pink,
+.bord-pink-global > *,
+.bord-pink-onto:hover,
+.bord-pink-onto:focus,
+*:hover > .bord-pink-into,
+*:focus > .bord-pink-into,
+.bord-pink-toall:hover > *,
+.bord-pink-toall:focus > *,
+.bord-pink-toone > *:hover,
+.bord-pink-toone > *:focus {
+  border-color: var(--pink);
 }
 
 .bord-tomato,
@@ -1919,17 +1825,108 @@ pre > *::selection {
   border-color: var(--tomato);
 }
 
-.bord-khaki,
-.bord-khaki-global > *,
-.bord-khaki-onto:hover,
-.bord-khaki-onto:focus,
-*:hover > .bord-khaki-into,
-*:focus > .bord-khaki-into,
-.bord-khaki-toall:hover > *,
-.bord-khaki-toall:focus > *,
-.bord-khaki-toone > *:hover,
-.bord-khaki-toone > *:focus {
-  border-color: var(--khaki);
+.bord-coral,
+.bord-coral-global > *,
+.bord-coral-onto:hover,
+.bord-coral-onto:focus,
+*:hover > .bord-coral-into,
+*:focus > .bord-coral-into,
+.bord-coral-toall:hover > *,
+.bord-coral-toall:focus > *,
+.bord-coral-toone > *:hover,
+.bord-coral-toone > *:focus {
+  border-color: var(--coral);
+}
+
+.bord-yellow,
+.bord-yellow-global > *,
+.bord-yellow-onto:hover,
+.bord-yellow-onto:focus,
+*:hover > .bord-yellow-into,
+*:focus > .bord-yellow-into,
+.bord-yellow-toall:hover > *,
+.bord-yellow-toall:focus > *,
+.bord-yellow-toone > *:hover,
+.bord-yellow-toone > *:focus {
+  border-color: var(--yellow);
+}
+
+.bord-brown,
+.bord-brown-global > *,
+.bord-brown-onto:hover,
+.bord-brown-onto:focus,
+*:hover > .bord-brown-into,
+*:focus > .bord-brown-into,
+.bord-brown-toall:hover > *,
+.bord-brown-toall:focus > *,
+.bord-brown-toone > *:hover,
+.bord-brown-toone > *:focus {
+  border-color: var(--brown);
+}
+
+.bord-aqua,
+.bord-aqua-global > *,
+.bord-aqua-onto:hover,
+.bord-aqua-onto:focus,
+*:hover > .bord-aqua-into,
+*:focus > .bord-aqua-into,
+.bord-aqua-toall:hover > *,
+.bord-aqua-toall:focus > *,
+.bord-aqua-toone > *:hover,
+.bord-aqua-toone > *:focus {
+  border-color: var(--aqua);
+}
+
+.bord-cyan,
+.bord-cyan-global > *,
+.bord-cyan-onto:hover,
+.bord-cyan-onto:focus,
+*:hover > .bord-cyan-into,
+*:focus > .bord-cyan-into,
+.bord-cyan-toall:hover > *,
+.bord-cyan-toall:focus > *,
+.bord-cyan-toone > *:hover,
+.bord-cyan-toone > *:focus {
+  border-color: var(--cyan);
+}
+
+.bord-sky,
+.bord-sky-global > *,
+.bord-sky-onto:hover,
+.bord-sky-onto:focus,
+*:hover > .bord-sky-into,
+*:focus > .bord-sky-into,
+.bord-sky-toall:hover > *,
+.bord-sky-toall:focus > *,
+.bord-sky-toone > *:hover,
+.bord-sky-toone > *:focus {
+  border-color: var(--sky);
+}
+
+.bord-violet,
+.bord-violet-global > *,
+.bord-violet-onto:hover,
+.bord-violet-onto:focus,
+*:hover > .bord-violet-into,
+*:focus > .bord-violet-into,
+.bord-violet-toall:hover > *,
+.bord-violet-toall:focus > *,
+.bord-violet-toone > *:hover,
+.bord-violet-toone > *:focus {
+  border-color: var(--violet);
+}
+
+.bord-silver,
+.bord-silver-global > *,
+.bord-silver-onto:hover,
+.bord-silver-onto:focus,
+*:hover > .bord-silver-into,
+*:focus > .bord-silver-into,
+.bord-silver-toall:hover > *,
+.bord-silver-toall:focus > *,
+.bord-silver-toone > *:hover,
+.bord-silver-toone > *:focus {
+  border-color: var(--silver);
 }
 
 /***** Box : Variables : Padding *****/
