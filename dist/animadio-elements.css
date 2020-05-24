@@ -1,10 +1,13 @@
-/*! animadio v2.3.3 | https://animadio.org | MIT License */
+/*! animadio v2.3.4 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
+  /* Opaque Colors */
   --black: rgb(15, 15, 15);
+  --slate: rgb(47, 79, 79);
+  --gray: rgb(105, 105, 105);
+  --silver: rgb(192, 192, 192);
   --white: rgb(255, 255, 240);
-  /* Basic Colors */
   --magenta: rgb(255, 0, 255);
   --red: rgb(220, 20, 60);
   --orange: rgb(255, 140, 0);
@@ -14,7 +17,6 @@
   --blue: rgb(65, 105, 225);
   --navy: rgb(0, 0, 128);
   --purple: rgb(106, 90, 205);
-  --gray: rgb(105, 105, 105);
   --pink: rgb(255, 192, 203);
   --tomato: rgb(255, 99, 71);
   --coral: rgb(255, 127, 80);
@@ -24,13 +26,22 @@
   --cyan: rgb(0, 255, 255);
   --sky: rgb(135, 206, 235);
   --violet: rgb(238, 130, 238);
-  --silver: rgb(192, 192, 192);
   --fb: rgb(66, 103, 178);
   --gh: rgb(36, 41, 46);
   --in: rgb(0, 119, 181);
   --pp: rgb(39, 52, 106);
   --tw: rgb(29, 161, 242);
   /* Transparent Colors */
+  --black-dark: rgba(15, 15, 15, 0.7);
+  --black-light: rgba(15, 15, 15, 0.3);
+  --slate-dark: rgba(47, 79, 79, 0.7);
+  --slate-light: rgba(47, 79, 79, 0.3);
+  --gray-dark: rgba(105, 105, 105, 0.7);
+  --gray-light: rgba(105, 105, 105, 0.3);
+  --silver-dark: rgba(192, 192, 192, 0.7);
+  --silver-light: rgba(192, 192, 192, 0.3);
+  --white-dark: rgba(255, 255, 240, 0.7);
+  --white-light: rgba(255, 255, 240, 0.3);
   --magenta-dark: rgba(255, 0, 255, 0.7);
   --magenta-light: rgba(255, 0, 255, 0.3);
   --red-dark: rgba(220, 20, 60, 0.7);
@@ -49,8 +60,6 @@
   --navy-light: rgba(0, 0, 128, 0.3);
   --purple-dark: rgba(106, 90, 205, 0.7);
   --purple-light: rgba(106, 90, 205, 0.3);
-  --gray-dark: rgba(105, 105, 105, 0.7);
-  --gray-light: rgba(105, 105, 105, 0.3);
   --pink-dark: rgba(255, 192, 203, 0.7);
   --pink-light: rgba(255, 192, 203, 0.3);
   --tomato-dark: rgba(255, 99, 71, 0.7);
@@ -69,8 +78,6 @@
   --sky-light: rgba(135, 206, 235, 0.3);
   --violet-dark: rgba(238, 130, 238, 0.7);
   --violet-light: rgba(238, 130, 238, 0.3);
-  --silver-dark: rgba(192, 192, 192, 0.7);
-  --silver-light: rgba(192, 192, 192, 0.3);
 }
 
 /***** Global : Variables : Keyframes *****/
@@ -2181,34 +2188,6 @@ pre > *::selection {
   color: var(--white);
 }
 
-.btn-gray {
-  border-color: var(--white);
-  background-color: var(--gray);
-  color: var(--white);
-}
-
-.btn-gray:hover,
-.btn-gray:focus,
-.btn-gray-check:checked + .btn-gray {
-  border-color: var(--gray);
-  background-color: var(--white);
-  color: var(--gray);
-}
-
-.button-gray {
-  border-color: var(--gray);
-  background-color: var(--white);
-  color: var(--gray);
-}
-
-.button-gray:hover,
-.button-gray:focus,
-.button-gray-check:checked + .button-gray {
-  border-color: var(--white);
-  background-color: var(--gray);
-  color: var(--white);
-}
-
 .btn-pink {
   border-color: var(--white);
   background-color: var(--pink);
@@ -2458,34 +2437,6 @@ pre > *::selection {
 .button-violet-check:checked + .button-violet {
   border-color: var(--white);
   background-color: var(--violet);
-  color: var(--white);
-}
-
-.btn-silver {
-  border-color: var(--white);
-  background-color: var(--silver);
-  color: var(--white);
-}
-
-.btn-silver:hover,
-.btn-silver:focus,
-.btn-silver-check:checked + .btn-silver {
-  border-color: var(--silver);
-  background-color: var(--white);
-  color: var(--silver);
-}
-
-.button-silver {
-  border-color: var(--silver);
-  background-color: var(--white);
-  color: var(--silver);
-}
-
-.button-silver:hover,
-.button-silver:focus,
-.button-silver-check:checked + .button-silver {
-  border-color: var(--white);
-  background-color: var(--silver);
   color: var(--white);
 }
 
@@ -2762,9 +2713,33 @@ pre > *::selection {
   --card-purple-background-color: var(--purple-dark);
   --card-purple-title-box-shadow: var(--card-title-box-shadow) var(--purple);
   --card-purple-title-text-shadow: var(--card-title-text-shadow) var(--purple);
-  --card-gray-background-color: var(--gray-dark);
-  --card-gray-title-box-shadow: var(--card-title-box-shadow) var(--gray);
-  --card-gray-title-text-shadow: var(--card-title-text-shadow) var(--gray);
+  --card-pink-background-color: var(--pink-dark);
+  --card-pink-title-box-shadow: var(--card-title-box-shadow) var(--pink);
+  --card-pink-title-text-shadow: var(--card-title-text-shadow) var(--pink);
+  --card-tomato-background-color: var(--tomato-dark);
+  --card-tomato-title-box-shadow: var(--card-title-box-shadow) var(--tomato);
+  --card-tomato-title-text-shadow: var(--card-title-text-shadow) var(--tomato);
+  --card-coral-background-color: var(--coral-dark);
+  --card-coral-title-box-shadow: var(--card-title-box-shadow) var(--coral);
+  --card-coral-title-text-shadow: var(--card-title-text-shadow) var(--coral);
+  --card-yellow-background-color: var(--yellow-dark);
+  --card-yellow-title-box-shadow: var(--card-title-box-shadow) var(--yellow);
+  --card-yellow-title-text-shadow: var(--card-title-text-shadow) var(--yellow);
+  --card-brown-background-color: var(--brown-dark);
+  --card-brown-title-box-shadow: var(--card-title-box-shadow) var(--brown);
+  --card-brown-title-text-shadow: var(--card-title-text-shadow) var(--brown);
+  --card-aqua-background-color: var(--aqua-dark);
+  --card-aqua-title-box-shadow: var(--card-title-box-shadow) var(--aqua);
+  --card-aqua-title-text-shadow: var(--card-title-text-shadow) var(--aqua);
+  --card-cyan-background-color: var(--cyan-dark);
+  --card-cyan-title-box-shadow: var(--card-title-box-shadow) var(--cyan);
+  --card-cyan-title-text-shadow: var(--card-title-text-shadow) var(--cyan);
+  --card-sky-background-color: var(--sky-dark);
+  --card-sky-title-box-shadow: var(--card-title-box-shadow) var(--sky);
+  --card-sky-title-text-shadow: var(--card-title-text-shadow) var(--sky);
+  --card-violet-background-color: var(--violet-dark);
+  --card-violet-title-box-shadow: var(--card-title-box-shadow) var(--violet);
+  --card-violet-title-text-shadow: var(--card-title-text-shadow) var(--violet);
 }
 
 /***** Elements : Classes : Card *****/
@@ -2914,13 +2889,85 @@ pre > *::selection {
   text-shadow: var(--card-purple-title-text-shadow);
 }
 
-.card-gray {
-  background-color: var(--card-gray-background-color);
+.card-pink {
+  background-color: var(--card-pink-background-color);
 }
-.card-gray > h2, .card-gray > h3, .card-gray > h4, .card-gray > h5, .card-gray > h6 {
-  -webkit-box-shadow: var(--card-gray-title-box-shadow);
-          box-shadow: var(--card-gray-title-box-shadow);
-  text-shadow: var(--card-gray-title-text-shadow);
+.card-pink > h2, .card-pink > h3, .card-pink > h4, .card-pink > h5, .card-pink > h6 {
+  -webkit-box-shadow: var(--card-pink-title-box-shadow);
+          box-shadow: var(--card-pink-title-box-shadow);
+  text-shadow: var(--card-pink-title-text-shadow);
+}
+
+.card-tomato {
+  background-color: var(--card-tomato-background-color);
+}
+.card-tomato > h2, .card-tomato > h3, .card-tomato > h4, .card-tomato > h5, .card-tomato > h6 {
+  -webkit-box-shadow: var(--card-tomato-title-box-shadow);
+          box-shadow: var(--card-tomato-title-box-shadow);
+  text-shadow: var(--card-tomato-title-text-shadow);
+}
+
+.card-coral {
+  background-color: var(--card-coral-background-color);
+}
+.card-coral > h2, .card-coral > h3, .card-coral > h4, .card-coral > h5, .card-coral > h6 {
+  -webkit-box-shadow: var(--card-coral-title-box-shadow);
+          box-shadow: var(--card-coral-title-box-shadow);
+  text-shadow: var(--card-coral-title-text-shadow);
+}
+
+.card-yellow {
+  background-color: var(--card-yellow-background-color);
+}
+.card-yellow > h2, .card-yellow > h3, .card-yellow > h4, .card-yellow > h5, .card-yellow > h6 {
+  -webkit-box-shadow: var(--card-yellow-title-box-shadow);
+          box-shadow: var(--card-yellow-title-box-shadow);
+  text-shadow: var(--card-yellow-title-text-shadow);
+}
+
+.card-brown {
+  background-color: var(--card-brown-background-color);
+}
+.card-brown > h2, .card-brown > h3, .card-brown > h4, .card-brown > h5, .card-brown > h6 {
+  -webkit-box-shadow: var(--card-brown-title-box-shadow);
+          box-shadow: var(--card-brown-title-box-shadow);
+  text-shadow: var(--card-brown-title-text-shadow);
+}
+
+.card-aqua {
+  background-color: var(--card-aqua-background-color);
+}
+.card-aqua > h2, .card-aqua > h3, .card-aqua > h4, .card-aqua > h5, .card-aqua > h6 {
+  -webkit-box-shadow: var(--card-aqua-title-box-shadow);
+          box-shadow: var(--card-aqua-title-box-shadow);
+  text-shadow: var(--card-aqua-title-text-shadow);
+}
+
+.card-cyan {
+  background-color: var(--card-cyan-background-color);
+}
+.card-cyan > h2, .card-cyan > h3, .card-cyan > h4, .card-cyan > h5, .card-cyan > h6 {
+  -webkit-box-shadow: var(--card-cyan-title-box-shadow);
+          box-shadow: var(--card-cyan-title-box-shadow);
+  text-shadow: var(--card-cyan-title-text-shadow);
+}
+
+.card-sky {
+  background-color: var(--card-sky-background-color);
+}
+.card-sky > h2, .card-sky > h3, .card-sky > h4, .card-sky > h5, .card-sky > h6 {
+  -webkit-box-shadow: var(--card-sky-title-box-shadow);
+          box-shadow: var(--card-sky-title-box-shadow);
+  text-shadow: var(--card-sky-title-text-shadow);
+}
+
+.card-violet {
+  background-color: var(--card-violet-background-color);
+}
+.card-violet > h2, .card-violet > h3, .card-violet > h4, .card-violet > h5, .card-violet > h6 {
+  -webkit-box-shadow: var(--card-violet-title-box-shadow);
+          box-shadow: var(--card-violet-title-box-shadow);
+  text-shadow: var(--card-violet-title-text-shadow);
 }
 
 /***** Elements : Variables : Menu *****/
@@ -3617,4 +3664,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 24th May 2020 @ 11:04:01 AM */
+ Updated: 24th May 2020 @ 5:20:07 PM */
