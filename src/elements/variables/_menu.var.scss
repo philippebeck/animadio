@@ -4,11 +4,14 @@
   --menu-flex-direction: column;
   --menu-place-content: center;
   --menu-place-items: stretch;
-  --menu-margin: 20px auto 50px;
+  --menu-bottom: 0;
+  --menu-left: 0;
+  --menu-z-index: 1;
+  --menu-margin: 0;
   --menu-border: none;
   --menu-border-radius: 5px;
   --menu-padding: 0;
-  --menu-width: 40%;
+  --menu-width: 100%;
   --menu-list-style: none;
   --menu-background-color: var(--silver);
   --menu-color: var(--gray);
@@ -19,7 +22,7 @@
   --menu-label-place-items: center;
   --menu-label-position: relative;
   --menu-label-border-radius: 5px;
-  --menu-label-padding: 6px 12px;
+  --menu-label-padding: 2px 5px;
   --menu-label-width: 100%;
 
   --menu-label-hover-border: none;
@@ -28,7 +31,7 @@
   --menu-label-hover-color: var(--white);
 
   --menu-fa-position: absolute;
-  --menu-fa-bottom: -18px;
+  --menu-fa-top: -22px;
   --menu-fa-color: var(--blue);
 
   --menu-checked-label-font-weight: bold;
@@ -36,21 +39,8 @@
   --menu-checked-label-color: var(--white);
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-sm) {
   .menu {
     --menu-flex-direction: row;
-    --menu-width: 100%;
-  }
-}
-
-@media (min-width: $breakpoint-lg) {
-  .menu {
-    --menu-width: 90%;
-  }
-}
-
-@media (min-width: $breakpoint-wd) {
-  .menu {
-    --menu-width: 80%;
   }
 }
