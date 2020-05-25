@@ -2248,11 +2248,14 @@ pre > *::selection {
   --menu-flex-direction: column;
   --menu-place-content: center;
   --menu-place-items: stretch;
-  --menu-margin: 20px auto 50px;
+  --menu-bottom: 0;
+  --menu-left: 0;
+  --menu-z-index: 1;
+  --menu-margin: 0;
   --menu-border: none;
   --menu-border-radius: 5px;
   --menu-padding: 0;
-  --menu-width: 40%;
+  --menu-width: 100%;
   --menu-list-style: none;
   --menu-background-color: var(--silver);
   --menu-color: var(--gray);
@@ -2261,34 +2264,23 @@ pre > *::selection {
   --menu-label-place-items: center;
   --menu-label-position: relative;
   --menu-label-border-radius: 5px;
-  --menu-label-padding: 6px 12px;
+  --menu-label-padding: 2px 5px;
   --menu-label-width: 100%;
   --menu-label-hover-border: none;
   --menu-label-hover-font-style: italic;
   --menu-label-hover-background-color: var(--blue-dark);
   --menu-label-hover-color: var(--white);
   --menu-fa-position: absolute;
-  --menu-fa-bottom: -18px;
+  --menu-fa-top: -22px;
   --menu-fa-color: var(--blue);
   --menu-checked-label-font-weight: bold;
   --menu-checked-label-background-color: var(--blue);
   --menu-checked-label-color: var(--white);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .menu {
     --menu-flex-direction: row;
-    --menu-width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .menu {
-    --menu-width: 90%;
-  }
-}
-@media (min-width: 1200px) {
-  .menu {
-    --menu-width: 80%;
   }
 }
 /***** Elements : Classes : Menu *****/
@@ -2297,6 +2289,10 @@ pre > *::selection {
   flex-direction: var(--menu-flex-direction);
   place-content: var(--menu-place-content);
   place-items: var(--menu-place-items);
+  position: fixed;
+  bottom: var(--menu-bottom);
+  left: var(--menu-left);
+  z-index: var(--menu-z-index);
   margin: var(--menu-margin);
   border: var(--menu-border);
   border-radius: var(--menu-border-radius);
@@ -2327,12 +2323,12 @@ pre > *::selection {
 .menu [class*=fa-] {
   display: none;
   position: var(--menu-fa-position);
-  bottom: var(--menu-fa-bottom);
+  top: var(--menu-fa-top);
   color: var(--menu-fa-color);
 }
 
 .menu-relay > * {
-  display: none !important;
+  display: none;
 }
 .menu-relay > h2, .menu-relay > h3, .menu-relay > h4, .menu-relay > h5, .menu-relay > h6 {
   display: block;
@@ -2361,10 +2357,10 @@ pre > *::selection {
 .menu-radio7:checked ~ .menu-relay > [class*=menu-][class*=-target7],
 .menu-radio8:checked ~ .menu-relay > [class*=menu-][class*=-target8],
 .menu-radio9:checked ~ .menu-relay > [class*=menu-][class*=-target9] {
-  display: block !important;
+  display: block;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .menu-radio1:checked ~ .menu > [for*=menu-][for*=-radio1] > [class*=fa-],
 .menu-radio2:checked ~ .menu > [for*=menu-][for*=-radio2] > [class*=fa-],
 .menu-radio3:checked ~ .menu > [for*=menu-][for*=-radio3] > [class*=fa-],
