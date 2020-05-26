@@ -1,4 +1,4 @@
-/*! animadio v2.4.1 | https://animadio.org | MIT License */
+/*! animadio v2.4.2 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
@@ -1394,17 +1394,12 @@ h4,
 h5,
 h6 {
   --title-wd-font-size: 4rem;
-  --title-wd-color: var(--purple);
-  --title-wd-text-transform: capitalize;
+  --title-wd-text-transform: uppercase;
   --title-lg-font-size: 3.5rem;
-  --title-lg-color: var(--green);
-  --title-lg-text-transform: none;
+  --title-lg-text-transform: capitalize;
   --title-md-font-size: 3rem;
-  --title-md-color: var(--navy);
   --title-sm-font-size: 2.5rem;
-  --title-sm-color: var(--red);
   --title-tn-font-size: 2rem;
-  --title-tn-color: var(--maroon);
 }
 
 a {
@@ -1592,30 +1587,25 @@ h6 {
 
 h1 {
   font-size: var(--title-wd-font-size);
-  color: var(--title-wd-color);
   text-transform: var(--title-wd-text-transform);
 }
 
 h2 {
   font-size: var(--title-lg-font-size);
-  color: var(--title-lg-color);
   text-transform: var(--title-lg-text-transform);
 }
 
 h3 {
   font-size: var(--title-md-font-size);
-  color: var(--title-md-color);
 }
 
 h4 {
   font-size: var(--title-sm-font-size);
-  color: var(--title-sm-color);
 }
 
 h5,
 h6 {
   font-size: var(--title-tn-font-size);
-  color: var(--title-tn-color);
 }
 
 a {
@@ -3374,4 +3364,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 26th May 2020 @ 8:37:48 AM */
+ Updated: 26th May 2020 @ 9:59:01 AM */
