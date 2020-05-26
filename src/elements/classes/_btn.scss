@@ -38,8 +38,7 @@
 
 @each $colors in $extent-colors {
   @each $key, $value in $colors {
-    @include btn($key, $value);
-    @include button($key, $value);
+    @include btn-color($key, $value);
   }
 }
 
