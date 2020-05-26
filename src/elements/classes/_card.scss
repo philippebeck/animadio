@@ -45,7 +45,6 @@
   & > h5,
   & > h6 {
     font-size: var(--card-title-font-size);
-    box-shadow: var(--card-title-box-shadow);
     text-shadow: var(--card-title-text-shadow);
   }
 
@@ -68,15 +67,15 @@
 @each $colors in $basic-colors {
   @each $key, $value in $colors {
     .card-#{$key} {
-      background-color: var(--card-#{$key}-background-color);
+      background-color: var(--#{$key}-dark);
+      color: var(--#{$key});
 
       & > h2,
       & > h3,
       & > h4,
       & > h5,
       & > h6 {
-        box-shadow: var(--card-#{$key}-title-box-shadow);
-        text-shadow: var(--card-#{$key}-title-text-shadow);
+        text-shadow: var(--card-#{$key}-text-shadow);
       }
     }
   }
