@@ -1,7 +1,7 @@
 /***** Elements : Variables : Menu *****/
 
 .menu {
-  --menu-flex-direction: column;
+  --menu-flex-direction: row;
   --menu-place-content: center;
   --menu-place-items: stretch;
   --menu-bottom: 0;
@@ -37,10 +37,4 @@
   --menu-checked-label-font-weight: bold;
   --menu-checked-label-background-color: var(--blue);
   --menu-checked-label-color: var(--white);
-}
-
-@media (min-width: $breakpoint-sm) {
-  .menu {
-    --menu-flex-direction: row;
-  }
 }
