@@ -5,6 +5,7 @@
   --table-border-spacing: 10px;
   --table-margin-bottom: 50px;
   --table-width: 90%;
+  --table-font-size : calc(var(--body-font-size) * 60 / 100);
   --table-box-shadow: 5px 5px 10px 5px var(--gray);
 
   --table-caption-side: top;
@@ -51,4 +52,28 @@
 
   --table-row-odd-selection-background-color: var(--gray);
   --table-row-odd-selection-color: var(--white);
+}
+
+@media (min-width: $breakpoint-sm) {
+  .table {
+    --table-font-size : calc(var(--body-font-size) * 70 / 100);
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .table {
+    --table-font-size : calc(var(--body-font-size) * 80 / 100);
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .table {
+    --table-font-size : calc(var(--body-font-size) * 90 / 100);
+  }
+}
+
+@media (min-width: $breakpoint-wd) {
+  .table {
+    --table-font-size : var(--body-font-size);
+  }
 }
