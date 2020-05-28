@@ -1,4 +1,4 @@
-/*! animadio v2.4.3 | https://animadio.org | MIT License */
+/*! animadio v2.4.4 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
@@ -2676,7 +2676,7 @@ pre > *::selection {
 
 /***** Elements : Variables : Menu *****/
 .menu {
-  --menu-flex-direction: column;
+  --menu-flex-direction: row;
   --menu-place-content: center;
   --menu-place-items: stretch;
   --menu-bottom: 0;
@@ -2709,11 +2709,6 @@ pre > *::selection {
   --menu-checked-label-color: var(--white);
 }
 
-@media (min-width: 576px) {
-  .menu {
-    --menu-flex-direction: row;
-  }
-}
 /***** Elements : Classes : Menu *****/
 .menu {
   display: -webkit-box;
@@ -3394,4 +3389,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 28th May 2020 @ 9:54:46 AM */
+ Updated: 28th May 2020 @ 1:28:45 PM */

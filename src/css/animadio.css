@@ -5147,7 +5147,7 @@ pre > *::selection {
 
 /***** Elements : Variables : Menu *****/
 .menu {
-  --menu-flex-direction: column;
+  --menu-flex-direction: row;
   --menu-place-content: center;
   --menu-place-items: stretch;
   --menu-bottom: 0;
@@ -5180,11 +5180,6 @@ pre > *::selection {
   --menu-checked-label-color: var(--white);
 }
 
-@media (min-width: 576px) {
-  .menu {
-    --menu-flex-direction: row;
-  }
-}
 /***** Elements : Classes : Menu *****/
 .menu {
   display: flex;
