@@ -5499,6 +5499,7 @@ pre > *::selection {
   border: var(--form-label-hover-border);
 }
 .form input,
+.form select,
 .form textarea {
   margin: var(--form-field-margin);
   border: var(--form-field-border);
@@ -5511,12 +5512,15 @@ pre > *::selection {
   box-shadow: var(--form-field-box-shadow);
 }
 .form input:hover, .form input:focus,
+.form select:hover,
+.form select:focus,
 .form textarea:hover,
 .form textarea:focus {
   border: var(--form-field-hover-border);
   box-shadow: var(--form-field-hover-box-shadow);
 }
 .form input::placeholder,
+.form select::placeholder,
 .form textarea::placeholder {
   font-style: var(--form-field-placeholder-font-style);
   color: var(--form-field-placeholder-color);
@@ -5593,7 +5597,7 @@ pre > *::selection {
   --table-row-even-selection-color: var(--silver);
   --table-row-odd-background-color: var(--white);
   --table-row-odd-color: var(--gray);
-  --table-row-odd-hover-background-color: var(--tomato);
+  --table-row-odd-hover-background-color: var(--red);
   --table-row-odd-hover-color: var(--white);
   --table-row-odd-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-odd-background-color);
   --table-row-odd-selection-background-color: var(--gray);
@@ -5602,6 +5606,7 @@ pre > *::selection {
 
 @media (min-width: 576px) {
   .table {
+    --table-width: 80%;
     --table-font-size: calc(var(--body-font-size) * 70 / 100);
     --table-caption-font-size: 2.25rem;
     --table-cell-padding: 4px;
@@ -5609,6 +5614,7 @@ pre > *::selection {
 }
 @media (min-width: 768px) {
   .table {
+    --table-width: 70%;
     --table-font-size: calc(var(--body-font-size) * 80 / 100);
     --table-caption-font-size: 2.5rem;
     --table-cell-padding: 6px;
@@ -5616,6 +5622,7 @@ pre > *::selection {
 }
 @media (min-width: 992px) {
   .table {
+    --table-width: 60%;
     --table-font-size: calc(var(--body-font-size) * 90 / 100);
     --table-caption-font-size: 2.75rem;
     --table-cell-padding: 8px;
@@ -5623,6 +5630,7 @@ pre > *::selection {
 }
 @media (min-width: 1200px) {
   .table {
+    --table-width: 50%;
     --table-font-size: var(--body-font-size);
     --table-caption-font-size: 3rem;
     --table-cell-padding: 10px;
