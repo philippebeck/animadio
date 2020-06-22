@@ -1,4 +1,4 @@
-/*! animadio v2.4.4 | https://animadio.org | MIT License */
+/*! animadio v2.4.5 | https://animadio.org | MIT License */
 
 /***** Global : Variables : Colors *****/
 :root {
@@ -3920,7 +3920,6 @@ pre > *::selection {
 .sticky-radio4:checked ~ .sticky-relay .sticky-target4,
 .sticky-radio5:checked ~ .sticky-relay .sticky-target5,
 .sticky-check:checked ~ .sticky-hub .sticky-goal {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -3998,7 +3997,6 @@ pre > *::selection {
 .sticky-sm-radio4:checked ~ .sticky-sm-relay .sticky-sm-target4,
 .sticky-sm-radio5:checked ~ .sticky-sm-relay .sticky-sm-target5,
 .sticky-sm-check:checked ~ .sticky-sm-hub .sticky-sm-goal {
-    position: -webkit-sticky;
     position: sticky;
   }
 }
@@ -4076,7 +4074,6 @@ pre > *::selection {
 .sticky-md-radio4:checked ~ .sticky-md-relay .sticky-md-target4,
 .sticky-md-radio5:checked ~ .sticky-md-relay .sticky-md-target5,
 .sticky-md-check:checked ~ .sticky-md-hub .sticky-md-goal {
-    position: -webkit-sticky;
     position: sticky;
   }
 }
@@ -4154,7 +4151,6 @@ pre > *::selection {
 .sticky-lg-radio4:checked ~ .sticky-lg-relay .sticky-lg-target4,
 .sticky-lg-radio5:checked ~ .sticky-lg-relay .sticky-lg-target5,
 .sticky-lg-check:checked ~ .sticky-lg-hub .sticky-lg-goal {
-    position: -webkit-sticky;
     position: sticky;
   }
 }
@@ -4232,7 +4228,6 @@ pre > *::selection {
 .sticky-wd-radio4:checked ~ .sticky-wd-relay .sticky-wd-target4,
 .sticky-wd-radio5:checked ~ .sticky-wd-relay .sticky-wd-target5,
 .sticky-wd-check:checked ~ .sticky-wd-hub .sticky-wd-goal {
-    position: -webkit-sticky;
     position: sticky;
   }
 }
@@ -7051,4 +7046,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 28th May 2020 @ 1:28:45 PM */
+ Updated: 22nd Jun 2020 @ 6:48:08 PM */

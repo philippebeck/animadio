@@ -1,4 +1,4 @@
-/*! animadio v2.4.4 | https://animadio.org | MIT License */
+/*! animadio v2.4.5 | https://animadio.org | MIT License */
 
 @charset "UTF-8";
 /***** Global : Variables : Colors *****/
@@ -6245,6 +6245,7 @@ pre > *::selection {
   border: var(--form-label-hover-border);
 }
 .form input,
+.form select,
 .form textarea {
   margin: var(--form-field-margin);
   border: var(--form-field-border);
@@ -6258,29 +6259,32 @@ pre > *::selection {
           box-shadow: var(--form-field-box-shadow);
 }
 .form input:hover, .form input:focus,
+.form select:hover,
+.form select:focus,
 .form textarea:hover,
 .form textarea:focus {
   border: var(--form-field-hover-border);
   -webkit-box-shadow: var(--form-field-hover-box-shadow);
           box-shadow: var(--form-field-hover-box-shadow);
 }
-.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
+.form input::-webkit-input-placeholder, .form select::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
   font-style: var(--form-field-placeholder-font-style);
   color: var(--form-field-placeholder-color);
 }
-.form input::-moz-placeholder, .form textarea::-moz-placeholder {
+.form input::-moz-placeholder, .form select::-moz-placeholder, .form textarea::-moz-placeholder {
   font-style: var(--form-field-placeholder-font-style);
   color: var(--form-field-placeholder-color);
 }
-.form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
+.form input:-ms-input-placeholder, .form select:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
   font-style: var(--form-field-placeholder-font-style);
   color: var(--form-field-placeholder-color);
 }
-.form input::-ms-input-placeholder, .form textarea::-ms-input-placeholder {
+.form input::-ms-input-placeholder, .form select::-ms-input-placeholder, .form textarea::-ms-input-placeholder {
   font-style: var(--form-field-placeholder-font-style);
   color: var(--form-field-placeholder-color);
 }
 .form input::placeholder,
+.form select::placeholder,
 .form textarea::placeholder {
   font-style: var(--form-field-placeholder-font-style);
   color: var(--form-field-placeholder-color);
@@ -6361,7 +6365,7 @@ pre > *::selection {
   --table-row-even-selection-color: var(--silver);
   --table-row-odd-background-color: var(--white);
   --table-row-odd-color: var(--gray);
-  --table-row-odd-hover-background-color: var(--tomato);
+  --table-row-odd-hover-background-color: var(--red);
   --table-row-odd-hover-color: var(--white);
   --table-row-odd-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-odd-background-color);
   --table-row-odd-selection-background-color: var(--gray);
@@ -6370,6 +6374,7 @@ pre > *::selection {
 
 @media (min-width: 576px) {
   .table {
+    --table-width: 80%;
     --table-font-size: calc(var(--body-font-size) * 70 / 100);
     --table-caption-font-size: 2.25rem;
     --table-cell-padding: 4px;
@@ -6377,6 +6382,7 @@ pre > *::selection {
 }
 @media (min-width: 768px) {
   .table {
+    --table-width: 70%;
     --table-font-size: calc(var(--body-font-size) * 80 / 100);
     --table-caption-font-size: 2.5rem;
     --table-cell-padding: 6px;
@@ -6384,6 +6390,7 @@ pre > *::selection {
 }
 @media (min-width: 992px) {
   .table {
+    --table-width: 60%;
     --table-font-size: calc(var(--body-font-size) * 90 / 100);
     --table-caption-font-size: 2.75rem;
     --table-cell-padding: 8px;
@@ -6391,6 +6398,7 @@ pre > *::selection {
 }
 @media (min-width: 1200px) {
   .table {
+    --table-width: 50%;
     --table-font-size: var(--body-font-size);
     --table-caption-font-size: 3rem;
     --table-cell-padding: 10px;
@@ -8835,7 +8843,6 @@ pre > *::selection {
 .sticky-radio4:checked ~ .sticky-relay .sticky-target4,
 .sticky-radio5:checked ~ .sticky-relay .sticky-target5,
 .sticky-check:checked ~ .sticky-hub .sticky-goal {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -8913,7 +8920,6 @@ pre > *::selection {
 .sticky-sm-radio4:checked ~ .sticky-sm-relay .sticky-sm-target4,
 .sticky-sm-radio5:checked ~ .sticky-sm-relay .sticky-sm-target5,
 .sticky-sm-check:checked ~ .sticky-sm-hub .sticky-sm-goal {
-    position: -webkit-sticky;
     position: sticky;
   }
 }
@@ -8991,7 +8997,6 @@ pre > *::selection {
 .sticky-md-radio4:checked ~ .sticky-md-relay .sticky-md-target4,
 .sticky-md-radio5:checked ~ .sticky-md-relay .sticky-md-target5,
 .sticky-md-check:checked ~ .sticky-md-hub .sticky-md-goal {
-    position: -webkit-sticky;
     position: sticky;
   }
 }
@@ -9069,7 +9074,6 @@ pre > *::selection {
 .sticky-lg-radio4:checked ~ .sticky-lg-relay .sticky-lg-target4,
 .sticky-lg-radio5:checked ~ .sticky-lg-relay .sticky-lg-target5,
 .sticky-lg-check:checked ~ .sticky-lg-hub .sticky-lg-goal {
-    position: -webkit-sticky;
     position: sticky;
   }
 }
@@ -9147,7 +9151,6 @@ pre > *::selection {
 .sticky-wd-radio4:checked ~ .sticky-wd-relay .sticky-wd-target4,
 .sticky-wd-radio5:checked ~ .sticky-wd-relay .sticky-wd-target5,
 .sticky-wd-check:checked ~ .sticky-wd-hub .sticky-wd-goal {
-    position: -webkit-sticky;
     position: sticky;
   }
 }
@@ -12592,4 +12595,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 28th May 2020 @ 1:28:45 PM */
+ Updated: 22nd Jun 2020 @ 6:48:08 PM */
