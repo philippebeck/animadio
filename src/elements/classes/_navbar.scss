@@ -91,9 +91,7 @@
 
   & > [for*="navbar"] {
     position: absolute;
-    top: var(--navbar-label-top);
     right: var(--navbar-label-right);
-    animation: var(--navbar-label-animation);
   }
 }
 
