@@ -1,0 +1,16 @@
+/***** States : Classes : Height *****/
+
+/* Height */
+@each $key, $value in $heights {
+  @include states('height-#{$key}', 'height', 'var(--height-#{$key})');
+}
+
+/* Max-height */
+@each $key, $value in $max-heights {
+  @include states('max-h-#{$key}', 'max-height', 'var(--max-height-#{$key})');
+}
+
+/* Min-height */
+@each $key, $value in $min-heights {
+  @include states('min-h-#{$key}', 'min-height', 'var(--min-height-#{$key})');
+}
