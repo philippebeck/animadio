@@ -2,39 +2,28 @@
 
 .foot {
   --foot-text-align: center;
-
+  --foot-title-margin: 10px;
   --foot-title-color: var(--yellow);
   --foot-title-font-size: 2rem;
+    --foot-label-cursor: pointer;
 
-  --foot-list-padding-bottom: 20px;
+  --foot-list-flex-direction: column;
+  --foot-list-place-content: space-evenly;
+  --foot-list-margin: 0;
+  --foot-list-background-color: var(--purple);
+  --foot-list-cursor: pointer;
+  --foot-list-link-font-color: var(--white);
+  --foot-list-link-hover-font-color: var(--aqua);
 
-  --foot-first-child-flex-direction: column;
-  --foot-first-child-place-content: space-evenly;
-  --foot-first-child-margin: 0;
-  --foot-first-child-background-color: var(--purple);
-  --foot-first-child-font-color: var(--white);
-  --foot-first-child-cursor: help;
-
-  --foot-first-child-list-text-align: center;
-  --foot-first-child-list-cursor: pointer;
-
-  --foot-first-child-link-margin-bottom: 5px;
-  --foot-first-child-link-font-color: var(--white);
-
-  --foot-first-child-link-hover-font-color: var(--aqua);
-
-  --foot-last-child-place-content: center;
-  --foot-last-child-margin: 0;
-  --foot-last-child-padding-top: 20px;
-  --foot-last-child-background-color: var(--white);
-  --foot-last-child-cursor: crosshair;
-
-  --foot-last-child-link-margin-right: 10px;
-  --foot-last-child-link-margin-left: 10px;
+  --foot-visual-place-content: center;
+  --foot-visual-margin: 0;
+  --foot-visual-padding: 10px 0;
+  --foot-visual-background-color: var(--white);
+  --foot-visual-link-cursor: crosshair;
 }
 
 @media (min-width: $breakpoint-sm) {
   .foot {
-    --foot-first-child-flex-direction: row;
+    --foot-list-flex-direction: row;
   }
 }
