@@ -38,16 +38,16 @@
   }
 }
 
-[class*="foot-goal"] {
-  display: none;
+[class*="foot-target"] [class*="up"],
+[class*="foot-target"] [class*="down"] {
+  margin-left: var(--foot-target-margin-left);
 }
 
-.foot-check1:checked ~ .foot .foot-goal1,
-.foot-check2:checked ~ .foot .foot-goal2,
-.foot-check3:checked ~ .foot .foot-goal3,
-.foot-check4:checked ~ .foot .foot-goal4,
-.foot-check5:checked ~ .foot .foot-goal5 {
-  display: block;
+[for*="foot"]:hover [class*="up"],
+[for*="foot"]:hover [class*="down"] {
+  transform: var(--foot-hover-transform);
+  transition: var(--foot-hover-transition);
+  color: var(--foot-hover-color);
 }
 
 .foot-visual {
@@ -61,9 +61,40 @@
   }
 }
 
+[class*="foot-goal"],
+.foot [class*="up"],
+.foot-check1:checked ~ .foot .foot-target1 [class*="down"],
+.foot-check2:checked ~ .foot .foot-target2 [class*="down"],
+.foot-check3:checked ~ .foot .foot-target3 [class*="down"],
+.foot-check4:checked ~ .foot .foot-target4 [class*="down"],
+.foot-check5:checked ~ .foot .foot-target5 [class*="down"] {
+  display: none;
+}
+
+.foot-check1:checked ~ .foot .foot-target1 [class*="up"],
+.foot-check2:checked ~ .foot .foot-target2 [class*="up"],
+.foot-check3:checked ~ .foot .foot-target3 [class*="up"],
+.foot-check4:checked ~ .foot .foot-target4 [class*="up"],
+.foot-check5:checked ~ .foot .foot-target5 [class*="up"] {
+  display: inline-block;
+}
+
+.foot-check1:checked ~ .foot .foot-goal1,
+.foot-check2:checked ~ .foot .foot-goal2,
+.foot-check3:checked ~ .foot .foot-goal3,
+.foot-check4:checked ~ .foot .foot-goal4,
+.foot-check5:checked ~ .foot .foot-goal5 {
+  display: block;
+}
+
 @media (min-width: $breakpoint-sm) {
   [class*="foot-goal"] {
     display: block;
+  }
+
+  [class*="foot-target"] [class*="up"],
+  [class*="foot-target"] [class*="down"] {
+    display: none;
   }
 
   .foot {
