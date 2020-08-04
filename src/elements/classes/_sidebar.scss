@@ -2,11 +2,12 @@
 
 .sidebar {
   display: flex;
+  flex-direction: column;
   position: fixed;
-  bottom: var(--sidebar-bottom);
+  top: var(--sidebar-top);
+  left: var(--sidebar-left);
   z-index: var(--sidebar-z-index);
   width: var(--sidebar-width);
-  background-color: var(--sidebar-background-color);
 
   & > * {
     display: flex;
@@ -37,14 +38,6 @@
       }
     }
   }
-
-  & span {
-    display: none;
-  }
-
-  & ~ footer {
-    margin-bottom: var(--sidebar-footer-margin-bottom);
-  }
 }
 
 .sidebar-relay {
@@ -69,7 +62,8 @@
 .sidebar-radio6:checked ~ .sidebar [for*="sidebar-"][for*="-radio6"],
 .sidebar-radio7:checked ~ .sidebar [for*="sidebar-"][for*="-radio7"],
 .sidebar-radio8:checked ~ .sidebar [for*="sidebar-"][for*="-radio8"],
-.sidebar-radio9:checked ~ .sidebar [for*="sidebar-"][for*="-radio9"] {
+.sidebar-radio9:checked ~ .sidebar [for*="sidebar-"][for*="-radio9"],
+.sidebar-radio0:checked ~ .sidebar [for*="sidebar-"][for*="-radio0"] {
   font-weight: var(--sidebar-checked-child-font-weight);
   background-color: var(--sidebar-checked-child-background-color);
   color: var(--sidebar-checked-child-color);
@@ -79,29 +73,15 @@
   }
 }
 
-.sidebar-radio1:checked ~ .sidebar-relay [class*="sidebar-"][class*="-target1"],
-.sidebar-radio2:checked ~ .sidebar-relay [class*="sidebar-"][class*="-target2"],
-.sidebar-radio3:checked ~ .sidebar-relay [class*="sidebar-"][class*="-target3"],
-.sidebar-radio4:checked ~ .sidebar-relay [class*="sidebar-"][class*="-target4"],
-.sidebar-radio5:checked ~ .sidebar-relay [class*="sidebar-"][class*="-target5"],
-.sidebar-radio6:checked ~ .sidebar-relay [class*="sidebar-"][class*="-target6"],
-.sidebar-radio7:checked ~ .sidebar-relay [class*="sidebar-"][class*="-target7"],
-.sidebar-radio8:checked ~ .sidebar-relay [class*="sidebar-"][class*="-target8"],
-.sidebar-radio9:checked ~ .sidebar-relay [class*="sidebar-"][class*="-target9"] {
+.sidebar-radio1:checked ~ .sidebar-relay .sidebar-target1,
+.sidebar-radio2:checked ~ .sidebar-relay .sidebar-target2,
+.sidebar-radio3:checked ~ .sidebar-relay .sidebar-target3,
+.sidebar-radio4:checked ~ .sidebar-relay .sidebar-target4,
+.sidebar-radio5:checked ~ .sidebar-relay .sidebar-target5,
+.sidebar-radio6:checked ~ .sidebar-relay .sidebar-target6,
+.sidebar-radio7:checked ~ .sidebar-relay .sidebar-target7,
+.sidebar-radio8:checked ~ .sidebar-relay .sidebar-target8,
+.sidebar-radio9:checked ~ .sidebar-relay .sidebar-target9,
+.sidebar-radio0:checked ~ .sidebar-relay .sidebar-target0 {
   display: block;
-}
-
-@media (min-width: $breakpoint-md) {
-  .sidebar-radio1:checked ~ .sidebar > [for*="sidebar-"][for*="-radio1"] > [class*="fa-"],
-  .sidebar-radio2:checked ~ .sidebar > [for*="sidebar-"][for*="-radio2"] > [class*="fa-"],
-  .sidebar-radio3:checked ~ .sidebar > [for*="sidebar-"][for*="-radio3"] > [class*="fa-"],
-  .sidebar-radio4:checked ~ .sidebar > [for*="sidebar-"][for*="-radio4"] > [class*="fa-"],
-  .sidebar-radio5:checked ~ .sidebar > [for*="sidebar-"][for*="-radio5"] > [class*="fa-"],
-  .sidebar-radio6:checked ~ .sidebar > [for*="sidebar-"][for*="-radio6"] > [class*="fa-"],
-  .sidebar-radio7:checked ~ .sidebar > [for*="sidebar-"][for*="-radio7"] > [class*="fa-"],
-  .sidebar-radio8:checked ~ .sidebar > [for*="sidebar-"][for*="-radio8"] > [class*="fa-"],
-  .sidebar-radio9:checked ~ .sidebar > [for*="sidebar-"][for*="-radio9"] > [class*="fa-"],
-  .sidebar span {
-    display: block;
-  }
 }
