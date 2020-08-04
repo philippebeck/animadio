@@ -1,10 +1,10 @@
 /***** Elements : Variables : Sidebar *****/
 
 .sidebar {
-  --sidebar-bottom: 0;
-  --sidebar-z-index: 100;
-  --sidebar-width: 100%;
-  --sidebar-background-color: var(--black-light);
+  --sidebar-top: 20%;
+  --sidebar-left: 0;
+  --sidebar-z-index: 10;
+  --sidebar-width: 14%;
 
   --sidebar-child-place-content: center;
   --sidebar-child-place-items: center;
@@ -28,18 +28,26 @@
   --sidebar-checked-child-color: var(--black);
 }
 
-footer {
-  --sidebar-footer-margin-bottom: 38px;
-}
-
 @media (min-width: $breakpoint-sm) {
-  footer {
-    --sidebar-footer-margin-bottom: 40px;
+  .sidebar {
+    --sidebar-width: 12%;
   }
 }
 
 @media (min-width: $breakpoint-md) {
-  footer {
-    --sidebar-footer-margin-bottom: 48px;
+  .sidebar {
+    --sidebar-width: 10%;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .sidebar {
+    --sidebar-width: 8%;
+  }
+}
+
+@media (min-width: $breakpoint-wd) {
+  .sidebar {
+    --sidebar-width: 6%;
   }
 }
