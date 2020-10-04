@@ -9,7 +9,7 @@
 -   More than 99% of **pure CSS**
 
 [![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
-[![Codacy Code Quality](https://api.codacy.com/project/badge/Grade/b996875347654cc69510b0b1a5616936)](https://www.codacy.com/app/Animadio/animadio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=animadio/animadio&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/299d541b73494c259debb80a0b25b9cc)](https://www.codacy.com/gh/animadio/animadio/dashboard)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ad3b450099d132b4d98d/maintainability)](https://codeclimate.com/github/animadio/animadio/maintainability)
 
 ## Summary
@@ -35,11 +35,8 @@
 
 ## Package Manager
 
-[![NPM Version](https://img.shields.io/npm/v/animadio.svg?label=NPM)](https://www.npmjs.com/package/animadio)
-[![NPM Weekly Downloads](https://img.shields.io/npm/dw/animadio.svg?label=Weekly+Downloads)](https://www.npmjs.com/package/animadio)
 [![NPM Montly Downloads](https://img.shields.io/npm/dm/animadio.svg?label=Montly+Downloads)](https://www.npmjs.com/package/animadio)
 [![NPM Yearly Downloads](https://img.shields.io/npm/dy/animadio.svg?label=Yearly+Downloads)](https://www.npmjs.com/package/animadio)
-[![NPM Total Downloads](https://img.shields.io/npm/dt/animadio.svg?label=Total+Downloads)](https://www.npmjs.com/package/animadio)
 
 NPM : `npm i animadio`  
 Yarn : `yarn add animadio`  
@@ -48,7 +45,6 @@ Yarn : `yarn add animadio`
 
 ## CDN 
 
-[![jsDelivr Weekly Downloads](https://img.shields.io/jsdelivr/npm/hw/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 
