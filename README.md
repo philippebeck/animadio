@@ -18,7 +18,6 @@
 -   [CDN](#cdn)  
 -   [Download](#download)  
 -   [Content](#content)  
--   [CSS Only](#css-only)  
 -   [Support](#support)  
 -   [Browsers](#browsers)  
 -   [Open-Source](#open-source)  
@@ -50,38 +49,28 @@ Yarn : `yarn add animadio`
 
 > **Full Version** ([Animadio.js](https://github.com/animadio/animadio.js) required)
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio.css) + [https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio.css) + [https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio.min.css) + [https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js)  
 
-> **Box Version**
+> **Elements Version** ([Animadio.js](https://github.com/animadio/animadio.js) required)
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-box.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-box.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-box.min.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-box.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-elements.css) + [https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-elements.min.css) + [https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js)  
 
 > **Grid Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-grid.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-grid.min.css)  
-
-> **Elements Version**
-
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-elements.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-elements.min.css)  
-
-> **States Version**
-
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-states.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-states.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-grid.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-grid.min.css)  
 
 > **Helpers Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-helpers.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-helpers.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-helpers.min.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-helpers.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-helpers.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-helpers.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-helpers.min.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-helpers.min.css)  
 
-> **Events Version** (*[Animadio.js](https://github.com/animadio/animadio.js) required*)
+> **States Version**
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-events.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/animadio-events.css) + [https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-events.min.css](https://cdn.jsdelivr.net/npm/animadio@2.4.5/dist/min/animadio-events.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-states.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-states.min.css)  
 
 ---
 
@@ -105,26 +94,10 @@ The main library distribution is :
 [![CSS Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg?label=animadio.min.css)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
 
 But if you only need a part of Animadio, you can use one of those dist files :
--   To get Global + Box : `dist/animadio-box.css` for dev or `dist/min/animadio-box.min.css` for prod  
--   To get Global + Grid : `dist/animadio-grid.css` for dev or `dist/min/animadio-grid.min.css` for prod  
 -   To get Global + Elements : `dist/animadio-elements.css` for dev or `dist/min/animadio-elements.min.css` for prod  
--   To get Global + States : `dist/animadio-states.css` for dev or `dist/min/animadio-states.min.css` for prod  
+-   To get Global + Grid : `dist/animadio-grid.css` for dev or `dist/min/animadio-grid.min.css` for prod  
 -   To get Global + Helpers : `dist/animadio-helpers.css` for dev or `dist/min/animadio-helpers.min.css` for prod  
--   To get Global + Events : `dist/animadio-events.css` for dev or `dist/min/animadio-events.min.css` for prod  
-
----
-
-## CSS Only
-
-Source files are written with Sass in SCSS to offer better flexibility, simplified scalability & a project more maintainable over time.
-
-Animadio library is composed only of CSS source code : jQuery is not included or needed in production...
-
-Grunt is the only JavaScript app used in the framework development side for recursive tasks (concat, source map, webkit & min) to build the library file (but it can be used to concat CSS elements of your choice)
-
-You can simply use the library & if you need : you can overload the CSS variables.
-
-[![GitHub Top Language](https://img.shields.io/github/languages/top/animadio/animadio.svg?label=CSS)](https://github.com/animadio/animadio)
+-   To get Global + States : `dist/animadio-states.css` for dev or `dist/min/animadio-states.min.css` for prod  
 
 ---
 
@@ -159,9 +132,9 @@ CodePen : [@animadio](https://codepen.io/animadio)
 
 ## Documentation
 
-Animadio Documentation is available !
+Animadio Documentation will come back soon for the V3 !
 
-[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/doc.animadio.org.svg?label=https://doc.animadio.org)](https://doc.animadio.org)
+[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg?label=https://animadio.org)](https://animadio.org)
 
 ---
 
@@ -203,22 +176,7 @@ Philippe Beck
 
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/philippebeck.net.svg?label=https://philippebeck.net)](https://philippebeck.net)
 [![GitHub Followers](https://img.shields.io/github/followers/philippebeck.svg?label=GitHub+:+philippebeck+|+Followers)](https://github.com/philippebeck)
-[![Twitter Follow](https://badgen.net/twitter/follow/philippepjbeck)](https://twitter.com/philippepjbeck)
-
----
-
-## Contributors
-
-Lisa Lecieux
-
-[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/philippebeck.net.svg?label=https://sangodraws.com)](https://sangodraws.com)
-[![GitHub Followers](https://img.shields.io/github/followers/sangodraws.svg?label=GitHub+:+sangodraws+|+Followers)](https://github.com/sangodraws)
-[![Twitter Follow](https://badgen.net/twitter/follow/sangodraws)](https://twitter.com/sangodraws)
-
-Valentin Antoin
-
-[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/valentin-antoin.fr.svg?label=https://valentin-antoin.fr)](https://valentin-antoin.fr)
-[![GitHub Followers](https://img.shields.io/github/followers/valentinantoin.svg?label=GitHub+:+valentinantoin+|+Followers)](https://github.com/valentinantoin)
+[![Twitter Follow](https://badgen.net/twitter/follow/ph_beck)](https://twitter.com/ph_beck)
 
 ---
 
