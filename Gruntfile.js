@@ -3,11 +3,11 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON("package.json"),
         concat: {
             options: {banner: "/*! <%= pkg.name %> v<%= pkg.version %> | <%= pkg.homepage %> | <%= pkg.license %> License */\n\n", footer: "\n/*! Author: <%= pkg.author.name %> <<%= pkg.author.email %>>\n Updated: <%= grunt.template.today('dS mmm yyyy @ h:MM:ss TT') %> */"},
-            main: {src: ["src/css/animadio.css"], dest: "dist/animadio.css"},
-            grid: {src: ["src/css/animadio-grid.css"], dest: "dist/animadio-grid.css"},
-            elements: {src: ["src/css/animadio-elements.css"], dest: "dist/animadio-elements.css"},
-            states: {src: ["src/css/animadio-states.css"], dest: "dist/animadio-states.css"},
-            helpers: {src: ["src/css/animadio-helpers.css"], dest: "dist/animadio-helpers.css"}},
+            main: {src: ["node_modules/normalize.css/normalize.css", "src/css/animadio.css"], dest: "dist/animadio.css"},
+            grid: {src: ["node_modules/normalize.css/normalize.css", "src/css/animadio-grid.css"], dest: "dist/animadio-grid.css"},
+            elements: {src: ["node_modules/normalize.css/normalize.css", "src/css/animadio-elements.css"], dest: "dist/animadio-elements.css"},
+            states: {src: ["node_modules/normalize.css/normalize.css", "src/css/animadio-states.css"], dest: "dist/animadio-states.css"},
+            helpers: {src: ["node_modules/normalize.css/normalize.css", "src/css/animadio-helpers.css"], dest: "dist/animadio-helpers.css"}},
         postcss: {
             options: {processors: [require("autoprefixer")({browsers: "last 2 versions"})]},
             main: {src: "dist/animadio.css"},
