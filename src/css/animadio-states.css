@@ -265,6 +265,192 @@
   --origin-slideTL: center;
 }
 
+/***** Global : Variables : Init *****/
+:root {
+  --sans-serif-font-family: sans-serif;
+  --serif-font-family: serif;
+  --monospace-font-family: monospace;
+  --cursive-font-family: cursive;
+  --fantasy-font-family: fantasy;
+}
+
+body {
+  --body-background-color: none;
+  --body-color: var(--black);
+  --body-font-size: 1.8rem;
+  --body-line-height: 1.6;
+  --body-scroll-behavior: smooth;
+}
+
+article {
+  --article-margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --title-wd-font-size: 4rem;
+  --title-wd-text-transform: uppercase;
+  --title-lg-font-size: 3.5rem;
+  --title-lg-text-transform: capitalize;
+  --title-md-font-size: 3rem;
+  --title-sm-font-size: 2.5rem;
+  --title-tn-font-size: 2rem;
+}
+
+a {
+  --link-outline: 0;
+  --link-text-decoration: none;
+}
+
+ul {
+  --list-margin: 0 0 10px;
+  --list-padding: 0;
+  --list-style: none;
+}
+
+img,
+video {
+  --img-height: auto;
+  --img-max-width: 100%;
+  --img-object-fit: contain;
+}
+
+table {
+  --table-border-collapse: collapse;
+  --table-font-family: monospace;
+  --table-margin: auto;
+  --table-text-align: center;
+  --table-vertical-align: middle;
+}
+
+code,
+pre {
+  --code-background-color: var(--black);
+  --code-color: var(--aqua);
+  --code-margin: auto;
+  --code-overflow: scroll;
+  --code-padding: 10px;
+  --code-text-align: initial;
+  --code-width: 100%;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    --title-wd-font-size: 4.2rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.6rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.1rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.6rem;
+  }
+
+  h5,
+h6 {
+    --title-tn-font-size: 2.1rem;
+  }
+
+  code,
+pre {
+    --code-width: 95%;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    --title-wd-font-size: 4.4rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.8rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.3rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.8rem;
+  }
+
+  h5,
+h6 {
+    --title-tn-font-size: 2.3rem;
+  }
+
+  code,
+pre {
+    --code-width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    --title-wd-font-size: 4.7rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.9rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.4rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.9rem;
+  }
+
+  h5,
+h6 {
+    --title-tn-font-size: 2.4rem;
+  }
+
+  code,
+pre {
+    --code-width: 85%;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    --title-wd-font-size: 5rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 4rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.5rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 3rem;
+  }
+
+  h5,
+h6 {
+    --title-tn-font-size: 2.5rem;
+  }
+
+  code,
+pre {
+    --code-width: 80%;
+  }
+}
+/***** Global : Variables : Container *****/
+[class*=container] {
+  --container-max-width: 100%;
+}
+
 /***** Global : Rules : Keyframes *****/
 @keyframes bounce {
   from {
@@ -693,191 +879,6 @@
     transform-origin: var(--origin-slideTL);
   }
 }
-/***** Global : Variables : Init *****/
-:root {
-  --sans-serif-font-family: sans-serif;
-  --serif-font-family: serif;
-  --monospace-font-family: monospace;
-  --cursive-font-family: cursive;
-  --fantasy-font-family: fantasy;
-}
-
-body {
-  --body-background-color: none;
-  --body-color: var(--black);
-  --body-font-size: 1.8rem;
-  --body-line-height: 1.6;
-  --body-scroll-behavior: smooth;
-}
-
-article {
-  --article-margin-bottom: 20px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  --title-wd-font-size: 4rem;
-  --title-wd-text-transform: uppercase;
-  --title-lg-font-size: 3.5rem;
-  --title-lg-text-transform: capitalize;
-  --title-md-font-size: 3rem;
-  --title-sm-font-size: 2.5rem;
-  --title-tn-font-size: 2rem;
-}
-
-a {
-  --link-outline: 0;
-  --link-text-decoration: none;
-}
-
-ul {
-  --list-margin: 0 0 10px;
-  --list-padding: 0;
-  --list-style: none;
-}
-
-img,
-video {
-  --img-height: auto;
-  --img-max-width: 100%;
-  --img-object-fit: contain;
-}
-
-table {
-  --table-border-collapse: collapse;
-  --table-font-family: monospace;
-  --table-margin: auto;
-  --table-text-align: center;
-  --table-vertical-align: middle;
-}
-
-label {
-  --label-cursor: pointer;
-}
-
-code,
-pre {
-  --code-background-color: var(--black);
-  --code-color: var(--aqua);
-  --code-margin: auto;
-  --code-overflow: scroll;
-  --code-padding: 10px;
-  --code-text-align: initial;
-  --code-width: 100%;
-}
-
-@media (min-width: 576px) {
-  h1 {
-    --title-wd-font-size: 4.2rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 3.6rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.1rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 2.6rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.1rem;
-  }
-
-  code,
-pre {
-    --code-width: 95%;
-  }
-}
-@media (min-width: 768px) {
-  h1 {
-    --title-wd-font-size: 4.4rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 3.8rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.3rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 2.8rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.3rem;
-  }
-
-  code,
-pre {
-    --code-width: 90%;
-  }
-}
-@media (min-width: 992px) {
-  h1 {
-    --title-wd-font-size: 4.7rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 3.9rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.4rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 2.9rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.4rem;
-  }
-
-  code,
-pre {
-    --code-width: 85%;
-  }
-}
-@media (min-width: 1200px) {
-  h1 {
-    --title-wd-font-size: 5rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 4rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.5rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 3rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.5rem;
-  }
-
-  code,
-pre {
-    --code-width: 80%;
-  }
-}
 /***** Global : Tags : Init *****/
 * {
   box-sizing: border-box;
@@ -960,10 +961,6 @@ table {
   font-family: var(--table-font-family);
 }
 
-label {
-  cursor: var(--label-cursor);
-}
-
 code,
 pre {
   overflow: var(--code-overflow);
@@ -989,6 +986,143 @@ pre > *::selection {
   display: none !important;
 }
 
+/***** Global : Classes : Container *****/
+/* Container */
+[class^=container],
+[class*=" container"] {
+  margin: auto;
+  max-width: var(--container-max-width);
+}
+
+[class^=container-][class*="-50tn"],
+[class*=" container-"][class*="-50tn"] {
+  max-width: 50%;
+}
+
+[class^=container-][class*="-60tn"],
+[class*=" container-"][class*="-60tn"] {
+  max-width: 60%;
+}
+
+[class^=container-][class*="-70tn"],
+[class*=" container-"][class*="-70tn"] {
+  max-width: 70%;
+}
+
+[class^=container-][class*="-80tn"],
+[class*=" container-"][class*="-80tn"] {
+  max-width: 80%;
+}
+
+[class^=container-][class*="-90tn"],
+[class*=" container-"][class*="-90tn"] {
+  max-width: 90%;
+}
+
+@media (min-width: 576px) {
+  [class^=container-][class*="-50sm"],
+[class*=" container-"][class*="-50sm"] {
+    max-width: 50%;
+  }
+
+  [class^=container-][class*="-60sm"],
+[class*=" container-"][class*="-60sm"] {
+    max-width: 60%;
+  }
+
+  [class^=container-][class*="-70sm"],
+[class*=" container-"][class*="-70sm"] {
+    max-width: 70%;
+  }
+
+  [class^=container-][class*="-80sm"],
+[class*=" container-"][class*="-80sm"] {
+    max-width: 80%;
+  }
+
+  [class^=container-][class*="-90sm"],
+[class*=" container-"][class*="-90sm"] {
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  [class^=container-][class*="-50md"],
+[class*=" container-"][class*="-50md"] {
+    max-width: 50%;
+  }
+
+  [class^=container-][class*="-60md"],
+[class*=" container-"][class*="-60md"] {
+    max-width: 60%;
+  }
+
+  [class^=container-][class*="-70md"],
+[class*=" container-"][class*="-70md"] {
+    max-width: 70%;
+  }
+
+  [class^=container-][class*="-80md"],
+[class*=" container-"][class*="-80md"] {
+    max-width: 80%;
+  }
+
+  [class^=container-][class*="-90md"],
+[class*=" container-"][class*="-90md"] {
+    max-width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  [class^=container-][class*="-50lg"],
+[class*=" container-"][class*="-50lg"] {
+    max-width: 50%;
+  }
+
+  [class^=container-][class*="-60lg"],
+[class*=" container-"][class*="-60lg"] {
+    max-width: 60%;
+  }
+
+  [class^=container-][class*="-70lg"],
+[class*=" container-"][class*="-70lg"] {
+    max-width: 70%;
+  }
+
+  [class^=container-][class*="-80lg"],
+[class*=" container-"][class*="-80lg"] {
+    max-width: 80%;
+  }
+
+  [class^=container-][class*="-90lg"],
+[class*=" container-"][class*="-90lg"] {
+    max-width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  [class^=container-][class*="-50wd"],
+[class*=" container-"][class*="-50wd"] {
+    max-width: 50%;
+  }
+
+  [class^=container-][class*="-60wd"],
+[class*=" container-"][class*="-60wd"] {
+    max-width: 60%;
+  }
+
+  [class^=container-][class*="-70wd"],
+[class*=" container-"][class*="-70wd"] {
+    max-width: 70%;
+  }
+
+  [class^=container-][class*="-80wd"],
+[class*=" container-"][class*="-80wd"] {
+    max-width: 80%;
+  }
+
+  [class^=container-][class*="-90wd"],
+[class*=" container-"][class*="-90wd"] {
+    max-width: 90%;
+  }
+}
 /***** States : Variables : Anima *****/
 [class*=anima-] {
   --animation-duration: 2s;
@@ -3465,6 +3599,1995 @@ pre > *::selection {
     position: sticky;
   }
 }
+/***** States : Variables : Margin *****/
+[class*=mar-] {
+  --margin-none: 0;
+  --margin-sm: 10px;
+  --margin-md: 20px;
+  --margin-lg: 50px;
+  --margin-top-sm: 10px;
+  --margin-top-md: 20px;
+  --margin-top-lg: 50px;
+  --margin-right-sm: 10px;
+  --margin-right-md: 20px;
+  --margin-right-lg: 50px;
+  --margin-bot-sm: 10px;
+  --margin-bot-md: 20px;
+  --margin-bot-lg: 50px;
+  --margin-left-sm: 10px;
+  --margin-left-md: 20px;
+  --margin-left-lg: 50px;
+}
+
+/***** States : Classes : Margin *****/
+.mar-none,
+.mar-none-global > *,
+.mar-none-onto:hover,
+.mar-none-onto:focus,
+*:hover > .mar-none-into,
+*:focus > .mar-none-into,
+.mar-none-toall:hover > *,
+.mar-none-toall:focus > *,
+.mar-none-toone > *:hover,
+.mar-none-toone > *:focus,
+.mar-none-radio1:checked ~ .mar-none-relay .mar-none-target1,
+.mar-none-radio2:checked ~ .mar-none-relay .mar-none-target2,
+.mar-none-radio3:checked ~ .mar-none-relay .mar-none-target3,
+.mar-none-radio4:checked ~ .mar-none-relay .mar-none-target4,
+.mar-none-radio5:checked ~ .mar-none-relay .mar-none-target5,
+.mar-none-check:checked ~ .mar-none-hub .mar-none-goal {
+  margin: var(--margin-none);
+}
+
+.mar-top-none,
+.mar-top-none-global > *,
+.mar-top-none-onto:hover,
+.mar-top-none-onto:focus,
+*:hover > .mar-top-none-into,
+*:focus > .mar-top-none-into,
+.mar-top-none-toall:hover > *,
+.mar-top-none-toall:focus > *,
+.mar-top-none-toone > *:hover,
+.mar-top-none-toone > *:focus,
+.mar-top-none-radio1:checked ~ .mar-top-none-relay .mar-top-none-target1,
+.mar-top-none-radio2:checked ~ .mar-top-none-relay .mar-top-none-target2,
+.mar-top-none-radio3:checked ~ .mar-top-none-relay .mar-top-none-target3,
+.mar-top-none-radio4:checked ~ .mar-top-none-relay .mar-top-none-target4,
+.mar-top-none-radio5:checked ~ .mar-top-none-relay .mar-top-none-target5,
+.mar-top-none-check:checked ~ .mar-top-none-hub .mar-top-none-goal {
+  margin-top: var(--margin-none);
+}
+
+.mar-right-none,
+.mar-right-none-global > *,
+.mar-right-none-onto:hover,
+.mar-right-none-onto:focus,
+*:hover > .mar-right-none-into,
+*:focus > .mar-right-none-into,
+.mar-right-none-toall:hover > *,
+.mar-right-none-toall:focus > *,
+.mar-right-none-toone > *:hover,
+.mar-right-none-toone > *:focus,
+.mar-right-none-radio1:checked ~ .mar-right-none-relay .mar-right-none-target1,
+.mar-right-none-radio2:checked ~ .mar-right-none-relay .mar-right-none-target2,
+.mar-right-none-radio3:checked ~ .mar-right-none-relay .mar-right-none-target3,
+.mar-right-none-radio4:checked ~ .mar-right-none-relay .mar-right-none-target4,
+.mar-right-none-radio5:checked ~ .mar-right-none-relay .mar-right-none-target5,
+.mar-right-none-check:checked ~ .mar-right-none-hub .mar-right-none-goal {
+  margin-right: var(--margin-none);
+}
+
+.mar-bottom-none,
+.mar-bottom-none-global > *,
+.mar-bottom-none-onto:hover,
+.mar-bottom-none-onto:focus,
+*:hover > .mar-bottom-none-into,
+*:focus > .mar-bottom-none-into,
+.mar-bottom-none-toall:hover > *,
+.mar-bottom-none-toall:focus > *,
+.mar-bottom-none-toone > *:hover,
+.mar-bottom-none-toone > *:focus,
+.mar-bottom-none-radio1:checked ~ .mar-bottom-none-relay .mar-bottom-none-target1,
+.mar-bottom-none-radio2:checked ~ .mar-bottom-none-relay .mar-bottom-none-target2,
+.mar-bottom-none-radio3:checked ~ .mar-bottom-none-relay .mar-bottom-none-target3,
+.mar-bottom-none-radio4:checked ~ .mar-bottom-none-relay .mar-bottom-none-target4,
+.mar-bottom-none-radio5:checked ~ .mar-bottom-none-relay .mar-bottom-none-target5,
+.mar-bottom-none-check:checked ~ .mar-bottom-none-hub .mar-bottom-none-goal {
+  margin-bottom: var(--margin-none);
+}
+
+.mar-left-none,
+.mar-left-none-global > *,
+.mar-left-none-onto:hover,
+.mar-left-none-onto:focus,
+*:hover > .mar-left-none-into,
+*:focus > .mar-left-none-into,
+.mar-left-none-toall:hover > *,
+.mar-left-none-toall:focus > *,
+.mar-left-none-toone > *:hover,
+.mar-left-none-toone > *:focus,
+.mar-left-none-radio1:checked ~ .mar-left-none-relay .mar-left-none-target1,
+.mar-left-none-radio2:checked ~ .mar-left-none-relay .mar-left-none-target2,
+.mar-left-none-radio3:checked ~ .mar-left-none-relay .mar-left-none-target3,
+.mar-left-none-radio4:checked ~ .mar-left-none-relay .mar-left-none-target4,
+.mar-left-none-radio5:checked ~ .mar-left-none-relay .mar-left-none-target5,
+.mar-left-none-check:checked ~ .mar-left-none-hub .mar-left-none-goal {
+  margin-left: var(--margin-none);
+}
+
+.mar-sm,
+.mar-sm-global > *,
+.mar-sm-onto:hover,
+.mar-sm-onto:focus,
+*:hover > .mar-sm-into,
+*:focus > .mar-sm-into,
+.mar-sm-toall:hover > *,
+.mar-sm-toall:focus > *,
+.mar-sm-toone > *:hover,
+.mar-sm-toone > *:focus,
+.mar-sm-radio1:checked ~ .mar-sm-relay .mar-sm-target1,
+.mar-sm-radio2:checked ~ .mar-sm-relay .mar-sm-target2,
+.mar-sm-radio3:checked ~ .mar-sm-relay .mar-sm-target3,
+.mar-sm-radio4:checked ~ .mar-sm-relay .mar-sm-target4,
+.mar-sm-radio5:checked ~ .mar-sm-relay .mar-sm-target5,
+.mar-sm-check:checked ~ .mar-sm-hub .mar-sm-goal {
+  margin: var(--margin-sm);
+}
+
+.mar-md,
+.mar-md-global > *,
+.mar-md-onto:hover,
+.mar-md-onto:focus,
+*:hover > .mar-md-into,
+*:focus > .mar-md-into,
+.mar-md-toall:hover > *,
+.mar-md-toall:focus > *,
+.mar-md-toone > *:hover,
+.mar-md-toone > *:focus,
+.mar-md-radio1:checked ~ .mar-md-relay .mar-md-target1,
+.mar-md-radio2:checked ~ .mar-md-relay .mar-md-target2,
+.mar-md-radio3:checked ~ .mar-md-relay .mar-md-target3,
+.mar-md-radio4:checked ~ .mar-md-relay .mar-md-target4,
+.mar-md-radio5:checked ~ .mar-md-relay .mar-md-target5,
+.mar-md-check:checked ~ .mar-md-hub .mar-md-goal {
+  margin: var(--margin-md);
+}
+
+.mar-lg,
+.mar-lg-global > *,
+.mar-lg-onto:hover,
+.mar-lg-onto:focus,
+*:hover > .mar-lg-into,
+*:focus > .mar-lg-into,
+.mar-lg-toall:hover > *,
+.mar-lg-toall:focus > *,
+.mar-lg-toone > *:hover,
+.mar-lg-toone > *:focus,
+.mar-lg-radio1:checked ~ .mar-lg-relay .mar-lg-target1,
+.mar-lg-radio2:checked ~ .mar-lg-relay .mar-lg-target2,
+.mar-lg-radio3:checked ~ .mar-lg-relay .mar-lg-target3,
+.mar-lg-radio4:checked ~ .mar-lg-relay .mar-lg-target4,
+.mar-lg-radio5:checked ~ .mar-lg-relay .mar-lg-target5,
+.mar-lg-check:checked ~ .mar-lg-hub .mar-lg-goal {
+  margin: var(--margin-lg);
+}
+
+.mar-top-sm,
+.mar-top-sm-global > *,
+.mar-top-sm-onto:hover,
+.mar-top-sm-onto:focus,
+*:hover > .mar-top-sm-into,
+*:focus > .mar-top-sm-into,
+.mar-top-sm-toall:hover > *,
+.mar-top-sm-toall:focus > *,
+.mar-top-sm-toone > *:hover,
+.mar-top-sm-toone > *:focus,
+.mar-top-sm-radio1:checked ~ .mar-top-sm-relay .mar-top-sm-target1,
+.mar-top-sm-radio2:checked ~ .mar-top-sm-relay .mar-top-sm-target2,
+.mar-top-sm-radio3:checked ~ .mar-top-sm-relay .mar-top-sm-target3,
+.mar-top-sm-radio4:checked ~ .mar-top-sm-relay .mar-top-sm-target4,
+.mar-top-sm-radio5:checked ~ .mar-top-sm-relay .mar-top-sm-target5,
+.mar-top-sm-check:checked ~ .mar-top-sm-hub .mar-top-sm-goal {
+  margin-top: var(--margin-top-sm);
+}
+
+.mar-top-md,
+.mar-top-md-global > *,
+.mar-top-md-onto:hover,
+.mar-top-md-onto:focus,
+*:hover > .mar-top-md-into,
+*:focus > .mar-top-md-into,
+.mar-top-md-toall:hover > *,
+.mar-top-md-toall:focus > *,
+.mar-top-md-toone > *:hover,
+.mar-top-md-toone > *:focus,
+.mar-top-md-radio1:checked ~ .mar-top-md-relay .mar-top-md-target1,
+.mar-top-md-radio2:checked ~ .mar-top-md-relay .mar-top-md-target2,
+.mar-top-md-radio3:checked ~ .mar-top-md-relay .mar-top-md-target3,
+.mar-top-md-radio4:checked ~ .mar-top-md-relay .mar-top-md-target4,
+.mar-top-md-radio5:checked ~ .mar-top-md-relay .mar-top-md-target5,
+.mar-top-md-check:checked ~ .mar-top-md-hub .mar-top-md-goal {
+  margin-top: var(--margin-top-md);
+}
+
+.mar-top-lg,
+.mar-top-lg-global > *,
+.mar-top-lg-onto:hover,
+.mar-top-lg-onto:focus,
+*:hover > .mar-top-lg-into,
+*:focus > .mar-top-lg-into,
+.mar-top-lg-toall:hover > *,
+.mar-top-lg-toall:focus > *,
+.mar-top-lg-toone > *:hover,
+.mar-top-lg-toone > *:focus,
+.mar-top-lg-radio1:checked ~ .mar-top-lg-relay .mar-top-lg-target1,
+.mar-top-lg-radio2:checked ~ .mar-top-lg-relay .mar-top-lg-target2,
+.mar-top-lg-radio3:checked ~ .mar-top-lg-relay .mar-top-lg-target3,
+.mar-top-lg-radio4:checked ~ .mar-top-lg-relay .mar-top-lg-target4,
+.mar-top-lg-radio5:checked ~ .mar-top-lg-relay .mar-top-lg-target5,
+.mar-top-lg-check:checked ~ .mar-top-lg-hub .mar-top-lg-goal {
+  margin-top: var(--margin-top-lg);
+}
+
+.mar-right-sm,
+.mar-right-sm-global > *,
+.mar-right-sm-onto:hover,
+.mar-right-sm-onto:focus,
+*:hover > .mar-right-sm-into,
+*:focus > .mar-right-sm-into,
+.mar-right-sm-toall:hover > *,
+.mar-right-sm-toall:focus > *,
+.mar-right-sm-toone > *:hover,
+.mar-right-sm-toone > *:focus,
+.mar-right-sm-radio1:checked ~ .mar-right-sm-relay .mar-right-sm-target1,
+.mar-right-sm-radio2:checked ~ .mar-right-sm-relay .mar-right-sm-target2,
+.mar-right-sm-radio3:checked ~ .mar-right-sm-relay .mar-right-sm-target3,
+.mar-right-sm-radio4:checked ~ .mar-right-sm-relay .mar-right-sm-target4,
+.mar-right-sm-radio5:checked ~ .mar-right-sm-relay .mar-right-sm-target5,
+.mar-right-sm-check:checked ~ .mar-right-sm-hub .mar-right-sm-goal {
+  margin-right: var(--margin-right-sm);
+}
+
+.mar-right-md,
+.mar-right-md-global > *,
+.mar-right-md-onto:hover,
+.mar-right-md-onto:focus,
+*:hover > .mar-right-md-into,
+*:focus > .mar-right-md-into,
+.mar-right-md-toall:hover > *,
+.mar-right-md-toall:focus > *,
+.mar-right-md-toone > *:hover,
+.mar-right-md-toone > *:focus,
+.mar-right-md-radio1:checked ~ .mar-right-md-relay .mar-right-md-target1,
+.mar-right-md-radio2:checked ~ .mar-right-md-relay .mar-right-md-target2,
+.mar-right-md-radio3:checked ~ .mar-right-md-relay .mar-right-md-target3,
+.mar-right-md-radio4:checked ~ .mar-right-md-relay .mar-right-md-target4,
+.mar-right-md-radio5:checked ~ .mar-right-md-relay .mar-right-md-target5,
+.mar-right-md-check:checked ~ .mar-right-md-hub .mar-right-md-goal {
+  margin-right: var(--margin-right-md);
+}
+
+.mar-right-lg,
+.mar-right-lg-global > *,
+.mar-right-lg-onto:hover,
+.mar-right-lg-onto:focus,
+*:hover > .mar-right-lg-into,
+*:focus > .mar-right-lg-into,
+.mar-right-lg-toall:hover > *,
+.mar-right-lg-toall:focus > *,
+.mar-right-lg-toone > *:hover,
+.mar-right-lg-toone > *:focus,
+.mar-right-lg-radio1:checked ~ .mar-right-lg-relay .mar-right-lg-target1,
+.mar-right-lg-radio2:checked ~ .mar-right-lg-relay .mar-right-lg-target2,
+.mar-right-lg-radio3:checked ~ .mar-right-lg-relay .mar-right-lg-target3,
+.mar-right-lg-radio4:checked ~ .mar-right-lg-relay .mar-right-lg-target4,
+.mar-right-lg-radio5:checked ~ .mar-right-lg-relay .mar-right-lg-target5,
+.mar-right-lg-check:checked ~ .mar-right-lg-hub .mar-right-lg-goal {
+  margin-right: var(--margin-right-lg);
+}
+
+.mar-bot-sm,
+.mar-bot-sm-global > *,
+.mar-bot-sm-onto:hover,
+.mar-bot-sm-onto:focus,
+*:hover > .mar-bot-sm-into,
+*:focus > .mar-bot-sm-into,
+.mar-bot-sm-toall:hover > *,
+.mar-bot-sm-toall:focus > *,
+.mar-bot-sm-toone > *:hover,
+.mar-bot-sm-toone > *:focus,
+.mar-bot-sm-radio1:checked ~ .mar-bot-sm-relay .mar-bot-sm-target1,
+.mar-bot-sm-radio2:checked ~ .mar-bot-sm-relay .mar-bot-sm-target2,
+.mar-bot-sm-radio3:checked ~ .mar-bot-sm-relay .mar-bot-sm-target3,
+.mar-bot-sm-radio4:checked ~ .mar-bot-sm-relay .mar-bot-sm-target4,
+.mar-bot-sm-radio5:checked ~ .mar-bot-sm-relay .mar-bot-sm-target5,
+.mar-bot-sm-check:checked ~ .mar-bot-sm-hub .mar-bot-sm-goal {
+  margin-bottom: var(--margin-bot-sm);
+}
+
+.mar-bot-md,
+.mar-bot-md-global > *,
+.mar-bot-md-onto:hover,
+.mar-bot-md-onto:focus,
+*:hover > .mar-bot-md-into,
+*:focus > .mar-bot-md-into,
+.mar-bot-md-toall:hover > *,
+.mar-bot-md-toall:focus > *,
+.mar-bot-md-toone > *:hover,
+.mar-bot-md-toone > *:focus,
+.mar-bot-md-radio1:checked ~ .mar-bot-md-relay .mar-bot-md-target1,
+.mar-bot-md-radio2:checked ~ .mar-bot-md-relay .mar-bot-md-target2,
+.mar-bot-md-radio3:checked ~ .mar-bot-md-relay .mar-bot-md-target3,
+.mar-bot-md-radio4:checked ~ .mar-bot-md-relay .mar-bot-md-target4,
+.mar-bot-md-radio5:checked ~ .mar-bot-md-relay .mar-bot-md-target5,
+.mar-bot-md-check:checked ~ .mar-bot-md-hub .mar-bot-md-goal {
+  margin-bottom: var(--margin-bot-md);
+}
+
+.mar-bot-lg,
+.mar-bot-lg-global > *,
+.mar-bot-lg-onto:hover,
+.mar-bot-lg-onto:focus,
+*:hover > .mar-bot-lg-into,
+*:focus > .mar-bot-lg-into,
+.mar-bot-lg-toall:hover > *,
+.mar-bot-lg-toall:focus > *,
+.mar-bot-lg-toone > *:hover,
+.mar-bot-lg-toone > *:focus,
+.mar-bot-lg-radio1:checked ~ .mar-bot-lg-relay .mar-bot-lg-target1,
+.mar-bot-lg-radio2:checked ~ .mar-bot-lg-relay .mar-bot-lg-target2,
+.mar-bot-lg-radio3:checked ~ .mar-bot-lg-relay .mar-bot-lg-target3,
+.mar-bot-lg-radio4:checked ~ .mar-bot-lg-relay .mar-bot-lg-target4,
+.mar-bot-lg-radio5:checked ~ .mar-bot-lg-relay .mar-bot-lg-target5,
+.mar-bot-lg-check:checked ~ .mar-bot-lg-hub .mar-bot-lg-goal {
+  margin-bottom: var(--margin-bot-lg);
+}
+
+.mar-left-sm,
+.mar-left-sm-global > *,
+.mar-left-sm-onto:hover,
+.mar-left-sm-onto:focus,
+*:hover > .mar-left-sm-into,
+*:focus > .mar-left-sm-into,
+.mar-left-sm-toall:hover > *,
+.mar-left-sm-toall:focus > *,
+.mar-left-sm-toone > *:hover,
+.mar-left-sm-toone > *:focus,
+.mar-left-sm-radio1:checked ~ .mar-left-sm-relay .mar-left-sm-target1,
+.mar-left-sm-radio2:checked ~ .mar-left-sm-relay .mar-left-sm-target2,
+.mar-left-sm-radio3:checked ~ .mar-left-sm-relay .mar-left-sm-target3,
+.mar-left-sm-radio4:checked ~ .mar-left-sm-relay .mar-left-sm-target4,
+.mar-left-sm-radio5:checked ~ .mar-left-sm-relay .mar-left-sm-target5,
+.mar-left-sm-check:checked ~ .mar-left-sm-hub .mar-left-sm-goal {
+  margin-left: var(--margin-left-sm);
+}
+
+.mar-left-md,
+.mar-left-md-global > *,
+.mar-left-md-onto:hover,
+.mar-left-md-onto:focus,
+*:hover > .mar-left-md-into,
+*:focus > .mar-left-md-into,
+.mar-left-md-toall:hover > *,
+.mar-left-md-toall:focus > *,
+.mar-left-md-toone > *:hover,
+.mar-left-md-toone > *:focus,
+.mar-left-md-radio1:checked ~ .mar-left-md-relay .mar-left-md-target1,
+.mar-left-md-radio2:checked ~ .mar-left-md-relay .mar-left-md-target2,
+.mar-left-md-radio3:checked ~ .mar-left-md-relay .mar-left-md-target3,
+.mar-left-md-radio4:checked ~ .mar-left-md-relay .mar-left-md-target4,
+.mar-left-md-radio5:checked ~ .mar-left-md-relay .mar-left-md-target5,
+.mar-left-md-check:checked ~ .mar-left-md-hub .mar-left-md-goal {
+  margin-left: var(--margin-left-md);
+}
+
+.mar-left-lg,
+.mar-left-lg-global > *,
+.mar-left-lg-onto:hover,
+.mar-left-lg-onto:focus,
+*:hover > .mar-left-lg-into,
+*:focus > .mar-left-lg-into,
+.mar-left-lg-toall:hover > *,
+.mar-left-lg-toall:focus > *,
+.mar-left-lg-toone > *:hover,
+.mar-left-lg-toone > *:focus,
+.mar-left-lg-radio1:checked ~ .mar-left-lg-relay .mar-left-lg-target1,
+.mar-left-lg-radio2:checked ~ .mar-left-lg-relay .mar-left-lg-target2,
+.mar-left-lg-radio3:checked ~ .mar-left-lg-relay .mar-left-lg-target3,
+.mar-left-lg-radio4:checked ~ .mar-left-lg-relay .mar-left-lg-target4,
+.mar-left-lg-radio5:checked ~ .mar-left-lg-relay .mar-left-lg-target5,
+.mar-left-lg-check:checked ~ .mar-left-lg-hub .mar-left-lg-goal {
+  margin-left: var(--margin-left-lg);
+}
+
+/***** States : Variables : Bord *****/
+[class*=bord] {
+  --border-style: solid;
+  --border-width-tn: 1px;
+  --border-width-sm: 2px;
+  --border-width-md: 3px;
+  --border-width-lg: 4px;
+  --border-width-wd: 5px;
+  --border-radius-square: unset;
+  --border-radius-curve: 5px;
+  --border-radius-rounded: 10px;
+  --border-radius-circle: 50%;
+}
+
+/***** States : Classes : Bord *****/
+/* Border default */
+[class*=bord],
+[class*=bord][class*=-global] > *,
+[class*=bord][class*=-onto]:hover,
+[class*=bord][class*=-onto]:focus,
+*:hover > [class*=bord][class*=-into],
+*:focus > [class*=bord][class*=-into],
+[class*=bord][class*=-toall]:hover > *,
+[class*=bord][class*=-toall]:focus > *,
+[class*=bord][class*=-toone] > *:hover,
+[class*=bord][class*=-toone] > *:focus,
+[class*=bord][class*=-radio1]:checked ~ [class*=bord][class*=-relay] [class*=bord][class*=-target1],
+[class*=bord][class*=-radio2]:checked ~ [class*=bord][class*=-relay] [class*=bord][class*=-target2],
+[class*=bord][class*=-radio3]:checked ~ [class*=bord][class*=-relay] [class*=bord][class*=-target3],
+[class*=bord][class*=-radio4]:checked ~ [class*=bord][class*=-relay] [class*=bord][class*=-target4],
+[class*=bord][class*=-radio5]:checked ~ [class*=bord][class*=-relay] [class*=bord][class*=-target5],
+[class*=bord][class*=-check]:checked ~ [class*=bord][class*=-hub] [class*=bord][class*=-goal] {
+  border-style: var(--border-style);
+}
+
+/* Border style */
+.bord-dash,
+.bord-dash-global > *,
+.bord-dash-onto:hover,
+.bord-dash-onto:focus,
+*:hover > .bord-dash-into,
+*:focus > .bord-dash-into,
+.bord-dash-toall:hover > *,
+.bord-dash-toall:focus > *,
+.bord-dash-toone > *:hover,
+.bord-dash-toone > *:focus,
+.bord-dash-radio1:checked ~ .bord-dash-relay .bord-dash-target1,
+.bord-dash-radio2:checked ~ .bord-dash-relay .bord-dash-target2,
+.bord-dash-radio3:checked ~ .bord-dash-relay .bord-dash-target3,
+.bord-dash-radio4:checked ~ .bord-dash-relay .bord-dash-target4,
+.bord-dash-radio5:checked ~ .bord-dash-relay .bord-dash-target5,
+.bord-dash-check:checked ~ .bord-dash-hub .bord-dash-goal {
+  border-style: dashed;
+}
+
+.bord-dot,
+.bord-dot-global > *,
+.bord-dot-onto:hover,
+.bord-dot-onto:focus,
+*:hover > .bord-dot-into,
+*:focus > .bord-dot-into,
+.bord-dot-toall:hover > *,
+.bord-dot-toall:focus > *,
+.bord-dot-toone > *:hover,
+.bord-dot-toone > *:focus,
+.bord-dot-radio1:checked ~ .bord-dot-relay .bord-dot-target1,
+.bord-dot-radio2:checked ~ .bord-dot-relay .bord-dot-target2,
+.bord-dot-radio3:checked ~ .bord-dot-relay .bord-dot-target3,
+.bord-dot-radio4:checked ~ .bord-dot-relay .bord-dot-target4,
+.bord-dot-radio5:checked ~ .bord-dot-relay .bord-dot-target5,
+.bord-dot-check:checked ~ .bord-dot-hub .bord-dot-goal {
+  border-style: dotted;
+}
+
+.bord-solid,
+.bord-solid-global > *,
+.bord-solid-onto:hover,
+.bord-solid-onto:focus,
+*:hover > .bord-solid-into,
+*:focus > .bord-solid-into,
+.bord-solid-toall:hover > *,
+.bord-solid-toall:focus > *,
+.bord-solid-toone > *:hover,
+.bord-solid-toone > *:focus,
+.bord-solid-radio1:checked ~ .bord-solid-relay .bord-solid-target1,
+.bord-solid-radio2:checked ~ .bord-solid-relay .bord-solid-target2,
+.bord-solid-radio3:checked ~ .bord-solid-relay .bord-solid-target3,
+.bord-solid-radio4:checked ~ .bord-solid-relay .bord-solid-target4,
+.bord-solid-radio5:checked ~ .bord-solid-relay .bord-solid-target5,
+.bord-solid-check:checked ~ .bord-solid-hub .bord-solid-goal {
+  border-style: solid;
+}
+
+.bord-double,
+.bord-double-global > *,
+.bord-double-onto:hover,
+.bord-double-onto:focus,
+*:hover > .bord-double-into,
+*:focus > .bord-double-into,
+.bord-double-toall:hover > *,
+.bord-double-toall:focus > *,
+.bord-double-toone > *:hover,
+.bord-double-toone > *:focus,
+.bord-double-radio1:checked ~ .bord-double-relay .bord-double-target1,
+.bord-double-radio2:checked ~ .bord-double-relay .bord-double-target2,
+.bord-double-radio3:checked ~ .bord-double-relay .bord-double-target3,
+.bord-double-radio4:checked ~ .bord-double-relay .bord-double-target4,
+.bord-double-radio5:checked ~ .bord-double-relay .bord-double-target5,
+.bord-double-check:checked ~ .bord-double-hub .bord-double-goal {
+  border-style: double;
+}
+
+.bord-groove,
+.bord-groove-global > *,
+.bord-groove-onto:hover,
+.bord-groove-onto:focus,
+*:hover > .bord-groove-into,
+*:focus > .bord-groove-into,
+.bord-groove-toall:hover > *,
+.bord-groove-toall:focus > *,
+.bord-groove-toone > *:hover,
+.bord-groove-toone > *:focus,
+.bord-groove-radio1:checked ~ .bord-groove-relay .bord-groove-target1,
+.bord-groove-radio2:checked ~ .bord-groove-relay .bord-groove-target2,
+.bord-groove-radio3:checked ~ .bord-groove-relay .bord-groove-target3,
+.bord-groove-radio4:checked ~ .bord-groove-relay .bord-groove-target4,
+.bord-groove-radio5:checked ~ .bord-groove-relay .bord-groove-target5,
+.bord-groove-check:checked ~ .bord-groove-hub .bord-groove-goal {
+  border-style: groove;
+}
+
+.bord-ridge,
+.bord-ridge-global > *,
+.bord-ridge-onto:hover,
+.bord-ridge-onto:focus,
+*:hover > .bord-ridge-into,
+*:focus > .bord-ridge-into,
+.bord-ridge-toall:hover > *,
+.bord-ridge-toall:focus > *,
+.bord-ridge-toone > *:hover,
+.bord-ridge-toone > *:focus,
+.bord-ridge-radio1:checked ~ .bord-ridge-relay .bord-ridge-target1,
+.bord-ridge-radio2:checked ~ .bord-ridge-relay .bord-ridge-target2,
+.bord-ridge-radio3:checked ~ .bord-ridge-relay .bord-ridge-target3,
+.bord-ridge-radio4:checked ~ .bord-ridge-relay .bord-ridge-target4,
+.bord-ridge-radio5:checked ~ .bord-ridge-relay .bord-ridge-target5,
+.bord-ridge-check:checked ~ .bord-ridge-hub .bord-ridge-goal {
+  border-style: ridge;
+}
+
+.bord-in,
+.bord-in-global > *,
+.bord-in-onto:hover,
+.bord-in-onto:focus,
+*:hover > .bord-in-into,
+*:focus > .bord-in-into,
+.bord-in-toall:hover > *,
+.bord-in-toall:focus > *,
+.bord-in-toone > *:hover,
+.bord-in-toone > *:focus,
+.bord-in-radio1:checked ~ .bord-in-relay .bord-in-target1,
+.bord-in-radio2:checked ~ .bord-in-relay .bord-in-target2,
+.bord-in-radio3:checked ~ .bord-in-relay .bord-in-target3,
+.bord-in-radio4:checked ~ .bord-in-relay .bord-in-target4,
+.bord-in-radio5:checked ~ .bord-in-relay .bord-in-target5,
+.bord-in-check:checked ~ .bord-in-hub .bord-in-goal {
+  border-style: inset;
+}
+
+.bord-out,
+.bord-out-global > *,
+.bord-out-onto:hover,
+.bord-out-onto:focus,
+*:hover > .bord-out-into,
+*:focus > .bord-out-into,
+.bord-out-toall:hover > *,
+.bord-out-toall:focus > *,
+.bord-out-toone > *:hover,
+.bord-out-toone > *:focus,
+.bord-out-radio1:checked ~ .bord-out-relay .bord-out-target1,
+.bord-out-radio2:checked ~ .bord-out-relay .bord-out-target2,
+.bord-out-radio3:checked ~ .bord-out-relay .bord-out-target3,
+.bord-out-radio4:checked ~ .bord-out-relay .bord-out-target4,
+.bord-out-radio5:checked ~ .bord-out-relay .bord-out-target5,
+.bord-out-check:checked ~ .bord-out-hub .bord-out-goal {
+  border-style: outset;
+}
+
+/* Border width */
+.bord-tn,
+.bord-tn-global > *,
+.bord-tn-onto:hover,
+.bord-tn-onto:focus,
+*:hover > .bord-tn-into,
+*:focus > .bord-tn-into,
+.bord-tn-toall:hover > *,
+.bord-tn-toall:focus > *,
+.bord-tn-toone > *:hover,
+.bord-tn-toone > *:focus,
+.bord-tn-radio1:checked ~ .bord-tn-relay .bord-tn-target1,
+.bord-tn-radio2:checked ~ .bord-tn-relay .bord-tn-target2,
+.bord-tn-radio3:checked ~ .bord-tn-relay .bord-tn-target3,
+.bord-tn-radio4:checked ~ .bord-tn-relay .bord-tn-target4,
+.bord-tn-radio5:checked ~ .bord-tn-relay .bord-tn-target5,
+.bord-tn-check:checked ~ .bord-tn-hub .bord-tn-goal {
+  border-width: var(--border-width-tn);
+}
+
+.bord-sm,
+.bord-sm-global > *,
+.bord-sm-onto:hover,
+.bord-sm-onto:focus,
+*:hover > .bord-sm-into,
+*:focus > .bord-sm-into,
+.bord-sm-toall:hover > *,
+.bord-sm-toall:focus > *,
+.bord-sm-toone > *:hover,
+.bord-sm-toone > *:focus,
+.bord-sm-radio1:checked ~ .bord-sm-relay .bord-sm-target1,
+.bord-sm-radio2:checked ~ .bord-sm-relay .bord-sm-target2,
+.bord-sm-radio3:checked ~ .bord-sm-relay .bord-sm-target3,
+.bord-sm-radio4:checked ~ .bord-sm-relay .bord-sm-target4,
+.bord-sm-radio5:checked ~ .bord-sm-relay .bord-sm-target5,
+.bord-sm-check:checked ~ .bord-sm-hub .bord-sm-goal {
+  border-width: var(--border-width-sm);
+}
+
+.bord-md,
+.bord-md-global > *,
+.bord-md-onto:hover,
+.bord-md-onto:focus,
+*:hover > .bord-md-into,
+*:focus > .bord-md-into,
+.bord-md-toall:hover > *,
+.bord-md-toall:focus > *,
+.bord-md-toone > *:hover,
+.bord-md-toone > *:focus,
+.bord-md-radio1:checked ~ .bord-md-relay .bord-md-target1,
+.bord-md-radio2:checked ~ .bord-md-relay .bord-md-target2,
+.bord-md-radio3:checked ~ .bord-md-relay .bord-md-target3,
+.bord-md-radio4:checked ~ .bord-md-relay .bord-md-target4,
+.bord-md-radio5:checked ~ .bord-md-relay .bord-md-target5,
+.bord-md-check:checked ~ .bord-md-hub .bord-md-goal {
+  border-width: var(--border-width-md);
+}
+
+.bord-lg,
+.bord-lg-global > *,
+.bord-lg-onto:hover,
+.bord-lg-onto:focus,
+*:hover > .bord-lg-into,
+*:focus > .bord-lg-into,
+.bord-lg-toall:hover > *,
+.bord-lg-toall:focus > *,
+.bord-lg-toone > *:hover,
+.bord-lg-toone > *:focus,
+.bord-lg-radio1:checked ~ .bord-lg-relay .bord-lg-target1,
+.bord-lg-radio2:checked ~ .bord-lg-relay .bord-lg-target2,
+.bord-lg-radio3:checked ~ .bord-lg-relay .bord-lg-target3,
+.bord-lg-radio4:checked ~ .bord-lg-relay .bord-lg-target4,
+.bord-lg-radio5:checked ~ .bord-lg-relay .bord-lg-target5,
+.bord-lg-check:checked ~ .bord-lg-hub .bord-lg-goal {
+  border-width: var(--border-width-lg);
+}
+
+.bord-wd,
+.bord-wd-global > *,
+.bord-wd-onto:hover,
+.bord-wd-onto:focus,
+*:hover > .bord-wd-into,
+*:focus > .bord-wd-into,
+.bord-wd-toall:hover > *,
+.bord-wd-toall:focus > *,
+.bord-wd-toone > *:hover,
+.bord-wd-toone > *:focus,
+.bord-wd-radio1:checked ~ .bord-wd-relay .bord-wd-target1,
+.bord-wd-radio2:checked ~ .bord-wd-relay .bord-wd-target2,
+.bord-wd-radio3:checked ~ .bord-wd-relay .bord-wd-target3,
+.bord-wd-radio4:checked ~ .bord-wd-relay .bord-wd-target4,
+.bord-wd-radio5:checked ~ .bord-wd-relay .bord-wd-target5,
+.bord-wd-check:checked ~ .bord-wd-hub .bord-wd-goal {
+  border-width: var(--border-width-wd);
+}
+
+/* Border radius */
+.bord-square,
+.bord-square-global > *,
+.bord-square-onto:hover,
+.bord-square-onto:focus,
+*:hover > .bord-square-into,
+*:focus > .bord-square-into,
+.bord-square-toall:hover > *,
+.bord-square-toall:focus > *,
+.bord-square-toone > *:hover,
+.bord-square-toone > *:focus,
+.bord-square-radio1:checked ~ .bord-square-relay .bord-square-target1,
+.bord-square-radio2:checked ~ .bord-square-relay .bord-square-target2,
+.bord-square-radio3:checked ~ .bord-square-relay .bord-square-target3,
+.bord-square-radio4:checked ~ .bord-square-relay .bord-square-target4,
+.bord-square-radio5:checked ~ .bord-square-relay .bord-square-target5,
+.bord-square-check:checked ~ .bord-square-hub .bord-square-goal {
+  border-radius: var(--border-radius-square);
+}
+
+.bord-curve,
+.bord-curve-global > *,
+.bord-curve-onto:hover,
+.bord-curve-onto:focus,
+*:hover > .bord-curve-into,
+*:focus > .bord-curve-into,
+.bord-curve-toall:hover > *,
+.bord-curve-toall:focus > *,
+.bord-curve-toone > *:hover,
+.bord-curve-toone > *:focus,
+.bord-curve-radio1:checked ~ .bord-curve-relay .bord-curve-target1,
+.bord-curve-radio2:checked ~ .bord-curve-relay .bord-curve-target2,
+.bord-curve-radio3:checked ~ .bord-curve-relay .bord-curve-target3,
+.bord-curve-radio4:checked ~ .bord-curve-relay .bord-curve-target4,
+.bord-curve-radio5:checked ~ .bord-curve-relay .bord-curve-target5,
+.bord-curve-check:checked ~ .bord-curve-hub .bord-curve-goal {
+  border-radius: var(--border-radius-curve);
+}
+
+.bord-rounded,
+.bord-rounded-global > *,
+.bord-rounded-onto:hover,
+.bord-rounded-onto:focus,
+*:hover > .bord-rounded-into,
+*:focus > .bord-rounded-into,
+.bord-rounded-toall:hover > *,
+.bord-rounded-toall:focus > *,
+.bord-rounded-toone > *:hover,
+.bord-rounded-toone > *:focus,
+.bord-rounded-radio1:checked ~ .bord-rounded-relay .bord-rounded-target1,
+.bord-rounded-radio2:checked ~ .bord-rounded-relay .bord-rounded-target2,
+.bord-rounded-radio3:checked ~ .bord-rounded-relay .bord-rounded-target3,
+.bord-rounded-radio4:checked ~ .bord-rounded-relay .bord-rounded-target4,
+.bord-rounded-radio5:checked ~ .bord-rounded-relay .bord-rounded-target5,
+.bord-rounded-check:checked ~ .bord-rounded-hub .bord-rounded-goal {
+  border-radius: var(--border-radius-rounded);
+}
+
+.bord-circle,
+.bord-circle-global > *,
+.bord-circle-onto:hover,
+.bord-circle-onto:focus,
+*:hover > .bord-circle-into,
+*:focus > .bord-circle-into,
+.bord-circle-toall:hover > *,
+.bord-circle-toall:focus > *,
+.bord-circle-toone > *:hover,
+.bord-circle-toone > *:focus,
+.bord-circle-radio1:checked ~ .bord-circle-relay .bord-circle-target1,
+.bord-circle-radio2:checked ~ .bord-circle-relay .bord-circle-target2,
+.bord-circle-radio3:checked ~ .bord-circle-relay .bord-circle-target3,
+.bord-circle-radio4:checked ~ .bord-circle-relay .bord-circle-target4,
+.bord-circle-radio5:checked ~ .bord-circle-relay .bord-circle-target5,
+.bord-circle-check:checked ~ .bord-circle-hub .bord-circle-goal {
+  border-radius: var(--border-radius-circle);
+}
+
+/* Border color */
+.bord-black,
+.bord-black-global > *,
+.bord-black-onto:hover,
+.bord-black-onto:focus,
+*:hover > .bord-black-into,
+*:focus > .bord-black-into,
+.bord-black-toall:hover > *,
+.bord-black-toall:focus > *,
+.bord-black-toone > *:hover,
+.bord-black-toone > *:focus,
+.bord-black-radio1:checked ~ .bord-black-relay .bord-black-target1,
+.bord-black-radio2:checked ~ .bord-black-relay .bord-black-target2,
+.bord-black-radio3:checked ~ .bord-black-relay .bord-black-target3,
+.bord-black-radio4:checked ~ .bord-black-relay .bord-black-target4,
+.bord-black-radio5:checked ~ .bord-black-relay .bord-black-target5,
+.bord-black-check:checked ~ .bord-black-hub .bord-black-goal {
+  border-color: var(--black);
+}
+
+.bord-slate,
+.bord-slate-global > *,
+.bord-slate-onto:hover,
+.bord-slate-onto:focus,
+*:hover > .bord-slate-into,
+*:focus > .bord-slate-into,
+.bord-slate-toall:hover > *,
+.bord-slate-toall:focus > *,
+.bord-slate-toone > *:hover,
+.bord-slate-toone > *:focus,
+.bord-slate-radio1:checked ~ .bord-slate-relay .bord-slate-target1,
+.bord-slate-radio2:checked ~ .bord-slate-relay .bord-slate-target2,
+.bord-slate-radio3:checked ~ .bord-slate-relay .bord-slate-target3,
+.bord-slate-radio4:checked ~ .bord-slate-relay .bord-slate-target4,
+.bord-slate-radio5:checked ~ .bord-slate-relay .bord-slate-target5,
+.bord-slate-check:checked ~ .bord-slate-hub .bord-slate-goal {
+  border-color: var(--slate);
+}
+
+.bord-gray,
+.bord-gray-global > *,
+.bord-gray-onto:hover,
+.bord-gray-onto:focus,
+*:hover > .bord-gray-into,
+*:focus > .bord-gray-into,
+.bord-gray-toall:hover > *,
+.bord-gray-toall:focus > *,
+.bord-gray-toone > *:hover,
+.bord-gray-toone > *:focus,
+.bord-gray-radio1:checked ~ .bord-gray-relay .bord-gray-target1,
+.bord-gray-radio2:checked ~ .bord-gray-relay .bord-gray-target2,
+.bord-gray-radio3:checked ~ .bord-gray-relay .bord-gray-target3,
+.bord-gray-radio4:checked ~ .bord-gray-relay .bord-gray-target4,
+.bord-gray-radio5:checked ~ .bord-gray-relay .bord-gray-target5,
+.bord-gray-check:checked ~ .bord-gray-hub .bord-gray-goal {
+  border-color: var(--gray);
+}
+
+.bord-silver,
+.bord-silver-global > *,
+.bord-silver-onto:hover,
+.bord-silver-onto:focus,
+*:hover > .bord-silver-into,
+*:focus > .bord-silver-into,
+.bord-silver-toall:hover > *,
+.bord-silver-toall:focus > *,
+.bord-silver-toone > *:hover,
+.bord-silver-toone > *:focus,
+.bord-silver-radio1:checked ~ .bord-silver-relay .bord-silver-target1,
+.bord-silver-radio2:checked ~ .bord-silver-relay .bord-silver-target2,
+.bord-silver-radio3:checked ~ .bord-silver-relay .bord-silver-target3,
+.bord-silver-radio4:checked ~ .bord-silver-relay .bord-silver-target4,
+.bord-silver-radio5:checked ~ .bord-silver-relay .bord-silver-target5,
+.bord-silver-check:checked ~ .bord-silver-hub .bord-silver-goal {
+  border-color: var(--silver);
+}
+
+.bord-white,
+.bord-white-global > *,
+.bord-white-onto:hover,
+.bord-white-onto:focus,
+*:hover > .bord-white-into,
+*:focus > .bord-white-into,
+.bord-white-toall:hover > *,
+.bord-white-toall:focus > *,
+.bord-white-toone > *:hover,
+.bord-white-toone > *:focus,
+.bord-white-radio1:checked ~ .bord-white-relay .bord-white-target1,
+.bord-white-radio2:checked ~ .bord-white-relay .bord-white-target2,
+.bord-white-radio3:checked ~ .bord-white-relay .bord-white-target3,
+.bord-white-radio4:checked ~ .bord-white-relay .bord-white-target4,
+.bord-white-radio5:checked ~ .bord-white-relay .bord-white-target5,
+.bord-white-check:checked ~ .bord-white-hub .bord-white-goal {
+  border-color: var(--white);
+}
+
+.bord-magenta,
+.bord-magenta-global > *,
+.bord-magenta-onto:hover,
+.bord-magenta-onto:focus,
+*:hover > .bord-magenta-into,
+*:focus > .bord-magenta-into,
+.bord-magenta-toall:hover > *,
+.bord-magenta-toall:focus > *,
+.bord-magenta-toone > *:hover,
+.bord-magenta-toone > *:focus,
+.bord-magenta-radio1:checked ~ .bord-magenta-relay .bord-magenta-target1,
+.bord-magenta-radio2:checked ~ .bord-magenta-relay .bord-magenta-target2,
+.bord-magenta-radio3:checked ~ .bord-magenta-relay .bord-magenta-target3,
+.bord-magenta-radio4:checked ~ .bord-magenta-relay .bord-magenta-target4,
+.bord-magenta-radio5:checked ~ .bord-magenta-relay .bord-magenta-target5,
+.bord-magenta-check:checked ~ .bord-magenta-hub .bord-magenta-goal {
+  border-color: var(--magenta);
+}
+
+.bord-red,
+.bord-red-global > *,
+.bord-red-onto:hover,
+.bord-red-onto:focus,
+*:hover > .bord-red-into,
+*:focus > .bord-red-into,
+.bord-red-toall:hover > *,
+.bord-red-toall:focus > *,
+.bord-red-toone > *:hover,
+.bord-red-toone > *:focus,
+.bord-red-radio1:checked ~ .bord-red-relay .bord-red-target1,
+.bord-red-radio2:checked ~ .bord-red-relay .bord-red-target2,
+.bord-red-radio3:checked ~ .bord-red-relay .bord-red-target3,
+.bord-red-radio4:checked ~ .bord-red-relay .bord-red-target4,
+.bord-red-radio5:checked ~ .bord-red-relay .bord-red-target5,
+.bord-red-check:checked ~ .bord-red-hub .bord-red-goal {
+  border-color: var(--red);
+}
+
+.bord-orange,
+.bord-orange-global > *,
+.bord-orange-onto:hover,
+.bord-orange-onto:focus,
+*:hover > .bord-orange-into,
+*:focus > .bord-orange-into,
+.bord-orange-toall:hover > *,
+.bord-orange-toall:focus > *,
+.bord-orange-toone > *:hover,
+.bord-orange-toone > *:focus,
+.bord-orange-radio1:checked ~ .bord-orange-relay .bord-orange-target1,
+.bord-orange-radio2:checked ~ .bord-orange-relay .bord-orange-target2,
+.bord-orange-radio3:checked ~ .bord-orange-relay .bord-orange-target3,
+.bord-orange-radio4:checked ~ .bord-orange-relay .bord-orange-target4,
+.bord-orange-radio5:checked ~ .bord-orange-relay .bord-orange-target5,
+.bord-orange-check:checked ~ .bord-orange-hub .bord-orange-goal {
+  border-color: var(--orange);
+}
+
+.bord-gold,
+.bord-gold-global > *,
+.bord-gold-onto:hover,
+.bord-gold-onto:focus,
+*:hover > .bord-gold-into,
+*:focus > .bord-gold-into,
+.bord-gold-toall:hover > *,
+.bord-gold-toall:focus > *,
+.bord-gold-toone > *:hover,
+.bord-gold-toone > *:focus,
+.bord-gold-radio1:checked ~ .bord-gold-relay .bord-gold-target1,
+.bord-gold-radio2:checked ~ .bord-gold-relay .bord-gold-target2,
+.bord-gold-radio3:checked ~ .bord-gold-relay .bord-gold-target3,
+.bord-gold-radio4:checked ~ .bord-gold-relay .bord-gold-target4,
+.bord-gold-radio5:checked ~ .bord-gold-relay .bord-gold-target5,
+.bord-gold-check:checked ~ .bord-gold-hub .bord-gold-goal {
+  border-color: var(--gold);
+}
+
+.bord-maroon,
+.bord-maroon-global > *,
+.bord-maroon-onto:hover,
+.bord-maroon-onto:focus,
+*:hover > .bord-maroon-into,
+*:focus > .bord-maroon-into,
+.bord-maroon-toall:hover > *,
+.bord-maroon-toall:focus > *,
+.bord-maroon-toone > *:hover,
+.bord-maroon-toone > *:focus,
+.bord-maroon-radio1:checked ~ .bord-maroon-relay .bord-maroon-target1,
+.bord-maroon-radio2:checked ~ .bord-maroon-relay .bord-maroon-target2,
+.bord-maroon-radio3:checked ~ .bord-maroon-relay .bord-maroon-target3,
+.bord-maroon-radio4:checked ~ .bord-maroon-relay .bord-maroon-target4,
+.bord-maroon-radio5:checked ~ .bord-maroon-relay .bord-maroon-target5,
+.bord-maroon-check:checked ~ .bord-maroon-hub .bord-maroon-goal {
+  border-color: var(--maroon);
+}
+
+.bord-green,
+.bord-green-global > *,
+.bord-green-onto:hover,
+.bord-green-onto:focus,
+*:hover > .bord-green-into,
+*:focus > .bord-green-into,
+.bord-green-toall:hover > *,
+.bord-green-toall:focus > *,
+.bord-green-toone > *:hover,
+.bord-green-toone > *:focus,
+.bord-green-radio1:checked ~ .bord-green-relay .bord-green-target1,
+.bord-green-radio2:checked ~ .bord-green-relay .bord-green-target2,
+.bord-green-radio3:checked ~ .bord-green-relay .bord-green-target3,
+.bord-green-radio4:checked ~ .bord-green-relay .bord-green-target4,
+.bord-green-radio5:checked ~ .bord-green-relay .bord-green-target5,
+.bord-green-check:checked ~ .bord-green-hub .bord-green-goal {
+  border-color: var(--green);
+}
+
+.bord-blue,
+.bord-blue-global > *,
+.bord-blue-onto:hover,
+.bord-blue-onto:focus,
+*:hover > .bord-blue-into,
+*:focus > .bord-blue-into,
+.bord-blue-toall:hover > *,
+.bord-blue-toall:focus > *,
+.bord-blue-toone > *:hover,
+.bord-blue-toone > *:focus,
+.bord-blue-radio1:checked ~ .bord-blue-relay .bord-blue-target1,
+.bord-blue-radio2:checked ~ .bord-blue-relay .bord-blue-target2,
+.bord-blue-radio3:checked ~ .bord-blue-relay .bord-blue-target3,
+.bord-blue-radio4:checked ~ .bord-blue-relay .bord-blue-target4,
+.bord-blue-radio5:checked ~ .bord-blue-relay .bord-blue-target5,
+.bord-blue-check:checked ~ .bord-blue-hub .bord-blue-goal {
+  border-color: var(--blue);
+}
+
+.bord-navy,
+.bord-navy-global > *,
+.bord-navy-onto:hover,
+.bord-navy-onto:focus,
+*:hover > .bord-navy-into,
+*:focus > .bord-navy-into,
+.bord-navy-toall:hover > *,
+.bord-navy-toall:focus > *,
+.bord-navy-toone > *:hover,
+.bord-navy-toone > *:focus,
+.bord-navy-radio1:checked ~ .bord-navy-relay .bord-navy-target1,
+.bord-navy-radio2:checked ~ .bord-navy-relay .bord-navy-target2,
+.bord-navy-radio3:checked ~ .bord-navy-relay .bord-navy-target3,
+.bord-navy-radio4:checked ~ .bord-navy-relay .bord-navy-target4,
+.bord-navy-radio5:checked ~ .bord-navy-relay .bord-navy-target5,
+.bord-navy-check:checked ~ .bord-navy-hub .bord-navy-goal {
+  border-color: var(--navy);
+}
+
+.bord-purple,
+.bord-purple-global > *,
+.bord-purple-onto:hover,
+.bord-purple-onto:focus,
+*:hover > .bord-purple-into,
+*:focus > .bord-purple-into,
+.bord-purple-toall:hover > *,
+.bord-purple-toall:focus > *,
+.bord-purple-toone > *:hover,
+.bord-purple-toone > *:focus,
+.bord-purple-radio1:checked ~ .bord-purple-relay .bord-purple-target1,
+.bord-purple-radio2:checked ~ .bord-purple-relay .bord-purple-target2,
+.bord-purple-radio3:checked ~ .bord-purple-relay .bord-purple-target3,
+.bord-purple-radio4:checked ~ .bord-purple-relay .bord-purple-target4,
+.bord-purple-radio5:checked ~ .bord-purple-relay .bord-purple-target5,
+.bord-purple-check:checked ~ .bord-purple-hub .bord-purple-goal {
+  border-color: var(--purple);
+}
+
+.bord-pink,
+.bord-pink-global > *,
+.bord-pink-onto:hover,
+.bord-pink-onto:focus,
+*:hover > .bord-pink-into,
+*:focus > .bord-pink-into,
+.bord-pink-toall:hover > *,
+.bord-pink-toall:focus > *,
+.bord-pink-toone > *:hover,
+.bord-pink-toone > *:focus,
+.bord-pink-radio1:checked ~ .bord-pink-relay .bord-pink-target1,
+.bord-pink-radio2:checked ~ .bord-pink-relay .bord-pink-target2,
+.bord-pink-radio3:checked ~ .bord-pink-relay .bord-pink-target3,
+.bord-pink-radio4:checked ~ .bord-pink-relay .bord-pink-target4,
+.bord-pink-radio5:checked ~ .bord-pink-relay .bord-pink-target5,
+.bord-pink-check:checked ~ .bord-pink-hub .bord-pink-goal {
+  border-color: var(--pink);
+}
+
+.bord-tomato,
+.bord-tomato-global > *,
+.bord-tomato-onto:hover,
+.bord-tomato-onto:focus,
+*:hover > .bord-tomato-into,
+*:focus > .bord-tomato-into,
+.bord-tomato-toall:hover > *,
+.bord-tomato-toall:focus > *,
+.bord-tomato-toone > *:hover,
+.bord-tomato-toone > *:focus,
+.bord-tomato-radio1:checked ~ .bord-tomato-relay .bord-tomato-target1,
+.bord-tomato-radio2:checked ~ .bord-tomato-relay .bord-tomato-target2,
+.bord-tomato-radio3:checked ~ .bord-tomato-relay .bord-tomato-target3,
+.bord-tomato-radio4:checked ~ .bord-tomato-relay .bord-tomato-target4,
+.bord-tomato-radio5:checked ~ .bord-tomato-relay .bord-tomato-target5,
+.bord-tomato-check:checked ~ .bord-tomato-hub .bord-tomato-goal {
+  border-color: var(--tomato);
+}
+
+.bord-coral,
+.bord-coral-global > *,
+.bord-coral-onto:hover,
+.bord-coral-onto:focus,
+*:hover > .bord-coral-into,
+*:focus > .bord-coral-into,
+.bord-coral-toall:hover > *,
+.bord-coral-toall:focus > *,
+.bord-coral-toone > *:hover,
+.bord-coral-toone > *:focus,
+.bord-coral-radio1:checked ~ .bord-coral-relay .bord-coral-target1,
+.bord-coral-radio2:checked ~ .bord-coral-relay .bord-coral-target2,
+.bord-coral-radio3:checked ~ .bord-coral-relay .bord-coral-target3,
+.bord-coral-radio4:checked ~ .bord-coral-relay .bord-coral-target4,
+.bord-coral-radio5:checked ~ .bord-coral-relay .bord-coral-target5,
+.bord-coral-check:checked ~ .bord-coral-hub .bord-coral-goal {
+  border-color: var(--coral);
+}
+
+.bord-yellow,
+.bord-yellow-global > *,
+.bord-yellow-onto:hover,
+.bord-yellow-onto:focus,
+*:hover > .bord-yellow-into,
+*:focus > .bord-yellow-into,
+.bord-yellow-toall:hover > *,
+.bord-yellow-toall:focus > *,
+.bord-yellow-toone > *:hover,
+.bord-yellow-toone > *:focus,
+.bord-yellow-radio1:checked ~ .bord-yellow-relay .bord-yellow-target1,
+.bord-yellow-radio2:checked ~ .bord-yellow-relay .bord-yellow-target2,
+.bord-yellow-radio3:checked ~ .bord-yellow-relay .bord-yellow-target3,
+.bord-yellow-radio4:checked ~ .bord-yellow-relay .bord-yellow-target4,
+.bord-yellow-radio5:checked ~ .bord-yellow-relay .bord-yellow-target5,
+.bord-yellow-check:checked ~ .bord-yellow-hub .bord-yellow-goal {
+  border-color: var(--yellow);
+}
+
+.bord-brown,
+.bord-brown-global > *,
+.bord-brown-onto:hover,
+.bord-brown-onto:focus,
+*:hover > .bord-brown-into,
+*:focus > .bord-brown-into,
+.bord-brown-toall:hover > *,
+.bord-brown-toall:focus > *,
+.bord-brown-toone > *:hover,
+.bord-brown-toone > *:focus,
+.bord-brown-radio1:checked ~ .bord-brown-relay .bord-brown-target1,
+.bord-brown-radio2:checked ~ .bord-brown-relay .bord-brown-target2,
+.bord-brown-radio3:checked ~ .bord-brown-relay .bord-brown-target3,
+.bord-brown-radio4:checked ~ .bord-brown-relay .bord-brown-target4,
+.bord-brown-radio5:checked ~ .bord-brown-relay .bord-brown-target5,
+.bord-brown-check:checked ~ .bord-brown-hub .bord-brown-goal {
+  border-color: var(--brown);
+}
+
+.bord-aqua,
+.bord-aqua-global > *,
+.bord-aqua-onto:hover,
+.bord-aqua-onto:focus,
+*:hover > .bord-aqua-into,
+*:focus > .bord-aqua-into,
+.bord-aqua-toall:hover > *,
+.bord-aqua-toall:focus > *,
+.bord-aqua-toone > *:hover,
+.bord-aqua-toone > *:focus,
+.bord-aqua-radio1:checked ~ .bord-aqua-relay .bord-aqua-target1,
+.bord-aqua-radio2:checked ~ .bord-aqua-relay .bord-aqua-target2,
+.bord-aqua-radio3:checked ~ .bord-aqua-relay .bord-aqua-target3,
+.bord-aqua-radio4:checked ~ .bord-aqua-relay .bord-aqua-target4,
+.bord-aqua-radio5:checked ~ .bord-aqua-relay .bord-aqua-target5,
+.bord-aqua-check:checked ~ .bord-aqua-hub .bord-aqua-goal {
+  border-color: var(--aqua);
+}
+
+.bord-cyan,
+.bord-cyan-global > *,
+.bord-cyan-onto:hover,
+.bord-cyan-onto:focus,
+*:hover > .bord-cyan-into,
+*:focus > .bord-cyan-into,
+.bord-cyan-toall:hover > *,
+.bord-cyan-toall:focus > *,
+.bord-cyan-toone > *:hover,
+.bord-cyan-toone > *:focus,
+.bord-cyan-radio1:checked ~ .bord-cyan-relay .bord-cyan-target1,
+.bord-cyan-radio2:checked ~ .bord-cyan-relay .bord-cyan-target2,
+.bord-cyan-radio3:checked ~ .bord-cyan-relay .bord-cyan-target3,
+.bord-cyan-radio4:checked ~ .bord-cyan-relay .bord-cyan-target4,
+.bord-cyan-radio5:checked ~ .bord-cyan-relay .bord-cyan-target5,
+.bord-cyan-check:checked ~ .bord-cyan-hub .bord-cyan-goal {
+  border-color: var(--cyan);
+}
+
+.bord-sky,
+.bord-sky-global > *,
+.bord-sky-onto:hover,
+.bord-sky-onto:focus,
+*:hover > .bord-sky-into,
+*:focus > .bord-sky-into,
+.bord-sky-toall:hover > *,
+.bord-sky-toall:focus > *,
+.bord-sky-toone > *:hover,
+.bord-sky-toone > *:focus,
+.bord-sky-radio1:checked ~ .bord-sky-relay .bord-sky-target1,
+.bord-sky-radio2:checked ~ .bord-sky-relay .bord-sky-target2,
+.bord-sky-radio3:checked ~ .bord-sky-relay .bord-sky-target3,
+.bord-sky-radio4:checked ~ .bord-sky-relay .bord-sky-target4,
+.bord-sky-radio5:checked ~ .bord-sky-relay .bord-sky-target5,
+.bord-sky-check:checked ~ .bord-sky-hub .bord-sky-goal {
+  border-color: var(--sky);
+}
+
+.bord-violet,
+.bord-violet-global > *,
+.bord-violet-onto:hover,
+.bord-violet-onto:focus,
+*:hover > .bord-violet-into,
+*:focus > .bord-violet-into,
+.bord-violet-toall:hover > *,
+.bord-violet-toall:focus > *,
+.bord-violet-toone > *:hover,
+.bord-violet-toone > *:focus,
+.bord-violet-radio1:checked ~ .bord-violet-relay .bord-violet-target1,
+.bord-violet-radio2:checked ~ .bord-violet-relay .bord-violet-target2,
+.bord-violet-radio3:checked ~ .bord-violet-relay .bord-violet-target3,
+.bord-violet-radio4:checked ~ .bord-violet-relay .bord-violet-target4,
+.bord-violet-radio5:checked ~ .bord-violet-relay .bord-violet-target5,
+.bord-violet-check:checked ~ .bord-violet-hub .bord-violet-goal {
+  border-color: var(--violet);
+}
+
+/***** States : Variables : Padding *****/
+[class*=pad-] {
+  --padding-none: 0;
+  --padding-sm: 10px;
+  --padding-md: 20px;
+  --padding-lg: 50px;
+  --padding-top-sm: 10px;
+  --padding-top-md: 20px;
+  --padding-top-lg: 50px;
+  --padding-right-sm: 10px;
+  --padding-right-md: 20px;
+  --padding-right-lg: 50px;
+  --padding-bot-sm: 10px;
+  --padding-bot-md: 20px;
+  --padding-bot-lg: 50px;
+  --padding-left-sm: 10px;
+  --padding-left-md: 20px;
+  --padding-left-lg: 50px;
+}
+
+/***** States : Classes : Padding *****/
+.pad-none,
+.pad-none-global > *,
+.pad-none-onto:hover,
+.pad-none-onto:focus,
+*:hover > .pad-none-into,
+*:focus > .pad-none-into,
+.pad-none-toall:hover > *,
+.pad-none-toall:focus > *,
+.pad-none-toone > *:hover,
+.pad-none-toone > *:focus,
+.pad-none-radio1:checked ~ .pad-none-relay .pad-none-target1,
+.pad-none-radio2:checked ~ .pad-none-relay .pad-none-target2,
+.pad-none-radio3:checked ~ .pad-none-relay .pad-none-target3,
+.pad-none-radio4:checked ~ .pad-none-relay .pad-none-target4,
+.pad-none-radio5:checked ~ .pad-none-relay .pad-none-target5,
+.pad-none-check:checked ~ .pad-none-hub .pad-none-goal {
+  padding: var(--padding-none);
+}
+
+.pad-top-none,
+.pad-top-none-global > *,
+.pad-top-none-onto:hover,
+.pad-top-none-onto:focus,
+*:hover > .pad-top-none-into,
+*:focus > .pad-top-none-into,
+.pad-top-none-toall:hover > *,
+.pad-top-none-toall:focus > *,
+.pad-top-none-toone > *:hover,
+.pad-top-none-toone > *:focus,
+.pad-top-none-radio1:checked ~ .pad-top-none-relay .pad-top-none-target1,
+.pad-top-none-radio2:checked ~ .pad-top-none-relay .pad-top-none-target2,
+.pad-top-none-radio3:checked ~ .pad-top-none-relay .pad-top-none-target3,
+.pad-top-none-radio4:checked ~ .pad-top-none-relay .pad-top-none-target4,
+.pad-top-none-radio5:checked ~ .pad-top-none-relay .pad-top-none-target5,
+.pad-top-none-check:checked ~ .pad-top-none-hub .pad-top-none-goal {
+  padding-top: var(--padding-none);
+}
+
+.pad-right-none,
+.pad-right-none-global > *,
+.pad-right-none-onto:hover,
+.pad-right-none-onto:focus,
+*:hover > .pad-right-none-into,
+*:focus > .pad-right-none-into,
+.pad-right-none-toall:hover > *,
+.pad-right-none-toall:focus > *,
+.pad-right-none-toone > *:hover,
+.pad-right-none-toone > *:focus,
+.pad-right-none-radio1:checked ~ .pad-right-none-relay .pad-right-none-target1,
+.pad-right-none-radio2:checked ~ .pad-right-none-relay .pad-right-none-target2,
+.pad-right-none-radio3:checked ~ .pad-right-none-relay .pad-right-none-target3,
+.pad-right-none-radio4:checked ~ .pad-right-none-relay .pad-right-none-target4,
+.pad-right-none-radio5:checked ~ .pad-right-none-relay .pad-right-none-target5,
+.pad-right-none-check:checked ~ .pad-right-none-hub .pad-right-none-goal {
+  padding-right: var(--padding-none);
+}
+
+.pad-bottom-none,
+.pad-bottom-none-global > *,
+.pad-bottom-none-onto:hover,
+.pad-bottom-none-onto:focus,
+*:hover > .pad-bottom-none-into,
+*:focus > .pad-bottom-none-into,
+.pad-bottom-none-toall:hover > *,
+.pad-bottom-none-toall:focus > *,
+.pad-bottom-none-toone > *:hover,
+.pad-bottom-none-toone > *:focus,
+.pad-bottom-none-radio1:checked ~ .pad-bottom-none-relay .pad-bottom-none-target1,
+.pad-bottom-none-radio2:checked ~ .pad-bottom-none-relay .pad-bottom-none-target2,
+.pad-bottom-none-radio3:checked ~ .pad-bottom-none-relay .pad-bottom-none-target3,
+.pad-bottom-none-radio4:checked ~ .pad-bottom-none-relay .pad-bottom-none-target4,
+.pad-bottom-none-radio5:checked ~ .pad-bottom-none-relay .pad-bottom-none-target5,
+.pad-bottom-none-check:checked ~ .pad-bottom-none-hub .pad-bottom-none-goal {
+  padding-bottom: var(--padding-none);
+}
+
+.pad-left-none,
+.pad-left-none-global > *,
+.pad-left-none-onto:hover,
+.pad-left-none-onto:focus,
+*:hover > .pad-left-none-into,
+*:focus > .pad-left-none-into,
+.pad-left-none-toall:hover > *,
+.pad-left-none-toall:focus > *,
+.pad-left-none-toone > *:hover,
+.pad-left-none-toone > *:focus,
+.pad-left-none-radio1:checked ~ .pad-left-none-relay .pad-left-none-target1,
+.pad-left-none-radio2:checked ~ .pad-left-none-relay .pad-left-none-target2,
+.pad-left-none-radio3:checked ~ .pad-left-none-relay .pad-left-none-target3,
+.pad-left-none-radio4:checked ~ .pad-left-none-relay .pad-left-none-target4,
+.pad-left-none-radio5:checked ~ .pad-left-none-relay .pad-left-none-target5,
+.pad-left-none-check:checked ~ .pad-left-none-hub .pad-left-none-goal {
+  padding-left: var(--padding-none);
+}
+
+.pad-sm,
+.pad-sm-global > *,
+.pad-sm-onto:hover,
+.pad-sm-onto:focus,
+*:hover > .pad-sm-into,
+*:focus > .pad-sm-into,
+.pad-sm-toall:hover > *,
+.pad-sm-toall:focus > *,
+.pad-sm-toone > *:hover,
+.pad-sm-toone > *:focus,
+.pad-sm-radio1:checked ~ .pad-sm-relay .pad-sm-target1,
+.pad-sm-radio2:checked ~ .pad-sm-relay .pad-sm-target2,
+.pad-sm-radio3:checked ~ .pad-sm-relay .pad-sm-target3,
+.pad-sm-radio4:checked ~ .pad-sm-relay .pad-sm-target4,
+.pad-sm-radio5:checked ~ .pad-sm-relay .pad-sm-target5,
+.pad-sm-check:checked ~ .pad-sm-hub .pad-sm-goal {
+  padding: var(--padding-sm);
+}
+
+.pad-md,
+.pad-md-global > *,
+.pad-md-onto:hover,
+.pad-md-onto:focus,
+*:hover > .pad-md-into,
+*:focus > .pad-md-into,
+.pad-md-toall:hover > *,
+.pad-md-toall:focus > *,
+.pad-md-toone > *:hover,
+.pad-md-toone > *:focus,
+.pad-md-radio1:checked ~ .pad-md-relay .pad-md-target1,
+.pad-md-radio2:checked ~ .pad-md-relay .pad-md-target2,
+.pad-md-radio3:checked ~ .pad-md-relay .pad-md-target3,
+.pad-md-radio4:checked ~ .pad-md-relay .pad-md-target4,
+.pad-md-radio5:checked ~ .pad-md-relay .pad-md-target5,
+.pad-md-check:checked ~ .pad-md-hub .pad-md-goal {
+  padding: var(--padding-md);
+}
+
+.pad-lg,
+.pad-lg-global > *,
+.pad-lg-onto:hover,
+.pad-lg-onto:focus,
+*:hover > .pad-lg-into,
+*:focus > .pad-lg-into,
+.pad-lg-toall:hover > *,
+.pad-lg-toall:focus > *,
+.pad-lg-toone > *:hover,
+.pad-lg-toone > *:focus,
+.pad-lg-radio1:checked ~ .pad-lg-relay .pad-lg-target1,
+.pad-lg-radio2:checked ~ .pad-lg-relay .pad-lg-target2,
+.pad-lg-radio3:checked ~ .pad-lg-relay .pad-lg-target3,
+.pad-lg-radio4:checked ~ .pad-lg-relay .pad-lg-target4,
+.pad-lg-radio5:checked ~ .pad-lg-relay .pad-lg-target5,
+.pad-lg-check:checked ~ .pad-lg-hub .pad-lg-goal {
+  padding: var(--padding-lg);
+}
+
+.pad-top-sm,
+.pad-top-sm-global > *,
+.pad-top-sm-onto:hover,
+.pad-top-sm-onto:focus,
+*:hover > .pad-top-sm-into,
+*:focus > .pad-top-sm-into,
+.pad-top-sm-toall:hover > *,
+.pad-top-sm-toall:focus > *,
+.pad-top-sm-toone > *:hover,
+.pad-top-sm-toone > *:focus,
+.pad-top-sm-radio1:checked ~ .pad-top-sm-relay .pad-top-sm-target1,
+.pad-top-sm-radio2:checked ~ .pad-top-sm-relay .pad-top-sm-target2,
+.pad-top-sm-radio3:checked ~ .pad-top-sm-relay .pad-top-sm-target3,
+.pad-top-sm-radio4:checked ~ .pad-top-sm-relay .pad-top-sm-target4,
+.pad-top-sm-radio5:checked ~ .pad-top-sm-relay .pad-top-sm-target5,
+.pad-top-sm-check:checked ~ .pad-top-sm-hub .pad-top-sm-goal {
+  padding-top: var(--padding-top-sm);
+}
+
+.pad-top-md,
+.pad-top-md-global > *,
+.pad-top-md-onto:hover,
+.pad-top-md-onto:focus,
+*:hover > .pad-top-md-into,
+*:focus > .pad-top-md-into,
+.pad-top-md-toall:hover > *,
+.pad-top-md-toall:focus > *,
+.pad-top-md-toone > *:hover,
+.pad-top-md-toone > *:focus,
+.pad-top-md-radio1:checked ~ .pad-top-md-relay .pad-top-md-target1,
+.pad-top-md-radio2:checked ~ .pad-top-md-relay .pad-top-md-target2,
+.pad-top-md-radio3:checked ~ .pad-top-md-relay .pad-top-md-target3,
+.pad-top-md-radio4:checked ~ .pad-top-md-relay .pad-top-md-target4,
+.pad-top-md-radio5:checked ~ .pad-top-md-relay .pad-top-md-target5,
+.pad-top-md-check:checked ~ .pad-top-md-hub .pad-top-md-goal {
+  padding-top: var(--padding-top-md);
+}
+
+.pad-top-lg,
+.pad-top-lg-global > *,
+.pad-top-lg-onto:hover,
+.pad-top-lg-onto:focus,
+*:hover > .pad-top-lg-into,
+*:focus > .pad-top-lg-into,
+.pad-top-lg-toall:hover > *,
+.pad-top-lg-toall:focus > *,
+.pad-top-lg-toone > *:hover,
+.pad-top-lg-toone > *:focus,
+.pad-top-lg-radio1:checked ~ .pad-top-lg-relay .pad-top-lg-target1,
+.pad-top-lg-radio2:checked ~ .pad-top-lg-relay .pad-top-lg-target2,
+.pad-top-lg-radio3:checked ~ .pad-top-lg-relay .pad-top-lg-target3,
+.pad-top-lg-radio4:checked ~ .pad-top-lg-relay .pad-top-lg-target4,
+.pad-top-lg-radio5:checked ~ .pad-top-lg-relay .pad-top-lg-target5,
+.pad-top-lg-check:checked ~ .pad-top-lg-hub .pad-top-lg-goal {
+  padding-top: var(--padding-top-lg);
+}
+
+.pad-right-sm,
+.pad-right-sm-global > *,
+.pad-right-sm-onto:hover,
+.pad-right-sm-onto:focus,
+*:hover > .pad-right-sm-into,
+*:focus > .pad-right-sm-into,
+.pad-right-sm-toall:hover > *,
+.pad-right-sm-toall:focus > *,
+.pad-right-sm-toone > *:hover,
+.pad-right-sm-toone > *:focus,
+.pad-right-sm-radio1:checked ~ .pad-right-sm-relay .pad-right-sm-target1,
+.pad-right-sm-radio2:checked ~ .pad-right-sm-relay .pad-right-sm-target2,
+.pad-right-sm-radio3:checked ~ .pad-right-sm-relay .pad-right-sm-target3,
+.pad-right-sm-radio4:checked ~ .pad-right-sm-relay .pad-right-sm-target4,
+.pad-right-sm-radio5:checked ~ .pad-right-sm-relay .pad-right-sm-target5,
+.pad-right-sm-check:checked ~ .pad-right-sm-hub .pad-right-sm-goal {
+  padding-right: var(--padding-right-sm);
+}
+
+.pad-right-md,
+.pad-right-md-global > *,
+.pad-right-md-onto:hover,
+.pad-right-md-onto:focus,
+*:hover > .pad-right-md-into,
+*:focus > .pad-right-md-into,
+.pad-right-md-toall:hover > *,
+.pad-right-md-toall:focus > *,
+.pad-right-md-toone > *:hover,
+.pad-right-md-toone > *:focus,
+.pad-right-md-radio1:checked ~ .pad-right-md-relay .pad-right-md-target1,
+.pad-right-md-radio2:checked ~ .pad-right-md-relay .pad-right-md-target2,
+.pad-right-md-radio3:checked ~ .pad-right-md-relay .pad-right-md-target3,
+.pad-right-md-radio4:checked ~ .pad-right-md-relay .pad-right-md-target4,
+.pad-right-md-radio5:checked ~ .pad-right-md-relay .pad-right-md-target5,
+.pad-right-md-check:checked ~ .pad-right-md-hub .pad-right-md-goal {
+  padding-right: var(--padding-right-md);
+}
+
+.pad-right-lg,
+.pad-right-lg-global > *,
+.pad-right-lg-onto:hover,
+.pad-right-lg-onto:focus,
+*:hover > .pad-right-lg-into,
+*:focus > .pad-right-lg-into,
+.pad-right-lg-toall:hover > *,
+.pad-right-lg-toall:focus > *,
+.pad-right-lg-toone > *:hover,
+.pad-right-lg-toone > *:focus,
+.pad-right-lg-radio1:checked ~ .pad-right-lg-relay .pad-right-lg-target1,
+.pad-right-lg-radio2:checked ~ .pad-right-lg-relay .pad-right-lg-target2,
+.pad-right-lg-radio3:checked ~ .pad-right-lg-relay .pad-right-lg-target3,
+.pad-right-lg-radio4:checked ~ .pad-right-lg-relay .pad-right-lg-target4,
+.pad-right-lg-radio5:checked ~ .pad-right-lg-relay .pad-right-lg-target5,
+.pad-right-lg-check:checked ~ .pad-right-lg-hub .pad-right-lg-goal {
+  padding-right: var(--padding-right-lg);
+}
+
+.pad-bot-sm,
+.pad-bot-sm-global > *,
+.pad-bot-sm-onto:hover,
+.pad-bot-sm-onto:focus,
+*:hover > .pad-bot-sm-into,
+*:focus > .pad-bot-sm-into,
+.pad-bot-sm-toall:hover > *,
+.pad-bot-sm-toall:focus > *,
+.pad-bot-sm-toone > *:hover,
+.pad-bot-sm-toone > *:focus,
+.pad-bot-sm-radio1:checked ~ .pad-bot-sm-relay .pad-bot-sm-target1,
+.pad-bot-sm-radio2:checked ~ .pad-bot-sm-relay .pad-bot-sm-target2,
+.pad-bot-sm-radio3:checked ~ .pad-bot-sm-relay .pad-bot-sm-target3,
+.pad-bot-sm-radio4:checked ~ .pad-bot-sm-relay .pad-bot-sm-target4,
+.pad-bot-sm-radio5:checked ~ .pad-bot-sm-relay .pad-bot-sm-target5,
+.pad-bot-sm-check:checked ~ .pad-bot-sm-hub .pad-bot-sm-goal {
+  padding-bottom: var(--padding-bot-sm);
+}
+
+.pad-bot-md,
+.pad-bot-md-global > *,
+.pad-bot-md-onto:hover,
+.pad-bot-md-onto:focus,
+*:hover > .pad-bot-md-into,
+*:focus > .pad-bot-md-into,
+.pad-bot-md-toall:hover > *,
+.pad-bot-md-toall:focus > *,
+.pad-bot-md-toone > *:hover,
+.pad-bot-md-toone > *:focus,
+.pad-bot-md-radio1:checked ~ .pad-bot-md-relay .pad-bot-md-target1,
+.pad-bot-md-radio2:checked ~ .pad-bot-md-relay .pad-bot-md-target2,
+.pad-bot-md-radio3:checked ~ .pad-bot-md-relay .pad-bot-md-target3,
+.pad-bot-md-radio4:checked ~ .pad-bot-md-relay .pad-bot-md-target4,
+.pad-bot-md-radio5:checked ~ .pad-bot-md-relay .pad-bot-md-target5,
+.pad-bot-md-check:checked ~ .pad-bot-md-hub .pad-bot-md-goal {
+  padding-bottom: var(--padding-bot-md);
+}
+
+.pad-bot-lg,
+.pad-bot-lg-global > *,
+.pad-bot-lg-onto:hover,
+.pad-bot-lg-onto:focus,
+*:hover > .pad-bot-lg-into,
+*:focus > .pad-bot-lg-into,
+.pad-bot-lg-toall:hover > *,
+.pad-bot-lg-toall:focus > *,
+.pad-bot-lg-toone > *:hover,
+.pad-bot-lg-toone > *:focus,
+.pad-bot-lg-radio1:checked ~ .pad-bot-lg-relay .pad-bot-lg-target1,
+.pad-bot-lg-radio2:checked ~ .pad-bot-lg-relay .pad-bot-lg-target2,
+.pad-bot-lg-radio3:checked ~ .pad-bot-lg-relay .pad-bot-lg-target3,
+.pad-bot-lg-radio4:checked ~ .pad-bot-lg-relay .pad-bot-lg-target4,
+.pad-bot-lg-radio5:checked ~ .pad-bot-lg-relay .pad-bot-lg-target5,
+.pad-bot-lg-check:checked ~ .pad-bot-lg-hub .pad-bot-lg-goal {
+  padding-bottom: var(--padding-bot-lg);
+}
+
+.pad-left-sm,
+.pad-left-sm-global > *,
+.pad-left-sm-onto:hover,
+.pad-left-sm-onto:focus,
+*:hover > .pad-left-sm-into,
+*:focus > .pad-left-sm-into,
+.pad-left-sm-toall:hover > *,
+.pad-left-sm-toall:focus > *,
+.pad-left-sm-toone > *:hover,
+.pad-left-sm-toone > *:focus,
+.pad-left-sm-radio1:checked ~ .pad-left-sm-relay .pad-left-sm-target1,
+.pad-left-sm-radio2:checked ~ .pad-left-sm-relay .pad-left-sm-target2,
+.pad-left-sm-radio3:checked ~ .pad-left-sm-relay .pad-left-sm-target3,
+.pad-left-sm-radio4:checked ~ .pad-left-sm-relay .pad-left-sm-target4,
+.pad-left-sm-radio5:checked ~ .pad-left-sm-relay .pad-left-sm-target5,
+.pad-left-sm-check:checked ~ .pad-left-sm-hub .pad-left-sm-goal {
+  padding-left: var(--padding-left-sm);
+}
+
+.pad-left-md,
+.pad-left-md-global > *,
+.pad-left-md-onto:hover,
+.pad-left-md-onto:focus,
+*:hover > .pad-left-md-into,
+*:focus > .pad-left-md-into,
+.pad-left-md-toall:hover > *,
+.pad-left-md-toall:focus > *,
+.pad-left-md-toone > *:hover,
+.pad-left-md-toone > *:focus,
+.pad-left-md-radio1:checked ~ .pad-left-md-relay .pad-left-md-target1,
+.pad-left-md-radio2:checked ~ .pad-left-md-relay .pad-left-md-target2,
+.pad-left-md-radio3:checked ~ .pad-left-md-relay .pad-left-md-target3,
+.pad-left-md-radio4:checked ~ .pad-left-md-relay .pad-left-md-target4,
+.pad-left-md-radio5:checked ~ .pad-left-md-relay .pad-left-md-target5,
+.pad-left-md-check:checked ~ .pad-left-md-hub .pad-left-md-goal {
+  padding-left: var(--padding-left-md);
+}
+
+.pad-left-lg,
+.pad-left-lg-global > *,
+.pad-left-lg-onto:hover,
+.pad-left-lg-onto:focus,
+*:hover > .pad-left-lg-into,
+*:focus > .pad-left-lg-into,
+.pad-left-lg-toall:hover > *,
+.pad-left-lg-toall:focus > *,
+.pad-left-lg-toone > *:hover,
+.pad-left-lg-toone > *:focus,
+.pad-left-lg-radio1:checked ~ .pad-left-lg-relay .pad-left-lg-target1,
+.pad-left-lg-radio2:checked ~ .pad-left-lg-relay .pad-left-lg-target2,
+.pad-left-lg-radio3:checked ~ .pad-left-lg-relay .pad-left-lg-target3,
+.pad-left-lg-radio4:checked ~ .pad-left-lg-relay .pad-left-lg-target4,
+.pad-left-lg-radio5:checked ~ .pad-left-lg-relay .pad-left-lg-target5,
+.pad-left-lg-check:checked ~ .pad-left-lg-hub .pad-left-lg-goal {
+  padding-left: var(--padding-left-lg);
+}
+
+/***** States : Variables : Height *****/
+[class*=height-] {
+  --height-sm: 25vh;
+  --height-md: 50vh;
+  --height-lg: 75vh;
+}
+
+[class*=max-h-] {
+  --max-height-sm: 25vh;
+  --max-height-md: 50vh;
+  --max-height-lg: 75vh;
+}
+
+[class*=min-h-] {
+  --min-height-sm: 25vh;
+  --min-height-md: 50vh;
+  --min-height-lg: 75vh;
+}
+
+/***** States : Classes : Height *****/
+/* Height */
+.height-sm,
+.height-sm-global > *,
+.height-sm-onto:hover,
+.height-sm-onto:focus,
+*:hover > .height-sm-into,
+*:focus > .height-sm-into,
+.height-sm-toall:hover > *,
+.height-sm-toall:focus > *,
+.height-sm-toone > *:hover,
+.height-sm-toone > *:focus,
+.height-sm-radio1:checked ~ .height-sm-relay .height-sm-target1,
+.height-sm-radio2:checked ~ .height-sm-relay .height-sm-target2,
+.height-sm-radio3:checked ~ .height-sm-relay .height-sm-target3,
+.height-sm-radio4:checked ~ .height-sm-relay .height-sm-target4,
+.height-sm-radio5:checked ~ .height-sm-relay .height-sm-target5,
+.height-sm-check:checked ~ .height-sm-hub .height-sm-goal {
+  height: var(--height-sm);
+}
+
+.height-md,
+.height-md-global > *,
+.height-md-onto:hover,
+.height-md-onto:focus,
+*:hover > .height-md-into,
+*:focus > .height-md-into,
+.height-md-toall:hover > *,
+.height-md-toall:focus > *,
+.height-md-toone > *:hover,
+.height-md-toone > *:focus,
+.height-md-radio1:checked ~ .height-md-relay .height-md-target1,
+.height-md-radio2:checked ~ .height-md-relay .height-md-target2,
+.height-md-radio3:checked ~ .height-md-relay .height-md-target3,
+.height-md-radio4:checked ~ .height-md-relay .height-md-target4,
+.height-md-radio5:checked ~ .height-md-relay .height-md-target5,
+.height-md-check:checked ~ .height-md-hub .height-md-goal {
+  height: var(--height-md);
+}
+
+.height-lg,
+.height-lg-global > *,
+.height-lg-onto:hover,
+.height-lg-onto:focus,
+*:hover > .height-lg-into,
+*:focus > .height-lg-into,
+.height-lg-toall:hover > *,
+.height-lg-toall:focus > *,
+.height-lg-toone > *:hover,
+.height-lg-toone > *:focus,
+.height-lg-radio1:checked ~ .height-lg-relay .height-lg-target1,
+.height-lg-radio2:checked ~ .height-lg-relay .height-lg-target2,
+.height-lg-radio3:checked ~ .height-lg-relay .height-lg-target3,
+.height-lg-radio4:checked ~ .height-lg-relay .height-lg-target4,
+.height-lg-radio5:checked ~ .height-lg-relay .height-lg-target5,
+.height-lg-check:checked ~ .height-lg-hub .height-lg-goal {
+  height: var(--height-lg);
+}
+
+/* Max-height */
+.max-h-sm,
+.max-h-sm-global > *,
+.max-h-sm-onto:hover,
+.max-h-sm-onto:focus,
+*:hover > .max-h-sm-into,
+*:focus > .max-h-sm-into,
+.max-h-sm-toall:hover > *,
+.max-h-sm-toall:focus > *,
+.max-h-sm-toone > *:hover,
+.max-h-sm-toone > *:focus,
+.max-h-sm-radio1:checked ~ .max-h-sm-relay .max-h-sm-target1,
+.max-h-sm-radio2:checked ~ .max-h-sm-relay .max-h-sm-target2,
+.max-h-sm-radio3:checked ~ .max-h-sm-relay .max-h-sm-target3,
+.max-h-sm-radio4:checked ~ .max-h-sm-relay .max-h-sm-target4,
+.max-h-sm-radio5:checked ~ .max-h-sm-relay .max-h-sm-target5,
+.max-h-sm-check:checked ~ .max-h-sm-hub .max-h-sm-goal {
+  max-height: var(--max-height-sm);
+}
+
+.max-h-md,
+.max-h-md-global > *,
+.max-h-md-onto:hover,
+.max-h-md-onto:focus,
+*:hover > .max-h-md-into,
+*:focus > .max-h-md-into,
+.max-h-md-toall:hover > *,
+.max-h-md-toall:focus > *,
+.max-h-md-toone > *:hover,
+.max-h-md-toone > *:focus,
+.max-h-md-radio1:checked ~ .max-h-md-relay .max-h-md-target1,
+.max-h-md-radio2:checked ~ .max-h-md-relay .max-h-md-target2,
+.max-h-md-radio3:checked ~ .max-h-md-relay .max-h-md-target3,
+.max-h-md-radio4:checked ~ .max-h-md-relay .max-h-md-target4,
+.max-h-md-radio5:checked ~ .max-h-md-relay .max-h-md-target5,
+.max-h-md-check:checked ~ .max-h-md-hub .max-h-md-goal {
+  max-height: var(--max-height-md);
+}
+
+.max-h-lg,
+.max-h-lg-global > *,
+.max-h-lg-onto:hover,
+.max-h-lg-onto:focus,
+*:hover > .max-h-lg-into,
+*:focus > .max-h-lg-into,
+.max-h-lg-toall:hover > *,
+.max-h-lg-toall:focus > *,
+.max-h-lg-toone > *:hover,
+.max-h-lg-toone > *:focus,
+.max-h-lg-radio1:checked ~ .max-h-lg-relay .max-h-lg-target1,
+.max-h-lg-radio2:checked ~ .max-h-lg-relay .max-h-lg-target2,
+.max-h-lg-radio3:checked ~ .max-h-lg-relay .max-h-lg-target3,
+.max-h-lg-radio4:checked ~ .max-h-lg-relay .max-h-lg-target4,
+.max-h-lg-radio5:checked ~ .max-h-lg-relay .max-h-lg-target5,
+.max-h-lg-check:checked ~ .max-h-lg-hub .max-h-lg-goal {
+  max-height: var(--max-height-lg);
+}
+
+/* Min-height */
+.min-h-sm,
+.min-h-sm-global > *,
+.min-h-sm-onto:hover,
+.min-h-sm-onto:focus,
+*:hover > .min-h-sm-into,
+*:focus > .min-h-sm-into,
+.min-h-sm-toall:hover > *,
+.min-h-sm-toall:focus > *,
+.min-h-sm-toone > *:hover,
+.min-h-sm-toone > *:focus,
+.min-h-sm-radio1:checked ~ .min-h-sm-relay .min-h-sm-target1,
+.min-h-sm-radio2:checked ~ .min-h-sm-relay .min-h-sm-target2,
+.min-h-sm-radio3:checked ~ .min-h-sm-relay .min-h-sm-target3,
+.min-h-sm-radio4:checked ~ .min-h-sm-relay .min-h-sm-target4,
+.min-h-sm-radio5:checked ~ .min-h-sm-relay .min-h-sm-target5,
+.min-h-sm-check:checked ~ .min-h-sm-hub .min-h-sm-goal {
+  min-height: var(--min-height-sm);
+}
+
+.min-h-md,
+.min-h-md-global > *,
+.min-h-md-onto:hover,
+.min-h-md-onto:focus,
+*:hover > .min-h-md-into,
+*:focus > .min-h-md-into,
+.min-h-md-toall:hover > *,
+.min-h-md-toall:focus > *,
+.min-h-md-toone > *:hover,
+.min-h-md-toone > *:focus,
+.min-h-md-radio1:checked ~ .min-h-md-relay .min-h-md-target1,
+.min-h-md-radio2:checked ~ .min-h-md-relay .min-h-md-target2,
+.min-h-md-radio3:checked ~ .min-h-md-relay .min-h-md-target3,
+.min-h-md-radio4:checked ~ .min-h-md-relay .min-h-md-target4,
+.min-h-md-radio5:checked ~ .min-h-md-relay .min-h-md-target5,
+.min-h-md-check:checked ~ .min-h-md-hub .min-h-md-goal {
+  min-height: var(--min-height-md);
+}
+
+.min-h-lg,
+.min-h-lg-global > *,
+.min-h-lg-onto:hover,
+.min-h-lg-onto:focus,
+*:hover > .min-h-lg-into,
+*:focus > .min-h-lg-into,
+.min-h-lg-toall:hover > *,
+.min-h-lg-toall:focus > *,
+.min-h-lg-toone > *:hover,
+.min-h-lg-toone > *:focus,
+.min-h-lg-radio1:checked ~ .min-h-lg-relay .min-h-lg-target1,
+.min-h-lg-radio2:checked ~ .min-h-lg-relay .min-h-lg-target2,
+.min-h-lg-radio3:checked ~ .min-h-lg-relay .min-h-lg-target3,
+.min-h-lg-radio4:checked ~ .min-h-lg-relay .min-h-lg-target4,
+.min-h-lg-radio5:checked ~ .min-h-lg-relay .min-h-lg-target5,
+.min-h-lg-check:checked ~ .min-h-lg-hub .min-h-lg-goal {
+  min-height: var(--min-height-lg);
+}
+
+/***** States : Variables : Width *****/
+[class*=width-] {
+  --width-sm: 25vw;
+  --width-md: 50vw;
+  --width-lg: 75vw;
+}
+
+[class*=max-w-] {
+  --max-width-sm: 25vw;
+  --max-width-md: 50vw;
+  --max-width-lg: 75vw;
+}
+
+[class*=min-w-] {
+  --min-width-sm: 25vw;
+  --min-width-md: 50vw;
+  --min-width-lg: 75vw;
+}
+
+/***** States : Classes : Width *****/
+/* Width */
+.width-sm,
+.width-sm-global > *,
+.width-sm-onto:hover,
+.width-sm-onto:focus,
+*:hover > .width-sm-into,
+*:focus > .width-sm-into,
+.width-sm-toall:hover > *,
+.width-sm-toall:focus > *,
+.width-sm-toone > *:hover,
+.width-sm-toone > *:focus,
+.width-sm-radio1:checked ~ .width-sm-relay .width-sm-target1,
+.width-sm-radio2:checked ~ .width-sm-relay .width-sm-target2,
+.width-sm-radio3:checked ~ .width-sm-relay .width-sm-target3,
+.width-sm-radio4:checked ~ .width-sm-relay .width-sm-target4,
+.width-sm-radio5:checked ~ .width-sm-relay .width-sm-target5,
+.width-sm-check:checked ~ .width-sm-hub .width-sm-goal {
+  width: var(--width-sm);
+}
+
+.width-md,
+.width-md-global > *,
+.width-md-onto:hover,
+.width-md-onto:focus,
+*:hover > .width-md-into,
+*:focus > .width-md-into,
+.width-md-toall:hover > *,
+.width-md-toall:focus > *,
+.width-md-toone > *:hover,
+.width-md-toone > *:focus,
+.width-md-radio1:checked ~ .width-md-relay .width-md-target1,
+.width-md-radio2:checked ~ .width-md-relay .width-md-target2,
+.width-md-radio3:checked ~ .width-md-relay .width-md-target3,
+.width-md-radio4:checked ~ .width-md-relay .width-md-target4,
+.width-md-radio5:checked ~ .width-md-relay .width-md-target5,
+.width-md-check:checked ~ .width-md-hub .width-md-goal {
+  width: var(--width-md);
+}
+
+.width-lg,
+.width-lg-global > *,
+.width-lg-onto:hover,
+.width-lg-onto:focus,
+*:hover > .width-lg-into,
+*:focus > .width-lg-into,
+.width-lg-toall:hover > *,
+.width-lg-toall:focus > *,
+.width-lg-toone > *:hover,
+.width-lg-toone > *:focus,
+.width-lg-radio1:checked ~ .width-lg-relay .width-lg-target1,
+.width-lg-radio2:checked ~ .width-lg-relay .width-lg-target2,
+.width-lg-radio3:checked ~ .width-lg-relay .width-lg-target3,
+.width-lg-radio4:checked ~ .width-lg-relay .width-lg-target4,
+.width-lg-radio5:checked ~ .width-lg-relay .width-lg-target5,
+.width-lg-check:checked ~ .width-lg-hub .width-lg-goal {
+  width: var(--width-lg);
+}
+
+/* Max-width */
+.max-w-sm,
+.max-w-sm-global > *,
+.max-w-sm-onto:hover,
+.max-w-sm-onto:focus,
+*:hover > .max-w-sm-into,
+*:focus > .max-w-sm-into,
+.max-w-sm-toall:hover > *,
+.max-w-sm-toall:focus > *,
+.max-w-sm-toone > *:hover,
+.max-w-sm-toone > *:focus,
+.max-w-sm-radio1:checked ~ .max-w-sm-relay .max-w-sm-target1,
+.max-w-sm-radio2:checked ~ .max-w-sm-relay .max-w-sm-target2,
+.max-w-sm-radio3:checked ~ .max-w-sm-relay .max-w-sm-target3,
+.max-w-sm-radio4:checked ~ .max-w-sm-relay .max-w-sm-target4,
+.max-w-sm-radio5:checked ~ .max-w-sm-relay .max-w-sm-target5,
+.max-w-sm-check:checked ~ .max-w-sm-hub .max-w-sm-goal {
+  max-width: var(--max-width-sm);
+}
+
+.max-w-md,
+.max-w-md-global > *,
+.max-w-md-onto:hover,
+.max-w-md-onto:focus,
+*:hover > .max-w-md-into,
+*:focus > .max-w-md-into,
+.max-w-md-toall:hover > *,
+.max-w-md-toall:focus > *,
+.max-w-md-toone > *:hover,
+.max-w-md-toone > *:focus,
+.max-w-md-radio1:checked ~ .max-w-md-relay .max-w-md-target1,
+.max-w-md-radio2:checked ~ .max-w-md-relay .max-w-md-target2,
+.max-w-md-radio3:checked ~ .max-w-md-relay .max-w-md-target3,
+.max-w-md-radio4:checked ~ .max-w-md-relay .max-w-md-target4,
+.max-w-md-radio5:checked ~ .max-w-md-relay .max-w-md-target5,
+.max-w-md-check:checked ~ .max-w-md-hub .max-w-md-goal {
+  max-width: var(--max-width-md);
+}
+
+.max-w-lg,
+.max-w-lg-global > *,
+.max-w-lg-onto:hover,
+.max-w-lg-onto:focus,
+*:hover > .max-w-lg-into,
+*:focus > .max-w-lg-into,
+.max-w-lg-toall:hover > *,
+.max-w-lg-toall:focus > *,
+.max-w-lg-toone > *:hover,
+.max-w-lg-toone > *:focus,
+.max-w-lg-radio1:checked ~ .max-w-lg-relay .max-w-lg-target1,
+.max-w-lg-radio2:checked ~ .max-w-lg-relay .max-w-lg-target2,
+.max-w-lg-radio3:checked ~ .max-w-lg-relay .max-w-lg-target3,
+.max-w-lg-radio4:checked ~ .max-w-lg-relay .max-w-lg-target4,
+.max-w-lg-radio5:checked ~ .max-w-lg-relay .max-w-lg-target5,
+.max-w-lg-check:checked ~ .max-w-lg-hub .max-w-lg-goal {
+  max-width: var(--max-width-lg);
+}
+
+/* Min-width */
+.min-w-sm,
+.min-w-sm-global > *,
+.min-w-sm-onto:hover,
+.min-w-sm-onto:focus,
+*:hover > .min-w-sm-into,
+*:focus > .min-w-sm-into,
+.min-w-sm-toall:hover > *,
+.min-w-sm-toall:focus > *,
+.min-w-sm-toone > *:hover,
+.min-w-sm-toone > *:focus,
+.min-w-sm-radio1:checked ~ .min-w-sm-relay .min-w-sm-target1,
+.min-w-sm-radio2:checked ~ .min-w-sm-relay .min-w-sm-target2,
+.min-w-sm-radio3:checked ~ .min-w-sm-relay .min-w-sm-target3,
+.min-w-sm-radio4:checked ~ .min-w-sm-relay .min-w-sm-target4,
+.min-w-sm-radio5:checked ~ .min-w-sm-relay .min-w-sm-target5,
+.min-w-sm-check:checked ~ .min-w-sm-hub .min-w-sm-goal {
+  min-width: var(--min-width-sm);
+}
+
+.min-w-md,
+.min-w-md-global > *,
+.min-w-md-onto:hover,
+.min-w-md-onto:focus,
+*:hover > .min-w-md-into,
+*:focus > .min-w-md-into,
+.min-w-md-toall:hover > *,
+.min-w-md-toall:focus > *,
+.min-w-md-toone > *:hover,
+.min-w-md-toone > *:focus,
+.min-w-md-radio1:checked ~ .min-w-md-relay .min-w-md-target1,
+.min-w-md-radio2:checked ~ .min-w-md-relay .min-w-md-target2,
+.min-w-md-radio3:checked ~ .min-w-md-relay .min-w-md-target3,
+.min-w-md-radio4:checked ~ .min-w-md-relay .min-w-md-target4,
+.min-w-md-radio5:checked ~ .min-w-md-relay .min-w-md-target5,
+.min-w-md-check:checked ~ .min-w-md-hub .min-w-md-goal {
+  min-width: var(--min-width-md);
+}
+
+.min-w-lg,
+.min-w-lg-global > *,
+.min-w-lg-onto:hover,
+.min-w-lg-onto:focus,
+*:hover > .min-w-lg-into,
+*:focus > .min-w-lg-into,
+.min-w-lg-toall:hover > *,
+.min-w-lg-toall:focus > *,
+.min-w-lg-toone > *:hover,
+.min-w-lg-toone > *:focus,
+.min-w-lg-radio1:checked ~ .min-w-lg-relay .min-w-lg-target1,
+.min-w-lg-radio2:checked ~ .min-w-lg-relay .min-w-lg-target2,
+.min-w-lg-radio3:checked ~ .min-w-lg-relay .min-w-lg-target3,
+.min-w-lg-radio4:checked ~ .min-w-lg-relay .min-w-lg-target4,
+.min-w-lg-radio5:checked ~ .min-w-lg-relay .min-w-lg-target5,
+.min-w-lg-check:checked ~ .min-w-lg-hub .min-w-lg-goal {
+  min-width: var(--min-width-lg);
+}
+
 /***** States : Classes : Bg *****/
 .bg-black,
 .bg-black-global > *,

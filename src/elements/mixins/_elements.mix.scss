@@ -26,10 +26,3 @@
     --gallery-figure-width: #{$width};
   }
 }
-
-@mixin slider($min, $progress) {
-  .slider {
-    --slider-min-height: #{$min};
-    --slider-progress-height: #{$progress};
-  }
-}

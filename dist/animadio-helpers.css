@@ -1,4 +1,358 @@
-/*! animadio v2.4.5 | https://animadio.org | MIT License */
+/*! animadio v3.0.0 | https://animadio.org | MIT License */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
 
 /***** Global : Variables : Colors *****/
 :root {
@@ -265,6 +619,192 @@
   --opacity-slideTL: 0;
   --transform-slideTL: translate(50vw, 50vh);
   --origin-slideTL: center;
+}
+
+/***** Global : Variables : Init *****/
+:root {
+  --sans-serif-font-family: sans-serif;
+  --serif-font-family: serif;
+  --monospace-font-family: monospace;
+  --cursive-font-family: cursive;
+  --fantasy-font-family: fantasy;
+}
+
+body {
+  --body-background-color: none;
+  --body-color: var(--black);
+  --body-font-size: 1.8rem;
+  --body-line-height: 1.6;
+  --body-scroll-behavior: smooth;
+}
+
+article {
+  --article-margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --title-wd-font-size: 4rem;
+  --title-wd-text-transform: uppercase;
+  --title-lg-font-size: 3.5rem;
+  --title-lg-text-transform: capitalize;
+  --title-md-font-size: 3rem;
+  --title-sm-font-size: 2.5rem;
+  --title-tn-font-size: 2rem;
+}
+
+a {
+  --link-outline: 0;
+  --link-text-decoration: none;
+}
+
+ul {
+  --list-margin: 0 0 10px;
+  --list-padding: 0;
+  --list-style: none;
+}
+
+img,
+video {
+  --img-height: auto;
+  --img-max-width: 100%;
+  --img-object-fit: contain;
+}
+
+table {
+  --table-border-collapse: collapse;
+  --table-font-family: monospace;
+  --table-margin: auto;
+  --table-text-align: center;
+  --table-vertical-align: middle;
+}
+
+code,
+pre {
+  --code-background-color: var(--black);
+  --code-color: var(--aqua);
+  --code-margin: auto;
+  --code-overflow: scroll;
+  --code-padding: 10px;
+  --code-text-align: initial;
+  --code-width: 100%;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    --title-wd-font-size: 4.2rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.6rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.1rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.6rem;
+  }
+
+  h5,
+h6 {
+    --title-tn-font-size: 2.1rem;
+  }
+
+  code,
+pre {
+    --code-width: 95%;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    --title-wd-font-size: 4.4rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.8rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.3rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.8rem;
+  }
+
+  h5,
+h6 {
+    --title-tn-font-size: 2.3rem;
+  }
+
+  code,
+pre {
+    --code-width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    --title-wd-font-size: 4.7rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.9rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.4rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.9rem;
+  }
+
+  h5,
+h6 {
+    --title-tn-font-size: 2.4rem;
+  }
+
+  code,
+pre {
+    --code-width: 85%;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    --title-wd-font-size: 5rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 4rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.5rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 3rem;
+  }
+
+  h5,
+h6 {
+    --title-tn-font-size: 2.5rem;
+  }
+
+  code,
+pre {
+    --code-width: 80%;
+  }
+}
+/***** Global : Variables : Container *****/
+[class*=container] {
+  --container-max-width: 100%;
 }
 
 /***** Global : Rules : Keyframes *****/
@@ -1366,191 +1906,6 @@
             transform-origin: var(--origin-slideTL);
   }
 }
-/***** Global : Variables : Init *****/
-:root {
-  --sans-serif-font-family: sans-serif;
-  --serif-font-family: serif;
-  --monospace-font-family: monospace;
-  --cursive-font-family: cursive;
-  --fantasy-font-family: fantasy;
-}
-
-body {
-  --body-background-color: none;
-  --body-color: var(--black);
-  --body-font-size: 1.8rem;
-  --body-line-height: 1.6;
-  --body-scroll-behavior: smooth;
-}
-
-article {
-  --article-margin-bottom: 20px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  --title-wd-font-size: 4rem;
-  --title-wd-text-transform: uppercase;
-  --title-lg-font-size: 3.5rem;
-  --title-lg-text-transform: capitalize;
-  --title-md-font-size: 3rem;
-  --title-sm-font-size: 2.5rem;
-  --title-tn-font-size: 2rem;
-}
-
-a {
-  --link-outline: 0;
-  --link-text-decoration: none;
-}
-
-ul {
-  --list-margin: 0 0 10px;
-  --list-padding: 0;
-  --list-style: none;
-}
-
-img,
-video {
-  --img-height: auto;
-  --img-max-width: 100%;
-  --img-object-fit: contain;
-}
-
-table {
-  --table-border-collapse: collapse;
-  --table-font-family: monospace;
-  --table-margin: auto;
-  --table-text-align: center;
-  --table-vertical-align: middle;
-}
-
-label {
-  --label-cursor: pointer;
-}
-
-code,
-pre {
-  --code-background-color: var(--black);
-  --code-color: var(--aqua);
-  --code-margin: auto;
-  --code-overflow: scroll;
-  --code-padding: 10px;
-  --code-text-align: initial;
-  --code-width: 100%;
-}
-
-@media (min-width: 576px) {
-  h1 {
-    --title-wd-font-size: 4.2rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 3.6rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.1rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 2.6rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.1rem;
-  }
-
-  code,
-pre {
-    --code-width: 95%;
-  }
-}
-@media (min-width: 768px) {
-  h1 {
-    --title-wd-font-size: 4.4rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 3.8rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.3rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 2.8rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.3rem;
-  }
-
-  code,
-pre {
-    --code-width: 90%;
-  }
-}
-@media (min-width: 992px) {
-  h1 {
-    --title-wd-font-size: 4.7rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 3.9rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.4rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 2.9rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.4rem;
-  }
-
-  code,
-pre {
-    --code-width: 85%;
-  }
-}
-@media (min-width: 1200px) {
-  h1 {
-    --title-wd-font-size: 5rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 4rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.5rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 3rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.5rem;
-  }
-
-  code,
-pre {
-    --code-width: 80%;
-  }
-}
 /***** Global : Tags : Init *****/
 * {
   -webkit-box-sizing: border-box;
@@ -1636,10 +1991,6 @@ table {
   font-family: var(--table-font-family);
 }
 
-label {
-  cursor: var(--label-cursor);
-}
-
 code,
 pre {
   overflow: var(--code-overflow);
@@ -1669,19 +2020,180 @@ pre > *::selection {
   display: none !important;
 }
 
+/***** Global : Classes : Container *****/
+/* Container */
+[class^=container],
+[class*=" container"] {
+  margin: auto;
+  max-width: var(--container-max-width);
+}
+
+[class^=container-][class*="-50tn"],
+[class*=" container-"][class*="-50tn"] {
+  max-width: 50%;
+}
+
+[class^=container-][class*="-60tn"],
+[class*=" container-"][class*="-60tn"] {
+  max-width: 60%;
+}
+
+[class^=container-][class*="-70tn"],
+[class*=" container-"][class*="-70tn"] {
+  max-width: 70%;
+}
+
+[class^=container-][class*="-80tn"],
+[class*=" container-"][class*="-80tn"] {
+  max-width: 80%;
+}
+
+[class^=container-][class*="-90tn"],
+[class*=" container-"][class*="-90tn"] {
+  max-width: 90%;
+}
+
+@media (min-width: 576px) {
+  [class^=container-][class*="-50sm"],
+[class*=" container-"][class*="-50sm"] {
+    max-width: 50%;
+  }
+
+  [class^=container-][class*="-60sm"],
+[class*=" container-"][class*="-60sm"] {
+    max-width: 60%;
+  }
+
+  [class^=container-][class*="-70sm"],
+[class*=" container-"][class*="-70sm"] {
+    max-width: 70%;
+  }
+
+  [class^=container-][class*="-80sm"],
+[class*=" container-"][class*="-80sm"] {
+    max-width: 80%;
+  }
+
+  [class^=container-][class*="-90sm"],
+[class*=" container-"][class*="-90sm"] {
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  [class^=container-][class*="-50md"],
+[class*=" container-"][class*="-50md"] {
+    max-width: 50%;
+  }
+
+  [class^=container-][class*="-60md"],
+[class*=" container-"][class*="-60md"] {
+    max-width: 60%;
+  }
+
+  [class^=container-][class*="-70md"],
+[class*=" container-"][class*="-70md"] {
+    max-width: 70%;
+  }
+
+  [class^=container-][class*="-80md"],
+[class*=" container-"][class*="-80md"] {
+    max-width: 80%;
+  }
+
+  [class^=container-][class*="-90md"],
+[class*=" container-"][class*="-90md"] {
+    max-width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  [class^=container-][class*="-50lg"],
+[class*=" container-"][class*="-50lg"] {
+    max-width: 50%;
+  }
+
+  [class^=container-][class*="-60lg"],
+[class*=" container-"][class*="-60lg"] {
+    max-width: 60%;
+  }
+
+  [class^=container-][class*="-70lg"],
+[class*=" container-"][class*="-70lg"] {
+    max-width: 70%;
+  }
+
+  [class^=container-][class*="-80lg"],
+[class*=" container-"][class*="-80lg"] {
+    max-width: 80%;
+  }
+
+  [class^=container-][class*="-90lg"],
+[class*=" container-"][class*="-90lg"] {
+    max-width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  [class^=container-][class*="-50wd"],
+[class*=" container-"][class*="-50wd"] {
+    max-width: 50%;
+  }
+
+  [class^=container-][class*="-60wd"],
+[class*=" container-"][class*="-60wd"] {
+    max-width: 60%;
+  }
+
+  [class^=container-][class*="-70wd"],
+[class*=" container-"][class*="-70wd"] {
+    max-width: 70%;
+  }
+
+  [class^=container-][class*="-80wd"],
+[class*=" container-"][class*="-80wd"] {
+    max-width: 80%;
+  }
+
+  [class^=container-][class*="-90wd"],
+[class*=" container-"][class*="-90wd"] {
+    max-width: 90%;
+  }
+}
 /***** Helpers : Classes : Font *****/
 .font-bold,
-.font-bold-global > * {
+.font-bold-global > *,
+.font-bold-onto:hover,
+.font-bold-onto:focus,
+*:hover > .font-bold-into,
+*:focus > .font-bold-into,
+.font-bold-toall:hover > *,
+.font-bold-toall:focus > *,
+.font-bold-toone > *:hover,
+.font-bold-toone > *:focus {
   font-weight: bold;
 }
 
 .font-italic,
-.font-italic-global > * {
+.font-italic-global > *,
+.font-italic-onto:hover,
+.font-italic-onto:focus,
+*:hover > .font-italic-into,
+*:focus > .font-italic-into,
+.font-italic-toall:hover > *,
+.font-italic-toall:focus > *,
+.font-italic-toone > *:hover,
+.font-italic-toone > *:focus {
   font-style: italic;
 }
 
 .font-oblique,
-.font-oblique-global > * {
+.font-oblique-global > *,
+.font-oblique-onto:hover,
+.font-oblique-onto:focus,
+*:hover > .font-oblique-into,
+*:focus > .font-oblique-into,
+.font-oblique-toall:hover > *,
+.font-oblique-toall:focus > *,
+.font-oblique-toone > *:hover,
+.font-oblique-toone > *:focus {
   font-style: oblique;
 }
 
@@ -1707,38 +2219,94 @@ pre > *::selection {
 
 /***** Helpers : Classes : Trans *****/
 .trans-cap,
-.trans-cap-global > * {
+.trans-cap-global > *,
+.trans-cap-onto:hover,
+.trans-cap-onto:focus,
+*:hover > .trans-cap-into,
+*:focus > .trans-cap-into,
+.trans-cap-toall:hover > *,
+.trans-cap-toall:focus > *,
+.trans-cap-toone > *:hover,
+.trans-cap-toone > *:focus {
   text-transform: capitalize;
 }
 
 .trans-up,
-.trans-up-global > * {
+.trans-up-global > *,
+.trans-up-onto:hover,
+.trans-up-onto:focus,
+*:hover > .trans-up-into,
+*:focus > .trans-up-into,
+.trans-up-toall:hover > *,
+.trans-up-toall:focus > *,
+.trans-up-toone > *:hover,
+.trans-up-toone > *:focus {
   text-transform: uppercase;
 }
 
 .trans-low,
-.trans-low-global > * {
+.trans-low-global > *,
+.trans-low-onto:hover,
+.trans-low-onto:focus,
+*:hover > .trans-low-into,
+*:focus > .trans-low-into,
+.trans-low-toall:hover > *,
+.trans-low-toall:focus > *,
+.trans-low-toone > *:hover,
+.trans-low-toone > *:focus {
   text-transform: lowercase;
 }
 
 /***** Helpers : Classes : Align *****/
 .align-center,
-.align-center-global > * {
+.align-center-global > *,
+.align-center-onto:hover,
+.align-center-onto:focus,
+*:hover > .align-center-into,
+*:focus > .align-center-into,
+.align-center-toall:hover > *,
+.align-center-toall:focus > *,
+.align-center-toone > *:hover,
+.align-center-toone > *:focus {
   text-align: center;
 }
 
 .align-justify,
-.align-justify-global > * {
+.align-justify-global > *,
+.align-justify-onto:hover,
+.align-justify-onto:focus,
+*:hover > .align-justify-into,
+*:focus > .align-justify-into,
+.align-justify-toall:hover > *,
+.align-justify-toall:focus > *,
+.align-justify-toone > *:hover,
+.align-justify-toone > *:focus {
   text-align: justify;
 }
 
 .align-right,
-.align-right-global > * {
+.align-right-global > *,
+.align-right-onto:hover,
+.align-right-onto:focus,
+*:hover > .align-right-into,
+*:focus > .align-right-into,
+.align-right-toall:hover > *,
+.align-right-toall:focus > *,
+.align-right-toone > *:hover,
+.align-right-toone > *:focus {
   text-align: right;
 }
 
 .align-left,
-.align-left-global > * {
+.align-left-global > *,
+.align-left-onto:hover,
+.align-left-onto:focus,
+*:hover > .align-left-into,
+*:focus > .align-left-into,
+.align-left-toall:hover > *,
+.align-left-toall:focus > *,
+.align-left-toone > *:hover,
+.align-left-toone > *:focus {
   text-align: left;
 }
 
@@ -1749,118 +2317,270 @@ pre > *::selection {
 
 /***** Helpers : Classes : Deco *****/
 [class*=deco],
-[class*=deco][class*=-global] > * {
+[class*=deco][class*=-global] > *,
+[class*=deco][class*=-onto]:hover,
+[class*=deco][class*=-onto]:focus,
+*:hover > [class*=deco][class*=-into],
+*:focus > [class*=deco][class*=-into],
+[class*=deco][class*=-toall]:hover > *,
+[class*=deco][class*=-toall]:focus > *,
+[class*=deco][class*=-toone] > *:hover,
+[class*=deco][class*=-toone] > *:focus {
   -webkit-text-decoration-line: var(--text-decoration-line);
           text-decoration-line: var(--text-decoration-line);
 }
 
 /* Text decoration line */
 .deco-none,
-.deco-none-global > * {
+.deco-none-global > *,
+.deco-none-onto:hover,
+.deco-none-onto:focus,
+*:hover > .deco-none-into,
+*:focus > .deco-none-into,
+.deco-none-toall:hover > *,
+.deco-none-toall:focus > *,
+.deco-none-toone > *:hover,
+.deco-none-toone > *:focus {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
 
 .deco-under,
-.deco-under-global > * {
+.deco-under-global > *,
+.deco-under-onto:hover,
+.deco-under-onto:focus,
+*:hover > .deco-under-into,
+*:focus > .deco-under-into,
+.deco-under-toall:hover > *,
+.deco-under-toall:focus > *,
+.deco-under-toone > *:hover,
+.deco-under-toone > *:focus {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
 .deco-over,
-.deco-over-global > * {
+.deco-over-global > *,
+.deco-over-onto:hover,
+.deco-over-onto:focus,
+*:hover > .deco-over-into,
+*:focus > .deco-over-into,
+.deco-over-toall:hover > *,
+.deco-over-toall:focus > *,
+.deco-over-toone > *:hover,
+.deco-over-toone > *:focus {
   -webkit-text-decoration-line: overline;
           text-decoration-line: overline;
 }
 
 .deco-through,
-.deco-through-global > * {
+.deco-through-global > *,
+.deco-through-onto:hover,
+.deco-through-onto:focus,
+*:hover > .deco-through-into,
+*:focus > .deco-through-into,
+.deco-through-toall:hover > *,
+.deco-through-toall:focus > *,
+.deco-through-toone > *:hover,
+.deco-through-toone > *:focus {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
 }
 
 /* Text decoration style */
 .deco-dash,
-.deco-dash-global > * {
+.deco-dash-global > *,
+.deco-dash-onto:hover,
+.deco-dash-onto:focus,
+*:hover > .deco-dash-into,
+*:focus > .deco-dash-into,
+.deco-dash-toall:hover > *,
+.deco-dash-toall:focus > *,
+.deco-dash-toone > *:hover,
+.deco-dash-toone > *:focus {
   -webkit-text-decoration-style: dashed;
           text-decoration-style: dashed;
 }
 
 .deco-dot,
-.deco-dot-global > * {
+.deco-dot-global > *,
+.deco-dot-onto:hover,
+.deco-dot-onto:focus,
+*:hover > .deco-dot-into,
+*:focus > .deco-dot-into,
+.deco-dot-toall:hover > *,
+.deco-dot-toall:focus > *,
+.deco-dot-toone > *:hover,
+.deco-dot-toone > *:focus {
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
 }
 
 .deco-double,
-.deco-double-global > * {
+.deco-double-global > *,
+.deco-double-onto:hover,
+.deco-double-onto:focus,
+*:hover > .deco-double-into,
+*:focus > .deco-double-into,
+.deco-double-toall:hover > *,
+.deco-double-toall:focus > *,
+.deco-double-toone > *:hover,
+.deco-double-toone > *:focus {
   -webkit-text-decoration-style: double;
           text-decoration-style: double;
 }
 
 .deco-solid,
-.deco-solid-global > * {
+.deco-solid-global > *,
+.deco-solid-onto:hover,
+.deco-solid-onto:focus,
+*:hover > .deco-solid-into,
+*:focus > .deco-solid-into,
+.deco-solid-toall:hover > *,
+.deco-solid-toall:focus > *,
+.deco-solid-toone > *:hover,
+.deco-solid-toone > *:focus {
   -webkit-text-decoration-style: solid;
           text-decoration-style: solid;
 }
 
 .deco-wavy,
-.deco-wavy-global > * {
+.deco-wavy-global > *,
+.deco-wavy-onto:hover,
+.deco-wavy-onto:focus,
+*:hover > .deco-wavy-into,
+*:focus > .deco-wavy-into,
+.deco-wavy-toall:hover > *,
+.deco-wavy-toall:focus > *,
+.deco-wavy-toone > *:hover,
+.deco-wavy-toone > *:focus {
   -webkit-text-decoration-style: wavy;
           text-decoration-style: wavy;
 }
 
 /* Text decoration color */
 .deco-magenta,
-.deco-magenta-global > * {
+.deco-magenta-global > *,
+.deco-magenta-onto:hover,
+.deco-magenta-onto:focus,
+*:hover > .deco-magenta-into,
+*:focus > .deco-magenta-into,
+.deco-magenta-toall:hover > *,
+.deco-magenta-toall:focus > *,
+.deco-magenta-toone > *:hover,
+.deco-magenta-toone > *:focus {
   -webkit-text-decoration-color: var(--magenta);
           text-decoration-color: var(--magenta);
 }
 
 .deco-red,
-.deco-red-global > * {
+.deco-red-global > *,
+.deco-red-onto:hover,
+.deco-red-onto:focus,
+*:hover > .deco-red-into,
+*:focus > .deco-red-into,
+.deco-red-toall:hover > *,
+.deco-red-toall:focus > *,
+.deco-red-toone > *:hover,
+.deco-red-toone > *:focus {
   -webkit-text-decoration-color: var(--red);
           text-decoration-color: var(--red);
 }
 
 .deco-orange,
-.deco-orange-global > * {
+.deco-orange-global > *,
+.deco-orange-onto:hover,
+.deco-orange-onto:focus,
+*:hover > .deco-orange-into,
+*:focus > .deco-orange-into,
+.deco-orange-toall:hover > *,
+.deco-orange-toall:focus > *,
+.deco-orange-toone > *:hover,
+.deco-orange-toone > *:focus {
   -webkit-text-decoration-color: var(--orange);
           text-decoration-color: var(--orange);
 }
 
 .deco-gold,
-.deco-gold-global > * {
+.deco-gold-global > *,
+.deco-gold-onto:hover,
+.deco-gold-onto:focus,
+*:hover > .deco-gold-into,
+*:focus > .deco-gold-into,
+.deco-gold-toall:hover > *,
+.deco-gold-toall:focus > *,
+.deco-gold-toone > *:hover,
+.deco-gold-toone > *:focus {
   -webkit-text-decoration-color: var(--gold);
           text-decoration-color: var(--gold);
 }
 
 .deco-maroon,
-.deco-maroon-global > * {
+.deco-maroon-global > *,
+.deco-maroon-onto:hover,
+.deco-maroon-onto:focus,
+*:hover > .deco-maroon-into,
+*:focus > .deco-maroon-into,
+.deco-maroon-toall:hover > *,
+.deco-maroon-toall:focus > *,
+.deco-maroon-toone > *:hover,
+.deco-maroon-toone > *:focus {
   -webkit-text-decoration-color: var(--maroon);
           text-decoration-color: var(--maroon);
 }
 
 .deco-green,
-.deco-green-global > * {
+.deco-green-global > *,
+.deco-green-onto:hover,
+.deco-green-onto:focus,
+*:hover > .deco-green-into,
+*:focus > .deco-green-into,
+.deco-green-toall:hover > *,
+.deco-green-toall:focus > *,
+.deco-green-toone > *:hover,
+.deco-green-toone > *:focus {
   -webkit-text-decoration-color: var(--green);
           text-decoration-color: var(--green);
 }
 
 .deco-blue,
-.deco-blue-global > * {
+.deco-blue-global > *,
+.deco-blue-onto:hover,
+.deco-blue-onto:focus,
+*:hover > .deco-blue-into,
+*:focus > .deco-blue-into,
+.deco-blue-toall:hover > *,
+.deco-blue-toall:focus > *,
+.deco-blue-toone > *:hover,
+.deco-blue-toone > *:focus {
   -webkit-text-decoration-color: var(--blue);
           text-decoration-color: var(--blue);
 }
 
 .deco-navy,
-.deco-navy-global > * {
+.deco-navy-global > *,
+.deco-navy-onto:hover,
+.deco-navy-onto:focus,
+*:hover > .deco-navy-into,
+*:focus > .deco-navy-into,
+.deco-navy-toall:hover > *,
+.deco-navy-toall:focus > *,
+.deco-navy-toone > *:hover,
+.deco-navy-toone > *:focus {
   -webkit-text-decoration-color: var(--navy);
           text-decoration-color: var(--navy);
 }
 
 .deco-purple,
-.deco-purple-global > * {
+.deco-purple-global > *,
+.deco-purple-onto:hover,
+.deco-purple-onto:focus,
+*:hover > .deco-purple-into,
+*:focus > .deco-purple-into,
+.deco-purple-toall:hover > *,
+.deco-purple-toall:focus > *,
+.deco-purple-toone > *:hover,
+.deco-purple-toone > *:focus {
   -webkit-text-decoration-color: var(--purple);
           text-decoration-color: var(--purple);
 }
@@ -1878,37 +2598,93 @@ pre > *::selection {
 
 /***** Helpers : Classes : Shatex *****/
 .shatex-sm,
-.shatex-sm-global > * {
+.shatex-sm-global > *,
+.shatex-sm-onto:hover,
+.shatex-sm-onto:focus,
+*:hover > .shatex-sm-into,
+*:focus > .shatex-sm-into,
+.shatex-sm-toall:hover > *,
+.shatex-sm-toall:focus > *,
+.shatex-sm-toone > *:hover,
+.shatex-sm-toone > *:focus {
   text-shadow: var(--text-shadow-sm);
 }
 
 .shatex-md,
-.shatex-md-global > * {
+.shatex-md-global > *,
+.shatex-md-onto:hover,
+.shatex-md-onto:focus,
+*:hover > .shatex-md-into,
+*:focus > .shatex-md-into,
+.shatex-md-toall:hover > *,
+.shatex-md-toall:focus > *,
+.shatex-md-toone > *:hover,
+.shatex-md-toone > *:focus {
   text-shadow: var(--text-shadow-md);
 }
 
 .shatex-lg,
-.shatex-lg-global > * {
+.shatex-lg-global > *,
+.shatex-lg-onto:hover,
+.shatex-lg-onto:focus,
+*:hover > .shatex-lg-into,
+*:focus > .shatex-lg-into,
+.shatex-lg-toall:hover > *,
+.shatex-lg-toall:focus > *,
+.shatex-lg-toone > *:hover,
+.shatex-lg-toone > *:focus {
   text-shadow: var(--text-shadow-lg);
 }
 
 .shatex-blur,
-.shatex-blur-global > * {
+.shatex-blur-global > *,
+.shatex-blur-onto:hover,
+.shatex-blur-onto:focus,
+*:hover > .shatex-blur-into,
+*:focus > .shatex-blur-into,
+.shatex-blur-toall:hover > *,
+.shatex-blur-toall:focus > *,
+.shatex-blur-toone > *:hover,
+.shatex-blur-toone > *:focus {
   text-shadow: var(--text-shadow-blur);
 }
 
 .shatex-blur-sm,
-.shatex-blur-sm-global > * {
+.shatex-blur-sm-global > *,
+.shatex-blur-sm-onto:hover,
+.shatex-blur-sm-onto:focus,
+*:hover > .shatex-blur-sm-into,
+*:focus > .shatex-blur-sm-into,
+.shatex-blur-sm-toall:hover > *,
+.shatex-blur-sm-toall:focus > *,
+.shatex-blur-sm-toone > *:hover,
+.shatex-blur-sm-toone > *:focus {
   text-shadow: var(--text-shadow-blur-sm);
 }
 
 .shatex-blur-md,
-.shatex-blur-md-global > * {
+.shatex-blur-md-global > *,
+.shatex-blur-md-onto:hover,
+.shatex-blur-md-onto:focus,
+*:hover > .shatex-blur-md-into,
+*:focus > .shatex-blur-md-into,
+.shatex-blur-md-toall:hover > *,
+.shatex-blur-md-toall:focus > *,
+.shatex-blur-md-toone > *:hover,
+.shatex-blur-md-toone > *:focus {
   text-shadow: var(--text-shadow-blur-md);
 }
 
 .shatex-blur-lg,
-.shatex-blur-lg-global > * {
+.shatex-blur-lg-global > *,
+.shatex-blur-lg-onto:hover,
+.shatex-blur-lg-onto:focus,
+*:hover > .shatex-blur-lg-into,
+*:focus > .shatex-blur-lg-into,
+.shatex-blur-lg-toall:hover > *,
+.shatex-blur-lg-toall:focus > *,
+.shatex-blur-lg-toone > *:hover,
+.shatex-blur-lg-toone > *:focus {
   text-shadow: var(--text-shadow-blur-lg);
 }
 
@@ -1929,172 +2705,404 @@ pre > *::selection {
 
 /***** Helpers : Classes : Shabox *****/
 .shabox-sm,
-.shabox-sm-global > * {
+.shabox-sm-global > *,
+.shabox-sm-onto:hover,
+.shabox-sm-onto:focus,
+*:hover > .shabox-sm-into,
+*:focus > .shabox-sm-into,
+.shabox-sm-toall:hover > *,
+.shabox-sm-toall:focus > *,
+.shabox-sm-toone > *:hover,
+.shabox-sm-toone > *:focus {
   -webkit-box-shadow: var(--box-shadow-sm);
           box-shadow: var(--box-shadow-sm);
 }
 
 .shabox-md,
-.shabox-md-global > * {
+.shabox-md-global > *,
+.shabox-md-onto:hover,
+.shabox-md-onto:focus,
+*:hover > .shabox-md-into,
+*:focus > .shabox-md-into,
+.shabox-md-toall:hover > *,
+.shabox-md-toall:focus > *,
+.shabox-md-toone > *:hover,
+.shabox-md-toone > *:focus {
   -webkit-box-shadow: var(--box-shadow-md);
           box-shadow: var(--box-shadow-md);
 }
 
 .shabox-lg,
-.shabox-lg-global > * {
+.shabox-lg-global > *,
+.shabox-lg-onto:hover,
+.shabox-lg-onto:focus,
+*:hover > .shabox-lg-into,
+*:focus > .shabox-lg-into,
+.shabox-lg-toall:hover > *,
+.shabox-lg-toall:focus > *,
+.shabox-lg-toone > *:hover,
+.shabox-lg-toone > *:focus {
   -webkit-box-shadow: var(--box-shadow-lg);
           box-shadow: var(--box-shadow-lg);
 }
 
 .shabox-blur,
-.shabox-blur-global > * {
+.shabox-blur-global > *,
+.shabox-blur-onto:hover,
+.shabox-blur-onto:focus,
+*:hover > .shabox-blur-into,
+*:focus > .shabox-blur-into,
+.shabox-blur-toall:hover > *,
+.shabox-blur-toall:focus > *,
+.shabox-blur-toone > *:hover,
+.shabox-blur-toone > *:focus {
   -webkit-box-shadow: var(--box-shadow-blur);
           box-shadow: var(--box-shadow-blur);
 }
 
 .shabox-blur-sm,
-.shabox-blur-sm-global > * {
+.shabox-blur-sm-global > *,
+.shabox-blur-sm-onto:hover,
+.shabox-blur-sm-onto:focus,
+*:hover > .shabox-blur-sm-into,
+*:focus > .shabox-blur-sm-into,
+.shabox-blur-sm-toall:hover > *,
+.shabox-blur-sm-toall:focus > *,
+.shabox-blur-sm-toone > *:hover,
+.shabox-blur-sm-toone > *:focus {
   -webkit-box-shadow: var(--box-shadow-blur-sm);
           box-shadow: var(--box-shadow-blur-sm);
 }
 
 .shabox-blur-md,
-.shabox-blur-md-global > * {
+.shabox-blur-md-global > *,
+.shabox-blur-md-onto:hover,
+.shabox-blur-md-onto:focus,
+*:hover > .shabox-blur-md-into,
+*:focus > .shabox-blur-md-into,
+.shabox-blur-md-toall:hover > *,
+.shabox-blur-md-toall:focus > *,
+.shabox-blur-md-toone > *:hover,
+.shabox-blur-md-toone > *:focus {
   -webkit-box-shadow: var(--box-shadow-blur-md);
           box-shadow: var(--box-shadow-blur-md);
 }
 
 .shabox-blur-lg,
-.shabox-blur-lg-global > * {
+.shabox-blur-lg-global > *,
+.shabox-blur-lg-onto:hover,
+.shabox-blur-lg-onto:focus,
+*:hover > .shabox-blur-lg-into,
+*:focus > .shabox-blur-lg-into,
+.shabox-blur-lg-toall:hover > *,
+.shabox-blur-lg-toall:focus > *,
+.shabox-blur-lg-toone > *:hover,
+.shabox-blur-lg-toone > *:focus {
   -webkit-box-shadow: var(--box-shadow-blur-lg);
           box-shadow: var(--box-shadow-blur-lg);
 }
 
 .shabox-spread,
-.shabox-spread-global > * {
+.shabox-spread-global > *,
+.shabox-spread-onto:hover,
+.shabox-spread-onto:focus,
+*:hover > .shabox-spread-into,
+*:focus > .shabox-spread-into,
+.shabox-spread-toall:hover > *,
+.shabox-spread-toall:focus > *,
+.shabox-spread-toone > *:hover,
+.shabox-spread-toone > *:focus {
   -webkit-box-shadow: var(--box-shadow-spread);
           box-shadow: var(--box-shadow-spread);
 }
 
 .shabox-spread-sm,
-.shabox-spread-sm-global > * {
+.shabox-spread-sm-global > *,
+.shabox-spread-sm-onto:hover,
+.shabox-spread-sm-onto:focus,
+*:hover > .shabox-spread-sm-into,
+*:focus > .shabox-spread-sm-into,
+.shabox-spread-sm-toall:hover > *,
+.shabox-spread-sm-toall:focus > *,
+.shabox-spread-sm-toone > *:hover,
+.shabox-spread-sm-toone > *:focus {
   -webkit-box-shadow: var(--box-shadow-spread-sm);
           box-shadow: var(--box-shadow-spread-sm);
 }
 
 .shabox-spread-md,
-.shabox-spread-md-global > * {
+.shabox-spread-md-global > *,
+.shabox-spread-md-onto:hover,
+.shabox-spread-md-onto:focus,
+*:hover > .shabox-spread-md-into,
+*:focus > .shabox-spread-md-into,
+.shabox-spread-md-toall:hover > *,
+.shabox-spread-md-toall:focus > *,
+.shabox-spread-md-toone > *:hover,
+.shabox-spread-md-toone > *:focus {
   -webkit-box-shadow: var(--box-shadow-spread-md);
           box-shadow: var(--box-shadow-spread-md);
 }
 
 .shabox-spread-lg,
-.shabox-spread-lg-global > * {
+.shabox-spread-lg-global > *,
+.shabox-spread-lg-onto:hover,
+.shabox-spread-lg-onto:focus,
+*:hover > .shabox-spread-lg-into,
+*:focus > .shabox-spread-lg-into,
+.shabox-spread-lg-toall:hover > *,
+.shabox-spread-lg-toall:focus > *,
+.shabox-spread-lg-toone > *:hover,
+.shabox-spread-lg-toone > *:focus {
   -webkit-box-shadow: var(--box-shadow-spread-lg);
           box-shadow: var(--box-shadow-spread-lg);
 }
 
 .shabox-in-sm,
-.shabox-in-sm-global > * {
+.shabox-in-sm-global > *,
+.shabox-in-sm-onto:hover,
+.shabox-in-sm-onto:focus,
+*:hover > .shabox-in-sm-into,
+*:focus > .shabox-in-sm-into,
+.shabox-in-sm-toall:hover > *,
+.shabox-in-sm-toall:focus > *,
+.shabox-in-sm-toone > *:hover,
+.shabox-in-sm-toone > *:focus {
   -webkit-box-shadow: inset var(--box-shadow-sm);
           box-shadow: inset var(--box-shadow-sm);
 }
 
 .shabox-in-md,
-.shabox-in-md-global > * {
+.shabox-in-md-global > *,
+.shabox-in-md-onto:hover,
+.shabox-in-md-onto:focus,
+*:hover > .shabox-in-md-into,
+*:focus > .shabox-in-md-into,
+.shabox-in-md-toall:hover > *,
+.shabox-in-md-toall:focus > *,
+.shabox-in-md-toone > *:hover,
+.shabox-in-md-toone > *:focus {
   -webkit-box-shadow: inset var(--box-shadow-md);
           box-shadow: inset var(--box-shadow-md);
 }
 
 .shabox-in-lg,
-.shabox-in-lg-global > * {
+.shabox-in-lg-global > *,
+.shabox-in-lg-onto:hover,
+.shabox-in-lg-onto:focus,
+*:hover > .shabox-in-lg-into,
+*:focus > .shabox-in-lg-into,
+.shabox-in-lg-toall:hover > *,
+.shabox-in-lg-toall:focus > *,
+.shabox-in-lg-toone > *:hover,
+.shabox-in-lg-toone > *:focus {
   -webkit-box-shadow: inset var(--box-shadow-lg);
           box-shadow: inset var(--box-shadow-lg);
 }
 
 .shabox-in-blur,
-.shabox-in-blur-global > * {
+.shabox-in-blur-global > *,
+.shabox-in-blur-onto:hover,
+.shabox-in-blur-onto:focus,
+*:hover > .shabox-in-blur-into,
+*:focus > .shabox-in-blur-into,
+.shabox-in-blur-toall:hover > *,
+.shabox-in-blur-toall:focus > *,
+.shabox-in-blur-toone > *:hover,
+.shabox-in-blur-toone > *:focus {
   -webkit-box-shadow: inset var(--box-shadow-blur);
           box-shadow: inset var(--box-shadow-blur);
 }
 
 .shabox-in-blur-sm,
-.shabox-in-blur-sm-global > * {
+.shabox-in-blur-sm-global > *,
+.shabox-in-blur-sm-onto:hover,
+.shabox-in-blur-sm-onto:focus,
+*:hover > .shabox-in-blur-sm-into,
+*:focus > .shabox-in-blur-sm-into,
+.shabox-in-blur-sm-toall:hover > *,
+.shabox-in-blur-sm-toall:focus > *,
+.shabox-in-blur-sm-toone > *:hover,
+.shabox-in-blur-sm-toone > *:focus {
   -webkit-box-shadow: inset var(--box-shadow-blur-sm);
           box-shadow: inset var(--box-shadow-blur-sm);
 }
 
 .shabox-in-blur-md,
-.shabox-in-blur-md-global > * {
+.shabox-in-blur-md-global > *,
+.shabox-in-blur-md-onto:hover,
+.shabox-in-blur-md-onto:focus,
+*:hover > .shabox-in-blur-md-into,
+*:focus > .shabox-in-blur-md-into,
+.shabox-in-blur-md-toall:hover > *,
+.shabox-in-blur-md-toall:focus > *,
+.shabox-in-blur-md-toone > *:hover,
+.shabox-in-blur-md-toone > *:focus {
   -webkit-box-shadow: inset var(--box-shadow-blur-md);
           box-shadow: inset var(--box-shadow-blur-md);
 }
 
 .shabox-in-blur-lg,
-.shabox-in-blur-lg-global > * {
+.shabox-in-blur-lg-global > *,
+.shabox-in-blur-lg-onto:hover,
+.shabox-in-blur-lg-onto:focus,
+*:hover > .shabox-in-blur-lg-into,
+*:focus > .shabox-in-blur-lg-into,
+.shabox-in-blur-lg-toall:hover > *,
+.shabox-in-blur-lg-toall:focus > *,
+.shabox-in-blur-lg-toone > *:hover,
+.shabox-in-blur-lg-toone > *:focus {
   -webkit-box-shadow: inset var(--box-shadow-blur-lg);
           box-shadow: inset var(--box-shadow-blur-lg);
 }
 
 .shabox-in-spread,
-.shabox-in-spread-global > * {
+.shabox-in-spread-global > *,
+.shabox-in-spread-onto:hover,
+.shabox-in-spread-onto:focus,
+*:hover > .shabox-in-spread-into,
+*:focus > .shabox-in-spread-into,
+.shabox-in-spread-toall:hover > *,
+.shabox-in-spread-toall:focus > *,
+.shabox-in-spread-toone > *:hover,
+.shabox-in-spread-toone > *:focus {
   -webkit-box-shadow: inset var(--box-shadow-spread);
           box-shadow: inset var(--box-shadow-spread);
 }
 
 .shabox-in-spread-sm,
-.shabox-in-spread-sm-global > * {
+.shabox-in-spread-sm-global > *,
+.shabox-in-spread-sm-onto:hover,
+.shabox-in-spread-sm-onto:focus,
+*:hover > .shabox-in-spread-sm-into,
+*:focus > .shabox-in-spread-sm-into,
+.shabox-in-spread-sm-toall:hover > *,
+.shabox-in-spread-sm-toall:focus > *,
+.shabox-in-spread-sm-toone > *:hover,
+.shabox-in-spread-sm-toone > *:focus {
   -webkit-box-shadow: inset var(--box-shadow-spread-sm);
           box-shadow: inset var(--box-shadow-spread-sm);
 }
 
 .shabox-in-spread-md,
-.shabox-in-spread-md-global > * {
+.shabox-in-spread-md-global > *,
+.shabox-in-spread-md-onto:hover,
+.shabox-in-spread-md-onto:focus,
+*:hover > .shabox-in-spread-md-into,
+*:focus > .shabox-in-spread-md-into,
+.shabox-in-spread-md-toall:hover > *,
+.shabox-in-spread-md-toall:focus > *,
+.shabox-in-spread-md-toone > *:hover,
+.shabox-in-spread-md-toone > *:focus {
   -webkit-box-shadow: inset var(--box-shadow-spread-md);
           box-shadow: inset var(--box-shadow-spread-md);
 }
 
 .shabox-in-spread-lg,
-.shabox-in-spread-lg-global > * {
+.shabox-in-spread-lg-global > *,
+.shabox-in-spread-lg-onto:hover,
+.shabox-in-spread-lg-onto:focus,
+*:hover > .shabox-in-spread-lg-into,
+*:focus > .shabox-in-spread-lg-into,
+.shabox-in-spread-lg-toall:hover > *,
+.shabox-in-spread-lg-toall:focus > *,
+.shabox-in-spread-lg-toone > *:hover,
+.shabox-in-spread-lg-toone > *:focus {
   -webkit-box-shadow: inset var(--box-shadow-spread-lg);
           box-shadow: inset var(--box-shadow-spread-lg);
 }
 
 /***** Helpers : Classes : Cursor *****/
 .cursor-cell,
-.cursor-cell-global > * {
+.cursor-cell-global > *,
+.cursor-cell-onto:hover,
+.cursor-cell-onto:focus,
+*:hover > .cursor-cell-into,
+*:focus > .cursor-cell-into,
+.cursor-cell-toall:hover > *,
+.cursor-cell-toall:focus > *,
+.cursor-cell-toone > *:hover,
+.cursor-cell-toone > *:focus {
   cursor: cell;
 }
 
 .cursor-cross,
-.cursor-cross-global > * {
+.cursor-cross-global > *,
+.cursor-cross-onto:hover,
+.cursor-cross-onto:focus,
+*:hover > .cursor-cross-into,
+*:focus > .cursor-cross-into,
+.cursor-cross-toall:hover > *,
+.cursor-cross-toall:focus > *,
+.cursor-cross-toone > *:hover,
+.cursor-cross-toone > *:focus {
   cursor: crosshair;
 }
 
 .cursor-hand,
-.cursor-hand-global > * {
+.cursor-hand-global > *,
+.cursor-hand-onto:hover,
+.cursor-hand-onto:focus,
+*:hover > .cursor-hand-into,
+*:focus > .cursor-hand-into,
+.cursor-hand-toall:hover > *,
+.cursor-hand-toall:focus > *,
+.cursor-hand-toone > *:hover,
+.cursor-hand-toone > *:focus {
   cursor: pointer;
 }
 
 .cursor-help,
-.cursor-help-global > * {
+.cursor-help-global > *,
+.cursor-help-onto:hover,
+.cursor-help-onto:focus,
+*:hover > .cursor-help-into,
+*:focus > .cursor-help-into,
+.cursor-help-toall:hover > *,
+.cursor-help-toall:focus > *,
+.cursor-help-toone > *:hover,
+.cursor-help-toone > *:focus {
   cursor: help;
 }
 
 .cursor-move,
-.cursor-move-global > * {
+.cursor-move-global > *,
+.cursor-move-onto:hover,
+.cursor-move-onto:focus,
+*:hover > .cursor-move-into,
+*:focus > .cursor-move-into,
+.cursor-move-toall:hover > *,
+.cursor-move-toall:focus > *,
+.cursor-move-toone > *:hover,
+.cursor-move-toone > *:focus {
   cursor: move;
 }
 
 .cursor-none,
-.cursor-none-global > * {
+.cursor-none-global > *,
+.cursor-none-onto:hover,
+.cursor-none-onto:focus,
+*:hover > .cursor-none-into,
+*:focus > .cursor-none-into,
+.cursor-none-toall:hover > *,
+.cursor-none-toall:focus > *,
+.cursor-none-toone > *:hover,
+.cursor-none-toone > *:focus {
   cursor: not-allowed;
 }
 
 .cursor-text,
-.cursor-text-global > * {
+.cursor-text-global > *,
+.cursor-text-onto:hover,
+.cursor-text-onto:focus,
+*:hover > .cursor-text-into,
+*:focus > .cursor-text-into,
+.cursor-text-toall:hover > *,
+.cursor-text-toall:focus > *,
+.cursor-text-toone > *:hover,
+.cursor-text-toone > *:focus {
   cursor: text;
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 22nd Jun 2020 @ 6:48:08 PM */
+ Updated: 4th Nov 2020 @ 9:12:32 AM */

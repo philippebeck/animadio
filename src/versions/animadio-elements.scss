@@ -3,10 +3,12 @@
 @import '../global/variables/breakpoints.var';
 @import '../global/variables/colors.var';
 @import '../global/variables/keyframes.var';
-@import '../global/rules/keyframes';
 @import '../global/variables/init.var';
+@import '../global/variables/container.var';
+@import '../global/rules/keyframes';
 @import '../global/tags/init';
 @import '../global/classes/base';
+@import '../global/classes/container';
 
 // ********** ELEMENTS **********
 @import '../elements/mixins/elements.mix';
@@ -18,6 +20,8 @@
 @import '../elements/classes/card';
 @import '../elements/variables/menu.var';
 @import '../elements/classes/menu';
+@import '../elements/variables/sidebar.var';
+@import '../elements/classes/sidebar';
 @import '../elements/variables/gallery.var';
 @import '../elements/classes/gallery';
 @import '../elements/variables/form.var';
@@ -26,3 +30,7 @@
 @import '../elements/classes/table';
 @import '../elements/variables/foot.var';
 @import '../elements/classes/foot';
+@import '../elements/variables/slider.var';
+@import '../elements/classes/slider';
+@import '../elements/variables/canvas.var';
+@import '../elements/classes/canvas';

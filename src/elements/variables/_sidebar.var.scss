@@ -1,0 +1,53 @@
+/***** Elements : Variables : Sidebar *****/
+
+.sidebar {
+  --sidebar-top: 20%;
+  --sidebar-left: 0;
+  --sidebar-z-index: 10;
+  --sidebar-width: 14%;
+
+  --sidebar-child-place-content: center;
+  --sidebar-child-place-items: center;
+  --sidebar-child-margin: 4px 2px;
+  --sidebar-child-border-radius: 10px;
+  --sidebar-child-padding: 0;
+  --sidebar-child-width: 100%;
+  --sidebar-child-background-color: var(--black-dark);
+  --sidebar-child-color: var(--white);
+  --sidebar-child-cursor: cell;
+
+  --sidebar-children-margin: 5px;
+
+  --sidebar-child-hover-border-radius: 20px;
+  --sidebar-child-hover-background-color: var(--white);
+  --sidebar-child-hover-color: var(--gray);
+  --sidebar-children-hover-transform: scale(1.2);
+
+  --sidebar-checked-child-font-weight: bold;
+  --sidebar-checked-child-background-color: var(--white-dark);
+  --sidebar-checked-child-color: var(--black);
+}
+
+@media (min-width: $breakpoint-sm) {
+  .sidebar {
+    --sidebar-width: 12%;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .sidebar {
+    --sidebar-width: 10%;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .sidebar {
+    --sidebar-width: 8%;
+  }
+}
+
+@media (min-width: $breakpoint-wd) {
+  .sidebar {
+    --sidebar-width: 6%;
+  }
+}

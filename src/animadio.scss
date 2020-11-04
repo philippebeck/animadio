@@ -3,26 +3,12 @@
 @import 'global/variables/breakpoints.var';
 @import 'global/variables/colors.var';
 @import 'global/variables/keyframes.var';
-@import 'global/rules/keyframes';
 @import 'global/variables/init.var';
+@import 'global/variables/container.var';
+@import 'global/rules/keyframes';
 @import 'global/tags/init';
 @import 'global/classes/base';
-
-// ********** BOX **********
-@import 'box/mixins/box.mix';
-@import 'box/variables/box.var';
-@import 'box/variables/container.var';
-@import 'box/classes/container';
-@import 'box/variables/margin.var';
-@import 'box/classes/margin';
-@import 'box/variables/border.var';
-@import 'box/classes/border';
-@import 'box/variables/padding.var';
-@import 'box/classes/padding';
-@import 'box/variables/height.var';
-@import 'box/classes/height';
-@import 'box/variables/width.var';
-@import 'box/classes/width';
+@import 'global/classes/container';
 
 // ********** GRID **********
 @import 'grid/mixins/grid.mix';
@@ -43,6 +29,8 @@
 @import 'elements/classes/card';
 @import 'elements/variables/menu.var';
 @import 'elements/classes/menu';
+@import 'elements/variables/sidebar.var';
+@import 'elements/classes/sidebar';
 @import 'elements/variables/gallery.var';
 @import 'elements/classes/gallery';
 @import 'elements/variables/form.var';
@@ -51,15 +39,30 @@
 @import 'elements/classes/table';
 @import 'elements/variables/foot.var';
 @import 'elements/classes/foot';
+@import 'elements/variables/slider.var';
+@import 'elements/classes/slider';
+@import 'elements/variables/canvas.var';
+@import 'elements/classes/canvas';
 
 // ********** STATES **********
 @import 'states/mixins/states.mix';
+@import 'states/variables/box.var';
 @import 'states/variables/anima.var';
 @import 'states/classes/anima';
 @import 'states/variables/display.var';
 @import 'states/classes/display';
 @import 'states/variables/position.var';
 @import 'states/classes/position';
+@import 'states/variables/margin.var';
+@import 'states/classes/margin';
+@import 'states/variables/border.var';
+@import 'states/classes/border';
+@import 'states/variables/padding.var';
+@import 'states/classes/padding';
+@import 'states/variables/height.var';
+@import 'states/classes/height';
+@import 'states/variables/width.var';
+@import 'states/classes/width';
 @import 'states/classes/bg';
 @import 'states/classes/color';
 
@@ -79,9 +82,3 @@
 @import 'helpers/classes/shabox';
 @import 'helpers/variables/cursor.var';
 @import 'helpers/classes/cursor';
-
-// ********** EVENTS **********
-@import 'events/variables/slider.var';
-@import 'events/variables/canvas.var';
-@import 'events/classes/slider';
-@import 'events/classes/canvas';

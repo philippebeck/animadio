@@ -1,6 +1,6 @@
 {
   "name": "animadio",
-  "version": "2.4.5",
+  "version": "3.0.0",
   "description": "Animadio CSS Framework - Grid & Flexbox Layouts - Reusable & Customizable Elements - Perform Complex Animations - Controls by Radio Buttons",
   "keywords": [
     "css framework",
@@ -22,8 +22,8 @@
   "repository": "github:animadio/animadio",
   "bugs": "https://github.com/animadio/animadio/issues",
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "grunt": "^1.1.0",
+    "autoprefixer": "^9.8.6",
+    "grunt": "^1.3.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-postcss": "^0.9.0",
@@ -33,17 +33,5 @@
     "name": "Philippe Beck",
     "email": "philippe@philippebeck.net",
     "url": "https://philippebeck.net"
-  },
-  "contributors": [
-    {
-      "name": "Lisa Lecieux",
-      "email": "lisa@sangodraws.com",
-      "url": "https://sangodraws.com"
-    },
-    {
-      "name": "Valentin Antoin",
-      "email": "valentin.antoin@gmail.com",
-      "url": "https://valentin-antoin.fr"
-    }
-  ]
+  }
 }

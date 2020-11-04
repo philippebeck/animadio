@@ -1,40 +1,45 @@
 /***** Elements : Variables : Menu *****/
 
 .menu {
-  --menu-flex-direction: row;
-  --menu-place-content: center;
-  --menu-place-items: stretch;
   --menu-bottom: 0;
-  --menu-left: 0;
-  --menu-z-index: 1;
-  --menu-margin: 0;
-  --menu-border: none;
-  --menu-border-radius: 5px;
-  --menu-padding: 0;
+  --menu-z-index: 100;
   --menu-width: 100%;
-  --menu-list-style: none;
-  --menu-background-color: var(--silver);
-  --menu-color: var(--gray);
+  --menu-background-color: var(--black-light);
 
-  --menu-all-cursor: pointer;
+  --menu-child-place-content: center;
+  --menu-child-place-items: center;
+  --menu-child-margin: 4px 2px;
+  --menu-child-border-radius: 10px;
+  --menu-child-padding: 0;
+  --menu-child-width: 100%;
+  --menu-child-background-color: var(--black-dark);
+  --menu-child-color: var(--white);
+  --menu-child-cursor: cell;
 
-  --menu-label-place-content: center;
-  --menu-label-place-items: center;
-  --menu-label-position: relative;
-  --menu-label-border-radius: 5px;
-  --menu-label-padding: 2px 5px;
-  --menu-label-width: 100%;
+  --menu-children-margin: 5px;
 
-  --menu-label-hover-border: none;
-  --menu-label-hover-font-style: italic;
-  --menu-label-hover-background-color: var(--blue-dark);
-  --menu-label-hover-color: var(--white);
+  --menu-child-hover-border-radius: 20px;
+  --menu-child-hover-background-color: var(--white);
+  --menu-child-hover-color: var(--gray);
+  --menu-children-hover-transform: scale(1.2);
 
-  --menu-fa-position: absolute;
-  --menu-fa-top: -22px;
-  --menu-fa-color: var(--blue);
+  --menu-checked-child-font-weight: bold;
+  --menu-checked-child-background-color: var(--white-dark);
+  --menu-checked-child-color: var(--black);
+}
 
-  --menu-checked-label-font-weight: bold;
-  --menu-checked-label-background-color: var(--blue);
-  --menu-checked-label-color: var(--white);
+footer {
+  --menu-footer-margin-bottom: 38px;
+}
+
+@media (min-width: $breakpoint-sm) {
+  footer {
+    --menu-footer-margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  footer {
+    --menu-footer-margin-bottom: 48px;
+  }
 }
