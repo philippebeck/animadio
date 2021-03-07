@@ -1,0 +1,74 @@
+/***** Global : Variables : Colors *****/
+
+// Primary Colors
+$pink:      255, 0, 255     !default;
+$red:       255, 99, 71     !default;
+$orange:    255, 140, 0     !default;
+$yellow:    255, 215, 0     !default;
+$brown:     139, 69, 19     !default;
+$green:     34, 139, 34     !default;
+$cyan:      127, 255, 212   !default;
+$blue:      65, 105, 225    !default;
+$violet:    106, 90, 205    !default;
+
+$primary-colors: (
+  "pink":     $pink,
+  "red":      $red,
+  "orange":   $orange,
+  "yellow":   $yellow,
+  "brown":    $brown,
+  "green":    $green,
+  "cyan":     $cyan,
+  "blue":     $blue,
+  "violet":   $violet
+) !default;
+
+// Grayscale
+$black:   15, 15, 15      !default;
+$gray:    105, 105, 105   !default;
+$grey:    192, 192, 192   !default;
+$white:   255, 255, 240   !default;
+
+$grayscale: (
+  "black":    $black,
+  "gray":     $gray,
+  "grey":     $grey,
+  "white":    $white
+) !default;
+
+// Brand Colors
+$facebook:    66, 103, 178    !default;
+$github:      36, 41, 46      !default;
+$linkedin:    0, 119, 181     !default;
+$paypal:      39, 52, 106     !default;
+$twitter:     29, 161, 242    !default;
+
+$brand-colors: (
+  "fb":   $facebook,
+  "gh":   $github,
+  "in":   $linkedin,
+  "pp":   $paypal,
+  "tw":   $twitter
+) !default;
+
+// Composite Colors
+$main-colors: $primary-colors, $grayscale;
+$all-colors:  $primary-colors, $grayscale, $brand-colors;
+
+// CSS Colors
+:root {
+  /* Opaque Colors */
+  @each $colors in $all-colors {
+    @each $key, $value in $colors {
+      --#{$key}: rgb(#{$value});
+    }
+  }
+
+  /* Transparent Colors */
+  @each $colors in $main-colors {
+    @each $key, $value in $colors {
+      --#{$key}-dark: rgba(#{$value}, 0.7);
+      --#{$key}-light: rgba(#{$value}, 0.3);
+    }
+  }
+}
