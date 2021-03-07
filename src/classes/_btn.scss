@@ -36,7 +36,7 @@
   transform: var(--btn-checked-transform);
 }
 
-@each $colors in $extent-colors {
+@each $colors in $all-colors {
   @each $key, $value in $colors {
     @include btn-color($key, $value);
   }

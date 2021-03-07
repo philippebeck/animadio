@@ -1,0 +1,24 @@
+/***** Classes : Bord *****/
+
+/* Border default */
+@include helpers-concat('bord', 'border-style', 'var(--border-style)');
+
+/* Border style */
+@each $key, $value in $border-styles {
+  @include helpers('bord-#{$key}', 'border-style', $value);
+}
+
+// Border Width & Radius
+@each $type, $border in $borders {
+  /* Border #{$type} */
+  @each $key, $value in $border {
+    @include helpers('bord-#{$key}', 'border-#{$type}', 'var(--border-#{$type}-#{$key})');
+  }
+}
+
+/* Border color */
+@each $color in $main-colors {
+  @each $key, $value in $color {
+    @include helpers('bord-#{$key}', 'border-color', 'var(--#{$key})');
+  }
+}

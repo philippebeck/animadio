@@ -64,7 +64,7 @@
   }
 }
 
-@each $colors in $basic-colors {
+@each $colors in $main-colors {
   @each $key, $value in $colors {
     .card-#{$key} {
       background-color: var(--#{$key}-dark);
