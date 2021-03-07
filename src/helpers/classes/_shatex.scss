@@ -1,5 +1,0 @@
-/***** Helpers : Classes : Shatex *****/
-
-@each $key, $value in $text-shadows {
-  @include helpers('shatex-#{$key}', 'text-shadow', 'var(--text-shadow-#{$key})');
-}

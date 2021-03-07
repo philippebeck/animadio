@@ -1,9 +1,0 @@
-/***** Helpers : Classes : Shabox *****/
-
-@each $key, $value in $box-shadows {
-  @include helpers('shabox-#{$key}', 'box-shadow', 'var(--box-shadow-#{$key})');
-}
-
-@each $key, $value in $box-shadows {
-  @include helpers('shabox-in-#{$key}', 'box-shadow', 'inset var(--box-shadow-#{$key})');
-}
