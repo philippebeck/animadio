@@ -1,4 +1,4 @@
-/***** Elements : Variables : Card *****/
+/***** Variables : Card *****/
 
 [class*="card"] {
   --card-flex-direction: column;
@@ -43,7 +43,7 @@
   --card-btn-hover-background-color: var(--white);
   --card-btn-hover-color: initial;
 
-  @each $colors in $basic-colors {
+  @each $colors in $main-colors {
     @each $key, $value in $colors {
       --card-#{$key}-text-shadow: var(--card-title-text-shadow) var(--#{$key});
     }
