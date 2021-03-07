@@ -1,4 +1,25 @@
-/***** Helpers : Variables : Deco *****/
+// ***** Global : Variables : Font *****
+
+$font: (
+  'bold':       'weight',
+  'italic':     'style',
+  'oblique':    'style'
+) !default;
+
+$font-family: 'sans-serif', 'serif', 'monospace', 'cursive', 'fantasy';
+
+$text-align: (
+  'center':     center,
+  'justify':    justify,
+  'right':      right,
+  'left':       left
+) !default;
+
+$trans: (
+  'cap':  'capitalize',
+  'up':   'uppercase',
+  'low':  'lowercase'
+) !default;
 
 // Text Decoration Line
 $text-decoration-line: underline !default;
