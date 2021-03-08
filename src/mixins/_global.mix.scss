@@ -3,7 +3,7 @@
 @mixin keyframes($key) {
   @keyframes #{$key} {
     from {
-      transform: var(--transform-#{$key});
+      transform: var(--#{$key});
     }
   }
 }
