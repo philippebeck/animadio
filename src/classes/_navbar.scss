@@ -95,7 +95,7 @@
   }
 }
 
-#navbar {
+.navbar {
   &-close:checked ~ ul:first-of-type,
   &-open:checked ~ ul:last-of-type {
     display: flex;
