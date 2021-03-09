@@ -83,11 +83,11 @@ $transforms: (
   'slideTL':  $slideTL
 ) !default;
 
-$opacity:   0         !default;
-$origin:    center    !default;
-
 :root {
   @each $key, $value in $transforms {
     --#{$key}: #{$value};
   }
+
+  --opacity: 0;
+  --transform-origin: center;
 }
