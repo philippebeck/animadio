@@ -2,7 +2,7 @@
 
 .form {
   --form-margin: 20px auto;
-  --form-border: medium ridge var(--sky);
+  --form-border: medium ridge var(--blue);
   --form-padding: 20px;
   --form-width: 90%;
   --form-box-shadow: inset 0 0 5px 5px var(--blue-dark);
@@ -53,14 +53,14 @@
   --form-action-hover-transition: box-shadow 1s;
 
   --form-reset-border: medium solid var(--red-dark);
-  --form-reset-background-color: var(--tomato);
+  --form-reset-background-color: var(--red);
   --form-reset-color: var(--red);
 
   --form-reset-hover-background-color: var(--red);
   --form-reset-hover-color: var(--white);
 
   --form-submit-border: medium solid var(--green-dark);
-  --form-submit-background-color: var(--aqua);
+  --form-submit-background-color: var(--cyan);
   --form-submit-color: var(--green);
 
   --form-submit-hover-background-color: var(--green);
