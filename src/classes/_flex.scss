@@ -48,18 +48,3 @@
 .row-inverse {
   flex-wrap: wrap-reverse;
 }
-
-/* Flex system */
-@for $i from 2 to 13 {
-  @include flex-container($i, 'tn');
-  @include flex-children($i, 'tn');
-}
-
-@each $key, $value in $breakpoints {
-  @media (min-width: $value) {
-    @for $i from 2 to 13 {
-      @include flex-container($i, $key);
-      @include flex-children($i, $key);
-    }
-  }
-}
