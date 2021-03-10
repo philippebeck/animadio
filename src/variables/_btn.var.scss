@@ -1,54 +1,54 @@
 /***** Variables : Btn *****/
 
-$btn-tn-padding:      3px 6px     !default;
-$btn-tn-font-size:    60%         !default;
+$btn-tn-padding:    3px 6px   !default;
+$btn-tn-font-size:  60%       !default;
 
-$btn-sm-padding:      4px 8px     !default;
-$btn-sm-font-size:    80%         !default;
+$btn-sm-padding:    4px 8px   !default;
+$btn-sm-font-size:  80%       !default;
 
-$btn-lg-padding:      7px 14px    !default;
-$btn-lg-font-size:    140%        !default;
+$btn-lg-padding:    7px 14px  !default;
+$btn-lg-font-size:  140%      !default;
 
-$btn-wd-padding:      9px 18px    !default;
-$btn-wd-font-size:    180%        !default;
+$btn-wd-padding:    9px 18px  !default;
+$btn-wd-font-size:  180%      !default;
 
 $btn-size: 'tn', 'sm', 'lg', 'wd';
 
 $btn-sizes: (
-  'tn-padding':     $btn-tn-padding,
-  'tn-font-size':   $btn-tn-font-size,
-  'sm-padding':     $btn-sm-padding,
-  'sm-font-size':   $btn-sm-font-size,
-  'lg-padding':     $btn-lg-padding,
-  'lg-font-size':   $btn-lg-font-size,
-  'wd-padding':     $btn-wd-padding,
-  'wd-font-size':   $btn-wd-font-size
+  'tn-padding':   $btn-tn-padding,
+  'tn-font-size': $btn-tn-font-size,
+  'sm-padding':   $btn-sm-padding,
+  'sm-font-size': $btn-sm-font-size,
+  'lg-padding':   $btn-lg-padding,
+  'lg-font-size': $btn-lg-font-size,
+  'wd-padding':   $btn-wd-padding,
+  'wd-font-size': $btn-wd-font-size
 ) !default;
 
-$btn-square-border-radius:    unset                               !default;
-$btn-square-padding-top:      calc(var(--btn-square-sizes) / 4)   !default;
-$btn-square-sizes:            100px                               !default;
+$btn-square-border-radius:  unset                             !default;
+$btn-square-padding-top:    calc(var(--btn-square-sizes) / 4) !default;
+$btn-square-sizes:          100px                             !default;
 
-$btn-round-border-radius:   30px                                  !default;
-$btn-round-padding-top:     calc(var(--btn-round-sizes) / 4)      !default;
-$btn-round-sizes:           100px                                 !default;
+$btn-round-border-radius: 30px                                !default;
+$btn-round-padding-top:   calc(var(--btn-round-sizes) / 4)    !default;
+$btn-round-sizes:         100px                               !default;
 
-$btn-circle-border-radius:    50%                                 !default;
-$btn-circle-padding-top:      calc(var(--btn-circle-sizes) / 4)   !default;
-$btn-circle-sizes:            100px                               !default;
+$btn-circle-border-radius:  50%                               !default;
+$btn-circle-padding-top:    calc(var(--btn-circle-sizes) / 4) !default;
+$btn-circle-sizes:          100px                             !default;
 
 $btn-shape: 'square', 'round', 'circle';
 
 $btn-shapes: (
-  'square-border-radius':   $btn-square-border-radius,
-  'square-padding-top':     $btn-square-padding-top,
-  'square-sizes':           $btn-square-sizes,
-  'round-border-radius':    $btn-round-border-radius,
-  'round-padding-top':      $btn-round-padding-top,
-  'round-sizes':            $btn-round-sizes,
-  'circle-border-radius':   $btn-circle-border-radius,
-  'circle-padding-top':     $btn-circle-padding-top,
-  'circle-sizes':           $btn-circle-sizes,
+  'square-border-radius': $btn-square-border-radius,
+  'square-padding-top':   $btn-square-padding-top,
+  'square-sizes':         $btn-square-sizes,
+  'round-border-radius':  $btn-round-border-radius,
+  'round-padding-top':    $btn-round-padding-top,
+  'round-sizes':          $btn-round-sizes,
+  'circle-border-radius': $btn-circle-border-radius,
+  'circle-padding-top':   $btn-circle-padding-top,
+  'circle-sizes':         $btn-circle-sizes,
 ) !default;
 
 [class*="btn"],
