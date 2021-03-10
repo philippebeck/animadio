@@ -11,3 +11,144 @@
     }
   }
 }
+
+/* Grid */
+[class*="grid"]{
+  display: grid;
+  max-width: var(--grid-max-width);
+}
+
+/* Grid-template */
+@for $i from 2 to 13 {
+  @include grid-template($i, 'tn');
+}
+
+@each $key, $value in $breakpoints {
+  @media (min-width: $value) {
+    @for $i from 2 to 13 {
+      @include grid-template($i, $key);
+    }
+  }
+}
+
+/* Grid-gap */
+@include grid-gap('tn');
+
+@each $key, $value in $breakpoints {
+  @media (min-width: $value) {
+    @include grid-gap($key);
+  }
+}
+
+.flex,
+.col,
+.col-inverse,
+.col-nowrap,
+.col-reverse,
+.row,
+.row-inverse,
+.row-nowrap,
+.row-reverse {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+}
+
+.col,
+.col-inverse,
+.col-nowrap,
+.col-reverse {
+  flex-direction: column;
+  padding: var(--column-padding);
+}
+
+.row,
+.row-inverse,
+.row-nowrap,
+.row-reverse {
+  flex-direction: row;
+  padding: var(--row-padding);
+}
+
+.col-reverse {
+  flex-direction: column-reverse;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.col-nowrap,
+.row-nowrap {
+  flex-wrap: nowrap;
+}
+
+.col-inverse,
+.row-inverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Place-content */
+@each $key, $value in $place-content-var {
+  @include place-content($key);
+}
+@each $key, $value in $place-content {
+  @include place-content($key, '', $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+
+    @each $key, $value in $place-content-var {
+      @include place-content($key, '-#{$type}');
+    }
+
+    @each $key, $value in $place-content {
+      @include place-content($key, '-#{$type}', $value);
+    }
+  }
+}
+
+/* Place-items */
+@each $key, $value in $place-items-var {
+  @include place-items($key);
+}
+
+@each $key, $value in $place-items {
+  @include place-items($key, '', $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    
+    @each $key, $value in $place-items-var {
+      @include place-items($key, '-#{$type}');
+    }
+
+    @each $key, $value in $place-items {
+      @include place-items($key, '-#{$type}', $value);
+    }
+  }
+}
+
+/* Place-self */
+@each $key, $value in $place-self-var {
+  @include place-self($key);
+}
+
+@each $key, $value in $place-self {
+  @include place-self($key, '', $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+
+    @each $key, $value in $place-self-var {
+      @include place-self($key, '-#{$type}');
+    }
+
+    @each $key, $value in $place-self {
+      @include place-self($key, '-#{$type}', $value);
+    }
+  }
+}
