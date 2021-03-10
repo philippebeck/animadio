@@ -1,54 +1,54 @@
 /***** Variables : Colors *****/
 
 // Primary Colors
-$pink:      255, 0, 255     !default;
-$red:       255, 99, 71     !default;
-$orange:    255, 140, 0     !default;
-$yellow:    255, 215, 0     !default;
-$brown:     139, 69, 19     !default;
-$green:     34, 139, 34     !default;
-$cyan:      127, 255, 212   !default;
-$blue:      65, 105, 225    !default;
-$violet:    106, 90, 205    !default;
+$pink:    255, 0, 255   !default;
+$red:     250, 128, 114 !default;
+$orange:  255, 140, 0   !default;
+$yellow:  255, 215, 0   !default;
+$brown:   139, 69, 19   !default;
+$green:   50, 205, 50   !default;
+$cyan:    127, 255, 212 !default;
+$blue:    30, 144, 255  !default;
+$violet:  106, 90, 205  !default;
 
 $primary-colors: (
-  "pink":     $pink,
-  "red":      $red,
-  "orange":   $orange,
-  "yellow":   $yellow,
-  "brown":    $brown,
-  "green":    $green,
-  "cyan":     $cyan,
-  "blue":     $blue,
-  "violet":   $violet
+  "pink":   $pink,
+  "red":    $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "brown":  $brown,
+  "green":  $green,
+  "cyan":   $cyan,
+  "blue":   $blue,
+  "violet": $violet
 ) !default;
 
 // Grayscale
-$black:   15, 15, 15      !default;
-$gray:    105, 105, 105   !default;
-$grey:    192, 192, 192   !default;
-$white:   255, 255, 240   !default;
+$black: 15, 15, 15    !default;
+$gray:  105, 105, 105 !default;
+$grey:  192, 192, 192 !default;
+$white: 255, 255, 240 !default;
 
 $grayscale: (
-  "black":    $black,
-  "gray":     $gray,
-  "grey":     $grey,
-  "white":    $white
+  "black":  $black,
+  "gray":   $gray,
+  "grey":   $grey,
+  "white":  $white
 ) !default;
 
 // Brand Colors
-$facebook:    66, 103, 178    !default;
-$github:      36, 41, 46      !default;
-$linkedin:    0, 119, 181     !default;
-$paypal:      39, 52, 106     !default;
-$twitter:     29, 161, 242    !default;
+$facebook:  66, 103, 178  !default;
+$github:    36, 41, 46    !default;
+$linkedin:  0, 119, 181   !default;
+$paypal:    39, 52, 106   !default;
+$twitter:   29, 161, 242  !default;
 
 $brand-colors: (
-  "fb":   $facebook,
-  "gh":   $github,
-  "in":   $linkedin,
-  "pp":   $paypal,
-  "tw":   $twitter
+  "fb": $facebook,
+  "gh": $github,
+  "in": $linkedin,
+  "pp": $paypal,
+  "tw": $twitter
 ) !default;
 
 // Composite Colors
