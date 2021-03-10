@@ -39,11 +39,7 @@
     }
   }
 
-  & > h2,
-  & > h3,
-  & > h4,
-  & > h5,
-  & > h6 {
+  & > *:first-child {
     font-size: var(--card-title-font-size);
     text-shadow: var(--card-title-text-shadow);
   }
@@ -69,14 +65,6 @@
     .card-#{$key} {
       background-color: var(--#{$key}-dark);
       color: var(--#{$key});
-
-      & > h2,
-      & > h3,
-      & > h4,
-      & > h5,
-      & > h6 {
-        text-shadow: var(--card-#{$key}-text-shadow);
-      }
     }
   }
 }
