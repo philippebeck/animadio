@@ -1,14 +1,14 @@
 /***** Variables : Sizes *****/
 
-// Height
-$height-sm:    25vh   !default;
-$height-md:    50vh   !default;
-$height-lg:    75vh   !default;
+/* Height */
+$height-sm: 25vh  !default;
+$height-md: 50vh  !default;
+$height-lg: 75vh  !default;
 
 $heights: (
-  'sm':   $height-sm,
-  'md':   $height-md,
-  'lg':   $height-lg
+  'sm': $height-sm,
+  'md': $height-md,
+  'lg': $height-lg
 ) !default;
 
 [class*="height-"] {
@@ -17,15 +17,11 @@ $heights: (
   }
 }
 
-// Max-Height
-$max-height-sm:    25vh   !default;
-$max-height-md:    50vh   !default;
-$max-height-lg:    75vh   !default;
-
+/* Max-Height */
 $max-heights: (
-  'sm':   $max-height-sm,
-  'md':   $max-height-md,
-  'lg':   $max-height-lg
+  'sm': $height-sm,
+  'md': $height-md,
+  'lg': $height-lg
 ) !default;
 
 [class*="max-h-"] {
@@ -34,15 +30,11 @@ $max-heights: (
   }
 }
 
-// Min-Height
-$min-height-sm:    25vh   !default;
-$min-height-md:    50vh   !default;
-$min-height-lg:    75vh   !default;
-
+/* Min-Height */
 $min-heights: (
-  'sm':   $min-height-sm,
-  'md':   $min-height-md,
-  'lg':   $min-height-lg
+  'sm': $height-sm,
+  'md': $height-md,
+  'lg': $height-lg
 ) !default;
 
 [class*="min-h-"] {
@@ -51,15 +43,15 @@ $min-heights: (
   }
 }
 
-// Width
-$width-sm:    25vw    !default;
-$width-md:    50vw    !default;
-$width-lg:    75vw    !default;
+/* Width */
+$width-sm:  25vw  !default;
+$width-md:  50vw  !default;
+$width-lg:  75vw  !default;
 
 $widths: (
-  'sm':   $width-sm,
-  'md':   $width-md,
-  'lg':   $width-lg
+  'sm': $width-sm,
+  'md': $width-md,
+  'lg': $width-lg
 ) !default;
 
 [class*="width-"] {
@@ -68,15 +60,11 @@ $widths: (
   }
 }
 
-// Max-Width
-$max-width-sm:    25vw    !default;
-$max-width-md:    50vw    !default;
-$max-width-lg:    75vw    !default;
-
+/* Max-Width */
 $max-widths: (
-  'sm':   $max-width-sm,
-  'md':   $max-width-md,
-  'lg':   $max-width-lg
+  'sm': $width-sm,
+  'md': $width-md,
+  'lg': $width-lg
 ) !default;
 
 [class*="max-w-"] {
@@ -85,15 +73,11 @@ $max-widths: (
   }
 }
 
-// Min-Width
-$min-width-sm:    25vw    !default;
-$min-width-md:    50vw    !default;
-$min-width-lg:    75vw    !default;
-
+/* Min-Width */
 $min-widths: (
-  'sm':   $min-width-sm,
-  'md':   $min-width-md,
-  'lg':   $min-width-lg
+  'sm': $width-sm,
+  'md': $width-md,
+  'lg': $width-lg
 ) !default;
 
 [class*="min-w-"] {
