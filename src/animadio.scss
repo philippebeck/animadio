@@ -1,33 +1,22 @@
 // ********** MIXINS **********
-@import 'mixins/global.mix';
-@import 'mixins/helpers.mix';
-@import 'mixins/grid.mix';
-@import 'mixins/elements.mix';
-@import 'mixins/states.mix';
+@import 'mixins/mixins';
 
 // ********** VARIABLES **********
-@import 'variables/breakpoints.var';
+@import 'variables/base.var';
 @import 'variables/colors.var';
 @import 'variables/keyframes.var';
 @import 'variables/init.var';
-@import 'variables/container.var';
 @import 'variables/anima.var';
 @import 'variables/display.var';
-@import 'variables/position.var';
 @import 'variables/margins.var';
 @import 'variables/border.var';
 @import 'variables/sizes.var';
-@import 'variables/fonts.var';
-@import 'variables/shadows.var';
-@import 'variables/cursor.var';
-@import 'variables/flex.var';
-@import 'variables/grid.var';
-@import 'variables/place.var';
-@import 'variables/navbar.var';
+@import 'variables/helpers.var';
 @import 'variables/btn.var';
 @import 'variables/card.var';
-@import 'variables/menu.var';
+@import 'variables/navbar.var';
 @import 'variables/sidebar.var';
+@import 'variables/menu.var';
 @import 'variables/gallery.var';
 @import 'variables/form.var';
 @import 'variables/table.var';
@@ -43,21 +32,13 @@
 
 // ********** CLASSES **********
 @import 'classes/base';
-@import 'classes/anima';
 @import 'classes/display';
-@import 'classes/position';
-@import 'classes/border';
-@import 'classes/bg';
-@import 'classes/color';
 @import 'classes/helpers';
-@import 'classes/flex';
-@import 'classes/grid';
-@import 'classes/place';
-@import 'classes/navbar';
 @import 'classes/btn';
 @import 'classes/card';
-@import 'classes/menu';
+@import 'classes/navbar';
 @import 'classes/sidebar';
+@import 'classes/menu';
 @import 'classes/gallery';
 @import 'classes/form';
 @import 'classes/table';
