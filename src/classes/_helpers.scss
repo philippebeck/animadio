@@ -2,71 +2,94 @@
 
 /* Margin */
 @each $key, $value in $box-nones {
-    @include helpers('mar-#{$key}', 'margin#{$value}', 'var(--margin-none)');
+  @include helpers('mar-#{$key}', 'margin#{$value}', 'var(--margin-none)');
 }
-  
+
 @each $key, $value in $box-sizes {
-    @include helpers('mar-#{$key}', 'margin#{$value}', 'var(--margin-#{$key})');
+  @include helpers('mar-#{$key}', 'margin#{$value}', 'var(--margin-#{$key})');
+}
+
+/* Border default */
+@include helpers-concat('bord', 'border-style', 'var(--border-style)');
+
+/* Border style */
+@each $key, $value in $border-styles {
+  @include helpers('bord-#{$key}', 'border-style', $value);
+}
+
+// Border Width & Radius
+@each $type, $border in $borders {
+  /* Border #{$type} */
+  @each $key, $value in $border {
+    @include helpers('bord-#{$key}', 'border-#{$type}', 'var(--border-#{$type}-#{$key})');
+  }
+}
+
+/* Border color */
+@each $color in $main-colors {
+  @each $key, $value in $color {
+    @include helpers('bord-#{$key}', 'border-color', 'var(--#{$key})');
+  }
 }
 
 /* Padding */
 @each $key, $value in $box-nones {
-    @include helpers('pad-#{$key}', 'padding#{$value}', 'var(--padding-none)');
+  @include helpers('pad-#{$key}', 'padding#{$value}', 'var(--padding-none)');
 }
-  
+
 @each $key, $value in $box-sizes {
-    @include helpers('pad-#{$key}', 'padding#{$value}', 'var(--padding-#{$key})');
+  @include helpers('pad-#{$key}', 'padding#{$value}', 'var(--padding-#{$key})');
 }
 
 /* Height */
 @each $key, $value in $heights {
-    @include helpers('height-#{$key}', 'height', 'var(--height-#{$key})');
+  @include helpers('height-#{$key}', 'height', 'var(--height-#{$key})');
 }
-  
-  /* Max-height */
+
+/* Max-height */
 @each $key, $value in $max-heights {
-    @include helpers('max-h-#{$key}', 'max-height', 'var(--max-height-#{$key})');
+  @include helpers('max-h-#{$key}', 'max-height', 'var(--max-height-#{$key})');
 }
-  
-  /* Min-height */
+
+/* Min-height */
 @each $key, $value in $min-heights {
-    @include helpers('min-h-#{$key}', 'min-height', 'var(--min-height-#{$key})');
+  @include helpers('min-h-#{$key}', 'min-height', 'var(--min-height-#{$key})');
 }
-  
+
 /* Width */
 @each $key, $value in $widths {
-    @include helpers('width-#{$key}', 'width', 'var(--width-#{$key})');
+  @include helpers('width-#{$key}', 'width', 'var(--width-#{$key})');
 }
 
 /* Max-width */
 @each $key, $value in $max-widths {
-    @include helpers('max-w-#{$key}', 'max-width', 'var(--max-width-#{$key})');
+  @include helpers('max-w-#{$key}', 'max-width', 'var(--max-width-#{$key})');
 }
 
 /* Min-width */
 @each $key, $value in $min-widths {
-    @include helpers('min-w-#{$key}', 'min-width', 'var(--min-width-#{$key})');
+  @include helpers('min-w-#{$key}', 'min-width', 'var(--min-width-#{$key})');
 }
 
 /* Font */
 @each $key, $value in $font {
-    @include helpers('font-#{$key}', 'font-#{$value}', $key);
+  @include helpers('font-#{$key}', 'font-#{$value}', $key);
 }
 
 @each $key in $font-family {
-    .font-#{$key} {
-        font-family: var(--#{$key}-font-family);
-    }
+  .font-#{$key} {
+    font-family: var(--#{$key}-font-family);
+  }
 }
   
 /* Trans */
 @each $key, $value in $trans {
-    @include helpers('trans-#{$key}', 'text-transform', $value);
+  @include helpers('trans-#{$key}', 'text-transform', $value);
 }
 
 /* Align */
 @each $key, $value in $text-align {
-    @include helpers('align-#{$key}', 'text-align', $value);
+  @include helpers('align-#{$key}', 'text-align', $value);
 }
 
 /* Deco */
@@ -86,19 +109,16 @@
 
 /* Shabox */
 @each $key, $value in $box-shadows {
-    @include helpers('shabox-#{$key}', 'box-shadow', 'var(--box-shadow-#{$key})');
-}
-  
-@each $key, $value in $box-shadows {
-    @include helpers('shabox-in-#{$key}', 'box-shadow', 'inset var(--box-shadow-#{$key})');
+  @include helpers('shabox-#{$key}', 'box-shadow', 'var(--box-shadow-#{$key})');
+  @include helpers('shabox-in-#{$key}', 'box-shadow', 'inset var(--box-shadow-#{$key})');
 }
 
 /* Shatex */
 @each $key, $value in $text-shadows {
-    @include helpers('shatex-#{$key}', 'text-shadow', 'var(--text-shadow-#{$key})');
+  @include helpers('shatex-#{$key}', 'text-shadow', 'var(--text-shadow-#{$key})');
 }
 
 /* Cursor */
 @each $key, $value in $cursor {
-    @include helpers('cursor-#{$key}', 'cursor', $value);
+  @include helpers('cursor-#{$key}', 'cursor', $value);
 }
