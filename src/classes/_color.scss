@@ -1,7 +1,0 @@
-/***** Classes : Color *****/
-
-@each $colors in $main-colors {
-  @each $key, $value in $colors {
-    @include helpers('color-#{$key}', 'color', 'var(--#{$key})');
-  }
-}
