@@ -1,68 +1,54 @@
 /***** Variables : Margins *****/
 
+// Box
 $box-nones: (
-  'none':           '',
-  'top-none':       '-top',
-  'right-none':     '-right',
-  'bottom-none':    '-bottom',
-  'left-none':      '-left',
+  'none':         '',
+  'top-none':     '-top',
+  'right-none':   '-right',
+  'bottom-none':  '-bottom',
+  'left-none':    '-left',
 ) !default;
 
 $box-sizes: (
-  'sm':           '',
-  'md':           '',
-  'lg':           '',
-  'top-sm':       '-top',
-  'top-md':       '-top',
-  'top-lg':       '-top',
-  'right-sm':     '-right',
-  'right-md':     '-right',
-  'right-lg':     '-right',
-  'bot-sm':       '-bottom',
-  'bot-md':       '-bottom',
-  'bot-lg':       '-bottom',
-  'left-sm':      '-left',
-  'left-md':      '-left',
-  'left-lg':      '-left'
+  'sm':       '',
+  'md':       '',
+  'lg':       '',
+  'top-sm':   '-top',
+  'top-md':   '-top',
+  'top-lg':   '-top',
+  'right-sm': '-right',
+  'right-md': '-right',
+  'right-lg': '-right',
+  'bot-sm':   '-bottom',
+  'bot-md':   '-bottom',
+  'bot-lg':   '-bottom',
+  'left-sm':  '-left',
+  'left-md':  '-left',
+  'left-lg':  '-left'
 ) !default;
 
-$margin-sm:   10px    !default;
-$margin-md:   20px    !default;
-$margin-lg:   50px    !default;
-
-$margin-top-sm:   10px    !default;
-$margin-top-md:   20px    !default;
-$margin-top-lg:   50px    !default;
-
-$margin-right-sm:   10px    !default;
-$margin-right-md:   20px    !default;
-$margin-right-lg:   50px    !default;
-
-$margin-bottom-md:    20px    !default;
-$margin-bottom-sm:    10px    !default;
-$margin-bottom-lg:    50px    !default;
-
-$margin-left-sm:    10px    !default;
-$margin-left-md:    20px    !default;
-$margin-left-lg:    50px    !default;
+/* Margin */
+$margin-sm: 10px  !default;
+$margin-md: 20px  !default;
+$margin-lg: 50px  !default;
 
 $margins: (
-  'none':         0,
-  'sm':           $margin-sm,
-  'md':           $margin-md,
-  'lg':           $margin-lg,
-  'top-sm':       $margin-top-sm,
-  'top-md':       $margin-top-md,
-  'top-lg':       $margin-top-lg,
-  'right-sm':     $margin-right-sm,
-  'right-md':     $margin-right-md,
-  'right-lg':     $margin-right-lg,
-  'bot-sm':       $margin-bottom-sm,
-  'bot-md':       $margin-bottom-md,
-  'bot-lg':       $margin-bottom-lg,
-  'left-sm':      $margin-left-sm,
-  'left-md':      $margin-left-md,
-  'left-lg':      $margin-left-lg
+  'none':     0,
+  'sm':       $margin-sm,
+  'md':       $margin-md,
+  'lg':       $margin-lg,
+  'top-sm':   $margin-sm,
+  'top-md':   $margin-md,
+  'top-lg':   $margin-lg,
+  'right-sm': $margin-sm,
+  'right-md': $margin-md,
+  'right-lg': $margin-lg,
+  'bot-sm':   $margin-sm,
+  'bot-md':   $margin-md,
+  'bot-lg':   $margin-lg,
+  'left-sm':  $margin-sm,
+  'left-md':  $margin-md,
+  'left-lg':  $margin-lg
 ) !default;
 
 [class*="mar-"] {
@@ -71,43 +57,28 @@ $margins: (
   }
 }
 
-$padding-sm:   10px    !default;
-$padding-md:   20px    !default;
-$padding-lg:   50px    !default;
-
-$padding-top-sm:   10px    !default;
-$padding-top-md:   20px    !default;
-$padding-top-lg:   50px    !default;
-
-$padding-right-sm:   10px    !default;
-$padding-right-md:   20px    !default;
-$padding-right-lg:   50px    !default;
-
-$padding-bottom-md:    20px    !default;
-$padding-bottom-sm:    10px    !default;
-$padding-bottom-lg:    50px    !default;
-
-$padding-left-sm:    10px    !default;
-$padding-left-md:    20px    !default;
-$padding-left-lg:    50px    !default;
+/* Padding */
+$padding-sm:  10px  !default;
+$padding-md:  20px  !default;
+$padding-lg:  50px  !default;
 
 $paddings: (
-  'none':         0,
-  'sm':           $padding-sm,
-  'md':           $padding-md,
-  'lg':           $padding-lg,
-  'top-sm':       $padding-top-sm,
-  'top-md':       $padding-top-md,
-  'top-lg':       $padding-top-lg,
-  'right-sm':     $padding-right-sm,
-  'right-md':     $padding-right-md,
-  'right-lg':     $padding-right-lg,
-  'bot-sm':       $padding-bottom-sm,
-  'bot-md':       $padding-bottom-md,
-  'bot-lg':       $padding-bottom-lg,
-  'left-sm':      $padding-left-sm,
-  'left-md':      $padding-left-md,
-  'left-lg':      $padding-left-lg
+  'none':     0,
+  'sm':       $padding-sm,
+  'md':       $padding-md,
+  'lg':       $padding-lg,
+  'top-sm':   $padding-sm,
+  'top-md':   $padding-md,
+  'top-lg':   $padding-lg,
+  'right-sm': $padding-sm,
+  'right-md': $padding-md,
+  'right-lg': $padding-lg,
+  'bot-sm':   $padding-sm,
+  'bot-md':   $padding-md,
+  'bot-lg':   $padding-lg,
+  'left-sm':  $padding-sm,
+  'left-md':  $padding-md,
+  'left-lg':  $padding-lg
 ) !default;
 
 [class*="pad-"] {
