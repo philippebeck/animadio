@@ -1,5 +1,5 @@
 // ********** MIXINS **********
-@import 'mixins/mixins';
+@import 'base/mixins';
 
 // ********** VARIABLES **********
 @import 'variables/base.var';
@@ -25,10 +25,10 @@
 @import 'variables/canvas.var';
 
 // ********** RULES **********
-@import 'rules/keyframes';
+@import 'base/keyframes';
 
 // ********** TAGS **********
-@import 'tags/init';
+@import 'base/init';
 
 // ********** CLASSES **********
 @import 'classes/base';
