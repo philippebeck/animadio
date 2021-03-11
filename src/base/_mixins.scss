@@ -83,20 +83,20 @@
 // Helpers
 @mixin helpers($class, $property, $value) {
   .#{$class},
-  .#{$class}-global > *,
-  .#{$class}-onto:hover,
-  .#{$class}-onto:focus,
-  .#{$class}-check:checked ~ .#{$class}-hub .#{$class}-goal {
+  .global-#{$class} > *,
+  .onto-#{$class}:hover,
+  .onto-#{$class}:focus,
+  .check-#{$class}:checked ~ .hub-#{$class} .goal-#{$class} {
       #{$property}: #{$value};
   }
 }
 
 @mixin helpers-concat($class, $property, $value) {
   [class*="#{$class}"],
-  [class*="#{$class}"][class*="-global"] > *,
-  [class*="#{$class}"][class*="-onto"]:hover,
-  [class*="#{$class}"][class*="-onto"]:focus,
-  [class*="#{$class}"][class*="-check"]:checked ~ [class*="#{$class}"][class*="-hub"] [class*="#{$class}"][class*="-goal"] {
+  [class*="global-"][class*="#{$class}"] > *,
+  [class*="onto-"][class*="#{$class}"]:hover,
+  [class*="onto-"][class*="#{$class}"]:focus,
+  [class*="check-"][class*="#{$class}"]:checked ~ [class*="hub-"][class*="#{$class}"] [class*="goal-"][class*="#{$class}"] {
       #{$property}: #{$value};
   }
 }
