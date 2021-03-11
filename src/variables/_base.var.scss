@@ -14,8 +14,6 @@ $breakpoints: (
 ) !default;
 
 // Container
-$container-max-width: 100% !default;
-
 $containers: (
   '50': 50%,
   '60': 60%,
@@ -25,7 +23,7 @@ $containers: (
 ) !default;
 
 [class*="container"] {
-  --container-max-width: #{$container-max-width};
+  --container-max-width: 100%;
 }
 
 // Position
