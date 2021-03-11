@@ -1,6 +1,6 @@
 /***** Classes : Helpers *****/
 
-/* Margin */
+// Margin
 @each $key, $value in $box-nones {
   @include helpers('mar-#{$key}', 'margin#{$value}', 'var(--margin-none)');
 }
@@ -9,30 +9,29 @@
   @include helpers('mar-#{$key}', 'margin#{$value}', 'var(--margin-#{$key})');
 }
 
-/* Border default */
+// Border default
 @include helpers-concat('bord', 'border-style', 'var(--border-style)');
 
-/* Border style */
+// Border style
 @each $key, $value in $border-styles {
   @include helpers('bord-#{$key}', 'border-style', $value);
 }
 
 // Border Width & Radius
 @each $type, $border in $borders {
-  /* Border #{$type} */
   @each $key, $value in $border {
     @include helpers('bord-#{$key}', 'border-#{$type}', 'var(--border-#{$type}-#{$key})');
   }
 }
 
-/* Border color */
+// Border color
 @each $color in $main-colors {
   @each $key, $value in $color {
     @include helpers('bord-#{$key}', 'border-color', 'var(--#{$key})');
   }
 }
 
-/* Padding */
+// Padding
 @each $key, $value in $box-nones {
   @include helpers('pad-#{$key}', 'padding#{$value}', 'var(--padding-none)');
 }
@@ -41,37 +40,37 @@
   @include helpers('pad-#{$key}', 'padding#{$value}', 'var(--padding-#{$key})');
 }
 
-/* Height */
+// Height
 @each $key, $value in $heights {
   @include helpers('height-#{$key}', 'height', 'var(--height-#{$key})');
 }
 
-/* Max-height */
+// Max-height
 @each $key, $value in $max-heights {
   @include helpers('max-h-#{$key}', 'max-height', 'var(--max-height-#{$key})');
 }
 
-/* Min-height */
+// Min-height
 @each $key, $value in $min-heights {
   @include helpers('min-h-#{$key}', 'min-height', 'var(--min-height-#{$key})');
 }
 
-/* Width */
+// Width
 @each $key, $value in $widths {
   @include helpers('width-#{$key}', 'width', 'var(--width-#{$key})');
 }
 
-/* Max-width */
+// Max-width
 @each $key, $value in $max-widths {
   @include helpers('max-w-#{$key}', 'max-width', 'var(--max-width-#{$key})');
 }
 
-/* Min-width */
+// Min-width
 @each $key, $value in $min-widths {
   @include helpers('min-w-#{$key}', 'min-width', 'var(--min-width-#{$key})');
 }
 
-/* Font */
+// Font
 @each $key, $value in $font {
   @include helpers('font-#{$key}', 'font-#{$value}', $key);
 }
@@ -82,43 +81,42 @@
   }
 }
   
-/* Trans */
+// Trans
 @each $key, $value in $trans {
   @include helpers('trans-#{$key}', 'text-transform', $value);
 }
 
-/* Align */
+// Align
 @each $key, $value in $text-align {
   @include helpers('align-#{$key}', 'text-align', $value);
 }
 
-/* Deco */
+// Deco
 @include helpers-concat('deco', 'text-decoration-line', 'var(--text-decoration-line)');
 
 @each $deco-key, $deco-value in $text-decorations {
-  /* Text decoration #{$deco-key} */
   @each $key, $value in $deco-value {
     @include helpers('deco-#{$key}', 'text-decoration-#{$deco-key}', $value);
   }
 }
 
-/* Text decoration color */
+// Text decoration color
 @each $key, $value in $primary-colors {
   @include helpers('deco-#{$key}', 'text-decoration-color', 'var(--#{$key})');
 }
 
-/* Shabox */
+// Shabox
 @each $key, $value in $box-shadows {
   @include helpers('shabox-#{$key}', 'box-shadow', 'var(--box-shadow-#{$key})');
   @include helpers('shabox-in-#{$key}', 'box-shadow', 'inset var(--box-shadow-#{$key})');
 }
 
-/* Shatex */
+// Shatex
 @each $key, $value in $text-shadows {
   @include helpers('shatex-#{$key}', 'text-shadow', 'var(--text-shadow-#{$key})');
 }
 
-/* Cursor */
+// Cursor
 @each $key, $value in $cursor {
   @include helpers('cursor-#{$key}', 'cursor', $value);
 }

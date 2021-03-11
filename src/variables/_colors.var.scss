@@ -57,14 +57,14 @@ $all-colors:  $primary-colors, $grayscale, $brand-colors;
 
 // CSS Colors
 :root {
-  /* Opaque Colors */
+  // Opaque Colors
   @each $colors in $all-colors {
     @each $key, $value in $colors {
       --#{$key}: rgb(#{$value});
     }
   }
 
-  /* Transparent Colors */
+  // Transparent Colors
   @each $colors in $main-colors {
     @each $key, $value in $colors {
       --#{$key}-dark: rgba(#{$value}, 0.7);

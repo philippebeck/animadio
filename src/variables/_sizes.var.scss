@@ -1,6 +1,6 @@
 /***** Variables : Sizes *****/
 
-/* Height */
+// Height
 $height-sm: 25vh  !default;
 $height-md: 50vh  !default;
 $height-lg: 75vh  !default;
@@ -17,7 +17,7 @@ $heights: (
   }
 }
 
-/* Max-Height */
+// Max-Height
 $max-heights: (
   'sm': $height-sm,
   'md': $height-md,
@@ -30,7 +30,7 @@ $max-heights: (
   }
 }
 
-/* Min-Height */
+// Min-Height
 $min-heights: (
   'sm': $height-sm,
   'md': $height-md,
@@ -43,7 +43,7 @@ $min-heights: (
   }
 }
 
-/* Width */
+// Width
 $width-sm:  25vw  !default;
 $width-md:  50vw  !default;
 $width-lg:  75vw  !default;
@@ -60,7 +60,7 @@ $widths: (
   }
 }
 
-/* Max-Width */
+// Max-Width
 $max-widths: (
   'sm': $width-sm,
   'md': $width-md,
@@ -73,7 +73,7 @@ $max-widths: (
   }
 }
 
-/* Min-Width */
+// Min-Width
 $min-widths: (
   'sm': $width-sm,
   'md': $width-md,

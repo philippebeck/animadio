@@ -1,4 +1,4 @@
-// ***** Variables : Helpers *****
+/***** Variables : Helpers *****/
 
 // Font
 $font: (
@@ -41,7 +41,7 @@ $text-decoration-styles: (
   'wavy':   wavy
 ) !default;
 
-/* Text Decoration */
+// Text Decoration
 $text-decorations : (
   "line":   $text-decoration-lines,
   "style":  $text-decoration-styles
@@ -68,7 +68,7 @@ $shadow-spread-sm:  1px 1px 1px 1px !default;
 $shadow-spread-md:  2px 2px 2px 2px !default;
 $shadow-spread-lg:  5px 5px 5px 5px !default;
 
-/* Box Shadow */
+// Box Shadow
 $box-shadows: (
   'sm':         $shadow-sm,
   'md':         $shadow-md,
@@ -89,7 +89,7 @@ $box-shadows: (
   }
 }
 
-/* Text Shadow */
+// Text Shadow
 $text-shadows: (
   'sm':       $shadow-sm,
   'md':       $shadow-md,

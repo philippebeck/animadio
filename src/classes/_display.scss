@@ -12,13 +12,13 @@
   }
 }
 
-/* Grid */
+// Grid
 [class*="grid"]{
   display: grid;
   max-width: var(--grid-max-width);
 }
 
-/* Grid-template */
+// Grid-template
 @for $i from 2 to 13 {
   @include grid-template($i, 'tn');
 }
@@ -31,7 +31,7 @@
   }
 }
 
-/* Grid-gap */
+// Grid-gap
 @include grid-gap('tn');
 
 @each $key, $value in $breakpoints {
@@ -88,7 +88,7 @@
   flex-wrap: wrap-reverse;
 }
 
-/* Place-content */
+// Place-content
 @each $key, $value in $place-content-var {
   @include place-content($key);
 }
@@ -109,7 +109,7 @@
   }
 }
 
-/* Place-items */
+// Place-items
 @each $key, $value in $place-items-var {
   @include place-items($key);
 }
@@ -131,7 +131,7 @@
   }
 }
 
-/* Place-self */
+// Place-self
 @each $key, $value in $place-self-var {
   @include place-self($key);
 }

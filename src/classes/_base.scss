@@ -1,5 +1,6 @@
 /***** Classes : Base *****/
 
+// Hide Input Radio & Checkbox used by Animadio
 [class*="check"],
 [class*="radio"],
 [id*="check"],
@@ -7,7 +8,7 @@
   display: none !important;
 }
 
-/* Container */
+// Container
 [class*="container"] {
   margin: auto;
   max-width: var(--container-max-width);
@@ -25,7 +26,7 @@
   }
 }
 
-/* Position */
+// Position
 @each $key, $value in $positions {
   @include helpers($key, 'position', $value);
 }
@@ -38,7 +39,7 @@
   }
 }
 
-/* Colors */
+// Colors
 @each $colors in $all-colors {
   @each $key, $value in $colors {
     @include helpers('color-#{$key}', 'color', 'var(--#{$key})');
@@ -53,7 +54,7 @@
   }
 }
 
-/* Animation default */
+// Animation default
 [class*="anima-"][class*="-this"],
 [class*="anima-"][class*="-global"] > *,
 [class*="anima-"][class*="-onto"]:hover,
@@ -73,20 +74,19 @@
   animation-duration: var(--animation-duration);
 }
 
-/* Animations */
+// Animations
 @each $key, $value in $transforms {
   @include anima($key, 'animation-name', $key);
 }
 
 // Animation Options
 @each $type, $option in $animation-options {
-  /* Animation #{$type} */
   @each $key, $value in $option {
     @include anima($key, 'animation-#{$type}', 'var(--animation-#{$type}-#{$key})');
   }
 }
 
-/* Animation Directions */
+// Animation Directions
 @each $key, $value in $animation-directions {
   @include anima($key, 'animation-direction', $value);
 }
