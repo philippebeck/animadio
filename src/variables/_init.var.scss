@@ -46,6 +46,10 @@ ul {
   --list-style: none;
 }
 
+figure {
+  --figure-margin: 0;
+}
+
 img,
 video {
   --img-height: auto;

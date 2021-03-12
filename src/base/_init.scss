@@ -66,6 +66,10 @@ ul {
   list-style: var(--list-style);
 }
 
+figure {
+  margin: var(--figure-margin);
+}
+
 img,
 video {
   object-fit: var(--img-object-fit);
