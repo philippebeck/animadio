@@ -16,6 +16,10 @@ body {
   --body-scroll-behavior: smooth;
 }
 
+main {
+  --main-text-align: center;
+}
+
 article {
   --article-margin-bottom: 20px;
 }
@@ -26,6 +30,7 @@ h3,
 h4,
 h5,
 h6 {
+  --title-text-align: center;
   --title-wd-font-size: 4rem;
   --title-wd-text-transform: uppercase;
   --title-lg-font-size: 3.5rem;
@@ -59,7 +64,6 @@ video {
 
 table {
   --table-border-collapse: collapse;
-  --table-font-family: monospace;
   --table-margin: auto;
   --table-text-align: center;
   --table-vertical-align: middle;

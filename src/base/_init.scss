@@ -13,10 +13,14 @@ body {
   padding: 0;
   line-height: var(--body-line-height);
   font-size: var(--body-font-size);
-  font-family: var(--sans-serif-font-family);
+  font-family: var(--sans-serif);
   color: var(--body-color);
   background-color: var(--body-background-color);
   scroll-behavior: var(--body-scroll-behavior);
+}
+
+main {
+  text-align: var(--main-text-align);
 }
 
 article {
@@ -29,15 +33,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--serif-font-family);
+  font-family: var(--serif);
 }
 
 h1 {
+  text-align: var(--title-text-align);
   font-size: var(--title-wd-font-size);
   text-transform: var(--title-wd-text-transform);
 }
 
 h2 {
+  text-align: var(--title-text-align);
   font-size: var(--title-lg-font-size);
   text-transform: var(--title-lg-text-transform);
 }
@@ -82,7 +88,7 @@ table {
   border-collapse: var(--table-border-collapse);
   text-align: var(--table-text-align);
   vertical-align: var(--table-vertical-align);
-  font-family: var(--table-font-family);
+  font-family: var(--monospace);
 }
 
 code,
@@ -91,7 +97,7 @@ pre {
   margin: var(--code-margin);
   padding: var(--code-padding);
   width: var(--code-width);
-  font-family: var(--monospace-font-family);
+  font-family: var(--monospace);
   text-align: var(--code-text-align);
   background-color: var(--code-background-color);
   color: var(--code-color);
