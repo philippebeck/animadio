@@ -1,2 +1,52 @@
 /***** Variables : Head *****/
 
+.head {
+    --head-margin: 20px auto 50px;
+    --head-border: outset var(--gray);
+    --head-border-radius: 5px;
+    --head-padding: 15px 10px;
+    --head-max-width: 90%;
+    --head-font-family: var(--serif);
+    --head-font-size: 120%;
+    --head-text-align: center;
+    --head-box-shadow: inset 0 0 10px 5px var(--grey);
+    --head-background-color: var(--white);
+    --head-color: var(--black);
+
+    --head-title-margin: 0 auto 5px;
+    --head-title-text-transform: uppercase;
+
+    --head-hover-transform: scale(1.1);
+    --head-hover-transition: transform 2s 200ms;
+
+    --head-selection-background-color: var(--black);
+    --head-selection-color: var(--green);
+}
+
+@media (min-width: $breakpoint-sm) {
+    .head {
+        --head-max-width: 80%;
+        --head-font-size: 125%;
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .head {
+        --head-max-width: 70%;
+        --head-font-size: 130%;
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    .head {
+        --head-max-width: 60%;
+        --head-font-size: 135%;
+    }
+}
+
+@media (min-width: $breakpoint-wd) {
+    .head {
+        --head-max-width: 50%;
+        --head-font-size: 140%;
+    }
+}
