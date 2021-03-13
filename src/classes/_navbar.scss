@@ -111,7 +111,7 @@
   }
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-md) {
   .navbar {
     & > ul {
       display: flex !important;
@@ -128,7 +128,7 @@
   }
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-lg) {
   .navbar > ul {
     &:first-of-type span {
       display: block;
