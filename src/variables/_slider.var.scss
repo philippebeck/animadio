@@ -13,12 +13,12 @@
   --slider-button-border: none;
   --slider-button-font-size: 60%;
   --slider-button-background: none;
-  --slider-button-color: var(--white-dark);
+  --slider-button-color: var(--grey-dark);
 
   --slider-previous-top: 42%;
   --slider-previous-left: 0;
 
-  --slider-auto-bottom: 5%;
+  --slider-auto-top: 90%;
   --slider-auto-left: 45%;
   --slider-auto-opacity: 1;
   --slider-auto-hover-opacity: 1;
@@ -38,7 +38,7 @@
 
   --slider-progress-label-padding: 5px;
   --slider-progress-label-font-size: var(--slider-button-font-size);
-  --slider-progress-label-color: var(--white-dark);
+  --slider-progress-label-color: var(--grey-dark);
 
   --slider-checked-content: "\f058";
 }
