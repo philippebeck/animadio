@@ -3,6 +3,7 @@
 .form {
   margin: var(--form-margin);
   border: var(--form-border);
+  border-radius: var(--form-border-radius);
   padding: var(--form-padding);
   width: var(--form-width);
   box-shadow: var(--form-box-shadow);
@@ -26,15 +27,10 @@
 
   label {
     margin: var(--form-label-margin);
-    border: var(--form-label-border);
     padding: var(--form-label-padding);
+    font-size: var(--form-label-font-size);
     color: var(--form-label-color);
     text-decoration: var(--form-label-text-decoration);
-
-    &:hover,
-    &:focus {
-      border: var(--form-label-hover-border);
-    }
   }
 
   input,
@@ -67,6 +63,7 @@
     margin: var(--form-action-margin);
     border: var(--form-action-border);
     width: var(--form-action-width);
+    font-size: var(--form-action-font-size);
     line-height: var(--form-action-line-height);
     cursor: var(--form-action-cursor);
     box-shadow: var(--form-action-box-shadow);
@@ -86,6 +83,7 @@
 
     &:hover,
     &:focus {
+      border: var(--form-reset-hover-border);
       background-color: var(--form-reset-hover-background-color);
       color: var(--form-reset-hover-color);
     }
@@ -98,6 +96,7 @@
 
     &:hover,
     &:focus {
+      border: var(--form-submit-hover-border);
       background-color: var(--form-submit-hover-background-color);
       color: var(--form-submit-hover-color);
     }
