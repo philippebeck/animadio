@@ -118,5 +118,8 @@
 
 // Cursor
 @each $key, $value in $cursor {
-  @include helpers('cursor-#{$key}', 'cursor', $value);
+  .cursor-#{$key},
+  .global-cursor-#{$key} * {
+    cursor: $value;
+  }
 }
