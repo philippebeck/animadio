@@ -6,7 +6,7 @@
   --table-margin-bottom: 50px;
   --table-width: 90%;
   --table-font-size : calc(var(--body-font-size) * 120 / 100);
-  --table-box-shadow: 5px 5px 10px 5px var(--gray);
+  --table-box-shadow: 5px 5px 10px 5px var(--grey);
 
   --table-caption-side: top;
   --table-caption-margin-bottom: 10px;
@@ -40,18 +40,12 @@
   --table-row-even-hover-color: var(--white);
   --table-row-even-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-even-background-color);
 
-  --table-row-even-selection-background-color: var(--black);
-  --table-row-even-selection-color: var(--silver);
-
   --table-row-odd-background-color: var(--white);
   --table-row-odd-color: var(--gray);
 
   --table-row-odd-hover-background-color: var(--red);
   --table-row-odd-hover-color: var(--white);
   --table-row-odd-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-odd-background-color);
-
-  --table-row-odd-selection-background-color: var(--gray);
-  --table-row-odd-selection-color: var(--white);
 }
 
 @media (min-width: $breakpoint-sm) {
