@@ -82,11 +82,6 @@
         color: var(--table-row-even-hover-color);
         box-shadow: var(--table-row-even-hover-box-shadow);
       }
-
-      & > *::selection {
-        background-color: var(--table-row-even-selection-background-color);
-        color: var(--table-row-even-selection-color);
-      }
     }
 
     &:nth-child(odd) {
@@ -98,11 +93,6 @@
         background-color: var(--table-row-odd-hover-background-color);
         color: var(--table-row-odd-hover-color);
         box-shadow: var(--table-row-odd-hover-box-shadow);
-      }
-
-      & > *::selection {
-        background-color: var(--table-row-odd-selection-background-color);
-        color: var(--table-row-odd-selection-color);
       }
     }
   }
