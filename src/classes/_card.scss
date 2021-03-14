@@ -54,6 +54,7 @@
 
     &:hover,
     &:focus {
+      border-color: var(--card-btn-hover-border-color);
       background-color: var(--card-btn-hover-background-color);
       color: var(--card-btn-hover-color);
     }

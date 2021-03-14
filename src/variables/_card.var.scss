@@ -6,12 +6,12 @@
   --card-place-items: center;
   --card-position: relative;
   --card-overflow: hidden;
-  --card-margin: 20px;
+  --card-margin: 50px;
   --card-border: solid medium;
   --card-border-radius: 10px;
   --card-padding: 10px;
   --card-height: initial;
-  --card-width: 300px;
+  --card-width: 400px;
   --card-box-shadow: 3px 5px 10px 5px var(--black);
   --card-background-color: var(--gray-dark);
   --card-color: var(--black);
@@ -40,6 +40,7 @@
   --card-btn-font-weight: bold;
   --card-btn-text-align: center;
 
+  --card-btn-hover-border-color: initial;
   --card-btn-hover-background-color: var(--white);
   --card-btn-hover-color: initial;
 }
