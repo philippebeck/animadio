@@ -11,7 +11,7 @@
   --card-border-radius: 10px;
   --card-padding: 10px;
   --card-height: initial;
-  --card-width: 400px;
+  --card-max-width: 400px;
   --card-box-shadow: 3px 5px 10px 5px var(--black);
   --card-background-color: var(--gray-dark);
   --card-color: var(--black);
@@ -23,7 +23,7 @@
   --card-child-border: solid thin;
   --card-child-border-radius: 20px;
   --card-child-padding: 5px 10px;
-  --card-child-max-width: calc(var(--card-width) * 0.9);
+  --card-child-max-width: calc(var(--card-max-width) * 0.9);
   --card-child-background-color: var(--white);
   --card-child-text-align: center;
 
