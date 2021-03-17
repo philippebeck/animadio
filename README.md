@@ -48,7 +48,7 @@ Yarn : `yarn add animadio`
 
 
 -   Development : [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.css) + [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/min/animadio.min.css) + [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.min.css) + [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js)  
 
 ---
 
@@ -66,10 +66,10 @@ Yarn : `yarn add animadio`
 
 The main library distribution is :  
 -   For development : `dist/animadio.css` + `dist/animadio.js`  
--   For production : `dist/min/animadio.min.css` + `dist/min/animadio.min.js`  
+-   For production : `dist/animadio.min.css` + `dist/animadio.min.js`  
 
 [![Code Size](https://img.shields.io/github/languages/code-size/animadio/animadio.svg)](https://github.com/animadio/animadio/tree/master/dist)
-[![Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg)](https://github.com/animadio/animadio/tree/master/dist/min)
+[![Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg)](https://github.com/animadio/animadio/tree/master/dist)
 
 ---
 
