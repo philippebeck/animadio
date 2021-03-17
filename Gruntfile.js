@@ -20,8 +20,15 @@ module.exports = function(grunt) {
         cssmin: {
             target: {
                 files: [
-                    { "dist/min/animadio.min.css": ["dist/animadio.css"] }
+                    { "dist/animadio.min.css": ["dist/animadio.css"] }
                 ]
+            }
+        },
+        uglify: {
+            my_target: {
+                files: {
+                  'dist/animadio.min.js': ['dist/animadio.js']
+                }
             }
         }
     });
@@ -29,5 +36,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-concat");
     grunt.loadNpmTasks("grunt-postcss");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
-    grunt.registerTask("default", ["concat", "postcss", "cssmin"]);
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.registerTask("default", ["concat", "postcss", "cssmin", "uglify"]);
 };
