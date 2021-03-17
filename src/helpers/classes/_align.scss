@@ -1,5 +1,0 @@
-/***** Helpers : Classes : Align *****/
-
-@each $key, $value in $text-align {
-  @include helpers('align-#{$key}', 'text-align', $value);
-}

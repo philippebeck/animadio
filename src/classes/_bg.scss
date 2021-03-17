@@ -1,0 +1,14 @@
+/***** Classes : Bg *****/
+
+@each $colors in $main-colors {
+  @each $key, $value in $colors {
+    @include helpers('bg-#{$key}', 'background-color', 'var(--#{$key})');
+  }
+}
+
+@each $colors in $main-colors {
+  @each $key, $value in $colors {
+    @include helpers('bg-#{$key}-dark', 'background-color', 'var(--#{$key}-dark)');
+    @include helpers('bg-#{$key}-light', 'background-color', 'var(--#{$key}-light)');
+  }
+}

@@ -1,0 +1,45 @@
+/***** Variables : Menu *****/
+
+.menu {
+  --menu-bottom: 0;
+  --menu-z-index: 100;
+  --menu-width: 100%;
+  --menu-background-color: var(--black-light);
+
+  --menu-child-place-content: center;
+  --menu-child-place-items: center;
+  --menu-child-margin: 4px 2px;
+  --menu-child-border-radius: 10px;
+  --menu-child-padding: 0;
+  --menu-child-width: 100%;
+  --menu-child-background-color: var(--black-dark);
+  --menu-child-color: var(--white);
+  --menu-child-cursor: cell;
+
+  --menu-children-margin: 5px;
+
+  --menu-child-hover-border-radius: 20px;
+  --menu-child-hover-background-color: var(--white);
+  --menu-child-hover-color: var(--gray);
+  --menu-children-hover-transform: scale(1.2);
+
+  --menu-checked-child-font-weight: bold;
+  --menu-checked-child-background-color: var(--white-dark);
+  --menu-checked-child-color: var(--black);
+}
+
+footer {
+  --menu-footer-margin-bottom: 38px;
+}
+
+@media (min-width: $breakpoint-sm) {
+  footer {
+    --menu-footer-margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  footer {
+    --menu-footer-margin-bottom: 48px;
+  }
+}

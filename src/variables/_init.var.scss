@@ -1,0 +1,193 @@
+/***** Variables : Init *****/
+
+:root {
+  --sans-serif: sans-serif;
+  --serif: serif;
+  --monospace: monospace;
+  --cursive: cursive;
+  --fantasy: fantasy;
+}
+
+body {
+  --body-background-color: none;
+  --body-color: var(--black);
+  --body-font-size: 1.8rem;
+  --body-line-height: 1.6;
+  --body-scroll-behavior: smooth;
+}
+
+main {
+  --main-text-align: center;
+}
+
+article {
+  --article-margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --title-text-align: center;
+  --title-wd-font-size: 4rem;
+  --title-wd-text-transform: uppercase;
+  --title-lg-font-size: 3.5rem;
+  --title-lg-text-transform: capitalize;
+  --title-md-font-size: 3rem;
+  --title-sm-font-size: 2.5rem;
+  --title-tn-font-size: 2rem;
+}
+
+a {
+  --link-outline: 0;
+  --link-text-decoration: none;
+}
+
+ul {
+  --list-margin: 0 0 10px;
+  --list-padding: 0;
+  --list-style: none;
+}
+
+figure {
+  --figure-margin: 0;
+}
+
+img,
+video {
+  --img-height: auto;
+  --img-max-width: 100%;
+  --img-object-fit: contain;
+}
+
+table {
+  --table-border-collapse: collapse;
+  --table-margin: auto;
+  --table-text-align: center;
+  --table-vertical-align: middle;
+}
+
+code,
+pre {
+  --code-background-color: var(--black);
+  --code-color: var(--cyan);
+  --code-margin: auto;
+  --code-overflow: scroll;
+  --code-padding: 10px;
+  --code-text-align: initial;
+  --code-width: 100%;
+}
+
+@media (min-width: $breakpoint-sm) {
+  h1 {
+    --title-wd-font-size: 4.2rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.6rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.1rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.6rem;
+  }
+
+  h5,
+  h6 {
+    --title-tn-font-size: 2.1rem;
+  }
+
+  code,
+  pre {
+    --code-width: 95%;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  h1 {
+    --title-wd-font-size: 4.4rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.8rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.3rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.8rem;
+  }
+
+  h5,
+  h6 {
+    --title-tn-font-size: 2.3rem;
+  }
+
+  code,
+  pre {
+    --code-width: 90%;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  h1 {
+    --title-wd-font-size: 4.7rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 3.9rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.4rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 2.9rem;
+  }
+
+  h5,
+  h6 {
+    --title-tn-font-size: 2.4rem;
+  }
+
+  code,
+  pre {
+    --code-width: 85%;
+  }
+}
+
+@media (min-width: $breakpoint-wd) {
+  h1 {
+    --title-wd-font-size: 5rem;
+  }
+
+  h2 {
+    --title-lg-font-size: 4rem;
+  }
+
+  h3 {
+    --title-md-font-size: 3.5rem;
+  }
+
+  h4 {
+    --title-sm-font-size: 3rem;
+  }
+
+  h5,
+  h6 {
+    --title-tn-font-size: 2.5rem;
+  }
+
+  code,
+  pre {
+    --code-width: 80%;
+  }
+}
