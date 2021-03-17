@@ -58,8 +58,6 @@ Yarn : `yarn add animadio`
 
 `git clone https://github.com/animadio/animadio.git`  
   
-[![Repo Size](https://img.shields.io/github/repo-size/animadio/animadio.svg?label=Repo+Size)](https://github.com/animadio/animadio/tree/master)
-
 ---
 
 ## Content
@@ -67,9 +65,6 @@ Yarn : `yarn add animadio`
 The main library distribution is :  
 -   For development : `dist/animadio.css` + `dist/animadio.js`  
 -   For production : `dist/animadio.min.css` + `dist/animadio.min.js`  
-
-[![Code Size](https://img.shields.io/github/languages/code-size/animadio/animadio.svg)](https://github.com/animadio/animadio/tree/master/dist)
-[![Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg)](https://github.com/animadio/animadio/tree/master/dist)
 
 ---
 
