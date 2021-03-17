@@ -1,4 +1,4 @@
-/*! animadio v4.0.0 | https://animadio.org | MIT License */
+/*! animadio v4.0.2 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -1127,11 +1127,11 @@ footer {
   --gallery-figure-position: relative;
   --gallery-figure-overflow: hidden;
   --gallery-figure-margin: 5px;
-  --gallery-figure-border: thin dotted var(--silver);
+  --gallery-figure-border: thin dotted var(--grey);
   --gallery-figure-width: calc(100% - 10px);
   --gallery-figure-line-height: 0;
   --gallery-figure-box-shadow: 0 0 5px;
-  --gallery-figure-hover-figcaption-animation: slipT 1s;
+  --gallery-figure-hover-figcaption-animation: slideT 1s;
   --gallery-figure-hover-figcaption-bottom: 0;
   --gallery-figcaption-position: absolute;
   --gallery-figcaption-bottom: -60%;
@@ -1192,7 +1192,7 @@ footer {
   --form-field-padding: 5px;
   --form-field-width: 100%;
   --form-field-line-height: 1.8;
-  --form-field-background-color: var(--silver);
+  --form-field-background-color: var(--grey);
   --form-field-box-shadow: 5px 5px 10px 10px var(--white);
   --form-field-hover-border: medium inset var(--green);
   --form-field-hover-box-shadow: 5px 5px 10px 5px var(--gray);
@@ -7241,4 +7241,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 17th Mar 2021 @ 9:45:21 AM */
+ Updated: 17th Mar 2021 @ 4:11:50 PM */
