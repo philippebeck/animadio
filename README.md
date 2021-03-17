@@ -6,7 +6,6 @@
 -   Click anywhere on the page to **enable & disable any design effect** anywhere else
 -   Management of **keyframes animations** & their options
 -   Complete & simple customization with directly modifiable **CSS variables**
--   More than 99% of **pure CSS**
 
 [![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/299d541b73494c259debb80a0b25b9cc)](https://www.codacy.com/gh/animadio/animadio/dashboard)
@@ -47,30 +46,9 @@ Yarn : `yarn add animadio`
 [![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 
-> **Full Version** ([Animadio.js](https://github.com/animadio/animadio.js) required)
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio.css) + [https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio.min.css) + [https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js)  
-
-> **Elements Version** ([Animadio.js](https://github.com/animadio/animadio.js) required)
-
--   Development : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-elements.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-elements.css) + [https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-elements.min.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-elements.min.css) + [https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio.js@0.1.18/dist/animadio.js)  
-
-> **Grid Version**
-
--   Development : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-grid.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-grid.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-grid.min.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-grid.min.css)  
-
-> **Helpers Version**
-
--   Development : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-helpers.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-helpers.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-helpers.min.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-helpers.min.css)  
-
-> **States Version**
-
--   Development : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-states.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/animadio-states.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-states.min.css](https://cdn.jsdelivr.net/npm/animadio@3.0.0/dist/min/animadio-states.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.css) + [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/min/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/min/animadio.min.css) + [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js)  
 
 ---
 
@@ -87,17 +65,11 @@ Yarn : `yarn add animadio`
 ## Content
 
 The main library distribution is :  
--   For development : `dist/animadio.css`  
--   For production : `dist/min/animadio.min.css`  
+-   For development : `dist/animadio.css` + `dist/animadio.js`  
+-   For production : `dist/min/animadio.min.css` + `dist/min/animadio.min.js`  
 
-[![CSS Code Size](https://img.shields.io/github/languages/code-size/animadio/animadio.svg?label=animadio.css)](https://github.com/animadio/animadio/tree/master/dist/animadio.css)
-[![CSS Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg?label=animadio.min.css)](https://github.com/animadio/animadio/tree/master/dist/min/animadio.min.css)
-
-But if you only need a part of Animadio, you can use one of those dist files :
--   To get Global + Elements : `dist/animadio-elements.css` for dev or `dist/min/animadio-elements.min.css` for prod  
--   To get Global + Grid : `dist/animadio-grid.css` for dev or `dist/min/animadio-grid.min.css` for prod  
--   To get Global + Helpers : `dist/animadio-helpers.css` for dev or `dist/min/animadio-helpers.min.css` for prod  
--   To get Global + States : `dist/animadio-states.css` for dev or `dist/min/animadio-states.min.css` for prod  
+[![Code Size](https://img.shields.io/github/languages/code-size/animadio/animadio.svg)](https://github.com/animadio/animadio/tree/master/dist)
+[![Minified Size](https://img.shields.io/bundlephobia/min/animadio.svg)](https://github.com/animadio/animadio/tree/master/dist/min)
 
 ---
 
@@ -105,7 +77,6 @@ But if you only need a part of Animadio, you can use one of those dist files :
 
 Animadio has continuous support & community networks will give all news !
 
-[![Project Maintained](https://img.shields.io/maintenance/yes/2020.svg?label=Maintained)](https://github.com/animadio/animadio)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg?label=Last+Commit)](https://github.com/animadio/animadio/commits/master)
 
 ---
@@ -132,7 +103,7 @@ CodePen : [@animadio](https://codepen.io/animadio)
 
 ## Documentation
 
-Animadio Documentation will come back soon for the V3 !
+Animadio Documentation will come back soon for the V4 !
 
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg?label=https://animadio.org)](https://animadio.org)
 

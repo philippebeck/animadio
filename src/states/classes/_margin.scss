@@ -1,9 +1,0 @@
-/***** States : Classes : Margin *****/
-
-@each $key, $value in $box-nones {
-  @include states('mar-#{$key}', 'margin#{$value}', 'var(--margin-none)');
-}
-
-@each $key, $value in $box-sizes {
-  @include states('mar-#{$key}', 'margin#{$value}', 'var(--margin-#{$key})');
-}

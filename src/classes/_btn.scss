@@ -1,0 +1,68 @@
+/***** Classes : Btn *****/
+
+[class*="btn"],
+[class*="button"] {
+  display: inline-block;
+  margin: var(--btn-margin);
+  border: var(--btn-border);
+  border-radius: var(--btn-border-radius);
+  padding: var(--btn-padding);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  text-align: var(--btn-text-align);
+  background-color: var(--btn-background-color);
+  color: var(--btn-color);
+
+  & > i {
+    display: block;
+  }
+}
+
+[class*="btn"]:hover,
+[class*="button"]:hover,
+[class*="btn"]:focus,
+[class*="button"]:focus,
+[class*="button-check"]:checked + [class*="button"] {
+  border: var(--btn-hover-border);
+  border-radius: var(--btn-hover-border-radius);
+  box-shadow: var(--btn-hover-box-shadow);
+  background-color: var(--btn-hover-background-color);
+  color: var(--btn-hover-color);
+  transition: var(--btn-hover-transition);
+  animation: var(--btn-hover-animation);
+}
+
+[class*="check"]:checked + [class*="button"] {
+  transform: var(--btn-checked-transform);
+}
+
+@each $colors in $all-colors {
+  @each $key, $value in $colors {
+    @include btn-color($key, $value);
+  }
+}
+
+@each $size in $btn-size {
+  .btn-#{$size},
+  .button-#{$size} {
+    padding: var(--btn-#{$size}-padding);
+    font-size: var(--btn-#{$size}-font-size);
+  }
+}
+
+@each $shape in $btn-shape {
+  .btn-#{$shape},
+  .button-#{$shape} {
+    border-radius: var(--btn-#{$shape}-border-radius);
+    padding-top: var(--btn-#{$shape}-padding-top);
+    min-width: var(--btn-#{$shape}-sizes);
+    min-height: var(--btn-#{$shape}-sizes);
+  }
+
+  .btn-#{$shape}:hover,
+  .button-#{$shape}:hover,
+  .btn-#{$shape}:focus,
+  .button-#{$shape}:focus {
+    border-radius: var(--btn-#{$shape}-border-radius);
+  }
+}

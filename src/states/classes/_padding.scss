@@ -1,9 +1,0 @@
-/***** States : Classes : Padding *****/
-
-@each $key, $value in $box-nones {
-  @include states('pad-#{$key}', 'padding#{$value}', 'var(--padding-none)');
-}
-
-@each $key, $value in $box-sizes {
-  @include states('pad-#{$key}', 'padding#{$value}', 'var(--padding-#{$key})');
-}

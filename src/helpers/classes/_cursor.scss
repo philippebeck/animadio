@@ -1,5 +1,0 @@
-/***** Helpers : Classes : Cursor *****/
-
-@each $key, $value in $cursor {
-  @include helpers('cursor-#{$key}', 'cursor', $value);
-}

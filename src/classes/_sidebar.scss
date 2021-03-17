@@ -1,0 +1,87 @@
+/***** Classes : Sidebar *****/
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: var(--sidebar-top);
+  left: var(--sidebar-left);
+  z-index: var(--sidebar-z-index);
+  width: var(--sidebar-width);
+
+  & > * {
+    display: flex;
+    place-content: var(--sidebar-child-place-content);
+    place-items: var(--sidebar-child-place-items);
+    margin: var(--sidebar-child-margin);
+    border-radius: var(--sidebar-child-border-radius);
+    padding: var(--sidebar-child-padding);
+    width: var(--sidebar-child-width);
+    background-color: var(--sidebar-child-background-color);
+    color: var(--sidebar-child-color);
+    cursor: var(--sidebar-child-cursor);
+
+    & > * {
+      margin: var(--sidebar-children-margin);
+    }
+
+    &:hover,
+    &:focus {
+      border-radius: var(--sidebar-child-hover-border-radius);
+      background-color: var(--sidebar-child-hover-background-color);
+      color: var(--sidebar-child-hover-color);
+      transition: background-color 1s;
+
+      & > * {
+        transform: var(--sidebar-children-hover-transform);
+        transition: transform 1s;
+      }
+    }
+  }
+}
+
+.sidebar-relay {
+  & > * {
+    display: none;
+  }
+
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    display: block;
+  }
+}
+
+.sidebar-radio1:checked ~ .sidebar [for*="sidebar-"][for*="-radio1"],
+.sidebar-radio2:checked ~ .sidebar [for*="sidebar-"][for*="-radio2"],
+.sidebar-radio3:checked ~ .sidebar [for*="sidebar-"][for*="-radio3"],
+.sidebar-radio4:checked ~ .sidebar [for*="sidebar-"][for*="-radio4"],
+.sidebar-radio5:checked ~ .sidebar [for*="sidebar-"][for*="-radio5"],
+.sidebar-radio6:checked ~ .sidebar [for*="sidebar-"][for*="-radio6"],
+.sidebar-radio7:checked ~ .sidebar [for*="sidebar-"][for*="-radio7"],
+.sidebar-radio8:checked ~ .sidebar [for*="sidebar-"][for*="-radio8"],
+.sidebar-radio9:checked ~ .sidebar [for*="sidebar-"][for*="-radio9"],
+.sidebar-radio0:checked ~ .sidebar [for*="sidebar-"][for*="-radio0"] {
+  font-weight: var(--sidebar-checked-child-font-weight);
+  background-color: var(--sidebar-checked-child-background-color);
+  color: var(--sidebar-checked-child-color);
+
+  &:hover {
+    background-color: var(--sidebar-child-hover-background-color);
+  }
+}
+
+.sidebar-radio1:checked ~ .sidebar-relay .sidebar-target1,
+.sidebar-radio2:checked ~ .sidebar-relay .sidebar-target2,
+.sidebar-radio3:checked ~ .sidebar-relay .sidebar-target3,
+.sidebar-radio4:checked ~ .sidebar-relay .sidebar-target4,
+.sidebar-radio5:checked ~ .sidebar-relay .sidebar-target5,
+.sidebar-radio6:checked ~ .sidebar-relay .sidebar-target6,
+.sidebar-radio7:checked ~ .sidebar-relay .sidebar-target7,
+.sidebar-radio8:checked ~ .sidebar-relay .sidebar-target8,
+.sidebar-radio9:checked ~ .sidebar-relay .sidebar-target9,
+.sidebar-radio0:checked ~ .sidebar-relay .sidebar-target0 {
+  display: block;
+}
