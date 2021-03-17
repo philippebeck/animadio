@@ -5,7 +5,7 @@ class Canvas {
    * @param {number} line
    * @param {string} color
    */
-  constructor(width = 500, height = 500, line = 2, color = "navy") {
+  constructor(width = 500, height = 500, line = 2, color = "blue") {
     this.startState = false;
     this.endState   = false;
 

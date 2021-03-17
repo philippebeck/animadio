@@ -13,12 +13,12 @@
   --gallery-figure-position: relative;
   --gallery-figure-overflow: hidden;
   --gallery-figure-margin: 5px;
-  --gallery-figure-border: thin dotted var(--silver);
+  --gallery-figure-border: thin dotted var(--grey);
   --gallery-figure-width: calc(100% - 10px);
   --gallery-figure-line-height: 0;
   --gallery-figure-box-shadow: 0 0 5px;
 
-  --gallery-figure-hover-figcaption-animation: slipT 1s;
+  --gallery-figure-hover-figcaption-animation: slideT 1s;
   --gallery-figure-hover-figcaption-bottom: 0;
 
   --gallery-figcaption-position: absolute;

@@ -47,8 +47,8 @@ Yarn : `yarn add animadio`
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.css) + [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.js)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.min.css) + [https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.min.js](https://cdn.jsdelivr.net/npm/animadio@4.0.0/dist/animadio.min.js)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@4.0.2/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@4.0.2/dist/animadio.css) + [https://cdn.jsdelivr.net/npm/animadio@4.0.2/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio@4.0.2/dist/animadio.js)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@4.0.2/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@4.0.2/dist/animadio.min.css) + [https://cdn.jsdelivr.net/npm/animadio@4.0.2/dist/animadio.min.js](https://cdn.jsdelivr.net/npm/animadio@4.0.2/dist/animadio.min.js)  
 
 ---
 

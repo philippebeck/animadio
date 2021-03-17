@@ -1,4 +1,4 @@
-/*! animadio v4.0.0 | https://animadio.org | MIT License */
+/*! animadio v4.0.2 | https://animadio.org | MIT License */
 
 "use strict";
 
@@ -8,7 +8,7 @@ class Animadio {
     new Slider(timeout, auto, random);
   }
 
-  static canvas(width = 500, height = 500, line = 2, color = "navy") {
+  static canvas(width = 500, height = 500, line = 2, color = "blue") {
     new Canvas(width, height, line, color);
   }
 
@@ -212,7 +212,7 @@ class Canvas {
    * @param {number} line
    * @param {string} color
    */
-  constructor(width = 500, height = 500, line = 2, color = "navy") {
+  constructor(width = 500, height = 500, line = 2, color = "blue") {
     this.startState = false;
     this.endState   = false;
 
@@ -462,4 +462,4 @@ class Ajax {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 17th Mar 2021 @ 9:45:21 AM */
+ Updated: 17th Mar 2021 @ 4:11:50 PM */
