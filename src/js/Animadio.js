@@ -6,7 +6,7 @@ class Animadio {
     new Slider(timeout, auto, random);
   }
 
-  static canvas(width = 500, height = 500, line = 2, color = "navy") {
+  static canvas(width = 500, height = 500, line = 2, color = "blue") {
     new Canvas(width, height, line, color);
   }
 
