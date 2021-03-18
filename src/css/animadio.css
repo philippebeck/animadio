@@ -12,7 +12,7 @@
   --yellow: rgb(255, 215, 0);
   --brown: rgb(139, 69, 19);
   --green: rgb(50, 205, 50);
-  --cyan: rgb(127, 255, 212);
+  --cyan: rgb(0, 128, 128);
   --blue: rgb(30, 144, 255);
   --violet: rgb(106, 90, 205);
   --black: rgb(15, 15, 15);
@@ -36,8 +36,8 @@
   --brown-light: rgba(139, 69, 19, 0.3);
   --green-dark: rgba(50, 205, 50, 0.7);
   --green-light: rgba(50, 205, 50, 0.3);
-  --cyan-dark: rgba(127, 255, 212, 0.7);
-  --cyan-light: rgba(127, 255, 212, 0.3);
+  --cyan-dark: rgba(0, 128, 128, 0.7);
+  --cyan-light: rgba(0, 128, 128, 0.3);
   --blue-dark: rgba(30, 144, 255, 0.7);
   --blue-light: rgba(30, 144, 255, 0.3);
   --violet-dark: rgba(106, 90, 205, 0.7);
@@ -5835,26 +5835,6 @@ pre > *::selection {
 .card-violet {
   background-color: var(--violet-dark);
   color: var(--violet);
-}
-
-.card-black {
-  background-color: var(--black-dark);
-  color: var(--black);
-}
-
-.card-gray {
-  background-color: var(--gray-dark);
-  color: var(--gray);
-}
-
-.card-grey {
-  background-color: var(--grey-dark);
-  color: var(--grey);
-}
-
-.card-white {
-  background-color: var(--white-dark);
-  color: var(--white);
 }
 
 /***** Classes : Head *****/
