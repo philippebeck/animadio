@@ -165,7 +165,7 @@ table {
 code,
 pre {
   --code-background-color: var(--black);
-  --code-color: var(--cyan);
+  --code-color: var(--green);
   --code-margin: auto;
   --code-overflow: scroll;
   --code-padding: 10px;
@@ -542,7 +542,7 @@ pre {
   --card-child-background-color: var(--white);
   --card-child-text-align: center;
   --card-selection-background-color: var(--black);
-  --card-selection-color: var(--cyan);
+  --card-selection-color: var(--green);
   --card-title-font-size: 3rem;
   --card-title-box-shadow: inset 0 0 5px 2px;
   --card-title-text-shadow: 2px 2px 5px;
@@ -613,7 +613,7 @@ pre {
   --foot-list-background-color: var(--violet);
   --foot-list-cursor: pointer;
   --foot-list-link-font-color: var(--white);
-  --foot-list-link-hover-font-color: var(--cyan);
+  --foot-list-link-hover-font-color: var(--yellow);
   --foot-target-margin-left: 2px;
   --foot-hover-transform: scale(1.2);
   --foot-hover-transition: transorm 1s;
