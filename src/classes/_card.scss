@@ -60,11 +60,9 @@
   }
 }
 
-@each $colors in $main-colors {
-  @each $key, $value in $colors {
-    .card-#{$key} {
-      background-color: var(--#{$key}-dark);
-      color: var(--#{$key});
-    }
+@each $key, $value in $primary-colors {
+  .card-#{$key} {
+    background-color: var(--#{$key}-dark);
+    color: var(--#{$key});
   }
 }
