@@ -22,8 +22,11 @@ $containers: (
   '90': 90%
 ) !default;
 
-[class*="container"] {
+:root {
   --container-max-width: 100%;
+
+  --opacity-dark: 0.7;
+  --opacity-light: 0.3;
 }
 
 // Position
@@ -32,4 +35,15 @@ $positions: (
   'fixed':    fixed,
   'relative': relative,
   'sticky':   sticky
+) !default;
+
+// Cursor
+$cursor: (
+  'cell':   cell,
+  'cross':  crosshair,
+  'hand':   pointer,
+  'help':   help,
+  'move':   move,
+  'none':   not-allowed,
+  'text':   text
 ) !default;
