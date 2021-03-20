@@ -67,8 +67,8 @@ $all-colors:  $primary-colors, $grayscale, $brand-colors;
   // Transparent Colors
   @each $colors in $main-colors {
     @each $key, $value in $colors {
-      --#{$key}-dark: rgba(#{$value}, 0.7);
-      --#{$key}-light: rgba(#{$value}, 0.3);
+      --#{$key}-dark: rgba(#{$value}, var(--opacity-dark));
+      --#{$key}-light: rgba(#{$value}, var(--opacity-light));
     }
   }
 }
