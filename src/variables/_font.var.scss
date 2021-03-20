@@ -1,0 +1,56 @@
+/***** Variables : Font *****/
+
+// Font
+$font: (
+  'bold':     'weight',
+  'italic':   'style',
+  'oblique':  'style'
+) !default;
+
+$font-family: 'sans-serif', 'serif', 'monospace', 'cursive', 'fantasy';
+
+// Text Align
+$text-align: (
+  'center':   center,
+  'justify':  justify,
+  'right':    right,
+  'left':     left
+) !default;
+
+// Text Transform
+$trans: (
+  'cap':  'capitalize',
+  'up':   'uppercase',
+  'low':  'lowercase'
+) !default;
+
+// Text Decoration Line
+$text-decoration-lines: (
+  'none':     none,
+  'under':    underline,
+  'over':     overline,
+  'through':  line-through
+) !default;
+
+// Text Decoration Style
+$text-decoration-styles: (
+  'dash':   dashed,
+  'dot':    dotted,
+  'double': double,
+  'solid':  solid,
+  'wavy':   wavy
+) !default;
+
+// Text Decoration
+$text-decorations : (
+  "line":   $text-decoration-lines,
+  "style":  $text-decoration-styles
+) !default;
+
+:root {
+  @each $key in $font-family {
+    --#{$key}: #{$key};
+    }
+
+  --decoration-line: underline;
+}

@@ -1,11 +1,10 @@
 /***** Variables : Table *****/
 
 .table {
-  --table-border-collapse: collapse;
   --table-border-spacing: 10px;
   --table-margin-bottom: 50px;
   --table-width: 90%;
-  --table-font-size : calc(var(--body-font-size) * 120 / 100);
+  --table-font-size: calc(var(--body-font-size) * 120 / 100);
   --table-box-shadow: 5px 5px 10px 5px var(--grey);
 
   --table-caption-side: top;
@@ -51,7 +50,7 @@
 @media (min-width: $breakpoint-sm) {
   .table {
     --table-width: 80%;
-    --table-font-size : calc(var(--body-font-size) * 115 / 100);
+    --table-font-size: calc(var(--body-font-size) * 115 / 100);
     --table-caption-font-size: 2.25rem;
     --table-cell-padding: 4px;
   }
@@ -60,7 +59,7 @@
 @media (min-width: $breakpoint-md) {
   .table {
     --table-width: 70%;
-    --table-font-size : calc(var(--body-font-size) * 110 / 100);
+    --table-font-size: calc(var(--body-font-size) * 110 / 100);
     --table-caption-font-size: 2.5rem;
     --table-cell-padding: 6px;
   }
@@ -69,7 +68,7 @@
 @media (min-width: $breakpoint-lg) {
   .table {
     --table-width: 60%;
-    --table-font-size : calc(var(--body-font-size) * 105 / 100);
+    --table-font-size: calc(var(--body-font-size) * 105 / 100);
     --table-caption-font-size: 2.75rem;
     --table-cell-padding: 8px;
   }
@@ -78,7 +77,7 @@
 @media (min-width: $breakpoint-wd) {
   .table {
     --table-width: 50%;
-    --table-font-size : var(--body-font-size);
+    --table-font-size: var(--body-font-size);
     --table-caption-font-size: 3rem;
     --table-cell-padding: 10px;
   }

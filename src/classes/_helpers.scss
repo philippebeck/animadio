@@ -80,7 +80,7 @@
     font-family: var(--#{$key}-font-family);
   }
 }
-  
+
 // Trans
 @each $key, $value in $trans {
   @include helpers('trans-#{$key}', 'text-transform', $value);

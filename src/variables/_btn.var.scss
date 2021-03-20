@@ -87,13 +87,13 @@ $btn-shapes: (
 }
 
 [class*="button"] {
-  --btn-border: inset medium var(--black);
-  --btn-border-radius: 5px;
-  --btn-background-color: var(--white);
-  --btn-color: var(--black);
+  --button-border: inset medium var(--black);
+  --button-border-radius: 5px;
+  --button-background-color: var(--white);
+  --button-color: var(--black);
 
-  --btn-hover-border: double medium var(--white);
-  --btn-hover-box-shadow: inset 0 0 10px;
-  --btn-hover-background-color: var(--black);
-  --btn-hover-color: var(--white);
+  --button-hover-border: double medium var(--white);
+  --button-hover-box-shadow: inset 0 0 10px;
+  --button-hover-background-color: var(--black);
+  --button-hover-color: var(--white);
 }

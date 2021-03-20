@@ -13,7 +13,7 @@
 }
 
 // Grid
-[class*="grid"]{
+[class*="grid"] {
   display: grid;
   max-width: var(--grid-max-width);
 }
