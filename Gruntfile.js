@@ -25,7 +25,7 @@ module.exports = function(grunt) {
             }
         },
         uglify: {
-            my_target: {
+            target: {
                 files: {
                   'dist/animadio.min.js': ['dist/animadio.js']
                 }
