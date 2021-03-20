@@ -1,7 +1,19 @@
 @charset "UTF-8";
 /***** Variables : Base *****/
-[class*=container] {
+:root {
   --container-max-width: 100%;
+  --opacity-dark: 0.7;
+  --opacity-light: 0.3;
+}
+
+/***** Variables : Font *****/
+:root {
+  --sans-serif: sans-serif;
+  --serif: serif;
+  --monospace: monospace;
+  --cursive: cursive;
+  --fantasy: fantasy;
+  --decoration-line: underline;
 }
 
 /***** Variables : Colors *****/
@@ -24,32 +36,32 @@
   --in: rgb(0, 119, 181);
   --pp: rgb(39, 52, 106);
   --tw: rgb(29, 161, 242);
-  --pink-dark: rgba(255, 0, 255, 0.7);
-  --pink-light: rgba(255, 0, 255, 0.3);
-  --red-dark: rgba(250, 128, 114, 0.7);
-  --red-light: rgba(250, 128, 114, 0.3);
-  --orange-dark: rgba(255, 140, 0, 0.7);
-  --orange-light: rgba(255, 140, 0, 0.3);
-  --yellow-dark: rgba(255, 215, 0, 0.7);
-  --yellow-light: rgba(255, 215, 0, 0.3);
-  --brown-dark: rgba(139, 69, 19, 0.7);
-  --brown-light: rgba(139, 69, 19, 0.3);
-  --green-dark: rgba(50, 205, 50, 0.7);
-  --green-light: rgba(50, 205, 50, 0.3);
-  --cyan-dark: rgba(0, 128, 128, 0.7);
-  --cyan-light: rgba(0, 128, 128, 0.3);
-  --blue-dark: rgba(30, 144, 255, 0.7);
-  --blue-light: rgba(30, 144, 255, 0.3);
-  --violet-dark: rgba(106, 90, 205, 0.7);
-  --violet-light: rgba(106, 90, 205, 0.3);
-  --black-dark: rgba(15, 15, 15, 0.7);
-  --black-light: rgba(15, 15, 15, 0.3);
-  --gray-dark: rgba(105, 105, 105, 0.7);
-  --gray-light: rgba(105, 105, 105, 0.3);
-  --grey-dark: rgba(192, 192, 192, 0.7);
-  --grey-light: rgba(192, 192, 192, 0.3);
-  --white-dark: rgba(255, 255, 240, 0.7);
-  --white-light: rgba(255, 255, 240, 0.3);
+  --pink-dark: rgba(255, 0, 255, var(--opacity-dark));
+  --pink-light: rgba(255, 0, 255, var(--opacity-light));
+  --red-dark: rgba(250, 128, 114, var(--opacity-dark));
+  --red-light: rgba(250, 128, 114, var(--opacity-light));
+  --orange-dark: rgba(255, 140, 0, var(--opacity-dark));
+  --orange-light: rgba(255, 140, 0, var(--opacity-light));
+  --yellow-dark: rgba(255, 215, 0, var(--opacity-dark));
+  --yellow-light: rgba(255, 215, 0, var(--opacity-light));
+  --brown-dark: rgba(139, 69, 19, var(--opacity-dark));
+  --brown-light: rgba(139, 69, 19, var(--opacity-light));
+  --green-dark: rgba(50, 205, 50, var(--opacity-dark));
+  --green-light: rgba(50, 205, 50, var(--opacity-light));
+  --cyan-dark: rgba(0, 128, 128, var(--opacity-dark));
+  --cyan-light: rgba(0, 128, 128, var(--opacity-light));
+  --blue-dark: rgba(30, 144, 255, var(--opacity-dark));
+  --blue-light: rgba(30, 144, 255, var(--opacity-light));
+  --violet-dark: rgba(106, 90, 205, var(--opacity-dark));
+  --violet-light: rgba(106, 90, 205, var(--opacity-light));
+  --black-dark: rgba(15, 15, 15, var(--opacity-dark));
+  --black-light: rgba(15, 15, 15, var(--opacity-light));
+  --gray-dark: rgba(105, 105, 105, var(--opacity-dark));
+  --gray-light: rgba(105, 105, 105, var(--opacity-light));
+  --grey-dark: rgba(192, 192, 192, var(--opacity-dark));
+  --grey-light: rgba(192, 192, 192, var(--opacity-light));
+  --white-dark: rgba(255, 255, 240, var(--opacity-dark));
+  --white-light: rgba(255, 255, 240, var(--opacity-light));
 }
 
 /***** Variables : Transform *****/
@@ -88,19 +100,13 @@
   --slideBR: translate(-20vw, -20vh);
   --slideBL: translate(20vw, -20vh);
   --slideTL: translate(20vw, 20vh);
-  --opacity: 0;
-  --transform-origin: center;
+  --originT: top;
+  --originR: right;
+  --originB: bottom;
+  --originL: left;
 }
 
 /***** Variables : Init *****/
-:root {
-  --sans-serif: sans-serif;
-  --serif: serif;
-  --monospace: monospace;
-  --cursive: cursive;
-  --fantasy: fantasy;
-}
-
 body {
   --body-background-color: none;
   --body-color: var(--black);
@@ -281,31 +287,6 @@ pre {
     --code-width: 80%;
   }
 }
-/***** Variables : Anima *****/
-[class*=anima-] {
-  --animation-duration: 2s;
-  --animation-duration-tn: 1s;
-  --animation-duration-sm: 2s;
-  --animation-duration-md: 5s;
-  --animation-duration-lg: 10s;
-  --animation-duration-wd: 60s;
-  --animation-timing-function-linear: cubic-bezier(0, 0, 1, 1);
-  --animation-timing-function-in: cubic-bezier(0.42, 0, 1, 1);
-  --animation-timing-function-out: cubic-bezier(0, 0, 0.58, 1);
-  --animation-timing-function-inout: cubic-bezier(0.42, 0, 0.58, 1);
-  --animation-timing-function-bezier: cubic-bezier(1, 5, 1, -5);
-  --animation-timing-function-start: steps(4, start);
-  --animation-timing-function-end: steps(4, end);
-  --animation-timing-function-chrono: steps(60, start);
-  --animation-timing-function-timer: steps(60, end);
-  --animation-iteration-count-few: 2;
-  --animation-iteration-count-many: 4;
-  --animation-iteration-count-loop: infinite;
-  --animation-delay-small: 1s;
-  --animation-delay-medium: 2s;
-  --animation-delay-large: 3s;
-}
-
 /***** Variables : Display *****/
 .grid {
   --grid-max-width: $grid-max-width;
@@ -344,7 +325,32 @@ pre {
   --place-self-end: flex-end;
 }
 
-/***** Variables : Margins *****/
+/***** Variables : Animation *****/
+[class*=anima-] {
+  --animation-duration: 2s;
+  --animation-duration-tn: 1s;
+  --animation-duration-sm: 2s;
+  --animation-duration-md: 5s;
+  --animation-duration-lg: 10s;
+  --animation-duration-wd: 60s;
+  --animation-timing-function-linear: cubic-bezier(0, 0, 1, 1);
+  --animation-timing-function-in: cubic-bezier(0.42, 0, 1, 1);
+  --animation-timing-function-out: cubic-bezier(0, 0, 0.58, 1);
+  --animation-timing-function-inout: cubic-bezier(0.42, 0, 0.58, 1);
+  --animation-timing-function-bezier: cubic-bezier(1, 5, 1, -5);
+  --animation-timing-function-start: steps(4, start);
+  --animation-timing-function-end: steps(4, end);
+  --animation-timing-function-chrono: steps(60, start);
+  --animation-timing-function-timer: steps(60, end);
+  --animation-iteration-count-few: 2;
+  --animation-iteration-count-many: 4;
+  --animation-iteration-count-loop: infinite;
+  --animation-delay-small: 1s;
+  --animation-delay-medium: 2s;
+  --animation-delay-large: 3s;
+}
+
+/***** Variables : Margin *****/
 [class*=mar-] {
   --margin-none: 0;
   --margin-sm: 10px;
@@ -397,7 +403,7 @@ pre {
   --border-radius-circle: 50%;
 }
 
-/***** Variables : Sizes *****/
+/***** Variables : Size *****/
 [class*=height-] {
   --height-sm: 25vh;
   --height-md: 50vh;
@@ -434,11 +440,7 @@ pre {
   --min-width-lg: 75vw;
 }
 
-/***** Variables : Helpers *****/
-[class*=deco] {
-  --text-decoration-line: underline;
-}
-
+/***** Variables : Shadow *****/
 [class*=shabox-] {
   --box-shadow-sm: 1px 1px;
   --box-shadow-md: 2px 2px;
@@ -506,14 +508,14 @@ pre {
 }
 
 [class*=button] {
-  --btn-border: inset medium var(--black);
-  --btn-border-radius: 5px;
-  --btn-background-color: var(--white);
-  --btn-color: var(--black);
-  --btn-hover-border: double medium var(--white);
-  --btn-hover-box-shadow: inset 0 0 10px;
-  --btn-hover-background-color: var(--black);
-  --btn-hover-color: var(--white);
+  --button-border: inset medium var(--black);
+  --button-border-radius: 5px;
+  --button-background-color: var(--white);
+  --button-color: var(--black);
+  --button-hover-border: double medium var(--white);
+  --button-hover-box-shadow: inset 0 0 10px;
+  --button-hover-background-color: var(--black);
+  --button-hover-color: var(--white);
 }
 
 /***** Variables : Card *****/
@@ -898,7 +900,6 @@ footer {
 }
 /***** Variables : Table *****/
 .table {
-  --table-border-collapse: collapse;
   --table-border-spacing: 10px;
   --table-margin-bottom: 50px;
   --table-width: 90%;
@@ -5315,34 +5316,60 @@ pre > *::selection {
 [class*=button] {
   display: inline-block;
   margin: var(--btn-margin);
-  border: var(--btn-border);
-  border-radius: var(--btn-border-radius);
   padding: var(--btn-padding);
   font-size: var(--btn-font-size);
   font-weight: var(--btn-font-weight);
   text-align: var(--btn-text-align);
-  background-color: var(--btn-background-color);
-  color: var(--btn-color);
 }
 [class*=btn] > i,
 [class*=button] > i {
   display: block;
 }
 
+[class*=btn] {
+  border: var(--btn-border);
+  border-radius: var(--btn-border-radius);
+  background-color: var(--btn-background-color);
+  color: var(--btn-color);
+}
+
+[class*=button] {
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-background-color);
+  color: var(--button-color);
+}
+
 [class*=btn]:hover,
 [class*=button]:hover,
 [class*=btn]:focus,
 [class*=button]:focus,
+[class*=btn-check]:checked + [class*=btn],
 [class*=button-check]:checked + [class*=button] {
-  border: var(--btn-hover-border);
   border-radius: var(--btn-hover-border-radius);
-  box-shadow: var(--btn-hover-box-shadow);
-  background-color: var(--btn-hover-background-color);
-  color: var(--btn-hover-color);
   transition: var(--btn-hover-transition);
   animation: var(--btn-hover-animation);
 }
 
+[class*=btn]:hover,
+[class*=btn]:focus,
+[class*=btn-check]:checked + [class*=btn] {
+  border: var(--btn-hover-border);
+  box-shadow: var(--btn-hover-box-shadow);
+  background-color: var(--btn-hover-background-color);
+  color: var(--btn-hover-color);
+}
+
+[class*=button]:hover,
+[class*=button]:focus,
+[class*=button-check]:checked + [class*=button] {
+  border: var(--button-hover-border);
+  box-shadow: var(--button-hover-box-shadow);
+  transition: var(--button-hover-transition);
+  animation: var(--button-hover-animation);
+}
+
+[class*=check]:checked + [class*=btn],
 [class*=check]:checked + [class*=button] {
   transform: var(--btn-checked-transform);
 }
