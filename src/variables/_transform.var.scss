@@ -88,6 +88,8 @@ $transforms: (
     --#{$key}: #{$value};
   }
 
-  --opacity: 0;
-  --transform-origin: center;
+  --originT: top;
+  --originR: right;
+  --originB: bottom;
+  --originL: left;
 }
