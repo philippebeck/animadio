@@ -1,0 +1,41 @@
+/***** Classes : Font *****/
+
+// Font Style & Weight
+@each $key, $value in $font {
+  @include helpers('font-#{$key}', 'font-#{$value}', $key);
+}
+
+// Font Family
+@each $key in $font-family {
+  .font-#{$key} {
+    font-family: var(--#{$key}-font-family);
+  }
+}
+
+// Text Transform
+@each $key, $value in $trans {
+  @include helpers('trans-#{$key}', 'text-transform', $value);
+}
+
+// Text Align
+@each $key, $value in $text-align {
+  @include helpers('align-#{$key}', 'text-align', $value);
+}
+
+// Text Decoration
+@include helpers-concat('deco', 'text-decoration-line', 'var(--text-decoration-line)');
+
+@each $deco-key, $deco-value in $text-decorations {
+  @each $key, $value in $deco-value {
+    @include helpers('deco-#{$key}', 'text-decoration-#{$deco-key}', $value);
+  }
+}
+
+@each $key, $value in $primary-colors {
+  @include helpers('deco-#{$key}', 'text-decoration-color', 'var(--#{$key})');
+}
+
+// Text Shadow
+@each $key, $value in $text-shadows {
+  @include helpers('shatex-#{$key}', 'text-shadow', 'var(--text-shadow-#{$key})');
+}

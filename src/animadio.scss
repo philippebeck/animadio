@@ -1,12 +1,12 @@
-// ********** MIXINS **********
+// ********** BASE **********
 @import 'base/mixins';
 
 // ********** VARIABLES **********
-@import 'variables/base.var';
+@import 'variables/init.var';
 @import 'variables/font.var';
 @import 'variables/color.var';
 @import 'variables/transform.var';
-@import 'variables/tag.var';
+@import 'variables/tags.var';
 @import 'variables/display.var';
 @import 'variables/animation.var';
 @import 'variables/margin.var';
@@ -26,16 +26,13 @@
 @import 'variables/slider.var';
 @import 'variables/canvas.var';
 
-// ********** RULES **********
+// ********** BASE **********
 @import 'base/keyframes';
-
-// ********** TAGS **********
-@import 'base/init';
+@import 'base/tags';
 
 // ********** CLASSES **********
-@import 'classes/base';
+@import 'classes/init';
 @import 'classes/display';
-@import 'classes/helpers';
 @import 'classes/btn';
 @import 'classes/card';
 @import 'classes/head';
@@ -48,3 +45,7 @@
 @import 'classes/table';
 @import 'classes/slider';
 @import 'classes/canvas';
+@import 'classes/box';
+@import 'classes/font';
+@import 'classes/color';
+@import 'classes/anima';
