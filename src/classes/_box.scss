@@ -1,4 +1,4 @@
-/***** Classes : Helpers *****/
+/***** Classes : Box *****/
 
 // Margin
 @each $key, $value in $box-nones {
@@ -9,22 +9,19 @@
   @include helpers('mar-#{$key}', 'margin#{$value}', 'var(--margin-#{$key})');
 }
 
-// Border default
+// Border
 @include helpers-concat('bord', 'border-style', 'var(--border-style)');
 
-// Border style
 @each $key, $value in $border-styles {
   @include helpers('bord-#{$key}', 'border-style', $value);
 }
 
-// Border Width & Radius
 @each $type, $border in $borders {
   @each $key, $value in $border {
     @include helpers('bord-#{$key}', 'border-#{$type}', 'var(--border-#{$type}-#{$key})');
   }
 }
 
-// Border color
 @each $color in $main-colors {
   @each $key, $value in $color {
     @include helpers('bord-#{$key}', 'border-color', 'var(--#{$key})');
@@ -45,12 +42,10 @@
   @include helpers('height-#{$key}', 'height', 'var(--height-#{$key})');
 }
 
-// Max-height
 @each $key, $value in $max-heights {
   @include helpers('max-h-#{$key}', 'max-height', 'var(--max-height-#{$key})');
 }
 
-// Min-height
 @each $key, $value in $min-heights {
   @include helpers('min-h-#{$key}', 'min-height', 'var(--min-height-#{$key})');
 }
@@ -60,66 +55,16 @@
   @include helpers('width-#{$key}', 'width', 'var(--width-#{$key})');
 }
 
-// Max-width
 @each $key, $value in $max-widths {
   @include helpers('max-w-#{$key}', 'max-width', 'var(--max-width-#{$key})');
 }
 
-// Min-width
 @each $key, $value in $min-widths {
   @include helpers('min-w-#{$key}', 'min-width', 'var(--min-width-#{$key})');
 }
 
-// Font
-@each $key, $value in $font {
-  @include helpers('font-#{$key}', 'font-#{$value}', $key);
-}
-
-@each $key in $font-family {
-  .font-#{$key} {
-    font-family: var(--#{$key}-font-family);
-  }
-}
-
-// Trans
-@each $key, $value in $trans {
-  @include helpers('trans-#{$key}', 'text-transform', $value);
-}
-
-// Align
-@each $key, $value in $text-align {
-  @include helpers('align-#{$key}', 'text-align', $value);
-}
-
-// Deco
-@include helpers-concat('deco', 'text-decoration-line', 'var(--text-decoration-line)');
-
-@each $deco-key, $deco-value in $text-decorations {
-  @each $key, $value in $deco-value {
-    @include helpers('deco-#{$key}', 'text-decoration-#{$deco-key}', $value);
-  }
-}
-
-// Text decoration color
-@each $key, $value in $primary-colors {
-  @include helpers('deco-#{$key}', 'text-decoration-color', 'var(--#{$key})');
-}
-
-// Shabox
+// Box Shadow
 @each $key, $value in $box-shadows {
   @include helpers('shabox-#{$key}', 'box-shadow', 'var(--box-shadow-#{$key})');
   @include helpers('shabox-in-#{$key}', 'box-shadow', 'inset var(--box-shadow-#{$key})');
-}
-
-// Shatex
-@each $key, $value in $text-shadows {
-  @include helpers('shatex-#{$key}', 'text-shadow', 'var(--text-shadow-#{$key})');
-}
-
-// Cursor
-@each $key, $value in $cursor {
-  .cursor-#{$key},
-  .global-cursor-#{$key} * {
-    cursor: $value;
-  }
 }
