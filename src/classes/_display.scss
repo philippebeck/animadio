@@ -120,7 +120,7 @@
 
 @each $type, $breakpoint in $breakpoints {
   @media (min-width: $breakpoint) {
-    
+
     @each $key, $value in $place-items-var {
       @include place-items($key, '-#{$type}');
     }
