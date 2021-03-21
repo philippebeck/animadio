@@ -1,14 +1,18 @@
-/***** Classes : Bg *****/
+/***** Classes : Color *****/
 
-@each $colors in $main-colors {
+// Color
+@each $colors in $all-colors {
   @each $key, $value in $colors {
-    @include helpers('bg-#{$key}', 'background-color', 'var(--#{$key})');
+    @include helpers('color-#{$key}', 'color', 'var(--#{$key})');
   }
 }
 
+// Background Color
 @each $colors in $main-colors {
   @each $key, $value in $colors {
+    @include helpers('bg-#{$key}', 'background-color', 'var(--#{$key})');
     @include helpers('bg-#{$key}-dark', 'background-color', 'var(--#{$key}-dark)');
     @include helpers('bg-#{$key}-light', 'background-color', 'var(--#{$key}-light)');
   }
 }
+  
