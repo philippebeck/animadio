@@ -1,4 +1,4 @@
-/***** Tags : Init *****/
+/***** Base : Tags *****/
 
 * {
   box-sizing: border-box;
@@ -64,6 +64,7 @@ h6 {
 a {
   text-decoration: var(--link-text-decoration);
   outline: var(--link-outline);
+  color: var(--link-color);
 }
 
 ul {
