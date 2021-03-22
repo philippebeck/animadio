@@ -289,16 +289,10 @@ pre {
   }
 }
 /***** Variables : Display *****/
-.grid {
-  --grid-max-width: $grid-max-width;
-}
-
-[class*=gap-] {
-  --gap-tn: 1px;
-  --gap-sm: 2px;
-  --gap-md: 5px;
-  --gap-lg: 10px;
-  --gap-wd: 20px;
+[class*=flex],
+[class*=col],
+[class*=row] {
+  --flex-place-content: center;
 }
 
 [class*=col] {
@@ -307,6 +301,18 @@ pre {
 
 [class*=row] {
   --row-padding: 10px 0;
+}
+
+[class*=grid] {
+  --grid-max-width: 80%;
+}
+
+[class*=gap-] {
+  --gap-tn: 1px;
+  --gap-sm: 2px;
+  --gap-md: 5px;
+  --gap-lg: 10px;
+  --gap-wd: 20px;
 }
 
 [class*=placo-] {
@@ -466,6 +472,7 @@ pre {
   --text-shadow-blur-lg: 5px 5px 5px;
 }
 
+/***** Variables : Cursor *****/
 /***** Variables : Btn *****/
 [class*=btn],
 [class*=button] {
@@ -1645,41 +1652,6 @@ pre > *::selection {
     position: sticky;
   }
 }
-.cursor-cell,
-.global-cursor-cell * {
-  cursor: cell;
-}
-
-.cursor-cross,
-.global-cursor-cross * {
-  cursor: crosshair;
-}
-
-.cursor-hand,
-.global-cursor-hand * {
-  cursor: pointer;
-}
-
-.cursor-help,
-.global-cursor-help * {
-  cursor: help;
-}
-
-.cursor-move,
-.global-cursor-move * {
-  cursor: move;
-}
-
-.cursor-none,
-.global-cursor-none * {
-  cursor: not-allowed;
-}
-
-.cursor-text,
-.global-cursor-text * {
-  cursor: text;
-}
-
 /***** Classes : Display *****/
 .hide,
 .global-hide > *,
@@ -1687,6 +1659,22 @@ pre > *::selection {
 .onto-hide:focus,
 .check-hide:checked ~ .hub-hide .goal-hide {
   display: none;
+}
+
+.flex,
+.global-flex > *,
+.onto-flex:hover,
+.onto-flex:focus,
+.check-flex:checked ~ .hub-flex .goal-flex {
+  display: flex;
+}
+
+.block,
+.global-block > *,
+.onto-block:hover,
+.onto-block:focus,
+.check-block:checked ~ .hub-block .goal-block {
+  display: block;
 }
 
 .inline,
@@ -1697,12 +1685,12 @@ pre > *::selection {
   display: inline;
 }
 
-.block,
-.global-block > *,
-.onto-block:hover,
-.onto-block:focus,
-.check-block:checked ~ .hub-block .goal-block {
-  display: block;
+.inflex,
+.global-inflex > *,
+.onto-inflex:hover,
+.onto-inflex:focus,
+.check-inflex:checked ~ .hub-inflex .goal-inflex {
+  display: inline-flex;
 }
 
 .inblock,
@@ -1722,12 +1710,12 @@ pre > *::selection {
     display: none;
   }
 
-  .inline-sm,
-.global-inline-sm > *,
-.onto-inline-sm:hover,
-.onto-inline-sm:focus,
-.check-inline-sm:checked ~ .hub-inline-sm .goal-inline-sm {
-    display: inline;
+  .flex-sm,
+.global-flex-sm > *,
+.onto-flex-sm:hover,
+.onto-flex-sm:focus,
+.check-flex-sm:checked ~ .hub-flex-sm .goal-flex-sm {
+    display: flex;
   }
 
   .block-sm,
@@ -1736,6 +1724,22 @@ pre > *::selection {
 .onto-block-sm:focus,
 .check-block-sm:checked ~ .hub-block-sm .goal-block-sm {
     display: block;
+  }
+
+  .inline-sm,
+.global-inline-sm > *,
+.onto-inline-sm:hover,
+.onto-inline-sm:focus,
+.check-inline-sm:checked ~ .hub-inline-sm .goal-inline-sm {
+    display: inline;
+  }
+
+  .inflex-sm,
+.global-inflex-sm > *,
+.onto-inflex-sm:hover,
+.onto-inflex-sm:focus,
+.check-inflex-sm:checked ~ .hub-inflex-sm .goal-inflex-sm {
+    display: inline-flex;
   }
 
   .inblock-sm,
@@ -1755,12 +1759,12 @@ pre > *::selection {
     display: none;
   }
 
-  .inline-md,
-.global-inline-md > *,
-.onto-inline-md:hover,
-.onto-inline-md:focus,
-.check-inline-md:checked ~ .hub-inline-md .goal-inline-md {
-    display: inline;
+  .flex-md,
+.global-flex-md > *,
+.onto-flex-md:hover,
+.onto-flex-md:focus,
+.check-flex-md:checked ~ .hub-flex-md .goal-flex-md {
+    display: flex;
   }
 
   .block-md,
@@ -1769,6 +1773,22 @@ pre > *::selection {
 .onto-block-md:focus,
 .check-block-md:checked ~ .hub-block-md .goal-block-md {
     display: block;
+  }
+
+  .inline-md,
+.global-inline-md > *,
+.onto-inline-md:hover,
+.onto-inline-md:focus,
+.check-inline-md:checked ~ .hub-inline-md .goal-inline-md {
+    display: inline;
+  }
+
+  .inflex-md,
+.global-inflex-md > *,
+.onto-inflex-md:hover,
+.onto-inflex-md:focus,
+.check-inflex-md:checked ~ .hub-inflex-md .goal-inflex-md {
+    display: inline-flex;
   }
 
   .inblock-md,
@@ -1788,12 +1808,12 @@ pre > *::selection {
     display: none;
   }
 
-  .inline-lg,
-.global-inline-lg > *,
-.onto-inline-lg:hover,
-.onto-inline-lg:focus,
-.check-inline-lg:checked ~ .hub-inline-lg .goal-inline-lg {
-    display: inline;
+  .flex-lg,
+.global-flex-lg > *,
+.onto-flex-lg:hover,
+.onto-flex-lg:focus,
+.check-flex-lg:checked ~ .hub-flex-lg .goal-flex-lg {
+    display: flex;
   }
 
   .block-lg,
@@ -1802,6 +1822,22 @@ pre > *::selection {
 .onto-block-lg:focus,
 .check-block-lg:checked ~ .hub-block-lg .goal-block-lg {
     display: block;
+  }
+
+  .inline-lg,
+.global-inline-lg > *,
+.onto-inline-lg:hover,
+.onto-inline-lg:focus,
+.check-inline-lg:checked ~ .hub-inline-lg .goal-inline-lg {
+    display: inline;
+  }
+
+  .inflex-lg,
+.global-inflex-lg > *,
+.onto-inflex-lg:hover,
+.onto-inflex-lg:focus,
+.check-inflex-lg:checked ~ .hub-inflex-lg .goal-inflex-lg {
+    display: inline-flex;
   }
 
   .inblock-lg,
@@ -1821,12 +1857,12 @@ pre > *::selection {
     display: none;
   }
 
-  .inline-wd,
-.global-inline-wd > *,
-.onto-inline-wd:hover,
-.onto-inline-wd:focus,
-.check-inline-wd:checked ~ .hub-inline-wd .goal-inline-wd {
-    display: inline;
+  .flex-wd,
+.global-flex-wd > *,
+.onto-flex-wd:hover,
+.onto-flex-wd:focus,
+.check-flex-wd:checked ~ .hub-flex-wd .goal-flex-wd {
+    display: flex;
   }
 
   .block-wd,
@@ -1835,6 +1871,22 @@ pre > *::selection {
 .onto-block-wd:focus,
 .check-block-wd:checked ~ .hub-block-wd .goal-block-wd {
     display: block;
+  }
+
+  .inline-wd,
+.global-inline-wd > *,
+.onto-inline-wd:hover,
+.onto-inline-wd:focus,
+.check-inline-wd:checked ~ .hub-inline-wd .goal-inline-wd {
+    display: inline;
+  }
+
+  .inflex-wd,
+.global-inflex-wd > *,
+.onto-inflex-wd:hover,
+.onto-inflex-wd:focus,
+.check-inflex-wd:checked ~ .hub-inflex-wd .goal-inflex-wd {
+    display: inline-flex;
   }
 
   .inblock-wd,
@@ -2109,7 +2161,7 @@ pre > *::selection {
 .row-reverse {
   display: flex;
   flex-wrap: wrap;
-  place-content: center;
+  place-content: var(--flex-place-content);
 }
 
 .col,
@@ -6623,6 +6675,42 @@ pre > *::selection {
 [class*=anima-][class*=-altrev-][class*=-radio5]:checked ~ [class*=anima-][class*=-altrev-][class*=-relay] [class*=anima-][class*=-altrev-][class*=-target5],
 [class*=anima-][class*=-altrev-][class*=-check]:checked ~ [class*=anima-][class*=-altrev-][class*=-hub] [class*=anima-][class*=-altrev-][class*=-goal] {
   animation-direction: alternate-reverse;
+}
+
+/***** Classes : Cursor *****/
+.cursor-cell,
+.global-cursor-cell * {
+  cursor: cell;
+}
+
+.cursor-cross,
+.global-cursor-cross * {
+  cursor: crosshair;
+}
+
+.cursor-hand,
+.global-cursor-hand * {
+  cursor: pointer;
+}
+
+.cursor-help,
+.global-cursor-help * {
+  cursor: help;
+}
+
+.cursor-move,
+.global-cursor-move * {
+  cursor: move;
+}
+
+.cursor-none,
+.global-cursor-none * {
+  cursor: not-allowed;
+}
+
+.cursor-text,
+.global-cursor-text * {
+  cursor: text;
 }
 
 /*# sourceMappingURL=animadio.css.map */

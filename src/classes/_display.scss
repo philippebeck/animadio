@@ -18,7 +18,6 @@
   max-width: var(--grid-max-width);
 }
 
-// Grid-template
 @for $i from 2 to 13 {
   @include grid-template($i, 'tn');
 }
@@ -31,7 +30,6 @@
   }
 }
 
-// Grid-gap
 @include grid-gap('tn');
 
 @each $key, $value in $breakpoints {
@@ -40,6 +38,7 @@
   }
 }
 
+// Flex
 .flex,
 .col,
 .col-inverse,
@@ -51,7 +50,7 @@
 .row-reverse {
   display: flex;
   flex-wrap: wrap;
-  place-content: center;
+  place-content: var(--flex-place-content);
 }
 
 .col,
