@@ -1,16 +1,30 @@
 /***** Variables : Display *****/
 
 $displays: (
-  'hide':       none,
-  'inline':     inline,
-  'block':      block,
-  'inblock':    inline-block
+  'hide':     none,
+  'flex':     flex,
+  'block':    block,
+  'inline':   inline,
+  'inflex':   inline-flex,
+  'inblock':  inline-block
 ) !default;
 
-$grid-max-width: 80% !default;
+[class*="flex"],
+[class*="col"],
+[class*="row"] {
+  --flex-place-content: center;
+}
 
-.grid {
-  --grid-max-width: $grid-max-width;
+[class*="col"] {
+  --column-padding: 0 10px;;
+}
+
+[class*="row"] {
+  --row-padding: 10px 0;
+}
+
+[class*="grid"] {
+  --grid-max-width: 80%;
 }
 
 $gap-tn:  1px   !default;
@@ -31,17 +45,6 @@ $gaps: (
   @each $key, $value in $gaps {
     --gap-#{$key}: #{$value};
   }
-}
-
-$column-padding:  0 10px  !default;
-$row-padding:     10px 0  !default;
-
-[class*="col"] {
-  --column-padding: #{$column-padding};
-}
-
-[class*="row"] {
-  --row-padding: #{$row-padding};
 }
 
 // Place Content
