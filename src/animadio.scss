@@ -13,7 +13,6 @@
 @import 'variables/border.var';
 @import 'variables/size.var';
 @import 'variables/shadow.var';
-@import 'variables/cursor.var';
 @import 'variables/btn.var';
 @import 'variables/card.var';
 @import 'variables/head.var';
@@ -34,6 +33,7 @@
 // ********** CLASSES **********
 @import 'classes/init';
 @import 'classes/display';
+@import 'classes/position';
 @import 'classes/btn';
 @import 'classes/card';
 @import 'classes/head';
