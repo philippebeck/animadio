@@ -1,4 +1,4 @@
-/*! animadio v4.0.7 | https://animadio.org | MIT License */
+/*! animadio v4.0.8 | https://animadio.org | MIT License */
 
 "use strict";
 
@@ -462,4 +462,4 @@ class Ajax {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 22nd Mar 2021 @ 10:53:38 AM */
+ Updated: 23rd Mar 2021 @ 8:41:46 PM */
