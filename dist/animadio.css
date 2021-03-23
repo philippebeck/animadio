@@ -1,4 +1,4 @@
-/*! animadio v4.0.7 | https://animadio.org | MIT License */
+/*! animadio v4.0.8 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -825,7 +825,6 @@ pre {
   --text-shadow-blur-lg: 5px 5px 5px;
 }
 
-/***** Variables : Cursor *****/
 /***** Variables : Btn *****/
 [class*=btn],
 [class*=button] {
@@ -2017,170 +2016,6 @@ pre > *::selection {
     max-width: 90%;
   }
 }
-.absolute,
-.global-absolute > *,
-.onto-absolute:hover,
-.onto-absolute:focus,
-.check-absolute:checked ~ .hub-absolute .goal-absolute {
-  position: absolute;
-}
-
-.fixed,
-.global-fixed > *,
-.onto-fixed:hover,
-.onto-fixed:focus,
-.check-fixed:checked ~ .hub-fixed .goal-fixed {
-  position: fixed;
-}
-
-.relative,
-.global-relative > *,
-.onto-relative:hover,
-.onto-relative:focus,
-.check-relative:checked ~ .hub-relative .goal-relative {
-  position: relative;
-}
-
-.sticky,
-.global-sticky > *,
-.onto-sticky:hover,
-.onto-sticky:focus,
-.check-sticky:checked ~ .hub-sticky .goal-sticky {
-  position: sticky;
-}
-
-@media (min-width: 576px) {
-  .absolute-sm,
-.global-absolute-sm > *,
-.onto-absolute-sm:hover,
-.onto-absolute-sm:focus,
-.check-absolute-sm:checked ~ .hub-absolute-sm .goal-absolute-sm {
-    position: absolute;
-  }
-
-  .fixed-sm,
-.global-fixed-sm > *,
-.onto-fixed-sm:hover,
-.onto-fixed-sm:focus,
-.check-fixed-sm:checked ~ .hub-fixed-sm .goal-fixed-sm {
-    position: fixed;
-  }
-
-  .relative-sm,
-.global-relative-sm > *,
-.onto-relative-sm:hover,
-.onto-relative-sm:focus,
-.check-relative-sm:checked ~ .hub-relative-sm .goal-relative-sm {
-    position: relative;
-  }
-
-  .sticky-sm,
-.global-sticky-sm > *,
-.onto-sticky-sm:hover,
-.onto-sticky-sm:focus,
-.check-sticky-sm:checked ~ .hub-sticky-sm .goal-sticky-sm {
-    position: sticky;
-  }
-}
-@media (min-width: 768px) {
-  .absolute-md,
-.global-absolute-md > *,
-.onto-absolute-md:hover,
-.onto-absolute-md:focus,
-.check-absolute-md:checked ~ .hub-absolute-md .goal-absolute-md {
-    position: absolute;
-  }
-
-  .fixed-md,
-.global-fixed-md > *,
-.onto-fixed-md:hover,
-.onto-fixed-md:focus,
-.check-fixed-md:checked ~ .hub-fixed-md .goal-fixed-md {
-    position: fixed;
-  }
-
-  .relative-md,
-.global-relative-md > *,
-.onto-relative-md:hover,
-.onto-relative-md:focus,
-.check-relative-md:checked ~ .hub-relative-md .goal-relative-md {
-    position: relative;
-  }
-
-  .sticky-md,
-.global-sticky-md > *,
-.onto-sticky-md:hover,
-.onto-sticky-md:focus,
-.check-sticky-md:checked ~ .hub-sticky-md .goal-sticky-md {
-    position: sticky;
-  }
-}
-@media (min-width: 992px) {
-  .absolute-lg,
-.global-absolute-lg > *,
-.onto-absolute-lg:hover,
-.onto-absolute-lg:focus,
-.check-absolute-lg:checked ~ .hub-absolute-lg .goal-absolute-lg {
-    position: absolute;
-  }
-
-  .fixed-lg,
-.global-fixed-lg > *,
-.onto-fixed-lg:hover,
-.onto-fixed-lg:focus,
-.check-fixed-lg:checked ~ .hub-fixed-lg .goal-fixed-lg {
-    position: fixed;
-  }
-
-  .relative-lg,
-.global-relative-lg > *,
-.onto-relative-lg:hover,
-.onto-relative-lg:focus,
-.check-relative-lg:checked ~ .hub-relative-lg .goal-relative-lg {
-    position: relative;
-  }
-
-  .sticky-lg,
-.global-sticky-lg > *,
-.onto-sticky-lg:hover,
-.onto-sticky-lg:focus,
-.check-sticky-lg:checked ~ .hub-sticky-lg .goal-sticky-lg {
-    position: sticky;
-  }
-}
-@media (min-width: 1200px) {
-  .absolute-wd,
-.global-absolute-wd > *,
-.onto-absolute-wd:hover,
-.onto-absolute-wd:focus,
-.check-absolute-wd:checked ~ .hub-absolute-wd .goal-absolute-wd {
-    position: absolute;
-  }
-
-  .fixed-wd,
-.global-fixed-wd > *,
-.onto-fixed-wd:hover,
-.onto-fixed-wd:focus,
-.check-fixed-wd:checked ~ .hub-fixed-wd .goal-fixed-wd {
-    position: fixed;
-  }
-
-  .relative-wd,
-.global-relative-wd > *,
-.onto-relative-wd:hover,
-.onto-relative-wd:focus,
-.check-relative-wd:checked ~ .hub-relative-wd .goal-relative-wd {
-    position: relative;
-  }
-
-  .sticky-wd,
-.global-sticky-wd > *,
-.onto-sticky-wd:hover,
-.onto-sticky-wd:focus,
-.check-sticky-wd:checked ~ .hub-sticky-wd .goal-sticky-wd {
-    position: sticky;
-  }
-}
 /***** Classes : Display *****/
 .hide,
 .global-hide > *,
@@ -3137,6 +2972,171 @@ pre > *::selection {
 
   .plase-stretch-wd {
     place-self: stretch;
+  }
+}
+/***** Classes : Position *****/
+.absolute,
+.global-absolute > *,
+.onto-absolute:hover,
+.onto-absolute:focus,
+.check-absolute:checked ~ .hub-absolute .goal-absolute {
+  position: absolute;
+}
+
+.fixed,
+.global-fixed > *,
+.onto-fixed:hover,
+.onto-fixed:focus,
+.check-fixed:checked ~ .hub-fixed .goal-fixed {
+  position: fixed;
+}
+
+.relative,
+.global-relative > *,
+.onto-relative:hover,
+.onto-relative:focus,
+.check-relative:checked ~ .hub-relative .goal-relative {
+  position: relative;
+}
+
+.sticky,
+.global-sticky > *,
+.onto-sticky:hover,
+.onto-sticky:focus,
+.check-sticky:checked ~ .hub-sticky .goal-sticky {
+  position: sticky;
+}
+
+@media (min-width: 576px) {
+  .absolute-sm,
+.global-absolute-sm > *,
+.onto-absolute-sm:hover,
+.onto-absolute-sm:focus,
+.check-absolute-sm:checked ~ .hub-absolute-sm .goal-absolute-sm {
+    position: absolute;
+  }
+
+  .fixed-sm,
+.global-fixed-sm > *,
+.onto-fixed-sm:hover,
+.onto-fixed-sm:focus,
+.check-fixed-sm:checked ~ .hub-fixed-sm .goal-fixed-sm {
+    position: fixed;
+  }
+
+  .relative-sm,
+.global-relative-sm > *,
+.onto-relative-sm:hover,
+.onto-relative-sm:focus,
+.check-relative-sm:checked ~ .hub-relative-sm .goal-relative-sm {
+    position: relative;
+  }
+
+  .sticky-sm,
+.global-sticky-sm > *,
+.onto-sticky-sm:hover,
+.onto-sticky-sm:focus,
+.check-sticky-sm:checked ~ .hub-sticky-sm .goal-sticky-sm {
+    position: sticky;
+  }
+}
+@media (min-width: 768px) {
+  .absolute-md,
+.global-absolute-md > *,
+.onto-absolute-md:hover,
+.onto-absolute-md:focus,
+.check-absolute-md:checked ~ .hub-absolute-md .goal-absolute-md {
+    position: absolute;
+  }
+
+  .fixed-md,
+.global-fixed-md > *,
+.onto-fixed-md:hover,
+.onto-fixed-md:focus,
+.check-fixed-md:checked ~ .hub-fixed-md .goal-fixed-md {
+    position: fixed;
+  }
+
+  .relative-md,
+.global-relative-md > *,
+.onto-relative-md:hover,
+.onto-relative-md:focus,
+.check-relative-md:checked ~ .hub-relative-md .goal-relative-md {
+    position: relative;
+  }
+
+  .sticky-md,
+.global-sticky-md > *,
+.onto-sticky-md:hover,
+.onto-sticky-md:focus,
+.check-sticky-md:checked ~ .hub-sticky-md .goal-sticky-md {
+    position: sticky;
+  }
+}
+@media (min-width: 992px) {
+  .absolute-lg,
+.global-absolute-lg > *,
+.onto-absolute-lg:hover,
+.onto-absolute-lg:focus,
+.check-absolute-lg:checked ~ .hub-absolute-lg .goal-absolute-lg {
+    position: absolute;
+  }
+
+  .fixed-lg,
+.global-fixed-lg > *,
+.onto-fixed-lg:hover,
+.onto-fixed-lg:focus,
+.check-fixed-lg:checked ~ .hub-fixed-lg .goal-fixed-lg {
+    position: fixed;
+  }
+
+  .relative-lg,
+.global-relative-lg > *,
+.onto-relative-lg:hover,
+.onto-relative-lg:focus,
+.check-relative-lg:checked ~ .hub-relative-lg .goal-relative-lg {
+    position: relative;
+  }
+
+  .sticky-lg,
+.global-sticky-lg > *,
+.onto-sticky-lg:hover,
+.onto-sticky-lg:focus,
+.check-sticky-lg:checked ~ .hub-sticky-lg .goal-sticky-lg {
+    position: sticky;
+  }
+}
+@media (min-width: 1200px) {
+  .absolute-wd,
+.global-absolute-wd > *,
+.onto-absolute-wd:hover,
+.onto-absolute-wd:focus,
+.check-absolute-wd:checked ~ .hub-absolute-wd .goal-absolute-wd {
+    position: absolute;
+  }
+
+  .fixed-wd,
+.global-fixed-wd > *,
+.onto-fixed-wd:hover,
+.onto-fixed-wd:focus,
+.check-fixed-wd:checked ~ .hub-fixed-wd .goal-fixed-wd {
+    position: fixed;
+  }
+
+  .relative-wd,
+.global-relative-wd > *,
+.onto-relative-wd:hover,
+.onto-relative-wd:focus,
+.check-relative-wd:checked ~ .hub-relative-wd .goal-relative-wd {
+    position: relative;
+  }
+
+  .sticky-wd,
+.global-sticky-wd > *,
+.onto-sticky-wd:hover,
+.onto-sticky-wd:focus,
+.check-sticky-wd:checked ~ .hub-sticky-wd .goal-sticky-wd {
+    position: sticky;
   }
 }
 /***** Classes : Btn *****/
@@ -7342,4 +7342,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 22nd Mar 2021 @ 10:53:38 AM */
+ Updated: 23rd Mar 2021 @ 8:41:46 PM */
