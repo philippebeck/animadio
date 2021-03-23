@@ -1,6 +1,6 @@
 /***** Classes : Init *****/
 
-// Hide Input Radio & Checkbox used by Animadio
+// Hide Input Radio & Checkbox
 [class*="check"],
 [class*="radio"],
 [id*="check"],
@@ -22,19 +22,6 @@
   @media (min-width: $breakpoint) {
     @each $key, $value in $containers {
       @include container($key, $type, $value);
-    }
-  }
-}
-
-// Position
-@each $key, $value in $positions {
-  @include helpers($key, 'position', $value);
-}
-
-@each $type, $breakpoint in $breakpoints {
-  @media (min-width: $breakpoint) {
-    @each $key, $value in $positions {
-      @include helpers('#{$key}-#{$type}', 'position', $value);
     }
   }
 }

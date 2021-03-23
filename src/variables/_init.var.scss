@@ -28,11 +28,3 @@ $containers: (
   --opacity-dark: 0.7;
   --opacity-light: 0.3;
 }
-
-// Position
-$positions: (
-  'absolute': absolute,
-  'fixed':    fixed,
-  'relative': relative,
-  'sticky':   sticky
-) !default;
