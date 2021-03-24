@@ -27,7 +27,7 @@
   --foot-visual-link-cursor: crosshair;
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-md) {
   .foot {
     --foot-list-flex-direction: row;
   }

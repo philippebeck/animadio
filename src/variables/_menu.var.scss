@@ -29,17 +29,11 @@
 }
 
 footer {
-  --menu-footer-margin-bottom: 38px;
+  --menu-footer-margin-bottom: 40px;
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-lg) {
   footer {
-    --menu-footer-margin-bottom: 40px;
-  }
-}
-
-@media (min-width: $breakpoint-md) {
-  footer {
-    --menu-footer-margin-bottom: 48px;
+    --menu-footer-margin-bottom: 50px;
   }
 }
