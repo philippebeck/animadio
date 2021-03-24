@@ -27,14 +27,12 @@
 
     &:hover figcaption,
     &:focus figcaption {
-      display: block;
       animation: var(--gallery-figure-hover-figcaption-animation);
       bottom: var(--gallery-figure-hover-figcaption-bottom);
     }
   }
 
   figcaption {
-    display: none;
     position: var(--gallery-figcaption-position);
     bottom: var(--gallery-figcaption-bottom);
     padding: var(--gallery-figcaption-padding);

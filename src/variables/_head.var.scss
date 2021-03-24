@@ -23,23 +23,23 @@
     --head-selection-color: var(--green);
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-md) {
     .head {
         --head-max-width: 80%;
         --head-font-size: 125%;
     }
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-lg) {
     .head {
         --head-max-width: 70%;
         --head-font-size: 130%;
     }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-xl) {
     .head {
-        --head-max-width: 60%;
+        --head-max-width: 40%;
         --head-font-size: 135%;
     }
 }

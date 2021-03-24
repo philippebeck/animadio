@@ -43,7 +43,7 @@
   --slider-checked-content: "\f058";
 }
 
-@media (min-width: 576px) {
+@media (min-width: $breakpoint-sm) {
   .slider {
     --slider-figcaption-top: -15%;
     --slider-figcaption-height: 8%;
@@ -58,7 +58,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
   .slider {
     --slider-figcaption-top: -12%;
     --slider-figcaption-height: 6%;
@@ -73,7 +73,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $breakpoint-lg) {
   .slider {
     --slider-figcaption-top: -10%;
     --slider-figcaption-height: 4%;
@@ -88,7 +88,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $breakpoint-xl) {
   .slider {
     --slider-figcaption-top: -5%;
     --slider-figcaption-height: 2%;

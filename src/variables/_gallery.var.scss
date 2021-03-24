@@ -22,7 +22,7 @@
   --gallery-figure-hover-figcaption-bottom: 0;
 
   --gallery-figcaption-position: absolute;
-  --gallery-figcaption-bottom: -60%;
+  --gallery-figcaption-bottom: 0;
   --gallery-figcaption-padding: 10px;
   --gallery-figcaption-width: 100%;
   --gallery-figcaption-line-height: 0.8;
@@ -48,6 +48,17 @@
   @include gallery(10px, calc(100% / 2 - 20px));
 }
 
-@media (min-width: $breakpoint-wd) {
+@media (min-width: $breakpoint-lg) {
+  .gallery {
+    --gallery-figcaption-bottom: -60%;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
   @include gallery(15px, calc(100% / 3 - 30px));
 }
+
+@media (min-width: $breakpoint-wd) {
+  @include gallery(20px, calc(100% / 4 - 40px));
+}
+

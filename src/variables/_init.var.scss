@@ -4,12 +4,14 @@
 $breakpoint-sm: 576px   !default;
 $breakpoint-md: 768px   !default;
 $breakpoint-lg: 992px   !default;
-$breakpoint-wd: 1200px  !default;
+$breakpoint-xl: 1200px  !default;
+$breakpoint-wd: 1600px  !default;
 
 $breakpoints: (
   'sm': $breakpoint-sm,
   'md': $breakpoint-md,
   'lg': $breakpoint-lg,
+  'xl': $breakpoint-xl,
   'wd': $breakpoint-wd
 ) !default;
 

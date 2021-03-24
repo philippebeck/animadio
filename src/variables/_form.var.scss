@@ -94,8 +94,14 @@
   }
 }
 
-@media (min-width: $breakpoint-wd) {
+@media (min-width: $breakpoint-xl) {
   .form {
     --form-width: 50%;
+  }
+}
+
+@media (min-width: $breakpoint-wd) {
+  .form {
+    --form-width: 40%;
   }
 }
