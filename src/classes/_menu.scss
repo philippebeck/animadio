@@ -91,16 +91,7 @@
   display: block;
 }
 
-@media (min-width: $breakpoint-md) {
-  .menu-radio1:checked ~ .menu > [for*="menu-"][for*="-radio1"] > [class*="fa-"],
-  .menu-radio2:checked ~ .menu > [for*="menu-"][for*="-radio2"] > [class*="fa-"],
-  .menu-radio3:checked ~ .menu > [for*="menu-"][for*="-radio3"] > [class*="fa-"],
-  .menu-radio4:checked ~ .menu > [for*="menu-"][for*="-radio4"] > [class*="fa-"],
-  .menu-radio5:checked ~ .menu > [for*="menu-"][for*="-radio5"] > [class*="fa-"],
-  .menu-radio6:checked ~ .menu > [for*="menu-"][for*="-radio6"] > [class*="fa-"],
-  .menu-radio7:checked ~ .menu > [for*="menu-"][for*="-radio7"] > [class*="fa-"],
-  .menu-radio8:checked ~ .menu > [for*="menu-"][for*="-radio8"] > [class*="fa-"],
-  .menu-radio9:checked ~ .menu > [for*="menu-"][for*="-radio9"] > [class*="fa-"],
+@media (min-width: $breakpoint-lg) {
   .menu span {
     display: block;
   }
