@@ -32,6 +32,12 @@ $white: 255, 255, 240 !default;
 $grayscale: (
   "black":  $black,
   "gray":   $gray,
+  "grey":   $grey
+) !default;
+
+$grayscales: (
+  "black":  $black,
+  "gray":   $gray,
   "grey":   $grey,
   "white":  $white
 ) !default;
@@ -52,8 +58,9 @@ $brand-colors: (
 ) !default;
 
 // Composite Colors
-$main-colors: $primary-colors, $grayscale;
-$all-colors:  $primary-colors, $grayscale, $brand-colors;
+$base-colors: $primary-colors, $grayscales;
+$main-colors: $primary-colors, $brand-colors;
+$all-colors:  $primary-colors, $grayscales, $brand-colors;
 
 // CSS Colors
 :root {
@@ -65,7 +72,7 @@ $all-colors:  $primary-colors, $grayscale, $brand-colors;
   }
 
   // Transparent Colors
-  @each $colors in $main-colors {
+  @each $colors in $base-colors {
     @each $key, $value in $colors {
       --#{$key}-dark: rgba(#{$value}, var(--opacity-dark));
       --#{$key}-light: rgba(#{$value}, var(--opacity-light));
