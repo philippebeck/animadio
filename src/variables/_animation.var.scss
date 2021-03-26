@@ -4,9 +4,10 @@
 $animation-duration: 2s !default;
 
 $animation-duration-tn: 1s  !default;
-$animation-duration-sm: 2s  !default;
+$animation-duration-sm: 3s  !default;
 $animation-duration-md: 5s  !default;
 $animation-duration-lg: 10s !default;
+$animation-duration-xl: 30s !default;
 $animation-duration-wd: 60s !default;
 
 $animation-durations: (
@@ -14,6 +15,7 @@ $animation-durations: (
   'sm': $animation-duration-sm,
   'md': $animation-duration-md,
   'lg': $animation-duration-lg,
+  'xl': $animation-duration-xl,
   'wd': $animation-duration-wd
 ) !default;
 

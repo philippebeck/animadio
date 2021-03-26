@@ -336,9 +336,10 @@ pre {
 [class*=anima-] {
   --animation-duration: 2s;
   --animation-duration-tn: 1s;
-  --animation-duration-sm: 2s;
+  --animation-duration-sm: 3s;
   --animation-duration-md: 5s;
   --animation-duration-lg: 10s;
+  --animation-duration-xl: 30s;
   --animation-duration-wd: 60s;
   --animation-timing-function-linear: cubic-bezier(0, 0, 1, 1);
   --animation-timing-function-in: cubic-bezier(0.42, 0, 1, 1);
@@ -403,10 +404,11 @@ pre {
   --border-width-sm: 2px;
   --border-width-md: 3px;
   --border-width-lg: 4px;
-  --border-width-wd: 5px;
+  --border-width-xl: 5px;
+  --border-width-wd: 6px;
   --border-radius-square: unset;
   --border-radius-curve: 5px;
-  --border-radius-rounded: 10px;
+  --border-radius-round: 10px;
   --border-radius-circle: 50%;
 }
 
@@ -488,14 +490,19 @@ pre {
   --btn-tn-font-size: 60%;
   --btn-sm-padding: 4px 8px;
   --btn-sm-font-size: 80%;
-  --btn-lg-padding: 7px 14px;
-  --btn-lg-font-size: 140%;
-  --btn-wd-padding: 9px 18px;
-  --btn-wd-font-size: 180%;
+  --btn-lg-padding: 6px 12px;
+  --btn-lg-font-size: 120%;
+  --btn-xl-padding: 7px 14px;
+  --btn-xl-font-size: 140%;
+  --btn-wd-padding: 8px 16px;
+  --btn-wd-font-size: 160%;
   --btn-square-border-radius: unset;
   --btn-square-padding-top: calc(var(--btn-square-sizes) / 4);
   --btn-square-sizes: 100px;
-  --btn-round-border-radius: 30px;
+  --btn-curve-border-radius: 10px;
+  --btn-curve-padding-top: calc(var(--btn-round-sizes) / 4);
+  --btn-curve-sizes: 100px;
+  --btn-round-border-radius: 20px;
   --btn-round-padding-top: calc(var(--btn-round-sizes) / 4);
   --btn-round-sizes: 100px;
   --btn-circle-border-radius: 50%;
@@ -3089,78 +3096,6 @@ pre > *::selection {
   color: var(--violet);
 }
 
-.btn-black,
-.button-black:hover,
-.button-black:focus,
-.button-black-check:checked + .button-black {
-  border-color: var(--white);
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.button-black,
-.btn-black:hover,
-.btn-black:focus,
-.btn-black-check:checked + .btn-black {
-  border-color: var(--black);
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.btn-gray,
-.button-gray:hover,
-.button-gray:focus,
-.button-gray-check:checked + .button-gray {
-  border-color: var(--white);
-  background-color: var(--gray);
-  color: var(--white);
-}
-
-.button-gray,
-.btn-gray:hover,
-.btn-gray:focus,
-.btn-gray-check:checked + .btn-gray {
-  border-color: var(--gray);
-  background-color: var(--white);
-  color: var(--gray);
-}
-
-.btn-grey,
-.button-grey:hover,
-.button-grey:focus,
-.button-grey-check:checked + .button-grey {
-  border-color: var(--white);
-  background-color: var(--grey);
-  color: var(--white);
-}
-
-.button-grey,
-.btn-grey:hover,
-.btn-grey:focus,
-.btn-grey-check:checked + .btn-grey {
-  border-color: var(--grey);
-  background-color: var(--white);
-  color: var(--grey);
-}
-
-.btn-white,
-.button-white:hover,
-.button-white:focus,
-.button-white-check:checked + .button-white {
-  border-color: var(--white);
-  background-color: var(--white);
-  color: var(--white);
-}
-
-.button-white,
-.btn-white:hover,
-.btn-white:focus,
-.btn-white-check:checked + .btn-white {
-  border-color: var(--white);
-  background-color: var(--white);
-  color: var(--white);
-}
-
 .btn-fb,
 .button-fb:hover,
 .button-fb:focus,
@@ -3267,6 +3202,12 @@ pre > *::selection {
 .button-lg {
   padding: var(--btn-lg-padding);
   font-size: var(--btn-lg-font-size);
+}
+
+.btn-xl,
+.button-xl {
+  padding: var(--btn-xl-padding);
+  font-size: var(--btn-xl-font-size);
 }
 
 .btn-wd,
@@ -4427,6 +4368,14 @@ pre > *::selection {
   border-width: var(--border-width-lg);
 }
 
+.bord-xl,
+.global-bord-xl > *,
+.onto-bord-xl:hover,
+.onto-bord-xl:focus,
+.check-bord-xl:checked ~ .hub-bord-xl .goal-bord-xl {
+  border-width: var(--border-width-xl);
+}
+
 .bord-wd,
 .global-bord-wd > *,
 .onto-bord-wd:hover,
@@ -4451,12 +4400,12 @@ pre > *::selection {
   border-radius: var(--border-radius-curve);
 }
 
-.bord-rounded,
-.global-bord-rounded > *,
-.onto-bord-rounded:hover,
-.onto-bord-rounded:focus,
-.check-bord-rounded:checked ~ .hub-bord-rounded .goal-bord-rounded {
-  border-radius: var(--border-radius-rounded);
+.bord-round,
+.global-bord-round > *,
+.onto-bord-round:hover,
+.onto-bord-round:focus,
+.check-bord-round:checked ~ .hub-bord-round .goal-bord-round {
+  border-radius: var(--border-radius-round);
 }
 
 .bord-circle,
@@ -6557,6 +6506,25 @@ pre > *::selection {
 [class*=anima-][class*=-lg-][class*=-radio5]:checked ~ [class*=anima-][class*=-lg-][class*=-relay] [class*=anima-][class*=-lg-][class*=-target5],
 [class*=anima-][class*=-lg-][class*=-check]:checked ~ [class*=anima-][class*=-lg-][class*=-hub] [class*=anima-][class*=-lg-][class*=-goal] {
   animation-duration: var(--animation-duration-lg);
+}
+
+[class*=anima-][class*=-xl-][class*=-this],
+[class*=anima-][class*=-xl-][class*=-global] > *,
+[class*=anima-][class*=-xl-][class*=-onto]:hover,
+[class*=anima-][class*=-xl-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-xl-][class*=-into],
+*:focus > [class*=anima-][class*=-xl-][class*=-into],
+[class*=anima-][class*=-xl-][class*=-toall]:hover > *,
+[class*=anima-][class*=-xl-][class*=-toall]:focus > *,
+[class*=anima-][class*=-xl-][class*=-toone] > *:hover,
+[class*=anima-][class*=-xl-][class*=-toone] > *:focus,
+[class*=anima-][class*=-xl-][class*=-radio1]:checked ~ [class*=anima-][class*=-xl-][class*=-relay] [class*=anima-][class*=-xl-][class*=-target1],
+[class*=anima-][class*=-xl-][class*=-radio2]:checked ~ [class*=anima-][class*=-xl-][class*=-relay] [class*=anima-][class*=-xl-][class*=-target2],
+[class*=anima-][class*=-xl-][class*=-radio3]:checked ~ [class*=anima-][class*=-xl-][class*=-relay] [class*=anima-][class*=-xl-][class*=-target3],
+[class*=anima-][class*=-xl-][class*=-radio4]:checked ~ [class*=anima-][class*=-xl-][class*=-relay] [class*=anima-][class*=-xl-][class*=-target4],
+[class*=anima-][class*=-xl-][class*=-radio5]:checked ~ [class*=anima-][class*=-xl-][class*=-relay] [class*=anima-][class*=-xl-][class*=-target5],
+[class*=anima-][class*=-xl-][class*=-check]:checked ~ [class*=anima-][class*=-xl-][class*=-hub] [class*=anima-][class*=-xl-][class*=-goal] {
+  animation-duration: var(--animation-duration-xl);
 }
 
 [class*=anima-][class*=-wd-][class*=-this],
