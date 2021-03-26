@@ -6,13 +6,16 @@ $btn-tn-font-size:  60%       !default;
 $btn-sm-padding:    4px 8px   !default;
 $btn-sm-font-size:  80%       !default;
 
-$btn-lg-padding:    7px 14px  !default;
-$btn-lg-font-size:  140%      !default;
+$btn-lg-padding:    6px 12px  !default;
+$btn-lg-font-size:  120%      !default;
 
-$btn-wd-padding:    9px 18px  !default;
-$btn-wd-font-size:  180%      !default;
+$btn-xl-padding:    7px 14px  !default;
+$btn-xl-font-size:  140%      !default;
 
-$btn-size: 'tn', 'sm', 'lg', 'wd';
+$btn-wd-padding:    8px 16px  !default;
+$btn-wd-font-size:  160%      !default;
+
+$btn-size: 'tn', 'sm', 'lg', 'xl', 'wd';
 
 $btn-sizes: (
   'tn-padding':   $btn-tn-padding,
@@ -21,6 +24,8 @@ $btn-sizes: (
   'sm-font-size': $btn-sm-font-size,
   'lg-padding':   $btn-lg-padding,
   'lg-font-size': $btn-lg-font-size,
+  'xl-padding':   $btn-xl-padding,
+  'xl-font-size': $btn-xl-font-size,
   'wd-padding':   $btn-wd-padding,
   'wd-font-size': $btn-wd-font-size
 ) !default;
@@ -29,7 +34,11 @@ $btn-square-border-radius:  unset                             !default;
 $btn-square-padding-top:    calc(var(--btn-square-sizes) / 4) !default;
 $btn-square-sizes:          100px                             !default;
 
-$btn-round-border-radius: 30px                                !default;
+$btn-curve-border-radius: 10px                                !default;
+$btn-curve-padding-top:   calc(var(--btn-round-sizes) / 4)    !default;
+$btn-curve-sizes:         100px                               !default;
+
+$btn-round-border-radius: 20px                                !default;
 $btn-round-padding-top:   calc(var(--btn-round-sizes) / 4)    !default;
 $btn-round-sizes:         100px                               !default;
 
@@ -43,6 +52,9 @@ $btn-shapes: (
   'square-border-radius': $btn-square-border-radius,
   'square-padding-top':   $btn-square-padding-top,
   'square-sizes':         $btn-square-sizes,
+  'curve-border-radius':  $btn-curve-border-radius,
+  'curve-padding-top':    $btn-curve-padding-top,
+  'curve-sizes':          $btn-curve-sizes,
   'round-border-radius':  $btn-round-border-radius,
   'round-padding-top':    $btn-round-padding-top,
   'round-sizes':          $btn-round-sizes,
