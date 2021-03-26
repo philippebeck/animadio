@@ -22,7 +22,7 @@
   }
 }
 
-@each $color in $main-colors {
+@each $color in $base-colors {
   @each $key, $value in $color {
     @include helpers('bord-#{$key}', 'border-color', 'var(--#{$key})');
   }
