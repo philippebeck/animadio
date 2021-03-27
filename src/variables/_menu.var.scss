@@ -4,7 +4,7 @@
   --menu-bottom: 0;
   --menu-z-index: 100;
   --menu-width: 100%;
-  --menu-background-color: var(--black-light);
+  --menu-background-color: var(--grey-light);
 
   --menu-child-place-content: center;
   --menu-child-place-items: center;
@@ -19,12 +19,12 @@
   --menu-children-margin: 5px;
 
   --menu-child-hover-border-radius: 20px;
-  --menu-child-hover-background-color: var(--white);
+  --menu-child-hover-background-color: var(--white-dark);
   --menu-child-hover-color: var(--gray);
   --menu-children-hover-transform: scale(1.2);
 
   --menu-checked-child-font-weight: bold;
-  --menu-checked-child-background-color: var(--white-dark);
+  --menu-checked-child-background-color: var(--white);
   --menu-checked-child-color: var(--black);
 }
 
