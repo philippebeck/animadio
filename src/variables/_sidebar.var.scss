@@ -12,20 +12,20 @@
   --sidebar-child-border-radius: 10px;
   --sidebar-child-padding: 0;
   --sidebar-child-width: 100%;
-  --sidebar-child-background-color: var(--black-dark);
-  --sidebar-child-color: var(--white);
+  --sidebar-child-background-color: var(--white-light);
+  --sidebar-child-color: var(--black);
   --sidebar-child-cursor: cell;
 
   --sidebar-children-margin: 5px;
 
   --sidebar-child-hover-border-radius: 20px;
-  --sidebar-child-hover-background-color: var(--white);
-  --sidebar-child-hover-color: var(--gray);
+  --sidebar-child-hover-background-color: var(--black-dark);
+  --sidebar-child-hover-color: var(--white);
   --sidebar-children-hover-transform: scale(1.2);
 
   --sidebar-checked-child-font-weight: bold;
-  --sidebar-checked-child-background-color: var(--white-dark);
-  --sidebar-checked-child-color: var(--black);
+  --sidebar-checked-child-background-color: var(--black);
+  --sidebar-checked-child-color: var(--white);
 }
 
 @media (min-width: $breakpoint-sm) {
