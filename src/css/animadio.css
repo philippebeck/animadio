@@ -110,7 +110,7 @@
 body {
   --body-background-color: none;
   --body-color: var(--black);
-  --body-font-size: 1.8rem;
+  --body-font-size: 2rem;
   --body-line-height: 1.6;
   --body-scroll-behavior: smooth;
 }
@@ -130,13 +130,23 @@ h4,
 h5,
 h6 {
   --title-text-align: center;
-  --title-wd-font-size: 4rem;
-  --title-wd-text-transform: uppercase;
-  --title-lg-font-size: 3.5rem;
-  --title-lg-text-transform: capitalize;
-  --title-md-font-size: 3rem;
-  --title-sm-font-size: 2.5rem;
-  --title-tn-font-size: 2rem;
+  --title-text-transform: capitalize;
+  --title-wd-color: var(--pp);
+  --title-wd-font-size: 5rem;
+  --title-wd-text-shadow: 2px 2px 2px;
+  --title-xl-color: var(--fb);
+  --title-xl-font-size: 4.5rem;
+  --title-xl-text-shadow: 1px 1px 1px;
+  --title-lg-color: var(--in);
+  --title-lg-font-size: 4rem;
+  --title-lg-text-shadow: 0 0 1px;
+  --title-md-color: var(--cyan);
+  --title-md-font-size: 3.5rem;
+  --title-md-text-shadow: 0 0 2px;
+  --title-sm-color: var(--blue);
+  --title-sm-font-size: 3rem;
+  --title-tn-color: var(--tw);
+  --title-tn-font-size: 2.5rem;
 }
 
 a {
@@ -181,111 +191,33 @@ pre {
 }
 
 @media (min-width: 576px) {
-  h1 {
-    --title-wd-font-size: 4.2rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 3.6rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.1rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 2.6rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.1rem;
-  }
-
   code,
 pre {
     --code-width: 95%;
   }
 }
 @media (min-width: 768px) {
-  h1 {
-    --title-wd-font-size: 4.4rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 3.8rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.3rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 2.8rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.3rem;
-  }
-
   code,
 pre {
     --code-width: 90%;
   }
 }
 @media (min-width: 992px) {
-  h1 {
-    --title-wd-font-size: 4.7rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 3.9rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.4rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 2.9rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.4rem;
-  }
-
   code,
 pre {
     --code-width: 85%;
   }
 }
-@media (min-width: 1600px) {
-  h1 {
-    --title-wd-font-size: 5rem;
-  }
-
-  h2 {
-    --title-lg-font-size: 4rem;
-  }
-
-  h3 {
-    --title-md-font-size: 3.5rem;
-  }
-
-  h4 {
-    --title-sm-font-size: 3rem;
-  }
-
-  h5,
-h6 {
-    --title-tn-font-size: 2.5rem;
-  }
-
+@media (min-width: 1200px) {
   code,
 pre {
     --code-width: 80%;
+  }
+}
+@media (min-width: 1600px) {
+  code,
+pre {
+    --code-width: 75%;
   }
 }
 /***** Variables : Display *****/
@@ -706,17 +638,17 @@ pre {
   --sidebar-child-border-radius: 10px;
   --sidebar-child-padding: 0;
   --sidebar-child-width: 100%;
-  --sidebar-child-background-color: var(--black-dark);
-  --sidebar-child-color: var(--white);
+  --sidebar-child-background-color: var(--white-light);
+  --sidebar-child-color: var(--black);
   --sidebar-child-cursor: cell;
   --sidebar-children-margin: 5px;
   --sidebar-child-hover-border-radius: 20px;
-  --sidebar-child-hover-background-color: var(--white);
-  --sidebar-child-hover-color: var(--gray);
+  --sidebar-child-hover-background-color: var(--black-dark);
+  --sidebar-child-hover-color: var(--white);
   --sidebar-children-hover-transform: scale(1.2);
   --sidebar-checked-child-font-weight: bold;
-  --sidebar-checked-child-background-color: var(--white-dark);
-  --sidebar-checked-child-color: var(--black);
+  --sidebar-checked-child-background-color: var(--black);
+  --sidebar-checked-child-color: var(--white);
 }
 
 @media (min-width: 576px) {
@@ -749,7 +681,7 @@ pre {
   --menu-bottom: 0;
   --menu-z-index: 100;
   --menu-width: 100%;
-  --menu-background-color: var(--black-light);
+  --menu-background-color: var(--grey-light);
   --menu-child-place-content: center;
   --menu-child-place-items: center;
   --menu-child-margin: 4px 2px;
@@ -761,11 +693,11 @@ pre {
   --menu-child-cursor: cell;
   --menu-children-margin: 5px;
   --menu-child-hover-border-radius: 20px;
-  --menu-child-hover-background-color: var(--white);
+  --menu-child-hover-background-color: var(--white-dark);
   --menu-child-hover-color: var(--gray);
   --menu-children-hover-transform: scale(1.2);
   --menu-checked-child-font-weight: bold;
-  --menu-checked-child-background-color: var(--white-dark);
+  --menu-checked-child-background-color: var(--white);
   --menu-checked-child-color: var(--black);
 }
 
@@ -1323,28 +1255,49 @@ h6 {
   font-family: var(--serif);
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   text-align: var(--title-text-align);
+}
+
+h1,
+h2 {
+  text-transform: var(--title-text-transform);
+}
+
+h1 {
+  color: var(--title-wd-color);
   font-size: var(--title-wd-font-size);
-  text-transform: var(--title-wd-text-transform);
+  text-shadow: var(--title-wd-text-shadow);
 }
 
 h2 {
-  text-align: var(--title-text-align);
-  font-size: var(--title-lg-font-size);
-  text-transform: var(--title-lg-text-transform);
+  color: var(--title-xl-color);
+  font-size: var(--title-xl-font-size);
+  text-shadow: var(--title-xl-text-shadow);
 }
 
 h3 {
-  font-size: var(--title-md-font-size);
+  color: var(--title-lg-color);
+  font-size: var(--title-lg-font-size);
+  text-shadow: var(--title-lg-text-shadow);
 }
 
 h4 {
+  color: var(--title-md-color);
+  font-size: var(--title-md-font-size);
+  text-shadow: var(--title-md-text-shadow);
+}
+
+h5 {
+  color: var(--title-sm-color);
   font-size: var(--title-sm-font-size);
 }
 
-h5,
 h6 {
+  color: var(--title-tn-color);
   font-size: var(--title-tn-font-size);
 }
 
