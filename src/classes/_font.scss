@@ -23,7 +23,7 @@
 }
 
 // Text Decoration
-@include helpers-concat('deco', 'text-decoration-line', 'var(--text-decoration-line)');
+@include helpers-concat('deco', 'text-decoration-line', 'var(--decoration-line)');
 
 @each $deco-key, $deco-value in $text-decorations {
   @each $key, $value in $deco-value {

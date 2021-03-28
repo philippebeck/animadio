@@ -5059,7 +5059,7 @@ pre > *::selection {
 [class*=onto-][class*=deco]:hover,
 [class*=onto-][class*=deco]:focus,
 [class*=check-][class*=deco]:checked ~ [class*=hub-][class*=deco] [class*=goal-][class*=deco] {
-  text-decoration-line: var(--text-decoration-line);
+  text-decoration-line: var(--decoration-line);
 }
 
 .deco-none,
@@ -6843,37 +6843,37 @@ pre > *::selection {
 
 /***** Classes : Cursor *****/
 .cursor-cell,
-.global-cursor-cell * {
+.cursor-cell * {
   cursor: cell;
 }
 
 .cursor-cross,
-.global-cursor-cross * {
+.cursor-cross * {
   cursor: crosshair;
 }
 
 .cursor-hand,
-.global-cursor-hand * {
+.cursor-hand * {
   cursor: pointer;
 }
 
 .cursor-help,
-.global-cursor-help * {
+.cursor-help * {
   cursor: help;
 }
 
 .cursor-move,
-.global-cursor-move * {
+.cursor-move * {
   cursor: move;
 }
 
 .cursor-none,
-.global-cursor-none * {
+.cursor-none * {
   cursor: not-allowed;
 }
 
 .cursor-text,
-.global-cursor-text * {
+.cursor-text * {
   cursor: text;
 }
 

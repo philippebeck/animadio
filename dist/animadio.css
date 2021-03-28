@@ -1,4 +1,4 @@
-/*! animadio v4.1.2 | https://animadio.org | MIT License */
+/*! animadio v4.1.3 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -5612,8 +5612,8 @@ pre > *::selection {
 [class*=onto-][class*=deco]:hover,
 [class*=onto-][class*=deco]:focus,
 [class*=check-][class*=deco]:checked ~ [class*=hub-][class*=deco] [class*=goal-][class*=deco] {
-  -webkit-text-decoration-line: var(--text-decoration-line);
-          text-decoration-line: var(--text-decoration-line);
+  -webkit-text-decoration-line: var(--decoration-line);
+          text-decoration-line: var(--decoration-line);
 }
 
 .deco-none,
@@ -7472,39 +7472,39 @@ pre > *::selection {
 
 /***** Classes : Cursor *****/
 .cursor-cell,
-.global-cursor-cell * {
+.cursor-cell * {
   cursor: cell;
 }
 
 .cursor-cross,
-.global-cursor-cross * {
+.cursor-cross * {
   cursor: crosshair;
 }
 
 .cursor-hand,
-.global-cursor-hand * {
+.cursor-hand * {
   cursor: pointer;
 }
 
 .cursor-help,
-.global-cursor-help * {
+.cursor-help * {
   cursor: help;
 }
 
 .cursor-move,
-.global-cursor-move * {
+.cursor-move * {
   cursor: move;
 }
 
 .cursor-none,
-.global-cursor-none * {
+.cursor-none * {
   cursor: not-allowed;
 }
 
 .cursor-text,
-.global-cursor-text * {
+.cursor-text * {
   cursor: text;
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 27th Mar 2021 @ 11:50:33 AM */
+ Updated: 28th Mar 2021 @ 9:37:24 AM */
