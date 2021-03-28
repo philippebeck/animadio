@@ -12,7 +12,7 @@ $cursor: (
 
 @each $key, $value in $cursor {
   .cursor-#{$key},
-  .global-cursor-#{$key} * {
+  .cursor-#{$key} * {
     cursor: $value;
   }
 }
