@@ -1,4 +1,4 @@
-/*! animadio v4.1.3 | https://animadio.org | MIT License */
+/*! animadio v4.1.4 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -371,6 +371,8 @@ template {
 
 /***** Variables : Colors *****/
 :root {
+  --primary: rgb(58, 58, 173);
+  --secondary: rgb(52, 133, 86);
   --pink: rgb(255, 0, 255);
   --red: rgb(250, 128, 114);
   --orange: rgb(255, 140, 0);
@@ -389,6 +391,10 @@ template {
   --in: rgb(0, 119, 181);
   --pp: rgb(39, 52, 106);
   --tw: rgb(29, 161, 242);
+  --primary-dark: rgba(58, 58, 173, var(--opacity-dark));
+  --primary-light: rgba(58, 58, 173, var(--opacity-light));
+  --secondary-dark: rgba(52, 133, 86, var(--opacity-dark));
+  --secondary-light: rgba(52, 133, 86, var(--opacity-light));
   --pink-dark: rgba(255, 0, 255, var(--opacity-dark));
   --pink-light: rgba(255, 0, 255, var(--opacity-light));
   --red-dark: rgba(250, 128, 114, var(--opacity-dark));
@@ -460,6 +466,10 @@ template {
 }
 
 /***** Variables : Tags *****/
+* {
+  --target-margins: 7rem;
+}
+
 body {
   --body-background-color: none;
   --body-color: var(--black);
@@ -1189,7 +1199,7 @@ footer {
 }
 @media (min-width: 768px) {
   .form {
-    --form-width: 70%;
+    --form-width: 75%;
     --form-fieldset-margin-left: 0;
     --form-list-flex-direction: row;
     --form-list-place-content: space-around;
@@ -1200,17 +1210,17 @@ footer {
 }
 @media (min-width: 992px) {
   .form {
-    --form-width: 60%;
+    --form-width: 70%;
   }
 }
 @media (min-width: 1200px) {
   .form {
-    --form-width: 50%;
+    --form-width: 65%;
   }
 }
 @media (min-width: 1600px) {
   .form {
-    --form-width: 40%;
+    --form-width: 60%;
   }
 }
 /***** Variables : Table *****/
@@ -1746,6 +1756,11 @@ footer {
   box-sizing: border-box;
 }
 
+*:target {
+  padding-top: var(--target-margins);
+  margin-top: -var(--target-margins);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -1880,9 +1895,7 @@ pre > *::selection {
 
 /***** Classes : Init *****/
 [class*=check],
-[class*=radio],
-[id*=check],
-[id*=radio] {
+[class*=radio] {
   display: none !important;
 }
 
@@ -3418,6 +3431,42 @@ pre > *::selection {
   transform: var(--btn-checked-transform);
 }
 
+.btn-primary,
+.button-primary:hover,
+.button-primary:focus,
+.button-primary-check:checked + .button-primary {
+  border-color: var(--white);
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.button-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary-check:checked + .btn-primary {
+  border-color: var(--primary);
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.btn-secondary,
+.button-secondary:hover,
+.button-secondary:focus,
+.button-secondary-check:checked + .button-secondary {
+  border-color: var(--white);
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.button-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary-check:checked + .btn-secondary {
+  border-color: var(--secondary);
+  background-color: var(--white);
+  color: var(--secondary);
+}
+
 .btn-pink,
 .button-pink:hover,
 .button-pink:focus,
@@ -3799,6 +3848,16 @@ pre > *::selection {
   border-color: var(--card-btn-hover-border-color);
   background-color: var(--card-btn-hover-background-color);
   color: var(--card-btn-hover-color);
+}
+
+.card-primary {
+  background-color: var(--primary-dark);
+  color: var(--primary);
+}
+
+.card-secondary {
+  background-color: var(--secondary-dark);
+  color: var(--secondary);
 }
 
 .card-pink {
@@ -4922,6 +4981,22 @@ pre > *::selection {
   border-radius: var(--border-radius-circle);
 }
 
+.bord-primary,
+.global-bord-primary > *,
+.onto-bord-primary:hover,
+.onto-bord-primary:focus,
+.check-bord-primary:checked ~ .hub-bord-primary .goal-bord-primary {
+  border-color: var(--primary);
+}
+
+.bord-secondary,
+.global-bord-secondary > *,
+.onto-bord-secondary:hover,
+.onto-bord-secondary:focus,
+.check-bord-secondary:checked ~ .hub-bord-secondary .goal-bord-secondary {
+  border-color: var(--secondary);
+}
+
 .bord-pink,
 .global-bord-pink > *,
 .onto-bord-pink:hover,
@@ -5697,6 +5772,24 @@ pre > *::selection {
           text-decoration-style: wavy;
 }
 
+.deco-primary,
+.global-deco-primary > *,
+.onto-deco-primary:hover,
+.onto-deco-primary:focus,
+.check-deco-primary:checked ~ .hub-deco-primary .goal-deco-primary {
+  -webkit-text-decoration-color: var(--primary);
+          text-decoration-color: var(--primary);
+}
+
+.deco-secondary,
+.global-deco-secondary > *,
+.onto-deco-secondary:hover,
+.onto-deco-secondary:focus,
+.check-deco-secondary:checked ~ .hub-deco-secondary .goal-deco-secondary {
+  -webkit-text-decoration-color: var(--secondary);
+          text-decoration-color: var(--secondary);
+}
+
 .deco-pink,
 .global-deco-pink > *,
 .onto-deco-pink:hover,
@@ -5835,6 +5928,22 @@ pre > *::selection {
 }
 
 /***** Classes : Color *****/
+.color-primary,
+.global-color-primary > *,
+.onto-color-primary:hover,
+.onto-color-primary:focus,
+.check-color-primary:checked ~ .hub-color-primary .goal-color-primary {
+  color: var(--primary);
+}
+
+.color-secondary,
+.global-color-secondary > *,
+.onto-color-secondary:hover,
+.onto-color-secondary:focus,
+.check-color-secondary:checked ~ .hub-color-secondary .goal-color-secondary {
+  color: var(--secondary);
+}
+
 .color-pink,
 .global-color-pink > *,
 .onto-color-pink:hover,
@@ -5977,6 +6086,54 @@ pre > *::selection {
 .onto-color-tw:focus,
 .check-color-tw:checked ~ .hub-color-tw .goal-color-tw {
   color: var(--tw);
+}
+
+.bg-primary,
+.global-bg-primary > *,
+.onto-bg-primary:hover,
+.onto-bg-primary:focus,
+.check-bg-primary:checked ~ .hub-bg-primary .goal-bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-primary-dark,
+.global-bg-primary-dark > *,
+.onto-bg-primary-dark:hover,
+.onto-bg-primary-dark:focus,
+.check-bg-primary-dark:checked ~ .hub-bg-primary-dark .goal-bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.bg-primary-light,
+.global-bg-primary-light > *,
+.onto-bg-primary-light:hover,
+.onto-bg-primary-light:focus,
+.check-bg-primary-light:checked ~ .hub-bg-primary-light .goal-bg-primary-light {
+  background-color: var(--primary-light);
+}
+
+.bg-secondary,
+.global-bg-secondary > *,
+.onto-bg-secondary:hover,
+.onto-bg-secondary:focus,
+.check-bg-secondary:checked ~ .hub-bg-secondary .goal-bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-secondary-dark,
+.global-bg-secondary-dark > *,
+.onto-bg-secondary-dark:hover,
+.onto-bg-secondary-dark:focus,
+.check-bg-secondary-dark:checked ~ .hub-bg-secondary-dark .goal-bg-secondary-dark {
+  background-color: var(--secondary-dark);
+}
+
+.bg-secondary-light,
+.global-bg-secondary-light > *,
+.onto-bg-secondary-light:hover,
+.onto-bg-secondary-light:focus,
+.check-bg-secondary-light:checked ~ .hub-bg-secondary-light .goal-bg-secondary-light {
+  background-color: var(--secondary-light);
 }
 
 .bg-pink,
@@ -7507,4 +7664,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 28th Mar 2021 @ 9:37:24 AM */
+ Updated: 29th Mar 2021 @ 8:58:26 AM */

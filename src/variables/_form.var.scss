@@ -78,7 +78,7 @@
 
 @media (min-width: $breakpoint-md) {
   .form {
-    --form-width: 70%;
+    --form-width: 75%;
     --form-fieldset-margin-left: 0;
     --form-list-flex-direction: row;
     --form-list-place-content: space-around;
@@ -90,18 +90,18 @@
 
 @media (min-width: $breakpoint-lg) {
   .form {
-    --form-width: 60%;
+    --form-width: 70%;
   }
 }
 
 @media (min-width: $breakpoint-xl) {
   .form {
-    --form-width: 50%;
+    --form-width: 65%;
   }
 }
 
 @media (min-width: $breakpoint-wd) {
   .form {
-    --form-width: 40%;
+    --form-width: 60%;
   }
 }

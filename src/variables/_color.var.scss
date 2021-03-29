@@ -1,26 +1,30 @@
 /***** Variables : Colors *****/
 
 // Primary Colors
-$pink:    255, 0, 255   !default;
-$red:     250, 128, 114 !default;
-$orange:  255, 140, 0   !default;
-$yellow:  255, 215, 0   !default;
-$brown:   139, 69, 19   !default;
-$green:   50, 205, 50   !default;
-$cyan:    0, 128, 128   !default;
-$blue:    30, 144, 255  !default;
-$violet:  106, 90, 205  !default;
+$primary:   58, 58, 173   !default;
+$secondary: 52, 133, 86   !default;
+$pink:      255, 0, 255   !default;
+$red:       250, 128, 114 !default;
+$orange:    255, 140, 0   !default;
+$yellow:    255, 215, 0   !default;
+$brown:     139, 69, 19   !default;
+$green:     50, 205, 50   !default;
+$cyan:      0, 128, 128   !default;
+$blue:      30, 144, 255  !default;
+$violet:    106, 90, 205  !default;
 
 $primary-colors: (
-  "pink":   $pink,
-  "red":    $red,
-  "orange": $orange,
-  "yellow": $yellow,
-  "brown":  $brown,
-  "green":  $green,
-  "cyan":   $cyan,
-  "blue":   $blue,
-  "violet": $violet
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "brown":      $brown,
+  "green":      $green,
+  "cyan":       $cyan,  
+  "blue":       $blue,
+  "violet":     $violet
 ) !default;
 
 // Grayscale

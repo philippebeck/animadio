@@ -1,5 +1,9 @@
 /***** Variables : Tags *****/
 
+* {
+  --target-margins: 7rem;
+}
+
 body {
   --body-background-color: none;
   --body-color: var(--black);

@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+*:target {
+  padding-top: var(--target-margins);
+  margin-top: -var(--target-margins);
+}
+
 html {
   font-size: 62.5%;
 }

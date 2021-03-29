@@ -1,10 +1,8 @@
 /***** Classes : Init *****/
 
-// Hide Input Radio & Checkbox
+// Hide Radio & Check Classes
 [class*="check"],
-[class*="radio"],
-[id*="check"],
-[id*="radio"] {
+[class*="radio"] {
   display: none !important;
 }
 
