@@ -1,4 +1,4 @@
-/*! animadio v4.1.4 | https://animadio.org | MIT License */
+/*! animadio v4.1.5 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -494,21 +494,16 @@ h5,
 h6 {
   --title-text-align: center;
   --title-text-transform: capitalize;
-  --title-wd-color: var(--pp);
+  --title-high-color: var(--blue);
+  --title-low-color: var(--cyan);
   --title-wd-font-size: 5rem;
-  --title-wd-text-shadow: 2px 2px 2px;
-  --title-xl-color: var(--fb);
+  --title-wd-text-shadow: 1px 1px 1px;
   --title-xl-font-size: 4.5rem;
-  --title-xl-text-shadow: 1px 1px 1px;
-  --title-lg-color: var(--in);
+  --title-xl-text-shadow: 1px 1px;
   --title-lg-font-size: 4rem;
   --title-lg-text-shadow: 0 0 1px;
-  --title-md-color: var(--cyan);
   --title-md-font-size: 3.5rem;
-  --title-md-text-shadow: 0 0 2px;
-  --title-sm-color: var(--blue);
   --title-sm-font-size: 3rem;
-  --title-tn-color: var(--tw);
   --title-tn-font-size: 2.5rem;
 }
 
@@ -599,7 +594,8 @@ pre {
 }
 
 [class*=grid] {
-  --grid-max-width: 80%;
+  --grid-max-width: 90%;
+  --grid-margin: auto;
 }
 
 [class*=gap-] {
@@ -1795,47 +1791,42 @@ h6 {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   text-align: var(--title-text-align);
+  text-transform: var(--title-text-transform);
+  color: var(--title-high-color);
 }
 
-h1,
-h2 {
-  text-transform: var(--title-text-transform);
+h4,
+h5,
+h6 {
+  color: var(--title-low-color);
 }
 
 h1 {
-  color: var(--title-wd-color);
   font-size: var(--title-wd-font-size);
   text-shadow: var(--title-wd-text-shadow);
 }
 
 h2 {
-  color: var(--title-xl-color);
   font-size: var(--title-xl-font-size);
   text-shadow: var(--title-xl-text-shadow);
 }
 
 h3 {
-  color: var(--title-lg-color);
   font-size: var(--title-lg-font-size);
   text-shadow: var(--title-lg-text-shadow);
 }
 
 h4 {
-  color: var(--title-md-color);
   font-size: var(--title-md-font-size);
-  text-shadow: var(--title-md-text-shadow);
 }
 
 h5 {
-  color: var(--title-sm-color);
   font-size: var(--title-sm-font-size);
 }
 
 h6 {
-  color: var(--title-tn-color);
   font-size: var(--title-tn-font-size);
 }
 
@@ -2326,6 +2317,7 @@ pre > *::selection {
 [class*=grid] {
   display: grid;
   max-width: var(--grid-max-width);
+  margin: var(--grid-margin);
 }
 
 [class*=grid-][class*="-2tn"] {
@@ -2626,51 +2618,43 @@ pre > *::selection {
     grid-gap: var(--gap-wd);
   }
 }
+.flex,
 .col,
-.col-inverse,
-.col-nowrap,
-.col-reverse,
 .row,
-.row-inverse,
-.row-nowrap,
-.row-reverse {
+.col-rev,
+.row-rev {
   display: flex;
-  flex-wrap: wrap;
   place-content: var(--flex-place-content);
 }
 
 .col,
-.col-inverse,
-.col-nowrap,
-.col-reverse {
-  flex-direction: column;
+.col-rev {
   padding: var(--column-padding);
 }
 
 .row,
-.row-inverse,
-.row-nowrap,
-.row-reverse {
-  flex-direction: row;
+.row-rev {
   padding: var(--row-padding);
 }
 
-.col-reverse {
+.flex {
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col-rev {
   flex-direction: column-reverse;
 }
 
-.row-reverse {
+.row-rev {
   flex-direction: row-reverse;
-}
-
-.col-nowrap,
-.row-nowrap {
-  flex-wrap: nowrap;
-}
-
-.col-inverse,
-.row-inverse {
-  flex-wrap: wrap-reverse;
 }
 
 .placo-start {
@@ -7664,4 +7648,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 29th Mar 2021 @ 8:58:26 AM */
+ Updated: 30th Mar 2021 @ 8:08:39 AM */
