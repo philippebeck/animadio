@@ -24,7 +24,8 @@ $displays: (
 }
 
 [class*="grid"] {
-  --grid-max-width: 80%;
+  --grid-max-width: 90%;
+  --grid-margin: auto;
 }
 
 $gap-tn:  1px   !default;

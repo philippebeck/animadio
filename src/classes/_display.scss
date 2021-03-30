@@ -16,6 +16,7 @@
 [class*="grid"] {
   display: grid;
   max-width: var(--grid-max-width);
+  margin: var(--grid-margin);
 }
 
 @for $i from 2 to 13 {
@@ -39,51 +40,43 @@
 }
 
 // Flex
+.flex,
 .col,
-.col-inverse,
-.col-nowrap,
-.col-reverse,
 .row,
-.row-inverse,
-.row-nowrap,
-.row-reverse {
+.col-rev,
+.row-rev {
   display: flex;
-  flex-wrap: wrap;
   place-content: var(--flex-place-content);
 }
 
 .col,
-.col-inverse,
-.col-nowrap,
-.col-reverse {
-  flex-direction: column;
+.col-rev {
   padding: var(--column-padding);
 }
 
 .row,
-.row-inverse,
-.row-nowrap,
-.row-reverse {
-  flex-direction: row;
+.row-rev {
   padding: var(--row-padding);
 }
 
-.col-reverse {
+.flex {
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col-rev {
   flex-direction: column-reverse;
 }
 
-.row-reverse {
+.row-rev {
   flex-direction: row-reverse;
-}
-
-.col-nowrap,
-.row-nowrap {
-  flex-wrap: nowrap;
-}
-
-.col-inverse,
-.row-inverse {
-  flex-wrap: wrap-reverse;
 }
 
 // Place-content
