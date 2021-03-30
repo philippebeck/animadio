@@ -43,47 +43,42 @@ h6 {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   text-align: var(--title-text-align);
+  text-transform: var(--title-text-transform);
+  color: var(--title-high-color);
 }
 
-h1,
-h2 {
-  text-transform: var(--title-text-transform);
+h4,
+h5,
+h6 {
+  color: var(--title-low-color);
 }
 
 h1 {
-  color: var(--title-wd-color);
   font-size: var(--title-wd-font-size);
   text-shadow: var(--title-wd-text-shadow);
 }
 
 h2 {
-  color: var(--title-xl-color);
   font-size: var(--title-xl-font-size);
   text-shadow: var(--title-xl-text-shadow);
 }
 
 h3 {
-  color: var(--title-lg-color);
   font-size: var(--title-lg-font-size);
   text-shadow: var(--title-lg-text-shadow);
 }
 
 h4 {
-  color: var(--title-md-color);
   font-size: var(--title-md-font-size);
-  text-shadow: var(--title-md-text-shadow);
 }
 
 h5 {
-  color: var(--title-sm-color);
   font-size: var(--title-sm-font-size);
 }
 
 h6 {
-  color: var(--title-tn-color);
   font-size: var(--title-tn-font-size);
 }
 

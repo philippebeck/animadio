@@ -29,26 +29,22 @@ h6 {
   --title-text-align: center;
   --title-text-transform: capitalize;
 
-  --title-wd-color: var(--pp);
+  --title-high-color: var(--blue);
+  --title-low-color: var(--cyan);
+
   --title-wd-font-size: 5rem;
-  --title-wd-text-shadow: 2px 2px 2px;
+  --title-wd-text-shadow: 1px 1px 1px;
 
-  --title-xl-color: var(--fb);
   --title-xl-font-size: 4.5rem;
-  --title-xl-text-shadow: 1px 1px 1px;
+  --title-xl-text-shadow: 1px 1px;
 
-  --title-lg-color: var(--in);
   --title-lg-font-size: 4rem;
   --title-lg-text-shadow: 0 0 1px;
 
-  --title-md-color: var(--cyan);
   --title-md-font-size: 3.5rem;
-  --title-md-text-shadow: 0 0 2px;
 
-  --title-sm-color: var(--blue);
   --title-sm-font-size: 3rem;
 
-  --title-tn-color: var(--tw);
   --title-tn-font-size: 2.5rem;
 }
 
