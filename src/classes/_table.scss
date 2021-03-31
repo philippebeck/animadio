@@ -6,6 +6,7 @@
   border-spacing: var(--table-border-spacing);
   margin-bottom: var(--table-margin-bottom);
   width: var(--table-width);
+  max-width: var(--table-max-width);
   font-size: var(--table-font-size);
   box-shadow: var(--table-box-shadow);
 
@@ -46,17 +47,11 @@
     text-shadow: var(--table-caption-text-shadow);
   }
 
-  thead,
-  tfoot {
+  th {
+    font-size: var(--table-title-font-size);
     font-style: var(--table-title-font-style);
     background-color: var(--table-title-background-color);
     color: var(--table-title-color);
-
-    *::selection,
-    *::selection {
-      background-color: var(--table-title-selection-background-color);
-      color: var(--table-title-selection-color);
-    }
   }
 
   th,
@@ -73,26 +68,26 @@
 
   tbody tr {
     &:nth-child(even) {
-      background-color: var(--table-row-even-background-color);
-      color: var(--table-row-even-color);
+      background-color: var(--table-even-background-color);
+      color: var(--table-even-color);
 
       &:hover,
       &:focus {
-        background-color: var(--table-row-even-hover-background-color);
-        color: var(--table-row-even-hover-color);
-        box-shadow: var(--table-row-even-hover-box-shadow);
+        background-color: var(--table-even-hover-background-color);
+        color: var(--table-even-hover-color);
+        box-shadow: var(--table-even-hover-box-shadow);
       }
     }
 
     &:nth-child(odd) {
-      background-color: var(--table-row-odd-background-color);
-      color: var(--table-row-odd-color);
+      background-color: var(--table-odd-background-color);
+      color: var(--table-odd-color);
 
       &:hover,
       &:focus {
-        background-color: var(--table-row-odd-hover-background-color);
-        color: var(--table-row-odd-hover-color);
-        box-shadow: var(--table-row-odd-hover-box-shadow);
+        background-color: var(--table-odd-hover-background-color);
+        color: var(--table-odd-hover-color);
+        box-shadow: var(--table-odd-hover-box-shadow);
       }
     }
   }

@@ -26,26 +26,47 @@ h3,
 h4,
 h5,
 h6 {
+  --title-font-family: var(--serif);
   --title-text-align: center;
   --title-text-transform: capitalize;
+}
 
-  --title-high-color: var(--blue);
-  --title-low-color: var(--cyan);
+h1,
+h2,
+h3 {
+  --title-color: var(--blue);
+  --title-text-shadow: 1px 1px 1px;
+}
 
-  --title-wd-font-size: 5rem;
-  --title-wd-text-shadow: 1px 1px 1px;
+h4,
+h5,
+h6 {
+  --title-color: var(--cyan);
+  --title-text-shadow: 0 0 1px;
+}
 
-  --title-xl-font-size: 4.5rem;
-  --title-xl-text-shadow: 1px 1px;
+h1 {
+  --title-font-size: 5rem;
+}
 
-  --title-lg-font-size: 4rem;
-  --title-lg-text-shadow: 0 0 1px;
+h2 {
+  --title-font-size: 4.5rem;
+}
 
-  --title-md-font-size: 3.5rem;
+h3 {
+  --title-font-size: 4rem;
+}
 
-  --title-sm-font-size: 3rem;
+h4 {
+  --title-font-size: 3.5rem;
+}
 
-  --title-tn-font-size: 2.5rem;
+h5 {
+  --title-font-size: 3rem;
+}
+
+h6 {
+  --title-font-size: 2.5rem;
 }
 
 a {

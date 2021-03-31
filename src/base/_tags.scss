@@ -38,48 +38,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--serif);
-}
-
-h1,
-h2,
-h3 {
+  font-family: var(--title-font-family);
   text-align: var(--title-text-align);
   text-transform: var(--title-text-transform);
-  color: var(--title-high-color);
-}
-
-h4,
-h5,
-h6 {
-  color: var(--title-low-color);
-}
-
-h1 {
-  font-size: var(--title-wd-font-size);
-  text-shadow: var(--title-wd-text-shadow);
-}
-
-h2 {
-  font-size: var(--title-xl-font-size);
-  text-shadow: var(--title-xl-text-shadow);
-}
-
-h3 {
-  font-size: var(--title-lg-font-size);
-  text-shadow: var(--title-lg-text-shadow);
-}
-
-h4 {
-  font-size: var(--title-md-font-size);
-}
-
-h5 {
-  font-size: var(--title-sm-font-size);
-}
-
-h6 {
-  font-size: var(--title-tn-font-size);
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+  text-shadow: var(--title-text-shadow);
 }
 
 a {
