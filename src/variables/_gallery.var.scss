@@ -61,4 +61,3 @@
 @media (min-width: $breakpoint-wd) {
   @include gallery(20px, calc(100% / 4 - 40px));
 }
-
