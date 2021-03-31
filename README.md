@@ -97,7 +97,7 @@ CodePen : [@animadio](https://codepen.io/animadio)
 
 ## Documentation
 
-Animadio Documentation will come back soon for the V4 !
+Animadio Documentation is available for the V4 !
 
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg?label=https://animadio.org)](https://animadio.org)
 
