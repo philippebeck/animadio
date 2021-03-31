@@ -4,85 +4,78 @@
   --table-border-spacing: 10px;
   --table-margin-bottom: 50px;
   --table-width: auto;
-  --table-font-size: calc(var(--body-font-size) * 125 / 100);
+  --table-max-width: 100%;
+  --table-font-size: calc(var(--body-font-size) * 110 / 100);
   --table-box-shadow: 5px 5px 10px 5px var(--grey);
 
   --table-caption-side: top;
   --table-caption-margin-bottom: 10px;
-  --table-caption-font-size: 2rem;
+  --table-caption-font-size: 3rem;
   --table-caption-font-weight: bold;
   --table-caption-color: var(--black);
-  --table-caption-text-shadow: 2px 2px 5px;
+  --table-caption-text-shadow: 1px 1px 2px;
 
+  --table-title-font-size: 3rem;
   --table-title-font-style: italic;
   --table-title-background-color: var(--gray);
   --table-title-color: var(--white);
-
-  --table-title-selection-background-color: var(--white);
-  --table-title-selection-color: var(--gray);
 
   --table-cell-border-style: solid;
   --table-cell-border-width: thin;
   --table-cell-border-radius: 0;
   --table-cell-border-color: var(--black);
-  --table-cell-padding: 2px;
+  --table-cell-padding: 5px;
   --table-cell-text-align: center;
   --table-cell-vertical-align: middle;
   --table-cell-cursor: cell;
 
   --table-row-hover-box-shadow: inset 0 0 10px 10px;
 
-  --table-row-even-background-color: var(--grey);
-  --table-row-even-color: var(--black);
+  --table-even-background-color: var(--grey);
+  --table-even-color: var(--black);
 
-  --table-row-even-hover-background-color: var(--blue);
-  --table-row-even-hover-color: var(--white);
-  --table-row-even-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-even-background-color);
+  --table-even-hover-background-color: var(--blue);
+  --table-even-hover-color: var(--white);
+  --table-even-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-even-background-color);
 
-  --table-row-odd-background-color: var(--white);
-  --table-row-odd-color: var(--gray);
+  --table-odd-background-color: var(--white);
+  --table-odd-color: var(--gray);
 
-  --table-row-odd-hover-background-color: var(--red);
-  --table-row-odd-hover-color: var(--white);
-  --table-row-odd-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-odd-background-color);
+  --table-odd-hover-background-color: var(--red);
+  --table-odd-hover-color: var(--white);
+  --table-odd-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-odd-background-color);
 }
 
 @media (min-width: $breakpoint-sm) {
   .table {
-    --table-font-size: calc(var(--body-font-size) * 120 / 100);
-    --table-caption-font-size: 2.2rem;
-    --table-cell-padding: 4px;
+    --table-cell-padding: 6px;
   }
 }
 
 @media (min-width: $breakpoint-md) {
   .table {
-    --table-font-size: calc(var(--body-font-size) * 115 / 100);
-    --table-caption-font-size: 2.4rem;
-    --table-cell-padding: 6px;
+    --table-max-width: 95%;
+    --table-cell-padding: 7px;
   }
 }
 
 @media (min-width: $breakpoint-lg) {
   .table {
-    --table-font-size: calc(var(--body-font-size) * 110 / 100);
-    --table-caption-font-size: 2.6rem;
+    --table-max-width: 90%;
     --table-cell-padding: 8px;
   }
 }
 
 @media (min-width: $breakpoint-xl) {
   .table {
-    --table-font-size: calc(var(--body-font-size) * 105 / 100);
-    --table-caption-font-size: 2.8rem;
-    --table-cell-padding: 10px;
+    --table-max-width: 85%;
+    --table-cell-padding: 9px;
   }
 }
 
 @media (min-width: $breakpoint-wd) {
   .table {
-    --table-font-size: var(--body-font-size);
-    --table-caption-font-size: 3rem;
-    --table-cell-padding: 12px;
+    --table-max-width: 70%;
+    --table-cell-padding: 10px;
   }
 }
