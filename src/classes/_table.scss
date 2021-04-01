@@ -4,7 +4,7 @@
   display: table;
   border-collapse: var(--table-border-collapse);
   border-spacing: var(--table-border-spacing);
-  margin-bottom: var(--table-margin-bottom);
+  margin: var(--table-margin);
   width: var(--table-width);
   max-width: var(--table-max-width);
   font-size: var(--table-font-size);
@@ -40,7 +40,7 @@
 
   & > caption {
     caption-side: var(--table-caption-side);
-    margin-bottom: var(--table-caption-margin-bottom);
+    margin: var(--table-caption-margin);
     font-size: var(--table-caption-font-size);
     font-weight: var(--table-caption-font-weight);
     color: var(--table-caption-color);
@@ -63,6 +63,10 @@
     padding: var(--table-cell-padding);
     text-align: var(--table-cell-text-align);
     vertical-align: var(--table-cell-vertical-align);
+  }
+
+  td {
+    word-break: var(--table-cell-word-break);
     cursor: var(--table-cell-cursor);
   }
 
