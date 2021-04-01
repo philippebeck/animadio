@@ -27,12 +27,12 @@
     background-color: var(--foot-list-background-color);
 
     a {
-      color: var(--foot-list-link-font-color);
+      color: var(--foot-list-color);
       cursor: var(--foot-list-cursor);
 
       &:hover,
       &:focus {
-        color: var(--foot-list-link-hover-font-color);
+        color: var(--foot-list-hover-color);
       }
     }
   }
@@ -44,13 +44,16 @@
 }
 
 [for*="foot"]:hover [class*="up"],
-[for*="foot"]:hover [class*="down"] {
-  transform: var(--foot-hover-transform);
-  transition: var(--foot-hover-transition);
-  color: var(--foot-hover-color);
+[for*="foot"]:focus [class*="up"],
+[for*="foot"]:hover [class*="down"],
+[for*="foot"]:focus [class*="down"] {
+  transform: var(--foot-label-hover-transform);
+  transition: var(--foot-label-hover-transition);
+  color: var(--foot-label-hover-color);
 }
 
 .foot-visual {
+  display: flex;
   place-content: var(--foot-visual-place-content);
   margin: var(--foot-visual-margin);
   padding: var(--foot-visual-padding);
@@ -95,11 +98,5 @@
   [class*="foot-target"] [class*="up"],
   [class*="foot-target"] [class*="down"] {
     display: none;
-  }
-
-  .foot {
-    label {
-      cursor: default;
-    }
   }
 }

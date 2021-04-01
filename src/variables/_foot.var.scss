@@ -3,22 +3,24 @@
 .foot {
   --foot-text-align: center;
   --foot-title-margin: 10px;
-  --foot-title-color: var(--yellow);
   --foot-title-font-size: 2rem;
-  --foot-label-cursor: pointer;
-
+  --foot-title-color: var(--yellow);
+  --foot-title-hover-color: var(--orange);
+  
   --foot-list-flex-direction: column;
   --foot-list-place-content: space-evenly;
   --foot-list-margin: 0;
   --foot-list-background-color: var(--violet);
   --foot-list-cursor: pointer;
-  --foot-list-link-font-color: var(--white);
-  --foot-list-link-hover-font-color: var(--yellow);
+  --foot-list-color: var(--white);
+  --foot-list-hover-color: var(--yellow);
 
   --foot-target-margin-left: 2px;
-  --foot-hover-transform: scale(1.2);
-  --foot-hover-transition: transorm 1s;
-  --foot-hover-color: var(--yellow);
+  --foot-label-cursor: pointer;
+  --foot-label-color: var(--orange);
+  --foot-label-hover-color: var(--orange);
+  --foot-label-hover-transform: scale(1.2);
+  --foot-label-hover-transition: transform 1s;
 
   --foot-visual-place-content: center;
   --foot-visual-margin: 0;
