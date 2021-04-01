@@ -35,22 +35,24 @@ h1,
 h2,
 h3 {
   --title-color: var(--blue);
-  --title-text-shadow: 1px 1px 1px;
+  
 }
 
 h4,
 h5,
 h6 {
   --title-color: var(--cyan);
-  --title-text-shadow: 0 0 1px;
+  
 }
 
 h1 {
   --title-font-size: 5rem;
+  --title-text-shadow: 1px 1px 1px;
 }
 
 h2 {
   --title-font-size: 4.5rem;
+  --title-text-shadow: 0 0 1px;
 }
 
 h3 {
