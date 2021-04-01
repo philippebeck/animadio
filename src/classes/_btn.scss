@@ -9,8 +9,9 @@
   font-weight: var(--btn-font-weight);
   text-align: var(--btn-text-align);
 
-  & > i {
+  & > * {
     display: block;
+    margin: var(--btn-child-margin);
   }
 }
 

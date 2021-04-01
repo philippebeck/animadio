@@ -2,20 +2,20 @@
 
 .table {
   --table-border-spacing: 10px;
-  --table-margin-bottom: 50px;
+  --table-margin: 50px auto;
   --table-width: auto;
   --table-max-width: 100%;
   --table-font-size: calc(var(--body-font-size) * 110 / 100);
   --table-box-shadow: 5px 5px 10px 5px var(--grey);
 
   --table-caption-side: top;
-  --table-caption-margin-bottom: 10px;
+  --table-caption-margin: 10px;
   --table-caption-font-size: 3rem;
   --table-caption-font-weight: bold;
   --table-caption-color: var(--black);
   --table-caption-text-shadow: 1px 1px 2px;
 
-  --table-title-font-size: 3rem;
+  --table-title-font-size: calc(var(--body-font-size) * 120 / 100);;
   --table-title-font-style: italic;
   --table-title-background-color: var(--gray);
   --table-title-color: var(--white);
@@ -24,9 +24,10 @@
   --table-cell-border-width: thin;
   --table-cell-border-radius: 0;
   --table-cell-border-color: var(--black);
-  --table-cell-padding: 5px;
+  --table-cell-padding: 2px;
   --table-cell-text-align: center;
   --table-cell-vertical-align: middle;
+  --table-cell-word-break: break-all;
   --table-cell-cursor: cell;
 
   --table-row-hover-box-shadow: inset 0 0 10px 10px;

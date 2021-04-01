@@ -77,6 +77,8 @@ $btn-shapes: (
 
   --btn-checked-transform: scale(0.9);
 
+  --btn-child-margin: auto;
+
   @each $key, $value in $btn-sizes {
     --btn-#{$key}: #{$value};
   }

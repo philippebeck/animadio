@@ -92,6 +92,11 @@
   & > [for*="navbar"] {
     position: absolute;
     right: var(--navbar-label-right);
+
+    &:hover,
+    &:focus {
+      color: var(--navbar-label-hover-color);
+    }
   }
 }
 

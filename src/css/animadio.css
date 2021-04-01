@@ -148,22 +148,22 @@ h1,
 h2,
 h3 {
   --title-color: var(--blue);
-  --title-text-shadow: 1px 1px 1px;
 }
 
 h4,
 h5,
 h6 {
   --title-color: var(--cyan);
-  --title-text-shadow: 0 0 1px;
 }
 
 h1 {
   --title-font-size: 5rem;
+  --title-text-shadow: 1px 1px 1px;
 }
 
 h2 {
   --title-font-size: 4.5rem;
+  --title-text-shadow: 0 0 1px;
 }
 
 h3 {
@@ -452,6 +452,7 @@ pre {
   --btn-hover-transition: background-color 1s;
   --btn-hover-animation: none;
   --btn-checked-transform: scale(0.9);
+  --btn-child-margin: auto;
   --btn-tn-padding: 3px 6px;
   --btn-tn-font-size: 60%;
   --btn-sm-padding: 4px 8px;
@@ -586,20 +587,22 @@ pre {
 .foot {
   --foot-text-align: center;
   --foot-title-margin: 10px;
-  --foot-title-color: var(--yellow);
   --foot-title-font-size: 2rem;
-  --foot-label-cursor: pointer;
+  --foot-title-color: var(--yellow);
+  --foot-title-hover-color: var(--orange);
   --foot-list-flex-direction: column;
   --foot-list-place-content: space-evenly;
   --foot-list-margin: 0;
   --foot-list-background-color: var(--violet);
   --foot-list-cursor: pointer;
-  --foot-list-link-font-color: var(--white);
-  --foot-list-link-hover-font-color: var(--yellow);
+  --foot-list-color: var(--white);
+  --foot-list-hover-color: var(--yellow);
   --foot-target-margin-left: 2px;
-  --foot-hover-transform: scale(1.2);
-  --foot-hover-transition: transorm 1s;
-  --foot-hover-color: var(--yellow);
+  --foot-label-cursor: pointer;
+  --foot-label-color: var(--orange);
+  --foot-label-hover-color: var(--orange);
+  --foot-label-hover-transform: scale(1.2);
+  --foot-label-hover-transition: transform 1s;
   --foot-visual-place-content: center;
   --foot-visual-margin: 0;
   --foot-visual-padding: 10px 0;
@@ -645,6 +648,7 @@ pre {
   --navbar-brand-link-left: 0;
   --navbar-brand-link-img-height: 40px;
   --navbar-label-right: 10px;
+  --navbar-label-hover-color: var(--orange);
   --navbar-first-list-span-font-size: 2rem;
 }
 
@@ -897,18 +901,18 @@ footer {
 /***** Variables : Table *****/
 .table {
   --table-border-spacing: 10px;
-  --table-margin-bottom: 50px;
+  --table-margin: 50px auto;
   --table-width: auto;
   --table-max-width: 100%;
   --table-font-size: calc(var(--body-font-size) * 110 / 100);
   --table-box-shadow: 5px 5px 10px 5px var(--grey);
   --table-caption-side: top;
-  --table-caption-margin-bottom: 10px;
+  --table-caption-margin: 10px;
   --table-caption-font-size: 3rem;
   --table-caption-font-weight: bold;
   --table-caption-color: var(--black);
   --table-caption-text-shadow: 1px 1px 2px;
-  --table-title-font-size: 3rem;
+  --table-title-font-size: calc(var(--body-font-size) * 120 / 100);
   --table-title-font-style: italic;
   --table-title-background-color: var(--gray);
   --table-title-color: var(--white);
@@ -916,9 +920,10 @@ footer {
   --table-cell-border-width: thin;
   --table-cell-border-radius: 0;
   --table-cell-border-color: var(--black);
-  --table-cell-padding: 5px;
+  --table-cell-padding: 2px;
   --table-cell-text-align: center;
   --table-cell-vertical-align: middle;
+  --table-cell-word-break: break-all;
   --table-cell-cursor: cell;
   --table-row-hover-box-shadow: inset 0 0 10px 10px;
   --table-even-background-color: var(--grey);
@@ -2817,9 +2822,10 @@ pre > *::selection {
   font-weight: var(--btn-font-weight);
   text-align: var(--btn-text-align);
 }
-[class*=btn] > i,
-[class*=button] > i {
+[class*=btn] > *,
+[class*=button] > * {
   display: block;
+  margin: var(--btn-child-margin);
 }
 
 [class*=btn] {
@@ -3427,11 +3433,11 @@ pre > *::selection {
   background-color: var(--foot-list-background-color);
 }
 .foot-list:first-child a {
-  color: var(--foot-list-link-font-color);
+  color: var(--foot-list-color);
   cursor: var(--foot-list-cursor);
 }
 .foot-list:first-child a:hover, .foot-list:first-child a:focus {
-  color: var(--foot-list-link-hover-font-color);
+  color: var(--foot-list-hover-color);
 }
 
 [class*=foot-target] [class*=up],
@@ -3440,13 +3446,16 @@ pre > *::selection {
 }
 
 [for*=foot]:hover [class*=up],
-[for*=foot]:hover [class*=down] {
-  transform: var(--foot-hover-transform);
-  transition: var(--foot-hover-transition);
-  color: var(--foot-hover-color);
+[for*=foot]:focus [class*=up],
+[for*=foot]:hover [class*=down],
+[for*=foot]:focus [class*=down] {
+  transform: var(--foot-label-hover-transform);
+  transition: var(--foot-label-hover-transition);
+  color: var(--foot-label-hover-color);
 }
 
 .foot-visual {
+  display: flex;
   place-content: var(--foot-visual-place-content);
   margin: var(--foot-visual-margin);
   padding: var(--foot-visual-padding);
@@ -3490,10 +3499,6 @@ pre > *::selection {
   [class*=foot-target] [class*=up],
 [class*=foot-target] [class*=down] {
     display: none;
-  }
-
-  .foot label {
-    cursor: default;
   }
 }
 /***** Classes : Navbar *****/
@@ -3566,6 +3571,9 @@ pre > *::selection {
 .navbar > [for*=navbar] {
   position: absolute;
   right: var(--navbar-label-right);
+}
+.navbar > [for*=navbar]:hover, .navbar > [for*=navbar]:focus {
+  color: var(--navbar-label-hover-color);
 }
 
 .navbar-close:checked ~ ul:first-of-type, .navbar-open:checked ~ ul:last-of-type {
@@ -3924,7 +3932,7 @@ pre > *::selection {
   display: table;
   border-collapse: var(--table-border-collapse);
   border-spacing: var(--table-border-spacing);
-  margin-bottom: var(--table-margin-bottom);
+  margin: var(--table-margin);
   width: var(--table-width);
   max-width: var(--table-max-width);
   font-size: var(--table-font-size);
@@ -3953,7 +3961,7 @@ pre > *::selection {
 }
 .table > caption {
   caption-side: var(--table-caption-side);
-  margin-bottom: var(--table-caption-margin-bottom);
+  margin: var(--table-caption-margin);
   font-size: var(--table-caption-font-size);
   font-weight: var(--table-caption-font-weight);
   color: var(--table-caption-color);
@@ -3974,6 +3982,9 @@ pre > *::selection {
   padding: var(--table-cell-padding);
   text-align: var(--table-cell-text-align);
   vertical-align: var(--table-cell-vertical-align);
+}
+.table td {
+  word-break: var(--table-cell-word-break);
   cursor: var(--table-cell-cursor);
 }
 .table tbody tr:nth-child(even) {
