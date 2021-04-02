@@ -1,59 +1,30 @@
 /***** Variables : Sidebar *****/
 
 .sidebar {
-  --sidebar-top: 20%;
-  --sidebar-left: 0;
+  --sidebar-flex-direction: column;
+  --sidebar-position: fixed;
+  --sidebar-top: calc(var(--navbar-height) + 10px);
+  --sidebar-left: 2px;
   --sidebar-z-index: 10;
-  --sidebar-width: 15%;
+  --sidebar-width: auto;
 
   --sidebar-child-place-content: center;
   --sidebar-child-place-items: center;
-  --sidebar-child-margin: 4px 2px;
-  --sidebar-child-border-radius: 10px;
-  --sidebar-child-padding: 0;
+  --sidebar-child-margin: 5px;
+  --sidebar-child-border-radius: 20px;
+  --sidebar-child-padding: 10px;
   --sidebar-child-width: 100%;
   --sidebar-child-background-color: var(--white-light);
   --sidebar-child-color: var(--black);
-  --sidebar-child-cursor: cell;
+  --sidebar-child-cursor: crosshair;
 
-  --sidebar-children-margin: 5px;
-
-  --sidebar-child-hover-border-radius: 20px;
+  --sidebar-child-hover-border-radius: 10px;
   --sidebar-child-hover-background-color: var(--black-dark);
   --sidebar-child-hover-color: var(--white);
-  --sidebar-children-hover-transform: scale(1.2);
+  --sidebar-child-hover-transform: scale(1.1);
+  --sidebar-child-hover-transition: all 1s;
 
   --sidebar-checked-child-font-weight: bold;
   --sidebar-checked-child-background-color: var(--black);
   --sidebar-checked-child-color: var(--white);
-}
-
-@media (min-width: $breakpoint-sm) {
-  .sidebar {
-    --sidebar-width: 13%;
-  }
-}
-
-@media (min-width: $breakpoint-md) {
-  .sidebar {
-    --sidebar-width: 11%;
-  }
-}
-
-@media (min-width: $breakpoint-lg) {
-  .sidebar {
-    --sidebar-width: 9%;
-  }
-}
-
-@media (min-width: $breakpoint-xl) {
-  .sidebar {
-    --sidebar-width: 7%;
-  }
-}
-
-@media (min-width: $breakpoint-wd) {
-  .sidebar {
-    --sidebar-width: 5%;
-  }
 }

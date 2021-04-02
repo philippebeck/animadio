@@ -1,4 +1,4 @@
-/*! animadio v4.1.8 | https://animadio.org | MIT License */
+/*! animadio v4.1.9 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -1014,54 +1014,31 @@ pre {
 }
 /***** Variables : Sidebar *****/
 .sidebar {
-  --sidebar-top: 20%;
-  --sidebar-left: 0;
+  --sidebar-flex-direction: column;
+  --sidebar-position: fixed;
+  --sidebar-top: calc(var(--navbar-height) + 10px);
+  --sidebar-left: 2px;
   --sidebar-z-index: 10;
-  --sidebar-width: 15%;
+  --sidebar-width: auto;
   --sidebar-child-place-content: center;
   --sidebar-child-place-items: center;
-  --sidebar-child-margin: 4px 2px;
-  --sidebar-child-border-radius: 10px;
-  --sidebar-child-padding: 0;
+  --sidebar-child-margin: 5px;
+  --sidebar-child-border-radius: 20px;
+  --sidebar-child-padding: 10px;
   --sidebar-child-width: 100%;
   --sidebar-child-background-color: var(--white-light);
   --sidebar-child-color: var(--black);
-  --sidebar-child-cursor: cell;
-  --sidebar-children-margin: 5px;
-  --sidebar-child-hover-border-radius: 20px;
+  --sidebar-child-cursor: crosshair;
+  --sidebar-child-hover-border-radius: 10px;
   --sidebar-child-hover-background-color: var(--black-dark);
   --sidebar-child-hover-color: var(--white);
-  --sidebar-children-hover-transform: scale(1.2);
+  --sidebar-child-hover-transform: scale(1.1);
+  --sidebar-child-hover-transition: all 1s;
   --sidebar-checked-child-font-weight: bold;
   --sidebar-checked-child-background-color: var(--black);
   --sidebar-checked-child-color: var(--white);
 }
 
-@media (min-width: 576px) {
-  .sidebar {
-    --sidebar-width: 13%;
-  }
-}
-@media (min-width: 768px) {
-  .sidebar {
-    --sidebar-width: 11%;
-  }
-}
-@media (min-width: 992px) {
-  .sidebar {
-    --sidebar-width: 9%;
-  }
-}
-@media (min-width: 1200px) {
-  .sidebar {
-    --sidebar-width: 7%;
-  }
-}
-@media (min-width: 1600px) {
-  .sidebar {
-    --sidebar-width: 5%;
-  }
-}
 /***** Variables : Menu *****/
 .menu {
   --menu-bottom: 0;
@@ -1164,7 +1141,7 @@ footer {
   --form-border-radius: 5px;
   --form-padding: 20px;
   --form-width: 90%;
-  --form-box-shadow: inset 0 0 15px 10px var(--blue-light);
+  --form-box-shadow: unset;
   --form-fieldset-border: 0;
   --form-legend-margin: auto;
   --form-legend-font-size: 2.5rem;
@@ -1187,7 +1164,7 @@ footer {
   --form-field-background-color: var(--grey);
   --form-field-box-shadow: 5px 5px 10px 10px var(--white);
   --form-field-hover-border: medium inset var(--green);
-  --form-field-hover-box-shadow: 5px 5px 10px 5px var(--gray);
+  --form-field-hover-box-shadow: inset 0 0 5px 2px var(--gray);
   --form-field-placeholder-font-style: italic;
   --form-field-placeholder-color: var(--blue);
   --form-action-margin: 10px auto;
@@ -4120,8 +4097,8 @@ pre > *::selection {
 /***** Classes : Sidebar *****/
 .sidebar {
   display: flex;
-  flex-direction: column;
-  position: fixed;
+  flex-direction: var(--sidebar-flex-direction);
+  position: var(--sidebar-position);
   top: var(--sidebar-top);
   left: var(--sidebar-left);
   z-index: var(--sidebar-z-index);
@@ -4139,18 +4116,12 @@ pre > *::selection {
   color: var(--sidebar-child-color);
   cursor: var(--sidebar-child-cursor);
 }
-.sidebar > * > * {
-  margin: var(--sidebar-children-margin);
-}
 .sidebar > *:hover, .sidebar > *:focus {
   border-radius: var(--sidebar-child-hover-border-radius);
-  background-color: var(--sidebar-child-hover-background-color);
   color: var(--sidebar-child-hover-color);
-  transition: background-color 1s;
-}
-.sidebar > *:hover > *, .sidebar > *:focus > * {
-  transform: var(--sidebar-children-hover-transform);
-  transition: transform 1s;
+  background-color: var(--sidebar-child-hover-background-color);
+  transform: var(--sidebar-child-hover-transform);
+  transition: var(--sidebar-child-hover-transition);
 }
 
 .sidebar-relay > * {
@@ -7543,4 +7514,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 2nd Apr 2021 @ 11:59:55 AM */
+ Updated: 2nd Apr 2021 @ 9:27:06 PM */
