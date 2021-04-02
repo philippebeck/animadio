@@ -6,7 +6,7 @@
   --form-border-radius: 5px;
   --form-padding: 20px;
   --form-width: 90%;
-  --form-box-shadow: inset 0 0 15px 10px var(--blue-light);
+  --form-box-shadow: unset;
 
   --form-fieldset-border: 0;
 
@@ -35,7 +35,7 @@
   --form-field-box-shadow: 5px 5px 10px 10px var(--white);
 
   --form-field-hover-border: medium inset var(--green);
-  --form-field-hover-box-shadow: 5px 5px 10px 5px var(--gray);
+  --form-field-hover-box-shadow: inset 0 0 5px 2px var(--gray);
 
   --form-field-placeholder-font-style: italic;
   --form-field-placeholder-color: var(--blue);
