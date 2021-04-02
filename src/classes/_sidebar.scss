@@ -2,8 +2,8 @@
 
 .sidebar {
   display: flex;
-  flex-direction: column;
-  position: fixed;
+  flex-direction: var(--sidebar-flex-direction);
+  position: var(--sidebar-position);
   top: var(--sidebar-top);
   left: var(--sidebar-left);
   z-index: var(--sidebar-z-index);
@@ -21,21 +21,13 @@
     color: var(--sidebar-child-color);
     cursor: var(--sidebar-child-cursor);
 
-    & > * {
-      margin: var(--sidebar-children-margin);
-    }
-
     &:hover,
     &:focus {
       border-radius: var(--sidebar-child-hover-border-radius);
-      background-color: var(--sidebar-child-hover-background-color);
       color: var(--sidebar-child-hover-color);
-      transition: background-color 1s;
-
-      & > * {
-        transform: var(--sidebar-children-hover-transform);
-        transition: transform 1s;
-      }
+      background-color: var(--sidebar-child-hover-background-color);
+      transform: var(--sidebar-child-hover-transform);
+      transition: var(--sidebar-child-hover-transition);
     }
   }
 }
