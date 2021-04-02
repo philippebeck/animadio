@@ -3,12 +3,12 @@
 // Animation Duration
 $animation-duration: 2s !default;
 
-$animation-duration-tn: 1s  !default;
-$animation-duration-sm: 3s  !default;
-$animation-duration-md: 5s  !default;
-$animation-duration-lg: 10s !default;
-$animation-duration-xl: 30s !default;
-$animation-duration-wd: 60s !default;
+$animation-duration-tn: 500ms !default;
+$animation-duration-sm: 1s    !default;
+$animation-duration-md: 2s    !default;
+$animation-duration-lg: 3s    !default;
+$animation-duration-xl: 4s    !default;
+$animation-duration-wd: 5s    !default;
 
 $animation-durations: (
   'tn': $animation-duration-tn,
@@ -24,12 +24,8 @@ $animation-timing-function-linear:        cubic-bezier(0, 0, 1, 1)        !defau
 $animation-timing-function-ease-in:       cubic-bezier(0.42, 0, 1, 1)     !default;
 $animation-timing-function-ease-out:      cubic-bezier(0, 0, 0.58, 1)     !default;
 $animation-timing-function-ease-in-out:   cubic-bezier(0.42, 0, 0.58, 1)  !default;
-$animation-timing-function-cubic-bezier:  cubic-bezier(1, 5, 1, -5)       !default;
-
-$animation-timing-function-steps-start:   steps(4, start)   !default;
-$animation-timing-function-steps-end:     steps(4, end)     !default;
-$animation-timing-function-steps-chrono:  steps(60, start)  !default;
-$animation-timing-function-steps-timer:   steps(60, end)    !default;
+$animation-timing-function-cubic-bezier:  cubic-bezier(0.2, -2, 0.8, 2)   !default;
+$animation-timing-function-steps:         steps(5, start)                 !default;
 
 $animation-timing-functions: (
   'linear': $animation-timing-function-linear,
@@ -37,10 +33,7 @@ $animation-timing-functions: (
   'out':    $animation-timing-function-ease-out,
   'inout':  $animation-timing-function-ease-in-out,
   'bezier': $animation-timing-function-cubic-bezier,
-  'start':  $animation-timing-function-steps-start,
-  'end':    $animation-timing-function-steps-end,
-  'chrono': $animation-timing-function-steps-chrono,
-  'timer':  $animation-timing-function-steps-timer
+  'steps':  $animation-timing-function-steps,
 ) !default;
 
 // Animation Iteration Count
