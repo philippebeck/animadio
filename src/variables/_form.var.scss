@@ -6,6 +6,7 @@
   --form-border-radius: 5px;
   --form-padding: 20px;
   --form-width: 90%;
+  --form-background-color: var(--white);
   --form-box-shadow: unset;
 
   --form-fieldset-border: 0;
@@ -31,8 +32,8 @@
   --form-field-padding: 5px;
   --form-field-width: 100%;
   --form-field-line-height: 1.8;
-  --form-field-background-color: var(--grey);
-  --form-field-box-shadow: 5px 5px 10px 10px var(--white);
+  --form-field-background-color: var(--grey-light);
+  --form-field-box-shadow: unset;
 
   --form-field-hover-border: medium inset var(--green);
   --form-field-hover-box-shadow: inset 0 0 5px 2px var(--gray);
@@ -41,30 +42,34 @@
   --form-field-placeholder-color: var(--blue);
 
   --form-action-margin: 10px auto;
-  --form-action-border: medium solid var(--white-dark);
   --form-action-width: 80%;
-  --form-action-font-size: 120%;
+  --form-action-font-size: 110%;
+  --form-action-font-weight: bold;
   --form-action-line-height: 2;
+  --form-action-shadows: inset 0 0 5px 2px;
   --form-action-cursor: pointer;
-  --form-action-box-shadow: inset 0 0 10px 10px var(--white);
 
-  --form-action-hover-box-shadow: inset 0 0 10px px var(--white);
+  --form-action-hover-shadows: inset 0 0 10px 10px;
   --form-action-hover-transform: scale(1.1);
-  --form-action-hover-transition: box-shadow 1s;
+  --form-action-hover-transition: transform 1s;
 
   --form-reset-border: medium inset var(--red);
-  --form-reset-background-color: var(--red-light);
+  --form-reset-box-shadow: var(--form-action-shadows) var(--red);
+  --form-reset-background-color: var(--white);
   --form-reset-color: var(--red);
 
   --form-reset-hover-border: medium outset var(--red);
+  --form-reset-hover-box-shadow: var(--form-action-hover-shadows) var(--white);
   --form-reset-hover-background-color: var(--red);
   --form-reset-hover-color: var(--white);
 
   --form-submit-border: medium inset var(--green);
-  --form-submit-background-color: var(--green-light);
+  --form-submit-box-shadow: var(--form-action-shadows) var(--green);
+  --form-submit-background-color: var(--white);
   --form-submit-color: var(--green);
 
   --form-submit-hover-border: medium outset var(--green);
+  --form-submit-hover-box-shadow: var(--form-action-hover-shadows) var(--white);
   --form-submit-hover-background-color: var(--green);
   --form-submit-hover-color: var(--white);
 }

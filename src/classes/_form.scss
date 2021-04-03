@@ -6,6 +6,7 @@
   border-radius: var(--form-border-radius);
   padding: var(--form-padding);
   width: var(--form-width);
+  background-color: var(--form-background-color);
   box-shadow: var(--form-box-shadow);
 
   fieldset {
@@ -61,16 +62,14 @@
   [type="reset"],
   [type="submit"] {
     margin: var(--form-action-margin);
-    border: var(--form-action-border);
     width: var(--form-action-width);
     font-size: var(--form-action-font-size);
+    font-weight: var(--form-action-font-weight);
     line-height: var(--form-action-line-height);
     cursor: var(--form-action-cursor);
-    box-shadow: var(--form-action-box-shadow);
 
     &:hover,
     &:focus {
-      box-shadow: var(--form-action-hover-box-shadow);
       transform: var(--form-action-hover-transform);
       transition: var(--form-action-hover-transition);
     }
@@ -78,12 +77,14 @@
 
   [type="reset"] {
     border: var(--form-reset-border);
+    box-shadow: var(--form-reset-box-shadow);
     background-color: var(--form-reset-background-color);
     color: var(--form-reset-color);
 
     &:hover,
     &:focus {
       border: var(--form-reset-hover-border);
+      box-shadow: var(--form-reset-hover-box-shadow);
       background-color: var(--form-reset-hover-background-color);
       color: var(--form-reset-hover-color);
     }
@@ -91,12 +92,14 @@
 
   [type="submit"] {
     border: var(--form-submit-border);
+    box-shadow: var(--form-submit-box-shadow);
     background-color: var(--form-submit-background-color);
     color: var(--form-submit-color);
 
     &:hover,
     &:focus {
       border: var(--form-submit-hover-border);
+      box-shadow: var(--form-submit-hover-box-shadow);
       background-color: var(--form-submit-hover-background-color);
       color: var(--form-submit-hover-color);
     }

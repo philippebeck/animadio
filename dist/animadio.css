@@ -1,4 +1,4 @@
-/*! animadio v4.1.9 | https://animadio.org | MIT License */
+/*! animadio v4.1.10 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -1141,6 +1141,7 @@ footer {
   --form-border-radius: 5px;
   --form-padding: 20px;
   --form-width: 90%;
+  --form-background-color: var(--white);
   --form-box-shadow: unset;
   --form-fieldset-border: 0;
   --form-legend-margin: auto;
@@ -1161,32 +1162,36 @@ footer {
   --form-field-padding: 5px;
   --form-field-width: 100%;
   --form-field-line-height: 1.8;
-  --form-field-background-color: var(--grey);
-  --form-field-box-shadow: 5px 5px 10px 10px var(--white);
+  --form-field-background-color: var(--grey-light);
+  --form-field-box-shadow: unset;
   --form-field-hover-border: medium inset var(--green);
   --form-field-hover-box-shadow: inset 0 0 5px 2px var(--gray);
   --form-field-placeholder-font-style: italic;
   --form-field-placeholder-color: var(--blue);
   --form-action-margin: 10px auto;
-  --form-action-border: medium solid var(--white-dark);
   --form-action-width: 80%;
-  --form-action-font-size: 120%;
+  --form-action-font-size: 110%;
+  --form-action-font-weight: bold;
   --form-action-line-height: 2;
+  --form-action-shadows: inset 0 0 5px 2px;
   --form-action-cursor: pointer;
-  --form-action-box-shadow: inset 0 0 10px 10px var(--white);
-  --form-action-hover-box-shadow: inset 0 0 10px px var(--white);
+  --form-action-hover-shadows: inset 0 0 10px 10px;
   --form-action-hover-transform: scale(1.1);
-  --form-action-hover-transition: box-shadow 1s;
+  --form-action-hover-transition: transform 1s;
   --form-reset-border: medium inset var(--red);
-  --form-reset-background-color: var(--red-light);
+  --form-reset-box-shadow: var(--form-action-shadows) var(--red);
+  --form-reset-background-color: var(--white);
   --form-reset-color: var(--red);
   --form-reset-hover-border: medium outset var(--red);
+  --form-reset-hover-box-shadow: var(--form-action-hover-shadows) var(--white);
   --form-reset-hover-background-color: var(--red);
   --form-reset-hover-color: var(--white);
   --form-submit-border: medium inset var(--green);
-  --form-submit-background-color: var(--green-light);
+  --form-submit-box-shadow: var(--form-action-shadows) var(--green);
+  --form-submit-background-color: var(--white);
   --form-submit-color: var(--green);
   --form-submit-hover-border: medium outset var(--green);
+  --form-submit-hover-box-shadow: var(--form-action-hover-shadows) var(--white);
   --form-submit-hover-background-color: var(--green);
   --form-submit-hover-color: var(--white);
 }
@@ -4325,6 +4330,7 @@ pre > *::selection {
   border-radius: var(--form-border-radius);
   padding: var(--form-padding);
   width: var(--form-width);
+  background-color: var(--form-background-color);
   box-shadow: var(--form-box-shadow);
 }
 .form fieldset {
@@ -4387,37 +4393,39 @@ pre > *::selection {
 .form [type=reset],
 .form [type=submit] {
   margin: var(--form-action-margin);
-  border: var(--form-action-border);
   width: var(--form-action-width);
   font-size: var(--form-action-font-size);
+  font-weight: var(--form-action-font-weight);
   line-height: var(--form-action-line-height);
   cursor: var(--form-action-cursor);
-  box-shadow: var(--form-action-box-shadow);
 }
 .form [type=reset]:hover, .form [type=reset]:focus,
 .form [type=submit]:hover,
 .form [type=submit]:focus {
-  box-shadow: var(--form-action-hover-box-shadow);
   transform: var(--form-action-hover-transform);
   transition: var(--form-action-hover-transition);
 }
 .form [type=reset] {
   border: var(--form-reset-border);
+  box-shadow: var(--form-reset-box-shadow);
   background-color: var(--form-reset-background-color);
   color: var(--form-reset-color);
 }
 .form [type=reset]:hover, .form [type=reset]:focus {
   border: var(--form-reset-hover-border);
+  box-shadow: var(--form-reset-hover-box-shadow);
   background-color: var(--form-reset-hover-background-color);
   color: var(--form-reset-hover-color);
 }
 .form [type=submit] {
   border: var(--form-submit-border);
+  box-shadow: var(--form-submit-box-shadow);
   background-color: var(--form-submit-background-color);
   color: var(--form-submit-color);
 }
 .form [type=submit]:hover, .form [type=submit]:focus {
   border: var(--form-submit-hover-border);
+  box-shadow: var(--form-submit-hover-box-shadow);
   background-color: var(--form-submit-hover-background-color);
   color: var(--form-submit-hover-color);
 }
@@ -7514,4 +7522,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 2nd Apr 2021 @ 9:27:06 PM */
+ Updated: 3rd Apr 2021 @ 7:41:29 PM */
