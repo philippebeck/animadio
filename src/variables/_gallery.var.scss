@@ -13,7 +13,7 @@
   --gallery-figure-position: relative;
   --gallery-figure-overflow: hidden;
   --gallery-figure-margin: 5px;
-  --gallery-figure-border: thin dotted var(--grey);
+  --gallery-figure-border: medium solid var(--primary);
   --gallery-figure-width: calc(100% - 10px);
   --gallery-figure-line-height: 0;
   --gallery-figure-box-shadow: 0 0 5px;
@@ -26,7 +26,7 @@
   --gallery-figcaption-padding: 10px;
   --gallery-figcaption-width: 100%;
   --gallery-figcaption-line-height: 0.8;
-  --gallery-figcaption-background-color: rgba(0, 0, 0, 0.8);
+  --gallery-figcaption-background-color: var(--gray-dark);
 
   --gallery-figcaption-fa-position: absolute;
   --gallery-figcaption-fa-top: -20px;
@@ -34,7 +34,7 @@
   --gallery-figcaption-fa-border: 2px solid var(--white);
   --gallery-figcaption-fa-radius: 50%;
   --gallery-figcaption-fa-padding: 10px;
-  --gallery-figcaption-fa-background-color: var(--blue);
+  --gallery-figcaption-fa-background-color: var(--secondary);
 
   --gallery-link-color: var(--white);
 
