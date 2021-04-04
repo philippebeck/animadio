@@ -74,25 +74,17 @@
     &:nth-child(even) {
       background-color: var(--table-even-background-color);
       color: var(--table-even-color);
-
-      &:hover,
-      &:focus {
-        background-color: var(--table-even-hover-background-color);
-        color: var(--table-even-hover-color);
-        box-shadow: var(--table-even-hover-box-shadow);
-      }
     }
 
     &:nth-child(odd) {
       background-color: var(--table-odd-background-color);
       color: var(--table-odd-color);
+    }
 
-      &:hover,
-      &:focus {
-        background-color: var(--table-odd-hover-background-color);
-        color: var(--table-odd-hover-color);
-        box-shadow: var(--table-odd-hover-box-shadow);
-      }
+    &:hover,
+    &:focus {
+      background-color: var(--table-row-hover-background-color);
+      color: var(--table-row-hover-color);
     }
   }
 }

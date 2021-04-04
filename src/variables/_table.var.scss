@@ -17,7 +17,7 @@
 
   --table-title-font-size: calc(var(--body-font-size) * 120 / 100);;
   --table-title-font-style: italic;
-  --table-title-background-color: var(--gray);
+  --table-title-background-color: var(--primary);
   --table-title-color: var(--white);
 
   --table-cell-border-style: solid;
@@ -27,24 +27,17 @@
   --table-cell-padding: 2px;
   --table-cell-text-align: center;
   --table-cell-vertical-align: middle;
-  --table-cell-word-break: break-all;
+  --table-cell-word-break: normal;
   --table-cell-cursor: cell;
-
-  --table-row-hover-box-shadow: inset 0 0 10px 10px;
-
-  --table-even-background-color: var(--grey);
-  --table-even-color: var(--black);
-
-  --table-even-hover-background-color: var(--blue);
-  --table-even-hover-color: var(--white);
-  --table-even-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-even-background-color);
 
   --table-odd-background-color: var(--white);
   --table-odd-color: var(--gray);
 
-  --table-odd-hover-background-color: var(--red);
-  --table-odd-hover-color: var(--white);
-  --table-odd-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-odd-background-color);
+  --table-even-background-color: var(--grey);
+  --table-even-color: var(--black);
+
+  --table-row-hover-background-color: var(--secondary);
+  --table-row-hover-color: var(--white);
 }
 
 @media (min-width: $breakpoint-sm) {
