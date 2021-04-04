@@ -1,17 +1,17 @@
 /***** Variables : Head *****/
 
 .head {
-    --head-margin: 20px auto 50px;
-    --head-border: outset var(--gray);
-    --head-border-radius: 5px;
-    --head-padding: 15px 10px;
+    --head-margin: 50px auto;
+    --head-border: double thick var(--secondary);
+    --head-border-radius: 20px;
+    --head-padding: 20px;
     --head-max-width: 90%;
     --head-font-family: var(--serif);
-    --head-font-size: 120%;
+    --head-font-size: 110%;
     --head-text-align: center;
-    --head-box-shadow: inset 0 0 10px 5px var(--grey);
+    --head-box-shadow: inset 0 0 10px 2px var(--secondary);
     --head-background-color: var(--white);
-    --head-color: var(--black);
+    --head-color: var(--primary);
 
     --head-title-margin: 0 auto 5px;
     --head-title-text-transform: uppercase;
@@ -26,27 +26,27 @@
 @media (min-width: $breakpoint-md) {
     .head {
         --head-max-width: 80%;
-        --head-font-size: 125%;
+        --head-font-size: 115%;
     }
 }
 
 @media (min-width: $breakpoint-lg) {
     .head {
         --head-max-width: 70%;
-        --head-font-size: 130%;
+        --head-font-size: 120%;
     }
 }
 
 @media (min-width: $breakpoint-xl) {
     .head {
-        --head-max-width: 40%;
-        --head-font-size: 135%;
+        --head-max-width: 60%;
+        --head-font-size: 125%;
     }
 }
 
 @media (min-width: $breakpoint-wd) {
     .head {
         --head-max-width: 50%;
-        --head-font-size: 140%;
+        --head-font-size: 130%;
     }
 }
