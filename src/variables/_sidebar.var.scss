@@ -14,17 +14,17 @@
   --sidebar-child-border-radius: 20px;
   --sidebar-child-padding: 10px;
   --sidebar-child-width: 100%;
-  --sidebar-child-background-color: var(--white-light);
-  --sidebar-child-color: var(--black);
+  --sidebar-child-background-color: var(--white-dark);
+  --sidebar-child-color: var(--primary-dark);
   --sidebar-child-cursor: crosshair;
 
   --sidebar-child-hover-border-radius: 10px;
-  --sidebar-child-hover-background-color: var(--black-dark);
-  --sidebar-child-hover-color: var(--white);
+  --sidebar-child-hover-background-color: var(--primary-dark);
+  --sidebar-child-hover-color: var(--white-dark);
   --sidebar-child-hover-transform: scale(1.1);
   --sidebar-child-hover-transition: all 1s;
 
   --sidebar-checked-child-font-weight: bold;
-  --sidebar-checked-child-background-color: var(--black);
+  --sidebar-checked-child-background-color: var(--primary);
   --sidebar-checked-child-color: var(--white);
 }
