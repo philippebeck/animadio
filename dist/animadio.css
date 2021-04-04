@@ -1,4 +1,4 @@
-/*! animadio v4.2.0 | https://animadio.org | MIT License */
+/*! animadio v4.2.1 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -372,7 +372,7 @@ template {
 /***** Variables : Colors *****/
 :root {
   --primary: rgb(65, 105, 225);
-  --secondary: rgb(176, 196, 222);
+  --secondary: rgb(220, 220, 220);
   --pink: rgb(255, 0, 255);
   --red: rgb(250, 128, 114);
   --orange: rgb(255, 140, 0);
@@ -393,8 +393,8 @@ template {
   --tw: rgb(29, 161, 242);
   --primary-dark: rgba(65, 105, 225, var(--opacity-dark));
   --primary-light: rgba(65, 105, 225, var(--opacity-light));
-  --secondary-dark: rgba(176, 196, 222, var(--opacity-dark));
-  --secondary-light: rgba(176, 196, 222, var(--opacity-light));
+  --secondary-dark: rgba(220, 220, 220, var(--opacity-dark));
+  --secondary-light: rgba(220, 220, 220, var(--opacity-light));
   --pink-dark: rgba(255, 0, 255, var(--opacity-dark));
   --pink-light: rgba(255, 0, 255, var(--opacity-light));
   --red-dark: rgba(250, 128, 114, var(--opacity-dark));
@@ -509,12 +509,10 @@ h6 {
 
 h1 {
   --title-font-size: 5rem;
-  --title-text-shadow: 1px 1px 1px;
 }
 
 h2 {
   --title-font-size: 4.5rem;
-  --title-text-shadow: 0 0 1px;
 }
 
 h3 {
@@ -996,6 +994,7 @@ pre {
   --navbar-label-right: 10px;
   --navbar-label-hover-color: var(--secondary);
   --navbar-first-list-span-font-size: 2rem;
+  --navbar-first-list-span-text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -1768,7 +1767,6 @@ h6 {
   text-transform: var(--title-text-transform);
   font-size: var(--title-font-size);
   color: var(--title-color);
-  text-shadow: var(--title-text-shadow);
 }
 
 a {
@@ -4085,11 +4083,9 @@ pre > *::selection {
 }
 @media (min-width: 992px) {
   .navbar > ul:first-of-type span {
-    display: block;
+    display: inline;
     font-size: var(--navbar-first-list-span-font-size);
-  }
-  .navbar > ul:last-of-type span {
-    display: block;
+    text-align: var(--navbar-first-list-span-text-align);
   }
 }
 /***** Classes : Sidebar *****/
@@ -7509,4 +7505,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 4th Apr 2021 @ 12:50:33 PM */
+ Updated: 4th Apr 2021 @ 5:13:12 PM */
