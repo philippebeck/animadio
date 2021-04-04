@@ -2,8 +2,8 @@
 /***** Variables : Init *****/
 :root {
   --container-max-width: 100%;
-  --opacity-dark: 0.7;
-  --opacity-light: 0.3;
+  --opacity-dark: 0.8;
+  --opacity-light: 0.2;
 }
 
 /***** Variables : Font *****/
@@ -18,8 +18,8 @@
 
 /***** Variables : Colors *****/
 :root {
-  --primary: rgb(58, 58, 173);
-  --secondary: rgb(52, 133, 86);
+  --primary: rgb(65, 105, 225);
+  --secondary: rgb(176, 196, 222);
   --pink: rgb(255, 0, 255);
   --red: rgb(250, 128, 114);
   --orange: rgb(255, 140, 0);
@@ -38,10 +38,10 @@
   --in: rgb(0, 119, 181);
   --pp: rgb(39, 52, 106);
   --tw: rgb(29, 161, 242);
-  --primary-dark: rgba(58, 58, 173, var(--opacity-dark));
-  --primary-light: rgba(58, 58, 173, var(--opacity-light));
-  --secondary-dark: rgba(52, 133, 86, var(--opacity-dark));
-  --secondary-light: rgba(52, 133, 86, var(--opacity-light));
+  --primary-dark: rgba(65, 105, 225, var(--opacity-dark));
+  --primary-light: rgba(65, 105, 225, var(--opacity-light));
+  --secondary-dark: rgba(176, 196, 222, var(--opacity-dark));
+  --secondary-light: rgba(176, 196, 222, var(--opacity-light));
   --pink-dark: rgba(255, 0, 255, var(--opacity-dark));
   --pink-light: rgba(255, 0, 255, var(--opacity-light));
   --red-dark: rgba(250, 128, 114, var(--opacity-dark));
@@ -72,6 +72,21 @@
 
 /***** Variables : Transform *****/
 :root {
+  --slideT: translate(0, 10vh);
+  --slideR: translate(-10vw, 0);
+  --slideB: translate(0, -10vh);
+  --slideL: translate(10vw, 0);
+  --slideTR: translate(-10vw, 10vh);
+  --slideBR: translate(-10vw, -10vh);
+  --slideBL: translate(10vw, -10vh);
+  --slideTL: translate(10vw, 10vh);
+  --turn: rotate3d(0, 0, 1, 360deg);
+  --turnX: rotate3d(1, 0, 0, 360deg);
+  --turnY: rotate3d(0, 1, 0, 360deg);
+  --turnXY: rotate3d(1, 1, 0, 360deg);
+  --turnXZ: rotate3d(1, 0, 1, 360deg);
+  --turnYZ: rotate3d(0, 1, 1, 360deg);
+  --turn3D: rotate3d(1, 1, 1, 360deg);
   --bounce: scale(-1, -1);
   --grow: scale(0.5, 0.5);
   --shrink: scale(1.5, 1.5);
@@ -81,21 +96,6 @@
   --openY: scale(0, 1);
   --flipperX: scale(0, -1);
   --flipperY: scale(-1, 0);
-  --turn: rotate3d(0, 0, 1, 360deg);
-  --turnX: rotate3d(1, 0, 0, 360deg);
-  --turnY: rotate3d(0, 1, 0, 360deg);
-  --turnXY: rotate3d(1, 1, 0, 360deg);
-  --turnXZ: rotate3d(1, 0, 1, 360deg);
-  --turnYZ: rotate3d(0, 1, 1, 360deg);
-  --turn3D: rotate3d(1, 1, 1, 360deg);
-  --slideT: translate(0, 10vh);
-  --slideR: translate(-10vw, 0);
-  --slideB: translate(0, -10vh);
-  --slideL: translate(10vw, 0);
-  --slideTR: translate(-10vw, 10vh);
-  --slideBR: translate(-10vw, -10vh);
-  --slideBL: translate(10vw, -10vh);
-  --slideTL: translate(10vw, 10vh);
   --twistT: skew(-90deg, -90deg);
   --twistR: skew(90deg, -90deg);
   --twistB: skew(90deg, 90deg);
@@ -116,7 +116,7 @@
 }
 
 body {
-  --body-background-color: none;
+  --body-background-color: var(--secondary-light);
   --body-color: var(--black);
   --body-font-size: 2rem;
   --body-line-height: 1.6;
@@ -145,13 +145,13 @@ h6 {
 h1,
 h2,
 h3 {
-  --title-color: var(--blue);
+  --title-color: var(--primary);
 }
 
 h4,
 h5,
 h6 {
-  --title-color: var(--cyan);
+  --title-color: var(--blue);
 }
 
 h1 {
@@ -183,7 +183,7 @@ h6 {
 a {
   --link-outline: 0;
   --link-text-decoration: none;
-  --link-color: var(--blue);
+  --link-color: var(--primary);
 }
 
 ul {
@@ -535,17 +535,17 @@ pre {
 
 /***** Variables : Head *****/
 .head {
-  --head-margin: 20px auto 50px;
-  --head-border: outset var(--gray);
-  --head-border-radius: 5px;
-  --head-padding: 15px 10px;
+  --head-margin: 50px auto;
+  --head-border: double thick var(--secondary);
+  --head-border-radius: 20px;
+  --head-padding: 20px;
   --head-max-width: 90%;
   --head-font-family: var(--serif);
-  --head-font-size: 120%;
+  --head-font-size: 110%;
   --head-text-align: center;
-  --head-box-shadow: inset 0 0 10px 5px var(--grey);
+  --head-box-shadow: inset 0 0 10px 2px var(--secondary);
   --head-background-color: var(--white);
-  --head-color: var(--black);
+  --head-color: var(--primary);
   --head-title-margin: 0 auto 5px;
   --head-title-text-transform: uppercase;
   --head-hover-transform: scale(1.1);
@@ -557,25 +557,25 @@ pre {
 @media (min-width: 768px) {
   .head {
     --head-max-width: 80%;
-    --head-font-size: 125%;
+    --head-font-size: 115%;
   }
 }
 @media (min-width: 992px) {
   .head {
     --head-max-width: 70%;
-    --head-font-size: 130%;
+    --head-font-size: 120%;
   }
 }
 @media (min-width: 1200px) {
   .head {
-    --head-max-width: 40%;
-    --head-font-size: 135%;
+    --head-max-width: 60%;
+    --head-font-size: 125%;
   }
 }
 @media (min-width: 1600px) {
   .head {
     --head-max-width: 50%;
-    --head-font-size: 140%;
+    --head-font-size: 130%;
   }
 }
 /***** Variables : Foot *****/
@@ -583,19 +583,17 @@ pre {
   --foot-text-align: center;
   --foot-title-margin: 10px;
   --foot-title-font-size: 2rem;
-  --foot-title-color: var(--yellow);
-  --foot-title-hover-color: var(--orange);
+  --foot-title-color: var(--secondary);
   --foot-list-flex-direction: column;
   --foot-list-place-content: space-evenly;
   --foot-list-margin: 0;
-  --foot-list-background-color: var(--violet);
+  --foot-list-background-color: var(--primary);
   --foot-list-cursor: pointer;
   --foot-list-color: var(--white);
-  --foot-list-hover-color: var(--yellow);
+  --foot-list-hover-color: var(--secondary);
   --foot-target-margin-left: 2px;
   --foot-label-cursor: pointer;
-  --foot-label-color: var(--orange);
-  --foot-label-hover-color: var(--orange);
+  --foot-label-hover-color: var(--white);
   --foot-label-hover-transform: scale(1.2);
   --foot-label-hover-transition: transform 1s;
   --foot-visual-place-content: center;
@@ -624,7 +622,7 @@ pre {
   --navbar-bottom: unset;
   --navbar-left: 0;
   --navbar-z-index: 1000;
-  --navbar-background-color: var(--blue);
+  --navbar-background-color: var(--primary-dark);
   --navbar-color: var(--white);
   --navbar-link-padding: 20px 10px;
   --navbar-link-color: var(--white);
@@ -635,7 +633,7 @@ pre {
   --navbar-list-padding: 0;
   --navbar-list-list-style: none;
   --navbar-list-link-flex-direction: column;
-  --navbar-link-hover-color: var(--yellow);
+  --navbar-link-hover-color: var(--secondary);
   --navbar-first-list-link-hover-scale: 0.9;
   --navbar-last-list-img-margin: 5px;
   --navbar-last-list-height: 50px;
@@ -643,7 +641,7 @@ pre {
   --navbar-brand-link-left: 0;
   --navbar-brand-link-img-height: 40px;
   --navbar-label-right: 10px;
-  --navbar-label-hover-color: var(--orange);
+  --navbar-label-hover-color: var(--secondary);
   --navbar-first-list-span-font-size: 2rem;
 }
 
@@ -673,16 +671,16 @@ pre {
   --sidebar-child-border-radius: 20px;
   --sidebar-child-padding: 10px;
   --sidebar-child-width: 100%;
-  --sidebar-child-background-color: var(--white-light);
-  --sidebar-child-color: var(--black);
+  --sidebar-child-background-color: var(--white-dark);
+  --sidebar-child-color: var(--primary-dark);
   --sidebar-child-cursor: crosshair;
   --sidebar-child-hover-border-radius: 10px;
-  --sidebar-child-hover-background-color: var(--black-dark);
-  --sidebar-child-hover-color: var(--white);
+  --sidebar-child-hover-background-color: var(--primary-dark);
+  --sidebar-child-hover-color: var(--white-dark);
   --sidebar-child-hover-transform: scale(1.1);
   --sidebar-child-hover-transition: all 1s;
   --sidebar-checked-child-font-weight: bold;
-  --sidebar-checked-child-background-color: var(--black);
+  --sidebar-checked-child-background-color: var(--primary);
   --sidebar-checked-child-color: var(--white);
 }
 
@@ -698,17 +696,17 @@ pre {
   --menu-child-border-radius: 10px;
   --menu-child-padding: 0;
   --menu-child-width: 100%;
-  --menu-child-background-color: var(--black-dark);
+  --menu-child-background-color: var(--primary-dark);
   --menu-child-color: var(--white);
   --menu-child-cursor: cell;
   --menu-children-margin: 5px;
   --menu-child-hover-border-radius: 20px;
   --menu-child-hover-background-color: var(--white-dark);
-  --menu-child-hover-color: var(--gray);
-  --menu-children-hover-transform: scale(1.2);
+  --menu-child-hover-color: var(--primary);
+  --menu-children-hover-transform: scale(1.1);
   --menu-checked-child-font-weight: bold;
   --menu-checked-child-background-color: var(--white);
-  --menu-checked-child-color: var(--black);
+  --menu-checked-child-color: var(--primary);
 }
 
 footer {
@@ -732,7 +730,7 @@ footer {
   --gallery-figure-position: relative;
   --gallery-figure-overflow: hidden;
   --gallery-figure-margin: 5px;
-  --gallery-figure-border: thin dotted var(--grey);
+  --gallery-figure-border: medium solid var(--primary);
   --gallery-figure-width: calc(100% - 10px);
   --gallery-figure-line-height: 0;
   --gallery-figure-box-shadow: 0 0 5px;
@@ -743,14 +741,14 @@ footer {
   --gallery-figcaption-padding: 10px;
   --gallery-figcaption-width: 100%;
   --gallery-figcaption-line-height: 0.8;
-  --gallery-figcaption-background-color: rgba(0, 0, 0, 0.8);
+  --gallery-figcaption-background-color: var(--gray-dark);
   --gallery-figcaption-fa-position: absolute;
   --gallery-figcaption-fa-top: -20px;
   --gallery-figcaption-fa-right: 5px;
   --gallery-figcaption-fa-border: 2px solid var(--white);
   --gallery-figcaption-fa-radius: 50%;
   --gallery-figcaption-fa-padding: 10px;
-  --gallery-figcaption-fa-background-color: var(--blue);
+  --gallery-figcaption-fa-background-color: var(--secondary);
   --gallery-link-color: var(--white);
   --gallery-link-all-margin: 0;
   --gallery-link-all-padding: 5px;
@@ -784,7 +782,7 @@ footer {
 /***** Variables : Form *****/
 .form {
   --form-margin: 20px auto;
-  --form-border: medium ridge var(--in);
+  --form-border: thick outset var(--secondary);
   --form-border-radius: 5px;
   --form-padding: 20px;
   --form-width: 90%;
@@ -803,7 +801,7 @@ footer {
   --form-label-color: var(--gray);
   --form-label-text-decoration: none;
   --form-field-margin: 10px 0 20px;
-  --form-field-border: medium outset var(--blue);
+  --form-field-border: medium outset var(--secondary);
   --form-field-border-radius: 10px;
   --form-field-outline: 0;
   --form-field-padding: 5px;
@@ -814,7 +812,7 @@ footer {
   --form-field-hover-border: medium inset var(--green);
   --form-field-hover-box-shadow: inset 0 0 5px 2px var(--gray);
   --form-field-placeholder-font-style: italic;
-  --form-field-placeholder-color: var(--blue);
+  --form-field-placeholder-color: var(--primary);
   --form-action-margin: 10px auto;
   --form-action-width: 80%;
   --form-action-font-size: 110%;
@@ -824,7 +822,7 @@ footer {
   --form-action-cursor: pointer;
   --form-action-hover-shadows: inset 0 0 10px 10px;
   --form-action-hover-transform: scale(1.1);
-  --form-action-hover-transition: transform 1s;
+  --form-action-hover-transition: all 1s;
   --form-reset-border: medium inset var(--red);
   --form-reset-box-shadow: var(--form-action-shadows) var(--red);
   --form-reset-background-color: var(--white);
@@ -891,7 +889,7 @@ footer {
   --table-caption-text-shadow: 1px 1px 2px;
   --table-title-font-size: calc(var(--body-font-size) * 120 / 100);
   --table-title-font-style: italic;
-  --table-title-background-color: var(--gray);
+  --table-title-background-color: var(--primary);
   --table-title-color: var(--white);
   --table-cell-border-style: solid;
   --table-cell-border-width: thin;
@@ -900,19 +898,14 @@ footer {
   --table-cell-padding: 2px;
   --table-cell-text-align: center;
   --table-cell-vertical-align: middle;
-  --table-cell-word-break: break-all;
+  --table-cell-word-break: normal;
   --table-cell-cursor: cell;
-  --table-row-hover-box-shadow: inset 0 0 10px 10px;
-  --table-even-background-color: var(--grey);
-  --table-even-color: var(--black);
-  --table-even-hover-background-color: var(--blue);
-  --table-even-hover-color: var(--white);
-  --table-even-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-even-background-color);
   --table-odd-background-color: var(--white);
   --table-odd-color: var(--gray);
-  --table-odd-hover-background-color: var(--red);
-  --table-odd-hover-color: var(--white);
-  --table-odd-hover-box-shadow: var(--table-row-hover-box-shadow) var(--table-row-odd-background-color);
+  --table-even-background-color: var(--grey);
+  --table-even-color: var(--black);
+  --table-row-hover-background-color: var(--secondary);
+  --table-row-hover-color: var(--white);
 }
 
 @media (min-width: 576px) {
@@ -1038,18 +1031,18 @@ footer {
 }
 /***** Variables : Canvas *****/
 .canvas {
-  --canvas-border: thick double var(--blue);
+  --canvas-border: medium dashed var(--secondary);
   --canvas-border-radius: 20px;
   --canvas-cursor: crosshair;
   --canvas-hover-controls-opacity: 1;
-  --canvas-hover-controls-transition: 2s;
+  --canvas-hover-controls-transition: opacity 2s;
   --canvas-controls-margin: auto;
-  --canvas-controls-border: thin solid var(--black);
+  --canvas-controls-border: thin solid var(--primary);
   --canvas-controls-border-radius: 10px;
-  --canvas-controls-width: 200px;
-  --canvas-controls-background-color: var(--gray-dark);
+  --canvas-controls-width: 300px;
+  --canvas-controls-background-color: var(--primary-dark);
   --canvas-controls-opacity: 0;
-  --canvas-controls-transition: 2s;
+  --canvas-controls-transition: opacity 1s;
   --canvas-controls-list-flex-direction: column;
   --canvas-controls-list-place-items: center;
   --canvas-controls-list-margin: 5px;
@@ -1058,6 +1051,81 @@ footer {
 }
 
 /***** Base : Keyframes *****/
+@keyframes slideT {
+  from {
+    transform: var(--slideT);
+  }
+}
+@keyframes slideR {
+  from {
+    transform: var(--slideR);
+  }
+}
+@keyframes slideB {
+  from {
+    transform: var(--slideB);
+  }
+}
+@keyframes slideL {
+  from {
+    transform: var(--slideL);
+  }
+}
+@keyframes slideTR {
+  from {
+    transform: var(--slideTR);
+  }
+}
+@keyframes slideBR {
+  from {
+    transform: var(--slideBR);
+  }
+}
+@keyframes slideBL {
+  from {
+    transform: var(--slideBL);
+  }
+}
+@keyframes slideTL {
+  from {
+    transform: var(--slideTL);
+  }
+}
+@keyframes turn {
+  from {
+    transform: var(--turn);
+  }
+}
+@keyframes turnX {
+  from {
+    transform: var(--turnX);
+  }
+}
+@keyframes turnY {
+  from {
+    transform: var(--turnY);
+  }
+}
+@keyframes turnXY {
+  from {
+    transform: var(--turnXY);
+  }
+}
+@keyframes turnXZ {
+  from {
+    transform: var(--turnXZ);
+  }
+}
+@keyframes turnYZ {
+  from {
+    transform: var(--turnYZ);
+  }
+}
+@keyframes turn3D {
+  from {
+    transform: var(--turn3D);
+  }
+}
 @keyframes bounce {
   from {
     transform: var(--bounce);
@@ -1101,81 +1169,6 @@ footer {
 @keyframes flipperY {
   from {
     transform: var(--flipperY);
-  }
-}
-@keyframes turn {
-  from {
-    transform: var(--turn);
-  }
-}
-@keyframes turnX {
-  from {
-    transform: var(--turnX);
-  }
-}
-@keyframes turnY {
-  from {
-    transform: var(--turnY);
-  }
-}
-@keyframes turnXY {
-  from {
-    transform: var(--turnXY);
-  }
-}
-@keyframes turnXZ {
-  from {
-    transform: var(--turnXZ);
-  }
-}
-@keyframes turnYZ {
-  from {
-    transform: var(--turnYZ);
-  }
-}
-@keyframes turn3D {
-  from {
-    transform: var(--turn3D);
-  }
-}
-@keyframes slideT {
-  from {
-    transform: var(--slideT);
-  }
-}
-@keyframes slideR {
-  from {
-    transform: var(--slideR);
-  }
-}
-@keyframes slideB {
-  from {
-    transform: var(--slideB);
-  }
-}
-@keyframes slideL {
-  from {
-    transform: var(--slideL);
-  }
-}
-@keyframes slideTR {
-  from {
-    transform: var(--slideTR);
-  }
-}
-@keyframes slideBR {
-  from {
-    transform: var(--slideBR);
-  }
-}
-@keyframes slideBL {
-  from {
-    transform: var(--slideBL);
-  }
-}
-@keyframes slideTL {
-  from {
-    transform: var(--slideTL);
   }
 }
 @keyframes twistT {
@@ -3955,19 +3948,13 @@ pre > *::selection {
   background-color: var(--table-even-background-color);
   color: var(--table-even-color);
 }
-.table tbody tr:nth-child(even):hover, .table tbody tr:nth-child(even):focus {
-  background-color: var(--table-even-hover-background-color);
-  color: var(--table-even-hover-color);
-  box-shadow: var(--table-even-hover-box-shadow);
-}
 .table tbody tr:nth-child(odd) {
   background-color: var(--table-odd-background-color);
   color: var(--table-odd-color);
 }
-.table tbody tr:nth-child(odd):hover, .table tbody tr:nth-child(odd):focus {
-  background-color: var(--table-odd-hover-background-color);
-  color: var(--table-odd-hover-color);
-  box-shadow: var(--table-odd-hover-box-shadow);
+.table tbody tr:hover, .table tbody tr:focus {
+  background-color: var(--table-row-hover-background-color);
+  color: var(--table-row-hover-color);
 }
 
 /***** Classes : Slider *****/
@@ -4064,7 +4051,7 @@ pre > *::selection {
 }
 .canvas:hover > .canvas-controls, .canvas:focus > .canvas-controls {
   opacity: var(--canvas-hover-controls-opacity);
-  transition: opacity var(--canvas-hover-controls-transition);
+  transition: var(--canvas-hover-controls-transition);
 }
 
 .canvas-controls {
@@ -4074,7 +4061,7 @@ pre > *::selection {
   width: var(--canvas-controls-width);
   background-color: var(--canvas-controls-background-color);
   opacity: var(--canvas-controls-opacity);
-  transition: opacity var(--canvas-controls-transition);
+  transition: var(--canvas-controls-transition);
 }
 .canvas-controls li {
   display: flex;
@@ -5866,6 +5853,291 @@ pre > *::selection {
   animation-duration: var(--animation-duration);
 }
 
+[class*=anima-][class*=-slideT-][class*=-this],
+[class*=anima-][class*=-slideT-][class*=-global] > *,
+[class*=anima-][class*=-slideT-][class*=-onto]:hover,
+[class*=anima-][class*=-slideT-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-slideT-][class*=-into],
+*:focus > [class*=anima-][class*=-slideT-][class*=-into],
+[class*=anima-][class*=-slideT-][class*=-toall]:hover > *,
+[class*=anima-][class*=-slideT-][class*=-toall]:focus > *,
+[class*=anima-][class*=-slideT-][class*=-toone] > *:hover,
+[class*=anima-][class*=-slideT-][class*=-toone] > *:focus,
+[class*=anima-][class*=-slideT-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideT-][class*=-relay] [class*=anima-][class*=-slideT-][class*=-target1],
+[class*=anima-][class*=-slideT-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideT-][class*=-relay] [class*=anima-][class*=-slideT-][class*=-target2],
+[class*=anima-][class*=-slideT-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideT-][class*=-relay] [class*=anima-][class*=-slideT-][class*=-target3],
+[class*=anima-][class*=-slideT-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideT-][class*=-relay] [class*=anima-][class*=-slideT-][class*=-target4],
+[class*=anima-][class*=-slideT-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideT-][class*=-relay] [class*=anima-][class*=-slideT-][class*=-target5],
+[class*=anima-][class*=-slideT-][class*=-check]:checked ~ [class*=anima-][class*=-slideT-][class*=-hub] [class*=anima-][class*=-slideT-][class*=-goal] {
+  animation-name: slideT;
+}
+
+[class*=anima-][class*=-slideR-][class*=-this],
+[class*=anima-][class*=-slideR-][class*=-global] > *,
+[class*=anima-][class*=-slideR-][class*=-onto]:hover,
+[class*=anima-][class*=-slideR-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-slideR-][class*=-into],
+*:focus > [class*=anima-][class*=-slideR-][class*=-into],
+[class*=anima-][class*=-slideR-][class*=-toall]:hover > *,
+[class*=anima-][class*=-slideR-][class*=-toall]:focus > *,
+[class*=anima-][class*=-slideR-][class*=-toone] > *:hover,
+[class*=anima-][class*=-slideR-][class*=-toone] > *:focus,
+[class*=anima-][class*=-slideR-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideR-][class*=-relay] [class*=anima-][class*=-slideR-][class*=-target1],
+[class*=anima-][class*=-slideR-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideR-][class*=-relay] [class*=anima-][class*=-slideR-][class*=-target2],
+[class*=anima-][class*=-slideR-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideR-][class*=-relay] [class*=anima-][class*=-slideR-][class*=-target3],
+[class*=anima-][class*=-slideR-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideR-][class*=-relay] [class*=anima-][class*=-slideR-][class*=-target4],
+[class*=anima-][class*=-slideR-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideR-][class*=-relay] [class*=anima-][class*=-slideR-][class*=-target5],
+[class*=anima-][class*=-slideR-][class*=-check]:checked ~ [class*=anima-][class*=-slideR-][class*=-hub] [class*=anima-][class*=-slideR-][class*=-goal] {
+  animation-name: slideR;
+}
+
+[class*=anima-][class*=-slideB-][class*=-this],
+[class*=anima-][class*=-slideB-][class*=-global] > *,
+[class*=anima-][class*=-slideB-][class*=-onto]:hover,
+[class*=anima-][class*=-slideB-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-slideB-][class*=-into],
+*:focus > [class*=anima-][class*=-slideB-][class*=-into],
+[class*=anima-][class*=-slideB-][class*=-toall]:hover > *,
+[class*=anima-][class*=-slideB-][class*=-toall]:focus > *,
+[class*=anima-][class*=-slideB-][class*=-toone] > *:hover,
+[class*=anima-][class*=-slideB-][class*=-toone] > *:focus,
+[class*=anima-][class*=-slideB-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideB-][class*=-relay] [class*=anima-][class*=-slideB-][class*=-target1],
+[class*=anima-][class*=-slideB-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideB-][class*=-relay] [class*=anima-][class*=-slideB-][class*=-target2],
+[class*=anima-][class*=-slideB-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideB-][class*=-relay] [class*=anima-][class*=-slideB-][class*=-target3],
+[class*=anima-][class*=-slideB-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideB-][class*=-relay] [class*=anima-][class*=-slideB-][class*=-target4],
+[class*=anima-][class*=-slideB-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideB-][class*=-relay] [class*=anima-][class*=-slideB-][class*=-target5],
+[class*=anima-][class*=-slideB-][class*=-check]:checked ~ [class*=anima-][class*=-slideB-][class*=-hub] [class*=anima-][class*=-slideB-][class*=-goal] {
+  animation-name: slideB;
+}
+
+[class*=anima-][class*=-slideL-][class*=-this],
+[class*=anima-][class*=-slideL-][class*=-global] > *,
+[class*=anima-][class*=-slideL-][class*=-onto]:hover,
+[class*=anima-][class*=-slideL-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-slideL-][class*=-into],
+*:focus > [class*=anima-][class*=-slideL-][class*=-into],
+[class*=anima-][class*=-slideL-][class*=-toall]:hover > *,
+[class*=anima-][class*=-slideL-][class*=-toall]:focus > *,
+[class*=anima-][class*=-slideL-][class*=-toone] > *:hover,
+[class*=anima-][class*=-slideL-][class*=-toone] > *:focus,
+[class*=anima-][class*=-slideL-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideL-][class*=-relay] [class*=anima-][class*=-slideL-][class*=-target1],
+[class*=anima-][class*=-slideL-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideL-][class*=-relay] [class*=anima-][class*=-slideL-][class*=-target2],
+[class*=anima-][class*=-slideL-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideL-][class*=-relay] [class*=anima-][class*=-slideL-][class*=-target3],
+[class*=anima-][class*=-slideL-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideL-][class*=-relay] [class*=anima-][class*=-slideL-][class*=-target4],
+[class*=anima-][class*=-slideL-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideL-][class*=-relay] [class*=anima-][class*=-slideL-][class*=-target5],
+[class*=anima-][class*=-slideL-][class*=-check]:checked ~ [class*=anima-][class*=-slideL-][class*=-hub] [class*=anima-][class*=-slideL-][class*=-goal] {
+  animation-name: slideL;
+}
+
+[class*=anima-][class*=-slideTR-][class*=-this],
+[class*=anima-][class*=-slideTR-][class*=-global] > *,
+[class*=anima-][class*=-slideTR-][class*=-onto]:hover,
+[class*=anima-][class*=-slideTR-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-slideTR-][class*=-into],
+*:focus > [class*=anima-][class*=-slideTR-][class*=-into],
+[class*=anima-][class*=-slideTR-][class*=-toall]:hover > *,
+[class*=anima-][class*=-slideTR-][class*=-toall]:focus > *,
+[class*=anima-][class*=-slideTR-][class*=-toone] > *:hover,
+[class*=anima-][class*=-slideTR-][class*=-toone] > *:focus,
+[class*=anima-][class*=-slideTR-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideTR-][class*=-relay] [class*=anima-][class*=-slideTR-][class*=-target1],
+[class*=anima-][class*=-slideTR-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideTR-][class*=-relay] [class*=anima-][class*=-slideTR-][class*=-target2],
+[class*=anima-][class*=-slideTR-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideTR-][class*=-relay] [class*=anima-][class*=-slideTR-][class*=-target3],
+[class*=anima-][class*=-slideTR-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideTR-][class*=-relay] [class*=anima-][class*=-slideTR-][class*=-target4],
+[class*=anima-][class*=-slideTR-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideTR-][class*=-relay] [class*=anima-][class*=-slideTR-][class*=-target5],
+[class*=anima-][class*=-slideTR-][class*=-check]:checked ~ [class*=anima-][class*=-slideTR-][class*=-hub] [class*=anima-][class*=-slideTR-][class*=-goal] {
+  animation-name: slideTR;
+}
+
+[class*=anima-][class*=-slideBR-][class*=-this],
+[class*=anima-][class*=-slideBR-][class*=-global] > *,
+[class*=anima-][class*=-slideBR-][class*=-onto]:hover,
+[class*=anima-][class*=-slideBR-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-slideBR-][class*=-into],
+*:focus > [class*=anima-][class*=-slideBR-][class*=-into],
+[class*=anima-][class*=-slideBR-][class*=-toall]:hover > *,
+[class*=anima-][class*=-slideBR-][class*=-toall]:focus > *,
+[class*=anima-][class*=-slideBR-][class*=-toone] > *:hover,
+[class*=anima-][class*=-slideBR-][class*=-toone] > *:focus,
+[class*=anima-][class*=-slideBR-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideBR-][class*=-relay] [class*=anima-][class*=-slideBR-][class*=-target1],
+[class*=anima-][class*=-slideBR-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideBR-][class*=-relay] [class*=anima-][class*=-slideBR-][class*=-target2],
+[class*=anima-][class*=-slideBR-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideBR-][class*=-relay] [class*=anima-][class*=-slideBR-][class*=-target3],
+[class*=anima-][class*=-slideBR-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideBR-][class*=-relay] [class*=anima-][class*=-slideBR-][class*=-target4],
+[class*=anima-][class*=-slideBR-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideBR-][class*=-relay] [class*=anima-][class*=-slideBR-][class*=-target5],
+[class*=anima-][class*=-slideBR-][class*=-check]:checked ~ [class*=anima-][class*=-slideBR-][class*=-hub] [class*=anima-][class*=-slideBR-][class*=-goal] {
+  animation-name: slideBR;
+}
+
+[class*=anima-][class*=-slideBL-][class*=-this],
+[class*=anima-][class*=-slideBL-][class*=-global] > *,
+[class*=anima-][class*=-slideBL-][class*=-onto]:hover,
+[class*=anima-][class*=-slideBL-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-slideBL-][class*=-into],
+*:focus > [class*=anima-][class*=-slideBL-][class*=-into],
+[class*=anima-][class*=-slideBL-][class*=-toall]:hover > *,
+[class*=anima-][class*=-slideBL-][class*=-toall]:focus > *,
+[class*=anima-][class*=-slideBL-][class*=-toone] > *:hover,
+[class*=anima-][class*=-slideBL-][class*=-toone] > *:focus,
+[class*=anima-][class*=-slideBL-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideBL-][class*=-relay] [class*=anima-][class*=-slideBL-][class*=-target1],
+[class*=anima-][class*=-slideBL-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideBL-][class*=-relay] [class*=anima-][class*=-slideBL-][class*=-target2],
+[class*=anima-][class*=-slideBL-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideBL-][class*=-relay] [class*=anima-][class*=-slideBL-][class*=-target3],
+[class*=anima-][class*=-slideBL-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideBL-][class*=-relay] [class*=anima-][class*=-slideBL-][class*=-target4],
+[class*=anima-][class*=-slideBL-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideBL-][class*=-relay] [class*=anima-][class*=-slideBL-][class*=-target5],
+[class*=anima-][class*=-slideBL-][class*=-check]:checked ~ [class*=anima-][class*=-slideBL-][class*=-hub] [class*=anima-][class*=-slideBL-][class*=-goal] {
+  animation-name: slideBL;
+}
+
+[class*=anima-][class*=-slideTL-][class*=-this],
+[class*=anima-][class*=-slideTL-][class*=-global] > *,
+[class*=anima-][class*=-slideTL-][class*=-onto]:hover,
+[class*=anima-][class*=-slideTL-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-slideTL-][class*=-into],
+*:focus > [class*=anima-][class*=-slideTL-][class*=-into],
+[class*=anima-][class*=-slideTL-][class*=-toall]:hover > *,
+[class*=anima-][class*=-slideTL-][class*=-toall]:focus > *,
+[class*=anima-][class*=-slideTL-][class*=-toone] > *:hover,
+[class*=anima-][class*=-slideTL-][class*=-toone] > *:focus,
+[class*=anima-][class*=-slideTL-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideTL-][class*=-relay] [class*=anima-][class*=-slideTL-][class*=-target1],
+[class*=anima-][class*=-slideTL-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideTL-][class*=-relay] [class*=anima-][class*=-slideTL-][class*=-target2],
+[class*=anima-][class*=-slideTL-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideTL-][class*=-relay] [class*=anima-][class*=-slideTL-][class*=-target3],
+[class*=anima-][class*=-slideTL-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideTL-][class*=-relay] [class*=anima-][class*=-slideTL-][class*=-target4],
+[class*=anima-][class*=-slideTL-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideTL-][class*=-relay] [class*=anima-][class*=-slideTL-][class*=-target5],
+[class*=anima-][class*=-slideTL-][class*=-check]:checked ~ [class*=anima-][class*=-slideTL-][class*=-hub] [class*=anima-][class*=-slideTL-][class*=-goal] {
+  animation-name: slideTL;
+}
+
+[class*=anima-][class*=-turn-][class*=-this],
+[class*=anima-][class*=-turn-][class*=-global] > *,
+[class*=anima-][class*=-turn-][class*=-onto]:hover,
+[class*=anima-][class*=-turn-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-turn-][class*=-into],
+*:focus > [class*=anima-][class*=-turn-][class*=-into],
+[class*=anima-][class*=-turn-][class*=-toall]:hover > *,
+[class*=anima-][class*=-turn-][class*=-toall]:focus > *,
+[class*=anima-][class*=-turn-][class*=-toone] > *:hover,
+[class*=anima-][class*=-turn-][class*=-toone] > *:focus,
+[class*=anima-][class*=-turn-][class*=-radio1]:checked ~ [class*=anima-][class*=-turn-][class*=-relay] [class*=anima-][class*=-turn-][class*=-target1],
+[class*=anima-][class*=-turn-][class*=-radio2]:checked ~ [class*=anima-][class*=-turn-][class*=-relay] [class*=anima-][class*=-turn-][class*=-target2],
+[class*=anima-][class*=-turn-][class*=-radio3]:checked ~ [class*=anima-][class*=-turn-][class*=-relay] [class*=anima-][class*=-turn-][class*=-target3],
+[class*=anima-][class*=-turn-][class*=-radio4]:checked ~ [class*=anima-][class*=-turn-][class*=-relay] [class*=anima-][class*=-turn-][class*=-target4],
+[class*=anima-][class*=-turn-][class*=-radio5]:checked ~ [class*=anima-][class*=-turn-][class*=-relay] [class*=anima-][class*=-turn-][class*=-target5],
+[class*=anima-][class*=-turn-][class*=-check]:checked ~ [class*=anima-][class*=-turn-][class*=-hub] [class*=anima-][class*=-turn-][class*=-goal] {
+  animation-name: turn;
+}
+
+[class*=anima-][class*=-turnX-][class*=-this],
+[class*=anima-][class*=-turnX-][class*=-global] > *,
+[class*=anima-][class*=-turnX-][class*=-onto]:hover,
+[class*=anima-][class*=-turnX-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-turnX-][class*=-into],
+*:focus > [class*=anima-][class*=-turnX-][class*=-into],
+[class*=anima-][class*=-turnX-][class*=-toall]:hover > *,
+[class*=anima-][class*=-turnX-][class*=-toall]:focus > *,
+[class*=anima-][class*=-turnX-][class*=-toone] > *:hover,
+[class*=anima-][class*=-turnX-][class*=-toone] > *:focus,
+[class*=anima-][class*=-turnX-][class*=-radio1]:checked ~ [class*=anima-][class*=-turnX-][class*=-relay] [class*=anima-][class*=-turnX-][class*=-target1],
+[class*=anima-][class*=-turnX-][class*=-radio2]:checked ~ [class*=anima-][class*=-turnX-][class*=-relay] [class*=anima-][class*=-turnX-][class*=-target2],
+[class*=anima-][class*=-turnX-][class*=-radio3]:checked ~ [class*=anima-][class*=-turnX-][class*=-relay] [class*=anima-][class*=-turnX-][class*=-target3],
+[class*=anima-][class*=-turnX-][class*=-radio4]:checked ~ [class*=anima-][class*=-turnX-][class*=-relay] [class*=anima-][class*=-turnX-][class*=-target4],
+[class*=anima-][class*=-turnX-][class*=-radio5]:checked ~ [class*=anima-][class*=-turnX-][class*=-relay] [class*=anima-][class*=-turnX-][class*=-target5],
+[class*=anima-][class*=-turnX-][class*=-check]:checked ~ [class*=anima-][class*=-turnX-][class*=-hub] [class*=anima-][class*=-turnX-][class*=-goal] {
+  animation-name: turnX;
+}
+
+[class*=anima-][class*=-turnY-][class*=-this],
+[class*=anima-][class*=-turnY-][class*=-global] > *,
+[class*=anima-][class*=-turnY-][class*=-onto]:hover,
+[class*=anima-][class*=-turnY-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-turnY-][class*=-into],
+*:focus > [class*=anima-][class*=-turnY-][class*=-into],
+[class*=anima-][class*=-turnY-][class*=-toall]:hover > *,
+[class*=anima-][class*=-turnY-][class*=-toall]:focus > *,
+[class*=anima-][class*=-turnY-][class*=-toone] > *:hover,
+[class*=anima-][class*=-turnY-][class*=-toone] > *:focus,
+[class*=anima-][class*=-turnY-][class*=-radio1]:checked ~ [class*=anima-][class*=-turnY-][class*=-relay] [class*=anima-][class*=-turnY-][class*=-target1],
+[class*=anima-][class*=-turnY-][class*=-radio2]:checked ~ [class*=anima-][class*=-turnY-][class*=-relay] [class*=anima-][class*=-turnY-][class*=-target2],
+[class*=anima-][class*=-turnY-][class*=-radio3]:checked ~ [class*=anima-][class*=-turnY-][class*=-relay] [class*=anima-][class*=-turnY-][class*=-target3],
+[class*=anima-][class*=-turnY-][class*=-radio4]:checked ~ [class*=anima-][class*=-turnY-][class*=-relay] [class*=anima-][class*=-turnY-][class*=-target4],
+[class*=anima-][class*=-turnY-][class*=-radio5]:checked ~ [class*=anima-][class*=-turnY-][class*=-relay] [class*=anima-][class*=-turnY-][class*=-target5],
+[class*=anima-][class*=-turnY-][class*=-check]:checked ~ [class*=anima-][class*=-turnY-][class*=-hub] [class*=anima-][class*=-turnY-][class*=-goal] {
+  animation-name: turnY;
+}
+
+[class*=anima-][class*=-turnXY-][class*=-this],
+[class*=anima-][class*=-turnXY-][class*=-global] > *,
+[class*=anima-][class*=-turnXY-][class*=-onto]:hover,
+[class*=anima-][class*=-turnXY-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-turnXY-][class*=-into],
+*:focus > [class*=anima-][class*=-turnXY-][class*=-into],
+[class*=anima-][class*=-turnXY-][class*=-toall]:hover > *,
+[class*=anima-][class*=-turnXY-][class*=-toall]:focus > *,
+[class*=anima-][class*=-turnXY-][class*=-toone] > *:hover,
+[class*=anima-][class*=-turnXY-][class*=-toone] > *:focus,
+[class*=anima-][class*=-turnXY-][class*=-radio1]:checked ~ [class*=anima-][class*=-turnXY-][class*=-relay] [class*=anima-][class*=-turnXY-][class*=-target1],
+[class*=anima-][class*=-turnXY-][class*=-radio2]:checked ~ [class*=anima-][class*=-turnXY-][class*=-relay] [class*=anima-][class*=-turnXY-][class*=-target2],
+[class*=anima-][class*=-turnXY-][class*=-radio3]:checked ~ [class*=anima-][class*=-turnXY-][class*=-relay] [class*=anima-][class*=-turnXY-][class*=-target3],
+[class*=anima-][class*=-turnXY-][class*=-radio4]:checked ~ [class*=anima-][class*=-turnXY-][class*=-relay] [class*=anima-][class*=-turnXY-][class*=-target4],
+[class*=anima-][class*=-turnXY-][class*=-radio5]:checked ~ [class*=anima-][class*=-turnXY-][class*=-relay] [class*=anima-][class*=-turnXY-][class*=-target5],
+[class*=anima-][class*=-turnXY-][class*=-check]:checked ~ [class*=anima-][class*=-turnXY-][class*=-hub] [class*=anima-][class*=-turnXY-][class*=-goal] {
+  animation-name: turnXY;
+}
+
+[class*=anima-][class*=-turnXZ-][class*=-this],
+[class*=anima-][class*=-turnXZ-][class*=-global] > *,
+[class*=anima-][class*=-turnXZ-][class*=-onto]:hover,
+[class*=anima-][class*=-turnXZ-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-turnXZ-][class*=-into],
+*:focus > [class*=anima-][class*=-turnXZ-][class*=-into],
+[class*=anima-][class*=-turnXZ-][class*=-toall]:hover > *,
+[class*=anima-][class*=-turnXZ-][class*=-toall]:focus > *,
+[class*=anima-][class*=-turnXZ-][class*=-toone] > *:hover,
+[class*=anima-][class*=-turnXZ-][class*=-toone] > *:focus,
+[class*=anima-][class*=-turnXZ-][class*=-radio1]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-relay] [class*=anima-][class*=-turnXZ-][class*=-target1],
+[class*=anima-][class*=-turnXZ-][class*=-radio2]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-relay] [class*=anima-][class*=-turnXZ-][class*=-target2],
+[class*=anima-][class*=-turnXZ-][class*=-radio3]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-relay] [class*=anima-][class*=-turnXZ-][class*=-target3],
+[class*=anima-][class*=-turnXZ-][class*=-radio4]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-relay] [class*=anima-][class*=-turnXZ-][class*=-target4],
+[class*=anima-][class*=-turnXZ-][class*=-radio5]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-relay] [class*=anima-][class*=-turnXZ-][class*=-target5],
+[class*=anima-][class*=-turnXZ-][class*=-check]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-hub] [class*=anima-][class*=-turnXZ-][class*=-goal] {
+  animation-name: turnXZ;
+}
+
+[class*=anima-][class*=-turnYZ-][class*=-this],
+[class*=anima-][class*=-turnYZ-][class*=-global] > *,
+[class*=anima-][class*=-turnYZ-][class*=-onto]:hover,
+[class*=anima-][class*=-turnYZ-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-turnYZ-][class*=-into],
+*:focus > [class*=anima-][class*=-turnYZ-][class*=-into],
+[class*=anima-][class*=-turnYZ-][class*=-toall]:hover > *,
+[class*=anima-][class*=-turnYZ-][class*=-toall]:focus > *,
+[class*=anima-][class*=-turnYZ-][class*=-toone] > *:hover,
+[class*=anima-][class*=-turnYZ-][class*=-toone] > *:focus,
+[class*=anima-][class*=-turnYZ-][class*=-radio1]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-relay] [class*=anima-][class*=-turnYZ-][class*=-target1],
+[class*=anima-][class*=-turnYZ-][class*=-radio2]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-relay] [class*=anima-][class*=-turnYZ-][class*=-target2],
+[class*=anima-][class*=-turnYZ-][class*=-radio3]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-relay] [class*=anima-][class*=-turnYZ-][class*=-target3],
+[class*=anima-][class*=-turnYZ-][class*=-radio4]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-relay] [class*=anima-][class*=-turnYZ-][class*=-target4],
+[class*=anima-][class*=-turnYZ-][class*=-radio5]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-relay] [class*=anima-][class*=-turnYZ-][class*=-target5],
+[class*=anima-][class*=-turnYZ-][class*=-check]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-hub] [class*=anima-][class*=-turnYZ-][class*=-goal] {
+  animation-name: turnYZ;
+}
+
+[class*=anima-][class*=-turn3D-][class*=-this],
+[class*=anima-][class*=-turn3D-][class*=-global] > *,
+[class*=anima-][class*=-turn3D-][class*=-onto]:hover,
+[class*=anima-][class*=-turn3D-][class*=-onto]:focus,
+*:hover > [class*=anima-][class*=-turn3D-][class*=-into],
+*:focus > [class*=anima-][class*=-turn3D-][class*=-into],
+[class*=anima-][class*=-turn3D-][class*=-toall]:hover > *,
+[class*=anima-][class*=-turn3D-][class*=-toall]:focus > *,
+[class*=anima-][class*=-turn3D-][class*=-toone] > *:hover,
+[class*=anima-][class*=-turn3D-][class*=-toone] > *:focus,
+[class*=anima-][class*=-turn3D-][class*=-radio1]:checked ~ [class*=anima-][class*=-turn3D-][class*=-relay] [class*=anima-][class*=-turn3D-][class*=-target1],
+[class*=anima-][class*=-turn3D-][class*=-radio2]:checked ~ [class*=anima-][class*=-turn3D-][class*=-relay] [class*=anima-][class*=-turn3D-][class*=-target2],
+[class*=anima-][class*=-turn3D-][class*=-radio3]:checked ~ [class*=anima-][class*=-turn3D-][class*=-relay] [class*=anima-][class*=-turn3D-][class*=-target3],
+[class*=anima-][class*=-turn3D-][class*=-radio4]:checked ~ [class*=anima-][class*=-turn3D-][class*=-relay] [class*=anima-][class*=-turn3D-][class*=-target4],
+[class*=anima-][class*=-turn3D-][class*=-radio5]:checked ~ [class*=anima-][class*=-turn3D-][class*=-relay] [class*=anima-][class*=-turn3D-][class*=-target5],
+[class*=anima-][class*=-turn3D-][class*=-check]:checked ~ [class*=anima-][class*=-turn3D-][class*=-hub] [class*=anima-][class*=-turn3D-][class*=-goal] {
+  animation-name: turn3D;
+}
+
 [class*=anima-][class*=-bounce-][class*=-this],
 [class*=anima-][class*=-bounce-][class*=-global] > *,
 [class*=anima-][class*=-bounce-][class*=-onto]:hover,
@@ -6035,291 +6307,6 @@ pre > *::selection {
 [class*=anima-][class*=-flipperY-][class*=-radio5]:checked ~ [class*=anima-][class*=-flipperY-][class*=-relay] [class*=anima-][class*=-flipperY-][class*=-target5],
 [class*=anima-][class*=-flipperY-][class*=-check]:checked ~ [class*=anima-][class*=-flipperY-][class*=-hub] [class*=anima-][class*=-flipperY-][class*=-goal] {
   animation-name: flipperY;
-}
-
-[class*=anima-][class*=-turn-][class*=-this],
-[class*=anima-][class*=-turn-][class*=-global] > *,
-[class*=anima-][class*=-turn-][class*=-onto]:hover,
-[class*=anima-][class*=-turn-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-turn-][class*=-into],
-*:focus > [class*=anima-][class*=-turn-][class*=-into],
-[class*=anima-][class*=-turn-][class*=-toall]:hover > *,
-[class*=anima-][class*=-turn-][class*=-toall]:focus > *,
-[class*=anima-][class*=-turn-][class*=-toone] > *:hover,
-[class*=anima-][class*=-turn-][class*=-toone] > *:focus,
-[class*=anima-][class*=-turn-][class*=-radio1]:checked ~ [class*=anima-][class*=-turn-][class*=-relay] [class*=anima-][class*=-turn-][class*=-target1],
-[class*=anima-][class*=-turn-][class*=-radio2]:checked ~ [class*=anima-][class*=-turn-][class*=-relay] [class*=anima-][class*=-turn-][class*=-target2],
-[class*=anima-][class*=-turn-][class*=-radio3]:checked ~ [class*=anima-][class*=-turn-][class*=-relay] [class*=anima-][class*=-turn-][class*=-target3],
-[class*=anima-][class*=-turn-][class*=-radio4]:checked ~ [class*=anima-][class*=-turn-][class*=-relay] [class*=anima-][class*=-turn-][class*=-target4],
-[class*=anima-][class*=-turn-][class*=-radio5]:checked ~ [class*=anima-][class*=-turn-][class*=-relay] [class*=anima-][class*=-turn-][class*=-target5],
-[class*=anima-][class*=-turn-][class*=-check]:checked ~ [class*=anima-][class*=-turn-][class*=-hub] [class*=anima-][class*=-turn-][class*=-goal] {
-  animation-name: turn;
-}
-
-[class*=anima-][class*=-turnX-][class*=-this],
-[class*=anima-][class*=-turnX-][class*=-global] > *,
-[class*=anima-][class*=-turnX-][class*=-onto]:hover,
-[class*=anima-][class*=-turnX-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-turnX-][class*=-into],
-*:focus > [class*=anima-][class*=-turnX-][class*=-into],
-[class*=anima-][class*=-turnX-][class*=-toall]:hover > *,
-[class*=anima-][class*=-turnX-][class*=-toall]:focus > *,
-[class*=anima-][class*=-turnX-][class*=-toone] > *:hover,
-[class*=anima-][class*=-turnX-][class*=-toone] > *:focus,
-[class*=anima-][class*=-turnX-][class*=-radio1]:checked ~ [class*=anima-][class*=-turnX-][class*=-relay] [class*=anima-][class*=-turnX-][class*=-target1],
-[class*=anima-][class*=-turnX-][class*=-radio2]:checked ~ [class*=anima-][class*=-turnX-][class*=-relay] [class*=anima-][class*=-turnX-][class*=-target2],
-[class*=anima-][class*=-turnX-][class*=-radio3]:checked ~ [class*=anima-][class*=-turnX-][class*=-relay] [class*=anima-][class*=-turnX-][class*=-target3],
-[class*=anima-][class*=-turnX-][class*=-radio4]:checked ~ [class*=anima-][class*=-turnX-][class*=-relay] [class*=anima-][class*=-turnX-][class*=-target4],
-[class*=anima-][class*=-turnX-][class*=-radio5]:checked ~ [class*=anima-][class*=-turnX-][class*=-relay] [class*=anima-][class*=-turnX-][class*=-target5],
-[class*=anima-][class*=-turnX-][class*=-check]:checked ~ [class*=anima-][class*=-turnX-][class*=-hub] [class*=anima-][class*=-turnX-][class*=-goal] {
-  animation-name: turnX;
-}
-
-[class*=anima-][class*=-turnY-][class*=-this],
-[class*=anima-][class*=-turnY-][class*=-global] > *,
-[class*=anima-][class*=-turnY-][class*=-onto]:hover,
-[class*=anima-][class*=-turnY-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-turnY-][class*=-into],
-*:focus > [class*=anima-][class*=-turnY-][class*=-into],
-[class*=anima-][class*=-turnY-][class*=-toall]:hover > *,
-[class*=anima-][class*=-turnY-][class*=-toall]:focus > *,
-[class*=anima-][class*=-turnY-][class*=-toone] > *:hover,
-[class*=anima-][class*=-turnY-][class*=-toone] > *:focus,
-[class*=anima-][class*=-turnY-][class*=-radio1]:checked ~ [class*=anima-][class*=-turnY-][class*=-relay] [class*=anima-][class*=-turnY-][class*=-target1],
-[class*=anima-][class*=-turnY-][class*=-radio2]:checked ~ [class*=anima-][class*=-turnY-][class*=-relay] [class*=anima-][class*=-turnY-][class*=-target2],
-[class*=anima-][class*=-turnY-][class*=-radio3]:checked ~ [class*=anima-][class*=-turnY-][class*=-relay] [class*=anima-][class*=-turnY-][class*=-target3],
-[class*=anima-][class*=-turnY-][class*=-radio4]:checked ~ [class*=anima-][class*=-turnY-][class*=-relay] [class*=anima-][class*=-turnY-][class*=-target4],
-[class*=anima-][class*=-turnY-][class*=-radio5]:checked ~ [class*=anima-][class*=-turnY-][class*=-relay] [class*=anima-][class*=-turnY-][class*=-target5],
-[class*=anima-][class*=-turnY-][class*=-check]:checked ~ [class*=anima-][class*=-turnY-][class*=-hub] [class*=anima-][class*=-turnY-][class*=-goal] {
-  animation-name: turnY;
-}
-
-[class*=anima-][class*=-turnXY-][class*=-this],
-[class*=anima-][class*=-turnXY-][class*=-global] > *,
-[class*=anima-][class*=-turnXY-][class*=-onto]:hover,
-[class*=anima-][class*=-turnXY-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-turnXY-][class*=-into],
-*:focus > [class*=anima-][class*=-turnXY-][class*=-into],
-[class*=anima-][class*=-turnXY-][class*=-toall]:hover > *,
-[class*=anima-][class*=-turnXY-][class*=-toall]:focus > *,
-[class*=anima-][class*=-turnXY-][class*=-toone] > *:hover,
-[class*=anima-][class*=-turnXY-][class*=-toone] > *:focus,
-[class*=anima-][class*=-turnXY-][class*=-radio1]:checked ~ [class*=anima-][class*=-turnXY-][class*=-relay] [class*=anima-][class*=-turnXY-][class*=-target1],
-[class*=anima-][class*=-turnXY-][class*=-radio2]:checked ~ [class*=anima-][class*=-turnXY-][class*=-relay] [class*=anima-][class*=-turnXY-][class*=-target2],
-[class*=anima-][class*=-turnXY-][class*=-radio3]:checked ~ [class*=anima-][class*=-turnXY-][class*=-relay] [class*=anima-][class*=-turnXY-][class*=-target3],
-[class*=anima-][class*=-turnXY-][class*=-radio4]:checked ~ [class*=anima-][class*=-turnXY-][class*=-relay] [class*=anima-][class*=-turnXY-][class*=-target4],
-[class*=anima-][class*=-turnXY-][class*=-radio5]:checked ~ [class*=anima-][class*=-turnXY-][class*=-relay] [class*=anima-][class*=-turnXY-][class*=-target5],
-[class*=anima-][class*=-turnXY-][class*=-check]:checked ~ [class*=anima-][class*=-turnXY-][class*=-hub] [class*=anima-][class*=-turnXY-][class*=-goal] {
-  animation-name: turnXY;
-}
-
-[class*=anima-][class*=-turnXZ-][class*=-this],
-[class*=anima-][class*=-turnXZ-][class*=-global] > *,
-[class*=anima-][class*=-turnXZ-][class*=-onto]:hover,
-[class*=anima-][class*=-turnXZ-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-turnXZ-][class*=-into],
-*:focus > [class*=anima-][class*=-turnXZ-][class*=-into],
-[class*=anima-][class*=-turnXZ-][class*=-toall]:hover > *,
-[class*=anima-][class*=-turnXZ-][class*=-toall]:focus > *,
-[class*=anima-][class*=-turnXZ-][class*=-toone] > *:hover,
-[class*=anima-][class*=-turnXZ-][class*=-toone] > *:focus,
-[class*=anima-][class*=-turnXZ-][class*=-radio1]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-relay] [class*=anima-][class*=-turnXZ-][class*=-target1],
-[class*=anima-][class*=-turnXZ-][class*=-radio2]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-relay] [class*=anima-][class*=-turnXZ-][class*=-target2],
-[class*=anima-][class*=-turnXZ-][class*=-radio3]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-relay] [class*=anima-][class*=-turnXZ-][class*=-target3],
-[class*=anima-][class*=-turnXZ-][class*=-radio4]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-relay] [class*=anima-][class*=-turnXZ-][class*=-target4],
-[class*=anima-][class*=-turnXZ-][class*=-radio5]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-relay] [class*=anima-][class*=-turnXZ-][class*=-target5],
-[class*=anima-][class*=-turnXZ-][class*=-check]:checked ~ [class*=anima-][class*=-turnXZ-][class*=-hub] [class*=anima-][class*=-turnXZ-][class*=-goal] {
-  animation-name: turnXZ;
-}
-
-[class*=anima-][class*=-turnYZ-][class*=-this],
-[class*=anima-][class*=-turnYZ-][class*=-global] > *,
-[class*=anima-][class*=-turnYZ-][class*=-onto]:hover,
-[class*=anima-][class*=-turnYZ-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-turnYZ-][class*=-into],
-*:focus > [class*=anima-][class*=-turnYZ-][class*=-into],
-[class*=anima-][class*=-turnYZ-][class*=-toall]:hover > *,
-[class*=anima-][class*=-turnYZ-][class*=-toall]:focus > *,
-[class*=anima-][class*=-turnYZ-][class*=-toone] > *:hover,
-[class*=anima-][class*=-turnYZ-][class*=-toone] > *:focus,
-[class*=anima-][class*=-turnYZ-][class*=-radio1]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-relay] [class*=anima-][class*=-turnYZ-][class*=-target1],
-[class*=anima-][class*=-turnYZ-][class*=-radio2]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-relay] [class*=anima-][class*=-turnYZ-][class*=-target2],
-[class*=anima-][class*=-turnYZ-][class*=-radio3]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-relay] [class*=anima-][class*=-turnYZ-][class*=-target3],
-[class*=anima-][class*=-turnYZ-][class*=-radio4]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-relay] [class*=anima-][class*=-turnYZ-][class*=-target4],
-[class*=anima-][class*=-turnYZ-][class*=-radio5]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-relay] [class*=anima-][class*=-turnYZ-][class*=-target5],
-[class*=anima-][class*=-turnYZ-][class*=-check]:checked ~ [class*=anima-][class*=-turnYZ-][class*=-hub] [class*=anima-][class*=-turnYZ-][class*=-goal] {
-  animation-name: turnYZ;
-}
-
-[class*=anima-][class*=-turn3D-][class*=-this],
-[class*=anima-][class*=-turn3D-][class*=-global] > *,
-[class*=anima-][class*=-turn3D-][class*=-onto]:hover,
-[class*=anima-][class*=-turn3D-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-turn3D-][class*=-into],
-*:focus > [class*=anima-][class*=-turn3D-][class*=-into],
-[class*=anima-][class*=-turn3D-][class*=-toall]:hover > *,
-[class*=anima-][class*=-turn3D-][class*=-toall]:focus > *,
-[class*=anima-][class*=-turn3D-][class*=-toone] > *:hover,
-[class*=anima-][class*=-turn3D-][class*=-toone] > *:focus,
-[class*=anima-][class*=-turn3D-][class*=-radio1]:checked ~ [class*=anima-][class*=-turn3D-][class*=-relay] [class*=anima-][class*=-turn3D-][class*=-target1],
-[class*=anima-][class*=-turn3D-][class*=-radio2]:checked ~ [class*=anima-][class*=-turn3D-][class*=-relay] [class*=anima-][class*=-turn3D-][class*=-target2],
-[class*=anima-][class*=-turn3D-][class*=-radio3]:checked ~ [class*=anima-][class*=-turn3D-][class*=-relay] [class*=anima-][class*=-turn3D-][class*=-target3],
-[class*=anima-][class*=-turn3D-][class*=-radio4]:checked ~ [class*=anima-][class*=-turn3D-][class*=-relay] [class*=anima-][class*=-turn3D-][class*=-target4],
-[class*=anima-][class*=-turn3D-][class*=-radio5]:checked ~ [class*=anima-][class*=-turn3D-][class*=-relay] [class*=anima-][class*=-turn3D-][class*=-target5],
-[class*=anima-][class*=-turn3D-][class*=-check]:checked ~ [class*=anima-][class*=-turn3D-][class*=-hub] [class*=anima-][class*=-turn3D-][class*=-goal] {
-  animation-name: turn3D;
-}
-
-[class*=anima-][class*=-slideT-][class*=-this],
-[class*=anima-][class*=-slideT-][class*=-global] > *,
-[class*=anima-][class*=-slideT-][class*=-onto]:hover,
-[class*=anima-][class*=-slideT-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-slideT-][class*=-into],
-*:focus > [class*=anima-][class*=-slideT-][class*=-into],
-[class*=anima-][class*=-slideT-][class*=-toall]:hover > *,
-[class*=anima-][class*=-slideT-][class*=-toall]:focus > *,
-[class*=anima-][class*=-slideT-][class*=-toone] > *:hover,
-[class*=anima-][class*=-slideT-][class*=-toone] > *:focus,
-[class*=anima-][class*=-slideT-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideT-][class*=-relay] [class*=anima-][class*=-slideT-][class*=-target1],
-[class*=anima-][class*=-slideT-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideT-][class*=-relay] [class*=anima-][class*=-slideT-][class*=-target2],
-[class*=anima-][class*=-slideT-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideT-][class*=-relay] [class*=anima-][class*=-slideT-][class*=-target3],
-[class*=anima-][class*=-slideT-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideT-][class*=-relay] [class*=anima-][class*=-slideT-][class*=-target4],
-[class*=anima-][class*=-slideT-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideT-][class*=-relay] [class*=anima-][class*=-slideT-][class*=-target5],
-[class*=anima-][class*=-slideT-][class*=-check]:checked ~ [class*=anima-][class*=-slideT-][class*=-hub] [class*=anima-][class*=-slideT-][class*=-goal] {
-  animation-name: slideT;
-}
-
-[class*=anima-][class*=-slideR-][class*=-this],
-[class*=anima-][class*=-slideR-][class*=-global] > *,
-[class*=anima-][class*=-slideR-][class*=-onto]:hover,
-[class*=anima-][class*=-slideR-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-slideR-][class*=-into],
-*:focus > [class*=anima-][class*=-slideR-][class*=-into],
-[class*=anima-][class*=-slideR-][class*=-toall]:hover > *,
-[class*=anima-][class*=-slideR-][class*=-toall]:focus > *,
-[class*=anima-][class*=-slideR-][class*=-toone] > *:hover,
-[class*=anima-][class*=-slideR-][class*=-toone] > *:focus,
-[class*=anima-][class*=-slideR-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideR-][class*=-relay] [class*=anima-][class*=-slideR-][class*=-target1],
-[class*=anima-][class*=-slideR-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideR-][class*=-relay] [class*=anima-][class*=-slideR-][class*=-target2],
-[class*=anima-][class*=-slideR-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideR-][class*=-relay] [class*=anima-][class*=-slideR-][class*=-target3],
-[class*=anima-][class*=-slideR-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideR-][class*=-relay] [class*=anima-][class*=-slideR-][class*=-target4],
-[class*=anima-][class*=-slideR-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideR-][class*=-relay] [class*=anima-][class*=-slideR-][class*=-target5],
-[class*=anima-][class*=-slideR-][class*=-check]:checked ~ [class*=anima-][class*=-slideR-][class*=-hub] [class*=anima-][class*=-slideR-][class*=-goal] {
-  animation-name: slideR;
-}
-
-[class*=anima-][class*=-slideB-][class*=-this],
-[class*=anima-][class*=-slideB-][class*=-global] > *,
-[class*=anima-][class*=-slideB-][class*=-onto]:hover,
-[class*=anima-][class*=-slideB-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-slideB-][class*=-into],
-*:focus > [class*=anima-][class*=-slideB-][class*=-into],
-[class*=anima-][class*=-slideB-][class*=-toall]:hover > *,
-[class*=anima-][class*=-slideB-][class*=-toall]:focus > *,
-[class*=anima-][class*=-slideB-][class*=-toone] > *:hover,
-[class*=anima-][class*=-slideB-][class*=-toone] > *:focus,
-[class*=anima-][class*=-slideB-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideB-][class*=-relay] [class*=anima-][class*=-slideB-][class*=-target1],
-[class*=anima-][class*=-slideB-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideB-][class*=-relay] [class*=anima-][class*=-slideB-][class*=-target2],
-[class*=anima-][class*=-slideB-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideB-][class*=-relay] [class*=anima-][class*=-slideB-][class*=-target3],
-[class*=anima-][class*=-slideB-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideB-][class*=-relay] [class*=anima-][class*=-slideB-][class*=-target4],
-[class*=anima-][class*=-slideB-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideB-][class*=-relay] [class*=anima-][class*=-slideB-][class*=-target5],
-[class*=anima-][class*=-slideB-][class*=-check]:checked ~ [class*=anima-][class*=-slideB-][class*=-hub] [class*=anima-][class*=-slideB-][class*=-goal] {
-  animation-name: slideB;
-}
-
-[class*=anima-][class*=-slideL-][class*=-this],
-[class*=anima-][class*=-slideL-][class*=-global] > *,
-[class*=anima-][class*=-slideL-][class*=-onto]:hover,
-[class*=anima-][class*=-slideL-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-slideL-][class*=-into],
-*:focus > [class*=anima-][class*=-slideL-][class*=-into],
-[class*=anima-][class*=-slideL-][class*=-toall]:hover > *,
-[class*=anima-][class*=-slideL-][class*=-toall]:focus > *,
-[class*=anima-][class*=-slideL-][class*=-toone] > *:hover,
-[class*=anima-][class*=-slideL-][class*=-toone] > *:focus,
-[class*=anima-][class*=-slideL-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideL-][class*=-relay] [class*=anima-][class*=-slideL-][class*=-target1],
-[class*=anima-][class*=-slideL-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideL-][class*=-relay] [class*=anima-][class*=-slideL-][class*=-target2],
-[class*=anima-][class*=-slideL-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideL-][class*=-relay] [class*=anima-][class*=-slideL-][class*=-target3],
-[class*=anima-][class*=-slideL-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideL-][class*=-relay] [class*=anima-][class*=-slideL-][class*=-target4],
-[class*=anima-][class*=-slideL-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideL-][class*=-relay] [class*=anima-][class*=-slideL-][class*=-target5],
-[class*=anima-][class*=-slideL-][class*=-check]:checked ~ [class*=anima-][class*=-slideL-][class*=-hub] [class*=anima-][class*=-slideL-][class*=-goal] {
-  animation-name: slideL;
-}
-
-[class*=anima-][class*=-slideTR-][class*=-this],
-[class*=anima-][class*=-slideTR-][class*=-global] > *,
-[class*=anima-][class*=-slideTR-][class*=-onto]:hover,
-[class*=anima-][class*=-slideTR-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-slideTR-][class*=-into],
-*:focus > [class*=anima-][class*=-slideTR-][class*=-into],
-[class*=anima-][class*=-slideTR-][class*=-toall]:hover > *,
-[class*=anima-][class*=-slideTR-][class*=-toall]:focus > *,
-[class*=anima-][class*=-slideTR-][class*=-toone] > *:hover,
-[class*=anima-][class*=-slideTR-][class*=-toone] > *:focus,
-[class*=anima-][class*=-slideTR-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideTR-][class*=-relay] [class*=anima-][class*=-slideTR-][class*=-target1],
-[class*=anima-][class*=-slideTR-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideTR-][class*=-relay] [class*=anima-][class*=-slideTR-][class*=-target2],
-[class*=anima-][class*=-slideTR-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideTR-][class*=-relay] [class*=anima-][class*=-slideTR-][class*=-target3],
-[class*=anima-][class*=-slideTR-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideTR-][class*=-relay] [class*=anima-][class*=-slideTR-][class*=-target4],
-[class*=anima-][class*=-slideTR-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideTR-][class*=-relay] [class*=anima-][class*=-slideTR-][class*=-target5],
-[class*=anima-][class*=-slideTR-][class*=-check]:checked ~ [class*=anima-][class*=-slideTR-][class*=-hub] [class*=anima-][class*=-slideTR-][class*=-goal] {
-  animation-name: slideTR;
-}
-
-[class*=anima-][class*=-slideBR-][class*=-this],
-[class*=anima-][class*=-slideBR-][class*=-global] > *,
-[class*=anima-][class*=-slideBR-][class*=-onto]:hover,
-[class*=anima-][class*=-slideBR-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-slideBR-][class*=-into],
-*:focus > [class*=anima-][class*=-slideBR-][class*=-into],
-[class*=anima-][class*=-slideBR-][class*=-toall]:hover > *,
-[class*=anima-][class*=-slideBR-][class*=-toall]:focus > *,
-[class*=anima-][class*=-slideBR-][class*=-toone] > *:hover,
-[class*=anima-][class*=-slideBR-][class*=-toone] > *:focus,
-[class*=anima-][class*=-slideBR-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideBR-][class*=-relay] [class*=anima-][class*=-slideBR-][class*=-target1],
-[class*=anima-][class*=-slideBR-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideBR-][class*=-relay] [class*=anima-][class*=-slideBR-][class*=-target2],
-[class*=anima-][class*=-slideBR-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideBR-][class*=-relay] [class*=anima-][class*=-slideBR-][class*=-target3],
-[class*=anima-][class*=-slideBR-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideBR-][class*=-relay] [class*=anima-][class*=-slideBR-][class*=-target4],
-[class*=anima-][class*=-slideBR-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideBR-][class*=-relay] [class*=anima-][class*=-slideBR-][class*=-target5],
-[class*=anima-][class*=-slideBR-][class*=-check]:checked ~ [class*=anima-][class*=-slideBR-][class*=-hub] [class*=anima-][class*=-slideBR-][class*=-goal] {
-  animation-name: slideBR;
-}
-
-[class*=anima-][class*=-slideBL-][class*=-this],
-[class*=anima-][class*=-slideBL-][class*=-global] > *,
-[class*=anima-][class*=-slideBL-][class*=-onto]:hover,
-[class*=anima-][class*=-slideBL-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-slideBL-][class*=-into],
-*:focus > [class*=anima-][class*=-slideBL-][class*=-into],
-[class*=anima-][class*=-slideBL-][class*=-toall]:hover > *,
-[class*=anima-][class*=-slideBL-][class*=-toall]:focus > *,
-[class*=anima-][class*=-slideBL-][class*=-toone] > *:hover,
-[class*=anima-][class*=-slideBL-][class*=-toone] > *:focus,
-[class*=anima-][class*=-slideBL-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideBL-][class*=-relay] [class*=anima-][class*=-slideBL-][class*=-target1],
-[class*=anima-][class*=-slideBL-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideBL-][class*=-relay] [class*=anima-][class*=-slideBL-][class*=-target2],
-[class*=anima-][class*=-slideBL-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideBL-][class*=-relay] [class*=anima-][class*=-slideBL-][class*=-target3],
-[class*=anima-][class*=-slideBL-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideBL-][class*=-relay] [class*=anima-][class*=-slideBL-][class*=-target4],
-[class*=anima-][class*=-slideBL-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideBL-][class*=-relay] [class*=anima-][class*=-slideBL-][class*=-target5],
-[class*=anima-][class*=-slideBL-][class*=-check]:checked ~ [class*=anima-][class*=-slideBL-][class*=-hub] [class*=anima-][class*=-slideBL-][class*=-goal] {
-  animation-name: slideBL;
-}
-
-[class*=anima-][class*=-slideTL-][class*=-this],
-[class*=anima-][class*=-slideTL-][class*=-global] > *,
-[class*=anima-][class*=-slideTL-][class*=-onto]:hover,
-[class*=anima-][class*=-slideTL-][class*=-onto]:focus,
-*:hover > [class*=anima-][class*=-slideTL-][class*=-into],
-*:focus > [class*=anima-][class*=-slideTL-][class*=-into],
-[class*=anima-][class*=-slideTL-][class*=-toall]:hover > *,
-[class*=anima-][class*=-slideTL-][class*=-toall]:focus > *,
-[class*=anima-][class*=-slideTL-][class*=-toone] > *:hover,
-[class*=anima-][class*=-slideTL-][class*=-toone] > *:focus,
-[class*=anima-][class*=-slideTL-][class*=-radio1]:checked ~ [class*=anima-][class*=-slideTL-][class*=-relay] [class*=anima-][class*=-slideTL-][class*=-target1],
-[class*=anima-][class*=-slideTL-][class*=-radio2]:checked ~ [class*=anima-][class*=-slideTL-][class*=-relay] [class*=anima-][class*=-slideTL-][class*=-target2],
-[class*=anima-][class*=-slideTL-][class*=-radio3]:checked ~ [class*=anima-][class*=-slideTL-][class*=-relay] [class*=anima-][class*=-slideTL-][class*=-target3],
-[class*=anima-][class*=-slideTL-][class*=-radio4]:checked ~ [class*=anima-][class*=-slideTL-][class*=-relay] [class*=anima-][class*=-slideTL-][class*=-target4],
-[class*=anima-][class*=-slideTL-][class*=-radio5]:checked ~ [class*=anima-][class*=-slideTL-][class*=-relay] [class*=anima-][class*=-slideTL-][class*=-target5],
-[class*=anima-][class*=-slideTL-][class*=-check]:checked ~ [class*=anima-][class*=-slideTL-][class*=-hub] [class*=anima-][class*=-slideTL-][class*=-goal] {
-  animation-name: slideTL;
 }
 
 [class*=anima-][class*=-twistT-][class*=-this],
