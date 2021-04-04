@@ -1,20 +1,20 @@
 /***** Variables : Canvas *****/
 
 .canvas {
-  --canvas-border: thick double var(--blue);
+  --canvas-border: medium dashed var(--secondary);
   --canvas-border-radius: 20px;
   --canvas-cursor: crosshair;
 
   --canvas-hover-controls-opacity: 1;
-  --canvas-hover-controls-transition: 2s;
+  --canvas-hover-controls-transition: opacity 2s;
 
   --canvas-controls-margin: auto;
-  --canvas-controls-border: thin solid var(--black);
+  --canvas-controls-border: thin solid var(--primary);
   --canvas-controls-border-radius: 10px;
-  --canvas-controls-width: 200px;
-  --canvas-controls-background-color: var(--gray-dark);
+  --canvas-controls-width: 300px;
+  --canvas-controls-background-color: var(--primary-dark);
   --canvas-controls-opacity: 0;
-  --canvas-controls-transition: 2s;
+  --canvas-controls-transition: opacity 1s;
 
   --canvas-controls-list-flex-direction: column;
   --canvas-controls-list-place-items: center;

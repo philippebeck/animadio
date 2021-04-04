@@ -10,7 +10,7 @@
   &:hover > .canvas-controls,
   &:focus > .canvas-controls {
     opacity: var(--canvas-hover-controls-opacity);
-    transition: opacity var(--canvas-hover-controls-transition);
+    transition: var(--canvas-hover-controls-transition);
   }
 }
 
@@ -21,7 +21,7 @@
   width: var(--canvas-controls-width);
   background-color: var(--canvas-controls-background-color);
   opacity: var(--canvas-controls-opacity);
-  transition: opacity var(--canvas-controls-transition);
+  transition: var(--canvas-controls-transition);
 
   & li {
     display: flex;
