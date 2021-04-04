@@ -134,14 +134,9 @@
 }
 
 @media (min-width: $breakpoint-lg) {
-  .navbar > ul {
-    &:first-of-type span {
-      display: block;
-      font-size: var(--navbar-first-list-span-font-size);
-    }
-
-    &:last-of-type span {
-      display: block;
-    }
+  .navbar > ul:first-of-type span {
+    display: inline;
+    font-size: var(--navbar-first-list-span-font-size);
+    text-align: var(--navbar-first-list-span-text-align);
   }
 }
