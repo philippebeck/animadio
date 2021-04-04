@@ -1,17 +1,17 @@
 /***** Variables : Colors *****/
 
 // Primary Colors
-$primary:   58, 58, 173   !default;
-$secondary: 52, 133, 86   !default;
-$pink:      255, 0, 255   !default;
-$red:       250, 128, 114 !default;
-$orange:    255, 140, 0   !default;
-$yellow:    255, 215, 0   !default;
-$brown:     139, 69, 19   !default;
-$green:     50, 205, 50   !default;
-$cyan:      0, 128, 128   !default;
-$blue:      30, 144, 255  !default;
-$violet:    106, 90, 205  !default;
+$primary:   65, 105, 225  !default; // RoyalBlue
+$secondary: 176, 196, 222 !default; // LightSteelBlue
+$pink:      255, 0, 255   !default; // Magenta
+$red:       250, 128, 114 !default; // Salmon
+$orange:    255, 140, 0   !default; // DarkOrange
+$yellow:    255, 215, 0   !default; // Gold
+$brown:     139, 69, 19   !default; // SaddleBrown
+$green:     50, 205, 50   !default; // LimeGreen
+$cyan:      0, 128, 128   !default; // Teal
+$blue:      30, 144, 255  !default; // DodgerBlue
+$violet:    106, 90, 205  !default; // SlateBlue
 
 $primary-colors: (
   "primary":    $primary,
@@ -28,10 +28,10 @@ $primary-colors: (
 ) !default;
 
 // Grayscale
-$black: 15, 15, 15    !default;
-$gray:  105, 105, 105 !default;
-$grey:  192, 192, 192 !default;
-$white: 255, 255, 240 !default;
+$black: 15, 15, 15    !default; // Black
+$gray:  105, 105, 105 !default; // DimGray
+$grey:  192, 192, 192 !default; // Silver
+$white: 255, 255, 240 !default; // Ivory
 
 $grayscale: (
   "black":  $black,
