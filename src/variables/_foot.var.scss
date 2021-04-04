@@ -4,21 +4,19 @@
   --foot-text-align: center;
   --foot-title-margin: 10px;
   --foot-title-font-size: 2rem;
-  --foot-title-color: var(--yellow);
-  --foot-title-hover-color: var(--orange);
+  --foot-title-color: var(--secondary);
   
   --foot-list-flex-direction: column;
   --foot-list-place-content: space-evenly;
   --foot-list-margin: 0;
-  --foot-list-background-color: var(--violet);
+  --foot-list-background-color: var(--primary);
   --foot-list-cursor: pointer;
   --foot-list-color: var(--white);
-  --foot-list-hover-color: var(--yellow);
+  --foot-list-hover-color: var(--secondary);
 
   --foot-target-margin-left: 2px;
   --foot-label-cursor: pointer;
-  --foot-label-color: var(--orange);
-  --foot-label-hover-color: var(--orange);
+  --foot-label-hover-color: var(--white);
   --foot-label-hover-transform: scale(1.2);
   --foot-label-hover-transition: transform 1s;
 
