@@ -1257,7 +1257,7 @@ footer {
   --table-even-background-color: var(--grey);
   --table-even-color: var(--black);
   --table-row-hover-background-color: var(--secondary);
-  --table-row-hover-color: var(--white);
+  --table-row-hover-color: var(--black);
 }
 
 @media (min-width: 576px) {
@@ -7505,4 +7505,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 4th Apr 2021 @ 5:13:12 PM */
+ Updated: 4th Apr 2021 @ 5:18:13 PM */

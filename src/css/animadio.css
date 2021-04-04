@@ -904,7 +904,7 @@ footer {
   --table-even-background-color: var(--grey);
   --table-even-color: var(--black);
   --table-row-hover-background-color: var(--secondary);
-  --table-row-hover-color: var(--white);
+  --table-row-hover-color: var(--black);
 }
 
 @media (min-width: 576px) {

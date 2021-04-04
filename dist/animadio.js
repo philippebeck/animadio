@@ -462,4 +462,4 @@ class Ajax {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 4th Apr 2021 @ 5:13:12 PM */
+ Updated: 4th Apr 2021 @ 5:18:13 PM */
