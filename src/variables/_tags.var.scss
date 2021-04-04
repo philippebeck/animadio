@@ -5,7 +5,7 @@
 }
 
 body {
-  --body-background-color: none;
+  --body-background-color: var(--secondary-light);
   --body-color: var(--black);
   --body-font-size: 2rem;
   --body-line-height: 1.6;
@@ -34,14 +34,14 @@ h6 {
 h1,
 h2,
 h3 {
-  --title-color: var(--blue);
+  --title-color: var(--primary);
   
 }
 
 h4,
 h5,
 h6 {
-  --title-color: var(--cyan);
+  --title-color: var(--blue);
   
 }
 
@@ -74,7 +74,7 @@ h6 {
 a {
   --link-outline: 0;
   --link-text-decoration: none;
-  --link-color: var(--blue);
+  --link-color: var(--primary);
 }
 
 ul {
