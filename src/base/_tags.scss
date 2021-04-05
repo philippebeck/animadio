@@ -1,7 +1,7 @@
 /***** Base : Tags *****/
 
 * {
-  box-sizing: border-box;
+  box-sizing: var(--all-box-sizing);
 }
 
 *:target {
@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: var(--html-font-size);
 }
 
 body {

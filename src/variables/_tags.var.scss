@@ -1,7 +1,12 @@
 /***** Variables : Tags *****/
 
 * {
+  --all-box-sizing: border-box;
   --target-margins: 7rem;
+}
+
+html {
+  --html-font-size: 62.5%;
 }
 
 body {
