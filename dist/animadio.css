@@ -1,4 +1,4 @@
-/*! animadio v4.2.1 | https://animadio.org | MIT License */
+/*! animadio v4.2.2 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -465,15 +465,20 @@ template {
 
 /***** Variables : Tags *****/
 * {
+  --all-box-sizing: border-box;
   --target-margins: 7rem;
 }
 
+html {
+  --html-font-size: 62.5%;
+  --html-scroll-behavior: smooth;
+}
+
 body {
-  --body-background-color: var(--secondary-light);
+  --body-background-color: var(--grey-light);
   --body-color: var(--black);
   --body-font-size: 2rem;
   --body-line-height: 1.6;
-  --body-scroll-behavior: smooth;
 }
 
 main {
@@ -549,8 +554,8 @@ figure {
 
 img,
 video {
-  --img-height: auto;
   --img-max-width: 100%;
+  --img-height: auto;
   --img-object-fit: contain;
 }
 
@@ -1725,7 +1730,7 @@ footer {
 }
 /***** Base : Tags *****/
 * {
-  box-sizing: border-box;
+  box-sizing: var(--all-box-sizing);
 }
 
 *:target {
@@ -1734,9 +1739,15 @@ footer {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: var(--html-font-size);
+  scroll-behavior: var(--html-scroll-behavior);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -1745,7 +1756,6 @@ body {
   font-family: var(--sans-serif);
   color: var(--body-color);
   background-color: var(--body-background-color);
-  scroll-behavior: var(--body-scroll-behavior);
 }
 
 main {
@@ -1788,10 +1798,10 @@ figure {
 
 img,
 video {
-  -o-object-fit: var(--img-object-fit);
-     object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
   height: var(--img-height);
+  -o-object-fit: var(--img-object-fit);
+     object-fit: var(--img-object-fit);
 }
 
 table {
@@ -7505,4 +7515,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 4th Apr 2021 @ 5:18:13 PM */
+ Updated: 5th Apr 2021 @ 9:38:37 AM */
