@@ -11,6 +11,13 @@
 
 html {
   font-size: var(--html-font-size);
+  scroll-behavior: var(--html-scroll-behavior);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -21,7 +28,6 @@ body {
   font-family: var(--sans-serif);
   color: var(--body-color);
   background-color: var(--body-background-color);
-  scroll-behavior: var(--body-scroll-behavior);
 }
 
 main {

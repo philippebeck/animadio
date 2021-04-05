@@ -7,6 +7,7 @@
 
 html {
   --html-font-size: 62.5%;
+  --html-scroll-behavior: smooth;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
   --body-color: var(--black);
   --body-font-size: 2rem;
   --body-line-height: 1.6;
-  --body-scroll-behavior: smooth;
 }
 
 main {
