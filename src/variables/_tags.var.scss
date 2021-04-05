@@ -1,15 +1,20 @@
 /***** Variables : Tags *****/
 
 * {
+  --all-box-sizing: border-box;
   --target-margins: 7rem;
 }
 
+html {
+  --html-font-size: 62.5%;
+  --html-scroll-behavior: smooth;
+}
+
 body {
-  --body-background-color: var(--secondary-light);
+  --body-background-color: var(--grey-light);
   --body-color: var(--black);
   --body-font-size: 2rem;
   --body-line-height: 1.6;
-  --body-scroll-behavior: smooth;
 }
 
 main {
@@ -87,8 +92,8 @@ figure {
 
 img,
 video {
-  --img-height: auto;
   --img-max-width: 100%;
+  --img-height: auto;
   --img-object-fit: contain;
 }
 

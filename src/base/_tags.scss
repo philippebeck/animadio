@@ -1,7 +1,7 @@
 /***** Base : Tags *****/
 
 * {
-  box-sizing: border-box;
+  box-sizing: var(--all-box-sizing);
 }
 
 *:target {
@@ -10,7 +10,14 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: var(--html-font-size);
+  scroll-behavior: var(--html-scroll-behavior);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -21,7 +28,6 @@ body {
   font-family: var(--sans-serif);
   color: var(--body-color);
   background-color: var(--body-background-color);
-  scroll-behavior: var(--body-scroll-behavior);
 }
 
 main {
@@ -63,9 +69,9 @@ figure {
 
 img,
 video {
-  object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
   height: var(--img-height);
+  object-fit: var(--img-object-fit);
 }
 
 table {
