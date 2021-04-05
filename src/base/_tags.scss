@@ -63,9 +63,9 @@ figure {
 
 img,
 video {
-  object-fit: var(--img-object-fit);
   max-width: var(--img-max-width);
   height: var(--img-height);
+  object-fit: var(--img-object-fit);
 }
 
 table {
