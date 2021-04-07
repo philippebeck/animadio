@@ -19,21 +19,15 @@
   border-style: var(--btn-border-style);
   border-width: var(--btn-border-width);
   border-radius: var(--btn-border-radius);
+  border-color: var(--btn-border-color);
+  background-color: var(--btn-background-color);
+  color: var(--btn-color);
 }
 
 [class*="button"] {
   border-style: var(--button-border-style);
   border-width: var(--button-border-width);
   border-radius: var(--button-border-radius);
-}
-
-.btn {
-  border-color: var(--btn-border-color);
-  background-color: var(--btn-background-color);
-  color: var(--btn-color);
-}
-
-.button {
   border-color: var(--button-border-color);
   background-color: var(--button-background-color);
   color: var(--button-color);
@@ -56,6 +50,9 @@
   border-style: var(--btn-hover-border-style);
   border-width: var(--btn-hover-border-width);
   box-shadow: var(--btn-hover-box-shadow);
+  border-color: var(--btn-hover-border-color);
+  background-color: var(--btn-hover-background-color);
+  color: var(--btn-hover-color);
 }
 
 [class*="button"]:hover,
@@ -64,19 +61,6 @@
   border-style: var(--button-hover-border-style);
   border-width: var(--button-hover-border-width);
   box-shadow: var(--button-hover-box-shadow);
-}
-
-.btn:hover,
-.btn:focus,
-.btn-check:checked + .btn {
-  border-color: var(--btn-hover-border-color);
-  background-color: var(--btn-hover-background-color);
-  color: var(--btn-hover-color);
-}
-
-.button:hover,
-.button:focus,
-.button-check:checked + .button {
   border-color: var(--button-hover-border-color);
   background-color: var(--button-hover-background-color);
   color: var(--button-hover-color);
