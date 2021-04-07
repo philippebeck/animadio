@@ -66,13 +66,13 @@ $btn-shapes: (
 [class*="btn"],
 [class*="button"] {
   --btn-margin: 10px;
-  --btn-padding: 5px 10px;
+  --btn-padding: 10px;
   --btn-font-size: 2rem;
   --btn-font-weight: bold;
   --btn-text-align: center;
 
   --btn-hover-border-radius: 5px;
-  --btn-hover-transition: background-color 1s;
+  --btn-hover-transition: all 300ms linear;
   --btn-hover-animation: none;
 
   --btn-checked-transform: scale(0.9);
@@ -89,25 +89,41 @@ $btn-shapes: (
 }
 
 [class*="btn"] {
-  --btn-border: solid thin var(--white);
+  --btn-border-style: solid;
+  --btn-border-width: medium;
   --btn-border-radius: 10px;
+
+  --btn-hover-border-style: solid;
+  --btn-hover-border-width: medium;
+  --btn-hover-box-shadow: inset 0 0 5px 5px;
+}
+
+.btn {
+  --btn-border-color: var(--white);
   --btn-background-color: var(--black);
   --btn-color: var(--white);
 
-  --btn-hover-border: solid thin var(--black);
-  --btn-hover-box-shadow: 5px 5px 5px var(--gray);
+  --btn-hover-border-color: var(--black);
   --btn-hover-background-color: var(--white);
   --btn-hover-color: var(--black);
 }
 
 [class*="button"] {
-  --button-border: inset medium var(--black);
+  --button-border-style: outset;
+  --button-border-width: medium;
   --button-border-radius: 5px;
+
+  --button-hover-border-style: solid;
+  --button-hover-border-width: medium;
+  --button-hover-box-shadow: inset 0 0 5px 5px;
+}
+
+.button {
+  --button-border-color: var(--black);
   --button-background-color: var(--white);
   --button-color: var(--black);
 
-  --button-hover-border: double medium var(--white);
-  --button-hover-box-shadow: inset 0 0 10px;
+  --button-hover-border-color: var(--white);
   --button-hover-background-color: var(--black);
   --button-hover-color: var(--white);
 }
