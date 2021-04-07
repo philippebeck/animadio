@@ -32,7 +32,7 @@
   }
 
   &-auto {
-    top: var(--slider-auto-top);
+    bottom: var(--slider-auto-bottom);
     left: var(--slider-auto-left);
     opacity: var(--slider-auto-opacity);
   }
