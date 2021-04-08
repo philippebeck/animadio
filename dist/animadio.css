@@ -1,4 +1,4 @@
-/*! animadio v4.2.4 | https://animadio.org | MIT License */
+/*! animadio v4.2.5 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -4158,6 +4158,15 @@ pre > *::selection {
   transition: var(--sidebar-child-hover-transition);
 }
 
+.sidebar-open,
+.sidebar-check:checked ~ * {
+  display: none;
+}
+
+.sidebar-check:checked ~ .sidebar-open {
+  display: flex;
+}
+
 .sidebar-relay > * {
   display: none;
 }
@@ -4173,8 +4182,7 @@ pre > *::selection {
 .sidebar-radio6:checked ~ .sidebar [for*=sidebar-][for*=-radio6],
 .sidebar-radio7:checked ~ .sidebar [for*=sidebar-][for*=-radio7],
 .sidebar-radio8:checked ~ .sidebar [for*=sidebar-][for*=-radio8],
-.sidebar-radio9:checked ~ .sidebar [for*=sidebar-][for*=-radio9],
-.sidebar-radio0:checked ~ .sidebar [for*=sidebar-][for*=-radio0] {
+.sidebar-radio9:checked ~ .sidebar [for*=sidebar-][for*=-radio9] {
   font-weight: var(--sidebar-checked-child-font-weight);
   background-color: var(--sidebar-checked-child-background-color);
   color: var(--sidebar-checked-child-color);
@@ -4187,8 +4195,7 @@ pre > *::selection {
 .sidebar-radio6:checked ~ .sidebar [for*=sidebar-][for*=-radio6]:hover,
 .sidebar-radio7:checked ~ .sidebar [for*=sidebar-][for*=-radio7]:hover,
 .sidebar-radio8:checked ~ .sidebar [for*=sidebar-][for*=-radio8]:hover,
-.sidebar-radio9:checked ~ .sidebar [for*=sidebar-][for*=-radio9]:hover,
-.sidebar-radio0:checked ~ .sidebar [for*=sidebar-][for*=-radio0]:hover {
+.sidebar-radio9:checked ~ .sidebar [for*=sidebar-][for*=-radio9]:hover {
   background-color: var(--sidebar-child-hover-background-color);
 }
 
@@ -4200,8 +4207,7 @@ pre > *::selection {
 .sidebar-radio6:checked ~ .sidebar-relay .sidebar-target6,
 .sidebar-radio7:checked ~ .sidebar-relay .sidebar-target7,
 .sidebar-radio8:checked ~ .sidebar-relay .sidebar-target8,
-.sidebar-radio9:checked ~ .sidebar-relay .sidebar-target9,
-.sidebar-radio0:checked ~ .sidebar-relay .sidebar-target0 {
+.sidebar-radio9:checked ~ .sidebar-relay .sidebar-target9 {
   display: block;
 }
 
@@ -7545,4 +7551,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 7th Apr 2021 @ 6:43:41 PM */
+ Updated: 8th Apr 2021 @ 8:49:02 PM */
