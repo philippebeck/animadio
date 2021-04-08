@@ -32,6 +32,15 @@
   }
 }
 
+.sidebar-open,
+.sidebar-check:checked ~ * {
+  display: none;
+}
+
+.sidebar-check:checked ~ .sidebar-open {
+  display: flex;
+}
+
 .sidebar-relay {
   & > * {
     display: none;
@@ -54,8 +63,7 @@
 .sidebar-radio6:checked ~ .sidebar [for*="sidebar-"][for*="-radio6"],
 .sidebar-radio7:checked ~ .sidebar [for*="sidebar-"][for*="-radio7"],
 .sidebar-radio8:checked ~ .sidebar [for*="sidebar-"][for*="-radio8"],
-.sidebar-radio9:checked ~ .sidebar [for*="sidebar-"][for*="-radio9"],
-.sidebar-radio0:checked ~ .sidebar [for*="sidebar-"][for*="-radio0"] {
+.sidebar-radio9:checked ~ .sidebar [for*="sidebar-"][for*="-radio9"] {
   font-weight: var(--sidebar-checked-child-font-weight);
   background-color: var(--sidebar-checked-child-background-color);
   color: var(--sidebar-checked-child-color);
@@ -73,7 +81,6 @@
 .sidebar-radio6:checked ~ .sidebar-relay .sidebar-target6,
 .sidebar-radio7:checked ~ .sidebar-relay .sidebar-target7,
 .sidebar-radio8:checked ~ .sidebar-relay .sidebar-target8,
-.sidebar-radio9:checked ~ .sidebar-relay .sidebar-target9,
-.sidebar-radio0:checked ~ .sidebar-relay .sidebar-target0 {
+.sidebar-radio9:checked ~ .sidebar-relay .sidebar-target9 {
   display: block;
 }
