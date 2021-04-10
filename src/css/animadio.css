@@ -1068,7 +1068,7 @@ footer {
   --canvas-controls-border-radius: 10px;
   --canvas-controls-width: 300px;
   --canvas-controls-background-color: var(--primary-dark);
-  --canvas-controls-opacity: 0;
+  --canvas-controls-opacity: 1;
   --canvas-controls-transition: opacity 1s;
   --canvas-controls-list-flex-direction: column;
   --canvas-controls-list-place-items: center;
@@ -1077,6 +1077,11 @@ footer {
   --canvas-controls-label-color: var(--white);
 }
 
+@media (min-width: 1200px) {
+  .canvas {
+    --canvas-controls-opacity: 0;
+  }
+}
 /***** Base : Keyframes *****/
 @keyframes slideT {
   from {

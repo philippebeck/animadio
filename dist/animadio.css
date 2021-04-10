@@ -1,4 +1,4 @@
-/*! animadio v4.2.5 | https://animadio.org | MIT License */
+/*! animadio v4.2.6 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -1421,7 +1421,7 @@ footer {
   --canvas-controls-border-radius: 10px;
   --canvas-controls-width: 300px;
   --canvas-controls-background-color: var(--primary-dark);
-  --canvas-controls-opacity: 0;
+  --canvas-controls-opacity: 1;
   --canvas-controls-transition: opacity 1s;
   --canvas-controls-list-flex-direction: column;
   --canvas-controls-list-place-items: center;
@@ -1430,6 +1430,11 @@ footer {
   --canvas-controls-label-color: var(--white);
 }
 
+@media (min-width: 1200px) {
+  .canvas {
+    --canvas-controls-opacity: 0;
+  }
+}
 /***** Base : Keyframes *****/
 @-webkit-keyframes slideT {
   from {
@@ -7551,4 +7556,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 8th Apr 2021 @ 8:49:02 PM */
+ Updated: 10th Apr 2021 @ 10:48:49 PM */
