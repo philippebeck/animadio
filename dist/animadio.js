@@ -1,4 +1,4 @@
-/*! animadio v4.2.6 | https://animadio.org | MIT License */
+/*! animadio v4.2.7 | https://animadio.org | MIT License */
 
 "use strict";
 
@@ -207,16 +207,20 @@ class Slider {
 
 class Canvas {
   /**
-   * @param {number} width
-   * @param {number} height
-   * @param {number} line
-   * @param {string} color
+   * @param {number} canvasWidth
+   * @param {number} canvasHeight
+   * @param {number} lineWidth
+   * @param {string} lineColor
    */
-  constructor(width = 500, height = 500, line = 2, color = "blue") {
-    this.canvasElt  = null;
-    this.lineElt    = null;
-    this.colorElt   = null;
-    this.cleanerElt = null;
+  constructor(canvasWidth = 500, 
+              canvasHeight = 500, 
+              lineWidth = 2, 
+              lineColor = "blue") {
+
+    this.canvasElt    = null;
+    this.lineWidthElt = null;
+    this.lineColorElt = null;
+    this.cleanerElt   = null;
 
     this.context = null;
 
@@ -229,14 +233,13 @@ class Canvas {
     this.touchY = 0;
 
     this.getCanvasElt();
-    this.getLineElt();
-    this.getColorElt();
-    this.getCleanerElt();
+    this.getOptionsElt();
 
-    this.setCanvas(width, height);
-    this.setContext(line, color);
-    this.setPanelListeners();
+    this.setCanvasDimensions(canvasWidth, canvasHeight);
+    this.setContext2d(lineWidth, lineColor);
+    
     this.setCanvasListeners();
+    this.setOptionsListeners();
   }
 
   /*****************************/
@@ -252,31 +255,35 @@ class Canvas {
     }
   }
 
-  getLineElt() {
-    if (document.getElementById("canvas-line")) {
-      this.lineElt = document.getElementById("canvas-line");
+  getOptionsElt() {
+    if (document.getElementById("line-color")) {
+      this.lineColorElt = document.getElementById("line-color");
+    }
 
-    } else {
-      alert("No <input id=\"canvas-line\"> element is present!");
+    if (document.getElementById("line-width")) {
+      this.lineWidthElt = document.getElementById("line-width");
+    }
+
+    if (document.getElementById("cleaner")) {
+      this.cleanerElt = document.getElementById("cleaner");
     }
   }
 
-  getColorElt() {
-    if (document.getElementById("canvas-color")) {
-      this.colorElt = document.getElementById("canvas-color");
-
-    } else {
-      alert("No <input id=\"canvas-color\"> element is present!");
-    }
+  /**
+   * @param {object} event
+   */
+   getMouseLocation(event) {
+    this.mouseX = event.offsetX;
+    this.mouseY = event.offsetY;
   }
 
-  getCleanerElt() {
-    if (document.getElementById("canvas-cleaner")) {
-      this.cleanerElt = document.getElementById("canvas-cleaner");
-
-    } else {
-      alert("No <button id=\"canvas-cleaner\"> element is present!");
-    }
+  /**
+   * @param {object} event
+   */
+  getTouchLocation(event) {
+    let position  = event.target.getBoundingClientRect();
+    this.touchX   = event.targetTouches[0].clientX - position.left;
+    this.touchY   = event.targetTouches[0].clientY - position.top;
   }
 
   /*****************************/
@@ -287,7 +294,7 @@ class Canvas {
    * @param {number} width
    * @param {number} height
    */
-  setCanvas(width, height) {
+  setCanvasDimensions(width, height) {
     if (this.canvasElt) {
       this.canvasElt.width   = width;
       this.canvasElt.height  = height;
@@ -295,15 +302,15 @@ class Canvas {
   }
 
   /**
-   * @param {number} line
-   * @param {string} color
+   * @param {number} lineWidth
+   * @param {string} strokeStyle
    */
-  setContext(line, color) {
+  setContext2d(lineWidth, strokeStyle) {
     if (this.canvasElt.getContext) {
       this.context = this.canvasElt.getContext("2d");
 
-      this.context.lineWidth    = line;
-      this.context.strokeStyle  = color;
+      this.context.lineWidth    = lineWidth;
+      this.context.strokeStyle  = strokeStyle;
       this.context.lineCap      = "round";
       this.context.lineJoin     = "round";
 
@@ -312,52 +319,38 @@ class Canvas {
     }
   }
 
-  setPanelListeners() {
-    if (this.lineElt) {
-      this.lineElt.addEventListener("input", this.setLine.bind(this));
+  setCanvasListeners() {
+    if (this.canvasElt) {
+ 
+     this.canvasElt.addEventListener("mousedown", this.moveInCanvas.bind(this, "mouse"));
+     this.canvasElt.addEventListener("mousemove", this.drawInCanvas.bind(this, "mouse"));
+     this.canvasElt.addEventListener("mouseup", this.stopDrawing.bind(this));
+     this.canvasElt.addEventListener("mouseout", this.stopDrawing.bind(this));
+ 
+     this.canvasElt.addEventListener("touchstart", this.moveInCanvas.bind(this, "touch"));
+     this.canvasElt.addEventListener("touchmove", this.drawInCanvas.bind(this, "touch"));
+     this.canvasElt.addEventListener("touchend", this.stopDrawing.bind(this));
+     this.canvasElt.addEventListener("touchcancel", this.stopDrawing.bind(this));
+    }
+   }
+
+  setOptionsListeners() {
+    if (this.lineWidthElt) {
+      this.lineWidthElt.addEventListener("input", this.setLineWidth.bind(this));
     }
 
-    if (this.colorElt) {
-      this.colorElt.addEventListener("input", this.setColor.bind(this));
+    if (this.lineColorElt) {
+      this.lineColorElt.addEventListener("input", this.setStrokeStyle.bind(this));
     }
 
     if (this.cleanerElt) {
-      this.cleanerElt.addEventListener("click", this.cleanCanvas.bind(this));
+      this.cleanerElt.addEventListener("click", this.clearCanvas.bind(this));
     }
-  }
-
- setCanvasListeners() {
-   if (this.canvasElt) {
-
-    this.canvasElt.addEventListener("mousedown", this.moveInCanvas.bind(this, "mouse"));
-    this.canvasElt.addEventListener("mousemove", this.drawInCanvas.bind(this, "mouse"));
-    this.canvasElt.addEventListener("mouseup", this.stopDrawing.bind(this));
-    this.canvasElt.addEventListener("mouseout", this.stopDrawing.bind(this));
-
-    this.canvasElt.addEventListener("touchstart", this.moveInCanvas.bind(this, "touch"));
-    this.canvasElt.addEventListener("touchmove", this.drawInCanvas.bind(this, "touch"));
-    this.canvasElt.addEventListener("touchend", this.stopDrawing.bind(this));
-    this.canvasElt.addEventListener("touchcancel", this.stopDrawing.bind(this));
-   }
   }
 
   /*******************************/
   /********** LISTENERS **********/
   /*******************************/
-
-
-  setLine() {
-    this.context.lineWidth = this.lineElt.value;
-  }
-
-  setColor() {
-    this.context.strokeStyle = this.colorElt.value;
-  }
-
-  cleanCanvas() {
-    this.context.clearRect(0, 0, this.canvasElt.width, this.canvasElt.height);
-    this.endState = false;
-  }
 
   /**
    * @param {string} type
@@ -411,25 +404,17 @@ class Canvas {
     this.endState   = true;
   }
 
-  /***********************************/
-  /********** GET LOCATIONS **********/
-  /***********************************/
-
-  /**
-   * @param {object} event
-   */
-   getMouseLocation(event) {
-    this.mouseX = event.offsetX;
-    this.mouseY = event.offsetY;
+  setLineWidth() {
+    this.context.lineWidth = this.lineWidthElt.value;
   }
 
-  /**
-   * @param {object} event
-   */
-  getTouchLocation(event) {
-    let position  = event.target.getBoundingClientRect();
-    this.touchX   = event.targetTouches[0].clientX - position.left;
-    this.touchY   = event.targetTouches[0].clientY - position.top;
+  setStrokeStyle() {
+    this.context.strokeStyle = this.lineColorElt.value;
+  }
+
+  clearCanvas() {
+    this.context.clearRect(0, 0, this.canvasElt.width, this.canvasElt.height);
+    this.endState = false;
   }
 
   /*************************************/
@@ -544,4 +529,4 @@ class Ajax {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 10th Apr 2021 @ 10:48:49 PM */
+ Updated: 11th Apr 2021 @ 12:38:36 AM */
