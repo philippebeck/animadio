@@ -30,7 +30,7 @@ class Canvas {
 
     this.setCanvasDimensions(canvasWidth, canvasHeight);
     this.setContext2d(lineWidth, lineColor);
-    
+
     this.setCanvasListeners();
     this.setOptionsListeners();
   }
@@ -164,7 +164,7 @@ class Canvas {
         break;
 
       default:
-        alert("Event type must be \"mouse\" or \"touch\"!");
+        alert("Event type must be mouse or touch!");
     }
   }
 
@@ -187,7 +187,7 @@ class Canvas {
           break;
 
         default:
-          alert("Event type must be \"mouse\" or \"touch\"!");
+          alert("Event type must be mouse or touch!");
       }
     }
   }
