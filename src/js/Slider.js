@@ -231,10 +231,9 @@ class Slider {
    * @param {string} remove
    */
   setAuto(state, title, add, remove) {
-    this.autoState      = state;
-    this.autoElt.title  = title;
-
-    this.switchIcon(this.autoIcon, add, remove);
+    this.setState(this.autoState, state);
+    this.setTitle(this.autoElt, title);
+    this.setIcon(this.autoIcon, add, remove);
   }
 
   /**
@@ -244,10 +243,25 @@ class Slider {
    * @param {string} remove
    */
   setRandom(state, title, add, remove) {
-    this.randomState      = state;
-    this.randomElt.title  = title;
+    this.setState(this.randomState, state);
+    this.setTitle(this.randomElt, title);
+    this.setIcon(this.randomIcon, add, remove);
+  }
 
-    this.switchIcon(this.randomIcon, add, remove);
+  /**
+   * @param {boolean} optionState
+   * @param {boolean} state
+   */
+  setState(optionState, state) {
+    optionState = state;
+  }
+
+  /**
+   * @param {object} element
+   * @param {string} title
+   */
+  setTitle(element, title) {
+    element.title = title;
   }
 
   /**
@@ -255,7 +269,7 @@ class Slider {
    * @param {string} add
    * @param {string} remove
    */
-  switchIcon(icon, add, remove) {
+  setIcon(icon, add, remove) {
     icon.classList.add(add);
     icon.classList.remove(remove);
   }
