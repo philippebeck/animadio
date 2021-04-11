@@ -3,8 +3,10 @@
 .slider {
   --slider-margin: var(--slider-figcaption-height) auto -20px;
   --slider-width: 100%;
+  --slider-relay-text-align: center;
 
   --slider-figcaption-top: -45%;
+  --slider-figcaption-left: 0;
   --slider-figcaption-padding: 5px 20px;
   --slider-figcaption-width: 100%;
   --slider-figcaption-height: 20%;

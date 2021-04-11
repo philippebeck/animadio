@@ -5,6 +5,10 @@
   margin: var(--slider-margin);
   width: var(--slider-width);
 
+  & > .slider-relay {
+    text-align: var(--slider-relay-text-align);
+  }
+
   & [class*="target"] {
     display: none;
   }
@@ -12,6 +16,7 @@
   & figcaption {
     position: absolute;
     top: var(--slider-figcaption-top);
+    left: var(--slider-figcaption-left);
     padding: var(--slider-figcaption-padding);
     width: var(--slider-figcaption-width);
     height: var(--slider-figcaption-height);
