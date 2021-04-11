@@ -40,14 +40,12 @@ h1,
 h2,
 h3 {
   --title-color: var(--primary);
-  
 }
 
 h4,
 h5,
 h6 {
   --title-color: var(--blue);
-  
 }
 
 h1 {
@@ -55,7 +53,7 @@ h1 {
 }
 
 h2 {
-  --title-font-size: calc(var(--body-font-size) * 2)
+  --title-font-size: calc(var(--body-font-size) * 2);
 }
 
 h3 {
