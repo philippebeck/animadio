@@ -1,18 +1,15 @@
 /***** Classes : Canvas *****/
 
-.canvas {
-  & > canvas {
-    border: var(--canvas-border);
-    border-radius: var(--canvas-border-radius);
-    background-color: var(--canvas-background-color);
-    cursor: var(--canvas-cursor);
-  }
+[class*="canvas"] {
+  display: block;
+}
 
-  &:hover > .canvas-controls,
-  &:focus > .canvas-controls {
-    opacity: var(--canvas-hover-controls-opacity);
-    transition: var(--canvas-hover-controls-transition);
-  }
+.canvas {
+  margin: var(--canvas-margin);
+  border: var(--canvas-border);
+  border-radius: var(--canvas-border-radius);
+  background-color: var(--canvas-background-color);
+  cursor: var(--canvas-cursor);
 }
 
 .canvas-controls {
@@ -24,15 +21,26 @@
   opacity: var(--canvas-controls-opacity);
   transition: var(--canvas-controls-transition);
 
-  & li {
+  &:hover,
+  &:focus {
+    opacity: var(--canvas-controls-hover-opacity);
+    transition: var(--canvas-controls-hover-transition);
+  }
+
+  & > * {
     display: flex;
-    flex-direction: var(--canvas-controls-list-flex-direction);
-    place-items: var(--canvas-controls-list-place-items);
-    margin: var(--canvas-controls-list-margin);
+    flex-direction: var(--canvas-child-flex-direction);
+    place-items: var(--canvas-child-place-items);
+    margin: var(--canvas-child-margin);
   }
 
   & label {
-    padding: var(--canvas-controls-label-padding);
-    color: var(--canvas-controls-label-color);
+    padding: var(--canvas-label-padding);
+    color: var(--canvas-label-color);
+  }
+
+  & input,
+  & button {
+    cursor: var(--canvas-options-cursor);
   }
 }

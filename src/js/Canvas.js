@@ -69,16 +69,16 @@ class Canvas {
   }
 
   setOptions() {
-    if (document.getElementById("line-color")) {
-      this.lineColorElt = document.getElementById("line-color");
+    if (document.getElementById("canvas-line-color")) {
+      this.lineColorElt = document.getElementById("canvas-line-color");
     }
 
-    if (document.getElementById("line-width")) {
-      this.lineWidthElt = document.getElementById("line-width");
+    if (document.getElementById("canvas-line-width")) {
+      this.lineWidthElt = document.getElementById("canvas-line-width");
     }
 
-    if (document.getElementById("cleaner")) {
-      this.cleanerElt = document.getElementById("cleaner");
+    if (document.getElementById("canvas-cleaner")) {
+      this.cleanerElt = document.getElementById("canvas-cleaner");
     }
   }
 

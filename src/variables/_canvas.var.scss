@@ -1,13 +1,11 @@
 /***** Variables : Canvas *****/
 
-.canvas {
+[class*="canvas"] {
+  --canvas-margin: 20px auto;
   --canvas-border: medium dashed var(--secondary);
   --canvas-border-radius: 20px;
   --canvas-background-color: var(--white);
   --canvas-cursor: crosshair;
-
-  --canvas-hover-controls-opacity: 1;
-  --canvas-hover-controls-transition: opacity 2s;
 
   --canvas-controls-margin: auto;
   --canvas-controls-border: thin solid var(--primary);
@@ -16,17 +14,19 @@
   --canvas-controls-background-color: var(--primary-dark);
   --canvas-controls-opacity: 1;
   --canvas-controls-transition: opacity 1s;
+  --canvas-controls-hover-opacity: 1;
+  --canvas-controls-hover-transition: opacity 2s;
 
-  --canvas-controls-list-flex-direction: column;
-  --canvas-controls-list-place-items: center;
-  --canvas-controls-list-margin: 5px;
-
-  --canvas-controls-label-padding: 5px;
-  --canvas-controls-label-color: var(--white);
+  --canvas-child-flex-direction: column;
+  --canvas-child-place-items: center;
+  --canvas-child-margin: 5px;
+  --canvas-label-padding: 5px;
+  --canvas-label-color: var(--white);
+  --canvas-options-cursor: pointer;
 }
 
 @media (min-width: $breakpoint-xl) {
-  .canvas {
-    --canvas-controls-opacity: 0;
+  .canvas-controls {
+    --canvas-controls-opacity: 0.1;
   }
 }
