@@ -27,9 +27,10 @@ class Slider {
     this.randomIcon   = null;
     this.randomState  = random;
 
-    this.setSliderElt();
+    this.setSlider();
     this.setSlidesTriggers();
-    this.setOptionsElt();
+    this.setOptions();
+    this.setIcons();
     this.setListeners();
 
     this.runSlider();
@@ -39,7 +40,7 @@ class Slider {
   /********** INIT METHODS **********/
   /**********************************/
 
-  setSliderElt() {
+  setSlider() {
     if (document.getElementById("slider")) {
       this.sliderElt = document.getElementById("slider");
 
@@ -55,7 +56,7 @@ class Slider {
     } 
   }
 
-  setOptionsElt() {
+  setOptions() {
     if (document.getElementById("slider-previous")) {
       this.previousElt = document.getElementById("slider-previous");
     }
@@ -71,7 +72,9 @@ class Slider {
     if (document.getElementById("slider-random")) {
       this.randomElt = document.getElementById("slider-random");
     }
+  }
 
+  setIcons() {
     if (this.autoElt.querySelector("i")) {
       this.autoIcon = this.autoElt.querySelector("i");
     }
@@ -231,7 +234,7 @@ class Slider {
     this.autoState      = state;
     this.autoElt.title  = title;
 
-    this.setIcon(this.autoIcon, add, remove);
+    this.switchIcon(this.autoIcon, add, remove);
   }
 
   /**
@@ -244,7 +247,7 @@ class Slider {
     this.randomState      = state;
     this.randomElt.title  = title;
 
-    this.setIcon(this.randomIcon, add, remove);
+    this.switchIcon(this.randomIcon, add, remove);
   }
 
   /**
@@ -252,7 +255,7 @@ class Slider {
    * @param {string} add
    * @param {string} remove
    */
-  setIcon(icon, add, remove) {
+  switchIcon(icon, add, remove) {
     icon.classList.add(add);
     icon.classList.remove(remove);
   }
