@@ -4,6 +4,7 @@
   & > canvas {
     border: var(--canvas-border);
     border-radius: var(--canvas-border-radius);
+    background-color: var(--canvas-background-color);
     cursor: var(--canvas-cursor);
   }
 
