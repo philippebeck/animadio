@@ -1,4 +1,4 @@
-/*! animadio v4.2.8 | https://animadio.org | MIT License */
+/*! animadio v4.2.9 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -1412,12 +1412,12 @@ footer {
   }
 }
 /***** Variables : Canvas *****/
-[class*=canvas] {
-  --canvas-margin: 20px auto;
+.canvas {
   --canvas-border: medium dashed var(--secondary);
   --canvas-border-radius: 20px;
-  --canvas-background-color: var(--white);
   --canvas-cursor: crosshair;
+  --canvas-hover-controls-opacity: 1;
+  --canvas-hover-controls-transition: opacity 2s;
   --canvas-controls-margin: auto;
   --canvas-controls-border: thin solid var(--primary);
   --canvas-controls-border-radius: 10px;
@@ -1425,19 +1425,16 @@ footer {
   --canvas-controls-background-color: var(--primary-dark);
   --canvas-controls-opacity: 1;
   --canvas-controls-transition: opacity 1s;
-  --canvas-controls-hover-opacity: 1;
-  --canvas-controls-hover-transition: opacity 2s;
-  --canvas-child-flex-direction: column;
-  --canvas-child-place-items: center;
-  --canvas-child-margin: 5px;
-  --canvas-label-padding: 5px;
-  --canvas-label-color: var(--white);
-  --canvas-options-cursor: pointer;
+  --canvas-controls-list-flex-direction: column;
+  --canvas-controls-list-place-items: center;
+  --canvas-controls-list-margin: 5px;
+  --canvas-controls-label-padding: 5px;
+  --canvas-controls-label-color: var(--white);
 }
 
 @media (min-width: 1200px) {
-  .canvas-controls {
-    --canvas-controls-opacity: 0.1;
+  .canvas {
+    --canvas-controls-opacity: 0;
   }
 }
 /***** Base : Keyframes *****/
@@ -4639,16 +4636,14 @@ pre > *::selection {
 }
 
 /***** Classes : Canvas *****/
-[class*=canvas] {
-  display: block;
-}
-
-.canvas {
-  margin: var(--canvas-margin);
+.canvas > canvas {
   border: var(--canvas-border);
   border-radius: var(--canvas-border-radius);
-  background-color: var(--canvas-background-color);
   cursor: var(--canvas-cursor);
+}
+.canvas:hover > .canvas-controls, .canvas:focus > .canvas-controls {
+  opacity: var(--canvas-hover-controls-opacity);
+  transition: var(--canvas-hover-controls-transition);
 }
 
 .canvas-controls {
@@ -4660,22 +4655,15 @@ pre > *::selection {
   opacity: var(--canvas-controls-opacity);
   transition: var(--canvas-controls-transition);
 }
-.canvas-controls:hover, .canvas-controls:focus {
-  opacity: var(--canvas-controls-hover-opacity);
-  transition: var(--canvas-controls-hover-transition);
-}
-.canvas-controls > * {
+.canvas-controls li {
   display: flex;
-  flex-direction: var(--canvas-child-flex-direction);
-  place-items: var(--canvas-child-place-items);
-  margin: var(--canvas-child-margin);
+  flex-direction: var(--canvas-controls-list-flex-direction);
+  place-items: var(--canvas-controls-list-place-items);
+  margin: var(--canvas-controls-list-margin);
 }
 .canvas-controls label {
-  padding: var(--canvas-label-padding);
-  color: var(--canvas-label-color);
-}
-.canvas-controls input, .canvas-controls button {
-  cursor: var(--canvas-options-cursor);
+  padding: var(--canvas-controls-label-padding);
+  color: var(--canvas-controls-label-color);
 }
 
 /***** Classes : Box *****/
@@ -7574,4 +7562,4 @@ pre > *::selection {
 }
 
 /*! Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 11th Apr 2021 @ 12:58:23 PM */
+ Updated: 28th Apr 2021 @ 12:56:51 PM */
