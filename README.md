@@ -7,9 +7,9 @@
 -   Management of **keyframes animations** & their options
 -   Complete & simple customization with directly modifiable **CSS variables**
 
-[![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/299d541b73494c259debb80a0b25b9cc)](https://www.codacy.com/gh/animadio/animadio/dashboard)
-[![Maintainability](https://api.codeclimate.com/v1/badges/ad3b450099d132b4d98d/maintainability)](https://codeclimate.com/github/animadio/animadio/maintainability)
+[![GitHub Version](https://img.shields.io/github/package-json/v/philippebeck/animadio.svg?label=Version)](https://github.com/philippebeck/animadio/blob/master/package.json)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/0346a8c0d14a4b5984eb30f7282f80b9)](https://www.codacy.com/gh/philippebeck/animadio/dashboard)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0b594827e537b04dcea0/maintainability)](https://codeclimate.com/github/philippebeck/animadio/maintainability)
 
 ## Summary
 
@@ -53,9 +53,9 @@ Yarn : `yarn add animadio`
 
 ## Download
 
-[Latest Release](https://github.com/animadio/animadio/releases)  
+[Latest Release](https://github.com/philippebeck/animadio/releases)  
 
-`git clone https://github.com/animadio/animadio.git`  
+`git clone https://github.com/philippebeck/animadio.git`  
   
 ---
 
@@ -69,9 +69,9 @@ The main library distribution is :
 
 ## Support
 
-Animadio has continuous support & community networks will give all news !
+Animadio has continuous support !
 
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/animadio/animadio.svg?label=Last+Commit)](https://github.com/animadio/animadio/commits/master)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/philippebeck/animadio.svg?label=Last+Commit)](https://github.com/philippebeck/animadio/commits/master)
 
 ---
 
@@ -85,13 +85,7 @@ Animadio uses PostCSS with autoprefixer to provide a maximum of compatibility fo
 
 CodePen : [@animadio](https://codepen.io/animadio)
 
-[![GitHub Stars](https://img.shields.io/github/stars/animadio/animadio.svg?label=GitHub+:+animadio+|+Stars)](https://github.com/animadio/animadio)
-
----
-
-## Community
-
-[![Twitter Follow](https://badgen.net/twitter/follow/animadio)](https://twitter.com/animadio)
+[![GitHub Stars](https://img.shields.io/github/stars/philippebeck/animadio.svg?label=GitHub+:+animadio+|+Stars)](https://github.com/philippebeck/animadio)
 
 ---
 
@@ -107,7 +101,7 @@ Animadio Documentation is available for the V4 !
 
 Issues can be created here
 
-[![GitHub Open Issues](https://img.shields.io/github/issues/animadio/animadio.svg?label=Issues)](https://github.com/animadio/animadio/issues)
+[![GitHub Open Issues](https://img.shields.io/github/issues/philippebeck/animadio.svg?label=Issues)](https://github.com/philippebeck/animadio/issues)
 
 ---
 
@@ -115,7 +109,7 @@ Issues can be created here
 
 And Pull Requests can be created there
 
-[![GitHub Open Pull Requests](https://img.shields.io/github/issues-pr/animadio/animadio.svg?label=Pull+Requests)](https://github.com/animadio/animadio/pulls)
+[![GitHub Open Pull Requests](https://img.shields.io/github/issues-pr/philippebeck/animadio.svg?label=Pull+Requests)](https://github.com/philippebeck/animadio/pulls)
 
 ---
 
@@ -123,7 +117,7 @@ And Pull Requests can be created there
 
 Animadio needs you if you like it : sends pull requests on GitHub to improve it !!
 
-[![GitHub Contributors](https://img.shields.io/github/contributors/animadio/animadio.svg?label=Contributors)](https://github.com/animadio/animadio/graphs/contributors)
+[![GitHub Contributors](https://img.shields.io/github/contributors/philippebeck/animadio.svg?label=Contributors)](https://github.com/philippebeck/animadio/graphs/contributors)
 
 ---
 
@@ -131,7 +125,7 @@ Animadio needs you if you like it : sends pull requests on GitHub to improve it 
 
 Animadio is maintained under the [Semantic Versioning 2.0.0](https://semver.org)
 
-[![GitHub Version](https://img.shields.io/github/package-json/v/animadio/animadio.svg?label=Version)](https://github.com/animadio/animadio/blob/master/package.json)
+[![GitHub Version](https://img.shields.io/github/package-json/v/philippebeck/animadio.svg?label=Version)](https://github.com/philippebeck/animadio/blob/master/package.json)
 
 ---
 
@@ -149,4 +143,4 @@ Philippe Beck
 
 Code released under the MIT License
 
-[![GitHub License](https://img.shields.io/npm/l/animadio.svg?label=License)](https://github.com/animadio/animadio/blob/master/LICENSE)
+[![GitHub License](https://img.shields.io/npm/l/animadio.svg?label=License)](https://github.com/philippebeck/animadio/blob/master/LICENSE)
