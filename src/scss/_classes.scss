@@ -1,0 +1,289 @@
+/********** HIDDEN CONTROLS **********/
+[class*=check],
+[class*=radio] {
+  display: none !important;
+}
+
+/********** DISPLAY **********/
+@each $key, $value in $displays {
+  @include display($key, "display", $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $displays {
+      @include display("#{$key}-#{$type}", "display", $value);
+    }
+  }
+}
+
+/********** CONTAINER **********/
+[class*="container"] {
+  margin: auto;
+  max-width: var(--container-max-width);
+}
+
+@each $key, $value in $containers {
+  @include container($key, "tn", $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $containers {
+      @include container($key, $type, $value);
+    }
+  }
+}
+
+/********** FLEX **********/
+.flex,
+.col,
+.row,
+.col-rev,
+.row-rev {
+  display: flex;
+  place-content: var(--flex-place-content);
+}
+
+.col,
+.col-rev {
+  padding: var(--column-padding);
+}
+
+.row,
+.row-rev {
+  padding: var(--row-padding);
+}
+
+.flex {
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col-rev {
+  flex-direction: column-reverse;
+}
+
+.row-rev {
+  flex-direction: row-reverse;
+}
+
+/********** GRID **********/
+[class*="grid"] {
+  display: grid;
+  max-width: var(--grid-max-width);
+  margin: var(--grid-margin);
+}
+
+@for $i from 2 to 13 {
+  @include grid-template($i, "tn");
+}
+
+@each $key, $value in $breakpoints {
+  @media (min-width: $value) {
+    @for $i from 2 to 13 {
+      @include grid-template($i, $key);
+    }
+  }
+}
+
+/********** GAP **********/
+@include gap("tn");
+
+@each $key, $value in $breakpoints {
+  @media (min-width: $value) {
+    @include gap($key);
+  }
+}
+
+/********** PLACE CONTENT **********/
+@each $key, $value in $place-content {
+  @include place-content($key, "", $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $place-content {
+      @include place-content($key, "-#{$type}", $value);
+    }
+  }
+}
+
+/********** PLACE ITEMS **********/
+@each $key, $value in $place-items {
+  @include place-items($key, "", $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $place-items {
+      @include place-items($key, "-#{$type}", $value);
+    }
+  }
+}
+
+/********** PLACE SELF **********/
+@each $key, $value in $place-self {
+  @include place-self($key, "", $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $place-self {
+      @include place-self($key, "-#{$type}", $value);
+    }
+  }
+}
+
+/********** COLOR **********/
+@each $colors in $all-colors {
+  @each $key, $value in $colors {
+    @include helpers(#{$key}, "color", "var(--#{$key})");
+  }
+}
+
+/********** BACKGROUND COLOR **********/
+@each $colors in $base-colors {
+  @each $key, $value in $colors {
+    @include helpers("bg-#{$key}", "background-color", "var(--#{$key})");
+    @include helpers("bg-#{$key}-dark", "background-color", "var(--#{$key}-dark)");
+    @include helpers("bg-#{$key}-light", "background-color", "var(--#{$key}-light)");
+  }
+}
+
+/********** MARGIN **********/
+@each $key, $value in $box-none {
+  @include helpers("mar-#{$key}", "margin#{$value}", "var(--margin-none)");
+}
+
+@each $key, $value in $box-size {
+  @include helpers("mar-#{$key}", "margin#{$value}", "var(--margin-#{$key})");
+}
+
+/********** BORDER **********/
+[class*="bord"] {
+  border-style: var(--border-style);
+}
+
+@each $key, $value in $border-style {
+  @include helpers("bord-#{$key}", "border-style", $value);
+}
+
+@each $type, $border in $borders {
+  @each $key, $value in $border {
+    @include helpers("bord-#{$key}", "border-#{$type}", "var(--border-#{$type}-#{$key})");
+  }
+}
+
+@each $color in $base-colors {
+  @each $key, $value in $color {
+    @include helpers("bord-#{$key}", "border-color", "var(--#{$key})");
+  }
+}
+
+/********** PADDING **********/
+@each $key, $value in $box-none {
+  @include helpers("pad-#{$key}", "padding#{$value}", "var(--padding-none)");
+}
+
+@each $key, $value in $box-size {
+  @include helpers("pad-#{$key}", "padding#{$value}", "var(--padding-#{$key})");
+}
+
+/********** HEIGHT **********/
+@each $key, $value in $height {
+  @include helpers("height-#{$key}", "height", "var(--height-#{$key})");
+}
+
+@each $key, $value in $max-height {
+  @include helpers("max-h-#{$key}", "max-height", "var(--max-height-#{$key})");
+}
+
+@each $key, $value in $min-height {
+  @include helpers("min-h-#{$key}", "min-height", "var(--min-height-#{$key})");
+}
+
+/********** WIDTH **********/
+@each $key, $value in $width {
+  @include helpers("width-#{$key}", "width", "var(--width-#{$key})");
+}
+
+@each $key, $value in $max-width {
+  @include helpers("max-w-#{$key}", "max-width", "var(--max-width-#{$key})");
+}
+
+@each $key, $value in $min-width {
+  @include helpers("min-w-#{$key}", "min-width", "var(--min-width-#{$key})");
+}
+
+/********** BOX SHADOW **********/
+@each $key, $value in $box-shadow {
+  @include helpers("shabox-#{$key}", "box-shadow", "var(--box-shadow-#{$key})");
+  @include helpers("shabox-in-#{$key}", "box-shadow", "inset var(--box-shadow-#{$key})");
+}
+
+/********** FONT **********/
+@each $key, $value in $font {
+  @include helpers("font-#{$key}", "font-#{$value}", $key);
+}
+
+@each $key in $font-family {
+  .font-#{$key} {
+    font-family: var(--font-family-#{$key});
+  }
+}
+
+/********** TEXT **********/
+@each $key, $value in $text-align {
+  @include helpers("align-#{$key}", "text-align", $value);
+}
+
+@each $key, $value in $trans {
+  @include helpers("trans-#{$key}", "text-transform", $value);
+}
+
+/********** TEXT DECORATION **********/
+[class*="deco"] {
+  text-decoration-line: var(--text-decoration-line);
+}
+
+@each $deco-key, $deco-value in $text-decorations {
+  @each $key, $value in $deco-value {
+    @include helpers("deco-#{$key}", "text-decoration-#{$deco-key}", $value);
+  }
+}
+
+@each $key, $value in $primary-colors {
+  @include helpers("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
+}
+
+/********** TEXT SHADOW **********/
+@each $key, $value in $text-shadow {
+  @include helpers("shatex-#{$key}", "text-shadow", "var(--text-shadow-#{$key})");
+}
+
+/********** ANIMATION **********/
+[class*="anima"] {
+  animation-duration: var(--animation-duration);
+}
+
+@each $key, $value in $transforms {
+  @include anima($key, "animation-name", $key);
+}
+
+@each $type, $option in $animation-options {
+  @each $key, $value in $option {
+    @include anima-options($key, "animation-#{$type}", "var(--animation-#{$type}-#{$key})");
+  }
+}
+
+@each $key, $value in $animation-direction {
+  @include anima-options($key, "animation-direction", $value);
+}

@@ -1,12 +1,11 @@
-/***** Base : Tags *****/
-
+/********** TAGS **********/
 * {
   box-sizing: var(--all-box-sizing);
-}
 
-*:target {
-  padding-top: var(--target-margins);
-  margin-top: -var(--target-margins);
+  &:target {
+    padding-top: var(--target-margins);
+    margin-top: -var(--target-margins);
+  }
 }
 
 html {
@@ -22,12 +21,10 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: var(--body-padding);
   line-height: var(--body-line-height);
   font-size: var(--body-font-size);
   font-family: var(--sans-serif);
-  color: var(--body-color);
-  background-color: var(--body-background-color);
 }
 
 main {
@@ -57,10 +54,22 @@ a {
   color: var(--link-color);
 }
 
+button {
+  cursor: var(--button-cursor);
+}
+
 ul {
   margin: var(--list-margin);
   padding: var(--list-padding);
   list-style: var(--list-style);
+}
+
+table {
+  margin: var(--table-margin);
+  border-collapse: var(--table-border-collapse);
+  text-align: var(--table-text-align);
+  vertical-align: var(--table-vertical-align);
+  font-family: var(--monospace);
 }
 
 figure {
@@ -74,27 +83,13 @@ video {
   object-fit: var(--img-object-fit);
 }
 
-table {
-  margin: var(--table-margin);
-  border-collapse: var(--table-border-collapse);
-  text-align: var(--table-text-align);
-  vertical-align: var(--table-vertical-align);
-  font-family: var(--monospace);
-}
-
 code,
 pre {
+  font-size: 1em;
   overflow: var(--code-overflow);
   margin: var(--code-margin);
   padding: var(--code-padding);
   width: var(--code-width);
   font-family: var(--monospace);
   text-align: var(--code-text-align);
-  background-color: var(--code-background-color);
-  color: var(--code-color);
-
-  & > *::selection {
-    background-color: var(--code-color);
-    color: var(--code-background-color);
-  }
 }
