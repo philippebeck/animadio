@@ -1,0 +1,86 @@
+@mixin keyframes($key) {
+  @keyframes #{$key} {
+    from {
+      transform: var(--#{$key});
+    }
+  }
+}
+
+@mixin display($class, $property, $value) {
+  .#{$class},
+  .global-#{$class} > * {
+      #{$property}: #{$value};
+  }
+}
+
+@mixin container($key, $type, $value) {
+  [class*="container-"][class*="-#{$key}#{$type}"] {
+    max-width: #{$value};
+  }
+}
+
+@mixin grid-template($column, $key) {
+  [class*="grid-"][class*="-#{$column}#{$key}"] {
+    grid-template: auto/repeat(#{$column}, auto);
+  }
+}
+
+@mixin gap($key) {
+  [class*="gap-"][class*="-#{$key}"] {
+    gap: var(--gap-#{$key});
+  }
+}
+
+@mixin place-content($key, $type: "", $value: var(--place-content-#{$key})) {
+  .placo-#{$key}#{$type} {
+    place-content: #{$value};
+  }
+}
+
+@mixin place-items($key, $type: "", $value: var(--place-items-#{$key})) {
+  .plait-#{$key}#{$type} {
+    place-items: #{$value};
+  }
+}
+
+@mixin place-self($key, $type: "", $value: var(--place-self-#{$key})) {
+  .plase-#{$key}#{$type} {
+    place-self: #{$value};
+  }
+}
+
+@mixin helpers($class, $property, $value) {
+  .#{$class},
+  .#{$class}-global > *,
+  .#{$class}-onto:hover,
+  .#{$class}-onto:focus,
+  .#{$class}-toone > *:hover,
+  .#{$class}-toone > *:focus,
+  *:hover > .#{$class}-into,
+  *:focus > .#{$class}-into,
+  .#{$class}-toall:hover > *,
+  .#{$class}-toall:focus > * {
+      #{$property}: #{$value};
+  }
+}
+
+@mixin anima($class, $property, $value) {
+  .anima-#{$class},
+  .anima-#{$class}-global > *,
+  .anima-#{$class}-onto:hover,
+  .anima-#{$class}-onto:focus,
+  .anima-#{$class}-toone > *:hover,
+  .anima-#{$class}-toone > *:focus,
+  *:hover > .anima-#{$class}-into,
+  *:focus > .anima-#{$class}-into,
+  .anima-#{$class}-toall:hover > *,
+  .anima-#{$class}-toall:focus > * {
+    #{$property}: #{$value};
+  }
+}
+
+@mixin anima-options($class, $property, $value) {
+  .anima-#{$class} {
+    #{$property}: #{$value};
+  }
+}
