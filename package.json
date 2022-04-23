@@ -1,6 +1,6 @@
 {
   "name": "animadio",
-  "version": "4.3.0",
+  "version": "5.0.0",
   "description": "Animadio Framework - Grid & Flexbox Layouts - Reusable & Customizable Elements - Perform Complex Animations - Controls by Radio Buttons",
   "keywords": [
     "css framework",
@@ -25,7 +25,6 @@
     "grunt": "^1.3.0",
     "grunt-contrib-concat": "^2.1.0",
     "grunt-contrib-cssmin": "^4.0.0",
-    "grunt-contrib-uglify": "^5.0.0",
     "grunt-postcss": "^0.9.0",
     "normalize.css": "^8.0.1"
   },
