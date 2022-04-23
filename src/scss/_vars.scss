@@ -1,0 +1,265 @@
+:root {
+  --opacity-dark: 0.8;
+  --opacity-light: 0.2;
+
+  /********** FONT **********/
+  @each $key in $font-family {
+    --#{$key}: #{$key};
+    }
+  
+  /********** COLORS **********/
+  @each $colors in $all-colors {
+    @each $key, $value in $colors {
+      --#{$key}: rgb(#{$value});
+    }
+  }
+
+  @each $colors in $base-colors {
+    @each $key, $value in $colors {
+      --#{$key}-dark: rgba(#{$value}, var(--opacity-dark));
+      --#{$key}-light: rgba(#{$value}, var(--opacity-light));
+    }
+  }
+
+  /********** TRANSFORM **********/
+  @each $key, $value in $transforms {
+    --#{$key}: #{$value};
+  }
+}
+
+/********** TAGS **********/
+* {
+  --all-box-sizing: border-box;
+  --target-margins: 7rem;
+}
+
+html {
+  --html-scroll-behavior: smooth;
+  --html-font-size: 62.5%;
+}
+
+body {
+  --body-font-size: 2rem;
+  --body-line-height: 1.6;
+  --body-padding: 0;
+}
+
+main {
+  --main-text-align: center;
+}
+
+article {
+  --article-margin-bottom: 20px;
+}
+
+h1 {
+  --title-font-size: calc(var(--body-font-size) * 2);
+}
+
+h2 {
+  --title-font-size: calc(var(--body-font-size) * 1.8);
+}
+
+h3 {
+  --title-font-size: calc(var(--body-font-size) * 1.6);
+}
+
+h4 {
+  --title-font-size: calc(var(--body-font-size) * 1.4);
+}
+
+h5 {
+  --title-font-size: calc(var(--body-font-size) * 1.2);
+}
+
+h6 {
+  --title-font-size: var(--body-font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --title-font-family: var(--serif);
+  --title-text-align: center;
+  --title-text-transform: capitalize;
+}
+
+a {
+  --link-outline: 0;
+  --link-text-decoration: none;
+}
+
+ul {
+  --list-margin: 0 0 10px;
+  --list-padding: 0;
+  --list-style: none;
+}
+
+table {
+  --table-border-collapse: collapse;
+  --table-margin: auto;
+  --table-text-align: center;
+  --table-vertical-align: middle;
+}
+
+code,
+pre {
+  --code-margin: auto;
+  --code-overflow: scroll;
+  --code-padding: 10px;
+  --code-text-align: initial;
+  --code-width: 100%;
+}
+
+figure {
+  --figure-margin: 0;
+}
+
+img,
+video {
+  --img-max-width: 100%;
+  --img-height: auto;
+  --img-object-fit: contain;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  --button-cursor: pointer;
+}
+
+
+/********** CONTAINER **********/
+[class*="container"] {
+  --container-max-width: 100%;
+}
+
+/********** FLEX **********/
+[class*="flex"],
+[class*="col"],
+[class*="row"] {
+  --flex-place-content: center;
+}
+
+[class*="col"] {
+  --column-padding: 0 10px;
+}
+
+[class*="row"] {
+  --row-padding: 10px 0;
+}
+
+/********** GRID **********/
+[class*="grid"] {
+  --grid-max-width: 90%;
+  --grid-margin: auto;
+}
+
+/********** GAP **********/
+[class*="gap-"] {
+  @each $key, $value in $gaps {
+    --gap-#{$key}: #{$value};
+  }
+}
+
+/********** MARGIN **********/
+[class*="mar-"] {
+  @each $key, $value in $margins {
+    --margin-#{$key}: #{$value};
+  }
+}
+
+/********** BORDER **********/
+[class*="bord"] {
+  --border-style: solid;
+
+  @each $type, $border in $borders {
+    @each $key, $value in $border {
+      --border-#{$type}-#{$key}: #{$value};
+    }
+  }
+}
+
+/********** PADDING **********/
+[class*="pad-"] {
+  @each $key, $value in $paddings {
+    --padding-#{$key}: #{$value};
+  }
+}
+
+/********** HEIGHT **********/
+[class*="height-"] {
+  @each $key, $value in $height {
+    --height-#{$key}: #{$value};
+  }
+}
+
+[class*="max-h-"] {
+  @each $key, $value in $max-height {
+    --max-height-#{$key}: #{$value};
+  }
+}
+
+[class*="min-h-"] {
+  @each $key, $value in $min-height {
+    --min-height-#{$key}: #{$value};
+  }
+}
+
+/********** WIDTH **********/
+[class*="width-"] {
+  @each $key, $value in $width {
+    --width-#{$key}: #{$value};
+  }
+}
+
+[class*="max-w-"] {
+  @each $key, $value in $max-width {
+    --max-width-#{$key}: #{$value};
+  }
+}
+
+[class*="min-w-"] {
+  @each $key, $value in $min-width {
+    --min-width-#{$key}: #{$value};
+  }
+}
+
+/********** BOX SHADOW **********/
+[class*="shabox-"] {
+  @each $key, $value in $box-shadow {
+    --box-shadow-#{$key}: #{$value};
+  }
+}
+
+/********** TEXT DECORATION **********/
+[class*="deco"] {
+  --text-decoration-line: underline;
+}
+
+/********** TEXT SHADOW **********/
+[class*="shatex-"] {
+  @each $key, $value in $text-shadow {
+    --text-shadow-#{$key}: #{$value};
+  }
+}
+
+/********** ANIMATION **********/
+[class*="anima-"] {
+  --animation-duration: 2s;
+
+  @each $type, $option in $animation-options {
+    @each $key, $value in $option {
+      --animation-#{$type}-#{$key}: #{$value};
+    }
+  }
+}
+
+/********** KEYFRAMES **********/
+@each $key, $value in $transforms {
+  @include keyframes($key);
+}
