@@ -1,9 +1,8 @@
 [![Animadio Logo](https://animadio.org/img/logo.png)](https://animadio.org)
 # [Animadio CSS Framework](https://animadio.org)
 
--   Eight types of selectors working with hover, focus & **checked states**
+-   Eight types of selectors working with hover & focus
 -   **Flexbox & Grid** systems included with common options
--   Click anywhere on the page to **enable & disable any design effect** anywhere else
 -   Management of **keyframes animations** & their options
 -   Complete & simple customization with directly modifiable **CSS variables**
 
@@ -46,8 +45,8 @@ Yarn : `yarn add animadio`
 [![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.css) + [https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.js](https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.js)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.min.css) + [https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.min.js](https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.min.js)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.min.css)  
 
 ---
 
@@ -62,8 +61,8 @@ Yarn : `yarn add animadio`
 ## Content
 
 The main library distribution is :  
--   For development : `dist/animadio.css` + `dist/animadio.js`  
--   For production : `dist/animadio.min.css` + `dist/animadio.min.js`  
+-   For development : `dist/animadio.css`  
+-   For production : `dist/animadio.min.css`  
 
 ---
 
@@ -91,7 +90,7 @@ CodePen : [@animadio](https://codepen.io/animadio)
 
 ## Documentation
 
-Animadio Documentation is available for the V4 !
+Animadio documentation will soon be updated for V5 !
 
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg?label=https://animadio.org)](https://animadio.org)
 
