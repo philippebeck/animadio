@@ -174,12 +174,11 @@ button,
 
 /********** BORDER **********/
 [class*="bord"] {
-  --border-style: solid;
-
-  @each $type, $border in $borders {
-    @each $key, $value in $border {
-      --border-#{$type}-#{$key}: #{$value};
-    }
+  @each $key, $value in $border-width {
+    --border-width-#{$key}: #{$value};
+  }
+  @each $key, $value in $border-radius {
+    --border-radius-#{$key}: #{$value};
   }
 }
 
@@ -226,11 +225,6 @@ button,
   @each $key, $value in $min-width {
     --min-width-#{$key}: #{$value};
   }
-}
-
-/********** TEXT DECORATION **********/
-[class*="deco"] {
-  --text-decoration-line: underline;
 }
 
 /********** BOX SHADOW **********/

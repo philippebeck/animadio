@@ -225,11 +225,6 @@ $border-radius: (
   "circle": 50%
 ) !default;
 
-$borders : (
-  "width":  $border-width,
-  "radius": $border-radius
-) !default;
-
 // ********** PADDING **********
 $padding-sm:  5px   !default;
 $padding-md:  10px  !default;
@@ -328,12 +323,6 @@ $text-decoration-style: (
   "double": double,
   "solid":  solid,
   "wavy":   wavy
-) !default;
-
-
-$text-decorations : (
-  "line":   $text-decoration-line,
-  "style":  $text-decoration-style
 ) !default;
 
 // ********** BOX-SHADOW **********

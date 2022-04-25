@@ -165,24 +165,22 @@
 }
 
 /********** BORDER **********/
-[class*="bord"] {
-  border-style: var(--border-style);
-}
-
 @each $key, $value in $border-style {
   @include helpers("bord-#{$key}", "border-style", $value);
 }
 
-@each $type, $border in $borders {
-  @each $key, $value in $border {
-    @include helpers("bord-#{$key}", "border-#{$type}", "var(--border-#{$type}-#{$key})");
-  }
+@each $key, $value in $border-width {
+  @include helpers-options("bord-#{$key}", "border-width", $value);
 }
 
 @each $color in $base-colors {
   @each $key, $value in $color {
-    @include helpers("bord-#{$key}", "border-color", "var(--#{$key})");
+    @include helpers-options("bord-#{$key}", "border-color", "var(--#{$key})");
   }
+}
+
+@each $key, $value in $border-radius {
+  @include helpers("bord-#{$key}", "border-radius", $value);
 }
 
 /********** PADDING **********/
