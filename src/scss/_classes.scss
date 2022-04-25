@@ -126,13 +126,13 @@
 
 /********** POSITION **********/
 @each $key, $value in $position {
-  @include helpers($key, 'position', $value);
+  @include display($key, 'position', $value);
 }
 
 @each $type, $breakpoint in $breakpoints {
   @media (min-width: $breakpoint) {
     @each $key, $value in $position {
-      @include helpers('#{$key}-#{$type}', 'position', $value);
+      @include display('#{$key}-#{$type}', 'position', $value);
     }
   }
 }
