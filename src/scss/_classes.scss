@@ -17,24 +17,6 @@
   }
 }
 
-/********** CONTAINER **********/
-[class*="container"] {
-  margin: auto;
-  max-width: var(--container-max-width);
-}
-
-@each $key, $value in $containers {
-  @include container($key, "tn", $value);
-}
-
-@each $type, $breakpoint in $breakpoints {
-  @media (min-width: $breakpoint) {
-    @each $key, $value in $containers {
-      @include container($key, $type, $value);
-    }
-  }
-}
-
 /********** FLEX **********/
 .flex,
 .col,
@@ -142,19 +124,34 @@
   }
 }
 
-/********** COLOR **********/
-@each $colors in $all-colors {
-  @each $key, $value in $colors {
-    @include helpers(#{$key}, "color", "var(--#{$key})");
+/********** POSITION **********/
+@each $key, $value in $position {
+  @include helpers($key, 'position', $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $position {
+      @include helpers('#{$key}-#{$type}', 'position', $value);
+    }
   }
 }
 
-/********** BACKGROUND COLOR **********/
-@each $colors in $base-colors {
-  @each $key, $value in $colors {
-    @include helpers("bg-#{$key}", "background-color", "var(--#{$key})");
-    @include helpers("bg-#{$key}-dark", "background-color", "var(--#{$key}-dark)");
-    @include helpers("bg-#{$key}-light", "background-color", "var(--#{$key}-light)");
+/********** CONTAINER **********/
+[class*="container"] {
+  margin: auto;
+  max-width: var(--container-max-width);
+}
+
+@each $key, $value in $containers {
+  @include container($key, "tn", $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $containers {
+      @include container($key, $type, $value);
+    }
   }
 }
 
@@ -223,12 +220,6 @@
   @include helpers("min-w-#{$key}", "min-width", "var(--min-width-#{$key})");
 }
 
-/********** BOX SHADOW **********/
-@each $key, $value in $box-shadow {
-  @include helpers("shabox-#{$key}", "box-shadow", "var(--box-shadow-#{$key})");
-  @include helpers("shabox-in-#{$key}", "box-shadow", "inset var(--box-shadow-#{$key})");
-}
-
 /********** FONT **********/
 @each $key, $value in $font {
   @include helpers("font-#{$key}", "font-#{$value}", $key);
@@ -262,6 +253,28 @@
 
 @each $key, $value in $primary-colors {
   @include helpers("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
+}
+
+/********** COLOR **********/
+@each $colors in $all-colors {
+  @each $key, $value in $colors {
+    @include helpers(#{$key}, "color", "var(--#{$key})");
+  }
+}
+
+/********** BACKGROUND COLOR **********/
+@each $colors in $base-colors {
+  @each $key, $value in $colors {
+    @include helpers("bg-#{$key}", "background-color", "var(--#{$key})");
+    @include helpers("bg-#{$key}-dark", "background-color", "var(--#{$key}-dark)");
+    @include helpers("bg-#{$key}-light", "background-color", "var(--#{$key}-light)");
+  }
+}
+
+/********** BOX SHADOW **********/
+@each $key, $value in $box-shadow {
+  @include helpers("shabox-#{$key}", "box-shadow", "var(--box-shadow-#{$key})");
+  @include helpers("shabox-in-#{$key}", "box-shadow", "inset var(--box-shadow-#{$key})");
 }
 
 /********** TEXT SHADOW **********/

@@ -7,6 +7,15 @@ $breakpoints: (
   "wd": 1600px
 ) !default;
 
+// ********** FONT **********
+$font: (
+  "bold":     "weight",
+  "italic":   "style",
+  "oblique":  "style"
+) !default;
+
+$font-family: sans-serif, serif, monospace, cursive, fantasy;
+
 // ********** COLORS **********
 $primary-colors: (
   "primary":    (65, 105, 225),   // RoyalBlue
@@ -82,15 +91,6 @@ $displays: (
   "inblock":  inline-block
 ) !default;
 
-// ********** CONTAINER **********
-$containers: (
-  "50": 50%,
-  "60": 60%,
-  "70": 70%,
-  "80": 80%,
-  "90": 90%
-) !default;
-
 // ********** GAP **********
 $gaps: (
   "tn": 1px,
@@ -130,6 +130,23 @@ $place-self: (
   "stretch":  stretch,
   "start":    flex-start,
   "end":      flex-end
+) !default;
+
+// ********** POSITON **********
+$position: (
+  'absolute': absolute,
+  'fixed':    fixed,
+  'relative': relative,
+  'sticky':   sticky
+) !default;
+
+// ********** CONTAINER **********
+$containers: (
+  "50": 50%,
+  "60": 60%,
+  "70": 70%,
+  "80": 80%,
+  "90": 90%
 ) !default;
 
 // ********** BOX **********
@@ -283,30 +300,6 @@ $min-width: (
   "lg": $width-lg
 ) !default;
 
-// ********** BOX-SHADOW **********
-$box-shadow: (
-  "sm":         1px 1px,
-  "md":         2px 2px,
-  "lg":         5px 5px,
-  "blur":       0   0   2px,
-  "blur-sm":    1px 1px 1px,
-  "blur-md":    2px 2px 2px,
-  "blur-lg":    5px 5px 5px,
-  "spread":     0   0   2px 2px,
-  "spread-sm":  1px 1px 1px 1px,
-  "spread-md":  2px 2px 2px 2px,
-  "spread-lg":  5px 5px 5px 5px
-) !default;
-
-// ********** FONT **********
-$font: (
-  "bold":     "weight",
-  "italic":   "style",
-  "oblique":  "style"
-) !default;
-
-$font-family: sans-serif, serif, monospace, cursive, fantasy;
-
 // ********** TEXT **********
 $text-align: (
   "center":   center,
@@ -341,6 +334,21 @@ $text-decoration-style: (
 $text-decorations : (
   "line":   $text-decoration-line,
   "style":  $text-decoration-style
+) !default;
+
+// ********** BOX-SHADOW **********
+$box-shadow: (
+  "sm":         1px 1px,
+  "md":         2px 2px,
+  "lg":         5px 5px,
+  "blur":       0   0   2px,
+  "blur-sm":    1px 1px 1px,
+  "blur-md":    2px 2px 2px,
+  "blur-lg":    5px 5px 5px,
+  "spread":     0   0   2px 2px,
+  "spread-sm":  1px 1px 1px 1px,
+  "spread-md":  2px 2px 2px 2px,
+  "spread-lg":  5px 5px 5px 5px
 ) !default;
 
 // ********** TEXT SHADOW **********
