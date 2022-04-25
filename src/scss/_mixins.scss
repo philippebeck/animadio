@@ -13,12 +13,6 @@
   }
 }
 
-@mixin container($key, $type, $value) {
-  [class*="container-"][class*="-#{$key}#{$type}"] {
-    max-width: #{$value};
-  }
-}
-
 @mixin grid-template($column, $key) {
   [class*="grid-"][class*="-#{$column}#{$key}"] {
     grid-template: auto/repeat(#{$column}, auto);
@@ -46,6 +40,12 @@
 @mixin place-self($key, $type: "", $value: var(--place-self-#{$key})) {
   .plase-#{$key}#{$type} {
     place-self: #{$value};
+  }
+}
+
+@mixin container($key, $type, $value) {
+  [class*="container-"][class*="-#{$key}#{$type}"] {
+    max-width: #{$value};
   }
 }
 
