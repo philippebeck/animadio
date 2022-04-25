@@ -351,17 +351,6 @@ $box-shadow: (
   "spread-lg":  5px 5px 5px 5px
 ) !default;
 
-// ********** TEXT SHADOW **********
-$text-shadow: (
-  "sm":       1px 1px,
-  "md":       2px 2px,
-  "lg":       5px 5px,
-  "blur":     0   0   2px,
-  "blur-sm":  1px 1px 1px,
-  "blur-md":  2px 2px 2px,
-  "blur-lg":  5px 5px 5px
-) !default;
-
 // ********** ANIMATION **********
 $animation-duration: (
   "sm": 1s,

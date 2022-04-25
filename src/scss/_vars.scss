@@ -240,13 +240,6 @@ button,
   }
 }
 
-/********** TEXT SHADOW **********/
-[class*="shatex-"] {
-  @each $key, $value in $text-shadow {
-    --text-shadow-#{$key}: #{$value};
-  }
-}
-
 /********** ANIMATION **********/
 [class*="anima-"] {
   --animation-duration: 2s;

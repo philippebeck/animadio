@@ -277,11 +277,6 @@
   @include helpers("shabox-in-#{$key}", "box-shadow", "inset var(--box-shadow-#{$key})");
 }
 
-/********** TEXT SHADOW **********/
-@each $key, $value in $text-shadow {
-  @include helpers("shatex-#{$key}", "text-shadow", "var(--text-shadow-#{$key})");
-}
-
 /********** ANIMATION **********/
 [class*="anima"] {
   animation-duration: var(--animation-duration);
