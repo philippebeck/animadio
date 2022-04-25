@@ -1,7 +1,7 @@
 [![Animadio Logo](https://animadio.org/img/logo.png)](https://animadio.org)
 # [Animadio CSS Framework](https://animadio.org)
 
--   Eight types of selectors working with hover & focus
+-   Six types of selectors working with hover & focus
 -   **Flexbox & Grid** systems included with common options
 -   Management of **keyframes animations** & their options
 -   Complete & simple customization with directly modifiable **CSS variables**
@@ -45,8 +45,8 @@ Yarn : `yarn add animadio`
 [![jsDelivr Montly Downloads](https://img.shields.io/jsdelivr/npm/hm/animadio.svg?label=jsDelivr+Montly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/animadio)
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@5.0.0/dist/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@5.0.1/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@5.0.1/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@5.0.1/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@5.0.1/dist/animadio.min.css)  
 
 ---
 
