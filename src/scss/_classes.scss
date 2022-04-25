@@ -6,13 +6,13 @@
 
 /********** DISPLAY **********/
 @each $key, $value in $displays {
-  @include display($key, "display", $value);
+  @include global($key, "display", $value);
 }
 
 @each $type, $breakpoint in $breakpoints {
   @media (min-width: $breakpoint) {
     @each $key, $value in $displays {
-      @include display("#{$key}-#{$type}", "display", $value);
+      @include global("#{$key}-#{$type}", "display", $value);
     }
   }
 }
@@ -126,13 +126,13 @@
 
 /********** POSITION **********/
 @each $key, $value in $position {
-  @include helpers($key, 'position', $value);
+  @include global($key, 'position', $value);
 }
 
 @each $type, $breakpoint in $breakpoints {
   @media (min-width: $breakpoint) {
     @each $key, $value in $position {
-      @include helpers('#{$key}-#{$type}', 'position', $value);
+      @include global('#{$key}-#{$type}', 'position', $value);
     }
   }
 }
@@ -157,41 +157,39 @@
 
 /********** MARGIN **********/
 @each $key, $value in $box-none {
-  @include helpers("mar-#{$key}", "margin#{$value}", "var(--margin-none)");
+  @include global("mar-#{$key}", "margin#{$value}", "var(--margin-none)");
 }
 
 @each $key, $value in $box-size {
-  @include helpers("mar-#{$key}", "margin#{$value}", "var(--margin-#{$key})");
+  @include global("mar-#{$key}", "margin#{$value}", "var(--margin-#{$key})");
 }
 
 /********** BORDER **********/
-[class*="bord"] {
-  border-style: var(--border-style);
-}
-
 @each $key, $value in $border-style {
   @include helpers("bord-#{$key}", "border-style", $value);
 }
 
-@each $type, $border in $borders {
-  @each $key, $value in $border {
-    @include helpers("bord-#{$key}", "border-#{$type}", "var(--border-#{$type}-#{$key})");
-  }
+@each $key, $value in $border-width {
+  @include helpers-options("bord-#{$key}", "border-width", $value);
 }
 
 @each $color in $base-colors {
   @each $key, $value in $color {
-    @include helpers("bord-#{$key}", "border-color", "var(--#{$key})");
+    @include helpers-options("bord-#{$key}", "border-color", "var(--#{$key})");
   }
+}
+
+@each $key, $value in $border-radius {
+  @include helpers("bord-#{$key}", "border-radius", $value);
 }
 
 /********** PADDING **********/
 @each $key, $value in $box-none {
-  @include helpers("pad-#{$key}", "padding#{$value}", "var(--padding-none)");
+  @include global("pad-#{$key}", "padding#{$value}", "var(--padding-none)");
 }
 
 @each $key, $value in $box-size {
-  @include helpers("pad-#{$key}", "padding#{$value}", "var(--padding-#{$key})");
+  @include global("pad-#{$key}", "padding#{$value}", "var(--padding-#{$key})");
 }
 
 /********** HEIGHT **********/
@@ -200,11 +198,11 @@
 }
 
 @each $key, $value in $max-height {
-  @include helpers("max-h-#{$key}", "max-height", "var(--max-height-#{$key})");
+  @include global("max-h-#{$key}", "max-height", "var(--max-height-#{$key})");
 }
 
 @each $key, $value in $min-height {
-  @include helpers("min-h-#{$key}", "min-height", "var(--min-height-#{$key})");
+  @include global("min-h-#{$key}", "min-height", "var(--min-height-#{$key})");
 }
 
 /********** WIDTH **********/
@@ -213,11 +211,11 @@
 }
 
 @each $key, $value in $max-width {
-  @include helpers("max-w-#{$key}", "max-width", "var(--max-width-#{$key})");
+  @include global("max-w-#{$key}", "max-width", "var(--max-width-#{$key})");
 }
 
 @each $key, $value in $min-width {
-  @include helpers("min-w-#{$key}", "min-width", "var(--min-width-#{$key})");
+  @include global("min-w-#{$key}", "min-width", "var(--min-width-#{$key})");
 }
 
 /********** FONT **********/
@@ -233,7 +231,7 @@
 
 /********** TEXT **********/
 @each $key, $value in $text-align {
-  @include helpers("align-#{$key}", "text-align", $value);
+  @include global("align-#{$key}", "text-align", $value);
 }
 
 @each $key, $value in $trans {
@@ -241,18 +239,16 @@
 }
 
 /********** TEXT DECORATION **********/
-[class*="deco"] {
-  text-decoration-line: var(--text-decoration-line);
+@each $key, $value in $text-decoration-line {
+  @include helpers("deco-#{$key}", "text-decoration-line", $value);
 }
 
-@each $deco-key, $deco-value in $text-decorations {
-  @each $key, $value in $deco-value {
-    @include helpers("deco-#{$key}", "text-decoration-#{$deco-key}", $value);
-  }
+@each $key, $value in $text-decoration-style {
+  @include helpers-options("deco-#{$key}", "text-decoration-style", $value);
 }
 
 @each $key, $value in $primary-colors {
-  @include helpers("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
+  @include helpers-options("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
 }
 
 /********** COLOR **********/
@@ -277,11 +273,6 @@
   @include helpers("shabox-in-#{$key}", "box-shadow", "inset var(--box-shadow-#{$key})");
 }
 
-/********** TEXT SHADOW **********/
-@each $key, $value in $text-shadow {
-  @include helpers("shatex-#{$key}", "text-shadow", "var(--text-shadow-#{$key})");
-}
-
 /********** ANIMATION **********/
 [class*="anima"] {
   animation-duration: var(--animation-duration);
@@ -299,4 +290,9 @@
 
 @each $key, $value in $animation-direction {
   @include anima-options($key, "animation-direction", $value);
+}
+
+/********** Cursor **********/
+@each $key, $value in $cursor {
+  @include global-all($key, "cursor", $value);
 }

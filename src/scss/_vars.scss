@@ -149,7 +149,7 @@ button,
 
 /********** GRID **********/
 [class*="grid"] {
-  --grid-max-width: 90%;
+  --grid-max-width: 100vw;
   --grid-margin: auto;
 }
 
@@ -174,12 +174,11 @@ button,
 
 /********** BORDER **********/
 [class*="bord"] {
-  --border-style: solid;
-
-  @each $type, $border in $borders {
-    @each $key, $value in $border {
-      --border-#{$type}-#{$key}: #{$value};
-    }
+  @each $key, $value in $border-width {
+    --border-width-#{$key}: #{$value};
+  }
+  @each $key, $value in $border-radius {
+    --border-radius-#{$key}: #{$value};
   }
 }
 
@@ -228,22 +227,10 @@ button,
   }
 }
 
-/********** TEXT DECORATION **********/
-[class*="deco"] {
-  --text-decoration-line: underline;
-}
-
 /********** BOX SHADOW **********/
 [class*="shabox-"] {
   @each $key, $value in $box-shadow {
     --box-shadow-#{$key}: #{$value};
-  }
-}
-
-/********** TEXT SHADOW **********/
-[class*="shatex-"] {
-  @each $key, $value in $text-shadow {
-    --text-shadow-#{$key}: #{$value};
   }
 }
 

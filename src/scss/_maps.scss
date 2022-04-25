@@ -225,11 +225,6 @@ $border-radius: (
   "circle": 50%
 ) !default;
 
-$borders : (
-  "width":  $border-width,
-  "radius": $border-radius
-) !default;
-
 // ********** PADDING **********
 $padding-sm:  5px   !default;
 $padding-md:  10px  !default;
@@ -330,12 +325,6 @@ $text-decoration-style: (
   "wavy":   wavy
 ) !default;
 
-
-$text-decorations : (
-  "line":   $text-decoration-line,
-  "style":  $text-decoration-style
-) !default;
-
 // ********** BOX-SHADOW **********
 $box-shadow: (
   "sm":         1px 1px,
@@ -349,17 +338,6 @@ $box-shadow: (
   "spread-sm":  1px 1px 1px 1px,
   "spread-md":  2px 2px 2px 2px,
   "spread-lg":  5px 5px 5px 5px
-) !default;
-
-// ********** TEXT SHADOW **********
-$text-shadow: (
-  "sm":       1px 1px,
-  "md":       2px 2px,
-  "lg":       5px 5px,
-  "blur":     0   0   2px,
-  "blur-sm":  1px 1px 1px,
-  "blur-md":  2px 2px 2px,
-  "blur-lg":  5px 5px 5px
 ) !default;
 
 // ********** ANIMATION **********
@@ -400,4 +378,15 @@ $animation-direction: (
   "alt":    alternate,
   "rev":    reverse,
   "altrev": alternate-reverse
+) !default;
+
+// ********** CURSOR **********
+$cursor: (
+  'cell':   cell,
+  'cross':  crosshair,
+  'hand':   pointer,
+  'help':   help,
+  'move':   move,
+  'none':   not-allowed,
+  'text':   text
 ) !default;
