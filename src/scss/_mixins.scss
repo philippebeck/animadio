@@ -1,3 +1,4 @@
+// ********** KEYFRAMES **********
 @mixin keyframes($key) {
   @keyframes #{$key} {
     from {
@@ -6,7 +7,8 @@
   }
 }
 
-@mixin display($class, $property, $value) {
+// ********** GLOBAL **********
+@mixin global($class, $property, $value) {
   .#{$class},
   .global-#{$class} > * {
       #{$property}: #{$value};
@@ -33,30 +35,33 @@
   }
 }
 
+// ********** PLACE **********
 @mixin place-content($key, $type: "", $value: var(--place-content-#{$key})) {
-  .placo-#{$key}#{$type} {
+  .content-#{$key}#{$type} {
     place-content: #{$value};
   }
 }
 
 @mixin place-items($key, $type: "", $value: var(--place-items-#{$key})) {
-  .plait-#{$key}#{$type} {
+  .items-#{$key}#{$type} {
     place-items: #{$value};
   }
 }
 
 @mixin place-self($key, $type: "", $value: var(--place-self-#{$key})) {
-  .plase-#{$key}#{$type} {
+  .self-#{$key}#{$type} {
     place-self: #{$value};
   }
 }
 
+// ********** CONTAINER **********
 @mixin container($key, $type, $value) {
   [class*="container-"][class*="-#{$key}#{$type}"] {
     max-width: #{$value};
   }
 }
 
+// ********** HELPERS **********
 @mixin helpers($class, $property, $value) {
   .#{$class},
   .#{$class}-global > *,
@@ -68,10 +73,17 @@
   *:focus > .#{$class}-into,
   .#{$class}-toall:hover > *,
   .#{$class}-toall:focus > * {
-      #{$property}: #{$value};
+    #{$property}: #{$value};
   }
 }
 
+@mixin helpers-options($class, $property, $value) {
+  .#{$class} {
+    #{$property}: #{$value};
+  }
+}
+
+// ********** ANIMA **********
 @mixin anima($class, $property, $value) {
   .anima-#{$class},
   .anima-#{$class}-global > *,
