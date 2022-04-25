@@ -13,6 +13,14 @@
   }
 }
 
+@mixin global-all($class, $property, $value) {
+  .#{$class},
+  .global-#{$class} * {
+      #{$property}: #{$value};
+  }
+}
+
+// ********** GRID (FLEX) **********
 @mixin grid-template($column, $key) {
   [class*="grid-"][class*="-#{$column}#{$key}"] {
     grid-template: auto/repeat(#{$column}, auto);
