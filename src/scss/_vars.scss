@@ -1,7 +1,4 @@
 :root {
-  --opacity-dark: 0.8;
-  --opacity-light: 0.2;
-
   /********** FONT **********/
   @each $key in $font-family {
     --#{$key}: #{$key};
@@ -13,6 +10,9 @@
       --#{$key}: rgb(#{$value});
     }
   }
+
+  --opacity-dark: 0.8;
+  --opacity-light: 0.2;
 
   @each $colors in $base-colors {
     @each $key, $value in $colors {
