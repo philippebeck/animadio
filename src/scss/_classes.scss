@@ -290,7 +290,7 @@
   @include anima-options($key, "animation-direction", $value);
 }
 
-/********** Cursor **********/
+/********** CURSOR **********/
 @each $key, $value in $cursor {
   @include global-all($key, "cursor", $value);
 }

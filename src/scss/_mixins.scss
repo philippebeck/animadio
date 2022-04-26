@@ -22,7 +22,7 @@
   }
 }
 
-// ********** GRID (FLEX) **********
+// ********** GRID/FLEX **********
 @mixin grid-template($column, $key) {
   [class*="grid-"][class*="-#{$column}#{$key}"] {
     grid-template: auto/repeat(#{$column}, auto);
@@ -35,7 +35,6 @@
   }
 }
 
-// ********** PLACE **********
 @mixin place-content($key, $type: "", $value: var(--place-content-#{$key})) {
   .content-#{$key}#{$type} {
     place-content: #{$value};

@@ -132,7 +132,7 @@ button,
   --button-cursor: pointer;
 }
 
-/********** FLEX **********/
+/********** FLEX/GRID **********/
 [class*="flex"],
 [class*="col"],
 [class*="row"] {
@@ -147,7 +147,6 @@ button,
   --row-padding: 10px 0;
 }
 
-/********** GRID **********/
 [class*="grid"] {
   --grid-max-width: 100vw;
   --grid-margin: auto;
