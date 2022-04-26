@@ -1,9 +1,3 @@
-/********** HIDDEN CONTROLS **********/
-[class*=check],
-[class*=radio] {
-  display: none !important;
-}
-
 /********** DISPLAY **********/
 @each $key, $value in $displays {
   @include global($key, "display", $value);
@@ -77,11 +71,15 @@
 }
 
 /********** GAP **********/
-@include gap("tn");
+@each $key, $value in $gap {
+  @include gap($key, "tn");
+}
 
-@each $key, $value in $breakpoints {
-  @media (min-width: $value) {
-    @include gap($key);
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $gap {
+      @include gap($key, $type);
+    }
   }
 }
 
@@ -292,7 +290,7 @@
   @include anima-options($key, "animation-direction", $value);
 }
 
-/********** Cursor **********/
+/********** CURSOR **********/
 @each $key, $value in $cursor {
   @include global-all($key, "cursor", $value);
 }

@@ -22,20 +22,19 @@
   }
 }
 
-// ********** GRID (FLEX) **********
+// ********** GRID/FLEX **********
 @mixin grid-template($column, $key) {
   [class*="grid-"][class*="-#{$column}#{$key}"] {
     grid-template: auto/repeat(#{$column}, auto);
   }
 }
 
-@mixin gap($key) {
-  [class*="gap-"][class*="-#{$key}"] {
-    gap: var(--gap-#{$key});
+@mixin gap($size, $type) {
+  [class*="gap-"][class*="-#{$size}#{$type}"] {
+    gap: var(--gap#{$size});
   }
 }
 
-// ********** PLACE **********
 @mixin place-content($key, $type: "", $value: var(--place-content-#{$key})) {
   .content-#{$key}#{$type} {
     place-content: #{$value};
