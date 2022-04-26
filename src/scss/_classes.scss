@@ -1,9 +1,3 @@
-/********** HIDDEN CONTROLS **********/
-[class*=check],
-[class*=radio] {
-  display: none !important;
-}
-
 /********** DISPLAY **********/
 @each $key, $value in $displays {
   @include global($key, "display", $value);
