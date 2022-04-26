@@ -92,12 +92,13 @@ $displays: (
 ) !default;
 
 // ********** GAP **********
-$gaps: (
-  "tn": 1px,
-  "sm": 2px,
-  "md": 5px,
-  "lg": 10px,
-  "wd": 20px
+$gap: (
+  "1": 50px,
+  "2": 20px,
+  "3": 10px,
+  "4": 5px,
+  "5": 2px,
+  "6": 1px
 ) !default;
 
 // ********** PLACE CONTENT **********

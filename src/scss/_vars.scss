@@ -153,10 +153,9 @@ button,
   --grid-margin: auto;
 }
 
-/********** GAP **********/
 [class*="gap-"] {
-  @each $key, $value in $gaps {
-    --gap-#{$key}: #{$value};
+  @each $key, $value in $gap {
+    --gap#{$key}: #{$value};
   }
 }
 

@@ -29,9 +29,9 @@
   }
 }
 
-@mixin gap($key) {
-  [class*="gap-"][class*="-#{$key}"] {
-    gap: var(--gap-#{$key});
+@mixin gap($size, $type) {
+  [class*="gap-"][class*="-#{$size}#{$type}"] {
+    gap: var(--gap#{$size});
   }
 }
 
