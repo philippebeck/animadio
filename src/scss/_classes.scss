@@ -263,8 +263,8 @@
 
 /********** SHADOW **********/
 @each $key, $value in $box-shadow {
-  @include helpers("shabox-#{$key}", "box-shadow", "var(--box-shadow-#{$key})");
-  @include helpers("shabox-in-#{$key}", "box-shadow", "inset var(--box-shadow-#{$key})");
+  @include helpers("shadow-#{$key}", "box-shadow", "var(--shadow-#{$key})");
+  @include helpers("shadow-in-#{$key}", "box-shadow", "inset var(--shadow-#{$key})");
 }
 
 /********** ANIMATION **********/

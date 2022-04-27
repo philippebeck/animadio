@@ -225,10 +225,10 @@ button,
   }
 }
 
-/********** BOX SHADOW **********/
-[class*="shabox-"] {
+/********** SHADOW **********/
+[class*="shadow-"] {
   @each $key, $value in $box-shadow {
-    --box-shadow-#{$key}: #{$value};
+    --shadow-#{$key}: #{$value};
   }
 }
 
