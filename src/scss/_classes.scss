@@ -190,7 +190,7 @@
 
 /********** HEIGHT **********/
 @each $key, $value in $height {
-  @include helpers("height-#{$key}", "height", "var(--height-#{$key})");
+  @include global("height-#{$key}", "height", "var(--height-#{$key})");
 }
 
 @each $key, $value in $max-height {
@@ -203,7 +203,7 @@
 
 /********** WIDTH **********/
 @each $key, $value in $width {
-  @include helpers("width-#{$key}", "width", "var(--width-#{$key})");
+  @include global("width-#{$key}", "width", "var(--width-#{$key})");
 }
 
 @each $key, $value in $max-width {
