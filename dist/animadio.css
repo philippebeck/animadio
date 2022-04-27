@@ -1,4 +1,4 @@
-/*! animadio v5.0.3 | https://animadio.org | MIT License */
+/*! animadio v5.0.4 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -669,19 +669,19 @@ button,
   --min-width-lg: 50vw;
 }
 
-/********** BOX SHADOW **********/
-[class*=shabox-] {
-  --box-shadow-sm: 1px 1px;
-  --box-shadow-md: 2px 2px;
-  --box-shadow-lg: 5px 5px;
-  --box-shadow-blur: 0 0 2px;
-  --box-shadow-blur-sm: 1px 1px 1px;
-  --box-shadow-blur-md: 2px 2px 2px;
-  --box-shadow-blur-lg: 5px 5px 5px;
-  --box-shadow-spread: 0 0 2px 2px;
-  --box-shadow-spread-sm: 1px 1px 1px 1px;
-  --box-shadow-spread-md: 2px 2px 2px 2px;
-  --box-shadow-spread-lg: 5px 5px 5px 5px;
+/********** SHADOW **********/
+[class*=shadow-] {
+  --shadow-sm: 1px 1px;
+  --shadow-md: 2px 2px;
+  --shadow-lg: 5px 5px;
+  --shadow-blur: 0 0 2px;
+  --shadow-blur-sm: 1px 1px 1px;
+  --shadow-blur-md: 2px 2px 2px;
+  --shadow-blur-lg: 5px 5px 5px;
+  --shadow-spread: 0 0 2px 2px;
+  --shadow-spread-sm: 1px 1px 1px 1px;
+  --shadow-spread-md: 2px 2px 2px 2px;
+  --shadow-spread-lg: 5px 5px 5px 5px;
 }
 
 /********** ANIMATION **********/
@@ -1692,7 +1692,7 @@ pre {
     gap: var(--gap6);
   }
 }
-/********** PLACE CONTENT **********/
+/********** PLACE **********/
 .content-around {
   place-content: space-around;
 }
@@ -1866,7 +1866,6 @@ pre {
     place-content: flex-end;
   }
 }
-/********** PLACE ITEMS **********/
 .items-normal {
   place-items: normal;
 }
@@ -2016,7 +2015,6 @@ pre {
     place-items: flex-end;
   }
 }
-/********** PLACE SELF **********/
 .self-auto {
   place-self: auto;
 }
@@ -2886,41 +2884,17 @@ pre {
 
 /********** HEIGHT **********/
 .height-sm,
-.height-sm-global > *,
-.height-sm-onto:hover,
-.height-sm-onto:focus,
-.height-sm-toone > *:hover,
-.height-sm-toone > *:focus,
-*:hover > .height-sm-into,
-*:focus > .height-sm-into,
-.height-sm-toall:hover > *,
-.height-sm-toall:focus > * {
+.global-height-sm > * {
   height: var(--height-sm);
 }
 
 .height-md,
-.height-md-global > *,
-.height-md-onto:hover,
-.height-md-onto:focus,
-.height-md-toone > *:hover,
-.height-md-toone > *:focus,
-*:hover > .height-md-into,
-*:focus > .height-md-into,
-.height-md-toall:hover > *,
-.height-md-toall:focus > * {
+.global-height-md > * {
   height: var(--height-md);
 }
 
 .height-lg,
-.height-lg-global > *,
-.height-lg-onto:hover,
-.height-lg-onto:focus,
-.height-lg-toone > *:hover,
-.height-lg-toone > *:focus,
-*:hover > .height-lg-into,
-*:focus > .height-lg-into,
-.height-lg-toall:hover > *,
-.height-lg-toall:focus > * {
+.global-height-lg > * {
   height: var(--height-lg);
 }
 
@@ -2956,41 +2930,17 @@ pre {
 
 /********** WIDTH **********/
 .width-sm,
-.width-sm-global > *,
-.width-sm-onto:hover,
-.width-sm-onto:focus,
-.width-sm-toone > *:hover,
-.width-sm-toone > *:focus,
-*:hover > .width-sm-into,
-*:focus > .width-sm-into,
-.width-sm-toall:hover > *,
-.width-sm-toall:focus > * {
+.global-width-sm > * {
   width: var(--width-sm);
 }
 
 .width-md,
-.width-md-global > *,
-.width-md-onto:hover,
-.width-md-onto:focus,
-.width-md-toone > *:hover,
-.width-md-toone > *:focus,
-*:hover > .width-md-into,
-*:focus > .width-md-into,
-.width-md-toall:hover > *,
-.width-md-toall:focus > * {
+.global-width-md > * {
   width: var(--width-md);
 }
 
 .width-lg,
-.width-lg-global > *,
-.width-lg-onto:hover,
-.width-lg-onto:focus,
-.width-lg-toone > *:hover,
-.width-lg-toone > *:focus,
-*:hover > .width-lg-into,
-*:focus > .width-lg-into,
-.width-lg-toall:hover > *,
-.width-lg-toall:focus > * {
+.global-width-lg > * {
   width: var(--width-lg);
 }
 
@@ -3144,7 +3094,6 @@ pre {
   text-transform: lowercase;
 }
 
-/********** TEXT DECORATION **********/
 .deco-none,
 .deco-none-global > *,
 .deco-none-onto:hover,
@@ -3542,7 +3491,6 @@ pre {
   color: var(--tw);
 }
 
-/********** BACKGROUND COLOR **********/
 .bg-primary,
 .bg-primary-global > *,
 .bg-primary-onto:hover,
@@ -4128,291 +4076,291 @@ pre {
   background-color: var(--white-light);
 }
 
-/********** BOX SHADOW **********/
-.shabox-sm,
-.shabox-sm-global > *,
-.shabox-sm-onto:hover,
-.shabox-sm-onto:focus,
-.shabox-sm-toone > *:hover,
-.shabox-sm-toone > *:focus,
-*:hover > .shabox-sm-into,
-*:focus > .shabox-sm-into,
-.shabox-sm-toall:hover > *,
-.shabox-sm-toall:focus > * {
-  box-shadow: var(--box-shadow-sm);
+/********** SHADOW **********/
+.shadow-sm,
+.shadow-sm-global > *,
+.shadow-sm-onto:hover,
+.shadow-sm-onto:focus,
+.shadow-sm-toone > *:hover,
+.shadow-sm-toone > *:focus,
+*:hover > .shadow-sm-into,
+*:focus > .shadow-sm-into,
+.shadow-sm-toall:hover > *,
+.shadow-sm-toall:focus > * {
+  box-shadow: var(--shadow-sm);
 }
 
-.shabox-in-sm,
-.shabox-in-sm-global > *,
-.shabox-in-sm-onto:hover,
-.shabox-in-sm-onto:focus,
-.shabox-in-sm-toone > *:hover,
-.shabox-in-sm-toone > *:focus,
-*:hover > .shabox-in-sm-into,
-*:focus > .shabox-in-sm-into,
-.shabox-in-sm-toall:hover > *,
-.shabox-in-sm-toall:focus > * {
-  box-shadow: inset var(--box-shadow-sm);
+.shadow-in-sm,
+.shadow-in-sm-global > *,
+.shadow-in-sm-onto:hover,
+.shadow-in-sm-onto:focus,
+.shadow-in-sm-toone > *:hover,
+.shadow-in-sm-toone > *:focus,
+*:hover > .shadow-in-sm-into,
+*:focus > .shadow-in-sm-into,
+.shadow-in-sm-toall:hover > *,
+.shadow-in-sm-toall:focus > * {
+  box-shadow: inset var(--shadow-sm);
 }
 
-.shabox-md,
-.shabox-md-global > *,
-.shabox-md-onto:hover,
-.shabox-md-onto:focus,
-.shabox-md-toone > *:hover,
-.shabox-md-toone > *:focus,
-*:hover > .shabox-md-into,
-*:focus > .shabox-md-into,
-.shabox-md-toall:hover > *,
-.shabox-md-toall:focus > * {
-  box-shadow: var(--box-shadow-md);
+.shadow-md,
+.shadow-md-global > *,
+.shadow-md-onto:hover,
+.shadow-md-onto:focus,
+.shadow-md-toone > *:hover,
+.shadow-md-toone > *:focus,
+*:hover > .shadow-md-into,
+*:focus > .shadow-md-into,
+.shadow-md-toall:hover > *,
+.shadow-md-toall:focus > * {
+  box-shadow: var(--shadow-md);
 }
 
-.shabox-in-md,
-.shabox-in-md-global > *,
-.shabox-in-md-onto:hover,
-.shabox-in-md-onto:focus,
-.shabox-in-md-toone > *:hover,
-.shabox-in-md-toone > *:focus,
-*:hover > .shabox-in-md-into,
-*:focus > .shabox-in-md-into,
-.shabox-in-md-toall:hover > *,
-.shabox-in-md-toall:focus > * {
-  box-shadow: inset var(--box-shadow-md);
+.shadow-in-md,
+.shadow-in-md-global > *,
+.shadow-in-md-onto:hover,
+.shadow-in-md-onto:focus,
+.shadow-in-md-toone > *:hover,
+.shadow-in-md-toone > *:focus,
+*:hover > .shadow-in-md-into,
+*:focus > .shadow-in-md-into,
+.shadow-in-md-toall:hover > *,
+.shadow-in-md-toall:focus > * {
+  box-shadow: inset var(--shadow-md);
 }
 
-.shabox-lg,
-.shabox-lg-global > *,
-.shabox-lg-onto:hover,
-.shabox-lg-onto:focus,
-.shabox-lg-toone > *:hover,
-.shabox-lg-toone > *:focus,
-*:hover > .shabox-lg-into,
-*:focus > .shabox-lg-into,
-.shabox-lg-toall:hover > *,
-.shabox-lg-toall:focus > * {
-  box-shadow: var(--box-shadow-lg);
+.shadow-lg,
+.shadow-lg-global > *,
+.shadow-lg-onto:hover,
+.shadow-lg-onto:focus,
+.shadow-lg-toone > *:hover,
+.shadow-lg-toone > *:focus,
+*:hover > .shadow-lg-into,
+*:focus > .shadow-lg-into,
+.shadow-lg-toall:hover > *,
+.shadow-lg-toall:focus > * {
+  box-shadow: var(--shadow-lg);
 }
 
-.shabox-in-lg,
-.shabox-in-lg-global > *,
-.shabox-in-lg-onto:hover,
-.shabox-in-lg-onto:focus,
-.shabox-in-lg-toone > *:hover,
-.shabox-in-lg-toone > *:focus,
-*:hover > .shabox-in-lg-into,
-*:focus > .shabox-in-lg-into,
-.shabox-in-lg-toall:hover > *,
-.shabox-in-lg-toall:focus > * {
-  box-shadow: inset var(--box-shadow-lg);
+.shadow-in-lg,
+.shadow-in-lg-global > *,
+.shadow-in-lg-onto:hover,
+.shadow-in-lg-onto:focus,
+.shadow-in-lg-toone > *:hover,
+.shadow-in-lg-toone > *:focus,
+*:hover > .shadow-in-lg-into,
+*:focus > .shadow-in-lg-into,
+.shadow-in-lg-toall:hover > *,
+.shadow-in-lg-toall:focus > * {
+  box-shadow: inset var(--shadow-lg);
 }
 
-.shabox-blur,
-.shabox-blur-global > *,
-.shabox-blur-onto:hover,
-.shabox-blur-onto:focus,
-.shabox-blur-toone > *:hover,
-.shabox-blur-toone > *:focus,
-*:hover > .shabox-blur-into,
-*:focus > .shabox-blur-into,
-.shabox-blur-toall:hover > *,
-.shabox-blur-toall:focus > * {
-  box-shadow: var(--box-shadow-blur);
+.shadow-blur,
+.shadow-blur-global > *,
+.shadow-blur-onto:hover,
+.shadow-blur-onto:focus,
+.shadow-blur-toone > *:hover,
+.shadow-blur-toone > *:focus,
+*:hover > .shadow-blur-into,
+*:focus > .shadow-blur-into,
+.shadow-blur-toall:hover > *,
+.shadow-blur-toall:focus > * {
+  box-shadow: var(--shadow-blur);
 }
 
-.shabox-in-blur,
-.shabox-in-blur-global > *,
-.shabox-in-blur-onto:hover,
-.shabox-in-blur-onto:focus,
-.shabox-in-blur-toone > *:hover,
-.shabox-in-blur-toone > *:focus,
-*:hover > .shabox-in-blur-into,
-*:focus > .shabox-in-blur-into,
-.shabox-in-blur-toall:hover > *,
-.shabox-in-blur-toall:focus > * {
-  box-shadow: inset var(--box-shadow-blur);
+.shadow-in-blur,
+.shadow-in-blur-global > *,
+.shadow-in-blur-onto:hover,
+.shadow-in-blur-onto:focus,
+.shadow-in-blur-toone > *:hover,
+.shadow-in-blur-toone > *:focus,
+*:hover > .shadow-in-blur-into,
+*:focus > .shadow-in-blur-into,
+.shadow-in-blur-toall:hover > *,
+.shadow-in-blur-toall:focus > * {
+  box-shadow: inset var(--shadow-blur);
 }
 
-.shabox-blur-sm,
-.shabox-blur-sm-global > *,
-.shabox-blur-sm-onto:hover,
-.shabox-blur-sm-onto:focus,
-.shabox-blur-sm-toone > *:hover,
-.shabox-blur-sm-toone > *:focus,
-*:hover > .shabox-blur-sm-into,
-*:focus > .shabox-blur-sm-into,
-.shabox-blur-sm-toall:hover > *,
-.shabox-blur-sm-toall:focus > * {
-  box-shadow: var(--box-shadow-blur-sm);
+.shadow-blur-sm,
+.shadow-blur-sm-global > *,
+.shadow-blur-sm-onto:hover,
+.shadow-blur-sm-onto:focus,
+.shadow-blur-sm-toone > *:hover,
+.shadow-blur-sm-toone > *:focus,
+*:hover > .shadow-blur-sm-into,
+*:focus > .shadow-blur-sm-into,
+.shadow-blur-sm-toall:hover > *,
+.shadow-blur-sm-toall:focus > * {
+  box-shadow: var(--shadow-blur-sm);
 }
 
-.shabox-in-blur-sm,
-.shabox-in-blur-sm-global > *,
-.shabox-in-blur-sm-onto:hover,
-.shabox-in-blur-sm-onto:focus,
-.shabox-in-blur-sm-toone > *:hover,
-.shabox-in-blur-sm-toone > *:focus,
-*:hover > .shabox-in-blur-sm-into,
-*:focus > .shabox-in-blur-sm-into,
-.shabox-in-blur-sm-toall:hover > *,
-.shabox-in-blur-sm-toall:focus > * {
-  box-shadow: inset var(--box-shadow-blur-sm);
+.shadow-in-blur-sm,
+.shadow-in-blur-sm-global > *,
+.shadow-in-blur-sm-onto:hover,
+.shadow-in-blur-sm-onto:focus,
+.shadow-in-blur-sm-toone > *:hover,
+.shadow-in-blur-sm-toone > *:focus,
+*:hover > .shadow-in-blur-sm-into,
+*:focus > .shadow-in-blur-sm-into,
+.shadow-in-blur-sm-toall:hover > *,
+.shadow-in-blur-sm-toall:focus > * {
+  box-shadow: inset var(--shadow-blur-sm);
 }
 
-.shabox-blur-md,
-.shabox-blur-md-global > *,
-.shabox-blur-md-onto:hover,
-.shabox-blur-md-onto:focus,
-.shabox-blur-md-toone > *:hover,
-.shabox-blur-md-toone > *:focus,
-*:hover > .shabox-blur-md-into,
-*:focus > .shabox-blur-md-into,
-.shabox-blur-md-toall:hover > *,
-.shabox-blur-md-toall:focus > * {
-  box-shadow: var(--box-shadow-blur-md);
+.shadow-blur-md,
+.shadow-blur-md-global > *,
+.shadow-blur-md-onto:hover,
+.shadow-blur-md-onto:focus,
+.shadow-blur-md-toone > *:hover,
+.shadow-blur-md-toone > *:focus,
+*:hover > .shadow-blur-md-into,
+*:focus > .shadow-blur-md-into,
+.shadow-blur-md-toall:hover > *,
+.shadow-blur-md-toall:focus > * {
+  box-shadow: var(--shadow-blur-md);
 }
 
-.shabox-in-blur-md,
-.shabox-in-blur-md-global > *,
-.shabox-in-blur-md-onto:hover,
-.shabox-in-blur-md-onto:focus,
-.shabox-in-blur-md-toone > *:hover,
-.shabox-in-blur-md-toone > *:focus,
-*:hover > .shabox-in-blur-md-into,
-*:focus > .shabox-in-blur-md-into,
-.shabox-in-blur-md-toall:hover > *,
-.shabox-in-blur-md-toall:focus > * {
-  box-shadow: inset var(--box-shadow-blur-md);
+.shadow-in-blur-md,
+.shadow-in-blur-md-global > *,
+.shadow-in-blur-md-onto:hover,
+.shadow-in-blur-md-onto:focus,
+.shadow-in-blur-md-toone > *:hover,
+.shadow-in-blur-md-toone > *:focus,
+*:hover > .shadow-in-blur-md-into,
+*:focus > .shadow-in-blur-md-into,
+.shadow-in-blur-md-toall:hover > *,
+.shadow-in-blur-md-toall:focus > * {
+  box-shadow: inset var(--shadow-blur-md);
 }
 
-.shabox-blur-lg,
-.shabox-blur-lg-global > *,
-.shabox-blur-lg-onto:hover,
-.shabox-blur-lg-onto:focus,
-.shabox-blur-lg-toone > *:hover,
-.shabox-blur-lg-toone > *:focus,
-*:hover > .shabox-blur-lg-into,
-*:focus > .shabox-blur-lg-into,
-.shabox-blur-lg-toall:hover > *,
-.shabox-blur-lg-toall:focus > * {
-  box-shadow: var(--box-shadow-blur-lg);
+.shadow-blur-lg,
+.shadow-blur-lg-global > *,
+.shadow-blur-lg-onto:hover,
+.shadow-blur-lg-onto:focus,
+.shadow-blur-lg-toone > *:hover,
+.shadow-blur-lg-toone > *:focus,
+*:hover > .shadow-blur-lg-into,
+*:focus > .shadow-blur-lg-into,
+.shadow-blur-lg-toall:hover > *,
+.shadow-blur-lg-toall:focus > * {
+  box-shadow: var(--shadow-blur-lg);
 }
 
-.shabox-in-blur-lg,
-.shabox-in-blur-lg-global > *,
-.shabox-in-blur-lg-onto:hover,
-.shabox-in-blur-lg-onto:focus,
-.shabox-in-blur-lg-toone > *:hover,
-.shabox-in-blur-lg-toone > *:focus,
-*:hover > .shabox-in-blur-lg-into,
-*:focus > .shabox-in-blur-lg-into,
-.shabox-in-blur-lg-toall:hover > *,
-.shabox-in-blur-lg-toall:focus > * {
-  box-shadow: inset var(--box-shadow-blur-lg);
+.shadow-in-blur-lg,
+.shadow-in-blur-lg-global > *,
+.shadow-in-blur-lg-onto:hover,
+.shadow-in-blur-lg-onto:focus,
+.shadow-in-blur-lg-toone > *:hover,
+.shadow-in-blur-lg-toone > *:focus,
+*:hover > .shadow-in-blur-lg-into,
+*:focus > .shadow-in-blur-lg-into,
+.shadow-in-blur-lg-toall:hover > *,
+.shadow-in-blur-lg-toall:focus > * {
+  box-shadow: inset var(--shadow-blur-lg);
 }
 
-.shabox-spread,
-.shabox-spread-global > *,
-.shabox-spread-onto:hover,
-.shabox-spread-onto:focus,
-.shabox-spread-toone > *:hover,
-.shabox-spread-toone > *:focus,
-*:hover > .shabox-spread-into,
-*:focus > .shabox-spread-into,
-.shabox-spread-toall:hover > *,
-.shabox-spread-toall:focus > * {
-  box-shadow: var(--box-shadow-spread);
+.shadow-spread,
+.shadow-spread-global > *,
+.shadow-spread-onto:hover,
+.shadow-spread-onto:focus,
+.shadow-spread-toone > *:hover,
+.shadow-spread-toone > *:focus,
+*:hover > .shadow-spread-into,
+*:focus > .shadow-spread-into,
+.shadow-spread-toall:hover > *,
+.shadow-spread-toall:focus > * {
+  box-shadow: var(--shadow-spread);
 }
 
-.shabox-in-spread,
-.shabox-in-spread-global > *,
-.shabox-in-spread-onto:hover,
-.shabox-in-spread-onto:focus,
-.shabox-in-spread-toone > *:hover,
-.shabox-in-spread-toone > *:focus,
-*:hover > .shabox-in-spread-into,
-*:focus > .shabox-in-spread-into,
-.shabox-in-spread-toall:hover > *,
-.shabox-in-spread-toall:focus > * {
-  box-shadow: inset var(--box-shadow-spread);
+.shadow-in-spread,
+.shadow-in-spread-global > *,
+.shadow-in-spread-onto:hover,
+.shadow-in-spread-onto:focus,
+.shadow-in-spread-toone > *:hover,
+.shadow-in-spread-toone > *:focus,
+*:hover > .shadow-in-spread-into,
+*:focus > .shadow-in-spread-into,
+.shadow-in-spread-toall:hover > *,
+.shadow-in-spread-toall:focus > * {
+  box-shadow: inset var(--shadow-spread);
 }
 
-.shabox-spread-sm,
-.shabox-spread-sm-global > *,
-.shabox-spread-sm-onto:hover,
-.shabox-spread-sm-onto:focus,
-.shabox-spread-sm-toone > *:hover,
-.shabox-spread-sm-toone > *:focus,
-*:hover > .shabox-spread-sm-into,
-*:focus > .shabox-spread-sm-into,
-.shabox-spread-sm-toall:hover > *,
-.shabox-spread-sm-toall:focus > * {
-  box-shadow: var(--box-shadow-spread-sm);
+.shadow-spread-sm,
+.shadow-spread-sm-global > *,
+.shadow-spread-sm-onto:hover,
+.shadow-spread-sm-onto:focus,
+.shadow-spread-sm-toone > *:hover,
+.shadow-spread-sm-toone > *:focus,
+*:hover > .shadow-spread-sm-into,
+*:focus > .shadow-spread-sm-into,
+.shadow-spread-sm-toall:hover > *,
+.shadow-spread-sm-toall:focus > * {
+  box-shadow: var(--shadow-spread-sm);
 }
 
-.shabox-in-spread-sm,
-.shabox-in-spread-sm-global > *,
-.shabox-in-spread-sm-onto:hover,
-.shabox-in-spread-sm-onto:focus,
-.shabox-in-spread-sm-toone > *:hover,
-.shabox-in-spread-sm-toone > *:focus,
-*:hover > .shabox-in-spread-sm-into,
-*:focus > .shabox-in-spread-sm-into,
-.shabox-in-spread-sm-toall:hover > *,
-.shabox-in-spread-sm-toall:focus > * {
-  box-shadow: inset var(--box-shadow-spread-sm);
+.shadow-in-spread-sm,
+.shadow-in-spread-sm-global > *,
+.shadow-in-spread-sm-onto:hover,
+.shadow-in-spread-sm-onto:focus,
+.shadow-in-spread-sm-toone > *:hover,
+.shadow-in-spread-sm-toone > *:focus,
+*:hover > .shadow-in-spread-sm-into,
+*:focus > .shadow-in-spread-sm-into,
+.shadow-in-spread-sm-toall:hover > *,
+.shadow-in-spread-sm-toall:focus > * {
+  box-shadow: inset var(--shadow-spread-sm);
 }
 
-.shabox-spread-md,
-.shabox-spread-md-global > *,
-.shabox-spread-md-onto:hover,
-.shabox-spread-md-onto:focus,
-.shabox-spread-md-toone > *:hover,
-.shabox-spread-md-toone > *:focus,
-*:hover > .shabox-spread-md-into,
-*:focus > .shabox-spread-md-into,
-.shabox-spread-md-toall:hover > *,
-.shabox-spread-md-toall:focus > * {
-  box-shadow: var(--box-shadow-spread-md);
+.shadow-spread-md,
+.shadow-spread-md-global > *,
+.shadow-spread-md-onto:hover,
+.shadow-spread-md-onto:focus,
+.shadow-spread-md-toone > *:hover,
+.shadow-spread-md-toone > *:focus,
+*:hover > .shadow-spread-md-into,
+*:focus > .shadow-spread-md-into,
+.shadow-spread-md-toall:hover > *,
+.shadow-spread-md-toall:focus > * {
+  box-shadow: var(--shadow-spread-md);
 }
 
-.shabox-in-spread-md,
-.shabox-in-spread-md-global > *,
-.shabox-in-spread-md-onto:hover,
-.shabox-in-spread-md-onto:focus,
-.shabox-in-spread-md-toone > *:hover,
-.shabox-in-spread-md-toone > *:focus,
-*:hover > .shabox-in-spread-md-into,
-*:focus > .shabox-in-spread-md-into,
-.shabox-in-spread-md-toall:hover > *,
-.shabox-in-spread-md-toall:focus > * {
-  box-shadow: inset var(--box-shadow-spread-md);
+.shadow-in-spread-md,
+.shadow-in-spread-md-global > *,
+.shadow-in-spread-md-onto:hover,
+.shadow-in-spread-md-onto:focus,
+.shadow-in-spread-md-toone > *:hover,
+.shadow-in-spread-md-toone > *:focus,
+*:hover > .shadow-in-spread-md-into,
+*:focus > .shadow-in-spread-md-into,
+.shadow-in-spread-md-toall:hover > *,
+.shadow-in-spread-md-toall:focus > * {
+  box-shadow: inset var(--shadow-spread-md);
 }
 
-.shabox-spread-lg,
-.shabox-spread-lg-global > *,
-.shabox-spread-lg-onto:hover,
-.shabox-spread-lg-onto:focus,
-.shabox-spread-lg-toone > *:hover,
-.shabox-spread-lg-toone > *:focus,
-*:hover > .shabox-spread-lg-into,
-*:focus > .shabox-spread-lg-into,
-.shabox-spread-lg-toall:hover > *,
-.shabox-spread-lg-toall:focus > * {
-  box-shadow: var(--box-shadow-spread-lg);
+.shadow-spread-lg,
+.shadow-spread-lg-global > *,
+.shadow-spread-lg-onto:hover,
+.shadow-spread-lg-onto:focus,
+.shadow-spread-lg-toone > *:hover,
+.shadow-spread-lg-toone > *:focus,
+*:hover > .shadow-spread-lg-into,
+*:focus > .shadow-spread-lg-into,
+.shadow-spread-lg-toall:hover > *,
+.shadow-spread-lg-toall:focus > * {
+  box-shadow: var(--shadow-spread-lg);
 }
 
-.shabox-in-spread-lg,
-.shabox-in-spread-lg-global > *,
-.shabox-in-spread-lg-onto:hover,
-.shabox-in-spread-lg-onto:focus,
-.shabox-in-spread-lg-toone > *:hover,
-.shabox-in-spread-lg-toone > *:focus,
-*:hover > .shabox-in-spread-lg-into,
-*:focus > .shabox-in-spread-lg-into,
-.shabox-in-spread-lg-toall:hover > *,
-.shabox-in-spread-lg-toall:focus > * {
-  box-shadow: inset var(--box-shadow-spread-lg);
+.shadow-in-spread-lg,
+.shadow-in-spread-lg-global > *,
+.shadow-in-spread-lg-onto:hover,
+.shadow-in-spread-lg-onto:focus,
+.shadow-in-spread-lg-toone > *:hover,
+.shadow-in-spread-lg-toone > *:focus,
+*:hover > .shadow-in-spread-lg-into,
+*:focus > .shadow-in-spread-lg-into,
+.shadow-in-spread-lg-toall:hover > *,
+.shadow-in-spread-lg-toall:focus > * {
+  box-shadow: inset var(--shadow-spread-lg);
 }
 
 /********** ANIMATION **********/
@@ -4877,4 +4825,4 @@ pre {
 }
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 26th Apr 2022 @ 5:44:07 PM */
+ Updated: 27th Apr 2022 @ 10:17:22 AM */

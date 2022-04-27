@@ -83,7 +83,7 @@
   }
 }
 
-/********** PLACE CONTENT **********/
+/********** PLACE **********/
 @each $key, $value in $place-content {
   @include place-content($key, "", $value);
 }
@@ -96,7 +96,6 @@
   }
 }
 
-/********** PLACE ITEMS **********/
 @each $key, $value in $place-items {
   @include place-items($key, "", $value);
 }
@@ -109,7 +108,6 @@
   }
 }
 
-/********** PLACE SELF **********/
 @each $key, $value in $place-self {
   @include place-self($key, "", $value);
 }
@@ -192,7 +190,7 @@
 
 /********** HEIGHT **********/
 @each $key, $value in $height {
-  @include helpers("height-#{$key}", "height", "var(--height-#{$key})");
+  @include global("height-#{$key}", "height", "var(--height-#{$key})");
 }
 
 @each $key, $value in $max-height {
@@ -205,7 +203,7 @@
 
 /********** WIDTH **********/
 @each $key, $value in $width {
-  @include helpers("width-#{$key}", "width", "var(--width-#{$key})");
+  @include global("width-#{$key}", "width", "var(--width-#{$key})");
 }
 
 @each $key, $value in $max-width {
@@ -236,7 +234,6 @@
   @include helpers("trans-#{$key}", "text-transform", $value);
 }
 
-/********** TEXT DECORATION **********/
 @each $key, $value in $text-decoration-line {
   @include helpers("deco-#{$key}", "text-decoration-line", $value);
 }
@@ -256,7 +253,6 @@
   }
 }
 
-/********** BACKGROUND COLOR **********/
 @each $colors in $base-colors {
   @each $key, $value in $colors {
     @include helpers("bg-#{$key}", "background-color", "var(--#{$key})");
@@ -265,10 +261,10 @@
   }
 }
 
-/********** BOX SHADOW **********/
+/********** SHADOW **********/
 @each $key, $value in $box-shadow {
-  @include helpers("shabox-#{$key}", "box-shadow", "var(--box-shadow-#{$key})");
-  @include helpers("shabox-in-#{$key}", "box-shadow", "inset var(--box-shadow-#{$key})");
+  @include helpers("shadow-#{$key}", "box-shadow", "var(--shadow-#{$key})");
+  @include helpers("shadow-in-#{$key}", "box-shadow", "inset var(--shadow-#{$key})");
 }
 
 /********** ANIMATION **********/

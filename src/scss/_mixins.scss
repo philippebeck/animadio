@@ -35,19 +35,19 @@
   }
 }
 
-@mixin place-content($key, $type: "", $value: var(--place-content-#{$key})) {
+@mixin place-content($key, $type, $value) {
   .content-#{$key}#{$type} {
     place-content: #{$value};
   }
 }
 
-@mixin place-items($key, $type: "", $value: var(--place-items-#{$key})) {
+@mixin place-items($key, $type, $value) {
   .items-#{$key}#{$type} {
     place-items: #{$value};
   }
 }
 
-@mixin place-self($key, $type: "", $value: var(--place-self-#{$key})) {
+@mixin place-self($key, $type, $value) {
   .self-#{$key}#{$type} {
     place-self: #{$value};
   }
