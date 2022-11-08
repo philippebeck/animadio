@@ -5,19 +5,19 @@
     }
   
   /********** COLORS **********/
-  @each $colors in $all-colors {
-    @each $key, $value in $colors {
-      --#{$key}: rgb(#{$value});
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --#{$key}: hsl(#{$value});
     }
   }
 
-  --opacity-dark: 0.8;
-  --opacity-light: 0.2;
+  --dark: 0.8;
+  --light: 0.2;
 
-  @each $colors in $base-colors {
-    @each $key, $value in $colors {
-      --#{$key}-dark: rgba(#{$value}, var(--opacity-dark));
-      --#{$key}-light: rgba(#{$value}, var(--opacity-light));
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --#{$key}-dark: hsla(#{$value}, var(--dark));
+      --#{$key}-light: hsla(#{$value}, var(--light));
     }
   }
 
