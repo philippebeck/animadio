@@ -169,7 +169,7 @@
   @include helpers-options("bord-#{$key}", "border-width", $value);
 }
 
-@each $color in $base-colors {
+@each $color in $colors {
   @each $key, $value in $color {
     @include helpers-options("bord-#{$key}", "border-color", "var(--#{$key})");
   }
@@ -242,19 +242,19 @@
   @include helpers-options("deco-#{$key}", "text-decoration-style", $value);
 }
 
-@each $key, $value in $primary-colors {
+@each $key, $value in $primary {
   @include helpers-options("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
 }
 
 /********** COLOR **********/
-@each $colors in $all-colors {
-  @each $key, $value in $colors {
+@each $color in $colors {
+  @each $key, $value in $color {
     @include helpers(#{$key}, "color", "var(--#{$key})");
   }
 }
 
-@each $colors in $base-colors {
-  @each $key, $value in $colors {
+@each $color in $colors {
+  @each $key, $value in $color {
     @include helpers("bg-#{$key}", "background-color", "var(--#{$key})");
     @include helpers("bg-#{$key}-dark", "background-color", "var(--#{$key}-dark)");
     @include helpers("bg-#{$key}-light", "background-color", "var(--#{$key}-light)");

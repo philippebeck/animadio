@@ -17,38 +17,22 @@ $font: (
 $font-family: sans-serif, serif, monospace, cursive, fantasy;
 
 // ********** COLORS **********
-$primary-colors: (
-  "primary":    (65, 105, 225),   // RoyalBlue
-  "secondary":  (220, 220, 220),  // Gainsboro
-  "pink":       (255, 0, 255),    // Magenta
-  "red":        (250, 128, 114),  // Salmon
-  "orange":     (255, 140, 0),    // DarkOrange
-  "yellow":     (255, 215, 0),    // Gold
-  "brown":      (139, 69, 19),    // SaddleBrown
-  "green":      (50, 205, 50),    // LimeGreen
-  "cyan":       (0, 128, 128),    // Teal
-  "blue":       (30, 144, 255),   // DodgerBlue
-  "violet":     (106, 90, 205)    // SlateBlue
+$primary: (
+  "red":        (0, 100%, 50%),
+  "yellow":     (60, 100%, 50%),
+  "green":      (120, 100%, 50%),
+  "cyan":       (180, 100%, 50%),
+  "blue":       (240, 100%, 50%),
+  "magenta":    (300, 100%, 50%)
 ) !default;
 
 $grayscale: (
-  "black":  (15, 15, 15),     // Black
-  "gray":   (105, 105, 105),  // DimGray
-  "grey":   (192, 192, 192),  // Silver
-  "white":  (255, 255, 240)   // Ivory
+  "black":  (0, 0%, 0%),
+  "gray":   (0, 0%, 50%),
+  "white":  (0, 0%, 100%)
 ) !default;
 
-$brand-colors: (
-  "fb": (66, 103, 178),
-  "gh": (36, 41, 46),
-  "in": (0, 119, 181),
-  "pp": (39, 52, 106),
-  "tw": (29, 161, 242)
-) !default;
-
-$base-colors: $primary-colors, $grayscale;
-$main-colors: $primary-colors, $brand-colors;
-$all-colors:  $primary-colors, $grayscale, $brand-colors;
+$colors: $primary, $grayscale;
 
 // ********** TRANSFORM **********
 $transforms: (
