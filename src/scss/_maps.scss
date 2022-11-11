@@ -17,13 +17,19 @@ $font: (
 $font-family: sans-serif, serif, monospace, cursive, fantasy;
 
 // ********** COLORS **********
-$primary: (
+$hues: (
   "red":        (0, 100%, 50%),
+  "orange":     (30, 100%, 50%),
   "yellow":     (60, 100%, 50%),
+  "lime":       (90, 100%, 50%),
   "green":      (120, 100%, 50%),
+  "aqua":       (150, 100%, 50%),
   "cyan":       (180, 100%, 50%),
+  "sky":        (210, 100%, 50%),
   "blue":       (240, 100%, 50%),
-  "magenta":    (300, 100%, 50%)
+  "indigo":     (270, 100%, 50%),
+  "magenta":    (300, 100%, 50%),
+  "pink":       (330, 100%, 50%)
 ) !default;
 
 $grayscale: (
@@ -32,7 +38,7 @@ $grayscale: (
   "white":  (0, 0%, 100%)
 ) !default;
 
-$colors: $primary, $grayscale;
+$colors: $hues, $grayscale;
 
 // ********** TRANSFORM **********
 $transforms: (
