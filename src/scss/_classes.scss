@@ -242,7 +242,7 @@
   @include helpers-options("deco-#{$key}", "text-decoration-style", $value);
 }
 
-@each $key, $value in $primary {
+@each $key, $value in $hues {
   @include helpers-options("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
 }
 

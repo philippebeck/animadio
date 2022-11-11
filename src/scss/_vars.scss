@@ -5,19 +5,29 @@
     }
   
   /********** COLORS **********/
+  /* HSL Values */
   @each $color in $colors {
     @each $key, $value in $color {
-      --#{$key}: hsl(#{$value});
+      --#{$key}-hsl: #{$value};
     }
   }
 
-  --dark: 0.8;
-  --light: 0.2;
+  /* Opacity */
+  --dark-a: 0.8;
+  --light-a: 0.2;
 
+  /* Colors */
   @each $color in $colors {
     @each $key, $value in $color {
-      --#{$key}-dark: hsla(#{$value}, var(--dark));
-      --#{$key}-light: hsla(#{$value}, var(--light));
+      --#{$key}: hsl(var(--#{$key}-hsl));
+    }
+  }
+
+  /* Transparent Colors */
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --#{$key}-dark: hsla(var(--#{$key}-hsl), var(--dark-a));
+      --#{$key}-light: hsla(var(--#{$key}-hsl), var(--light-a));
     }
   }
 

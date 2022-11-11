@@ -1,4 +1,4 @@
-/*! animadio v5.1.0 | https://animadio.org | MIT License */
+/*! animadio v5.2.0 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -362,35 +362,72 @@ template {
   --cursive: cursive;
   --fantasy: fantasy;
   /********** COLORS **********/
-  --red: hsl(0, 100%, 50%);
-  --yellow: hsl(60, 100%, 50%);
-  --green: hsl(120, 100%, 50%);
-  --cyan: hsl(180, 100%, 50%);
-  --blue: hsl(240, 100%, 50%);
-  --magenta: hsl(300, 100%, 50%);
-  --black: hsl(0, 0%, 0%);
-  --gray: hsl(0, 0%, 50%);
-  --white: hsl(0, 0%, 100%);
-  --dark: 0.8;
-  --light: 0.2;
-  --red-dark: hsla(0, 100%, 50%, var(--dark));
-  --red-light: hsla(0, 100%, 50%, var(--light));
-  --yellow-dark: hsla(60, 100%, 50%, var(--dark));
-  --yellow-light: hsla(60, 100%, 50%, var(--light));
-  --green-dark: hsla(120, 100%, 50%, var(--dark));
-  --green-light: hsla(120, 100%, 50%, var(--light));
-  --cyan-dark: hsla(180, 100%, 50%, var(--dark));
-  --cyan-light: hsla(180, 100%, 50%, var(--light));
-  --blue-dark: hsla(240, 100%, 50%, var(--dark));
-  --blue-light: hsla(240, 100%, 50%, var(--light));
-  --magenta-dark: hsla(300, 100%, 50%, var(--dark));
-  --magenta-light: hsla(300, 100%, 50%, var(--light));
-  --black-dark: hsla(0, 0%, 0%, var(--dark));
-  --black-light: hsla(0, 0%, 0%, var(--light));
-  --gray-dark: hsla(0, 0%, 50%, var(--dark));
-  --gray-light: hsla(0, 0%, 50%, var(--light));
-  --white-dark: hsla(0, 0%, 100%, var(--dark));
-  --white-light: hsla(0, 0%, 100%, var(--light));
+  /* HSL Values */
+  --red-hsl: 0, 100%, 50%;
+  --orange-hsl: 30, 100%, 50%;
+  --yellow-hsl: 60, 100%, 50%;
+  --lime-hsl: 90, 100%, 50%;
+  --green-hsl: 120, 100%, 50%;
+  --aqua-hsl: 150, 100%, 50%;
+  --cyan-hsl: 180, 100%, 50%;
+  --sky-hsl: 210, 100%, 50%;
+  --blue-hsl: 240, 100%, 50%;
+  --indigo-hsl: 270, 100%, 50%;
+  --magenta-hsl: 300, 100%, 50%;
+  --pink-hsl: 330, 100%, 50%;
+  --black-hsl: 0, 0%, 0%;
+  --gray-hsl: 0, 0%, 50%;
+  --white-hsl: 0, 0%, 100%;
+  /* Opacity */
+  --dark-a: 0.8;
+  --light-a: 0.2;
+  /* Colors */
+  --red: hsl(var(--red-hsl));
+  --orange: hsl(var(--orange-hsl));
+  --yellow: hsl(var(--yellow-hsl));
+  --lime: hsl(var(--lime-hsl));
+  --green: hsl(var(--green-hsl));
+  --aqua: hsl(var(--aqua-hsl));
+  --cyan: hsl(var(--cyan-hsl));
+  --sky: hsl(var(--sky-hsl));
+  --blue: hsl(var(--blue-hsl));
+  --indigo: hsl(var(--indigo-hsl));
+  --magenta: hsl(var(--magenta-hsl));
+  --pink: hsl(var(--pink-hsl));
+  --black: hsl(var(--black-hsl));
+  --gray: hsl(var(--gray-hsl));
+  --white: hsl(var(--white-hsl));
+  /* Transparent Colors */
+  --red-dark: hsla(var(--red-hsl), var(--dark-a));
+  --red-light: hsla(var(--red-hsl), var(--light-a));
+  --orange-dark: hsla(var(--orange-hsl), var(--dark-a));
+  --orange-light: hsla(var(--orange-hsl), var(--light-a));
+  --yellow-dark: hsla(var(--yellow-hsl), var(--dark-a));
+  --yellow-light: hsla(var(--yellow-hsl), var(--light-a));
+  --lime-dark: hsla(var(--lime-hsl), var(--dark-a));
+  --lime-light: hsla(var(--lime-hsl), var(--light-a));
+  --green-dark: hsla(var(--green-hsl), var(--dark-a));
+  --green-light: hsla(var(--green-hsl), var(--light-a));
+  --aqua-dark: hsla(var(--aqua-hsl), var(--dark-a));
+  --aqua-light: hsla(var(--aqua-hsl), var(--light-a));
+  --cyan-dark: hsla(var(--cyan-hsl), var(--dark-a));
+  --cyan-light: hsla(var(--cyan-hsl), var(--light-a));
+  --sky-dark: hsla(var(--sky-hsl), var(--dark-a));
+  --sky-light: hsla(var(--sky-hsl), var(--light-a));
+  --blue-dark: hsla(var(--blue-hsl), var(--dark-a));
+  --blue-light: hsla(var(--blue-hsl), var(--light-a));
+  --indigo-dark: hsla(var(--indigo-hsl), var(--dark-a));
+  --indigo-light: hsla(var(--indigo-hsl), var(--light-a));
+  --magenta-dark: hsla(var(--magenta-hsl), var(--dark-a));
+  --magenta-light: hsla(var(--magenta-hsl), var(--light-a));
+  --pink-dark: hsla(var(--pink-hsl), var(--dark-a));
+  --pink-light: hsla(var(--pink-hsl), var(--light-a));
+  --black-dark: hsla(var(--black-hsl), var(--dark-a));
+  --black-light: hsla(var(--black-hsl), var(--light-a));
+  --gray-dark: hsla(var(--gray-hsl), var(--dark-a));
+  --gray-light: hsla(var(--gray-hsl), var(--light-a));
+  --white-dark: hsla(var(--white-hsl), var(--dark-a));
+  --white-light: hsla(var(--white-hsl), var(--light-a));
   /********** TRANSFORM **********/
   --slideT: translate(0, 10vh);
   --slideR: translate(-10vw, 0);
@@ -2648,24 +2685,48 @@ pre {
   border-color: var(--red);
 }
 
+.bord-orange {
+  border-color: var(--orange);
+}
+
 .bord-yellow {
   border-color: var(--yellow);
+}
+
+.bord-lime {
+  border-color: var(--lime);
 }
 
 .bord-green {
   border-color: var(--green);
 }
 
+.bord-aqua {
+  border-color: var(--aqua);
+}
+
 .bord-cyan {
   border-color: var(--cyan);
+}
+
+.bord-sky {
+  border-color: var(--sky);
 }
 
 .bord-blue {
   border-color: var(--blue);
 }
 
+.bord-indigo {
+  border-color: var(--indigo);
+}
+
 .bord-magenta {
   border-color: var(--magenta);
+}
+
+.bord-pink {
+  border-color: var(--pink);
 }
 
 .bord-black {
@@ -3131,9 +3192,19 @@ pre {
           text-decoration-color: var(--red);
 }
 
+.deco-orange {
+  -webkit-text-decoration-color: var(--orange);
+          text-decoration-color: var(--orange);
+}
+
 .deco-yellow {
   -webkit-text-decoration-color: var(--yellow);
           text-decoration-color: var(--yellow);
+}
+
+.deco-lime {
+  -webkit-text-decoration-color: var(--lime);
+          text-decoration-color: var(--lime);
 }
 
 .deco-green {
@@ -3141,9 +3212,19 @@ pre {
           text-decoration-color: var(--green);
 }
 
+.deco-aqua {
+  -webkit-text-decoration-color: var(--aqua);
+          text-decoration-color: var(--aqua);
+}
+
 .deco-cyan {
   -webkit-text-decoration-color: var(--cyan);
           text-decoration-color: var(--cyan);
+}
+
+.deco-sky {
+  -webkit-text-decoration-color: var(--sky);
+          text-decoration-color: var(--sky);
 }
 
 .deco-blue {
@@ -3151,9 +3232,19 @@ pre {
           text-decoration-color: var(--blue);
 }
 
+.deco-indigo {
+  -webkit-text-decoration-color: var(--indigo);
+          text-decoration-color: var(--indigo);
+}
+
 .deco-magenta {
   -webkit-text-decoration-color: var(--magenta);
           text-decoration-color: var(--magenta);
+}
+
+.deco-pink {
+  -webkit-text-decoration-color: var(--pink);
+          text-decoration-color: var(--pink);
 }
 
 /********** COLOR **********/
@@ -3170,6 +3261,19 @@ pre {
   color: var(--red);
 }
 
+.orange,
+.orange-global > *,
+.orange-onto:hover,
+.orange-onto:focus,
+.orange-toone > *:hover,
+.orange-toone > *:focus,
+*:hover > .orange-into,
+*:focus > .orange-into,
+.orange-toall:hover > *,
+.orange-toall:focus > * {
+  color: var(--orange);
+}
+
 .yellow,
 .yellow-global > *,
 .yellow-onto:hover,
@@ -3181,6 +3285,19 @@ pre {
 .yellow-toall:hover > *,
 .yellow-toall:focus > * {
   color: var(--yellow);
+}
+
+.lime,
+.lime-global > *,
+.lime-onto:hover,
+.lime-onto:focus,
+.lime-toone > *:hover,
+.lime-toone > *:focus,
+*:hover > .lime-into,
+*:focus > .lime-into,
+.lime-toall:hover > *,
+.lime-toall:focus > * {
+  color: var(--lime);
 }
 
 .green,
@@ -3196,6 +3313,19 @@ pre {
   color: var(--green);
 }
 
+.aqua,
+.aqua-global > *,
+.aqua-onto:hover,
+.aqua-onto:focus,
+.aqua-toone > *:hover,
+.aqua-toone > *:focus,
+*:hover > .aqua-into,
+*:focus > .aqua-into,
+.aqua-toall:hover > *,
+.aqua-toall:focus > * {
+  color: var(--aqua);
+}
+
 .cyan,
 .cyan-global > *,
 .cyan-onto:hover,
@@ -3207,6 +3337,19 @@ pre {
 .cyan-toall:hover > *,
 .cyan-toall:focus > * {
   color: var(--cyan);
+}
+
+.sky,
+.sky-global > *,
+.sky-onto:hover,
+.sky-onto:focus,
+.sky-toone > *:hover,
+.sky-toone > *:focus,
+*:hover > .sky-into,
+*:focus > .sky-into,
+.sky-toall:hover > *,
+.sky-toall:focus > * {
+  color: var(--sky);
 }
 
 .blue,
@@ -3222,6 +3365,19 @@ pre {
   color: var(--blue);
 }
 
+.indigo,
+.indigo-global > *,
+.indigo-onto:hover,
+.indigo-onto:focus,
+.indigo-toone > *:hover,
+.indigo-toone > *:focus,
+*:hover > .indigo-into,
+*:focus > .indigo-into,
+.indigo-toall:hover > *,
+.indigo-toall:focus > * {
+  color: var(--indigo);
+}
+
 .magenta,
 .magenta-global > *,
 .magenta-onto:hover,
@@ -3233,6 +3389,19 @@ pre {
 .magenta-toall:hover > *,
 .magenta-toall:focus > * {
   color: var(--magenta);
+}
+
+.pink,
+.pink-global > *,
+.pink-onto:hover,
+.pink-onto:focus,
+.pink-toone > *:hover,
+.pink-toone > *:focus,
+*:hover > .pink-into,
+*:focus > .pink-into,
+.pink-toall:hover > *,
+.pink-toall:focus > * {
+  color: var(--pink);
 }
 
 .black,
@@ -3313,6 +3482,45 @@ pre {
   background-color: var(--red-light);
 }
 
+.bg-orange,
+.bg-orange-global > *,
+.bg-orange-onto:hover,
+.bg-orange-onto:focus,
+.bg-orange-toone > *:hover,
+.bg-orange-toone > *:focus,
+*:hover > .bg-orange-into,
+*:focus > .bg-orange-into,
+.bg-orange-toall:hover > *,
+.bg-orange-toall:focus > * {
+  background-color: var(--orange);
+}
+
+.bg-orange-dark,
+.bg-orange-dark-global > *,
+.bg-orange-dark-onto:hover,
+.bg-orange-dark-onto:focus,
+.bg-orange-dark-toone > *:hover,
+.bg-orange-dark-toone > *:focus,
+*:hover > .bg-orange-dark-into,
+*:focus > .bg-orange-dark-into,
+.bg-orange-dark-toall:hover > *,
+.bg-orange-dark-toall:focus > * {
+  background-color: var(--orange-dark);
+}
+
+.bg-orange-light,
+.bg-orange-light-global > *,
+.bg-orange-light-onto:hover,
+.bg-orange-light-onto:focus,
+.bg-orange-light-toone > *:hover,
+.bg-orange-light-toone > *:focus,
+*:hover > .bg-orange-light-into,
+*:focus > .bg-orange-light-into,
+.bg-orange-light-toall:hover > *,
+.bg-orange-light-toall:focus > * {
+  background-color: var(--orange-light);
+}
+
 .bg-yellow,
 .bg-yellow-global > *,
 .bg-yellow-onto:hover,
@@ -3350,6 +3558,45 @@ pre {
 .bg-yellow-light-toall:hover > *,
 .bg-yellow-light-toall:focus > * {
   background-color: var(--yellow-light);
+}
+
+.bg-lime,
+.bg-lime-global > *,
+.bg-lime-onto:hover,
+.bg-lime-onto:focus,
+.bg-lime-toone > *:hover,
+.bg-lime-toone > *:focus,
+*:hover > .bg-lime-into,
+*:focus > .bg-lime-into,
+.bg-lime-toall:hover > *,
+.bg-lime-toall:focus > * {
+  background-color: var(--lime);
+}
+
+.bg-lime-dark,
+.bg-lime-dark-global > *,
+.bg-lime-dark-onto:hover,
+.bg-lime-dark-onto:focus,
+.bg-lime-dark-toone > *:hover,
+.bg-lime-dark-toone > *:focus,
+*:hover > .bg-lime-dark-into,
+*:focus > .bg-lime-dark-into,
+.bg-lime-dark-toall:hover > *,
+.bg-lime-dark-toall:focus > * {
+  background-color: var(--lime-dark);
+}
+
+.bg-lime-light,
+.bg-lime-light-global > *,
+.bg-lime-light-onto:hover,
+.bg-lime-light-onto:focus,
+.bg-lime-light-toone > *:hover,
+.bg-lime-light-toone > *:focus,
+*:hover > .bg-lime-light-into,
+*:focus > .bg-lime-light-into,
+.bg-lime-light-toall:hover > *,
+.bg-lime-light-toall:focus > * {
+  background-color: var(--lime-light);
 }
 
 .bg-green,
@@ -3391,6 +3638,45 @@ pre {
   background-color: var(--green-light);
 }
 
+.bg-aqua,
+.bg-aqua-global > *,
+.bg-aqua-onto:hover,
+.bg-aqua-onto:focus,
+.bg-aqua-toone > *:hover,
+.bg-aqua-toone > *:focus,
+*:hover > .bg-aqua-into,
+*:focus > .bg-aqua-into,
+.bg-aqua-toall:hover > *,
+.bg-aqua-toall:focus > * {
+  background-color: var(--aqua);
+}
+
+.bg-aqua-dark,
+.bg-aqua-dark-global > *,
+.bg-aqua-dark-onto:hover,
+.bg-aqua-dark-onto:focus,
+.bg-aqua-dark-toone > *:hover,
+.bg-aqua-dark-toone > *:focus,
+*:hover > .bg-aqua-dark-into,
+*:focus > .bg-aqua-dark-into,
+.bg-aqua-dark-toall:hover > *,
+.bg-aqua-dark-toall:focus > * {
+  background-color: var(--aqua-dark);
+}
+
+.bg-aqua-light,
+.bg-aqua-light-global > *,
+.bg-aqua-light-onto:hover,
+.bg-aqua-light-onto:focus,
+.bg-aqua-light-toone > *:hover,
+.bg-aqua-light-toone > *:focus,
+*:hover > .bg-aqua-light-into,
+*:focus > .bg-aqua-light-into,
+.bg-aqua-light-toall:hover > *,
+.bg-aqua-light-toall:focus > * {
+  background-color: var(--aqua-light);
+}
+
 .bg-cyan,
 .bg-cyan-global > *,
 .bg-cyan-onto:hover,
@@ -3428,6 +3714,45 @@ pre {
 .bg-cyan-light-toall:hover > *,
 .bg-cyan-light-toall:focus > * {
   background-color: var(--cyan-light);
+}
+
+.bg-sky,
+.bg-sky-global > *,
+.bg-sky-onto:hover,
+.bg-sky-onto:focus,
+.bg-sky-toone > *:hover,
+.bg-sky-toone > *:focus,
+*:hover > .bg-sky-into,
+*:focus > .bg-sky-into,
+.bg-sky-toall:hover > *,
+.bg-sky-toall:focus > * {
+  background-color: var(--sky);
+}
+
+.bg-sky-dark,
+.bg-sky-dark-global > *,
+.bg-sky-dark-onto:hover,
+.bg-sky-dark-onto:focus,
+.bg-sky-dark-toone > *:hover,
+.bg-sky-dark-toone > *:focus,
+*:hover > .bg-sky-dark-into,
+*:focus > .bg-sky-dark-into,
+.bg-sky-dark-toall:hover > *,
+.bg-sky-dark-toall:focus > * {
+  background-color: var(--sky-dark);
+}
+
+.bg-sky-light,
+.bg-sky-light-global > *,
+.bg-sky-light-onto:hover,
+.bg-sky-light-onto:focus,
+.bg-sky-light-toone > *:hover,
+.bg-sky-light-toone > *:focus,
+*:hover > .bg-sky-light-into,
+*:focus > .bg-sky-light-into,
+.bg-sky-light-toall:hover > *,
+.bg-sky-light-toall:focus > * {
+  background-color: var(--sky-light);
 }
 
 .bg-blue,
@@ -3469,6 +3794,45 @@ pre {
   background-color: var(--blue-light);
 }
 
+.bg-indigo,
+.bg-indigo-global > *,
+.bg-indigo-onto:hover,
+.bg-indigo-onto:focus,
+.bg-indigo-toone > *:hover,
+.bg-indigo-toone > *:focus,
+*:hover > .bg-indigo-into,
+*:focus > .bg-indigo-into,
+.bg-indigo-toall:hover > *,
+.bg-indigo-toall:focus > * {
+  background-color: var(--indigo);
+}
+
+.bg-indigo-dark,
+.bg-indigo-dark-global > *,
+.bg-indigo-dark-onto:hover,
+.bg-indigo-dark-onto:focus,
+.bg-indigo-dark-toone > *:hover,
+.bg-indigo-dark-toone > *:focus,
+*:hover > .bg-indigo-dark-into,
+*:focus > .bg-indigo-dark-into,
+.bg-indigo-dark-toall:hover > *,
+.bg-indigo-dark-toall:focus > * {
+  background-color: var(--indigo-dark);
+}
+
+.bg-indigo-light,
+.bg-indigo-light-global > *,
+.bg-indigo-light-onto:hover,
+.bg-indigo-light-onto:focus,
+.bg-indigo-light-toone > *:hover,
+.bg-indigo-light-toone > *:focus,
+*:hover > .bg-indigo-light-into,
+*:focus > .bg-indigo-light-into,
+.bg-indigo-light-toall:hover > *,
+.bg-indigo-light-toall:focus > * {
+  background-color: var(--indigo-light);
+}
+
 .bg-magenta,
 .bg-magenta-global > *,
 .bg-magenta-onto:hover,
@@ -3506,6 +3870,45 @@ pre {
 .bg-magenta-light-toall:hover > *,
 .bg-magenta-light-toall:focus > * {
   background-color: var(--magenta-light);
+}
+
+.bg-pink,
+.bg-pink-global > *,
+.bg-pink-onto:hover,
+.bg-pink-onto:focus,
+.bg-pink-toone > *:hover,
+.bg-pink-toone > *:focus,
+*:hover > .bg-pink-into,
+*:focus > .bg-pink-into,
+.bg-pink-toall:hover > *,
+.bg-pink-toall:focus > * {
+  background-color: var(--pink);
+}
+
+.bg-pink-dark,
+.bg-pink-dark-global > *,
+.bg-pink-dark-onto:hover,
+.bg-pink-dark-onto:focus,
+.bg-pink-dark-toone > *:hover,
+.bg-pink-dark-toone > *:focus,
+*:hover > .bg-pink-dark-into,
+*:focus > .bg-pink-dark-into,
+.bg-pink-dark-toall:hover > *,
+.bg-pink-dark-toall:focus > * {
+  background-color: var(--pink-dark);
+}
+
+.bg-pink-light,
+.bg-pink-light-global > *,
+.bg-pink-light-onto:hover,
+.bg-pink-light-onto:focus,
+.bg-pink-light-toone > *:hover,
+.bg-pink-light-toone > *:focus,
+*:hover > .bg-pink-light-into,
+*:focus > .bg-pink-light-into,
+.bg-pink-light-toall:hover > *,
+.bg-pink-light-toall:focus > * {
+  background-color: var(--pink-light);
 }
 
 .bg-black,
@@ -4374,4 +4777,4 @@ pre {
 }
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 8th Nov 2022 @ 10:30:33 AM */
+ Updated: 11th Nov 2022 @ 6:32:23 PM */
