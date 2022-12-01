@@ -2,8 +2,10 @@
 /********** ANIMADIO **********/
 /******************************/
 
-@import "scss/maps";
-@import "scss/mixins";
-@import "scss/vars";
+@import "scss/base";
 @import "scss/tags";
-@import "scss/classes";
+@import "scss/display";
+@import "scss/boxes";
+@import "scss/fonts";
+@import "scss/colors";
+@import "scss/anima";

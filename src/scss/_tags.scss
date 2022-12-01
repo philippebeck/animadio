@@ -1,5 +1,8 @@
 /********** TAGS **********/
 * {
+  --all-box-sizing: border-box;
+  --target-margins: 7rem;
+
   box-sizing: var(--all-box-sizing);
 
   &:target {
@@ -9,6 +12,9 @@
 }
 
 html {
+  --html-scroll-behavior: smooth;
+  --html-font-size: 62.5%;
+
   font-size: var(--html-font-size);
   scroll-behavior: var(--html-scroll-behavior);
 }
@@ -20,6 +26,10 @@ html {
 }
 
 body {
+  --body-font-size: 2rem;
+  --body-line-height: 1.6;
+  --body-padding: 0;
+
   margin: 0;
   padding: var(--body-padding);
   line-height: var(--body-line-height);
@@ -28,11 +38,39 @@ body {
 }
 
 main {
+  --main-text-align: center;
+
   text-align: var(--main-text-align);
 }
 
 article {
+  --article-margin-bottom: 20px;
+
   margin-bottom: var(--article-margin-bottom);
+}
+
+h1 {
+  --title-font-size: calc(var(--body-font-size) * 2);
+}
+
+h2 {
+  --title-font-size: calc(var(--body-font-size) * 1.8);
+}
+
+h3 {
+  --title-font-size: calc(var(--body-font-size) * 1.6);
+}
+
+h4 {
+  --title-font-size: calc(var(--body-font-size) * 1.4);
+}
+
+h5 {
+  --title-font-size: calc(var(--body-font-size) * 1.2);
+}
+
+h6 {
+  --title-font-size: var(--body-font-size);
 }
 
 h1,
@@ -41,6 +79,10 @@ h3,
 h4,
 h5,
 h6 {
+  --title-font-family: var(--serif);
+  --title-text-align: center;
+  --title-text-transform: capitalize;
+
   font-family: var(--title-font-family);
   text-align: var(--title-text-align);
   text-transform: var(--title-text-transform);
@@ -48,21 +90,29 @@ h6 {
 }
 
 a {
+  --link-outline: 0;
+  --link-text-decoration: none;
+
   text-decoration: var(--link-text-decoration);
   outline: var(--link-outline);
 }
 
-button {
-  cursor: var(--button-cursor);
-}
-
 ul {
+  --list-margin: 0 0 10px;
+  --list-padding: 0;
+  --list-style: none;
+
   margin: var(--list-margin);
   padding: var(--list-padding);
   list-style: var(--list-style);
 }
 
 table {
+  --table-border-collapse: collapse;
+  --table-margin: auto;
+  --table-text-align: center;
+  --table-vertical-align: middle;
+
   margin: var(--table-margin);
   border-collapse: var(--table-border-collapse);
   text-align: var(--table-text-align);
@@ -70,19 +120,14 @@ table {
   font-family: var(--monospace);
 }
 
-figure {
-  margin: var(--figure-margin);
-}
-
-img,
-video {
-  max-width: var(--img-max-width);
-  height: var(--img-height);
-  object-fit: var(--img-object-fit);
-}
-
 code,
 pre {
+  --code-margin: auto;
+  --code-overflow: scroll;
+  --code-padding: 10px;
+  --code-text-align: initial;
+  --code-width: 100%;
+
   font-size: 1em;
   overflow: var(--code-overflow);
   margin: var(--code-margin);
@@ -90,4 +135,28 @@ pre {
   width: var(--code-width);
   font-family: var(--monospace);
   text-align: var(--code-text-align);
+}
+
+figure {
+  --figure-margin: 0;
+
+  margin: var(--figure-margin);
+}
+
+img,
+video {
+  --img-max-width: 100%;
+  --img-height: auto;
+  --img-object-fit: contain;
+
+  max-width: var(--img-max-width);
+  height: var(--img-height);
+  object-fit: var(--img-object-fit);
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  --button-cursor: pointer;
 }
