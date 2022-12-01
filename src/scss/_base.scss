@@ -1,0 +1,46 @@
+// ********** BREAKPOINTS **********
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "wd": 1600px
+) !default;
+
+// ********** GLOBAL **********
+@mixin global($class, $property, $value) {
+  .#{$class},
+  .global-#{$class} > * {
+      #{$property}: #{$value};
+  }
+}
+
+@mixin global-all($class, $property, $value) {
+  .#{$class},
+  .global-#{$class} * {
+      #{$property}: #{$value};
+  }
+}
+
+// ********** HELPERS **********
+@mixin helpers($class, $property, $value) {
+  .#{$class},
+  .#{$class}-global > *,
+  .#{$class}-on:hover,
+  .#{$class}-on:focus,
+  *:hover > .#{$class}-in,
+  *:focus > .#{$class}-in,
+  .#{$class}-one > *:hover,
+  .#{$class}-one > *:focus,
+  .#{$class}-all:hover > *,
+  .#{$class}-all:focus > * {
+    #{$property}: #{$value};
+  }
+}
+
+@mixin helpers-options($class, $property, $value) {
+  .#{$class},
+  .#{$class}-global > * {
+    #{$property}: #{$value};
+  }
+}

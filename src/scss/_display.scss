@@ -1,0 +1,247 @@
+/********** DISPLAY **********/
+/*****************************/
+
+$displays: (
+  "hide":     none,
+  "flex":     flex,
+  "block":    block,
+  "inline":   inline,
+  "inflex":   inline-flex,
+  "inblock":  inline-block
+) !default;
+
+@each $key, $value in $displays {
+  @include global($key, "display", $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $displays {
+      @include global("#{$key}-#{$type}", "display", $value);
+    }
+  }
+}
+
+/********** FLEX **********/
+[class*="flex"],
+[class*="col"],
+[class*="row"] {
+  --flex-place-content: center;
+}
+
+[class*="col"] {
+  --column-padding: 0 10px;
+}
+
+[class*="row"] {
+  --row-padding: 10px 0;
+}
+
+.flex,
+.col,
+.row,
+.col-rev,
+.row-rev {
+  display: flex;
+  place-content: var(--flex-place-content);
+}
+
+.col,
+.col-rev {
+  padding: var(--column-padding);
+}
+
+.row,
+.row-rev {
+  padding: var(--row-padding);
+}
+
+.flex {
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col-rev {
+  flex-direction: column-reverse;
+}
+
+.row-rev {
+  flex-direction: row-reverse;
+}
+
+/********** GRID **********/
+[class*="grid"] {
+  --grid-max-width: 100vw;
+  --grid-margin: auto;
+}
+
+@mixin grid-template($column, $key) {
+  [class*="grid-"][class*="-#{$column}#{$key}"] {
+    grid-template: auto/repeat(#{$column}, auto);
+  }
+}
+
+[class*="grid"] {
+  display: grid;
+  max-width: var(--grid-max-width);
+  margin: var(--grid-margin);
+}
+
+@for $i from 2 to 13 {
+  @include grid-template($i, "tn");
+}
+
+@each $key, $value in $breakpoints {
+  @media (min-width: $value) {
+    @for $i from 2 to 13 {
+      @include grid-template($i, $key);
+    }
+  }
+}
+
+/********** GAP **********/
+$gap: (
+  "1": 50px,
+  "2": 20px,
+  "3": 10px,
+  "4": 5px,
+  "5": 2px,
+  "6": 1px
+) !default;
+
+[class*="gap-"] {
+  @each $key, $value in $gap {
+    --gap#{$key}: #{$value};
+  }
+}
+
+@mixin gap($size, $type) {
+  [class*="gap-"][class*="-#{$size}#{$type}"] {
+    gap: var(--gap#{$size});
+  }
+}
+
+@each $key, $value in $gap {
+  @include gap($key, "tn");
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $gap {
+      @include gap($key, $type);
+    }
+  }
+}
+
+/********** PLACE CONTENT **********/
+$place-content: (
+  "around":   space-around,
+  "between":  space-between,
+  "evenly":   space-evenly,
+  "center":   center,
+  "stretch":  stretch,
+  "start":    flex-start,
+  "end":      flex-end
+) !default;
+
+@mixin place-content($key, $type, $value) {
+  .content-#{$key}#{$type} {
+    place-content: #{$value};
+  }
+}
+
+@each $key, $value in $place-content {
+  @include place-content($key, "", $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $place-content {
+      @include place-content($key, "-#{$type}", $value);
+    }
+  }
+}
+
+/********** PLACE ITEMS **********/
+$place-items: (
+  "normal":   normal,
+  "base":     baseline,
+  "center":   center,
+  "stretch":  stretch,
+  "start":    flex-start,
+  "end":      flex-end
+) !default;
+
+@mixin place-items($key, $type, $value) {
+  .items-#{$key}#{$type} {
+    place-items: #{$value};
+  }
+}
+
+@each $key, $value in $place-items {
+  @include place-items($key, "", $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $place-items {
+      @include place-items($key, "-#{$type}", $value);
+    }
+  }
+}
+
+/********** PLACE-SELF **********/
+$place-self: (
+  "auto":     auto,
+  "normal":   normal,
+  "base":     baseline,
+  "center":   center,
+  "stretch":  stretch,
+  "start":    flex-start,
+  "end":      flex-end
+) !default;
+
+@mixin place-self($key, $type, $value) {
+  .self-#{$key}#{$type} {
+    place-self: #{$value};
+  }
+}
+
+@each $key, $value in $place-self {
+  @include place-self($key, "", $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $place-self {
+      @include place-self($key, "-#{$type}", $value);
+    }
+  }
+}
+
+/********** POSITION **********/
+$position: (
+  'absolute': absolute,
+  'fixed':    fixed,
+  'relative': relative,
+  'sticky':   sticky
+) !default;
+
+@each $key, $value in $position {
+  @include global($key, 'position', $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $position {
+      @include global('#{$key}-#{$type}', 'position', $value);
+    }
+  }
+}

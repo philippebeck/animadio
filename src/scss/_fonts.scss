@@ -1,0 +1,70 @@
+/********** FONT **********/
+$font: (
+  "bold":     "weight",
+  "italic":   "style",
+  "oblique":  "style"
+) !default;
+
+@each $key, $value in $font {
+  @include helpers("font-#{$key}", "font-#{$value}", $key);
+}
+
+$font-family: sans-serif, serif, monospace, cursive, fantasy;
+
+:root {
+  @each $key in $font-family {
+    --#{$key}: #{$key};
+    }
+}
+
+@each $key in $font-family {
+  .font-#{$key} {
+    font-family: var(--font-family-#{$key});
+  }
+}
+
+// ********** TEXT **********
+$text-align: (
+  "center":   center,
+  "justify":  justify,
+  "right":    right,
+  "left":     left
+) !default;
+
+@each $key, $value in $text-align {
+  @include global("align-#{$key}", "text-align", $value);
+}
+
+$trans: (
+  "cap":  "capitalize",
+  "up":   "uppercase",
+  "low":  "lowercase"
+) !default;
+
+@each $key, $value in $trans {
+  @include helpers("trans-#{$key}", "text-transform", $value);
+}
+
+// ********** TEXT DECORATION **********
+$text-decoration-line: (
+  "none":     none,
+  "under":    underline,
+  "over":     overline,
+  "through":  line-through
+) !default;
+
+@each $key, $value in $text-decoration-line {
+  @include helpers("deco-#{$key}", "text-decoration-line", $value);
+}
+
+$text-decoration-style: (
+  "dash":   dashed,
+  "dot":    dotted,
+  "double": double,
+  "solid":  solid,
+  "wavy":   wavy
+) !default;
+
+@each $key, $value in $text-decoration-style {
+  @include helpers-options("deco-#{$key}", "text-decoration-style", $value);
+}
