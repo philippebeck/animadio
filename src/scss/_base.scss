@@ -10,7 +10,7 @@ $breakpoints: (
 // ********** GLOBAL **********
 @mixin global($class, $property, $value) {
   .#{$class},
-  .global-#{$class} > * {
+  .#{$class}-all > * {
       #{$property}: #{$value};
   }
 }
@@ -18,30 +18,15 @@ $breakpoints: (
 // ********** STATES **********
 @mixin states($class, $property, $value) {
   .#{$class},
-  .global-#{$class} * {
-      #{$property}: #{$value};
-  }
-}
-
-// ********** HELPERS **********
-@mixin helpers($class, $property, $value) {
-  .#{$class},
-  .#{$class}-global > *,
+  .#{$class}-all > *,
   .#{$class}-on:hover,
   .#{$class}-on:focus,
   *:hover > .#{$class}-in,
   *:focus > .#{$class}-in,
   .#{$class}-one > *:hover,
   .#{$class}-one > *:focus,
-  .#{$class}-all:hover > *,
-  .#{$class}-all:focus > * {
-    #{$property}: #{$value};
-  }
-}
-
-@mixin helpers-options($class, $property, $value) {
-  .#{$class},
-  .#{$class}-global > * {
+  .#{$class}-many:hover > *,
+  .#{$class}-many:focus > * {
     #{$property}: #{$value};
   }
 }
