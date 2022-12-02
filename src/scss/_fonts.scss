@@ -6,7 +6,7 @@ $font: (
 ) !default;
 
 @each $key, $value in $font {
-  @include helpers("font-#{$key}", "font-#{$value}", $key);
+  @include states("font-#{$key}", "font-#{$value}", $key);
 }
 
 $font-family: sans-serif, serif, monospace, cursive, fantasy;
@@ -42,7 +42,7 @@ $trans: (
 ) !default;
 
 @each $key, $value in $trans {
-  @include helpers("trans-#{$key}", "text-transform", $value);
+  @include states("trans-#{$key}", "text-transform", $value);
 }
 
 // ********** TEXT DECORATION **********
@@ -54,7 +54,7 @@ $text-decoration-line: (
 ) !default;
 
 @each $key, $value in $text-decoration-line {
-  @include helpers("deco-#{$key}", "text-decoration-line", $value);
+  @include states("deco-#{$key}", "text-decoration-line", $value);
 }
 
 $text-decoration-style: (
@@ -66,5 +66,5 @@ $text-decoration-style: (
 ) !default;
 
 @each $key, $value in $text-decoration-style {
-  @include helpers-options("deco-#{$key}", "text-decoration-style", $value);
+  @include states("deco-#{$key}", "text-decoration-style", $value);
 }

@@ -136,15 +136,15 @@ $border-radius: (
 }
 
 @each $key, $value in $border-style {
-  @include helpers("bord-#{$key}", "border-style", $value);
+  @include states("bord-#{$key}", "border-style", $value);
 }
 
 @each $key, $value in $border-width {
-  @include helpers("bord-#{$key}", "border-width", $value);
+  @include states("bord-#{$key}", "border-width", $value);
 }
 
 @each $key, $value in $border-radius {
-  @include helpers("bord-#{$key}", "border-radius", $value);
+  @include states("bord-#{$key}", "border-radius", $value);
 }
 
 /********** PADDING **********/

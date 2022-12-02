@@ -49,11 +49,11 @@ $colors: $hues, $grayscale;
 @each $color in $colors {
   @each $key, $value in $color {
     /* #{$key} classes */
-    @include helpers(#{$key}, "color", "var(--#{$key})");
-    @include helpers("bg-#{$key}", "background-color", "var(--#{$key})");
-    @include helpers("bg-#{$key}-dark", "background-color", "var(--#{$key}-dark)");
-    @include helpers("bg-#{$key}-light", "background-color", "var(--#{$key}-light)");
-    @include helpers("bord-#{$key}", "border-color", "var(--#{$key})");
-    @include helpers("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
+    @include states(#{$key}, "color", "var(--#{$key})");
+    @include states("bg-#{$key}", "background-color", "var(--#{$key})");
+    @include states("bg-#{$key}-dark", "background-color", "var(--#{$key}-dark)");
+    @include states("bg-#{$key}-light", "background-color", "var(--#{$key}-light)");
+    @include states("bord-#{$key}", "border-color", "var(--#{$key})");
+    @include states("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
   }
 }

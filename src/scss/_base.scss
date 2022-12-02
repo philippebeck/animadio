@@ -15,7 +15,8 @@ $breakpoints: (
   }
 }
 
-@mixin global-all($class, $property, $value) {
+// ********** STATES **********
+@mixin states($class, $property, $value) {
   .#{$class},
   .global-#{$class} * {
       #{$property}: #{$value};
