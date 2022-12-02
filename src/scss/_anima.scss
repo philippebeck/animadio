@@ -99,23 +99,8 @@ $animation-direction: (
   }
 }
 
-// ********** ANIMA **********
+// ********** OPTIONS MIXIN **********
 @mixin anima($class, $property, $value) {
-  .anima-#{$class},
-  .anima-#{$class}-global > *,
-  .anima-#{$class}-on:hover,
-  .anima-#{$class}-on:focus,
-  *:hover > .anima-#{$class}-in,
-  *:focus > .anima-#{$class}-in,
-  .anima-#{$class}-one > *:hover,
-  .anima-#{$class}-one > *:focus,
-  .anima-#{$class}-all:hover > *,
-  .anima-#{$class}-all:focus > * {
-    #{$property}: #{$value};
-  }
-}
-
-@mixin anima-options($class, $property, $value) {
   .anima-#{$class} {
     #{$property}: #{$value};
   }
@@ -132,10 +117,10 @@ $animation-direction: (
 
 @each $type, $option in $animation-options {
   @each $key, $value in $option {
-    @include anima-options($key, "animation-#{$type}", "var(--animation-#{$type}-#{$key})");
+    @include anima($key, "animation-#{$type}", "var(--animation-#{$type}-#{$key})");
   }
 }
 
 @each $key, $value in $animation-direction {
-  @include anima-options($key, "animation-direction", $value);
+  @include anima($key, "animation-direction", $value);
 }
