@@ -1,4 +1,4 @@
-/*! animadio v5.2.0 | https://animadio.org | MIT License */
+/*! animadio v5.3.0 | https://animadio.org | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -354,15 +354,28 @@ template {
 /******************************/
 /********** ANIMADIO **********/
 /******************************/
+/*
+Summary
+
+- Colors
+- Fonts
+- Tags
+- Flex
+- Grid
+- Gap
+- Place
+- Margin
+- Border
+- Padding
+- Height
+- Width
+- Transform
+- Keyframes
+- Animation
+*/
+/********** COLORS **********/
 :root {
-  /********** FONT **********/
-  --sans-serif: sans-serif;
-  --serif: serif;
-  --monospace: monospace;
-  --cursive: cursive;
-  --fantasy: fantasy;
-  /********** COLORS **********/
-  /* HSL Values */
+  /* hsl values */
   --red-hsl: 0, 100%, 50%;
   --orange-hsl: 30, 100%, 50%;
   --yellow-hsl: 60, 100%, 50%;
@@ -376,12 +389,11 @@ template {
   --magenta-hsl: 300, 100%, 50%;
   --pink-hsl: 330, 100%, 50%;
   --black-hsl: 0, 0%, 0%;
+  --slate-hsl: 0, 0%, 25%;
   --gray-hsl: 0, 0%, 50%;
+  --silver-hsl: 0, 0%, 75%;
   --white-hsl: 0, 0%, 100%;
-  /* Opacity */
-  --dark-a: 0.8;
-  --light-a: 0.2;
-  /* Colors */
+  /* opaque colors */
   --red: hsl(var(--red-hsl));
   --orange: hsl(var(--orange-hsl));
   --yellow: hsl(var(--yellow-hsl));
@@ -395,89 +407,1508 @@ template {
   --magenta: hsl(var(--magenta-hsl));
   --pink: hsl(var(--pink-hsl));
   --black: hsl(var(--black-hsl));
+  --slate: hsl(var(--slate-hsl));
   --gray: hsl(var(--gray-hsl));
+  --silver: hsl(var(--silver-hsl));
   --white: hsl(var(--white-hsl));
-  /* Transparent Colors */
-  --red-dark: hsla(var(--red-hsl), var(--dark-a));
-  --red-light: hsla(var(--red-hsl), var(--light-a));
-  --orange-dark: hsla(var(--orange-hsl), var(--dark-a));
-  --orange-light: hsla(var(--orange-hsl), var(--light-a));
-  --yellow-dark: hsla(var(--yellow-hsl), var(--dark-a));
-  --yellow-light: hsla(var(--yellow-hsl), var(--light-a));
-  --lime-dark: hsla(var(--lime-hsl), var(--dark-a));
-  --lime-light: hsla(var(--lime-hsl), var(--light-a));
-  --green-dark: hsla(var(--green-hsl), var(--dark-a));
-  --green-light: hsla(var(--green-hsl), var(--light-a));
-  --aqua-dark: hsla(var(--aqua-hsl), var(--dark-a));
-  --aqua-light: hsla(var(--aqua-hsl), var(--light-a));
-  --cyan-dark: hsla(var(--cyan-hsl), var(--dark-a));
-  --cyan-light: hsla(var(--cyan-hsl), var(--light-a));
-  --sky-dark: hsla(var(--sky-hsl), var(--dark-a));
-  --sky-light: hsla(var(--sky-hsl), var(--light-a));
-  --blue-dark: hsla(var(--blue-hsl), var(--dark-a));
-  --blue-light: hsla(var(--blue-hsl), var(--light-a));
-  --indigo-dark: hsla(var(--indigo-hsl), var(--dark-a));
-  --indigo-light: hsla(var(--indigo-hsl), var(--light-a));
-  --magenta-dark: hsla(var(--magenta-hsl), var(--dark-a));
-  --magenta-light: hsla(var(--magenta-hsl), var(--light-a));
-  --pink-dark: hsla(var(--pink-hsl), var(--dark-a));
-  --pink-light: hsla(var(--pink-hsl), var(--light-a));
-  --black-dark: hsla(var(--black-hsl), var(--dark-a));
-  --black-light: hsla(var(--black-hsl), var(--light-a));
-  --gray-dark: hsla(var(--gray-hsl), var(--dark-a));
-  --gray-light: hsla(var(--gray-hsl), var(--light-a));
-  --white-dark: hsla(var(--white-hsl), var(--dark-a));
-  --white-light: hsla(var(--white-hsl), var(--light-a));
-  /********** TRANSFORM **********/
-  --slideT: translate(0, 10vh);
-  --slideR: translate(-10vw, 0);
-  --slideB: translate(0, -10vh);
-  --slideL: translate(10vw, 0);
-  --turn: rotate3d(0, 0, 1, 360deg);
-  --turnX: rotate3d(1, 0, 0, 360deg);
-  --turnY: rotate3d(0, 1, 0, 360deg);
-  --turnXY: rotate3d(1, 1, 0, 360deg);
-  --turnXZ: rotate3d(1, 0, 1, 360deg);
-  --turnYZ: rotate3d(0, 1, 1, 360deg);
-  --turn3D: rotate3d(1, 1, 1, 360deg);
-  --bounce: scale(-1, -1);
-  --grow: scale(0.5, 0.5);
-  --shrink: scale(1.5, 1.5);
-  --flipX: scale(1, -1);
-  --flipY: scale(-1, 1);
-  --openX: scale(1, 0);
-  --openY: scale(0, 1);
-  --flipperX: scale(0, -1);
-  --flipperY: scale(-1, 0);
-  --twistT: skew(-90deg, -90deg);
-  --twistR: skew(90deg, -90deg);
-  --twistB: skew(90deg, 90deg);
-  --twistL: skew(-90deg, 90deg);
+  /* opacity */
+  --dark: 0.8;
+  --light: 0.2;
+  /* transparent colors */
+  --red-dark: hsla(var(--red-hsl), var(--dark));
+  --red-light: hsla(var(--red-hsl), var(--light));
+  --orange-dark: hsla(var(--orange-hsl), var(--dark));
+  --orange-light: hsla(var(--orange-hsl), var(--light));
+  --yellow-dark: hsla(var(--yellow-hsl), var(--dark));
+  --yellow-light: hsla(var(--yellow-hsl), var(--light));
+  --lime-dark: hsla(var(--lime-hsl), var(--dark));
+  --lime-light: hsla(var(--lime-hsl), var(--light));
+  --green-dark: hsla(var(--green-hsl), var(--dark));
+  --green-light: hsla(var(--green-hsl), var(--light));
+  --aqua-dark: hsla(var(--aqua-hsl), var(--dark));
+  --aqua-light: hsla(var(--aqua-hsl), var(--light));
+  --cyan-dark: hsla(var(--cyan-hsl), var(--dark));
+  --cyan-light: hsla(var(--cyan-hsl), var(--light));
+  --sky-dark: hsla(var(--sky-hsl), var(--dark));
+  --sky-light: hsla(var(--sky-hsl), var(--light));
+  --blue-dark: hsla(var(--blue-hsl), var(--dark));
+  --blue-light: hsla(var(--blue-hsl), var(--light));
+  --indigo-dark: hsla(var(--indigo-hsl), var(--dark));
+  --indigo-light: hsla(var(--indigo-hsl), var(--light));
+  --magenta-dark: hsla(var(--magenta-hsl), var(--dark));
+  --magenta-light: hsla(var(--magenta-hsl), var(--light));
+  --pink-dark: hsla(var(--pink-hsl), var(--dark));
+  --pink-light: hsla(var(--pink-hsl), var(--light));
+  --black-dark: hsla(var(--black-hsl), var(--dark));
+  --black-light: hsla(var(--black-hsl), var(--light));
+  --slate-dark: hsla(var(--slate-hsl), var(--dark));
+  --slate-light: hsla(var(--slate-hsl), var(--light));
+  --gray-dark: hsla(var(--gray-hsl), var(--dark));
+  --gray-light: hsla(var(--gray-hsl), var(--light));
+  --silver-dark: hsla(var(--silver-hsl), var(--dark));
+  --silver-light: hsla(var(--silver-hsl), var(--light));
+  --white-dark: hsla(var(--white-hsl), var(--dark));
+  --white-light: hsla(var(--white-hsl), var(--light));
+}
+
+/********** COLOR **********/
+.red,
+.red-all > *,
+.red-on:hover,
+.red-on:focus,
+*:hover > .red-in,
+*:focus > .red-in,
+.red-one > *:hover,
+.red-one > *:focus,
+.red-many:hover > *,
+.red-many:focus > * {
+  color: var(--red);
+}
+
+.orange,
+.orange-all > *,
+.orange-on:hover,
+.orange-on:focus,
+*:hover > .orange-in,
+*:focus > .orange-in,
+.orange-one > *:hover,
+.orange-one > *:focus,
+.orange-many:hover > *,
+.orange-many:focus > * {
+  color: var(--orange);
+}
+
+.yellow,
+.yellow-all > *,
+.yellow-on:hover,
+.yellow-on:focus,
+*:hover > .yellow-in,
+*:focus > .yellow-in,
+.yellow-one > *:hover,
+.yellow-one > *:focus,
+.yellow-many:hover > *,
+.yellow-many:focus > * {
+  color: var(--yellow);
+}
+
+.lime,
+.lime-all > *,
+.lime-on:hover,
+.lime-on:focus,
+*:hover > .lime-in,
+*:focus > .lime-in,
+.lime-one > *:hover,
+.lime-one > *:focus,
+.lime-many:hover > *,
+.lime-many:focus > * {
+  color: var(--lime);
+}
+
+.green,
+.green-all > *,
+.green-on:hover,
+.green-on:focus,
+*:hover > .green-in,
+*:focus > .green-in,
+.green-one > *:hover,
+.green-one > *:focus,
+.green-many:hover > *,
+.green-many:focus > * {
+  color: var(--green);
+}
+
+.aqua,
+.aqua-all > *,
+.aqua-on:hover,
+.aqua-on:focus,
+*:hover > .aqua-in,
+*:focus > .aqua-in,
+.aqua-one > *:hover,
+.aqua-one > *:focus,
+.aqua-many:hover > *,
+.aqua-many:focus > * {
+  color: var(--aqua);
+}
+
+.cyan,
+.cyan-all > *,
+.cyan-on:hover,
+.cyan-on:focus,
+*:hover > .cyan-in,
+*:focus > .cyan-in,
+.cyan-one > *:hover,
+.cyan-one > *:focus,
+.cyan-many:hover > *,
+.cyan-many:focus > * {
+  color: var(--cyan);
+}
+
+.sky,
+.sky-all > *,
+.sky-on:hover,
+.sky-on:focus,
+*:hover > .sky-in,
+*:focus > .sky-in,
+.sky-one > *:hover,
+.sky-one > *:focus,
+.sky-many:hover > *,
+.sky-many:focus > * {
+  color: var(--sky);
+}
+
+.blue,
+.blue-all > *,
+.blue-on:hover,
+.blue-on:focus,
+*:hover > .blue-in,
+*:focus > .blue-in,
+.blue-one > *:hover,
+.blue-one > *:focus,
+.blue-many:hover > *,
+.blue-many:focus > * {
+  color: var(--blue);
+}
+
+.indigo,
+.indigo-all > *,
+.indigo-on:hover,
+.indigo-on:focus,
+*:hover > .indigo-in,
+*:focus > .indigo-in,
+.indigo-one > *:hover,
+.indigo-one > *:focus,
+.indigo-many:hover > *,
+.indigo-many:focus > * {
+  color: var(--indigo);
+}
+
+.magenta,
+.magenta-all > *,
+.magenta-on:hover,
+.magenta-on:focus,
+*:hover > .magenta-in,
+*:focus > .magenta-in,
+.magenta-one > *:hover,
+.magenta-one > *:focus,
+.magenta-many:hover > *,
+.magenta-many:focus > * {
+  color: var(--magenta);
+}
+
+.pink,
+.pink-all > *,
+.pink-on:hover,
+.pink-on:focus,
+*:hover > .pink-in,
+*:focus > .pink-in,
+.pink-one > *:hover,
+.pink-one > *:focus,
+.pink-many:hover > *,
+.pink-many:focus > * {
+  color: var(--pink);
+}
+
+.black,
+.black-all > *,
+.black-on:hover,
+.black-on:focus,
+*:hover > .black-in,
+*:focus > .black-in,
+.black-one > *:hover,
+.black-one > *:focus,
+.black-many:hover > *,
+.black-many:focus > * {
+  color: var(--black);
+}
+
+.slate,
+.slate-all > *,
+.slate-on:hover,
+.slate-on:focus,
+*:hover > .slate-in,
+*:focus > .slate-in,
+.slate-one > *:hover,
+.slate-one > *:focus,
+.slate-many:hover > *,
+.slate-many:focus > * {
+  color: var(--slate);
+}
+
+.gray,
+.gray-all > *,
+.gray-on:hover,
+.gray-on:focus,
+*:hover > .gray-in,
+*:focus > .gray-in,
+.gray-one > *:hover,
+.gray-one > *:focus,
+.gray-many:hover > *,
+.gray-many:focus > * {
+  color: var(--gray);
+}
+
+.silver,
+.silver-all > *,
+.silver-on:hover,
+.silver-on:focus,
+*:hover > .silver-in,
+*:focus > .silver-in,
+.silver-one > *:hover,
+.silver-one > *:focus,
+.silver-many:hover > *,
+.silver-many:focus > * {
+  color: var(--silver);
+}
+
+.white,
+.white-all > *,
+.white-on:hover,
+.white-on:focus,
+*:hover > .white-in,
+*:focus > .white-in,
+.white-one > *:hover,
+.white-one > *:focus,
+.white-many:hover > *,
+.white-many:focus > * {
+  color: var(--white);
+}
+
+/********** BACKGROUND COLOR **********/
+.bg-red,
+.bg-red-all > *,
+.bg-red-on:hover,
+.bg-red-on:focus,
+*:hover > .bg-red-in,
+*:focus > .bg-red-in,
+.bg-red-one > *:hover,
+.bg-red-one > *:focus,
+.bg-red-many:hover > *,
+.bg-red-many:focus > * {
+  background-color: var(--red);
+}
+
+.bg-red-dark,
+.bg-red-dark-all > *,
+.bg-red-dark-on:hover,
+.bg-red-dark-on:focus,
+*:hover > .bg-red-dark-in,
+*:focus > .bg-red-dark-in,
+.bg-red-dark-one > *:hover,
+.bg-red-dark-one > *:focus,
+.bg-red-dark-many:hover > *,
+.bg-red-dark-many:focus > * {
+  background-color: var(--red-dark);
+}
+
+.bg-red-light,
+.bg-red-light-all > *,
+.bg-red-light-on:hover,
+.bg-red-light-on:focus,
+*:hover > .bg-red-light-in,
+*:focus > .bg-red-light-in,
+.bg-red-light-one > *:hover,
+.bg-red-light-one > *:focus,
+.bg-red-light-many:hover > *,
+.bg-red-light-many:focus > * {
+  background-color: var(--red-light);
+}
+
+.bg-orange,
+.bg-orange-all > *,
+.bg-orange-on:hover,
+.bg-orange-on:focus,
+*:hover > .bg-orange-in,
+*:focus > .bg-orange-in,
+.bg-orange-one > *:hover,
+.bg-orange-one > *:focus,
+.bg-orange-many:hover > *,
+.bg-orange-many:focus > * {
+  background-color: var(--orange);
+}
+
+.bg-orange-dark,
+.bg-orange-dark-all > *,
+.bg-orange-dark-on:hover,
+.bg-orange-dark-on:focus,
+*:hover > .bg-orange-dark-in,
+*:focus > .bg-orange-dark-in,
+.bg-orange-dark-one > *:hover,
+.bg-orange-dark-one > *:focus,
+.bg-orange-dark-many:hover > *,
+.bg-orange-dark-many:focus > * {
+  background-color: var(--orange-dark);
+}
+
+.bg-orange-light,
+.bg-orange-light-all > *,
+.bg-orange-light-on:hover,
+.bg-orange-light-on:focus,
+*:hover > .bg-orange-light-in,
+*:focus > .bg-orange-light-in,
+.bg-orange-light-one > *:hover,
+.bg-orange-light-one > *:focus,
+.bg-orange-light-many:hover > *,
+.bg-orange-light-many:focus > * {
+  background-color: var(--orange-light);
+}
+
+.bg-yellow,
+.bg-yellow-all > *,
+.bg-yellow-on:hover,
+.bg-yellow-on:focus,
+*:hover > .bg-yellow-in,
+*:focus > .bg-yellow-in,
+.bg-yellow-one > *:hover,
+.bg-yellow-one > *:focus,
+.bg-yellow-many:hover > *,
+.bg-yellow-many:focus > * {
+  background-color: var(--yellow);
+}
+
+.bg-yellow-dark,
+.bg-yellow-dark-all > *,
+.bg-yellow-dark-on:hover,
+.bg-yellow-dark-on:focus,
+*:hover > .bg-yellow-dark-in,
+*:focus > .bg-yellow-dark-in,
+.bg-yellow-dark-one > *:hover,
+.bg-yellow-dark-one > *:focus,
+.bg-yellow-dark-many:hover > *,
+.bg-yellow-dark-many:focus > * {
+  background-color: var(--yellow-dark);
+}
+
+.bg-yellow-light,
+.bg-yellow-light-all > *,
+.bg-yellow-light-on:hover,
+.bg-yellow-light-on:focus,
+*:hover > .bg-yellow-light-in,
+*:focus > .bg-yellow-light-in,
+.bg-yellow-light-one > *:hover,
+.bg-yellow-light-one > *:focus,
+.bg-yellow-light-many:hover > *,
+.bg-yellow-light-many:focus > * {
+  background-color: var(--yellow-light);
+}
+
+.bg-lime,
+.bg-lime-all > *,
+.bg-lime-on:hover,
+.bg-lime-on:focus,
+*:hover > .bg-lime-in,
+*:focus > .bg-lime-in,
+.bg-lime-one > *:hover,
+.bg-lime-one > *:focus,
+.bg-lime-many:hover > *,
+.bg-lime-many:focus > * {
+  background-color: var(--lime);
+}
+
+.bg-lime-dark,
+.bg-lime-dark-all > *,
+.bg-lime-dark-on:hover,
+.bg-lime-dark-on:focus,
+*:hover > .bg-lime-dark-in,
+*:focus > .bg-lime-dark-in,
+.bg-lime-dark-one > *:hover,
+.bg-lime-dark-one > *:focus,
+.bg-lime-dark-many:hover > *,
+.bg-lime-dark-many:focus > * {
+  background-color: var(--lime-dark);
+}
+
+.bg-lime-light,
+.bg-lime-light-all > *,
+.bg-lime-light-on:hover,
+.bg-lime-light-on:focus,
+*:hover > .bg-lime-light-in,
+*:focus > .bg-lime-light-in,
+.bg-lime-light-one > *:hover,
+.bg-lime-light-one > *:focus,
+.bg-lime-light-many:hover > *,
+.bg-lime-light-many:focus > * {
+  background-color: var(--lime-light);
+}
+
+.bg-green,
+.bg-green-all > *,
+.bg-green-on:hover,
+.bg-green-on:focus,
+*:hover > .bg-green-in,
+*:focus > .bg-green-in,
+.bg-green-one > *:hover,
+.bg-green-one > *:focus,
+.bg-green-many:hover > *,
+.bg-green-many:focus > * {
+  background-color: var(--green);
+}
+
+.bg-green-dark,
+.bg-green-dark-all > *,
+.bg-green-dark-on:hover,
+.bg-green-dark-on:focus,
+*:hover > .bg-green-dark-in,
+*:focus > .bg-green-dark-in,
+.bg-green-dark-one > *:hover,
+.bg-green-dark-one > *:focus,
+.bg-green-dark-many:hover > *,
+.bg-green-dark-many:focus > * {
+  background-color: var(--green-dark);
+}
+
+.bg-green-light,
+.bg-green-light-all > *,
+.bg-green-light-on:hover,
+.bg-green-light-on:focus,
+*:hover > .bg-green-light-in,
+*:focus > .bg-green-light-in,
+.bg-green-light-one > *:hover,
+.bg-green-light-one > *:focus,
+.bg-green-light-many:hover > *,
+.bg-green-light-many:focus > * {
+  background-color: var(--green-light);
+}
+
+.bg-aqua,
+.bg-aqua-all > *,
+.bg-aqua-on:hover,
+.bg-aqua-on:focus,
+*:hover > .bg-aqua-in,
+*:focus > .bg-aqua-in,
+.bg-aqua-one > *:hover,
+.bg-aqua-one > *:focus,
+.bg-aqua-many:hover > *,
+.bg-aqua-many:focus > * {
+  background-color: var(--aqua);
+}
+
+.bg-aqua-dark,
+.bg-aqua-dark-all > *,
+.bg-aqua-dark-on:hover,
+.bg-aqua-dark-on:focus,
+*:hover > .bg-aqua-dark-in,
+*:focus > .bg-aqua-dark-in,
+.bg-aqua-dark-one > *:hover,
+.bg-aqua-dark-one > *:focus,
+.bg-aqua-dark-many:hover > *,
+.bg-aqua-dark-many:focus > * {
+  background-color: var(--aqua-dark);
+}
+
+.bg-aqua-light,
+.bg-aqua-light-all > *,
+.bg-aqua-light-on:hover,
+.bg-aqua-light-on:focus,
+*:hover > .bg-aqua-light-in,
+*:focus > .bg-aqua-light-in,
+.bg-aqua-light-one > *:hover,
+.bg-aqua-light-one > *:focus,
+.bg-aqua-light-many:hover > *,
+.bg-aqua-light-many:focus > * {
+  background-color: var(--aqua-light);
+}
+
+.bg-cyan,
+.bg-cyan-all > *,
+.bg-cyan-on:hover,
+.bg-cyan-on:focus,
+*:hover > .bg-cyan-in,
+*:focus > .bg-cyan-in,
+.bg-cyan-one > *:hover,
+.bg-cyan-one > *:focus,
+.bg-cyan-many:hover > *,
+.bg-cyan-many:focus > * {
+  background-color: var(--cyan);
+}
+
+.bg-cyan-dark,
+.bg-cyan-dark-all > *,
+.bg-cyan-dark-on:hover,
+.bg-cyan-dark-on:focus,
+*:hover > .bg-cyan-dark-in,
+*:focus > .bg-cyan-dark-in,
+.bg-cyan-dark-one > *:hover,
+.bg-cyan-dark-one > *:focus,
+.bg-cyan-dark-many:hover > *,
+.bg-cyan-dark-many:focus > * {
+  background-color: var(--cyan-dark);
+}
+
+.bg-cyan-light,
+.bg-cyan-light-all > *,
+.bg-cyan-light-on:hover,
+.bg-cyan-light-on:focus,
+*:hover > .bg-cyan-light-in,
+*:focus > .bg-cyan-light-in,
+.bg-cyan-light-one > *:hover,
+.bg-cyan-light-one > *:focus,
+.bg-cyan-light-many:hover > *,
+.bg-cyan-light-many:focus > * {
+  background-color: var(--cyan-light);
+}
+
+.bg-sky,
+.bg-sky-all > *,
+.bg-sky-on:hover,
+.bg-sky-on:focus,
+*:hover > .bg-sky-in,
+*:focus > .bg-sky-in,
+.bg-sky-one > *:hover,
+.bg-sky-one > *:focus,
+.bg-sky-many:hover > *,
+.bg-sky-many:focus > * {
+  background-color: var(--sky);
+}
+
+.bg-sky-dark,
+.bg-sky-dark-all > *,
+.bg-sky-dark-on:hover,
+.bg-sky-dark-on:focus,
+*:hover > .bg-sky-dark-in,
+*:focus > .bg-sky-dark-in,
+.bg-sky-dark-one > *:hover,
+.bg-sky-dark-one > *:focus,
+.bg-sky-dark-many:hover > *,
+.bg-sky-dark-many:focus > * {
+  background-color: var(--sky-dark);
+}
+
+.bg-sky-light,
+.bg-sky-light-all > *,
+.bg-sky-light-on:hover,
+.bg-sky-light-on:focus,
+*:hover > .bg-sky-light-in,
+*:focus > .bg-sky-light-in,
+.bg-sky-light-one > *:hover,
+.bg-sky-light-one > *:focus,
+.bg-sky-light-many:hover > *,
+.bg-sky-light-many:focus > * {
+  background-color: var(--sky-light);
+}
+
+.bg-blue,
+.bg-blue-all > *,
+.bg-blue-on:hover,
+.bg-blue-on:focus,
+*:hover > .bg-blue-in,
+*:focus > .bg-blue-in,
+.bg-blue-one > *:hover,
+.bg-blue-one > *:focus,
+.bg-blue-many:hover > *,
+.bg-blue-many:focus > * {
+  background-color: var(--blue);
+}
+
+.bg-blue-dark,
+.bg-blue-dark-all > *,
+.bg-blue-dark-on:hover,
+.bg-blue-dark-on:focus,
+*:hover > .bg-blue-dark-in,
+*:focus > .bg-blue-dark-in,
+.bg-blue-dark-one > *:hover,
+.bg-blue-dark-one > *:focus,
+.bg-blue-dark-many:hover > *,
+.bg-blue-dark-many:focus > * {
+  background-color: var(--blue-dark);
+}
+
+.bg-blue-light,
+.bg-blue-light-all > *,
+.bg-blue-light-on:hover,
+.bg-blue-light-on:focus,
+*:hover > .bg-blue-light-in,
+*:focus > .bg-blue-light-in,
+.bg-blue-light-one > *:hover,
+.bg-blue-light-one > *:focus,
+.bg-blue-light-many:hover > *,
+.bg-blue-light-many:focus > * {
+  background-color: var(--blue-light);
+}
+
+.bg-indigo,
+.bg-indigo-all > *,
+.bg-indigo-on:hover,
+.bg-indigo-on:focus,
+*:hover > .bg-indigo-in,
+*:focus > .bg-indigo-in,
+.bg-indigo-one > *:hover,
+.bg-indigo-one > *:focus,
+.bg-indigo-many:hover > *,
+.bg-indigo-many:focus > * {
+  background-color: var(--indigo);
+}
+
+.bg-indigo-dark,
+.bg-indigo-dark-all > *,
+.bg-indigo-dark-on:hover,
+.bg-indigo-dark-on:focus,
+*:hover > .bg-indigo-dark-in,
+*:focus > .bg-indigo-dark-in,
+.bg-indigo-dark-one > *:hover,
+.bg-indigo-dark-one > *:focus,
+.bg-indigo-dark-many:hover > *,
+.bg-indigo-dark-many:focus > * {
+  background-color: var(--indigo-dark);
+}
+
+.bg-indigo-light,
+.bg-indigo-light-all > *,
+.bg-indigo-light-on:hover,
+.bg-indigo-light-on:focus,
+*:hover > .bg-indigo-light-in,
+*:focus > .bg-indigo-light-in,
+.bg-indigo-light-one > *:hover,
+.bg-indigo-light-one > *:focus,
+.bg-indigo-light-many:hover > *,
+.bg-indigo-light-many:focus > * {
+  background-color: var(--indigo-light);
+}
+
+.bg-magenta,
+.bg-magenta-all > *,
+.bg-magenta-on:hover,
+.bg-magenta-on:focus,
+*:hover > .bg-magenta-in,
+*:focus > .bg-magenta-in,
+.bg-magenta-one > *:hover,
+.bg-magenta-one > *:focus,
+.bg-magenta-many:hover > *,
+.bg-magenta-many:focus > * {
+  background-color: var(--magenta);
+}
+
+.bg-magenta-dark,
+.bg-magenta-dark-all > *,
+.bg-magenta-dark-on:hover,
+.bg-magenta-dark-on:focus,
+*:hover > .bg-magenta-dark-in,
+*:focus > .bg-magenta-dark-in,
+.bg-magenta-dark-one > *:hover,
+.bg-magenta-dark-one > *:focus,
+.bg-magenta-dark-many:hover > *,
+.bg-magenta-dark-many:focus > * {
+  background-color: var(--magenta-dark);
+}
+
+.bg-magenta-light,
+.bg-magenta-light-all > *,
+.bg-magenta-light-on:hover,
+.bg-magenta-light-on:focus,
+*:hover > .bg-magenta-light-in,
+*:focus > .bg-magenta-light-in,
+.bg-magenta-light-one > *:hover,
+.bg-magenta-light-one > *:focus,
+.bg-magenta-light-many:hover > *,
+.bg-magenta-light-many:focus > * {
+  background-color: var(--magenta-light);
+}
+
+.bg-pink,
+.bg-pink-all > *,
+.bg-pink-on:hover,
+.bg-pink-on:focus,
+*:hover > .bg-pink-in,
+*:focus > .bg-pink-in,
+.bg-pink-one > *:hover,
+.bg-pink-one > *:focus,
+.bg-pink-many:hover > *,
+.bg-pink-many:focus > * {
+  background-color: var(--pink);
+}
+
+.bg-pink-dark,
+.bg-pink-dark-all > *,
+.bg-pink-dark-on:hover,
+.bg-pink-dark-on:focus,
+*:hover > .bg-pink-dark-in,
+*:focus > .bg-pink-dark-in,
+.bg-pink-dark-one > *:hover,
+.bg-pink-dark-one > *:focus,
+.bg-pink-dark-many:hover > *,
+.bg-pink-dark-many:focus > * {
+  background-color: var(--pink-dark);
+}
+
+.bg-pink-light,
+.bg-pink-light-all > *,
+.bg-pink-light-on:hover,
+.bg-pink-light-on:focus,
+*:hover > .bg-pink-light-in,
+*:focus > .bg-pink-light-in,
+.bg-pink-light-one > *:hover,
+.bg-pink-light-one > *:focus,
+.bg-pink-light-many:hover > *,
+.bg-pink-light-many:focus > * {
+  background-color: var(--pink-light);
+}
+
+.bg-black,
+.bg-black-all > *,
+.bg-black-on:hover,
+.bg-black-on:focus,
+*:hover > .bg-black-in,
+*:focus > .bg-black-in,
+.bg-black-one > *:hover,
+.bg-black-one > *:focus,
+.bg-black-many:hover > *,
+.bg-black-many:focus > * {
+  background-color: var(--black);
+}
+
+.bg-black-dark,
+.bg-black-dark-all > *,
+.bg-black-dark-on:hover,
+.bg-black-dark-on:focus,
+*:hover > .bg-black-dark-in,
+*:focus > .bg-black-dark-in,
+.bg-black-dark-one > *:hover,
+.bg-black-dark-one > *:focus,
+.bg-black-dark-many:hover > *,
+.bg-black-dark-many:focus > * {
+  background-color: var(--black-dark);
+}
+
+.bg-black-light,
+.bg-black-light-all > *,
+.bg-black-light-on:hover,
+.bg-black-light-on:focus,
+*:hover > .bg-black-light-in,
+*:focus > .bg-black-light-in,
+.bg-black-light-one > *:hover,
+.bg-black-light-one > *:focus,
+.bg-black-light-many:hover > *,
+.bg-black-light-many:focus > * {
+  background-color: var(--black-light);
+}
+
+.bg-slate,
+.bg-slate-all > *,
+.bg-slate-on:hover,
+.bg-slate-on:focus,
+*:hover > .bg-slate-in,
+*:focus > .bg-slate-in,
+.bg-slate-one > *:hover,
+.bg-slate-one > *:focus,
+.bg-slate-many:hover > *,
+.bg-slate-many:focus > * {
+  background-color: var(--slate);
+}
+
+.bg-slate-dark,
+.bg-slate-dark-all > *,
+.bg-slate-dark-on:hover,
+.bg-slate-dark-on:focus,
+*:hover > .bg-slate-dark-in,
+*:focus > .bg-slate-dark-in,
+.bg-slate-dark-one > *:hover,
+.bg-slate-dark-one > *:focus,
+.bg-slate-dark-many:hover > *,
+.bg-slate-dark-many:focus > * {
+  background-color: var(--slate-dark);
+}
+
+.bg-slate-light,
+.bg-slate-light-all > *,
+.bg-slate-light-on:hover,
+.bg-slate-light-on:focus,
+*:hover > .bg-slate-light-in,
+*:focus > .bg-slate-light-in,
+.bg-slate-light-one > *:hover,
+.bg-slate-light-one > *:focus,
+.bg-slate-light-many:hover > *,
+.bg-slate-light-many:focus > * {
+  background-color: var(--slate-light);
+}
+
+.bg-gray,
+.bg-gray-all > *,
+.bg-gray-on:hover,
+.bg-gray-on:focus,
+*:hover > .bg-gray-in,
+*:focus > .bg-gray-in,
+.bg-gray-one > *:hover,
+.bg-gray-one > *:focus,
+.bg-gray-many:hover > *,
+.bg-gray-many:focus > * {
+  background-color: var(--gray);
+}
+
+.bg-gray-dark,
+.bg-gray-dark-all > *,
+.bg-gray-dark-on:hover,
+.bg-gray-dark-on:focus,
+*:hover > .bg-gray-dark-in,
+*:focus > .bg-gray-dark-in,
+.bg-gray-dark-one > *:hover,
+.bg-gray-dark-one > *:focus,
+.bg-gray-dark-many:hover > *,
+.bg-gray-dark-many:focus > * {
+  background-color: var(--gray-dark);
+}
+
+.bg-gray-light,
+.bg-gray-light-all > *,
+.bg-gray-light-on:hover,
+.bg-gray-light-on:focus,
+*:hover > .bg-gray-light-in,
+*:focus > .bg-gray-light-in,
+.bg-gray-light-one > *:hover,
+.bg-gray-light-one > *:focus,
+.bg-gray-light-many:hover > *,
+.bg-gray-light-many:focus > * {
+  background-color: var(--gray-light);
+}
+
+.bg-silver,
+.bg-silver-all > *,
+.bg-silver-on:hover,
+.bg-silver-on:focus,
+*:hover > .bg-silver-in,
+*:focus > .bg-silver-in,
+.bg-silver-one > *:hover,
+.bg-silver-one > *:focus,
+.bg-silver-many:hover > *,
+.bg-silver-many:focus > * {
+  background-color: var(--silver);
+}
+
+.bg-silver-dark,
+.bg-silver-dark-all > *,
+.bg-silver-dark-on:hover,
+.bg-silver-dark-on:focus,
+*:hover > .bg-silver-dark-in,
+*:focus > .bg-silver-dark-in,
+.bg-silver-dark-one > *:hover,
+.bg-silver-dark-one > *:focus,
+.bg-silver-dark-many:hover > *,
+.bg-silver-dark-many:focus > * {
+  background-color: var(--silver-dark);
+}
+
+.bg-silver-light,
+.bg-silver-light-all > *,
+.bg-silver-light-on:hover,
+.bg-silver-light-on:focus,
+*:hover > .bg-silver-light-in,
+*:focus > .bg-silver-light-in,
+.bg-silver-light-one > *:hover,
+.bg-silver-light-one > *:focus,
+.bg-silver-light-many:hover > *,
+.bg-silver-light-many:focus > * {
+  background-color: var(--silver-light);
+}
+
+.bg-white,
+.bg-white-all > *,
+.bg-white-on:hover,
+.bg-white-on:focus,
+*:hover > .bg-white-in,
+*:focus > .bg-white-in,
+.bg-white-one > *:hover,
+.bg-white-one > *:focus,
+.bg-white-many:hover > *,
+.bg-white-many:focus > * {
+  background-color: var(--white);
+}
+
+.bg-white-dark,
+.bg-white-dark-all > *,
+.bg-white-dark-on:hover,
+.bg-white-dark-on:focus,
+*:hover > .bg-white-dark-in,
+*:focus > .bg-white-dark-in,
+.bg-white-dark-one > *:hover,
+.bg-white-dark-one > *:focus,
+.bg-white-dark-many:hover > *,
+.bg-white-dark-many:focus > * {
+  background-color: var(--white-dark);
+}
+
+.bg-white-light,
+.bg-white-light-all > *,
+.bg-white-light-on:hover,
+.bg-white-light-on:focus,
+*:hover > .bg-white-light-in,
+*:focus > .bg-white-light-in,
+.bg-white-light-one > *:hover,
+.bg-white-light-one > *:focus,
+.bg-white-light-many:hover > *,
+.bg-white-light-many:focus > * {
+  background-color: var(--white-light);
+}
+
+/********** FONT FAMILY **********/
+:root {
+  --sans-serif: Helvetica, sans-serif;
+  --serif: Times, serif;
+  --monospace: Courier, monospace;
+  --cursive: Mistral, cursive;
+  --fantasy: Blackletter, fantasy;
+}
+
+.sans-serif,
+.sans-serif-all > *,
+.sans-serif-on:hover,
+.sans-serif-on:focus,
+*:hover > .sans-serif-in,
+*:focus > .sans-serif-in,
+.sans-serif-one > *:hover,
+.sans-serif-one > *:focus,
+.sans-serif-many:hover > *,
+.sans-serif-many:focus > * {
+  font-family: var(--sans-serif);
+}
+
+.serif,
+.serif-all > *,
+.serif-on:hover,
+.serif-on:focus,
+*:hover > .serif-in,
+*:focus > .serif-in,
+.serif-one > *:hover,
+.serif-one > *:focus,
+.serif-many:hover > *,
+.serif-many:focus > * {
+  font-family: var(--serif);
+}
+
+.monospace,
+.monospace-all > *,
+.monospace-on:hover,
+.monospace-on:focus,
+*:hover > .monospace-in,
+*:focus > .monospace-in,
+.monospace-one > *:hover,
+.monospace-one > *:focus,
+.monospace-many:hover > *,
+.monospace-many:focus > * {
+  font-family: var(--monospace);
+}
+
+.cursive,
+.cursive-all > *,
+.cursive-on:hover,
+.cursive-on:focus,
+*:hover > .cursive-in,
+*:focus > .cursive-in,
+.cursive-one > *:hover,
+.cursive-one > *:focus,
+.cursive-many:hover > *,
+.cursive-many:focus > * {
+  font-family: var(--cursive);
+}
+
+.fantasy,
+.fantasy-all > *,
+.fantasy-on:hover,
+.fantasy-on:focus,
+*:hover > .fantasy-in,
+*:focus > .fantasy-in,
+.fantasy-one > *:hover,
+.fantasy-one > *:focus,
+.fantasy-many:hover > *,
+.fantasy-many:focus > * {
+  font-family: var(--fantasy);
+}
+
+/********** FONT **********/
+.font-bold,
+.font-bold-all > *,
+.font-bold-on:hover,
+.font-bold-on:focus,
+*:hover > .font-bold-in,
+*:focus > .font-bold-in,
+.font-bold-one > *:hover,
+.font-bold-one > *:focus,
+.font-bold-many:hover > *,
+.font-bold-many:focus > * {
+  font-weight: bold;
+}
+
+.font-italic,
+.font-italic-all > *,
+.font-italic-on:hover,
+.font-italic-on:focus,
+*:hover > .font-italic-in,
+*:focus > .font-italic-in,
+.font-italic-one > *:hover,
+.font-italic-one > *:focus,
+.font-italic-many:hover > *,
+.font-italic-many:focus > * {
+  font-style: italic;
+}
+
+/********** TEXT ALIGN **********/
+.align-center,
+.align-center-all > * {
+  text-align: center;
+}
+
+.align-justify,
+.align-justify-all > * {
+  text-align: justify;
+}
+
+.align-right,
+.align-right-all > * {
+  text-align: right;
+}
+
+.align-left,
+.align-left-all > * {
+  text-align: left;
+}
+
+/********** TEXT TRANSFORM **********/
+.trans-cap,
+.trans-cap-all > *,
+.trans-cap-on:hover,
+.trans-cap-on:focus,
+*:hover > .trans-cap-in,
+*:focus > .trans-cap-in,
+.trans-cap-one > *:hover,
+.trans-cap-one > *:focus,
+.trans-cap-many:hover > *,
+.trans-cap-many:focus > * {
+  text-transform: capitalize;
+}
+
+.trans-up,
+.trans-up-all > *,
+.trans-up-on:hover,
+.trans-up-on:focus,
+*:hover > .trans-up-in,
+*:focus > .trans-up-in,
+.trans-up-one > *:hover,
+.trans-up-one > *:focus,
+.trans-up-many:hover > *,
+.trans-up-many:focus > * {
+  text-transform: uppercase;
+}
+
+.trans-low,
+.trans-low-all > *,
+.trans-low-on:hover,
+.trans-low-on:focus,
+*:hover > .trans-low-in,
+*:focus > .trans-low-in,
+.trans-low-one > *:hover,
+.trans-low-one > *:focus,
+.trans-low-many:hover > *,
+.trans-low-many:focus > * {
+  text-transform: lowercase;
+}
+
+/********** TEXT DECORATION LINE **********/
+.deco-none,
+.deco-none-all > *,
+.deco-none-on:hover,
+.deco-none-on:focus,
+*:hover > .deco-none-in,
+*:focus > .deco-none-in,
+.deco-none-one > *:hover,
+.deco-none-one > *:focus,
+.deco-none-many:hover > *,
+.deco-none-many:focus > * {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.deco-under,
+.deco-under-all > *,
+.deco-under-on:hover,
+.deco-under-on:focus,
+*:hover > .deco-under-in,
+*:focus > .deco-under-in,
+.deco-under-one > *:hover,
+.deco-under-one > *:focus,
+.deco-under-many:hover > *,
+.deco-under-many:focus > * {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.deco-over,
+.deco-over-all > *,
+.deco-over-on:hover,
+.deco-over-on:focus,
+*:hover > .deco-over-in,
+*:focus > .deco-over-in,
+.deco-over-one > *:hover,
+.deco-over-one > *:focus,
+.deco-over-many:hover > *,
+.deco-over-many:focus > * {
+  -webkit-text-decoration-line: overline;
+          text-decoration-line: overline;
+}
+
+.deco-through,
+.deco-through-all > *,
+.deco-through-on:hover,
+.deco-through-on:focus,
+*:hover > .deco-through-in,
+*:focus > .deco-through-in,
+.deco-through-one > *:hover,
+.deco-through-one > *:focus,
+.deco-through-many:hover > *,
+.deco-through-many:focus > * {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+/********** TEXT DECORATION STYLE **********/
+.deco-dash,
+.deco-dash-all > *,
+.deco-dash-on:hover,
+.deco-dash-on:focus,
+*:hover > .deco-dash-in,
+*:focus > .deco-dash-in,
+.deco-dash-one > *:hover,
+.deco-dash-one > *:focus,
+.deco-dash-many:hover > *,
+.deco-dash-many:focus > * {
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+}
+
+.deco-dot,
+.deco-dot-all > *,
+.deco-dot-on:hover,
+.deco-dot-on:focus,
+*:hover > .deco-dot-in,
+*:focus > .deco-dot-in,
+.deco-dot-one > *:hover,
+.deco-dot-one > *:focus,
+.deco-dot-many:hover > *,
+.deco-dot-many:focus > * {
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+.deco-double,
+.deco-double-all > *,
+.deco-double-on:hover,
+.deco-double-on:focus,
+*:hover > .deco-double-in,
+*:focus > .deco-double-in,
+.deco-double-one > *:hover,
+.deco-double-one > *:focus,
+.deco-double-many:hover > *,
+.deco-double-many:focus > * {
+  -webkit-text-decoration-style: double;
+          text-decoration-style: double;
+}
+
+.deco-solid,
+.deco-solid-all > *,
+.deco-solid-on:hover,
+.deco-solid-on:focus,
+*:hover > .deco-solid-in,
+*:focus > .deco-solid-in,
+.deco-solid-one > *:hover,
+.deco-solid-one > *:focus,
+.deco-solid-many:hover > *,
+.deco-solid-many:focus > * {
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+}
+
+.deco-wavy,
+.deco-wavy-all > *,
+.deco-wavy-on:hover,
+.deco-wavy-on:focus,
+*:hover > .deco-wavy-in,
+*:focus > .deco-wavy-in,
+.deco-wavy-one > *:hover,
+.deco-wavy-one > *:focus,
+.deco-wavy-many:hover > *,
+.deco-wavy-many:focus > * {
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+}
+
+/********** TEXT DECORATION COLOR **********/
+.deco-red,
+.deco-red-all > *,
+.deco-red-on:hover,
+.deco-red-on:focus,
+*:hover > .deco-red-in,
+*:focus > .deco-red-in,
+.deco-red-one > *:hover,
+.deco-red-one > *:focus,
+.deco-red-many:hover > *,
+.deco-red-many:focus > * {
+  -webkit-text-decoration-color: var(--red);
+          text-decoration-color: var(--red);
+}
+
+.deco-orange,
+.deco-orange-all > *,
+.deco-orange-on:hover,
+.deco-orange-on:focus,
+*:hover > .deco-orange-in,
+*:focus > .deco-orange-in,
+.deco-orange-one > *:hover,
+.deco-orange-one > *:focus,
+.deco-orange-many:hover > *,
+.deco-orange-many:focus > * {
+  -webkit-text-decoration-color: var(--orange);
+          text-decoration-color: var(--orange);
+}
+
+.deco-yellow,
+.deco-yellow-all > *,
+.deco-yellow-on:hover,
+.deco-yellow-on:focus,
+*:hover > .deco-yellow-in,
+*:focus > .deco-yellow-in,
+.deco-yellow-one > *:hover,
+.deco-yellow-one > *:focus,
+.deco-yellow-many:hover > *,
+.deco-yellow-many:focus > * {
+  -webkit-text-decoration-color: var(--yellow);
+          text-decoration-color: var(--yellow);
+}
+
+.deco-lime,
+.deco-lime-all > *,
+.deco-lime-on:hover,
+.deco-lime-on:focus,
+*:hover > .deco-lime-in,
+*:focus > .deco-lime-in,
+.deco-lime-one > *:hover,
+.deco-lime-one > *:focus,
+.deco-lime-many:hover > *,
+.deco-lime-many:focus > * {
+  -webkit-text-decoration-color: var(--lime);
+          text-decoration-color: var(--lime);
+}
+
+.deco-green,
+.deco-green-all > *,
+.deco-green-on:hover,
+.deco-green-on:focus,
+*:hover > .deco-green-in,
+*:focus > .deco-green-in,
+.deco-green-one > *:hover,
+.deco-green-one > *:focus,
+.deco-green-many:hover > *,
+.deco-green-many:focus > * {
+  -webkit-text-decoration-color: var(--green);
+          text-decoration-color: var(--green);
+}
+
+.deco-aqua,
+.deco-aqua-all > *,
+.deco-aqua-on:hover,
+.deco-aqua-on:focus,
+*:hover > .deco-aqua-in,
+*:focus > .deco-aqua-in,
+.deco-aqua-one > *:hover,
+.deco-aqua-one > *:focus,
+.deco-aqua-many:hover > *,
+.deco-aqua-many:focus > * {
+  -webkit-text-decoration-color: var(--aqua);
+          text-decoration-color: var(--aqua);
+}
+
+.deco-cyan,
+.deco-cyan-all > *,
+.deco-cyan-on:hover,
+.deco-cyan-on:focus,
+*:hover > .deco-cyan-in,
+*:focus > .deco-cyan-in,
+.deco-cyan-one > *:hover,
+.deco-cyan-one > *:focus,
+.deco-cyan-many:hover > *,
+.deco-cyan-many:focus > * {
+  -webkit-text-decoration-color: var(--cyan);
+          text-decoration-color: var(--cyan);
+}
+
+.deco-sky,
+.deco-sky-all > *,
+.deco-sky-on:hover,
+.deco-sky-on:focus,
+*:hover > .deco-sky-in,
+*:focus > .deco-sky-in,
+.deco-sky-one > *:hover,
+.deco-sky-one > *:focus,
+.deco-sky-many:hover > *,
+.deco-sky-many:focus > * {
+  -webkit-text-decoration-color: var(--sky);
+          text-decoration-color: var(--sky);
+}
+
+.deco-blue,
+.deco-blue-all > *,
+.deco-blue-on:hover,
+.deco-blue-on:focus,
+*:hover > .deco-blue-in,
+*:focus > .deco-blue-in,
+.deco-blue-one > *:hover,
+.deco-blue-one > *:focus,
+.deco-blue-many:hover > *,
+.deco-blue-many:focus > * {
+  -webkit-text-decoration-color: var(--blue);
+          text-decoration-color: var(--blue);
+}
+
+.deco-indigo,
+.deco-indigo-all > *,
+.deco-indigo-on:hover,
+.deco-indigo-on:focus,
+*:hover > .deco-indigo-in,
+*:focus > .deco-indigo-in,
+.deco-indigo-one > *:hover,
+.deco-indigo-one > *:focus,
+.deco-indigo-many:hover > *,
+.deco-indigo-many:focus > * {
+  -webkit-text-decoration-color: var(--indigo);
+          text-decoration-color: var(--indigo);
+}
+
+.deco-magenta,
+.deco-magenta-all > *,
+.deco-magenta-on:hover,
+.deco-magenta-on:focus,
+*:hover > .deco-magenta-in,
+*:focus > .deco-magenta-in,
+.deco-magenta-one > *:hover,
+.deco-magenta-one > *:focus,
+.deco-magenta-many:hover > *,
+.deco-magenta-many:focus > * {
+  -webkit-text-decoration-color: var(--magenta);
+          text-decoration-color: var(--magenta);
+}
+
+.deco-pink,
+.deco-pink-all > *,
+.deco-pink-on:hover,
+.deco-pink-on:focus,
+*:hover > .deco-pink-in,
+*:focus > .deco-pink-in,
+.deco-pink-one > *:hover,
+.deco-pink-one > *:focus,
+.deco-pink-many:hover > *,
+.deco-pink-many:focus > * {
+  -webkit-text-decoration-color: var(--pink);
+          text-decoration-color: var(--pink);
+}
+
+.deco-black,
+.deco-black-all > *,
+.deco-black-on:hover,
+.deco-black-on:focus,
+*:hover > .deco-black-in,
+*:focus > .deco-black-in,
+.deco-black-one > *:hover,
+.deco-black-one > *:focus,
+.deco-black-many:hover > *,
+.deco-black-many:focus > * {
+  -webkit-text-decoration-color: var(--black);
+          text-decoration-color: var(--black);
+}
+
+.deco-slate,
+.deco-slate-all > *,
+.deco-slate-on:hover,
+.deco-slate-on:focus,
+*:hover > .deco-slate-in,
+*:focus > .deco-slate-in,
+.deco-slate-one > *:hover,
+.deco-slate-one > *:focus,
+.deco-slate-many:hover > *,
+.deco-slate-many:focus > * {
+  -webkit-text-decoration-color: var(--slate);
+          text-decoration-color: var(--slate);
+}
+
+.deco-gray,
+.deco-gray-all > *,
+.deco-gray-on:hover,
+.deco-gray-on:focus,
+*:hover > .deco-gray-in,
+*:focus > .deco-gray-in,
+.deco-gray-one > *:hover,
+.deco-gray-one > *:focus,
+.deco-gray-many:hover > *,
+.deco-gray-many:focus > * {
+  -webkit-text-decoration-color: var(--gray);
+          text-decoration-color: var(--gray);
+}
+
+.deco-silver,
+.deco-silver-all > *,
+.deco-silver-on:hover,
+.deco-silver-on:focus,
+*:hover > .deco-silver-in,
+*:focus > .deco-silver-in,
+.deco-silver-one > *:hover,
+.deco-silver-one > *:focus,
+.deco-silver-many:hover > *,
+.deco-silver-many:focus > * {
+  -webkit-text-decoration-color: var(--silver);
+          text-decoration-color: var(--silver);
+}
+
+.deco-white,
+.deco-white-all > *,
+.deco-white-on:hover,
+.deco-white-on:focus,
+*:hover > .deco-white-in,
+*:focus > .deco-white-in,
+.deco-white-one > *:hover,
+.deco-white-one > *:focus,
+.deco-white-many:hover > *,
+.deco-white-many:focus > * {
+  -webkit-text-decoration-color: var(--white);
+          text-decoration-color: var(--white);
 }
 
 /********** TAGS **********/
 * {
-  --all-box-sizing: border-box;
   --target-margins: 7rem;
+  box-sizing: border-box;
+}
+*:target {
+  padding-top: var(--target-margins);
+  margin-top: -var(--target-margins);
 }
 
 html {
-  --html-scroll-behavior: smooth;
   --html-font-size: 62.5%;
+  font-size: var(--html-font-size);
+  scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 body {
   --body-font-size: 2rem;
   --body-line-height: 1.6;
+  --body-margin: auto;
+  --body-max-width: 2000px;
   --body-padding: 0;
+  margin: var(--body-margin);
+  padding: var(--body-padding);
+  max-width: var(--body-max-width);
+  line-height: var(--body-line-height);
+  font-size: var(--body-font-size);
+  font-family: var(--sans-serif);
 }
 
 main {
   --main-text-align: center;
+  text-align: var(--main-text-align);
 }
 
 article {
   --article-margin-bottom: 20px;
+  margin-bottom: var(--article-margin-bottom);
 }
 
 h1 {
@@ -510,20 +1941,29 @@ h3,
 h4,
 h5,
 h6 {
-  --title-font-family: var(--serif);
   --title-text-align: center;
   --title-text-transform: capitalize;
+  font-family: var(--serif);
+  text-align: var(--title-text-align);
+  text-transform: var(--title-text-transform);
+  font-size: var(--title-font-size);
 }
 
 a {
   --link-outline: 0;
   --link-text-decoration: none;
+  -webkit-text-decoration: var(--link-text-decoration);
+          text-decoration: var(--link-text-decoration);
+  outline: var(--link-outline);
 }
 
 ul {
   --list-margin: 0 0 10px;
   --list-padding: 0;
   --list-style: none;
+  margin: var(--list-margin);
+  padding: var(--list-padding);
+  list-style: var(--list-style);
 }
 
 table {
@@ -531,6 +1971,11 @@ table {
   --table-margin: auto;
   --table-text-align: center;
   --table-vertical-align: middle;
+  margin: var(--table-margin);
+  border-collapse: var(--table-border-collapse);
+  text-align: var(--table-text-align);
+  vertical-align: var(--table-vertical-align);
+  font-family: var(--monospace);
 }
 
 code,
@@ -540,509 +1985,6 @@ pre {
   --code-padding: 10px;
   --code-text-align: initial;
   --code-width: 100%;
-}
-
-figure {
-  --figure-margin: 0;
-}
-
-img,
-video {
-  --img-max-width: 100%;
-  --img-height: auto;
-  --img-object-fit: contain;
-}
-
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  --button-cursor: pointer;
-}
-
-/********** FLEX/GRID **********/
-[class*=flex],
-[class*=col],
-[class*=row] {
-  --flex-place-content: center;
-}
-
-[class*=col] {
-  --column-padding: 0 10px;
-}
-
-[class*=row] {
-  --row-padding: 10px 0;
-}
-
-[class*=grid] {
-  --grid-max-width: 100vw;
-  --grid-margin: auto;
-}
-
-[class*=gap-] {
-  --gap1: 50px;
-  --gap2: 20px;
-  --gap3: 10px;
-  --gap4: 5px;
-  --gap5: 2px;
-  --gap6: 1px;
-}
-
-/********** CONTAINER **********/
-[class*=container] {
-  --container-max-width: 100%;
-}
-
-/********** MARGIN **********/
-[class*=mar-] {
-  --margin-none: 0;
-  --margin-sm: 5px;
-  --margin-md: 10px;
-  --margin-lg: 20px;
-  --margin-top-sm: 5px;
-  --margin-top-md: 10px;
-  --margin-top-lg: 20px;
-  --margin-right-sm: 5px;
-  --margin-right-md: 10px;
-  --margin-right-lg: 20px;
-  --margin-bot-sm: 5px;
-  --margin-bot-md: 10px;
-  --margin-bot-lg: 20px;
-  --margin-left-sm: 5px;
-  --margin-left-md: 10px;
-  --margin-left-lg: 20px;
-}
-
-/********** BORDER **********/
-[class*=bord] {
-  --border-width-sm: thin;
-  --border-width-md: medium;
-  --border-width-lg: thick;
-  --border-radius-square: unset;
-  --border-radius-curve: 5px;
-  --border-radius-round: 10px;
-  --border-radius-circle: 50%;
-}
-
-/********** PADDING **********/
-[class*=pad-] {
-  --padding-none: 0;
-  --padding-sm: 5px;
-  --padding-md: 10px;
-  --padding-lg: 20px;
-  --padding-top-sm: 5px;
-  --padding-top-md: 10px;
-  --padding-top-lg: 20px;
-  --padding-right-sm: 5px;
-  --padding-right-md: 10px;
-  --padding-right-lg: 20px;
-  --padding-bot-sm: 5px;
-  --padding-bot-md: 10px;
-  --padding-bot-lg: 20px;
-  --padding-left-sm: 5px;
-  --padding-left-md: 10px;
-  --padding-left-lg: 20px;
-}
-
-/********** HEIGHT **********/
-[class*=height-] {
-  --height-sm: 10vh;
-  --height-md: 20vh;
-  --height-lg: 50vh;
-}
-
-[class*=max-h-] {
-  --max-height-sm: 10vh;
-  --max-height-md: 20vh;
-  --max-height-lg: 50vh;
-}
-
-[class*=min-h-] {
-  --min-height-sm: 10vh;
-  --min-height-md: 20vh;
-  --min-height-lg: 50vh;
-}
-
-/********** WIDTH **********/
-[class*=width-] {
-  --width-sm: 10vw;
-  --width-md: 20vw;
-  --width-lg: 50vw;
-}
-
-[class*=max-w-] {
-  --max-width-sm: 10vw;
-  --max-width-md: 20vw;
-  --max-width-lg: 50vw;
-}
-
-[class*=min-w-] {
-  --min-width-sm: 10vw;
-  --min-width-md: 20vw;
-  --min-width-lg: 50vw;
-}
-
-/********** SHADOW **********/
-[class*=shadow-] {
-  --shadow-sm: 1px 1px;
-  --shadow-md: 2px 2px;
-  --shadow-lg: 5px 5px;
-  --shadow-blur: 0 0 2px;
-  --shadow-blur-sm: 1px 1px 1px;
-  --shadow-blur-md: 2px 2px 2px;
-  --shadow-blur-lg: 5px 5px 5px;
-  --shadow-spread: 0 0 2px 2px;
-  --shadow-spread-sm: 1px 1px 1px 1px;
-  --shadow-spread-md: 2px 2px 2px 2px;
-  --shadow-spread-lg: 5px 5px 5px 5px;
-}
-
-/********** ANIMATION **********/
-[class*=anima-] {
-  --animation-duration: 2s;
-  --animation-duration-sm: 1s;
-  --animation-duration-md: 2s;
-  --animation-duration-lg: 3s;
-  --animation-timing-function-linear: linear;
-  --animation-timing-function-in: ease-in;
-  --animation-timing-function-out: ease-out;
-  --animation-timing-function-inout: ease-in-out;
-  --animation-timing-function-start: step-start;
-  --animation-timing-function-end: step-end;
-  --animation-iteration-count-few: 2;
-  --animation-iteration-count-many: 4;
-  --animation-iteration-count-loop: infinite;
-  --animation-delay-min: 1s;
-  --animation-delay-max: 2s;
-}
-
-/********** KEYFRAMES **********/
-@-webkit-keyframes slideT {
-  from {
-    transform: var(--slideT);
-  }
-}
-@keyframes slideT {
-  from {
-    transform: var(--slideT);
-  }
-}
-@-webkit-keyframes slideR {
-  from {
-    transform: var(--slideR);
-  }
-}
-@keyframes slideR {
-  from {
-    transform: var(--slideR);
-  }
-}
-@-webkit-keyframes slideB {
-  from {
-    transform: var(--slideB);
-  }
-}
-@keyframes slideB {
-  from {
-    transform: var(--slideB);
-  }
-}
-@-webkit-keyframes slideL {
-  from {
-    transform: var(--slideL);
-  }
-}
-@keyframes slideL {
-  from {
-    transform: var(--slideL);
-  }
-}
-@-webkit-keyframes turn {
-  from {
-    transform: var(--turn);
-  }
-}
-@keyframes turn {
-  from {
-    transform: var(--turn);
-  }
-}
-@-webkit-keyframes turnX {
-  from {
-    transform: var(--turnX);
-  }
-}
-@keyframes turnX {
-  from {
-    transform: var(--turnX);
-  }
-}
-@-webkit-keyframes turnY {
-  from {
-    transform: var(--turnY);
-  }
-}
-@keyframes turnY {
-  from {
-    transform: var(--turnY);
-  }
-}
-@-webkit-keyframes turnXY {
-  from {
-    transform: var(--turnXY);
-  }
-}
-@keyframes turnXY {
-  from {
-    transform: var(--turnXY);
-  }
-}
-@-webkit-keyframes turnXZ {
-  from {
-    transform: var(--turnXZ);
-  }
-}
-@keyframes turnXZ {
-  from {
-    transform: var(--turnXZ);
-  }
-}
-@-webkit-keyframes turnYZ {
-  from {
-    transform: var(--turnYZ);
-  }
-}
-@keyframes turnYZ {
-  from {
-    transform: var(--turnYZ);
-  }
-}
-@-webkit-keyframes turn3D {
-  from {
-    transform: var(--turn3D);
-  }
-}
-@keyframes turn3D {
-  from {
-    transform: var(--turn3D);
-  }
-}
-@-webkit-keyframes bounce {
-  from {
-    transform: var(--bounce);
-  }
-}
-@keyframes bounce {
-  from {
-    transform: var(--bounce);
-  }
-}
-@-webkit-keyframes grow {
-  from {
-    transform: var(--grow);
-  }
-}
-@keyframes grow {
-  from {
-    transform: var(--grow);
-  }
-}
-@-webkit-keyframes shrink {
-  from {
-    transform: var(--shrink);
-  }
-}
-@keyframes shrink {
-  from {
-    transform: var(--shrink);
-  }
-}
-@-webkit-keyframes flipX {
-  from {
-    transform: var(--flipX);
-  }
-}
-@keyframes flipX {
-  from {
-    transform: var(--flipX);
-  }
-}
-@-webkit-keyframes flipY {
-  from {
-    transform: var(--flipY);
-  }
-}
-@keyframes flipY {
-  from {
-    transform: var(--flipY);
-  }
-}
-@-webkit-keyframes openX {
-  from {
-    transform: var(--openX);
-  }
-}
-@keyframes openX {
-  from {
-    transform: var(--openX);
-  }
-}
-@-webkit-keyframes openY {
-  from {
-    transform: var(--openY);
-  }
-}
-@keyframes openY {
-  from {
-    transform: var(--openY);
-  }
-}
-@-webkit-keyframes flipperX {
-  from {
-    transform: var(--flipperX);
-  }
-}
-@keyframes flipperX {
-  from {
-    transform: var(--flipperX);
-  }
-}
-@-webkit-keyframes flipperY {
-  from {
-    transform: var(--flipperY);
-  }
-}
-@keyframes flipperY {
-  from {
-    transform: var(--flipperY);
-  }
-}
-@-webkit-keyframes twistT {
-  from {
-    transform: var(--twistT);
-  }
-}
-@keyframes twistT {
-  from {
-    transform: var(--twistT);
-  }
-}
-@-webkit-keyframes twistR {
-  from {
-    transform: var(--twistR);
-  }
-}
-@keyframes twistR {
-  from {
-    transform: var(--twistR);
-  }
-}
-@-webkit-keyframes twistB {
-  from {
-    transform: var(--twistB);
-  }
-}
-@keyframes twistB {
-  from {
-    transform: var(--twistB);
-  }
-}
-@-webkit-keyframes twistL {
-  from {
-    transform: var(--twistL);
-  }
-}
-@keyframes twistL {
-  from {
-    transform: var(--twistL);
-  }
-}
-/********** TAGS **********/
-* {
-  box-sizing: var(--all-box-sizing);
-}
-*:target {
-  padding-top: var(--target-margins);
-  margin-top: -var(--target-margins);
-}
-
-html {
-  font-size: var(--html-font-size);
-  scroll-behavior: var(--html-scroll-behavior);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
-body {
-  margin: 0;
-  padding: var(--body-padding);
-  line-height: var(--body-line-height);
-  font-size: var(--body-font-size);
-  font-family: var(--sans-serif);
-}
-
-main {
-  text-align: var(--main-text-align);
-}
-
-article {
-  margin-bottom: var(--article-margin-bottom);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--title-font-family);
-  text-align: var(--title-text-align);
-  text-transform: var(--title-text-transform);
-  font-size: var(--title-font-size);
-}
-
-a {
-  -webkit-text-decoration: var(--link-text-decoration);
-          text-decoration: var(--link-text-decoration);
-  outline: var(--link-outline);
-}
-
-button {
-  cursor: var(--button-cursor);
-}
-
-ul {
-  margin: var(--list-margin);
-  padding: var(--list-padding);
-  list-style: var(--list-style);
-}
-
-table {
-  margin: var(--table-margin);
-  border-collapse: var(--table-border-collapse);
-  text-align: var(--table-text-align);
-  vertical-align: var(--table-vertical-align);
-  font-family: var(--monospace);
-}
-
-figure {
-  margin: var(--figure-margin);
-}
-
-img,
-video {
-  max-width: var(--img-max-width);
-  height: var(--img-height);
-  -o-object-fit: var(--img-object-fit);
-     object-fit: var(--img-object-fit);
-}
-
-code,
-pre {
   font-size: 1em;
   overflow: var(--code-overflow);
   margin: var(--code-margin);
@@ -1052,233 +1994,116 @@ pre {
   text-align: var(--code-text-align);
 }
 
+figure {
+  --figure-margin: 0;
+  margin: var(--figure-margin);
+}
+
+img,
+video {
+  --img-max-width: 100%;
+  --img-height: auto;
+  --img-object-fit: contain;
+  max-width: var(--img-max-width);
+  height: var(--img-height);
+  -o-object-fit: var(--img-object-fit);
+     object-fit: var(--img-object-fit);
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  --button-cursor: pointer;
+  cursor: var(--button-cursor);
+}
+
 /********** DISPLAY **********/
-.hide,
-.global-hide > * {
-  display: none;
-}
-
-.flex,
-.global-flex > * {
+/*****************************/
+/********** FLEX CONTAINER **********/
+[class*=flex] {
   display: flex;
 }
 
-.block,
-.global-block > * {
-  display: block;
-}
-
-.inline,
-.global-inline > * {
-  display: inline;
-}
-
-.inflex,
-.global-inflex > * {
-  display: inline-flex;
-}
-
-.inblock,
-.global-inblock > * {
-  display: inline-block;
-}
-
-@media (min-width: 576px) {
-  .hide-sm,
-.global-hide-sm > * {
-    display: none;
-  }
-
-  .flex-sm,
-.global-flex-sm > * {
-    display: flex;
-  }
-
-  .block-sm,
-.global-block-sm > * {
-    display: block;
-  }
-
-  .inline-sm,
-.global-inline-sm > * {
-    display: inline;
-  }
-
-  .inflex-sm,
-.global-inflex-sm > * {
-    display: inline-flex;
-  }
-
-  .inblock-sm,
-.global-inblock-sm > * {
-    display: inline-block;
-  }
-}
-@media (min-width: 768px) {
-  .hide-md,
-.global-hide-md > * {
-    display: none;
-  }
-
-  .flex-md,
-.global-flex-md > * {
-    display: flex;
-  }
-
-  .block-md,
-.global-block-md > * {
-    display: block;
-  }
-
-  .inline-md,
-.global-inline-md > * {
-    display: inline;
-  }
-
-  .inflex-md,
-.global-inflex-md > * {
-    display: inline-flex;
-  }
-
-  .inblock-md,
-.global-inblock-md > * {
-    display: inline-block;
-  }
-}
-@media (min-width: 992px) {
-  .hide-lg,
-.global-hide-lg > * {
-    display: none;
-  }
-
-  .flex-lg,
-.global-flex-lg > * {
-    display: flex;
-  }
-
-  .block-lg,
-.global-block-lg > * {
-    display: block;
-  }
-
-  .inline-lg,
-.global-inline-lg > * {
-    display: inline;
-  }
-
-  .inflex-lg,
-.global-inflex-lg > * {
-    display: inline-flex;
-  }
-
-  .inblock-lg,
-.global-inblock-lg > * {
-    display: inline-block;
-  }
-}
-@media (min-width: 1200px) {
-  .hide-xl,
-.global-hide-xl > * {
-    display: none;
-  }
-
-  .flex-xl,
-.global-flex-xl > * {
-    display: flex;
-  }
-
-  .block-xl,
-.global-block-xl > * {
-    display: block;
-  }
-
-  .inline-xl,
-.global-inline-xl > * {
-    display: inline;
-  }
-
-  .inflex-xl,
-.global-inflex-xl > * {
-    display: inline-flex;
-  }
-
-  .inblock-xl,
-.global-inblock-xl > * {
-    display: inline-block;
-  }
-}
-@media (min-width: 1600px) {
-  .hide-wd,
-.global-hide-wd > * {
-    display: none;
-  }
-
-  .flex-wd,
-.global-flex-wd > * {
-    display: flex;
-  }
-
-  .block-wd,
-.global-block-wd > * {
-    display: block;
-  }
-
-  .inline-wd,
-.global-inline-wd > * {
-    display: inline;
-  }
-
-  .inflex-wd,
-.global-inflex-wd > * {
-    display: inline-flex;
-  }
-
-  .inblock-wd,
-.global-inblock-wd > * {
-    display: inline-block;
-  }
-}
-/********** FLEX **********/
-.flex,
-.col,
-.row,
-.col-rev,
-.row-rev {
-  display: flex;
-  place-content: var(--flex-place-content);
-}
-
-.col,
-.col-rev {
-  padding: var(--column-padding);
-}
-
-.row,
-.row-rev {
-  padding: var(--row-padding);
-}
-
-.flex {
-  flex-wrap: wrap;
-}
-
-.col {
+[class*=flex-][class*=-col] {
   flex-direction: column;
 }
 
-.row {
-  flex-direction: row;
-}
-
-.col-rev {
+[class*=flex-][class*=-col-rev] {
   flex-direction: column-reverse;
 }
 
-.row-rev {
+[class*=flex-][class*=-row] {
+  flex-direction: row;
+}
+
+[class*=flex-][class*=-row-rev] {
   flex-direction: row-reverse;
 }
 
+[class*=flex-][class*=-wrap] {
+  flex-wrap: wrap;
+}
+
+[class*=flex-][class*=-wrap-rev] {
+  flex-wrap: wrap-reverse;
+}
+
+/********** FLEX ITEM **********/
+[class*=flex-][class*=-order1] {
+  order: 1;
+}
+
+[class*=flex-][class*=-order2] {
+  order: 2;
+}
+
+[class*=flex-][class*=-order3] {
+  order: 3;
+}
+
+[class*=flex-][class*=-order4] {
+  order: 4;
+}
+
+[class*=flex-][class*=-grow1] {
+  flex-grow: 1;
+}
+
+[class*=flex-][class*=-grow2] {
+  flex-grow: 2;
+}
+
+[class*=flex-][class*=-grow3] {
+  flex-grow: 3;
+}
+
+[class*=flex-][class*=-grow4] {
+  flex-grow: 4;
+}
+
+[class*=flex-][class*=-shrink1] {
+  flex-shrink: 1;
+}
+
+[class*=flex-][class*=-shrink2] {
+  flex-shrink: 2;
+}
+
+[class*=flex-][class*=-shrink3] {
+  flex-shrink: 3;
+}
+
+[class*=flex-][class*=-shrink4] {
+  flex-shrink: 4;
+}
+
 /********** GRID **********/
+[class*=grid] {
+  --grid-max-width: 100vw;
+  --grid-margin: auto;
+}
+
 [class*=grid] {
   display: grid;
   max-width: var(--grid-max-width);
@@ -1555,6 +2380,13 @@ pre {
   }
 }
 /********** GAP **********/
+[class*=gap-] {
+  --gap1: 5px;
+  --gap2: 10px;
+  --gap3: 20px;
+  --gap4: 50px;
+}
+
 [class*=gap-][class*="-1tn"] {
   gap: var(--gap1);
 }
@@ -1569,14 +2401,6 @@ pre {
 
 [class*=gap-][class*="-4tn"] {
   gap: var(--gap4);
-}
-
-[class*=gap-][class*="-5tn"] {
-  gap: var(--gap5);
-}
-
-[class*=gap-][class*="-6tn"] {
-  gap: var(--gap6);
 }
 
 @media (min-width: 576px) {
@@ -1595,14 +2419,6 @@ pre {
   [class*=gap-][class*="-4sm"] {
     gap: var(--gap4);
   }
-
-  [class*=gap-][class*="-5sm"] {
-    gap: var(--gap5);
-  }
-
-  [class*=gap-][class*="-6sm"] {
-    gap: var(--gap6);
-  }
 }
 @media (min-width: 768px) {
   [class*=gap-][class*="-1md"] {
@@ -1619,14 +2435,6 @@ pre {
 
   [class*=gap-][class*="-4md"] {
     gap: var(--gap4);
-  }
-
-  [class*=gap-][class*="-5md"] {
-    gap: var(--gap5);
-  }
-
-  [class*=gap-][class*="-6md"] {
-    gap: var(--gap6);
   }
 }
 @media (min-width: 992px) {
@@ -1645,14 +2453,6 @@ pre {
   [class*=gap-][class*="-4lg"] {
     gap: var(--gap4);
   }
-
-  [class*=gap-][class*="-5lg"] {
-    gap: var(--gap5);
-  }
-
-  [class*=gap-][class*="-6lg"] {
-    gap: var(--gap6);
-  }
 }
 @media (min-width: 1200px) {
   [class*=gap-][class*="-1xl"] {
@@ -1669,14 +2469,6 @@ pre {
 
   [class*=gap-][class*="-4xl"] {
     gap: var(--gap4);
-  }
-
-  [class*=gap-][class*="-5xl"] {
-    gap: var(--gap5);
-  }
-
-  [class*=gap-][class*="-6xl"] {
-    gap: var(--gap6);
   }
 }
 @media (min-width: 1600px) {
@@ -1695,16 +2487,8 @@ pre {
   [class*=gap-][class*="-4wd"] {
     gap: var(--gap4);
   }
-
-  [class*=gap-][class*="-5wd"] {
-    gap: var(--gap5);
-  }
-
-  [class*=gap-][class*="-6wd"] {
-    gap: var(--gap6);
-  }
 }
-/********** PLACE **********/
+/********** PLACE CONTENT **********/
 .content-around {
   place-content: space-around;
 }
@@ -1878,6 +2662,7 @@ pre {
     place-content: flex-end;
   }
 }
+/********** PLACE ITEMS **********/
 .items-normal {
   place-items: normal;
 }
@@ -2027,6 +2812,7 @@ pre {
     place-items: flex-end;
   }
 }
+/********** PLACE-SELF **********/
 .self-auto {
   place-self: auto;
 }
@@ -2200,139 +2986,13 @@ pre {
     place-self: flex-end;
   }
 }
-/********** POSITION **********/
-.absolute,
-.global-absolute > * {
-  position: absolute;
-}
-
-.fixed,
-.global-fixed > * {
-  position: fixed;
-}
-
-.relative,
-.global-relative > * {
-  position: relative;
-}
-
-.sticky,
-.global-sticky > * {
-  position: -webkit-sticky;
-  position: sticky;
-}
-
-@media (min-width: 576px) {
-  .absolute-sm,
-.global-absolute-sm > * {
-    position: absolute;
-  }
-
-  .fixed-sm,
-.global-fixed-sm > * {
-    position: fixed;
-  }
-
-  .relative-sm,
-.global-relative-sm > * {
-    position: relative;
-  }
-
-  .sticky-sm,
-.global-sticky-sm > * {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-}
-@media (min-width: 768px) {
-  .absolute-md,
-.global-absolute-md > * {
-    position: absolute;
-  }
-
-  .fixed-md,
-.global-fixed-md > * {
-    position: fixed;
-  }
-
-  .relative-md,
-.global-relative-md > * {
-    position: relative;
-  }
-
-  .sticky-md,
-.global-sticky-md > * {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-}
-@media (min-width: 992px) {
-  .absolute-lg,
-.global-absolute-lg > * {
-    position: absolute;
-  }
-
-  .fixed-lg,
-.global-fixed-lg > * {
-    position: fixed;
-  }
-
-  .relative-lg,
-.global-relative-lg > * {
-    position: relative;
-  }
-
-  .sticky-lg,
-.global-sticky-lg > * {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-}
-@media (min-width: 1200px) {
-  .absolute-xl,
-.global-absolute-xl > * {
-    position: absolute;
-  }
-
-  .fixed-xl,
-.global-fixed-xl > * {
-    position: fixed;
-  }
-
-  .relative-xl,
-.global-relative-xl > * {
-    position: relative;
-  }
-
-  .sticky-xl,
-.global-sticky-xl > * {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-}
-@media (min-width: 1600px) {
-  .absolute-wd,
-.global-absolute-wd > * {
-    position: absolute;
-  }
-
-  .fixed-wd,
-.global-fixed-wd > * {
-    position: fixed;
-  }
-
-  .relative-wd,
-.global-relative-wd > * {
-    position: relative;
-  }
-
-  .sticky-wd,
-.global-sticky-wd > * {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-}
+/********** BOXES **********/
+/***************************/
 /********** CONTAINER **********/
+[class*=container] {
+  --container-max-width: 100%;
+}
+
 [class*=container] {
   margin: auto;
   max-width: var(--container-max-width);
@@ -2464,1855 +3124,1095 @@ pre {
   }
 }
 /********** MARGIN **********/
+[class*=mar-] {
+  --margin-none: 0;
+  --margin-sm: 5px;
+  --margin-md: 10px;
+  --margin-lg: 20px;
+  --margin-top-sm: 5px;
+  --margin-top-md: 10px;
+  --margin-top-lg: 20px;
+  --margin-right-sm: 5px;
+  --margin-right-md: 10px;
+  --margin-right-lg: 20px;
+  --margin-bot-sm: 5px;
+  --margin-bot-md: 10px;
+  --margin-bot-lg: 20px;
+  --margin-left-sm: 5px;
+  --margin-left-md: 10px;
+  --margin-left-lg: 20px;
+}
+
 .mar-none,
-.global-mar-none > * {
+.mar-none-all > * {
   margin: var(--margin-none);
 }
 
 .mar-top-none,
-.global-mar-top-none > * {
+.mar-top-none-all > * {
   margin-top: var(--margin-none);
 }
 
 .mar-right-none,
-.global-mar-right-none > * {
+.mar-right-none-all > * {
   margin-right: var(--margin-none);
 }
 
 .mar-bottom-none,
-.global-mar-bottom-none > * {
+.mar-bottom-none-all > * {
   margin-bottom: var(--margin-none);
 }
 
 .mar-left-none,
-.global-mar-left-none > * {
+.mar-left-none-all > * {
   margin-left: var(--margin-none);
 }
 
 .mar-sm,
-.global-mar-sm > * {
+.mar-sm-all > * {
   margin: var(--margin-sm);
 }
 
 .mar-md,
-.global-mar-md > * {
+.mar-md-all > * {
   margin: var(--margin-md);
 }
 
 .mar-lg,
-.global-mar-lg > * {
+.mar-lg-all > * {
   margin: var(--margin-lg);
 }
 
 .mar-top-sm,
-.global-mar-top-sm > * {
+.mar-top-sm-all > * {
   margin-top: var(--margin-top-sm);
 }
 
 .mar-top-md,
-.global-mar-top-md > * {
+.mar-top-md-all > * {
   margin-top: var(--margin-top-md);
 }
 
 .mar-top-lg,
-.global-mar-top-lg > * {
+.mar-top-lg-all > * {
   margin-top: var(--margin-top-lg);
 }
 
 .mar-right-sm,
-.global-mar-right-sm > * {
+.mar-right-sm-all > * {
   margin-right: var(--margin-right-sm);
 }
 
 .mar-right-md,
-.global-mar-right-md > * {
+.mar-right-md-all > * {
   margin-right: var(--margin-right-md);
 }
 
 .mar-right-lg,
-.global-mar-right-lg > * {
+.mar-right-lg-all > * {
   margin-right: var(--margin-right-lg);
 }
 
 .mar-bot-sm,
-.global-mar-bot-sm > * {
+.mar-bot-sm-all > * {
   margin-bottom: var(--margin-bot-sm);
 }
 
 .mar-bot-md,
-.global-mar-bot-md > * {
+.mar-bot-md-all > * {
   margin-bottom: var(--margin-bot-md);
 }
 
 .mar-bot-lg,
-.global-mar-bot-lg > * {
+.mar-bot-lg-all > * {
   margin-bottom: var(--margin-bot-lg);
 }
 
 .mar-left-sm,
-.global-mar-left-sm > * {
+.mar-left-sm-all > * {
   margin-left: var(--margin-left-sm);
 }
 
 .mar-left-md,
-.global-mar-left-md > * {
+.mar-left-md-all > * {
   margin-left: var(--margin-left-md);
 }
 
 .mar-left-lg,
-.global-mar-left-lg > * {
+.mar-left-lg-all > * {
   margin-left: var(--margin-left-lg);
 }
 
 /********** BORDER **********/
+[class*=bord] {
+  --border-width-sm: 1px;
+  --border-width-md: 2px;
+  --border-width-lg: 5px;
+  --border-radius-square: unset;
+  --border-radius-curve: 5px;
+  --border-radius-round: 10px;
+  --border-radius-circle: 50%;
+}
+
+/********** BORDER STYLE **********/
 .bord-dash,
-.bord-dash-global > *,
-.bord-dash-onto:hover,
-.bord-dash-onto:focus,
-.bord-dash-toone > *:hover,
-.bord-dash-toone > *:focus,
-*:hover > .bord-dash-into,
-*:focus > .bord-dash-into,
-.bord-dash-toall:hover > *,
-.bord-dash-toall:focus > * {
+.bord-dash-all > *,
+.bord-dash-on:hover,
+.bord-dash-on:focus,
+*:hover > .bord-dash-in,
+*:focus > .bord-dash-in,
+.bord-dash-one > *:hover,
+.bord-dash-one > *:focus,
+.bord-dash-many:hover > *,
+.bord-dash-many:focus > * {
   border-style: dashed;
 }
 
 .bord-dot,
-.bord-dot-global > *,
-.bord-dot-onto:hover,
-.bord-dot-onto:focus,
-.bord-dot-toone > *:hover,
-.bord-dot-toone > *:focus,
-*:hover > .bord-dot-into,
-*:focus > .bord-dot-into,
-.bord-dot-toall:hover > *,
-.bord-dot-toall:focus > * {
+.bord-dot-all > *,
+.bord-dot-on:hover,
+.bord-dot-on:focus,
+*:hover > .bord-dot-in,
+*:focus > .bord-dot-in,
+.bord-dot-one > *:hover,
+.bord-dot-one > *:focus,
+.bord-dot-many:hover > *,
+.bord-dot-many:focus > * {
   border-style: dotted;
 }
 
 .bord-solid,
-.bord-solid-global > *,
-.bord-solid-onto:hover,
-.bord-solid-onto:focus,
-.bord-solid-toone > *:hover,
-.bord-solid-toone > *:focus,
-*:hover > .bord-solid-into,
-*:focus > .bord-solid-into,
-.bord-solid-toall:hover > *,
-.bord-solid-toall:focus > * {
+.bord-solid-all > *,
+.bord-solid-on:hover,
+.bord-solid-on:focus,
+*:hover > .bord-solid-in,
+*:focus > .bord-solid-in,
+.bord-solid-one > *:hover,
+.bord-solid-one > *:focus,
+.bord-solid-many:hover > *,
+.bord-solid-many:focus > * {
   border-style: solid;
 }
 
 .bord-double,
-.bord-double-global > *,
-.bord-double-onto:hover,
-.bord-double-onto:focus,
-.bord-double-toone > *:hover,
-.bord-double-toone > *:focus,
-*:hover > .bord-double-into,
-*:focus > .bord-double-into,
-.bord-double-toall:hover > *,
-.bord-double-toall:focus > * {
+.bord-double-all > *,
+.bord-double-on:hover,
+.bord-double-on:focus,
+*:hover > .bord-double-in,
+*:focus > .bord-double-in,
+.bord-double-one > *:hover,
+.bord-double-one > *:focus,
+.bord-double-many:hover > *,
+.bord-double-many:focus > * {
   border-style: double;
 }
 
 .bord-groove,
-.bord-groove-global > *,
-.bord-groove-onto:hover,
-.bord-groove-onto:focus,
-.bord-groove-toone > *:hover,
-.bord-groove-toone > *:focus,
-*:hover > .bord-groove-into,
-*:focus > .bord-groove-into,
-.bord-groove-toall:hover > *,
-.bord-groove-toall:focus > * {
+.bord-groove-all > *,
+.bord-groove-on:hover,
+.bord-groove-on:focus,
+*:hover > .bord-groove-in,
+*:focus > .bord-groove-in,
+.bord-groove-one > *:hover,
+.bord-groove-one > *:focus,
+.bord-groove-many:hover > *,
+.bord-groove-many:focus > * {
   border-style: groove;
 }
 
 .bord-ridge,
-.bord-ridge-global > *,
-.bord-ridge-onto:hover,
-.bord-ridge-onto:focus,
-.bord-ridge-toone > *:hover,
-.bord-ridge-toone > *:focus,
-*:hover > .bord-ridge-into,
-*:focus > .bord-ridge-into,
-.bord-ridge-toall:hover > *,
-.bord-ridge-toall:focus > * {
+.bord-ridge-all > *,
+.bord-ridge-on:hover,
+.bord-ridge-on:focus,
+*:hover > .bord-ridge-in,
+*:focus > .bord-ridge-in,
+.bord-ridge-one > *:hover,
+.bord-ridge-one > *:focus,
+.bord-ridge-many:hover > *,
+.bord-ridge-many:focus > * {
   border-style: ridge;
 }
 
 .bord-in,
-.bord-in-global > *,
-.bord-in-onto:hover,
-.bord-in-onto:focus,
-.bord-in-toone > *:hover,
-.bord-in-toone > *:focus,
-*:hover > .bord-in-into,
-*:focus > .bord-in-into,
-.bord-in-toall:hover > *,
-.bord-in-toall:focus > * {
+.bord-in-all > *,
+.bord-in-on:hover,
+.bord-in-on:focus,
+*:hover > .bord-in-in,
+*:focus > .bord-in-in,
+.bord-in-one > *:hover,
+.bord-in-one > *:focus,
+.bord-in-many:hover > *,
+.bord-in-many:focus > * {
   border-style: inset;
 }
 
 .bord-out,
-.bord-out-global > *,
-.bord-out-onto:hover,
-.bord-out-onto:focus,
-.bord-out-toone > *:hover,
-.bord-out-toone > *:focus,
-*:hover > .bord-out-into,
-*:focus > .bord-out-into,
-.bord-out-toall:hover > *,
-.bord-out-toall:focus > * {
+.bord-out-all > *,
+.bord-out-on:hover,
+.bord-out-on:focus,
+*:hover > .bord-out-in,
+*:focus > .bord-out-in,
+.bord-out-one > *:hover,
+.bord-out-one > *:focus,
+.bord-out-many:hover > *,
+.bord-out-many:focus > * {
   border-style: outset;
 }
 
-.bord-sm {
-  border-width: thin;
+/********** BORDER WIDTH **********/
+.bord-sm,
+.bord-sm-all > *,
+.bord-sm-on:hover,
+.bord-sm-on:focus,
+*:hover > .bord-sm-in,
+*:focus > .bord-sm-in,
+.bord-sm-one > *:hover,
+.bord-sm-one > *:focus,
+.bord-sm-many:hover > *,
+.bord-sm-many:focus > * {
+  border-width: 1px;
 }
 
-.bord-md {
-  border-width: medium;
+.bord-md,
+.bord-md-all > *,
+.bord-md-on:hover,
+.bord-md-on:focus,
+*:hover > .bord-md-in,
+*:focus > .bord-md-in,
+.bord-md-one > *:hover,
+.bord-md-one > *:focus,
+.bord-md-many:hover > *,
+.bord-md-many:focus > * {
+  border-width: 2px;
 }
 
-.bord-lg {
-  border-width: thick;
+.bord-lg,
+.bord-lg-all > *,
+.bord-lg-on:hover,
+.bord-lg-on:focus,
+*:hover > .bord-lg-in,
+*:focus > .bord-lg-in,
+.bord-lg-one > *:hover,
+.bord-lg-one > *:focus,
+.bord-lg-many:hover > *,
+.bord-lg-many:focus > * {
+  border-width: 5px;
 }
 
-.bord-red {
+/********** BORDER COLOR **********/
+.bord-red,
+.bord-red-all > *,
+.bord-red-on:hover,
+.bord-red-on:focus,
+*:hover > .bord-red-in,
+*:focus > .bord-red-in,
+.bord-red-one > *:hover,
+.bord-red-one > *:focus,
+.bord-red-many:hover > *,
+.bord-red-many:focus > * {
   border-color: var(--red);
 }
 
-.bord-orange {
+.bord-orange,
+.bord-orange-all > *,
+.bord-orange-on:hover,
+.bord-orange-on:focus,
+*:hover > .bord-orange-in,
+*:focus > .bord-orange-in,
+.bord-orange-one > *:hover,
+.bord-orange-one > *:focus,
+.bord-orange-many:hover > *,
+.bord-orange-many:focus > * {
   border-color: var(--orange);
 }
 
-.bord-yellow {
+.bord-yellow,
+.bord-yellow-all > *,
+.bord-yellow-on:hover,
+.bord-yellow-on:focus,
+*:hover > .bord-yellow-in,
+*:focus > .bord-yellow-in,
+.bord-yellow-one > *:hover,
+.bord-yellow-one > *:focus,
+.bord-yellow-many:hover > *,
+.bord-yellow-many:focus > * {
   border-color: var(--yellow);
 }
 
-.bord-lime {
+.bord-lime,
+.bord-lime-all > *,
+.bord-lime-on:hover,
+.bord-lime-on:focus,
+*:hover > .bord-lime-in,
+*:focus > .bord-lime-in,
+.bord-lime-one > *:hover,
+.bord-lime-one > *:focus,
+.bord-lime-many:hover > *,
+.bord-lime-many:focus > * {
   border-color: var(--lime);
 }
 
-.bord-green {
+.bord-green,
+.bord-green-all > *,
+.bord-green-on:hover,
+.bord-green-on:focus,
+*:hover > .bord-green-in,
+*:focus > .bord-green-in,
+.bord-green-one > *:hover,
+.bord-green-one > *:focus,
+.bord-green-many:hover > *,
+.bord-green-many:focus > * {
   border-color: var(--green);
 }
 
-.bord-aqua {
+.bord-aqua,
+.bord-aqua-all > *,
+.bord-aqua-on:hover,
+.bord-aqua-on:focus,
+*:hover > .bord-aqua-in,
+*:focus > .bord-aqua-in,
+.bord-aqua-one > *:hover,
+.bord-aqua-one > *:focus,
+.bord-aqua-many:hover > *,
+.bord-aqua-many:focus > * {
   border-color: var(--aqua);
 }
 
-.bord-cyan {
+.bord-cyan,
+.bord-cyan-all > *,
+.bord-cyan-on:hover,
+.bord-cyan-on:focus,
+*:hover > .bord-cyan-in,
+*:focus > .bord-cyan-in,
+.bord-cyan-one > *:hover,
+.bord-cyan-one > *:focus,
+.bord-cyan-many:hover > *,
+.bord-cyan-many:focus > * {
   border-color: var(--cyan);
 }
 
-.bord-sky {
+.bord-sky,
+.bord-sky-all > *,
+.bord-sky-on:hover,
+.bord-sky-on:focus,
+*:hover > .bord-sky-in,
+*:focus > .bord-sky-in,
+.bord-sky-one > *:hover,
+.bord-sky-one > *:focus,
+.bord-sky-many:hover > *,
+.bord-sky-many:focus > * {
   border-color: var(--sky);
 }
 
-.bord-blue {
+.bord-blue,
+.bord-blue-all > *,
+.bord-blue-on:hover,
+.bord-blue-on:focus,
+*:hover > .bord-blue-in,
+*:focus > .bord-blue-in,
+.bord-blue-one > *:hover,
+.bord-blue-one > *:focus,
+.bord-blue-many:hover > *,
+.bord-blue-many:focus > * {
   border-color: var(--blue);
 }
 
-.bord-indigo {
+.bord-indigo,
+.bord-indigo-all > *,
+.bord-indigo-on:hover,
+.bord-indigo-on:focus,
+*:hover > .bord-indigo-in,
+*:focus > .bord-indigo-in,
+.bord-indigo-one > *:hover,
+.bord-indigo-one > *:focus,
+.bord-indigo-many:hover > *,
+.bord-indigo-many:focus > * {
   border-color: var(--indigo);
 }
 
-.bord-magenta {
+.bord-magenta,
+.bord-magenta-all > *,
+.bord-magenta-on:hover,
+.bord-magenta-on:focus,
+*:hover > .bord-magenta-in,
+*:focus > .bord-magenta-in,
+.bord-magenta-one > *:hover,
+.bord-magenta-one > *:focus,
+.bord-magenta-many:hover > *,
+.bord-magenta-many:focus > * {
   border-color: var(--magenta);
 }
 
-.bord-pink {
+.bord-pink,
+.bord-pink-all > *,
+.bord-pink-on:hover,
+.bord-pink-on:focus,
+*:hover > .bord-pink-in,
+*:focus > .bord-pink-in,
+.bord-pink-one > *:hover,
+.bord-pink-one > *:focus,
+.bord-pink-many:hover > *,
+.bord-pink-many:focus > * {
   border-color: var(--pink);
 }
 
-.bord-black {
+.bord-black,
+.bord-black-all > *,
+.bord-black-on:hover,
+.bord-black-on:focus,
+*:hover > .bord-black-in,
+*:focus > .bord-black-in,
+.bord-black-one > *:hover,
+.bord-black-one > *:focus,
+.bord-black-many:hover > *,
+.bord-black-many:focus > * {
   border-color: var(--black);
 }
 
-.bord-gray {
+.bord-slate,
+.bord-slate-all > *,
+.bord-slate-on:hover,
+.bord-slate-on:focus,
+*:hover > .bord-slate-in,
+*:focus > .bord-slate-in,
+.bord-slate-one > *:hover,
+.bord-slate-one > *:focus,
+.bord-slate-many:hover > *,
+.bord-slate-many:focus > * {
+  border-color: var(--slate);
+}
+
+.bord-gray,
+.bord-gray-all > *,
+.bord-gray-on:hover,
+.bord-gray-on:focus,
+*:hover > .bord-gray-in,
+*:focus > .bord-gray-in,
+.bord-gray-one > *:hover,
+.bord-gray-one > *:focus,
+.bord-gray-many:hover > *,
+.bord-gray-many:focus > * {
   border-color: var(--gray);
 }
 
-.bord-white {
+.bord-silver,
+.bord-silver-all > *,
+.bord-silver-on:hover,
+.bord-silver-on:focus,
+*:hover > .bord-silver-in,
+*:focus > .bord-silver-in,
+.bord-silver-one > *:hover,
+.bord-silver-one > *:focus,
+.bord-silver-many:hover > *,
+.bord-silver-many:focus > * {
+  border-color: var(--silver);
+}
+
+.bord-white,
+.bord-white-all > *,
+.bord-white-on:hover,
+.bord-white-on:focus,
+*:hover > .bord-white-in,
+*:focus > .bord-white-in,
+.bord-white-one > *:hover,
+.bord-white-one > *:focus,
+.bord-white-many:hover > *,
+.bord-white-many:focus > * {
   border-color: var(--white);
 }
 
+/********** BORDER RADIUS **********/
 .bord-square,
-.bord-square-global > *,
-.bord-square-onto:hover,
-.bord-square-onto:focus,
-.bord-square-toone > *:hover,
-.bord-square-toone > *:focus,
-*:hover > .bord-square-into,
-*:focus > .bord-square-into,
-.bord-square-toall:hover > *,
-.bord-square-toall:focus > * {
+.bord-square-all > *,
+.bord-square-on:hover,
+.bord-square-on:focus,
+*:hover > .bord-square-in,
+*:focus > .bord-square-in,
+.bord-square-one > *:hover,
+.bord-square-one > *:focus,
+.bord-square-many:hover > *,
+.bord-square-many:focus > * {
   border-radius: unset;
 }
 
 .bord-curve,
-.bord-curve-global > *,
-.bord-curve-onto:hover,
-.bord-curve-onto:focus,
-.bord-curve-toone > *:hover,
-.bord-curve-toone > *:focus,
-*:hover > .bord-curve-into,
-*:focus > .bord-curve-into,
-.bord-curve-toall:hover > *,
-.bord-curve-toall:focus > * {
+.bord-curve-all > *,
+.bord-curve-on:hover,
+.bord-curve-on:focus,
+*:hover > .bord-curve-in,
+*:focus > .bord-curve-in,
+.bord-curve-one > *:hover,
+.bord-curve-one > *:focus,
+.bord-curve-many:hover > *,
+.bord-curve-many:focus > * {
   border-radius: 5px;
 }
 
 .bord-round,
-.bord-round-global > *,
-.bord-round-onto:hover,
-.bord-round-onto:focus,
-.bord-round-toone > *:hover,
-.bord-round-toone > *:focus,
-*:hover > .bord-round-into,
-*:focus > .bord-round-into,
-.bord-round-toall:hover > *,
-.bord-round-toall:focus > * {
+.bord-round-all > *,
+.bord-round-on:hover,
+.bord-round-on:focus,
+*:hover > .bord-round-in,
+*:focus > .bord-round-in,
+.bord-round-one > *:hover,
+.bord-round-one > *:focus,
+.bord-round-many:hover > *,
+.bord-round-many:focus > * {
   border-radius: 10px;
 }
 
 .bord-circle,
-.bord-circle-global > *,
-.bord-circle-onto:hover,
-.bord-circle-onto:focus,
-.bord-circle-toone > *:hover,
-.bord-circle-toone > *:focus,
-*:hover > .bord-circle-into,
-*:focus > .bord-circle-into,
-.bord-circle-toall:hover > *,
-.bord-circle-toall:focus > * {
+.bord-circle-all > *,
+.bord-circle-on:hover,
+.bord-circle-on:focus,
+*:hover > .bord-circle-in,
+*:focus > .bord-circle-in,
+.bord-circle-one > *:hover,
+.bord-circle-one > *:focus,
+.bord-circle-many:hover > *,
+.bord-circle-many:focus > * {
   border-radius: 50%;
 }
 
 /********** PADDING **********/
+[class*=pad-] {
+  --padding-none: 0;
+  --padding-sm: 5px;
+  --padding-md: 10px;
+  --padding-lg: 20px;
+  --padding-top-sm: 5px;
+  --padding-top-md: 10px;
+  --padding-top-lg: 20px;
+  --padding-right-sm: 5px;
+  --padding-right-md: 10px;
+  --padding-right-lg: 20px;
+  --padding-bot-sm: 5px;
+  --padding-bot-md: 10px;
+  --padding-bot-lg: 20px;
+  --padding-left-sm: 5px;
+  --padding-left-md: 10px;
+  --padding-left-lg: 20px;
+}
+
 .pad-none,
-.global-pad-none > * {
+.pad-none-all > * {
   padding: var(--padding-none);
 }
 
 .pad-top-none,
-.global-pad-top-none > * {
+.pad-top-none-all > * {
   padding-top: var(--padding-none);
 }
 
 .pad-right-none,
-.global-pad-right-none > * {
+.pad-right-none-all > * {
   padding-right: var(--padding-none);
 }
 
 .pad-bottom-none,
-.global-pad-bottom-none > * {
+.pad-bottom-none-all > * {
   padding-bottom: var(--padding-none);
 }
 
 .pad-left-none,
-.global-pad-left-none > * {
+.pad-left-none-all > * {
   padding-left: var(--padding-none);
 }
 
 .pad-sm,
-.global-pad-sm > * {
+.pad-sm-all > * {
   padding: var(--padding-sm);
 }
 
 .pad-md,
-.global-pad-md > * {
+.pad-md-all > * {
   padding: var(--padding-md);
 }
 
 .pad-lg,
-.global-pad-lg > * {
+.pad-lg-all > * {
   padding: var(--padding-lg);
 }
 
 .pad-top-sm,
-.global-pad-top-sm > * {
+.pad-top-sm-all > * {
   padding-top: var(--padding-top-sm);
 }
 
 .pad-top-md,
-.global-pad-top-md > * {
+.pad-top-md-all > * {
   padding-top: var(--padding-top-md);
 }
 
 .pad-top-lg,
-.global-pad-top-lg > * {
+.pad-top-lg-all > * {
   padding-top: var(--padding-top-lg);
 }
 
 .pad-right-sm,
-.global-pad-right-sm > * {
+.pad-right-sm-all > * {
   padding-right: var(--padding-right-sm);
 }
 
 .pad-right-md,
-.global-pad-right-md > * {
+.pad-right-md-all > * {
   padding-right: var(--padding-right-md);
 }
 
 .pad-right-lg,
-.global-pad-right-lg > * {
+.pad-right-lg-all > * {
   padding-right: var(--padding-right-lg);
 }
 
 .pad-bot-sm,
-.global-pad-bot-sm > * {
+.pad-bot-sm-all > * {
   padding-bottom: var(--padding-bot-sm);
 }
 
 .pad-bot-md,
-.global-pad-bot-md > * {
+.pad-bot-md-all > * {
   padding-bottom: var(--padding-bot-md);
 }
 
 .pad-bot-lg,
-.global-pad-bot-lg > * {
+.pad-bot-lg-all > * {
   padding-bottom: var(--padding-bot-lg);
 }
 
 .pad-left-sm,
-.global-pad-left-sm > * {
+.pad-left-sm-all > * {
   padding-left: var(--padding-left-sm);
 }
 
 .pad-left-md,
-.global-pad-left-md > * {
+.pad-left-md-all > * {
   padding-left: var(--padding-left-md);
 }
 
 .pad-left-lg,
-.global-pad-left-lg > * {
+.pad-left-lg-all > * {
   padding-left: var(--padding-left-lg);
 }
 
 /********** HEIGHT **********/
+[class*=height-] {
+  --height-sm: 10vh;
+  --height-md: 20vh;
+  --height-lg: 50vh;
+}
+
 .height-sm,
-.global-height-sm > * {
+.height-sm-all > * {
   height: var(--height-sm);
 }
 
 .height-md,
-.global-height-md > * {
+.height-md-all > * {
   height: var(--height-md);
 }
 
 .height-lg,
-.global-height-lg > * {
+.height-lg-all > * {
   height: var(--height-lg);
 }
 
+/********** MAX HEIGHT **********/
+[class*=max-h-] {
+  --max-height-sm: 10vh;
+  --max-height-md: 20vh;
+  --max-height-lg: 50vh;
+}
+
 .max-h-sm,
-.global-max-h-sm > * {
+.max-h-sm-all > * {
   max-height: var(--max-height-sm);
 }
 
 .max-h-md,
-.global-max-h-md > * {
+.max-h-md-all > * {
   max-height: var(--max-height-md);
 }
 
 .max-h-lg,
-.global-max-h-lg > * {
+.max-h-lg-all > * {
   max-height: var(--max-height-lg);
 }
 
+/********** MIN HEIGHT **********/
+[class*=min-h-] {
+  --min-height-sm: 10vh;
+  --min-height-md: 20vh;
+  --min-height-lg: 50vh;
+}
+
 .min-h-sm,
-.global-min-h-sm > * {
+.min-h-sm-all > * {
   min-height: var(--min-height-sm);
 }
 
 .min-h-md,
-.global-min-h-md > * {
+.min-h-md-all > * {
   min-height: var(--min-height-md);
 }
 
 .min-h-lg,
-.global-min-h-lg > * {
+.min-h-lg-all > * {
   min-height: var(--min-height-lg);
 }
 
 /********** WIDTH **********/
+[class*=width-] {
+  --width-sm: 10vw;
+  --width-md: 20vw;
+  --width-lg: 50vw;
+}
+
 .width-sm,
-.global-width-sm > * {
+.width-sm-all > * {
   width: var(--width-sm);
 }
 
 .width-md,
-.global-width-md > * {
+.width-md-all > * {
   width: var(--width-md);
 }
 
 .width-lg,
-.global-width-lg > * {
+.width-lg-all > * {
   width: var(--width-lg);
 }
 
+/********** MAX WIDTH **********/
+[class*=max-w-] {
+  --max-width-sm: 10vw;
+  --max-width-md: 20vw;
+  --max-width-lg: 50vw;
+}
+
 .max-w-sm,
-.global-max-w-sm > * {
+.max-w-sm-all > * {
   max-width: var(--max-width-sm);
 }
 
 .max-w-md,
-.global-max-w-md > * {
+.max-w-md-all > * {
   max-width: var(--max-width-md);
 }
 
 .max-w-lg,
-.global-max-w-lg > * {
+.max-w-lg-all > * {
   max-width: var(--max-width-lg);
 }
 
+/********** MIN WIDTH **********/
+[class*=min-w-] {
+  --min-width-sm: 10vw;
+  --min-width-md: 20vw;
+  --min-width-lg: 50vw;
+}
+
 .min-w-sm,
-.global-min-w-sm > * {
+.min-w-sm-all > * {
   min-width: var(--min-width-sm);
 }
 
 .min-w-md,
-.global-min-w-md > * {
+.min-w-md-all > * {
   min-width: var(--min-width-md);
 }
 
 .min-w-lg,
-.global-min-w-lg > * {
+.min-w-lg-all > * {
   min-width: var(--min-width-lg);
 }
 
-/********** FONT **********/
-.font-bold,
-.font-bold-global > *,
-.font-bold-onto:hover,
-.font-bold-onto:focus,
-.font-bold-toone > *:hover,
-.font-bold-toone > *:focus,
-*:hover > .font-bold-into,
-*:focus > .font-bold-into,
-.font-bold-toall:hover > *,
-.font-bold-toall:focus > * {
-  font-weight: bold;
-}
-
-.font-italic,
-.font-italic-global > *,
-.font-italic-onto:hover,
-.font-italic-onto:focus,
-.font-italic-toone > *:hover,
-.font-italic-toone > *:focus,
-*:hover > .font-italic-into,
-*:focus > .font-italic-into,
-.font-italic-toall:hover > *,
-.font-italic-toall:focus > * {
-  font-style: italic;
-}
-
-.font-oblique,
-.font-oblique-global > *,
-.font-oblique-onto:hover,
-.font-oblique-onto:focus,
-.font-oblique-toone > *:hover,
-.font-oblique-toone > *:focus,
-*:hover > .font-oblique-into,
-*:focus > .font-oblique-into,
-.font-oblique-toall:hover > *,
-.font-oblique-toall:focus > * {
-  font-style: oblique;
-}
-
-.font-sans-serif {
-  font-family: var(--font-family-sans-serif);
-}
-
-.font-serif {
-  font-family: var(--font-family-serif);
-}
-
-.font-monospace {
-  font-family: var(--font-family-monospace);
-}
-
-.font-cursive {
-  font-family: var(--font-family-cursive);
-}
-
-.font-fantasy {
-  font-family: var(--font-family-fantasy);
-}
-
-/********** TEXT **********/
-.align-center,
-.global-align-center > * {
-  text-align: center;
-}
-
-.align-justify,
-.global-align-justify > * {
-  text-align: justify;
-}
-
-.align-right,
-.global-align-right > * {
-  text-align: right;
-}
-
-.align-left,
-.global-align-left > * {
-  text-align: left;
-}
-
-.trans-cap,
-.trans-cap-global > *,
-.trans-cap-onto:hover,
-.trans-cap-onto:focus,
-.trans-cap-toone > *:hover,
-.trans-cap-toone > *:focus,
-*:hover > .trans-cap-into,
-*:focus > .trans-cap-into,
-.trans-cap-toall:hover > *,
-.trans-cap-toall:focus > * {
-  text-transform: capitalize;
-}
-
-.trans-up,
-.trans-up-global > *,
-.trans-up-onto:hover,
-.trans-up-onto:focus,
-.trans-up-toone > *:hover,
-.trans-up-toone > *:focus,
-*:hover > .trans-up-into,
-*:focus > .trans-up-into,
-.trans-up-toall:hover > *,
-.trans-up-toall:focus > * {
-  text-transform: uppercase;
-}
-
-.trans-low,
-.trans-low-global > *,
-.trans-low-onto:hover,
-.trans-low-onto:focus,
-.trans-low-toone > *:hover,
-.trans-low-toone > *:focus,
-*:hover > .trans-low-into,
-*:focus > .trans-low-into,
-.trans-low-toall:hover > *,
-.trans-low-toall:focus > * {
-  text-transform: lowercase;
-}
-
-.deco-none,
-.deco-none-global > *,
-.deco-none-onto:hover,
-.deco-none-onto:focus,
-.deco-none-toone > *:hover,
-.deco-none-toone > *:focus,
-*:hover > .deco-none-into,
-*:focus > .deco-none-into,
-.deco-none-toall:hover > *,
-.deco-none-toall:focus > * {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
-
-.deco-under,
-.deco-under-global > *,
-.deco-under-onto:hover,
-.deco-under-onto:focus,
-.deco-under-toone > *:hover,
-.deco-under-toone > *:focus,
-*:hover > .deco-under-into,
-*:focus > .deco-under-into,
-.deco-under-toall:hover > *,
-.deco-under-toall:focus > * {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
-.deco-over,
-.deco-over-global > *,
-.deco-over-onto:hover,
-.deco-over-onto:focus,
-.deco-over-toone > *:hover,
-.deco-over-toone > *:focus,
-*:hover > .deco-over-into,
-*:focus > .deco-over-into,
-.deco-over-toall:hover > *,
-.deco-over-toall:focus > * {
-  -webkit-text-decoration-line: overline;
-          text-decoration-line: overline;
-}
-
-.deco-through,
-.deco-through-global > *,
-.deco-through-onto:hover,
-.deco-through-onto:focus,
-.deco-through-toone > *:hover,
-.deco-through-toone > *:focus,
-*:hover > .deco-through-into,
-*:focus > .deco-through-into,
-.deco-through-toall:hover > *,
-.deco-through-toall:focus > * {
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
-}
-
-.deco-dash {
-  -webkit-text-decoration-style: dashed;
-          text-decoration-style: dashed;
-}
-
-.deco-dot {
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
-}
-
-.deco-double {
-  -webkit-text-decoration-style: double;
-          text-decoration-style: double;
-}
-
-.deco-solid {
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
-}
-
-.deco-wavy {
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
-}
-
-.deco-red {
-  -webkit-text-decoration-color: var(--red);
-          text-decoration-color: var(--red);
-}
-
-.deco-orange {
-  -webkit-text-decoration-color: var(--orange);
-          text-decoration-color: var(--orange);
-}
-
-.deco-yellow {
-  -webkit-text-decoration-color: var(--yellow);
-          text-decoration-color: var(--yellow);
-}
-
-.deco-lime {
-  -webkit-text-decoration-color: var(--lime);
-          text-decoration-color: var(--lime);
-}
-
-.deco-green {
-  -webkit-text-decoration-color: var(--green);
-          text-decoration-color: var(--green);
-}
-
-.deco-aqua {
-  -webkit-text-decoration-color: var(--aqua);
-          text-decoration-color: var(--aqua);
-}
-
-.deco-cyan {
-  -webkit-text-decoration-color: var(--cyan);
-          text-decoration-color: var(--cyan);
-}
-
-.deco-sky {
-  -webkit-text-decoration-color: var(--sky);
-          text-decoration-color: var(--sky);
-}
-
-.deco-blue {
-  -webkit-text-decoration-color: var(--blue);
-          text-decoration-color: var(--blue);
-}
-
-.deco-indigo {
-  -webkit-text-decoration-color: var(--indigo);
-          text-decoration-color: var(--indigo);
-}
-
-.deco-magenta {
-  -webkit-text-decoration-color: var(--magenta);
-          text-decoration-color: var(--magenta);
-}
-
-.deco-pink {
-  -webkit-text-decoration-color: var(--pink);
-          text-decoration-color: var(--pink);
-}
-
-/********** COLOR **********/
-.red,
-.red-global > *,
-.red-onto:hover,
-.red-onto:focus,
-.red-toone > *:hover,
-.red-toone > *:focus,
-*:hover > .red-into,
-*:focus > .red-into,
-.red-toall:hover > *,
-.red-toall:focus > * {
-  color: var(--red);
-}
-
-.orange,
-.orange-global > *,
-.orange-onto:hover,
-.orange-onto:focus,
-.orange-toone > *:hover,
-.orange-toone > *:focus,
-*:hover > .orange-into,
-*:focus > .orange-into,
-.orange-toall:hover > *,
-.orange-toall:focus > * {
-  color: var(--orange);
-}
-
-.yellow,
-.yellow-global > *,
-.yellow-onto:hover,
-.yellow-onto:focus,
-.yellow-toone > *:hover,
-.yellow-toone > *:focus,
-*:hover > .yellow-into,
-*:focus > .yellow-into,
-.yellow-toall:hover > *,
-.yellow-toall:focus > * {
-  color: var(--yellow);
-}
-
-.lime,
-.lime-global > *,
-.lime-onto:hover,
-.lime-onto:focus,
-.lime-toone > *:hover,
-.lime-toone > *:focus,
-*:hover > .lime-into,
-*:focus > .lime-into,
-.lime-toall:hover > *,
-.lime-toall:focus > * {
-  color: var(--lime);
-}
-
-.green,
-.green-global > *,
-.green-onto:hover,
-.green-onto:focus,
-.green-toone > *:hover,
-.green-toone > *:focus,
-*:hover > .green-into,
-*:focus > .green-into,
-.green-toall:hover > *,
-.green-toall:focus > * {
-  color: var(--green);
-}
-
-.aqua,
-.aqua-global > *,
-.aqua-onto:hover,
-.aqua-onto:focus,
-.aqua-toone > *:hover,
-.aqua-toone > *:focus,
-*:hover > .aqua-into,
-*:focus > .aqua-into,
-.aqua-toall:hover > *,
-.aqua-toall:focus > * {
-  color: var(--aqua);
-}
-
-.cyan,
-.cyan-global > *,
-.cyan-onto:hover,
-.cyan-onto:focus,
-.cyan-toone > *:hover,
-.cyan-toone > *:focus,
-*:hover > .cyan-into,
-*:focus > .cyan-into,
-.cyan-toall:hover > *,
-.cyan-toall:focus > * {
-  color: var(--cyan);
-}
-
-.sky,
-.sky-global > *,
-.sky-onto:hover,
-.sky-onto:focus,
-.sky-toone > *:hover,
-.sky-toone > *:focus,
-*:hover > .sky-into,
-*:focus > .sky-into,
-.sky-toall:hover > *,
-.sky-toall:focus > * {
-  color: var(--sky);
-}
-
-.blue,
-.blue-global > *,
-.blue-onto:hover,
-.blue-onto:focus,
-.blue-toone > *:hover,
-.blue-toone > *:focus,
-*:hover > .blue-into,
-*:focus > .blue-into,
-.blue-toall:hover > *,
-.blue-toall:focus > * {
-  color: var(--blue);
-}
-
-.indigo,
-.indigo-global > *,
-.indigo-onto:hover,
-.indigo-onto:focus,
-.indigo-toone > *:hover,
-.indigo-toone > *:focus,
-*:hover > .indigo-into,
-*:focus > .indigo-into,
-.indigo-toall:hover > *,
-.indigo-toall:focus > * {
-  color: var(--indigo);
-}
-
-.magenta,
-.magenta-global > *,
-.magenta-onto:hover,
-.magenta-onto:focus,
-.magenta-toone > *:hover,
-.magenta-toone > *:focus,
-*:hover > .magenta-into,
-*:focus > .magenta-into,
-.magenta-toall:hover > *,
-.magenta-toall:focus > * {
-  color: var(--magenta);
-}
-
-.pink,
-.pink-global > *,
-.pink-onto:hover,
-.pink-onto:focus,
-.pink-toone > *:hover,
-.pink-toone > *:focus,
-*:hover > .pink-into,
-*:focus > .pink-into,
-.pink-toall:hover > *,
-.pink-toall:focus > * {
-  color: var(--pink);
-}
-
-.black,
-.black-global > *,
-.black-onto:hover,
-.black-onto:focus,
-.black-toone > *:hover,
-.black-toone > *:focus,
-*:hover > .black-into,
-*:focus > .black-into,
-.black-toall:hover > *,
-.black-toall:focus > * {
-  color: var(--black);
-}
-
-.gray,
-.gray-global > *,
-.gray-onto:hover,
-.gray-onto:focus,
-.gray-toone > *:hover,
-.gray-toone > *:focus,
-*:hover > .gray-into,
-*:focus > .gray-into,
-.gray-toall:hover > *,
-.gray-toall:focus > * {
-  color: var(--gray);
-}
-
-.white,
-.white-global > *,
-.white-onto:hover,
-.white-onto:focus,
-.white-toone > *:hover,
-.white-toone > *:focus,
-*:hover > .white-into,
-*:focus > .white-into,
-.white-toall:hover > *,
-.white-toall:focus > * {
-  color: var(--white);
-}
-
-.bg-red,
-.bg-red-global > *,
-.bg-red-onto:hover,
-.bg-red-onto:focus,
-.bg-red-toone > *:hover,
-.bg-red-toone > *:focus,
-*:hover > .bg-red-into,
-*:focus > .bg-red-into,
-.bg-red-toall:hover > *,
-.bg-red-toall:focus > * {
-  background-color: var(--red);
-}
-
-.bg-red-dark,
-.bg-red-dark-global > *,
-.bg-red-dark-onto:hover,
-.bg-red-dark-onto:focus,
-.bg-red-dark-toone > *:hover,
-.bg-red-dark-toone > *:focus,
-*:hover > .bg-red-dark-into,
-*:focus > .bg-red-dark-into,
-.bg-red-dark-toall:hover > *,
-.bg-red-dark-toall:focus > * {
-  background-color: var(--red-dark);
-}
-
-.bg-red-light,
-.bg-red-light-global > *,
-.bg-red-light-onto:hover,
-.bg-red-light-onto:focus,
-.bg-red-light-toone > *:hover,
-.bg-red-light-toone > *:focus,
-*:hover > .bg-red-light-into,
-*:focus > .bg-red-light-into,
-.bg-red-light-toall:hover > *,
-.bg-red-light-toall:focus > * {
-  background-color: var(--red-light);
-}
-
-.bg-orange,
-.bg-orange-global > *,
-.bg-orange-onto:hover,
-.bg-orange-onto:focus,
-.bg-orange-toone > *:hover,
-.bg-orange-toone > *:focus,
-*:hover > .bg-orange-into,
-*:focus > .bg-orange-into,
-.bg-orange-toall:hover > *,
-.bg-orange-toall:focus > * {
-  background-color: var(--orange);
-}
-
-.bg-orange-dark,
-.bg-orange-dark-global > *,
-.bg-orange-dark-onto:hover,
-.bg-orange-dark-onto:focus,
-.bg-orange-dark-toone > *:hover,
-.bg-orange-dark-toone > *:focus,
-*:hover > .bg-orange-dark-into,
-*:focus > .bg-orange-dark-into,
-.bg-orange-dark-toall:hover > *,
-.bg-orange-dark-toall:focus > * {
-  background-color: var(--orange-dark);
-}
-
-.bg-orange-light,
-.bg-orange-light-global > *,
-.bg-orange-light-onto:hover,
-.bg-orange-light-onto:focus,
-.bg-orange-light-toone > *:hover,
-.bg-orange-light-toone > *:focus,
-*:hover > .bg-orange-light-into,
-*:focus > .bg-orange-light-into,
-.bg-orange-light-toall:hover > *,
-.bg-orange-light-toall:focus > * {
-  background-color: var(--orange-light);
-}
-
-.bg-yellow,
-.bg-yellow-global > *,
-.bg-yellow-onto:hover,
-.bg-yellow-onto:focus,
-.bg-yellow-toone > *:hover,
-.bg-yellow-toone > *:focus,
-*:hover > .bg-yellow-into,
-*:focus > .bg-yellow-into,
-.bg-yellow-toall:hover > *,
-.bg-yellow-toall:focus > * {
-  background-color: var(--yellow);
-}
-
-.bg-yellow-dark,
-.bg-yellow-dark-global > *,
-.bg-yellow-dark-onto:hover,
-.bg-yellow-dark-onto:focus,
-.bg-yellow-dark-toone > *:hover,
-.bg-yellow-dark-toone > *:focus,
-*:hover > .bg-yellow-dark-into,
-*:focus > .bg-yellow-dark-into,
-.bg-yellow-dark-toall:hover > *,
-.bg-yellow-dark-toall:focus > * {
-  background-color: var(--yellow-dark);
-}
-
-.bg-yellow-light,
-.bg-yellow-light-global > *,
-.bg-yellow-light-onto:hover,
-.bg-yellow-light-onto:focus,
-.bg-yellow-light-toone > *:hover,
-.bg-yellow-light-toone > *:focus,
-*:hover > .bg-yellow-light-into,
-*:focus > .bg-yellow-light-into,
-.bg-yellow-light-toall:hover > *,
-.bg-yellow-light-toall:focus > * {
-  background-color: var(--yellow-light);
-}
-
-.bg-lime,
-.bg-lime-global > *,
-.bg-lime-onto:hover,
-.bg-lime-onto:focus,
-.bg-lime-toone > *:hover,
-.bg-lime-toone > *:focus,
-*:hover > .bg-lime-into,
-*:focus > .bg-lime-into,
-.bg-lime-toall:hover > *,
-.bg-lime-toall:focus > * {
-  background-color: var(--lime);
-}
-
-.bg-lime-dark,
-.bg-lime-dark-global > *,
-.bg-lime-dark-onto:hover,
-.bg-lime-dark-onto:focus,
-.bg-lime-dark-toone > *:hover,
-.bg-lime-dark-toone > *:focus,
-*:hover > .bg-lime-dark-into,
-*:focus > .bg-lime-dark-into,
-.bg-lime-dark-toall:hover > *,
-.bg-lime-dark-toall:focus > * {
-  background-color: var(--lime-dark);
-}
-
-.bg-lime-light,
-.bg-lime-light-global > *,
-.bg-lime-light-onto:hover,
-.bg-lime-light-onto:focus,
-.bg-lime-light-toone > *:hover,
-.bg-lime-light-toone > *:focus,
-*:hover > .bg-lime-light-into,
-*:focus > .bg-lime-light-into,
-.bg-lime-light-toall:hover > *,
-.bg-lime-light-toall:focus > * {
-  background-color: var(--lime-light);
-}
-
-.bg-green,
-.bg-green-global > *,
-.bg-green-onto:hover,
-.bg-green-onto:focus,
-.bg-green-toone > *:hover,
-.bg-green-toone > *:focus,
-*:hover > .bg-green-into,
-*:focus > .bg-green-into,
-.bg-green-toall:hover > *,
-.bg-green-toall:focus > * {
-  background-color: var(--green);
-}
-
-.bg-green-dark,
-.bg-green-dark-global > *,
-.bg-green-dark-onto:hover,
-.bg-green-dark-onto:focus,
-.bg-green-dark-toone > *:hover,
-.bg-green-dark-toone > *:focus,
-*:hover > .bg-green-dark-into,
-*:focus > .bg-green-dark-into,
-.bg-green-dark-toall:hover > *,
-.bg-green-dark-toall:focus > * {
-  background-color: var(--green-dark);
-}
-
-.bg-green-light,
-.bg-green-light-global > *,
-.bg-green-light-onto:hover,
-.bg-green-light-onto:focus,
-.bg-green-light-toone > *:hover,
-.bg-green-light-toone > *:focus,
-*:hover > .bg-green-light-into,
-*:focus > .bg-green-light-into,
-.bg-green-light-toall:hover > *,
-.bg-green-light-toall:focus > * {
-  background-color: var(--green-light);
-}
-
-.bg-aqua,
-.bg-aqua-global > *,
-.bg-aqua-onto:hover,
-.bg-aqua-onto:focus,
-.bg-aqua-toone > *:hover,
-.bg-aqua-toone > *:focus,
-*:hover > .bg-aqua-into,
-*:focus > .bg-aqua-into,
-.bg-aqua-toall:hover > *,
-.bg-aqua-toall:focus > * {
-  background-color: var(--aqua);
-}
-
-.bg-aqua-dark,
-.bg-aqua-dark-global > *,
-.bg-aqua-dark-onto:hover,
-.bg-aqua-dark-onto:focus,
-.bg-aqua-dark-toone > *:hover,
-.bg-aqua-dark-toone > *:focus,
-*:hover > .bg-aqua-dark-into,
-*:focus > .bg-aqua-dark-into,
-.bg-aqua-dark-toall:hover > *,
-.bg-aqua-dark-toall:focus > * {
-  background-color: var(--aqua-dark);
-}
-
-.bg-aqua-light,
-.bg-aqua-light-global > *,
-.bg-aqua-light-onto:hover,
-.bg-aqua-light-onto:focus,
-.bg-aqua-light-toone > *:hover,
-.bg-aqua-light-toone > *:focus,
-*:hover > .bg-aqua-light-into,
-*:focus > .bg-aqua-light-into,
-.bg-aqua-light-toall:hover > *,
-.bg-aqua-light-toall:focus > * {
-  background-color: var(--aqua-light);
-}
-
-.bg-cyan,
-.bg-cyan-global > *,
-.bg-cyan-onto:hover,
-.bg-cyan-onto:focus,
-.bg-cyan-toone > *:hover,
-.bg-cyan-toone > *:focus,
-*:hover > .bg-cyan-into,
-*:focus > .bg-cyan-into,
-.bg-cyan-toall:hover > *,
-.bg-cyan-toall:focus > * {
-  background-color: var(--cyan);
-}
-
-.bg-cyan-dark,
-.bg-cyan-dark-global > *,
-.bg-cyan-dark-onto:hover,
-.bg-cyan-dark-onto:focus,
-.bg-cyan-dark-toone > *:hover,
-.bg-cyan-dark-toone > *:focus,
-*:hover > .bg-cyan-dark-into,
-*:focus > .bg-cyan-dark-into,
-.bg-cyan-dark-toall:hover > *,
-.bg-cyan-dark-toall:focus > * {
-  background-color: var(--cyan-dark);
-}
-
-.bg-cyan-light,
-.bg-cyan-light-global > *,
-.bg-cyan-light-onto:hover,
-.bg-cyan-light-onto:focus,
-.bg-cyan-light-toone > *:hover,
-.bg-cyan-light-toone > *:focus,
-*:hover > .bg-cyan-light-into,
-*:focus > .bg-cyan-light-into,
-.bg-cyan-light-toall:hover > *,
-.bg-cyan-light-toall:focus > * {
-  background-color: var(--cyan-light);
-}
-
-.bg-sky,
-.bg-sky-global > *,
-.bg-sky-onto:hover,
-.bg-sky-onto:focus,
-.bg-sky-toone > *:hover,
-.bg-sky-toone > *:focus,
-*:hover > .bg-sky-into,
-*:focus > .bg-sky-into,
-.bg-sky-toall:hover > *,
-.bg-sky-toall:focus > * {
-  background-color: var(--sky);
-}
-
-.bg-sky-dark,
-.bg-sky-dark-global > *,
-.bg-sky-dark-onto:hover,
-.bg-sky-dark-onto:focus,
-.bg-sky-dark-toone > *:hover,
-.bg-sky-dark-toone > *:focus,
-*:hover > .bg-sky-dark-into,
-*:focus > .bg-sky-dark-into,
-.bg-sky-dark-toall:hover > *,
-.bg-sky-dark-toall:focus > * {
-  background-color: var(--sky-dark);
-}
-
-.bg-sky-light,
-.bg-sky-light-global > *,
-.bg-sky-light-onto:hover,
-.bg-sky-light-onto:focus,
-.bg-sky-light-toone > *:hover,
-.bg-sky-light-toone > *:focus,
-*:hover > .bg-sky-light-into,
-*:focus > .bg-sky-light-into,
-.bg-sky-light-toall:hover > *,
-.bg-sky-light-toall:focus > * {
-  background-color: var(--sky-light);
-}
-
-.bg-blue,
-.bg-blue-global > *,
-.bg-blue-onto:hover,
-.bg-blue-onto:focus,
-.bg-blue-toone > *:hover,
-.bg-blue-toone > *:focus,
-*:hover > .bg-blue-into,
-*:focus > .bg-blue-into,
-.bg-blue-toall:hover > *,
-.bg-blue-toall:focus > * {
-  background-color: var(--blue);
-}
-
-.bg-blue-dark,
-.bg-blue-dark-global > *,
-.bg-blue-dark-onto:hover,
-.bg-blue-dark-onto:focus,
-.bg-blue-dark-toone > *:hover,
-.bg-blue-dark-toone > *:focus,
-*:hover > .bg-blue-dark-into,
-*:focus > .bg-blue-dark-into,
-.bg-blue-dark-toall:hover > *,
-.bg-blue-dark-toall:focus > * {
-  background-color: var(--blue-dark);
-}
-
-.bg-blue-light,
-.bg-blue-light-global > *,
-.bg-blue-light-onto:hover,
-.bg-blue-light-onto:focus,
-.bg-blue-light-toone > *:hover,
-.bg-blue-light-toone > *:focus,
-*:hover > .bg-blue-light-into,
-*:focus > .bg-blue-light-into,
-.bg-blue-light-toall:hover > *,
-.bg-blue-light-toall:focus > * {
-  background-color: var(--blue-light);
-}
-
-.bg-indigo,
-.bg-indigo-global > *,
-.bg-indigo-onto:hover,
-.bg-indigo-onto:focus,
-.bg-indigo-toone > *:hover,
-.bg-indigo-toone > *:focus,
-*:hover > .bg-indigo-into,
-*:focus > .bg-indigo-into,
-.bg-indigo-toall:hover > *,
-.bg-indigo-toall:focus > * {
-  background-color: var(--indigo);
-}
-
-.bg-indigo-dark,
-.bg-indigo-dark-global > *,
-.bg-indigo-dark-onto:hover,
-.bg-indigo-dark-onto:focus,
-.bg-indigo-dark-toone > *:hover,
-.bg-indigo-dark-toone > *:focus,
-*:hover > .bg-indigo-dark-into,
-*:focus > .bg-indigo-dark-into,
-.bg-indigo-dark-toall:hover > *,
-.bg-indigo-dark-toall:focus > * {
-  background-color: var(--indigo-dark);
-}
-
-.bg-indigo-light,
-.bg-indigo-light-global > *,
-.bg-indigo-light-onto:hover,
-.bg-indigo-light-onto:focus,
-.bg-indigo-light-toone > *:hover,
-.bg-indigo-light-toone > *:focus,
-*:hover > .bg-indigo-light-into,
-*:focus > .bg-indigo-light-into,
-.bg-indigo-light-toall:hover > *,
-.bg-indigo-light-toall:focus > * {
-  background-color: var(--indigo-light);
-}
-
-.bg-magenta,
-.bg-magenta-global > *,
-.bg-magenta-onto:hover,
-.bg-magenta-onto:focus,
-.bg-magenta-toone > *:hover,
-.bg-magenta-toone > *:focus,
-*:hover > .bg-magenta-into,
-*:focus > .bg-magenta-into,
-.bg-magenta-toall:hover > *,
-.bg-magenta-toall:focus > * {
-  background-color: var(--magenta);
-}
-
-.bg-magenta-dark,
-.bg-magenta-dark-global > *,
-.bg-magenta-dark-onto:hover,
-.bg-magenta-dark-onto:focus,
-.bg-magenta-dark-toone > *:hover,
-.bg-magenta-dark-toone > *:focus,
-*:hover > .bg-magenta-dark-into,
-*:focus > .bg-magenta-dark-into,
-.bg-magenta-dark-toall:hover > *,
-.bg-magenta-dark-toall:focus > * {
-  background-color: var(--magenta-dark);
-}
-
-.bg-magenta-light,
-.bg-magenta-light-global > *,
-.bg-magenta-light-onto:hover,
-.bg-magenta-light-onto:focus,
-.bg-magenta-light-toone > *:hover,
-.bg-magenta-light-toone > *:focus,
-*:hover > .bg-magenta-light-into,
-*:focus > .bg-magenta-light-into,
-.bg-magenta-light-toall:hover > *,
-.bg-magenta-light-toall:focus > * {
-  background-color: var(--magenta-light);
-}
-
-.bg-pink,
-.bg-pink-global > *,
-.bg-pink-onto:hover,
-.bg-pink-onto:focus,
-.bg-pink-toone > *:hover,
-.bg-pink-toone > *:focus,
-*:hover > .bg-pink-into,
-*:focus > .bg-pink-into,
-.bg-pink-toall:hover > *,
-.bg-pink-toall:focus > * {
-  background-color: var(--pink);
-}
-
-.bg-pink-dark,
-.bg-pink-dark-global > *,
-.bg-pink-dark-onto:hover,
-.bg-pink-dark-onto:focus,
-.bg-pink-dark-toone > *:hover,
-.bg-pink-dark-toone > *:focus,
-*:hover > .bg-pink-dark-into,
-*:focus > .bg-pink-dark-into,
-.bg-pink-dark-toall:hover > *,
-.bg-pink-dark-toall:focus > * {
-  background-color: var(--pink-dark);
-}
-
-.bg-pink-light,
-.bg-pink-light-global > *,
-.bg-pink-light-onto:hover,
-.bg-pink-light-onto:focus,
-.bg-pink-light-toone > *:hover,
-.bg-pink-light-toone > *:focus,
-*:hover > .bg-pink-light-into,
-*:focus > .bg-pink-light-into,
-.bg-pink-light-toall:hover > *,
-.bg-pink-light-toall:focus > * {
-  background-color: var(--pink-light);
-}
-
-.bg-black,
-.bg-black-global > *,
-.bg-black-onto:hover,
-.bg-black-onto:focus,
-.bg-black-toone > *:hover,
-.bg-black-toone > *:focus,
-*:hover > .bg-black-into,
-*:focus > .bg-black-into,
-.bg-black-toall:hover > *,
-.bg-black-toall:focus > * {
-  background-color: var(--black);
-}
-
-.bg-black-dark,
-.bg-black-dark-global > *,
-.bg-black-dark-onto:hover,
-.bg-black-dark-onto:focus,
-.bg-black-dark-toone > *:hover,
-.bg-black-dark-toone > *:focus,
-*:hover > .bg-black-dark-into,
-*:focus > .bg-black-dark-into,
-.bg-black-dark-toall:hover > *,
-.bg-black-dark-toall:focus > * {
-  background-color: var(--black-dark);
-}
-
-.bg-black-light,
-.bg-black-light-global > *,
-.bg-black-light-onto:hover,
-.bg-black-light-onto:focus,
-.bg-black-light-toone > *:hover,
-.bg-black-light-toone > *:focus,
-*:hover > .bg-black-light-into,
-*:focus > .bg-black-light-into,
-.bg-black-light-toall:hover > *,
-.bg-black-light-toall:focus > * {
-  background-color: var(--black-light);
-}
-
-.bg-gray,
-.bg-gray-global > *,
-.bg-gray-onto:hover,
-.bg-gray-onto:focus,
-.bg-gray-toone > *:hover,
-.bg-gray-toone > *:focus,
-*:hover > .bg-gray-into,
-*:focus > .bg-gray-into,
-.bg-gray-toall:hover > *,
-.bg-gray-toall:focus > * {
-  background-color: var(--gray);
-}
-
-.bg-gray-dark,
-.bg-gray-dark-global > *,
-.bg-gray-dark-onto:hover,
-.bg-gray-dark-onto:focus,
-.bg-gray-dark-toone > *:hover,
-.bg-gray-dark-toone > *:focus,
-*:hover > .bg-gray-dark-into,
-*:focus > .bg-gray-dark-into,
-.bg-gray-dark-toall:hover > *,
-.bg-gray-dark-toall:focus > * {
-  background-color: var(--gray-dark);
-}
-
-.bg-gray-light,
-.bg-gray-light-global > *,
-.bg-gray-light-onto:hover,
-.bg-gray-light-onto:focus,
-.bg-gray-light-toone > *:hover,
-.bg-gray-light-toone > *:focus,
-*:hover > .bg-gray-light-into,
-*:focus > .bg-gray-light-into,
-.bg-gray-light-toall:hover > *,
-.bg-gray-light-toall:focus > * {
-  background-color: var(--gray-light);
-}
-
-.bg-white,
-.bg-white-global > *,
-.bg-white-onto:hover,
-.bg-white-onto:focus,
-.bg-white-toone > *:hover,
-.bg-white-toone > *:focus,
-*:hover > .bg-white-into,
-*:focus > .bg-white-into,
-.bg-white-toall:hover > *,
-.bg-white-toall:focus > * {
-  background-color: var(--white);
-}
-
-.bg-white-dark,
-.bg-white-dark-global > *,
-.bg-white-dark-onto:hover,
-.bg-white-dark-onto:focus,
-.bg-white-dark-toone > *:hover,
-.bg-white-dark-toone > *:focus,
-*:hover > .bg-white-dark-into,
-*:focus > .bg-white-dark-into,
-.bg-white-dark-toall:hover > *,
-.bg-white-dark-toall:focus > * {
-  background-color: var(--white-dark);
-}
-
-.bg-white-light,
-.bg-white-light-global > *,
-.bg-white-light-onto:hover,
-.bg-white-light-onto:focus,
-.bg-white-light-toone > *:hover,
-.bg-white-light-toone > *:focus,
-*:hover > .bg-white-light-into,
-*:focus > .bg-white-light-into,
-.bg-white-light-toall:hover > *,
-.bg-white-light-toall:focus > * {
-  background-color: var(--white-light);
-}
-
-/********** SHADOW **********/
-.shadow-sm,
-.shadow-sm-global > *,
-.shadow-sm-onto:hover,
-.shadow-sm-onto:focus,
-.shadow-sm-toone > *:hover,
-.shadow-sm-toone > *:focus,
-*:hover > .shadow-sm-into,
-*:focus > .shadow-sm-into,
-.shadow-sm-toall:hover > *,
-.shadow-sm-toall:focus > * {
-  box-shadow: var(--shadow-sm);
-}
-
-.shadow-in-sm,
-.shadow-in-sm-global > *,
-.shadow-in-sm-onto:hover,
-.shadow-in-sm-onto:focus,
-.shadow-in-sm-toone > *:hover,
-.shadow-in-sm-toone > *:focus,
-*:hover > .shadow-in-sm-into,
-*:focus > .shadow-in-sm-into,
-.shadow-in-sm-toall:hover > *,
-.shadow-in-sm-toall:focus > * {
-  box-shadow: inset var(--shadow-sm);
-}
-
-.shadow-md,
-.shadow-md-global > *,
-.shadow-md-onto:hover,
-.shadow-md-onto:focus,
-.shadow-md-toone > *:hover,
-.shadow-md-toone > *:focus,
-*:hover > .shadow-md-into,
-*:focus > .shadow-md-into,
-.shadow-md-toall:hover > *,
-.shadow-md-toall:focus > * {
-  box-shadow: var(--shadow-md);
-}
-
-.shadow-in-md,
-.shadow-in-md-global > *,
-.shadow-in-md-onto:hover,
-.shadow-in-md-onto:focus,
-.shadow-in-md-toone > *:hover,
-.shadow-in-md-toone > *:focus,
-*:hover > .shadow-in-md-into,
-*:focus > .shadow-in-md-into,
-.shadow-in-md-toall:hover > *,
-.shadow-in-md-toall:focus > * {
-  box-shadow: inset var(--shadow-md);
-}
-
-.shadow-lg,
-.shadow-lg-global > *,
-.shadow-lg-onto:hover,
-.shadow-lg-onto:focus,
-.shadow-lg-toone > *:hover,
-.shadow-lg-toone > *:focus,
-*:hover > .shadow-lg-into,
-*:focus > .shadow-lg-into,
-.shadow-lg-toall:hover > *,
-.shadow-lg-toall:focus > * {
-  box-shadow: var(--shadow-lg);
-}
-
-.shadow-in-lg,
-.shadow-in-lg-global > *,
-.shadow-in-lg-onto:hover,
-.shadow-in-lg-onto:focus,
-.shadow-in-lg-toone > *:hover,
-.shadow-in-lg-toone > *:focus,
-*:hover > .shadow-in-lg-into,
-*:focus > .shadow-in-lg-into,
-.shadow-in-lg-toall:hover > *,
-.shadow-in-lg-toall:focus > * {
-  box-shadow: inset var(--shadow-lg);
-}
-
-.shadow-blur,
-.shadow-blur-global > *,
-.shadow-blur-onto:hover,
-.shadow-blur-onto:focus,
-.shadow-blur-toone > *:hover,
-.shadow-blur-toone > *:focus,
-*:hover > .shadow-blur-into,
-*:focus > .shadow-blur-into,
-.shadow-blur-toall:hover > *,
-.shadow-blur-toall:focus > * {
-  box-shadow: var(--shadow-blur);
-}
-
-.shadow-in-blur,
-.shadow-in-blur-global > *,
-.shadow-in-blur-onto:hover,
-.shadow-in-blur-onto:focus,
-.shadow-in-blur-toone > *:hover,
-.shadow-in-blur-toone > *:focus,
-*:hover > .shadow-in-blur-into,
-*:focus > .shadow-in-blur-into,
-.shadow-in-blur-toall:hover > *,
-.shadow-in-blur-toall:focus > * {
-  box-shadow: inset var(--shadow-blur);
-}
-
-.shadow-blur-sm,
-.shadow-blur-sm-global > *,
-.shadow-blur-sm-onto:hover,
-.shadow-blur-sm-onto:focus,
-.shadow-blur-sm-toone > *:hover,
-.shadow-blur-sm-toone > *:focus,
-*:hover > .shadow-blur-sm-into,
-*:focus > .shadow-blur-sm-into,
-.shadow-blur-sm-toall:hover > *,
-.shadow-blur-sm-toall:focus > * {
-  box-shadow: var(--shadow-blur-sm);
-}
-
-.shadow-in-blur-sm,
-.shadow-in-blur-sm-global > *,
-.shadow-in-blur-sm-onto:hover,
-.shadow-in-blur-sm-onto:focus,
-.shadow-in-blur-sm-toone > *:hover,
-.shadow-in-blur-sm-toone > *:focus,
-*:hover > .shadow-in-blur-sm-into,
-*:focus > .shadow-in-blur-sm-into,
-.shadow-in-blur-sm-toall:hover > *,
-.shadow-in-blur-sm-toall:focus > * {
-  box-shadow: inset var(--shadow-blur-sm);
-}
-
-.shadow-blur-md,
-.shadow-blur-md-global > *,
-.shadow-blur-md-onto:hover,
-.shadow-blur-md-onto:focus,
-.shadow-blur-md-toone > *:hover,
-.shadow-blur-md-toone > *:focus,
-*:hover > .shadow-blur-md-into,
-*:focus > .shadow-blur-md-into,
-.shadow-blur-md-toall:hover > *,
-.shadow-blur-md-toall:focus > * {
-  box-shadow: var(--shadow-blur-md);
-}
-
-.shadow-in-blur-md,
-.shadow-in-blur-md-global > *,
-.shadow-in-blur-md-onto:hover,
-.shadow-in-blur-md-onto:focus,
-.shadow-in-blur-md-toone > *:hover,
-.shadow-in-blur-md-toone > *:focus,
-*:hover > .shadow-in-blur-md-into,
-*:focus > .shadow-in-blur-md-into,
-.shadow-in-blur-md-toall:hover > *,
-.shadow-in-blur-md-toall:focus > * {
-  box-shadow: inset var(--shadow-blur-md);
-}
-
-.shadow-blur-lg,
-.shadow-blur-lg-global > *,
-.shadow-blur-lg-onto:hover,
-.shadow-blur-lg-onto:focus,
-.shadow-blur-lg-toone > *:hover,
-.shadow-blur-lg-toone > *:focus,
-*:hover > .shadow-blur-lg-into,
-*:focus > .shadow-blur-lg-into,
-.shadow-blur-lg-toall:hover > *,
-.shadow-blur-lg-toall:focus > * {
-  box-shadow: var(--shadow-blur-lg);
-}
-
-.shadow-in-blur-lg,
-.shadow-in-blur-lg-global > *,
-.shadow-in-blur-lg-onto:hover,
-.shadow-in-blur-lg-onto:focus,
-.shadow-in-blur-lg-toone > *:hover,
-.shadow-in-blur-lg-toone > *:focus,
-*:hover > .shadow-in-blur-lg-into,
-*:focus > .shadow-in-blur-lg-into,
-.shadow-in-blur-lg-toall:hover > *,
-.shadow-in-blur-lg-toall:focus > * {
-  box-shadow: inset var(--shadow-blur-lg);
-}
-
-.shadow-spread,
-.shadow-spread-global > *,
-.shadow-spread-onto:hover,
-.shadow-spread-onto:focus,
-.shadow-spread-toone > *:hover,
-.shadow-spread-toone > *:focus,
-*:hover > .shadow-spread-into,
-*:focus > .shadow-spread-into,
-.shadow-spread-toall:hover > *,
-.shadow-spread-toall:focus > * {
-  box-shadow: var(--shadow-spread);
-}
-
-.shadow-in-spread,
-.shadow-in-spread-global > *,
-.shadow-in-spread-onto:hover,
-.shadow-in-spread-onto:focus,
-.shadow-in-spread-toone > *:hover,
-.shadow-in-spread-toone > *:focus,
-*:hover > .shadow-in-spread-into,
-*:focus > .shadow-in-spread-into,
-.shadow-in-spread-toall:hover > *,
-.shadow-in-spread-toall:focus > * {
-  box-shadow: inset var(--shadow-spread);
-}
-
-.shadow-spread-sm,
-.shadow-spread-sm-global > *,
-.shadow-spread-sm-onto:hover,
-.shadow-spread-sm-onto:focus,
-.shadow-spread-sm-toone > *:hover,
-.shadow-spread-sm-toone > *:focus,
-*:hover > .shadow-spread-sm-into,
-*:focus > .shadow-spread-sm-into,
-.shadow-spread-sm-toall:hover > *,
-.shadow-spread-sm-toall:focus > * {
-  box-shadow: var(--shadow-spread-sm);
-}
-
-.shadow-in-spread-sm,
-.shadow-in-spread-sm-global > *,
-.shadow-in-spread-sm-onto:hover,
-.shadow-in-spread-sm-onto:focus,
-.shadow-in-spread-sm-toone > *:hover,
-.shadow-in-spread-sm-toone > *:focus,
-*:hover > .shadow-in-spread-sm-into,
-*:focus > .shadow-in-spread-sm-into,
-.shadow-in-spread-sm-toall:hover > *,
-.shadow-in-spread-sm-toall:focus > * {
-  box-shadow: inset var(--shadow-spread-sm);
-}
-
-.shadow-spread-md,
-.shadow-spread-md-global > *,
-.shadow-spread-md-onto:hover,
-.shadow-spread-md-onto:focus,
-.shadow-spread-md-toone > *:hover,
-.shadow-spread-md-toone > *:focus,
-*:hover > .shadow-spread-md-into,
-*:focus > .shadow-spread-md-into,
-.shadow-spread-md-toall:hover > *,
-.shadow-spread-md-toall:focus > * {
-  box-shadow: var(--shadow-spread-md);
-}
-
-.shadow-in-spread-md,
-.shadow-in-spread-md-global > *,
-.shadow-in-spread-md-onto:hover,
-.shadow-in-spread-md-onto:focus,
-.shadow-in-spread-md-toone > *:hover,
-.shadow-in-spread-md-toone > *:focus,
-*:hover > .shadow-in-spread-md-into,
-*:focus > .shadow-in-spread-md-into,
-.shadow-in-spread-md-toall:hover > *,
-.shadow-in-spread-md-toall:focus > * {
-  box-shadow: inset var(--shadow-spread-md);
-}
-
-.shadow-spread-lg,
-.shadow-spread-lg-global > *,
-.shadow-spread-lg-onto:hover,
-.shadow-spread-lg-onto:focus,
-.shadow-spread-lg-toone > *:hover,
-.shadow-spread-lg-toone > *:focus,
-*:hover > .shadow-spread-lg-into,
-*:focus > .shadow-spread-lg-into,
-.shadow-spread-lg-toall:hover > *,
-.shadow-spread-lg-toall:focus > * {
-  box-shadow: var(--shadow-spread-lg);
-}
-
-.shadow-in-spread-lg,
-.shadow-in-spread-lg-global > *,
-.shadow-in-spread-lg-onto:hover,
-.shadow-in-spread-lg-onto:focus,
-.shadow-in-spread-lg-toone > *:hover,
-.shadow-in-spread-lg-toone > *:focus,
-*:hover > .shadow-in-spread-lg-into,
-*:focus > .shadow-in-spread-lg-into,
-.shadow-in-spread-lg-toall:hover > *,
-.shadow-in-spread-lg-toall:focus > * {
-  box-shadow: inset var(--shadow-spread-lg);
+/********** TRANSFORM **********/
+:root {
+  --slideT: translate(0, 10vh);
+  --slideR: translate(-10vw, 0);
+  --slideB: translate(0, -10vh);
+  --slideL: translate(10vw, 0);
+  --turn: rotate3d(0, 0, 1, 360deg);
+  --turnX: rotate3d(1, 0, 0, 360deg);
+  --turnY: rotate3d(0, 1, 0, 360deg);
+  --turnXY: rotate3d(1, 1, 0, 360deg);
+  --turnXZ: rotate3d(1, 0, 1, 360deg);
+  --turnYZ: rotate3d(0, 1, 1, 360deg);
+  --turn3D: rotate3d(1, 1, 1, 360deg);
+  --bounce: scale(-1, -1);
+  --grow: scale(0.5, 0.5);
+  --shrink: scale(1.5, 1.5);
+  --flipX: scale(1, -1);
+  --flipY: scale(-1, 1);
+  --openX: scale(1, 0);
+  --openY: scale(0, 1);
+  --flipperX: scale(0, -1);
+  --flipperY: scale(-1, 0);
+  --twistT: skew(-90deg, -90deg);
+  --twistR: skew(90deg, -90deg);
+  --twistB: skew(90deg, 90deg);
+  --twistL: skew(-90deg, 90deg);
+}
+
+/********** KEYFRAMES **********/
+@-webkit-keyframes slideT {
+  from {
+    transform: var(--slideT);
+  }
+}
+@keyframes slideT {
+  from {
+    transform: var(--slideT);
+  }
+}
+@-webkit-keyframes slideR {
+  from {
+    transform: var(--slideR);
+  }
+}
+@keyframes slideR {
+  from {
+    transform: var(--slideR);
+  }
+}
+@-webkit-keyframes slideB {
+  from {
+    transform: var(--slideB);
+  }
+}
+@keyframes slideB {
+  from {
+    transform: var(--slideB);
+  }
+}
+@-webkit-keyframes slideL {
+  from {
+    transform: var(--slideL);
+  }
+}
+@keyframes slideL {
+  from {
+    transform: var(--slideL);
+  }
+}
+@-webkit-keyframes turn {
+  from {
+    transform: var(--turn);
+  }
+}
+@keyframes turn {
+  from {
+    transform: var(--turn);
+  }
+}
+@-webkit-keyframes turnX {
+  from {
+    transform: var(--turnX);
+  }
+}
+@keyframes turnX {
+  from {
+    transform: var(--turnX);
+  }
+}
+@-webkit-keyframes turnY {
+  from {
+    transform: var(--turnY);
+  }
+}
+@keyframes turnY {
+  from {
+    transform: var(--turnY);
+  }
+}
+@-webkit-keyframes turnXY {
+  from {
+    transform: var(--turnXY);
+  }
+}
+@keyframes turnXY {
+  from {
+    transform: var(--turnXY);
+  }
+}
+@-webkit-keyframes turnXZ {
+  from {
+    transform: var(--turnXZ);
+  }
+}
+@keyframes turnXZ {
+  from {
+    transform: var(--turnXZ);
+  }
+}
+@-webkit-keyframes turnYZ {
+  from {
+    transform: var(--turnYZ);
+  }
+}
+@keyframes turnYZ {
+  from {
+    transform: var(--turnYZ);
+  }
+}
+@-webkit-keyframes turn3D {
+  from {
+    transform: var(--turn3D);
+  }
+}
+@keyframes turn3D {
+  from {
+    transform: var(--turn3D);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: var(--bounce);
+  }
+}
+@keyframes bounce {
+  from {
+    transform: var(--bounce);
+  }
+}
+@-webkit-keyframes grow {
+  from {
+    transform: var(--grow);
+  }
+}
+@keyframes grow {
+  from {
+    transform: var(--grow);
+  }
+}
+@-webkit-keyframes shrink {
+  from {
+    transform: var(--shrink);
+  }
+}
+@keyframes shrink {
+  from {
+    transform: var(--shrink);
+  }
+}
+@-webkit-keyframes flipX {
+  from {
+    transform: var(--flipX);
+  }
+}
+@keyframes flipX {
+  from {
+    transform: var(--flipX);
+  }
+}
+@-webkit-keyframes flipY {
+  from {
+    transform: var(--flipY);
+  }
+}
+@keyframes flipY {
+  from {
+    transform: var(--flipY);
+  }
+}
+@-webkit-keyframes openX {
+  from {
+    transform: var(--openX);
+  }
+}
+@keyframes openX {
+  from {
+    transform: var(--openX);
+  }
+}
+@-webkit-keyframes openY {
+  from {
+    transform: var(--openY);
+  }
+}
+@keyframes openY {
+  from {
+    transform: var(--openY);
+  }
+}
+@-webkit-keyframes flipperX {
+  from {
+    transform: var(--flipperX);
+  }
+}
+@keyframes flipperX {
+  from {
+    transform: var(--flipperX);
+  }
+}
+@-webkit-keyframes flipperY {
+  from {
+    transform: var(--flipperY);
+  }
+}
+@keyframes flipperY {
+  from {
+    transform: var(--flipperY);
+  }
+}
+@-webkit-keyframes twistT {
+  from {
+    transform: var(--twistT);
+  }
+}
+@keyframes twistT {
+  from {
+    transform: var(--twistT);
+  }
+}
+@-webkit-keyframes twistR {
+  from {
+    transform: var(--twistR);
+  }
+}
+@keyframes twistR {
+  from {
+    transform: var(--twistR);
+  }
+}
+@-webkit-keyframes twistB {
+  from {
+    transform: var(--twistB);
+  }
+}
+@keyframes twistB {
+  from {
+    transform: var(--twistB);
+  }
+}
+@-webkit-keyframes twistL {
+  from {
+    transform: var(--twistL);
+  }
+}
+@keyframes twistL {
+  from {
+    transform: var(--twistL);
+  }
+}
+/********** ANIMATIONS **********/
+/********** ANIMATION **********/
+[class*=anima-] {
+  --animation-duration: 2s;
+  --animation-duration-sm: 500ms;
+  --animation-duration-md: 1s;
+  --animation-duration-lg: 2s;
+  --animation-timing-function-linear: linear;
+  --animation-timing-function-in: ease-in;
+  --animation-timing-function-out: ease-out;
+  --animation-timing-function-inout: ease-in-out;
+  --animation-timing-function-start: step-start;
+  --animation-timing-function-end: step-end;
+  --animation-iteration-count-few: 2;
+  --animation-iteration-count-many: 5;
+  --animation-iteration-count-loop: infinite;
+  --animation-delay-min: 500ms;
+  --animation-delay-max: 1s;
 }
 
 /********** ANIMATION **********/
@@ -4322,337 +4222,337 @@ pre {
 }
 
 .anima-slideT,
-.anima-slideT-global > *,
-.anima-slideT-onto:hover,
-.anima-slideT-onto:focus,
-.anima-slideT-toone > *:hover,
-.anima-slideT-toone > *:focus,
-*:hover > .anima-slideT-into,
-*:focus > .anima-slideT-into,
-.anima-slideT-toall:hover > *,
-.anima-slideT-toall:focus > * {
+.anima-slideT-all > *,
+.anima-slideT-on:hover,
+.anima-slideT-on:focus,
+*:hover > .anima-slideT-in,
+*:focus > .anima-slideT-in,
+.anima-slideT-one > *:hover,
+.anima-slideT-one > *:focus,
+.anima-slideT-many:hover > *,
+.anima-slideT-many:focus > * {
   -webkit-animation-name: slideT;
           animation-name: slideT;
 }
 
 .anima-slideR,
-.anima-slideR-global > *,
-.anima-slideR-onto:hover,
-.anima-slideR-onto:focus,
-.anima-slideR-toone > *:hover,
-.anima-slideR-toone > *:focus,
-*:hover > .anima-slideR-into,
-*:focus > .anima-slideR-into,
-.anima-slideR-toall:hover > *,
-.anima-slideR-toall:focus > * {
+.anima-slideR-all > *,
+.anima-slideR-on:hover,
+.anima-slideR-on:focus,
+*:hover > .anima-slideR-in,
+*:focus > .anima-slideR-in,
+.anima-slideR-one > *:hover,
+.anima-slideR-one > *:focus,
+.anima-slideR-many:hover > *,
+.anima-slideR-many:focus > * {
   -webkit-animation-name: slideR;
           animation-name: slideR;
 }
 
 .anima-slideB,
-.anima-slideB-global > *,
-.anima-slideB-onto:hover,
-.anima-slideB-onto:focus,
-.anima-slideB-toone > *:hover,
-.anima-slideB-toone > *:focus,
-*:hover > .anima-slideB-into,
-*:focus > .anima-slideB-into,
-.anima-slideB-toall:hover > *,
-.anima-slideB-toall:focus > * {
+.anima-slideB-all > *,
+.anima-slideB-on:hover,
+.anima-slideB-on:focus,
+*:hover > .anima-slideB-in,
+*:focus > .anima-slideB-in,
+.anima-slideB-one > *:hover,
+.anima-slideB-one > *:focus,
+.anima-slideB-many:hover > *,
+.anima-slideB-many:focus > * {
   -webkit-animation-name: slideB;
           animation-name: slideB;
 }
 
 .anima-slideL,
-.anima-slideL-global > *,
-.anima-slideL-onto:hover,
-.anima-slideL-onto:focus,
-.anima-slideL-toone > *:hover,
-.anima-slideL-toone > *:focus,
-*:hover > .anima-slideL-into,
-*:focus > .anima-slideL-into,
-.anima-slideL-toall:hover > *,
-.anima-slideL-toall:focus > * {
+.anima-slideL-all > *,
+.anima-slideL-on:hover,
+.anima-slideL-on:focus,
+*:hover > .anima-slideL-in,
+*:focus > .anima-slideL-in,
+.anima-slideL-one > *:hover,
+.anima-slideL-one > *:focus,
+.anima-slideL-many:hover > *,
+.anima-slideL-many:focus > * {
   -webkit-animation-name: slideL;
           animation-name: slideL;
 }
 
 .anima-turn,
-.anima-turn-global > *,
-.anima-turn-onto:hover,
-.anima-turn-onto:focus,
-.anima-turn-toone > *:hover,
-.anima-turn-toone > *:focus,
-*:hover > .anima-turn-into,
-*:focus > .anima-turn-into,
-.anima-turn-toall:hover > *,
-.anima-turn-toall:focus > * {
+.anima-turn-all > *,
+.anima-turn-on:hover,
+.anima-turn-on:focus,
+*:hover > .anima-turn-in,
+*:focus > .anima-turn-in,
+.anima-turn-one > *:hover,
+.anima-turn-one > *:focus,
+.anima-turn-many:hover > *,
+.anima-turn-many:focus > * {
   -webkit-animation-name: turn;
           animation-name: turn;
 }
 
 .anima-turnX,
-.anima-turnX-global > *,
-.anima-turnX-onto:hover,
-.anima-turnX-onto:focus,
-.anima-turnX-toone > *:hover,
-.anima-turnX-toone > *:focus,
-*:hover > .anima-turnX-into,
-*:focus > .anima-turnX-into,
-.anima-turnX-toall:hover > *,
-.anima-turnX-toall:focus > * {
+.anima-turnX-all > *,
+.anima-turnX-on:hover,
+.anima-turnX-on:focus,
+*:hover > .anima-turnX-in,
+*:focus > .anima-turnX-in,
+.anima-turnX-one > *:hover,
+.anima-turnX-one > *:focus,
+.anima-turnX-many:hover > *,
+.anima-turnX-many:focus > * {
   -webkit-animation-name: turnX;
           animation-name: turnX;
 }
 
 .anima-turnY,
-.anima-turnY-global > *,
-.anima-turnY-onto:hover,
-.anima-turnY-onto:focus,
-.anima-turnY-toone > *:hover,
-.anima-turnY-toone > *:focus,
-*:hover > .anima-turnY-into,
-*:focus > .anima-turnY-into,
-.anima-turnY-toall:hover > *,
-.anima-turnY-toall:focus > * {
+.anima-turnY-all > *,
+.anima-turnY-on:hover,
+.anima-turnY-on:focus,
+*:hover > .anima-turnY-in,
+*:focus > .anima-turnY-in,
+.anima-turnY-one > *:hover,
+.anima-turnY-one > *:focus,
+.anima-turnY-many:hover > *,
+.anima-turnY-many:focus > * {
   -webkit-animation-name: turnY;
           animation-name: turnY;
 }
 
 .anima-turnXY,
-.anima-turnXY-global > *,
-.anima-turnXY-onto:hover,
-.anima-turnXY-onto:focus,
-.anima-turnXY-toone > *:hover,
-.anima-turnXY-toone > *:focus,
-*:hover > .anima-turnXY-into,
-*:focus > .anima-turnXY-into,
-.anima-turnXY-toall:hover > *,
-.anima-turnXY-toall:focus > * {
+.anima-turnXY-all > *,
+.anima-turnXY-on:hover,
+.anima-turnXY-on:focus,
+*:hover > .anima-turnXY-in,
+*:focus > .anima-turnXY-in,
+.anima-turnXY-one > *:hover,
+.anima-turnXY-one > *:focus,
+.anima-turnXY-many:hover > *,
+.anima-turnXY-many:focus > * {
   -webkit-animation-name: turnXY;
           animation-name: turnXY;
 }
 
 .anima-turnXZ,
-.anima-turnXZ-global > *,
-.anima-turnXZ-onto:hover,
-.anima-turnXZ-onto:focus,
-.anima-turnXZ-toone > *:hover,
-.anima-turnXZ-toone > *:focus,
-*:hover > .anima-turnXZ-into,
-*:focus > .anima-turnXZ-into,
-.anima-turnXZ-toall:hover > *,
-.anima-turnXZ-toall:focus > * {
+.anima-turnXZ-all > *,
+.anima-turnXZ-on:hover,
+.anima-turnXZ-on:focus,
+*:hover > .anima-turnXZ-in,
+*:focus > .anima-turnXZ-in,
+.anima-turnXZ-one > *:hover,
+.anima-turnXZ-one > *:focus,
+.anima-turnXZ-many:hover > *,
+.anima-turnXZ-many:focus > * {
   -webkit-animation-name: turnXZ;
           animation-name: turnXZ;
 }
 
 .anima-turnYZ,
-.anima-turnYZ-global > *,
-.anima-turnYZ-onto:hover,
-.anima-turnYZ-onto:focus,
-.anima-turnYZ-toone > *:hover,
-.anima-turnYZ-toone > *:focus,
-*:hover > .anima-turnYZ-into,
-*:focus > .anima-turnYZ-into,
-.anima-turnYZ-toall:hover > *,
-.anima-turnYZ-toall:focus > * {
+.anima-turnYZ-all > *,
+.anima-turnYZ-on:hover,
+.anima-turnYZ-on:focus,
+*:hover > .anima-turnYZ-in,
+*:focus > .anima-turnYZ-in,
+.anima-turnYZ-one > *:hover,
+.anima-turnYZ-one > *:focus,
+.anima-turnYZ-many:hover > *,
+.anima-turnYZ-many:focus > * {
   -webkit-animation-name: turnYZ;
           animation-name: turnYZ;
 }
 
 .anima-turn3D,
-.anima-turn3D-global > *,
-.anima-turn3D-onto:hover,
-.anima-turn3D-onto:focus,
-.anima-turn3D-toone > *:hover,
-.anima-turn3D-toone > *:focus,
-*:hover > .anima-turn3D-into,
-*:focus > .anima-turn3D-into,
-.anima-turn3D-toall:hover > *,
-.anima-turn3D-toall:focus > * {
+.anima-turn3D-all > *,
+.anima-turn3D-on:hover,
+.anima-turn3D-on:focus,
+*:hover > .anima-turn3D-in,
+*:focus > .anima-turn3D-in,
+.anima-turn3D-one > *:hover,
+.anima-turn3D-one > *:focus,
+.anima-turn3D-many:hover > *,
+.anima-turn3D-many:focus > * {
   -webkit-animation-name: turn3D;
           animation-name: turn3D;
 }
 
 .anima-bounce,
-.anima-bounce-global > *,
-.anima-bounce-onto:hover,
-.anima-bounce-onto:focus,
-.anima-bounce-toone > *:hover,
-.anima-bounce-toone > *:focus,
-*:hover > .anima-bounce-into,
-*:focus > .anima-bounce-into,
-.anima-bounce-toall:hover > *,
-.anima-bounce-toall:focus > * {
+.anima-bounce-all > *,
+.anima-bounce-on:hover,
+.anima-bounce-on:focus,
+*:hover > .anima-bounce-in,
+*:focus > .anima-bounce-in,
+.anima-bounce-one > *:hover,
+.anima-bounce-one > *:focus,
+.anima-bounce-many:hover > *,
+.anima-bounce-many:focus > * {
   -webkit-animation-name: bounce;
           animation-name: bounce;
 }
 
 .anima-grow,
-.anima-grow-global > *,
-.anima-grow-onto:hover,
-.anima-grow-onto:focus,
-.anima-grow-toone > *:hover,
-.anima-grow-toone > *:focus,
-*:hover > .anima-grow-into,
-*:focus > .anima-grow-into,
-.anima-grow-toall:hover > *,
-.anima-grow-toall:focus > * {
+.anima-grow-all > *,
+.anima-grow-on:hover,
+.anima-grow-on:focus,
+*:hover > .anima-grow-in,
+*:focus > .anima-grow-in,
+.anima-grow-one > *:hover,
+.anima-grow-one > *:focus,
+.anima-grow-many:hover > *,
+.anima-grow-many:focus > * {
   -webkit-animation-name: grow;
           animation-name: grow;
 }
 
 .anima-shrink,
-.anima-shrink-global > *,
-.anima-shrink-onto:hover,
-.anima-shrink-onto:focus,
-.anima-shrink-toone > *:hover,
-.anima-shrink-toone > *:focus,
-*:hover > .anima-shrink-into,
-*:focus > .anima-shrink-into,
-.anima-shrink-toall:hover > *,
-.anima-shrink-toall:focus > * {
+.anima-shrink-all > *,
+.anima-shrink-on:hover,
+.anima-shrink-on:focus,
+*:hover > .anima-shrink-in,
+*:focus > .anima-shrink-in,
+.anima-shrink-one > *:hover,
+.anima-shrink-one > *:focus,
+.anima-shrink-many:hover > *,
+.anima-shrink-many:focus > * {
   -webkit-animation-name: shrink;
           animation-name: shrink;
 }
 
 .anima-flipX,
-.anima-flipX-global > *,
-.anima-flipX-onto:hover,
-.anima-flipX-onto:focus,
-.anima-flipX-toone > *:hover,
-.anima-flipX-toone > *:focus,
-*:hover > .anima-flipX-into,
-*:focus > .anima-flipX-into,
-.anima-flipX-toall:hover > *,
-.anima-flipX-toall:focus > * {
+.anima-flipX-all > *,
+.anima-flipX-on:hover,
+.anima-flipX-on:focus,
+*:hover > .anima-flipX-in,
+*:focus > .anima-flipX-in,
+.anima-flipX-one > *:hover,
+.anima-flipX-one > *:focus,
+.anima-flipX-many:hover > *,
+.anima-flipX-many:focus > * {
   -webkit-animation-name: flipX;
           animation-name: flipX;
 }
 
 .anima-flipY,
-.anima-flipY-global > *,
-.anima-flipY-onto:hover,
-.anima-flipY-onto:focus,
-.anima-flipY-toone > *:hover,
-.anima-flipY-toone > *:focus,
-*:hover > .anima-flipY-into,
-*:focus > .anima-flipY-into,
-.anima-flipY-toall:hover > *,
-.anima-flipY-toall:focus > * {
+.anima-flipY-all > *,
+.anima-flipY-on:hover,
+.anima-flipY-on:focus,
+*:hover > .anima-flipY-in,
+*:focus > .anima-flipY-in,
+.anima-flipY-one > *:hover,
+.anima-flipY-one > *:focus,
+.anima-flipY-many:hover > *,
+.anima-flipY-many:focus > * {
   -webkit-animation-name: flipY;
           animation-name: flipY;
 }
 
 .anima-openX,
-.anima-openX-global > *,
-.anima-openX-onto:hover,
-.anima-openX-onto:focus,
-.anima-openX-toone > *:hover,
-.anima-openX-toone > *:focus,
-*:hover > .anima-openX-into,
-*:focus > .anima-openX-into,
-.anima-openX-toall:hover > *,
-.anima-openX-toall:focus > * {
+.anima-openX-all > *,
+.anima-openX-on:hover,
+.anima-openX-on:focus,
+*:hover > .anima-openX-in,
+*:focus > .anima-openX-in,
+.anima-openX-one > *:hover,
+.anima-openX-one > *:focus,
+.anima-openX-many:hover > *,
+.anima-openX-many:focus > * {
   -webkit-animation-name: openX;
           animation-name: openX;
 }
 
 .anima-openY,
-.anima-openY-global > *,
-.anima-openY-onto:hover,
-.anima-openY-onto:focus,
-.anima-openY-toone > *:hover,
-.anima-openY-toone > *:focus,
-*:hover > .anima-openY-into,
-*:focus > .anima-openY-into,
-.anima-openY-toall:hover > *,
-.anima-openY-toall:focus > * {
+.anima-openY-all > *,
+.anima-openY-on:hover,
+.anima-openY-on:focus,
+*:hover > .anima-openY-in,
+*:focus > .anima-openY-in,
+.anima-openY-one > *:hover,
+.anima-openY-one > *:focus,
+.anima-openY-many:hover > *,
+.anima-openY-many:focus > * {
   -webkit-animation-name: openY;
           animation-name: openY;
 }
 
 .anima-flipperX,
-.anima-flipperX-global > *,
-.anima-flipperX-onto:hover,
-.anima-flipperX-onto:focus,
-.anima-flipperX-toone > *:hover,
-.anima-flipperX-toone > *:focus,
-*:hover > .anima-flipperX-into,
-*:focus > .anima-flipperX-into,
-.anima-flipperX-toall:hover > *,
-.anima-flipperX-toall:focus > * {
+.anima-flipperX-all > *,
+.anima-flipperX-on:hover,
+.anima-flipperX-on:focus,
+*:hover > .anima-flipperX-in,
+*:focus > .anima-flipperX-in,
+.anima-flipperX-one > *:hover,
+.anima-flipperX-one > *:focus,
+.anima-flipperX-many:hover > *,
+.anima-flipperX-many:focus > * {
   -webkit-animation-name: flipperX;
           animation-name: flipperX;
 }
 
 .anima-flipperY,
-.anima-flipperY-global > *,
-.anima-flipperY-onto:hover,
-.anima-flipperY-onto:focus,
-.anima-flipperY-toone > *:hover,
-.anima-flipperY-toone > *:focus,
-*:hover > .anima-flipperY-into,
-*:focus > .anima-flipperY-into,
-.anima-flipperY-toall:hover > *,
-.anima-flipperY-toall:focus > * {
+.anima-flipperY-all > *,
+.anima-flipperY-on:hover,
+.anima-flipperY-on:focus,
+*:hover > .anima-flipperY-in,
+*:focus > .anima-flipperY-in,
+.anima-flipperY-one > *:hover,
+.anima-flipperY-one > *:focus,
+.anima-flipperY-many:hover > *,
+.anima-flipperY-many:focus > * {
   -webkit-animation-name: flipperY;
           animation-name: flipperY;
 }
 
 .anima-twistT,
-.anima-twistT-global > *,
-.anima-twistT-onto:hover,
-.anima-twistT-onto:focus,
-.anima-twistT-toone > *:hover,
-.anima-twistT-toone > *:focus,
-*:hover > .anima-twistT-into,
-*:focus > .anima-twistT-into,
-.anima-twistT-toall:hover > *,
-.anima-twistT-toall:focus > * {
+.anima-twistT-all > *,
+.anima-twistT-on:hover,
+.anima-twistT-on:focus,
+*:hover > .anima-twistT-in,
+*:focus > .anima-twistT-in,
+.anima-twistT-one > *:hover,
+.anima-twistT-one > *:focus,
+.anima-twistT-many:hover > *,
+.anima-twistT-many:focus > * {
   -webkit-animation-name: twistT;
           animation-name: twistT;
 }
 
 .anima-twistR,
-.anima-twistR-global > *,
-.anima-twistR-onto:hover,
-.anima-twistR-onto:focus,
-.anima-twistR-toone > *:hover,
-.anima-twistR-toone > *:focus,
-*:hover > .anima-twistR-into,
-*:focus > .anima-twistR-into,
-.anima-twistR-toall:hover > *,
-.anima-twistR-toall:focus > * {
+.anima-twistR-all > *,
+.anima-twistR-on:hover,
+.anima-twistR-on:focus,
+*:hover > .anima-twistR-in,
+*:focus > .anima-twistR-in,
+.anima-twistR-one > *:hover,
+.anima-twistR-one > *:focus,
+.anima-twistR-many:hover > *,
+.anima-twistR-many:focus > * {
   -webkit-animation-name: twistR;
           animation-name: twistR;
 }
 
 .anima-twistB,
-.anima-twistB-global > *,
-.anima-twistB-onto:hover,
-.anima-twistB-onto:focus,
-.anima-twistB-toone > *:hover,
-.anima-twistB-toone > *:focus,
-*:hover > .anima-twistB-into,
-*:focus > .anima-twistB-into,
-.anima-twistB-toall:hover > *,
-.anima-twistB-toall:focus > * {
+.anima-twistB-all > *,
+.anima-twistB-on:hover,
+.anima-twistB-on:focus,
+*:hover > .anima-twistB-in,
+*:focus > .anima-twistB-in,
+.anima-twistB-one > *:hover,
+.anima-twistB-one > *:focus,
+.anima-twistB-many:hover > *,
+.anima-twistB-many:focus > * {
   -webkit-animation-name: twistB;
           animation-name: twistB;
 }
 
 .anima-twistL,
-.anima-twistL-global > *,
-.anima-twistL-onto:hover,
-.anima-twistL-onto:focus,
-.anima-twistL-toone > *:hover,
-.anima-twistL-toone > *:focus,
-*:hover > .anima-twistL-into,
-*:focus > .anima-twistL-into,
-.anima-twistL-toall:hover > *,
-.anima-twistL-toall:focus > * {
+.anima-twistL-all > *,
+.anima-twistL-on:hover,
+.anima-twistL-on:focus,
+*:hover > .anima-twistL-in,
+*:focus > .anima-twistL-in,
+.anima-twistL-one > *:hover,
+.anima-twistL-one > *:focus,
+.anima-twistL-many:hover > *,
+.anima-twistL-many:focus > * {
   -webkit-animation-name: twistL;
           animation-name: twistL;
 }
@@ -4740,41 +4640,5 @@ pre {
   animation-direction: alternate-reverse;
 }
 
-/********** CURSOR **********/
-.cell,
-.global-cell * {
-  cursor: cell;
-}
-
-.cross,
-.global-cross * {
-  cursor: crosshair;
-}
-
-.hand,
-.global-hand * {
-  cursor: pointer;
-}
-
-.help,
-.global-help * {
-  cursor: help;
-}
-
-.move,
-.global-move * {
-  cursor: move;
-}
-
-.none,
-.global-none * {
-  cursor: not-allowed;
-}
-
-.text,
-.global-text * {
-  cursor: text;
-}
-
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 11th Nov 2022 @ 6:32:23 PM */
+ Updated: 3rd Dec 2022 @ 8:54:02 PM */
