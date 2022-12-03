@@ -1,0 +1,185 @@
+// ********** BREAKPOINTS **********
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "wd": 1600px
+) !default;
+
+// ********** MAIN MIXINS **********
+@mixin global($class, $property, $value) {
+  .#{$class},
+  .#{$class}-all > * {
+      #{$property}: #{$value};
+  }
+}
+
+@mixin states($class, $property, $value) {
+  .#{$class},
+  .#{$class}-all > *,
+  .#{$class}-on:hover,
+  .#{$class}-on:focus,
+  *:hover > .#{$class}-in,
+  *:focus > .#{$class}-in,
+  .#{$class}-one > *:hover,
+  .#{$class}-one > *:focus,
+  .#{$class}-many:hover > *,
+  .#{$class}-many:focus > * {
+    #{$property}: #{$value};
+  }
+}
+
+/********** COLORS **********/
+$hues: (
+  "red":      (  0, 100%, 50%),
+  "orange":   ( 30, 100%, 50%),
+  "yellow":   ( 60, 100%, 50%),
+  "lime":     ( 90, 100%, 50%),
+  "green":    (120, 100%, 50%),
+  "aqua":     (150, 100%, 50%),
+  "cyan":     (180, 100%, 50%),
+  "sky":      (210, 100%, 50%),
+  "blue":     (240, 100%, 50%),
+  "indigo":   (270, 100%, 50%),
+  "magenta":  (300, 100%, 50%),
+  "pink":     (330, 100%, 50%)
+) !default;
+
+$grayscale: (
+  "black":  (0, 0%,   0%),
+  "slate":  (0, 0%,  25%),
+  "gray":   (0, 0%,  50%),
+  "silver": (0, 0%,  75%),
+  "white":  (0, 0%, 100%)
+) !default;
+
+$colors: $hues, $grayscale;
+
+:root {
+  /* hsl values */
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --#{$key}-hsl: #{$value};
+    }
+  }
+
+  /* opaque colors */
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --#{$key}: hsl(var(--#{$key}-hsl));
+    }
+  }
+
+  /* opacity */
+  --dark: 0.8;
+  --light: 0.2;
+
+  /* transparent colors */
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --#{$key}-dark: hsla(var(--#{$key}-hsl), var(--dark));
+      --#{$key}-light: hsla(var(--#{$key}-hsl), var(--light));
+    }
+  }
+}
+
+/********** COLOR **********/
+@each $color in $colors {
+  @each $key, $value in $color {
+    @include states(#{$key}, "color", "var(--#{$key})");
+  }
+}
+
+/********** BACKGROUND COLOR **********/
+@each $color in $colors {
+  @each $key, $value in $color {
+    @include states("bg-#{$key}", "background-color", "var(--#{$key})");
+    @include states("bg-#{$key}-dark", "background-color", "var(--#{$key}-dark)");
+    @include states("bg-#{$key}-light", "background-color", "var(--#{$key}-light)");
+  }
+}
+
+/********** FONT FAMILY **********/
+$font-family: (
+  "sans-serif": (Helvetica, sans-serif),
+  "serif":      (Times, serif),
+  "monospace":  (Courier, monospace),
+  "cursive":    (Mistral, cursive),
+  "fantasy":    (Blackletter, fantasy)
+) !default;
+
+:root {
+  @each $key, $value in $font-family {
+    --#{$key}: #{$value};
+    }
+}
+
+@each $key, $value in $font-family {
+  @include states("#{$key}", "font-family", "var(--#{$key})");
+}
+
+/********** FONT **********/
+$font: (
+  "bold":     "weight",
+  "italic":   "style"
+) !default;
+
+@each $key, $value in $font {
+  @include states("font-#{$key}", "font-#{$value}", $key);
+}
+
+/********** TEXT ALIGN **********/
+$text-align: (
+  "center":   center,
+  "justify":  justify,
+  "right":    right,
+  "left":     left
+) !default;
+
+@each $key, $value in $text-align {
+  @include global("align-#{$key}", "text-align", $value);
+}
+
+/********** TEXT TRANSFORM **********/
+$trans: (
+  "cap":  "capitalize",
+  "up":   "uppercase",
+  "low":  "lowercase"
+) !default;
+
+@each $key, $value in $trans {
+  @include states("trans-#{$key}", "text-transform", $value);
+}
+
+/********** TEXT DECORATION LINE **********/
+$text-decoration-line: (
+  "none":     none,
+  "under":    underline,
+  "over":     overline,
+  "through":  line-through
+) !default;
+
+@each $key, $value in $text-decoration-line {
+  @include states("deco-#{$key}", "text-decoration-line", $value);
+}
+
+/********** TEXT DECORATION STYLE **********/
+$text-decoration-style: (
+  "dash":   dashed,
+  "dot":    dotted,
+  "double": double,
+  "solid":  solid,
+  "wavy":   wavy
+) !default;
+
+@each $key, $value in $text-decoration-style {
+  @include states("deco-#{$key}", "text-decoration-style", $value);
+}
+
+/********** TEXT DECORATION COLOR **********/
+@each $color in $colors {
+  @each $key, $value in $color {
+    @include states("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
+  }
+}

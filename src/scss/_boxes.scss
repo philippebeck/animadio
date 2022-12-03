@@ -1,0 +1,274 @@
+/********** BOXES **********/
+/***************************/
+
+$box-none: (
+  "none":         "",
+  "top-none":     "-top",
+  "right-none":   "-right",
+  "bottom-none":  "-bottom",
+  "left-none":    "-left",
+) !default;
+
+$box-size: (
+  "sm":       "",
+  "md":       "",
+  "lg":       "",
+  "top-sm":   "-top",
+  "top-md":   "-top",
+  "top-lg":   "-top",
+  "right-sm": "-right",
+  "right-md": "-right",
+  "right-lg": "-right",
+  "bot-sm":   "-bottom",
+  "bot-md":   "-bottom",
+  "bot-lg":   "-bottom",
+  "left-sm":  "-left",
+  "left-md":  "-left",
+  "left-lg":  "-left"
+) !default;
+
+/********** CONTAINER **********/
+$containers: (
+  "50": 50%,
+  "60": 60%,
+  "70": 70%,
+  "80": 80%,
+  "90": 90%
+) !default;
+
+[class*="container"] {
+  --container-max-width: 100%;
+}
+
+@mixin container($key, $type, $value) {
+  [class*="container-"][class*="-#{$key}#{$type}"] {
+    max-width: #{$value};
+  }
+}
+
+[class*="container"] {
+  margin: auto;
+  max-width: var(--container-max-width);
+}
+
+@each $key, $value in $containers {
+  @include container($key, "tn", $value);
+}
+
+@each $type, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $key, $value in $containers {
+      @include container($key, $type, $value);
+    }
+  }
+}
+
+/********** MARGIN **********/
+$margin-sm: 5px   !default;
+$margin-md: 10px  !default;
+$margin-lg: 20px  !default;
+
+$margins: (
+  "none":     0,
+  "sm":       $margin-sm,
+  "md":       $margin-md,
+  "lg":       $margin-lg,
+  "top-sm":   $margin-sm,
+  "top-md":   $margin-md,
+  "top-lg":   $margin-lg,
+  "right-sm": $margin-sm,
+  "right-md": $margin-md,
+  "right-lg": $margin-lg,
+  "bot-sm":   $margin-sm,
+  "bot-md":   $margin-md,
+  "bot-lg":   $margin-lg,
+  "left-sm":  $margin-sm,
+  "left-md":  $margin-md,
+  "left-lg":  $margin-lg
+) !default;
+
+[class*="mar-"] {
+  @each $key, $value in $margins {
+    --margin-#{$key}: #{$value};
+  }
+}
+
+@each $key, $value in $box-none {
+  @include global("mar-#{$key}", "margin#{$value}", "var(--margin-none)");
+}
+
+@each $key, $value in $box-size {
+  @include global("mar-#{$key}", "margin#{$value}", "var(--margin-#{$key})");
+}
+
+/********** BORDER **********/
+$border-style: (
+  "dash":   dashed,
+  "dot":    dotted,
+  "solid":  solid,
+  "double": double,
+  "groove": groove,
+  "ridge":  ridge,
+  "in":     inset,
+  "out":    outset
+) !default;
+
+$border-width: (
+  "sm": 1px,
+  "md": 2px,
+  "lg": 5px
+) !default;
+
+$border-radius: (
+  "square": unset,
+  "curve":  5px,
+  "round":  10px,
+  "circle": 50%
+) !default;
+
+[class*="bord"] {
+  @each $key, $value in $border-width {
+    --border-width-#{$key}: #{$value};
+  }
+  @each $key, $value in $border-radius {
+    --border-radius-#{$key}: #{$value};
+  }
+}
+
+/********** BORDER STYLE **********/
+@each $key, $value in $border-style {
+  @include states("bord-#{$key}", "border-style", $value);
+}
+
+/********** BORDER WIDTH **********/
+@each $key, $value in $border-width {
+  @include states("bord-#{$key}", "border-width", $value);
+}
+
+/********** BORDER COLOR **********/
+@each $color in $colors {
+  @each $key, $value in $color {
+    @include states("bord-#{$key}", "border-color", "var(--#{$key})");
+  }
+}
+
+/********** BORDER RADIUS **********/
+@each $key, $value in $border-radius {
+  @include states("bord-#{$key}", "border-radius", $value);
+}
+
+/********** PADDING **********/
+$padding-sm:  5px   !default;
+$padding-md:  10px  !default;
+$padding-lg:  20px  !default;
+
+$paddings: (
+  "none":     0,
+  "sm":       $padding-sm,
+  "md":       $padding-md,
+  "lg":       $padding-lg,
+  "top-sm":   $padding-sm,
+  "top-md":   $padding-md,
+  "top-lg":   $padding-lg,
+  "right-sm": $padding-sm,
+  "right-md": $padding-md,
+  "right-lg": $padding-lg,
+  "bot-sm":   $padding-sm,
+  "bot-md":   $padding-md,
+  "bot-lg":   $padding-lg,
+  "left-sm":  $padding-sm,
+  "left-md":  $padding-md,
+  "left-lg":  $padding-lg
+) !default;
+
+[class*="pad-"] {
+  @each $key, $value in $paddings {
+    --padding-#{$key}: #{$value};
+  }
+}
+
+@each $key, $value in $box-none {
+  @include global("pad-#{$key}", "padding#{$value}", "var(--padding-none)");
+}
+
+@each $key, $value in $box-size {
+  @include global("pad-#{$key}", "padding#{$value}", "var(--padding-#{$key})");
+}
+
+/********** HEIGHT **********/
+$height: (
+  "sm": 10vh,
+  "md": 20vh,
+  "lg": 50vh
+) !default;
+
+[class*="height-"] {
+  @each $key, $value in $height {
+    --height-#{$key}: #{$value};
+  }
+}
+
+@each $key, $value in $height {
+  @include global("height-#{$key}", "height", "var(--height-#{$key})");
+}
+
+/********** MAX HEIGHT **********/
+[class*="max-h-"] {
+  @each $key, $value in $height {
+    --max-height-#{$key}: #{$value};
+  }
+}
+
+@each $key, $value in $height {
+  @include global("max-h-#{$key}", "max-height", "var(--max-height-#{$key})");
+}
+
+/********** MIN HEIGHT **********/
+[class*="min-h-"] {
+  @each $key, $value in $height {
+    --min-height-#{$key}: #{$value};
+  }
+}
+
+@each $key, $value in $height {
+  @include global("min-h-#{$key}", "min-height", "var(--min-height-#{$key})");
+}
+
+/********** WIDTH **********/
+$width: (
+  "sm": 10vw,
+  "md": 20vw,
+  "lg": 50vw
+) !default;
+
+[class*="width-"] {
+  @each $key, $value in $width {
+    --width-#{$key}: #{$value};
+  }
+}
+
+@each $key, $value in $width {
+  @include global("width-#{$key}", "width", "var(--width-#{$key})");
+}
+
+/********** MAX WIDTH **********/
+[class*="max-w-"] {
+  @each $key, $value in $width {
+    --max-width-#{$key}: #{$value};
+  }
+}
+
+@each $key, $value in $width {
+  @include global("max-w-#{$key}", "max-width", "var(--max-width-#{$key})");
+}
+
+/********** MIN WIDTH **********/
+[class*="min-w-"] {
+  @each $key, $value in $width {
+    --min-width-#{$key}: #{$value};
+  }
+}
+
+@each $key, $value in $width {
+  @include global("min-w-#{$key}", "min-width", "var(--min-width-#{$key})");
+}

@@ -1,0 +1,126 @@
+/********** TRANSFORM **********/
+$transforms: (
+  "slideT":   translate(0, 10vh),
+  "slideR":   translate(-10vw, 0),
+  "slideB":   translate(0, -10vh),
+  "slideL":   translate(10vw, 0),
+
+  "turn":     rotate3d(0, 0, 1, 360deg),
+  "turnX":    rotate3d(1, 0, 0, 360deg),
+  "turnY":    rotate3d(0, 1, 0, 360deg),
+  "turnXY":   rotate3d(1, 1, 0, 360deg),
+  "turnXZ":   rotate3d(1, 0, 1, 360deg),
+  "turnYZ":   rotate3d(0, 1, 1, 360deg),
+  "turn3D":   rotate3d(1, 1, 1, 360deg),
+
+  "bounce":   scale(-1, -1),
+  "grow":     scale(0.5, 0.5),
+  "shrink":   scale(1.5, 1.5),
+  "flipX":    scale(1, -1),
+  "flipY":    scale(-1, 1),
+  "openX":    scale(1, 0),
+  "openY":    scale(0, 1),
+  "flipperX": scale(0, -1),
+  "flipperY": scale(-1, 0),
+
+  "twistT":   skew(-90deg, -90deg),
+  "twistR":   skew(90deg, -90deg),
+  "twistB":   skew(90deg, 90deg),
+  "twistL":   skew(-90deg, 90deg)
+) !default;
+
+:root {
+  @each $key, $value in $transforms {
+    --#{$key}: #{$value};
+  }
+}
+
+/********** KEYFRAMES **********/
+@mixin keyframes($key) {
+  @keyframes #{$key} {
+    from {
+      transform: var(--#{$key});
+    }
+  }
+}
+
+@each $key, $value in $transforms {
+  @include keyframes($key);
+}
+
+/********** ANIMATIONS **********/
+$animation-duration: (
+  "sm": 500ms,
+  "md": 1s,
+  "lg": 2s
+) !default;
+
+$animation-timing-function: (
+  "linear": linear,
+  "in":     ease-in,
+  "out":    ease-out,
+  "inout":  ease-in-out,
+  "start":  step-start,
+  "end":    step-end
+) !default;
+
+$animation-iteration-count: (
+  "few":  2,
+  "many": 5,
+  "loop": infinite
+) !default;
+
+$animation-delay: (
+  "min":  500ms,
+  "max":  1s
+) !default;
+
+$animation-options: (
+  "duration":         $animation-duration,
+  "timing-function":  $animation-timing-function,
+  "iteration-count":  $animation-iteration-count,
+  "delay":            $animation-delay
+) !default;
+
+$animation-direction: (
+  "alt":    alternate,
+  "rev":    reverse,
+  "altrev": alternate-reverse
+) !default;
+
+/********** ANIMATION **********/
+[class*="anima-"] {
+  --animation-duration: 2s;
+
+  @each $type, $option in $animation-options {
+    @each $key, $value in $option {
+      --animation-#{$type}-#{$key}: #{$value};
+    }
+  }
+}
+
+// ********** OPTIONS MIXIN **********
+@mixin anima($class, $property, $value) {
+  .anima-#{$class} {
+    #{$property}: #{$value};
+  }
+}
+
+/********** ANIMATION **********/
+[class*="anima"] {
+  animation-duration: var(--animation-duration);
+}
+
+@each $key, $value in $transforms {
+  @include states("anima-#{$key}", "animation-name", $key);
+}
+
+@each $type, $option in $animation-options {
+  @each $key, $value in $option {
+    @include anima($key, "animation-#{$type}", "var(--animation-#{$type}-#{$key})");
+  }
+}
+
+@each $key, $value in $animation-direction {
+  @include anima($key, "animation-direction", $value);
+}

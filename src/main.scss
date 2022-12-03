@@ -2,8 +2,28 @@
 /********** ANIMADIO **********/
 /******************************/
 
-@import "scss/maps";
-@import "scss/mixins";
-@import "scss/vars";
+/*
+Summary
+
+- Colors
+- Fonts
+- Tags
+- Flex
+- Grid
+- Gap
+- Place
+- Margin
+- Border
+- Padding
+- Height
+- Width
+- Transform
+- Keyframes
+- Animation
+*/
+
+@import "scss/base";
 @import "scss/tags";
-@import "scss/classes";
+@import "scss/display";
+@import "scss/boxes";
+@import "scss/anima";
