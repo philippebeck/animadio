@@ -112,7 +112,7 @@ $animation-direction: (
 }
 
 @each $key, $value in $transforms {
-  @include states($key, "animation-name", $key);
+  @include states("anima-#{$key}", "animation-name", $key);
 }
 
 @each $type, $option in $animation-options {
