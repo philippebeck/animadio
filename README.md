@@ -10,18 +10,20 @@
 [![GitHub Top Language](https://img.shields.io/github/languages/top/philippebeck/animadio)](https://github.com/philippebeck/animadio)
 [![Code Size](https://img.shields.io/github/languages/code-size/philippebeck/animadio)](https://github.com/philippebeck/animadio/tree/master)
 
--   Six types of selectors working with hover & focus
+-   Six types of selectors, working with hover & focus for some of them
 -   **Flexbox & Grid** systems included with common options
 -   Management of **keyframes animations** & their options
 -   Complete & simple customization with directly modifiable **CSS variables**
 
 ## Summary
 
--  [Package](#package)  
--  [CDN](#cdn)  
--  [Download](#download)  
--  [Content](#content)  
--  [Documentation](#documentation)  
+- [Animadio CSS Library](#animadio-css-library)
+  - [Summary](#summary)
+  - [Package](#package)
+  - [CDN](#cdn)
+  - [Download](#download)
+  - [Content](#content)
+  - [Documentation](#documentation)
 
 ---
 
@@ -33,8 +35,8 @@
 
 ## CDN 
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@5.2.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@5.2.0/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@5.2.0/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@5.2.0/dist/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@5.3.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@5.3.0/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@5.3.0/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@5.3.0/dist/animadio.min.css)  
 
 ---
 
@@ -54,6 +56,6 @@
 
 ## Documentation
 
-Animadio documentation has been updated for v5 !
+Animadio documentation has not been update...
 
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg?label=https://animadio.org)](https://animadio.org)
