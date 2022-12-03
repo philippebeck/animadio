@@ -1,9 +1,7 @@
 /********** TAGS **********/
 * {
-  --all-box-sizing: border-box;
   --target-margins: 7rem;
-
-  box-sizing: var(--all-box-sizing);
+  box-sizing: border-box;
 
   &:target {
     padding-top: var(--target-margins);
@@ -12,11 +10,9 @@
 }
 
 html {
-  --html-scroll-behavior: smooth;
   --html-font-size: 62.5%;
-
   font-size: var(--html-font-size);
-  scroll-behavior: var(--html-scroll-behavior);
+  scroll-behavior: smooth;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -31,7 +27,6 @@ body {
   --body-margin: auto;
   --body-max-width: 2000px;
   --body-padding: 0;
-
   margin: var(--body-margin);
   padding: var(--body-padding);
   max-width: var(--body-max-width);
@@ -42,13 +37,11 @@ body {
 
 main {
   --main-text-align: center;
-
   text-align: var(--main-text-align);
 }
 
 article {
   --article-margin-bottom: 20px;
-
   margin-bottom: var(--article-margin-bottom);
 }
 
@@ -82,11 +75,9 @@ h3,
 h4,
 h5,
 h6 {
-  --title-font-family: var(--serif);
   --title-text-align: center;
   --title-text-transform: capitalize;
-
-  font-family: var(--title-font-family);
+  font-family: var(--serif);
   text-align: var(--title-text-align);
   text-transform: var(--title-text-transform);
   font-size: var(--title-font-size);
@@ -95,7 +86,6 @@ h6 {
 a {
   --link-outline: 0;
   --link-text-decoration: none;
-
   text-decoration: var(--link-text-decoration);
   outline: var(--link-outline);
 }
@@ -104,7 +94,6 @@ ul {
   --list-margin: 0 0 10px;
   --list-padding: 0;
   --list-style: none;
-
   margin: var(--list-margin);
   padding: var(--list-padding);
   list-style: var(--list-style);
@@ -115,7 +104,6 @@ table {
   --table-margin: auto;
   --table-text-align: center;
   --table-vertical-align: middle;
-
   margin: var(--table-margin);
   border-collapse: var(--table-border-collapse);
   text-align: var(--table-text-align);
@@ -130,7 +118,6 @@ pre {
   --code-padding: 10px;
   --code-text-align: initial;
   --code-width: 100%;
-
   font-size: 1em;
   overflow: var(--code-overflow);
   margin: var(--code-margin);
@@ -142,7 +129,6 @@ pre {
 
 figure {
   --figure-margin: 0;
-
   margin: var(--figure-margin);
 }
 
@@ -151,7 +137,6 @@ video {
   --img-max-width: 100%;
   --img-height: auto;
   --img-object-fit: contain;
-
   max-width: var(--img-max-width);
   height: var(--img-height);
   object-fit: var(--img-object-fit);
@@ -162,4 +147,5 @@ button,
 [type="reset"],
 [type="submit"] {
   --button-cursor: pointer;
+  cursor: var(--button-cursor);
 }
