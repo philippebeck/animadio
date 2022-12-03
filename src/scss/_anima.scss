@@ -50,9 +50,9 @@ $transforms: (
 
 /********** ANIMATIONS **********/
 $animation-duration: (
-  "sm": 1s,
-  "md": 2s,
-  "lg": 3s
+  "sm": 500ms,
+  "md": 1s,
+  "lg": 2s
 ) !default;
 
 $animation-timing-function: (
@@ -66,13 +66,13 @@ $animation-timing-function: (
 
 $animation-iteration-count: (
   "few":  2,
-  "many": 4,
+  "many": 5,
   "loop": infinite
 ) !default;
 
 $animation-delay: (
-  "min":  1s,
-  "max":  2s
+  "min":  500ms,
+  "max":  1s
 ) !default;
 
 $animation-options: (
