@@ -135,24 +135,24 @@ $border-radius: (
   }
 }
 
-/* Border Style */
+/********** BORDER STYLE **********/
 @each $key, $value in $border-style {
   @include states("bord-#{$key}", "border-style", $value);
 }
 
-/* Border Width */
+/********** BORDER WIDTH **********/
 @each $key, $value in $border-width {
   @include states("bord-#{$key}", "border-width", $value);
 }
 
-/* Border Color */
+/********** BORDER COLOR **********/
 @each $color in $colors {
   @each $key, $value in $color {
     @include states("bord-#{$key}", "border-color", "var(--#{$key})");
   }
 }
 
-/* Border Radius */
+/********** BORDER RADIUS **********/
 @each $key, $value in $border-radius {
   @include states("bord-#{$key}", "border-radius", $value);
 }
