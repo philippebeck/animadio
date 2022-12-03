@@ -1,80 +1,54 @@
 /********** DISPLAY **********/
 /*****************************/
 
-$displays: (
-  "hide":     none,
-  "flex":     flex,
-  "block":    block,
-  "inline":   inline,
-  "inflex":   inline-flex,
-  "inblock":  inline-block
-) !default;
-
-@each $key, $value in $displays {
-  @include global($key, "display", $value);
-}
-
-@each $type, $breakpoint in $breakpoints {
-  @media (min-width: $breakpoint) {
-    @each $key, $value in $displays {
-      @include global("#{$key}-#{$type}", "display", $value);
-    }
-  }
-}
-
-/********** FLEX **********/
-[class*="flex"],
-[class*="col"],
-[class*="row"] {
-  --flex-place-content: center;
-}
-
-[class*="col"] {
-  --column-padding: 0 10px;
-}
-
-[class*="row"] {
-  --row-padding: 10px 0;
-}
-
-.flex,
-.col,
-.row,
-.col-rev,
-.row-rev {
+/********** FLEX CONTAINER **********/
+[class*="flex"] {
   display: flex;
-  place-content: var(--flex-place-content);
 }
 
-.col,
-.col-rev {
-  padding: var(--column-padding);
-}
-
-.row,
-.row-rev {
-  padding: var(--row-padding);
-}
-
-.flex {
-  flex-wrap: wrap;
-}
-
-.col {
+[class*="flex-"][class*="-col"] {
   flex-direction: column;
 }
 
-.row {
-  flex-direction: row;
-}
-
-.col-rev {
+[class*="flex-"][class*="-col-rev"] {
   flex-direction: column-reverse;
 }
 
-.row-rev {
+[class*="flex-"][class*="-row"] {
+  flex-direction: row;
+}
+
+[class*="flex-"][class*="-row-rev"] {
   flex-direction: row-reverse;
 }
+
+[class*="flex-"][class*="-wrap"] {
+  flex-wrap: wrap;
+}
+
+[class*="flex-"][class*="-wrap-rev"] {
+  flex-wrap: wrap-reverse;
+}
+
+/********** FLEX ITEM **********/
+@for $i from 1 through 4 {
+  [class*="flex-"][class*="-order#{$i}"] {
+    order: #{$i};
+  }
+}
+
+@for $i from 1 through 4 {
+  [class*="flex-"][class*="-grow#{$i}"] {
+    flex-grow: #{$i};
+  }
+}
+
+@for $i from 1 through 4 {
+  [class*="flex-"][class*="-shrink#{$i}"] {
+    flex-shrink: #{$i};
+  }
+}
+
 
 /********** GRID **********/
 [class*="grid"] {
