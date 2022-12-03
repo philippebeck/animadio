@@ -28,10 +28,13 @@ html {
 body {
   --body-font-size: 2rem;
   --body-line-height: 1.6;
+  --body-margin: auto;
+  --body-max-width: 2000px;
   --body-padding: 0;
 
-  margin: 0;
+  margin: var(--body-margin);
   padding: var(--body-padding);
+  max-width: var(--body-max-width);
   line-height: var(--body-line-height);
   font-size: var(--body-font-size);
   font-family: var(--sans-serif);
