@@ -84,14 +84,14 @@ $colors: $hues, $grayscale;
   }
 }
 
-/* COLOR */
+/********** COLOR **********/
 @each $color in $colors {
   @each $key, $value in $color {
     @include states(#{$key}, "color", "var(--#{$key})");
   }
 }
 
-/* BACKGROUND COLOR */
+/********** BACKGROUND COLOR **********/
 @each $color in $colors {
   @each $key, $value in $color {
     @include states("bg-#{$key}", "background-color", "var(--#{$key})");
@@ -100,7 +100,7 @@ $colors: $hues, $grayscale;
   }
 }
 
-/********** FONT **********/
+/********** FONT FAMILY **********/
 $font-family: (
   "sans-serif": (Helvetica, sans-serif),
   "serif":      (Times, serif),
@@ -132,7 +132,7 @@ $font: (
 }
 
 
-// ********** TEXT **********
+/********** TEXT ALIGN **********/
 $text-align: (
   "center":   center,
   "justify":  justify,
@@ -144,6 +144,7 @@ $text-align: (
   @include global("align-#{$key}", "text-align", $value);
 }
 
+/********** TEXT TRANSFORM **********/
 $trans: (
   "cap":  "capitalize",
   "up":   "uppercase",
@@ -154,7 +155,7 @@ $trans: (
   @include states("trans-#{$key}", "text-transform", $value);
 }
 
-// ********** TEXT DECORATION **********
+/********** TEXT DECORATION LINE **********/
 $text-decoration-line: (
   "none":     none,
   "under":    underline,
@@ -166,6 +167,7 @@ $text-decoration-line: (
   @include states("deco-#{$key}", "text-decoration-line", $value);
 }
 
+/********** TEXT DECORATION STYLE **********/
 $text-decoration-style: (
   "dash":   dashed,
   "dot":    dotted,
@@ -178,6 +180,7 @@ $text-decoration-style: (
   @include states("deco-#{$key}", "text-decoration-style", $value);
 }
 
+/********** TEXT DECORATION COLOR **********/
 @each $color in $colors {
   @each $key, $value in $color {
     @include states("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
