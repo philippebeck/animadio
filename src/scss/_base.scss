@@ -7,7 +7,7 @@ $breakpoints: (
   "wd": 1600px
 ) !default;
 
-// ********** GLOBAL **********
+// ********** MAIN MIXINS **********
 @mixin global($class, $property, $value) {
   .#{$class},
   .#{$class}-all > * {
@@ -15,7 +15,6 @@ $breakpoints: (
   }
 }
 
-// ********** STATES **********
 @mixin states($class, $property, $value) {
   .#{$class},
   .#{$class}-all > *,
@@ -28,5 +27,152 @@ $breakpoints: (
   .#{$class}-many:hover > *,
   .#{$class}-many:focus > * {
     #{$property}: #{$value};
+  }
+}
+
+/********** COLORS **********/
+$hues: (
+  "red":      (  0, 100%, 50%),
+  "orange":   ( 30, 100%, 50%),
+  "yellow":   ( 60, 100%, 50%),
+  "lime":     ( 90, 100%, 50%),
+  "green":    (120, 100%, 50%),
+  "aqua":     (150, 100%, 50%),
+  "cyan":     (180, 100%, 50%),
+  "sky":      (210, 100%, 50%),
+  "blue":     (240, 100%, 50%),
+  "indigo":   (270, 100%, 50%),
+  "magenta":  (300, 100%, 50%),
+  "pink":     (330, 100%, 50%)
+) !default;
+
+$grayscale: (
+  "black":  (0, 0%,   0%),
+  "slate":  (0, 0%,  25%),
+  "gray":   (0, 0%,  50%),
+  "silver": (0, 0%,  75%),
+  "white":  (0, 0%, 100%)
+) !default;
+
+$colors: $hues, $grayscale;
+
+:root {
+  /* hsl values */
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --#{$key}-hsl: #{$value};
+    }
+  }
+
+  /* opaque colors */
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --#{$key}: hsl(var(--#{$key}-hsl));
+    }
+  }
+
+  /* opacity */
+  --dark: 0.8;
+  --light: 0.2;
+
+  /* transparent colors */
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --#{$key}-dark: hsla(var(--#{$key}-hsl), var(--dark));
+      --#{$key}-light: hsla(var(--#{$key}-hsl), var(--light));
+    }
+  }
+}
+
+/* COLOR */
+@each $color in $colors {
+  @each $key, $value in $color {
+    @include states(#{$key}, "color", "var(--#{$key})");
+  }
+}
+
+/* BACKGROUND COLOR */
+@each $color in $colors {
+  @each $key, $value in $color {
+    @include states("bg-#{$key}", "background-color", "var(--#{$key})");
+    @include states("bg-#{$key}-dark", "background-color", "var(--#{$key}-dark)");
+    @include states("bg-#{$key}-light", "background-color", "var(--#{$key}-light)");
+  }
+}
+
+/********** FONT **********/
+$font: (
+  "bold":     "weight",
+  "italic":   "style",
+  "oblique":  "style"
+) !default;
+
+@each $key, $value in $font {
+  @include states("font-#{$key}", "font-#{$value}", $key);
+}
+
+$font-family: sans-serif, serif, monospace, cursive, fantasy;
+
+:root {
+  @each $key in $font-family {
+    --#{$key}: #{$key};
+    }
+}
+
+@each $key in $font-family {
+  .font-#{$key} {
+    font-family: var(--font-family-#{$key});
+  }
+}
+
+// ********** TEXT **********
+$text-align: (
+  "center":   center,
+  "justify":  justify,
+  "right":    right,
+  "left":     left
+) !default;
+
+@each $key, $value in $text-align {
+  @include global("align-#{$key}", "text-align", $value);
+}
+
+$trans: (
+  "cap":  "capitalize",
+  "up":   "uppercase",
+  "low":  "lowercase"
+) !default;
+
+@each $key, $value in $trans {
+  @include states("trans-#{$key}", "text-transform", $value);
+}
+
+// ********** TEXT DECORATION **********
+$text-decoration-line: (
+  "none":     none,
+  "under":    underline,
+  "over":     overline,
+  "through":  line-through
+) !default;
+
+@each $key, $value in $text-decoration-line {
+  @include states("deco-#{$key}", "text-decoration-line", $value);
+}
+
+$text-decoration-style: (
+  "dash":   dashed,
+  "dot":    dotted,
+  "double": double,
+  "solid":  solid,
+  "wavy":   wavy
+) !default;
+
+@each $key, $value in $text-decoration-style {
+  @include states("deco-#{$key}", "text-decoration-style", $value);
+}
+
+@each $color in $colors {
+  @each $key, $value in $color {
+    @include states("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
   }
 }
