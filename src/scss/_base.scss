@@ -117,11 +117,10 @@ $font-family: (
 }
 
 @each $key, $value in $font-family {
-  .#{$key} {
-    font-family: var(--font-family-#{$key});
-  }
+  @include global("#{$key}", "font-family", "var(--#{$key})");
 }
 
+/********** FONT **********/
 $font: (
   "bold":     "weight",
   "italic":   "style",
