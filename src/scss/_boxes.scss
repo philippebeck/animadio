@@ -114,9 +114,9 @@ $border-style: (
 ) !default;
 
 $border-width: (
-  "sm": thin,
-  "md": medium,
-  "lg": thick
+  "sm": 1px,
+  "md": 2px,
+  "lg": 5px
 ) !default;
 
 $border-radius: (
@@ -135,14 +135,24 @@ $border-radius: (
   }
 }
 
+/* Border Style */
 @each $key, $value in $border-style {
   @include states("bord-#{$key}", "border-style", $value);
 }
 
+/* Border Width */
 @each $key, $value in $border-width {
   @include states("bord-#{$key}", "border-width", $value);
 }
 
+/* Border Color */
+@each $color in $colors {
+  @each $key, $value in $color {
+    @include states("bord-#{$key}", "border-color", "var(--#{$key})");
+  }
+}
+
+/* Border Radius */
 @each $key, $value in $border-radius {
   @include states("bord-#{$key}", "border-radius", $value);
 }
@@ -186,14 +196,10 @@ $paddings: (
 }
 
 /********** HEIGHT **********/
-$height-sm: 10vh  !default;
-$height-md: 20vh  !default;
-$height-lg: 50vh  !default;
-
 $height: (
-  "sm": $height-sm,
-  "md": $height-md,
-  "lg": $height-lg
+  "sm": 10vh,
+  "md": 20vh,
+  "lg": 50vh
 ) !default;
 
 [class*="height-"] {
@@ -206,47 +212,33 @@ $height: (
   @include global("height-#{$key}", "height", "var(--height-#{$key})");
 }
 
-$max-height: (
-  "sm": $height-sm,
-  "md": $height-md,
-  "lg": $height-lg
-) !default;
-
+/********** MAX HEIGHT **********/
 [class*="max-h-"] {
-  @each $key, $value in $max-height {
+  @each $key, $value in $height {
     --max-height-#{$key}: #{$value};
   }
 }
 
-@each $key, $value in $max-height {
+@each $key, $value in $height {
   @include global("max-h-#{$key}", "max-height", "var(--max-height-#{$key})");
 }
 
-$min-height: (
-  "sm": $height-sm,
-  "md": $height-md,
-  "lg": $height-lg
-) !default;
-
+/********** MIN HEIGHT **********/
 [class*="min-h-"] {
-  @each $key, $value in $min-height {
+  @each $key, $value in $height {
     --min-height-#{$key}: #{$value};
   }
 }
 
-@each $key, $value in $min-height {
+@each $key, $value in $height {
   @include global("min-h-#{$key}", "min-height", "var(--min-height-#{$key})");
 }
 
 /********** WIDTH **********/
-$width-sm:  10vw  !default;
-$width-md:  20vw  !default;
-$width-lg:  50vw  !default;
-
 $width: (
-  "sm": $width-sm,
-  "md": $width-md,
-  "lg": $width-lg
+  "sm": 10vw,
+  "md": 20vw,
+  "lg": 50vw
 ) !default;
 
 [class*="width-"] {
@@ -259,34 +251,24 @@ $width: (
   @include global("width-#{$key}", "width", "var(--width-#{$key})");
 }
 
-$max-width: (
-  "sm": $width-sm,
-  "md": $width-md,
-  "lg": $width-lg
-) !default;
-
+/********** MAX WIDTH **********/
 [class*="max-w-"] {
-  @each $key, $value in $max-width {
+  @each $key, $value in $width {
     --max-width-#{$key}: #{$value};
   }
 }
 
-@each $key, $value in $max-width {
+@each $key, $value in $width {
   @include global("max-w-#{$key}", "max-width", "var(--max-width-#{$key})");
 }
 
-$min-width: (
-  "sm": $width-sm,
-  "md": $width-md,
-  "lg": $width-lg
-) !default;
-
+/********** MIN WIDTH **********/
 [class*="min-w-"] {
-  @each $key, $value in $min-width {
+  @each $key, $value in $width {
     --min-width-#{$key}: #{$value};
   }
 }
 
-@each $key, $value in $min-width {
+@each $key, $value in $width {
   @include global("min-w-#{$key}", "min-width", "var(--min-width-#{$key})");
 }
