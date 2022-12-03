@@ -101,6 +101,27 @@ $colors: $hues, $grayscale;
 }
 
 /********** FONT **********/
+$font-family: (
+  "sans-serif": (Helvetica, sans-serif),
+  "serif":      (Times, serif),
+  "monospace":  (Courier, monospace),
+  "cursive":    (Mistral, cursive),
+  "fantasy":    (Blackletter, fantasy)
+) !default;
+
+
+:root {
+  @each $key, $value in $font-family {
+    --#{$key}: #{$value};
+    }
+}
+
+@each $key, $value in $font-family {
+  .#{$key} {
+    font-family: var(--font-family-#{$key});
+  }
+}
+
 $font: (
   "bold":     "weight",
   "italic":   "style",
@@ -111,19 +132,6 @@ $font: (
   @include states("font-#{$key}", "font-#{$value}", $key);
 }
 
-$font-family: sans-serif, serif, monospace, cursive, fantasy;
-
-:root {
-  @each $key in $font-family {
-    --#{$key}: #{$key};
-    }
-}
-
-@each $key in $font-family {
-  .font-#{$key} {
-    font-family: var(--font-family-#{$key});
-  }
-}
 
 // ********** TEXT **********
 $text-align: (
