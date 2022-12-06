@@ -117,8 +117,8 @@ $border-width: (
 
 $border-radius: (
   "square": unset,
-  "curve":  5px,
-  "round":  10px,
+  "curve":  20px,
+  "round":  50px,
   "circle": 50%
 ) !default;
 
@@ -129,6 +129,7 @@ $border-radius: (
   @each $key, $value in $border-radius {
     --border-radius-#{$key}: #{$value};
   }
+  border-style: solid;
 }
 
 /********** BORDER STYLE **********/
