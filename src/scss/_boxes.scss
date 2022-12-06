@@ -1,6 +1,4 @@
-/********** BOXES **********/
-/***************************/
-
+// ********** BOXES **********
 $box-none: (
   "none":         "",
   "top-none":     "-top",
@@ -38,17 +36,15 @@ $containers: (
 
 [class*="container"] {
   --container-max-width: 100%;
+
+  margin: auto;
+  max-width: var(--container-max-width);
 }
 
 @mixin container($key, $type, $value) {
   [class*="container-"][class*="-#{$key}#{$type}"] {
     max-width: #{$value};
   }
-}
-
-[class*="container"] {
-  margin: auto;
-  max-width: var(--container-max-width);
 }
 
 @each $key, $value in $containers {

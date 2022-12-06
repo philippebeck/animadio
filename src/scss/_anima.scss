@@ -48,7 +48,7 @@ $transforms: (
   @include keyframes($key);
 }
 
-/********** ANIMATIONS **********/
+/********** ANIMATION **********/
 $animation-duration: (
   "sm": 500ms,
   "md": 1s,
@@ -88,7 +88,6 @@ $animation-direction: (
   "altrev": alternate-reverse
 ) !default;
 
-/********** ANIMATION **********/
 [class*="anima-"] {
   --animation-duration: 2s;
 
@@ -97,6 +96,8 @@ $animation-direction: (
       --animation-#{$type}-#{$key}: #{$value};
     }
   }
+
+  animation-duration: var(--animation-duration);
 }
 
 // ********** OPTIONS MIXIN **********
@@ -106,15 +107,12 @@ $animation-direction: (
   }
 }
 
-/********** ANIMATION **********/
-[class*="anima"] {
-  animation-duration: var(--animation-duration);
-}
-
+/********** ANIMATION NAME **********/
 @each $key, $value in $transforms {
   @include states("anima-#{$key}", "animation-name", $key);
 }
 
+/********** ANIMATION OPTIONS **********/
 @each $type, $option in $animation-options {
   @each $key, $value in $option {
     @include anima($key, "animation-#{$type}", "var(--animation-#{$type}-#{$key})");
