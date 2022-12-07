@@ -32,18 +32,13 @@ $breakpoints: (
 
 /********** COLORS **********/
 $hues: (
-  "red":      (  0,  53%, 58%), // IndianRed
+  "red":      (348,  83%, 47%), // Crimson
   "orange":   ( 33, 100%, 50%), // DarkOrange
   "yellow":   ( 51, 100%, 50%), // Gold
-  "lime":     ( 90, 100%, 49%), // LawnGreen
-  "green":    (120,  61%, 34%), // ForestGreen
-  "spring":   (157, 100%, 49%), // MediumSpringGreen
+  "green":    (120,  61%, 50%), // LimeGreen
   "sky":      (195, 100%, 50%), // DeepSkyBlue
   "blue":     (210, 100%, 56%), // DodgerBlue
-  "navy":     (240, 100%, 40%), // MediumBlue
   "violet":   (271,  76%, 53%), // BlueViolet
-  "purple":   (300, 100%, 25%), // Purple
-  "pink":     (328, 100%, 54%)  // DeepPink
 ) !default;
 
 $grayscale: (
