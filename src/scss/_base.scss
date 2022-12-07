@@ -150,7 +150,6 @@ $trans: (
 /********** TEXT DECORATION LINE **********/
 $text-decoration-line: (
   "none":     none,
-  "under":    underline,
   "over":     overline,
   "through":  line-through
 ) !default;
@@ -168,7 +167,6 @@ $text-decoration-style: (
   "dash":   dashed,
   "dot":    dotted,
   "double": double,
-  "solid":  solid,
   "wavy":   wavy
 ) !default;
 
