@@ -101,7 +101,6 @@ $margins: (
 $border-style: (
   "dash":   dashed,
   "dot":    dotted,
-  "solid":  solid,
   "double": double,
   "groove": groove,
   "ridge":  ridge,
@@ -116,7 +115,6 @@ $border-width: (
 ) !default;
 
 $border-radius: (
-  "square": unset,
   "curve":  20px,
   "round":  50px,
   "circle": 50%
