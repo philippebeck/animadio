@@ -128,12 +128,12 @@ $font: (
 $text-align: (
   "center":   center,
   "justify":  justify,
-  "right":    right,
-  "left":     left
+  "left":     left,
+  "right":    right
 ) !default;
 
 @each $key, $value in $text-align {
-  @include global("align-#{$key}", "text-align", $value);
+  @include global("#{$key}", "text-align", $value);
 }
 
 /********** TEXT TRANSFORM **********/
@@ -144,7 +144,7 @@ $trans: (
 ) !default;
 
 @each $key, $value in $trans {
-  @include states("trans-#{$key}", "text-transform", $value);
+  @include states("#{$key}", "text-transform", $value);
 }
 
 /********** TEXT DECORATION LINE **********/
