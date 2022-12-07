@@ -190,9 +190,9 @@ $paddings: (
 
 /********** HEIGHT **********/
 $height: (
-  "sm": 10vh,
-  "md": 20vh,
-  "lg": 50vh
+  "sm": 20%,
+  "md": 50%,
+  "lg": 100%
 ) !default;
 
 [class*="height-"] {
@@ -229,9 +229,9 @@ $height: (
 
 /********** WIDTH **********/
 $width: (
-  "sm": 10vw,
-  "md": 20vw,
-  "lg": 50vw
+  "sm": 20%,
+  "md": 50%,
+  "lg": 100%
 ) !default;
 
 [class*="width-"] {
