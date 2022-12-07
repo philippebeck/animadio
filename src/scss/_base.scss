@@ -155,6 +155,10 @@ $text-decoration-line: (
   "through":  line-through
 ) !default;
 
+[class*="deco"] {
+  text-decoration-line: underline;
+}
+
 @each $key, $value in $text-decoration-line {
   @include states("deco-#{$key}", "text-decoration-line", $value);
 }
@@ -173,8 +177,6 @@ $text-decoration-style: (
 }
 
 /********** TEXT DECORATION COLOR **********/
-@each $color in $colors {
-  @each $key, $value in $color {
-    @include states("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
-  }
+@each $key, $value in $hues {
+  @include states("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
 }
