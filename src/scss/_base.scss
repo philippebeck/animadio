@@ -101,7 +101,7 @@ $font-family: (
   "serif":      (Times, serif),
   "monospace":  (Courier, monospace),
   "cursive":    (Mistral, cursive),
-  "fantasy":    (Blackletter, fantasy)
+  "fantasy":    (Impact, fantasy)
 ) !default;
 
 :root {
@@ -121,7 +121,7 @@ $font: (
 ) !default;
 
 @each $key, $value in $font {
-  @include states("font-#{$key}", "font-#{$value}", $key);
+  @include states("#{$key}", "font-#{$value}", $key);
 }
 
 /********** TEXT ALIGN **********/
