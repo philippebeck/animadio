@@ -143,10 +143,8 @@ $border-radius: (
 }
 
 /********** BORDER COLOR **********/
-@each $color in $colors {
-  @each $key, $value in $color {
-    @include states("bord-#{$key}", "border-color", "var(--#{$key})");
-  }
+@each $key, $value in $hues {
+  @include states("bord-#{$key}", "border-color", "var(--#{$key})");
 }
 
 /********** BORDER RADIUS **********/
