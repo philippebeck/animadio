@@ -1,7 +1,7 @@
 # [Animadio CSS Library](https://animadio.org)
 
 [![NPM Version](https://badgen.net/npm/v/animadio)](https://www.npmjs.com/package/animadio)
-[![NPM Downloads](https://badgen.net/npm/dt/animadio)](https://www.npmjs.com/package/animadio)
+[![NPM Downloads](https://badgen.net/npm/dy/animadio)](https://www.npmjs.com/package/animadio)
 [![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/animadio)](https://www.jsdelivr.com/package/npm/animadio)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/philippebeck/animadio.svg?label=Last+Commit)](https://github.com/philippebeck/animadio/commits/master)
 
@@ -35,8 +35,8 @@
 
 ## CDN 
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@5.3.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@5.3.0/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@5.3.0/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@5.3.0/dist/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@5.4.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@5.4.0/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@5.4.0/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@5.4.0/dist/animadio.min.css)  
 
 ---
 

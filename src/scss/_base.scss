@@ -32,25 +32,20 @@ $breakpoints: (
 
 /********** COLORS **********/
 $hues: (
-  "red":      (  0, 100%, 50%),
-  "orange":   ( 30, 100%, 50%),
-  "yellow":   ( 60, 100%, 50%),
-  "lime":     ( 90, 100%, 50%),
-  "green":    (120, 100%, 50%),
-  "aqua":     (150, 100%, 50%),
-  "cyan":     (180, 100%, 50%),
-  "sky":      (210, 100%, 50%),
-  "blue":     (240, 100%, 50%),
-  "indigo":   (270, 100%, 50%),
-  "magenta":  (300, 100%, 50%),
-  "pink":     (330, 100%, 50%)
+  "red":      (348,  83%, 47%), // Crimson
+  "orange":   ( 33, 100%, 50%), // DarkOrange
+  "yellow":   ( 51, 100%, 50%), // Gold
+  "green":    (120,  61%, 50%), // LimeGreen
+  "sky":      (195, 100%, 50%), // DeepSkyBlue
+  "blue":     (210, 100%, 56%), // DodgerBlue
+  "violet":   (271,  76%, 53%), // BlueViolet
+  "pink":     (328, 100%, 54%)  // DeepPink
 ) !default;
 
 $grayscale: (
   "black":  (0, 0%,   0%),
-  "slate":  (0, 0%,  25%),
-  "gray":   (0, 0%,  50%),
-  "silver": (0, 0%,  75%),
+  "gray":   (0, 0%,  33%),
+  "silver": (0, 0%,  67%),
   "white":  (0, 0%, 100%)
 ) !default;
 
@@ -106,7 +101,7 @@ $font-family: (
   "serif":      (Times, serif),
   "monospace":  (Courier, monospace),
   "cursive":    (Mistral, cursive),
-  "fantasy":    (Blackletter, fantasy)
+  "fantasy":    (Impact, fantasy)
 ) !default;
 
 :root {
@@ -126,19 +121,19 @@ $font: (
 ) !default;
 
 @each $key, $value in $font {
-  @include states("font-#{$key}", "font-#{$value}", $key);
+  @include states("#{$key}", "font-#{$value}", $key);
 }
 
 /********** TEXT ALIGN **********/
 $text-align: (
   "center":   center,
   "justify":  justify,
-  "right":    right,
-  "left":     left
+  "left":     left,
+  "right":    right
 ) !default;
 
 @each $key, $value in $text-align {
-  @include global("align-#{$key}", "text-align", $value);
+  @include global("#{$key}", "text-align", $value);
 }
 
 /********** TEXT TRANSFORM **********/
@@ -149,16 +144,19 @@ $trans: (
 ) !default;
 
 @each $key, $value in $trans {
-  @include states("trans-#{$key}", "text-transform", $value);
+  @include states("#{$key}", "text-transform", $value);
 }
 
 /********** TEXT DECORATION LINE **********/
 $text-decoration-line: (
   "none":     none,
-  "under":    underline,
   "over":     overline,
   "through":  line-through
 ) !default;
+
+[class*="deco"] {
+  text-decoration-line: underline;
+}
 
 @each $key, $value in $text-decoration-line {
   @include states("deco-#{$key}", "text-decoration-line", $value);
@@ -169,7 +167,6 @@ $text-decoration-style: (
   "dash":   dashed,
   "dot":    dotted,
   "double": double,
-  "solid":  solid,
   "wavy":   wavy
 ) !default;
 
@@ -178,8 +175,6 @@ $text-decoration-style: (
 }
 
 /********** TEXT DECORATION COLOR **********/
-@each $color in $colors {
-  @each $key, $value in $color {
-    @include states("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
-  }
+@each $key, $value in $hues {
+  @include states("deco-#{$key}", "text-decoration-color", "var(--#{$key})");
 }

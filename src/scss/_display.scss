@@ -1,7 +1,4 @@
-/********** DISPLAY **********/
-/*****************************/
-
-/********** FLEX CONTAINER **********/
+/********** FLEX **********/
 [class*="flex"] {
   display: flex;
 }
@@ -54,18 +51,17 @@
 [class*="grid"] {
   --grid-max-width: 100vw;
   --grid-margin: auto;
+
+  display: grid;
+  max-width: var(--grid-max-width);
+  margin: var(--grid-margin);
 }
 
+/********** GRID TEMPLATE **********/
 @mixin grid($column, $key) {
   [class*="grid-"][class*="-#{$column}#{$key}"] {
     grid-template: auto/repeat(#{$column}, auto);
   }
-}
-
-[class*="grid"] {
-  display: grid;
-  max-width: var(--grid-max-width);
-  margin: var(--grid-margin);
 }
 
 @for $i from 2 to 13 {

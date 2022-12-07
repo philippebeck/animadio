@@ -5,21 +5,31 @@
 /*
 Summary
 
-- Colors
-- Fonts
-- Tags
-- Flex
-- Grid
-- Gap
-- Place
-- Margin
-- Border
-- Padding
-- Height
-- Width
-- Transform
-- Keyframes
-- Animation
+base {
+  colors
+  fonts
+}
+tags { 
+  tags
+}
+display {
+  flex
+  grid
+  gap
+  place
+}
+boxes {
+  margin
+  border
+  padding
+  height
+  width
+}
+anima {
+  transform
+  keyframes
+  animation
+}
 */
 
 @import "scss/base";
