@@ -60,27 +60,14 @@ $containers: (
 }
 
 /********** MARGIN **********/
-$margin-sm: 5px   !default;
-$margin-md: 10px  !default;
-$margin-lg: 20px  !default;
-
 $margins: (
-  "none":     0,
-  "sm":       $margin-sm,
-  "md":       $margin-md,
-  "lg":       $margin-lg,
-  "top-sm":   $margin-sm,
-  "top-md":   $margin-md,
-  "top-lg":   $margin-lg,
-  "right-sm": $margin-sm,
-  "right-md": $margin-md,
-  "right-lg": $margin-lg,
-  "bot-sm":   $margin-sm,
-  "bot-md":   $margin-md,
-  "bot-lg":   $margin-lg,
-  "left-sm":  $margin-sm,
-  "left-md":  $margin-md,
-  "left-lg":  $margin-lg
+  "none": 0,
+  "tn":   2px,
+  "sm":   5px,
+  "md":   10px,
+  "lg":   20px,
+  "xl":   50px,
+  "wd":   100px
 ) !default;
 
 [class*="mar-"] {
