@@ -139,7 +139,7 @@ $text-align: (
 ) !default;
 
 @each $key, $value in $text-align {
-  @include global("#{$key}", "text-align", $value);
+  @include default("#{$key}", "text-align", $value);
 }
 
 /********** TEXT TRANSFORM **********/

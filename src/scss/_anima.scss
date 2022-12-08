@@ -115,10 +115,10 @@ $animation-direction: (
 /********** ANIMATION OPTIONS **********/
 @each $type, $option in $animation-options {
   @each $key, $value in $option {
-    @include anima($key, "animation-#{$type}", "var(--animation-#{$type}-#{$key})");
+    @include default("anima-#{$key}", "animation-#{$type}", "var(--animation-#{$type}-#{$key})");
   }
 }
 
 @each $key, $value in $animation-direction {
-  @include anima($key, "animation-direction", $value);
+  @include default("anima-#{$key}", "animation-direction", $value);
 }
