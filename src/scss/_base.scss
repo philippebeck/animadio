@@ -8,6 +8,12 @@ $breakpoints: (
 ) !default;
 
 // ********** MAIN MIXINS **********
+@mixin default($class, $property, $value) {
+  .#{$class} {
+      #{$property}: #{$value};
+  }
+}
+
 @mixin global($class, $property, $value) {
   .#{$class},
   .#{$class}-all > * {
