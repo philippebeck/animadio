@@ -150,12 +150,8 @@ $paddings: (
   }
 }
 
-@each $key, $value in $box-none {
-  @include global("pad-#{$key}", "padding#{$value}", "var(--padding-none)");
-}
-
-@each $key, $value in $box-size {
-  @include global("pad-#{$key}", "padding#{$value}", "var(--padding-#{$key})");
+@each $key, $value in $paddings {
+  @include global("pad-#{$key}", "padding", "var(--padding-#{$key})");
 }
 
 /********** HEIGHT **********/
