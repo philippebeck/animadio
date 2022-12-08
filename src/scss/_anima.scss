@@ -100,13 +100,6 @@ $animation-direction: (
   animation-duration: var(--animation-duration);
 }
 
-// ********** OPTIONS MIXIN **********
-@mixin anima($class, $property, $value) {
-  .anima-#{$class} {
-    #{$property}: #{$value};
-  }
-}
-
 /********** ANIMATION NAME **********/
 @each $key, $value in $transforms {
   @include states("anima-#{$key}", "animation-name", $key);
