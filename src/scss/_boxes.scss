@@ -76,12 +76,8 @@ $margins: (
   }
 }
 
-@each $key, $value in $box-none {
-  @include global("mar-#{$key}", "margin#{$value}", "var(--margin-none)");
-}
-
-@each $key, $value in $box-size {
-  @include global("mar-#{$key}", "margin#{$value}", "var(--margin-#{$key})");
+@each $key, $value in $margins {
+  @include global("mar-#{$key}", "margin", "var(--margin-#{$key})");
 }
 
 /********** BORDER **********/
