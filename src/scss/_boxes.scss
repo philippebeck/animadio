@@ -138,27 +138,14 @@ $border-radius: (
 }
 
 /********** PADDING **********/
-$padding-sm:  5px   !default;
-$padding-md:  10px  !default;
-$padding-lg:  20px  !default;
-
 $paddings: (
-  "none":     0,
-  "sm":       $padding-sm,
-  "md":       $padding-md,
-  "lg":       $padding-lg,
-  "top-sm":   $padding-sm,
-  "top-md":   $padding-md,
-  "top-lg":   $padding-lg,
-  "right-sm": $padding-sm,
-  "right-md": $padding-md,
-  "right-lg": $padding-lg,
-  "bot-sm":   $padding-sm,
-  "bot-md":   $padding-md,
-  "bot-lg":   $padding-lg,
-  "left-sm":  $padding-sm,
-  "left-md":  $padding-md,
-  "left-lg":  $padding-lg
+  "none": 0,
+  "tn":   2px,
+  "sm":   5px,
+  "md":   10px,
+  "lg":   20px,
+  "xl":   50px,
+  "wd":   100px
 ) !default;
 
 [class*="pad-"] {
