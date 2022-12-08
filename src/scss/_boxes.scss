@@ -1,30 +1,3 @@
-// ********** BOXES **********
-$box-none: (
-  "none":         "",
-  "top-none":     "-top",
-  "right-none":   "-right",
-  "bottom-none":  "-bottom",
-  "left-none":    "-left",
-) !default;
-
-$box-size: (
-  "sm":       "",
-  "md":       "",
-  "lg":       "",
-  "top-sm":   "-top",
-  "top-md":   "-top",
-  "top-lg":   "-top",
-  "right-sm": "-right",
-  "right-md": "-right",
-  "right-lg": "-right",
-  "bot-sm":   "-bottom",
-  "bot-md":   "-bottom",
-  "bot-lg":   "-bottom",
-  "left-sm":  "-left",
-  "left-md":  "-left",
-  "left-lg":  "-left"
-) !default;
-
 /********** CONTAINER **********/
 $containers: (
   "50": 50%,
