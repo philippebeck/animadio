@@ -26,6 +26,7 @@ body {
   --body-line-height: 1.6;
   --body-margin: auto;
   --body-max-width: 2000px;
+  --body-overflow: break-word;
   --body-padding: 0;
   margin: var(--body-margin);
   padding: var(--body-padding);
@@ -33,6 +34,7 @@ body {
   line-height: var(--body-line-height);
   font-size: var(--body-font-size);
   font-family: var(--sans-serif);
+  overflow-wrap: var(--body-overflow);
 }
 
 main {
