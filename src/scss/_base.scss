@@ -159,7 +159,7 @@ $text-decoration-line: (
   "through":  line-through
 ) !default;
 
-[class*="deco"] {
+.deco {
   text-decoration-line: underline;
 }
 

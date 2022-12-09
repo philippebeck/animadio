@@ -83,6 +83,9 @@ $border-radius: (
   @each $key, $value in $border-radius {
     --border-radius-#{$key}: #{$value};
   }
+}
+
+.bord {
   border-style: solid;
 }
 
