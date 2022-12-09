@@ -23,7 +23,6 @@
   - [CDN](#cdn)
   - [Download](#download)
   - [Content](#content)
-  - [Documentation](#documentation)
 
 ---
 
@@ -51,11 +50,3 @@
 
 -   For development : `/dist/animadio.css`  
 -   For production : `/dist/animadio.min.css`  
-
----
-
-## Documentation
-
-Animadio documentation has not been update...
-
-[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/animadio.org.svg?label=https://animadio.org)](https://animadio.org)
