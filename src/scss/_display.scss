@@ -91,7 +91,7 @@ $gap: (
 }
 
 @mixin gap($size, $type) {
-  [class*="gap-"][class*="-#{$size}#{$type}"] {
+  [class*="gap-"][class*="-#{$type}#{$size}"] {
     gap: var(--gap#{$size});
   }
 }
