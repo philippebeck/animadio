@@ -8,6 +8,12 @@ $breakpoints: (
 ) !default;
 
 // ********** MAIN MIXINS **********
+@mixin default($class, $property, $value) {
+  .#{$class} {
+      #{$property}: #{$value};
+  }
+}
+
 @mixin global($class, $property, $value) {
   .#{$class},
   .#{$class}-all > * {
@@ -133,7 +139,7 @@ $text-align: (
 ) !default;
 
 @each $key, $value in $text-align {
-  @include global("#{$key}", "text-align", $value);
+  @include default("#{$key}", "text-align", $value);
 }
 
 /********** TEXT TRANSFORM **********/
@@ -149,12 +155,11 @@ $trans: (
 
 /********** TEXT DECORATION LINE **********/
 $text-decoration-line: (
-  "none":     none,
   "over":     overline,
   "through":  line-through
 ) !default;
 
-[class*="deco"] {
+.deco {
   text-decoration-line: underline;
 }
 
