@@ -5,11 +5,13 @@
 /*
 Summary
 
-base {
-  colors
+root (vars & rules) {
   fonts
+  colors
+  transform
+  keyframes
 }
-tags { 
+tags {
   tags
 }
 display {
@@ -25,15 +27,18 @@ boxes {
   height
   width
 }
+font {
+  fonts
+  colors
+}
 anima {
-  transform
-  keyframes
   animation
 }
 */
 
-@import "scss/base";
+@import "scss/root";
 @import "scss/tags";
 @import "scss/display";
-@import "scss/boxes";
+@import "scss/box";
+@import "scss/font";
 @import "scss/anima";

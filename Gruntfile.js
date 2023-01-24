@@ -1,6 +1,19 @@
 module.exports = function(grunt) {
+  const sass = require('node-sass');
+  
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
+    sass: {
+      options: {
+        implementation: sass,
+        sourceMap: true
+      },
+      dist: {
+        files: {
+          'src/css/source.css': 'src/main.scss'
+        }
+      }
+    },
     concat: {
       options: {
         banner: "/*! <%= pkg.name %> v<%= pkg.version %> | <%= pkg.homepage %> | <%= pkg.license %> License */\n\n", 
@@ -23,9 +36,10 @@ module.exports = function(grunt) {
       }
     }
   });
-  
+
+  grunt.loadNpmTasks("grunt-sass");
   grunt.loadNpmTasks("grunt-contrib-concat");
   grunt.loadNpmTasks("grunt-postcss");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
-  grunt.registerTask("default", ["concat", "postcss", "cssmin"]);
+  grunt.registerTask("default", ["sass", "concat", "postcss", "cssmin"]);
 };
