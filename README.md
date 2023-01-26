@@ -23,6 +23,7 @@
   - [CDN](#cdn)
   - [Download](#download)
   - [Content](#content)
+  - [Documentation](#documentation)
 
 ---
 
@@ -50,3 +51,9 @@
 
 -   For development : `/dist/animadio.css`  
 -   For production : `/dist/animadio.min.css`  
+
+---
+
+## Documentation
+
+[Animadio Lab !](https://philippebeck.github.io/animadio)
