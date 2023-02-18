@@ -1,0 +1,273 @@
+/********** VARS **********/
+:root {
+  /********** FONT FAMILY **********/
+  --ani-sans-serif: Helvetica, sans-serif;
+  --ani-serif: Times, serif;
+  --ani-monospace: Courier, monospace;
+  --ani-cursive: Mistral, cursive;
+  --ani-fantasy: Impact, fantasy;
+  /********** COLORS **********/
+  /* hsl values */
+  --ani-red-hsl: 348, 83%, 47%;
+  --ani-orange-hsl: 33, 100%, 50%;
+  --ani-yellow-hsl: 51, 100%, 50%;
+  --ani-green-hsl: 120, 61%, 50%;
+  --ani-sky-hsl: 195, 100%, 50%;
+  --ani-blue-hsl: 210, 100%, 56%;
+  --ani-violet-hsl: 271, 76%, 53%;
+  --ani-pink-hsl: 328, 100%, 54%;
+  --ani-black-hsl: 0, 0%, 0%;
+  --ani-gray-hsl: 0, 0%, 33%;
+  --ani-silver-hsl: 0, 0%, 67%;
+  --ani-white-hsl: 0, 0%, 100%;
+  /* opaque colors */
+  --ani-red: hsl(var(--ani-red-hsl));
+  --ani-orange: hsl(var(--ani-orange-hsl));
+  --ani-yellow: hsl(var(--ani-yellow-hsl));
+  --ani-green: hsl(var(--ani-green-hsl));
+  --ani-sky: hsl(var(--ani-sky-hsl));
+  --ani-blue: hsl(var(--ani-blue-hsl));
+  --ani-violet: hsl(var(--ani-violet-hsl));
+  --ani-pink: hsl(var(--ani-pink-hsl));
+  --ani-black: hsl(var(--ani-black-hsl));
+  --ani-gray: hsl(var(--ani-gray-hsl));
+  --ani-silver: hsl(var(--ani-silver-hsl));
+  --ani-white: hsl(var(--ani-white-hsl));
+  /* opacity */
+  --ani-dark: 0.8;
+  --ani-light: 0.2;
+  /* transparent colors */
+  --ani-red-dark: hsla(var(--ani-red-hsl), var(--ani-dark));
+  --ani-red-light: hsla(var(--ani-red-hsl), var(--ani-light));
+  --ani-orange-dark: hsla(var(--ani-orange-hsl), var(--ani-dark));
+  --ani-orange-light: hsla(var(--ani-orange-hsl), var(--ani-light));
+  --ani-yellow-dark: hsla(var(--ani-yellow-hsl), var(--ani-dark));
+  --ani-yellow-light: hsla(var(--ani-yellow-hsl), var(--ani-light));
+  --ani-green-dark: hsla(var(--ani-green-hsl), var(--ani-dark));
+  --ani-green-light: hsla(var(--ani-green-hsl), var(--ani-light));
+  --ani-sky-dark: hsla(var(--ani-sky-hsl), var(--ani-dark));
+  --ani-sky-light: hsla(var(--ani-sky-hsl), var(--ani-light));
+  --ani-blue-dark: hsla(var(--ani-blue-hsl), var(--ani-dark));
+  --ani-blue-light: hsla(var(--ani-blue-hsl), var(--ani-light));
+  --ani-violet-dark: hsla(var(--ani-violet-hsl), var(--ani-dark));
+  --ani-violet-light: hsla(var(--ani-violet-hsl), var(--ani-light));
+  --ani-pink-dark: hsla(var(--ani-pink-hsl), var(--ani-dark));
+  --ani-pink-light: hsla(var(--ani-pink-hsl), var(--ani-light));
+  --ani-black-dark: hsla(var(--ani-black-hsl), var(--ani-dark));
+  --ani-black-light: hsla(var(--ani-black-hsl), var(--ani-light));
+  --ani-gray-dark: hsla(var(--ani-gray-hsl), var(--ani-dark));
+  --ani-gray-light: hsla(var(--ani-gray-hsl), var(--ani-light));
+  --ani-silver-dark: hsla(var(--ani-silver-hsl), var(--ani-dark));
+  --ani-silver-light: hsla(var(--ani-silver-hsl), var(--ani-light));
+  --ani-white-dark: hsla(var(--ani-white-hsl), var(--ani-dark));
+  --ani-white-light: hsla(var(--ani-white-hsl), var(--ani-light));
+  /********** TRANSFORM **********/
+  --ani-slideT: translate(0, 10vh);
+  --ani-slideR: translate(-10vw, 0);
+  --ani-slideB: translate(0, -10vh);
+  --ani-slideL: translate(10vw, 0);
+  --ani-turn: rotate3d(0, 0, 1, 360deg);
+  --ani-turnX: rotate3d(1, 0, 0, 360deg);
+  --ani-turnY: rotate3d(0, 1, 0, 360deg);
+  --ani-turnXY: rotate3d(1, 1, 0, 360deg);
+  --ani-turnXZ: rotate3d(1, 0, 1, 360deg);
+  --ani-turnYZ: rotate3d(0, 1, 1, 360deg);
+  --ani-turn3D: rotate3d(1, 1, 1, 360deg);
+  --ani-bounce: scale(-1, -1);
+  --ani-grow: scale(0.5, 0.5);
+  --ani-shrink: scale(1.5, 1.5);
+  --ani-flipX: scale(1, -1);
+  --ani-flipY: scale(-1, 1);
+  --ani-openX: scale(1, 0);
+  --ani-openY: scale(0, 1);
+  --ani-flipperX: scale(0, -1);
+  --ani-flipperY: scale(-1, 0);
+  --ani-twistT: skew(-90deg, -90deg);
+  --ani-twistR: skew(90deg, -90deg);
+  --ani-twistB: skew(90deg, 90deg);
+  --ani-twistL: skew(-90deg, 90deg); }
+
+/********** TAGS **********/
+* {
+  --ani-target-margins: 7rem; }
+
+html {
+  --ani-html-font-size: 62.5%; }
+
+body {
+  --ani-body-font-size: 2rem;
+  --ani-body-line-height: 1.6;
+  --ani-body-margin: auto;
+  --ani-body-max-width: 2000px;
+  --ani-body-overflow: break-word;
+  --ani-body-padding: 0; }
+
+main {
+  --ani-main-text-align: center; }
+
+article {
+  --ani-article-margin-bottom: 20px; }
+
+h1 {
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 2); }
+
+h2 {
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.8); }
+
+h3 {
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.6); }
+
+h4 {
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.4); }
+
+h5 {
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.2); }
+
+h6 {
+  --ani-title-font-size: var(--ani-body-font-size); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --ani-title-text-align: center;
+  --ani-title-text-transform: capitalize; }
+
+a {
+  --ani-link-outline: 0;
+  --ani-link-text-decoration: none; }
+
+ul {
+  --ani-list-margin: 0 0 10px;
+  --ani-list-padding: 0;
+  --ani-list-style: none; }
+
+table {
+  --ani-table-border-collapse: collapse;
+  --ani-table-margin: auto;
+  --ani-table-text-align: center;
+  --ani-table-vertical-align: middle; }
+
+code,
+pre {
+  --ani-code-margin: auto;
+  --ani-code-overflow: scroll;
+  --ani-code-padding: 10px;
+  --ani-code-text-align: initial;
+  --ani-code-width: 100%; }
+
+figure {
+  --ani-figure-margin: 0; }
+
+img,
+video {
+  --ani-img-max-width: 100%;
+  --ani-img-height: auto;
+  --ani-img-object-fit: contain; }
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  --ani-button-cursor: pointer; }
+
+/********** GRID **********/
+[class*="grid"] {
+  --ani-grid-max-width: 100vw;
+  --ani-grid-margin: auto; }
+
+[class*="gap-"] {
+  --ani-gap1: 5px;
+  --ani-gap2: 10px;
+  --ani-gap3: 20px;
+  --ani-gap4: 50px; }
+
+/********** MARGIN **********/
+[class*="mar-"] {
+  --ani-margin-auto: auto;
+  --ani-margin-none: 0;
+  --ani-margin-tn: 2px;
+  --ani-margin-sm: 5px;
+  --ani-margin-md: 10px;
+  --ani-margin-lg: 20px;
+  --ani-margin-xl: 50px;
+  --ani-margin-wd: 100px; }
+
+/********** BORDER **********/
+[class*="bord"] {
+  --ani-border-width-sm: 1px;
+  --ani-border-width-md: 2px;
+  --ani-border-width-lg: 5px;
+  --ani-border-radius-curve: 10px;
+  --ani-border-radius-round: 20px;
+  --ani-border-radius-circle: 50%; }
+
+/********** PADDING **********/
+[class*="pad-"] {
+  --ani-padding-auto: auto;
+  --ani-padding-none: 0;
+  --ani-padding-tn: 2px;
+  --ani-padding-sm: 5px;
+  --ani-padding-md: 10px;
+  --ani-padding-lg: 20px;
+  --ani-padding-xl: 50px;
+  --ani-padding-wd: 100px; }
+
+/********** CONTAINER **********/
+[class*="container"] {
+  --ani-container-max-width: 100%; }
+
+/********** HEIGHT **********/
+[class*="height-"] {
+  --ani-height-sm: 20%;
+  --ani-height-md: 50%;
+  --ani-height-lg: 100%; }
+
+/********** MAX HEIGHT **********/
+[class*="max-h-"] {
+  --ani-max-height-sm: 20%;
+  --ani-max-height-md: 50%;
+  --ani-max-height-lg: 100%; }
+
+/********** MIN HEIGHT **********/
+[class*="min-h-"] {
+  --ani-min-height-sm: 20%;
+  --ani-min-height-md: 50%;
+  --ani-min-height-lg: 100%; }
+
+/********** WIDTH **********/
+[class*="width-"] {
+  --ani-width-sm: 20%;
+  --ani-width-md: 50%;
+  --ani-width-lg: 100%; }
+
+/********** MAX WIDTH **********/
+[class*="max-w-"] {
+  --ani-max-width-sm: 20%;
+  --ani-max-width-md: 50%;
+  --ani-max-width-lg: 100%; }
+
+[class*="min-w-"] {
+  --ani-min-width-sm: 20%;
+  --ani-min-width-md: 50%;
+  --ani-min-width-lg: 100%; }
+
+/********** ANIMATION **********/
+[class*="anima-"] {
+  --ani-animation-duration: 2s;
+  --ani-animation-duration-sm: 500ms;
+  --ani-animation-duration-md: 1s;
+  --ani-animation-duration-lg: 2s;
+  --ani-animation-timing-function-linear: linear;
+  --ani-animation-timing-function-in: ease-in;
+  --ani-animation-timing-function-out: ease-out;
+  --ani-animation-timing-function-inout: ease-in-out;
+  --ani-animation-timing-function-start: step-start;
+  --ani-animation-timing-function-end: step-end;
+  --ani-animation-iteration-count-few: 2;
+  --ani-animation-iteration-count-many: 5;
+  --ani-animation-iteration-count-loop: infinite;
+  --ani-animation-delay-min: 500ms;
+  --ani-animation-delay-max: 1s; }
