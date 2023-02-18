@@ -1,17 +1,15 @@
 /********** TAGS **********/
 * {
-  --target-margins: 7rem;
   box-sizing: border-box;
 
   &:target {
-    padding-top: var(--target-margins);
-    margin-top: -var(--target-margins);
+    padding-top: var(--ani-target-margins);
+    margin-top: -var(--ani-target-margins);
   }
 }
 
 html {
-  --html-font-size: 62.5%;
-  font-size: var(--html-font-size);
+  font-size: var(--ani-html-font-size);
   scroll-behavior: smooth;
 }
 
@@ -22,53 +20,21 @@ html {
 }
 
 body {
-  --body-font-size: 2rem;
-  --body-line-height: 1.6;
-  --body-margin: auto;
-  --body-max-width: 2000px;
-  --body-overflow: break-word;
-  --body-padding: 0;
-  margin: var(--body-margin);
-  padding: var(--body-padding);
-  max-width: var(--body-max-width);
-  line-height: var(--body-line-height);
-  font-size: var(--body-font-size);
-  font-family: var(--sans-serif);
-  overflow-wrap: var(--body-overflow);
+  margin: var(--ani-body-margin);
+  padding: var(--ani-body-padding);
+  max-width: var(--ani-body-max-width);
+  line-height: var(--ani-body-line-height);
+  font-size: var(--ani-body-font-size);
+  font-family: var(--ani-sans-serif);
+  overflow-wrap: var(--ani-body-overflow);
 }
 
 main {
-  --main-text-align: center;
-  text-align: var(--main-text-align);
+  text-align: var(--ani-main-text-align);
 }
 
 article {
-  --article-margin-bottom: 20px;
-  margin-bottom: var(--article-margin-bottom);
-}
-
-h1 {
-  --title-font-size: calc(var(--body-font-size) * 2);
-}
-
-h2 {
-  --title-font-size: calc(var(--body-font-size) * 1.8);
-}
-
-h3 {
-  --title-font-size: calc(var(--body-font-size) * 1.6);
-}
-
-h4 {
-  --title-font-size: calc(var(--body-font-size) * 1.4);
-}
-
-h5 {
-  --title-font-size: calc(var(--body-font-size) * 1.2);
-}
-
-h6 {
-  --title-font-size: var(--body-font-size);
+  margin-bottom: var(--ani-article-margin-bottom);
 }
 
 h1,
@@ -77,77 +43,56 @@ h3,
 h4,
 h5,
 h6 {
-  --title-text-align: center;
-  --title-text-transform: capitalize;
-  font-family: var(--serif);
-  text-align: var(--title-text-align);
-  text-transform: var(--title-text-transform);
-  font-size: var(--title-font-size);
+  font-family: var(--ani-serif);
+  text-align: var(--ani-title-text-align);
+  text-transform: var(--ani-title-text-transform);
+  font-size: var(--ani-title-font-size);
 }
 
 a {
-  --link-outline: 0;
-  --link-text-decoration: none;
-  text-decoration: var(--link-text-decoration);
-  outline: var(--link-outline);
+  text-decoration: var(--ani-link-text-decoration);
+  outline: var(--ani-link-outline);
 }
 
 ul {
-  --list-margin: 0 0 10px;
-  --list-padding: 0;
-  --list-style: none;
-  margin: var(--list-margin);
-  padding: var(--list-padding);
-  list-style: var(--list-style);
+  margin: var(--ani-list-margin);
+  padding: var(--ani-list-padding);
+  list-style: var(--ani-list-style);
 }
 
 table {
-  --table-border-collapse: collapse;
-  --table-margin: auto;
-  --table-text-align: center;
-  --table-vertical-align: middle;
-  margin: var(--table-margin);
-  border-collapse: var(--table-border-collapse);
-  text-align: var(--table-text-align);
-  vertical-align: var(--table-vertical-align);
-  font-family: var(--monospace);
+  margin: var(--ani-table-margin);
+  border-collapse: var(--ani-table-border-collapse);
+  text-align: var(--ani-table-text-align);
+  vertical-align: var(--ani-table-vertical-align);
+  font-family: var(--ani-monospace);
 }
 
 code,
 pre {
-  --code-margin: auto;
-  --code-overflow: scroll;
-  --code-padding: 10px;
-  --code-text-align: initial;
-  --code-width: 100%;
   font-size: 1em;
-  overflow: var(--code-overflow);
-  margin: var(--code-margin);
-  padding: var(--code-padding);
-  width: var(--code-width);
-  font-family: var(--monospace);
-  text-align: var(--code-text-align);
+  overflow: var(--ani-code-overflow);
+  margin: var(--ani-code-margin);
+  padding: var(--ani-code-padding);
+  width: var(--ani-code-width);
+  font-family: var(--ani-monospace);
+  text-align: var(--ani-code-text-align);
 }
 
 figure {
-  --figure-margin: 0;
-  margin: var(--figure-margin);
+  margin: var(--ani-figure-margin);
 }
 
 img,
 video {
-  --img-max-width: 100%;
-  --img-height: auto;
-  --img-object-fit: contain;
-  max-width: var(--img-max-width);
-  height: var(--img-height);
-  object-fit: var(--img-object-fit);
+  max-width: var(--ani-img-max-width);
+  height: var(--ani-img-height);
+  object-fit: var(--ani-img-object-fit);
 }
 
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  --button-cursor: pointer;
-  cursor: var(--button-cursor);
+  cursor: var(--ani-button-cursor);
 }
