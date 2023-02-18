@@ -1,0 +1,238 @@
+/********** VARS **********/
+
+:root {
+  /********** FONT FAMILY **********/
+  @each $key, $value in $font-family {
+    --ani-#{$key}: #{$value};
+    }
+
+  /********** COLORS **********/
+  /* hsl values */
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --ani-#{$key}-hsl: #{$value};
+    }
+  }
+
+  /* opaque colors */
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --ani-#{$key}: hsl(var(--ani-#{$key}-hsl));
+    }
+  }
+
+  /* opacity */
+  --ani-dark: 0.8;
+  --ani-light: 0.2;
+
+  /* transparent colors */
+  @each $color in $colors {
+    @each $key, $value in $color {
+      --ani-#{$key}-dark: hsla(var(--ani-#{$key}-hsl), var(--ani-dark));
+      --ani-#{$key}-light: hsla(var(--ani-#{$key}-hsl), var(--ani-light));
+    }
+  }
+
+  /********** TRANSFORM **********/
+  @each $key, $value in $transforms {
+    --ani-#{$key}: #{$value};
+  }
+}
+
+/********** TAGS **********/
+* {
+  --ani-target-margins: 7rem;
+}
+
+html {
+  --ani-html-font-size: 62.5%;
+}
+
+body {
+  --ani-body-font-size: 2rem;
+  --ani-body-line-height: 1.6;
+  --ani-body-margin: auto;
+  --ani-body-max-width: 2000px;
+  --ani-body-overflow: break-word;
+  --ani-body-padding: 0;
+}
+
+main {
+  --ani-main-text-align: center;
+}
+
+article {
+  --ani-article-margin-bottom: 20px;
+}
+
+h1 {
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 2);
+}
+
+h2 {
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.8);
+}
+
+h3 {
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.6);
+}
+
+h4 {
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.4);
+}
+
+h5 {
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.2);
+}
+
+h6 {
+  --ani-title-font-size: var(--ani-body-font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --ani-title-text-align: center;
+  --ani-title-text-transform: capitalize;
+}
+
+a {
+  --ani-link-outline: 0;
+  --ani-link-text-decoration: none;
+}
+
+ul {
+  --ani-list-margin: 0 0 10px;
+  --ani-list-padding: 0;
+  --ani-list-style: none;
+}
+
+table {
+  --ani-table-border-collapse: collapse;
+  --ani-table-margin: auto;
+  --ani-table-text-align: center;
+  --ani-table-vertical-align: middle;
+}
+
+code,
+pre {
+  --ani-code-margin: auto;
+  --ani-code-overflow: scroll;
+  --ani-code-padding: 10px;
+  --ani-code-text-align: initial;
+  --ani-code-width: 100%;
+}
+
+figure {
+  --ani-figure-margin: 0;
+}
+
+img,
+video {
+  --ani-img-max-width: 100%;
+  --ani-img-height: auto;
+  --ani-img-object-fit: contain;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  --ani-button-cursor: pointer;
+}
+
+/********** GRID **********/
+[class*="grid"] {
+  --ani-grid-max-width: 100vw;
+  --ani-grid-margin: auto;
+}
+
+[class*="gap-"] {
+  @each $key, $value in $gap {
+    --ani-gap#{$key}: #{$value};
+  }
+}
+
+/********** MARGIN **********/
+[class*="mar-"] {
+  @each $key, $value in $margins {
+    --ani-margin-#{$key}: #{$value};
+  }
+}
+
+/********** BORDER **********/
+[class*="bord"] {
+  @each $key, $value in $border-width {
+    --ani-border-width-#{$key}: #{$value};
+  }
+  @each $key, $value in $border-radius {
+    --ani-border-radius-#{$key}: #{$value};
+  }
+}
+
+/********** PADDING **********/
+[class*="pad-"] {
+  @each $key, $value in $paddings {
+    --ani-padding-#{$key}: #{$value};
+  }
+}
+
+/********** CONTAINER **********/
+[class*="container"] {
+  --ani-container-max-width: 100%;
+}
+
+/********** HEIGHT **********/
+[class*="height-"] {
+  @each $key, $value in $height {
+    --ani-height-#{$key}: #{$value};
+  }
+}
+
+/********** MAX HEIGHT **********/
+[class*="max-h-"] {
+  @each $key, $value in $height {
+    --ani-max-height-#{$key}: #{$value};
+  }
+}
+
+/********** MIN HEIGHT **********/
+[class*="min-h-"] {
+  @each $key, $value in $height {
+    --ani-min-height-#{$key}: #{$value};
+  }
+}
+
+/********** WIDTH **********/
+[class*="width-"] {
+  @each $key, $value in $width {
+    --ani-width-#{$key}: #{$value};
+  }
+}
+
+/********** MAX WIDTH **********/
+[class*="max-w-"] {
+  @each $key, $value in $width {
+    --ani-max-width-#{$key}: #{$value};
+  }
+}
+
+[class*="min-w-"] {
+  @each $key, $value in $width {
+    --ani-min-width-#{$key}: #{$value};
+  }
+}
+
+/********** ANIMATION **********/
+[class*="anima-"] {
+  --ani-animation-duration: 2s;
+
+  @each $type, $option in $animation-options {
+    @each $key, $value in $option {
+      --ani-animation-#{$type}-#{$key}: #{$value};
+    }
+  }
+}
