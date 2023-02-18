@@ -6,11 +6,12 @@ module.exports = function(grunt) {
     sass: {
       options: {
         implementation: sass,
-        sourceMap: true
+        sourceMap: false
       },
       dist: {
         files: {
-          'src/css/source.css': 'src/main.scss'
+          'src/main.css': 'src/main.scss',
+          'dist/style.css': 'src/style.scss'
         }
       }
     },
@@ -20,7 +21,7 @@ module.exports = function(grunt) {
         footer: "\n/* Author: <%= pkg.author.name %> <<%= pkg.author.email %>>\n Updated: <%= grunt.template.today('dS mmm yyyy @ h:MM:ss TT') %> */"
       },
       css: {
-        src: ["node_modules/normalize.css/normalize.css", "src/css/source.css"], 
+        src: ["node_modules/normalize.css/normalize.css", "src/css/main.css"], 
         dest: "dist/animadio.css"
       }
     },

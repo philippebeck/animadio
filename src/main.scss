@@ -1,44 +1,5 @@
-/******************************/
-/********** ANIMADIO **********/
-/******************************/
-
-/*
-Summary
-
-root (vars & rules) {
-  fonts
-  colors
-  transform
-  keyframes
-}
-tags {
-  tags
-}
-display {
-  flex
-  grid
-  gap
-  place
-}
-boxes {
-  margin
-  border
-  padding
-  height
-  width
-}
-font {
-  fonts
-  colors
-}
-anima {
-  animation
-}
-*/
-
-@import "scss/root";
+@import "scss/maps";
+@import "scss/vars";
+@import "scss/mixins";
 @import "scss/tags";
-@import "scss/display";
-@import "scss/box";
-@import "scss/font";
-@import "scss/anima";
+@import "scss/classes";

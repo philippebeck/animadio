@@ -23,6 +23,7 @@
   - [CDN](#cdn)
   - [Download](#download)
   - [Content](#content)
+  - [Documentation](#documentation)
 
 ---
 
@@ -34,8 +35,8 @@
 
 ## CDN 
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@5.6.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@5.6.0/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@5.6.0/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@5.6.0/dist/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@5.7.0/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@5.7.0/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@5.7.0/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@5.7.0/dist/animadio.min.css)  
 
 ---
 
@@ -50,3 +51,9 @@
 
 -   For development : `/dist/animadio.css`  
 -   For production : `/dist/animadio.min.css`  
+
+---
+
+## Documentation
+
+[Animadio Lab !](https://philippebeck.github.io/animadio)
