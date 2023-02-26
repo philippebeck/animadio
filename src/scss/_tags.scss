@@ -50,14 +50,14 @@ h6 {
 }
 
 a {
-  text-decoration: var(--ani-link-text-decoration);
-  outline: var(--ani-link-outline);
+  text-decoration: var(--ani-a-text-decoration);
+  outline: var(--ani-a-outline);
 }
 
 ul {
-  margin: var(--ani-list-margin);
-  padding: var(--ani-list-padding);
-  list-style: var(--ani-list-style);
+  margin: var(--ani-ul-margin);
+  padding: var(--ani-ul-padding);
+  list-style: var(--ani-ul-style);
 }
 
 table {
