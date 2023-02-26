@@ -136,13 +136,13 @@ h6 {
   --ani-title-text-transform: capitalize; }
 
 a {
-  --ani-link-outline: 0;
-  --ani-link-text-decoration: none; }
+  --ani-a-outline: 0;
+  --ani-a-text-decoration: none; }
 
 ul {
-  --ani-list-margin: 0 0 10px;
-  --ani-list-padding: 0;
-  --ani-list-style: none; }
+  --ani-ul-margin: 0 0 10px;
+  --ani-ul-padding: 0;
+  --ani-ul-style: none; }
 
 table {
   --ani-table-border-collapse: collapse;

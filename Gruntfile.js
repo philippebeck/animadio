@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         footer: "\n/* Author: <%= pkg.author.name %> <<%= pkg.author.email %>>\n Updated: <%= grunt.template.today('dS mmm yyyy @ h:MM:ss TT') %> */"
       },
       css: {
-        src: ["node_modules/normalize.css/normalize.css", "src/css/main.css"], 
+        src: ["node_modules/normalize.css/normalize.css", "src/main.css"], 
         dest: "dist/animadio.css"
       }
     },
