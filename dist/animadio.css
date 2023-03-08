@@ -1,4 +1,4 @@
-/*! animadio v5.7.1 | https://animadio.org | MIT License */
+/*! animadio v6.0.0 | https://www.npmjs.com/package/animadio | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -462,22 +462,28 @@ article {
   --ani-article-margin-bottom: 20px; }
 
 h1 {
-  --ani-title-font-size: calc(var(--ani-body-font-size) * 2); }
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 2);
+  --ani-title-margin: 20px 0; }
 
 h2 {
-  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.8); }
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.8);
+  --ani-title-margin: 15px 0; }
 
 h3 {
-  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.6); }
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.6);
+  --ani-title-margin: 10px 0; }
 
 h4 {
-  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.4); }
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.4);
+  --ani-title-margin: 5px 0; }
 
 h5 {
-  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.2); }
+  --ani-title-font-size: calc(var(--ani-body-font-size) * 1.2);
+  --ani-title-margin: 0; }
 
 h6 {
-  --ani-title-font-size: var(--ani-body-font-size); }
+  --ani-title-font-size: var(--ani-body-font-size);
+  --ani-title-margin: 0; }
 
 h1,
 h2,
@@ -487,10 +493,6 @@ h5,
 h6 {
   --ani-title-text-align: center;
   --ani-title-text-transform: capitalize; }
-
-a {
-  --ani-a-outline: 0;
-  --ani-a-text-decoration: none; }
 
 ul {
   --ani-ul-margin: 0 0 10px;
@@ -503,14 +505,6 @@ table {
   --ani-table-text-align: center;
   --ani-table-vertical-align: middle; }
 
-code,
-pre {
-  --ani-code-margin: auto;
-  --ani-code-overflow: scroll;
-  --ani-code-padding: 10px;
-  --ani-code-text-align: initial;
-  --ani-code-width: 100%; }
-
 figure {
   --ani-figure-margin: 0; }
 
@@ -519,6 +513,24 @@ video {
   --ani-img-max-width: 100%;
   --ani-img-height: auto;
   --ani-img-object-fit: contain; }
+
+code,
+pre {
+  --ani-code-font-size: 1em;
+  --ani-code-margin: auto;
+  --ani-code-overflow: scroll;
+  --ani-code-padding: 10px;
+  --ani-code-text-align: initial;
+  --ani-code-white-space: pre-line;
+  --ani-code-width: 100%; }
+
+p {
+  --ani-p-margin: 5px; }
+
+a {
+  --ani-a-color: var(--sky);
+  --ani-a-outline: 0;
+  --ani-a-text-decoration: none; }
 
 button,
 [type="button"],
@@ -608,17 +620,15 @@ button,
   --ani-min-width-lg: 100%; }
 
 /********** ANIMATION **********/
-[class*="anima-"] {
+[class*="ani-"] {
   --ani-animation-duration: 2s;
   --ani-animation-duration-sm: 500ms;
   --ani-animation-duration-md: 1s;
   --ani-animation-duration-lg: 2s;
   --ani-animation-timing-function-linear: linear;
-  --ani-animation-timing-function-in: ease-in;
-  --ani-animation-timing-function-out: ease-out;
+  --ani-animation-timing-function-easin: ease-in;
+  --ani-animation-timing-function-easout: ease-out;
   --ani-animation-timing-function-inout: ease-in-out;
-  --ani-animation-timing-function-start: step-start;
-  --ani-animation-timing-function-end: step-end;
   --ani-animation-iteration-count-few: 2;
   --ani-animation-iteration-count-many: 5;
   --ani-animation-iteration-count-loop: infinite;
@@ -757,15 +767,11 @@ h3,
 h4,
 h5,
 h6 {
+  margin: var(--ani-title-margin);
   font-family: var(--ani-serif);
   text-align: var(--ani-title-text-align);
   text-transform: var(--ani-title-text-transform);
   font-size: var(--ani-title-font-size); }
-
-a {
-  -webkit-text-decoration: var(--ani-a-text-decoration);
-          text-decoration: var(--ani-a-text-decoration);
-  outline: var(--ani-a-outline); }
 
 ul {
   margin: var(--ani-ul-margin);
@@ -779,16 +785,6 @@ table {
   vertical-align: var(--ani-table-vertical-align);
   font-family: var(--ani-monospace); }
 
-code,
-pre {
-  font-size: 1em;
-  overflow: var(--ani-code-overflow);
-  margin: var(--ani-code-margin);
-  padding: var(--ani-code-padding);
-  width: var(--ani-code-width);
-  font-family: var(--ani-monospace);
-  text-align: var(--ani-code-text-align); }
-
 figure {
   margin: var(--ani-figure-margin); }
 
@@ -798,6 +794,26 @@ video {
   height: var(--ani-img-height);
   -o-object-fit: var(--ani-img-object-fit);
      object-fit: var(--ani-img-object-fit); }
+
+code,
+pre {
+  overflow: var(--ani-code-overflow);
+  margin: var(--ani-code-margin);
+  padding: var(--ani-code-padding);
+  width: var(--ani-code-width);
+  font-family: var(--ani-monospace);
+  font-size: var(--ani-code-font--size);
+  text-align: var(--ani-code-text-align);
+  white-space: var(--ani-code-white-space); }
+
+p {
+  margin: var(--ani-p-margin); }
+
+a {
+  -webkit-text-decoration: var(--ani-a-text-decoration);
+          text-decoration: var(--ani-a-text-decoration);
+  outline: var(--ani-a-outline);
+  color: var(--ani-a-color); }
 
 button,
 [type="button"],
@@ -2768,349 +2784,343 @@ button,
   background-color: var(--ani-white-light); }
 
 /********** ANIMATION **********/
-[class*="anima-"] {
+[class*="ani-"] {
   animation-duration: var(--ani-animation-duration); }
 
 /********** ANIMATION NAME **********/
-.anima-slideT,
-.anima-slideT-all > *,
-.anima-slideT-on:hover,
-.anima-slideT-on:focus,
-*:hover > .anima-slideT-in,
-*:focus > .anima-slideT-in,
-.anima-slideT-one > *:hover,
-.anima-slideT-one > *:focus,
-.anima-slideT-many:hover > *,
-.anima-slideT-many:focus > * {
+[class*="ani-"][class*="-slideT"][class*="-it"],
+[class*="ani-"][class*="-slideT"][class*="-all"] > *,
+[class*="ani-"][class*="-slideT"][class*="-on"]:hover,
+[class*="ani-"][class*="-slideT"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-slideT"][class*="-in"],
+*:focus > [class*="ani-"][class*="-slideT"][class*="-in"],
+[class*="ani-"][class*="-slideT"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-slideT"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-slideT"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-slideT"][class*="-many"]:focus > * {
   animation-name: slideT; }
 
-.anima-slideR,
-.anima-slideR-all > *,
-.anima-slideR-on:hover,
-.anima-slideR-on:focus,
-*:hover > .anima-slideR-in,
-*:focus > .anima-slideR-in,
-.anima-slideR-one > *:hover,
-.anima-slideR-one > *:focus,
-.anima-slideR-many:hover > *,
-.anima-slideR-many:focus > * {
+[class*="ani-"][class*="-slideR"][class*="-it"],
+[class*="ani-"][class*="-slideR"][class*="-all"] > *,
+[class*="ani-"][class*="-slideR"][class*="-on"]:hover,
+[class*="ani-"][class*="-slideR"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-slideR"][class*="-in"],
+*:focus > [class*="ani-"][class*="-slideR"][class*="-in"],
+[class*="ani-"][class*="-slideR"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-slideR"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-slideR"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-slideR"][class*="-many"]:focus > * {
   animation-name: slideR; }
 
-.anima-slideB,
-.anima-slideB-all > *,
-.anima-slideB-on:hover,
-.anima-slideB-on:focus,
-*:hover > .anima-slideB-in,
-*:focus > .anima-slideB-in,
-.anima-slideB-one > *:hover,
-.anima-slideB-one > *:focus,
-.anima-slideB-many:hover > *,
-.anima-slideB-many:focus > * {
+[class*="ani-"][class*="-slideB"][class*="-it"],
+[class*="ani-"][class*="-slideB"][class*="-all"] > *,
+[class*="ani-"][class*="-slideB"][class*="-on"]:hover,
+[class*="ani-"][class*="-slideB"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-slideB"][class*="-in"],
+*:focus > [class*="ani-"][class*="-slideB"][class*="-in"],
+[class*="ani-"][class*="-slideB"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-slideB"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-slideB"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-slideB"][class*="-many"]:focus > * {
   animation-name: slideB; }
 
-.anima-slideL,
-.anima-slideL-all > *,
-.anima-slideL-on:hover,
-.anima-slideL-on:focus,
-*:hover > .anima-slideL-in,
-*:focus > .anima-slideL-in,
-.anima-slideL-one > *:hover,
-.anima-slideL-one > *:focus,
-.anima-slideL-many:hover > *,
-.anima-slideL-many:focus > * {
+[class*="ani-"][class*="-slideL"][class*="-it"],
+[class*="ani-"][class*="-slideL"][class*="-all"] > *,
+[class*="ani-"][class*="-slideL"][class*="-on"]:hover,
+[class*="ani-"][class*="-slideL"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-slideL"][class*="-in"],
+*:focus > [class*="ani-"][class*="-slideL"][class*="-in"],
+[class*="ani-"][class*="-slideL"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-slideL"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-slideL"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-slideL"][class*="-many"]:focus > * {
   animation-name: slideL; }
 
-.anima-turn,
-.anima-turn-all > *,
-.anima-turn-on:hover,
-.anima-turn-on:focus,
-*:hover > .anima-turn-in,
-*:focus > .anima-turn-in,
-.anima-turn-one > *:hover,
-.anima-turn-one > *:focus,
-.anima-turn-many:hover > *,
-.anima-turn-many:focus > * {
+[class*="ani-"][class*="-turn"][class*="-it"],
+[class*="ani-"][class*="-turn"][class*="-all"] > *,
+[class*="ani-"][class*="-turn"][class*="-on"]:hover,
+[class*="ani-"][class*="-turn"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-turn"][class*="-in"],
+*:focus > [class*="ani-"][class*="-turn"][class*="-in"],
+[class*="ani-"][class*="-turn"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-turn"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-turn"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-turn"][class*="-many"]:focus > * {
   animation-name: turn; }
 
-.anima-turnX,
-.anima-turnX-all > *,
-.anima-turnX-on:hover,
-.anima-turnX-on:focus,
-*:hover > .anima-turnX-in,
-*:focus > .anima-turnX-in,
-.anima-turnX-one > *:hover,
-.anima-turnX-one > *:focus,
-.anima-turnX-many:hover > *,
-.anima-turnX-many:focus > * {
+[class*="ani-"][class*="-turnX"][class*="-it"],
+[class*="ani-"][class*="-turnX"][class*="-all"] > *,
+[class*="ani-"][class*="-turnX"][class*="-on"]:hover,
+[class*="ani-"][class*="-turnX"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-turnX"][class*="-in"],
+*:focus > [class*="ani-"][class*="-turnX"][class*="-in"],
+[class*="ani-"][class*="-turnX"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-turnX"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-turnX"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-turnX"][class*="-many"]:focus > * {
   animation-name: turnX; }
 
-.anima-turnY,
-.anima-turnY-all > *,
-.anima-turnY-on:hover,
-.anima-turnY-on:focus,
-*:hover > .anima-turnY-in,
-*:focus > .anima-turnY-in,
-.anima-turnY-one > *:hover,
-.anima-turnY-one > *:focus,
-.anima-turnY-many:hover > *,
-.anima-turnY-many:focus > * {
+[class*="ani-"][class*="-turnY"][class*="-it"],
+[class*="ani-"][class*="-turnY"][class*="-all"] > *,
+[class*="ani-"][class*="-turnY"][class*="-on"]:hover,
+[class*="ani-"][class*="-turnY"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-turnY"][class*="-in"],
+*:focus > [class*="ani-"][class*="-turnY"][class*="-in"],
+[class*="ani-"][class*="-turnY"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-turnY"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-turnY"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-turnY"][class*="-many"]:focus > * {
   animation-name: turnY; }
 
-.anima-turnXY,
-.anima-turnXY-all > *,
-.anima-turnXY-on:hover,
-.anima-turnXY-on:focus,
-*:hover > .anima-turnXY-in,
-*:focus > .anima-turnXY-in,
-.anima-turnXY-one > *:hover,
-.anima-turnXY-one > *:focus,
-.anima-turnXY-many:hover > *,
-.anima-turnXY-many:focus > * {
+[class*="ani-"][class*="-turnXY"][class*="-it"],
+[class*="ani-"][class*="-turnXY"][class*="-all"] > *,
+[class*="ani-"][class*="-turnXY"][class*="-on"]:hover,
+[class*="ani-"][class*="-turnXY"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-turnXY"][class*="-in"],
+*:focus > [class*="ani-"][class*="-turnXY"][class*="-in"],
+[class*="ani-"][class*="-turnXY"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-turnXY"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-turnXY"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-turnXY"][class*="-many"]:focus > * {
   animation-name: turnXY; }
 
-.anima-turnXZ,
-.anima-turnXZ-all > *,
-.anima-turnXZ-on:hover,
-.anima-turnXZ-on:focus,
-*:hover > .anima-turnXZ-in,
-*:focus > .anima-turnXZ-in,
-.anima-turnXZ-one > *:hover,
-.anima-turnXZ-one > *:focus,
-.anima-turnXZ-many:hover > *,
-.anima-turnXZ-many:focus > * {
+[class*="ani-"][class*="-turnXZ"][class*="-it"],
+[class*="ani-"][class*="-turnXZ"][class*="-all"] > *,
+[class*="ani-"][class*="-turnXZ"][class*="-on"]:hover,
+[class*="ani-"][class*="-turnXZ"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-turnXZ"][class*="-in"],
+*:focus > [class*="ani-"][class*="-turnXZ"][class*="-in"],
+[class*="ani-"][class*="-turnXZ"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-turnXZ"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-turnXZ"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-turnXZ"][class*="-many"]:focus > * {
   animation-name: turnXZ; }
 
-.anima-turnYZ,
-.anima-turnYZ-all > *,
-.anima-turnYZ-on:hover,
-.anima-turnYZ-on:focus,
-*:hover > .anima-turnYZ-in,
-*:focus > .anima-turnYZ-in,
-.anima-turnYZ-one > *:hover,
-.anima-turnYZ-one > *:focus,
-.anima-turnYZ-many:hover > *,
-.anima-turnYZ-many:focus > * {
+[class*="ani-"][class*="-turnYZ"][class*="-it"],
+[class*="ani-"][class*="-turnYZ"][class*="-all"] > *,
+[class*="ani-"][class*="-turnYZ"][class*="-on"]:hover,
+[class*="ani-"][class*="-turnYZ"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-turnYZ"][class*="-in"],
+*:focus > [class*="ani-"][class*="-turnYZ"][class*="-in"],
+[class*="ani-"][class*="-turnYZ"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-turnYZ"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-turnYZ"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-turnYZ"][class*="-many"]:focus > * {
   animation-name: turnYZ; }
 
-.anima-turn3D,
-.anima-turn3D-all > *,
-.anima-turn3D-on:hover,
-.anima-turn3D-on:focus,
-*:hover > .anima-turn3D-in,
-*:focus > .anima-turn3D-in,
-.anima-turn3D-one > *:hover,
-.anima-turn3D-one > *:focus,
-.anima-turn3D-many:hover > *,
-.anima-turn3D-many:focus > * {
+[class*="ani-"][class*="-turn3D"][class*="-it"],
+[class*="ani-"][class*="-turn3D"][class*="-all"] > *,
+[class*="ani-"][class*="-turn3D"][class*="-on"]:hover,
+[class*="ani-"][class*="-turn3D"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-turn3D"][class*="-in"],
+*:focus > [class*="ani-"][class*="-turn3D"][class*="-in"],
+[class*="ani-"][class*="-turn3D"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-turn3D"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-turn3D"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-turn3D"][class*="-many"]:focus > * {
   animation-name: turn3D; }
 
-.anima-bounce,
-.anima-bounce-all > *,
-.anima-bounce-on:hover,
-.anima-bounce-on:focus,
-*:hover > .anima-bounce-in,
-*:focus > .anima-bounce-in,
-.anima-bounce-one > *:hover,
-.anima-bounce-one > *:focus,
-.anima-bounce-many:hover > *,
-.anima-bounce-many:focus > * {
+[class*="ani-"][class*="-bounce"][class*="-it"],
+[class*="ani-"][class*="-bounce"][class*="-all"] > *,
+[class*="ani-"][class*="-bounce"][class*="-on"]:hover,
+[class*="ani-"][class*="-bounce"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-bounce"][class*="-in"],
+*:focus > [class*="ani-"][class*="-bounce"][class*="-in"],
+[class*="ani-"][class*="-bounce"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-bounce"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-bounce"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-bounce"][class*="-many"]:focus > * {
   animation-name: bounce; }
 
-.anima-grow,
-.anima-grow-all > *,
-.anima-grow-on:hover,
-.anima-grow-on:focus,
-*:hover > .anima-grow-in,
-*:focus > .anima-grow-in,
-.anima-grow-one > *:hover,
-.anima-grow-one > *:focus,
-.anima-grow-many:hover > *,
-.anima-grow-many:focus > * {
+[class*="ani-"][class*="-grow"][class*="-it"],
+[class*="ani-"][class*="-grow"][class*="-all"] > *,
+[class*="ani-"][class*="-grow"][class*="-on"]:hover,
+[class*="ani-"][class*="-grow"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-grow"][class*="-in"],
+*:focus > [class*="ani-"][class*="-grow"][class*="-in"],
+[class*="ani-"][class*="-grow"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-grow"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-grow"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-grow"][class*="-many"]:focus > * {
   animation-name: grow; }
 
-.anima-shrink,
-.anima-shrink-all > *,
-.anima-shrink-on:hover,
-.anima-shrink-on:focus,
-*:hover > .anima-shrink-in,
-*:focus > .anima-shrink-in,
-.anima-shrink-one > *:hover,
-.anima-shrink-one > *:focus,
-.anima-shrink-many:hover > *,
-.anima-shrink-many:focus > * {
+[class*="ani-"][class*="-shrink"][class*="-it"],
+[class*="ani-"][class*="-shrink"][class*="-all"] > *,
+[class*="ani-"][class*="-shrink"][class*="-on"]:hover,
+[class*="ani-"][class*="-shrink"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-shrink"][class*="-in"],
+*:focus > [class*="ani-"][class*="-shrink"][class*="-in"],
+[class*="ani-"][class*="-shrink"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-shrink"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-shrink"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-shrink"][class*="-many"]:focus > * {
   animation-name: shrink; }
 
-.anima-flipX,
-.anima-flipX-all > *,
-.anima-flipX-on:hover,
-.anima-flipX-on:focus,
-*:hover > .anima-flipX-in,
-*:focus > .anima-flipX-in,
-.anima-flipX-one > *:hover,
-.anima-flipX-one > *:focus,
-.anima-flipX-many:hover > *,
-.anima-flipX-many:focus > * {
+[class*="ani-"][class*="-flipX"][class*="-it"],
+[class*="ani-"][class*="-flipX"][class*="-all"] > *,
+[class*="ani-"][class*="-flipX"][class*="-on"]:hover,
+[class*="ani-"][class*="-flipX"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-flipX"][class*="-in"],
+*:focus > [class*="ani-"][class*="-flipX"][class*="-in"],
+[class*="ani-"][class*="-flipX"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-flipX"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-flipX"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-flipX"][class*="-many"]:focus > * {
   animation-name: flipX; }
 
-.anima-flipY,
-.anima-flipY-all > *,
-.anima-flipY-on:hover,
-.anima-flipY-on:focus,
-*:hover > .anima-flipY-in,
-*:focus > .anima-flipY-in,
-.anima-flipY-one > *:hover,
-.anima-flipY-one > *:focus,
-.anima-flipY-many:hover > *,
-.anima-flipY-many:focus > * {
+[class*="ani-"][class*="-flipY"][class*="-it"],
+[class*="ani-"][class*="-flipY"][class*="-all"] > *,
+[class*="ani-"][class*="-flipY"][class*="-on"]:hover,
+[class*="ani-"][class*="-flipY"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-flipY"][class*="-in"],
+*:focus > [class*="ani-"][class*="-flipY"][class*="-in"],
+[class*="ani-"][class*="-flipY"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-flipY"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-flipY"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-flipY"][class*="-many"]:focus > * {
   animation-name: flipY; }
 
-.anima-openX,
-.anima-openX-all > *,
-.anima-openX-on:hover,
-.anima-openX-on:focus,
-*:hover > .anima-openX-in,
-*:focus > .anima-openX-in,
-.anima-openX-one > *:hover,
-.anima-openX-one > *:focus,
-.anima-openX-many:hover > *,
-.anima-openX-many:focus > * {
+[class*="ani-"][class*="-openX"][class*="-it"],
+[class*="ani-"][class*="-openX"][class*="-all"] > *,
+[class*="ani-"][class*="-openX"][class*="-on"]:hover,
+[class*="ani-"][class*="-openX"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-openX"][class*="-in"],
+*:focus > [class*="ani-"][class*="-openX"][class*="-in"],
+[class*="ani-"][class*="-openX"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-openX"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-openX"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-openX"][class*="-many"]:focus > * {
   animation-name: openX; }
 
-.anima-openY,
-.anima-openY-all > *,
-.anima-openY-on:hover,
-.anima-openY-on:focus,
-*:hover > .anima-openY-in,
-*:focus > .anima-openY-in,
-.anima-openY-one > *:hover,
-.anima-openY-one > *:focus,
-.anima-openY-many:hover > *,
-.anima-openY-many:focus > * {
+[class*="ani-"][class*="-openY"][class*="-it"],
+[class*="ani-"][class*="-openY"][class*="-all"] > *,
+[class*="ani-"][class*="-openY"][class*="-on"]:hover,
+[class*="ani-"][class*="-openY"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-openY"][class*="-in"],
+*:focus > [class*="ani-"][class*="-openY"][class*="-in"],
+[class*="ani-"][class*="-openY"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-openY"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-openY"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-openY"][class*="-many"]:focus > * {
   animation-name: openY; }
 
-.anima-flipperX,
-.anima-flipperX-all > *,
-.anima-flipperX-on:hover,
-.anima-flipperX-on:focus,
-*:hover > .anima-flipperX-in,
-*:focus > .anima-flipperX-in,
-.anima-flipperX-one > *:hover,
-.anima-flipperX-one > *:focus,
-.anima-flipperX-many:hover > *,
-.anima-flipperX-many:focus > * {
+[class*="ani-"][class*="-flipperX"][class*="-it"],
+[class*="ani-"][class*="-flipperX"][class*="-all"] > *,
+[class*="ani-"][class*="-flipperX"][class*="-on"]:hover,
+[class*="ani-"][class*="-flipperX"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-flipperX"][class*="-in"],
+*:focus > [class*="ani-"][class*="-flipperX"][class*="-in"],
+[class*="ani-"][class*="-flipperX"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-flipperX"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-flipperX"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-flipperX"][class*="-many"]:focus > * {
   animation-name: flipperX; }
 
-.anima-flipperY,
-.anima-flipperY-all > *,
-.anima-flipperY-on:hover,
-.anima-flipperY-on:focus,
-*:hover > .anima-flipperY-in,
-*:focus > .anima-flipperY-in,
-.anima-flipperY-one > *:hover,
-.anima-flipperY-one > *:focus,
-.anima-flipperY-many:hover > *,
-.anima-flipperY-many:focus > * {
+[class*="ani-"][class*="-flipperY"][class*="-it"],
+[class*="ani-"][class*="-flipperY"][class*="-all"] > *,
+[class*="ani-"][class*="-flipperY"][class*="-on"]:hover,
+[class*="ani-"][class*="-flipperY"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-flipperY"][class*="-in"],
+*:focus > [class*="ani-"][class*="-flipperY"][class*="-in"],
+[class*="ani-"][class*="-flipperY"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-flipperY"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-flipperY"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-flipperY"][class*="-many"]:focus > * {
   animation-name: flipperY; }
 
-.anima-twistT,
-.anima-twistT-all > *,
-.anima-twistT-on:hover,
-.anima-twistT-on:focus,
-*:hover > .anima-twistT-in,
-*:focus > .anima-twistT-in,
-.anima-twistT-one > *:hover,
-.anima-twistT-one > *:focus,
-.anima-twistT-many:hover > *,
-.anima-twistT-many:focus > * {
+[class*="ani-"][class*="-twistT"][class*="-it"],
+[class*="ani-"][class*="-twistT"][class*="-all"] > *,
+[class*="ani-"][class*="-twistT"][class*="-on"]:hover,
+[class*="ani-"][class*="-twistT"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-twistT"][class*="-in"],
+*:focus > [class*="ani-"][class*="-twistT"][class*="-in"],
+[class*="ani-"][class*="-twistT"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-twistT"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-twistT"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-twistT"][class*="-many"]:focus > * {
   animation-name: twistT; }
 
-.anima-twistR,
-.anima-twistR-all > *,
-.anima-twistR-on:hover,
-.anima-twistR-on:focus,
-*:hover > .anima-twistR-in,
-*:focus > .anima-twistR-in,
-.anima-twistR-one > *:hover,
-.anima-twistR-one > *:focus,
-.anima-twistR-many:hover > *,
-.anima-twistR-many:focus > * {
+[class*="ani-"][class*="-twistR"][class*="-it"],
+[class*="ani-"][class*="-twistR"][class*="-all"] > *,
+[class*="ani-"][class*="-twistR"][class*="-on"]:hover,
+[class*="ani-"][class*="-twistR"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-twistR"][class*="-in"],
+*:focus > [class*="ani-"][class*="-twistR"][class*="-in"],
+[class*="ani-"][class*="-twistR"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-twistR"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-twistR"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-twistR"][class*="-many"]:focus > * {
   animation-name: twistR; }
 
-.anima-twistB,
-.anima-twistB-all > *,
-.anima-twistB-on:hover,
-.anima-twistB-on:focus,
-*:hover > .anima-twistB-in,
-*:focus > .anima-twistB-in,
-.anima-twistB-one > *:hover,
-.anima-twistB-one > *:focus,
-.anima-twistB-many:hover > *,
-.anima-twistB-many:focus > * {
+[class*="ani-"][class*="-twistB"][class*="-it"],
+[class*="ani-"][class*="-twistB"][class*="-all"] > *,
+[class*="ani-"][class*="-twistB"][class*="-on"]:hover,
+[class*="ani-"][class*="-twistB"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-twistB"][class*="-in"],
+*:focus > [class*="ani-"][class*="-twistB"][class*="-in"],
+[class*="ani-"][class*="-twistB"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-twistB"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-twistB"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-twistB"][class*="-many"]:focus > * {
   animation-name: twistB; }
 
-.anima-twistL,
-.anima-twistL-all > *,
-.anima-twistL-on:hover,
-.anima-twistL-on:focus,
-*:hover > .anima-twistL-in,
-*:focus > .anima-twistL-in,
-.anima-twistL-one > *:hover,
-.anima-twistL-one > *:focus,
-.anima-twistL-many:hover > *,
-.anima-twistL-many:focus > * {
+[class*="ani-"][class*="-twistL"][class*="-it"],
+[class*="ani-"][class*="-twistL"][class*="-all"] > *,
+[class*="ani-"][class*="-twistL"][class*="-on"]:hover,
+[class*="ani-"][class*="-twistL"][class*="-on"]:focus,
+*:hover > [class*="ani-"][class*="-twistL"][class*="-in"],
+*:focus > [class*="ani-"][class*="-twistL"][class*="-in"],
+[class*="ani-"][class*="-twistL"][class*="-each"] > *:hover,
+[class*="ani-"][class*="-twistL"][class*="-each"] > *:focus,
+[class*="ani-"][class*="-twistL"][class*="-many"]:hover > *,
+[class*="ani-"][class*="-twistL"][class*="-many"]:focus > * {
   animation-name: twistL; }
 
 /********** ANIMATION OPTIONS **********/
-.anima-sm {
+[class*="ani-"][class*="-sm"] {
   animation-duration: var(--ani-animation-duration-sm); }
 
-.anima-md {
+[class*="ani-"][class*="-md"] {
   animation-duration: var(--ani-animation-duration-md); }
 
-.anima-lg {
+[class*="ani-"][class*="-lg"] {
   animation-duration: var(--ani-animation-duration-lg); }
 
-.anima-linear {
+[class*="ani-"][class*="-linear"] {
   animation-timing-function: var(--ani-animation-timing-function-linear); }
 
-.anima-in {
-  animation-timing-function: var(--ani-animation-timing-function-in); }
+[class*="ani-"][class*="-easin"] {
+  animation-timing-function: var(--ani-animation-timing-function-easin); }
 
-.anima-out {
-  animation-timing-function: var(--ani-animation-timing-function-out); }
+[class*="ani-"][class*="-easout"] {
+  animation-timing-function: var(--ani-animation-timing-function-easout); }
 
-.anima-inout {
+[class*="ani-"][class*="-inout"] {
   animation-timing-function: var(--ani-animation-timing-function-inout); }
 
-.anima-start {
-  animation-timing-function: var(--ani-animation-timing-function-start); }
-
-.anima-end {
-  animation-timing-function: var(--ani-animation-timing-function-end); }
-
-.anima-few {
+[class*="ani-"][class*="-few"] {
   animation-iteration-count: var(--ani-animation-iteration-count-few); }
 
-.anima-many {
+[class*="ani-"][class*="-many"] {
   animation-iteration-count: var(--ani-animation-iteration-count-many); }
 
-.anima-loop {
+[class*="ani-"][class*="-loop"] {
   animation-iteration-count: var(--ani-animation-iteration-count-loop); }
 
-.anima-min {
+[class*="ani-"][class*="-min"] {
   animation-delay: var(--ani-animation-delay-min); }
 
-.anima-max {
+[class*="ani-"][class*="-max"] {
   animation-delay: var(--ani-animation-delay-max); }
 
-.anima-alt {
+[class*="ani-"][class*="-alte"] {
   animation-direction: alternate; }
 
-.anima-rev {
+[class*="ani-"][class*="-reve"] {
   animation-direction: reverse; }
 
-.anima-altrev {
+[class*="ani-"][class*="-altrev"] {
   animation-direction: alternate-reverse; }
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 26th Feb 2023 @ 6:23:27 PM */
+ Updated: 8th Mar 2023 @ 5:53:17 PM */

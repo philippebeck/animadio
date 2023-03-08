@@ -5,6 +5,12 @@
   }
 }
 
+@mixin anima-default($class, $property, $value) {
+  [class*="ani-"][class*="-#{$class}"] {
+      #{$property}: #{$value};
+  }
+}
+
 @mixin global($class, $property, $value) {
   .#{$class},
   .#{$class}-all > * {
@@ -23,6 +29,21 @@
   .#{$class}-one > *:focus,
   .#{$class}-many:hover > *,
   .#{$class}-many:focus > * {
+    #{$property}: #{$value};
+  }
+}
+
+@mixin anima-states($class, $property, $value) {
+  [class*="ani-"][class*="-#{$class}"][class*="-it"],
+  [class*="ani-"][class*="-#{$class}"][class*="-all"] > *,
+  [class*="ani-"][class*="-#{$class}"][class*="-on"]:hover,
+  [class*="ani-"][class*="-#{$class}"][class*="-on"]:focus,
+  *:hover > [class*="ani-"][class*="-#{$class}"][class*="-in"],
+  *:focus > [class*="ani-"][class*="-#{$class}"][class*="-in"],
+  [class*="ani-"][class*="-#{$class}"][class*="-each"] > *:hover,
+  [class*="ani-"][class*="-#{$class}"][class*="-each"] > *:focus,
+  [class*="ani-"][class*="-#{$class}"][class*="-many"]:hover > *,
+  [class*="ani-"][class*="-#{$class}"][class*="-many"]:focus > * {
     #{$property}: #{$value};
   }
 }
