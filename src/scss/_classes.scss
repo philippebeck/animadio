@@ -262,22 +262,22 @@
 }
 
 /********** ANIMATION **********/
-[class*="anima-"] {
+[class*="ani-"] {
   animation-duration: var(--ani-animation-duration);
 }
 
 /********** ANIMATION NAME **********/
 @each $key, $value in $transforms {
-  @include states("anima-#{$key}", "animation-name", $key);
+  @include anima-states("#{$key}", "animation-name", $key);
 }
 
 /********** ANIMATION OPTIONS **********/
 @each $type, $option in $animation-options {
   @each $key, $value in $option {
-    @include default("anima-#{$key}", "animation-#{$type}", "var(--ani-animation-#{$type}-#{$key})");
+    @include anima-default("#{$key}", "animation-#{$type}", "var(--ani-animation-#{$type}-#{$key})");
   }
 }
 
 @each $key, $value in $animation-direction {
-  @include default("anima-#{$key}", "animation-direction", $value);
+  @include anima-default("#{$key}", "animation-direction", $value);
 }
