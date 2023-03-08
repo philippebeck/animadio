@@ -219,11 +219,9 @@ $animation-duration: (
 
 $animation-timing-function: (
   "linear": linear,
-  "in":     ease-in,
-  "out":    ease-out,
-  "inout":  ease-in-out,
-  "start":  step-start,
-  "end":    step-end
+  "easin":  ease-in,
+  "easout": ease-out,
+  "inout":  ease-in-out
 ) !default;
 
 $animation-iteration-count: (
@@ -245,7 +243,7 @@ $animation-options: (
 ) !default;
 
 $animation-direction: (
-  "alt":    alternate,
-  "rev":    reverse,
+  "alte":    alternate,
+  "reve":    reverse,
   "altrev": alternate-reverse
 ) !default;
