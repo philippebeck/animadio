@@ -51,6 +51,7 @@
 
 -   For development : `/dist/animadio.css`  
 -   For production : `/dist/animadio.min.css`  
+-   For CSS var overloading : `/dist/style.css`  
 
 ---
 
