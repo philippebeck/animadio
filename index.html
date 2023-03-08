@@ -222,28 +222,74 @@
         <section>
             <h3>Animation Name</h3>
 
+            <p><b>All states must be concat with the name</b>, like this :</p>
+            <ul>
+                <li>
+                    <p>
+                        for default animation on the element itself, 
+                        <i>put this class on it</i> :
+                    </p>
+                    <b>class="ani-grow-it"</b>
+                </li>
+                <li>
+                    <p>
+                        for default animation to all children, 
+                        <i>put this class on the parent</i> :
+                    </p>
+                    <b>class="ani-grow-all"</b>
+                </li>
+                <li>
+                    <p>
+                        for hover/focus animation on the element itself, 
+                        <i>put this class on it</i> :
+                    </p>
+                    <b>class="ani-grow-on"</b>
+                </li>
+                <li>
+                    <p>
+                        for hover/focus the parent then animate one child, 
+                        <i>put this class on the child</i> :
+                    </p>
+                    <b>class="ani-grow-in"</b>
+                </li>
+                <li>
+                    <p>
+                        for hover/focus animation to each child, 
+                        <i>put this class on the parent</i> :
+                    </p>
+                    <b>class="ani-grow-each"</b>
+                </li>
+                <li>
+                    <p>
+                        for hover/focus the parent then animate all children, 
+                        <i>put this class on the parent</i> :
+                    </p>
+                    <b>class="ani-grow-many"</b>
+                </li>
+            </ul>
+
             <section>
                 <h4>Translate (hover to test)</h4>
 
                 <ul class="flex-col gap-tn3 items-center width-md-all white-all">
                     <li>
-                        <figure class="bg-violet anima-slideB-in">
-                            Slide Bottom : class="anima-slideB"
+                        <figure class="bg-violet ani-slideB-in">
+                            Slide Bottom : class="ani-slideB-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-slideL-in">
-                            Slide Left : class="anima-slideL"
+                        <figure class="bg-green ani-slideL-in">
+                            Slide Left : class="ani-slideL-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-slideR-in">
-                            Slide Right : class="anima-slideR"
+                        <figure class="bg-violet ani-slideR-in">
+                            Slide Right : class="ani-slideR-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-slideT-in">
-                            Slide Top : class="anima-slideT"
+                        <figure class="bg-green ani-slideT-in">
+                            Slide Top : class="ani-slideT-it"
                         </figure>
                     </li>
                 </ul>
@@ -254,38 +300,38 @@
 
                 <ul class="flex-col gap-tn3 items-center width-md-all white-all">
                     <li>
-                        <figure class="bg-violet anima-turn-in">
-                            Turn : class="anima-turn"
+                        <figure class="bg-violet ani-turn-in">
+                            Turn : class="ani-turn-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-turnX-in">
-                            Turn X : class="anima-turnX"
+                        <figure class="bg-green ani-turnX-in">
+                            Turn X : class="ani-turnX-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-turnY-in">
-                            Turn Y : class="anima-turnY"
+                        <figure class="bg-violet ani-turnY-in">
+                            Turn Y : class="ani-turnY-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-turnXY-in">
-                            Turn XY : class="anima-turnXY"
+                        <figure class="bg-green ani-turnXY-in">
+                            Turn XY : class="ani-turnXY-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-turnXZ-in">
-                            Turn XZ : class="anima-turnXZ"
+                        <figure class="bg-violet ani-turnXZ-in">
+                            Turn XZ : class="ani-turnXZ-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-turnYZ-in">
-                            Turn YZ : class="anima-turnYZ"
+                        <figure class="bg-green ani-turnYZ-in">
+                            Turn YZ : class="ani-turnYZ-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-turn3D-in">
-                            Turn 3D : class="anima-turn3D"
+                        <figure class="bg-violet ani-turn3D-in">
+                            Turn 3D : class="ani-turn3D-it"
                         </figure>
                     </li>
                 </ul>
@@ -296,48 +342,48 @@
 
                 <ul class="flex-col gap-tn3 items-center width-md-all white-all">
                     <li>
-                        <figure class="bg-green anima-bounce-in">
-                            Bounce : class="anima-bounce"
+                        <figure class="bg-green ani-bounce-in">
+                            Bounce : class="ani-bounce-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-grow-in">
-                            Grow : class="anima-grow"
+                        <figure class="bg-violet ani-grow-in">
+                            Grow : class="ani-grow-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-shrink-in">
-                            Shrink : class="anima-shrink"
+                        <figure class="bg-green ani-shrink-in">
+                            Shrink : class="ani-shrink-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-flipX-in">
-                            Flip X : class="anima-flipX"
+                        <figure class="bg-violet ani-flipX-in">
+                            Flip X : class="ani-flipX-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-flipY-in">
-                            Flip Y : class="anima-flipY"
+                        <figure class="bg-green ani-flipY-in">
+                            Flip Y : class="ani-flipY-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-openX-in">
-                            Open X : class="anima-openX"
+                        <figure class="bg-violet ani-openX-in">
+                            Open X : class="ani-openX-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-openY-in">
-                            Open Y : class="anima-openY"
+                        <figure class="bg-green ani-openY-in">
+                            Open Y : class="ani-openY-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-flipperX-in">
-                            Flipper X : class="anima-flipperX"
+                        <figure class="bg-violet ani-flipperX-in">
+                            Flipper X : class="ani-flipperX-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-flipperY-in">
-                            Flipper Y : class="anima-flipperY"
+                        <figure class="bg-green ani-flipperY-in">
+                            Flipper Y : class="ani-flipperY-it"
                         </figure>
                     </li>
                 </ul>
@@ -348,23 +394,23 @@
 
                 <ul class="flex-col gap-tn3 items-center width-md-all white-all">
                     <li>
-                        <figure class="bg-violet anima-twistB-in">
-                            Twist Bottom : class="anima-twistB"
+                        <figure class="bg-violet ani-twistB-in">
+                            Twist Bottom : class="ani-twistB-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-twistL-in">
-                            Twist Left : class="anima-twistL"
+                        <figure class="bg-green ani-twistL-in">
+                            Twist Left : class="ani-twistL-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-twistR-in">
-                            Twist Right : class="anima-twistR"
+                        <figure class="bg-violet ani-twistR-in">
+                            Twist Right : class="ani-twistR-it"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-twistT-in">
-                            Twist Top : class="anima-twistT"
+                        <figure class="bg-green ani-twistT-in">
+                            Twist Top : class="ani-twistT-it"
                         </figure>
                     </li>
                 </ul>
@@ -374,23 +420,55 @@
         <section>
             <h3>Animation Options (need an Anima Name class to work)</h3>
 
+            <p>
+                All options can be concat with the name, like this :
+                <b>class="ani-grow-lg-linear-loop-it"</b>
+            </p>
+
             <section>
                 <h4>Animation Duration (hover to test)</h4>
 
                 <ul class="flex-col gap-tn3 items-center width-md-all white-all">
                     <li>
-                        <figure class="bg-violet anima-bounce-in anima-sm">
-                            Small : class="anima-sm"
+                        <figure class="bg-violet ani-bounce-sm-in">
+                            Small : class="ani-sm"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-bounce-in anima-md">
-                            Medium : class="anima-md"
+                        <figure class="bg-green ani-bounce-md-in">
+                            Medium : class="ani-md"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-bounce-in anima-lg">
-                            Large : class="anima-lg"
+                        <figure class="bg-violet ani-bounce-lg-in">
+                            Large : class="ani-lg"
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h4>Animation Timing Function (hover to test)</h4>
+
+                <ul class="flex-col gap-tn3 items-center width-md-all white-all">
+                    <li>
+                        <figure class="bg-violet ani-bounce-linear-in">
+                            Linear : class="ani-linear"
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="bg-green ani-bounce-easin-in">
+                            Ease-in : class="ani-easin"
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="bg-violet ani-bounce-easout-in">
+                            Ease-out : class="ani-easout"
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="bg-violet ani-bounce-inout-in">
+                            Ease-in-out : class="ani-inout"
                         </figure>
                     </li>
                 </ul>
@@ -401,18 +479,18 @@
 
                 <ul class="flex-col gap-tn3 items-center width-md-all white-all">
                     <li>
-                        <figure class="bg-green anima-bounce-in anima-few">
-                            Few : class="anima-few"
+                        <figure class="bg-green ani-bounce-few-in">
+                            Few : class="ani-few"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-bounce-in anima-many">
-                            Many : class="anima-many"
+                        <figure class="bg-violet ani-bounce-many-in">
+                            Many : class="ani-many"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-bounce-in anima-loop">
-                            Loop : class="anima-loop"
+                        <figure class="bg-green ani-bounce-loop-in">
+                            Loop : class="ani-loop"
                         </figure>
                     </li>
                 </ul>
@@ -423,13 +501,13 @@
 
                 <ul class="flex-col gap-tn3 items-center width-md-all white-all">
                     <li>
-                        <figure class="bg-violet anima-bounce-in anima-min">
-                            Minimum : class="anima-min"
+                        <figure class="bg-violet ani-bounce-min-in">
+                            Minimum : class="ani-min"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-bounce-in anima-max">
-                            Maximum : class="anima-max"
+                        <figure class="bg-green ani-bounce-max-in">
+                            Maximum : class="ani-max"
                         </figure>
                     </li>
                 </ul>
@@ -440,18 +518,18 @@
 
                 <ul class="flex-col gap-tn3 items-center width-md-all white-all">
                     <li>
-                        <figure class="bg-violet anima-bounce-in anima-alt">
-                            Alternate : class="anima-alt"
+                        <figure class="bg-violet ani-bounce-alte-in">
+                            Alternate : class="ani-alte"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-green anima-bounce-in anima-rev">
-                            Reverse : class="anima-rev"
+                        <figure class="bg-green ani-bounce-reve-in">
+                            Reverse : class="ani-reve"
                         </figure>
                     </li>
                     <li>
-                        <figure class="bg-violet anima-bounce-in anima-altrev">
-                            Alternate Reverse : class="anima-altrev"
+                        <figure class="bg-violet ani-bounce-altrev-in">
+                            Alternate Reverse : class="ani-altrev"
                         </figure>
                     </li>
                 </ul>
