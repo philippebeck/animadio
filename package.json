@@ -1,6 +1,6 @@
 {
   "name": "animadio",
-  "version": "5.7.1",
+  "version": "6.0.0",
   "description": "Animadio Framework - Grid & Flexbox Layouts - Reusable & Customizable Elements - Perform Complex Animations - Controls by Radio Buttons",
   "keywords": [
     "css library",
@@ -16,7 +16,7 @@
   ],
   "license": "MIT",
   "main": "dist/animadio.css",
-  "homepage": "https://animadio.org",
+  "homepage": "https://www.npmjs.com/package/animadio",
   "repository": "github:philippebeck/animadio",
   "bugs": "https://github.com/philippebeck/animadio/issues",
   "devDependencies": {
