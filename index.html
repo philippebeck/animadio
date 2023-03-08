@@ -9,6 +9,9 @@
     <meta name="description"  content="Testing Animadio !">
     <link rel="stylesheet" href="dist/animadio.css">
     <style>
+        section {
+            margin: 50px;
+        }
         h2 {
             color: var(--ani-blue);
         }
@@ -25,6 +28,8 @@
 
 <body class="container-90sm-80md-70lg center bg-black white">
     <h1 class="violet">Animadio Lab</h1>
+
+    <p>For information, display classes are not present in this demonstration (actually), but they are really present in the library & you can concat each of them (flex, grid, container), so this is useful for grid & container about responsive (for example)...</p>
 
     <section>
         <h2>Colors</h2>
@@ -219,48 +224,69 @@
     <section>
         <h2>Anima</h2>
 
+        <p>Animation classes are writed with 3 parts :</p>
+        <ul>
+            <li>
+                the prefix part is ever 
+                <b class="red">"ani"</b>
+            </li>
+            <li>
+                the main part is the 
+                <b class="green">animation name</b>,
+                <i>concat if necessary with each</i>
+                <b class="green">animation option</b>
+            </li>
+            <li>
+                the suffix part is 
+                <b class="blue">one of the six states</b>
+                <i>("it", "all", "on", "in", "each" or "many")</i>
+            </li>
+        </ul>
+
+        <p>PS: All examples of animation syntax are writed with "it" because this is the state for regular animation (onload), but for the demonstration, the used state is "in".</p>
+
         <section>
             <h3>Animation Name</h3>
 
-            <p><b>All states must be concat with the name</b>, like this :</p>
+            <p class="red"><b>All states must be concat with name & prefix</b>, like this :</p>
             <ul>
                 <li>
-                    <p>
+                    <p class="yellow">
                         for default animation on the element itself, 
                         <i>put this class on it</i> :
                     </p>
                     <b>class="ani-grow-it"</b>
                 </li>
                 <li>
-                    <p>
+                    <p class="yellow">
                         for default animation to all children, 
                         <i>put this class on the parent</i> :
                     </p>
                     <b>class="ani-grow-all"</b>
                 </li>
                 <li>
-                    <p>
+                    <p class="yellow">
                         for hover/focus animation on the element itself, 
                         <i>put this class on it</i> :
                     </p>
                     <b>class="ani-grow-on"</b>
                 </li>
                 <li>
-                    <p>
+                    <p class="yellow">
                         for hover/focus the parent then animate one child, 
                         <i>put this class on the child</i> :
                     </p>
                     <b>class="ani-grow-in"</b>
                 </li>
                 <li>
-                    <p>
+                    <p class="yellow">
                         for hover/focus animation to each child, 
                         <i>put this class on the parent</i> :
                     </p>
                     <b>class="ani-grow-each"</b>
                 </li>
                 <li>
-                    <p>
+                    <p class="yellow">
                         for hover/focus the parent then animate all children, 
                         <i>put this class on the parent</i> :
                     </p>
