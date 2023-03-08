@@ -43,15 +43,11 @@ h3,
 h4,
 h5,
 h6 {
+  margin: var(--ani-title-margin);
   font-family: var(--ani-serif);
   text-align: var(--ani-title-text-align);
   text-transform: var(--ani-title-text-transform);
   font-size: var(--ani-title-font-size);
-}
-
-a {
-  text-decoration: var(--ani-a-text-decoration);
-  outline: var(--ani-a-outline);
 }
 
 ul {
@@ -68,17 +64,6 @@ table {
   font-family: var(--ani-monospace);
 }
 
-code,
-pre {
-  font-size: 1em;
-  overflow: var(--ani-code-overflow);
-  margin: var(--ani-code-margin);
-  padding: var(--ani-code-padding);
-  width: var(--ani-code-width);
-  font-family: var(--ani-monospace);
-  text-align: var(--ani-code-text-align);
-}
-
 figure {
   margin: var(--ani-figure-margin);
 }
@@ -88,6 +73,28 @@ video {
   max-width: var(--ani-img-max-width);
   height: var(--ani-img-height);
   object-fit: var(--ani-img-object-fit);
+}
+
+code,
+pre {
+  overflow: var(--ani-code-overflow);
+  margin: var(--ani-code-margin);
+  padding: var(--ani-code-padding);
+  width: var(--ani-code-width);
+  font-family: var(--ani-monospace);
+  font-size: var(--ani-code-font--size);
+  text-align: var(--ani-code-text-align);
+  white-space: var(--ani-code-white-space);
+}
+
+p {
+  margin: var(--ani-p-margin);
+}
+
+a {
+  text-decoration: var(--ani-a-text-decoration);
+  outline: var(--ani-a-outline);
+  color: var(--ani-a-color);
 }
 
 button,
