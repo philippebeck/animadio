@@ -57,4 +57,4 @@
 
 ## Documentation
 
-[Animadio Lab !](https://philippebeck.github.io/animadio)
+[Animadio Lab !](https://codepen.io/philippebeck/pen/QWVrebX)
