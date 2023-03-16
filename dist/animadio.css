@@ -1,4 +1,4 @@
-/*! animadio v6.1.1 | https://www.npmjs.com/package/animadio | MIT License */
+/*! animadio v6.2.0 | https://www.npmjs.com/package/animadio | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -360,80 +360,114 @@ template {
   --ani-cursive: Mistral, cursive;
   --ani-fantasy: Impact, fantasy;
   /********** COLORS **********/
-  /* hsl values */
-  --ani-red-hsl: 0, 100%, 25%;
-  --ani-orange-hsl: 30, 100%, 50%;
-  --ani-yellow-hsl: 60, 100%, 75%;
-  --ani-lime-hsl: 90, 100%, 75%;
-  --ani-green-hsl: 120, 100%, 25%;
-  --ani-aqua-hsl: 150, 100%, 75%;
-  --ani-cyan-hsl: 180, 100%, 25%;
-  --ani-sky-hsl: 210, 100%, 75%;
-  --ani-blue-hsl: 240, 100%, 25%;
-  --ani-violet-hsl: 270, 100%, 75%;
-  --ani-magenta-hsl: 300, 100%, 25%;
-  --ani-pink-hsl: 330, 100%, 75%;
-  --ani-black-hsl: 0, 0%, 0%;
-  --ani-slate-hsl: 0, 0%, 25%;
-  --ani-gray-hsl: 0, 0%, 50%;
-  --ani-silver-hsl: 0, 0%, 75%;
-  --ani-white-hsl: 0, 0%, 100%;
-  /* opaque colors */
-  --ani-red: hsl(var(--ani-red-hsl));
-  --ani-orange: hsl(var(--ani-orange-hsl));
-  --ani-yellow: hsl(var(--ani-yellow-hsl));
-  --ani-lime: hsl(var(--ani-lime-hsl));
-  --ani-green: hsl(var(--ani-green-hsl));
-  --ani-aqua: hsl(var(--ani-aqua-hsl));
-  --ani-cyan: hsl(var(--ani-cyan-hsl));
-  --ani-sky: hsl(var(--ani-sky-hsl));
-  --ani-blue: hsl(var(--ani-blue-hsl));
-  --ani-violet: hsl(var(--ani-violet-hsl));
-  --ani-magenta: hsl(var(--ani-magenta-hsl));
-  --ani-pink: hsl(var(--ani-pink-hsl));
-  --ani-black: hsl(var(--ani-black-hsl));
-  --ani-slate: hsl(var(--ani-slate-hsl));
-  --ani-gray: hsl(var(--ani-gray-hsl));
-  --ani-silver: hsl(var(--ani-silver-hsl));
-  --ani-white: hsl(var(--ani-white-hsl));
+  /* hue */
+  --ani-hue: 0;
+  /* saturation */
+  --ani-min: 0%;
+  --ani-max: 100%;
+  /* lightness */
+  --ani-base: 50%;
+  --ani-dark: 30%;
+  --ani-light: 70%;
   /* opacity */
-  --ani-dark: 0.8;
-  --ani-light: 0.2;
-  /* transparent colors */
-  --ani-red-dark: hsla(var(--ani-red-hsl), var(--ani-dark));
-  --ani-red-light: hsla(var(--ani-red-hsl), var(--ani-light));
-  --ani-orange-dark: hsla(var(--ani-orange-hsl), var(--ani-dark));
-  --ani-orange-light: hsla(var(--ani-orange-hsl), var(--ani-light));
-  --ani-yellow-dark: hsla(var(--ani-yellow-hsl), var(--ani-dark));
-  --ani-yellow-light: hsla(var(--ani-yellow-hsl), var(--ani-light));
-  --ani-lime-dark: hsla(var(--ani-lime-hsl), var(--ani-dark));
-  --ani-lime-light: hsla(var(--ani-lime-hsl), var(--ani-light));
-  --ani-green-dark: hsla(var(--ani-green-hsl), var(--ani-dark));
-  --ani-green-light: hsla(var(--ani-green-hsl), var(--ani-light));
-  --ani-aqua-dark: hsla(var(--ani-aqua-hsl), var(--ani-dark));
-  --ani-aqua-light: hsla(var(--ani-aqua-hsl), var(--ani-light));
-  --ani-cyan-dark: hsla(var(--ani-cyan-hsl), var(--ani-dark));
-  --ani-cyan-light: hsla(var(--ani-cyan-hsl), var(--ani-light));
-  --ani-sky-dark: hsla(var(--ani-sky-hsl), var(--ani-dark));
-  --ani-sky-light: hsla(var(--ani-sky-hsl), var(--ani-light));
-  --ani-blue-dark: hsla(var(--ani-blue-hsl), var(--ani-dark));
-  --ani-blue-light: hsla(var(--ani-blue-hsl), var(--ani-light));
-  --ani-violet-dark: hsla(var(--ani-violet-hsl), var(--ani-dark));
-  --ani-violet-light: hsla(var(--ani-violet-hsl), var(--ani-light));
-  --ani-magenta-dark: hsla(var(--ani-magenta-hsl), var(--ani-dark));
-  --ani-magenta-light: hsla(var(--ani-magenta-hsl), var(--ani-light));
-  --ani-pink-dark: hsla(var(--ani-pink-hsl), var(--ani-dark));
-  --ani-pink-light: hsla(var(--ani-pink-hsl), var(--ani-light));
-  --ani-black-dark: hsla(var(--ani-black-hsl), var(--ani-dark));
-  --ani-black-light: hsla(var(--ani-black-hsl), var(--ani-light));
-  --ani-slate-dark: hsla(var(--ani-slate-hsl), var(--ani-dark));
-  --ani-slate-light: hsla(var(--ani-slate-hsl), var(--ani-light));
-  --ani-gray-dark: hsla(var(--ani-gray-hsl), var(--ani-dark));
-  --ani-gray-light: hsla(var(--ani-gray-hsl), var(--ani-light));
-  --ani-silver-dark: hsla(var(--ani-silver-hsl), var(--ani-dark));
-  --ani-silver-light: hsla(var(--ani-silver-hsl), var(--ani-light));
-  --ani-white-dark: hsla(var(--ani-white-hsl), var(--ani-dark));
-  --ani-white-light: hsla(var(--ani-white-hsl), var(--ani-light));
+  --ani-darker: 0.7;
+  --ani-lighter: 0.3;
+  /* color hues */
+  --ani-red-hue: 0;
+  --ani-orange-hue: 30;
+  --ani-yellow-hue: 60;
+  --ani-lime-hue: 90;
+  --ani-green-hue: 120;
+  --ani-aqua-hue: 150;
+  --ani-cyan-hue: 180;
+  --ani-sky-hue: 210;
+  --ani-blue-hue: 240;
+  --ani-violet-hue: 270;
+  --ani-magenta-hue: 300;
+  --ani-pink-hue: 330;
+  /* grayscale lightness */
+  --ani-black-scale: 0%;
+  --ani-slate-scale: 30%;
+  --ani-gray-scale: 50%;
+  --ani-silver-scale: 70%;
+  --ani-white-scale: 100%;
+  /* colors */
+  --ani-red: hsl(var(--ani-red-hue), var(--ani-max), var(--ani-base));
+  --ani-red-dark: hsl(var(--ani-red-hue), var(--ani-max), var(--ani-dark));
+  --ani-red-light: hsl(var(--ani-red-hue), var(--ani-max), var(--ani-light));
+  --ani-red-darker: hsla(var(--ani-red-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-red-lighter: hsla(var(--ani-red-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  --ani-orange: hsl(var(--ani-orange-hue), var(--ani-max), var(--ani-base));
+  --ani-orange-dark: hsl(var(--ani-orange-hue), var(--ani-max), var(--ani-dark));
+  --ani-orange-light: hsl(var(--ani-orange-hue), var(--ani-max), var(--ani-light));
+  --ani-orange-darker: hsla(var(--ani-orange-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-orange-lighter: hsla(var(--ani-orange-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  --ani-yellow: hsl(var(--ani-yellow-hue), var(--ani-max), var(--ani-base));
+  --ani-yellow-dark: hsl(var(--ani-yellow-hue), var(--ani-max), var(--ani-dark));
+  --ani-yellow-light: hsl(var(--ani-yellow-hue), var(--ani-max), var(--ani-light));
+  --ani-yellow-darker: hsla(var(--ani-yellow-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-yellow-lighter: hsla(var(--ani-yellow-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  --ani-lime: hsl(var(--ani-lime-hue), var(--ani-max), var(--ani-base));
+  --ani-lime-dark: hsl(var(--ani-lime-hue), var(--ani-max), var(--ani-dark));
+  --ani-lime-light: hsl(var(--ani-lime-hue), var(--ani-max), var(--ani-light));
+  --ani-lime-darker: hsla(var(--ani-lime-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-lime-lighter: hsla(var(--ani-lime-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  --ani-green: hsl(var(--ani-green-hue), var(--ani-max), var(--ani-base));
+  --ani-green-dark: hsl(var(--ani-green-hue), var(--ani-max), var(--ani-dark));
+  --ani-green-light: hsl(var(--ani-green-hue), var(--ani-max), var(--ani-light));
+  --ani-green-darker: hsla(var(--ani-green-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-green-lighter: hsla(var(--ani-green-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  --ani-aqua: hsl(var(--ani-aqua-hue), var(--ani-max), var(--ani-base));
+  --ani-aqua-dark: hsl(var(--ani-aqua-hue), var(--ani-max), var(--ani-dark));
+  --ani-aqua-light: hsl(var(--ani-aqua-hue), var(--ani-max), var(--ani-light));
+  --ani-aqua-darker: hsla(var(--ani-aqua-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-aqua-lighter: hsla(var(--ani-aqua-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  --ani-cyan: hsl(var(--ani-cyan-hue), var(--ani-max), var(--ani-base));
+  --ani-cyan-dark: hsl(var(--ani-cyan-hue), var(--ani-max), var(--ani-dark));
+  --ani-cyan-light: hsl(var(--ani-cyan-hue), var(--ani-max), var(--ani-light));
+  --ani-cyan-darker: hsla(var(--ani-cyan-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-cyan-lighter: hsla(var(--ani-cyan-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  --ani-sky: hsl(var(--ani-sky-hue), var(--ani-max), var(--ani-base));
+  --ani-sky-dark: hsl(var(--ani-sky-hue), var(--ani-max), var(--ani-dark));
+  --ani-sky-light: hsl(var(--ani-sky-hue), var(--ani-max), var(--ani-light));
+  --ani-sky-darker: hsla(var(--ani-sky-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-sky-lighter: hsla(var(--ani-sky-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  --ani-blue: hsl(var(--ani-blue-hue), var(--ani-max), var(--ani-base));
+  --ani-blue-dark: hsl(var(--ani-blue-hue), var(--ani-max), var(--ani-dark));
+  --ani-blue-light: hsl(var(--ani-blue-hue), var(--ani-max), var(--ani-light));
+  --ani-blue-darker: hsla(var(--ani-blue-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-blue-lighter: hsla(var(--ani-blue-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  --ani-violet: hsl(var(--ani-violet-hue), var(--ani-max), var(--ani-base));
+  --ani-violet-dark: hsl(var(--ani-violet-hue), var(--ani-max), var(--ani-dark));
+  --ani-violet-light: hsl(var(--ani-violet-hue), var(--ani-max), var(--ani-light));
+  --ani-violet-darker: hsla(var(--ani-violet-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-violet-lighter: hsla(var(--ani-violet-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  --ani-magenta: hsl(var(--ani-magenta-hue), var(--ani-max), var(--ani-base));
+  --ani-magenta-dark: hsl(var(--ani-magenta-hue), var(--ani-max), var(--ani-dark));
+  --ani-magenta-light: hsl(var(--ani-magenta-hue), var(--ani-max), var(--ani-light));
+  --ani-magenta-darker: hsla(var(--ani-magenta-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-magenta-lighter: hsla(var(--ani-magenta-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  --ani-pink: hsl(var(--ani-pink-hue), var(--ani-max), var(--ani-base));
+  --ani-pink-dark: hsl(var(--ani-pink-hue), var(--ani-max), var(--ani-dark));
+  --ani-pink-light: hsl(var(--ani-pink-hue), var(--ani-max), var(--ani-light));
+  --ani-pink-darker: hsla(var(--ani-pink-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
+  --ani-pink-lighter: hsla(var(--ani-pink-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
+  /* grayscale */
+  --ani-black: hsl(var(--ani-hue), var(--ani-min), var(--ani-black-scale));
+  --ani-black-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-black-scale), var(--ani-darker));
+  --ani-black-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-black-scale), var(--ani-lighter));
+  --ani-slate: hsl(var(--ani-hue), var(--ani-min), var(--ani-slate-scale));
+  --ani-slate-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-slate-scale), var(--ani-darker));
+  --ani-slate-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-slate-scale), var(--ani-lighter));
+  --ani-gray: hsl(var(--ani-hue), var(--ani-min), var(--ani-gray-scale));
+  --ani-gray-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-gray-scale), var(--ani-darker));
+  --ani-gray-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-gray-scale), var(--ani-lighter));
+  --ani-silver: hsl(var(--ani-hue), var(--ani-min), var(--ani-silver-scale));
+  --ani-silver-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-silver-scale), var(--ani-darker));
+  --ani-silver-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-silver-scale), var(--ani-lighter));
+  --ani-white: hsl(var(--ani-hue), var(--ani-min), var(--ani-white-scale));
+  --ani-white-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-white-scale), var(--ani-darker));
+  --ani-white-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-white-scale), var(--ani-lighter));
   /********** TRANSFORM **********/
   --ani-slideT: translate(0, 10vh);
   --ani-slideR: translate(-10vw, 0);
@@ -2338,6 +2372,30 @@ button,
 .red-many:focus > * {
   color: var(--ani-red); }
 
+.red-dark,
+.red-dark-all > *,
+.red-dark-on:hover,
+.red-dark-on:focus,
+*:hover > .red-dark-in,
+*:focus > .red-dark-in,
+.red-dark-one > *:hover,
+.red-dark-one > *:focus,
+.red-dark-many:hover > *,
+.red-dark-many:focus > * {
+  color: var(--ani-red-dark); }
+
+.red-light,
+.red-light-all > *,
+.red-light-on:hover,
+.red-light-on:focus,
+*:hover > .red-light-in,
+*:focus > .red-light-in,
+.red-light-one > *:hover,
+.red-light-one > *:focus,
+.red-light-many:hover > *,
+.red-light-many:focus > * {
+  color: var(--ani-red-light); }
+
 .orange,
 .orange-all > *,
 .orange-on:hover,
@@ -2349,6 +2407,30 @@ button,
 .orange-many:hover > *,
 .orange-many:focus > * {
   color: var(--ani-orange); }
+
+.orange-dark,
+.orange-dark-all > *,
+.orange-dark-on:hover,
+.orange-dark-on:focus,
+*:hover > .orange-dark-in,
+*:focus > .orange-dark-in,
+.orange-dark-one > *:hover,
+.orange-dark-one > *:focus,
+.orange-dark-many:hover > *,
+.orange-dark-many:focus > * {
+  color: var(--ani-orange-dark); }
+
+.orange-light,
+.orange-light-all > *,
+.orange-light-on:hover,
+.orange-light-on:focus,
+*:hover > .orange-light-in,
+*:focus > .orange-light-in,
+.orange-light-one > *:hover,
+.orange-light-one > *:focus,
+.orange-light-many:hover > *,
+.orange-light-many:focus > * {
+  color: var(--ani-orange-light); }
 
 .yellow,
 .yellow-all > *,
@@ -2362,6 +2444,30 @@ button,
 .yellow-many:focus > * {
   color: var(--ani-yellow); }
 
+.yellow-dark,
+.yellow-dark-all > *,
+.yellow-dark-on:hover,
+.yellow-dark-on:focus,
+*:hover > .yellow-dark-in,
+*:focus > .yellow-dark-in,
+.yellow-dark-one > *:hover,
+.yellow-dark-one > *:focus,
+.yellow-dark-many:hover > *,
+.yellow-dark-many:focus > * {
+  color: var(--ani-yellow-dark); }
+
+.yellow-light,
+.yellow-light-all > *,
+.yellow-light-on:hover,
+.yellow-light-on:focus,
+*:hover > .yellow-light-in,
+*:focus > .yellow-light-in,
+.yellow-light-one > *:hover,
+.yellow-light-one > *:focus,
+.yellow-light-many:hover > *,
+.yellow-light-many:focus > * {
+  color: var(--ani-yellow-light); }
+
 .lime,
 .lime-all > *,
 .lime-on:hover,
@@ -2373,6 +2479,30 @@ button,
 .lime-many:hover > *,
 .lime-many:focus > * {
   color: var(--ani-lime); }
+
+.lime-dark,
+.lime-dark-all > *,
+.lime-dark-on:hover,
+.lime-dark-on:focus,
+*:hover > .lime-dark-in,
+*:focus > .lime-dark-in,
+.lime-dark-one > *:hover,
+.lime-dark-one > *:focus,
+.lime-dark-many:hover > *,
+.lime-dark-many:focus > * {
+  color: var(--ani-lime-dark); }
+
+.lime-light,
+.lime-light-all > *,
+.lime-light-on:hover,
+.lime-light-on:focus,
+*:hover > .lime-light-in,
+*:focus > .lime-light-in,
+.lime-light-one > *:hover,
+.lime-light-one > *:focus,
+.lime-light-many:hover > *,
+.lime-light-many:focus > * {
+  color: var(--ani-lime-light); }
 
 .green,
 .green-all > *,
@@ -2386,6 +2516,30 @@ button,
 .green-many:focus > * {
   color: var(--ani-green); }
 
+.green-dark,
+.green-dark-all > *,
+.green-dark-on:hover,
+.green-dark-on:focus,
+*:hover > .green-dark-in,
+*:focus > .green-dark-in,
+.green-dark-one > *:hover,
+.green-dark-one > *:focus,
+.green-dark-many:hover > *,
+.green-dark-many:focus > * {
+  color: var(--ani-green-dark); }
+
+.green-light,
+.green-light-all > *,
+.green-light-on:hover,
+.green-light-on:focus,
+*:hover > .green-light-in,
+*:focus > .green-light-in,
+.green-light-one > *:hover,
+.green-light-one > *:focus,
+.green-light-many:hover > *,
+.green-light-many:focus > * {
+  color: var(--ani-green-light); }
+
 .aqua,
 .aqua-all > *,
 .aqua-on:hover,
@@ -2397,6 +2551,30 @@ button,
 .aqua-many:hover > *,
 .aqua-many:focus > * {
   color: var(--ani-aqua); }
+
+.aqua-dark,
+.aqua-dark-all > *,
+.aqua-dark-on:hover,
+.aqua-dark-on:focus,
+*:hover > .aqua-dark-in,
+*:focus > .aqua-dark-in,
+.aqua-dark-one > *:hover,
+.aqua-dark-one > *:focus,
+.aqua-dark-many:hover > *,
+.aqua-dark-many:focus > * {
+  color: var(--ani-aqua-dark); }
+
+.aqua-light,
+.aqua-light-all > *,
+.aqua-light-on:hover,
+.aqua-light-on:focus,
+*:hover > .aqua-light-in,
+*:focus > .aqua-light-in,
+.aqua-light-one > *:hover,
+.aqua-light-one > *:focus,
+.aqua-light-many:hover > *,
+.aqua-light-many:focus > * {
+  color: var(--ani-aqua-light); }
 
 .cyan,
 .cyan-all > *,
@@ -2410,6 +2588,30 @@ button,
 .cyan-many:focus > * {
   color: var(--ani-cyan); }
 
+.cyan-dark,
+.cyan-dark-all > *,
+.cyan-dark-on:hover,
+.cyan-dark-on:focus,
+*:hover > .cyan-dark-in,
+*:focus > .cyan-dark-in,
+.cyan-dark-one > *:hover,
+.cyan-dark-one > *:focus,
+.cyan-dark-many:hover > *,
+.cyan-dark-many:focus > * {
+  color: var(--ani-cyan-dark); }
+
+.cyan-light,
+.cyan-light-all > *,
+.cyan-light-on:hover,
+.cyan-light-on:focus,
+*:hover > .cyan-light-in,
+*:focus > .cyan-light-in,
+.cyan-light-one > *:hover,
+.cyan-light-one > *:focus,
+.cyan-light-many:hover > *,
+.cyan-light-many:focus > * {
+  color: var(--ani-cyan-light); }
+
 .sky,
 .sky-all > *,
 .sky-on:hover,
@@ -2421,6 +2623,30 @@ button,
 .sky-many:hover > *,
 .sky-many:focus > * {
   color: var(--ani-sky); }
+
+.sky-dark,
+.sky-dark-all > *,
+.sky-dark-on:hover,
+.sky-dark-on:focus,
+*:hover > .sky-dark-in,
+*:focus > .sky-dark-in,
+.sky-dark-one > *:hover,
+.sky-dark-one > *:focus,
+.sky-dark-many:hover > *,
+.sky-dark-many:focus > * {
+  color: var(--ani-sky-dark); }
+
+.sky-light,
+.sky-light-all > *,
+.sky-light-on:hover,
+.sky-light-on:focus,
+*:hover > .sky-light-in,
+*:focus > .sky-light-in,
+.sky-light-one > *:hover,
+.sky-light-one > *:focus,
+.sky-light-many:hover > *,
+.sky-light-many:focus > * {
+  color: var(--ani-sky-light); }
 
 .blue,
 .blue-all > *,
@@ -2434,6 +2660,30 @@ button,
 .blue-many:focus > * {
   color: var(--ani-blue); }
 
+.blue-dark,
+.blue-dark-all > *,
+.blue-dark-on:hover,
+.blue-dark-on:focus,
+*:hover > .blue-dark-in,
+*:focus > .blue-dark-in,
+.blue-dark-one > *:hover,
+.blue-dark-one > *:focus,
+.blue-dark-many:hover > *,
+.blue-dark-many:focus > * {
+  color: var(--ani-blue-dark); }
+
+.blue-light,
+.blue-light-all > *,
+.blue-light-on:hover,
+.blue-light-on:focus,
+*:hover > .blue-light-in,
+*:focus > .blue-light-in,
+.blue-light-one > *:hover,
+.blue-light-one > *:focus,
+.blue-light-many:hover > *,
+.blue-light-many:focus > * {
+  color: var(--ani-blue-light); }
+
 .violet,
 .violet-all > *,
 .violet-on:hover,
@@ -2445,6 +2695,30 @@ button,
 .violet-many:hover > *,
 .violet-many:focus > * {
   color: var(--ani-violet); }
+
+.violet-dark,
+.violet-dark-all > *,
+.violet-dark-on:hover,
+.violet-dark-on:focus,
+*:hover > .violet-dark-in,
+*:focus > .violet-dark-in,
+.violet-dark-one > *:hover,
+.violet-dark-one > *:focus,
+.violet-dark-many:hover > *,
+.violet-dark-many:focus > * {
+  color: var(--ani-violet-dark); }
+
+.violet-light,
+.violet-light-all > *,
+.violet-light-on:hover,
+.violet-light-on:focus,
+*:hover > .violet-light-in,
+*:focus > .violet-light-in,
+.violet-light-one > *:hover,
+.violet-light-one > *:focus,
+.violet-light-many:hover > *,
+.violet-light-many:focus > * {
+  color: var(--ani-violet-light); }
 
 .magenta,
 .magenta-all > *,
@@ -2458,6 +2732,30 @@ button,
 .magenta-many:focus > * {
   color: var(--ani-magenta); }
 
+.magenta-dark,
+.magenta-dark-all > *,
+.magenta-dark-on:hover,
+.magenta-dark-on:focus,
+*:hover > .magenta-dark-in,
+*:focus > .magenta-dark-in,
+.magenta-dark-one > *:hover,
+.magenta-dark-one > *:focus,
+.magenta-dark-many:hover > *,
+.magenta-dark-many:focus > * {
+  color: var(--ani-magenta-dark); }
+
+.magenta-light,
+.magenta-light-all > *,
+.magenta-light-on:hover,
+.magenta-light-on:focus,
+*:hover > .magenta-light-in,
+*:focus > .magenta-light-in,
+.magenta-light-one > *:hover,
+.magenta-light-one > *:focus,
+.magenta-light-many:hover > *,
+.magenta-light-many:focus > * {
+  color: var(--ani-magenta-light); }
+
 .pink,
 .pink-all > *,
 .pink-on:hover,
@@ -2469,6 +2767,30 @@ button,
 .pink-many:hover > *,
 .pink-many:focus > * {
   color: var(--ani-pink); }
+
+.pink-dark,
+.pink-dark-all > *,
+.pink-dark-on:hover,
+.pink-dark-on:focus,
+*:hover > .pink-dark-in,
+*:focus > .pink-dark-in,
+.pink-dark-one > *:hover,
+.pink-dark-one > *:focus,
+.pink-dark-many:hover > *,
+.pink-dark-many:focus > * {
+  color: var(--ani-pink-dark); }
+
+.pink-light,
+.pink-light-all > *,
+.pink-light-on:hover,
+.pink-light-on:focus,
+*:hover > .pink-light-in,
+*:focus > .pink-light-in,
+.pink-light-one > *:hover,
+.pink-light-one > *:focus,
+.pink-light-many:hover > *,
+.pink-light-many:focus > * {
+  color: var(--ani-pink-light); }
 
 .black,
 .black-all > *,
@@ -2567,6 +2889,30 @@ button,
 .bg-red-light-many:focus > * {
   background-color: var(--ani-red-light); }
 
+.bg-red-darker,
+.bg-red-darker-all > *,
+.bg-red-darker-on:hover,
+.bg-red-darker-on:focus,
+*:hover > .bg-red-darker-in,
+*:focus > .bg-red-darker-in,
+.bg-red-darker-one > *:hover,
+.bg-red-darker-one > *:focus,
+.bg-red-darker-many:hover > *,
+.bg-red-darker-many:focus > * {
+  background-color: var(--ani-red-darker); }
+
+.bg-red-lighter,
+.bg-red-lighter-all > *,
+.bg-red-lighter-on:hover,
+.bg-red-lighter-on:focus,
+*:hover > .bg-red-lighter-in,
+*:focus > .bg-red-lighter-in,
+.bg-red-lighter-one > *:hover,
+.bg-red-lighter-one > *:focus,
+.bg-red-lighter-many:hover > *,
+.bg-red-lighter-many:focus > * {
+  background-color: var(--ani-red-lighter); }
+
 .bg-orange,
 .bg-orange-all > *,
 .bg-orange-on:hover,
@@ -2602,6 +2948,30 @@ button,
 .bg-orange-light-many:hover > *,
 .bg-orange-light-many:focus > * {
   background-color: var(--ani-orange-light); }
+
+.bg-orange-darker,
+.bg-orange-darker-all > *,
+.bg-orange-darker-on:hover,
+.bg-orange-darker-on:focus,
+*:hover > .bg-orange-darker-in,
+*:focus > .bg-orange-darker-in,
+.bg-orange-darker-one > *:hover,
+.bg-orange-darker-one > *:focus,
+.bg-orange-darker-many:hover > *,
+.bg-orange-darker-many:focus > * {
+  background-color: var(--ani-orange-darker); }
+
+.bg-orange-lighter,
+.bg-orange-lighter-all > *,
+.bg-orange-lighter-on:hover,
+.bg-orange-lighter-on:focus,
+*:hover > .bg-orange-lighter-in,
+*:focus > .bg-orange-lighter-in,
+.bg-orange-lighter-one > *:hover,
+.bg-orange-lighter-one > *:focus,
+.bg-orange-lighter-many:hover > *,
+.bg-orange-lighter-many:focus > * {
+  background-color: var(--ani-orange-lighter); }
 
 .bg-yellow,
 .bg-yellow-all > *,
@@ -2639,6 +3009,30 @@ button,
 .bg-yellow-light-many:focus > * {
   background-color: var(--ani-yellow-light); }
 
+.bg-yellow-darker,
+.bg-yellow-darker-all > *,
+.bg-yellow-darker-on:hover,
+.bg-yellow-darker-on:focus,
+*:hover > .bg-yellow-darker-in,
+*:focus > .bg-yellow-darker-in,
+.bg-yellow-darker-one > *:hover,
+.bg-yellow-darker-one > *:focus,
+.bg-yellow-darker-many:hover > *,
+.bg-yellow-darker-many:focus > * {
+  background-color: var(--ani-yellow-darker); }
+
+.bg-yellow-lighter,
+.bg-yellow-lighter-all > *,
+.bg-yellow-lighter-on:hover,
+.bg-yellow-lighter-on:focus,
+*:hover > .bg-yellow-lighter-in,
+*:focus > .bg-yellow-lighter-in,
+.bg-yellow-lighter-one > *:hover,
+.bg-yellow-lighter-one > *:focus,
+.bg-yellow-lighter-many:hover > *,
+.bg-yellow-lighter-many:focus > * {
+  background-color: var(--ani-yellow-lighter); }
+
 .bg-lime,
 .bg-lime-all > *,
 .bg-lime-on:hover,
@@ -2674,6 +3068,30 @@ button,
 .bg-lime-light-many:hover > *,
 .bg-lime-light-many:focus > * {
   background-color: var(--ani-lime-light); }
+
+.bg-lime-darker,
+.bg-lime-darker-all > *,
+.bg-lime-darker-on:hover,
+.bg-lime-darker-on:focus,
+*:hover > .bg-lime-darker-in,
+*:focus > .bg-lime-darker-in,
+.bg-lime-darker-one > *:hover,
+.bg-lime-darker-one > *:focus,
+.bg-lime-darker-many:hover > *,
+.bg-lime-darker-many:focus > * {
+  background-color: var(--ani-lime-darker); }
+
+.bg-lime-lighter,
+.bg-lime-lighter-all > *,
+.bg-lime-lighter-on:hover,
+.bg-lime-lighter-on:focus,
+*:hover > .bg-lime-lighter-in,
+*:focus > .bg-lime-lighter-in,
+.bg-lime-lighter-one > *:hover,
+.bg-lime-lighter-one > *:focus,
+.bg-lime-lighter-many:hover > *,
+.bg-lime-lighter-many:focus > * {
+  background-color: var(--ani-lime-lighter); }
 
 .bg-green,
 .bg-green-all > *,
@@ -2711,6 +3129,30 @@ button,
 .bg-green-light-many:focus > * {
   background-color: var(--ani-green-light); }
 
+.bg-green-darker,
+.bg-green-darker-all > *,
+.bg-green-darker-on:hover,
+.bg-green-darker-on:focus,
+*:hover > .bg-green-darker-in,
+*:focus > .bg-green-darker-in,
+.bg-green-darker-one > *:hover,
+.bg-green-darker-one > *:focus,
+.bg-green-darker-many:hover > *,
+.bg-green-darker-many:focus > * {
+  background-color: var(--ani-green-darker); }
+
+.bg-green-lighter,
+.bg-green-lighter-all > *,
+.bg-green-lighter-on:hover,
+.bg-green-lighter-on:focus,
+*:hover > .bg-green-lighter-in,
+*:focus > .bg-green-lighter-in,
+.bg-green-lighter-one > *:hover,
+.bg-green-lighter-one > *:focus,
+.bg-green-lighter-many:hover > *,
+.bg-green-lighter-many:focus > * {
+  background-color: var(--ani-green-lighter); }
+
 .bg-aqua,
 .bg-aqua-all > *,
 .bg-aqua-on:hover,
@@ -2746,6 +3188,30 @@ button,
 .bg-aqua-light-many:hover > *,
 .bg-aqua-light-many:focus > * {
   background-color: var(--ani-aqua-light); }
+
+.bg-aqua-darker,
+.bg-aqua-darker-all > *,
+.bg-aqua-darker-on:hover,
+.bg-aqua-darker-on:focus,
+*:hover > .bg-aqua-darker-in,
+*:focus > .bg-aqua-darker-in,
+.bg-aqua-darker-one > *:hover,
+.bg-aqua-darker-one > *:focus,
+.bg-aqua-darker-many:hover > *,
+.bg-aqua-darker-many:focus > * {
+  background-color: var(--ani-aqua-darker); }
+
+.bg-aqua-lighter,
+.bg-aqua-lighter-all > *,
+.bg-aqua-lighter-on:hover,
+.bg-aqua-lighter-on:focus,
+*:hover > .bg-aqua-lighter-in,
+*:focus > .bg-aqua-lighter-in,
+.bg-aqua-lighter-one > *:hover,
+.bg-aqua-lighter-one > *:focus,
+.bg-aqua-lighter-many:hover > *,
+.bg-aqua-lighter-many:focus > * {
+  background-color: var(--ani-aqua-lighter); }
 
 .bg-cyan,
 .bg-cyan-all > *,
@@ -2783,6 +3249,30 @@ button,
 .bg-cyan-light-many:focus > * {
   background-color: var(--ani-cyan-light); }
 
+.bg-cyan-darker,
+.bg-cyan-darker-all > *,
+.bg-cyan-darker-on:hover,
+.bg-cyan-darker-on:focus,
+*:hover > .bg-cyan-darker-in,
+*:focus > .bg-cyan-darker-in,
+.bg-cyan-darker-one > *:hover,
+.bg-cyan-darker-one > *:focus,
+.bg-cyan-darker-many:hover > *,
+.bg-cyan-darker-many:focus > * {
+  background-color: var(--ani-cyan-darker); }
+
+.bg-cyan-lighter,
+.bg-cyan-lighter-all > *,
+.bg-cyan-lighter-on:hover,
+.bg-cyan-lighter-on:focus,
+*:hover > .bg-cyan-lighter-in,
+*:focus > .bg-cyan-lighter-in,
+.bg-cyan-lighter-one > *:hover,
+.bg-cyan-lighter-one > *:focus,
+.bg-cyan-lighter-many:hover > *,
+.bg-cyan-lighter-many:focus > * {
+  background-color: var(--ani-cyan-lighter); }
+
 .bg-sky,
 .bg-sky-all > *,
 .bg-sky-on:hover,
@@ -2818,6 +3308,30 @@ button,
 .bg-sky-light-many:hover > *,
 .bg-sky-light-many:focus > * {
   background-color: var(--ani-sky-light); }
+
+.bg-sky-darker,
+.bg-sky-darker-all > *,
+.bg-sky-darker-on:hover,
+.bg-sky-darker-on:focus,
+*:hover > .bg-sky-darker-in,
+*:focus > .bg-sky-darker-in,
+.bg-sky-darker-one > *:hover,
+.bg-sky-darker-one > *:focus,
+.bg-sky-darker-many:hover > *,
+.bg-sky-darker-many:focus > * {
+  background-color: var(--ani-sky-darker); }
+
+.bg-sky-lighter,
+.bg-sky-lighter-all > *,
+.bg-sky-lighter-on:hover,
+.bg-sky-lighter-on:focus,
+*:hover > .bg-sky-lighter-in,
+*:focus > .bg-sky-lighter-in,
+.bg-sky-lighter-one > *:hover,
+.bg-sky-lighter-one > *:focus,
+.bg-sky-lighter-many:hover > *,
+.bg-sky-lighter-many:focus > * {
+  background-color: var(--ani-sky-lighter); }
 
 .bg-blue,
 .bg-blue-all > *,
@@ -2855,6 +3369,30 @@ button,
 .bg-blue-light-many:focus > * {
   background-color: var(--ani-blue-light); }
 
+.bg-blue-darker,
+.bg-blue-darker-all > *,
+.bg-blue-darker-on:hover,
+.bg-blue-darker-on:focus,
+*:hover > .bg-blue-darker-in,
+*:focus > .bg-blue-darker-in,
+.bg-blue-darker-one > *:hover,
+.bg-blue-darker-one > *:focus,
+.bg-blue-darker-many:hover > *,
+.bg-blue-darker-many:focus > * {
+  background-color: var(--ani-blue-darker); }
+
+.bg-blue-lighter,
+.bg-blue-lighter-all > *,
+.bg-blue-lighter-on:hover,
+.bg-blue-lighter-on:focus,
+*:hover > .bg-blue-lighter-in,
+*:focus > .bg-blue-lighter-in,
+.bg-blue-lighter-one > *:hover,
+.bg-blue-lighter-one > *:focus,
+.bg-blue-lighter-many:hover > *,
+.bg-blue-lighter-many:focus > * {
+  background-color: var(--ani-blue-lighter); }
+
 .bg-violet,
 .bg-violet-all > *,
 .bg-violet-on:hover,
@@ -2890,6 +3428,30 @@ button,
 .bg-violet-light-many:hover > *,
 .bg-violet-light-many:focus > * {
   background-color: var(--ani-violet-light); }
+
+.bg-violet-darker,
+.bg-violet-darker-all > *,
+.bg-violet-darker-on:hover,
+.bg-violet-darker-on:focus,
+*:hover > .bg-violet-darker-in,
+*:focus > .bg-violet-darker-in,
+.bg-violet-darker-one > *:hover,
+.bg-violet-darker-one > *:focus,
+.bg-violet-darker-many:hover > *,
+.bg-violet-darker-many:focus > * {
+  background-color: var(--ani-violet-darker); }
+
+.bg-violet-lighter,
+.bg-violet-lighter-all > *,
+.bg-violet-lighter-on:hover,
+.bg-violet-lighter-on:focus,
+*:hover > .bg-violet-lighter-in,
+*:focus > .bg-violet-lighter-in,
+.bg-violet-lighter-one > *:hover,
+.bg-violet-lighter-one > *:focus,
+.bg-violet-lighter-many:hover > *,
+.bg-violet-lighter-many:focus > * {
+  background-color: var(--ani-violet-lighter); }
 
 .bg-magenta,
 .bg-magenta-all > *,
@@ -2927,6 +3489,30 @@ button,
 .bg-magenta-light-many:focus > * {
   background-color: var(--ani-magenta-light); }
 
+.bg-magenta-darker,
+.bg-magenta-darker-all > *,
+.bg-magenta-darker-on:hover,
+.bg-magenta-darker-on:focus,
+*:hover > .bg-magenta-darker-in,
+*:focus > .bg-magenta-darker-in,
+.bg-magenta-darker-one > *:hover,
+.bg-magenta-darker-one > *:focus,
+.bg-magenta-darker-many:hover > *,
+.bg-magenta-darker-many:focus > * {
+  background-color: var(--ani-magenta-darker); }
+
+.bg-magenta-lighter,
+.bg-magenta-lighter-all > *,
+.bg-magenta-lighter-on:hover,
+.bg-magenta-lighter-on:focus,
+*:hover > .bg-magenta-lighter-in,
+*:focus > .bg-magenta-lighter-in,
+.bg-magenta-lighter-one > *:hover,
+.bg-magenta-lighter-one > *:focus,
+.bg-magenta-lighter-many:hover > *,
+.bg-magenta-lighter-many:focus > * {
+  background-color: var(--ani-magenta-lighter); }
+
 .bg-pink,
 .bg-pink-all > *,
 .bg-pink-on:hover,
@@ -2963,6 +3549,30 @@ button,
 .bg-pink-light-many:focus > * {
   background-color: var(--ani-pink-light); }
 
+.bg-pink-darker,
+.bg-pink-darker-all > *,
+.bg-pink-darker-on:hover,
+.bg-pink-darker-on:focus,
+*:hover > .bg-pink-darker-in,
+*:focus > .bg-pink-darker-in,
+.bg-pink-darker-one > *:hover,
+.bg-pink-darker-one > *:focus,
+.bg-pink-darker-many:hover > *,
+.bg-pink-darker-many:focus > * {
+  background-color: var(--ani-pink-darker); }
+
+.bg-pink-lighter,
+.bg-pink-lighter-all > *,
+.bg-pink-lighter-on:hover,
+.bg-pink-lighter-on:focus,
+*:hover > .bg-pink-lighter-in,
+*:focus > .bg-pink-lighter-in,
+.bg-pink-lighter-one > *:hover,
+.bg-pink-lighter-one > *:focus,
+.bg-pink-lighter-many:hover > *,
+.bg-pink-lighter-many:focus > * {
+  background-color: var(--ani-pink-lighter); }
+
 .bg-black,
 .bg-black-all > *,
 .bg-black-on:hover,
@@ -2975,29 +3585,29 @@ button,
 .bg-black-many:focus > * {
   background-color: var(--ani-black); }
 
-.bg-black-dark,
-.bg-black-dark-all > *,
-.bg-black-dark-on:hover,
-.bg-black-dark-on:focus,
-*:hover > .bg-black-dark-in,
-*:focus > .bg-black-dark-in,
-.bg-black-dark-one > *:hover,
-.bg-black-dark-one > *:focus,
-.bg-black-dark-many:hover > *,
-.bg-black-dark-many:focus > * {
-  background-color: var(--ani-black-dark); }
+.bg-black-darker,
+.bg-black-darker-all > *,
+.bg-black-darker-on:hover,
+.bg-black-darker-on:focus,
+*:hover > .bg-black-darker-in,
+*:focus > .bg-black-darker-in,
+.bg-black-darker-one > *:hover,
+.bg-black-darker-one > *:focus,
+.bg-black-darker-many:hover > *,
+.bg-black-darker-many:focus > * {
+  background-color: var(--ani-black-darker); }
 
-.bg-black-light,
-.bg-black-light-all > *,
-.bg-black-light-on:hover,
-.bg-black-light-on:focus,
-*:hover > .bg-black-light-in,
-*:focus > .bg-black-light-in,
-.bg-black-light-one > *:hover,
-.bg-black-light-one > *:focus,
-.bg-black-light-many:hover > *,
-.bg-black-light-many:focus > * {
-  background-color: var(--ani-black-light); }
+.bg-black-lighter,
+.bg-black-lighter-all > *,
+.bg-black-lighter-on:hover,
+.bg-black-lighter-on:focus,
+*:hover > .bg-black-lighter-in,
+*:focus > .bg-black-lighter-in,
+.bg-black-lighter-one > *:hover,
+.bg-black-lighter-one > *:focus,
+.bg-black-lighter-many:hover > *,
+.bg-black-lighter-many:focus > * {
+  background-color: var(--ani-black-lighter); }
 
 .bg-slate,
 .bg-slate-all > *,
@@ -3011,29 +3621,29 @@ button,
 .bg-slate-many:focus > * {
   background-color: var(--ani-slate); }
 
-.bg-slate-dark,
-.bg-slate-dark-all > *,
-.bg-slate-dark-on:hover,
-.bg-slate-dark-on:focus,
-*:hover > .bg-slate-dark-in,
-*:focus > .bg-slate-dark-in,
-.bg-slate-dark-one > *:hover,
-.bg-slate-dark-one > *:focus,
-.bg-slate-dark-many:hover > *,
-.bg-slate-dark-many:focus > * {
-  background-color: var(--ani-slate-dark); }
+.bg-slate-darker,
+.bg-slate-darker-all > *,
+.bg-slate-darker-on:hover,
+.bg-slate-darker-on:focus,
+*:hover > .bg-slate-darker-in,
+*:focus > .bg-slate-darker-in,
+.bg-slate-darker-one > *:hover,
+.bg-slate-darker-one > *:focus,
+.bg-slate-darker-many:hover > *,
+.bg-slate-darker-many:focus > * {
+  background-color: var(--ani-slate-darker); }
 
-.bg-slate-light,
-.bg-slate-light-all > *,
-.bg-slate-light-on:hover,
-.bg-slate-light-on:focus,
-*:hover > .bg-slate-light-in,
-*:focus > .bg-slate-light-in,
-.bg-slate-light-one > *:hover,
-.bg-slate-light-one > *:focus,
-.bg-slate-light-many:hover > *,
-.bg-slate-light-many:focus > * {
-  background-color: var(--ani-slate-light); }
+.bg-slate-lighter,
+.bg-slate-lighter-all > *,
+.bg-slate-lighter-on:hover,
+.bg-slate-lighter-on:focus,
+*:hover > .bg-slate-lighter-in,
+*:focus > .bg-slate-lighter-in,
+.bg-slate-lighter-one > *:hover,
+.bg-slate-lighter-one > *:focus,
+.bg-slate-lighter-many:hover > *,
+.bg-slate-lighter-many:focus > * {
+  background-color: var(--ani-slate-lighter); }
 
 .bg-gray,
 .bg-gray-all > *,
@@ -3047,29 +3657,29 @@ button,
 .bg-gray-many:focus > * {
   background-color: var(--ani-gray); }
 
-.bg-gray-dark,
-.bg-gray-dark-all > *,
-.bg-gray-dark-on:hover,
-.bg-gray-dark-on:focus,
-*:hover > .bg-gray-dark-in,
-*:focus > .bg-gray-dark-in,
-.bg-gray-dark-one > *:hover,
-.bg-gray-dark-one > *:focus,
-.bg-gray-dark-many:hover > *,
-.bg-gray-dark-many:focus > * {
-  background-color: var(--ani-gray-dark); }
+.bg-gray-darker,
+.bg-gray-darker-all > *,
+.bg-gray-darker-on:hover,
+.bg-gray-darker-on:focus,
+*:hover > .bg-gray-darker-in,
+*:focus > .bg-gray-darker-in,
+.bg-gray-darker-one > *:hover,
+.bg-gray-darker-one > *:focus,
+.bg-gray-darker-many:hover > *,
+.bg-gray-darker-many:focus > * {
+  background-color: var(--ani-gray-darker); }
 
-.bg-gray-light,
-.bg-gray-light-all > *,
-.bg-gray-light-on:hover,
-.bg-gray-light-on:focus,
-*:hover > .bg-gray-light-in,
-*:focus > .bg-gray-light-in,
-.bg-gray-light-one > *:hover,
-.bg-gray-light-one > *:focus,
-.bg-gray-light-many:hover > *,
-.bg-gray-light-many:focus > * {
-  background-color: var(--ani-gray-light); }
+.bg-gray-lighter,
+.bg-gray-lighter-all > *,
+.bg-gray-lighter-on:hover,
+.bg-gray-lighter-on:focus,
+*:hover > .bg-gray-lighter-in,
+*:focus > .bg-gray-lighter-in,
+.bg-gray-lighter-one > *:hover,
+.bg-gray-lighter-one > *:focus,
+.bg-gray-lighter-many:hover > *,
+.bg-gray-lighter-many:focus > * {
+  background-color: var(--ani-gray-lighter); }
 
 .bg-silver,
 .bg-silver-all > *,
@@ -3083,29 +3693,29 @@ button,
 .bg-silver-many:focus > * {
   background-color: var(--ani-silver); }
 
-.bg-silver-dark,
-.bg-silver-dark-all > *,
-.bg-silver-dark-on:hover,
-.bg-silver-dark-on:focus,
-*:hover > .bg-silver-dark-in,
-*:focus > .bg-silver-dark-in,
-.bg-silver-dark-one > *:hover,
-.bg-silver-dark-one > *:focus,
-.bg-silver-dark-many:hover > *,
-.bg-silver-dark-many:focus > * {
-  background-color: var(--ani-silver-dark); }
+.bg-silver-darker,
+.bg-silver-darker-all > *,
+.bg-silver-darker-on:hover,
+.bg-silver-darker-on:focus,
+*:hover > .bg-silver-darker-in,
+*:focus > .bg-silver-darker-in,
+.bg-silver-darker-one > *:hover,
+.bg-silver-darker-one > *:focus,
+.bg-silver-darker-many:hover > *,
+.bg-silver-darker-many:focus > * {
+  background-color: var(--ani-silver-darker); }
 
-.bg-silver-light,
-.bg-silver-light-all > *,
-.bg-silver-light-on:hover,
-.bg-silver-light-on:focus,
-*:hover > .bg-silver-light-in,
-*:focus > .bg-silver-light-in,
-.bg-silver-light-one > *:hover,
-.bg-silver-light-one > *:focus,
-.bg-silver-light-many:hover > *,
-.bg-silver-light-many:focus > * {
-  background-color: var(--ani-silver-light); }
+.bg-silver-lighter,
+.bg-silver-lighter-all > *,
+.bg-silver-lighter-on:hover,
+.bg-silver-lighter-on:focus,
+*:hover > .bg-silver-lighter-in,
+*:focus > .bg-silver-lighter-in,
+.bg-silver-lighter-one > *:hover,
+.bg-silver-lighter-one > *:focus,
+.bg-silver-lighter-many:hover > *,
+.bg-silver-lighter-many:focus > * {
+  background-color: var(--ani-silver-lighter); }
 
 .bg-white,
 .bg-white-all > *,
@@ -3119,29 +3729,29 @@ button,
 .bg-white-many:focus > * {
   background-color: var(--ani-white); }
 
-.bg-white-dark,
-.bg-white-dark-all > *,
-.bg-white-dark-on:hover,
-.bg-white-dark-on:focus,
-*:hover > .bg-white-dark-in,
-*:focus > .bg-white-dark-in,
-.bg-white-dark-one > *:hover,
-.bg-white-dark-one > *:focus,
-.bg-white-dark-many:hover > *,
-.bg-white-dark-many:focus > * {
-  background-color: var(--ani-white-dark); }
+.bg-white-darker,
+.bg-white-darker-all > *,
+.bg-white-darker-on:hover,
+.bg-white-darker-on:focus,
+*:hover > .bg-white-darker-in,
+*:focus > .bg-white-darker-in,
+.bg-white-darker-one > *:hover,
+.bg-white-darker-one > *:focus,
+.bg-white-darker-many:hover > *,
+.bg-white-darker-many:focus > * {
+  background-color: var(--ani-white-darker); }
 
-.bg-white-light,
-.bg-white-light-all > *,
-.bg-white-light-on:hover,
-.bg-white-light-on:focus,
-*:hover > .bg-white-light-in,
-*:focus > .bg-white-light-in,
-.bg-white-light-one > *:hover,
-.bg-white-light-one > *:focus,
-.bg-white-light-many:hover > *,
-.bg-white-light-many:focus > * {
-  background-color: var(--ani-white-light); }
+.bg-white-lighter,
+.bg-white-lighter-all > *,
+.bg-white-lighter-on:hover,
+.bg-white-lighter-on:focus,
+*:hover > .bg-white-lighter-in,
+*:focus > .bg-white-lighter-in,
+.bg-white-lighter-one > *:hover,
+.bg-white-lighter-one > *:focus,
+.bg-white-lighter-many:hover > *,
+.bg-white-lighter-many:focus > * {
+  background-color: var(--ani-white-lighter); }
 
 /********** ANIMATION **********/
 [class*="ani-"] {
@@ -3483,4 +4093,4 @@ button,
   animation-direction: alternate-reverse; }
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 16th Mar 2023 @ 1:58:19 PM */
+ Updated: 16th Mar 2023 @ 10:20:49 PM */
