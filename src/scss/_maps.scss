@@ -20,26 +20,26 @@ $font-family: (
 
 //********** COLORS **********//
 $hues: (
-  "red":      (  0, 100%, 25%),
-  "orange":   ( 30, 100%, 50%),
-  "yellow":   ( 60, 100%, 75%),
-  "lime":     ( 90, 100%, 75%),
-  "green":    (120, 100%, 25%),
-  "aqua":     (150, 100%, 75%),
-  "cyan":     (180, 100%, 25%),
-  "sky":      (210, 100%, 75%),
-  "blue":     (240, 100%, 25%),
-  "violet":   (270, 100%, 75%),
-  "magenta":  (300, 100%, 25%),
-  "pink":     (330, 100%, 75%)
+  "red":        0,
+  "orange":    30,
+  "yellow":    60,
+  "lime":      90,
+  "green":    120,
+  "aqua":     150,
+  "cyan":     180,
+  "sky":      210,
+  "blue":     240,
+  "violet":   270,
+  "magenta":  300,
+  "pink":     330
 ) !default;
 
 $grayscale: (
-  "black":  (0, 0%,   0%),
-  "slate":  (0, 0%,  25%),
-  "gray":   (0, 0%,  50%),
-  "silver": (0, 0%,  75%),
-  "white":  (0, 0%, 100%)
+  "black":    0%,
+  "slate":   30%,
+  "gray":    50%,
+  "silver":  70%,
+  "white":  100%
 ) !default;
 
 $colors: $hues, $grayscale;
