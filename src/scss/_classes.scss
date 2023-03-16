@@ -141,6 +141,8 @@
 /********** BORDER COLOR **********/
 @each $key, $value in $hues {
   @include states("bord-#{$key}", "border-color", "var(--ani-#{$key})");
+  @include states("bord-#{$key}-dark", "border-color", "var(--ani-#{$key}-dark)");
+  @include states("bord-#{$key}-light", "border-color", "var(--ani-#{$key}-light)");
 }
 
 /********** BORDER RADIUS **********/
