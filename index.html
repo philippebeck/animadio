@@ -9,9 +9,6 @@
     <meta name="description"  content="Testing Animadio !">
     <link rel="stylesheet" href="dist/animadio.css">
     <style>
-        section {
-            margin: 50px;
-        }
         h2 {
             color: var(--ani-blue);
         }
@@ -26,10 +23,10 @@
     </style>
 </head>
 
-<body class="container-90sm-80md-70lg center bg-black white">
+<body class="center bg-black white">
     <h1 class="violet">Animadio Lab</h1>
 
-    <p>For information, display classes are not present in this demonstration (actually), but they are really present in the library & you can concat each of them (flex, grid, container), so this is useful for grid & container about responsive (for example)...</p>
+    <p class="container-90sm-80md-70lg">For information, display classes are not present in this demonstration (actually), but they are really present in the library & you can concat each of them (flex, grid, container), so this is useful for grid & container about responsive (for example)...</p>
 
     <section>
         <h2>Colors</h2>
@@ -37,13 +34,17 @@
         <section>
             <h3>Hues</h3>
             <ul class="flex-col gap-tn1 items-center width-md-all">
-                <li class="red">Red : class="red"</li>
-                <li class="orange">Orange : class="orange"</li>
+                <li class="bg-white red">Red : class="red"</li>
+                <li class="bg-white orange">Orange : class="orange"</li>
                 <li class="yellow">Yellow : class="yellow"</li>
-                <li class="green">Green : class="green"</li>
+                <li class="lime">Lime : class="lime"</li>
+                <li class="bg-white green">Green : class="green"</li>
+                <li class="aqua">Aqua : class="aqua"</li>
+                <li class="bg-white cyan">Cyan : class="cyan"</li>
                 <li class="sky">Sky : class="sky"</li>
-                <li class="blue">Blue : class="blue"</li>
+                <li class="bg-white blue">Blue : class="blue"</li>
                 <li class="violet">Violet : class="violet"</li>
+                <li class="bg-white magenta">Magenta : class="magenta"</li>
                 <li class="pink">Pink : class="pink"</li>
             </ul>
         </section>
@@ -52,6 +53,7 @@
             <h3>Grayscale</h3>
             <ul class="flex-col gap-tn1 items-center width-md-all">
                 <li class="bg-white black">Black : class="black"</li>
+                <li class="bg-white slate">Slate : class="slate"</li>
                 <li class="gray">Gray : class="gray"</li>
                 <li class="silver">Silver : class="silver"</li>
                 <li class="white">White : class="white"</li>
@@ -64,24 +66,29 @@
 
         <section>
             <h3>Hues</h3>
-            <ul class="flex-col gap-tn1 items-center width-md-all white-all">
+            <ul class="flex-col gap-tn1 items-center width-md-all">
                 <li class="bg-red">Red : class="bg-red"</li>
                 <li class="bg-orange">Orange : class="bg-orange"</li>
-                <li class="bg-yellow">Yellow : class="bg-yellow"</li>
+                <li class="black bg-yellow">Yellow : class="bg-yellow"</li>
+                <li class="black bg-lime">Lime : class="bg-lime"</li>
                 <li class="bg-green">Green : class="bg-green"</li>
-                <li class="bg-sky">Sky : class="bg-sky"</li>
+                <li class="black bg-aqua">Aqua : class="bg-aqua"</li>
+                <li class="bg-cyan">Cyan : class="bg-cyan"</li>
+                <li class="black bg-sky">Sky : class="bg-sky"</li>
                 <li class="bg-blue">Blue : class="bg-blue"</li>
-                <li class="bg-violet">Violet : class="bg-violet"</li>
-                <li class="bg-pink">Pink : class="bg-pink"</li>
+                <li class="black bg-violet">Violet : class="bg-violet"</li>
+                <li class="bg-magenta">Magenta : class="bg-magenta"</li>
+                <li class="black bg-pink">Pink : class="bg-pink"</li>
             </ul>
         </section>
 
         <section>
             <h3>Grayscale</h3>
             <ul class="flex-col gap-tn1 items-center width-md-all">
-                <li class="white bg-black">Black : class="bg-black"</li>
-                <li class="white bg-gray">Gray : class="bg-gray"</li>
-                <li class="white bg-silver">Silver : class="bg-silver"</li>
+                <li class="bg-black">Black : class="bg-black"</li>
+                <li class="bg-slate">Slate : class="bg-slate"</li>
+                <li class="black bg-gray">Gray : class="bg-gray"</li>
+                <li class="black bg-silver">Silver : class="bg-silver"</li>
                 <li class="black bg-white">White : class="bg-white"</li>
             </ul>
         </section>
@@ -158,10 +165,14 @@
                 <li class="deco deco-red">Red : class="deco deco-red"</li>
                 <li class="deco deco-orange">Orange : class="deco deco-orange"</li>
                 <li class="deco deco-yellow">Yellow : class="deco deco-yellow"</li>
+                <li class="deco deco-lime">Lime : class="deco deco-lime"</li>
                 <li class="deco deco-green">Green : class="deco deco-green"</li>
+                <li class="deco deco-aqua">Aqua : class="deco deco-aqua"</li>
+                <li class="deco deco-cyan">Cyan : class="deco deco-cyan"</li>
                 <li class="deco deco-sky">Sky : class="deco deco-sky"</li>
                 <li class="deco deco-blue">Blue : class="deco deco-blue"</li>
                 <li class="deco deco-violet">Violet : class="deco deco-violet"</li>
+                <li class="deco deco-magenta">Magenta : class="deco deco-magenta"</li>
                 <li class="deco deco-pink">Pink : class="deco deco-pink"</li>
             </ul>
         </section>
@@ -202,10 +213,14 @@
                 <li class="bord bord-red">Red : class="bord bord-red"</li>
                 <li class="bord bord-orange">Orange : class="bord bord-orange"</li>
                 <li class="bord bord-yellow">Yellow : class="bord bord-yellow"</li>
+                <li class="bord bord-lime">Lime : class="bord bord-lime"</li>
                 <li class="bord bord-green">Green : class="bord bord-green"</li>
+                <li class="bord bord-aqua">Aqua : class="bord bord-aqua"</li>
+                <li class="bord bord-cyan">Cyan : class="bord bord-cyan"</li>
                 <li class="bord bord-sky">Sky : class="bord bord-sky"</li>
                 <li class="bord bord-blue">Blue : class="bord bord-blue"</li>
                 <li class="bord bord-violet">Violet : class="bord bord-violet"</li>
+                <li class="bord bord-magenta">Magenta : class="bord bord-magenta"</li>
                 <li class="bord bord-pink">Pink : class="bord bord-pink"</li>
             </ul>
         </section>
@@ -228,17 +243,17 @@
         <ul>
             <li>
                 the prefix part is ever 
-                <b class="red">"ani"</b>
+                <b class="pink">"ani"</b>
             </li>
             <li>
                 the main part is the 
-                <b class="green">animation name</b>,
+                <b class="aqua">animation name</b>,
                 <i>concat if necessary with each</i>
-                <b class="green">animation option</b>
+                <b class="lime">animation option</b>
             </li>
             <li>
                 the suffix part is 
-                <b class="blue">one of the six states</b>
+                <b class="sky">one of the six states</b>
                 <i>("it", "all", "on", "in", "each" or "many")</i>
             </li>
         </ul>
@@ -248,7 +263,7 @@
         <section>
             <h3>Animation Name</h3>
 
-            <p class="red"><b>All states must be concat with name & prefix</b>, like this :</p>
+            <p class="pink"><b>All states must be concat with name & prefix</b>, like this :</p>
             <ul>
                 <li>
                     <p class="yellow">
