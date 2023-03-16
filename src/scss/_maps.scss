@@ -20,20 +20,25 @@ $font-family: (
 
 //********** COLORS **********//
 $hues: (
-  "red":      (348,  83%, 47%), // Crimson
-  "orange":   ( 33, 100%, 50%), // DarkOrange
-  "yellow":   ( 51, 100%, 50%), // Gold
-  "green":    (120,  61%, 50%), // LimeGreen
-  "sky":      (195, 100%, 50%), // DeepSkyBlue
-  "blue":     (210, 100%, 56%), // DodgerBlue
-  "violet":   (271,  76%, 53%), // BlueViolet
-  "pink":     (328, 100%, 54%)  // DeepPink
+  "red":      (  0, 100%, 25%),
+  "orange":   ( 30, 100%, 50%),
+  "yellow":   ( 60, 100%, 75%),
+  "lime":     ( 90, 100%, 75%),
+  "green":    (120, 100%, 25%),
+  "aqua":     (150, 100%, 75%),
+  "cyan":     (180, 100%, 25%),
+  "sky":      (210, 100%, 75%),
+  "blue":     (240, 100%, 25%),
+  "violet":   (270, 100%, 75%),
+  "magenta":  (300, 100%, 25%),
+  "pink":     (330, 100%, 75%)
 ) !default;
 
 $grayscale: (
   "black":  (0, 0%,   0%),
-  "gray":   (0, 0%,  33%),
-  "silver": (0, 0%,  67%),
+  "slate":  (0, 0%,  25%),
+  "gray":   (0, 0%,  50%),
+  "silver": (0, 0%,  75%),
   "white":  (0, 0%, 100%)
 ) !default;
 
