@@ -246,20 +246,31 @@
 }
 
 /********** COLOR **********/
-@each $color in $colors {
-  @each $key, $value in $color {
-    @include states(#{$key}, "color", "var(--ani-#{$key})");
-  }
+@each $key, $value in $hues {
+  @include states(#{$key}, "color", "var(--ani-#{$key})");
+  @include states("#{$key}-dark", "color", "var(--ani-#{$key}-dark)");
+  @include states("#{$key}-light", "color", "var(--ani-#{$key}-light)");
+}
+
+@each $key, $value in $grayscale {
+  @include states(#{$key}, "color", "var(--ani-#{$key})");
 }
 
 /********** BACKGROUND COLOR **********/
-@each $color in $colors {
-  @each $key, $value in $color {
-    @include states("bg-#{$key}", "background-color", "var(--ani-#{$key})");
-    @include states("bg-#{$key}-dark", "background-color", "var(--ani-#{$key}-dark)");
-    @include states("bg-#{$key}-light", "background-color", "var(--ani-#{$key}-light)");
-  }
+@each $key, $value in $hues {
+  @include states("bg-#{$key}", "background-color", "var(--ani-#{$key})");
+  @include states("bg-#{$key}-dark", "background-color", "var(--ani-#{$key}-dark)");
+  @include states("bg-#{$key}-light", "background-color", "var(--ani-#{$key}-light)");
+  @include states("bg-#{$key}-darker", "background-color", "var(--ani-#{$key}-darker)");
+  @include states("bg-#{$key}-lighter", "background-color", "var(--ani-#{$key}-lighter)");
 }
+
+@each $key, $value in $grayscale {
+  @include states("bg-#{$key}", "background-color", "var(--ani-#{$key})");
+  @include states("bg-#{$key}-darker", "background-color", "var(--ani-#{$key}-darker)");
+  @include states("bg-#{$key}-lighter", "background-color", "var(--ani-#{$key}-lighter)");
+}
+
 
 /********** ANIMATION **********/
 [class*="ani-"] {
