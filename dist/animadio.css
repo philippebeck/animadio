@@ -1,4 +1,4 @@
-/*! animadio v6.2.0 | https://www.npmjs.com/package/animadio | MIT License */
+/*! animadio v6.2.1 | https://www.npmjs.com/package/animadio | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -367,8 +367,8 @@ template {
   --ani-max: 100%;
   /* lightness */
   --ani-base: 50%;
-  --ani-dark: 30%;
-  --ani-light: 70%;
+  --ani-dark: 40%;
+  --ani-light: 60%;
   /* opacity */
   --ani-darker: 0.7;
   --ani-lighter: 0.3;
@@ -1622,6 +1622,30 @@ button,
 .bord-red-many:focus > * {
   border-color: var(--ani-red); }
 
+.bord-red-dark,
+.bord-red-dark-all > *,
+.bord-red-dark-on:hover,
+.bord-red-dark-on:focus,
+*:hover > .bord-red-dark-in,
+*:focus > .bord-red-dark-in,
+.bord-red-dark-one > *:hover,
+.bord-red-dark-one > *:focus,
+.bord-red-dark-many:hover > *,
+.bord-red-dark-many:focus > * {
+  border-color: var(--ani-red-dark); }
+
+.bord-red-light,
+.bord-red-light-all > *,
+.bord-red-light-on:hover,
+.bord-red-light-on:focus,
+*:hover > .bord-red-light-in,
+*:focus > .bord-red-light-in,
+.bord-red-light-one > *:hover,
+.bord-red-light-one > *:focus,
+.bord-red-light-many:hover > *,
+.bord-red-light-many:focus > * {
+  border-color: var(--ani-red-light); }
+
 .bord-orange,
 .bord-orange-all > *,
 .bord-orange-on:hover,
@@ -1633,6 +1657,30 @@ button,
 .bord-orange-many:hover > *,
 .bord-orange-many:focus > * {
   border-color: var(--ani-orange); }
+
+.bord-orange-dark,
+.bord-orange-dark-all > *,
+.bord-orange-dark-on:hover,
+.bord-orange-dark-on:focus,
+*:hover > .bord-orange-dark-in,
+*:focus > .bord-orange-dark-in,
+.bord-orange-dark-one > *:hover,
+.bord-orange-dark-one > *:focus,
+.bord-orange-dark-many:hover > *,
+.bord-orange-dark-many:focus > * {
+  border-color: var(--ani-orange-dark); }
+
+.bord-orange-light,
+.bord-orange-light-all > *,
+.bord-orange-light-on:hover,
+.bord-orange-light-on:focus,
+*:hover > .bord-orange-light-in,
+*:focus > .bord-orange-light-in,
+.bord-orange-light-one > *:hover,
+.bord-orange-light-one > *:focus,
+.bord-orange-light-many:hover > *,
+.bord-orange-light-many:focus > * {
+  border-color: var(--ani-orange-light); }
 
 .bord-yellow,
 .bord-yellow-all > *,
@@ -1646,6 +1694,30 @@ button,
 .bord-yellow-many:focus > * {
   border-color: var(--ani-yellow); }
 
+.bord-yellow-dark,
+.bord-yellow-dark-all > *,
+.bord-yellow-dark-on:hover,
+.bord-yellow-dark-on:focus,
+*:hover > .bord-yellow-dark-in,
+*:focus > .bord-yellow-dark-in,
+.bord-yellow-dark-one > *:hover,
+.bord-yellow-dark-one > *:focus,
+.bord-yellow-dark-many:hover > *,
+.bord-yellow-dark-many:focus > * {
+  border-color: var(--ani-yellow-dark); }
+
+.bord-yellow-light,
+.bord-yellow-light-all > *,
+.bord-yellow-light-on:hover,
+.bord-yellow-light-on:focus,
+*:hover > .bord-yellow-light-in,
+*:focus > .bord-yellow-light-in,
+.bord-yellow-light-one > *:hover,
+.bord-yellow-light-one > *:focus,
+.bord-yellow-light-many:hover > *,
+.bord-yellow-light-many:focus > * {
+  border-color: var(--ani-yellow-light); }
+
 .bord-lime,
 .bord-lime-all > *,
 .bord-lime-on:hover,
@@ -1657,6 +1729,30 @@ button,
 .bord-lime-many:hover > *,
 .bord-lime-many:focus > * {
   border-color: var(--ani-lime); }
+
+.bord-lime-dark,
+.bord-lime-dark-all > *,
+.bord-lime-dark-on:hover,
+.bord-lime-dark-on:focus,
+*:hover > .bord-lime-dark-in,
+*:focus > .bord-lime-dark-in,
+.bord-lime-dark-one > *:hover,
+.bord-lime-dark-one > *:focus,
+.bord-lime-dark-many:hover > *,
+.bord-lime-dark-many:focus > * {
+  border-color: var(--ani-lime-dark); }
+
+.bord-lime-light,
+.bord-lime-light-all > *,
+.bord-lime-light-on:hover,
+.bord-lime-light-on:focus,
+*:hover > .bord-lime-light-in,
+*:focus > .bord-lime-light-in,
+.bord-lime-light-one > *:hover,
+.bord-lime-light-one > *:focus,
+.bord-lime-light-many:hover > *,
+.bord-lime-light-many:focus > * {
+  border-color: var(--ani-lime-light); }
 
 .bord-green,
 .bord-green-all > *,
@@ -1670,6 +1766,30 @@ button,
 .bord-green-many:focus > * {
   border-color: var(--ani-green); }
 
+.bord-green-dark,
+.bord-green-dark-all > *,
+.bord-green-dark-on:hover,
+.bord-green-dark-on:focus,
+*:hover > .bord-green-dark-in,
+*:focus > .bord-green-dark-in,
+.bord-green-dark-one > *:hover,
+.bord-green-dark-one > *:focus,
+.bord-green-dark-many:hover > *,
+.bord-green-dark-many:focus > * {
+  border-color: var(--ani-green-dark); }
+
+.bord-green-light,
+.bord-green-light-all > *,
+.bord-green-light-on:hover,
+.bord-green-light-on:focus,
+*:hover > .bord-green-light-in,
+*:focus > .bord-green-light-in,
+.bord-green-light-one > *:hover,
+.bord-green-light-one > *:focus,
+.bord-green-light-many:hover > *,
+.bord-green-light-many:focus > * {
+  border-color: var(--ani-green-light); }
+
 .bord-aqua,
 .bord-aqua-all > *,
 .bord-aqua-on:hover,
@@ -1681,6 +1801,30 @@ button,
 .bord-aqua-many:hover > *,
 .bord-aqua-many:focus > * {
   border-color: var(--ani-aqua); }
+
+.bord-aqua-dark,
+.bord-aqua-dark-all > *,
+.bord-aqua-dark-on:hover,
+.bord-aqua-dark-on:focus,
+*:hover > .bord-aqua-dark-in,
+*:focus > .bord-aqua-dark-in,
+.bord-aqua-dark-one > *:hover,
+.bord-aqua-dark-one > *:focus,
+.bord-aqua-dark-many:hover > *,
+.bord-aqua-dark-many:focus > * {
+  border-color: var(--ani-aqua-dark); }
+
+.bord-aqua-light,
+.bord-aqua-light-all > *,
+.bord-aqua-light-on:hover,
+.bord-aqua-light-on:focus,
+*:hover > .bord-aqua-light-in,
+*:focus > .bord-aqua-light-in,
+.bord-aqua-light-one > *:hover,
+.bord-aqua-light-one > *:focus,
+.bord-aqua-light-many:hover > *,
+.bord-aqua-light-many:focus > * {
+  border-color: var(--ani-aqua-light); }
 
 .bord-cyan,
 .bord-cyan-all > *,
@@ -1694,6 +1838,30 @@ button,
 .bord-cyan-many:focus > * {
   border-color: var(--ani-cyan); }
 
+.bord-cyan-dark,
+.bord-cyan-dark-all > *,
+.bord-cyan-dark-on:hover,
+.bord-cyan-dark-on:focus,
+*:hover > .bord-cyan-dark-in,
+*:focus > .bord-cyan-dark-in,
+.bord-cyan-dark-one > *:hover,
+.bord-cyan-dark-one > *:focus,
+.bord-cyan-dark-many:hover > *,
+.bord-cyan-dark-many:focus > * {
+  border-color: var(--ani-cyan-dark); }
+
+.bord-cyan-light,
+.bord-cyan-light-all > *,
+.bord-cyan-light-on:hover,
+.bord-cyan-light-on:focus,
+*:hover > .bord-cyan-light-in,
+*:focus > .bord-cyan-light-in,
+.bord-cyan-light-one > *:hover,
+.bord-cyan-light-one > *:focus,
+.bord-cyan-light-many:hover > *,
+.bord-cyan-light-many:focus > * {
+  border-color: var(--ani-cyan-light); }
+
 .bord-sky,
 .bord-sky-all > *,
 .bord-sky-on:hover,
@@ -1705,6 +1873,30 @@ button,
 .bord-sky-many:hover > *,
 .bord-sky-many:focus > * {
   border-color: var(--ani-sky); }
+
+.bord-sky-dark,
+.bord-sky-dark-all > *,
+.bord-sky-dark-on:hover,
+.bord-sky-dark-on:focus,
+*:hover > .bord-sky-dark-in,
+*:focus > .bord-sky-dark-in,
+.bord-sky-dark-one > *:hover,
+.bord-sky-dark-one > *:focus,
+.bord-sky-dark-many:hover > *,
+.bord-sky-dark-many:focus > * {
+  border-color: var(--ani-sky-dark); }
+
+.bord-sky-light,
+.bord-sky-light-all > *,
+.bord-sky-light-on:hover,
+.bord-sky-light-on:focus,
+*:hover > .bord-sky-light-in,
+*:focus > .bord-sky-light-in,
+.bord-sky-light-one > *:hover,
+.bord-sky-light-one > *:focus,
+.bord-sky-light-many:hover > *,
+.bord-sky-light-many:focus > * {
+  border-color: var(--ani-sky-light); }
 
 .bord-blue,
 .bord-blue-all > *,
@@ -1718,6 +1910,30 @@ button,
 .bord-blue-many:focus > * {
   border-color: var(--ani-blue); }
 
+.bord-blue-dark,
+.bord-blue-dark-all > *,
+.bord-blue-dark-on:hover,
+.bord-blue-dark-on:focus,
+*:hover > .bord-blue-dark-in,
+*:focus > .bord-blue-dark-in,
+.bord-blue-dark-one > *:hover,
+.bord-blue-dark-one > *:focus,
+.bord-blue-dark-many:hover > *,
+.bord-blue-dark-many:focus > * {
+  border-color: var(--ani-blue-dark); }
+
+.bord-blue-light,
+.bord-blue-light-all > *,
+.bord-blue-light-on:hover,
+.bord-blue-light-on:focus,
+*:hover > .bord-blue-light-in,
+*:focus > .bord-blue-light-in,
+.bord-blue-light-one > *:hover,
+.bord-blue-light-one > *:focus,
+.bord-blue-light-many:hover > *,
+.bord-blue-light-many:focus > * {
+  border-color: var(--ani-blue-light); }
+
 .bord-violet,
 .bord-violet-all > *,
 .bord-violet-on:hover,
@@ -1729,6 +1945,30 @@ button,
 .bord-violet-many:hover > *,
 .bord-violet-many:focus > * {
   border-color: var(--ani-violet); }
+
+.bord-violet-dark,
+.bord-violet-dark-all > *,
+.bord-violet-dark-on:hover,
+.bord-violet-dark-on:focus,
+*:hover > .bord-violet-dark-in,
+*:focus > .bord-violet-dark-in,
+.bord-violet-dark-one > *:hover,
+.bord-violet-dark-one > *:focus,
+.bord-violet-dark-many:hover > *,
+.bord-violet-dark-many:focus > * {
+  border-color: var(--ani-violet-dark); }
+
+.bord-violet-light,
+.bord-violet-light-all > *,
+.bord-violet-light-on:hover,
+.bord-violet-light-on:focus,
+*:hover > .bord-violet-light-in,
+*:focus > .bord-violet-light-in,
+.bord-violet-light-one > *:hover,
+.bord-violet-light-one > *:focus,
+.bord-violet-light-many:hover > *,
+.bord-violet-light-many:focus > * {
+  border-color: var(--ani-violet-light); }
 
 .bord-magenta,
 .bord-magenta-all > *,
@@ -1742,6 +1982,30 @@ button,
 .bord-magenta-many:focus > * {
   border-color: var(--ani-magenta); }
 
+.bord-magenta-dark,
+.bord-magenta-dark-all > *,
+.bord-magenta-dark-on:hover,
+.bord-magenta-dark-on:focus,
+*:hover > .bord-magenta-dark-in,
+*:focus > .bord-magenta-dark-in,
+.bord-magenta-dark-one > *:hover,
+.bord-magenta-dark-one > *:focus,
+.bord-magenta-dark-many:hover > *,
+.bord-magenta-dark-many:focus > * {
+  border-color: var(--ani-magenta-dark); }
+
+.bord-magenta-light,
+.bord-magenta-light-all > *,
+.bord-magenta-light-on:hover,
+.bord-magenta-light-on:focus,
+*:hover > .bord-magenta-light-in,
+*:focus > .bord-magenta-light-in,
+.bord-magenta-light-one > *:hover,
+.bord-magenta-light-one > *:focus,
+.bord-magenta-light-many:hover > *,
+.bord-magenta-light-many:focus > * {
+  border-color: var(--ani-magenta-light); }
+
 .bord-pink,
 .bord-pink-all > *,
 .bord-pink-on:hover,
@@ -1753,6 +2017,30 @@ button,
 .bord-pink-many:hover > *,
 .bord-pink-many:focus > * {
   border-color: var(--ani-pink); }
+
+.bord-pink-dark,
+.bord-pink-dark-all > *,
+.bord-pink-dark-on:hover,
+.bord-pink-dark-on:focus,
+*:hover > .bord-pink-dark-in,
+*:focus > .bord-pink-dark-in,
+.bord-pink-dark-one > *:hover,
+.bord-pink-dark-one > *:focus,
+.bord-pink-dark-many:hover > *,
+.bord-pink-dark-many:focus > * {
+  border-color: var(--ani-pink-dark); }
+
+.bord-pink-light,
+.bord-pink-light-all > *,
+.bord-pink-light-on:hover,
+.bord-pink-light-on:focus,
+*:hover > .bord-pink-light-in,
+*:focus > .bord-pink-light-in,
+.bord-pink-light-one > *:hover,
+.bord-pink-light-one > *:focus,
+.bord-pink-light-many:hover > *,
+.bord-pink-light-many:focus > * {
+  border-color: var(--ani-pink-light); }
 
 /********** BORDER RADIUS **********/
 .bord-curve,
@@ -4093,4 +4381,4 @@ button,
   animation-direction: alternate-reverse; }
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 16th Mar 2023 @ 10:20:49 PM */
+ Updated: 17th Mar 2023 @ 2:59:19 AM */
