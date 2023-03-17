@@ -16,12 +16,12 @@
 
   /* lightness */
   --ani-base: 50%;
-  --ani-dark: 40%;
-  --ani-light: 60%;
+  --ani-dark: 30%;
+  --ani-light: 70%;
 
   /* opacity */
-  --ani-darker: 0.7;
-  --ani-lighter: 0.3;
+  --ani-darker: 0.8;
+  --ani-lighter: 0.2;
 
   /* color hues */
   @each $key, $value in $hues {
