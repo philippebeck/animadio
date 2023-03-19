@@ -30,7 +30,7 @@
 
   /* grayscale lightness */
   @each $key, $value in $grayscale {
-    --ani-#{$key}-scale: #{$value};
+    --ani-#{$key}-light: #{$value};
   }
 
   /* colors */
@@ -44,9 +44,9 @@
 
   /* grayscale */
   @each $key, $value in $grayscale {
-    --ani-#{$key}: hsl(var(--ani-hue), var(--ani-min), var(--ani-#{$key}-scale));
-    --ani-#{$key}-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-#{$key}-scale), var(--ani-darker));
-    --ani-#{$key}-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-#{$key}-scale), var(--ani-lighter));
+    --ani-#{$key}: hsl(var(--ani-hue), var(--ani-min), var(--ani-#{$key}-light));
+    --ani-#{$key}-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-#{$key}-light), var(--ani-darker));
+    --ani-#{$key}-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-#{$key}-light), var(--ani-lighter));
   }
 
   /********** TRANSFORM **********/
