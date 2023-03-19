@@ -35,8 +35,8 @@
 
 ## CDN 
 
--   Development : [https://cdn.jsdelivr.net/npm/animadio@6.2.2/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@6.2.2/dist/animadio.css)  
--   Production : [https://cdn.jsdelivr.net/npm/animadio@6.2.2/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@6.2.2/dist/animadio.min.css)  
+-   Development : [https://cdn.jsdelivr.net/npm/animadio@6.2.3/dist/animadio.css](https://cdn.jsdelivr.net/npm/animadio@6.2.3/dist/animadio.css)  
+-   Production : [https://cdn.jsdelivr.net/npm/animadio@6.2.3/dist/animadio.min.css](https://cdn.jsdelivr.net/npm/animadio@6.2.3/dist/animadio.min.css)  
 
 ---
 
