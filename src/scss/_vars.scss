@@ -15,9 +15,9 @@
   --ani-max: 100%;
 
   /* lightness */
-  --ani-base: 50%;
-  --ani-dark: 20%;
-  --ani-light: 80%;
+  --ani-base: #{$lightness-base};
+  --ani-dark: #{$lightness-dark};
+  --ani-light: #{$lightness-light};
 
   /* opacity */
   --ani-darker: 0.8;
