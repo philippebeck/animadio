@@ -1,4 +1,4 @@
-/*! animadio v6.2.3 | https://www.npmjs.com/package/animadio | MIT License */
+/*! animadio v6.2.4 | https://www.npmjs.com/package/animadio | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -386,11 +386,11 @@ template {
   --ani-magenta-hue: 300;
   --ani-pink-hue: 330;
   /* grayscale lightness */
-  --ani-black-scale: 0%;
-  --ani-slate-scale: 30%;
-  --ani-gray-scale: 50%;
-  --ani-silver-scale: 70%;
-  --ani-white-scale: 100%;
+  --ani-black-light: 0%;
+  --ani-slate-light: 20%;
+  --ani-gray-light: 50%;
+  --ani-silver-light: 80%;
+  --ani-white-light: 100%;
   /* colors */
   --ani-red: hsl(var(--ani-red-hue), var(--ani-max), var(--ani-base));
   --ani-red-dark: hsl(var(--ani-red-hue), var(--ani-max), var(--ani-dark));
@@ -453,21 +453,21 @@ template {
   --ani-pink-darker: hsla(var(--ani-pink-hue), var(--ani-max), var(--ani-dark), var(--ani-darker));
   --ani-pink-lighter: hsla(var(--ani-pink-hue), var(--ani-max), var(--ani-light), var(--ani-lighter));
   /* grayscale */
-  --ani-black: hsl(var(--ani-hue), var(--ani-min), var(--ani-black-scale));
-  --ani-black-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-black-scale), var(--ani-darker));
-  --ani-black-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-black-scale), var(--ani-lighter));
-  --ani-slate: hsl(var(--ani-hue), var(--ani-min), var(--ani-slate-scale));
-  --ani-slate-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-slate-scale), var(--ani-darker));
-  --ani-slate-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-slate-scale), var(--ani-lighter));
-  --ani-gray: hsl(var(--ani-hue), var(--ani-min), var(--ani-gray-scale));
-  --ani-gray-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-gray-scale), var(--ani-darker));
-  --ani-gray-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-gray-scale), var(--ani-lighter));
-  --ani-silver: hsl(var(--ani-hue), var(--ani-min), var(--ani-silver-scale));
-  --ani-silver-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-silver-scale), var(--ani-darker));
-  --ani-silver-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-silver-scale), var(--ani-lighter));
-  --ani-white: hsl(var(--ani-hue), var(--ani-min), var(--ani-white-scale));
-  --ani-white-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-white-scale), var(--ani-darker));
-  --ani-white-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-white-scale), var(--ani-lighter));
+  --ani-black: hsl(var(--ani-hue), var(--ani-min), var(--ani-black-light));
+  --ani-black-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-black-light), var(--ani-darker));
+  --ani-black-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-black-light), var(--ani-lighter));
+  --ani-slate: hsl(var(--ani-hue), var(--ani-min), var(--ani-slate-light));
+  --ani-slate-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-slate-light), var(--ani-darker));
+  --ani-slate-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-slate-light), var(--ani-lighter));
+  --ani-gray: hsl(var(--ani-hue), var(--ani-min), var(--ani-gray-light));
+  --ani-gray-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-gray-light), var(--ani-darker));
+  --ani-gray-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-gray-light), var(--ani-lighter));
+  --ani-silver: hsl(var(--ani-hue), var(--ani-min), var(--ani-silver-light));
+  --ani-silver-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-silver-light), var(--ani-darker));
+  --ani-silver-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-silver-light), var(--ani-lighter));
+  --ani-white: hsl(var(--ani-hue), var(--ani-min), var(--ani-white-light));
+  --ani-white-darker: hsla(var(--ani-hue), var(--ani-min), var(--ani-white-light), var(--ani-darker));
+  --ani-white-lighter: hsla(var(--ani-hue), var(--ani-min), var(--ani-white-light), var(--ani-lighter));
   /********** TRANSFORM **********/
   --ani-slideT: translate(0, 10vh);
   --ani-slideR: translate(-10vw, 0);
@@ -4381,4 +4381,4 @@ button,
   animation-direction: alternate-reverse; }
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 19th Mar 2023 @ 6:25:01 PM */
+ Updated: 19th Mar 2023 @ 7:10:29 PM */
