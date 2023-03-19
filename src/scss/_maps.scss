@@ -34,11 +34,15 @@ $hues: (
   "pink":     330
 ) !default;
 
+$lightness-base:  50%;
+$lightness-dark:  20%;
+$lightness-light: 80%;
+
 $grayscale: (
-  "black":    0%,
-  "slate":   30%,
-  "gray":    50%,
-  "silver":  70%,
+  "black":  0%,
+  "slate":  $lightness-dark,
+  "gray":   $lightness-base,
+  "silver": $lightness-light,
   "white":  100%
 ) !default;
 
