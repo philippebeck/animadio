@@ -21,12 +21,12 @@
 @mixin states($class, $property, $value) {
   .#{$class},
   .#{$class}-all > *,
-  .#{$class}-on:hover,
-  .#{$class}-on:focus,
-  *:hover > .#{$class}-in,
-  *:focus > .#{$class}-in,
-  .#{$class}-one > *:hover,
-  .#{$class}-one > *:focus,
+  .#{$class}-onto:hover,
+  .#{$class}-onto:focus,
+  *:hover > .#{$class}-into,
+  *:focus > .#{$class}-into,
+  .#{$class}-each > *:hover,
+  .#{$class}-each > *:focus,
   .#{$class}-many:hover > *,
   .#{$class}-many:focus > * {
     #{$property}: #{$value};
@@ -36,10 +36,10 @@
 @mixin anima-states($class, $property, $value) {
   [class*="ani-"][class*="-#{$class}"][class*="-it"],
   [class*="ani-"][class*="-#{$class}"][class*="-all"] > *,
-  [class*="ani-"][class*="-#{$class}"][class*="-on"]:hover,
-  [class*="ani-"][class*="-#{$class}"][class*="-on"]:focus,
-  *:hover > [class*="ani-"][class*="-#{$class}"][class*="-in"],
-  *:focus > [class*="ani-"][class*="-#{$class}"][class*="-in"],
+  [class*="ani-"][class*="-#{$class}"][class*="-onto"]:hover,
+  [class*="ani-"][class*="-#{$class}"][class*="-onto"]:focus,
+  *:hover > [class*="ani-"][class*="-#{$class}"][class*="-into"],
+  *:focus > [class*="ani-"][class*="-#{$class}"][class*="-into"],
   [class*="ani-"][class*="-#{$class}"][class*="-each"] > *:hover,
   [class*="ani-"][class*="-#{$class}"][class*="-each"] > *:focus,
   [class*="ani-"][class*="-#{$class}"][class*="-many"]:hover > *,
