@@ -10,8 +10,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'src/main.css': 'src/main.scss',
-          'dist/style.css': 'src/style.scss'
+          'src/main.css': 'src/main.scss'
         }
       }
     },
