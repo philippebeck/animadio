@@ -1,4 +1,4 @@
-/*! animadio v6.2.5 | https://www.npmjs.com/package/animadio | MIT License */
+/*! animadio v6.2.6 | https://www.npmjs.com/package/animadio | MIT License */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -505,7 +505,7 @@ body {
   --ani-body-font-size: 2rem;
   --ani-body-line-height: 1.6;
   --ani-body-margin: auto;
-  --ani-body-max-width: 2000px;
+  --ani-body-max-width: 100%;
   --ani-body-overflow: break-word;
   --ani-body-padding: 0; }
 
@@ -4381,4 +4381,4 @@ button,
   animation-direction: alternate-reverse; }
 
 /* Author: Philippe Beck <philippe@philippebeck.net>
- Updated: 22nd Mar 2023 @ 5:08:34 PM */
+ Updated: 11th Jan 2024 @ 10:23:51 AM */
